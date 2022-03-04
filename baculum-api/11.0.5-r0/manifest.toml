@@ -1,0 +1,20 @@
+checksume = "726da3a912b0f669b31cdbcade34b7f3bc17d854a68dcab67aa43b2006e97922"
+licence = "AGPL-3.0-or-later"
+meta = false
+provides = "baculum-api"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "11.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["baculum-common", "11.0.5-r0"], ["php8-bcmath", "8.0.16-r0"], ["php8-mysqlnd", "8.0.16-r0"], ["php8-pdo", "8.0.16-r0"], ["php8-pgsql", "8.0.16-r0"]]

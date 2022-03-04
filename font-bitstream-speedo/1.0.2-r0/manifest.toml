@@ -1,0 +1,20 @@
+checksume = "88560eaad4d8b41138f7a809054199763fbc2de9be1d601842a9b17fab344116"
+licence = "custom"
+meta = false
+provides = "font-bitstream-speedo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

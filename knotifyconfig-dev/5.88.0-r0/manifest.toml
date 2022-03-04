@@ -1,0 +1,20 @@
+checksume = "057d82fbe4fa97d299191d59edbe8f7d42951a9ab008114b4ff87fa37b4c7d24"
+licence = "LGPL-2.0-only"
+meta = false
+provides = "knotifyconfig-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kcompletion-dev", "5.88.0-r0"], ["kconfig-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["knotifyconfig", "5.88.0-r0"]]

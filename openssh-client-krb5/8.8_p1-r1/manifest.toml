@@ -1,0 +1,20 @@
+checksume = "1e34ef1c439148abdd6de2addf373d0d1d44c07cb99da77b06e196c75e7a0a00"
+licence = "BSD"
+meta = false
+provides = "openssh-client-krb5"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.8_p1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssh-keygen", "8.8"], ["openssh-client-common", "8.8"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["krb5-libs", "1.19.2-r4"], ["zlib", "1.2.11-r3"]]

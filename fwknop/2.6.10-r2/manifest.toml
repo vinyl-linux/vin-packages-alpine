@@ -1,0 +1,20 @@
+checksume = "aab1ed5a92ac547f16dcd4905843ccc4acfbc877da290694865e09366c7d3d4c"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "fwknop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.10-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iptables", "1.8.7-r1"], ["musl", "1.2.2-r7"], ["fwknop-libs", "2.6.10-r2"]]

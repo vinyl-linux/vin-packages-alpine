@@ -1,0 +1,20 @@
+checksume = "e6356ff49cb9bb747452d3cf863951eb6e86f07c6f04f311501683f88736cd6a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "hypermail"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.0-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.4", "5.4.3-r0"], ["musl", "1.2.2-r7"], ["gdbm", "1.22-r0"], ["pcre", "8.45-r1"]]

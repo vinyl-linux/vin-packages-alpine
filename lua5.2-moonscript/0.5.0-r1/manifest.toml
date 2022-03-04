@@ -1,0 +1,20 @@
+checksume = "9a659935b3502b422d39bb8fe5fd1b33950b2a8956f6b557a1d1553975719411"
+licence = "MIT"
+meta = false
+provides = "lua5.2-moonscript"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"], ["lua5.2-alt-getopt", "0.8.0-r0"], ["lua5.2-filesystem", "1.8.0-r1"], ["lua5.2-lpeg", "1.0.2-r2"]]

@@ -1,0 +1,20 @@
+checksume = "5f52ab3a4d847b36954da210ce17d4b2b9853437e59478cfd6583c7f47526fc1"
+licence = "MIT"
+meta = false
+provides = "fdupes"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3"], ["libpcre2-32", "10.39-r0"]]

@@ -1,0 +1,20 @@
+checksume = "37b9846ec615af82ac4a0c36adead807fe6b3199df539847b174e1d9b058f3c4"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "dbus-test-runner"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "19.04.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["dbus-test-runner-libs", "19.04.0-r1"], ["glib", "2.70.1-r0"]]

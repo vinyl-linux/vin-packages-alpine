@@ -1,0 +1,20 @@
+checksume = "99aa7419e6acbad877d0d7ab898aea355a9e300ee721e63323bd0d14dfa28b64"
+licence = "BSL-1.0"
+meta = false
+provides = "asio-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.18.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost-dev", "1.77.0-r1"], ["openssl-dev", "1.1.1l-r8"]]

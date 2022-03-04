@@ -1,0 +1,20 @@
+checksume = "3027854668db0c772c777d2e82d1da6737ed3a12d2c384b886324d2c11e90991"
+licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
+meta = false
+provides = "lsblk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.37.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libmount", "2.37.4-r0"], ["libsmartcols", "2.37.4-r0"]]

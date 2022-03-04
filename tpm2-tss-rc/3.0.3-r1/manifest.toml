@@ -1,0 +1,20 @@
+checksume = "8f2b0de7b91674c4615c2ae8a7e4688c73b42e9c77d6a2dcd348f15d4203f6e8"
+licence = "BSD-2-Clause"
+meta = false
+provides = "tpm2-tss-rc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

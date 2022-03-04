@@ -1,0 +1,20 @@
+checksume = "5ea0177d9a106c822dfd5c2a53673476b864ceb6ea81e402de751c938cef69e1"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "gphoto2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.5.27-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libexif", "0.6.23-r0"], ["libgphoto2", "2.5.27-r0"], ["libintl", "0.21-r0"], ["popt", "1.18-r0"]]

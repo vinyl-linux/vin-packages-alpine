@@ -1,0 +1,20 @@
+checksume = "7eaf7580395d0a16b1fd5ac3b1eed029554c8de385ce61c4e4f550e7a2b990e9"
+licence = "MIT"
+meta = false
+provides = "alpine-make-vm-image"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qemu-img", "6.1.0-r2"]]

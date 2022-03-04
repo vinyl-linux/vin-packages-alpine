@@ -1,0 +1,20 @@
+checksume = "6803b601ba6bca13398623c928787ad12db402c1a70ccdc9d65ea282daf24d15"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "py3-zbar"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.23.90-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libzbar", "0.23.90-r1"]]

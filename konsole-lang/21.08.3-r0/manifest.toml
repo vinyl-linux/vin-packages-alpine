@@ -1,0 +1,20 @@
+checksume = "4239ba5c8991f2140631261bc35b45a6096d344ec15ab72c9e3c848adcee9046"
+licence = "GPL-2.0-only AND LGPL-2.1-or-later AND Unicode-DFS-2016"
+meta = false
+provides = "konsole-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ncurses-terminfo-base", "6.3"]]

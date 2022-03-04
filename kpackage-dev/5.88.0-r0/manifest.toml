@@ -1,0 +1,20 @@
+checksume = "64d2f617c7fabcf8525bd039075bc0174edf00b5da52bdae27469794895ddd59"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "kpackage-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["karchive-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kcoreaddons-dev", "5.88.0-r0"], ["kpackage", "5.88.0-r0"]]

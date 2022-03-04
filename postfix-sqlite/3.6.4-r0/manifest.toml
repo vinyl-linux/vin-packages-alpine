@@ -1,0 +1,20 @@
+checksume = "511d8091dd93a9ee0791791aa3534a5d913b5e97f6f332648676ccf709d01835"
+licence = "IPL-1.0 EPL-2.0"
+meta = false
+provides = "postfix-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.6.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

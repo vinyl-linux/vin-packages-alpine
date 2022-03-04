@@ -1,0 +1,20 @@
+checksume = "914b9f853eb16bb50616848460dda19c002a11bab750d8132328097c69079c09"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "xvidcore"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

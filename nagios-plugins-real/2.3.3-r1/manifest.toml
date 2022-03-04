@@ -1,0 +1,20 @@
+checksume = "a1fb2eb5d4fda027a2ea6bc058d399f577c5e120bb220201a198fa17f6838b2a"
+licence = "GPL-3.0-only"
+meta = false
+provides = "nagios-plugins-real"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"]]

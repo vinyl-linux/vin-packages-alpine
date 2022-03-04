@@ -1,0 +1,20 @@
+checksume = "6b6f5af05db6b04e2360916633a3dd77249ad08bfb861f91a9909f41839a99d8"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+meta = false
+provides = "networkmanager-qt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["networkmanager-dev", "1.32.12-r1"], ["networkmanager-qt", "5.88.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "7c7c69efdf1ea30081305e3d5bbffcc363cafc3bef288e306c649b7df761f89a"
+licence = "LGPL-2.0-or-later-WITH-linking-exception"
+meta = false
+provides = "ocaml-camlp4"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.13.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ocaml-runtime", "4.13.1-r0"], ["ocaml-ocamlbuild", "0.14.0-r5"]]

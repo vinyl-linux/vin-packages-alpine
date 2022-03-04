@@ -1,0 +1,20 @@
+checksume = "f7f48c8cd173543cb0b5a38acc24e01182722299c4a1632a3af500195381cf0b"
+licence = "GPL PerlArtistic"
+meta = false
+provides = "perl-crypt-ssleay"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.72-r16"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-path-class", "0.37-r2"], ["perl-try-tiny", "0.30-r3"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

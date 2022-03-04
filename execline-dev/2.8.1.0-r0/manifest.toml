@@ -1,0 +1,20 @@
+checksume = "ce07aa1aa788ac8381a4a215a5dd1f1ec3ecd1e3bc22b1f149b7a627dde03aa7"
+licence = "ISC"
+meta = false
+provides = "execline-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.8.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["execline", "2.8.1.0-r0"]]

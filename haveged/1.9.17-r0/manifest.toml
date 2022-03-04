@@ -1,0 +1,20 @@
+checksume = "b1104966b92c2eea143f8a46fd43c23cc61add1359d344f291812764111ddcbc"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "haveged"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.9.17-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "5081ed146152190b19318e573d5eddcdab5678deb897d628bb20e8fa7d42dcf7"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-only"
+meta = false
+provides = "kwayland-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-egl", "21.2.6-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["wayland-libs-server", "1.19.0-r1"]]

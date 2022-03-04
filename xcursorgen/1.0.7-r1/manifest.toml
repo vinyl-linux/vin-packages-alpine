@@ -1,0 +1,20 @@
+checksume = "682fa7798fcf3345a3bf9a3718c8d3fc62895a679ca8755730b34a6b2e31fb06"
+licence = "Custom"
+meta = false
+provides = "xcursorgen"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxcursor", "1.2.0-r0"], ["musl", "1.2.2-r7"], ["libpng", "1.6.37-r1"]]

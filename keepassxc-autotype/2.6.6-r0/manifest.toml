@@ -1,0 +1,20 @@
+checksume = "eb6fa4f2143be03ea46dadec9e8c143fd14ca5bc2ec712c9cbdd4358a5216801"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+meta = false
+provides = "keepassxc-autotype"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libx11", "1.7.2-r0"], ["libxi", "1.8-r0"], ["libxtst", "1.2.3-r3"], ["musl", "1.2.2-r7"], ["libsodium", "1.0.18-r0"], ["libstdc++", "10.3.1"]]

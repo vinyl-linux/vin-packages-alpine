@@ -1,0 +1,20 @@
+checksume = "d363d1e74d571e88cb4f19c7d20c2c4c280350a09b59a17e4ddf11dea8633461"
+licence = "MIT"
+meta = false
+provides = "xf86-video-chips"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

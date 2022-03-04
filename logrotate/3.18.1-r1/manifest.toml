@@ -1,0 +1,20 @@
+checksume = "96df27dcabf6513af1b68716676e947bd6053f65bdbcd094decff30b45e312a7"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "logrotate"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.18.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["popt", "1.18-r0"]]

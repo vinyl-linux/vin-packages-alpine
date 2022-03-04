@@ -1,0 +1,20 @@
+checksume = "a0e9f8f2ed4d6e7ecc65554e9fd59551cdeec1043b9bdce2239dfb63c288b0f9"
+licence = "MIT"
+meta = false
+provides = "git-lfs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

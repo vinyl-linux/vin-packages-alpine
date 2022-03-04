@@ -1,0 +1,20 @@
+checksume = "68285363c9071381276f6fdb844cf5d8402ac1a3e1113403d5aa882b4f683f39"
+licence = "GPL-2.0 LGPL-2"
+meta = false
+provides = "qemu-block-dmg-bz2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "afd46a21161876a906208a55ffe0c8dd88f5d25095d411fdcd3529c6be3f4d4c"
+licence = "GPL-2.0-only"
+meta = false
+provides = "icinga2-bash-completion"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.13.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"]]

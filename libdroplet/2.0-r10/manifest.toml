@@ -1,0 +1,20 @@
+checksume = "02acf4d50909bfb7ef3874c7dfeb2b7ffeabe537ca969af939686723ee4f44cf"
+licence = "MIT"
+meta = false
+provides = "libdroplet"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0-r10"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["json-c", "0.15-r1"], ["libssl1.1", "1.1.1l-r8"], ["libxml2", "2.9.12-r2"]]

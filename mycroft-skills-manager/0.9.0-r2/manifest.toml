@@ -1,0 +1,20 @@
+checksume = "379ce1c73a702dbe3750fceaea09391e247de43118eb7429159d76f1b361fddf"
+licence = "Apache-2.0"
+meta = false
+provides = "mycroft-skills-manager"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-fasteners", "0.16.3-r0"], ["py3-gitpython", "3.1.24-r0"], ["py3-lazy", "1.4-r1"], ["py3-pako", "0.3.1-r1"], ["py3-requests", "2.26.0-r1"], ["py3-xdg", "0.27-r1"], ["py3-yaml", "5.4.1.1-r1"], ["python3", "3.9.7-r4"]]

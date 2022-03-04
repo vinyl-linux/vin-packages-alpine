@@ -1,0 +1,20 @@
+checksume = "fd69e33232344bf227f9dc841c5b51f64135abb58b09e5ba1bd4310de8a7c8e8"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "tio"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.32-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

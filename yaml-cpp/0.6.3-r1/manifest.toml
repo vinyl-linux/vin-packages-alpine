@@ -1,0 +1,20 @@
+checksume = "0b208f728744821fb46b6a633b23c0aea6f0b94d70f73197b4a338435387b958"
+licence = "MIT"
+meta = false
+provides = "yaml-cpp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

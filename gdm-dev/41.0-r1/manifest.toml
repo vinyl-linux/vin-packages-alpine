@@ -1,0 +1,20 @@
+checksume = "27694c35ec6457ee7e6c45a112b58783ee4e5f5472b2ed3088e56566c685a0ce"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gdm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gdm", "41.0-r1"], ["glib-dev", "2.70.1-r0"], ["elogind-dev", "246.10-r4"], ["pkgconf", "1.8.0-r0"]]

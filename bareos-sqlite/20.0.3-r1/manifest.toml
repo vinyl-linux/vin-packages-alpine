@@ -1,0 +1,20 @@
+checksume = "ac8c6819214d740c2190b7c77f7e769c1def8aa11844daf6ce1f356e86e7d7c6"
+licence = "AGPL-3.0"
+meta = false
+provides = "bareos-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bareos", "20.0.3-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libintl", "0.21-r0"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"]]

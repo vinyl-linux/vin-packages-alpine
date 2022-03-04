@@ -1,0 +1,20 @@
+checksume = "e21f42f5d22d14a97b3b77d4c506e99eaff4481da26c84d0dd7f0ecf0d3d392c"
+licence = "Unknown"
+meta = false
+provides = "aaudit-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.7.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["aaudit", "0.7.2-r2"], ["git", "2.34.1-r0"], ["lua5.2", "5.2.4-r7"], ["lua5.2-posix", "35.1-r0"], ["lua5.2-cjson", "2.1.0-r10"], ["lua5.2-lzlib", "0.4.3-r1"]]

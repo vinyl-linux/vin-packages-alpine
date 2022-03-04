@@ -1,0 +1,20 @@
+checksume = "b8fe3ea4b3c3872394a2e23477d1382f3a0c7e7adc5921ed18bade0e97e18414"
+licence = "BSD-3-Clause"
+meta = false
+provides = "iperf3-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.10.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iperf3", "3.10.1-r0"]]

@@ -1,0 +1,20 @@
+checksume = "7463a048db88e270c9765a897bffd209ccd8a3a4b34e5aa467c3ccb32694d407"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "mapplauncherd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.2.10-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcap", "2.61-r0"], ["dbus-libs", "1.12.20-r4"], ["libelogind", "246.10-r4"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

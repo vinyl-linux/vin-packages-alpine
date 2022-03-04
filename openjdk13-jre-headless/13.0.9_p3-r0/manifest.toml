@@ -1,0 +1,20 @@
+checksume = "449c030268f648964a8f625fa972d307922dcc771b188a0a3652d0bb94986a25"
+licence = "GPL-2.0-with-classpath-exception"
+meta = false
+provides = "openjdk13-jre-headless"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "13.0.9_p3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["java-common", "0.4-r0"], ["java-cacerts", "1.0-r1"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

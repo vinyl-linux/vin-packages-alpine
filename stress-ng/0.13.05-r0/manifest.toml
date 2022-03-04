@@ -1,0 +1,20 @@
+checksume = "61450c69514ea1d5a52a45bc7c16c25f0dee7aa4cf3ce0152ca7c04615a698a8"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "stress-ng"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13.05-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"], ["liblksctp", "1.0.19-r0"], ["zlib", "1.2.11-r3"]]

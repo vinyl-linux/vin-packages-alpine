@@ -1,0 +1,20 @@
+checksume = "51fa9068520f6578d4d86b827f2277378c3de99b25428201c14ce2c1bae4045b"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libdv-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libdv", "1.0.0-r6"]]

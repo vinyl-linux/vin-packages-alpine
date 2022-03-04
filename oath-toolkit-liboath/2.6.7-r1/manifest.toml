@@ -1,0 +1,20 @@
+checksume = "3a6880fb1458cacd05dbacb6f47dcbdf056ca0317d2e567005572b02b0ae1a51"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "oath-toolkit-liboath"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

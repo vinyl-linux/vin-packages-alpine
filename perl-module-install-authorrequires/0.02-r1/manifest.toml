@@ -1,0 +1,20 @@
+checksume = "effebf7739ba2d7a6fa1ac31fe79d9b0853986a69957efbeec8926deccaabe86"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-module-install-authorrequires"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.02-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-module-install", "1.19-r2"]]

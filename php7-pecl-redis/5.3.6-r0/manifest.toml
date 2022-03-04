@@ -1,0 +1,20 @@
+checksume = "b3f48a34b756b74a4a614a5a856c33ca4dde64acd28b80fae1896d6647b41435"
+licence = "PHP-3.01"
+meta = false
+provides = "php7-pecl-redis"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.3.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-common", "7.4.28-r0"], ["php7-pecl-igbinary", "3.2.6-r0"], ["php7-session", "7.4.28-r0"], ["php7-json", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["lz4-libs", "1.9.3-r1"], ["zstd-libs", "1.5.0-r0"]]

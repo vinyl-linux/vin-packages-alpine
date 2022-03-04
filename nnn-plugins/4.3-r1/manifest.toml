@@ -1,0 +1,20 @@
+checksume = "89997af735d83d895cc2b30511ff3264e852845d91138e3302551de54fb66fb7"
+licence = "BSD-2-Clause"
+meta = false
+provides = "nnn-plugins"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"]]

@@ -1,0 +1,20 @@
+checksume = "e1c49aca6952fb400170fef0f7f133efeccf1cad4b9482ecb60dac25045d8db0"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libusbmuxd-progs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libusbmuxd", "2.0.2-r1"]]

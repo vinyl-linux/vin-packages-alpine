@@ -1,0 +1,20 @@
+checksume = "8c0f3edf660a0a13608f2c2884e03afd49b1ded676ffad0e59e2f4f467a760b8"
+licence = "MIT"
+meta = false
+provides = "libcbor-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libcbor", "0.8.0-r0"], ["pkgconf", "1.8.0-r0"]]

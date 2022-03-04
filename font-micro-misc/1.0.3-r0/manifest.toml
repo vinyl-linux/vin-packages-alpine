@@ -1,0 +1,20 @@
+checksume = "7b0c778359362e239ca5c3958588996167c7ea41eebb163793254f472854c519"
+licence = "custom"
+meta = false
+provides = "font-micro-misc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

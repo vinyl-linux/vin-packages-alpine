@@ -1,0 +1,20 @@
+checksume = "4e2f16357c4b153a893c2902b6f7df2c01f1cbd814b591ffd4e391913eac321c"
+licence = "Apache-2.0"
+meta = false
+provides = "vulkan-loader"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.196-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "c8f0b515739dacd3ea1f4049ffc7de6b23798f952308dd93bbbc08bcf26b708f"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "appstream-glib-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.7.18-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gsettings-desktop-schemas", "41.0-r0"]]

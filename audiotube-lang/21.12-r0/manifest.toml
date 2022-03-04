@@ -1,0 +1,20 @@
+checksume = "b34530ed9ab5ea0b146d362db71ca295fa997fead0bd6f34c78b63a233e37120"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "audiotube-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gst-plugins-good", "1.18.5-r0"], ["kirigami2", "5.88.0-r0"], ["py3-ytmusicapi", "0.19.4-r0"], ["qt5-qtimageformats", "5.15.3"], ["qt5-qtmultimedia", "5.15.3"], ["yt-dlp", "2021.11.10.1-r1"]]

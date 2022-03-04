@@ -1,0 +1,20 @@
+checksume = "cf56dca31cd022e9fe26e1b4e5e2cfb6da679b4432e52948e5521ae185eab767"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-http-headers-fast"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.22-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-http-date", "6.05-r1"]]

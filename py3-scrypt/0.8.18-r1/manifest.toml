@@ -1,0 +1,20 @@
+checksume = "f4b72758240a3b93807286c6132f4bc0304b5b6fb56577b163e0799a2ac2a098"
+licence = "BSD-2-Clause"
+meta = false
+provides = "py3-scrypt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.18-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"]]

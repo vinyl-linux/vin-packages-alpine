@@ -1,0 +1,20 @@
+checksume = "6cd9b66df37d203148752aa9a0e8ba56d26025c94be87812b9d4046683b4a99e"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "ksmbd-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.4.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libnl3", "3.5.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2a170eaddc4aef5eba5679f13cf9b349808a7f86a32bd7ad7eb495d3a179cb82"
+licence = "custom:sip"
+meta = false
+provides = "py3-sip-pyqt5"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.19.24-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

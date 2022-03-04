@@ -1,0 +1,20 @@
+checksume = "cc3d850e52c23eed26146ccdbe31297824ff4ec80dea1b4849f5616a6e76d39f"
+licence = "BSD-2-Clause"
+meta = false
+provides = "lua-resty-openidc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua-cjson", "2.1.0-r10"], ["lua-resty-string", "0.11-r2"], ["lua-resty-http", "0.16.1-r0"], ["lua-resty-session", "3.8-r0"], ["lua-resty-jwt", "0.2.0-r1"]]

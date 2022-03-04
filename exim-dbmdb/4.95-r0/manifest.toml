@@ -1,0 +1,20 @@
+checksume = "72406bdd944f9631d87c4e50658f12b535b4e23d822e6727ea1e944d271c9cb9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "exim-dbmdb"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.95-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["exim", "4.95-r0"], ["musl", "1.2.2-r7"]]

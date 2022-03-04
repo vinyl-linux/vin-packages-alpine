@@ -1,0 +1,20 @@
+checksume = "1263600d89018816cd342bed687f0e933e6ede73d20c8cfba1fe1832eb6d266c"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "git-fast-import"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.34.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["musl", "1.2.2-r7"], ["pcre2", "10.39-r0"], ["zlib", "1.2.11-r3"]]

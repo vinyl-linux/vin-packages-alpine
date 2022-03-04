@@ -1,0 +1,20 @@
+checksume = "217e5a9db572967adb462d78e7e5e9d8acedc46a76e3e706c7c2b5e0d6a82bf1"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "lensfun"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

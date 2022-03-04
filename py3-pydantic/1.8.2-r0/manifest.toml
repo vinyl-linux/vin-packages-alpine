@@ -1,0 +1,20 @@
+checksume = "ee90f8ff9aea742362a462e5958e0d49db2b90cb804bd9ff876b1eca19d0fccd"
+licence = "MIT"
+meta = false
+provides = "py3-pydantic"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-typing-extensions", "3.10.0.2-r0"]]

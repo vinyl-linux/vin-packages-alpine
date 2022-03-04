@@ -1,0 +1,20 @@
+checksume = "782a72377c105f4f40280a23a2130fed45da29a1ef1b3b157c1714b1b7b9437c"
+licence = "BSD-3-Clause"
+meta = false
+provides = "arpack"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.7.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgfortran", "10.3.1"], ["openblas", "0.3.18-r1"]]

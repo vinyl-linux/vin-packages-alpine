@@ -1,0 +1,20 @@
+checksume = "0b82f83ddaebebd9f69ee06f3cbeb1f090840af6e29c3f1f25fb0abd43fd82ea"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libseccomp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.5.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

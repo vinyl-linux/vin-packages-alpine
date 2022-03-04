@@ -1,0 +1,20 @@
+checksume = "2ba0de01e491b4312fdd976b7024c98af710ea07992d163d8268be6f1afd8502"
+licence = "MIT"
+meta = false
+provides = "niminst"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.8-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libucontext-dev", "1.1-r0"], ["musl", "1.2.2-r7"]]

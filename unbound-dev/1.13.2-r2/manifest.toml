@@ -1,0 +1,20 @@
+checksume = "2970a032d85539c3102af5771b21d17f2f11fee2cca7546488c8de0367da82cb"
+licence = "BSD-3-Clause"
+meta = false
+provides = "unbound-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.13.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["expat-dev", "2.4.6-r0"], ["openssl-dev", "1.1.1l-r8"], ["libevent-dev", "2.1.12-r4"], ["python3-dev", "3.9.7-r4"], ["pkgconf", "1.8.0-r0"], ["unbound-libs", "1.13.2-r2"]]

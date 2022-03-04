@@ -1,0 +1,20 @@
+checksume = "ef79d10659ad84074ee77619415e43cdcb9d709d5734cd1745be1478e9ec3d89"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+meta = false
+provides = "clamav-db"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.104.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["freshclam", "0.104.1-r0"]]

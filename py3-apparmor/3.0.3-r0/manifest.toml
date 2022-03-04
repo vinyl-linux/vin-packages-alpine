@@ -1,0 +1,20 @@
+checksume = "7e0ecab9a1140824e05b560ed67b74d8424ad3585caf2422795f488795c82fbe"
+licence = "GPL-2.0-only"
+meta = false
+provides = "py3-apparmor"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libapparmor", "3.0.3-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

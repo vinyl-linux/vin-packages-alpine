@@ -1,0 +1,20 @@
+checksume = "47ff002d084bd89a4f2a2385d0879bd3346d2cce58510ca13df25f50a968c1f9"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "vte3-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.66.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pango-dev", "1.48.10-r0"], ["pkgconf", "1.8.0-r0"], ["vte3", "0.66.1-r0"]]

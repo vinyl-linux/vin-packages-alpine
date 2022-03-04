@@ -1,0 +1,20 @@
+checksume = "526c4eadc6d79b2ef6194a93b58c5fc75d09b7542ffa6c09a4412ba6b94e0656"
+licence = "custom"
+meta = false
+provides = "font-xfree86-type1"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

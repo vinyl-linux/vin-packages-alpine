@@ -1,0 +1,20 @@
+checksume = "3361fd497f4ccb89ae18eac6e40d974d2a6a42bc992e02c4de893ec4d12688b0"
+licence = "GPL-2.0-only WITH openssl-exception"
+meta = false
+provides = "ossec-hids-doc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.6.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["inotify-tools", "3.20.11.0-r0"], ["procps", "3.3.17-r0"]]

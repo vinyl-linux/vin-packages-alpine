@@ -1,0 +1,20 @@
+checksume = "7b265d521fb7073561d0e0622fec2ff4d11ec0408e45b49007e06e06d939bbf9"
+licence = "MPL2"
+meta = false
+provides = "kea-dhcp6"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kea-common", "2.0.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

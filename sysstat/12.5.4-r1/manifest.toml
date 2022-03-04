@@ -1,0 +1,20 @@
+checksume = "0c17c7ec2182d1a62eae08c0a84bad0a0a5cddb517ea153736d1c2314027ad06"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "sysstat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.5.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

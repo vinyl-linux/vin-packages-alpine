@@ -1,0 +1,20 @@
+checksume = "a08972a97888c727c08de4629d7f08cb6ff06ae2646af593174672c7c97124ec"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "inetutils-syslogd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

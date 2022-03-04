@@ -1,0 +1,20 @@
+checksume = "6fd773446d772be1250d2420c0a7a3bd0091d47a5a9a58481b552c8be151ae49"
+licence = "MIT"
+meta = false
+provides = "py3-django-djblets"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.31-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-django-pipeline", "1.7.0-r1"]]

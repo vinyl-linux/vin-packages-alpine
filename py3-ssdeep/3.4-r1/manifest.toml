@@ -1,0 +1,20 @@
+checksume = "9464eb4ae3a1a1ed82ae40441bef578318e455135b849cd6161c4a6f1d6cdb91"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "py3-ssdeep"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-cffi", "1.14.5-r2"], ["py3-six", "1.16.0-r0"], ["musl", "1.2.2-r7"], ["libfuzzy2", "2.14.1-r0"]]

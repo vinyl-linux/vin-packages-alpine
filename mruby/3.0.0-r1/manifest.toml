@@ -1,0 +1,20 @@
+checksume = "b9f1c0e91a486017ec8b9c3eea8994ecd7ab62c3736499201cbc06e2d4a6171e"
+licence = "MIT"
+meta = false
+provides = "mruby"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

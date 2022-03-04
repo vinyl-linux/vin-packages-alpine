@@ -1,0 +1,20 @@
+checksume = "157862b59a5fff046b1aa2a4be32552bc726fad1c6a62874fc7bf0bc7ebd5d38"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libvirt-static"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lvm2", "2.02.187-r2"]]

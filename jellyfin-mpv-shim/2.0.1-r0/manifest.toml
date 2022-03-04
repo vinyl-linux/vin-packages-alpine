@@ -1,0 +1,20 @@
+checksume = "2014c0fd61729566f48f1aa9ad503bcb113a0f50d4e7f7b5e87689c7d8fc0c95"
+licence = "MIT"
+meta = false
+provides = "jellyfin-mpv-shim"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mpv", "0.34.0-r1"], ["py3-jellyfin-apiclient-python", "1.7.2-r0"], ["py3-mpv", "0.5.2-r1"], ["py3-python-mpv-jsonipc", "1.1.13-r0"], ["py3-requests", "2.26.0-r1"], ["python3", "3.9.7-r4"]]

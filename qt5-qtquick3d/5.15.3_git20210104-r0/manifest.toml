@@ -1,0 +1,20 @@
+checksume = "4d5a669e780c82999b5438fd45390d47012eed03ace4d9a604aa9b101760c164"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt5-qtquick3d"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.3_git20210104-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["assimp", "5.0.1-r1"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

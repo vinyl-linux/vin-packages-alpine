@@ -1,0 +1,20 @@
+checksume = "f261695ffb2047ef5ad238f3db82bbd5746abe4d11f54a93070c5a11ce2de69e"
+licence = "ISC"
+meta = false
+provides = "signify"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "30-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"]]

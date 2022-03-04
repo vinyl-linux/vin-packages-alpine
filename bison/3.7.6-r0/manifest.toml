@@ -1,0 +1,20 @@
+checksume = "08276e70d57b62f2753ab9d4f599d0c0ece9c03e854619c2f382e10f1f8ac398"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "bison"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.7.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["m4", "1.4.18-r2"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "016fea2bebb1fa87fb0dd81b00d13ea883fc38f32c43b2537655e4ff80a0f689"
+licence = "BSD-3-Clause"
+meta = false
+provides = "user-managerd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libelogind", "246.10-r4"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libmce-qt", "1.4.2-r1"], ["sailfish-access-control", "0.0.5-r1"], ["libstdc++", "10.3.1"], ["libuser", "0.63-r0"]]

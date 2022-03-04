@@ -1,0 +1,20 @@
+checksume = "e35de004a0b12d91d5150d43b2de5af01f15c8475b111828181a8e7cf7cdaba9"
+licence = "LGPL-3.0-or-later AND BSD-3-Clause"
+meta = false
+provides = "py3-pyzmq"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "22.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libzmq", "4.3.4-r0"]]

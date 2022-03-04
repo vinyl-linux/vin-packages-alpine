@@ -1,0 +1,20 @@
+checksume = "d59a7aa0d52ecc63ff5682bbd6064009b2d25307deaa00cda9e0aec0b02c4e9a"
+licence = "MIT"
+meta = false
+provides = "stlink"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

@@ -1,0 +1,20 @@
+checksume = "b770c525db61e39993a7078c8909dfcca5fdc21d253ca02573859da7524a0508"
+licence = "MIT"
+meta = false
+provides = "ldap-passwd-webui-waitress"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ldap-passwd-webui", "2.1.0-r2"], ["py3-waitress", "1.4.4-r1"]]

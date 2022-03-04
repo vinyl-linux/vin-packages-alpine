@@ -1,0 +1,20 @@
+checksume = "e57d664e9a302be2a419ae101de40fdc1940f0a4b8234ce7de13170193238970"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "callaudiod"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["callaudiod-libs", "0.1.1-r1"], ["glib", "2.70.1-r0"], ["libpulse-mainloop-glib", "15.0-r2"], ["libpulse", "15.0-r2"]]

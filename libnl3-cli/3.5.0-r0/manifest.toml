@@ -1,0 +1,20 @@
+checksume = "b5c10432392490b6ee3aa1582fa3c3b4029f37112b8c25efd8d73b68834f6a9c"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libnl3-cli"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libnl3", "3.5.0-r0"]]

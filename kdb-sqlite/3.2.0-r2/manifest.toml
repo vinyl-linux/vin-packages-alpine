@@ -1,0 +1,20 @@
+checksume = "e578688f0cf79a9a881fba00ed0b0625d40d633ed34cc663071c2f2f13defd9d"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kdb-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kdb", "3.2.0-r2"], ["kcoreaddons", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["icu-libs", "69.1-r1"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"]]

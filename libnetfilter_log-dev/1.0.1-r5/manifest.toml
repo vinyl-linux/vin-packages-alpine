@@ -1,0 +1,20 @@
+checksume = "7ed20f833c90a7c69edda457d544b6e30be05936e1a29bcdfdb5361a58301cb0"
+licence = "GPL-2.0"
+meta = false
+provides = "libnetfilter_log-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.1-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["linux-headers", "5.10.41-r0"], ["libnetfilter_log", "1.0.1-r5"], ["libnfnetlink-dev", "1.0.1-r3"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "d81c44bb264396cda5fd6b556fbcfa1e26868e3b74c6550bf3cc89c7a42d7696"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-http-entity-parser"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.25-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-hash-multivalue", "0.16-r2"], ["perl-www-form-urlencoded", "0.26-r1"], ["perl-json-maybexs", "1.004003-r0"], ["perl-stream-buffered", "0.03-r2"], ["perl-http-multipartparser", "0.02-r1"]]

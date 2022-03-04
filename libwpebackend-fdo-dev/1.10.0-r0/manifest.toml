@@ -1,0 +1,20 @@
+checksume = "7cb2f2c5008fe7e6bc7ef345ce8403798ee72e3c5ed3ae833507588297e12387"
+licence = "BSD-2-Clause"
+meta = false
+provides = "libwpebackend-fdo-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libwpebackend-fdo", "1.10.0-r0"], ["pkgconf", "1.8.0-r0"]]

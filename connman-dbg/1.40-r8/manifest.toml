@@ -1,0 +1,20 @@
+checksume = "6e1b83b515dd9063b598b859a986c45b2ccf442e4dcefc887ce672b35614b94b"
+licence = "GPL-2.0-only"
+meta = false
+provides = "connman-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.40-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"]]

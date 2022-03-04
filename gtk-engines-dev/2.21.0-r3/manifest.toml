@@ -1,0 +1,20 @@
+checksume = "07722777474fe2e807c2067ebe26e958ee2c9bd0345f0b1c36b82c78c1f8e97b"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "gtk-engines-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.21.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gtk+2.0-dev", "2.24.33-r0"], ["pkgconf", "1.8.0-r0"]]

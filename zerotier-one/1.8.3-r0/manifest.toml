@@ -1,0 +1,20 @@
+checksume = "c1290c6c76e0a4228ab200908aa1caf887be20e76c403612c17fb06047eeab11"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "zerotier-one"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

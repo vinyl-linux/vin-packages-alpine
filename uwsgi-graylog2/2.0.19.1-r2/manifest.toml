@@ -1,0 +1,20 @@
+checksume = "9810a8056058c24b4945d7a1ac954e8505fdb85ad8a11382e5974d80a25d32b5"
+licence = "custom"
+meta = false
+provides = "uwsgi-graylog2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "3d96ce8cd968b2995c2193c19a688f2e3c81026619da82aecb960353cf9c7451"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "basu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

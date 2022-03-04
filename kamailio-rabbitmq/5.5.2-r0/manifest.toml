@@ -1,0 +1,20 @@
+checksume = "cf9c1217856768db19cb74204fc3c70204742e59d4e0c8851e6e4dd0a9dcd571"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kamailio-rabbitmq"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.5.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["rabbitmq-c", "0.11.0-r1"], ["libuuid", "2.37.4-r0"]]

@@ -1,0 +1,20 @@
+checksume = "22b57dd46a6b14fe3f73b45321438e47aaa594afa9911c8711bdceeb37cd39f9"
+licence = "Apache-2.0 AND MIT"
+meta = false
+provides = "rust"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rust-stdlib", "1.56.1-r0"], ["gcc", "10.3.1"], ["musl-dev", "1.2.2-r7"], ["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "605fa6676cf9b2a0bbb745270f40e8b146daf37374ecee9590ac5eb017f0f4b1"
+licence = "GPL-2.0-only"
+meta = false
+provides = "connman-nftables"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.40-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["glib", "2.70.1-r0"], ["libmnl", "1.0.4-r2"], ["libnftnl", "1.2.1-r0"]]

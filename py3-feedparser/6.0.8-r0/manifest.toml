@@ -1,0 +1,20 @@
+checksume = "f4a07f62fc584ee2b0169b9faf20e23a1c8f245702649ae43f0afcbc90bf480b"
+licence = "BSD-2-Clause"
+meta = false
+provides = "py3-feedparser"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.0.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-sgmllib3k", "1.0.0-r4"]]

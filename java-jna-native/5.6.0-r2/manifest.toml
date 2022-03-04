@@ -1,0 +1,20 @@
+checksume = "df3eca7ab663c0a0bdf3494580f9b2f75d395535829f8f4287a5f0c579657862"
+licence = "Apache-2.0 LGPL-2.1"
+meta = false
+provides = "java-jna-native"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.6.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk9-jre-headless", "9.0.4"], ["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"]]

@@ -1,0 +1,20 @@
+checksume = "f1c526315f5459b2df8997388a6a8612fe332678fbd1648070fe4a68bb629412"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnome-sound-recorder"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "40.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gjs", "1.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["gst-plugins-good", "1.18.5-r0"], ["libhandy1", "1.5.0-r0"]]

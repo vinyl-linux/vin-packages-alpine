@@ -1,0 +1,20 @@
+checksume = "f2b3d1a25830068b27e5688e3f744905e559138b9f0c415f5dd909e4f3bc76cd"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libcec-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.0.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["p8-platform", "2.1.0.1-r2"], ["libstdc++", "10.3.1"]]

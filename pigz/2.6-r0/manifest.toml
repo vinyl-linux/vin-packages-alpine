@@ -1,0 +1,20 @@
+checksume = "ce9926f18d8130085b26eb24acd685e2bf12f7b0c2da2d8a315a88973910f9cc"
+licence = "Zlib"
+meta = false
+provides = "pigz"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

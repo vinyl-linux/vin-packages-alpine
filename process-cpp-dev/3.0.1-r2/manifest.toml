@@ -1,0 +1,20 @@
+checksume = "0223d40fc688f9994d2e3d36683ad33543ad84821e7fd5906c771cebb75e8c36"
+licence = "LGPL-3.0-only"
+meta = false
+provides = "process-cpp-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["properties-cpp-dev", "0.0.2-r0"], ["pkgconf", "1.8.0-r0"], ["process-cpp", "3.0.1-r2"]]

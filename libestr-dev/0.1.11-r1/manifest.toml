@@ -1,0 +1,20 @@
+checksume = "aebc5e9f688daf1d87e9b6c869c082bc8330754ba2b6dcce0f3010ff38929960"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libestr-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.1.11-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libestr", "0.1.11-r1"], ["pkgconf", "1.8.0-r0"]]

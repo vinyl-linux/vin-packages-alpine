@@ -1,0 +1,20 @@
+checksume = "7fe0deb9d607f953d8dbf346f1717a4c65f4f20e8fa29a3b20de52eee05305d8"
+licence = "MIT"
+meta = false
+provides = "xinput"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxi", "1.8-r0"], ["libxinerama", "1.1.4-r1"], ["libxrandr", "1.5.2-r1"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "16b04844ffcc537b714b8b016bebb84853058e99f27d690315e8d473aaa8f988"
+licence = "AGPL-3.0-only"
+meta = false
+provides = "nextcloud-firstrunwizard"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nextcloud", "22.2.5-r0"]]

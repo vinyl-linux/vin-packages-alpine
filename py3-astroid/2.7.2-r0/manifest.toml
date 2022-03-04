@@ -1,0 +1,20 @@
+checksume = "2b74fa342b32fe826df745b4eedd23e0283777f8deb4cec78fdf21b9ea2c5658"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "py3-astroid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.7.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-lazy-object-proxy", "1.6.0-r1"], ["py3-typed-ast", "1.4.3-r0"], ["py3-wrapt", "1.12.1-r1"]]

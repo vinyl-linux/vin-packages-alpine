@@ -1,0 +1,20 @@
+checksume = "920dd7f15dc6e3204bde80699f5504b031ad558063e9b53481bc9c7217ed716f"
+licence = "custom"
+meta = false
+provides = "libxcvt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxcvt", "0.1.1-r2"], ["pkgconf", "1.8.0-r0"]]

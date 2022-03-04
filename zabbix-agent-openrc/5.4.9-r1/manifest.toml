@@ -1,0 +1,20 @@
+checksume = "b470847c61dd1ccd537d57e479759b319dc18883f64d7f68e2107228e0ffdbfe"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "zabbix-agent-openrc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.4.9-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openrc", "0.44.7-r3"]]

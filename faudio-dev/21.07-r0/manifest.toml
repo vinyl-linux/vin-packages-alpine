@@ -1,0 +1,20 @@
+checksume = "2be947a045d302c7321050b9074e41523271bbd0d9d056dd36051a2f9d10d15e"
+licence = "Zlib"
+meta = false
+provides = "faudio-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.07-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["faudio", "21.07-r0"], ["pkgconf", "1.8.0-r0"]]

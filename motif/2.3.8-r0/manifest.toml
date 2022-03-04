@@ -1,0 +1,20 @@
+checksume = "806649043bb27479100874fb991a9f3980889b90f867852006b5a473f93120d6"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "motif"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["libxft", "2.3.4-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"]]

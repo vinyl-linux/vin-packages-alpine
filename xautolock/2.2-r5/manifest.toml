@@ -1,0 +1,20 @@
+checksume = "62af69f9d6b289d657e790df9550f0bc73ddcb1568a1777c72a4a449b01fbbce"
+licence = "GPL-2.0"
+meta = false
+provides = "xautolock"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxscrnsaver", "1.2.3-r0"], ["musl", "1.2.2-r7"]]

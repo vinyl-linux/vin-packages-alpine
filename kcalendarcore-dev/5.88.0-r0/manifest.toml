@@ -1,0 +1,20 @@
+checksume = "d607613e9c93ead21939003c79e1082af9166c30a3172836f9eef5c0399978ad"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kcalendarcore-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["libical-dev", "3.0.11-r2"], ["kcalendarcore", "5.88.0-r0"], ["pkgconf", "1.8.0-r0"]]

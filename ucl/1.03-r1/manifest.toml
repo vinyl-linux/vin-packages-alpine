@@ -1,0 +1,20 @@
+checksume = "5f874196eda390934a460dc34c0fe531b7206c91f6714c38688c9b388e05b99c"
+licence = "GPL-2.0"
+meta = false
+provides = "ucl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.03-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "64d05ea738bb3dda08b0b9ab442336740406389c6cfbd5d7fb441e921211f84c"
+licence = "BSD-2-Clause-NetBSD"
+meta = false
+provides = "openjpeg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.4.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

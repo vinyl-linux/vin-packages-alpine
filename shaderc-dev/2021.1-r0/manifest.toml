@@ -1,0 +1,20 @@
+checksume = "8a1b8776d2c1c7c4ec84267edb42b104f4a0d8ae4622aab7f28b675251a3c23a"
+licence = "Apache-2.0"
+meta = false
+provides = "shaderc-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2021.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["shaderc", "2021.1-r0"]]

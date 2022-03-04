@@ -1,0 +1,20 @@
+checksume = "16cac96f6a19e473267b611185d5f01c5a1d15fc8c5ef4b00d48b6e0156de5be"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+meta = false
+provides = "libquadmath"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.3.1_git20211027-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

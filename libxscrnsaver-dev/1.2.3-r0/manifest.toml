@@ -1,0 +1,20 @@
+checksume = "773deee467c0fa3e02862893c9259c14300fb30d592748ff7acbf2bb845779ae"
+licence = "MIT"
+meta = false
+provides = "libxscrnsaver-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxscrnsaver", "1.2.3-r0"], ["xorgproto", "2021.5-r0"], ["libx11-dev", "1.7.2-r0"], ["libxext-dev", "1.3.4-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "9632548daf101fef4ef6e2fffa1ea3d52e1b29748b0c9e61d9e4404ce4108573"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-io-tty"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.16-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

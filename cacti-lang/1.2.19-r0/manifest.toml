@@ -1,0 +1,20 @@
+checksume = "0fba644c921e60b05f5743b1a6b35fe94fc67c28e078a7f7e0a6601673316218"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "cacti-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.19-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["perl", "5.34.0-r1"], ["coreutils", "9.0-r2"], ["net-snmp-tools", "5.9.1-r5"], ["rrdtool", "1.7.2-r5"], ["ttf-dejavu", "2.37-r1"]]

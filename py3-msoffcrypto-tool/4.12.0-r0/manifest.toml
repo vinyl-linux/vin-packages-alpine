@@ -1,0 +1,20 @@
+checksume = "57080feff699f6041c3b08eef656516490436e25d4d8ca0c79b97190343e76f2"
+licence = "MIT"
+meta = false
+provides = "py3-msoffcrypto-tool"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.12.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-cryptography", "3.3.2-r3"], ["py3-olefile", "0.46-r5"]]

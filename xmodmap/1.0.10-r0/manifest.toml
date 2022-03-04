@@ -1,0 +1,20 @@
+checksume = "0c6a23fbcf18f1005fc455b89a81be70733e110e3685bb0faf236350fcb77d99"
+licence = "MIT"
+meta = false
+provides = "xmodmap"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.10-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

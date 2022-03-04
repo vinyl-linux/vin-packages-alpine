@@ -1,0 +1,20 @@
+checksume = "a6a48abff59a125d0e951c660dcd7a8ae5996fbd093afa4dfcba44352b2c6171"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-openssl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.10.1-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["openssl", "1.1.1l-r8"]]

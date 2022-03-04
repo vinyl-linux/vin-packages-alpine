@@ -1,0 +1,20 @@
+checksume = "37c90f21e72dd4f678255973bb6a76e9a2ab94b6ea7f9faf9528ca9827c4a3d2"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libappindicator"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.10.1_p20200706-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libdbusmenu-glib", "16.04.0-r3"], ["libdbusmenu-gtk3", "16.04.0-r3"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"]]

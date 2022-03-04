@@ -1,0 +1,20 @@
+checksume = "194eca8a699e5bc02ec3a4219f65bebd9e85c640d7fafa04ace2563623eb96fe"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "fann-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fann-double", "2.2.0-r1"], ["fann-fixed", "2.2.0-r1"], ["fann-float", "2.2.0-r1"], ["fann", "2.2.0-r1"], ["pkgconf", "1.8.0-r0"]]

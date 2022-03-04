@@ -1,0 +1,20 @@
+checksume = "da7918ea9479503c255006d35cd63f92221364768e60fd344608382d9f4f542b"
+licence = "custom"
+meta = false
+provides = "uwsgi-geoip"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["geoip", "1.6.12-r2"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "9b0697e298f9ad49c14c6c406538a6600184ae04ea232d56f3823bfc3482cdcc"
+licence = "MIT"
+meta = false
+provides = "lua5.3-lzmq"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.4.4-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"], ["libzmq", "4.3.4-r0"]]

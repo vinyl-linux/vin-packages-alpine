@@ -1,0 +1,20 @@
+checksume = "3c0973e7d5b81b7f788f089ceb92bd82db3e52171605ead8ab43268cda2b29a1"
+licence = "GPL-2.0"
+meta = false
+provides = "sysbench"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.20-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

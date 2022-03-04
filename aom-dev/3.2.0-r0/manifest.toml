@@ -1,0 +1,20 @@
+checksume = "78b54669fa8e42dc9308966ddcd65bad3deb9f9a47b082d46351a753abeb3486"
+licence = "custom"
+meta = false
+provides = "aom-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["aom-libs", "3.2.0-r0"], ["pkgconf", "1.8.0-r0"]]

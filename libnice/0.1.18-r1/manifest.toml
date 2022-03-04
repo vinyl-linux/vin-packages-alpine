@@ -1,0 +1,20 @@
+checksume = "a0bec4ed19fac1a2a78249f93c2dda2e2d8cf11437d4d9c20160ca5332ebb700"
+licence = "LGPL-2.1-or-later AND MPL-1.1"
+meta = false
+provides = "libnice"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.18-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gnutls", "3.7.1-r0"]]

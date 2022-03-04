@@ -1,0 +1,20 @@
+checksume = "8fbe6d56053ffc89c8273182a15c5ef367f8aff26b5445070274c854aa9b21ba"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+meta = false
+provides = "php7-odbc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["unixodbc", "2.3.9-r1"]]

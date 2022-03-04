@@ -1,0 +1,20 @@
+checksume = "4015a71ba8382b2bbe0d41d9947790c1f80dd181b37f1734e7e1e63e83ce72fa"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-template-toolkit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.009-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-appconfig", "1.71-r4"], ["musl", "1.2.2-r7"]]

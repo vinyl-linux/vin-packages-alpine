@@ -1,0 +1,20 @@
+checksume = "830c0a0e2fe725352efc4598bd7d2e83ccac0ac4250829f41ec90545ac2a4bd9"
+licence = "EPL-1.0"
+meta = false
+provides = "mosquitto-libs++"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.14-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mosquitto-libs", "2.0.14-r0"], ["libstdc++", "10.3.1"]]

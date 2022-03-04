@@ -1,0 +1,20 @@
+checksume = "0d7abc58dbca75d6dea1d252f3d27820d144f0962522ecc26d65cfd9d507461a"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+meta = false
+provides = "kactivities-stats"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kactivities-libs", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

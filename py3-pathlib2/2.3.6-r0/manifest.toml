@@ -1,0 +1,20 @@
+checksume = "54267399501c0fa5f8d6baee299256fe31b71fe4f7339e5dee9d5e0108a70569"
+licence = "MIT"
+meta = false
+provides = "py3-pathlib2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-six", "1.16.0-r0"]]

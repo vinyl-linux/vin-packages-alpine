@@ -1,0 +1,20 @@
+checksume = "f93df9afa97d5b6faf9e0adf781155e6ce02fc68bdd1900995375ad153712469"
+licence = "GPL-2.0-only"
+meta = false
+provides = "librem-ec"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["akms", "0.2.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "010a3800371459fa10857bdac825ca3295d50c5dc555c2570754d8a1993aef02"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libedit-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "20210910.3.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ncurses-dev", "6.3"], ["libedit", "20210910.3.1-r0"], ["pkgconf", "1.8.0-r0"]]

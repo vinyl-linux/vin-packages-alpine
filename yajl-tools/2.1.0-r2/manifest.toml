@@ -1,0 +1,20 @@
+checksume = "d6592c990025d581613a785738f8ec7bb893ee6637005365ee44b029326cf7f2"
+licence = "MIT"
+meta = false
+provides = "yajl-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "3b9c82420c344cd8e8e2ce341f0d7425151e858c8a500f9ad8d87dd323975c2a"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+meta = false
+provides = "sane-backend-dc240"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"]]

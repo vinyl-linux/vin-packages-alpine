@@ -1,0 +1,20 @@
+checksume = "73e8e18399f3a363b3da1d4706e172ecae105deba3a4aa05fb7b1d5db5f5ede5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "mutter-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xkeyboard-config", "2.34-r0"], ["zenity", "3.32.0-r0"], ["gsettings-desktop-schemas", "41.0-r0"], ["xwayland", "21.1.2-r1"]]

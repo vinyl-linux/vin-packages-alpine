@@ -1,0 +1,20 @@
+checksume = "abef4975e0e6499fb6b52cd39db3272c0d710d29720a00a642155db499a6c0d3"
+licence = "BSD-3-Clause"
+meta = false
+provides = "miniupnpc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

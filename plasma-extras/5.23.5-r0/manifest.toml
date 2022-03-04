@@ -1,0 +1,20 @@
+checksume = "feaf8f087e34a2a987b4ef97b2104b7f1f68eb241c8abda31592253c32bb1e92"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "plasma-extras"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["breeze-grub", "5.23.5-r0"], ["breeze-plymouth", "5.23.5-r0"], ["oxygen", "5.23.5-r0"], ["plasma-sdk", "5.23.5-r0"], ["plasma-thunderbolt", "5.23.5-r0"], ["plymouth-kcm", "5.23.5-r0"]]

@@ -1,0 +1,20 @@
+checksume = "725f3c0db4e540929d5bd9f7863767ca019e843fa0b98846d8610a4772229623"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "x264-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20210613-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

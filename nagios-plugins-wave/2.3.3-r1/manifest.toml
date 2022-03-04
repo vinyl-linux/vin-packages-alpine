@@ -1,0 +1,20 @@
+checksume = "34e8b5b8acc061cdadf1590122d368e899e5a95305d7eb7c5d51162f2581d0ee"
+licence = "GPL-3.0-only"
+meta = false
+provides = "nagios-plugins-wave"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nagios-plugins", "2.3.3-r1"], ["perl", "5.34.0-r1"]]

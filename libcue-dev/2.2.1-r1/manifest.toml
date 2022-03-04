@@ -1,0 +1,20 @@
+checksume = "dcda1750ad6de7e1101bacb048541859c6b6f3b1329bfca963d64e11e13119d6"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libcue-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libcue", "2.2.1-r1"], ["pkgconf", "1.8.0-r0"]]

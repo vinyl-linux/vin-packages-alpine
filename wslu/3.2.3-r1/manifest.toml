@@ -1,0 +1,20 @@
+checksume = "733c742906b00f3dc8782a1c4519fd49ea3063b15cc9e6da227ec78b31f599c2"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "wslu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bc", "1.07.1-r1"], ["bash-completion", "2.11-r4"], ["grep", "3.7-r0"], ["busybox", "1.34.1-r4"]]

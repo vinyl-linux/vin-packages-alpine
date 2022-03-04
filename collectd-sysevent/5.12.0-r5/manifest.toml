@@ -1,0 +1,20 @@
+checksume = "cb14537d200c07df26a4dd2f56e01697810922a46eae60de397b611dc9140d6c"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-sysevent"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["yajl", "2.1.0-r2"]]

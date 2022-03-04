@@ -1,0 +1,20 @@
+checksume = "d7505d7385fbaec9a893e05b29ec61403cac993aa2c9dd32d7c5f3023f2f109b"
+licence = "BSD-2-Clause"
+meta = false
+provides = "aconf-mod-strongswan"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.8.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["aconf", "0.8.1-r1"], ["strongswan", "5.9.1-r3"]]

@@ -1,0 +1,20 @@
+checksume = "761c7eb62d158e16a8464df141234ee414b00e84e8856bf7a6c6c93c02f37a35"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND GFDL-1.2-only"
+meta = false
+provides = "kdevelop-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.6.2-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kdevelop", "5.6.2-r3"]]

@@ -1,0 +1,20 @@
+checksume = "e35f7f89de20345b5aabf009466f52e7cd5061b4b337064482f2c4160703b7b6"
+licence = "Apache-2.0"
+meta = false
+provides = "runc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libseccomp", "2.5.2-r0"]]

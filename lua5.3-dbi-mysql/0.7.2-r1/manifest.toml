@@ -1,0 +1,20 @@
+checksume = "d0642ea4f40df0e0b228830e4a586bd2da172cce927d3b722c9a1c556029b122"
+licence = "MIT"
+meta = false
+provides = "lua5.3-dbi-mysql"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.7.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]

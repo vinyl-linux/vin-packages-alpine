@@ -1,0 +1,20 @@
+checksume = "e207ec31d610263e0f33a1476d11b10afadc9546004272d597ee7d7298bf9c35"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "freeradius-python3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.25-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["freeradius", "3.0.25-r1"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]

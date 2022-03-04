@@ -1,0 +1,20 @@
+checksume = "10c195ace1d15c0f05bfabfa9c1316f57e9c7e48875afb8a7b15b28d801e27cb"
+licence = "GPL-2.0-only"
+meta = false
+provides = "mtd-utils-ubi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.3-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["lzo", "2.10-r2"], ["libuuid", "2.37.4-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "869c966cae421d88f6692555688e1ec24a728395d205fb6c04eff9ecd9a110f9"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+meta = false
+provides = "sane-backend-coolscan"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"], ["libxml2", "2.9.12-r2"]]

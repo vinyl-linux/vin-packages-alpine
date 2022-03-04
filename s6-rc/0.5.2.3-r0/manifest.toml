@@ -1,0 +1,20 @@
+checksume = "c9ae6bcf10f6497184ee4198b2798ce5df6c73f63dc7935b6256e0a37ac75dbf"
+licence = "ISC"
+meta = false
+provides = "s6-rc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.5.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["execline", "2.8.1.0-r0"], ["s6", "2.11.0.0-r0"], ["skalibs", "2.11.0.0-r0"]]

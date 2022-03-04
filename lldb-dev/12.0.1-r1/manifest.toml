@@ -1,0 +1,20 @@
+checksume = "6866161fee037b420f3dde49c4368891fac4ef11ad3c1bfa875e7f92410b0d23"
+licence = "Apache-2.0"
+meta = false
+provides = "lldb-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lldb", "12.0.1-r1"]]

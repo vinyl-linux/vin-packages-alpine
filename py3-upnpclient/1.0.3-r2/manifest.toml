@@ -1,0 +1,20 @@
+checksume = "1fcf047efd77f0c5cf11aa8ead32656b3c634d058df409a67cbd58f6c0b11772"
+licence = "MIT"
+meta = false
+provides = "py3-upnpclient"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-dateutil", "2.8.2-r0"], ["py3-ifaddr", "0.1.7-r1"], ["py3-lxml", "4.6.5-r0"], ["py3-requests", "2.26.0-r1"], ["py3-six", "1.16.0-r0"], ["python3", "3.9.7-r4"]]

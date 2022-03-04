@@ -1,0 +1,20 @@
+checksume = "08e6316024e04ae062efa2a34b05cc28fb8640546cea7677aaa5f275ee9f5aa3"
+licence = "BSD-2-Clause"
+meta = false
+provides = "sxhkd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["xcb-util-keysyms", "0.4.0-r1"], ["libxcb", "1.14-r2"]]

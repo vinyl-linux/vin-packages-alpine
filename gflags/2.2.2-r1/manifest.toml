@@ -1,0 +1,20 @@
+checksume = "3e8a8126888f1fa2fbe62971a403ce3dc5a391aa2bf5270d3f75f64933424a54"
+licence = "BSD-3-Clause"
+meta = false
+provides = "gflags"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

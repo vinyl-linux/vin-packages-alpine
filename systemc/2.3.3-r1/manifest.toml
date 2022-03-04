@@ -1,0 +1,20 @@
+checksume = "d1cf61caaeb08b43dbe7acebda7161cd8b2187e96002c378e47f51d039982d0d"
+licence = "Apache-2.0"
+meta = false
+provides = "systemc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

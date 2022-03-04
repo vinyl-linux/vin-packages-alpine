@@ -1,0 +1,20 @@
+checksume = "70d3d94039e580f7411aa9a9e1df709c46f2bd7203d79694edc244cdb437017b"
+licence = "custom"
+meta = false
+provides = "python2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.7.18-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["expat", "2.4.6-r0"], ["libffi", "3.4.2-r1"], ["gdbm", "1.22-r0"], ["ncurses-libs", "6.3"], ["readline", "8.1.1-r0"], ["sqlite-libs", "3.36.0-r0"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

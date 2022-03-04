@@ -1,0 +1,20 @@
+checksume = "4ecd971b94e423d9f4173c7ba33b8bfe44c4b4ccb33ea35334293e7048619731"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-saml2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-cryptography", "3.3.2-r3"], ["py3-defusedxml", "0.7.1-r1"], ["py3-openssl", "21.0.0-r0"], ["py3-dateutil", "2.8.2-r0"], ["py3-tz", "2021.1-r1"], ["py3-requests", "2.26.0-r1"], ["py3-six", "1.16.0-r0"], ["xmlsec", "1.2.33-r0"]]

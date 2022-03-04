@@ -1,0 +1,20 @@
+checksume = "f4f2cbe675d1f6aaadcff62529f82d5129467c816ec271f680d463c6e5e71f9f"
+licence = "BSL-1.0"
+meta = false
+provides = "libfixposix"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

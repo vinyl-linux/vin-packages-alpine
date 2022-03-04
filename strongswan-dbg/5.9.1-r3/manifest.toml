@@ -1,0 +1,20 @@
+checksume = "5d789b13103427417f40e454a829db09f2631b33055d34872f4629eaec96f644"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+meta = false
+provides = "strongswan-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.9.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iproute2", "5.15.0-r0"]]

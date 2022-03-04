@@ -1,0 +1,20 @@
+checksume = "a4478345082c362db5a9c2ecfce3102291d3fc437d190d71bb390d35b13a60d1"
+licence = "ISC"
+meta = false
+provides = "opensmtpd-table-redis"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.7.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["hiredis", "1.0.2-r0"]]

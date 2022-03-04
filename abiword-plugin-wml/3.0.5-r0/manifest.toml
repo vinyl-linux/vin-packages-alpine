@@ -1,0 +1,20 @@
+checksume = "5712bc21fc5894e90ae3deb73ee4737e874d1bfc9f0b2249607d470008f16c9a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "abiword-plugin-wml"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["abiword", "3.0.5-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libgsf", "1.14.47-r0"], ["libstdc++", "10.3.1"]]

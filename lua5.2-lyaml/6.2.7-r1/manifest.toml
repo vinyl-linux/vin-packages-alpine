@@ -1,0 +1,20 @@
+checksume = "52f890b2e075bc41100330ce87bd071659ee556f8e6d207c34e695f3e187b010"
+licence = "MIT"
+meta = false
+provides = "lua5.2-lyaml"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "6.2.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"], ["lua-stdlib-normalize", "2.0.3-r1"], ["musl", "1.2.2-r7"], ["yaml", "0.2.5-r0"]]

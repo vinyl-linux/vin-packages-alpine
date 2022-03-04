@@ -1,0 +1,20 @@
+checksume = "673765d3c7654a68edd3b6e5a8722b4681eee605cbfae4b1fed52150b4f6ebda"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "git-gitk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.34.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["tcl", "8.6.11-r0"], ["tk", "8.6.11-r0"]]

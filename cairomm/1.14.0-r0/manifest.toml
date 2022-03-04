@@ -1,0 +1,20 @@
+checksume = "3cded16448d4edd95c83f4ef4e7b803e2566e01e82458795a44c7b71c29db539"
+licence = "LGPL-2.0-or-later AND MPL-1.1"
+meta = false
+provides = "cairomm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.14.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["libgcc", "10.3.1"], ["libsigc++", "2.10.6-r0"], ["libstdc++", "10.3.1"]]

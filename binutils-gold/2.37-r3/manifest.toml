@@ -1,0 +1,20 @@
+checksume = "8265ff23061014171112e3c10559d55e88d2e1c284df70434e0f3495ada4e505"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+meta = false
+provides = "binutils-gold"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.37-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

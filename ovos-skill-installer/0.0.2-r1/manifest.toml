@@ -1,0 +1,20 @@
+checksume = "24188868e9143d4b2ff247fdfccdf455c9d6129e9c9029c544cf9bb1f2af1cf7"
+licence = "MIT"
+meta = false
+provides = "ovos-skill-installer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"]]

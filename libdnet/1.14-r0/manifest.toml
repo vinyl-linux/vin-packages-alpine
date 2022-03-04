@@ -1,0 +1,20 @@
+checksume = "422c48d41af1adb8e6ddbb200ecda3d098237d87fd720fe9512747b1fc161a1b"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libdnet"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.14-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

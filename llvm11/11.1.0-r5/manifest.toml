@@ -1,0 +1,20 @@
+checksume = "b278c8e141952455ef0e78d3920b11556eb6e84ddaa34621e07c1d26e4f93e6a"
+licence = "Apache-2.0"
+meta = false
+provides = "llvm11"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "11.1.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["llvm11-libs", "11.1.0-r5"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

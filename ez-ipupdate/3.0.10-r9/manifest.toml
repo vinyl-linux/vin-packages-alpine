@@ -1,0 +1,20 @@
+checksume = "9f0532076899e44e4f4f1736233c8733d4b00470575f1443f3a9cb4a6f692bb3"
+licence = "GPL"
+meta = false
+provides = "ez-ipupdate"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.10-r9"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

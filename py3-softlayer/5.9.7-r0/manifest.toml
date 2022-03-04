@@ -1,0 +1,20 @@
+checksume = "2159ae3dc1b0119a74fe2d7245353203a4848c52a844013ae3d4465a20313044"
+licence = "MIT"
+meta = false
+provides = "py3-softlayer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.9.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-click", "8.0.1-r0"], ["py3-prompt_toolkit", "3.0.18-r1"], ["py3-ptable", "0.9.3-r1"], ["py3-pygments", "2.10.0-r0"], ["py3-requests", "2.26.0-r1"], ["py3-urllib3", "1.26.7-r0"]]

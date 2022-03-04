@@ -1,0 +1,20 @@
+checksume = "c7ef9880df7f9030748b648e86b794d2729ad11127a7fb4433d658b92944a4b1"
+licence = "BSD-2-Clause"
+meta = false
+provides = "nginx-mod-http-js"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.20.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

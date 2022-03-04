@@ -1,0 +1,20 @@
+checksume = "5256156734f4048f6387138287d858f5ba9834c8896f44bfbc3ab923ecbda8f4"
+licence = "BSD-3-Clause"
+meta = false
+provides = "netcdf-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.8.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["hdf5", "1.12.1-r1"], ["netcdf", "4.8.1-r2"]]

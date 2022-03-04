@@ -1,0 +1,20 @@
+checksume = "fbfd97e2b646c2892c0beca0abe88c52b8134c47daeb673c9ba58c3a1139d1ad"
+licence = "MIT"
+meta = false
+provides = "php7-pecl-vips"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["vips", "8.12.1-r0"]]

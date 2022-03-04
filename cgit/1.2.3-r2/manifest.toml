@@ -1,0 +1,20 @@
+checksume = "4bb8e29d65eb1abcba0a74e03648d627d6b08f7c1db1a140d0f8552295d0f2ef"
+licence = "GPL-2.0-only"
+meta = false
+provides = "cgit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.3-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["lua5.3-libs", "5.3.6-r1"], ["zlib", "1.2.11-r3"]]

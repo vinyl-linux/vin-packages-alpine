@@ -1,0 +1,20 @@
+checksume = "cc95c34b22eab75463d60cda954bf12552443ead15ea80117b5ddc113781111b"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "gtksourceview2-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.10.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gtk+2.0-dev", "2.24.33-r0"], ["libxml2-dev", "2.9.12-r2"], ["gtksourceview2", "2.10.5-r1"], ["pkgconf", "1.8.0-r0"]]

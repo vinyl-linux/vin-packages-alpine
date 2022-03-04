@@ -1,0 +1,20 @@
+checksume = "2da6c97929976f501bd32119c9edd0c44e311f4a18b5745c5590417324dc5c87"
+licence = "Vim"
+meta = false
+provides = "vimdiff"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.2.4173-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["diffutils", "3.8-r0"], ["gvim", "8.2.4173-r0"]]

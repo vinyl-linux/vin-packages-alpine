@@ -1,0 +1,20 @@
+checksume = "e47494149f6ea4c8ff66860991c1ecb561046fdca11fe75443652cb15f3b3821"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "blueman"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bluez", "5.63-r0"], ["dbus", "1.12.20-r4"], ["libappindicator", "12.10.1"], ["gtk+3.0", "3.24.30-r0"], ["python3", "3.9.7-r4"], ["py3-cairo", "1.20.1-r0"], ["py3-gobject3", "3.42.0-r1"], ["bluez-libs", "5.63-r0"], ["musl", "1.2.2-r7"]]

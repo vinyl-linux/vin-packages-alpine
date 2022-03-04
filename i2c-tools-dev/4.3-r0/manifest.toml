@@ -1,0 +1,20 @@
+checksume = "47511dc3a7ddf97c59277fb9c0bcf16b9ba23d937cad7dcdf8bfd2b0b700f6d8"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "i2c-tools-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["i2c-tools", "4.3-r0"]]

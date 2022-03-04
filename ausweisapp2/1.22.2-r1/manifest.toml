@@ -1,0 +1,20 @@
+checksume = "88583e0498fbc063ccdd222081463d35fdb783401cac48dcb816bf891f9155cb"
+licence = "EUPL-1.2"
+meta = false
+provides = "ausweisapp2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.22.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pcsc-lite", "1.9.4-r0"], ["pcsc-cyberjack", "3.99.5"], ["ccid", "1.4.36-r0"], ["acsccid", "1.1.8-r1"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtsvg", "5.15.3"], ["qt5-qtwebsockets", "5.15.3"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["http-parser", "2.9.4-r0"], ["pcsc-lite-libs", "1.9.4-r0"], ["libstdc++", "10.3.1"], ["eudev-libs", "3.2.11"]]

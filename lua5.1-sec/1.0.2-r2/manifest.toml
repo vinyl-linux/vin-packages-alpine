@@ -1,0 +1,20 @@
+checksume = "e4623c1b6a4abe7768bd499069b4492835d1cceb4ac83673f65eb1c8898b9e51"
+licence = "MIT"
+meta = false
+provides = "lua5.1-sec"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1-socket", "3.0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

@@ -1,0 +1,20 @@
+checksume = "ce0b4d1f007cfc1437df2a507aa948d4e2d06daa615139169c06caed683a8319"
+licence = "MIT"
+meta = false
+provides = "ncdu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.16-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3"]]

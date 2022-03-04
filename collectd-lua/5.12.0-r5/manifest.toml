@@ -1,0 +1,20 @@
+checksume = "841289ef9db3824f413eefbd4fd8e5851a2ac15c4171bd95fd21731b71519764"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-lua"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"]]

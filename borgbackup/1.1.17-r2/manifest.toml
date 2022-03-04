@@ -1,0 +1,20 @@
+checksume = "441b9300389183994d2dc8b102c25818aa7a4ca7723abdaa26a367676baeaebc"
+licence = "BSD-3-Clause"
+meta = false
+provides = "borgbackup"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.17-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-packaging", "20.9-r1"], ["py3-pyzmq", "22.3.0-r0"], ["libacl", "2.2.53-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["lz4-libs", "1.9.3-r1"], ["zstd-libs", "1.5.0-r0"]]

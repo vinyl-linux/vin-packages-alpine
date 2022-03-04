@@ -1,0 +1,20 @@
+checksume = "465ca67fb017917d886a0457f43b40712c9e5391aaec98b7a0221292a925db91"
+licence = "Apache-2.0"
+meta = false
+provides = "mbedtls"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.16.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

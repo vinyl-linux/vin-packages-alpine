@@ -1,0 +1,20 @@
+checksume = "76a2581bfac76b9ca4d9b206c7726c54baa0bad89920a24bbb7fd05de90313dc"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-ping"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["liboping", "1.10.0-r0"]]

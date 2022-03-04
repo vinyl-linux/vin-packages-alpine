@@ -1,0 +1,20 @@
+checksume = "8a6ac0222c22d789790c662a3b042daffb9c3dbc8f62e4c333b6104281d9170b"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "zeromq-gsl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.1.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["pcre", "8.45-r1"]]

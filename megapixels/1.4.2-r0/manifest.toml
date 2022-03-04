@@ -1,0 +1,20 @@
+checksume = "662c2f25623d2b4ba3143653b345be727c8ae6b97080faf28aed543cc9d9b515"
+licence = "GPL-3.0-only"
+meta = false
+provides = "megapixels"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libraw-tools", "0.20.2-r0"], ["imagemagick", "7.1.0.16-r0"], ["exiftool", "12.30-r0"], ["musl", "1.2.2-r7"], ["libepoxy", "1.5.9-r0"], ["glib", "2.70.1-r0"], ["gtk4.0", "4.4.1-r0"], ["tiff", "4.3.0-r0"], ["libzbar", "0.23.90-r1"]]

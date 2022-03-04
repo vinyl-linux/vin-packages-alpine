@@ -1,0 +1,20 @@
+checksume = "dd7a574e496fe28ce633dd76b5412198ae2578460cdf35ca3e4f353e5252ba91"
+licence = "PSF"
+meta = false
+provides = "py3-cx_freeze"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.8.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

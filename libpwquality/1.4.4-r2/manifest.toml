@@ -1,0 +1,20 @@
+checksume = "f4b27795d4a115dcd8f2daafa69cc15b9c87a004d31c4314f5efc0fdd6ad9da4"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libpwquality"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.4-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cracklib-words", "2.9.7-r4"], ["musl", "1.2.2-r7"], ["cracklib", "2.9.7-r4"], ["libintl", "0.21-r0"], ["linux-pam", "1.5.2-r0"]]

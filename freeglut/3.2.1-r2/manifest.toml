@@ -1,0 +1,20 @@
+checksume = "2c1b04c864f67a6377459bc1a0ef6ccb0c97bd304924d9127c54c01ddfb232ff"
+licence = "MIT"
+meta = false
+provides = "freeglut"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-gl", "21.2.6-r0"], ["libx11", "1.7.2-r0"], ["libxi", "1.8-r0"], ["libxxf86vm", "1.1.4-r2"], ["musl", "1.2.2-r7"]]

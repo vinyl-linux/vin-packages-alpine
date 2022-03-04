@@ -1,0 +1,20 @@
+checksume = "2e4e5536429991db02baac8659cf84625b5ac65da75504d0df730af6a013ef2f"
+licence = "MIT"
+meta = false
+provides = "php7-brotli"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-common", "7.4.28-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"]]

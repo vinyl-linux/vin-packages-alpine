@@ -1,0 +1,20 @@
+checksume = "b4fbfb8417d766f5eb6bfc6b64ddc985bdf652fc8a16f74923f723b1018a1277"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-ntlm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.09-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-digest-hmac", "1.04-r1"]]

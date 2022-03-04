@@ -1,0 +1,20 @@
+checksume = "a60a61203f7012a06ebb0e7fb6bf935e357c6ec8bdb021cf63143856e1ad773c"
+licence = "MIT"
+meta = false
+provides = "webhook"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.8.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "ee2fb4d4c5d80d066b4df8d972c26248b286d1b1a2751dbf80bcb52b72e16f15"
+licence = "MIT"
+meta = false
+provides = "sxmo-xdm-config"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sxmo-utils", "1.6.1-r0"], ["svkbd", "0.4-r0"], ["xdm", "1.1.12-r5"], ["busybox", "1.34.1-r4"]]

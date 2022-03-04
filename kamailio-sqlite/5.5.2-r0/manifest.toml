@@ -1,0 +1,20 @@
+checksume = "afa494cba229c54e7c10b8cd5a0dbbc22475374d922fa2d1a98ec3f32cca76ea"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kamailio-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.5.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kamailio", "5.5.2-r0"], ["kamailio-db", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

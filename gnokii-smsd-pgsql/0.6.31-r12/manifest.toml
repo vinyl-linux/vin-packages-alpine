@@ -1,0 +1,20 @@
+checksume = "5bb58ae05370ff6b4e61fee336b91c0d4a39a6158d7c6679044c7dfa9902a4e1"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnokii-smsd-pgsql"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.6.31-r12"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gnokii-smsd", "0.6.31-r12"], ["musl", "1.2.2-r7"], ["libpq", "14.2-r0"]]

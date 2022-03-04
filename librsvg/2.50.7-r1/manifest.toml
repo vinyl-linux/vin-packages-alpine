@@ -1,0 +1,20 @@
+checksume = "3dfa00a72a8d22e7d425c7159752f0b1fb6a6f5e497327e6582abe292a641488"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "librsvg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.50.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo-gobject", "1.16.0-r3"], ["cairo", "1.16.0-r3"], ["libgcc", "10.3.1"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["pango", "1.48.10-r0"], ["libxml2", "2.9.12-r2"]]

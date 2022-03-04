@@ -1,0 +1,20 @@
+checksume = "cacb3b2193d319357ef0a0a88deaf523a8c4bd53da8e74c86b5c19a9ceabfd30"
+licence = "Apache-2.0"
+meta = false
+provides = "apache2-proxy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.4.52-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"]]

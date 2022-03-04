@@ -1,0 +1,20 @@
+checksume = "dac17b8343fcb3aee6e1b078d77c686a43d7b799eb406dae79ebb89a907b435e"
+licence = "AFL-2.1 OR GPL-2.0-or-later"
+meta = false
+provides = "dbus-x11"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.12.20-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["libice", "1.0.10-r0"], ["libsm", "1.2.3-r0"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"]]

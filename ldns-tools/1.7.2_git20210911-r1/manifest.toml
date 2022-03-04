@@ -1,0 +1,20 @@
+checksume = "2457112ba662a61a6fabd4f14d5428454cf854d51340c3a8382444ff7f438287"
+licence = "Custom"
+meta = false
+provides = "ldns-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.7.2_git20210911-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["ldns", "1.7.2"], ["libpcap", "1.10.1-r0"], ["libssl1.1", "1.1.1l-r8"]]

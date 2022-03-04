@@ -1,0 +1,20 @@
+checksume = "93f72f3c7346ad116eca76b9169bfdbfd4c5d4766e47e107fccca781fecb1362"
+licence = "Apache-2.0"
+meta = false
+provides = "serf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.3.9-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["apr", "1.7.0-r0"], ["apr-util", "1.6.1-r11"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

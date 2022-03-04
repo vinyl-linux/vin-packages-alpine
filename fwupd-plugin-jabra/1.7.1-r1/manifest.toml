@@ -1,0 +1,20 @@
+checksume = "0cbd964c5e47a0b97571cdfc7aee4df22372f8cde2c3097b8416d11a393867c3"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "fwupd-plugin-jabra"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libgusb", "0.3.8-r0"]]

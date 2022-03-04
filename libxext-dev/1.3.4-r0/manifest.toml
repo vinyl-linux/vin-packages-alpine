@@ -1,0 +1,20 @@
+checksume = "9f229cb057a5b4ba45870482c8cda8cc48fe170b1472bfc988c45871721cf069"
+licence = "MIT"
+meta = false
+provides = "libxext-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.3.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxau-dev", "1.0.9-r0"], ["libxext", "1.3.4-r0"], ["libx11-dev", "1.7.2-r0"], ["xorgproto", "2021.5-r0"], ["pkgconf", "1.8.0-r0"]]

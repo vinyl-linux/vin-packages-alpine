@@ -1,0 +1,20 @@
+checksume = "5e0a7a8560ad21f3a059c2d2742352663948d4e0be0b22d2b1db9cbef720bdbc"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "exiv2-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.27.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["expat-dev", "2.4.6-r0"], ["zlib-dev", "1.2.11-r3"], ["exiv2", "0.27.5-r0"], ["pkgconf", "1.8.0-r0"]]

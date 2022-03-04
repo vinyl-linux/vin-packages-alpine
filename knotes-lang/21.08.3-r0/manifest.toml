@@ -1,0 +1,20 @@
+checksume = "1cd978296b36baa04bbba16399cafdd220ff5d4b8af5227d42abccb760d4648c"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND GFDL-1.2-only"
+meta = false
+provides = "knotes-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kdepim-runtime", "21.08.3-r1"]]

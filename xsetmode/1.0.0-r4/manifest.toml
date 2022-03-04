@@ -1,0 +1,20 @@
+checksume = "107b4347030463c585f90a4935b78e3b1c6e424b3e398a794f9602297950e8b6"
+licence = "custom"
+meta = false
+provides = "xsetmode"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxi", "1.8-r0"], ["musl", "1.2.2-r7"]]

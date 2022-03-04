@@ -1,0 +1,20 @@
+checksume = "dcc7cd6a439ed73e7a63323c8a979ed0f8a4fe82f2de46014e668aa6776008be"
+licence = "Apache-2.0"
+meta = false
+provides = "llvm12"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "12.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

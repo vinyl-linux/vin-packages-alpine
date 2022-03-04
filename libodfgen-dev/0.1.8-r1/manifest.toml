@@ -1,0 +1,20 @@
+checksume = "f2e3024d9aa62d089944f9ffac6c7298ba39f284d16614e9998f44c1493e9965"
+licence = "MPL-2.0"
+meta = false
+provides = "libodfgen-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost-dev", "1.77.0-r1"], ["librevenge-dev", "0.0.4-r6"], ["libxml2-dev", "2.9.12-r2"], ["libodfgen", "0.1.8-r1"], ["pkgconf", "1.8.0-r0"]]

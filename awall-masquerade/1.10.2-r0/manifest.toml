@@ -1,0 +1,20 @@
+checksume = "9597b959d2617e019cebdb7d09f7add9208e6a5dd043acefb2e4b093fb5997d2"
+licence = "GPL-2.0-only"
+meta = false
+provides = "awall-masquerade"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.10.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["awall", "1.10.2-r0"]]

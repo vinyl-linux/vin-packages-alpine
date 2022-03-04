@@ -1,0 +1,20 @@
+checksume = "eea5d22e512cb31960698aba3493cb444b228567b059b2fbaee50aeb4a4a4b3b"
+licence = "custom"
+meta = false
+provides = "openmpi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["hwloc", "2.2.0-r0"], ["zlib", "1.2.11-r3"]]

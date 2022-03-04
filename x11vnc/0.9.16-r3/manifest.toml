@@ -1,0 +1,20 @@
+checksume = "c615b7371a511afb4d2c1cc2ec283cb79ffd0f6e0b039093318b4fd9f6cddea5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "x11vnc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.16-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxdamage", "1.1.5-r1"], ["libxext", "1.3.4-r0"], ["libxfixes", "6.0.0-r0"], ["libxi", "1.8-r0"], ["libxinerama", "1.1.4-r1"], ["libxrandr", "1.5.2-r1"], ["libxtst", "1.2.3-r3"], ["avahi-libs", "0.8-r5"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["libvncserver", "0.9.13-r2"]]

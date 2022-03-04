@@ -1,0 +1,20 @@
+checksume = "0ef44a37cb792b9b4e8aab08378461de331d6976d70d2da07f6b02d22ac3bb85"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "telepathy-farstream-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.2_git20190919-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus-glib-dev", "0.112-r0"], ["telepathy-glib-dev", "0.24.2-r1"], ["gobject-introspection-dev", "1.70.0-r1"], ["farstream-dev", "0.2.9-r0"], ["glib-dev", "2.70.1-r0"], ["gstreamer-dev", "1.18.5-r0"], ["pkgconf", "1.8.0-r0"], ["telepathy-farstream", "0.6.2"]]

@@ -1,0 +1,20 @@
+checksume = "4f7bfd9f52c19e3e7ad18612cb8ab19500a79fd87e93a7f3b0728f4932f96cae"
+licence = "MIT"
+meta = false
+provides = "valhalla"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libprotobuf-lite", "3.18.1-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

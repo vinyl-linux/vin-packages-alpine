@@ -1,0 +1,20 @@
+checksume = "6f7d175f6e82407cb5592aed0bfda7e79feda0efa4c57f6cc837e675639cd36d"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libopusenc-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libopusenc", "0.2.1-r0"], ["opus-dev", "1.3.1-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "81f93cdf3e792cd816c508e83a2c599c63c0e465232b781a8a735800555530ee"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+meta = false
+provides = "sane-backend-teco2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"]]

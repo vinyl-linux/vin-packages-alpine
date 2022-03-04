@@ -1,0 +1,20 @@
+checksume = "1969cd55aad1347dad130f9d48bfdb93e6dfc470bf84e86dba1cb62a8314dc2d"
+licence = "LGPL-2.0-or-later AND BSD-3-Clause"
+meta = false
+provides = "syndication-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["kcodecs-dev", "5.88.0-r0"], ["syndication", "5.88.0-r0"]]

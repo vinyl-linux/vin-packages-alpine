@@ -1,0 +1,20 @@
+checksume = "2f21b49c3dc9c64ac9d967ec28f3a9f5b6509017a4e1d5c2f4ec7d7876e78741"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "alsa-lib-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.5.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alsa-lib", "1.2.5.1-r1"], ["pkgconf", "1.8.0-r0"]]

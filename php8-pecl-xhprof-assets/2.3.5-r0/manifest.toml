@@ -1,0 +1,20 @@
+checksume = "e605bf1b55effbbb8af2d8ad2de7daf9f8838693e3f91e5de10fb0810fe9e813"
+licence = "Apache-2.0"
+meta = false
+provides = "php8-pecl-xhprof-assets"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-ctype", "8.0.16-r0"], ["graphviz", "2.49.3-r0"], ["ghostscript-fonts", "8.11-r2"]]

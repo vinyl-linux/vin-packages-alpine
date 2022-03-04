@@ -1,0 +1,20 @@
+checksume = "4199e827c13c64cc84d3f0f2aa77fd9d0ba1f76c1f96c8b10155f2ffc7c859ce"
+licence = "MIT"
+meta = false
+provides = "java-gdal"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["gdal", "3.4.1-r0"], ["libstdc++", "10.3.1"]]

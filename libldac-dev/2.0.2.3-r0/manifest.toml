@@ -1,0 +1,20 @@
+checksume = "61f8c111806d385f9e26cf049d79fe43f6ba361ad0152477c9a1eae410e0976f"
+licence = "Apache-2.0"
+meta = false
+provides = "libldac-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libldac", "2.0.2.3-r0"], ["pkgconf", "1.8.0-r0"]]

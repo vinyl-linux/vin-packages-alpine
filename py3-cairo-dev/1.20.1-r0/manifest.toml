@@ -1,0 +1,20 @@
+checksume = "02fc27fc1828e62f41e8d8fed84b4122d4228d63df6d72ce5668effcb0e4c020"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "py3-cairo-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.20.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cairo-dev", "1.16.0-r3"], ["pkgconf", "1.8.0-r0"]]

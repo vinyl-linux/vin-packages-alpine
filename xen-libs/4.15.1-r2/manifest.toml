@@ -1,0 +1,20 @@
+checksume = "3d8f20c163751e2a0bf42cc58789eb907c34b7099cdd8b670b0a4e813d692627"
+licence = "GPL-2.0-only"
+meta = false
+provides = "xen-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.15.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["e2fsprogs-libs", "1.46.4-r0"], ["xz-libs", "5.2.5-r0"], ["lzo", "2.10-r2"], ["libnl3", "3.5.0-r0"], ["libuuid", "2.37.4-r0"], ["yajl", "2.1.0-r2"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

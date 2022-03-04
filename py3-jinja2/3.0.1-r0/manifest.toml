@@ -1,0 +1,20 @@
+checksume = "a937aa01b7ecbb99aee572bdb884ca0cead1a81b0cc43190575ae467e200925d"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-jinja2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-markupsafe", "2.0.1-r0"]]

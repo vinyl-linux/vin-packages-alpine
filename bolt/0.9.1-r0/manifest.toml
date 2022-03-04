@@ -1,0 +1,20 @@
+checksume = "63d93c77f2b3d62141135e1e6f4135efb2b584861998dc0472a5a96f810df495"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "bolt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["polkit-elogind-libs", "0.119-r8"], ["eudev-libs", "3.2.11"]]

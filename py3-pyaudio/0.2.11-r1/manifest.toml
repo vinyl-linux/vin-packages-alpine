@@ -1,0 +1,20 @@
+checksume = "e1124bc458912aa4576946ee6c6ba209ef94a4393d073efa4b10e17cf149f278"
+licence = "MIT"
+meta = false
+provides = "py3-pyaudio"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.11-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["portaudio", "19.7.0-r0"]]

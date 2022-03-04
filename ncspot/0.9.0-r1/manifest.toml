@@ -1,0 +1,20 @@
+checksume = "7af221ee8c45566c449c0c9326b0d3c59b024f7194a13b91a880fae89885134f"
+licence = "BSD-2-Clause"
+meta = false
+provides = "ncspot"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["dbus-libs", "1.12.20-r4"], ["libgcc", "10.3.1"], ["ncurses-libs", "6.3"], ["libpulse", "15.0-r2"], ["libssl1.1", "1.1.1l-r8"], ["libxcb", "1.14-r2"]]

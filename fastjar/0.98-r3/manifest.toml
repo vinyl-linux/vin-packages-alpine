@@ -1,0 +1,20 @@
+checksume = "102ee106d1e9f56969dd2ce068639eef7d37775aa2f2ec39926464d08cace3c7"
+licence = "GPL-2.0"
+meta = false
+provides = "fastjar"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.98-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

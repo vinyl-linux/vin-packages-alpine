@@ -1,0 +1,20 @@
+checksume = "766f6b1eef1f6b84e396422bf17cd6e65d8794416b34144545d95bc76b4ee91a"
+licence = "MIT"
+meta = false
+provides = "multirun"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

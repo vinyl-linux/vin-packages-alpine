@@ -1,0 +1,20 @@
+checksume = "0dee14fda68bb883aff136a621bf1a112b7a57d6517889de6b5c8b074cb09314"
+licence = "EPL-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later AND Ruby"
+meta = false
+provides = "jruby-rdoc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "9.3.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["jruby", "9.3.1.0-r0"], ["jruby-irb", "9.3.1.0-r0"]]

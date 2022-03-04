@@ -1,0 +1,20 @@
+checksume = "951201db52d5200f17b09015e963e0ca76adf7b01d16c2672925656e4ec8f9a1"
+licence = "Apache-2.0"
+meta = false
+provides = "shaderc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2021.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["spirv-tools", "2020.3-r1"], ["glslang", "11.6.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

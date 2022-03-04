@@ -1,0 +1,20 @@
+checksume = "2551b64af856798a250749e6ddfcc4ed5ef6891e0056a583d06019f7031bb247"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "lcdproc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.9-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libftdi1", "1.5-r0"], ["lirc", "0.10.1-r2"], ["ncurses-libs", "6.3"], ["libpng", "1.6.37-r1"], ["libusb-compat", "0.1.7-r1"], ["libusb", "1.0.24-r3"]]

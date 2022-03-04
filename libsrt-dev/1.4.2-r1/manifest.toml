@@ -1,0 +1,20 @@
+checksume = "bed7d1e5365245413b922465a07803090484eda6c55d2de2ca8bbe2c886b2a31"
+licence = "MPL-2.0"
+meta = false
+provides = "libsrt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libsrt", "1.4.2-r1"], ["openssl-dev", "1.1.1l-r8"], ["pkgconf", "1.8.0-r0"]]

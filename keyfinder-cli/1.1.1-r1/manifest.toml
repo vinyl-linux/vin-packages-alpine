@@ -1,0 +1,20 @@
+checksume = "a078d1ac2ff220f41a5e7bb199e6d1dbfc6a4336ae58047c05d8885d8a976842"
+licence = "GPL-3.0-only"
+meta = false
+provides = "keyfinder-cli"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libkeyfinder", "2.2.5-r0"], ["libstdc++", "10.3.1"]]

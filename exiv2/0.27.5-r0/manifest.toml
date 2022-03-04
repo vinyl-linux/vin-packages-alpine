@@ -1,0 +1,20 @@
+checksume = "a8f4499e5e9ad28c840349ec89ef9a5467cf9c8ca1de387ce96f1cbd85f1ac21"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "exiv2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.27.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

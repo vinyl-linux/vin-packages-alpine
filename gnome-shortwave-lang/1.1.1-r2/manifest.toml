@@ -1,0 +1,20 @@
+checksume = "ffcd02e7b39f56802a7513a307255680f36a5414b33a3acc08dd77bb3a26a55e"
+licence = "GPL-3.0-only"
+meta = false
+provides = "gnome-shortwave-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gst-libav", "1.18.5-r0"], ["gst-plugins-bad", "1.18.5-r2"], ["gst-plugins-good", "1.18.5-r0"]]

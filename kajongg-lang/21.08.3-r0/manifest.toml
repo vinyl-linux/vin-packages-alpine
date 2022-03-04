@@ -1,0 +1,20 @@
+checksume = "fa27f0e783c40603321308f12036710f89c7edc384a9c0e028d494ee3643d703"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+meta = false
+provides = "kajongg-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-twisted", "21.7.0-r1"]]

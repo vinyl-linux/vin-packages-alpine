@@ -1,0 +1,1 @@
+/etc/vinyl/alpine/scripts/install.sh

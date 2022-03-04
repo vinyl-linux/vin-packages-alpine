@@ -1,0 +1,20 @@
+checksume = "1bb91241a7b516a6d85c86c6b43cec0a4c3ffbafacbbf6e2895b5a078947b2d4"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+meta = false
+provides = "php8-ctype"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.0.16-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

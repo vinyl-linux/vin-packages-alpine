@@ -1,0 +1,20 @@
+checksume = "6b33d1fe644d5bc1cc1f00970ad1a5be14a37e70e1c9f7f63f0b14d04b07dab5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "py3-libcec4"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.0.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcec4", "4.0.7-r0"], ["libgcc", "10.3.1"], ["p8-platform", "2.1.0.1-r2"], ["python3", "3.9.7-r4"], ["libstdc++", "10.3.1"]]

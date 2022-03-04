@@ -1,0 +1,20 @@
+checksume = "0f1ac278f5f91bd3dd4f0ffe8f9951806fe599d89e6b805747c92aa51033407e"
+licence = "BSD-3-Clause"
+meta = false
+provides = "p11-kit-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.24.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["p11-kit", "0.24.0-r1"]]

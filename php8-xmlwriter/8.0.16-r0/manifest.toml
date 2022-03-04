@@ -1,0 +1,20 @@
+checksume = "d0ca256c281ae2a404376e4d3e39699bf7672055e2ebfbef8ea79c29ef02fc4a"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+meta = false
+provides = "php8-xmlwriter"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.0.16-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libxml2", "2.9.12-r2"]]

@@ -1,0 +1,20 @@
+checksume = "20b0c8e9e46b5424caee555bd475c840980067ff416dbb56068ef81c98fddf82"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnome-maps-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gfbgraph", "0.2.5-r0"], ["gjs", "1.70.1-r0"], ["geoclue", "2.5.7-r3"]]

@@ -1,0 +1,20 @@
+checksume = "9fd2ce99c34f03ba138f5da0d94d8c7f87130b75cb5adfb060b625586ee9d846"
+licence = "custom:GPL-like"
+meta = false
+provides = "gc-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.0.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gc", "8.0.6-r0"], ["libgc++", "8.0.6-r0"], ["pkgconf", "1.8.0-r0"]]

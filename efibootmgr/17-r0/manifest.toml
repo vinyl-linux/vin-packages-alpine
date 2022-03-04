@@ -1,0 +1,20 @@
+checksume = "ffa97272e527525b63860f8ebcbf8c3203b72741ed18ba9fcff4dee02a0604a8"
+licence = "GPL-2.0"
+meta = false
+provides = "efibootmgr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "17-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["efivar-libs", "37-r2"], ["libintl", "0.21-r0"], ["popt", "1.18-r0"]]

@@ -1,0 +1,20 @@
+checksume = "5f75dd323677b4bc71da91c2611025b676bc73faa93e33ea4f8c4d3ec8f5c4e1"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "nautilus-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["tracker-miners", "3.1.3-r0"], ["gsettings-desktop-schemas", "41.0-r0"]]

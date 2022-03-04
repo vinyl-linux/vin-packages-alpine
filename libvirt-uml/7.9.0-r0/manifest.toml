@@ -1,0 +1,20 @@
+checksume = "964b563ad0b87783fe18fe5b6efa180eae1c71a178b24df4f3702f0a1123aeed"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libvirt-uml"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libvirt-daemon", "7.9.0-r0"], ["libvirt-common-drivers", "7.9.0-r0"]]

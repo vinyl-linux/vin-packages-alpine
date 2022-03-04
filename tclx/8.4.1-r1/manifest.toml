@@ -1,0 +1,20 @@
+checksume = "aade4c1dd8cbf1229dc5da92c7fafa1d0ed4225d1d7a99f6f1c6cf34bea08872"
+licence = "BSD"
+meta = false
+provides = "tclx"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.4.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["tcl", "8.6.11-r0"], ["musl", "1.2.2-r7"]]

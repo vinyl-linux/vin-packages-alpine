@@ -1,0 +1,20 @@
+checksume = "70ec88ffc512fa834ec1cc2c6676603627001bb5661a53d834ba29c5419e986b"
+licence = "LGPL-2.1-only OR LGPL-3.0-only AND GPL-2.0-only"
+meta = false
+provides = "plasma-pa"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pulseaudio", "15.0-r2"], ["kirigami2", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kglobalaccel", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["kdeclarative", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libcanberra", "0.30-r8"], ["glib", "2.70.1-r0"], ["libpulse-mainloop-glib", "15.0-r2"], ["libpulse", "15.0-r2"], ["libstdc++", "10.3.1"]]

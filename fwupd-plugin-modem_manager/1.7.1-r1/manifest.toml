@@ -1,0 +1,20 @@
+checksume = "4b6293113714fdcfda1d512423d582f96b257e718311ce1e77b22c3ec7058193"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "fwupd-plugin-modem_manager"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libgudev", "237-r0"], ["libmbim", "1.26.0-r0"], ["libmm-glib", "1.18.2-r1"], ["libqmi", "1.30.2-r0"], ["libxmlb", "0.2.1-r1"]]

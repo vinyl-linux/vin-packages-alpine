@@ -1,0 +1,20 @@
+checksume = "7cfd143ccb84e9138d2c8cb3e65e71764361153e0d30c2f1e46eaaabdec34292"
+licence = "BSD-2-Clause"
+meta = false
+provides = "tpm2-tss-tcti-mssim"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["tpm2-tss-mu", "3.0.3-r1"]]

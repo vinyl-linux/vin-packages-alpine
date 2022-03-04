@@ -1,0 +1,20 @@
+checksume = "32842774d2db5951eace8fd2a0e57feb804ae10d0ea0e38129e3e07498f53e1b"
+licence = "BSD-2-Clause-NetBSD"
+meta = false
+provides = "openjpeg-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.4.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["lcms2", "2.12-r1"], ["openjpeg", "2.4.0-r2"], ["libpng", "1.6.37-r1"], ["tiff", "4.3.0-r0"]]

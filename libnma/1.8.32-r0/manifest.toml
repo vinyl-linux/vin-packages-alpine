@@ -1,0 +1,20 @@
+checksume = "db624ea316e048c74473dc58d050d77f63b9ab71acc05d6f157833f71b95e0c9"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libnma"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.32-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mobile-broadband-provider-info", "20201225-r0"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gcr-base", "3.40.0-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["networkmanager", "1.32.12-r1"]]

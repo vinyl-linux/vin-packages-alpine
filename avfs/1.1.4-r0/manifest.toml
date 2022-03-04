@@ -1,0 +1,20 @@
+checksume = "2606f859bf2ab9d7106d6efed2d3c7e857aabd1bbb46c43d1e72d1151c65c5d2"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "avfs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["fuse", "2.9.9-r1"], ["xz-libs", "5.2.5-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

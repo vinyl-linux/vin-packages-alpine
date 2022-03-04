@@ -1,0 +1,20 @@
+checksume = "d6943d5f6437b3bfa63f355ecb2874efaed5f6e368caa31180121c43f7ca2c54"
+licence = "GPL-3.0-only"
+meta = false
+provides = "nagios-plugins-log"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nagios-plugins", "2.3.3-r1"], ["grep", "3.7-r0"]]

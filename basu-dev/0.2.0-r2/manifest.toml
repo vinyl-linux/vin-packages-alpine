@@ -1,0 +1,20 @@
+checksume = "9169c6490bbb56efdba0584b3cb63e58e3228d69064a541280cc67de5b18945d"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "basu-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["basu", "0.2.0-r2"], ["libcap-dev", "2.61-r0"], ["pkgconf", "1.8.0-r0"]]

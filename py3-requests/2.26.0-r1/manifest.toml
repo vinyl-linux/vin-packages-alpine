@@ -1,0 +1,20 @@
+checksume = "f0e4fc61d5ff5629f66023d0534f5dd8ec6f004dca4b7178f0439b31c84b8261"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-requests"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.26.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-certifi", "2020.12.5-r1"], ["py3-charset-normalizer", "2.0.7-r0"], ["py3-idna", "3.3-r0"], ["py3-urllib3", "1.26.7-r0"], ["python3", "3.9.7-r4"]]

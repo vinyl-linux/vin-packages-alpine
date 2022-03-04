@@ -1,0 +1,20 @@
+checksume = "e068aa0657c67a1b66aa98c90e995424965049fb40a11efb85bf990d5dd0ff55"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "glibd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ldc-runtime", "1.28.0-r0"], ["glib", "2.70.1-r0"], ["llvm-libunwind", "12.0.1-r1"]]

@@ -1,0 +1,20 @@
+checksume = "fb065427fdfd86527dbba6456614576330df37a70e272ccac55310883519699f"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-cairocffi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-cffi", "1.14.5-r2"], ["cairo", "1.16.0-r3"], ["gdk-pixbuf", "2.42.6-r0"]]

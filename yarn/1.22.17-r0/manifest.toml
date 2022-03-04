@@ -1,0 +1,20 @@
+checksume = "a0a16016bce55d51edf2d79bfe9ec49b127327c3c4810e5889b272a5d0252e08"
+licence = "BSD-2-Clause"
+meta = false
+provides = "yarn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.22.17-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nodejs-current", "17.6.0-r0"]]

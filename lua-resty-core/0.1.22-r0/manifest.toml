@@ -1,0 +1,20 @@
+checksume = "95df8947d8b92fceaa672f11aa67530c3f64964b1344e53858a77d79faad5d01"
+licence = "BSD-2-Clause"
+meta = false
+provides = "lua-resty-core"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.1.22-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["luajit", "2.1"], ["lua-resty-lrucache", "0.09-r1"]]

@@ -1,0 +1,20 @@
+checksume = "100564bf824c9f735cb4dc94d2929b0519239b9aa24a5acc6b4aa26b1e120ac5"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "tepl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.00.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["amtk-dev", "5.2.0-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["gtksourceview4-dev", "4.8.2-r0"], ["icu-dev", "69.1-r1"], ["pkgconf", "1.8.0-r0"], ["tepl", "6.00.0-r1"]]

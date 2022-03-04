@@ -1,0 +1,20 @@
+checksume = "21d72a2b28c69ac58af9bf57566ed8a5710d2a105cb1183b3d8e8c8b29632b47"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt5-qtsensors"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.3_git20201028-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "bf7b6cd1f7f44a57ee9a1a3b6e9ee65a072dd625567e0f46de6c860e239ef01b"
+licence = "Apache-2.0"
+meta = false
+provides = "dnstwist"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20201228-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"], ["py3-dnspython", "2.1.0-r1"], ["py3-tld", "0.12.6-r0"]]

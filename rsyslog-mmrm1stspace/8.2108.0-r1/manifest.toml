@@ -1,0 +1,20 @@
+checksume = "de27129e7a8fa28bca1aa792e84d617b9cb772680b4ca0ff757b283cb758ada2"
+licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
+meta = false
+provides = "rsyslog-mmrm1stspace"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.2108.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"]]

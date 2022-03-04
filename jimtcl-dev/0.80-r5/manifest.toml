@@ -1,0 +1,20 @@
+checksume = "a152a66d4015005b5d8e19839dc8a777fe65609fc86227e3a1b7fceec985df4d"
+licence = "BSD-2-Clause"
+meta = false
+provides = "jimtcl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.80-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssl-dev", "1.1.1l-r8"], ["jimtcl", "0.80-r5"], ["readline-dev", "8.1.1-r0"], ["sqlite-dev", "3.36.0-r0"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

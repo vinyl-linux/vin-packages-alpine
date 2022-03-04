@@ -1,0 +1,20 @@
+checksume = "c23f3069164e16368dd583a94d37fa2401dc6e1d22ef7f0a997081e98a95b37d"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "source-highlight"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.1.9-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

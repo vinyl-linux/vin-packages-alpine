@@ -1,0 +1,20 @@
+checksume = "1a6f7dca9cedf0514e69e11a10c605f0b2764da1f267423d1da9e61c9b4c8448"
+licence = "GPL-2.0"
+meta = false
+provides = "linux-edge4virt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.16.11-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["gmp-dev", "6.2.1-r1"], ["elfutils-dev", "0.185-r0"], ["bash", "5.1.16-r0"], ["flex", "2.6.4-r2"], ["bison", "3.7.6-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libelf", "0.185-r0"]]

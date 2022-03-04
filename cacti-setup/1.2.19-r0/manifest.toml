@@ -1,0 +1,20 @@
+checksume = "d5143591165e78142be81da9adac441373b8148bbbd36b25fb43ca93a6f97098"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "cacti-setup"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.19-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cacti", "1.2.19-r0"], ["cacti-doc", "1.2.19-r0"], ["mariadb-client", "10.6.4-r2"], ["busybox", "1.34.1-r4"]]

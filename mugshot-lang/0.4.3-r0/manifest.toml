@@ -1,0 +1,20 @@
+checksume = "95ac615adf9a34a41ed4b0c70fc8dd0b6de5038c3c0824e413e2b5ca81329f0d"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "mugshot-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["shadow", "4.8.1-r1"], ["py3-cairo", "1.20.1-r0"], ["py3-gobject3", "3.42.0-r1"], ["py3-pexpect", "4.8.0-r1"]]

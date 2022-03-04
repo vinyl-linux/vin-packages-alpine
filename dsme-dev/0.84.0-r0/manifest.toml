@@ -1,0 +1,20 @@
+checksume = "16c04b169e667a57c9fb7eeb5e67dbf6be06b677f117805211bd7b929e014c26"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "dsme-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.84.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cryptsetup-dev", "2.4.3-r0"], ["libiphb-dev", "1.2.7-r1"], ["libngf-dev", "0.28-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "e1f30aaa1333606bee7d15ec3bdd0b0240cca7fdf01c088ba222c10cb88e1cb6"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-gitpython"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.24-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["py3-gitdb2", "4.0.7-r0"], ["py3-typing-extensions", "3.10.0.2-r0"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,20 @@
+checksume = "a7b96a1d47bd845dbe158f3fa2779d4915eb17fdcacd2f8c5be3028355ec6652"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "lua5.4-lxc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["lxc-libs", "4.0.11-r0"]]

@@ -1,0 +1,20 @@
+checksume = "3be71132b768de64b53597d436eb457c84b475971b9b469d824d368d854fbb1d"
+licence = "GPL-2.0 AND LGPL-2.1-only OR LGPL-3.0-only"
+meta = false
+provides = "kde-gtk-config"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gsettings-desktop-schemas", "41.0-r0"], ["kconfig", "5.88.0-r0"], ["kconfigwidgets", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["kguiaddons", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtsvg", "5.15.3"], ["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["kdecoration", "5.23.5-r0"], ["libstdc++", "10.3.1"]]

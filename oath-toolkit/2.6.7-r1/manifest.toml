@@ -1,0 +1,20 @@
+checksume = "62a972d5aa0fe2848a348b23aa513353c9fca4f642dc83443a58260e6f532800"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "oath-toolkit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["cvs", "1.12.13-r1"], ["diffutils", "3.8-r0"], ["musl", "1.2.2-r7"], ["oath-toolkit-libpskc", "2.6.7-r1"]]

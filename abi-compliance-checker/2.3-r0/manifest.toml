@@ -1,0 +1,20 @@
+checksume = "08a9b0e366e350da80c446277bf31a212c6c6decf1cdb688c07dfaff1bc9f0cd"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "abi-compliance-checker"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["build-base", "0.5-r2"]]

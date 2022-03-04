@@ -1,0 +1,20 @@
+checksume = "041aa31b7483762c340f838e853110caa61b9e235834c0d60dbf8ef4177ad5c1"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-olsrd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"]]

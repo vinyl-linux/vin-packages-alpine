@@ -1,0 +1,20 @@
+checksume = "5cfd1a6f9dcd389afdae1a55d5d12192dd39a6924508bfd3f99d695cbecd9492"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-cache-cache"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.08-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-error", "0.17029-r1"], ["perl-digest-sha1", "2.13-r14"]]

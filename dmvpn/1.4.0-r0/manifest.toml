@@ -1,0 +1,20 @@
+checksume = "388d619f2ec0c399e4d802b9c5713c3c18d657fecf9544abb39c1b6a68d7f347"
+licence = "MIT"
+meta = false
+provides = "dmvpn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["augeas", "1.12.0-r0"], ["bind-tools", "9.16.25-r0"], ["lua5.2", "5.2.4-r7"], ["lua5.2-cqueues", "20200726-r3"], ["lua5.2-lyaml", "6.2.7-r1"], ["lua5.2-ossl", "20200709-r3"], ["lua5.2-posix", "35.1-r0"], ["lua5.2-struct", "0.2-r3"], ["lua-dmvpn", "1.4.0-r0"], ["quagga", "1.2.4-r5"], ["strongswan", "5.9.1-r3"], ["tunnel", "1.0-r1"]]

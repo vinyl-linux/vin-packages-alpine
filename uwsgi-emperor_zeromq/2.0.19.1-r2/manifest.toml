@@ -1,0 +1,20 @@
+checksume = "9bc7a22b9812ec756a297b2373a0ad7d5618a7ce72e7d30e85971f81ad8c660a"
+licence = "custom"
+meta = false
+provides = "uwsgi-emperor_zeromq"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["libzmq", "4.3.4-r0"]]

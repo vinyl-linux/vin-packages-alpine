@@ -1,0 +1,20 @@
+checksume = "dce758ce879b7b97d7fafc9381f190d132768e0833c7f7cec1723f40319e66e4"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-snmp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["net-snmp-libs", "5.9.1-r5"], ["net-snmp-agent-libs", "5.9.1-r5"]]

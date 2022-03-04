@@ -1,0 +1,20 @@
+checksume = "b355825027832d88956dec117d29be7ea1b4a984a81572e5836607a681153368"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "libgss-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["libgss", "1.0.3-r0"]]

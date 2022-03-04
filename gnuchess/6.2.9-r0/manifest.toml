@@ -1,0 +1,20 @@
+checksume = "57d8cd2ff096e6e3ac85900599a8c43ec78617bdf7a1e35d775a3a0d1b0ae553"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "gnuchess"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.2.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libintl", "0.21-r0"]]

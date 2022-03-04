@@ -1,0 +1,20 @@
+checksume = "b01c20c8d2b896a1b252844ec56b296f4ad17bfbc33bb4a0132df20fa6f14cb4"
+licence = "LGPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "libmikmod-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.3.11.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libmikmod", "3.3.11.1-r1"], ["pkgconf", "1.8.0-r0"]]

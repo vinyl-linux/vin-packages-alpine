@@ -1,0 +1,20 @@
+checksume = "82081345298bf2fa291f6eb77d5137a04476632c36d6eacba9a8c91a9783ecb8"
+licence = "GPL-2.0-only"
+meta = false
+provides = "libnfnetlink-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libnfnetlink", "1.0.1-r3"], ["pkgconf", "1.8.0-r0"]]

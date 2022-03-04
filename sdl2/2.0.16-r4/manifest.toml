@@ -1,0 +1,20 @@
+checksume = "c25b317054695f9398883cfec4de972f492750c0034b69643f796bf6034d498c"
+licence = "Zlib"
+meta = false
+provides = "sdl2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.16-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

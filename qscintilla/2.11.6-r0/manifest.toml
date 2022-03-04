@@ -1,0 +1,20 @@
+checksume = "a66590dc354b979fec082ad19312828e8a7f1bc9b769acf107c68c9d391f888c"
+licence = " GPL-3.0-only"
+meta = false
+provides = "qscintilla"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.11.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

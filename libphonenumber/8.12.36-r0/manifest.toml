@@ -1,0 +1,20 @@
+checksume = "b43351cbc646e9861a6ecd7f111e04f7e1e1163b2b883586960250153db69c3f"
+licence = "Apache-2.0"
+meta = false
+provides = "libphonenumber"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.12.36-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost1.77-thread", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["icu-libs", "69.1-r1"], ["libprotobuf", "3.18.1-r1"], ["libstdc++", "10.3.1"]]

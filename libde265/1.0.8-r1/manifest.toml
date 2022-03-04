@@ -1,0 +1,20 @@
+checksume = "5c8433eef8802a929d768ed3625381cc5f71b073b4527a80459cdd2a88cda711"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "libde265"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

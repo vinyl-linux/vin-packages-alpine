@@ -1,0 +1,20 @@
+checksume = "2de1dba4348c25ce0cccd2e2dd2511c7c6e79fa60f2b1aacbf110175b52409fd"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libtracker"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["icu-libs", "69.1-r1"], ["libintl", "0.21-r0"], ["json-glib", "1.6.6-r0"], ["sqlite-libs", "3.36.0-r0"], ["libstemmer", "2.2.0-r0"], ["libxml2", "2.9.12-r2"]]

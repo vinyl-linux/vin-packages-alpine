@@ -1,0 +1,20 @@
+checksume = "528f78b2168560eb2c2b8221e85e45cfa7e4783cfd6122de53a1069acf515747"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kmime"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kcodecs", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

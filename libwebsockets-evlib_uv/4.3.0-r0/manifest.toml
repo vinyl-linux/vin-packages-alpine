@@ -1,0 +1,20 @@
+checksume = "33248f4b9f58fee1f69190135dce92bb1afcd83077a975d4f67b4eb24e6df4be"
+licence = "MIT"
+meta = false
+provides = "libwebsockets-evlib_uv"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libuv", "1.42.0-r0"], ["libwebsockets", "4.3.0-r0"]]

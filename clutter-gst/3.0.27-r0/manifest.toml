@@ -1,0 +1,20 @@
+checksume = "ff30ed8f54d54b8fc701db38d7647439304e825d2985015646d5278107e27baa"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "clutter-gst"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.27-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["clutter", "1.26.4-r0"], ["cogl", "1.22.8-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["gst-plugins-base", "1.18.5-r0"], ["gstreamer", "1.18.5-r0"], ["libgudev", "237-r0"]]

@@ -1,0 +1,20 @@
+checksume = "4f58ee8138f35bdcbf1fbe70dfe61e2fc65677867327e8ca15489ce7ca99ccde"
+licence = "custom:BELL"
+meta = false
+provides = "libxpm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.5.13-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxpm", "3.5.13-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

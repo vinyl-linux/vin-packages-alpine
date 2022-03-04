@@ -1,0 +1,20 @@
+checksume = "4e8edfa607ff7455a6eb56306214aca928b9cb1f5ac4fba8282917147d4cf069"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "shorewall"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.2.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["shorewall-core", "5.2.8-r0"], ["perl", "5.34.0-r1"], ["iptables", "1.8.7-r1"], ["iproute2", "5.15.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "ce69c98afbf6194c3b28c8f5e1cd713cc67ba315f557627a047d4890fa831a5d"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "py3-logilab-common"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-mypy-extensions", "0.4.3-r1"], ["py3-setuptools", "52.0.0-r4"], ["py3-typing-extensions", "3.10.0.2-r0"]]

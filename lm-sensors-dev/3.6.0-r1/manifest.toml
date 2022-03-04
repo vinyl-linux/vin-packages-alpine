@@ -1,0 +1,20 @@
+checksume = "1e6c780427d4043371b9a889d9c7cd785c68e7b35e7fc3d694019672e963fbd8"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+meta = false
+provides = "lm-sensors-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.6.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lm-sensors", "3.6.0-r1"]]

@@ -1,0 +1,20 @@
+checksume = "22c9257b5c019a265e1254f47dae546ffd010df770b7fa0bb1c7db959fcc79bd"
+licence = "BSD-2-Clause"
+meta = false
+provides = "editorconfig-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.12.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libeditorconfig", "0.12.4-r0"], ["pkgconf", "1.8.0-r0"]]

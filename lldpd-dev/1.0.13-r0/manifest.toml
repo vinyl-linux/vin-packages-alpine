@@ -1,0 +1,20 @@
+checksume = "98c74dda3070ba2e90eed278e40960d999286e0fd3b1ebfe66302251e162b1b1"
+licence = "ISC"
+meta = false
+provides = "lldpd-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.13-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lldpd", "1.0.13-r0"], ["pkgconf", "1.8.0-r0"]]

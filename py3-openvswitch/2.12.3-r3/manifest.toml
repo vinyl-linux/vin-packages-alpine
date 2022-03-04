@@ -1,0 +1,20 @@
+checksume = "52f5327f85ff5870a6e8be91404b1cbd3c56ae8c2fbd5d3508caa1aa9ee26c83"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-openvswitch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.12.3-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-six", "1.16.0-r0"]]

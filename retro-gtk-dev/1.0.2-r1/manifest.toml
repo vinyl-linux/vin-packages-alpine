@@ -1,0 +1,20 @@
+checksume = "3edc48c52540331c0e3cf87f118c2defb05607e470dc9170ca6d35d07aa52c71"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "retro-gtk-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"], ["retro-gtk", "1.0.2-r1"]]

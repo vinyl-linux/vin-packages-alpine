@@ -1,0 +1,20 @@
+checksume = "3c2a85fe4655c9312df2db51f11cc4f4a942ef9213632fe7f2e5cac9cd4f3447"
+licence = "MIT"
+meta = false
+provides = "micro"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.10-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "f2d2eca60f5558c19be5d819587724a95b42db0f6115d0cee74a18c9663c6e4b"
+licence = "MIT"
+meta = false
+provides = "capnproto"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libucontext", "1.1-r0"]]

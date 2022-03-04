@@ -1,0 +1,20 @@
+checksume = "190ae161f5f490db27237698eae6768f12f462f7005c418329b82187e947c647"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "openal-soft-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.21.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alsa-lib-dev", "1.2.5.1-r1"], ["openal-soft", "1.21.1-r0"], ["pkgconf", "1.8.0-r0"]]

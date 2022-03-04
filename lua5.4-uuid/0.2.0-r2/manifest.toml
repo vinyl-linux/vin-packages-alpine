@@ -1,0 +1,20 @@
+checksume = "7b45664029a48b302589d7757d6dda8f75eaf3552d5362a4dd3a0c5388968f2e"
+licence = "Apache-2.0"
+meta = false
+provides = "lua5.4-uuid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.2.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.4", "5.4.3-r0"]]

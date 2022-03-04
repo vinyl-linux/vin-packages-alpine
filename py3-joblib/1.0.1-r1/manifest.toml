@@ -1,0 +1,20 @@
+checksume = "16953e613af1e6385c3954cf8594d22be97561849817c7729768accc23db5c54"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-joblib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-cloudpickle", "1.6.0-r1"], ["py3-distributed", "2021.7.0-r0"], ["py3-loky", "3.0.0-r0"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,20 @@
+checksume = "af5345e60e8082381cb9574ddbb504989fb3ae0f33a45b10be225b1808c2a9ae"
+licence = "ISC"
+meta = false
+provides = "ifupdown-ng-wifi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.11.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["wpa_supplicant", "2.9-r17"]]

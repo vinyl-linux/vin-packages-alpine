@@ -1,0 +1,20 @@
+checksume = "493baa965c657c92b8f7bbfb9ad8f8ac7d87d813c9a4efc54e1dadf730843a7c"
+licence = "MIT"
+meta = false
+provides = "vigra"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.11.1-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["libstdc++", "10.3.1"], ["tiff", "4.3.0-r0"], ["zlib", "1.2.11-r3"]]

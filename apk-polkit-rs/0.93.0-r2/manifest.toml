@@ -1,0 +1,20 @@
+checksume = "3be9f2f9233148264a18b279f861b7af2d99aca342aa05565398eaff645a84d0"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "apk-polkit-rs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.93.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["polkit", "0.119-r8"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

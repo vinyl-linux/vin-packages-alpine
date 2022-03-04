@@ -1,0 +1,20 @@
+checksume = "dc0a4efe3d865f9ff5fd40f99c6d0960377c72b42dcb68835057182b5a18ff48"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libmatroska"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libebml", "1.4.2-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

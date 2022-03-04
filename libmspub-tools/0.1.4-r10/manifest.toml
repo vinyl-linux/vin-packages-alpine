@@ -1,0 +1,20 @@
+checksume = "9efb4704681a6f1b3cb833bef2dc2e8c74435d63cc1f31a532485d813b60f058"
+licence = "MPL-2.0"
+meta = false
+provides = "libmspub-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.4-r10"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libmspub", "0.1.4-r10"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"]]

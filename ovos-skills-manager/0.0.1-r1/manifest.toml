@@ -1,0 +1,20 @@
+checksume = "1d8b4e6d936d9c7d20e8066f1a18c069ade73848f51e6d2e9e86782b825f4444"
+licence = "Apache-2.0"
+meta = false
+provides = "ovos-skills-manager"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ovos-skill-installer", "0.0.2-r1"], ["py3-beautifulsoup4", "4.9.3-r1"], ["py3-ovos-utils", "0.0.8-r1"], ["py3-pako", "0.3.1-r1"], ["py3-requests-cache", "0.8.1-r0"], ["py3-yaml", "5.4.1.1-r1"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,20 @@
+checksume = "433f55167f25a2698b2ba5e5e94847542850b35e82c47f286df07821b48d9fd9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libretro-desmume"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0_git20200525-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-gl", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

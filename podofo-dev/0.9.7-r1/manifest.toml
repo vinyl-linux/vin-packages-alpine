@@ -1,0 +1,20 @@
+checksume = "d3db3f571d848693a5820ed5246e0926051df7fccb83b67bcdf93b3b65c9b4f4"
+licence = "GPL-2.0-only"
+meta = false
+provides = "podofo-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["podofo", "0.9.7-r1"]]

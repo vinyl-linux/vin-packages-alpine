@@ -1,0 +1,20 @@
+checksume = "13451deff7f4bf3513b320eee1300270979fed575838076b990b1c122d3fcc7d"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "iftop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.17-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3"], ["libpcap", "1.10.1-r0"]]

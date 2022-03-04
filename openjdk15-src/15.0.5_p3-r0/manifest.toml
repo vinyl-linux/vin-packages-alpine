@@ -1,0 +1,20 @@
+checksume = "bcbc70efaa1e088c57755d433f4da15c9d4fe43d6196f71c2e2c22f3f68173e9"
+licence = "GPL-2.0-with-classpath-exception"
+meta = false
+provides = "openjdk15-src"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "15.0.5_p3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk15-jre-headless", "15.0.5"]]

@@ -1,0 +1,20 @@
+checksume = "2b267a5494ec4b61d51bbdc14af58033bb8e765f3201256d12c8117ab25e5813"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+meta = false
+provides = "ceph-osd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ceph-osd-daemon", "16.2.7-r0"], ["ceph-osd-tools", "16.2.7-r0"], ["ceph-volume", "16.2.7-r0"]]

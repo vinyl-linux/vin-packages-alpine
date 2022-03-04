@@ -1,0 +1,20 @@
+checksume = "106f6cc16a0b96a3fa10e118f1ba5ddcae77db7da82d63fbbab1750db9430029"
+licence = "MIT"
+meta = false
+provides = "weston-shell-desktop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["weston", "9.0.0-r0"], ["pixman", "0.40.0-r3"], ["wayland-libs-server", "1.19.0-r1"], ["libweston", "9.0.0-r0"], ["libweston-desktop", "9.0.0-r0"]]

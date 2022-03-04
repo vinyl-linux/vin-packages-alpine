@@ -1,0 +1,20 @@
+checksume = "50ecc22c53f1149af6e070246028ea8dd601d9c19e82f6d1ed876fe0ec72c3f2"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "kde-applications-multimedia"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["audiocd-kio", "21.08.3-r0"], ["dragon", "21.08.3-r0"], ["juk", "21.08.3-r0"], ["kamoso", "21.08.3-r0"], ["kdenlive", "21.08.3-r0"], ["kmix", "21.08.3-r0"], ["kwave", "21.08.3-r0"]]

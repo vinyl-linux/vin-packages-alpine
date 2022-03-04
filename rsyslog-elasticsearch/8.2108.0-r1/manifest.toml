@@ -1,0 +1,20 @@
+checksume = "51ed892b846029478264ed9140af326f1b5a0b133dbaf63becaceb2e07abbaaa"
+licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
+meta = false
+provides = "rsyslog-elasticsearch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.2108.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

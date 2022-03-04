@@ -1,0 +1,20 @@
+checksume = "9216099c1f818c2fc1d899c3d31ca1f03bdda031f12e1bad30bd3d722c98239f"
+licence = "GPL-3.0-only"
+meta = false
+provides = "ranger"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.9.3-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"]]

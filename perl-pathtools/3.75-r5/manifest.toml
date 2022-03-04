@@ -1,0 +1,20 @@
+checksume = "3347e0c6eb1877396396a66e46f386fdc964dfda73cf4c4674563ded95e6f34b"
+licence = "GPL PerlArtistic"
+meta = false
+provides = "perl-pathtools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.75-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

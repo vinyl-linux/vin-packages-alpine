@@ -1,0 +1,20 @@
+checksume = "9ba19be637c1432c93abcdf1c303fed4fa2dfe65faf3a3c8475498c87da23f33"
+licence = "GPL"
+meta = false
+provides = "perl-term-progressbar"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.22-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-class-methodmaker", "2.24-r8"], ["perl-term-readkey", "2.38-r6"], ["perl-capture-tiny", "0.48-r2"], ["perl-test-exception", "0.43-r2"]]

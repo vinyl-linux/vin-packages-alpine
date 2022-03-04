@@ -1,0 +1,20 @@
+checksume = "db1808476ccba4566ea5b92039e7681a385a2afee882d2ee6e36a1de0b4d040e"
+licence = "GPL-3.0-only"
+meta = false
+provides = "pamixer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost1.77-program_options", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libpulse", "15.0-r2"], ["libstdc++", "10.3.1"]]

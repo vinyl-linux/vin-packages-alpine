@@ -1,0 +1,20 @@
+checksume = "b1e3f5665e43d5cf442929e621e79016eccdef8f078b7eac7599eeb7be1a74c5"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "goobook"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.5-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-httplib2", "0.19.1-r0"], ["py3-google-auth-httplib2", "0.0.4-r1"], ["py3-google-api-python-client", "1.8.3-r1"], ["py3-simplejson", "3.17.5-r0"], ["py3-oauth2client", "4.1.3-r3"]]

@@ -1,0 +1,20 @@
+checksume = "1f8d772fd67356a9ff0421255165024cc8606c689032860b5934a8f516e24cd0"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "drbd-utils-pacemaker"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "9.19.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["drbd-utils", "9.19.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "8cdd913e31e2c028db567862130fad3d02bf231b35c3ade4c1c30efe9717678e"
+licence = "MIT"
+meta = false
+provides = "libsurvive"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xr-hardware", "0.4.0-r0"], ["musl", "1.2.2-r7"], ["blas", "3.10.0-r0"], ["lapack", "3.10.0-r0"], ["libpcap", "1.10.1-r0"], ["libusb", "1.0.24-r3"], ["zlib", "1.2.11-r3"]]

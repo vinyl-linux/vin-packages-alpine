@@ -1,0 +1,20 @@
+checksume = "a3807b6207a906185fb52b0d6007d8c8f4bc9ea1e9d8a46e344651a24d6c200f"
+licence = "AGPL-3.0-or-later"
+meta = false
+provides = "gotop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.1.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["procps", "3.3.17-r0"], ["musl", "1.2.2-r7"]]

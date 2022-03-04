@@ -1,0 +1,20 @@
+checksume = "b8dd3a8871fe39139f1d8b784d2c1daaff1c4b8b49d7651a0aec834c397f375a"
+licence = "MIT"
+meta = false
+provides = "pixman"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.40.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

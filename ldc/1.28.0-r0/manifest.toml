@@ -1,0 +1,20 @@
+checksume = "ca5459c5046256c5583063fc0576e4b1b4f87e71584adb0c2f133a4457952939"
+licence = "BSD-3-Clause AND BSL-1.0 AND ( Artistic-1.0 OR GPL-2.0-or-later ) AND NCSA AND MIT"
+meta = false
+provides = "ldc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["llvm-libunwind-dev", "12.0.1-r1"], ["tzdata", "2021e-r0"], ["ldc-static", "1.28.0-r0"], ["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["ldc-runtime", "1.28.0-r0"], ["libstdc++", "10.3.1"], ["llvm-libunwind", "12.0.1-r1"]]

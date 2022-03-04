@@ -1,0 +1,20 @@
+checksume = "a0d753ea1d8e9a98297107a2e5aea79ff1bd0aa81275f50026d66dffeaf11d0e"
+licence = "custom"
+meta = false
+provides = "sbcl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "dc59baf1fda4d948c976aeac550d952ddd999d51484a947c1013ed5acd65215c"
+licence = "GPL-2.0-only"
+meta = false
+provides = "cups-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cups-client", "2.3.3-r5"], ["poppler-utils", "21.11.0-r0"], ["openssl", "1.1.1l-r8"], ["dbus", "1.12.20-r4"]]

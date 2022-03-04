@@ -1,0 +1,20 @@
+checksume = "a05fbcac788b1053f263476902d25b732bc011f6cd662e812b52d6c17600ea9e"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libisoburn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.5.4-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libburn", "1.5.4-r1"], ["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["libisofs", "1.5.4-r2"]]

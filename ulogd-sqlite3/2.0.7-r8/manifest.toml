@@ -1,0 +1,20 @@
+checksume = "c868dd06d2e627a8051034199a14a755d91f9f3ba5bbfb38a179fe9ba6a6973c"
+licence = "GPL-2.0-only"
+meta = false
+provides = "ulogd-sqlite3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.7-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ulogd", "2.0.7-r8"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

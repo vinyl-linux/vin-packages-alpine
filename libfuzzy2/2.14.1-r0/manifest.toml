@@ -1,0 +1,20 @@
+checksume = "6122ec07fdd60c70598924afa898da50958722c3bf2c630593c9a7335734a474"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libfuzzy2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.14.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

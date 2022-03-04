@@ -1,0 +1,20 @@
+checksume = "fde38471a0795606ca9e4a2abadb7a8dcedd5b21a1e44b3843e2f69036430baa"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "zbar-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.23.90-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libzbar", "0.23.90-r1"], ["libzbargtk", "0.23.90-r1"], ["libzbarqt", "0.23.90-r1"], ["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"]]

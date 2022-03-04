@@ -1,0 +1,20 @@
+checksume = "b7584ff47650e3d9127d75fdef20f701ed1148ec7470e6051a34034c347d8ed4"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "telepathy-mission-control"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.16.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["dbus-glib", "0.112-r0"], ["glib", "2.70.1-r0"], ["networkmanager", "1.32.12-r1"], ["telepathy-glib", "0.24.2-r1"]]

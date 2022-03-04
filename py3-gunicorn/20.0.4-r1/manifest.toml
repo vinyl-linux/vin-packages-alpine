@@ -1,0 +1,20 @@
+checksume = "484d9749548d81ae542da9c0c09b8d43e5ffadb7f1356cb25f283ed0f9ec0d23"
+licence = "MIT"
+meta = false
+provides = "py3-gunicorn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20.0.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-setuptools", "52.0.0-r4"]]

@@ -1,0 +1,20 @@
+checksume = "c6481ff40b26a010aa5f2c11cc35b8748672f8985247e18635342ea56d79aa4a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "aria2-bash-completion"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.36.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"]]

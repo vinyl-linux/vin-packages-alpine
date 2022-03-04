@@ -1,0 +1,20 @@
+checksume = "2e17f4b5ef579abf16ea1e7f04ed2eafed1aa1ef937c5d147944236be26963a6"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "gvfs-gphoto2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.48.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gsettings-desktop-schemas", "41.0-r0"], ["kwallet", "5.88.0-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libgphoto2", "2.5.27-r0"], ["libgudev", "237-r0"], ["gvfs", "1.48.1-r0"], ["libintl", "0.21-r0"]]

@@ -1,0 +1,20 @@
+checksume = "ef0569b6c364640b3733704fce26438c1fbd7c1c5fbf56ebfb56cb2595148646"
+licence = "GPL"
+meta = false
+provides = "mysecureshell"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.00-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssh", "8.8"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

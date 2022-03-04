@@ -1,0 +1,20 @@
+checksume = "b8779893589ec8eed7b7ac8fe7d1dcde785a9bd1d36203add8dd58c4ff208b45"
+licence = "MIT"
+meta = false
+provides = "task"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gnutls", "3.7.1-r0"], ["libstdc++", "10.3.1"], ["libuuid", "2.37.4-r0"]]

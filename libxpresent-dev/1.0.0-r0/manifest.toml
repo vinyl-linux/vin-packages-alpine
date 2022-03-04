@@ -1,0 +1,20 @@
+checksume = "f20dc81fc8539f31de122888672c3c8981cc8a1dffdaeab1adfcb4ca2b07254a"
+licence = "MIT"
+meta = false
+provides = "libxpresent-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxpresent", "1.0.0-r0"], ["xorgproto", "2021.5-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

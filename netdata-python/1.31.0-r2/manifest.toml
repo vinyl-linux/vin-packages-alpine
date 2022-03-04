@@ -1,0 +1,20 @@
+checksume = "0ac6a4480d97eb92dbaf13f577c230653496ad2013d03ccb61da0ab8fb029203"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "netdata-python"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.31.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["netdata", "1.31.0-r2"], ["python3", "3.9.7-r4"]]

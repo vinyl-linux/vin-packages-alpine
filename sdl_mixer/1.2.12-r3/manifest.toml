@@ -1,0 +1,20 @@
+checksume = "96dd62a0a6f18e8e5c87568b9c41b53aa333b0e76daa015fb49b0d7689badb24"
+licence = "BSD-3-Clause"
+meta = false
+provides = "sdl_mixer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.12-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sdl", "1.2.15-r13"], ["musl", "1.2.2-r7"]]

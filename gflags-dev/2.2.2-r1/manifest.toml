@@ -1,0 +1,20 @@
+checksume = "f0eefff0d6e1a10bc823a2ab9c051155de50ac74af38caf375dfb683865367d0"
+licence = "BSD-3-Clause"
+meta = false
+provides = "gflags-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gflags", "2.2.2-r1"], ["pkgconf", "1.8.0-r0"]]

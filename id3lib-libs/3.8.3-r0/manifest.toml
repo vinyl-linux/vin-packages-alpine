@@ -1,0 +1,20 @@
+checksume = "a8afe2c2a435e43b53e7c19ef3ec19bcf7800381912d6f1f67f09be7ae766e3b"
+licence = "GPL-2.0-only"
+meta = false
+provides = "id3lib-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "55e78908366690b881336280c83c571b1789550a795b0fb3d25af3472f572003"
+licence = "MIT"
+meta = false
+provides = "lua5.3-luassert"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.3", "5.3.6-r1"], ["lua5.3-say", "1.3-r1"]]

@@ -1,0 +1,20 @@
+checksume = "aa7c7b8ec43a5931dc9109c5db2c7f9987a43c7b83f39e1d0c2e7c4b90c9fd68"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libhdhomerun-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20200225-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libhdhomerun-libs", "20200225-r0"]]

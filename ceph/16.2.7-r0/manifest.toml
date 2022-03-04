@@ -1,0 +1,20 @@
+checksume = "1fb455660a52fd4b1b7b17ff39bf42066ce085b718587cedfb26e9c899647094"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+meta = false
+provides = "ceph"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ceph-osd", "16.2.7-r0"], ["ceph-mds", "16.2.7-r0"], ["ceph-mon", "16.2.7-r0"], ["boost1.77-context", "1.77.0-r1"], ["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["librados", "16.2.7-r0"], ["libcephfs", "16.2.7-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["libcurl", "7.80.0-r0"], ["expat", "2.4.6-r0"], ["fmt", "8.0.1-r0"], ["libgcc", "10.3.1"], ["icu-libs", "69.1-r1"], ["libldap", "2.6.0-r0"], ["lua5.3-libs", "5.3.6-r1"], ["librdkafka", "1.8.2-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1"]]

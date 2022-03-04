@@ -1,0 +1,20 @@
+checksume = "a795f31121f621bbcd701b340f0ea1f0df38bb2c55097034ea20f5b47ebc4d7f"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "charybdis"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.1.2-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libltdl", "2.4.6-r7"], ["sqlite-libs", "3.36.0-r0"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

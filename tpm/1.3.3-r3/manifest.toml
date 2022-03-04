@@ -1,0 +1,20 @@
+checksume = "cffa48a55a1c28c8b87d1daece92006740cafe4b654beb8f88182dae0cc5babf"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "tpm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.3-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gpg", "2.2.31-r1"]]

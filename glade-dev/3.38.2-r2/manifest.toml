@@ -1,0 +1,20 @@
+checksume = "4430a4205b4923ee1ba92b9acf72d567d1f1a9df7586617632c6a62f61b99262"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "glade-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.38.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["glade", "3.38.2-r2"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

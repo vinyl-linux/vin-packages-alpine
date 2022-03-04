@@ -1,0 +1,20 @@
+checksume = "d592a5fbba8e6fc83c08aeb05315631153ccf55468cbe9c6c5d9a96abd604707"
+licence = "GPL-2.0-only"
+meta = false
+provides = "libapparmor"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["sed", "4.8-r0"], ["musl", "1.2.2-r7"]]

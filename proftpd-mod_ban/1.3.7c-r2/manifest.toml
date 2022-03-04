@@ -1,0 +1,20 @@
+checksume = "09a55a96031b9a844c0b92008ce1ac5587bb48190686cc5140498328a330bbe5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "proftpd-mod_ban"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.7c-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["proftpd", "1.3.7c-r2"], ["musl", "1.2.2-r7"]]

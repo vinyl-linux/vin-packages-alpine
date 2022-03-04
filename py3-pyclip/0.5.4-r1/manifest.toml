@@ -1,0 +1,20 @@
+checksume = "21e1dd78832bd62c696b08bb92b32011b40190f18413b963c3b9d39b2ea55b52"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-pyclip"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xclip", "0.13-r2"], ["python3", "3.9.7-r4"]]

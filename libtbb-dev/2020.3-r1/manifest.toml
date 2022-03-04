@@ -1,0 +1,20 @@
+checksume = "bf0ecef16556d6d1cc626913624941da93e607e8c0bc96759d2cac14b08085fb"
+licence = "GPL-2.0-only"
+meta = false
+provides = "libtbb-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2020.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["linux-headers", "5.10.41-r0"], ["libtbb", "2020.3-r1"], ["pkgconf", "1.8.0-r0"]]

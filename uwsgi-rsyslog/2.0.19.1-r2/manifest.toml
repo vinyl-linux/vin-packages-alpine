@@ -1,0 +1,20 @@
+checksume = "d1f2c308221766fcabe2c76aefd2d2e75af1b7fd29872d9d808abdafa6972c6b"
+licence = "custom"
+meta = false
+provides = "uwsgi-rsyslog"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

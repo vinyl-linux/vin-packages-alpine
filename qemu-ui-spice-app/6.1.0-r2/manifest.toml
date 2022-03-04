@@ -1,0 +1,20 @@
+checksume = "a9f142013576939351da5f730602904c39ef40dfc642aa88357340d9cd323909"
+licence = "GPL-2.0 LGPL-2"
+meta = false
+provides = "qemu-ui-spice-app"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

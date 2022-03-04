@@ -1,0 +1,20 @@
+checksume = "cd7f96ee83bad0704d49937f00621801e76758a66e9e687be386099699e8fe7a"
+licence = "MIT"
+meta = false
+provides = "xev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxrandr", "1.5.2-r1"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "63092dae841ce0a6bf049dbe53e04815d062d225fc9e44d5e635b5962dc7b523"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libmemcached-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.18-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cyrus-sasl-dev", "2.1.27-r14"], ["libmemcached-libs", "1.0.18-r4"], ["pkgconf", "1.8.0-r0"]]

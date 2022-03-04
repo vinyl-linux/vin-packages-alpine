@@ -1,0 +1,20 @@
+checksume = "59d6710b186f66881f2c153f1c637622152aba59856acbd460948808337afa68"
+licence = "MPL-2.0"
+meta = false
+provides = "libvisio"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.7-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["icu-libs", "69.1-r1"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"]]

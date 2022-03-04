@@ -1,0 +1,20 @@
+checksume = "e9abcac14c18f062b2d8b704329ab3ca97cdcfc6b8ed93d8f34605eddc6e24af"
+licence = "MIT"
+meta = false
+provides = "detenc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

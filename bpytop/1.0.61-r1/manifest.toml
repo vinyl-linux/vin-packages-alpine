@@ -1,0 +1,20 @@
+checksume = "6e98a96d4512f67d422ae94620d98f8b5ba3bde42c742d73309835d72050cdba"
+licence = "Apache-2.0"
+meta = false
+provides = "bpytop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.61-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-psutil", "5.8.0-r1"]]

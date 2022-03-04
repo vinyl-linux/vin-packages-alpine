@@ -1,0 +1,20 @@
+checksume = "f1e7f532c47aa03ad70d2be6a8d52b751bc7106c1120ed9e4b85d8421296c19a"
+licence = "MPL-2.0"
+meta = false
+provides = "czmq-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["czmq", "4.2.1-r0"], ["zeromq-dev", "4.3.4-r0"], ["util-linux-dev", "2.37.4-r0"], ["pkgconf", "1.8.0-r0"]]

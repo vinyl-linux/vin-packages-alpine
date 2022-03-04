@@ -1,0 +1,20 @@
+checksume = "01eeef156598bf30b1adc39db20a46ec3b49378b43ad9bbe1bc6544ca0bcca5a"
+licence = "BSD-3-Clause"
+meta = false
+provides = "unbound-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.13.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dnssec-root", "20190225-r1"]]

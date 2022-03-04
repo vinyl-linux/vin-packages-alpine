@@ -1,0 +1,20 @@
+checksume = "d531dd5990f0df1738ef247bfcee5793f2415c0dee100d596f2ecb2da3db3268"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "netatalk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.12-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libacl", "2.2.53-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libevent", "2.1.12-r4"], ["libgcrypt", "1.9.4-r0"], ["mariadb-connector-c", "3.1.13-r2"], ["tdb-libs", "1.4.5-r0"]]

@@ -1,0 +1,20 @@
+checksume = "5d303a801ac72ffd11f8ebcff5fea465c2ead8d19b218354feac17434327836a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "ncmpc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.45-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libintl", "0.21-r0"], ["lirc", "0.10.1-r2"], ["libmpdclient", "2.19-r0"], ["ncurses-libs", "6.3"], ["pcre", "8.45-r1"], ["libstdc++", "10.3.1"]]

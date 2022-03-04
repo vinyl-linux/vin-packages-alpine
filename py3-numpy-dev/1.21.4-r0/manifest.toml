@@ -1,0 +1,20 @@
+checksume = "8f8511724a516dc2cbc64c8113b0d599ee9dc528cc2902e5d7576c920b25177d"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-numpy-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.21.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-numpy", "1.21.4-r0"]]

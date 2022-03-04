@@ -1,0 +1,20 @@
+checksume = "4d857d9fd799c3b04a30d5ccafb3434292b71eb1943dc40581fad715cbe095fe"
+licence = "BSD-3-Clause"
+meta = false
+provides = "go"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.17.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["binutils", "2.37-r3"], ["gcc", "10.3.1"], ["musl-dev", "1.2.2-r7"], ["musl", "1.2.2-r7"]]

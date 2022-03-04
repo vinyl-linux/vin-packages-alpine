@@ -1,0 +1,20 @@
+checksume = "f139b0fddd228d46a3689fc13f97da8790506062fe0c4de4ac1faebef8dfd3e5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gexiv2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["exiv2", "0.27.5-r0"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "9a4799341a577237abd3c4c4e2243dd518ae3db16d46bf346f3b645c43fed385"
+licence = "EPL-1.0"
+meta = false
+provides = "py3-gv"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.49.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["graphviz", "2.49.3-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

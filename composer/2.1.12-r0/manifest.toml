@@ -1,0 +1,20 @@
+checksume = "9ce25a092bee78b48783b8601d3d306cf10d860d2da1286565e8d67d51410e63"
+licence = "MIT"
+meta = false
+provides = "composer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8", "8.0.16-r0"], ["php8-phar", "8.0.16-r0"], ["php8-curl", "8.0.16-r0"], ["php8-iconv", "8.0.16-r0"], ["php8-mbstring", "8.0.16-r0"], ["php8-openssl", "8.0.16-r0"], ["php8-zip", "8.0.16-r0"]]

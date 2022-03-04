@@ -1,0 +1,20 @@
+checksume = "2638693115f9a13d34fdf6baf5646a2780146416600c5c973474a273573f1a27"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "eggdrop-logs2html"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.8.4-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["tcl", "8.6.11-r0"]]

@@ -1,0 +1,20 @@
+checksume = "f526d4dea8511c37cce1ab6bfd221dbfd51e478e0ac5fb5051bee3a9520728e1"
+licence = "MIT"
+meta = false
+provides = "lua5.2-rex-pcre"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.9.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["pcre", "8.45-r1"]]

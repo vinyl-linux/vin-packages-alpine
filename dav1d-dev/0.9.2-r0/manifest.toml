@@ -1,0 +1,20 @@
+checksume = "2feafc46256d1d250126761596e4d47f0ddc081967a654ffc3ec2332d359dc0d"
+licence = "BSD-2-Clause"
+meta = false
+provides = "dav1d-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libdav1d", "0.9.2-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2b028f20276749efa8e0e0704b15ce11c769be21eda70273c2e67a5b5ccf63df"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "py3-mygpoclient"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"]]

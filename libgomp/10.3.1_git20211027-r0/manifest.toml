@@ -1,0 +1,20 @@
+checksume = "29dcf6b4942a0578037b7ecc7c99ca062087236ec64896d6a547fc632be8feb0"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+meta = false
+provides = "libgomp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.3.1_git20211027-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

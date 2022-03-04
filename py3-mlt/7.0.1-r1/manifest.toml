@@ -1,0 +1,20 @@
+checksume = "25216287a36b822aa76dad662d89d71b08d2c62eac94443f8e89d5f0c94aa349"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later AND GPL-3.0-or-later"
+meta = false
+provides = "py3-mlt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mlt", "7.0.1-r1"], ["libstdc++", "10.3.1"]]

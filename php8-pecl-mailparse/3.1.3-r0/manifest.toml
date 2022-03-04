@@ -1,0 +1,20 @@
+checksume = "2438d9ff0ab3dee6bb0bad4d919c0399d8615a0482f54d0dda3c11584d2b4a9a"
+licence = "PHP-3.01"
+meta = false
+provides = "php8-pecl-mailparse"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-mbstring", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

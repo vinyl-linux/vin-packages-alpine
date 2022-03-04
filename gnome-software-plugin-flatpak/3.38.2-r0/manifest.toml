@@ -1,0 +1,20 @@
+checksume = "bc4120330cca98f147e238c62e69a7ffd237cbd271585eab5fc0a3e8ed45610b"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnome-software-plugin-flatpak"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.38.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["appstream-glib", "0.7.18-r1"], ["musl", "1.2.2-r7"], ["flatpak-libs", "1.12.3-r1"], ["gtk+3.0", "3.24.30-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["json-glib", "1.6.6-r0"], ["ostree", "2021.5-r0"], ["polkit-elogind-libs", "0.119-r8"], ["libsoup", "2.74.0-r0"], ["libxmlb", "0.2.1-r1"]]

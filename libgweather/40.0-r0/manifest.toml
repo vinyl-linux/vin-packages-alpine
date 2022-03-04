@@ -1,0 +1,20 @@
+checksume = "3c2b9e90af65c4f4b190cb244910c4d77f3e60a7f7c942518d1fad5563260b7c"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libgweather"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "40.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["tzdata", "2021e-r0"], ["gsettings-desktop-schemas", "41.0-r0"], ["musl", "1.2.2-r7"], ["geocode-glib", "3.26.2-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["libintl", "0.21-r0"], ["libsoup", "2.74.0-r0"], ["libxml2", "2.9.12-r2"]]

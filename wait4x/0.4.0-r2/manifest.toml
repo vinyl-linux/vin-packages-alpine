@@ -1,0 +1,20 @@
+checksume = "47ad303f0686708f70e944ad994b118b6dcb1e5d718fea3e0b342540613ea419"
+licence = "MIT"
+meta = false
+provides = "wait4x"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "b76271fcbcb18f86eb94c6f980b2b47eeb1c74a815cae4f98dd16a767a7eab71"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libdap-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.20.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libtirpc-dev", "1.3.2-r0"], ["libdap", "3.20.8-r0"], ["curl-dev", "7.80.0-r0"], ["libxml2-dev", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "7e36c32da04814556e939df0f6403bf3168969471412f4f715789818314dd1fd"
+licence = "MIT"
+meta = false
+provides = "cesnet-tcs-cli"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"], ["curl", "7.80.0-r0"], ["openssl", "1.1.1l-r8"]]

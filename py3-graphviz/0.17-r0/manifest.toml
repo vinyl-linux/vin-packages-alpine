@@ -1,0 +1,20 @@
+checksume = "5505ebee350219e78797a8530f515a19c47f2169e2d49a5e2942bbba2f8d9160"
+licence = "MIT"
+meta = false
+provides = "py3-graphviz"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.17-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["graphviz", "2.49.3-r0"], ["python3", "3.9.7-r4"]]

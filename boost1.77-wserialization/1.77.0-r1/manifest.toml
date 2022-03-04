@@ -1,0 +1,20 @@
+checksume = "bc805b059667ad917c259f41485ea55d27e66da415597b5004c55fc924627157"
+licence = "BSL-1.0"
+meta = false
+provides = "boost1.77-wserialization"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.77.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost1.77-serialization", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

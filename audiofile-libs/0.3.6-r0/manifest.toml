@@ -1,0 +1,20 @@
+checksume = "91403818e047b66b80d82aed972cbd71e128b98d335b47028f26367a3243ed4a"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "audiofile-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

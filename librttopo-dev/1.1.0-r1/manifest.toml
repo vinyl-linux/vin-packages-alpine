@@ -1,0 +1,20 @@
+checksume = "279a74ca90bfb705e0db09e50d482627282a9d0f5248ae2562163ce1574f3c8f"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "librttopo-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["geos-dev", "3.10.2-r0"], ["librttopo", "1.1.0-r1"], ["pkgconf", "1.8.0-r0"]]

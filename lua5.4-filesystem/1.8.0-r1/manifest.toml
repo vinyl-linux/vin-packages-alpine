@@ -1,0 +1,20 @@
+checksume = "4ccea8d85490c4ace30eefc9cf09cab7c2549717558f764f9b0621acc9189afc"
+licence = "MIT"
+meta = false
+provides = "lua5.4-filesystem"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.8.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.4", "5.4.3-r0"], ["musl", "1.2.2-r7"]]

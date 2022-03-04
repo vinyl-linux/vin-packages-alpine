@@ -1,0 +1,20 @@
+checksume = "1ecacf67db75346dfb7222746d4141b3292753a8df43c666bad5b4ab170886c2"
+licence = "GPL-2.0-only"
+meta = false
+provides = "cinnamon-desktop-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cinnamon-desktop", "5.0.0-r1"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pulseaudio-dev", "15.0-r2"], ["libxkbfile-dev", "1.1.0-r0"], ["pkgconf", "1.8.0-r0"]]

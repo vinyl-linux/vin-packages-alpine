@@ -1,0 +1,20 @@
+checksume = "a42fe12dbe0fde1d3ca027566ab1b2a191b4f40940ac41b6d8117a6c110927b5"
+licence = "Apache-2.0"
+meta = false
+provides = "bcc-lua"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.23.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bcc", "0.23.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

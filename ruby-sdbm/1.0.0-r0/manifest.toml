@@ -1,0 +1,20 @@
+checksume = "64323600046ca9d769fa8a471e42c3780247f5f7df6bd810ef2e526da63def82"
+licence = "BSD-2-Clause"
+meta = false
+provides = "ruby-sdbm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

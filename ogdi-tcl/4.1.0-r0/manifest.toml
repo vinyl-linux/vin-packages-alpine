@@ -1,0 +1,20 @@
+checksume = "603adba1c801ab6d2ab7b67906c87a8809c9d40acfc2e132ef9e2330fdde2c39"
+licence = "MIT"
+meta = false
+provides = "ogdi-tcl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ogdi", "4.1.0-r0"], ["tcl", "8.6.11-r0"]]

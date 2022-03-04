@@ -1,0 +1,20 @@
+checksume = "5453e3bbb15a109fcdd3de889d63460e65de94ef4434dce5fcafc0e555694038"
+licence = "GPL"
+meta = false
+provides = "sqsh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.5.16.1-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["freetds", "1.3.3-r2"], ["readline", "8.1.1-r0"]]

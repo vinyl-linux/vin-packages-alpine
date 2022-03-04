@@ -1,0 +1,20 @@
+checksume = "fcbe18d2f9701604a6b9fd089342a44d33df4ce79324fc87af27f203983603e3"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
+meta = false
+provides = "mythes-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["hunspell-dev", "1.7.0-r1"], ["mythes", "1.2.4-r1"], ["pkgconf", "1.8.0-r0"]]

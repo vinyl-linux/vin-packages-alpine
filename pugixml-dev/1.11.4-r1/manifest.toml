@@ -1,0 +1,20 @@
+checksume = "e57fe9beddc7d93eb74fee291e21fc78552d87f02a9763730e050bddf3b37b4a"
+licence = "MIT"
+meta = false
+provides = "pugixml-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.11.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["pugixml", "1.11.4-r1"]]

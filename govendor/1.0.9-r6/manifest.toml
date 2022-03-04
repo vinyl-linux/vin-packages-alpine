@@ -1,0 +1,20 @@
+checksume = "9679a8f64bee74403ebb3a477aba5311e2acef85466fef509003159e38012191"
+licence = "BSD-3-Clause"
+meta = false
+provides = "govendor"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.9-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

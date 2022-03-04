@@ -1,0 +1,20 @@
+checksume = "0f90f9a3ff12be88a411427b319714f2d8e11e5a44e26f526aaabaa74615fcc9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "eog-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gsettings-desktop-schemas", "41.0-r0"]]

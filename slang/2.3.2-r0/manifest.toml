@@ -1,0 +1,20 @@
+checksume = "2142b76950d413ac16aec0312d386d6dc5ee896768c7bdaea6cf40f4dd83acc5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "slang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["pcre", "8.45-r1"]]

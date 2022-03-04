@@ -1,0 +1,20 @@
+checksume = "fb6ad8b864c6792e6797dc0bdfa96c0ebcd6e28bbdf0923fa177d2c6feb936d4"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "xfce4-panel-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.16.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xfconf-dev", "4.16.0-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libxfce4util-dev", "4.16.0-r1"], ["pkgconf", "1.8.0-r0"], ["xfce4-panel", "4.16.3-r0"]]

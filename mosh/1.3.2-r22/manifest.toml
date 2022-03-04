@@ -1,0 +1,20 @@
+checksume = "463fdb1d972f38e7a641cf6aca45d1abf2676dc97b95302d5e8a277107a6b8ca"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "mosh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.3.2-r22"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mosh-client", "1.3.2-r22"], ["mosh-server", "1.3.2-r22"]]

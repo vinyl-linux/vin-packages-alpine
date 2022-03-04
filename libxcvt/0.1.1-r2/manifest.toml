@@ -1,0 +1,20 @@
+checksume = "e9077158e0b1dfd9fcef23edd41e029e251018d4d7b3a82510580330e1a34221"
+licence = "custom"
+meta = false
+provides = "libxcvt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

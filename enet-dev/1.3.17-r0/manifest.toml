@@ -1,0 +1,20 @@
+checksume = "ff22cc087c6f14a162d48c3d4156784f7d4177655f6708db60466ea37c5b6ae9"
+licence = "MIT"
+meta = false
+provides = "enet-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.17-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["enet", "1.3.17-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "f818a519bbea98eb98873e40626f84075b816a8a2d1c5f512abbce85e0c87136"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "perl-git-svn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.34.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["perl-git", "2.34.1-r0"]]

@@ -1,0 +1,20 @@
+checksume = "f77ac68575765db65f4d04d56a55b1767adfa22037a37a692b4c719bbc061ec0"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "freeradius-mysql"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.25-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["freeradius-sql", "3.0.25-r1"], ["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]

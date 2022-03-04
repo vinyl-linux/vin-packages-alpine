@@ -1,0 +1,20 @@
+checksume = "97ebb176097e7445c2dffdd32e385aaa91c36f37080024580aebfa07d89d4e93"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt5-qtpurchasing-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.3_git20201028-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtpurchasing", "5.15.3"]]

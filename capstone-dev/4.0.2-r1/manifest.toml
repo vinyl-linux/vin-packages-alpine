@@ -1,0 +1,20 @@
+checksume = "e92e4bb7ed3ca6202791cf23e8c3040c0d68ac18a026d2089ac8143b89a1aa5d"
+licence = "BSD-3-Clause-Clear"
+meta = false
+provides = "capstone-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["capstone", "4.0.2-r1"], ["pkgconf", "1.8.0-r0"]]

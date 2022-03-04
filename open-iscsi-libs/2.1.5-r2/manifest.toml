@@ -1,0 +1,20 @@
+checksume = "57e23133ed7ade0ba204ebe1e6c0c1dc12ed25dcd010ae01fe9bd054407fc190"
+licence = "GPL-2.0-only"
+meta = false
+provides = "open-iscsi-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.5-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["kmod-libs", "29-r2"]]

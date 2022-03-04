@@ -1,0 +1,20 @@
+checksume = "58f62dfad86e94ab3509d744bfdd01e5c7c1b80fc7a441ae5c24e94e2ad4f795"
+licence = "BSD-3-Clause"
+meta = false
+provides = "php8-pecl-protobuf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.19.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

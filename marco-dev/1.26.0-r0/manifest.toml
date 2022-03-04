@@ -1,0 +1,20 @@
+checksume = "d318996baab61116a38e12cbe8bd204ec71c319c822733ba293b180a84fdbe6e"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "marco-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["marco", "1.26.0-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

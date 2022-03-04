@@ -1,0 +1,20 @@
+checksume = "a3d69fca43b18141cc49edbda1757059236da378dcaae2eb267e11437867be46"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "dejagnu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.6.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["expect", "5.45.4-r2"]]

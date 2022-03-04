@@ -1,0 +1,20 @@
+checksume = "974560c6c4d27f608ebc2c4045671c44ce76fd35da4e7a0c40f67a338e80379d"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+meta = false
+provides = "libkcddb-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libkcddb", "21.08.3-r0"]]

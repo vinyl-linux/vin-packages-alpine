@@ -1,0 +1,20 @@
+checksume = "a43c283ff5841062f0d23385dde6af3cc45d7d4987717adf4a795ef83e08c2fe"
+licence = "custom"
+meta = false
+provides = "git-zsh-completion"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.8.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["zsh", "5.8.1-r0"]]

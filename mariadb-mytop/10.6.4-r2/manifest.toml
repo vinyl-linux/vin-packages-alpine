@@ -1,0 +1,20 @@
+checksume = "b74b295b0dc58d4b61d86e5170e046660925b61bb5fddf740317e727d24c7337"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "mariadb-mytop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.6.4-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-dbi", "1.643-r3"], ["perl-dbd-mysql", "4.050-r4"], ["perl-getopt-long", "2.52-r1"], ["perl-socket", "2.032-r1"], ["perl-term-readkey", "2.38-r6"]]

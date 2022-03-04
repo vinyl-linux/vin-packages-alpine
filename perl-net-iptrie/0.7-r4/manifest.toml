@@ -1,0 +1,20 @@
+checksume = "58ec23d2c6ae8241c03bb0250753902f181a931fb82f931fbe1b815bf1665296"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-net-iptrie"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.7-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-netaddr-ip", "4.079-r6"], ["perl-module-build", "0.4231-r1"]]

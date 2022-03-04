@@ -1,0 +1,20 @@
+checksume = "890c25cb75f2592c876d047e7746e5735cac608d70d9123bd535d8b0f8f72273"
+licence = "MIT"
+meta = false
+provides = "libxrandr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.5.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["libxrender", "0.9.10-r3"], ["musl", "1.2.2-r7"]]

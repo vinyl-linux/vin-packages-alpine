@@ -1,0 +1,20 @@
+checksume = "74842e6228f854f55f11a10c3ac699689684030a07740a31d5258eb07ccd24ab"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nemo-qml-plugin-devicelock-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["elogind-dev", "246.10-r4"], ["nemo-keepalive-dev", "1.8.4-r1"], ["nemo-qml-plugin-dbus-dev", "2.1.25-r0"], ["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["nemo-qml-plugin-devicelock", "0.3.7-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "6efbc1781ed97847c6a2628f483603c9c0cda9470ad01b58527dae2eca65ee61"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+meta = false
+provides = "ntfs-3g-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2021.8.22-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

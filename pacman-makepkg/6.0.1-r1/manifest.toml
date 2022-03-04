@@ -1,0 +1,20 @@
+checksume = "190ea077c67885f73105a5ec3dc12e3717c10b9be1328f1f5d51e4b99c730cfb"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "pacman-makepkg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["libarchive-tools", "3.6.0-r0"], ["pacman", "6.0.1-r1"], ["musl", "1.2.2-r7"], ["libintl", "0.21-r0"]]

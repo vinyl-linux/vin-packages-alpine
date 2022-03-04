@@ -1,0 +1,20 @@
+checksume = "b6e13971027a374405a3e37800d1923657cb1c922c901d6ad6e59cf552ae8178"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-asttokens"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-six", "1.16.0-r0"]]

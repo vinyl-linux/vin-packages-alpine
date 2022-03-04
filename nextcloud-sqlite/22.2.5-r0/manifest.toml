@@ -1,0 +1,20 @@
+checksume = "a4629825b61b4c134cd81e2a2cb01173813c9bf2f0a89d2ef9b3cf082cbf398f"
+licence = "AGPL-3.0-only"
+meta = false
+provides = "nextcloud-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nextcloud", "22.2.5-r0"], ["php8-sqlite3", "8.0.16-r0"], ["php8-pdo_sqlite", "8.0.16-r0"]]

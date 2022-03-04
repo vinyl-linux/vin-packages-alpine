@@ -1,0 +1,20 @@
+checksume = "ca9dadb1c9ce09447b7a36cef33cc0fc4540d4c7059149a7c86a1ae945283756"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gvm-libs-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.4.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gvm-libs", "21.4.3-r1"], ["glib-dev", "2.70.1-r0"], ["gnutls-dev", "3.7.1-r0"], ["util-linux-dev", "2.37.4-r0"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "aec29e9dc572dd17bb0f81caca31b929d156a4d56a156d59ae342f32d05a3d43"
+licence = "Apache-2.0"
+meta = false
+provides = "meson"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.59.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["samurai", "1.2-r1"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,20 @@
+checksume = "0e42705e8c88e3dc4d5dedef040bbf94adc9d6330d7c35f8cf15e772cc5a755a"
+licence = "custom"
+meta = false
+provides = "sleuthkit-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.11.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sqlite-dev", "3.36.0-r0"], ["pkgconf", "1.8.0-r0"], ["sleuthkit-libs", "4.11.1-r0"]]

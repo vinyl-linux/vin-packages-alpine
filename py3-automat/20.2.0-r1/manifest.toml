@@ -1,0 +1,20 @@
+checksume = "711d02d6961d4565381a5db4a20a8f5bb194e02ec8b6012b27491210e592aa41"
+licence = "MIT"
+meta = false
+provides = "py3-automat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-attrs", "21.2.0-r0"], ["py3-six", "1.16.0-r0"]]

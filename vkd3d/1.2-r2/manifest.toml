@@ -1,0 +1,20 @@
+checksume = "4ba7b15830c7cd191ed9513f08c6f63c021eaa1d152e100ffe2b41cb1d52c20c"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "vkd3d"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["spirv-tools", "2020.3-r1"], ["musl", "1.2.2-r7"]]

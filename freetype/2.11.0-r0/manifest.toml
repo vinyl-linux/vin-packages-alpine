@@ -1,0 +1,20 @@
+checksume = "9450b9d3ad20a755adc0c9627adead0c60f57c08ac9e3b76a705aff9c0b9b79c"
+licence = "FTL GPL-2.0-or-later"
+meta = false
+provides = "freetype"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.11.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["brotli-libs", "1.0.9-r5"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libpng", "1.6.37-r1"], ["zlib", "1.2.11-r3"]]

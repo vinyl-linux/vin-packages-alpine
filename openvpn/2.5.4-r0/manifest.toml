@@ -1,0 +1,20 @@
+checksume = "c47a67871c3014346d800f8a641a4b8991ac30593381ba8a675b0a68c8a4b737"
+licence = "custom"
+meta = false
+provides = "openvpn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.5.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iproute2", "5.15.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["lzo", "2.10-r2"], ["libssl1.1", "1.1.1l-r8"]]

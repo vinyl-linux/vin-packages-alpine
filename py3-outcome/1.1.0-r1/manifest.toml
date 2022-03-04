@@ -1,0 +1,20 @@
+checksume = "b38de85b028d9881a1881207d31f67b6932d14480fd88a68d9064b1841c23cf4"
+licence = "MIT OR Apache-2.0"
+meta = false
+provides = "py3-outcome"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-async_generator", "1.10-r2"], ["py3-attrs", "21.2.0-r0"], ["python3", "3.9.7-r4"]]

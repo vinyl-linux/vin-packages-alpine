@@ -1,0 +1,20 @@
+checksume = "1f56a4b6312ff2a08c11aff17520d25226a26ff45db594751bb24795fe7e7a68"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "zbar"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.23.90-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-gobject3", "3.42.0-r1"], ["imagemagick-libs", "7.1.0.16-r0"], ["musl", "1.2.2-r7"], ["libintl", "0.21-r0"], ["libzbar", "0.23.90-r1"]]

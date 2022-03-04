@@ -1,0 +1,20 @@
+checksume = "b55bf9211664037516227c60d805f65e3a81d0cf98849f088538fc5154f2b400"
+licence = "BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain"
+meta = false
+provides = "ppp-atm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.4.9-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ppp-daemon", "2.4.9-r2"], ["musl", "1.2.2-r7"]]

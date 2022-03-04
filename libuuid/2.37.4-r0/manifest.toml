@@ -1,0 +1,20 @@
+checksume = "a2687be5b5dc11706b2a86ac9eaf41be49074f6e3ec469d2bf1bd1b9e265bac7"
+licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
+meta = false
+provides = "libuuid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.37.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

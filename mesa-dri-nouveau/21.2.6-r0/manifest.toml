@@ -1,0 +1,20 @@
+checksume = "ce0304491e97f9cd1b07a982542265768f67aba64e1e0de2724f06e0ed6a2526"
+licence = "MIT SGI-B-2.0 BSL-1.0"
+meta = false
+provides = "mesa-dri-nouveau"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "21.2.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-dri-classic", "21.2.6-r0"], ["mesa-dri-gallium", "21.2.6-r0"], ["mesa-va-gallium", "21.2.6-r0"], ["mesa-vdpau-gallium", "21.2.6-r0"]]

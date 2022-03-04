@@ -1,0 +1,20 @@
+checksume = "2b996f72baea09a66157161dcf61917cdec3af3a364f5b34e067d724d1981d6a"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libasyncns-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libasyncns", "0.8-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "0d29ad2abf966798878f0b564873f8395d69484b442c4c349d54904a8355a4ec"
+licence = "GPL-3.0-only"
+meta = false
+provides = "nagios-plugins-sensors"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nagios-plugins", "2.3.3-r1"], ["grep", "3.7-r0"], ["lm-sensors", "3.6.0-r1"]]

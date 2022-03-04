@@ -1,0 +1,20 @@
+checksume = "84370ed23115cd93229bd3b3df0318db859586eb913cc1df8789a9da5b772830"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "eyed3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.6-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-magic", "0.4.24-r0"], ["py3-six", "1.16.0-r0"], ["py3-deprecation", "2.1.0-r2"], ["py3-filetype", "1.0.8-r0"]]

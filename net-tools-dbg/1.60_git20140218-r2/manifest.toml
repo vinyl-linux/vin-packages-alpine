@@ -1,0 +1,20 @@
+checksume = "6882826f550cd75df3581c44f9a6714ebe02afe740466f1ef697bb038552c2d3"
+licence = "GPL-2.0"
+meta = false
+provides = "net-tools-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.60_git20140218-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mii-tool", "1.60"]]

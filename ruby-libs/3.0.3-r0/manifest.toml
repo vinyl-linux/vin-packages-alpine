@@ -1,0 +1,20 @@
+checksume = "4dde09e5a7e19eceb3fb54a0b634eee752cfc3807a9c904f9a23e17c9f39b316"
+licence = "Ruby AND BSD-2-Clause AND MIT"
+meta = false
+provides = "ruby-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libffi", "3.4.2-r1"], ["gdbm", "1.22-r0"], ["gmp", "6.2.1-r1"], ["readline", "8.1.1-r0"], ["libssl1.1", "1.1.1l-r8"], ["yaml", "0.2.5-r0"], ["zlib", "1.2.11-r3"]]

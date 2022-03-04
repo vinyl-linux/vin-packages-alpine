@@ -1,0 +1,20 @@
+checksume = "37bebafabc25813e5ef1bbb3c0ff2bdb2fb1cb0b740dd172009f03e4bc405de8"
+licence = "MIT"
+meta = false
+provides = "ftgl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-dev", "21.2.6-r0"], ["freeglut-dev", "3.2.1-r2"], ["bash", "5.1.16-r0"], ["ftgl", "2.4.0-r0"], ["freetype-dev", "2.11.0-r0"], ["pkgconf", "1.8.0-r0"]]

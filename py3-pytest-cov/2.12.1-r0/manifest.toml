@@ -1,0 +1,20 @@
+checksume = "74f280e6ac4916bf1f4764c01bdfcd26ca22c4e5422de69f62a624ef08975e5d"
+licence = "MIT"
+meta = false
+provides = "py3-pytest-cov"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.12.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-pytest", "6.2.5-r0"], ["py3-coverage", "5.5-r0"]]

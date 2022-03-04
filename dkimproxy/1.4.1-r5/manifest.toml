@@ -1,0 +1,20 @@
+checksume = "65c52ff003151d3a5095453bf67cd157fb578574c8cdc59db1f062deda454461"
+licence = "GPL"
+meta = false
+provides = "dkimproxy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.4.1-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-mail-dkim", "1.20200907-r1"], ["perl-net-server", "2.010-r0"], ["perl-error", "0.17029-r1"], ["busybox", "1.34.1-r4"]]

@@ -1,0 +1,20 @@
+checksume = "08f3e6ef49bf8a212c862145d2aaf422984c8744ee30281a7661c695f4763a2f"
+licence = "MIT"
+meta = false
+provides = "nfpm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.9.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

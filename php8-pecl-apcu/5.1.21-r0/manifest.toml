@@ -1,0 +1,20 @@
+checksume = "ff5693a2de76fb03dc9274350021b0a77c40ef14be70f2a0c00a4398cfe018b1"
+licence = "PHP-3.01"
+meta = false
+provides = "php8-pecl-apcu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.1.21-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

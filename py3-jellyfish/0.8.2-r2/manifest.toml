@@ -1,0 +1,20 @@
+checksume = "71c67dfa801b6b8439e10f37984e09b40d88b72a4eb7f25510ffe8dfd9098b51"
+licence = "BSD-2-Clause"
+meta = false
+provides = "py3-jellyfish"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

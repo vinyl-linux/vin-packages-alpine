@@ -1,0 +1,20 @@
+checksume = "1821156f13f37f7b6868a2a8a526d7093d0792ee10e59b938d31bd949fe8d019"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt6-qtimageformats-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libmng-dev", "2.0.3-r1"], ["qt6-qtbase-dev", "6.2.1-r2"]]

@@ -1,0 +1,20 @@
+checksume = "c52273fe1c82c6f5388bfcabdc856da16ecc98f916d757c290f74e74019a83dc"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "talloc-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["py3-talloc", "2.3.3-r0"], ["talloc", "2.3.3-r0"]]

@@ -1,0 +1,20 @@
+checksume = "81d164684eb1321617ea23f192960c14cb737a61ed89b738fdc22342d8d0c91e"
+licence = "GPL-2.0+, LGPL-2.1+, Zlib"
+meta = false
+provides = "rarian-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.8.1-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["rarian", "0.8.1-r7"]]

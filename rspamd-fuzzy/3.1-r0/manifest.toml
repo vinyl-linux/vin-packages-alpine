@@ -1,0 +1,20 @@
+checksume = "216cf7c8f455406e64d3ebf4edf7ed2ad7d8c336e9ae4046a562aaae1ccc3e8b"
+licence = "Apache-2.0"
+meta = false
+provides = "rspamd-fuzzy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rspamd", "3.1-r0"]]

@@ -1,0 +1,20 @@
+checksume = "7b6007b438239e307ffd928dd3a93af33c79078342811aac08d952c3f2bc40d4"
+licence = "MIT"
+meta = false
+provides = "expat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.4.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

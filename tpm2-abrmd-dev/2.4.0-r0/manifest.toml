@@ -1,0 +1,20 @@
+checksume = "fb955a7dcb8470a796b8319232207414495e62b06362a8ebb7cf46025e1cd10b"
+licence = "BSD-2-Clause"
+meta = false
+provides = "tpm2-abrmd-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libtss2-tcti-armbd", "2.4.0-r0"], ["glib-dev", "2.70.1-r0"], ["tpm2-tss-dev", "3.0.3-r1"], ["pkgconf", "1.8.0-r0"]]

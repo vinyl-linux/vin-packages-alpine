@@ -1,0 +1,20 @@
+checksume = "06dff08f21b8e7df8576b5b20b7a367a05add32a3606d3bb5d2ba5e8bd679d5f"
+licence = "MIT"
+meta = false
+provides = "bupstash"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libsodium", "1.0.18-r0"]]

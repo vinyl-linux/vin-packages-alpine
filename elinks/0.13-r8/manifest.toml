@@ -1,0 +1,20 @@
+checksume = "4fa91c20e0565269e4809fb277f8a1b1c7ac9adb46af5a286a19f2701e10c1e0"
+licence = "GPL"
+meta = false
+provides = "elinks"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.13-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["expat", "2.4.6-r0"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "29d30d2fb2e6c970216ccde76500f9461ea55f9511fce7cd75210eac3fe2f50b"
+licence = "MIT"
+meta = false
+provides = "lazygit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.28.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

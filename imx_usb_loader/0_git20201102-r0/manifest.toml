@@ -1,0 +1,20 @@
+checksume = "06f7505270e893a3b7145b01d4dd729b86f5d2b0270ce92f9e23740fa7d4f211"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "imx_usb_loader"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0_git20201102-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

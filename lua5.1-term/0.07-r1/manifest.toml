@@ -1,0 +1,20 @@
+checksume = "b3b9cd42d99c1b1c209a55ce459fb7f24c8cf09f3ce4cba3c4612d7f6ae2a49c"
+licence = "MIT"
+meta = false
+provides = "lua5.1-term"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.07-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"]]

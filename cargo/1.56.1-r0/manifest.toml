@@ -1,0 +1,20 @@
+checksume = "fdb66ca4c0e178132cfedb43c5344682e1aa08fa7edb79105c5367de3da783d1"
+licence = "Apache-2.0 MIT UNLICENSE"
+meta = false
+provides = "cargo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rust", "1.56.1-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "9d046b57cf4f44c61cc9add61a05575a5072385f7bd8e7f72e6acd19b10c7c2e"
+licence = "LGPL-3.0-only"
+meta = false
+provides = "net-cpp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

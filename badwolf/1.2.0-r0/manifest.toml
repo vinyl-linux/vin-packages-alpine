@@ -1,0 +1,20 @@
+checksume = "cd3967ad2e91bc6a95a36fcdc250a63de87b9d57b4b8bd03258ffbaa4ac1ec76"
+licence = "BSD-3-Clause"
+meta = false
+provides = "badwolf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["webkit2gtk", "2.34.2-r0"], ["libxml2", "2.9.12-r2"]]

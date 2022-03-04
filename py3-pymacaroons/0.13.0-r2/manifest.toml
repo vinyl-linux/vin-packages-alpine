@@ -1,0 +1,20 @@
+checksume = "e4bf35f070b2291d4e359680e0274cc778792d2f7eeaa72c9d8a4753841c2bfb"
+licence = "MIT"
+meta = false
+provides = "py3-pymacaroons"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-six", "1.16.0-r0"], ["py3-pynacl", "1.4.0-r2"]]

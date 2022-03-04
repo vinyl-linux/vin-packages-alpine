@@ -1,0 +1,20 @@
+checksume = "e688b3eafa915b3227abfc5cd55b9f6d7faafc6c150fece58aa8b858a26ca113"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libgsasl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libgsasl", "1.8.1-r2"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2f99f36da599a260c613ddb78de9b045b044a208820cee9e2205ab36e52e1bcf"
+licence = "Apache-2.0"
+meta = false
+provides = "tesseract-ocr-data-bul"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.1.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["tesseract-ocr", "4.1.3-r0"]]

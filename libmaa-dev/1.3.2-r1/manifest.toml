@@ -1,0 +1,20 @@
+checksume = "40bbec7e22de70d012fe2d18cf50f71a373a2feb5fa305a3c775e5c6c3d3b12e"
+licence = "GPL-1.0-or-later AND LGPL-2.0-or-later"
+meta = false
+provides = "libmaa-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libmaa", "1.3.2-r1"]]

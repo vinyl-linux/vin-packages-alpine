@@ -1,0 +1,20 @@
+checksume = "15c28ffd74b7e5f74095c2ec81b2bcab3fc01e81c8b387483fcda80d7ece2ed1"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libevent-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.12-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["libevent", "2.1.12-r4"], ["pkgconf", "1.8.0-r0"]]

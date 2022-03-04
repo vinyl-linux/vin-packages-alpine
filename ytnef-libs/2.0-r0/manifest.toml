@@ -1,0 +1,20 @@
+checksume = "cab4b51cc1c212f74b0c7a55cc989177b8b36d4540288864b774020daa19f8d9"
+licence = "GPL+"
+meta = false
+provides = "ytnef-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

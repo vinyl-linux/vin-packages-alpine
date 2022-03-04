@@ -1,0 +1,20 @@
+checksume = "64dfe4b2932ac516ace5bd6a3a902b11ca91e04c982eb07266e8f25dd345df5d"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "sbc-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libsndfile-dev", "1.0.31-r1"], ["pkgconf", "1.8.0-r0"], ["sbc", "1.5-r0"]]

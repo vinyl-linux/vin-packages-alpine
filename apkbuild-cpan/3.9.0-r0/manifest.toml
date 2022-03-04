@@ -1,0 +1,20 @@
+checksume = "b52d03913c93a81ce40e57c31d5013ca66857c427c390b32bc8a54944992f27b"
+licence = "GPL-2.0-only"
+meta = false
+provides = "apkbuild-cpan"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-libwww", "6.58-r0"], ["perl-json", "4.03-r1"], ["perl-module-build", "0.4231-r1"], ["perl-module-build-tiny", "0.039-r2"], ["perl-lwp-protocol-https", "6.10-r1"]]

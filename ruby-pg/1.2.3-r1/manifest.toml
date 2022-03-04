@@ -1,0 +1,20 @@
+checksume = "41ad96edaadc579ec9e50a5253f03fa69514316d78f132d6093080997ead34eb"
+licence = "BSD-2-Clause PostgreSQL"
+meta = false
+provides = "ruby-pg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libpq", "14.2-r0"], ["ruby-libs", "3.0.3-r0"]]

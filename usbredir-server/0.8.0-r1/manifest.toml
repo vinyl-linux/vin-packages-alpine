@@ -1,0 +1,20 @@
+checksume = "fe7cb85024fd6a0adfc37e765b7e7b5a41eef9fcbe1d124382ee6ba709dec005"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "usbredir-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"], ["usbredir", "0.8.0-r1"]]

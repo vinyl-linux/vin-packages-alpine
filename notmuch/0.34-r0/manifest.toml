@@ -1,0 +1,20 @@
+checksume = "09306cfa623fcc04313de1c05ca3bc30bd905adb3318d50795d1da2ef79a5b02"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "notmuch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.34-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gmime", "3.2.7-r2"], ["notmuch-libs", "0.34-r0"], ["talloc", "2.3.3-r0"], ["zlib", "1.2.11-r3"]]

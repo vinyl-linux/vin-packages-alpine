@@ -1,0 +1,20 @@
+checksume = "97854125ad90e9e020c75bc58aa18aae2d8fc84bc69132e5398633c0e083f6d3"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libupnp-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.14.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libupnp", "1.14.12-r0"], ["pkgconf", "1.8.0-r0"]]

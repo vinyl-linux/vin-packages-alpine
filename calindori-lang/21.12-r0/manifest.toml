@@ -1,0 +1,20 @@
+checksume = "cdf81b51ba0e54b065829d709cf70c54110665f24d0f3e05c4411911820fd769"
+licence = "GPL-3.0-or-later AND LGPL-3.0-or-later AND BSD-2-Clause AND CC-BY-SA-4.0 AND CC0-1.0"
+meta = false
+provides = "calindori-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kirigami2", "5.88.0-r0"], ["qt5-qtquickcontrols", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"]]

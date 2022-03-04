@@ -1,0 +1,20 @@
+checksume = "3383addbcad634e7badb37aac0af0ad8d4376698a4d849f23a5d444fae35a01c"
+licence = "Zlib"
+meta = false
+provides = "physfs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

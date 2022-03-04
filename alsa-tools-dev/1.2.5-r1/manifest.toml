@@ -1,0 +1,20 @@
+checksume = "08190265589dedfccb48ac8a7f3f86ddab5705fe3628df2a533f4524019b790a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "alsa-tools-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alsa-tools", "1.2.5-r1"]]

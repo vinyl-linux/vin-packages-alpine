@@ -1,0 +1,20 @@
+checksume = "59a40faca0a863a9269761a121e761fd9f5bb65274df398bbee479b6e5d6dd8c"
+licence = "MIT"
+meta = false
+provides = "img"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.11-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["runc", "1.0.2-r1"], ["shadow-uidmap", "4.8.1-r1"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "f3cb5e7f7a284acd48b50b1529c551efee5a47028b9f13a271d073090a8d2e37"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nmh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.1-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["gdbm", "1.22-r0"], ["ncurses-libs", "6.3"], ["readline", "8.1.1-r0"], ["libssl1.1", "1.1.1l-r8"]]

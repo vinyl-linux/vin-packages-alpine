@@ -1,0 +1,20 @@
+checksume = "da3878367f961764c6e561be967b37e997524ab1acb83f0467cbd562e7406257"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-padatious"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.8-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-padaos", "0.1.10-r2"], ["py3-xxhash", "0.8.0-r1"], ["py3-fann2", "1.2.0-r1"]]

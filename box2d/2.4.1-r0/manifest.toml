@@ -1,0 +1,20 @@
+checksume = "98e69880c2cedf1d84d3bf9983e4e16dda30d31fc15bc4c66d7cb47c1b1faa3e"
+licence = "MIT"
+meta = false
+provides = "box2d"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

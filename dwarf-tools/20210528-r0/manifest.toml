@@ -1,0 +1,20 @@
+checksume = "439e3705d62a10331f172ba8ed33285498011720b1f16748bd847f9c16d1fe09"
+licence = "GPL-2.0-only AND BSD-3-Clause"
+meta = false
+provides = "dwarf-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20210528-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libdwarf", "20210528-r0"], ["libelf", "0.185-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "b7484eb74a96f3d6e52e621aa25b8a6f47145ba8aa4c925e44e777cd3d1ec301"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nemo-qml-plugin-models-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libmlocale-dev", "0.7.4-r2"], ["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["nemo-qml-plugin-models", "0.2.3-r0"], ["pkgconf", "1.8.0-r0"]]

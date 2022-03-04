@@ -1,0 +1,20 @@
+checksume = "f4b40df0d4f0fcad1040dd0143eab8855f84e41ad0d671745957815624359292"
+licence = "CC0-1.0"
+meta = false
+provides = "meek-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.37.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

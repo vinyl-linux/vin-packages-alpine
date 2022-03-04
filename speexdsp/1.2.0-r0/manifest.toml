@@ -1,0 +1,20 @@
+checksume = "15f81a25dac8a5e6b153b69a5e78226926c0907f99f66899c137edd8c8669a0a"
+licence = "BSD-3-Clause"
+meta = false
+provides = "speexdsp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

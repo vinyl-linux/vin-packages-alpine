@@ -1,0 +1,20 @@
+checksume = "cecaa6f6228026fbd8021cf45ce929a4bd6bc95999c38d8653b9d09a82b99068"
+licence = "custom"
+meta = false
+provides = "cfitsio"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["zlib", "1.2.11-r3"]]

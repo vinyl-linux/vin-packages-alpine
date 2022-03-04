@@ -1,0 +1,20 @@
+checksume = "4447c76b87f3410c274dceed3c71ece05d8f76c108f4d030957cce370a553d64"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-requests-toolbelt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-requests", "2.26.0-r1"]]

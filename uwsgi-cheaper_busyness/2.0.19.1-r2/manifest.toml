@@ -1,0 +1,20 @@
+checksume = "881a83349ad05a7a0495df4a3d9b6a91544549fd1a7da3107a1fad736d2ebe79"
+licence = "custom"
+meta = false
+provides = "uwsgi-cheaper_busyness"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

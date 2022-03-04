@@ -1,0 +1,20 @@
+checksume = "d19a4eead4c5a5c699e9aee2c8c07154f290e45f2175abf829eb95ea8ee9d57e"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-maxminddb"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libmaxminddb", "1.6.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "7c13870828beafec129e68586a2fd3e079ecbce20c36c3ca915ef1371ce26304"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-bit-vector"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.4-r10"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-carp-clan", "6.08-r1"], ["musl", "1.2.2-r7"]]

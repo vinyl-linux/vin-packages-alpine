@@ -1,0 +1,20 @@
+checksume = "9d5eada6db51c6ccf71c0d875228b82f2214bffbf4a63fd39b4bf389526b733b"
+licence = "BSD"
+meta = false
+provides = "openssh-keygen"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.8_p1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"]]

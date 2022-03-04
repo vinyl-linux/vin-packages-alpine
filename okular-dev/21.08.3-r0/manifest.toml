@@ -1,0 +1,20 @@
+checksume = "075eefbf9757d56f1d255a97c7fea6d75e3044df95fe4df63646c7bd3d11b091"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+meta = false
+provides = "okular-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["okular-common", "21.08.3-r0"]]

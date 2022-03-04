@@ -1,0 +1,20 @@
+checksume = "f23f5f685013c069bb689475f5043ac4b5a92f1d76b950bf9a28754bb2412cea"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "vips-poppler"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.12.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["glib", "2.70.1-r0"], ["poppler-glib", "21.11.0-r0"], ["vips", "8.12.1-r0"]]

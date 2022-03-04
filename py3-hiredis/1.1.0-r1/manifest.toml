@@ -1,0 +1,20 @@
+checksume = "8367dd34bb7272c522799a2d38035a58cfa5e06a6d73b6e99c490bdbbb5cd4b6"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-hiredis"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

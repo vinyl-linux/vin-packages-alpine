@@ -1,0 +1,20 @@
+checksume = "9e62836607c390613bda95431be451324e5c5dded4efd37fcc9c81277c2eab8e"
+licence = "GPL-3.0-only"
+meta = false
+provides = "paper-gtk-theme"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gtk-murrine-engine", "0.98.2-r2"]]

@@ -1,0 +1,20 @@
+checksume = "50dc260329898b1d51ec05b65aeaafa96a6c209e7dc9a04b8ef29146b7d12c86"
+licence = "MIT AND GPL-3.0-or-later"
+meta = false
+provides = "waylandpp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["pugixml", "1.11.4-r1"], ["libstdc++", "10.3.1"], ["wayland-libs-client", "1.19.0-r1"], ["wayland-libs-cursor", "1.19.0-r1"], ["wayland-libs-egl", "1.19.0-r1"]]

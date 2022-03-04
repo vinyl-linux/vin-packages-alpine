@@ -1,0 +1,20 @@
+checksume = "71d47cd8529af1ae10791412eabb691e35efba581b0fca023447e971ca9c1060"
+licence = "GPL-3.0"
+meta = false
+provides = "wldash"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2_git20210902-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["fontconfig", "2.13.1-r4"], ["libgcc", "10.3.1"], ["libpulse", "15.0-r2"]]

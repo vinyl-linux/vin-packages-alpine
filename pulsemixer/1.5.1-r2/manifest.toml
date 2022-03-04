@@ -1,0 +1,20 @@
+checksume = "9a5226e39fac9e1356f5d9b93e8375bef0c19705f8402cd11ff71777f6ac441d"
+licence = "MIT"
+meta = false
+provides = "pulsemixer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["libpulse", "15.0-r2"]]

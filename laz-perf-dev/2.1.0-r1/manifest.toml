@@ -1,0 +1,20 @@
+checksume = "0ae6d62f20674d7bd4a434e8d6a12f86d252983afd8b24e749988ec96ec63912"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "laz-perf-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["laz-perf", "2.1.0-r1"]]

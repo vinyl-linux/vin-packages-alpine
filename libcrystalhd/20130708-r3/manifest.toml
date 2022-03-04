@@ -1,0 +1,20 @@
+checksume = "8aa55f3e80be9cd7a85e98c3e8056adc1e9513a8a578516acf953b046bf642fa"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "libcrystalhd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20130708-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

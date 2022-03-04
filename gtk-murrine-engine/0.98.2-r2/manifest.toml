@@ -1,0 +1,20 @@
+checksume = "2bef082b2f3a9f81341a51786473da55e43c762d86406f3ae9efa9a08d3f3aaf"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "gtk-murrine-engine"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.98.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gtk+2.0", "2.24.33-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["pango", "1.48.10-r0"], ["pixman", "0.40.0-r3"]]

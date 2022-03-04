@@ -1,0 +1,20 @@
+checksume = "156077120a991ea2adebb43b7e90be390b41271d478cb97a2861b9aeab23c547"
+licence = "MIT"
+meta = false
+provides = "git-metafile"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "ba993857953acee0bb06c62b5758a09c8f1614390bcf0d9610b5f1eb7bdfa455"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libgsasl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["krb5-libs", "1.19.2-r4"], ["libidn", "1.38-r0"]]

@@ -1,0 +1,20 @@
+checksume = "f45fd51f8efbaeaa4a39a71a55f6fb3805ffe55726adb0d797803b43abf79aa4"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libnymphcast-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1_alpha5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nymphrpc-dev", "0"], ["poco-dev", "1.11.1-r0"], ["libnymphcast", "0.1"]]

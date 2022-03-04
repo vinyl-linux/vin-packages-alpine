@@ -1,0 +1,20 @@
+checksume = "cac06f07846b937552b16d5146e79c5613efe82c6903d1905072fd78371a66cd"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "mc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.8.27-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["e2fsprogs-libs", "1.46.4-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["slang", "2.3.2-r0"], ["libssh2", "1.10.0-r2"]]

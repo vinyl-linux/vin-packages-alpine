@@ -1,0 +1,20 @@
+checksume = "e68572d4ddcedadc28994e6defc6e4a3bb784fb4cce21dc9cec6c7b8efd5b134"
+licence = "MIT"
+meta = false
+provides = "xwininfo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libxcb", "1.14-r2"]]

@@ -1,0 +1,20 @@
+checksume = "d90e5cf4150b49dd2d3e0834ef09b40ec7d919092d2fa8f7d1eb93f7d52243b4"
+licence = "MIT"
+meta = false
+provides = "lua5.1-socket"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0_rc1_git20160306-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

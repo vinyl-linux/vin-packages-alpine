@@ -1,0 +1,20 @@
+checksume = "4a8796700d5eed280a3d176b3ba6e2c1668dd662f2d6d95d583910c16c682c57"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql13-contrib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "13.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql13", "13.6-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libpq", "14.2-r0"], ["libssl1.1", "1.1.1l-r8"], ["libuuid", "2.37.4-r0"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

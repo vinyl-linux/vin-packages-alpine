@@ -1,0 +1,20 @@
+checksume = "4851963151fa5f8112d9875e0b435b9aae2335ded0f146d4b97f2576ab1bb6fe"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+meta = false
+provides = "pangomm2.48-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.48.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pangomm2.48", "2.48.1-r0"], ["cairomm1.16-dev", "1.16.1-r0"], ["glibmm2.68-dev", "2.68.1-r0"], ["pango-dev", "1.48.10-r0"], ["pkgconf", "1.8.0-r0"]]

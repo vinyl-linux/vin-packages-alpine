@@ -1,0 +1,20 @@
+checksume = "66e52b1d178860aaa5d17287e6c7264d5b41857b4ecb045a8b9a88e4da494bdf"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libvncserver-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.13-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libgcrypt-dev", "1.9.4-r0"], ["libjpeg-turbo-dev", "2.1.2-r0"], ["libpng-dev", "1.6.37-r1"], ["libice-dev", "1.0.10-r0"], ["libx11-dev", "1.7.2-r0"], ["libxdamage-dev", "1.1.5-r1"], ["libxext-dev", "1.3.4-r0"], ["libxfixes-dev", "6.0.0-r0"], ["libxi-dev", "1.8-r0"], ["libxinerama-dev", "1.1.4-r1"], ["libxrandr-dev", "1.5.2-r1"], ["libxtst-dev", "1.2.3-r3"], ["openssl-dev", "1.1.1l-r8"], ["lzo-dev", "2.10-r2"], ["libvncserver", "0.9.13-r2"], ["pkgconf", "1.8.0-r0"]]

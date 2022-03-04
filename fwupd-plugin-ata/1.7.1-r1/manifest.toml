@@ -1,0 +1,20 @@
+checksume = "2b904daa4a573e10c9b5eea993a7ab2a78f777025853c1ca23a5d50824125650"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "fwupd-plugin-ata"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libgudev", "237-r0"]]

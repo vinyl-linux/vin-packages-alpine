@@ -1,0 +1,20 @@
+checksume = "45a4810998081e36896a11bfbff424df3e17e44b252dd7d40bb07cc7a2a4f226"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "py3-pylint"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.10.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-astroid", "2.7.2-r0"], ["py3-isort", "4.3.21.2-r3"], ["py3-mccabe", "0.6.1-r6"], ["py3-platformdirs", "2.4.0-r0"], ["py3-toml", "0.10.2-r2"]]

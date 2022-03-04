@@ -1,0 +1,20 @@
+checksume = "ea0a8e3d6536b26e878f58da9402626925fc2f39ea04cbc5def906e6e2bc1d45"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "falkon-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-sqlite", "5.15.3"]]

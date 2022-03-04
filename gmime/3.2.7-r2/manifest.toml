@@ -1,0 +1,20 @@
+checksume = "93c03417957880c976b41e32d8588ce63a43fc12d9f0e86ec0fc72c3de9f8105"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "gmime"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.7-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gpgsm", "2.2.31-r1"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gpgme", "1.16.0-r0"], ["libidn2", "2.3.2-r0"], ["zlib", "1.2.11-r3"]]

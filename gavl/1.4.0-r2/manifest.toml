@@ -1,0 +1,20 @@
+checksume = "2d20ace75a13fb0af6a504ff7a1bf25111fde007096205ae741dd08820bdc51d"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gavl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

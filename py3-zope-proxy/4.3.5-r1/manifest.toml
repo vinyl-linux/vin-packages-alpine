@@ -1,0 +1,20 @@
+checksume = "38121a3a12d054ba34da1fda7f35e55056de65bf6657aab9033af9ec63ad7b59"
+licence = "ZPL-2.1"
+meta = false
+provides = "py3-zope-proxy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.3.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-setuptools", "52.0.0-r4"], ["py3-zope-interface", "5.4.0-r0"], ["musl", "1.2.2-r7"]]

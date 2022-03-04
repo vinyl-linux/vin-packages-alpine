@@ -1,0 +1,20 @@
+checksume = "9ff072399074a41e53846b6068f9b91e6e481c86284662e431bbbc25657b0769"
+licence = "MIT"
+meta = false
+provides = "libxxf86dga"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["musl", "1.2.2-r7"]]

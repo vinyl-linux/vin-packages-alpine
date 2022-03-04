@@ -1,0 +1,20 @@
+checksume = "49106dfe9c25daffb04f8c2da3b0d89623be2c9085a76ea03716ca2ba59aa360"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-par-packer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.052-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-archive-zip", "1.68-r1"], ["perl-par", "1.017-r0"], ["perl-module-scandeps", "1.31-r0"], ["perl-getopt-argvfile", "1.11-r3"], ["perl-par-dist", "0.51-r0"], ["musl", "1.2.2-r7"], ["perl", "5.34.0-r1"]]

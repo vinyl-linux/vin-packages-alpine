@@ -1,0 +1,20 @@
+checksume = "cfade9bf7be0799854f1bb490003928a8a80d0d7f346ebea48d897d995905c62"
+licence = "LGPL-2.1-or-later BSD-2-Clause"
+meta = false
+provides = "libssh-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.6-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssl-dev", "1.1.1l-r8"], ["zlib-dev", "1.2.11-r3"], ["libssh", "0.9.6-r1"], ["pkgconf", "1.8.0-r0"]]

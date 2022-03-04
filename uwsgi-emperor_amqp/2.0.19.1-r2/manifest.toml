@@ -1,0 +1,20 @@
+checksume = "76a0607be7b0613a83466bdb7d85249e5d7f1b0c3121c878917bbfe29d5cdf86"
+licence = "custom"
+meta = false
+provides = "uwsgi-emperor_amqp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

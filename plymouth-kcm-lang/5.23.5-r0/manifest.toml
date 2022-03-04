@@ -1,0 +1,20 @@
+checksume = "b98a24a18b71f2d9d71122cc61ac1cdd1d954a5e0a3f5fa513d500e13e52cf90"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "plymouth-kcm-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["plymouth", "0.9.5-r0"]]

@@ -1,0 +1,20 @@
+checksume = "1ba6cdea27a9e4b19dd8f985b8f3ff779a3b06e6b1e62ee33af2005a8d8b0d11"
+licence = "MIT"
+meta = false
+provides = "lua5.3-mpack"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libmpack", "1.0.5-r0"]]

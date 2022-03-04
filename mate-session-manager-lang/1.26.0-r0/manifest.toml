@@ -1,0 +1,20 @@
+checksume = "690f65c3b4f4a2b788f10a4d971afb47920b3c2a80699c8baa9492f5a6371394"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "mate-session-manager-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mate-common", "1.26.0-r0"], ["mate-desktop", "1.26.0-r1"]]

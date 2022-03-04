@@ -1,0 +1,20 @@
+checksume = "01d60a04eec16a5844470454a0fc5ccf743f43652433adc5a43d4b4dc5513920"
+licence = "none"
+meta = false
+provides = "build-base"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.5-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["binutils", "2.37-r3"], ["file", "5.41-r0"], ["gcc", "10.3.1"], ["g++", "10.3.1"], ["make", "4.3-r0"], ["libc-dev", "0.7.2-r3"], ["fortify-headers", "1.1-r1"], ["patch", "2.7.6-r7"]]

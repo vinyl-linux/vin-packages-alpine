@@ -1,0 +1,20 @@
+checksume = "8ade89439963c0ae6e83145554c1e01131c5f398070623b262c3eb35302c54ef"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "json-glib-tests"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["json-glib", "1.6.6-r0"]]

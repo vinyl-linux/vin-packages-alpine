@@ -1,0 +1,20 @@
+checksume = "f77dedf3d4774312e84cdf7062350ae3723f8c4501ce4d2574e23c69dfb9e517"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "unibilium-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["unibilium", "2.1.1-r0"]]

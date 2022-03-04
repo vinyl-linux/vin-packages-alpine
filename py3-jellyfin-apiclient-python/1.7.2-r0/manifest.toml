@@ -1,0 +1,20 @@
+checksume = "90c1a0978cb3db82b7fde4c6b92eda8bf946460092004799f28d022e121cde67"
+licence = "GPL-3.0-only"
+meta = false
+provides = "py3-jellyfin-apiclient-python"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-requests", "2.26.0-r1"], ["py3-six", "1.16.0-r0"], ["py3-urllib3", "1.26.7-r0"], ["py3-websocket-client", "1.2.1-r2"], ["python3", "3.9.7-r4"]]

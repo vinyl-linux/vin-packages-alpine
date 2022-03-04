@@ -1,0 +1,20 @@
+checksume = "cfc20104fe45361d45565842f7bde412a14d32e1f0c65c52b88847923c7215d0"
+licence = "MIT"
+meta = false
+provides = "dmvpn-crl-dp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lighttpd", "1.4.64-r0"]]

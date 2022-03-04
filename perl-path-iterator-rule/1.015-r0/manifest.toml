@@ -1,0 +1,20 @@
+checksume = "df26d5a2e247ec147c33ebbce27aab77bf53a0831e2cb008e74c9d513a500258"
+licence = "Apache-2.0"
+meta = false
+provides = "perl-path-iterator-rule"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.015-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-number-compare", "0.03-r3"], ["perl-try-tiny", "0.30-r3"], ["perl-text-glob", "0.11-r3"]]

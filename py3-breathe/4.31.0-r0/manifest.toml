@@ -1,0 +1,20 @@
+checksume = "8bc655fb0cef3e1245b52be18a8e1012264c89321da5811ddde0a35f8da61aeb"
+licence = "BSD-3-Clause-Clear"
+meta = false
+provides = "py3-breathe"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.31.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-sphinx", "3.5.4-r0"], ["doxygen", "1.9.2-r1"]]

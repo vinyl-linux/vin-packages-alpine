@@ -1,0 +1,20 @@
+checksume = "8bf796ed009d5455728850a5d328f57fc9b6d9dc815202f417bf4da2f9c9e930"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "pipewire-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pipewire-libs", "0.3.40-r2"], ["pkgconf", "1.8.0-r0"]]

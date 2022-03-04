@@ -1,0 +1,20 @@
+checksume = "0aff0a39cbbff2360712070b29b5964e8038f9ef5645a9db0593dc1c5bdf59e5"
+licence = "AGPL-3.0-only"
+meta = false
+provides = "nextcloud-dashboard"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nextcloud", "22.2.5-r0"], ["nextcloud-accessibility", "22.2.5-r0"]]

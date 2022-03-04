@@ -1,0 +1,20 @@
+checksume = "e059e6410d8daf520233599e0f615ed5aaca03094e0d6d92ff1b1b737692b458"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "cabextract"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.9.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libmspack", "0.10.1"]]

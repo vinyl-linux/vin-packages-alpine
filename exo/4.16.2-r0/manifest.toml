@@ -1,0 +1,20 @@
+checksume = "fee478abb83afd4494ab0b715c85e84d06f1d41b76321c3ee76a5723888dc661"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "exo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.16.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["hicolor-icon-theme", "0.17-r1"], ["musl", "1.2.2-r7"], ["exo-libs", "4.16.2-r0"], ["gtk+3.0", "3.24.30-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libxfce4ui", "4.16.1-r0"], ["libxfce4util", "4.16.0-r1"]]

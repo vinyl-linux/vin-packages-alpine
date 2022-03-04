@@ -1,0 +1,20 @@
+checksume = "db5d2969e3f52c5e0f70dce6d4b936a30de9482bb9c70c3350785c3cac21299b"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "iproute2-minimal"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.15.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libelf", "0.185-r0"]]

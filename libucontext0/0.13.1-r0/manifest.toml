@@ -1,0 +1,20 @@
+checksume = "8d4e17b0d80103b7f6cd5afa917fd92e5f190a3a6b84de6c8448b4ca7fc8e78c"
+licence = "ISC"
+meta = false
+provides = "libucontext0"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.13.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

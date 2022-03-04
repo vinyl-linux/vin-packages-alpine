@@ -1,0 +1,20 @@
+checksume = "607d4d30ee12ab99e973718cf0144dc64e63f73658a70dd8627002e9fa4e1608"
+licence = "GPL-2.0-or-later LGPL-2.0-only"
+meta = false
+provides = "thunar-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.16.10-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["exo-dev", "4.16.2-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"], ["thunar", "4.16.10-r0"]]

@@ -1,0 +1,20 @@
+checksume = "fa24f04580d45695085c7ce8d2d2fbc305348d5d3d4c655dc8a1502d8e713935"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "claws-mail-plugins-pgp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.0.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["claws-mail", "4.0.0-r3"], ["pinentry-gtk", "1.2.0-r0"], ["gnupg", "2.2.31-r1"], ["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["gpgme", "1.16.0-r0"], ["libintl", "0.21-r0"]]

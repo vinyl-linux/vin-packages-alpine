@@ -1,0 +1,20 @@
+checksume = "d63a4c7792590dd8ab3bfde759b75bf892523666da926ee871e1e2ae8eb1fc92"
+licence = "LGPL-2.1-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+meta = false
+provides = "kemoticons-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["karchive-dev", "5.88.0-r0"], ["kconfig-dev", "5.88.0-r0"], ["kservice-dev", "5.88.0-r0"], ["kcoreaddons-dev", "5.88.0-r0"], ["kemoticons", "5.88.0-r0"]]

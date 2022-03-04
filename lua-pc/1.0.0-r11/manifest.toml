@@ -1,0 +1,20 @@
+checksume = "e578d73da1bf00f427e5f1d08e91970672b92c8c2e190c247cd95be5d0748e39"
+licence = "MIT"
+meta = false
+provides = "lua-pc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.0-r11"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1-pc", "1.0.0-r11"]]

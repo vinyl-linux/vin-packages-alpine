@@ -1,0 +1,20 @@
+checksume = "5c1616c8e164a4a342e8a63be9fec12696bd8d29f616b2d4dde29f7948a07786"
+licence = "ISC"
+meta = false
+provides = "tmux"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.2a-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ncurses-terminfo-base", "6.3"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["ncurses-libs", "6.3"]]

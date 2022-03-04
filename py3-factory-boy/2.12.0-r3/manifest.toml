@@ -1,0 +1,20 @@
+checksume = "5bbe649eb1f7f54ce27d18428158c806473a57ae527881f6a7f04aec0dba0c22"
+licence = "MIT"
+meta = false
+provides = "py3-factory-boy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.12.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-faker", "9.8.2-r0"], ["py3-six", "1.16.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "17c9275f92b85918d14eb8eb5147e6cb74feca6f596e5f2e6b1ceede0cb8030d"
+licence = "Apache-2.0"
+meta = false
+provides = "afl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.57b-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["clang", "12.0.1-r1"], ["llvm12", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

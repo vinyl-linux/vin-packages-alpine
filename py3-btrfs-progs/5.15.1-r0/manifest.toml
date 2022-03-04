@@ -1,0 +1,20 @@
+checksume = "483c0fb755d98889622eb74e74e61ed41343315147a86f0003b53d5cc65803d2"
+licence = "GPL-2.0-or-later LGPL-3.0-or-later"
+meta = false
+provides = "py3-btrfs-progs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.15.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["btrfs-progs-libs", "5.15.1-r0"], ["musl", "1.2.2-r7"]]

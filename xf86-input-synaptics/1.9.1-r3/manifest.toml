@@ -1,0 +1,20 @@
+checksume = "c296227835919e8649902049c87181aa81dddf87775d556ac5951de1bb46787a"
+licence = "MIT"
+meta = false
+provides = "xf86-input-synaptics"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.9.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxi", "1.8-r0"], ["libxtst", "1.2.3-r3"], ["musl", "1.2.2-r7"], ["libevdev", "1.12.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "4b5d6659b58e8e5d941a997def6d369526ec3e64bb49209854ed93995d1402c6"
+licence = "GPL-2.0 LGPL-2"
+meta = false
+provides = "qemu-block-nfs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libnfs", "4.0.0-r0"]]

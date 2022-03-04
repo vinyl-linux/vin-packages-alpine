@@ -1,0 +1,20 @@
+checksume = "0faaaba115f33725027e605f4d9dc3ee654720e89ca82cf524dc418c6fc5e0e7"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "groff"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.22.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

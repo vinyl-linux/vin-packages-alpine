@@ -1,0 +1,20 @@
+checksume = "339d55db944e8c93d8ccc4347ed481148ec84c348a55ccbc01714e63abf5f2c9"
+licence = "custom"
+meta = false
+provides = "nmap-nping"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "7.92-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcc", "10.3.1"], ["libpcap", "1.10.1-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1"]]

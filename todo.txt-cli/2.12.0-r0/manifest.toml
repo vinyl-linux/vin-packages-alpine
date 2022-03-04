@@ -1,0 +1,20 @@
+checksume = "a7d4b589165014b14b2b5def0aadaff9571a6364a952a4437889a738c4667d93"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "todo.txt-cli"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.12.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"]]

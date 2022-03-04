@@ -1,0 +1,20 @@
+checksume = "761c62b9ede87fe488c12bb236225aeb627b31f7a5ac9bbb7f8aded81ee8b333"
+licence = "Apache-2.0"
+meta = false
+provides = "nototools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.16-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-fonttools", "4.28.2-r0"]]

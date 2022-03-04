@@ -1,0 +1,20 @@
+checksume = "88ec99c5e3dfd3634bdadae08efef09549c05da2fc23a0515234ee60d8714d18"
+licence = "Apache-2.0"
+meta = false
+provides = "clang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "12.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"]]

@@ -1,0 +1,20 @@
+checksume = "d462a359be6d53cabe97914ca661e8f3c2a5ad46d5dcdcf5b1c5dcd403a68688"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "exo-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.16.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["exo-libs", "4.16.2-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libxfce4util-dev", "4.16.0-r1"], ["pkgconf", "1.8.0-r0"]]

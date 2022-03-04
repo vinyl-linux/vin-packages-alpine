@@ -1,0 +1,20 @@
+checksume = "40a19e8ff1f6cca2e3648e9f52a9e98902bf43f5c24d00c28f4e7c1d53006c71"
+licence = "MIT"
+meta = false
+provides = "py3-inotify"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.6-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

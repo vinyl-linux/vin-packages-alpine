@@ -1,0 +1,20 @@
+checksume = "d24a428db69dc1ece8433fa7553b5497530b806712fd642fb1b918fa90bb5884"
+licence = "BSD-2-Clause"
+meta = false
+provides = "nginx-mod-http-fancyindex"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.20.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

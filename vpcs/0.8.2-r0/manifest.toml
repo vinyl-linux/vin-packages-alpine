@@ -1,0 +1,20 @@
+checksume = "17a016e8e0fca9f0ea73cb3971132c6bfed15a6d7a64f05e3d6779363f7ecfe1"
+licence = "BSD-2-Clause"
+meta = false
+provides = "vpcs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

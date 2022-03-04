@@ -1,0 +1,20 @@
+checksume = "e25e8d281e39f3bc83dda0de0f7176e4963c5178dc73012c3915f7682b5cc0ee"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libmnl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.4-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["linux-headers", "5.10.41-r0"], ["libmnl", "1.0.4-r2"], ["pkgconf", "1.8.0-r0"]]

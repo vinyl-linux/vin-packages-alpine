@@ -1,0 +1,20 @@
+checksume = "9138d8b75ad7be11c13e72bbf1344cab0a024eb029293400a0177dffff50826b"
+licence = "GPL"
+meta = false
+provides = "avrdude"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.3-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libelf", "0.185-r0"], ["libftdi1", "1.5-r0"], ["libusb-compat", "0.1.7-r1"], ["libusb", "1.0.24-r3"]]

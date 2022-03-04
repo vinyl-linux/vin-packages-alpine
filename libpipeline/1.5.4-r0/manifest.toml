@@ -1,0 +1,20 @@
+checksume = "2fdda7ba09e60f71311ffef47ce8f0bf08c5d18ebf23cad8f7ee9128a268323e"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "libpipeline"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "8324889154835bccce1fb0959641d8575d55d0af3a485023629d1ebb5b4c30aa"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "isync"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libsasl", "2.1.27-r14"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

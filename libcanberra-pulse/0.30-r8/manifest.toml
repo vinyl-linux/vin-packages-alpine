@@ -1,0 +1,20 @@
+checksume = "f3c007cfbad6b29ba678444cc2d5068b150a94d232e4e736920d4aed8ccee68b"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libcanberra-pulse"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.30-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libcanberra", "0.30-r8"], ["musl", "1.2.2-r7"], ["libpulse", "15.0-r2"]]

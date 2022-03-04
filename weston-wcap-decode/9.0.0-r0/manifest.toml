@@ -1,0 +1,20 @@
+checksume = "ddf1366d29e22c09578ebd3db9a53bcfda2bc3c831dfa57e10ac37d8cf285a32"
+licence = "MIT"
+meta = false
+provides = "weston-wcap-decode"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"]]

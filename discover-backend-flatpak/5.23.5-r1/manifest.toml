@@ -1,0 +1,20 @@
+checksume = "24fc127edc75022c2eaff65e64b26b0e0d742babdc7ac39665c9b934e20596fb"
+licence = "LGPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND GFDL-1.2-only"
+meta = false
+provides = "discover-backend-flatpak"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["appstream-qt", "0.14.6-r1"], ["discover", "5.23.5-r1"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["flatpak-libs", "1.12.3-r1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

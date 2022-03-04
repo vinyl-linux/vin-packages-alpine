@@ -1,0 +1,20 @@
+checksume = "d3f16f73df72fc0497911e45ad789de6cd85e236b12745b083ebb812a4dff38e"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+meta = false
+provides = "modemmanager-qt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["modemmanager-dev", "1.18.2-r1"], ["qt5-qtbase-dev", "5.15.3"], ["modemmanager-qt", "5.88.0-r0"]]

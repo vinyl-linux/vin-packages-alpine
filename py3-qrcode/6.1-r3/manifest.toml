@@ -1,0 +1,20 @@
+checksume = "f1dbcc9a41149003963e089054a3089502fdc0906d41501f2f290b4d5ef89c34"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-qrcode"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-pillow", "8.4.0-r3"], ["py3-six", "1.16.0-r0"]]

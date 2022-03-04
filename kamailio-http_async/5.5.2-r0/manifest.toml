@@ -1,0 +1,20 @@
+checksume = "dc4dbe94b789a76a1824ff53173b32d2e0b85d336e5ebc7b0f6c06c9ce1e1407"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kamailio-http_async"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.5.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libevent", "2.1.12-r4"]]

@@ -1,0 +1,20 @@
+checksume = "ffc35f6ad384aaa1f95b8588b1e21b47b685a2bf75490363d327a113261b4b36"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-psutil"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.8.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

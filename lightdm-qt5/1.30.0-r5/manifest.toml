@@ -1,0 +1,20 @@
+checksume = "3e4a1695cbb60a15b49370af8311679232e8f35e55fad66ae2f6cd32ff5a5839"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "lightdm-qt5"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.30.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["xinit", "1.4.1-r0"], ["accountsservice", "0.6.55-r2"], ["gnome-themes-extra", "3.28-r3"], ["adwaita-icon-theme", "40.1.1-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["lightdm", "1.30.0-r5"], ["libstdc++", "10.3.1"]]

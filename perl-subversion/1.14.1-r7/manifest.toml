@@ -1,0 +1,20 @@
+checksume = "ccd1a3d613f1a43e4845a60c079436e721772103dca37a7a24231fce9d91ccc5"
+licence = "Apache-2.0 BSD"
+meta = false
+provides = "perl-subversion"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.14.1-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["apr", "1.7.0-r0"], ["musl", "1.2.2-r7"], ["subversion-libs", "1.14.1-r7"]]

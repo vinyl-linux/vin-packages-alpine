@@ -1,0 +1,20 @@
+checksume = "f8610998fee11b0cabb53f926602f08ae60942dd8797809f50dacb84cbe4aa4d"
+licence = "GPL custom"
+meta = false
+provides = "virtualbox-guest-additions-x11"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.22-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["libxmu", "1.1.3-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.2-r7"]]

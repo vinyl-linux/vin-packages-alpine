@@ -1,0 +1,20 @@
+checksume = "5f689caa32a5363bcfa5d335f1472659ff8cddeb29c91b6879ca19173b7b9e8a"
+licence = "eGenix ISC"
+meta = false
+provides = "py3-simpleparse"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

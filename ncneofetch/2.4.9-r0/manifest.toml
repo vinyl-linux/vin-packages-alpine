@@ -1,0 +1,20 @@
+checksume = "93432f26034d1b2c2ce54dd4fdbaa7154c00c95b3228b680bfda721b0b737f98"
+licence = "Apache-2.0"
+meta = false
+provides = "ncneofetch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.4.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["notcurses-libs", "2.4.9-r0"]]

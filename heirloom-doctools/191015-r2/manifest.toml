@@ -1,0 +1,20 @@
+checksume = "d652d3a899dd63c683f039e47151471f8a1ccef4e1e94b66850b0044dfa6549b"
+licence = "CDDL"
+meta = false
+provides = "heirloom-doctools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "191015-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

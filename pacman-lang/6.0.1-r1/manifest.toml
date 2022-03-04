@@ -1,0 +1,20 @@
+checksume = "d1621e22dacc20e3d24a28cf98a231eaf514774836f3ed586251fb99ea261b92"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "pacman-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["libarchive-tools", "3.6.0-r0"]]

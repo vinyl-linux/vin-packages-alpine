@@ -1,0 +1,20 @@
+checksume = "3c7aa7b0baecbe9143d1d4c0605161c5675614aa688b020e2b852b64aa2b997d"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "dovecot-fts-lucene"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.17.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dovecot", "2.3.17.1-r0"], ["musl", "1.2.2-r7"], ["clucene", "2.3.3.4-r10"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

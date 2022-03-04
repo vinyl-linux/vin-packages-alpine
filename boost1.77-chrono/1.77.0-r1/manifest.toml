@@ -1,0 +1,20 @@
+checksume = "b600359815747f3f35492d9ec03cbe24bf3686130d29ee7dc975ac5d9ee6ff62"
+licence = "BSL-1.0"
+meta = false
+provides = "boost1.77-chrono"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.77.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

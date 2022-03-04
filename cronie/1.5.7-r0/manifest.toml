@@ -1,0 +1,20 @@
+checksume = "1a9c5a0d36b8de35f13f37664ca4b511aaf0b23ae95d1c2165c70b5fa1f762b5"
+licence = "ISC"
+meta = false
+provides = "cronie"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["musl-obstack", "1.2.2-r0"]]

@@ -1,0 +1,20 @@
+checksume = "b60dbcc8d4f68d3d0509225080c5527e683976c3534c335443e7704d8e9a3e57"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "gnome-usage"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["libdazzle", "3.42.0-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libgtop", "2.40.0-r0"], ["libhandy1", "1.5.0-r0"], ["libintl", "0.21-r0"], ["pango", "1.48.10-r0"], ["libtracker", "3.2.0-r1"]]

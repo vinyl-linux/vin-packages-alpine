@@ -1,0 +1,20 @@
+checksume = "24f7a0b5e2eb5005023003d742ab363175efd3249616380ee65f79dd28af5694"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "aspell"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.60.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["aspell-libs", "0.60.8-r1"], ["musl", "1.2.2-r7"], ["libintl", "0.21-r0"], ["ncurses-libs", "6.3"], ["libstdc++", "10.3.1"]]

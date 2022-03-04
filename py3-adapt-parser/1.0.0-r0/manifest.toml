@@ -1,0 +1,20 @@
+checksume = "8ffb59c6815215f7deac4d21ab054b97cac50c202b47b80525979fa41c5165aa"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-adapt-parser"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-pyee", "8.2.2-r0"], ["python3", "3.9.7-r4"]]

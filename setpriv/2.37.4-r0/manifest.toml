@@ -1,0 +1,20 @@
+checksume = "37982e7182a54737818a6a5c2aae70b44bfbd2fa9128e47478c3291547421902"
+licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
+meta = false
+provides = "setpriv"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.37.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcap-ng", "0.8.2-r1"]]

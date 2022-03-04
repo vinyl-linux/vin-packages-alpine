@@ -1,0 +1,20 @@
+checksume = "7f3601b9a610a2ca8e77ca0befc0585f670a52ac6afb3c2ee19f850b679ad414"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "bubblejail"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["bubblewrap", "0.5.0-r0"], ["py3-xdg", "0.27-r1"], ["py3-toml", "0.10.2-r2"]]

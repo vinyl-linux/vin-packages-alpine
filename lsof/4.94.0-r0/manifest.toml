@@ -1,0 +1,20 @@
+checksume = "17c511d063a7ee5d83cc03eded66bf855f0d598760d7f550901c52b964696e5c"
+licence = "lsof"
+meta = false
+provides = "lsof"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.94.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

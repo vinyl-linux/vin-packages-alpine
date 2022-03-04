@@ -1,0 +1,20 @@
+checksume = "5de2ca7d55d45c8d300fd05e3e3ee3eeed3c2781bc4e94da15460b41b440da11"
+licence = "MIT"
+meta = false
+provides = "spring-boot-openrc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["socat", "1.7.4.2-r0"]]

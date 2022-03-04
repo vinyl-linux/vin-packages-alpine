@@ -1,0 +1,20 @@
+checksume = "059ed95cf5c5b6237911b9ca44f9445ea8a204d7ba1f7a68010db75e9a970861"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "weechat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcrypt", "1.9.4-r0"], ["gnutls", "3.7.1-r0"], ["libintl", "0.21-r0"], ["ncurses-libs", "6.3"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "c5ea034a45aa5d61308e50a4a6ea301c1a7e6d0f4a94bca2e5e38166d30a3898"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "deja-dup-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "42.8-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kwallet", "5.88.0-r0"], ["duplicity", "0.8.20-r2"]]

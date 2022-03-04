@@ -1,0 +1,20 @@
+checksume = "e3c874d660ef3202e5e21d8b36564fd94c14842c6f790fd76898619c93157b31"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-watchdog"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-pathtools", "0.1.2-r7"], ["py3-yaml", "5.4.1.1-r1"], ["py3-argh", "0.26.2-r6"]]

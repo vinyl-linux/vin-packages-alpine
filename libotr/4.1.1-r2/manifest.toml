@@ -1,0 +1,20 @@
+checksume = "333443cb80dd5d8b9725a7d059d4786bbab59616d384b0c79cde84fd0ba5212b"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libotr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.1.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"]]

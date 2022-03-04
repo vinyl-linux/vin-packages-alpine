@@ -1,0 +1,20 @@
+checksume = "fbaeca07dc9b46519df67fd9f1699444ff7abcfc1b04e962cc1c00ea2071718f"
+licence = "GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT"
+meta = false
+provides = "gettext"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.21-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgomp", "10.3.1"], ["libintl", "0.21-r0"], ["gettext-libs", "0.21-r0"], ["libunistring", "0.9.10-r1"], ["libxml2", "2.9.12-r2"]]

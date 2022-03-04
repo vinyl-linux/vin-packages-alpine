@@ -1,0 +1,20 @@
+checksume = "1c2409fbeb1352e4229a34c954d37e5e947016fc5d31ba5125cb2dcb21c47f5f"
+licence = "GPL PerlArtistic"
+meta = false
+provides = "perl-module-build-tiny"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.039-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-extutils-installpaths", "0.012-r2"], ["perl-extutils-config", "0.008-r2"], ["perl-extutils-helpers", "0.026-r2"], ["perl-test-harness", "3.42-r2"]]

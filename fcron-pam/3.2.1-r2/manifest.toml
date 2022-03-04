@@ -1,0 +1,20 @@
+checksume = "95c565466b0c1383871a51c995776738e5e5879c26c55331df00de75c3ff0f12"
+licence = "GPL"
+meta = false
+provides = "fcron-pam"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fcron", "3.2.1-r2"]]

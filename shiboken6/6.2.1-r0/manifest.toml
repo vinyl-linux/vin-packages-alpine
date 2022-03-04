@@ -1,0 +1,20 @@
+checksume = "cd96f811cb6ddced89a8fc97c0f6f79ca17af64411c1d494f83b3db65fa05438"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "shiboken6"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt6-qtbase", "6.2.1-r2"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"], ["libxslt", "1.1.34-r1"]]

@@ -1,0 +1,20 @@
+checksume = "8475d7ba0138f6f008eac024bd222e110ef25f4dc0a46b397cead520db110074"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "juk-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["phonon-backend-gstreamer", "4.10.0-r3"]]

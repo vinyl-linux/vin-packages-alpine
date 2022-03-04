@@ -1,0 +1,20 @@
+checksume = "8d85c99e84db2b96df5aa32c11cb182dd5475758aa41ceca4aa45b463246b9b4"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "xapian-omega"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.18-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libmagic", "5.41-r0"], ["pcre", "8.45-r1"], ["libstdc++", "10.3.1"], ["libxapian", "1.4.18-r0"], ["zlib", "1.2.11-r3"]]

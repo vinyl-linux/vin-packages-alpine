@@ -1,0 +1,20 @@
+checksume = "e3ef77a771f31313a74c30cd03d6195d0181b0dcea7fc8cf9a07164e77fe46db"
+licence = "GPL-2.0 LGPL-2"
+meta = false
+provides = "qemu-block-ssh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libssh", "0.9.6-r1"]]

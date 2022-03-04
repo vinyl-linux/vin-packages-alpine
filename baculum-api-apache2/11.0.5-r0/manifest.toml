@@ -1,0 +1,20 @@
+checksume = "5663e79e06a8a9420b4023b0bdc9542c61a56ce327127555e4b9d2c8ac9a0505"
+licence = "AGPL-3.0-or-later"
+meta = false
+provides = "baculum-api-apache2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "11.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["baculum-api", "11.0.5-r0"], ["apache2", "2.4.52-r0"], ["php8-apache2", "8.0.16-r0"]]

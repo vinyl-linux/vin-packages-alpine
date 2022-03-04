@@ -1,0 +1,20 @@
+checksume = "8ac2d76ee3d3bc6bb3b5fbaa4be173d04ac1352f8dbaac79645f794d27123900"
+licence = "Apache-2.0"
+meta = false
+provides = "unit-perl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["unit", "1.26.1-r0"], ["musl", "1.2.2-r7"], ["perl", "5.34.0-r1"]]

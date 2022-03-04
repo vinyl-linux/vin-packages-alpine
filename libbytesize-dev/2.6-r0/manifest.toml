@@ -1,0 +1,20 @@
+checksume = "a254c4ac1fac4d65198b0e7936a8fb3aefd23cae3211178d9d454b287944a394"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libbytesize-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbytesize", "2.6-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "8c0b55b5e97e5e6ee57ebe09c4cd8e6b9e680835345bfcee9cbe91e32db92bf1"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+meta = false
+provides = "ceph-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ceph-common", "16.2.7-r0"], ["libaio", "0.3.112-r1"], ["boost1.77-context", "1.77.0-r1"], ["boost1.77-thread", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["librados", "16.2.7-r0"], ["libcephfs", "16.2.7-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["libcurl", "7.80.0-r0"], ["expat", "2.4.6-r0"], ["fmt", "8.0.1-r0"], ["libgcc", "10.3.1"], ["icu-libs", "69.1-r1"], ["libldap", "2.6.0-r0"], ["leveldb", "1.22-r1"], ["lua5.3-libs", "5.3.6-r1"], ["lz4-libs", "1.9.3-r1"], ["librbd", "16.2.7-r0"], ["librdkafka", "1.8.2-r0"], ["snappy", "1.1.9-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

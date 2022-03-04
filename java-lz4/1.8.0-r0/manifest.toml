@@ -1,0 +1,20 @@
+checksume = "358e0cc1935afb933107dce73dfbed964390da0c32f62c9f427eabd7dfd5801a"
+licence = "Apache-2.0"
+meta = false
+provides = "java-lz4"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk9-jre-headless", "9.0.4"], ["java-lz4-native", "1.8.0-r0"], ["lz4-dev", "1.9.3-r1"], ["xxhash-dev", "0.8.0-r1"]]

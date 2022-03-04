@@ -1,0 +1,20 @@
+checksume = "fd5c946bb213a9d7d7257d5bf72f29ca2cb4ba9bfe1dcd1d81a7b395fec40f3a"
+licence = "GPL"
+meta = false
+provides = "libdvbcsa"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "3c476d7c1b89d65def5b15c3372d5d1c8d72530409afc62e4d9017c63663e802"
+licence = "Apache-2.0"
+meta = false
+provides = "clang-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "12.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["clang", "12.0.1-r1"], ["clang-extra-tools", "12.0.1-r1"], ["clang-libs", "12.0.1-r1"]]

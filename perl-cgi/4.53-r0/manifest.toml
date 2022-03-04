@@ -1,0 +1,20 @@
+checksume = "0301bf0f2c9848fd35dee39cf63da7730f5e251c391233d0f9d0a60b33ea11fd"
+licence = "Artistic-2.0"
+meta = false
+provides = "perl-cgi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.53-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-html-parser", "3.76-r1"]]

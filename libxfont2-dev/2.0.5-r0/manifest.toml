@@ -1,0 +1,20 @@
+checksume = "867d51c91cc213235b3e33ced7075eeeaa1e48366827afe7861a8d88eadc9713"
+licence = "MIT"
+meta = false
+provides = "libxfont2-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxfont2", "2.0.5-r0"], ["libfontenc-dev", "1.1.4-r0"], ["xorgproto", "2021.5-r0"], ["freetype-dev", "2.11.0-r0"], ["pkgconf", "1.8.0-r0"]]

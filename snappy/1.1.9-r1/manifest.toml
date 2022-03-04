@@ -1,0 +1,20 @@
+checksume = "6d29c155c32982b13d715b9d703933565b3244888a644142a7949832ed99c778"
+licence = "BSD-3-Clause"
+meta = false
+provides = "snappy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.1.9-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

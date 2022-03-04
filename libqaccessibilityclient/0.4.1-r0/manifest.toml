@@ -1,0 +1,20 @@
+checksume = "39cb051dcdefd51b6f4d759d8819248731f452c0b57627542ced8c9d56f0b4bc"
+licence = "LicenseRef-KDE-Accepted-LGPL AND LGPL-2.1-only AND LGPL-3.0-only"
+meta = false
+provides = "libqaccessibilityclient"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

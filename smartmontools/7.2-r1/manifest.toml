@@ -1,0 +1,20 @@
+checksume = "8bec31b49f9cfd228cd136f94796d46215e85572aec6ff6c1d02a30a214973c4"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "smartmontools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "7.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

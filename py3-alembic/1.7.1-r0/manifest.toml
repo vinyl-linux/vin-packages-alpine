@@ -1,0 +1,20 @@
+checksume = "6ceb65309812e1247038507d4f064804e2c187c7b63bb932ced7fb8be338ca15"
+licence = "MIT"
+meta = false
+provides = "py3-alembic"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-sqlalchemy", "1.4.26-r0"], ["py3-mako", "1.1.5-r0"], ["py3-python-editor", "1.0.4-r2"], ["py3-dateutil", "2.8.2-r0"]]

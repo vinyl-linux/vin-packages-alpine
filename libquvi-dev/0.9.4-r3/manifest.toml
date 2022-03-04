@@ -1,0 +1,20 @@
+checksume = "991236cd02b119c53b52f18167c0df75939db317656577b48ce1b61ab4fbb7f0"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libquvi-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.4-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libquvi-scripts-dev", "0.9.20131130-r0"], ["curl-dev", "7.80.0-r0"], ["lua5.1-dev", "5.1.5-r8"], ["libquvi", "0.9.4-r3"], ["pkgconf", "1.8.0-r0"]]

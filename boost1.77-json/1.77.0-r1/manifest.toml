@@ -1,0 +1,20 @@
+checksume = "448c8c650979974139417a0c7b54245f67563c865eeef0e3f9eda924aad617e7"
+licence = "BSL-1.0"
+meta = false
+provides = "boost1.77-json"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.77.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

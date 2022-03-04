@@ -1,0 +1,20 @@
+checksume = "846e40c7684315ccc7d88ddc9e2e2a3533c797f67243fa6b75020bd6e047b41d"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "gnome-themes-extra-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.28-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ttf-cantarell", "0.301-r0"], ["librsvg", "2.50.7-r1"]]

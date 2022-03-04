@@ -1,0 +1,20 @@
+checksume = "5740aa8ebf764e5d155210c8e7c1f7db5b2001d06ead9196ef758cd0b9a1ba56"
+licence = "MIT AND GPL-2.0-only"
+meta = false
+provides = "xdg-user-dirs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.17-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libintl", "0.21-r0"]]

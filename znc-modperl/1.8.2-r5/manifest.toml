@@ -1,0 +1,20 @@
+checksume = "fef5a7f867052840d17ed4205a748c5e2bba02bc618c86200cf1f7584ca006e9"
+licence = "Apache-2.0"
+meta = false
+provides = "znc-modperl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.2-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["znc", "1.8.2-r5"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["perl", "5.34.0-r1"], ["libstdc++", "10.3.1"]]

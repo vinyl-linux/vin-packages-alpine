@@ -1,0 +1,20 @@
+checksume = "d26f5937202f4533325c54d8337e14a3aab28735cf18b5a6b25261084590cdf2"
+licence = "LGPL-3.0-or-later GPL-3.0-or-later Apache-2.0"
+meta = false
+provides = "openzwave"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.974-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["openzwave-libs", "1.6.974-r0"], ["libstdc++", "10.3.1"]]

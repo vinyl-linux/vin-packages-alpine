@@ -1,0 +1,20 @@
+checksume = "54e84e37b208dcb22d2372001c3b853278144f0e0836d40f7c7b0f1c43016907"
+licence = "MPL-2.0"
+meta = false
+provides = "libmwaw-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.20-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libmwaw", "0.3.20-r0"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

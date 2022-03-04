@@ -1,0 +1,20 @@
+checksume = "6eb5bddc9a8a35681a6671517d9e7bc238db21c859397ebf357767232dd0d3d3"
+licence = "MIT"
+meta = false
+provides = "setup-box"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["jq", "1.6-r1"]]

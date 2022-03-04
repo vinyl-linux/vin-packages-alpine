@@ -1,0 +1,20 @@
+checksume = "61d62fc8401211d946aa5f1386da6d53575a3b975f6f0dd699440e00d7c05175"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-responsivevoice"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-requests", "2.26.0-r1"], ["python3", "3.9.7-r4"]]

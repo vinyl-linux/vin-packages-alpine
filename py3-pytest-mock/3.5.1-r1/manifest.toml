@@ -1,0 +1,20 @@
+checksume = "3fb6637386dd68b24619d21a5a8698e3d705a0647a6f3a747e2b02185ef291e0"
+licence = "MIT"
+meta = false
+provides = "py3-pytest-mock"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.5.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-mock", "4.0.3-r1"], ["py3-pytest", "6.2.5-r0"]]

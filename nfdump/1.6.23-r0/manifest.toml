@@ -1,0 +1,20 @@
+checksume = "390b5a430c81ec584ba39485485f0049ed922bfe2d6ae1d8e4ec18e20be1b867"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nfdump"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.6.23-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"]]

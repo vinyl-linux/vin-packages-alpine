@@ -1,0 +1,20 @@
+checksume = "0bf608a9246a054208ff076f581ce8da2fd8fc2348e8d8ba9543dc9fd77c533a"
+licence = "custom"
+meta = false
+provides = "libxrender"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.9.10-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

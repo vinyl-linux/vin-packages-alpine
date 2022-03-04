@@ -1,0 +1,20 @@
+checksume = "cf3df77b244a5cfa6f6a9c9fdc1605c116ff4ae63f9476085657dc03b8f6bb5c"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libevent"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.12-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

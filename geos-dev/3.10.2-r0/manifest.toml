@@ -1,0 +1,20 @@
+checksume = "79d3a87ff46b4709efe5db7dd91d4cc5c93f9c39fe3685d1a85c34d7bcd0a7da"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "geos-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.10.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["geos", "3.10.2-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "50701d2ef0b3e3a539327701d8a9050ff8894f36b8ff7edc64119316d6a1ab30"
+licence = "Public-Domain"
+meta = false
+provides = "libgeotiff"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["proj", "8.2.0-r0"], ["tiff", "4.3.0-r0"]]

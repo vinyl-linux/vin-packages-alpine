@@ -1,0 +1,20 @@
+checksume = "3eeeec38b5d9530834862b9b1747f968b30000dd8a5344412776f36b24a0814c"
+licence = "BSD-2-Clause Unlicense"
+meta = false
+provides = "py3-pycryptodome"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.10.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gmp", "6.2.1-r1"], ["musl", "1.2.2-r7"]]

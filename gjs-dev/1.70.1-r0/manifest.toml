@@ -1,0 +1,20 @@
+checksume = "7d778796184994fbaf31ed064708f8461eef8babf6dc11a1b933c682f034c9ed"
+licence = "MIT AND LGPL-2.0-or-later"
+meta = false
+provides = "gjs-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.70.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gjs", "1.70.1-r0"], ["cairo-dev", "1.16.0-r3"], ["glib-dev", "2.70.1-r0"], ["gobject-introspection-dev", "1.70.0-r1"], ["libffi-dev", "3.4.2-r1"], ["mozjs78-dev", "78.15.0-r2"], ["pkgconf", "1.8.0-r0"]]

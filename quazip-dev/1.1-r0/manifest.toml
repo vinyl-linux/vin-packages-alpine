@@ -1,0 +1,20 @@
+checksume = "11d47c015f487d308f342031d809a5b06bb2a07ede870298a7a8e4e2eca964fa"
+licence = "LGPL-2.1-or-later WITH custom-static-linking-exception"
+meta = false
+provides = "quazip-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["quazip", "1.1-r0"]]

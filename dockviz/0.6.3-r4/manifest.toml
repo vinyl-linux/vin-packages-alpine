@@ -1,0 +1,20 @@
+checksume = "9c55ff66b0fb40e61e5698d950cf8bbad0f2c3234e9657bd62c95c138f4df425"
+licence = "Apache-2.0"
+meta = false
+provides = "dockviz"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.3-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["podman-docker", "3.4.4-r0"], ["musl", "1.2.2-r7"]]

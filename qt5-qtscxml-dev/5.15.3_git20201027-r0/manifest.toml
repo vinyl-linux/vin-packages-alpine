@@ -1,0 +1,20 @@
+checksume = "0151892a68e08d66aea33d1b6cf13a6ac9ba80696f82a165c2fb8e5eb74d5050"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt5-qtscxml-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.3_git20201027-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtscxml", "5.15.3"]]

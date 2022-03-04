@@ -1,0 +1,20 @@
+checksume = "f2ba445576357df4a6437198f9c686e1bea0e3aa3629e66bbef77509051cf71a"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libvirt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libtirpc-dev", "1.3.2-r0"], ["libvirt-libs", "7.9.0-r0"], ["pkgconf", "1.8.0-r0"]]

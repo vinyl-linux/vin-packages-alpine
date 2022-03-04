@@ -1,0 +1,20 @@
+checksume = "6d302c2843ed5c1f5b3b6f35fa2246dc17d30cff591b4628a1b609691b654d01"
+licence = "MIT"
+meta = false
+provides = "ruby-pathutil"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.16.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ruby", "3.0.3-r0"], ["ruby-forwardable-extended", "2.6.0-r1"]]

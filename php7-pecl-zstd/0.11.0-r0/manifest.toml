@@ -1,0 +1,20 @@
+checksume = "b2dd067c3a72411b0a0dba9cbec525ce18332d3eede9db18d2f2ef476c851964"
+licence = "MIT"
+meta = false
+provides = "php7-pecl-zstd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["zstd-libs", "1.5.0-r0"]]

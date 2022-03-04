@@ -1,0 +1,20 @@
+checksume = "f45ffba584979abf9f245e20e752196122332529361cd053856b259af71db880"
+licence = "LGPL-2.0-or-later MPL-1.1"
+meta = false
+provides = "zziplib-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13.72-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"], ["zziplib", "0.13.72-r0"]]

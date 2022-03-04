@@ -1,0 +1,20 @@
+checksume = "738d13f33e519d6653b0fd1de8162ee08f3ec0ff8f6a0ed88c5239c0567919e4"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+meta = false
+provides = "kservice-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kconfig-dev", "5.88.0-r0"], ["kcoreaddons-dev", "5.88.0-r0"], ["kcrash-dev", "5.88.0-r0"], ["kdbusaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kservice", "5.88.0-r0"]]

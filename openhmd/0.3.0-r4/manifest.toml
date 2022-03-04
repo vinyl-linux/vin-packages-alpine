@@ -1,0 +1,20 @@
+checksume = "8a930ef698fd2b3c382e8ae6be3567756183ea5b8a821ef44a25c58e7673c183"
+licence = "BSL-1.0"
+meta = false
+provides = "openhmd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["hidapi", "0.11.0-r0"]]

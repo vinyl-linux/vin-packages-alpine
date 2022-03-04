@@ -1,0 +1,20 @@
+checksume = "9100cfd1591e56e7d0b701e0974b1c6f662723a367d6420c89d7f3a51a9d53f6"
+licence = "Apache-2.0 MIT"
+meta = false
+provides = "maturin"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["libgcc", "10.3.1"]]

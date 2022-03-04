@@ -1,0 +1,20 @@
+checksume = "e8e1300c153fbe7333f7ab46335fbbe8402baebdbd13f78054921d32d5d1c8ea"
+licence = "MIT"
+meta = false
+provides = "libva-glx-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.13.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libva-dev", "2.13.0-r0"], ["mesa-dev", "21.2.6-r0"], ["libxfixes-dev", "6.0.0-r0"], ["libva-glx", "2.13.0-r0"], ["pkgconf", "1.8.0-r0"]]

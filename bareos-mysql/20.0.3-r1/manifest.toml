@@ -1,0 +1,20 @@
+checksume = "e2e458b7f4cdca3e92ee115580df87a9ebbafa452721b80b7f86e2cbdc97750f"
+licence = "AGPL-3.0"
+meta = false
+provides = "bareos-mysql"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bareos", "20.0.3-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libintl", "0.21-r0"], ["mariadb-connector-c", "3.1.13-r2"], ["libstdc++", "10.3.1"]]

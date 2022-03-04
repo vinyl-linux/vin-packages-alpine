@@ -1,0 +1,20 @@
+checksume = "b08b003c140c058f26e5550c3e05f261099c18e4054f585d20a32f7201e6c343"
+licence = "custom"
+meta = false
+provides = "font-adobe-100dpi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

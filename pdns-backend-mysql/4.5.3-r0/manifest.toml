@@ -1,0 +1,20 @@
+checksume = "47cdde59738f0a934aab431000b6cdc3874b68fd36d673ad40735ddea0e1b85d"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+meta = false
+provides = "pdns-backend-mysql"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pdns", "4.5.3-r0"], ["mariadb-client", "10.6.4-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mariadb-connector-c", "3.1.13-r2"], ["libstdc++", "10.3.1"]]

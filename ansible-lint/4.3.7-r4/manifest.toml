@@ -1,0 +1,20 @@
+checksume = "1104caf0936cbec16e10266eec067d6a947de492ccdfa617d83b5a85536160ba"
+licence = "MIT"
+meta = false
+provides = "ansible-lint"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.3.7-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ansible", "4.8.0-r0"], ["py3-rich", "10.14.0-r0"], ["py3-yaml", "5.4.1.1-r1"], ["py3-six", "1.16.0-r0"], ["py3-ruamel.yaml", "0.16.12-r1"], ["py3-typing-extensions", "3.10.0.2-r0"]]

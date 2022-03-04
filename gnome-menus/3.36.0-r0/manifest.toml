@@ -1,0 +1,20 @@
+checksume = "650d353ba0421eb6f89c031c30cb208a276f4473e229c96114c0c3b8276e33a8"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+meta = false
+provides = "gnome-menus"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.36.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

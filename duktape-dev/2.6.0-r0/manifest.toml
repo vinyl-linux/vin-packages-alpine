@@ -1,0 +1,20 @@
+checksume = "5a0c01c8d9dfa45a85e894e38c790c30727bacf344299836614ccb4ba029dbf9"
+licence = "MIT"
+meta = false
+provides = "duktape-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["duktape", "2.6.0-r0"], ["pkgconf", "1.8.0-r0"]]

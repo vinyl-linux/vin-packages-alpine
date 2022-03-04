@@ -1,0 +1,20 @@
+checksume = "e01f4f19f30d2a5aa9f82f4a8e8dd6ed4edd2a134e189ee65ded9fc21c68adcb"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "libsailfishkeyprovider"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

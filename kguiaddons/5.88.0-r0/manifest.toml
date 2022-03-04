@@ -1,0 +1,20 @@
+checksume = "f9f45815abbd353cd6d7627f99ae966701d20646d7fca445b97837c28afedc2b"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+meta = false
+provides = "kguiaddons"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtwayland", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["wayland-libs-client", "1.19.0-r1"]]

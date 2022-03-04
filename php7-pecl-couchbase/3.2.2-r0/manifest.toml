@@ -1,0 +1,20 @@
+checksume = "329e25130b778c0b4aeb38471c2999720739b6ae72ef73b49cec16d3cc4be23c"
+licence = "Apache-2.0"
+meta = false
+provides = "php7-pecl-couchbase"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-json", "7.4.28-r0"], ["php7-pecl-igbinary", "3.2.6-r0"], ["musl", "1.2.2-r7"], ["libcouchbase", "3.2.4-r0"], ["zlib", "1.2.11-r3"]]

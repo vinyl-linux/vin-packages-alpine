@@ -1,0 +1,20 @@
+checksume = "97e0accd0f94e95085c94f2f8acf4e577558887e58314b6d018053142ef9f858"
+licence = "GPL-3.0-only"
+meta = false
+provides = "phosh-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["phoc", "0.9.0-r1"], ["gnome-session", "40.1.1-r0"], ["bash", "5.1.16-r0"], ["dbus-x11", "1.12.20-r4"], ["gnome-settings-daemon", "41.0-r0"], ["squeekboard", "1.14.0-r1"], ["libpulse", "15.0-r2"], ["kwallet", "5.88.0-r0"], ["gnome-control-center", "41.1-r0"]]

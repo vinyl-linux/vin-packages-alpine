@@ -1,0 +1,20 @@
+checksume = "f8c803182543721255ff052cf8d128956266e6eea0647ceb15d058175d1b84b0"
+licence = "GPL LGPL"
+meta = false
+provides = "gcc6"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.4.0-r12"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["binutils", "2.37-r3"], ["isl", "0.18-r1"], ["libstdc++6", "6.4.0-r12"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["isl22", "0.22-r0"], ["mpc1", "1.2.1-r0"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "780cf411c69fbb9921134cad10942ad415e180b95ade28d590a9a088bb26a096"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-grpcio"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.41.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["re2", "2021.11.01-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

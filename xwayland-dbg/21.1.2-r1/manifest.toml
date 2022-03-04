@@ -1,0 +1,20 @@
+checksume = "1238c2ed82993ae1a3f654362e76de9074b04f838102a87a1adb76e9d0119810"
+licence = "MIT"
+meta = false
+provides = "xwayland-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.1.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xorg-server-common", "21.1.2-r0"], ["xkbcomp", "1.4.5-r0"]]

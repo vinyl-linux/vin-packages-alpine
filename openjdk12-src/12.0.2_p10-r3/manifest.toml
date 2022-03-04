@@ -1,0 +1,20 @@
+checksume = "bca80d7ddeaf9a07006e621d5f7c14a33a62d92c637144dd9254be881d53a8c3"
+licence = "GPL-2.0-with-classpath-exception"
+meta = false
+provides = "openjdk12-src"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.0.2_p10-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk12-jre-headless", "12.0.2"]]

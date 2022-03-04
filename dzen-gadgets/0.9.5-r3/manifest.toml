@@ -1,0 +1,20 @@
+checksume = "0b6c862e04987fe3457f9ff0ae7b6d109f7eee21b0aaecade499610b724c16c3"
+licence = "MIT"
+meta = false
+provides = "dzen-gadgets"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.5-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

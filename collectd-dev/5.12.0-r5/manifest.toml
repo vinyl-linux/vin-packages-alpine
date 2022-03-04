@@ -1,0 +1,20 @@
+checksume = "939571a650448a3dd785364704ff155f75316a0ac1f2d61c43346a5b8c1a0bf0"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd-libs", "5.12.0-r5"], ["pkgconf", "1.8.0-r0"]]

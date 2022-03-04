@@ -1,0 +1,20 @@
+checksume = "90945f7d63384b86000e883c205e5f6385b6a05ab0c4e89700a68dde293f0fca"
+licence = "Apache-2.0"
+meta = false
+provides = "caddy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.4.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"], ["busybox", "1.34.1-r4"]]

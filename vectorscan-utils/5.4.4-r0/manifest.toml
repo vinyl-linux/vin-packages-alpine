@@ -1,0 +1,20 @@
+checksume = "8afc413b8516461c5b3937811125049292878ec49ce36e54dc60711b72a19dcd"
+licence = "BSD-3-Clause"
+meta = false
+provides = "vectorscan-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.4.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["pcre", "8.45-r1"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"]]

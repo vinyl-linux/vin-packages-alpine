@@ -1,0 +1,20 @@
+checksume = "a6bfcc8254c5a4d875de2b6d4ed1e5116f05694868cc7c710431761ab5d4dc58"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+meta = false
+provides = "kasync"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "4c02327bfc3a9af5281d6f1a9526f6cad09577be911734a2550d6ae4efe73890"
+licence = "BSD-2-Clause"
+meta = false
+provides = "py3-pytest-benchmark"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-pytest", "6.2.5-r0"], ["py3-py-cpuinfo", "7.0.0-r1"]]

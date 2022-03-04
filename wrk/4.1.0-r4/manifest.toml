@@ -1,0 +1,20 @@
+checksume = "04bb7dc9b7508f3d377c737d0cb271dec2c2892834331ee00bf11cd06e59c074"
+licence = "Apache-2.0"
+meta = false
+provides = "wrk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.1.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["luajit", "2.1"], ["libssl1.1", "1.1.1l-r8"]]

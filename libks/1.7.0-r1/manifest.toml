@@ -1,0 +1,20 @@
+checksume = "2b0efbb997095055e80961886ab2f8002c1189513dd0ea8a2629fc02369e7be7"
+licence = "MIT"
+meta = false
+provides = "libks"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.7.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["libuuid", "2.37.4-r0"]]

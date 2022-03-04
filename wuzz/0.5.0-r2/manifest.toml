@@ -1,0 +1,20 @@
+checksume = "629166b569e8957b40128e1d6f0f346c32035984a52eb9c3a5125989c4048ca9"
+licence = "AGPL-3.0-only"
+meta = false
+provides = "wuzz"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

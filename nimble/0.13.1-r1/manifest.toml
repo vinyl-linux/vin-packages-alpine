@@ -1,0 +1,20 @@
+checksume = "7b250eac2115dab81a62dd853ab53d2de2f8e4fa95fe638d1a790bf94176f5b6"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nimble"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nim", "1.4.8-r2"], ["musl", "1.2.2-r7"]]

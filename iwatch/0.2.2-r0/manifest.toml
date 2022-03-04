@@ -1,0 +1,20 @@
+checksume = "a42b6cc379514b95785956e269661fb61cb5a5bf4c0a6a828d98cf15059fc566"
+licence = "GPL-2.0-only"
+meta = false
+provides = "iwatch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-xml-simpleobject-libxml", "0.60-r1"], ["perl-event", "1.28-r1"], ["perl-linux-inotify2", "2.3-r0"], ["perl-mail-sendmail", "0.80-r4"]]

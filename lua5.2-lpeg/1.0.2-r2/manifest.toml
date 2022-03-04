@@ -1,0 +1,20 @@
+checksume = "7d69fb04e4ddf4c844c389d80b5462ad05ae81b48234a841bd7ab06fa9b23d08"
+licence = "MIT"
+meta = false
+provides = "lua5.2-lpeg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"]]

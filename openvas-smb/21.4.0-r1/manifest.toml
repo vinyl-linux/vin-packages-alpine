@@ -1,0 +1,20 @@
+checksume = "3e14cc1250fa2f5628e4e8367dc439f70095561166f83dd2d6e5a305f2644358"
+licence = "GPL-2.0"
+meta = false
+provides = "openvas-smb"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.4.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["heimdal-libs", "7.7.0-r6"], ["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["glib", "2.70.1-r0"], ["gnutls", "3.7.1-r0"], ["popt", "1.18-r0"]]

@@ -1,0 +1,20 @@
+checksume = "e33ae53122be87200d85388f68727f853b9122912750bc25f7548597e02a2b09"
+licence = "BSD-3-Clause"
+meta = false
+provides = "protoc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.18.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libprotoc", "3.18.1-r1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "ccc1bb9f61d5c6698647213724fd2316a684239a237dcdcfd0bda71fdcc33979"
+licence = "AGPL-3.0-only"
+meta = false
+provides = "nextcloud21-encryption"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nextcloud21", "21.0.9-r0"], ["php7-openssl", "7.4.28-r0"], ["php7-pecl-mcrypt", "1.0.4-r0"]]

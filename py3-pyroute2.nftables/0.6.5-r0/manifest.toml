@@ -1,0 +1,20 @@
+checksume = "53ace9abd5bf7f5200227738d349caa128621e1d2b0030443d827e060a5e42cc"
+licence = "GPL-2.0-or-later OR Apache-2.0"
+meta = false
+provides = "py3-pyroute2.nftables"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-pyroute2.core", "0.6.5-r0"]]

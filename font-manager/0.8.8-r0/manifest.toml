@@ -1,0 +1,20 @@
+checksume = "fbe1426e1d74d45ff23fda775e1fa135faea30366ee428989502da7dbc74fce3"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "font-manager"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["font-manager-common", "0.8.8-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["json-glib", "1.6.6-r0"], ["pango", "1.48.10-r0"], ["libsoup", "2.74.0-r0"], ["sqlite-libs", "3.36.0-r0"], ["webkit2gtk", "2.34.2-r0"]]

@@ -1,0 +1,20 @@
+checksume = "7d22757e5c777c6b2276cf6626c65215b8e2cdb96859f3da7bca6362e6dd2adf"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-coverage"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

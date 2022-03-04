@@ -1,0 +1,20 @@
+checksume = "72cd016e2581d703d4167a5baa78fc52d71682c40df01dcdf2ddefc5b9975f55"
+licence = "Net-SNMP"
+meta = false
+provides = "net-snmp-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.9.1-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["net-snmp-libs", "5.9.1-r5"], ["net-snmp-agent-libs", "5.9.1-r5"]]

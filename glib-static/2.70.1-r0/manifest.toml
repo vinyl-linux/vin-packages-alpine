@@ -1,0 +1,20 @@
+checksume = "dccf5980a6b32b095b1ea85e451dca2c993040bcf327aa0f08d095e44a79f28e"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "glib-static"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.70.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gettext-static", "0.21-r0"]]

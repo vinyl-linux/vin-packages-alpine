@@ -1,0 +1,20 @@
+checksume = "bc4010a391b4747984f131727c8b0ef6d01895599231643a24ddc9adb779873f"
+licence = "GPL-2.0-or-later BSD-3-Clause"
+meta = false
+provides = "rpcgen"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.5.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rpcbind", "1.2.6-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

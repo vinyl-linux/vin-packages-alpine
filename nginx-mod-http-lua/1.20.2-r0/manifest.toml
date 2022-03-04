@@ -1,0 +1,20 @@
+checksume = "8d1c48dbd80ec31f2f8d835d6aa210299d3cdca18a028a0fe27f50d5b90c62f0"
+licence = "BSD-2-Clause"
+meta = false
+provides = "nginx-mod-http-lua"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.20.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nginx", "1.20.2-r0"], ["nginx-mod-devel-kit", "1.20.2-r0"], ["lua-resty-core", "0.1.22-r0"], ["musl", "1.2.2-r7"], ["luajit", "2.1"]]

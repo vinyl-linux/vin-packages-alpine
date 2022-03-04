@@ -1,0 +1,20 @@
+checksume = "7bb1a918ad4a52e23af6baa4a6e1a2b9d06c8e4e048fcb045523e48915aa2bd5"
+licence = "ISC"
+meta = false
+provides = "opensmtpd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "6.8.0p2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"], ["busybox", "1.34.1-r4"], ["libasr", "1.0.4-r2"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["db", "5.3.28-r1"], ["libevent", "2.1.12-r4"], ["fts", "1.2.7-r1"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

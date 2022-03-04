@@ -1,0 +1,20 @@
+checksume = "6f9dd624e91023f50d7164a4ae53b20a8a2f063fff350b094277d9d07523d857"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-dnscache"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.6.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["lua-posix", "35.1-r0"], ["dnscache", "1.05-r47"]]

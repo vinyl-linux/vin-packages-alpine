@@ -1,0 +1,20 @@
+checksume = "b6c70cbfab0b95878d0d24f35f78384ad53778754118700f5dcb3b8dd4dfdc59"
+licence = "MIT"
+meta = false
+provides = "lego"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"]]

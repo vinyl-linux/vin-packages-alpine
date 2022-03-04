@@ -1,0 +1,20 @@
+checksume = "f8dabfdcb51af015ca3e24f5357a6ef7006297015a0db44641f0efafe0537df2"
+licence = "GPL-2.0-only AND LGPL-2.1-only AND 0BSD AND BSD-3-Clause AND GPL-3.0-only AND LGPL-3.0-only"
+meta = false
+provides = "newlib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["newlib-arm-none-eabi", "4.1.0-r1"], ["newlib-msp430-elf", "4.1.0-r1"], ["newlib-riscv-none-elf", "4.1.0-r1"], ["newlib-aarch64-none-elf", "4.1.0-r1"], ["newlib-or1k-elf", "4.1.0-r1"]]

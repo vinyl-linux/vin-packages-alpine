@@ -1,0 +1,20 @@
+checksume = "ca6bb776af26fd8eb110bc6faf698daac3d5d8350d8b5d84655d3cc977de8038"
+licence = "ISC"
+meta = false
+provides = "sshguard"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iptables", "1.8.7-r1"], ["musl", "1.2.2-r7"]]

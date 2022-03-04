@@ -1,0 +1,20 @@
+checksume = "7fa2a427aec9fa655cd56ac5ac4506b3cab76da372a8ea31c6cac5a8d56aa8eb"
+licence = "AGPL-3.0-or-later"
+meta = false
+provides = "baculum-api-lighttpd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "11.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["baculum-api", "11.0.5-r0"], ["lighttpd", "1.4.64-r0"], ["lighttpd-mod_auth", "1.4.64-r0"], ["php8-cgi", "8.0.16-r0"]]

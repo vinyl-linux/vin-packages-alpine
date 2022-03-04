@@ -1,0 +1,20 @@
+checksume = "bfc53a98cab9cf0151f24ff620d6c08c95683d8225987982d056135fe05797f1"
+licence = "Apache-2.0"
+meta = false
+provides = "k9s"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.25.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

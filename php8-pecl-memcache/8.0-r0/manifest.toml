@@ -1,0 +1,20 @@
+checksume = "a7e28c23bbb00b83f7d258ea75b3ddec1d23c0233329c89f31510df38a451a40"
+licence = "PHP-3.0"
+meta = false
+provides = "php8-pecl-memcache"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-session", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

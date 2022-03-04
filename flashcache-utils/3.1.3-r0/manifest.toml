@@ -1,0 +1,20 @@
+checksume = "0b36d476f2f3823b8ee3ecbdc7ce8de5ce057ef12fbc08b364ee4cd7b04eb391"
+licence = "GPL"
+meta = false
+provides = "flashcache-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.1.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

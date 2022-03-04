@@ -1,0 +1,20 @@
+checksume = "b848677e1f1fccca8aae42056c4b66ecf5d8b8d6701ab5e2bd9f391951ede170"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "guvcview-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.6-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["guvcview-libs", "2.0.6-r1"], ["pkgconf", "1.8.0-r0"]]

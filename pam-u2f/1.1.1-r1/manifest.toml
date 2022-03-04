@@ -1,0 +1,20 @@
+checksume = "8b4f312b564e1ceedddb6b2f5e796f8cee866d04bac418e72af6eeb2a3fb529b"
+licence = "BSD-2-Clause"
+meta = false
+provides = "pam-u2f"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libfido2", "1.8.0-r2"], ["linux-pam", "1.5.2-r0"]]

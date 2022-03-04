@@ -1,0 +1,20 @@
+checksume = "83b802fa1a1849a477b0ede254b1661c850505c09874189f81b36224353c45c6"
+licence = "MIT"
+meta = false
+provides = "libwebsockets-test"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["libwebsockets", "4.3.0-r0"]]

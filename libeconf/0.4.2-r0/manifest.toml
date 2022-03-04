@@ -1,0 +1,20 @@
+checksume = "93df7613378facd5754ff7b37259d64edd4007df2abeec1b3fb50b11e5be07d4"
+licence = "MIT"
+meta = false
+provides = "libeconf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.4.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

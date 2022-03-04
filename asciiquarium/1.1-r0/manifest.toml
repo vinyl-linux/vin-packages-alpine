@@ -1,0 +1,20 @@
+checksume = "b69f1e208c4fe3f4578ebd9363bed50604e7a4796d7f6a55ce165cd1eae4a175"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "asciiquarium"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-term-animation", "2.6-r1"]]

@@ -1,0 +1,20 @@
+checksume = "4fc964fd3c329b0316d44f3836a4cc0fcf77e1d6538710533ed8e22d9e5e5047"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "freeradius-lib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.25-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libpcap", "1.10.1-r0"], ["talloc", "2.3.3-r0"]]

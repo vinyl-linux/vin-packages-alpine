@@ -1,0 +1,20 @@
+checksume = "af1e84224817a1b5036efa4e477a501bb581f526ca0940033abc4ee3273f32fd"
+licence = "custom:GPL-like"
+meta = false
+provides = "libgc++"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.0.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gc", "8.0.6-r0"], ["libstdc++", "10.3.1"]]

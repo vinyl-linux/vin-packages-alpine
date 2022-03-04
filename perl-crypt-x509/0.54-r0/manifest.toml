@@ -1,0 +1,20 @@
+checksume = "7b4ca03c152a3acccdce327793295d34ad893fb2336cfb9f815d32924eb28bbb"
+licence = "Artistic-1.0-Perl"
+meta = false
+provides = "perl-crypt-x509"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.54-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-convert-asn1", "0.33-r0"]]

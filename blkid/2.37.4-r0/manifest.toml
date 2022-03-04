@@ -1,0 +1,20 @@
+checksume = "469fe9c7da2ff1640011599f502af2a21b13e60b629cb6f7dfee9c4eff1c1876"
+licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
+meta = false
+provides = "blkid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.37.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"]]

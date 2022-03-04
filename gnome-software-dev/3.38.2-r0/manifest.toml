@@ -1,0 +1,20 @@
+checksume = "7deea21b09c4308ede37efe8e47d599b718ddefa3c8b9c1a385aa1fa5d29f37c"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnome-software-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.38.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["appstream-glib-dev", "0.7.18-r1"], ["glib-dev", "2.70.1-r0"], ["gnome-online-accounts-dev", "3.40.0-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["json-glib-dev", "1.6.6-r0"], ["libsoup-dev", "2.74.0-r0"], ["polkit-dev", "0.119-r8"], ["pkgconf", "1.8.0-r0"]]

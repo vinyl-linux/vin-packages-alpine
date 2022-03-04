@@ -1,0 +1,20 @@
+checksume = "e9d6798652f9bb48b1f4b6db11c65eb365775eff5340df7e2b9e8a1f74b5ba92"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-monotonic"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"]]

@@ -1,0 +1,20 @@
+checksume = "0fa0d943ab893bd8ed7d3b4a6871b58a481772e2fd1a08c0f45c8441c1b85b9b"
+licence = "LGPL-3.0-only AND GPL-2.0-only"
+meta = false
+provides = "py3-pyside6-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libshiboken6-dev", "6.2.1-r0"], ["pkgconf", "1.8.0-r0"], ["py3-pyside6", "6.2.1-r0"]]

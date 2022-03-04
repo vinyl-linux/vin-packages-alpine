@@ -1,0 +1,20 @@
+checksume = "2b073b5ec29211a557a1685ad17917cdee7fbc3b978b126970d7220bfe4496be"
+licence = "MPL-2.0"
+meta = false
+provides = "libsrt-progs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libsrt", "1.4.2-r1"], ["libstdc++", "10.3.1"]]

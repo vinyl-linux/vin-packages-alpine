@@ -1,0 +1,20 @@
+checksume = "c011f7c80fb1ba80df5661f91db18505ff28d146870072a5ff8cd6c51480483b"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "xapian-bindings-tcl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.18-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxapian", "1.4.18-r0"]]

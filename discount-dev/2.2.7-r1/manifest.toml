@@ -1,0 +1,20 @@
+checksume = "82084d4732bfae7cb636c572cec92c86ff92ffd1cb80e83dda73a764218ed277"
+licence = "BSD-3-Clause"
+meta = false
+provides = "discount-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["discount-libs", "2.2.7-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "9a45986bef5d0c786c048a3cb11e27973138ff4f9e12271ef9be09c1175bcbc7"
+licence = "MIT"
+meta = false
+provides = "libsm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libsm", "1.2.3-r0"], ["libice-dev", "1.0.10-r0"], ["xorgproto", "2021.5-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2ff1c36e1b41f1eab677272f7d7fdb247003e498e017d8a03af658779aeea06b"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kcontacts-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kcodecs-dev", "5.88.0-r0"], ["kconfig-dev", "5.88.0-r0"], ["kcoreaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["kcontacts", "5.88.0-r0"]]

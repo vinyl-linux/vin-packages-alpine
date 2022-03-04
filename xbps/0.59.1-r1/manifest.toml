@@ -1,0 +1,20 @@
+checksume = "b4d0d6a4b634f68d607ed3e4b75e957d33cb6f15ed6fca1d936972656a41fe70"
+licence = "BSD-2-Clause AND (BSD-3-Clause AND ISC AND BSD-2-Clause-NetBSD)"
+meta = false
+provides = "xbps"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.59.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"], ["libarchive", "3.6.0-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

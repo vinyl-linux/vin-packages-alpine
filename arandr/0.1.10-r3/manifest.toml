@@ -1,0 +1,20 @@
+checksume = "66af60b38607d21216419d1068dd3494d5613b21fc7f5dbd84a69d729bb8c426"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "arandr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.10-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-gobject3", "3.42.0-r1"], ["py3-cairo", "1.20.1-r0"], ["xrandr", "1.5.1-r0"]]

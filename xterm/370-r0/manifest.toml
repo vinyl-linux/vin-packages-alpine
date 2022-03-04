@@ -1,0 +1,20 @@
+checksume = "3b91dc01824835a0adb475cdc9e1f4f86b2d233c05fc79e8a273fa8b418a59c2"
+licence = "MIT"
+meta = false
+provides = "xterm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "370-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ncurses-terminfo-base", "6.3"], ["libice", "1.0.10-r0"], ["libx11", "1.7.2-r0"], ["libxaw", "1.0.14-r0"], ["libxext", "1.3.4-r0"], ["libxft", "2.3.4-r0"], ["libxmu", "1.1.3-r0"], ["libxpm", "3.5.13-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"], ["ncurses-libs", "6.3"]]

@@ -1,0 +1,20 @@
+checksume = "c0fc8a278b01e0bc51c80cfc8b0917349addb3a27ade3dd92eaa3f5c5b7ae41e"
+licence = "MIT"
+meta = false
+provides = "harfbuzz-icu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["harfbuzz", "3.0.0-r2"], ["icu-libs", "69.1-r1"]]

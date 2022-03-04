@@ -1,0 +1,20 @@
+checksume = "ef6ec34a7ea8a82a5ea6cd06aee5c719145121670477b7312b2df818748bfd4c"
+licence = "MIT"
+meta = false
+provides = "chezmoi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.7.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

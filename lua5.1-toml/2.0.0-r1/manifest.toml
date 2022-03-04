@@ -1,0 +1,20 @@
+checksume = "3b6fa90bb827d607a50b0bedd64d765a34117e1ba8244406b67831f5c2198a4f"
+licence = "Happy"
+meta = false
+provides = "lua5.1-toml"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1", "5.1.5-r8"]]

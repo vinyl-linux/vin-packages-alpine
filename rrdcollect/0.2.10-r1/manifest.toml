@@ -1,0 +1,20 @@
+checksume = "41fa441b0177e42f76defb2f5bd5c276aa6a36e14ec876ffda0ff2ecfd2d0e95"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "rrdcollect"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.2.10-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rrdtool", "1.7.2-r5"], ["musl", "1.2.2-r7"]]

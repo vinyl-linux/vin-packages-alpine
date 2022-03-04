@@ -1,0 +1,20 @@
+checksume = "89c60a22f4a6bec3c439f6b2602308a41cff57b8ef228ceaee2524e928e7f87f"
+licence = "BSD-3-Clause"
+meta = false
+provides = "ripmime"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.0.10-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

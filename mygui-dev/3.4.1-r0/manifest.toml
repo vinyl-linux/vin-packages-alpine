@@ -1,0 +1,20 @@
+checksume = "579db0e00e41656578d054349171b7f993e1f561f56c7a2d14b2588a49bba92d"
+licence = "MIT"
+meta = false
+provides = "mygui-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mygui", "3.4.1-r0"], ["pkgconf", "1.8.0-r0"]]

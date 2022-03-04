@@ -1,0 +1,20 @@
+checksume = "f22e648d10d4ffad1515d7842ae20e81c83f5b272014fbc997f943a1a471b0b2"
+licence = "LGPL-2.0-or-later VSL"
+meta = false
+provides = "ortp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.0.51-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bctoolbox", "5.0.51-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

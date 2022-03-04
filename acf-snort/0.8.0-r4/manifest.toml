@@ -1,0 +1,20 @@
+checksume = "173ed66046f2594f45cc3e9f912f28a9e9350c86b2168ca24c989155b61598be"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-snort"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.8.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["snort", "2.9.17-r0"]]

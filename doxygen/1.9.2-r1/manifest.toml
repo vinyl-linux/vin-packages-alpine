@@ -1,0 +1,20 @@
+checksume = "8671d9269a39ce8ef290018324fedac6e4e669597084495610711657e3cb48da"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "doxygen"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.9.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

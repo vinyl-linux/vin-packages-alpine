@@ -1,0 +1,20 @@
+checksume = "3ed7561e250d3698c5938877d66c600dfc7dffcb9d9faec7c376d2f40e0a5fd1"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-html-form"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.07-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-uri", "5.10-r0"], ["perl-html-parser", "3.76-r1"], ["perl-http-message", "6.35-r0"]]

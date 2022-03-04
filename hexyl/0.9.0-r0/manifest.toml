@@ -1,0 +1,20 @@
+checksume = "e016d88dd5248fef0582d88737be5b671dcff2c7fbb17bdf4c539617df8e302e"
+licence = "Apache-2.0 OR MIT"
+meta = false
+provides = "hexyl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

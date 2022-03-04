@@ -1,0 +1,20 @@
+checksume = "e1a525dcb1b769ee9553afe2636ed6fd66896b5b11a60e0657ff16af6a11c4ec"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-loky"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-cloudpickle", "1.6.0-r1"]]

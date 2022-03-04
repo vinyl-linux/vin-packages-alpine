@@ -1,0 +1,20 @@
+checksume = "a140774bd16cf9e8aca93c93cd23b9625c25b42e7c11e5784c134db707d7027f"
+licence = "GPL-2.0-with-classpath-exception"
+meta = false
+provides = "openjdk13-jdk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "13.0.9_p3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk13-jre", "13.0.9"], ["musl", "1.2.2-r7"], ["openjdk13-jre-headless", "13.0.9"]]

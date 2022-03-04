@@ -1,0 +1,20 @@
+checksume = "926db2e8f61603a5929326c70f6c96d1ff3bd17ef64bd7c6d0f4dde85c0ab1a5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "collectd-iptables"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["iptables", "1.8.7-r1"]]

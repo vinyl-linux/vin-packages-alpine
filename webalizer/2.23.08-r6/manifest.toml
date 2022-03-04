@@ -1,0 +1,20 @@
+checksume = "a4cc4a4706a77b7abdb4e8001e41bde3c04d37fc503b68b47fde00f641682950"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "webalizer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.23.08-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libgd", "2.3.2-r1"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "a689b5e18d638fa95b667d524748f4d523e89903dda587ab8545731ab5941731"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "sshfs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.7.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssh-client-default", "8.8"], ["fuse3", "3.10.5-r0"], ["musl", "1.2.2-r7"], ["fuse3-libs", "3.10.5-r0"], ["glib", "2.70.1-r0"]]

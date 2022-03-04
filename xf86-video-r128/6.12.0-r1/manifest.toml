@@ -1,0 +1,20 @@
+checksume = "16e3d9ab27ba8d16ace08ebf839de23e901b08c71a02fb9b4c500195a816a5e6"
+licence = "MIT"
+meta = false
+provides = "xf86-video-r128"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.12.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

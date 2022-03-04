@@ -1,0 +1,20 @@
+checksume = "ad10fedebeef51a60079229612405f50231ce37a12b9c0f0b6c62116651f176c"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "dahdi-tools-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bsd-compat-headers", "0.7.2-r3"], ["linux-headers", "5.10.41-r0"], ["dahdi-linux-dev", "3.1.0-r0"], ["newt-dev", "0.52.21-r0"], ["dahdi-tools", "3.1.0-r1"]]

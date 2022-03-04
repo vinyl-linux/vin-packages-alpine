@@ -1,0 +1,20 @@
+checksume = "188a4eb6c7721d8977c91d52f0227d40253eed1d381a4f695918644389479a7d"
+licence = "BSD-3-Clause ISC"
+meta = false
+provides = "outils-sha512"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["outils-md5", "0.10-r1"]]

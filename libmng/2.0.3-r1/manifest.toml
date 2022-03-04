@@ -1,0 +1,20 @@
+checksume = "77232fd0fbc12ed5e4888f6fccb6382ceb23023845bcb2ee960b68de84614a73"
+licence = "custom"
+meta = false
+provides = "libmng"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"], ["lcms2", "2.12-r1"], ["zlib", "1.2.11-r3"]]

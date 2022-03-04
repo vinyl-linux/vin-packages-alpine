@@ -1,0 +1,20 @@
+checksume = "0d07a34f7f934872327150de72be46aa57a7bb94f599488fb2c3070967b12d46"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "polari"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "40.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["telepathy-logger", "0.8.2-r3"], ["telepathy-idle", "0.2.2-r0"], ["telepathy-mission-control", "5.16.6-r0"], ["gspell", "1.9.1-r1"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gobject-introspection", "1.70.0-r1"], ["gjs", "1.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["telepathy-glib", "0.24.2-r1"]]

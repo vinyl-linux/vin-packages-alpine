@@ -1,0 +1,20 @@
+checksume = "6f60cdd82ae017309782b87c0cc4cbfde0e922e5863b46a266414c49d95cf42f"
+licence = "Zlib"
+meta = false
+provides = "zathura-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cairo-dev", "1.16.0-r3"], ["girara-dev", "0.3.6-r0"], ["pkgconf", "1.8.0-r0"]]

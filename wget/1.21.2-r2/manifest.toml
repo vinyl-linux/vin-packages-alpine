@@ -1,0 +1,20 @@
+checksume = "79363f626b1e315e8b44a770ed4fd2a563184a32852a19d6855a207fdde31e35"
+licence = "GPL-3.0-or-later WITH OpenSSL-Exception"
+meta = false
+provides = "wget"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.21.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libidn2", "2.3.2-r0"], ["libssl1.1", "1.1.1l-r8"]]

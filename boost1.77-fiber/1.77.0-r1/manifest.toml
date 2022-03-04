@@ -1,0 +1,20 @@
+checksume = "53c64154ad463ae3cd945f0c0048cfa2b13434e8c800398b5b1d3375fb21d081"
+licence = "BSL-1.0"
+meta = false
+provides = "boost1.77-fiber"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.77.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost1.77-context", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

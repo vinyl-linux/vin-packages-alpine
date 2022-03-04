@@ -1,0 +1,20 @@
+checksume = "be73404766a8ef544928da68e1cba35d509e55be81489309261223a765c25ba1"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "quassel"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13.1-r9"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["quassel-mono", "0.13.1-r9"]]

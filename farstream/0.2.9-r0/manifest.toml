@@ -1,0 +1,20 @@
+checksume = "b71bf8ae0fffcb312272ac423fd3217072fc8b552e79d7fe7517e895269603b3"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+meta = false
+provides = "farstream"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gstreamer", "1.18.5-r0"], ["gst-plugins-base", "1.18.5-r0"], ["libnice", "0.1.18-r1"]]

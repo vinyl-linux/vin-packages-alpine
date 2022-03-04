@@ -1,0 +1,20 @@
+checksume = "f7c7a8aed599df049d67fd0ca758e217db458f04d5085bdac68f9a0eb334966e"
+licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
+meta = false
+provides = "rsyslog-rabbitmq"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.2108.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["rabbitmq-c", "0.11.0-r1"]]

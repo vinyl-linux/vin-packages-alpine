@@ -1,0 +1,20 @@
+checksume = "0cd85948b96ebe3aacc16f822a7b6c8dcc3e7739bc5adec7a4976d8e11739c31"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnome-session-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "40.1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alsa-plugins-pulse", "1.2.5-r2"], ["bash", "5.1.16-r0"], ["dconf", "0.40.0-r0"], ["gnome-shell", "41.1-r0"], ["mesa", "21.2.6-r0"], ["mesa-dri-gallium", "21.2.6-r0"], ["polkit", "0.119-r8"], ["pulseaudio-alsa", "15.0-r2"]]

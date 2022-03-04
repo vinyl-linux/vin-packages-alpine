@@ -1,0 +1,20 @@
+checksume = "3fa5f5540fb76c100bc809c85414dfa14ef365e2202127d92bc08e9cdb745dc4"
+licence = "Apache-2.0"
+meta = false
+provides = "lua5.2-connman_dbus"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["connman", "1.40-r8"], ["lua-dbus_proxy", "0.10.2-r0"], ["lua5.2", "5.2.4-r7"]]

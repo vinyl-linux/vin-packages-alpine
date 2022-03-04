@@ -1,0 +1,20 @@
+checksume = "c9d93296a499297c09bfa329fe8364cd0b1fcd25c6f0c21aeb078f94fc2396e9"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-dbd-csv"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.58-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-dbi", "1.643-r3"], ["perl-text-csv_xs", "1.46-r1"], ["perl-sql-statement", "1.414-r0"]]

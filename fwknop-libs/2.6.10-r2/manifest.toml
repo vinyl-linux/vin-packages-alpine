@@ -1,0 +1,20 @@
+checksume = "3bdfd7a924bc0ef00ddffaeaf0b851af12a5075224c3fb3ae5c290621c97b79a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "fwknop-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.10-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["gpgme", "1.16.0-r0"]]

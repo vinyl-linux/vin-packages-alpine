@@ -1,0 +1,20 @@
+checksume = "0cb19167ba888bca8fc8ec11f5cf0be6f1ca8287e171a01fd34af52717140e7b"
+licence = "MIT"
+meta = false
+provides = "font-ubuntu-nerd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fontconfig", "2.13.1-r4"]]

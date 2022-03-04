@@ -1,0 +1,20 @@
+checksume = "beb027a31b1de6c244a5861f817e9a7ac3a2fef1aba86097437c2885d5996dae"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt6-qtnetworkauth-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt6-qtbase-dev", "6.2.1-r2"], ["qt6-qtnetworkauth", "6.2.1-r0"]]

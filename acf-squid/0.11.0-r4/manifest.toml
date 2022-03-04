@@ -1,0 +1,20 @@
+checksume = "0c2b89790540558f6f1ff5ef01c35f10b32d6096a2af781728dd6c291a5825f3"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-squid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.11.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["squid", "5.2-r0"]]

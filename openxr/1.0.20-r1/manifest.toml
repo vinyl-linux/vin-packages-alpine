@@ -1,0 +1,20 @@
+checksume = "b48675329d61eb654fae76f05c44b7d91c96f07ccb641e2840b12e65a7396375"
+licence = "Apache-2.0"
+meta = false
+provides = "openxr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.20-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["jsoncpp", "1.9.5-r0"], ["libstdc++", "10.3.1"]]

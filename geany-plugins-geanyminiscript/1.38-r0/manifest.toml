@@ -1,0 +1,20 @@
+checksume = "f0c746b3aa52ebbffa43e989b89cc7bc2ddf199ed7031f79d6b56681c53e0184"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "geany-plugins-geanyminiscript"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.38-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["geany", "1.38-r0"], ["glib", "2.70.1-r0"], ["pango", "1.48.10-r0"]]

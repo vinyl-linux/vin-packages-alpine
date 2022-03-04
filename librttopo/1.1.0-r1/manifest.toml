@@ -1,0 +1,20 @@
+checksume = "1a9910702f6e479a20314d9d821ac5f4eedc72ac92c761f1bc3156f2fda340e9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "librttopo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["geos", "3.10.2-r0"]]

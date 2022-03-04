@@ -1,0 +1,20 @@
+checksume = "322d5321fb9b1101f28175df51b5c8c0cb34f9213eb52c4ff09b3cf33e1ce052"
+licence = "BSD"
+meta = false
+provides = "freeradius-client-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.1.7-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["freeradius-client", "1.1.7-r4"]]

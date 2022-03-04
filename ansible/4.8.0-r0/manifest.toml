@@ -1,0 +1,20 @@
+checksume = "1ff4d6846bf40506f918e809102d58b58ca4c659b0f64f4110d0b7f37fd414a2"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "ansible"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["ansible-core", "2.11.6-r1"]]

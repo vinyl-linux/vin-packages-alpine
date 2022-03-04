@@ -1,0 +1,20 @@
+checksume = "315f66dbe0862b4f2893cb50e553e54de36754b6415cf50e5240f7b23978a237"
+licence = "custom"
+meta = false
+provides = "libxres-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xorgproto", "2021.5-r0"], ["libxres", "1.2.1-r0"], ["libx11-dev", "1.7.2-r0"], ["libxext-dev", "1.3.4-r0"], ["pkgconf", "1.8.0-r0"]]

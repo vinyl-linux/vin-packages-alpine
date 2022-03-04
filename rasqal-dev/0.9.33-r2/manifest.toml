@@ -1,0 +1,20 @@
+checksume = "526b501ea45106a85a35c0ba733b7ce93c357e12c7cd6b69732de41fa598a4d0"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "rasqal-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.33-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["raptor2-dev", "2.0.15-r4"], ["pkgconf", "1.8.0-r0"], ["rasqal", "0.9.33-r2"]]

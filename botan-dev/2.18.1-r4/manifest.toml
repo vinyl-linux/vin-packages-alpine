@@ -1,0 +1,20 @@
+checksume = "48f0174902605bf86d87c50a96b5a936b59845dde3a85e19ff038b19c5d5db9d"
+licence = "BSD-2-Clause"
+meta = false
+provides = "botan-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.18.1-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boost-dev", "1.77.0-r1"], ["bzip2-dev", "1.0.8-r1"], ["openssl-dev", "1.1.1l-r8"], ["sqlite-dev", "3.36.0-r0"], ["xz-dev", "5.2.5-r0"], ["zlib-dev", "1.2.11-r3"], ["botan-libs", "2.18.1-r4"], ["pkgconf", "1.8.0-r0"]]

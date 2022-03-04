@@ -1,0 +1,20 @@
+checksume = "ea917b096dc11a2d85205b5e00b612561726a24dec0da25ae0e8dee06b0e6aa4"
+licence = "ISC"
+meta = false
+provides = "libudev-zero-helper"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

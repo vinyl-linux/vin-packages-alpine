@@ -1,0 +1,20 @@
+checksume = "82ebf798f1c183c3873b12b4aebe2ef6f998ed479f51247180d7081abfe7a3b5"
+licence = "MIT"
+meta = false
+provides = "xf86-input-libinput"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libinput-libs", "1.19.2-r0"]]

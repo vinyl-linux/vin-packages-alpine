@@ -1,0 +1,20 @@
+checksume = "1ec853a67e4107841a857be0e85990c60ee0a1ca0e450e434d8413114a2ed4d0"
+licence = "GPL-2.0 or Artistic"
+meta = false
+provides = "perl-css-squish"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.10-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-uri", "5.10-r0"], ["perl-test-longstring", "0.17-r2"]]

@@ -1,0 +1,20 @@
+checksume = "82f5815824397c2af1126187870028c92e43f3b6a2253285879183da5999de4e"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "json-glib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

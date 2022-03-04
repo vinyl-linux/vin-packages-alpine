@@ -1,0 +1,20 @@
+checksume = "349f6e4ed14c9c7bd17843f62e8d35e1a45ba4e24f05e083059c78c3ed85fe54"
+licence = "MIT"
+meta = false
+provides = "py3-pytest-runner"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.3.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"]]

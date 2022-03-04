@@ -1,0 +1,20 @@
+checksume = "e67a5e4ad8b38afc34fd8ee10e75f0f3cac30c52e43d3a9fcab07ff5ea3040d6"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt5-qtquicktimeline"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.3_git20201223-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "4b2ba68b5123931f5650ae23f01c5097e4068bff51b5d1d183101c60c3cd6fc0"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "liquidctl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-docopt", "0.6.2-r6"], ["py3-usb", "1.1.1-r2"], ["py3-hidapi", "0.9.0-r3"]]

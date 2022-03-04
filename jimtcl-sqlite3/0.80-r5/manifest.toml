@@ -1,0 +1,20 @@
+checksume = "a6c89a278364d1dd7c3227a1d4d32f4618359966446ac3dd48631cb866437bd7"
+licence = "BSD-2-Clause"
+meta = false
+provides = "jimtcl-sqlite3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.80-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["jimtcl", "0.80-r5"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

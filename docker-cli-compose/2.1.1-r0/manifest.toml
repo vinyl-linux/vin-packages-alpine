@@ -1,0 +1,20 @@
+checksume = "7620cbc238f7e6fe0e987084444e59bd5c10bc1be0cd20eb6128e9817dc540cf"
+licence = "Apache-2.0"
+meta = false
+provides = "docker-cli-compose"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["docker-cli", "20.10.11-r0"], ["musl", "1.2.2-r7"]]

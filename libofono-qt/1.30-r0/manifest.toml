@@ -1,0 +1,20 @@
+checksume = "9dca99632049a93cd1c2b59f7d89243bab83e0c61b5f4f382ccb4d862bf77671"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libofono-qt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.30-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

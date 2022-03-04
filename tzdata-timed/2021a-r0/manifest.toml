@@ -1,0 +1,20 @@
+checksume = "76fa09886f2efa51c4146c0d9ebf2770a1707b26af3361f16aa25af62789f92e"
+licence = "PDDL-1.0"
+meta = false
+provides = "tzdata-timed"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2021a-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["tzdata", "2021e-r0"]]

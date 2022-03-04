@@ -1,0 +1,20 @@
+checksume = "ca3d9c5372fbd8fd71316bdc339b83a9907467d9f074b439651ac88b44ae3701"
+licence = "MPL-2.0"
+meta = false
+provides = "libreoffice-base"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.2.2.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libreoffice-common", "7.2.2.2-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

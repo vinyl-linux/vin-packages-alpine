@@ -1,0 +1,20 @@
+checksume = "d1564b69c929370825afaf93d69c7801a4d27f51be8ce1215e35389e704ba653"
+licence = "OLDAP-2.8"
+meta = false
+provides = "openldap-overlay-seqmod"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

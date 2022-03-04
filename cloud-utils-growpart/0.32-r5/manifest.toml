@@ -1,0 +1,20 @@
+checksume = "68bda007f00bea30873b7bdf6a03fdd0851491a43f8fe0affe2f6aff8239970a"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "cloud-utils-growpart"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.32-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["blkid", "2.37.4-r0"], ["partx", "2.37.4-r0"], ["sfdisk", "2.37.4-r0"]]

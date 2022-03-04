@@ -1,0 +1,20 @@
+checksume = "dd9d2cc0f58337a84494cb88259452510557ea9128d630ea51252184ca3dfe0e"
+licence = "LGPL-2.1-or-later AND LicenseRef-KDE-Accepted-LGPL"
+meta = false
+provides = "peruse-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.80-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kirigami2", "5.88.0-r0"], ["okular-common-qml", "21.08.3-r0"], ["qt5-qtbase-sqlite", "5.15.3"], ["qt5-qtimageformats", "5.15.3"], ["qt5-qtquickcontrols", "5.15.3"]]

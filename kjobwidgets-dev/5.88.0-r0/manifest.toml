@@ -1,0 +1,20 @@
+checksume = "138af9ba4ff17a6e62446ba811e86b191c5a219eeebaca57f7a9f79bf152a6db"
+licence = "LGPL-2.1-only AND (LGPL-2.1-only OR LGPL-3.0-only)"
+meta = false
+provides = "kjobwidgets-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtx11extras-dev", "5.15.3"], ["kcoreaddons-dev", "5.88.0-r0"], ["kwidgetsaddons-dev", "5.88.0-r0"], ["kjobwidgets", "5.88.0-r0"]]

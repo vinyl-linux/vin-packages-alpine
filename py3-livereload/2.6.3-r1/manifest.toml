@@ -1,0 +1,20 @@
+checksume = "c03fe86c337c54860a094629843f70a3212d7264a05f682b8656fd1f539e71fa"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-livereload"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.6.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-six", "1.16.0-r0"], ["py3-tornado", "6.1-r1"], ["python3", "3.9.7-r4"]]

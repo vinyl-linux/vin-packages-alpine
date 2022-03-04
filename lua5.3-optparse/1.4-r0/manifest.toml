@@ -1,0 +1,20 @@
+checksume = "d19771548c56b059bd1084cc24bc271e74a8657c4e05b49b9952a060eba82651"
+licence = "MIT"
+meta = false
+provides = "lua5.3-optparse"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.3", "5.3.6-r1"]]

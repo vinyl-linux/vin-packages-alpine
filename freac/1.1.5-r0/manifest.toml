@@ -1,0 +1,20 @@
+checksume = "336ed7a2fef6f9858e02ad211481596de1d1e85abbe4044b4240fbe229188784"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "freac"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["boca", "1.0.5-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["smooth", "0.9.8-r0"], ["libstdc++", "10.3.1"]]

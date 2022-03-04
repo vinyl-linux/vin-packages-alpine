@@ -1,0 +1,20 @@
+checksume = "3430c963a9cf72addb20ee3a332efb592fea93b073a9d82074d91b0b9fb74370"
+licence = "MIT"
+meta = false
+provides = "libvdpau-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libvdpau", "1.4-r0"], ["pkgconf", "1.8.0-r0"]]

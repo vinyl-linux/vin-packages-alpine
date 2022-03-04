@@ -1,0 +1,20 @@
+checksume = "30c14b6767b468bde0a121d933e61abd3472ad2bff539929f060472c3426fdbc"
+licence = "MPL-2.0 LGPL-2.1-or-later"
+meta = false
+provides = "libwpd-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libwpd", "0.10.3-r0"], ["librevenge-dev", "0.0.4-r6"], ["pkgconf", "1.8.0-r0"]]

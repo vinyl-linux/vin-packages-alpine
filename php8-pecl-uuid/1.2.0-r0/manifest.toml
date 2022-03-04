@@ -1,0 +1,20 @@
+checksume = "094021571f071b853ba367efe8666bc271964eccf2eaa015882adf6fe27caa98"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "php8-pecl-uuid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

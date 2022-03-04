@@ -1,0 +1,20 @@
+checksume = "ce2c08fed24c42f01dc354d12e2f19024cde1916b09ed48419984ab6b8865f7d"
+licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
+meta = false
+provides = "findmnt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.37.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libmount", "2.37.4-r0"], ["libsmartcols", "2.37.4-r0"]]

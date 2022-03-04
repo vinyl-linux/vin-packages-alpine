@@ -1,0 +1,20 @@
+checksume = "a46f111e8facad7fd16c9cdac19f2182679fc5cb2b8e10507da9aaa964e2027c"
+licence = "GPL-2.0 LGPL-2"
+meta = false
+provides = "qemu"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["libcap-ng", "0.8.2-r1"], ["libcurl", "7.80.0-r0"], ["libepoxy", "1.5.9-r0"], ["mesa-gbm", "21.2.6-r0"], ["glib", "2.70.1-r0"], ["gnutls", "3.7.1-r0"], ["pixman", "0.40.0-r3"], ["libseccomp", "2.5.2-r0"], ["virglrenderer", "0.9.1-r0"], ["libxkbcommon", "1.3.1-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

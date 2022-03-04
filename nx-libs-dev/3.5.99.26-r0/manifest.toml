@@ -1,0 +1,20 @@
+checksume = "a4220aec577fb68677629dca2722103feb6e1763f7ba0c644f616069380b7208"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "nx-libs-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.5.99.26-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nx-libs", "3.5.99.26-r0"], ["libpng-dev", "1.6.37-r1"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

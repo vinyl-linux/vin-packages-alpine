@@ -1,0 +1,20 @@
+checksume = "3561aa2a42a52ef8393ae8bd2d5530081cc5b97597f4403874c7b8109728c536"
+licence = "Zlib"
+meta = false
+provides = "sdl2_image-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.5-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sdl2-dev", "2.0.16-r4"], ["pkgconf", "1.8.0-r0"], ["sdl2_image", "2.0.5-r2"]]

@@ -1,0 +1,20 @@
+checksume = "9d57666efe6ce8f009246c45846c51595825b81a23e34a4699118cee61999b86"
+licence = "LGPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "karchive"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["xz-libs", "5.2.5-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "049a1c108125f37a7c7195283bbd5a6896c5fefc7974f25ffbbaf9b268afc75f"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "mtools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.0.36-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

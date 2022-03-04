@@ -1,0 +1,20 @@
+checksume = "513c4528aef85a6017de17ba5d08ef00483d5a0b3c731334dd401bef093d6047"
+licence = "MIT"
+meta = false
+provides = "kcolorchooser"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

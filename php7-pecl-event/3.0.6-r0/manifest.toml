@@ -1,0 +1,20 @@
+checksume = "3e53e281391a7e43cbf8de36928aa27584e23a0531daa5dd2ef18214f3df4e0e"
+licence = "PHP-3.01"
+meta = false
+provides = "php7-pecl-event"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-sockets", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libevent", "2.1.12-r4"], ["libssl1.1", "1.1.1l-r8"]]

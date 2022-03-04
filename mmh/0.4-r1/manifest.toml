@@ -1,0 +1,20 @@
+checksume = "e3bc80184515e3027c5638409382831d57e75561cd67fef2f239a259664c13d0"
+licence = "BSD-3-Clause"
+meta = false
+provides = "mmh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3"]]

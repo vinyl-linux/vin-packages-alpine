@@ -1,0 +1,20 @@
+checksume = "f85637a576a1707a076e0f424265610cf5c5a2a486037f5863926236ba23a3cf"
+licence = "BSD-3-Clause"
+meta = false
+provides = "fts-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fts", "1.2.7-r1"], ["pkgconf", "1.8.0-r0"]]

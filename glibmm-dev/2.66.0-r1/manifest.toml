@@ -1,0 +1,20 @@
+checksume = "57791ab4d05f360c79e7a853550acee2c33025f3bf7a2fe675884a77bb065ecf"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "glibmm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.66.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["glibmm", "2.66.0-r1"], ["glib-dev", "2.70.1-r0"], ["libsigc++-dev", "2.10.6-r0"], ["pkgconf", "1.8.0-r0"]]

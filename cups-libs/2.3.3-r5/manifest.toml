@@ -1,0 +1,20 @@
+checksume = "9082af60d482cc5887db37183f3cce61bd347a0c14d93d637ad8465c6910a0be"
+licence = "GPL-2.0-only"
+meta = false
+provides = "cups-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["avahi-libs", "0.8-r5"], ["musl", "1.2.2-r7"], ["gnutls", "3.7.1-r0"], ["zlib", "1.2.11-r3"]]

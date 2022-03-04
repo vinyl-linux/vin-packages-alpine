@@ -1,0 +1,20 @@
+checksume = "0dda174806462e7b457af3d254b39dc782ba0af4fe3d817c715b4817516941bb"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-datetime-format-pg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.16014-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-datetime-format-builder", "0.83-r1"], ["perl-datetime-timezone", "2.51-r0"], ["perl-datetime", "1.54-r1"]]

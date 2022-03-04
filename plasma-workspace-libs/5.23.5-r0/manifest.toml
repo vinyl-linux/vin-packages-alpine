@@ -1,0 +1,20 @@
+checksume = "1384e474b773914fb89c3b780ba2416aad280a0844ecaf9670aec1835ccc553f"
+licence = "(GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-or-later AND GPL-2.0-or-later AND MIT AND LGPL-2.1-only AND LGPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-only) AND LGPL-2.0-only"
+meta = false
+provides = "plasma-workspace-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kactivities-libs", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kitemmodels", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["plasma-framework", "5.88.0-r0"], ["libkscreen", "5.23.5-r0"], ["kservice", "5.88.0-r0"], ["kwayland", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libx11", "1.7.2-r0"], ["libxau", "1.0.9-r0"], ["libxft", "2.3.4-r0"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"], ["libstdc++", "10.3.1"], ["xcb-util-image", "0.4.0-r1"]]

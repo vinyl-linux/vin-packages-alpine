@@ -1,0 +1,20 @@
+checksume = "9c8265f87f6600c196a2e37af411e90e359753744da4ffd13bc84ebd2941cd0e"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "kde-applications-network"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kget", "21.08.3-r0"], ["krfb", "21.08.3-r0"], ["zeroconf-ioslave", "21.08.3-r0"], ["kio-extras", "21.08.3-r0"]]

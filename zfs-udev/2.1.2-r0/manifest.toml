@@ -1,0 +1,20 @@
+checksume = "1b3f0ab44576ec01ba5ce0e5b17fa5b2162476fb0bcf78bba29442ce6dfdcbc3"
+licence = "CDDL-1.0"
+meta = false
+provides = "zfs-udev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

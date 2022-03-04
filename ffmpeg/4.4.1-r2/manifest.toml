@@ -1,0 +1,20 @@
+checksume = "e8c78b958f7c11e287886db4ca6f3900c51d98d1488ac627f3863b14a62d1f2a"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "ffmpeg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.4.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sdl2", "2.0.16-r4"], ["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"]]

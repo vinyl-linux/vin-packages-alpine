@@ -1,0 +1,20 @@
+checksume = "08f87f38ee8e746b01e8c1fd76dceb5d681e2c386b943c6a03c3f951a3f14f1e"
+licence = "MIT"
+meta = false
+provides = "xf86-video-qxl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.5-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

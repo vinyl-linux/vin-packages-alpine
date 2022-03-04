@@ -1,0 +1,20 @@
+checksume = "490f59fb240a07c1423edae4deebe2d3834bbed9322cdf1f8f9ec5f372801138"
+licence = "MIT"
+meta = false
+provides = "wayland-libs-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.19.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"]]

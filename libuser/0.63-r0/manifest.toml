@@ -1,0 +1,20 @@
+checksume = "73f345d4cbbf166a38ca230220951db73b7651e002f621ca1eee7b7fbbf0c013"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libuser"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.63-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["linux-pam", "1.5.2-r0"], ["popt", "1.18-r0"]]

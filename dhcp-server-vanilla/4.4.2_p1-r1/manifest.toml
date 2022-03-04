@@ -1,0 +1,20 @@
+checksume = "d7c5b117f66ddee8f9f451d684c43d6dd78d88f4262fe86d6831cb3cb2719ba2"
+licence = "MPL-2.0"
+meta = false
+provides = "dhcp-server-vanilla"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.4.2_p1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dhcp", "4.4.2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

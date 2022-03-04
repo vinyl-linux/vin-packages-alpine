@@ -1,0 +1,20 @@
+checksume = "df6b7ac4f88cb10b57bf586cb3eabf330cb42d379df25821acd16de05acead3e"
+licence = "ISC"
+meta = false
+provides = "opensmtpd-filter-senderscore"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["opensmtpd", "6.8.0p2-r2"], ["musl", "1.2.2-r7"]]

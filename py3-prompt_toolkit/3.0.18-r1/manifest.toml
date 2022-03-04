@@ -1,0 +1,20 @@
+checksume = "c6f99122a5e8aa3711cb6cf5ea5599485e0b3d9e53a332be505f3ae99f95a03b"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-prompt_toolkit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.18-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-six", "1.16.0-r0"], ["py3-wcwidth", "0.2.5-r1"]]

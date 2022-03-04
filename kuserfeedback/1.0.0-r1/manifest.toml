@@ -1,0 +1,20 @@
+checksume = "347fbcf6ed0003782c3cb96e15c81aa650380a222a0545fd88c5c29546403e30"
+licence = "MIT"
+meta = false
+provides = "kuserfeedback"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

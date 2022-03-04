@@ -1,0 +1,20 @@
+checksume = "8e6ec2c5ab8eb183a1aed5789f84d76b0e96a2f8afcb6847b206c1dd7a61f414"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "thunar-vcs-plugin-svn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["apr", "1.7.0-r0"], ["musl", "1.2.2-r7"], ["exo-libs", "4.16.2-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["subversion-libs", "1.14.1-r7"], ["libxfce4util", "4.16.0-r1"]]

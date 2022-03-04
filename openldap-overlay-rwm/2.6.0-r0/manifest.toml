@@ -1,0 +1,20 @@
+checksume = "6339255aa025a3dd6efd2d2cd82651878c5a066162cc0597804806b897de5ae6"
+licence = "OLDAP-2.8"
+meta = false
+provides = "openldap-overlay-rwm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

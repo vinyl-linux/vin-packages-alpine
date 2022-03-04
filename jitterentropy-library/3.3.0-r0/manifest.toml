@@ -1,0 +1,20 @@
+checksume = "90acec09eadaec3000a080e3131eff407ff1d18ff7e48e2caa1a52291ff0c285"
+licence = "BSD-3-Clause OR GPL-2.0-Only"
+meta = false
+provides = "jitterentropy-library"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

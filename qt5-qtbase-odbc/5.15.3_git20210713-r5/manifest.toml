@@ -1,0 +1,20 @@
+checksume = "a7da9700ed4ec232e19f67a8a6895f6bea7068634850521d241482d925f487fe"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt5-qtbase-odbc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.3_git20210713-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xdg-utils", "1.1.3-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["unixodbc", "2.3.9-r1"], ["libstdc++", "10.3.1"]]

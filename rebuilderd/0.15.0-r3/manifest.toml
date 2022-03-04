@@ -1,0 +1,20 @@
+checksume = "5585d79f1bc517ea5a37aaf07f4d898ce96c3c8a3962760ca1f8515590344f58"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "rebuilderd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.15.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rebuilderd-tools", "0.15.0-r3"], ["shared-mime-info", "2.1-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcc", "10.3.1"], ["sqlite-libs", "3.36.0-r0"], ["libssl1.1", "1.1.1l-r8"]]

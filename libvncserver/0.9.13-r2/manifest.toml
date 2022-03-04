@@ -1,0 +1,20 @@
+checksume = "6af86b206a5522d89f0796d74b7335032c81c7e7c5b6947b993da81a846a7768"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libvncserver"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.13-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcrypt", "1.9.4-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["lzo", "2.10-r2"], ["libpng", "1.6.37-r1"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

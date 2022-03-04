@@ -1,0 +1,20 @@
+checksume = "4824e6d05601927c6b25c283afb2a613bb0d6c7b76bc156caee04a4b6702f668"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+meta = false
+provides = "qt6-qtwebchannel-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt6-qtbase-dev", "6.2.1-r2"], ["qt6-qtdeclarative-dev", "6.2.1-r0"], ["qt6-qtwebsockets-dev", "6.2.1-r0"], ["qt6-qtwebchannel", "6.2.1-r0"]]

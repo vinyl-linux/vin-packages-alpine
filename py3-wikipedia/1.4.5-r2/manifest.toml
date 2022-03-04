@@ -1,0 +1,20 @@
+checksume = "50153b270b33584114b9474102010a43abbab450d2642984d92cab2f508187b8"
+licence = "MIT"
+meta = false
+provides = "py3-wikipedia"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.5-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-beautifulsoup4", "4.9.3-r1"], ["py3-requests", "2.26.0-r1"]]

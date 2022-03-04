@@ -1,0 +1,20 @@
+checksume = "ac2b1b18c4c6b5f924929f0597b0457aa4d5f4169c0a2c4887dd94815d3c483d"
+licence = "Artistic-2.0"
+meta = false
+provides = "perl-net-ssleay"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.90-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

@@ -1,0 +1,20 @@
+checksume = "891766f428e8e6ba327d830c22b58f5d490a1e9be6cf3bf462d9b20a8d1496e2"
+licence = "GPL-2.0-only"
+meta = false
+provides = "open-lldp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.9.46-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libconfig", "1.7.3-r0"], ["libnl", "1.1.4-r1"]]

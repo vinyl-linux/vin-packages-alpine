@@ -1,0 +1,20 @@
+checksume = "d2e47c50bc57253376789cb35721912fc2d686b0467e9d70b73e50b1948021af"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libatasmart-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.19-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["eudev-dev", "3.2.11"], ["libatasmart", "0.19-r1"], ["pkgconf", "1.8.0-r0"]]

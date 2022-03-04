@@ -1,0 +1,20 @@
+checksume = "1fcde4b0f6ccadb3c399eaf60d6ba48ee650c38bc8679cebe21bbb1be5bd79d6"
+licence = "LGPL-2.0-or-later MPL-1.1"
+meta = false
+provides = "cmph"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcmph", "2.0.2-r0"]]

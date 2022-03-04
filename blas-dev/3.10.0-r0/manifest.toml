@@ -1,0 +1,20 @@
+checksume = "31e74b2efbeb5f6277a49ca28a313d11a09005bf79bc7250f7acbe457f7e0f8b"
+licence = "BSD-3-Clause"
+meta = false
+provides = "blas-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["blas", "3.10.0-r0"], ["pkgconf", "1.8.0-r0"]]

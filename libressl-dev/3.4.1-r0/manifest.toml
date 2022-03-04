@@ -1,0 +1,20 @@
+checksume = "54c5e3d375ecaa9d7cb373de034c1fc90604bac0236cc87616d00c2a1e98386d"
+licence = "custom"
+meta = false
+provides = "libressl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libressl3.4-libcrypto", "3.4.1-r0"], ["libressl3.4-libssl", "3.4.1-r0"], ["libressl3.4-libtls", "3.4.1-r0"], ["pkgconf", "1.8.0-r0"]]

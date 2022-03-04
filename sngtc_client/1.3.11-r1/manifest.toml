@@ -1,0 +1,20 @@
+checksume = "dfad14c26db88c6ae2a44b37b01af08b4d7c08a33d8011ba660ef43f1f481fbf"
+licence = "LGPL"
+meta = false
+provides = "sngtc_client"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.3.11-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bctoolbox", "5.0.51-r0"], ["musl", "1.2.2-r7"], ["ortp", "5.0.51-r0"]]

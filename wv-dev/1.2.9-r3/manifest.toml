@@ -1,0 +1,20 @@
+checksume = "d449e4ee023e5bf406dec641bb3d61415deb1e3e6bdc73f64b6ca6233b06fd65"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "wv-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.9-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libgsf-dev", "1.14.47-r0"], ["pkgconf", "1.8.0-r0"], ["wv", "1.2.9-r3"]]

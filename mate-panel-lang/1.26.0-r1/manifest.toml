@@ -1,0 +1,20 @@
+checksume = "02bfc889104d4345d8086f2f34849b59db2d706c983ceb29af4e2dbef201a814"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+meta = false
+provides = "mate-panel-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mate-common", "1.26.0-r0"]]

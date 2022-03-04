@@ -1,0 +1,20 @@
+checksume = "0bdcfb4881d9f76e1a393572a9b57f428eb3c020a2a89cf828d6bd913c3251b9"
+licence = "GPL-2.0"
+meta = false
+provides = "retawq"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.6c-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["ncurses-libs", "6.3"], ["libssl1.1", "1.1.1l-r8"]]

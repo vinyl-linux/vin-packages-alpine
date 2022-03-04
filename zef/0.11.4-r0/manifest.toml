@@ -1,0 +1,20 @@
+checksume = "f60770fc891269be71137f5dcb07ba9e4e9badc85f3bd8e11da5e175661f5330"
+licence = "Artistic-2.0"
+meta = false
+provides = "zef"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.11.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rakudo", "2021.10-r0"], ["git", "2.34.1-r0"], ["wget", "1.21.2-r2"], ["curl", "7.80.0-r0"], ["tar", "1.34-r0"], ["unzip", "6.0-r9"], ["perl", "5.34.0-r1"], ["perl-utils", "5.34.0-r1"]]

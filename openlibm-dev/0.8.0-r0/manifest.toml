@@ -1,0 +1,20 @@
+checksume = "989424fbfc3c9a1dcc1f8ddc5a643f19aaa8b77315d3251ece41a39234ffd4d1"
+licence = "MIT AND BSD-2-Clause AND ISC AND LGPL-2.1-or-later"
+meta = false
+provides = "openlibm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openlibm", "0.8.0-r0"], ["pkgconf", "1.8.0-r0"]]

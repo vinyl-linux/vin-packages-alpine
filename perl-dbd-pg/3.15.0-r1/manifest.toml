@@ -1,0 +1,20 @@
+checksume = "d32bb28a734ce15ef7c84e63ca44d5ba6fdd27d0461958b10ef24299e75e15fe"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-dbd-pg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.15.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-dbi", "1.643-r3"], ["musl", "1.2.2-r7"], ["libpq", "14.2-r0"]]

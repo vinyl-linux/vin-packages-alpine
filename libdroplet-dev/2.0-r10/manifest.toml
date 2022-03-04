@@ -1,0 +1,20 @@
+checksume = "52782c1eb9bf157fe90d8b0fc29097993af82f6023ae1c958b6eb551fbde0de7"
+licence = "MIT"
+meta = false
+provides = "libdroplet-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0-r10"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["json-c-dev", "0.15-r1"], ["libdroplet", "2.0-r10"], ["openssl-dev", "1.1.1l-r8"], ["libxml2-dev", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]

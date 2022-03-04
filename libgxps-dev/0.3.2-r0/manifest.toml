@@ -1,0 +1,20 @@
+checksume = "bee924255bbaa9d11fb46649a98b7985179779e618b5d2e3824488af584a30c0"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libgxps-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libgxps", "0.3.2-r0"], ["cairo-dev", "1.16.0-r3"], ["glib-dev", "2.70.1-r0"], ["libarchive-dev", "3.6.0-r0"], ["pkgconf", "1.8.0-r0"]]

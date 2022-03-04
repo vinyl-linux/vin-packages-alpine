@@ -1,0 +1,20 @@
+checksume = "df2f5773b93c697daa77482cc382027a69d4ed3b6ba1cbc97221bd282ff5f440"
+licence = "PHP-3.01"
+meta = false
+provides = "php8-pecl-event"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-sockets", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libevent", "2.1.12-r4"], ["libssl1.1", "1.1.1l-r8"]]

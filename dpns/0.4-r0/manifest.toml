@@ -1,0 +1,20 @@
+checksume = "03d3c6789a669aaf361ece6806bf574f30d9bdfff52076da055174f58f3bf791"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "dpns"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["podman-docker", "3.4.4-r0"], ["docker-compose", "1.29.2-r1"]]

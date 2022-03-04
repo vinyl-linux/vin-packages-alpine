@@ -1,0 +1,20 @@
+checksume = "cd2bd0e0f9240ed214e10ae6321b4a8a6a1d1647e8479aad4d3c4abd42e65a09"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "jfsutils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.1.15-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

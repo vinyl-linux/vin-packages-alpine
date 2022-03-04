@@ -1,0 +1,20 @@
+checksume = "f6642157caa05547165c712d1bb3de1d46303a9e963d3a5d9cd262776779b9fa"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "grantlee-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["qt5-qtscript-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["graphviz-dev", "2.49.3-r0"], ["grantlee", "5.2.0-r1"]]

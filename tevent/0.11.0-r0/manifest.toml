@@ -1,0 +1,20 @@
+checksume = "c26e7986b6638370f79fc55a208170aa1b9aab2fc312e2ff3569183ebf3f42c9"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "tevent"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["talloc", "2.3.3-r0"]]

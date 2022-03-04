@@ -1,0 +1,20 @@
+checksume = "c5eb30cc30c89161e142d0a96dbb5c07be90a40c32a92656745d12d1257798d7"
+licence = "GPL-2.0"
+meta = false
+provides = "tkremind"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "03.03.09-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["remind", "03.03.09-r0"], ["tk", "8.6.11-r0"]]

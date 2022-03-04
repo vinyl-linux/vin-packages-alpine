@@ -1,0 +1,20 @@
+checksume = "931c14efbf5bcae9b605d4cba171543dee8b796815572822a34b33659eeede5d"
+licence = "Apache-2.0"
+meta = false
+provides = "imagemagick6-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.9.12.32-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["imagemagick6-c++", "6.9.12.32-r0"], ["imagemagick6-libs", "6.9.12.32-r0"], ["pkgconf", "1.8.0-r0"]]

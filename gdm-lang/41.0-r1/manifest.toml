@@ -1,0 +1,20 @@
+checksume = "ef088262e196d655854293fa379440401dd57799e2d1400acf2e29f2a3e68ed2"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gdm-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["dconf", "0.40.0-r0"], ["gnome-session", "40.1.1-r0"], ["gnome-settings-daemon", "41.0-r0"], ["gnome-shell", "41.1-r0"], ["gsettings-desktop-schemas", "41.0-r0"], ["linux-pam", "1.5.2-r0"], ["xorg-server", "21.1.2-r0"], ["xrdb", "1.2.1-r0"], ["xwayland", "21.1.2-r1"]]

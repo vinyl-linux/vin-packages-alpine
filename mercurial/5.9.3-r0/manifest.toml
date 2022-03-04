@@ -1,0 +1,20 @@
+checksume = "9a38d6c0e2354e66526935232e85919e4fb2cced97ae767c05355e81f9d93f52"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "mercurial"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.9.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

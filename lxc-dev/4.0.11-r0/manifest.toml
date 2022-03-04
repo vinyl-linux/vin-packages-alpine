@@ -1,0 +1,20 @@
+checksume = "2cf95f071e7179030519f267a6f88d51d24b070da440b8ba48d365b9ee7f6823"
+licence = "GPL-2.0-only"
+meta = false
+provides = "lxc-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.0.11-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lxc-libs", "4.0.11-r0"], ["pkgconf", "1.8.0-r0"]]

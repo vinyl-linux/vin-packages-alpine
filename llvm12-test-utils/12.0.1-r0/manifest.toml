@@ -1,0 +1,20 @@
+checksume = "c3bb3717d6451588c08e161d43f81aef882a87fb0e57a91233cc4ad0559b9f54"
+licence = "Apache-2.0"
+meta = false
+provides = "llvm12-test-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "12.0.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "56701fc5b006834c9b37edc4f9f93b6ca3c78f92dfec597145553678753000fd"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-prometheus-client"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-twisted", "21.7.0-r1"]]

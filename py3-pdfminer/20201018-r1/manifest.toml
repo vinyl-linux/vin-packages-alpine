@@ -1,0 +1,20 @@
+checksume = "c89730040d1c7d34b4f0f7dd1bd5a2bf0087dd4d12b2e12d6eb8ec654cdb83dc"
+licence = "MIT"
+meta = false
+provides = "py3-pdfminer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20201018-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-chardet", "4.0.0-r2"], ["py3-cryptography", "3.3.2-r3"], ["py3-sortedcontainers", "2.4.0-r0"], ["py3-six", "1.16.0-r0"], ["py3-pycryptodome", "3.10.1-r1"]]

@@ -1,0 +1,20 @@
+checksume = "d099a4c2fe20aab63378f99ed09d9dc486946e95895c8a662ace874b08decf2a"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "kwallet-pam"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["linux-pam", "1.5.2-r0"]]

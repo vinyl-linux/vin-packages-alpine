@@ -1,0 +1,20 @@
+checksume = "38eb05eef854fca61274702df79cc2ed42738232c6b43c243d3a3f760fc9f287"
+licence = "MIT"
+meta = false
+provides = "brotli-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.9-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

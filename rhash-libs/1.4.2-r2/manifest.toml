@@ -1,0 +1,20 @@
+checksume = "ae9e4fa54c6c20736b93e2788b0cd0375630e4517852e653dbb1f5aa6158a231"
+licence = "0BSD"
+meta = false
+provides = "rhash-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.4.2-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"]]

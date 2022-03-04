@@ -1,0 +1,20 @@
+checksume = "a6f0f78093c91872a7562a2de9e86839ad491814a255ac55457bdf2c3cd86ef5"
+licence = "Apache-2.0"
+meta = false
+provides = "apr-util-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.6.1-r11"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["expat-dev", "2.4.6-r0"], ["openldap-dev", "2.6.0-r0"], ["sqlite-dev", "3.36.0-r0"], ["libpq-dev", "14.2-r0"], ["openssl-dev", "1.1.1l-r8"], ["mariadb-dev", "10.6.4-r2"], ["apr-util", "1.6.1-r11"], ["apr-dev", "1.7.0-r0"], ["pkgconf", "1.8.0-r0"]]

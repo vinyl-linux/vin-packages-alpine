@@ -1,0 +1,20 @@
+checksume = "527a6b623714b567499180d84ca4c4781eb0dc885c76490cfa05ebb9435cbfeb"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-clamav"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["clamav", "0.104.1-r0"]]

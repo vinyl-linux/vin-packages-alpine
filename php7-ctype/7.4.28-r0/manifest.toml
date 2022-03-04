@@ -1,0 +1,20 @@
+checksume = "8f54a183c9789e218db1764dc8f830e1e6b05c9f69cf9fe12b7dfb9ad4427a2a"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+meta = false
+provides = "php7-ctype"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

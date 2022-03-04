@@ -1,0 +1,20 @@
+checksume = "aace687ecf241f3721c451471ea48a315721475ea806ff37c3947be9ab8bf5d8"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "dovecot-submissiond"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.17.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dovecot", "2.3.17.1-r0"], ["musl", "1.2.2-r7"]]

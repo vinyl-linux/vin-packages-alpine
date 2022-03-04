@@ -1,0 +1,20 @@
+checksume = "7dc38ac0eadd711cdcd5217ad93a973d129be22695be4563c4072c9ece06c78b"
+licence = "custom:TU-Berlin-2.0"
+meta = false
+provides = "gsm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.19-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gsm", "1.0.19-r1"]]

@@ -1,0 +1,20 @@
+checksume = "501d2795451e1264dcc7fb2e2f8f2da36c99cddbf6427075d1320217004b7045"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "mate-tweak"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-distro", "1.6.0-r0"], ["py3-psutil", "5.8.0-r1"], ["py3-setproctitle", "1.2.2-r0"]]

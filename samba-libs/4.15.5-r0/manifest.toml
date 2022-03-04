@@ -1,0 +1,20 @@
+checksume = "ca9ff1dd596c8f2f859adcd2b87e737c8e783610bfa53fee460b2dcd362298b0"
+licence = "GPL-3.0-or-later LGPL-3.0-or-later"
+meta = false
+provides = "samba-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.15.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcap", "2.61-r0"], ["samba-util-libs", "4.15.5-r0"], ["gnutls", "3.7.1-r0"], ["jansson", "2.14-r0"], ["libldap", "2.6.0-r0"], ["ldb", "2.4.1-r0"], ["linux-pam", "1.5.2-r0"], ["popt", "1.18-r0"], ["talloc", "2.3.3-r0"], ["tdb-libs", "1.4.5-r0"], ["tevent", "0.11.0-r0"], ["libwbclient", "4.15.5-r0"], ["zlib", "1.2.11-r3"]]

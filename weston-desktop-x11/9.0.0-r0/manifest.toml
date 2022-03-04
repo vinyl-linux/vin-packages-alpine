@@ -1,0 +1,20 @@
+checksume = "68193b2474ac56bc7d3d76228d9e0f10e0ec14ceaec111eaf3c7f2376914f760"
+licence = "MIT"
+meta = false
+provides = "weston-desktop-x11"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["weston", "9.0.0-r0"], ["weston-shell-desktop", "9.0.0-r0"], ["weston-xwayland", "9.0.0-r0"], ["weston-backend-x11", "9.0.0-r0"], ["weston-terminal", "9.0.0-r0"]]

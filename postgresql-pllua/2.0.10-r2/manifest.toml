@@ -1,0 +1,20 @@
+checksume = "e52cf594ab9a0fc09d62e4903e909671c55a0e3c2cfaa277e76bcdede876af7a"
+licence = "MIT"
+meta = false
+provides = "postgresql-pllua"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.10-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql14", "14.2-r0"], ["musl", "1.2.2-r7"], ["luajit", "2.1"]]

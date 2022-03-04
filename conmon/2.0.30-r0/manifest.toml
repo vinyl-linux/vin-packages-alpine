@@ -1,0 +1,20 @@
+checksume = "7ab14f637e1ccac5281f62a58e94aca7fdf405295c207918c2ff50c9cac8b32a"
+licence = "Apache-2.0"
+meta = false
+provides = "conmon"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.30-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

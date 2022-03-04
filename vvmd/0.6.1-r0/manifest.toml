@@ -1,0 +1,20 @@
+checksume = "dbc89993690b0ebc0bdca5fbd4b045163dda995bb58f7e70ab38c4b90c73ad11"
+licence = "GPL-2.0-only"
+meta = false
+provides = "vvmd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mobile-broadband-provider-info", "20201225-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libmm-glib", "1.18.2-r1"], ["libphonenumber", "8.12.36-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "a7df59bd7f7f6f796d4d35c3c958694fb618dcb4f7c95108c8e727384f39eeac"
+licence = "ISC"
+meta = false
+provides = "execline"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.8.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["skalibs", "2.11.0.0-r0"]]

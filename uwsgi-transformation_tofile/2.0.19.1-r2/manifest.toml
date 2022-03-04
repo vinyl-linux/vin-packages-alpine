@@ -1,0 +1,20 @@
+checksume = "1bdef9bfdc91ad073acb72e645ec31bc36e943fa0dbb895f005eeac44aca455a"
+licence = "custom"
+meta = false
+provides = "uwsgi-transformation_tofile"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.0.19.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

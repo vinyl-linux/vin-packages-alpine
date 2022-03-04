@@ -1,0 +1,20 @@
+checksume = "76b85fb68f9fc444579ae36fcfb1254360ba8d160431f216eba1ec3debbe7a9c"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+meta = false
+provides = "sysfsutils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

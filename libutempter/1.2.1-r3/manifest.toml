@@ -1,0 +1,20 @@
+checksume = "b925a7c7fd826f8c0d7bb63642bc36cee4901fe4d2928be32d4938af755a74d5"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libutempter"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["skalibs", "2.11.0.0-r0"], ["utmps", "0.1.0.3-r0"]]

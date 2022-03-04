@@ -1,0 +1,20 @@
+checksume = "8a57ea0418005291a128a1e6a47a6172138a0f81dbb880d0279661c8a2ed0c2f"
+licence = "Apache-2.0"
+meta = false
+provides = "apr-util-dbd_sqlite3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.6.1-r11"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

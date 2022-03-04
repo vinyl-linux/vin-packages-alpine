@@ -1,0 +1,20 @@
+checksume = "1a0cf4a275d3119b9875fc7f151a11d247b3719d3cc289a22a5d374a61cd1647"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "gcc-aarch64-none-elf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "10.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gcc", "10.3.1"], ["binutils-aarch64-none-elf", "2.37-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["isl22", "0.22-r0"], ["mpc1", "1.2.1-r0"], ["mpfr4", "4.1.0-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

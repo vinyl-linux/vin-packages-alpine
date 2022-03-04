@@ -1,0 +1,20 @@
+checksume = "94c1962eac2f3fdca25359d92df5244f3965f689171fd955ca38a8df9ed3056c"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "gir-to-d"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.22.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libgphobos", "10.3.1"]]

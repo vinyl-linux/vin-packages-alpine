@@ -1,0 +1,20 @@
+checksume = "e697da643d0d1eeffb6c3cf7c7ca36a019eeab6641aadc641c00a7c1daec948c"
+licence = "BSD"
+meta = false
+provides = "scanssh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libdnet", "1.14-r0"], ["libevent", "2.1.12-r4"], ["libpcap", "1.10.1-r0"]]

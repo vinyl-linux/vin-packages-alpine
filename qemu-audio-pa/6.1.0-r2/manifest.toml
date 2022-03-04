@@ -1,0 +1,20 @@
+checksume = "fc7936e0911a4c422d30fc2dc764eeee90f684f8324d2a6834971ba0a4c8cf6b"
+licence = "GPL-2.0 LGPL-2"
+meta = false
+provides = "qemu-audio-pa"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libpulse", "15.0-r2"]]

@@ -1,0 +1,20 @@
+checksume = "98929b905f3bdf812c4c8741584c21859a03843a06b275edcd32d57a29515bc8"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "oscam-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.20_svn20201119-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["pcsc-lite-libs", "1.9.4-r0"], ["libssl1.1", "1.1.1l-r8"], ["libusb", "1.0.24-r3"]]

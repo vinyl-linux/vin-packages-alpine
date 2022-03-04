@@ -1,0 +1,20 @@
+checksume = "2c5a328021744a66c0e53e8a5146e0e234d431f77fca5b142453dd9b77735e92"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "gtk+"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.24.31-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gtk+2.0", "2.24.33-r0"]]

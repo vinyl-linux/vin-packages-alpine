@@ -1,0 +1,20 @@
+checksume = "c01b7f583384bc814d5e33dbec0100d9d8e6c664e5c20417da6fa2b88634e5a4"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+meta = false
+provides = "rbd-mirror"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ceph-common", "16.2.7-r0"], ["musl", "1.2.2-r7"], ["librados", "16.2.7-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["cryptsetup-libs", "2.4.3-r0"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1"]]

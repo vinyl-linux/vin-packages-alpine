@@ -1,0 +1,20 @@
+checksume = "80d3a8d7eb13ab2cf2ffa5f5a7819e9f7ba4ce8502af0e53ceee20e4fcc7962a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "ctags"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.9.20211107.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

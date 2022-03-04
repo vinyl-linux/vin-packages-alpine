@@ -1,0 +1,20 @@
+checksume = "5ea4a8d7d12760ff557fc64103f31fa6cfa46dd0bd7ce15c4b8546c02fd77e62"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kdb-postgresql"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kdb", "3.2.0-r2"], ["kcoreaddons", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libpq", "14.2-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "16d1f63ca9c87f6f86bcd9b1aa7f060bb36d6a29d0c2a505152153b9a1034c36"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+meta = false
+provides = "alsa-plugins-a52"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.5-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alsa-lib", "1.2.5.1-r1"], ["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"]]

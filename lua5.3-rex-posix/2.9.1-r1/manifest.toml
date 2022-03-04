@@ -1,0 +1,20 @@
+checksume = "83beff24696b588e1dc3932cc21690dbd14d49e0d955cf9e36288eea4d50551b"
+licence = "MIT"
+meta = false
+provides = "lua5.3-rex-posix"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.9.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "c219d029229fa50358ea05ce0e0ea57e671068bd785f877bf85767da5f08e234"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "lame-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.100-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lame", "3.100-r0"]]

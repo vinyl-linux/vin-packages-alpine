@@ -1,0 +1,20 @@
+checksume = "8f1b7ea7b0554389c2e1e2dd42a7f29d14dc1209c1ab3bff5c3f19881658696e"
+licence = "BSD-4-Clause-Shortened"
+meta = false
+provides = "arpwatch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libpcap", "1.10.1-r0"]]

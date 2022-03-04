@@ -1,0 +1,20 @@
+checksume = "240bf38cd4201556812bb2b7d34ce9b13c6323c14dce045efc14f924a021e8e2"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+meta = false
+provides = "irssi-perl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.3-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["irssi", "1.2.3-r3"], ["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

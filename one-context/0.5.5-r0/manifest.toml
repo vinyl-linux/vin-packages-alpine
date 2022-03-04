@@ -1,0 +1,20 @@
+checksume = "cf91a20186f05d5042fa3245474d85a268cd6d849614f78e7a78945b7e51ae37"
+licence = "MIT"
+meta = false
+provides = "one-context"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.5.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["blkid", "2.37.4-r0"]]

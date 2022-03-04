@@ -1,0 +1,20 @@
+checksume = "d42fb509a7ffbd80a9fc4dbdba81f6355babe30c972f2a51007668ccd2249133"
+licence = "MIT"
+meta = false
+provides = "lua5.4-augeas"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.1.2-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["augeas-libs", "1.12.0-r0"], ["musl", "1.2.2-r7"]]

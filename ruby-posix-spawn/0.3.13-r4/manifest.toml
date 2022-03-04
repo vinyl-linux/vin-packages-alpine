@@ -1,0 +1,20 @@
+checksume = "4d4c35fc56cc2e1fe608fece09581a2a12e89a98825a02fe354d92782d640d7f"
+licence = "MIT"
+meta = false
+provides = "ruby-posix-spawn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.13-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

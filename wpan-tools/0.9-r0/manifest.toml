@@ -1,0 +1,20 @@
+checksume = "87e6be32667f05a0b7c765b3025fcd6d990d534c377ae8b93a9ea01c37e71cbd"
+licence = "ISC"
+meta = false
+provides = "wpan-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libnl3-dev", "3.5.0-r0"], ["linux-headers", "5.10.41-r0"], ["musl", "1.2.2-r7"], ["libnl3", "3.5.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "65da2e65cf97dc9e80b88928ca733061ff28bfda2908751636fe61a456942649"
+licence = "GPL-2.0-only"
+meta = false
+provides = "gitolite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.6.12-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["git", "2.34.1-r0"], ["perl", "5.34.0-r1"], ["busybox", "1.34.1-r4"]]

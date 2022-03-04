@@ -1,0 +1,20 @@
+checksume = "f1160c3a9b62e27c34241b13053b628d57c3f28863becfac094f139fb9e905ce"
+licence = "GPL-2.0-only"
+meta = false
+provides = "libretro-fceumm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0_git20210420-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

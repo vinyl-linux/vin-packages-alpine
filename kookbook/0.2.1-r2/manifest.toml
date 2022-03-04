@@ -1,0 +1,20 @@
+checksume = "695e0c140dca33fb5fb6f6f7693b9b9c84479eb21468c32b85c9396a8df17e93"
+licence = "MIT"
+meta = false
+provides = "kookbook"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kookbook-common", "0.2.1-r2"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["discount-libs", "2.2.7-r1"], ["libstdc++", "10.3.1"]]

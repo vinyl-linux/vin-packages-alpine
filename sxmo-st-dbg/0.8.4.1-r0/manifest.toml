@@ -1,0 +1,20 @@
+checksume = "750401e2a7ef487b5346bf0990f840796e4291d286f44ef79f1d09cf829e0412"
+licence = "MIT"
+meta = false
+provides = "sxmo-st-dbg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ncurses-terminfo", "6.3"]]

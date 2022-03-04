@@ -1,0 +1,20 @@
+checksume = "a6ee7d54a2dd7f89a6a9f34f33fef306f37f38e71d701973746b5fa0ee1680b1"
+licence = "Zlib"
+meta = false
+provides = "zlib-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.2.11-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "8a90c80a534db3c36b2d1721a753b93081b85027de5b20760b3593f105b86702"
+licence = "MPL-2.0"
+meta = false
+provides = "mozjs78-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "78.15.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["icu-dev", "69.1-r1"], ["nspr-dev", "4.32-r0"], ["libffi-dev", "3.4.2-r1"], ["readline-dev", "8.1.1-r0"], ["mozjs78", "78.15.0-r2"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "051769d1454f99b6ed6dc526f489b990ea99c969f7981858012ccb94f5cdf70c"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "py3-vlc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.12118-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["vlc", "3.0.16-r3"]]

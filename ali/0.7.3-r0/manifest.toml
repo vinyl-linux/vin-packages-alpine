@@ -1,0 +1,20 @@
+checksume = "247310e9d9bc0e7f7cc171a54819b3b96854b9dbf7c4fe5f29ca8fe27803affc"
+licence = "MIT"
+meta = false
+provides = "ali"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.7.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

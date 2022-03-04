@@ -1,0 +1,20 @@
+checksume = "db7b26e1a459004d7aa1df2c38f2506520874186428c0a3781de5b8bddb9d5fa"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-iproute2-qos"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.4.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["iproute2-qos", "0.5-r1"], ["acf-alpine-baselayout", "0.13.3-r2"]]

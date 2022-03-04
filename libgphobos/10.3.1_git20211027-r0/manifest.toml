@@ -1,0 +1,20 @@
+checksume = "4087627857a2fc1de5e88519da05c92d6cd20d59efdd0649442961a68b47afb4"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+meta = false
+provides = "libgphobos"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.3.1_git20211027-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

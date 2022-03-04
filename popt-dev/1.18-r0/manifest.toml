@@ -1,0 +1,20 @@
+checksume = "81ca721baac8d696a10886275e90800d177c60b11636f0374d08c43cd8ca031b"
+licence = "MIT"
+meta = false
+provides = "popt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.18-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["popt", "1.18-r0"]]

@@ -1,0 +1,20 @@
+checksume = "ee5f756576aebc24debcd9caea3eef41d4c6b95f6c212b8af3e738ab6c90dfe9"
+licence = "LGPL-2.1-or-later-WITH-linking-exception"
+meta = false
+provides = "ocaml-runtime"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.13.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "858b7da5b84b3fa032aacdc726514f0ea77f8bfdea2cea556ede385655812e11"
+licence = "MIT"
+meta = false
+provides = "lua5.2-hashids"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.6-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"]]

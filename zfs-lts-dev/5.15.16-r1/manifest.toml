@@ -1,0 +1,20 @@
+checksume = "1dca268fb97511ca97bce8432614a31a5ab2d34fcdebcc93dcf76f2ab7b24954"
+licence = "CDDL-1.0"
+meta = false
+provides = "zfs-lts-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.15.16-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["glib-dev", "2.70.1-r0"], ["e2fsprogs-dev", "1.46.4-r0"], ["util-linux-dev", "2.37.4-r0"], ["libtirpc-dev", "1.3.2-r0"], ["linux-lts-dev", "5.15.16-r0"]]

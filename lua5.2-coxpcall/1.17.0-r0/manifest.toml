@@ -1,0 +1,20 @@
+checksume = "587552099acf1a523a91d1ab5b11a3a274b9279285d42ef11d3ba00688e3ee23"
+licence = "MIT"
+meta = false
+provides = "lua5.2-coxpcall"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.17.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"]]

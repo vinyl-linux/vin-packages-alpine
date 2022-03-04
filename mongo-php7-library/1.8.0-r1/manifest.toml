@@ -1,0 +1,20 @@
+checksume = "51d5b5707ac7337f93738edf8fbacda4da48826c1087d744b2d405f5d3c261fb"
+licence = "Apache-2.0"
+meta = false
+provides = "mongo-php7-library"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php7-json", "7.4.28-r0"], ["php7-openssl", "7.4.28-r0"], ["php7-pecl-mongodb", "1.11.1-r0"]]

@@ -1,0 +1,20 @@
+checksume = "83c18175bafac6358b2f47494fb8b0eacf06e3037da91d95690fd6ffc91ea617"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-moosex-types-datetime"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-namespace-clean", "0.27-r2"], ["perl-datetime", "1.54-r1"], ["perl-moosex-types", "0.50-r3"], ["perl-datetime-timezone", "2.51-r0"], ["perl-moose", "2.2201-r0"], ["perl-datetime-locale", "1.33-r0"]]

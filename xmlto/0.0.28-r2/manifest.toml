@@ -1,0 +1,20 @@
+checksume = "3a81e57329c36348c36d23ad33732d392dc6707bcdcf19cdf0bd732d3e1d3493"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "xmlto"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.0.28-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libxslt", "1.1.34-r1"], ["perl-yaml-syck", "1.34-r1"], ["perl-test-pod", "1.52-r2"], ["bash", "5.1.16-r0"], ["docbook-xsl", "1.79.2-r3"], ["musl", "1.2.2-r7"]]

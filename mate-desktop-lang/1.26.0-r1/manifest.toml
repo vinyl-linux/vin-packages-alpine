@@ -1,0 +1,20 @@
+checksume = "b4e59fb586560345cc92284ed85da26777bee4a260f4add42820fd9a92b80df8"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+meta = false
+provides = "mate-desktop-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mate-common", "1.26.0-r0"], ["yelp-tools", "41.0-r0"]]

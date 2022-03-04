@@ -1,0 +1,20 @@
+checksume = "62f8c6e6432f4eb3e92243e5a0231fcb9044c8dc9eda16dd167f18f8f93b6e07"
+licence = "GPL-2.0-only,GPL-2.0-or-later,GPL-3.0-only"
+meta = false
+provides = "openocd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.11.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libftdi1", "1.5-r0"], ["hidapi", "0.11.0-r0"], ["libjaylink", "0.2.0-r0"], ["jimtcl", "0.80-r5"], ["libusb", "1.0.24-r3"]]

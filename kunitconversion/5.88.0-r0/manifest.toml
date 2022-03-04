@@ -1,0 +1,20 @@
+checksume = "f0f06043f50eb82ff0d257aa532a3cf10bc917e5b1235d519b8aaa8339912ec3"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "kunitconversion"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "c3ca18439b00a184c24e956e8bb84ae8f443b46e1b58250fde26c66030639a3f"
+licence = "BSD-2-Clause"
+meta = false
+provides = "varnish-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "7.0.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gcc", "10.3.1"], ["libc-dev", "0.7.2-r3"], ["libgcc", "10.3.1"], ["musl", "1.2.2-r7"], ["pcre2", "10.39-r0"]]

@@ -1,0 +1,20 @@
+checksume = "df5eb2096085b88e4ee65ad04207f611fd343eb77f1f4c3b533aade1532e0b40"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "weechat-python"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["weechat", "3.3-r1"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]

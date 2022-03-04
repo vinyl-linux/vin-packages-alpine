@@ -1,0 +1,20 @@
+checksume = "c11a39becd65e74e3eacba37d62b288c51e40b1bb22de30e2e520103b8823a6b"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+meta = false
+provides = "libgnat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.3.1_git20211027-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "622fca5f8d60e00a8caa6e79a14d5a0a8113f892040d78316914143fc35b32b0"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "kglobalaccel-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kconfig-dev", "5.88.0-r0"], ["kcoreaddons-dev", "5.88.0-r0"], ["kcrash-dev", "5.88.0-r0"], ["kdbusaddons-dev", "5.88.0-r0"], ["kwindowsystem-dev", "5.88.0-r0"], ["qt5-qtx11extras-dev", "5.15.3"], ["kglobalaccel", "5.88.0-r0"]]

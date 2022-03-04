@@ -1,0 +1,20 @@
+checksume = "758d27ed9f1809286ce4747807da6dac183fcbb73e893cc20e318477f441c521"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "py3-libvirt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libvirt-libs", "7.9.0-r0"]]

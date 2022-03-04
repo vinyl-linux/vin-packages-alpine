@@ -1,0 +1,20 @@
+checksume = "184b7735a14ad0e392161b44e89cadc39effe2aa05e571165210dacd79293cd6"
+licence = "CC"
+meta = false
+provides = "ttf-font-awesome"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fontconfig", "2.13.1-r4"], ["mkfontscale", "1.2.1-r1"], ["busybox", "1.34.1-r4"]]

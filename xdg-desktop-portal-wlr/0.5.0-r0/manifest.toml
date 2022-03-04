@@ -1,0 +1,20 @@
+checksume = "a6659abd2678570d588471c0ee562815a32b8c88f35ee36addddbff8fe42a377"
+licence = "MIT"
+meta = false
+provides = "xdg-desktop-portal-wlr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xdg-desktop-portal", "1.8.1-r0"], ["basu", "0.2.0-r2"], ["musl", "1.2.2-r7"], ["inih", "53-r1"], ["pipewire-libs", "0.3.40-r2"], ["wayland-libs-client", "1.19.0-r1"]]

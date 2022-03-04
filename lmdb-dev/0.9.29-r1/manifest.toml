@@ -1,0 +1,20 @@
+checksume = "705565ae95ab2050bd1ffdd2b0e716553c176f61abf889168197187a7e5fd443"
+licence = "OLDAP-2.8"
+meta = false
+provides = "lmdb-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.9.29-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lmdb", "0.9.29-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "f664975a43cc407375e616449590f746ee6844ab10344f96d788587d8b1ed06b"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "proftpd-mod_memcache"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.7c-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["proftpd", "1.3.7c-r2"], ["musl", "1.2.2-r7"], ["libmemcached-libs", "1.0.18-r4"]]

@@ -1,0 +1,20 @@
+checksume = "1ce2e04629e82dc8f1698ea57bb2886926f12d4bb2311e8fb61bb3699e78a7c1"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "gcr-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.40.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gcr-base", "3.40.0-r0"], ["gcr", "3.40.0-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["p11-kit-dev", "0.24.0-r1"], ["pkgconf", "1.8.0-r0"]]

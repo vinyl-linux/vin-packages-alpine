@@ -1,0 +1,20 @@
+checksume = "b156d2d9f5303af0f8c972a338e92a20e5d550c541e30f8f15c9730ebd7bd169"
+licence = "MIT"
+meta = false
+provides = "curl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "7.80.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssl-dev", "1.1.1l-r8"], ["nghttp2-dev", "1.46.0-r0"], ["zlib-dev", "1.2.11-r3"], ["brotli-dev", "1.0.9-r5"], ["libcurl", "7.80.0-r0"], ["pkgconf", "1.8.0-r0"]]

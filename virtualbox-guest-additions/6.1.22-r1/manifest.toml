@@ -1,0 +1,20 @@
+checksume = "6fde97c6592e6065cc76df29fd82d94108d0ca0e55b087ec7d48bd65eb2a3223"
+licence = "GPL custom"
+meta = false
+provides = "virtualbox-guest-additions"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "6.1.22-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

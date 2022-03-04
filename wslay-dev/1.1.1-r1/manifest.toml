@@ -1,0 +1,20 @@
+checksume = "3dd7fcf60d0ee06d5d0b5262ccefb892dcaec42c5a1a67f70e349c9e55275463"
+licence = "MIT"
+meta = false
+provides = "wslay-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["wslay", "1.1.1-r1"]]

@@ -1,0 +1,20 @@
+checksume = "2a345961d62b4bef65b5ff6b3b6b83a7bfbbd2b07643a9be501f0ad9647b7186"
+licence = "MIT"
+meta = false
+provides = "lua5.2-luassert"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"], ["lua5.2-say", "1.3-r1"]]

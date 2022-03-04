@@ -1,0 +1,20 @@
+checksume = "5005d942d3785fb267273c3cdee470d7470e78ceb2047d75cab2ddc137feec00"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kmail-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kdepim-runtime", "21.08.3-r1"], ["kmail-account-wizard", "21.08.3-r0"], ["gnupg", "2.2.31-r1"]]

@@ -1,0 +1,20 @@
+checksume = "7fc9874c5e40e25d2d5d81c02c939321a739259b7da019e8d723b9adee3272c2"
+licence = "MIT"
+meta = false
+provides = "xkill"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxmu", "1.1.3-r0"], ["musl", "1.2.2-r7"]]

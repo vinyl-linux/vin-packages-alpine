@@ -1,0 +1,20 @@
+checksume = "9563cfbe8d6119a91c2669ca7adc1a5568046ad18b0147daeb8362daff3bf2de"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "alkimia-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["alkimia", "8.1.0-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2338f903eb7d9f661212a3cdde0f52e26f46a030c7d68df470fd26892e9b6ef3"
+licence = "MIT"
+meta = false
+provides = "py3-convertdate"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-pymeeus", "0.5.11-r0"], ["py3-tz", "2021.1-r1"], ["python3", "3.9.7-r4"]]

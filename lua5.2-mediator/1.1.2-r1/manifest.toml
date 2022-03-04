@@ -1,0 +1,20 @@
+checksume = "23e85fd97e3df7730277ad88ff811fde50903f6f2a72a893e8ad62d8e2656608"
+licence = "MIT"
+meta = false
+provides = "lua5.2-mediator"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"]]

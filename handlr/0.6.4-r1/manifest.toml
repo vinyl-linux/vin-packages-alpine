@@ -1,0 +1,20 @@
+checksume = "a63de0450295090a7ff5e1944dd67cd51b2e05b2063787c02bf95256e1e31600"
+licence = "MIT"
+meta = false
+provides = "handlr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["shared-mime-info", "2.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

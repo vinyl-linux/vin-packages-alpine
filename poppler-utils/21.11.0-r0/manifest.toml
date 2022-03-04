@@ -1,0 +1,20 @@
+checksume = "ab26190196ee873d7383cd614ac0e4620656aa6f4791e454bb3aa5fd8a45e0a4"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "poppler-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "21.11.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["freetype", "2.11.0-r0"], ["lcms2", "2.12-r1"], ["poppler", "21.11.0-r0"], ["libstdc++", "10.3.1"]]

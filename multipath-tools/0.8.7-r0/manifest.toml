@@ -1,0 +1,20 @@
+checksume = "b6bc85c12a783436c9cd1cd12e87af87590f616453623024b7118e505475aea4"
+licence = "LGPL-2.0-only"
+meta = false
+provides = "multipath-tools"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.8.7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["eudev", "3.2.11"], ["device-mapper", "2.02.187-r2"], ["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["device-mapper-libs", "2.02.187-r2"], ["json-c", "0.15-r1"], ["readline", "8.1.1-r0"], ["eudev-libs", "3.2.11"], ["userspace-rcu", "0.12.2-r0"]]

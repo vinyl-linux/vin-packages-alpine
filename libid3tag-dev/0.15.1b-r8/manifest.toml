@@ -1,0 +1,20 @@
+checksume = "3e829b50e71087a95599407e89c39140628ae3ef87c732417bfd5e8011e68e93"
+licence = "GPL-2.0+"
+meta = false
+provides = "libid3tag-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.15.1b-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libid3tag", "0.15.1b-r8"], ["pkgconf", "1.8.0-r0"]]

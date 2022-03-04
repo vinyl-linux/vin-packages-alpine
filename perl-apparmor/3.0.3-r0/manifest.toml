@@ -1,0 +1,20 @@
+checksume = "25fa04551562eb66c8b2d2bdfa56b8dcb82c6edaa337e8b8a00ee0b202899592"
+licence = "GPL-2.0-only"
+meta = false
+provides = "perl-apparmor"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libapparmor", "3.0.3-r0"], ["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

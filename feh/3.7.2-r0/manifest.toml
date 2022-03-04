@@ -1,0 +1,20 @@
+checksume = "868c24afbc9a3d9aa70ad6ed53f499e9bba7da59596c5dbda5a7fd00da3613f5"
+licence = "MIT-feh"
+meta = false
+provides = "feh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.7.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["imlib2", "1.7.4-r0"], ["libx11", "1.7.2-r0"], ["libxinerama", "1.1.4-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libpng", "1.6.37-r1"]]

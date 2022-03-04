@@ -1,0 +1,20 @@
+checksume = "1ba8c1bd103e2db31067c3be2916c39112e9ef626ee8285c61f599b1940b736f"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "snapcast"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.25.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["snapcast-client", "0.25.0-r1"], ["snapcast-server", "0.25.0-r1"]]

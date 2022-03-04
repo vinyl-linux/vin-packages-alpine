@@ -1,0 +1,20 @@
+checksume = "deba56f7ab35322fd938df78ae64ea66143432dcad76ee0055f8f6dd9ef4dcac"
+licence = "MIT"
+meta = false
+provides = "py3-pem"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-twisted", "21.7.0-r1"]]

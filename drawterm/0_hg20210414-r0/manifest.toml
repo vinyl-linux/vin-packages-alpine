@@ -1,0 +1,20 @@
+checksume = "8b360aba85064db86985ffabfbe13d62d34f85b97fbdeb87b9e64fa006efd272"
+licence = "LPL-1.02"
+meta = false
+provides = "drawterm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0_hg20210414-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

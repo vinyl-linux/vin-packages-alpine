@@ -1,0 +1,20 @@
+checksume = "9d586d36337f38ac67cbdcca54cead6760959213fd2f5b99e550a277092f75e1"
+licence = "BSD-3-Clause"
+meta = false
+provides = "sdl12-compat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.1_git20211015-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sdl2", "2.0.16-r4"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "0575b5d9030f865f12fbeb363b2232093bb2aa873931617493c8137310bf50ce"
+licence = "MIT"
+meta = false
+provides = "py3-ruamel.yaml"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.16.12-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-ruamel.yaml.clib", "0.2.6-r0"]]

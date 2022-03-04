@@ -1,0 +1,20 @@
+checksume = "9498b8f1b808dd0e81d763e4a99bdae88f52b1ebd64bf871e7253516cdf81d2b"
+licence = "GPL-2.0-only AND BSD-3-Clause"
+meta = false
+provides = "can-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2020.12.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

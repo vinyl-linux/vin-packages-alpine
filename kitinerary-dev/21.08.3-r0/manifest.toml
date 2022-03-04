@@ -1,0 +1,20 @@
+checksume = "9c2feb1496cc2239030523574ac9f92185855ff241359dc07a87475d0928bab1"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kitinerary-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kmime-dev", "21.08.3-r0"], ["kcalendarcore-dev", "5.88.0-r0"], ["kcontacts-dev", "5.88.0-r0"], ["kpkpass-dev", "21.08.3-r0"], ["kitinerary", "21.08.3-r0"]]

@@ -1,0 +1,20 @@
+checksume = "34f999314e2ffb2440a9aebbf36ad953724c21c6d60ddf3db07737dbe26cbdeb"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-googleapis-common-protos"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.52.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["protobuf", "3.18.1-r1"], ["py3-grpcio", "1.41.0-r0"]]

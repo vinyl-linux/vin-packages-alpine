@@ -1,0 +1,20 @@
+checksume = "affe77c66f4099c859d31aa46135111f25b41a20b4e707e9b74db0a189d1bf22"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "fwupd-plugin-bios"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"]]

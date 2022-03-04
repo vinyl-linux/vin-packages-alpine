@@ -1,0 +1,20 @@
+checksume = "e1c500349f554b431969404fcfa76ba59710e2cb453ae9db054f0f83806cefba"
+licence = "BSL-1.0"
+meta = false
+provides = "monado"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.0.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["xr-hardware", "0.4.0-r0"], ["mesa-gl", "21.2.6-r0"], ["sdl2", "2.0.16-r4"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["libgcc", "10.3.1"], ["hidapi", "0.11.0-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["opencv", "4.5.4-r0"], ["openhmd", "0.3.0-r4"], ["libstdc++", "10.3.1"], ["libsurvive", "0.3-r2"], ["eudev-libs", "3.2.11"], ["libusb", "1.0.24-r3"], ["vulkan-loader", "1.2.196-r0"], ["wayland-libs-client", "1.19.0-r1"], ["libxcb", "1.14-r2"], ["zlib", "1.2.11-r3"]]

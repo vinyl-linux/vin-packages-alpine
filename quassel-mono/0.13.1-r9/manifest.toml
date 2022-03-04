@@ -1,0 +1,20 @@
+checksume = "4cd322422e835c492ab8e1626f7336c6c9f851e5f38804e8d91d5f40dd4e7f36"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "quassel-mono"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.13.1-r9"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["quassel-common", "0.13.1-r9"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtscript", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libldap", "2.6.0-r0"], ["libqca", "2.3.4-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

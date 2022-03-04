@@ -1,0 +1,20 @@
+checksume = "2f3db3eb2f71cb10533720dd81cc2d28780962dcf037f7409a25e2ccc426411a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "py3-pycups"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["cups-libs", "2.3.3-r5"]]

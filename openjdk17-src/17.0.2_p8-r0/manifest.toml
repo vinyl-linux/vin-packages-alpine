@@ -1,0 +1,20 @@
+checksume = "905e81f9682922e98405ec5f9113a2486cfe23706967debe4e68a36dc9949220"
+licence = "GPL-2.0-with-classpath-exception"
+meta = false
+provides = "openjdk17-src"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "17.0.2_p8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk17-jre-headless", "17.0.2"]]

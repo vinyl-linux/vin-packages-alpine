@@ -1,0 +1,20 @@
+checksume = "2355a5ecc4e02277145fba04c816296aa2082eb35ed549a8f128d93dd26cfd47"
+licence = "GPL-2.0-or-later or GPL-3.0-or-later"
+meta = false
+provides = "libksba-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libksba", "1.6.0-r0"], ["libgpg-error-dev", "1.42-r1"], ["pkgconf", "1.8.0-r0"]]

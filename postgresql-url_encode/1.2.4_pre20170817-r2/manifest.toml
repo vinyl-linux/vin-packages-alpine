@@ -1,0 +1,20 @@
+checksume = "9e5fa72ebca1f6cc1ac05f6a14f502d9fc300fe1bb3d6dbee6ab69fe4957e209"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql-url_encode"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.4_pre20170817-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql14", "14.2-r0"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "19452b43be415a1aae25e7a0b58999f8a76313c576b5e0546a4f41eef181cd6d"
+licence = "GPL-2.0-only AND LGPL-2.1-or-later"
+meta = false
+provides = "lksctp-tools-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.19-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["liblksctp", "1.0.19-r0"], ["pkgconf", "1.8.0-r0"]]

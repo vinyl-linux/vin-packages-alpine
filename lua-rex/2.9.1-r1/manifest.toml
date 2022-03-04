@@ -1,0 +1,20 @@
+checksume = "7f93e6a31acbe058e9fc3faa23492346796bf716a2f97fd6b6f939af2ccb97a9"
+licence = "MIT"
+meta = false
+provides = "lua-rex"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.9.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua-rex-pcre", "2.9.1-r1"], ["lua-rex-posix", "2.9.1-r1"]]

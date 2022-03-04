@@ -1,0 +1,20 @@
+checksume = "e6774ed0f2ac4018a29ac79338c5e01fff659af7af42d312f611105694944481"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libfilezilla"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.31.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["gnutls", "3.7.1-r0"], ["nettle", "3.7.3-r0"], ["libstdc++", "10.3.1"]]

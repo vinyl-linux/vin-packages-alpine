@@ -1,0 +1,20 @@
+checksume = "3f6340dbf088d30f4eb4293df82610316f2ac556d47d7c4d0083f02e4338031b"
+licence = "(Apache-2.0 OR MIT) AND BSD-2-Clause"
+meta = false
+provides = "kibi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

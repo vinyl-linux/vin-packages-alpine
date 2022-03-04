@@ -1,0 +1,20 @@
+checksume = "7aa7854f4ef84b90910891755e1a1eb93217604aa9eec9f5cc7be97e50422bd4"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "mauikit-filebrowsing-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kio-dev", "5.88.0-r0"], ["mauikit-dev", "2.1.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["mauikit-filebrowsing", "2.1.0-r0"]]

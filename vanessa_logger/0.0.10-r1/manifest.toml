@@ -1,0 +1,20 @@
+checksume = "ace2fc5cd6e01b46dbeb412fc24bb36daedfad5d74228f713c786276193206f4"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "vanessa_logger"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.0.10-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "5d0d6fb183654377a1af2587d88c75f6fd0a01dcb09ff01b6c908c7e595eb627"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "retro-gtk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libepoxy", "1.5.9-r0"], ["gtk+3.0", "3.24.30-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libpulse", "15.0-r2"], ["libsamplerate", "0.1.9-r1"]]

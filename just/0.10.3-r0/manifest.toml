@@ -1,0 +1,20 @@
+checksume = "c6137affecc5542d0aa9ae9e99ab141bf85b379554963654d9109c6663ef1e51"
+licence = "CC0-1.0"
+meta = false
+provides = "just"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

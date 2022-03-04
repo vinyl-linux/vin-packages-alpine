@@ -1,0 +1,20 @@
+checksume = "2b8a97657916f0df89537c66cd6dd602bb76edea174c1024e370c4845dbdb3a4"
+licence = "BSD-2-Clause"
+meta = false
+provides = "lua5.1-unit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.3-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1", "5.1.5-r8"]]

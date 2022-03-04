@@ -1,0 +1,20 @@
+checksume = "9bae2183cba1aefdde3a0f0d596bae71a08eec01845f6ab679682e94b4b0a788"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "knot-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.1.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["knot-libs", "3.1.6-r0"], ["libedit", "20210910.3.1-r0"], ["gnutls", "3.7.1-r0"], ["libidn", "1.38-r0"], ["lmdb", "0.9.29-r1"], ["nghttp2-libs", "1.46.0-r0"], ["userspace-rcu", "0.12.2-r0"]]

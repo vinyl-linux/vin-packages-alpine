@@ -1,0 +1,20 @@
+checksume = "0f42e2645d9554de63cc2478a579e0778292bee2fb912c9c81fbacd0afed7bfa"
+licence = "MIT"
+meta = false
+provides = "py3-pysendfile"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.1-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

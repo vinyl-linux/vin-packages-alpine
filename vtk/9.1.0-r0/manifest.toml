@@ -1,0 +1,20 @@
+checksume = "2fa60ea0fbd9de3a33181a540f3207250f0034404b35dc6d61e769841e0b15af"
+licence = "BSD-3-Clause"
+meta = false
+provides = "vtk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-gl", "21.2.6-r0"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libexecinfo", "1.1-r1"], ["libgcc", "10.3.1"], ["hdf5", "1.12.1-r1"], ["netcdf", "4.8.1-r2"], ["libstdc++", "10.3.1"]]

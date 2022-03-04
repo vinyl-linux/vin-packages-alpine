@@ -1,0 +1,20 @@
+checksume = "7607bd0b5f200f78a7836d4b578f23d035f4cee64bd7df44d2b503f358489c53"
+licence = "GPL-2.0-only"
+meta = false
+provides = "libbpf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["elfutils", "0.185-r0"], ["musl", "1.2.2-r7"], ["libelf", "0.185-r0"], ["zlib", "1.2.11-r3"]]

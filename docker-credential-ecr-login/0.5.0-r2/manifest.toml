@@ -1,0 +1,20 @@
+checksume = "3ffe1c47a140b58476e030f198543f0c9f32a1fde8b1db25baf9eceb10efad39"
+licence = "Apache-2.0"
+meta = false
+provides = "docker-credential-ecr-login"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["podman-docker", "3.4.4-r0"], ["musl", "1.2.2-r7"]]

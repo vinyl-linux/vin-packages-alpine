@@ -1,0 +1,20 @@
+checksume = "c847ce3349ed6e644f7c09f09a0082cc82adb45be2b0c2165c6e8f07ba15c0df"
+licence = "MIT"
+meta = false
+provides = "lua5.3-mosquitto"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"], ["mosquitto-libs", "2.0.14-r0"]]

@@ -1,0 +1,20 @@
+checksume = "e162e1a09271bd604338362f02441d7362db439ef6b86566c682a8444894419d"
+licence = "MIT"
+meta = false
+provides = "py3-mako"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-markupsafe", "2.0.1-r0"]]

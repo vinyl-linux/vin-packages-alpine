@@ -1,0 +1,20 @@
+checksume = "2fb7ce98bc521bc5dfbb9ca4043da69c8724272a2babd9d4778500b021f46067"
+licence = "BSD-4-Clause-UC"
+meta = false
+provides = "mailx"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.1.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

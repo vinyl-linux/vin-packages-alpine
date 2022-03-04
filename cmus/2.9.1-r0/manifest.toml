@@ -1,0 +1,20 @@
+checksume = "604a8677edc270d5d6e6753b04d3c200b65ee9ac05a9e384e01caa6b63510816"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "cmus"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.9.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["flac", "1.3.4-r0"], ["alsa-lib", "1.2.5.1-r1"], ["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["faad2-libs", "2.10.0-r0"], ["libmad", "0.15.1b-r9"], ["ncurses-libs", "6.3"], ["opusfile", "0.12-r2"], ["libvorbis", "1.3.7-r0"], ["wavpack", "5.4.0-r0"]]

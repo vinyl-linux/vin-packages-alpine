@@ -1,0 +1,20 @@
+checksume = "c25c109dcee130160a2ee29c78965146fdf9a8896c0f046c8e692e8fa9cdb150"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "freeradius-checkrad"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.0.25-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-net-telnet", "3.05-r0"], ["perl-snmp-session", "1.13-r3"], ["net-snmp-tools", "5.9.1-r5"]]

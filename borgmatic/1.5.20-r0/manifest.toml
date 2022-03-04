@@ -1,0 +1,20 @@
+checksume = "9e3b806d04bbe24541c23702402afbc98cafe330c9f997de3bb271d8a211ab02"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "borgmatic"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5.20-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["borgbackup", "1.1.17-r2"], ["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"], ["py3-jsonschema", "4.2.1-r0"], ["py3-requests", "2.26.0-r1"], ["py3-ruamel.yaml", "0.16.12-r1"], ["py3-colorama", "0.4.4-r1"]]

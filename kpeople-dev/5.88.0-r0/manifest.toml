@@ -1,0 +1,20 @@
+checksume = "2446a7faac57ca076a87506265901424dc88c63a14fd9d0271f340cb9e9a38ac"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "kpeople-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtdeclarative-dev", "5.15.3"], ["kcoreaddons-dev", "5.88.0-r0"], ["kwidgetsaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kitemviews-dev", "5.88.0-r0"], ["kservice-dev", "5.88.0-r0"], ["kpeople", "5.88.0-r0"]]

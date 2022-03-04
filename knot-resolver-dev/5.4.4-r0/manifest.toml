@@ -1,0 +1,20 @@
+checksume = "7a65604c5f45bd00542518c0c0d0e6f4f776ebc46e3c15e8f79f5e7a63aacfa8"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "knot-resolver-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.4.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["knot-dev", "3.1.6-r0"], ["libedit-dev", "20210910.3.1-r0"], ["libuv-dev", "1.42.0-r0"], ["luajit-dev", "2.1"], ["fstrm-dev", "0.6.1-r0"], ["protobuf-dev", "3.18.1-r1"], ["protobuf-c-dev", "1.4.0-r0"], ["knot-resolver", "5.4.4-r0"], ["gnutls-dev", "3.7.1-r0"], ["lmdb-dev", "0.9.29-r1"], ["pkgconf", "1.8.0-r0"]]

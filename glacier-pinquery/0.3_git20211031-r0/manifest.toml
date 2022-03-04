@@ -1,0 +1,20 @@
+checksume = "7dad60888d88456f53136732c352014c7731d3759e6c0185b2a7d0fe657cf09a"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "glacier-pinquery"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3_git20211031-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qtquickcontrols-nemo", "5.6.3-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libglacierapp", "0.7-r0"], ["libqofono", "0.103-r0"], ["libstdc++", "10.3.1"]]

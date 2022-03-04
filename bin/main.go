@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-version"
+	"github.com/schollz/progressbar/v3"
 	"github.com/vinyl-linux/go-apk"
 )
 
@@ -63,7 +64,10 @@ func main() {
 
 	// now we know what packages and versions we have, we can generate
 	// the correct vin config files with the correct version constraints
-	for _, pkg := range packages[0:25] {
+	bar := progressbar.Default(int64(len(packages)))
+
+	for _, pkg := range packages {
+		bar.Add(1)
 		deps := make([]*apk.Package, 0)
 
 		for _, dep := range pkg.VDepends {
@@ -274,6 +278,10 @@ func work(url string) {
 func dedupe(deps []*apk.Package) (out []*apk.Package) {
 	out = make([]*apk.Package, 0)
 	for _, dep := range deps {
+		if dep == nil || dep.Name == "" {
+			continue
+		}
+
 		if !contains(out, dep.Name) {
 			out = append(out, dep)
 		}

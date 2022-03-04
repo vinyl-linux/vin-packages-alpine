@@ -1,0 +1,20 @@
+checksume = "f1ffa08ca462813f69360e51e72769b35d70f620b6eb70b39c742ac704e96598"
+licence = "MIT"
+meta = false
+provides = "lua5.2-luasrcdiet"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"]]

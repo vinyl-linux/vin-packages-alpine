@@ -1,0 +1,20 @@
+checksume = "1fe495e3417e2fe4a213e85894c2020aa1b0c7c174dd3c45e81d150eac97ef1e"
+licence = "Apache-2.0"
+meta = false
+provides = "java-snappy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.8.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk9-jre-headless", "9.0.4"], ["java-snappy-native", "1.1.8.4-r0"]]

@@ -1,0 +1,20 @@
+checksume = "54bcf6dcf3fea0c19f6e62f898042a2d1dd048844a63c95eb11c4a9bb540b56e"
+licence = "MPL-2.0"
+meta = false
+provides = "libepubgen"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"]]

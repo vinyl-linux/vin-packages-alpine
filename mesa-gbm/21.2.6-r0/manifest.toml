@@ -1,0 +1,20 @@
+checksume = "f80ba2c1bd2c73e1129943fbe7379f7aeaa37458f4f03aa0953758437a07288e"
+licence = "MIT SGI-B-2.0 BSL-1.0"
+meta = false
+provides = "mesa-gbm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "21.2.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["expat", "2.4.6-r0"], ["wayland-libs-server", "1.19.0-r1"]]

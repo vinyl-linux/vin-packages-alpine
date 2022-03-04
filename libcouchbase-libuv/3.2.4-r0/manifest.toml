@@ -1,0 +1,20 @@
+checksume = "3561aa5613dda0db03ad6d6bc21003cb808beea36e8536ebb30c2dffe54af8a2"
+licence = "Apache-2.0"
+meta = false
+provides = "libcouchbase-libuv"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libcouchbase", "3.2.4-r0"], ["libuv", "1.42.0-r0"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "fbd16b86f61d3f7859b16d5b2192bd0803a1c6673af82ac8478ed5862f98ab27"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libmad-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.15.1b-r9"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libmad", "0.15.1b-r9"], ["pkgconf", "1.8.0-r0"]]

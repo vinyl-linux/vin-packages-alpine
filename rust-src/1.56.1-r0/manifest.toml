@@ -1,0 +1,20 @@
+checksume = "cba2e223ae12bf4b9c031ae06d58c5e22f75556877106df5c2ad4eba1918b718"
+licence = "Apache-2.0 AND MIT OFL-1.1 GPL-3.0-or-later GPL-3.0-with-GCC-exception CC-BY-SA-3.0 LGPL-3.0"
+meta = false
+provides = "rust-src"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["rust", "1.56.1-r0"]]

@@ -1,0 +1,20 @@
+checksume = "6638ca0888e5e20ba14a277d78cc619bd75d410d9bfb09ee5dd023562a1d3a03"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "flatpak-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.12.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["flatpak-libs", "1.12.3-r1"], ["glib-dev", "2.70.1-r0"], ["ostree-dev", "2021.5-r0"], ["pkgconf", "1.8.0-r0"]]

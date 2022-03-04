@@ -1,0 +1,20 @@
+checksume = "ee8e2d23a28d084a3672f6171ac66d624ab7bb03a1b46c3044fa02d7db64906d"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libdnet-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.14-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libdnet", "1.14-r0"]]

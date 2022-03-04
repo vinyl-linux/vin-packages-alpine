@@ -1,0 +1,20 @@
+checksume = "0120a72ea2ca6eefa88149fc841b2973302a5703d67303f357f932373a36e124"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "libqtolm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3"], ["olm-dev", "3.2.7-r1"], ["libqtolm", "3.0.1-r1"], ["pkgconf", "1.8.0-r0"]]

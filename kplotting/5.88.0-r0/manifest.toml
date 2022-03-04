@@ -1,0 +1,20 @@
+checksume = "31f50859b7f10d1b387f38c33403818b0aed3db28d64fe4969f13b03feb1f9fd"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "kplotting"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

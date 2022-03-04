@@ -1,0 +1,20 @@
+checksume = "9b93c2c189ab0aa279653efda7e3fb22bd4cddde03ff49db6608ec82c5a45b90"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql-bdr-extension"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

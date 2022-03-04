@@ -1,0 +1,20 @@
+checksume = "a5374c31226c4f3c4d8234847387812db59e95ff2b5c56efc60543fd9faf974d"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "vanessa_adt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.0.9-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["vanessa_logger-dev", "0.0.10-r1"], ["vanessa_adt", "0.0.9-r1"]]

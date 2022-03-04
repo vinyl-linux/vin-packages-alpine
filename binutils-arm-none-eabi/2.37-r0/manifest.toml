@@ -1,0 +1,20 @@
+checksume = "93f0c931e03ec72cb795f23fa230f3ce7a4ef58c51538790cc453dbbe2716832"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+meta = false
+provides = "binutils-arm-none-eabi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.37-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

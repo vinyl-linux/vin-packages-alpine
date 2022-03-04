@@ -1,0 +1,20 @@
+checksume = "d95a8ce9327b5bca4e2a84ac32413962c54393c81add3d546cc36076a09bde19"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "glib-networking"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.70.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ca-certificates", "20211220-r0"], ["gsettings-desktop-schemas", "41.0-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gnutls", "3.7.1-r0"], ["libintl", "0.21-r0"], ["libproxy", "0.4.17-r1"]]

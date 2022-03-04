@@ -1,0 +1,20 @@
+checksume = "3495bd2d5c146c80704b5e292111745471ad0a410bc29da826dab467641b7754"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "fann-float"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

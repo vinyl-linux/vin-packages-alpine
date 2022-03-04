@@ -1,0 +1,20 @@
+checksume = "8fcf36890b9ee286505ac9518e4f47b1738bbe22b654b80dc13fa368ff9e2ba4"
+licence = "MIT"
+meta = false
+provides = "vouch-proxy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.23.1-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

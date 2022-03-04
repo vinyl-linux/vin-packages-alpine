@@ -1,0 +1,20 @@
+checksume = "2a3c44800d7ea19d64953c540319f10534444249b909fb75cabccc7dc8852aca"
+licence = "GPL-2.0-only"
+meta = false
+provides = "mkvtoolnix"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "63.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["flac", "1.3.4-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libebml", "1.4.2-r0"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["libmatroska", "1.6.3-r0"], ["libogg", "1.3.5-r0"], ["libstdc++", "10.3.1"], ["libvorbis", "1.3.7-r0"], ["zlib", "1.2.11-r3"]]

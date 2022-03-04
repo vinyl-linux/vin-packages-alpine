@@ -1,0 +1,20 @@
+checksume = "1de95f4f7f232fe8f025417e254a298b75bb8852d39717089facba3e9e8a63bf"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "icinga-director-openrc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8", "8.0.16-r0"], ["php8-posix", "8.0.16-r0"], ["php8-iconv", "8.0.16-r0"], ["php8-sockets", "8.0.16-r0"], ["php8-curl", "8.0.16-r0"], ["php8-gettext", "8.0.16-r0"]]

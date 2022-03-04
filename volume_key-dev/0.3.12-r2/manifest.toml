@@ -1,0 +1,20 @@
+checksume = "96b7c9ceb4dfe048e7892f06d882c014a8010af07f4be3d7a8ddde281f87621f"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "volume_key-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3.12-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["volume_key", "0.3.12-r2"]]

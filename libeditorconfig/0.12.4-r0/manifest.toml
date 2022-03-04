@@ -1,0 +1,20 @@
+checksume = "ea6e7e316da2210457ee11065c51f5d3f743a68ed1957a12b516c69bc465ee20"
+licence = "BSD-2-Clause"
+meta = false
+provides = "libeditorconfig"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.12.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["pcre2", "10.39-r0"]]

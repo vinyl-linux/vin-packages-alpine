@@ -1,0 +1,20 @@
+checksume = "b0d71af99f575a9b637b574a67c7e3acc4a61525a6bfb8b02deda19c25895fe1"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only AND LicenseRef-KDE-Accepted-LGPL"
+meta = false
+provides = "konqueror-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["konqueror", "21.08.3-r0"]]

@@ -1,0 +1,20 @@
+checksume = "0f11cf8ea1da6414375574fd883592a56c2b29012c557e80375c3025e8330a85"
+licence = "Apache-2.0"
+meta = false
+provides = "libjose"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "11-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["jansson", "2.14-r0"], ["zlib", "1.2.11-r3"]]

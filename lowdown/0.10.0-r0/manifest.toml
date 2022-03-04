@@ -1,0 +1,20 @@
+checksume = "6cd39f107e08ff32f5364efba240c70d14478e691f8f63e220e67d2d9011ced1"
+licence = "ISC"
+meta = false
+provides = "lowdown"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

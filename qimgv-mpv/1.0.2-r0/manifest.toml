@@ -1,0 +1,20 @@
+checksume = "4f42ad8f218d7434c6c5ac5fdd3131ee76b3954dabfc4c5aba9ce9d90c9bfb64"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "qimgv-mpv"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["hicolor-icon-theme", "0.17-r1"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mpv-libs", "0.34.0-r1"], ["libstdc++", "10.3.1"]]

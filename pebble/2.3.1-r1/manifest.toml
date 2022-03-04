@@ -1,0 +1,20 @@
+checksume = "ed4e8365057496cdfe2ab8332abad1c560804781db46bf68b5ba2af43635e52d"
+licence = "MPL-2.0"
+meta = false
+provides = "pebble"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

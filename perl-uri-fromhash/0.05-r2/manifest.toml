@@ -1,0 +1,20 @@
+checksume = "bb797b819180c431da50d14f5f39e75d5e834b14f37380e67b6be2be52031490"
+licence = "Artistic-2.0"
+meta = false
+provides = "perl-uri-fromhash"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.05-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-params-validate", "1.30-r1"], ["perl-uri", "5.10-r0"]]

@@ -1,0 +1,20 @@
+checksume = "59d6c2c38dd726c4302c2b613f3b2273bcb2e2f2cde4cbf5f7150b8bcf70ac4f"
+licence = "custom"
+meta = false
+provides = "libharu-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.3.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libpng-dev", "1.6.37-r1"], ["libharu", "2.3.0-r1"]]

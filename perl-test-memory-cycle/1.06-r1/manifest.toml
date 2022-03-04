@@ -1,0 +1,20 @@
+checksume = "7bc7d7f1fce9b16606ba3d697aae30fb62dc5fc13b2f9c6d4af00a5e72470007"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-test-memory-cycle"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.06-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-devel-cycle", "1.12-r1"], ["perl-padwalker", "2.5-r1"]]

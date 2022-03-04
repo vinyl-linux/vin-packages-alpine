@@ -1,0 +1,20 @@
+checksume = "ed63920895c4d2129c1f9efd70690774a3c8e6eb82587d3fe6d986c78a9e18d6"
+licence = "MIT"
+meta = false
+provides = "krb5-server"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.19.2-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libverto-libev", "0.3.2-r0"], ["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["krb5-libs", "1.19.2-r4"], ["krb5-server-ldap", "1.19.2-r4"], ["e2fsprogs-libs", "1.46.4-r0"], ["libverto", "0.3.2-r0"]]

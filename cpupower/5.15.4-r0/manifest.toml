@@ -1,0 +1,20 @@
+checksume = "dac3bda0d3cbf08b7aa209503faf001619bef6a5a8f3d86b3896b340c2f76955"
+licence = "GPL-2.0-only"
+meta = false
+provides = "cpupower"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.15.4-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libintl", "0.21-r0"], ["pciutils-libs", "3.7.0-r0"]]

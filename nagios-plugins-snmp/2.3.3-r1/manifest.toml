@@ -1,0 +1,20 @@
+checksume = "fabe48b9b24ea8bc371b81dd1ddf4e5ec284e117a80eec6c30e75a59fc8bf74d"
+licence = "GPL-3.0-only"
+meta = false
+provides = "nagios-plugins-snmp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nagios-plugins", "2.3.3-r1"], ["net-snmp-tools", "5.9.1-r5"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"]]

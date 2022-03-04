@@ -1,0 +1,20 @@
+checksume = "d4d61326336925c51ce2e16cb4b3d3474310da37576e7403a66076b244567777"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libusrsctp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.9.3.0_git20190127-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

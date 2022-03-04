@@ -1,0 +1,20 @@
+checksume = "ffdc766993bdf269bcf762fe5b1ab295a89b481509dbeeccbfe3ce5abbdb52a0"
+licence = "BSD-2-Clause"
+meta = false
+provides = "php8-pecl-psr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

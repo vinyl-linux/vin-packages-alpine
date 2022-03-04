@@ -1,0 +1,20 @@
+checksume = "c9a802cd33cf54cf6038b098b18f35cbf69cc612bad3384a27c03041b8bddd15"
+licence = "MIT"
+meta = false
+provides = "libinputsynth-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.15.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gobject-introspection-dev", "1.70.0-r1"], ["xdotool-dev", "3.20211022.1-r0"], ["libinputsynth", "0.15.0-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

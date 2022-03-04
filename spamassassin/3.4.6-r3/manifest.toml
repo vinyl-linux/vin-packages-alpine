@@ -1,0 +1,20 @@
+checksume = "e6690740a83e6aa6576b3afc969c1fc582706d4bfec91fa585b11e5bf8f08bc6"
+licence = "Apache-2.0"
+meta = false
+provides = "spamassassin"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.4.6-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-mail-spamassassin", "3.4.6-r3"], ["curl", "7.80.0-r0"]]

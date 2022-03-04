@@ -1,0 +1,20 @@
+checksume = "a5748211f77986dbb7c3c5ddc1c2f0c75285e7f5f311d83f80ba3d6087d8cf49"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libjcat-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libjcat", "0.1.8-r0"], ["glib-dev", "2.70.1-r0"], ["gnutls-dev", "3.7.1-r0"], ["json-glib-dev", "1.6.6-r0"], ["pkgconf", "1.8.0-r0"]]

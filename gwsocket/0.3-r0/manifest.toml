@@ -1,0 +1,20 @@
+checksume = "36efadbc229a3de196841325aaac644ce90cecf55aa48962d7abe6a3a5034c53"
+licence = "MIT"
+meta = false
+provides = "gwsocket"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

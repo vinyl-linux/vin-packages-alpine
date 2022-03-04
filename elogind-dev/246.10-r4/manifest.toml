@@ -1,0 +1,20 @@
+checksume = "88f611afac5c8ea0913e879ac7389bdfc437ed6db3e09b2dbcffa740766c4eb6"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+meta = false
+provides = "elogind-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "246.10-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libelogind", "246.10-r4"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "d5a88002402283c8533b4c75fea7dc521d0475c011bed566b2e23130d17950f6"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "parole-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gst-plugins-good", "1.18.5-r0"]]

@@ -1,0 +1,20 @@
+checksume = "028f3010354b343b5cd2c58ba31d249a3f2d44c7c214d838cca58081b0b67bf2"
+licence = "GPL"
+meta = false
+provides = "nload"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.7.4-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "42924abe5ec8748f258d3cd35b4ab2c0356a9b0f2536e91148fe241803c1c91d"
+licence = "GPL-2.0-with-classpath-exception"
+meta = false
+provides = "openjdk16-src"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "16.0.2_p7-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openjdk16-jre-headless", "16.0.2"]]

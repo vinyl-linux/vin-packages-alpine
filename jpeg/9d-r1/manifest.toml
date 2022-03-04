@@ -1,0 +1,20 @@
+checksume = "3e380a00bd9458a48c95b19da1bdd9a60cb9835102c4fb198ce0d8b6aa873248"
+licence = "AS-IS"
+meta = false
+provides = "jpeg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "9d-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libjpeg-turbo-utils", "2.1.2-r0"]]

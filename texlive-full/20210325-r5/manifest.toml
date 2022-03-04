@@ -1,0 +1,20 @@
+checksume = "c03c27795908ae557f8f68dc59ca08a1a1b3544506c4e3e9771b5cad53ea23be"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+meta = false
+provides = "texlive-full"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20210325-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["texlive", "20210325-r5"], ["texlive-doc", "20210325-r5"], ["texlive-luatex", "20210325-r5"], ["texlive-xetex", "20210325-r5"], ["xdvik", "20210325-r5"], ["texlive-dvi", "20210325-r5"], ["texmf-dist-full", "2021.58710-r2"]]

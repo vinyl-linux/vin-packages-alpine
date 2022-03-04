@@ -1,0 +1,20 @@
+checksume = "98b0eef02bfabf6a0c05bf76e14d3001cccfc31f19d8cd66d7af18909fb188e0"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gptfdisk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.8-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["ncurses-libs", "6.3"], ["libstdc++", "10.3.1"], ["libuuid", "2.37.4-r0"]]

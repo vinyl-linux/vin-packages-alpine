@@ -1,0 +1,20 @@
+checksume = "fa4b21d767fb49a8d3bae6a1e0e065b8881a4cd8c658c3519f6a982f84b74a39"
+licence = "BSD-2-Clause"
+meta = false
+provides = "rpm2cpio"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libarchive-tools", "3.6.0-r0"]]

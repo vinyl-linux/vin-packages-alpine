@@ -1,0 +1,20 @@
+checksume = "4062560a007c388611473a81dd30025563bc8c482203c12b6d2c6618cc24c975"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libiphb"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

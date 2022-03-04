@@ -1,0 +1,20 @@
+checksume = "e3dbbd4efff68c23372485ca2f0dbd79fc5c7e74acc34e78fd52ffd9f5f114de"
+licence = "ZPL-2.1"
+meta = false
+provides = "py3-zope-hookable"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.0.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-setuptools", "52.0.0-r4"], ["musl", "1.2.2-r7"]]

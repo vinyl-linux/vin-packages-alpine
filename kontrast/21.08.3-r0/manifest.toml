@@ -1,0 +1,20 @@
+checksume = "df7b8ba3902a5d605bd174df62e7878719f35b8bfc53fe28b9aac68b1796c197"
+licence = "GPL-3.0-or-later AND CC0-1.0"
+meta = false
+provides = "kontrast"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kirigami2", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,20 @@
+checksume = "22f6225ca688f12aefef26858ae5dd977cbd3e8c77c7ef4b4c110edfb5b8161c"
+licence = "BSD-3-Clause"
+meta = false
+provides = "chicken"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gcc", "10.3.1"], ["libc-dev", "0.7.2-r3"], ["chicken-dev", "5.2.0-r1"], ["chicken-libs", "5.2.0-r1"], ["musl", "1.2.2-r7"]]

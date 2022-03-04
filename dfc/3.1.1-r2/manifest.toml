@@ -1,0 +1,20 @@
+checksume = "d87cc0b3d32a8059bce60cc59e95dc162901dad2d7431555837fbcd7d6c90749"
+licence = "BSD-3-Clause"
+meta = false
+provides = "dfc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

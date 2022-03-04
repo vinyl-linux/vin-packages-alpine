@@ -1,0 +1,20 @@
+checksume = "a3679df9615c4230ff639060e9a36d728bcf8e09005640884a317e22bbdcc19f"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "knot-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.1.6-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["knot", "3.1.6-r0"], ["knot-libs-static", "3.1.6-r0"], ["knot-utils", "3.1.6-r0"], ["knot-libs", "3.1.6-r0"], ["gnutls-dev", "3.7.1-r0"], ["pkgconf", "1.8.0-r0"]]

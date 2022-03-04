@@ -1,0 +1,20 @@
+checksume = "684e2d0b185c2565884a360efc4a73a74ee50bba4a7f0a0bcb7522e2e1abc0f4"
+licence = "Apache-2.0"
+meta = false
+provides = "thrift-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.15.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["thrift-libs-cpp", "0.15.0-r1"]]

@@ -1,0 +1,20 @@
+checksume = "1dfd0f743d888f7c24e0100b30871d2720d354eaf53a23c8bc9ff223053ebfbc"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql14-plpython3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "14.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql14", "14.2-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

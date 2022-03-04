@@ -1,0 +1,20 @@
+checksume = "172f35f8dbeae7c4e24cd10d24e1f9f9d30d15ecc610ece6d00007e919985e31"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql12-contrib-jit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.10-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql12-contrib", "12.10-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2505814fdcb7bedf8a46f8bc76f1337ef10ec396aade664227156cae222371f3"
+licence = "Apache-2.0"
+meta = false
+provides = "java-sigar"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["java-sigar-native", "1.6.4-r1"]]

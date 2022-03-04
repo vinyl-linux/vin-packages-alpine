@@ -1,0 +1,20 @@
+checksume = "ad6721b77fd8c1448ad1d69e85fa4c3dd025572e9de2f42608519b6b70b26ebe"
+licence = "Perl"
+meta = false
+provides = "perl-switch"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.17-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"]]

@@ -1,0 +1,20 @@
+checksume = "9a8088163b54b777c36806ab2f4d1ecad12f8a489b2050c0a31677e4f34b8955"
+licence = "custom"
+meta = false
+provides = "libmng-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libjpeg-turbo-dev", "2.1.2-r0"], ["libmng", "2.0.3-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "00934f1cb8176ad129e7ecb4ca3a8b263579688c13526e2ff546c6120c0abe4a"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "exim-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.95-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["exim", "4.95-r0"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

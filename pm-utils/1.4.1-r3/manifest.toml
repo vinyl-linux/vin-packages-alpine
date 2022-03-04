@@ -1,0 +1,20 @@
+checksume = "811eb11aab163159ed803ab5d4767fdc09f2a747397ad2acc95a1e774d1c6be2"
+licence = "GPL-2.0-only"
+meta = false
+provides = "pm-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.4.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bash", "5.1.16-r0"], ["kbd", "2.4.0-r1"], ["musl", "1.2.2-r7"]]

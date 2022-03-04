@@ -1,0 +1,20 @@
+checksume = "41d7b67033ea238cb3110ca712048a02a81c3abe0874985755d90fbf0c49c558"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "ktnef"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.08.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kcalendarcore", "5.88.0-r0"], ["kcalutils", "21.08.3-r0"], ["kcontacts", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

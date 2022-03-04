@@ -1,0 +1,20 @@
+checksume = "0cd3cf7747736ddd45bfebfa9ef138caea606e3650a02b75d86925e31081c10b"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "lua-rrd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.7.2-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"], ["librrd", "1.7.2-r5"]]

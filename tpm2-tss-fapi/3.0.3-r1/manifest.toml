@@ -1,0 +1,20 @@
+checksume = "7077f36bdaf7d47a9c7beb78eadc9d2563f853aea2837ba1597355ca804a8847"
+licence = "BSD-2-Clause"
+meta = false
+provides = "tpm2-tss-fapi"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.3-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libcurl", "7.80.0-r0"], ["json-c", "0.15-r1"], ["tpm2-tss-esys", "3.0.3-r1"], ["tpm2-tss-mu", "3.0.3-r1"], ["tpm2-tss-tctildr", "3.0.3-r1"]]

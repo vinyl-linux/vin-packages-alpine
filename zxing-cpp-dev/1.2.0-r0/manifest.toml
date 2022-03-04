@@ -1,0 +1,20 @@
+checksume = "59293a4610eaa74337c6736578dd53b1aea56204c2589d4e347c877b29b79342"
+licence = "Apache-2.0"
+meta = false
+provides = "zxing-cpp-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["zxing-cpp", "1.2.0-r0"]]

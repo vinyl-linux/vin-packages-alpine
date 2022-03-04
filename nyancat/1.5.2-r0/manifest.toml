@@ -1,0 +1,20 @@
+checksume = "4f839a33ca692f80a659dd371bb45177fc017268ede96d69424d043c261974fd"
+licence = "NCSA"
+meta = false
+provides = "nyancat"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.5.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "3181d063aad7f4053d8959ca0e6f9deeeba66beece82334fdb06df371c8377b4"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libwmf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.12-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ghostscript-fonts", "8.11-r2"], ["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["freetype", "2.11.0-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["zlib", "1.2.11-r3"]]

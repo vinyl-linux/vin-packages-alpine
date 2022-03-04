@@ -1,0 +1,20 @@
+checksume = "861764708c6d6f57be28504e946846506175ccd07f67601949850d657016e5fe"
+licence = "GPL-2.0-only"
+meta = false
+provides = "acf-lighttpd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.6.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["acf-core", "0.22.0-r2"], ["lighttpd", "1.4.64-r0"]]

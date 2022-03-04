@@ -1,0 +1,20 @@
+checksume = "ad4dad168159bf6cc08114df7bd01d4ab2b45bf1f580763d7541c2a43850b439"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "wireplumber-logind"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.5-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["elogind", "246.10-r4"], ["musl", "1.2.2-r7"], ["libelogind", "246.10-r4"], ["glib", "2.70.1-r0"], ["wireplumber", "0.4.5-r1"]]

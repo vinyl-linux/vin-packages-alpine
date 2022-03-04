@@ -1,0 +1,20 @@
+checksume = "ae972c24eed0e1d7b9377002408ae8389382bde312a18552ec60a5633b60f406"
+licence = "WTFPL"
+meta = false
+provides = "libcaca-apps"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.99_beta20-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["imlib2", "1.7.4-r0"], ["musl", "1.2.2-r7"], ["libcaca", "0.99"]]

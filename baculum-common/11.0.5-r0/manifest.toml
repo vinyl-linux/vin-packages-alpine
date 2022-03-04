@@ -1,0 +1,20 @@
+checksume = "78a808b59f820f5c4243dea8e29e81a6194cae3ea0ec8ada1753b53be27de926"
+licence = "AGPL-3.0-or-later"
+meta = false
+provides = "baculum-common"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "11.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["php8-common", "8.0.16-r0"], ["php8-ctype", "8.0.16-r0"], ["php8-curl", "8.0.16-r0"], ["php8-dom", "8.0.16-r0"], ["php8-session", "8.0.16-r0"], ["php8-xml", "8.0.16-r0"]]

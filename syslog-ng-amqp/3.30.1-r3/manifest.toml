@@ -1,0 +1,20 @@
+checksume = "7abd123bc478a13213f7d78ea522af57744310657957feb30c1a671433259cba"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "syslog-ng-amqp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.30.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["syslog-ng", "3.30.1-r3"], ["glib", "2.70.1-r0"], ["ivykis", "0.42.4-r0"], ["rabbitmq-c", "0.11.0-r1"]]

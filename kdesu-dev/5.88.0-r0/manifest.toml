@@ -1,0 +1,20 @@
+checksume = "677dfa886829f5bb9f0feb51152db1d44fbf87d6d682a252b12d0be26977a6b0"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "kdesu-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kcoreaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kpty-dev", "5.88.0-r0"], ["kservice-dev", "5.88.0-r0"], ["kdesu", "5.88.0-r0"]]

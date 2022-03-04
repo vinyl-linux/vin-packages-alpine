@@ -1,0 +1,20 @@
+checksume = "a254b116631ae5afcff78a6df4c785ecbdf5ce97d7d82da7c329c1e14e1c9725"
+licence = "MIT"
+meta = false
+provides = "lua5.1-mmdb"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-compat53", "0.10-r0"]]

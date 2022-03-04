@@ -1,0 +1,20 @@
+checksume = "3f3576ce6e7f936a3cb9b5eeb6206d24a1c883eaf8966be7eedb867a2f73d626"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "filezilla"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.55.1-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libfilezilla", "0.31.1-r0"], ["libgcc", "10.3.1"], ["gtk+3.0", "3.24.30-r0"], ["libidn", "1.38-r0"], ["nettle", "3.7.3-r0"], ["pugixml", "1.11.4-r1"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"], ["wxgtk-base", "3.0.4-r7"], ["wxgtk3", "3.0.4-r7"]]

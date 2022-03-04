@@ -1,0 +1,20 @@
+checksume = "806c69ec3dfe763e1c9663c0afe63953951f4099e47fc0354cf4103519b55948"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "vidstab-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["vidstab", "1.1.0-r1"]]

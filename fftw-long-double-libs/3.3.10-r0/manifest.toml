@@ -1,0 +1,20 @@
+checksume = "4f343c2c412963c58b83e812c401221111531da7d87f8f543e77fb0c08fd7ed9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "fftw-long-double-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.3.10-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

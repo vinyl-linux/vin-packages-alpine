@@ -1,0 +1,20 @@
+checksume = "57ad84cf6e2543878735e963b8c1674f40f4f1074979fc3b04d1334bea79c288"
+licence = "custom"
+meta = false
+provides = "tarsnap"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.39-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

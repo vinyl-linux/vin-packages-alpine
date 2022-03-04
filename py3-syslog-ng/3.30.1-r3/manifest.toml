@@ -1,0 +1,20 @@
+checksume = "c6bfe56986e3d13386d704fe9c7fde633d9499bc9cacc971d8017b31c29242da"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "py3-syslog-ng"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.30.1-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["syslog-ng", "3.30.1-r3"], ["glib", "2.70.1-r0"], ["python3", "3.9.7-r4"]]

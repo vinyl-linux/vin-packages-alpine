@@ -1,0 +1,20 @@
+checksume = "cedf65f56066abf8a40df8977cea1f8751ab56fc50a7963855b18668807c575c"
+licence = "MIT"
+meta = false
+provides = "lua-http"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua-binaryheap", "0.4-r0"], ["lua-cqueues", "20200726-r3"], ["lua-basexx", "0.4.1-r0"], ["lua-fifo", "0.2-r1"], ["lua-lpeg", "1.0.2-r2"], ["lua-lpeg_patterns", "0.5-r2"], ["lua-ossl", "20200709-r3"]]

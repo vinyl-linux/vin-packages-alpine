@@ -1,0 +1,20 @@
+checksume = "eef0c4f0b0d27e48f0c6bcf7686dd2e907d9fcec4065e86f630c2085ea0d785a"
+licence = "MIT"
+meta = false
+provides = "weston-backend-headless"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["pixman", "0.40.0-r3"], ["wayland-libs-server", "1.19.0-r1"], ["libweston", "9.0.0-r0"]]

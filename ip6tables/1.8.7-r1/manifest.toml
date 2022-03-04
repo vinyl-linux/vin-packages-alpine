@@ -1,0 +1,20 @@
+checksume = "a540a0668ee9bbbcac5c18d0b6508db8e3463a34cf2b5ff126af1f9cda8679d3"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "ip6tables"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.8.7-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iptables", "1.8.7-r1"], ["musl", "1.2.2-r7"]]

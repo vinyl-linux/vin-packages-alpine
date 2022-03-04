@@ -1,0 +1,20 @@
+checksume = "a9f8dca246d0339e06b6a281cbbcf1a477a0fe76fb49ddce27a6d3f84bad889c"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kamailio-redis"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.5.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["hiredis", "1.0.2-r0"]]

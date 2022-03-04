@@ -1,0 +1,20 @@
+checksume = "fbbb3fe36791c5626cdc9a7df98de14619a5cbe9504ef6d2a1f55c24e82a2057"
+licence = "MIT"
+meta = false
+provides = "py3-portend"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-tempora", "4.1.2-r1"], ["python3", "3.9.7-r4"]]

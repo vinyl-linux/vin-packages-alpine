@@ -1,0 +1,20 @@
+checksume = "a4dc60ddab140e35bbaaa978acfb572938667ba5531dc5c33d2f928c378b521a"
+licence = "CDDL-1.0"
+meta = false
+provides = "zfs-scripts"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libintl", "0.21-r0"], ["zfs-libs", "2.1.2-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "0a95e80eaff8a3f34abfc4089493a5fb6fd7276a84ee8cdbcc4a8f9848f8f44f"
+licence = "custom"
+meta = false
+provides = "opencl-icd-loader-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.14-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["opencl-icd-loader", "2.2.14-r0"], ["pkgconf", "1.8.0-r0"]]

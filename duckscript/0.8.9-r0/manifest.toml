@@ -1,0 +1,20 @@
+checksume = "42eafddddf709a17af84d8f27e1971987fbe8c93a1c04b4b6048367172322dc5"
+licence = "Apache-2.0"
+meta = false
+provides = "duckscript"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.8.9-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1l-r8"]]

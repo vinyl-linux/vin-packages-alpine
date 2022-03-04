@@ -1,0 +1,20 @@
+checksume = "c337a3a02ae194d3f9f424f1644b09ee31af6f01f3e6cf1c23d1480bc629f9d5"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+meta = false
+provides = "calamares-mod-rawfs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ckbcomp", "1.205-r0"], ["musl-locales", "0"], ["os-prober", "1.79-r0"]]

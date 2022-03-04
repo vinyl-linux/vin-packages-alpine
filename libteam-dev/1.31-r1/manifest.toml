@@ -1,0 +1,20 @@
+checksume = "c567940c54ad927a7a6849b8d1deaa0585fb18ff9651762b4ad353fa77d65435"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libteam-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.31-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libteam", "1.31-r1"], ["libnl3-dev", "3.5.0-r0"], ["pkgconf", "1.8.0-r0"]]

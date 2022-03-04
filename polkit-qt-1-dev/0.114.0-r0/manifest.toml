@@ -1,0 +1,20 @@
+checksume = "9dadff83c5c96f7f32ef86eda8829a7d00ec1cff09a4e6f54dec3fa3fa492635"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "polkit-qt-1-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.114.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["polkit-elogind-dev", "0.119-r8"], ["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["polkit-qt-1", "0.114.0-r0"]]

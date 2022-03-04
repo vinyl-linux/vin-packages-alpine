@@ -1,0 +1,20 @@
+checksume = "4c87cca85dedce09646140c0f63ab69fe03c3ae14828b3e6f8d759395e036f35"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "accel-ppp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.12.0.141-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["net-snmp-libs", "5.9.1-r5"], ["net-snmp-agent-libs", "5.9.1-r5"], ["pcre", "8.45-r1"], ["libssl1.1", "1.1.1l-r8"], ["libucontext", "1.1-r0"]]

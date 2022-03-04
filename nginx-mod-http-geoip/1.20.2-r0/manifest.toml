@@ -1,0 +1,20 @@
+checksume = "e1b070135f1f19afa67b5b3f92b9a1e93a8e695c3abafda6d12e649f6e6f9fe0"
+licence = "BSD-2-Clause"
+meta = false
+provides = "nginx-mod-http-geoip"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.20.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nginx", "1.20.2-r0"], ["geoip", "1.6.12-r2"], ["musl", "1.2.2-r7"]]

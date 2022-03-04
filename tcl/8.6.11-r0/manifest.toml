@@ -1,0 +1,20 @@
+checksume = "e9c9febe90532beb9b974a4b9e09c82b916f5c7ccdc580912c130ea4e5ac2faf"
+licence = "TCL"
+meta = false
+provides = "tcl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.6.11-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

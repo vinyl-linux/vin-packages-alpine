@@ -1,0 +1,20 @@
+checksume = "62ebf2f91167bdc9452ae8913105cc4ffb41878cf85622b28cc01590760c64bc"
+licence = "MIT"
+meta = false
+provides = "z3-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.8.13-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["z3", "4.8.13-r0"]]

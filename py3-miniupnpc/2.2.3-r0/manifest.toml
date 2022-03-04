@@ -1,0 +1,20 @@
+checksume = "989ccac1840f2eab00f49601ef2e634febb9d017502fe3f7023c11e592af4ae2"
+licence = "BSD-3-Clause"
+meta = false
+provides = "py3-miniupnpc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.2.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

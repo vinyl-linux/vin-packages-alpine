@@ -1,0 +1,20 @@
+checksume = "b8b9d42e60811e1098dcbf01ef2f527e568da2edadf8aed1f973e191a3e541dc"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+meta = false
+provides = "asterisk-curl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "18.2.2-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

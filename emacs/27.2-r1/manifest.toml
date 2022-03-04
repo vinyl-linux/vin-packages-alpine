@@ -1,0 +1,20 @@
+checksume = "08a703a9ff1d63abddad3accf5eaa165ab427f4d5988c919a6f760b12d592527"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "emacs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "27.2-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["emacs-nox", "27.2-r1"]]

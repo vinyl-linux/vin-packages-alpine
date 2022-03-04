@@ -1,0 +1,20 @@
+checksume = "3b5f6bea9969227b7a8b8ac15061c5888d03e82643f9f57e629574df9d3b0fd4"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+meta = false
+provides = "dnsdist-luajit"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.6.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dnsdist-common", "1.6.1-r2"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libedit", "20210910.3.1-r0"], ["fstrm", "0.6.1-r0"], ["libgcc", "10.3.1"], ["h2o", "2.2.6-r8"], ["luajit", "2.1"], ["net-snmp-libs", "5.9.1-r5"], ["net-snmp-agent-libs", "5.9.1-r5"], ["re2", "2021.11.01-r0"], ["libsodium", "1.0.18-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1"]]

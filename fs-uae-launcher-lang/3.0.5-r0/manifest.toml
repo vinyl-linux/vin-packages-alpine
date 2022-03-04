@@ -1,0 +1,20 @@
+checksume = "09202c6770ba0ee38aafc18c7803e4111a3dc5a7ba18d929ccaee5fb9123e2e4"
+licence = "GPL-2.0-only"
+meta = false
+provides = "fs-uae-launcher-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fs-uae", "3.0.5-r0"], ["py3-qt5", "5.15.2-r1"], ["py3-sip-pyqt5", "4.19.24-r1"]]

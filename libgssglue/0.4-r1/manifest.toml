@@ -1,0 +1,20 @@
+checksume = "a23f5161de5ca43368b68412433a42cde324cf9b228a409fe7af9774105b8d00"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libgssglue"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["heimdal-dev", "7.7.0-r6"], ["heimdal-libs", "7.7.0-r6"], ["musl", "1.2.2-r7"]]

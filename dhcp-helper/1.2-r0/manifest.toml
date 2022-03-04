@@ -1,0 +1,20 @@
+checksume = "8e44fe864c69f829c7c09988c363bfad8fc3b46dc61428a71b16aae3f1082c70"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+meta = false
+provides = "dhcp-helper"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

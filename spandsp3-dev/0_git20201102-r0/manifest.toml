@@ -1,0 +1,20 @@
+checksume = "bc44cf5c7cb4cd64cff1e3bac7b0fb698dc1dfdb342c048f01c7d8b598d6119d"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "spandsp3-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0_git20201102-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"], ["spandsp3", "0"]]

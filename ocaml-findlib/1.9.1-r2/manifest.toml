@@ -1,0 +1,20 @@
+checksume = "e4883ce596da055fe0279de0ed5a88462264e1c839904d076ee413cf974bf2b5"
+licence = "MIT"
+meta = false
+provides = "ocaml-findlib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.9.1-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ocaml", "4.13.1-r0"], ["ocaml-runtime", "4.13.1-r0"], ["musl", "1.2.2-r7"]]
