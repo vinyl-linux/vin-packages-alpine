@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	skipCommand    = "echo"
+	skipCommand    = "true"
 	installCommand = "{{ .ManifestDir }}/install.sh"
 )
 
@@ -50,7 +50,6 @@ func NewManifest(vp VersionedPackage, deps []VersionedPackage) (m Manifest, err 
 	m.VersionStr = vp.VV.String()
 	m.Licence = vp.Licence
 
-	m.Commands.WorkingDir = "."
 	m.Commands.Configure = &skipCommand
 	m.Commands.Compile = &skipCommand
 	m.Commands.Install = &installCommand
