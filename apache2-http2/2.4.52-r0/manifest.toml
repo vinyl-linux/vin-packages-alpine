@@ -1,20 +1,16 @@
 checksume = "783379c5cc44cc4e7f828f53872f460925c7dc843aac4a21bc6ca668b695298e"
 licence = "Apache-2.0"
-meta = false
 provides = "apache2-http2"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apache2-http2-2.4.52-r0.apk"
 version = "2.4.52-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["nghttp2-libs", "1.46.0-r0"]]
+    deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["nghttp2-libs", "1.46.0-r0"]]

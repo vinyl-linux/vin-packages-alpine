@@ -1,20 +1,16 @@
 checksume = "f85f9c9f704feeb22db240de765e955305ed560e89c08df63ee4ab08fcbdb47b"
 licence = "custom"
-meta = false
 provides = "cyrus-sasl-gs2"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cyrus-sasl-gs2-2.1.27-r14.apk"
 version = "2.1.27-r14"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["heimdal-libs", "7.7.0-r6"]]
+    deps = [["musl", "1.2.2-r7"], ["heimdal-libs", "7.7.0-r6"]]

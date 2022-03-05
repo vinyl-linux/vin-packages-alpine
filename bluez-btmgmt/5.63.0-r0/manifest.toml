@@ -1,20 +1,16 @@
 checksume = "6f0de1f298bb8587e4dd83858c3116b9d47266ac715a4e8a46b00e2258aae55f"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "bluez-btmgmt"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bluez-btmgmt-5.63-r0.apk"
 version = "5.63.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["readline", "8.1.1-r0"]]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["readline", "8.1.1-r0"]]

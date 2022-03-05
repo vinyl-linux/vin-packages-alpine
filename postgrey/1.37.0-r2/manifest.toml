@@ -1,20 +1,16 @@
 checksume = "6b37eb3e5543256044bdb479b11077cafcd8a36b1df840b12055625e0bc16ae0"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "postgrey"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgrey-1.37-r2.apk"
 version = "1.37.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["perl-db", "0.64-r2"], ["perl-net-dns", "1.32-r0"], ["perl-net-server", "2.010-r0"], ["perl-io-multiplex", "1.16-r3"], ["perl-net-rblclient", "0.5-r5"], ["perl-parse-syslog", "1.10-r6"], ["perl-netaddr-ip", "4.079-r6"], ["busybox", "1.34.1-r4"]]
+    deps = [["perl", "5.34.0-r1"], ["perl-db", "0.64.0-r2"], ["perl-net-dns", "1.32.0-r0"], ["perl-net-server", "2.10.0-r0"], ["perl-io-multiplex", "1.16.0-r3"], ["perl-net-rblclient", "0.5.0-r5"], ["perl-parse-syslog", "1.10.0-r6"], ["perl-netaddr-ip", "4.79.0-r6"], ["busybox", "1.34.1-r4"]]

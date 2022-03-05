@@ -1,20 +1,16 @@
 checksume = "6db36915facd57a7050e6b6c5ee796eb736cf8edb680b747bea1bbdaf6814c38"
 licence = "custom"
-meta = false
 provides = "libsasl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libsasl-2.1.27-r14.apk"
 version = "2.1.27-r14"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["gdbm", "1.22-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["gdbm", "1.22.0-r0"]]

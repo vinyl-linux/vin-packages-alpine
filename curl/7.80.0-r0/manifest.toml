@@ -1,20 +1,16 @@
 checksume = "e80814fbc9fbbc3f53665b310709182fa249c7af7b1077c733dfb715b2efa488"
 licence = "MIT"
-meta = false
 provides = "curl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/curl-7.80.0-r0.apk"
 version = "7.80.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ca-certificates", "20211220-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["zlib", "1.2.11-r3"]]

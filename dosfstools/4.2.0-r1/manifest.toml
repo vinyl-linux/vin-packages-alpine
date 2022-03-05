@@ -1,20 +1,16 @@
 checksume = "56d37d3eff9d23b2ec12bd6f3ea7bd6ddcf33ed14637f076f20d50c515db5302"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "dosfstools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dosfstools-4.2-r1.apk"
 version = "4.2.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

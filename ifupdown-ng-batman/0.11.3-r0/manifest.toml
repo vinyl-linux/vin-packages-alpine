@@ -1,20 +1,16 @@
 checksume = "9960ff824f993933f43a9ca509fdc8afda4993fc1e84e12a10d518d4e7ffcca1"
 licence = "ISC"
-meta = false
 provides = "ifupdown-ng-batman"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ifupdown-ng-batman-0.11.3-r0.apk"
 version = "0.11.3-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["batctl", "2021.1-r0"]]
+    deps = [["batctl", "2021.1.0-r0"]]

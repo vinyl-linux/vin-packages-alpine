@@ -1,20 +1,16 @@
 checksume = "68d7dc7f2464930c73e4e183c4e842c366af23a9418a2efc1fd613d49940b63e"
 licence = "CDDL-1.0"
-meta = false
 provides = "py3-pyzfs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-pyzfs-2.1.2-r0.apk"
 version = "2.1.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["python3", "3.9.7-r4"], ["zfs", "2.1.2-r0"]]
+    deps = [["python3", "3.9.7-r4"], ["zfs", "2.1.2-r0"]]

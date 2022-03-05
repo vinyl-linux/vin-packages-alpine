@@ -1,20 +1,16 @@
 checksume = "a0a63b7c8742af54f189439cacc13b74284b614b06e17d5de065e085b4c459eb"
 licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
-meta = false
 provides = "libhunspell"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libhunspell-1.7.0-r1.apk"
 version = "1.7.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

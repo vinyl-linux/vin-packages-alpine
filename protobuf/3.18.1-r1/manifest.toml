@@ -1,20 +1,16 @@
 checksume = "5922eda6649d3336f91647bd4340256aee88b0c364c9aa335e8b0e7e8580fc45"
 licence = "BSD-3-Clause"
-meta = false
 provides = "protobuf"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/protobuf-3.18.1-r1.apk"
 version = "3.18.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["protoc", "3.18.1-r1"], ["libprotoc", "3.18.1-r1"], ["libprotobuf", "3.18.1-r1"], ["libprotobuf-lite", "3.18.1-r1"]]
+    deps = [["protoc", "3.18.1-r1"], ["libprotoc", "3.18.1-r1"], ["libprotobuf", "3.18.1-r1"], ["libprotobuf-lite", "3.18.1-r1"]]

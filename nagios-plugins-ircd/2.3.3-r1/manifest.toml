@@ -1,20 +1,16 @@
 checksume = "1b912db873ff79ecbd42bc052b8e1cc5f4a34135721ddb158cdef349281d6792"
 licence = "GPL-3.0-only"
-meta = false
 provides = "nagios-plugins-ircd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-ircd-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nagios-plugins", "2.3.3-r1"], ["perl", "5.34.0-r1"]]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["perl", "5.34.0-r1"]]

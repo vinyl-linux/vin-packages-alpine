@@ -1,20 +1,16 @@
 checksume = "1f6e6a9d2c1c1ed1d6a63614edd91f1fa6dcb80b9a786df7c5f0e591bf0ba6e9"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
-meta = false
 provides = "perl-io-async"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-io-async-0.79-r0.apk"
 version = "0.79.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["perl-struct-dumb", "0.12-r1"], ["perl-future", "0.47-r0"]]
+    deps = [["perl", "5.34.0-r1"], ["perl-struct-dumb", "0.12.0-r1"], ["perl-future", "0.47.0-r0"]]

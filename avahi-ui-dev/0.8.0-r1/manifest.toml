@@ -1,20 +1,16 @@
 checksume = "080ebaa05fe88051a3227b95ce78365ea1697e45b578b4764686942f7ff68beb"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "avahi-ui-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/avahi-ui-dev-0.8-r1.apk"
 version = "0.8.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gdbm-dev", "1.22-r0"], ["avahi-ui-gtk3", "0.8-r1"], ["avahi-dev", "0.8-r5"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["gdbm-dev", "1.22.0-r0"], ["avahi-ui-gtk3", "0.8.0-r1"], ["avahi-dev", "0.8.0-r5"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

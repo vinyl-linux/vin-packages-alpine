@@ -1,20 +1,16 @@
 checksume = "96b19628f749985021e881420080ddd9ff0891df05edec0640cd447c80ca6e0f"
 licence = "Apache-2.0"
-meta = false
 provides = "apr-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apr-dev-1.7.0-r0.apk"
 version = "1.7.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["apr", "1.7.0-r0"], ["util-linux-dev", "2.37.4-r0"], ["bash", "5.1.16-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["apr", "1.7.0-r0"], ["util-linux-dev", "2.37.4-r0"], ["bash", "5.1.16-r0"], ["pkgconf", "1.8.0-r0"]]

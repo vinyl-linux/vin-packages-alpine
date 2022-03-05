@@ -1,20 +1,16 @@
 checksume = "1d9f88e663d598276d5b5ee2d9d3846442dde0446765cb34d224e169bb516b4e"
 licence = "GPL-2.0-only"
-meta = false
 provides = "iscsi-scst"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iscsi-scst-2.2.1-r3.apk"
 version = "2.2.1-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

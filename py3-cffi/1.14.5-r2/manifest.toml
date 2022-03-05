@@ -1,20 +1,16 @@
 checksume = "bcac5d92807a0323dc223e50f619d7b4f465fddf7d513edac49e7bb621e56e07"
 licence = "MIT"
-meta = false
 provides = "py3-cffi"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-cffi-1.14.5-r2.apk"
 version = "1.14.5-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["py3-cparser", "2.20-r1"], ["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"]]
+    deps = [["py3-cparser", "2.20.0-r1"], ["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"]]

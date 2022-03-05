@@ -1,20 +1,16 @@
 checksume = "8bca156346d7cbea2e106f0942a711300f111203472a50db7e4176b1309eea95"
 licence = "MIT"
-meta = false
 provides = "nghttp2-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nghttp2-dev-1.46.0-r0.apk"
 version = "1.46.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nghttp2-libs", "1.46.0-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["nghttp2-libs", "1.46.0-r0"], ["pkgconf", "1.8.0-r0"]]

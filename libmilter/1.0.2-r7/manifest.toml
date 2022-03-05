@@ -1,20 +1,16 @@
 checksume = "5bbd8efc403d915500feeea783e295090594bc3b41cf2e2a1665649b80664cf7"
 licence = "Sendmail"
-meta = false
 provides = "libmilter"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libmilter-1.0.2-r7.apk"
 version = "1.0.2-r7"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "38dd50d4e10c946a5f3478bc120eaafe149ef72e8024836a39ca6752e72b765b"
 licence = "BSD-3-Clause"
-meta = false
 provides = "hiredis-ssl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/hiredis-ssl-1.0.2-r0.apk"
 version = "1.0.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

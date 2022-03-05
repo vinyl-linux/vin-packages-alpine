@@ -1,20 +1,16 @@
 checksume = "1819943713e8daddba6ff21c6e9ebadf4dcefa0b357702cc189205fc8ca169e7"
 licence = "GPL-2.0-only"
-meta = false
 provides = "abuild-rootbld"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/abuild-rootbld-3.9.0-r0.apk"
 version = "3.9.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["abuild", "3.9.0-r0"], ["bubblewrap", "0.5.0-r0"], ["gettext-tiny", "0.3.2-r1"], ["git", "2.34.1-r0"]]
+    deps = [["abuild", "3.9.0-r0"], ["bubblewrap", "0.5.0-r0"], ["gettext", "0.21.0-r0"], ["git", "2.34.1-r0"]]

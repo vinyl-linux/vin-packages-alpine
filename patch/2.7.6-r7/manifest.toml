@@ -1,20 +1,16 @@
 checksume = "2a8a91e8258ca05f8c456bfb20410a83ec3e97618490fa9fa841c1487957c323"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "patch"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/patch-2.7.6-r7.apk"
 version = "2.7.6-r7"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

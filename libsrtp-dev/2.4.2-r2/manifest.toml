@@ -1,20 +1,16 @@
 checksume = "1e728e3be168259a77c3c3f0da94201f507e5aa6ee395df13c89887bfc354734"
 licence = "BSD-3-Clause"
-meta = false
 provides = "libsrtp-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libsrtp-dev-2.4.2-r2.apk"
 version = "2.4.2-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libsrtp", "2.4.2-r2"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libsrtp", "2.4.2-r2"], ["pkgconf", "1.8.0-r0"]]

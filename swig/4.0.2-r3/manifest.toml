@@ -1,20 +1,16 @@
 checksume = "a212a133a0c898d24faaa9b9b065f51f57e65aa35aec7f53bfa282a7c693b4a3"
 licence = "GPL-3.0-only"
-meta = false
 provides = "swig"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/swig-4.0.2-r3.apk"
 version = "4.0.2-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["guile", "3.0.6-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["pcre", "8.45-r1"], ["libstdc++", "10.3.1_git20211027-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["guile", "3.0.6-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["pcre", "8.45.0-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

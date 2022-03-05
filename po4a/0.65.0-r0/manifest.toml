@@ -1,20 +1,16 @@
 checksume = "60582de434d9e5e7165667ca8d75059ed86f5e87ab651849a5147af569b0213e"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "po4a"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/po4a-0.65-r0.apk"
 version = "0.65.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gettext-tiny", "0.3.2-r1"], ["perl", "5.34.0-r1"], ["perl-pod-parser", "1.63-r1"]]
+    deps = [["gettext", "0.21.0-r0"], ["perl", "5.34.0-r1"], ["perl-pod-parser", "1.63.0-r1"]]

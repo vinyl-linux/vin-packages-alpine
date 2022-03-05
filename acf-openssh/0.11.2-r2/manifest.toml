@@ -1,20 +1,16 @@
 checksume = "b6aaa52efda95b9085479e7eaf213b3ce55a1bced3e532a690819690f4f3e195"
 licence = "GPL-2.0-only"
-meta = false
 provides = "acf-openssh"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-openssh-0.11.2-r2.apk"
 version = "0.11.2-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["acf-core", "0.22.0-r2"], ["openssh", "8.8_p1-r1"]]
+    deps = [["acf-core", "0.22.0-r2"], ["openssh", "8.8.0"]]

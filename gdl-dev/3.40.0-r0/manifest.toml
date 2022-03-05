@@ -1,20 +1,16 @@
 checksume = "1f28b4cba7203c9e8ce770804b54cbd16d6f5bab7f07c5ce0b68f1da2b0fb264"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "gdl-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gdl-dev-3.40.0-r0.apk"
 version = "3.40.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gdl", "3.40.0-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libxml2-dev", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["gdl", "3.40.0-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libxml2-dev", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]

@@ -1,20 +1,16 @@
 checksume = "1887f75eeacf1907a48a954bb2963badc3af2cdde2e30a104dfe25a3cd606f0e"
 licence = "MIT"
-meta = false
 provides = "lua5.4-ossl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.4-ossl-20200709-r3.apk"
 version = "20200709.0.0-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.4", "5.4.3-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]
+    deps = [["lua5.4", "5.4.3-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

@@ -1,20 +1,16 @@
 checksume = "90ece42818bcc41093312e74d6960e3dbb0586eb0aeff5cad5da3e61c64d8a19"
 licence = "ISC"
-meta = false
 provides = "ifupdown-ng-ethtool"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ifupdown-ng-ethtool-0.11.3-r0.apk"
 version = "0.11.3-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ethtool", "5.15-r0"]]
+    deps = [["ethtool", "5.15.0-r0"]]

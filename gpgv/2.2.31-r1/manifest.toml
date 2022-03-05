@@ -1,20 +1,16 @@
 checksume = "1de2d6c0db8a56562bc0921297985b97c8198e9a7ac7c4fd6a39440491d9a7c4"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "gpgv"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gpgv-2.2.31-r1.apk"
 version = "2.2.31-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42-r1"], ["zlib", "1.2.11-r3"]]
+    deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42.0-r1"], ["zlib", "1.2.11-r3"]]

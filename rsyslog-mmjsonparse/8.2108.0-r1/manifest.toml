@@ -1,20 +1,16 @@
 checksume = "9e2f2279cabb467dd445772523c705dac38cc89d9590d81eb86011e47d77fbf3"
 licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
-meta = false
 provides = "rsyslog-mmjsonparse"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-mmjsonparse-8.2108.0-r1.apk"
 version = "8.2108.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libfastjson", "0.99.9-r0"]]
+    deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libfastjson", "0.99.9-r0"]]

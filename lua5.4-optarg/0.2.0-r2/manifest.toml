@@ -1,20 +1,16 @@
 checksume = "3843ef7f3302eb770387ce10c6c0642a3eca8bed9bdaed1d740fdb8690bacc0a"
 licence = "MIT"
-meta = false
 provides = "lua5.4-optarg"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.4-optarg-0.2-r2.apk"
 version = "0.2.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.4", "5.4.3-r0"]]
+    deps = [["lua5.4", "5.4.3-r0"]]

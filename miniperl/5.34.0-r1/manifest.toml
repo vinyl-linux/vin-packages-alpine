@@ -1,20 +1,16 @@
 checksume = "648af7b7a87e6377297b89b72768488d866a639b274aa3658f3505ae9486098d"
 licence = "Artistic-Perl OR GPL-1.0-or-later"
-meta = false
 provides = "miniperl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/miniperl-5.34.0-r1.apk"
 version = "5.34.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

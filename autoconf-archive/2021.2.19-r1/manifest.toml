@@ -1,20 +1,16 @@
 checksume = "d7efe03eb6d40b5eb486fa3dfd90392cf8a9a507ba42655a34b1f0cfb6e5ea60"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "autoconf-archive"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/autoconf-archive-2021.02.19-r1.apk"
 version = "2021.2.19-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["autoconf", "2.71-r0"]]
+    deps = [["autoconf", "2.71.0-r0"]]

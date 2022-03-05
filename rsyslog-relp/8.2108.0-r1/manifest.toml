@@ -1,20 +1,16 @@
 checksume = "c6d717d41e1adfa21c5e41eae970481d407033b2b2be7662d3b7c41b935d2eb6"
 licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
-meta = false
 provides = "rsyslog-relp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-relp-8.2108.0-r1.apk"
 version = "8.2108.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["librelp", "1.10.0-r0"]]
+    deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["librelp", "1.10.0-r0"]]

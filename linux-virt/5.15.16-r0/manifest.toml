@@ -1,20 +1,16 @@
 checksume = "c8cae6fe626596028b2fd8c84ea5f1461610295b2e41cf7135d8aabafcd7e0d5"
 licence = "GPL-2.0"
-meta = false
 provides = "linux-virt"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/linux-virt-5.15.16-r0.apk"
 version = "5.15.16-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["mkinitfs", "3.6.0-r0"]]
+    deps = [["mkinitfs", "3.6.0-r0"]]

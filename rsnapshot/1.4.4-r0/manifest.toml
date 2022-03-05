@@ -1,20 +1,16 @@
 checksume = "7fd4c191dc3dff38b73ef5de8d438e9921d20b6ab76ae97165133b15b5e75891"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "rsnapshot"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsnapshot-1.4.4-r0.apk"
 version = "1.4.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["rsync", "3.2.3-r5"], ["openssh-client-default", "8.8_p1-r1"]]
+    deps = [["perl", "5.34.0-r1"], ["rsync", "3.2.3-r5"], ["openssh-client-default", "8.8.0"]]

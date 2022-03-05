@@ -1,20 +1,16 @@
 checksume = "1737209533b2571f3a65674fd50248e6fbf3e81bc8fee2fb202d19322f057a1d"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "librsync"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/librsync-2.3.2-r0.apk"
 version = "2.3.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["popt", "1.18-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["popt", "1.18.0-r0"]]

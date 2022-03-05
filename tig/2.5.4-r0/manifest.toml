@@ -1,20 +1,16 @@
 checksume = "1631f6c2488780f4f2402a19ee5d90be63b414aeec74af2cdc832f835fcdc1c8"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "tig"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tig-2.5.4-r0.apk"
 version = "2.5.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["git", "2.34.1-r0"], ["musl", "1.2.2-r7"], ["ncurses-libs", "6.3_p20211120-r0"]]
+    deps = [["git", "2.34.1-r0"], ["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

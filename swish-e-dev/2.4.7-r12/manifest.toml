@@ -1,20 +1,16 @@
 checksume = "fa4daeb8a94f2a2d2d9521ed88cdf2284f244a45f0b98fd44ce398cf5fa429da"
 licence = "GPL"
-meta = false
 provides = "swish-e-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/swish-e-dev-2.4.7-r12.apk"
 version = "2.4.7-r12"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["pkgconf", "1.8.0-r0"], ["swish-e", "2.4.7-r12"]]
+    deps = [["pkgconf", "1.8.0-r0"], ["swish-e", "2.4.7-r12"]]

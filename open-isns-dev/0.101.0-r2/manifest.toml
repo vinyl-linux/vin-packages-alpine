@@ -1,20 +1,16 @@
 checksume = "12a19710267ae33b5e9f3a869200aa5a11cf6faab3560bbcfcbda6e3653937d8"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "open-isns-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/open-isns-dev-0.101-r2.apk"
 version = "0.101.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["open-isns-lib", "0.101-r2"]]
+    deps = [["open-isns-lib", "0.101.0-r2"]]

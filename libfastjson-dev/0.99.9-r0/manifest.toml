@@ -1,20 +1,16 @@
 checksume = "524d31af65788cc1d7f73ddfc3b3fd24c7ebe04941b717ddeccb1a72e79b8e60"
 licence = "MIT"
-meta = false
 provides = "libfastjson-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libfastjson-dev-0.99.9-r0.apk"
 version = "0.99.9-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libfastjson", "0.99.9-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libfastjson", "0.99.9-r0"], ["pkgconf", "1.8.0-r0"]]

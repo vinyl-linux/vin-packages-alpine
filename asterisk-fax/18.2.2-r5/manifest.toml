@@ -1,20 +1,16 @@
 checksume = "d4768de7b203e4ee5c846ac57edd97d1d0919f8e13f15eeac37ebbd83ea8e584"
 licence = "GPL-2.0-only WITH OpenSSL-Exception"
-meta = false
 provides = "asterisk-fax"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-fax-18.2.2-r5.apk"
 version = "18.2.2-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["spandsp", "0.0.6-r1"]]
+    deps = [["musl", "1.2.2-r7"], ["spandsp", "0.0.6-r1"]]

@@ -1,20 +1,16 @@
 checksume = "989107c5748f83df6839cd1614f1c88b6e1b3d08b7e460aff65a892dc46ca7b3"
 licence = "GPL-2.0-only"
-meta = false
 provides = "nagios-web"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-web-4.4.6-r3.apk"
 version = "4.4.6-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"]]
+    deps = [["perl", "5.34.0-r1"]]

@@ -1,20 +1,16 @@
 checksume = "ba98c8df142246ac1839bfa9c4e091c3d3dad9ee9c05c3451b9eff2dd89e8ace"
 licence = "MIT"
-meta = false
 provides = "py3-brotli"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-brotli-1.0.9-r5.apk"
 version = "1.0.9-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

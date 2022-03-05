@@ -1,20 +1,16 @@
 checksume = "bd784068b97713f778312512119c121d493e1a8da345779feaded27f121f245d"
 licence = "MIT"
-meta = false
 provides = "krb5-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/krb5-dev-1.19.2-r4.apk"
 version = "1.19.2-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["e2fsprogs-dev", "1.46.4-r0"], ["krb5-libs", "1.19.2-r4"], ["krb5-server-ldap", "1.19.2-r4"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["e2fsprogs-dev", "1.46.4-r0"], ["krb5-libs", "1.19.2-r4"], ["krb5-server-ldap", "1.19.2-r4"], ["pkgconf", "1.8.0-r0"]]

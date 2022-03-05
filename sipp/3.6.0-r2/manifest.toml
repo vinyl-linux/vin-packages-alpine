@@ -1,20 +1,16 @@
 checksume = "b7947ee4f79c61881fd76037a8d33b9046ebde41b76b805585f2afb96abedc32"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "sipp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/sipp-3.6.0-r2.apk"
 version = "3.6.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcc", "10.3.1_git20211027-r0"], ["ncurses-libs", "6.3_p20211120-r0"], ["libpcap", "1.10.1-r0"], ["liblksctp", "1.0.19-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["ncurses-libs", "6.3.0"], ["libpcap", "1.10.1-r0"], ["liblksctp", "1.0.19-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"]]

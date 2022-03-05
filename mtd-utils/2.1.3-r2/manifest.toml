@@ -1,20 +1,16 @@
 checksume = "6699ea49bd59c11d097f1e7e9e382140b82368cf29152d4a29a22921489029e9"
 licence = "GPL-2.0-only"
-meta = false
 provides = "mtd-utils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mtd-utils-2.1.3-r2.apk"
 version = "2.1.3-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["mtd-utils-flash", "2.1.3-r2"], ["mtd-utils-jffs", "2.1.3-r2"], ["mtd-utils-misc", "2.1.3-r2"], ["mtd-utils-nand", "2.1.3-r2"], ["mtd-utils-nor", "2.1.3-r2"], ["mtd-utils-ubi", "2.1.3-r2"], ["mtd-utils-dev", "2.1.3-r2"], ["musl", "1.2.2-r7"]]
+    deps = [["mtd-utils-flash", "2.1.3-r2"], ["mtd-utils-jffs", "2.1.3-r2"], ["mtd-utils-misc", "2.1.3-r2"], ["mtd-utils-nand", "2.1.3-r2"], ["mtd-utils-nor", "2.1.3-r2"], ["mtd-utils-ubi", "2.1.3-r2"], ["mtd-utils-dev", "2.1.3-r2"], ["musl", "1.2.2-r7"]]

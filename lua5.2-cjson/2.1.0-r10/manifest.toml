@@ -1,20 +1,16 @@
 checksume = "ffee9e4ba649582ac181ece3605229bdf81443a16f39a5958b8d2ef706921a09"
 licence = "MIT"
-meta = false
 provides = "lua5.2-cjson"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-cjson-2.1.0-r10.apk"
 version = "2.1.0-r10"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"]]
+    deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"]]

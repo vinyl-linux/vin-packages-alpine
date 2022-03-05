@@ -1,20 +1,16 @@
 checksume = "2c5205c8fdaa39c5554b9777d972158ef6e0f0ee8845742b305f7210e5fef097"
 licence = "GPL-2.0-only"
-meta = false
 provides = "acf-apk-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-apk-tools-0.11.0-r3.apk"
 version = "0.11.0-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["acf-core", "0.22.0-r2"], ["lua-posix", "35.1-r0"], ["apk-tools", "2.12.7-r3"]]
+    deps = [["acf-core", "0.22.0-r2"], ["lua-posix", "35.1.0-r0"], ["apk-tools", "2.12.7-r3"]]

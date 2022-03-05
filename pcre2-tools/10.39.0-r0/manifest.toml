@@ -1,20 +1,16 @@
 checksume = "fe15ecaab46549765094cd1689c3cec3ba21c39c0627c59a5ef358672579c007"
 licence = "BSD-3-Clause"
-meta = false
 provides = "pcre2-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pcre2-tools-10.39-r0.apk"
 version = "10.39.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["libpcre2-16", "10.39-r0"], ["libpcre2-32", "10.39-r0"], ["pcre2", "10.39-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["libpcre2-16", "10.39.0-r0"], ["libpcre2-32", "10.39.0-r0"], ["pcre2", "10.39.0-r0"], ["zlib", "1.2.11-r3"]]

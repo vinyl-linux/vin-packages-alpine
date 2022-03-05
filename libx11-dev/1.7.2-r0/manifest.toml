@@ -1,20 +1,16 @@
 checksume = "13ae790093ca0d19417b7231010b7d54be1f95c43fbb82b9fffbf7f3b827b1d3"
 licence = "custom:XFREE86"
-meta = false
 provides = "libx11-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libx11-dev-1.7.2-r0.apk"
 version = "1.7.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libxcb-dev", "1.14-r2"], ["xtrans", "1.4.0-r1"], ["libx11", "1.7.2-r0"], ["xorgproto", "2021.5-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libxcb-dev", "1.14.0-r2"], ["xtrans", "1.4.0-r1"], ["libx11", "1.7.2-r0"], ["xorgproto", "2021.5.0-r0"], ["pkgconf", "1.8.0-r0"]]

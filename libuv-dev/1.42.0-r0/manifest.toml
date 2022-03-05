@@ -1,20 +1,16 @@
 checksume = "547b5ac57082b7c45d638bf8ceb55ed5f7986ccc1c3e14777a83d61d38e9717c"
 licence = "MIT AND ISC"
-meta = false
 provides = "libuv-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libuv-dev-1.42.0-r0.apk"
 version = "1.42.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libuv", "1.42.0-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libuv", "1.42.0-r0"], ["pkgconf", "1.8.0-r0"]]

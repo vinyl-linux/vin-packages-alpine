@@ -1,20 +1,16 @@
 checksume = "534aae3dcae6a07557c03967000e3fa8bd20b82e237ca1f9cdec74a2af50b85e"
 licence = "X11"
-meta = false
 provides = "libpciaccess-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libpciaccess-dev-0.16-r0.apk"
 version = "0.16.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libpciaccess", "0.16-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libpciaccess", "0.16.0-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,20 +1,16 @@
 checksume = "38aed50143e3d1088b0207c174fd3ddcb940f1293488a15eb49e42a6902f5fc4"
 licence = "BSD-2-Clause"
-meta = false
 provides = "oniguruma"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/oniguruma-6.9.7.1-r0.apk"
 version = "6.9.7.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

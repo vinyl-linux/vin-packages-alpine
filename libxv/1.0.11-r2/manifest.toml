@@ -1,20 +1,16 @@
 checksume = "fa15b6ed4f18d913d0d4d0770895edfbda348780ddb0db37ae2704d1891a4706"
 licence = "custom"
-meta = false
 provides = "libxv"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxv-1.0.11-r2.apk"
 version = "1.0.11-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["musl", "1.2.2-r7"]]

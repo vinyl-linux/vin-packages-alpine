@@ -1,20 +1,16 @@
 checksume = "e601c274c4f358da457aec75704c479c6e32d8fcbaf19c5f81fcdaa9faabce80"
 licence = "custom"
-meta = false
 provides = "zsh"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zsh-5.8.1-r0.apk"
 version = "5.8.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["ncurses-libs", "6.3_p20211120-r0"]]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

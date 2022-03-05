@@ -1,20 +1,16 @@
 checksume = "dae049c21270f48dab9fa1865eea2016caabee0f77fdf76ff76e387351571b8f"
 licence = "MIT"
-meta = false
 provides = "libxau-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxau-dev-1.0.9-r0.apk"
 version = "1.0.9-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libxau", "1.0.9-r0"], ["xorgproto", "2021.5-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libxau", "1.0.9-r0"], ["xorgproto", "2021.5.0-r0"], ["pkgconf", "1.8.0-r0"]]

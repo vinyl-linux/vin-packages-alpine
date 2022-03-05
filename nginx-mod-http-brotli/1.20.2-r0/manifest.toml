@@ -1,20 +1,16 @@
 checksume = "6d13a29504f93890a0980c1d6071d9114c46dc9d59134b80c83258e3c5e4a2a9"
 licence = "BSD-2-Clause"
-meta = false
 provides = "nginx-mod-http-brotli"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-brotli-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nginx", "1.20.2-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"]]
+    deps = [["nginx", "1.20.2-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"]]

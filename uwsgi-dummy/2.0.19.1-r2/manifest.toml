@@ -1,20 +1,16 @@
 checksume = "d416e66e05caf3974e0cba3b670db9e0d988d5cabf11f657b3f15a3ae521ebac"
 licence = "custom"
-meta = false
 provides = "uwsgi-dummy"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-dummy-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"]]
+    deps = [["uwsgi", "2.0.19.1-r2"]]

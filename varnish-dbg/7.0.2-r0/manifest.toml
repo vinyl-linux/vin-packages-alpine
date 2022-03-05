@@ -1,20 +1,16 @@
 checksume = "f1c912f560da463a141da815bb07eac48614456730da135821f36f1fcf2004d7"
 licence = "BSD-2-Clause"
-meta = false
 provides = "varnish-dbg"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/varnish-dbg-7.0.2-r0.apk"
 version = "7.0.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gcc", "10.3.1_git20211027-r0"], ["libc-dev", "0.7.2-r3"], ["libgcc", "10.3.1_git20211027-r0"]]
+    deps = [["gcc", "10.3.1"], ["libc-dev", "0.7.2-r3"], ["libgcc", "10.3.1"]]

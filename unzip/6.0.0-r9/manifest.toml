@@ -1,20 +1,16 @@
 checksume = "ab56e49732b1360d6c622c5e6abfa98bc7fa9e4c286d09562be54a3fe022e78b"
 licence = "custom"
-meta = false
 provides = "unzip"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/unzip-6.0-r9.apk"
 version = "6.0.0-r9"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

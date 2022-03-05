@@ -1,20 +1,16 @@
 checksume = "2eeebcb5f76b351cfd77cce6ee9900797d713472ab820eb148ca59d625219e71"
 licence = "ISC"
-meta = false
 provides = "skalibs-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/skalibs-dev-2.11.0.0-r0.apk"
 version = "2.11.0.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["pkgconf", "1.8.0-r0"], ["skalibs", "2.11.0.0-r0"]]
+    deps = [["pkgconf", "1.8.0-r0"], ["skalibs", "2.11.0.0-r0"]]

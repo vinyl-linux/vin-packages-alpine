@@ -1,20 +1,16 @@
 checksume = "e507c56bd7ef0444d1b7c40f352fe105806dea6456b4b3caf9f4fad7c2021e71"
 licence = "custom"
-meta = false
 provides = "db-utils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/db-utils-5.3.28-r1.apk"
 version = "5.3.28-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["db", "5.3.28-r1"]]
+    deps = [["musl", "1.2.2-r7"], ["db", "5.3.28-r1"]]

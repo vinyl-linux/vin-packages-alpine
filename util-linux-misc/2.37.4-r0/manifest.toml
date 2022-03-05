@@ -1,20 +1,16 @@
 checksume = "5ceab49ea384e732d8069d0ceeb12ba109515b8fd7193cf3e31d0a1e3020baca"
 licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
-meta = false
 provides = "util-linux-misc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/util-linux-misc-2.37.4-r0.apk"
 version = "2.37.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libeconf", "0.4.2-r0"], ["libfdisk", "2.37.4-r0"], ["libmount", "2.37.4-r0"], ["ncurses-libs", "6.3_p20211120-r0"], ["libsmartcols", "2.37.4-r0"], ["libuuid", "2.37.4-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libeconf", "0.4.2-r0"], ["libfdisk", "2.37.4-r0"], ["libmount", "2.37.4-r0"], ["ncurses-libs", "6.3.0"], ["libsmartcols", "2.37.4-r0"], ["libuuid", "2.37.4-r0"], ["zlib", "1.2.11-r3"]]

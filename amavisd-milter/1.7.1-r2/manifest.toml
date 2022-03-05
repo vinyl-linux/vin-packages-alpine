@@ -1,20 +1,16 @@
 checksume = "0e5254405a58c8b30676dd7d742b326a895746b6c8ea9703206c4f740e439c93"
 licence = "BSD-3-Clause"
-meta = false
 provides = "amavisd-milter"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/amavisd-milter-1.7.1-r2.apk"
 version = "1.7.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["amavis", "2.12.2-r0"], ["musl", "1.2.2-r7"], ["libmilter", "1.0.2-r7"]]
+    deps = [["amavis", "2.12.2-r0"], ["musl", "1.2.2-r7"], ["libmilter", "1.0.2-r7"]]

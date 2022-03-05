@@ -1,20 +1,16 @@
 checksume = "94a6ef18945595c03d465d705543001b1e9176b920f9305be34d8c5ab62728ec"
 licence = "custom"
-meta = false
 provides = "cyrus-sasl-crammd5"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cyrus-sasl-crammd5-2.1.27-r14.apk"
 version = "2.1.27-r14"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "c95e2f4b71e72a38c99f020d30acdce1ef4b2c2291a080240ca82274c6964e35"
 licence = "custom"
-meta = false
 provides = "pgpool-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pgpool-dev-4.2.6-r1.apk"
 version = "4.2.6-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["pgpool", "4.2.6-r1"]]
+    deps = [["pgpool", "4.2.6-r1"]]

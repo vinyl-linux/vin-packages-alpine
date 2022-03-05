@@ -1,20 +1,16 @@
 checksume = "9d3b8c69fa770ecd5619f304f0b4031ea9544cdd99dc7661beca069a48f67c37"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "dovecot-pigeonhole-plugin-ldap"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dovecot-pigeonhole-plugin-ldap-2.3.17.1-r0.apk"
 version = "2.3.17.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["dovecot-pigeonhole-plugin", "2.3.17.1-r0"], ["dovecot-ldap", "2.3.17.1-r0"], ["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]
+    deps = [["dovecot-pigeonhole-plugin", "2.3.17.1-r0"], ["dovecot-ldap", "2.3.17.1-r0"], ["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

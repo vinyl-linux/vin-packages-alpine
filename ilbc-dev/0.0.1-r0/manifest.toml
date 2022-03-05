@@ -1,20 +1,16 @@
 checksume = "0f2357ff483a4ec033dfd5c1a57d35c1d47d1b3ec59cab96947c6064b5e535d1"
 licence = "BSD"
-meta = false
 provides = "ilbc-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ilbc-dev-0.0.1-r0.apk"
 version = "0.0.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ilbc", "0.0.1-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["ilbc", "0.0.1-r0"], ["pkgconf", "1.8.0-r0"]]

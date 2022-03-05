@@ -1,20 +1,16 @@
 checksume = "bd35e650aaaab701c3cd7d5fb28cbf7b902f6dd18e4906d06555341379730478"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "libusb"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libusb-1.0.24-r3.apk"
 version = "1.0.24-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

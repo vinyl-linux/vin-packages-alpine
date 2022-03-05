@@ -1,20 +1,16 @@
 checksume = "251b95f42db2183ae2b3fd2e2d1c6163a0c945f61564dafe07ad77043a155888"
 licence = "BSL-1.0"
-meta = false
 provides = "boost1.77-stacktrace_basic"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-stacktrace_basic-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

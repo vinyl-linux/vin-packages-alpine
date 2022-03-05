@@ -1,20 +1,16 @@
 checksume = "8434a6e995231f3c426b673a4d2cfb0c7260a6631985b720c47c56793d226d37"
 licence = "PostgreSQL"
-meta = false
 provides = "libpq-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libpq-dev-14.2-r0.apk"
 version = "14.2.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libpq", "14.2-r0"], ["openssl-dev", "1.1.1l-r8"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["libpq", "14.2.0-r0"], ["openssl-dev", "1.1.1-l-r8"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"]]

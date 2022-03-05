@@ -1,20 +1,16 @@
 checksume = "735fbd089425fbbe9813e53250d6fc3dddc5fd5b00b481fb8b1d9041c4bb69d2"
 licence = "LGPL-3.0-or-later"
-meta = false
 provides = "tdb-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tdb-dev-1.4.5-r0.apk"
 version = "1.4.5-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["python3", "3.9.7-r4"], ["pkgconf", "1.8.0-r0"], ["tdb-libs", "1.4.5-r0"]]
+    deps = [["python3", "3.9.7-r4"], ["pkgconf", "1.8.0-r0"], ["tdb-libs", "1.4.5-r0"]]

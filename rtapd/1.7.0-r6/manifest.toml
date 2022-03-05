@@ -1,20 +1,16 @@
 checksume = "3e9d57d4ff22b7555e4b04059c02d527dac546c4abfa87ec8473cc4a0d3bcc6e"
 licence = "GPL"
-meta = false
 provides = "rtapd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rtapd-1.7-r6.apk"
 version = "1.7.0-r6"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["rtnppd", "1.7b-r8"], ["musl", "1.2.2-r7"], ["libpq", "14.2-r0"]]
+    deps = [["rtnppd", "1.7.0-b-r8"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

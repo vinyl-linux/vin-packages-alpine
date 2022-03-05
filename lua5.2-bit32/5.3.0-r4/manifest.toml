@@ -1,20 +1,16 @@
 checksume = "ec1de85b1b98d5340a562ff319acceebf39ab8280e4f3762530fb97514aa9a63"
 licence = "MIT"
-meta = false
 provides = "lua5.2-bit32"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-bit32-5.3.0-r4.apk"
 version = "5.3.0-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"]]
+    deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"]]

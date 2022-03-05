@@ -1,20 +1,16 @@
 checksume = "f2d95ba484ea0a83c41c4383155898c0316a229239f76b48c58883152c330a57"
 licence = "LGPL-3.0-only"
-meta = false
 provides = "encfs-libs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/encfs-libs-1.9.5-r12.apk"
 version = "1.9.5-r12"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["fuse", "2.9.9-r1"], ["libgcc", "10.3.1_git20211027-r0"], ["libintl", "0.21-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1_git20211027-r0"], ["tinyxml2", "9.0.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["fuse", "2.9.9-r1"], ["libgcc", "10.3.1"], ["libintl", "0.21.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["tinyxml2", "9.0.0-r0"]]

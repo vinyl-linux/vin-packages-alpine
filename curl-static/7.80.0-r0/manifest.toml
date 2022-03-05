@@ -1,20 +1,16 @@
 checksume = "fc89e8d48b9d5344e4be7d7903803becd5e841b5c40e58f18f059f35cd0f23e6"
 licence = "MIT"
-meta = false
 provides = "curl-static"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/curl-static-7.80.0-r0.apk"
 version = "7.80.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ca-certificates", "20211220-r0"]]
+    deps = [["ca-certificates", "20211220.0.0-r0"]]

@@ -1,20 +1,16 @@
 checksume = "1745ac27fa14b8eed84fef6f31c00db9545bd1007750bfdd5cde2a8426e23c40"
 licence = "custom"
-meta = false
 provides = "libxrender-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxrender-dev-0.9.10-r3.apk"
 version = "0.9.10-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libxrender", "0.9.10-r3"], ["xorgproto", "2021.5-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libxrender", "0.9.10-r3"], ["xorgproto", "2021.5.0-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

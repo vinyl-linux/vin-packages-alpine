@@ -1,20 +1,16 @@
 checksume = "1a0bf96db011627b9d2fba54ec65c24be3363449bb3e8a6aac8c98ed639f5d16"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "check"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/check-0.15.2-r0.apk"
 version = "0.15.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

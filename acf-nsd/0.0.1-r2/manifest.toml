@@ -1,20 +1,16 @@
 checksume = "81afb8bbf86b278f3a44876ef845249af1c18e13fa6833a642608d339a6feced"
 licence = "GPL-2.0-only"
-meta = false
 provides = "acf-nsd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-nsd-0.0.1-r2.apk"
 version = "0.0.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["acf-core", "0.22.0-r2"], ["nsd", "4.3.8-r0"]]
+    deps = [["acf-core", "0.22.0-r2"], ["nsd", "4.3.8-r0"]]

@@ -1,20 +1,16 @@
 checksume = "32555d1425dce9afc659e9cdc5496cf615150b29f6563d7a51239a0f0ce7ee87"
 licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
-meta = false
 provides = "uuidgen"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uuidgen-2.37.4-r0.apk"
 version = "2.37.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

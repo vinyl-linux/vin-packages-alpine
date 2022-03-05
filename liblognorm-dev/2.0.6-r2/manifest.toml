@@ -1,20 +1,16 @@
 checksume = "5703d686c7018ea0914fc17032006cfeb05b0e480e066cc5510a218ab2a006e3"
 licence = "LGPL-2.1-or-later Apache-2.0"
-meta = false
 provides = "liblognorm-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/liblognorm-dev-2.0.6-r2.apk"
 version = "2.0.6-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libestr-dev", "0.1.11-r1"], ["liblognorm", "2.0.6-r2"], ["libfastjson-dev", "0.99.9-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libestr-dev", "0.1.11-r1"], ["liblognorm", "2.0.6-r2"], ["libfastjson-dev", "0.99.9-r0"], ["pkgconf", "1.8.0-r0"]]

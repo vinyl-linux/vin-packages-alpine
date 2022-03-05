@@ -1,20 +1,16 @@
 checksume = "0aba9b3a8743e517189b3bfdd62cb733190b434308f89d79a6ec72035b75338b"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
-meta = false
 provides = "perl-xml-parser"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-xml-parser-2.46-r2.apk"
 version = "2.46.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl-libwww", "6.58-r0"], ["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"]]
+    deps = [["perl-libwww", "6.58.0-r0"], ["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"]]

@@ -1,20 +1,16 @@
 checksume = "3b5e1cd434c8dda247e835b6fe13fb5f70bd203739f372c26edeebe0fd1f3a5c"
 licence = "MIT"
-meta = false
 provides = "lua5.1-sql-mysql"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-sql-mysql-2.6.0-r1.apk"
 version = "2.6.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]
+    deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]

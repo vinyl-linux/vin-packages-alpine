@@ -1,20 +1,16 @@
 checksume = "e769bd83b42d9573aa557bdf0ea72b74efe4f4260c208ce28e1a63f194ae8313"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "syslog-ng-examples"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/syslog-ng-examples-3.30.1-r3.apk"
 version = "3.30.1-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["syslog-ng", "3.30.1-r3"], ["glib", "2.70.1-r0"], ["ivykis", "0.42.4-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["syslog-ng", "3.30.1-r3"], ["glib", "2.70.1-r0"], ["ivykis", "0.42.4-r0"]]

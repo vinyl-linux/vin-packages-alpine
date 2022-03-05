@@ -1,20 +1,16 @@
 checksume = "2801c379dedf5a74ef01ceab63a4b467fd5e428c21ae8946d6550f5fb9bb698c"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "vanessa_adt"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vanessa_adt-0.0.9-r1.apk"
 version = "0.0.9-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["vanessa_logger", "0.0.10-r1"]]
+    deps = [["musl", "1.2.2-r7"], ["vanessa_logger", "0.0.10-r1"]]

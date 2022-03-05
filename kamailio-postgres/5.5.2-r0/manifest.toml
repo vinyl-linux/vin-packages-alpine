@@ -1,20 +1,16 @@
 checksume = "ca85f1a0b2a9957e4348cbeae70467821895d6c4b2f7d8360525cb0abf48842f"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-postgres"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-postgres-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["kamailio-db", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libpq", "14.2-r0"]]
+    deps = [["kamailio", "5.5.2-r0"], ["kamailio-db", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

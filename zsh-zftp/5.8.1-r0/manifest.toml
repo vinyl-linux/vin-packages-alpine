@@ -1,20 +1,16 @@
 checksume = "e725d94d6bb1ba84b1802acab96c681a464993aea9433f405cd9c75d0096e612"
 licence = "custom"
-meta = false
 provides = "zsh-zftp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zsh-zftp-5.8.1-r0.apk"
 version = "5.8.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["zsh", "5.8.1-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["zsh", "5.8.1-r0"], ["musl", "1.2.2-r7"]]

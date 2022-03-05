@@ -1,20 +1,16 @@
 checksume = "50462e21c728c30263d0f567896eefab713992496bb50654d36b624be1cf69ed"
 licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
-meta = false
 provides = "mcookie"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mcookie-2.37.4-r0.apk"
 version = "2.37.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

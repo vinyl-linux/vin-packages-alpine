@@ -1,20 +1,16 @@
 checksume = "a3e62b7f802627dbc7d85d2c239179d0ad4b46ea01a7f1fe71d335ce8a43b601"
 licence = "BSD-3-Clause"
-meta = false
 provides = "linux-pam"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/linux-pam-1.5.2-r0.apk"
 version = "1.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

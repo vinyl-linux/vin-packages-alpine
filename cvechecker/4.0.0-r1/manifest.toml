@@ -1,20 +1,16 @@
 checksume = "4717f640365144b58f7f549fde289f877552d384041352b42c945e58fd2cf4d3"
 licence = "GPL-3.0"
-meta = false
 provides = "cvechecker"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cvechecker-4.0-r1.apk"
 version = "4.0.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gawk", "5.1.1-r0"], ["wget", "1.21.2-r2"], ["libxslt", "1.1.34-r1"], ["jq", "1.6-r1"], ["busybox", "1.34.1-r4"], ["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"], ["libconfig", "1.7.3-r0"], ["mariadb-connector-c", "3.1.13-r2"], ["sqlite-libs", "3.36.0-r0"]]
+    deps = [["gawk", "5.1.1-r0"], ["wget", "1.21.2-r2"], ["libxslt", "1.1.34-r1"], ["jq", "1.6.0-r1"], ["busybox", "1.34.1-r4"], ["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"], ["libconfig", "1.7.3-r0"], ["mariadb-connector-c", "3.1.13-r2"], ["sqlite-libs", "3.36.0-r0"]]

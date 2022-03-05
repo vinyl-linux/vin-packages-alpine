@@ -1,20 +1,16 @@
 checksume = "f4777c1e4d31a24bcc8f53ac11926faa92d3a6c082303c645f02a613d66449ba"
 licence = "BSD-3-Clause"
-meta = false
 provides = "umurmur"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/umurmur-0.2.20-r2.apk"
 version = "0.2.20-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libconfig", "1.7.3-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["protobuf-c", "1.4.0-r0"], ["libssl1.1", "1.1.1l-r8"]]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libconfig", "1.7.3-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["protobuf-c", "1.4.0-r0"], ["libssl1.1", "1.1.1-l-r8"]]

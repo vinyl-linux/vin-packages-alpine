@@ -1,20 +1,16 @@
 checksume = "e05272c7a92f7047066f7bcb417cad6d24e6f644f7d145ab4198e3c7877a1b82"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "ciwiki"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ciwiki-2.0.5-r2.apk"
 version = "2.0.5-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

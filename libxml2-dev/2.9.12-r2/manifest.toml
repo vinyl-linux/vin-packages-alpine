@@ -1,20 +1,16 @@
 checksume = "9313c5f646dbcbd8801d59dbd1888da7c047eda7ec279ad80b1cd0d891bcd2a7"
 licence = "MIT"
-meta = false
 provides = "libxml2-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxml2-dev-2.9.12-r2.apk"
 version = "2.9.12-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["zlib-dev", "1.2.11-r3"], ["xz-dev", "5.2.5-r0"], ["libxml2", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["zlib-dev", "1.2.11-r3"], ["xz-dev", "5.2.5-r0"], ["libxml2", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]

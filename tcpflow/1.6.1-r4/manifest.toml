@@ -1,20 +1,16 @@
 checksume = "7cb4eaecf47cefb2b2a05dac19401069bff111d5ff9ae28e2d04649c7c05bce2"
 licence = "GPL-3.0-only"
-meta = false
 provides = "tcpflow"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tcpflow-1.6.1-r4.apk"
 version = "1.6.1-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libgcc", "10.3.1_git20211027-r0"], ["libpcap", "1.10.1-r0"], ["libstdc++", "10.3.1_git20211027-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libpcap", "1.10.1-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

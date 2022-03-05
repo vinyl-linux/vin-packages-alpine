@@ -1,20 +1,16 @@
 checksume = "ff4d88c497166a0fc5b1b5c4e8c1cfb1717fe570a7ac20136f39c59f34e7fa00"
 licence = "Info-ZIP"
-meta = false
 provides = "zip"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zip-3.0-r9.apk"
 version = "3.0.0-r9"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["unzip", "6.0-r9"], ["musl", "1.2.2-r7"]]
+    deps = [["unzip", "6.0.0-r9"], ["musl", "1.2.2-r7"]]

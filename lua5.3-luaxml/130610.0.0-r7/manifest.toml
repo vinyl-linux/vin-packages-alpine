@@ -1,20 +1,16 @@
 checksume = "4ddae609576e7d3398a388b27dc07db4bd783b4ef6e4159a25bc8de2b794b6f9"
 licence = "MIT"
-meta = false
 provides = "lua5.3-luaxml"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-luaxml-130610-r7.apk"
 version = "130610.0.0-r7"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"]]
+    deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"]]

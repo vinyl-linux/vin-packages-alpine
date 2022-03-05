@@ -1,20 +1,16 @@
 checksume = "add4b6e3766929c511166a32fc30fc9b671ab3e703cd963dc9b1936e1ba96ce3"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "psmisc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/psmisc-23.4-r0.apk"
 version = "23.4.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libintl", "0.21-r0"], ["ncurses-libs", "6.3_p20211120-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libintl", "0.21.0-r0"], ["ncurses-libs", "6.3.0"]]

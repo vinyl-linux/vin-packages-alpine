@@ -1,20 +1,16 @@
 checksume = "a6b2f6ff16db7b091e206dc48d8cb40272534609ce2d81d45f3a14cdc3a62dc7"
 licence = "GPL-2.0-only OR BSD-3-Clause OR Intel-ACPI"
-meta = false
 provides = "iasl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iasl-20210930-r0.apk"
 version = "20210930.0.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

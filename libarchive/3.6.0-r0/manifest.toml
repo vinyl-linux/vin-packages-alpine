@@ -1,20 +1,16 @@
 checksume = "d982f8b75813dea480778a0a86af652738ac1b850e371e6d6d024b61b6710869"
 licence = "BSD-2-Clause AND BSD-3-Clause AND Public-Domain"
-meta = false
 provides = "libarchive"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libarchive-3.6.0-r0.apk"
 version = "3.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libacl", "2.2.53-r0"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["expat", "2.4.6-r0"], ["lz4-libs", "1.9.3-r1"], ["xz-libs", "5.2.5-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]
+    deps = [["libacl", "2.2.53-r0"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["expat", "2.4.6-r0"], ["lz4-libs", "1.9.3-r1"], ["xz-libs", "5.2.5-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

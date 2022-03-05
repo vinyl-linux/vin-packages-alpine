@@ -1,20 +1,16 @@
 checksume = "87660976ef0e4bff5e897f46006ada32350d622427e49e3ad64095a23cf96e2c"
 licence = "MIT"
-meta = false
 provides = "ssh-getkey-ldap"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ssh-getkey-ldap-0.1.2-r0.apk"
 version = "0.1.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.4", "5.4.3-r0"], ["lua-ldap", "1.2.6-r2"], ["busybox", "1.34.1-r4"]]
+    deps = [["lua5.4", "5.4.3-r0"], ["lua-ldap", "1.2.6-r2"], ["busybox", "1.34.1-r4"]]

@@ -1,20 +1,16 @@
 checksume = "421884ff0f5611b9325e83ab73aa8ae681e2c3b12104b180ad64ced672f958ef"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-jansson"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-jansson-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["jansson", "2.14-r0"]]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["jansson", "2.14.0-r0"]]

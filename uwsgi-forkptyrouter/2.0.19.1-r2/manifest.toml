@@ -1,20 +1,16 @@
 checksume = "1c0b4cec0397a3a9ff8efcf7449a35b34cc439fe84992a56bf5b4b91b7d738eb"
 licence = "custom"
-meta = false
 provides = "uwsgi-forkptyrouter"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-forkptyrouter-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["uwsgi-corerouter", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["uwsgi-corerouter", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

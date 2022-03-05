@@ -1,20 +1,16 @@
 checksume = "ca1ff1d14f8acae645ce4bcbfcfcb50d05a2608d4fe794c177d3ec7a722a9c87"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "atk"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/atk-2.36.0-r0.apk"
 version = "2.36.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"]]

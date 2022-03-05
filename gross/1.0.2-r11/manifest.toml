@@ -1,20 +1,16 @@
 checksume = "c4eaebf9351529c35fc8b28eca696ccf36720c7ad40af90407ddf79373f07ff8"
 licence = "BSD"
-meta = false
 provides = "gross"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gross-1.0.2-r11.apk"
 version = "1.0.2-r11"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"]]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"]]

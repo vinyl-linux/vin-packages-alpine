@@ -1,20 +1,16 @@
 checksume = "3b5359afc7719bf8ef956d589548d0e1fd7415754a34787fa69673aa20401adb"
 licence = "MIT"
-meta = false
 provides = "lua5.2-sql-odbc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-sql-odbc-2.6.0-r1.apk"
 version = "2.6.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"], ["unixodbc", "2.3.9-r1"]]
+    deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"], ["unixodbc", "2.3.9-r1"]]

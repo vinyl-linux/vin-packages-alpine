@@ -1,20 +1,16 @@
 checksume = "2e7314b0380b082ca06e9b24f5170dec382509b3d75496e9acd184256a8149fb"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "lua5.1-lxc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-lxc-3.0.2-r1.apk"
 version = "3.0.2-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["lxc-libs", "4.0.11-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["lxc-libs", "4.0.11-r0"]]

@@ -1,20 +1,16 @@
 checksume = "6ca67557798e5192f32556dcbad3560a157df7dfe04f9309fe26498180d4e1b9"
 licence = "GPL-2.0-or-later LGPL-3.0-or-later"
-meta = false
 provides = "btrfs-progs-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/btrfs-progs-dev-5.15.1-r0.apk"
 version = "5.15.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["linux-headers", "5.10.41-r0"], ["btrfs-progs-libs", "5.15.1-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["linux-headers", "5.10.41-r0"], ["btrfs-progs-libs", "5.15.1-r0"], ["pkgconf", "1.8.0-r0"]]

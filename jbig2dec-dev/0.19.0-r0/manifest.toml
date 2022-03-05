@@ -1,20 +1,16 @@
 checksume = "dbd21d0e1d44955c9377d0c5c997ead3c715b3962f0c8fac2fd529d7f7d807d4"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "jbig2dec-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/jbig2dec-dev-0.19-r0.apk"
 version = "0.19.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["jbig2dec", "0.19-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["jbig2dec", "0.19.0-r0"], ["pkgconf", "1.8.0-r0"]]

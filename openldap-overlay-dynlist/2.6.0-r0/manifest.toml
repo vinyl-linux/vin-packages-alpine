@@ -1,20 +1,16 @@
 checksume = "aac3211e3fa172b022227f0d8e1369e8fddf47f1df0093892059636a8575b363"
 licence = "OLDAP-2.8"
-meta = false
 provides = "openldap-overlay-dynlist"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-overlay-dynlist-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

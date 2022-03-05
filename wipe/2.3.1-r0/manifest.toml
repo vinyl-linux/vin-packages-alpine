@@ -1,20 +1,16 @@
 checksume = "6c9a7222a768d6c205a5831f1218574ca31c43584d34ff29046854e5315f101f"
 licence = "GPL-2.0"
-meta = false
 provides = "wipe"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/wipe-2.3.1-r0.apk"
 version = "2.3.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "9d39ba7a09c2efd4e0296e180c6f57adea836199c70eae2e2db9fa05515790b4"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-lua"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-lua-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"]]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"]]

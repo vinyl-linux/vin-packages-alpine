@@ -1,20 +1,16 @@
 checksume = "09e3942c730ea72167bcf4769e1547d376516a6c946576fadd2c4cd16913ee03"
 licence = "BSD-3-Clause"
-meta = false
 provides = "opus"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/opus-1.3.1-r1.apk"
 version = "1.3.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

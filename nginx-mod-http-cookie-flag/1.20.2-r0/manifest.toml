@@ -1,20 +1,16 @@
 checksume = "41b52710dc6482ef34150d48ae66c500ebdd06485bfc336e222ed9834aaf13bc"
 licence = "BSD-2-Clause"
-meta = false
 provides = "nginx-mod-http-cookie-flag"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-cookie-flag-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "721c669a16319a9108de4cdf553bb5a041391d453e39f30e43142e5212e5274d"
 licence = "MIT"
-meta = false
 provides = "lua5.1-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-dev-5.1.5-r8.apk"
 version = "5.1.5-r8"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-libs", "5.1.5-r8"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-libs", "5.1.5-r8"], ["pkgconf", "1.8.0-r0"]]

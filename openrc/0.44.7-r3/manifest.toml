@@ -1,20 +1,16 @@
 checksume = "afff691afed8e6481f8ee9c1b997256722fbb98e737ddb34ea15a5e8015caeed"
 licence = "BSD-2-Clause"
-meta = false
 provides = "openrc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openrc-0.44.7-r3.apk"
 version = "0.44.7-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["busybox-ifupdown", "1.34.1-r4"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]
+    deps = [["busybox-ifupdown", "1.34.1-r4"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

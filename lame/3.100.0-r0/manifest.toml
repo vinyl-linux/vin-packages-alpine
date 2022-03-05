@@ -1,20 +1,16 @@
 checksume = "e3d14bc505e474d3f2ab0ef886296b2e2a72fe1962d11a794b6b319656ab882c"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "lame"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lame-3.100-r0.apk"
 version = "3.100.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3_p20211120-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

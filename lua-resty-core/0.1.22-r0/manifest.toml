@@ -1,20 +1,16 @@
 checksume = "95df8947d8b92fceaa672f11aa67530c3f64964b1344e53858a77d79faad5d01"
 licence = "BSD-2-Clause"
-meta = false
 provides = "lua-resty-core"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua-resty-core-0.1.22-r0.apk"
 version = "0.1.22-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["luajit", "2.1_p20210510-r0"], ["lua-resty-lrucache", "0.09-r1"]]
+    deps = [["luajit", "2.1.0"], ["lua-resty-lrucache", "0.9.0-r1"]]

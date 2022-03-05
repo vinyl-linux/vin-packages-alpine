@@ -1,20 +1,16 @@
 checksume = "27147aa8ecd87ba851ce86108e4ece836a101f3d995fa961a04c5a80946b4a91"
 licence = "custom"
-meta = false
 provides = "fcgi"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fcgi-2.4.2-r1.apk"
 version = "2.4.2-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

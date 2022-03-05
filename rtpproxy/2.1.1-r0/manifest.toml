@@ -1,20 +1,16 @@
 checksume = "6188857105029e17f6c296510514ec0079bc34365aed44ab1c08ae17737ca994"
 licence = "BSD-2-CLause"
-meta = false
 provides = "rtpproxy"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rtpproxy-2.1.1-r0.apk"
 version = "2.1.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

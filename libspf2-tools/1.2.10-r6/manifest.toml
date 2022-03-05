@@ -1,20 +1,16 @@
 checksume = "374243b327061d7996467ccbf49021e902b55203e6f4e1726813d03daa2110b0"
 licence = "LGPL-2.1-or-later OR BSD-2-Clause"
-meta = false
 provides = "libspf2-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libspf2-tools-1.2.10-r6.apk"
 version = "1.2.10-r6"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libspf2", "1.2.10-r6"]]
+    deps = [["musl", "1.2.2-r7"], ["libspf2", "1.2.10-r6"]]

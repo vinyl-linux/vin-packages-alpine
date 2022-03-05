@@ -1,20 +1,16 @@
 checksume = "94bf3d1c44934e5fc37deb5cbc6495bdb8fe60353139c5042cf08e572abf4a46"
 licence = "Apache-2.0"
-meta = false
 provides = "apache2-mod-wsgi"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apache2-mod-wsgi-4.7.1-r1.apk"
 version = "4.7.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]
+    deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]

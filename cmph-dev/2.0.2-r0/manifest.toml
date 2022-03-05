@@ -1,20 +1,16 @@
 checksume = "c89b2e8e61d91cb599b5fb5fa460686f34949a7a56cb5fda2f677121a76b254d"
 licence = "LGPL-2.0-or-later MPL-1.1"
-meta = false
 provides = "cmph-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cmph-dev-2.0.2-r0.apk"
 version = "2.0.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libcmph", "2.0.2-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libcmph", "2.0.2-r0"], ["pkgconf", "1.8.0-r0"]]

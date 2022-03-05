@@ -1,20 +1,16 @@
 checksume = "21a564f28cc9e9170ca5b2a827d275e704ab79ae3037c91155972a78a140a75a"
 licence = "custom"
-meta = false
 provides = "openjade"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openjade-1.3.2-r6.apk"
 version = "1.3.2-r6"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["openjade-libs", "1.3.2-r6"], ["opensp", "1.5.2-r1"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["openjade-libs", "1.3.2-r6"], ["opensp", "1.5.2-r1"], ["libstdc++", "10.3.1"]]

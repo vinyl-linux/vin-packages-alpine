@@ -1,20 +1,16 @@
 checksume = "1630b2ca917a1d3602a9c88cba3e3264bdf51b8e76577bc0f2f23466cb20c3cc"
 licence = "MIT"
-meta = false
 provides = "lua5.3-libs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-libs-5.3.6-r1.apk"
 version = "5.3.6-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

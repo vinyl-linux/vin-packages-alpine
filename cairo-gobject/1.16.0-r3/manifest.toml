@@ -1,20 +1,16 @@
 checksume = "7729645d4ec4f1438992a723f378f3b66cb654241a83da54f1d410381f423042"
 licence = "LGPL-2.0-or-later MPL-1.1"
-meta = false
 provides = "cairo-gobject"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cairo-gobject-1.16.0-r3.apk"
 version = "1.16.0-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["cairo", "1.16.0-r3"], ["glib", "2.70.1-r0"]]
+    deps = [["cairo", "1.16.0-r3"], ["glib", "2.70.1-r0"]]

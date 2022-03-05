@@ -1,20 +1,16 @@
 checksume = "d23ba8970382647122f0e11318accc624339357f5e1c17bd7cb20c56175ce96c"
 licence = "BSD-3-Clause"
-meta = false
 provides = "leveldb-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/leveldb-dev-1.22-r1.apk"
 version = "1.22.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["leveldb", "1.22-r1"]]
+    deps = [["leveldb", "1.22.0-r1"]]

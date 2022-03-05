@@ -1,20 +1,16 @@
 checksume = "e48180a5e8993716cc6375e00d4953e10d24cd450c3fa3d54ac2e97008ae9002"
 licence = "custom"
-meta = false
 provides = "cyrus-sasl-login"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cyrus-sasl-login-2.1.27-r14.apk"
 version = "2.1.27-r14"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

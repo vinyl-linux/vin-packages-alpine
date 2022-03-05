@@ -1,20 +1,16 @@
 checksume = "d5c8242f5c5d62e23a829fd5921f32a56ae6415b1ac6e348b5f0dcd03be4df5b"
 licence = "MIT"
-meta = false
 provides = "lua5.2-maxminddb"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-maxminddb-0.1-r3.apk"
 version = "0.1.0-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libmaxminddb", "1.6.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libmaxminddb", "1.6.0-r0"]]

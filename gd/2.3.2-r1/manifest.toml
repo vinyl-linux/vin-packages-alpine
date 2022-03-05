@@ -1,20 +1,16 @@
 checksume = "ea70d5666db2b312587e5f27c106ea47e57c79b9c53deac02332f830ab582990"
 licence = "custom"
-meta = false
 provides = "gd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gd-2.3.2-r1.apk"
 version = "2.3.2-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgd", "2.3.2-r1"]]
+    deps = [["musl", "1.2.2-r7"], ["libgd", "2.3.2-r1"]]

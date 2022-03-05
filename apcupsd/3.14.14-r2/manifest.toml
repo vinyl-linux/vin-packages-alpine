@@ -1,20 +1,16 @@
 checksume = "b41be694a51ff5a83edcb44e5e5a20ae487d0afef2bb2da80e71634406db42a3"
 licence = "GPL-2.0-only"
-meta = false
 provides = "apcupsd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apcupsd-3.14.14-r2.apk"
 version = "3.14.14-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["util-linux", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libusb-compat", "0.1.7-r1"]]
+    deps = [["util-linux", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libusb-compat", "0.1.7-r1"]]

@@ -1,20 +1,16 @@
 checksume = "49179d9ba69d644c7bd2d6d5fb9d3faff7882405f357efa38ed63821358ab651"
 licence = "Apache-2.0"
-meta = false
 provides = "clang-analyzer"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/clang-analyzer-12.0.1-r1.apk"
 version = "12.0.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["clang", "12.0.1-r1"], ["perl", "5.34.0-r1"], ["python3", "3.9.7-r4"]]
+    deps = [["clang", "12.0.1-r1"], ["perl", "5.34.0-r1"], ["python3", "3.9.7-r4"]]

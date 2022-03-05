@@ -1,20 +1,16 @@
 checksume = "afe1a67471fdb5c13582988a69d13d398d8263b32dc44bffbe6ce887f4fad729"
 licence = "GPL-2.0-only"
-meta = false
 provides = "acf-lvm2"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-lvm2-0.7.0-r5.apk"
 version = "0.7.0-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["acf-core", "0.22.0-r2"], ["lvm2", "2.02.187-r2"]]
+    deps = [["acf-core", "0.22.0-r2"], ["lvm2", "2.2.187-r2"]]

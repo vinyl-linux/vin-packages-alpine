@@ -1,20 +1,16 @@
 checksume = "ea413f2bf06373dbcb25884f280a06bb3861d0ce0bb26503547389a1a21c97fe"
 licence = "BSD-3-Clause"
-meta = false
 provides = "libwebp-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libwebp-tools-1.2.2-r0.apk"
 version = "1.2.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["giflib", "5.2.1-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["libwebp", "1.2.2-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["giflib", "5.2.1-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["libwebp", "1.2.2-r0"]]

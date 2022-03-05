@@ -1,20 +1,16 @@
 checksume = "97c98fd95754f368f6869184cb08c336c0664d63200cca5f7b5dbe9c9878a47a"
 licence = "MIT"
-meta = false
 provides = "lua5.2-dbi-sqlite3"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-dbi-sqlite3-0.7.2-r1.apk"
 version = "0.7.2-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]
+    deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

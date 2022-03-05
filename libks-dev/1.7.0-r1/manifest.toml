@@ -1,20 +1,16 @@
 checksume = "9c7070013a6198ca5f0a6ef24310133a858792db8487258b42126a8538d31c71"
 licence = "MIT"
-meta = false
 provides = "libks-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libks-dev-1.7.0-r1.apk"
 version = "1.7.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libks", "1.7.0-r1"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libks", "1.7.0-r1"], ["pkgconf", "1.8.0-r0"]]

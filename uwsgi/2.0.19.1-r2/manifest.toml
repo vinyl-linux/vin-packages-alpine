@@ -1,20 +1,16 @@
 checksume = "a78154874be8757ed5b716f3643aed32af9ec18752ef9b03dab57236205b5120"
 licence = "custom"
-meta = false
 provides = "uwsgi"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["mailcap", "2.1.52-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcap", "2.61-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["jansson", "2.14-r0"], ["pcre", "8.45-r1"], ["libssl1.1", "1.1.1l-r8"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]
+    deps = [["mailcap", "2.1.52-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["jansson", "2.14.0-r0"], ["pcre", "8.45.0-r1"], ["libssl1.1", "1.1.1-l-r8"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

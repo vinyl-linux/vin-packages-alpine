@@ -1,20 +1,16 @@
 checksume = "9a7edc1f7a8d35ccef0960761ce2b500cffd741837f92929e62932e06aa20c18"
 licence = "unrestricted"
-meta = false
 provides = "perl-tk"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-tk-804.036-r1.apk"
 version = "804.36.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libpng", "1.6.37-r1"]]
+    deps = [["perl", "5.34.0-r1"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libpng", "1.6.37-r1"]]

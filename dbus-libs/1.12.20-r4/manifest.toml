@@ -1,20 +1,16 @@
 checksume = "860256b78eb05fbcf1b02cfa5a9a526b005ba63b3ec8bec6479b1c2504e8caa1"
 licence = "AFL-2.1 OR GPL-2.0-or-later"
-meta = false
 provides = "dbus-libs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dbus-libs-1.12.20-r4.apk"
 version = "1.12.20-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "3603baaff1bed495a1882c83827c56a3e898638b1a39349361f2518a710fa020"
 licence = "GPL-2.0-only"
-meta = false
 provides = "mdadm-misc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mdadm-misc-4.1-r4.apk"
 version = "4.1.0-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["mdadm", "4.1-r4"], ["bash", "5.1.16-r0"]]
+    deps = [["mdadm", "4.1.0-r4"], ["bash", "5.1.16-r0"]]

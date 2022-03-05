@@ -1,20 +1,16 @@
 checksume = "65922d8ab79b3ece38f341fbf5cdc020e59c8a9824bc1e5bebf61087e2ad92f0"
 licence = "BSD-2-Clause"
-meta = false
 provides = "nginx-debug"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-debug-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["pcre", "8.45-r1"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]
+    deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["pcre", "8.45.0-r1"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

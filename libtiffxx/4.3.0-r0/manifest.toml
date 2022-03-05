@@ -1,20 +1,16 @@
 checksume = "abbda30a5c0a0aacad1ca372c9ffaa30a8c68c5d346d67523a5bf54ffbc0cb24"
 licence = "libtiff"
-meta = false
 provides = "libtiffxx"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libtiffxx-4.3.0-r0.apk"
 version = "4.3.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"], ["tiff", "4.3.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["tiff", "4.3.0-r0"]]

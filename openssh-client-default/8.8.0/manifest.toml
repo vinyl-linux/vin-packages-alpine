@@ -1,20 +1,16 @@
 checksume = "1358710cf805c76581d1a3320e57726663046d7677d09543e2a5a224f7a2ca50"
 licence = "BSD"
-meta = false
 provides = "openssh-client-default"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openssh-client-default-8.8_p1-r1.apk"
 version = "8.8.0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["openssh-keygen", "8.8_p1-r1"], ["openssh-client-common", "8.8_p1-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]
+    deps = [["openssh-keygen", "8.8.0"], ["openssh-client-common", "8.8.0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

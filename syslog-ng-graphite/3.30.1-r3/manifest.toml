@@ -1,20 +1,16 @@
 checksume = "13d0cb9613ab805b8cec4f282ffb4483325d5d3aae19cfc918673a8216048e6f"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "syslog-ng-graphite"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/syslog-ng-graphite-3.30.1-r3.apk"
 version = "3.30.1-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["syslog-ng", "3.30.1-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["syslog-ng", "3.30.1-r3"]]

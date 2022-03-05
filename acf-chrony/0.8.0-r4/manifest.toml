@@ -1,20 +1,16 @@
 checksume = "06b4f3e20eb2ce57ea5313c8ca81b9062502a68b9eb3b6d2e9bf9faea382cdce"
 licence = "GPL-2.0-only"
-meta = false
 provides = "acf-chrony"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-chrony-0.8.0-r4.apk"
 version = "0.8.0-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["acf-core", "0.22.0-r2"], ["lua-posix", "35.1-r0"], ["chrony", "4.1-r0"]]
+    deps = [["acf-core", "0.22.0-r2"], ["lua-posix", "35.1.0-r0"], ["chrony", "4.1.0-r0"]]

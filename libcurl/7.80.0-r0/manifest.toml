@@ -1,20 +1,16 @@
 checksume = "a0a7ec1bca1f1a0a9fba68a69daff69cc6886ac0f215c28cc1c719cb7de30ce7"
 licence = "MIT"
-meta = false
 provides = "libcurl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libcurl-7.80.0-r0.apk"
 version = "7.80.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ca-certificates", "20211220-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["nghttp2-libs", "1.46.0-r0"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["nghttp2-libs", "1.46.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

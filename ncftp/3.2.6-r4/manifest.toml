@@ -1,20 +1,16 @@
 checksume = "e1a4a0a12c5c364144d410c13768bde437d7cc113c538495d925d56870e48c37"
 licence = "ClArtistic"
-meta = false
 provides = "ncftp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ncftp-3.2.6-r4.apk"
 version = "3.2.6-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

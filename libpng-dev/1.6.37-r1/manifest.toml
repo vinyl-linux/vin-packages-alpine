@@ -1,20 +1,16 @@
 checksume = "31f15dfb980a08c86a04d00003629c25514a3aa82caddaae881200e8ba2c2489"
 licence = "Libpng"
-meta = false
 provides = "libpng-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libpng-dev-1.6.37-r1.apk"
 version = "1.6.37-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libpng", "1.6.37-r1"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libpng", "1.6.37-r1"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

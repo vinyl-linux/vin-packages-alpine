@@ -1,20 +1,16 @@
 checksume = "31c7f1a273f1a002ae77d6d314776eb248cbdce2e3ce24409103aad35e850ee5"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "eggdrop"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/eggdrop-1.8.4-r4.apk"
 version = "1.8.4-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["tcl", "8.6.11-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"], ["tcl", "8.6.11-r0"], ["zlib", "1.2.11-r3"]]

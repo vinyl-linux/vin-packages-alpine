@@ -1,20 +1,16 @@
 checksume = "bc6a964120e87bc4ff7e4645ae87ac67584d2f4f34708bf1604827b1993fbf2f"
 licence = "BSD-2-Clause"
-meta = false
 provides = "botan"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/botan-2.18.1-r4.apk"
 version = "2.18.1-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["botan-libs", "2.18.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["botan-libs", "2.18.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

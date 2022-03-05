@@ -1,20 +1,16 @@
 checksume = "63407bcadb6db2d6fbff09b78cee694dc2f23b7c697e13bb62dc48e3f0700fd1"
 licence = "custom"
-meta = false
 provides = "opensp-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/opensp-dev-1.5.2-r1.apk"
 version = "1.5.2-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["opensp", "1.5.2-r1"]]
+    deps = [["opensp", "1.5.2-r1"]]

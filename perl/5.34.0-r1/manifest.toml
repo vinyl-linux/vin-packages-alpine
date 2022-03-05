@@ -1,20 +1,16 @@
 checksume = "29dfd048729eaba57340cb6fa384a08e2bcb33025b34a9e2bf4afa137697938f"
 licence = "Artistic-Perl OR GPL-1.0-or-later"
-meta = false
 provides = "perl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-5.34.0-r1.apk"
 version = "5.34.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]
+    deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

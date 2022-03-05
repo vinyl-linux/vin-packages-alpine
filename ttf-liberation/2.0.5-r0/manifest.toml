@@ -1,20 +1,16 @@
 checksume = "e4698ea339b6de35a1aa0a251805492e4b7b5ce2e42db6876d44133e6f5a1df1"
 licence = "custom GPL-2.0"
-meta = false
 provides = "ttf-liberation"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ttf-liberation-2.00.5-r0.apk"
 version = "2.0.5-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["fontconfig", "2.13.1-r4"]]
+    deps = [["fontconfig", "2.13.1-r4"]]

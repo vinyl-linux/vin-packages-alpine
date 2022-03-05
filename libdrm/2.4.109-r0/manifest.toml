@@ -1,20 +1,16 @@
 checksume = "a0cbb8d49a02c72dbe0138d4a5bc40e033f2ab7fb78067e621f401dab260ad99"
 licence = "MIT"
-meta = false
 provides = "libdrm"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libdrm-2.4.109-r0.apk"
 version = "2.4.109-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libpciaccess", "0.16-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libpciaccess", "0.16.0-r0"]]

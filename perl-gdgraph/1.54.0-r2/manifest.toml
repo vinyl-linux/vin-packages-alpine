@@ -1,20 +1,16 @@
 checksume = "79af9bcd0bfb85e93c0760bb735aab7fafca9b50002b79298f994f0f57babf5c"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
-meta = false
 provides = "perl-gdgraph"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-gdgraph-1.54-r2.apk"
 version = "1.54.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["perl-gdtextutil", "0.86-r2"], ["perl-gd", "2.73-r1"]]
+    deps = [["perl", "5.34.0-r1"], ["perl-gdtextutil", "0.86.0-r2"], ["perl-gd", "2.73.0-r1"]]

@@ -1,20 +1,16 @@
 checksume = "d2b948456830fe061bf8db757ef36e6161010c39fc7f2812fc5c46959ee9dc52"
 licence = "GPL-2.0-only"
-meta = false
 provides = "xen-bridge"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xen-bridge-4.15.1-r2.apk"
 version = "4.15.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["dnsmasq", "2.86-r0"]]
+    deps = [["dnsmasq", "2.86.0-r0"]]

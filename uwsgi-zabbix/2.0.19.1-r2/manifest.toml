@@ -1,20 +1,16 @@
 checksume = "362b33aaa193d4343fa012f018887d624f2e3123799f3a6567ff88d7e9a0709d"
 licence = "custom"
-meta = false
 provides = "uwsgi-zabbix"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-zabbix-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

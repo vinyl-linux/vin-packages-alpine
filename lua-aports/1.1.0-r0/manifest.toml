@@ -1,20 +1,16 @@
 checksume = "021f57635c7c93c1a177e2d4ca053f9701389ad7bfc3f4a0f12c34f0aa2fcd7f"
 licence = "MIT"
-meta = false
 provides = "lua-aports"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua-aports-1.1.0-r0.apk"
 version = "1.1.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.2-cjson", "2.1.0-r10"], ["lua5.2-filesystem", "1.8.0-r1"], ["lua5.2-optarg", "0.2-r2"], ["lua5.2", "5.2.4-r7"]]
+    deps = [["lua5.2-cjson", "2.1.0-r10"], ["lua5.2-filesystem", "1.8.0-r1"], ["lua5.2-optarg", "0.2.0-r2"], ["lua5.2", "5.2.4-r7"]]

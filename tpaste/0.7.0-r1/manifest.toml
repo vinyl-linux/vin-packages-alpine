@@ -1,20 +1,16 @@
 checksume = "20973b787b74dd56e51fc6c6118039760149ffbc266c7a8da7d23c4246901ae2"
 licence = "GPL-2.0-only"
-meta = false
 provides = "tpaste"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tpaste-0.7-r1.apk"
 version = "0.7.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["curl", "7.80.0-r0"]]
+    deps = [["curl", "7.80.0-r0"]]

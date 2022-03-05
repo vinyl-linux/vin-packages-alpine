@@ -1,20 +1,16 @@
 checksume = "bfe938d85d5b85eb7d9a1c51fc2966dd042635283ecb63e56dc0ac2da80828ec"
 licence = "GPL-3.0-only AND LGPL-2.1-only AND LGPL-3.0-only AND MPL-2.0"
-meta = false
 provides = "nspr-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nspr-dev-4.32-r0.apk"
 version = "4.32.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nspr", "4.32-r0"], ["linux-headers", "5.10.41-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["nspr", "4.32.0-r0"], ["linux-headers", "5.10.41-r0"], ["pkgconf", "1.8.0-r0"]]

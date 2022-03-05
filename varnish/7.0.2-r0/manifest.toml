@@ -1,20 +1,16 @@
 checksume = "6f3340bb2d40937d639e54c18c4ae9d35e6372958cb6d8c9c80d38dcbe05c971"
 licence = "BSD-2-Clause"
-meta = false
 provides = "varnish"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/varnish-7.0.2-r0.apk"
 version = "7.0.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gcc", "10.3.1_git20211027-r0"], ["libc-dev", "0.7.2-r3"], ["libgcc", "10.3.1_git20211027-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["ncurses-libs", "6.3_p20211120-r0"], ["pcre2", "10.39-r0"], ["libunwind", "1.5.0-r1"], ["varnish-libs", "7.0.2-r0"]]
+    deps = [["gcc", "10.3.1"], ["libc-dev", "0.7.2-r3"], ["libgcc", "10.3.1"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["ncurses-libs", "6.3.0"], ["pcre2", "10.39.0-r0"], ["libunwind", "1.5.0-r1"], ["varnish-libs", "7.0.2-r0"]]

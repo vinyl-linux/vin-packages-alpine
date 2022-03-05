@@ -1,20 +1,16 @@
 checksume = "6abf8a1b5a564e3c98f20b2d9b7895f25acdeb3310fa1075fe35a343fb3776f9"
 licence = "BSD-2-Clause"
-meta = false
 provides = "nasm"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nasm-2.15.05-r0.apk"
 version = "2.15.5-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

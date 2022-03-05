@@ -1,20 +1,16 @@
 checksume = "0339d5d00df956676318d60dc609b02b4dfcd3e1966801f4741904dc2fab377a"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-utils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-utils-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libxml2", "2.9.12-r2"]]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libxml2", "2.9.12-r2"]]

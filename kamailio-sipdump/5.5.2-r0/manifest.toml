@@ -1,20 +1,16 @@
 checksume = "79eae5733e0ad34660ec42128538eb2908f12946f594dd848bfee2a3c234d05a"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-sipdump"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-sipdump-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"]]

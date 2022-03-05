@@ -1,20 +1,16 @@
 checksume = "b7d975f84209d06ce6e109b327b274769d9c925ff162753a442940df38dafa14"
 licence = "custom"
-meta = false
 provides = "uwsgi-notfound"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-notfound-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"]]
+    deps = [["uwsgi", "2.0.19.1-r2"]]

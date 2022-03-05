@@ -1,20 +1,16 @@
 checksume = "f06582e0ca738a0e230f5e9ae8978f3068882b8317208c312b4f4453ef89be1f"
 licence = "MIT"
-meta = false
 provides = "lua5.2-augeas"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-augeas-0.1.2-r5.apk"
 version = "0.1.2-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["augeas-libs", "1.12.0-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["augeas-libs", "1.12.0-r0"], ["musl", "1.2.2-r7"]]

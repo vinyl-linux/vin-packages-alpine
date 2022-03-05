@@ -1,20 +1,16 @@
 checksume = "e3dc3b8a2de455425c51611df5ee18e96a5cbf4a6e45efd57fcf5b7494028aad"
 licence = "GPL-3.0-only"
-meta = false
 provides = "nagios-plugins-ups"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-ups-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"]]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

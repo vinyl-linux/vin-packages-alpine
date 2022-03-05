@@ -1,20 +1,16 @@
 checksume = "4d574c09e85ba01cd772c9a1bbb1f0daea68933a7afdb31fc1c44717011616e3"
 licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
-meta = false
 provides = "rsyslog-pgsql"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-pgsql-8.2108.0-r1.apk"
 version = "8.2108.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libpq", "14.2-r0"]]
+    deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

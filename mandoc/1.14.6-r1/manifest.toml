@@ -1,20 +1,16 @@
 checksume = "39696251a6d5b179584fc97c0753f2874ee88853a7928934923d34832e0e4fd4"
 licence = "ISC and BSD-2-Clause and BSD-3-Clause"
-meta = false
 provides = "mandoc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mandoc-1.14.6-r1.apk"
 version = "1.14.6-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

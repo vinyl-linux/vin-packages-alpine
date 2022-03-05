@@ -1,20 +1,16 @@
 checksume = "4f0492ccc65631675bb809b2034885f93bea85b4f832cd854bc9589b75b4cadf"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "fakeroot"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fakeroot-1.25.3-r3.apk"
 version = "1.25.3-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "40c57234b3a47b0cd52edf0cb1503997d9665b4d9670184b761c96aa36d62101"
 licence = "GPL-2.0-or-later AND MIT"
-meta = false
 provides = "libatomic_ops-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libatomic_ops-dev-7.6.12-r0.apk"
 version = "7.6.12-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libatomic_ops", "7.6.12-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libatomic_ops", "7.6.12-r0"], ["pkgconf", "1.8.0-r0"]]

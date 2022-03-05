@@ -1,20 +1,16 @@
 checksume = "d679dd4518dd8f31ae32bfe3d3ff4f0c391ebd8d87e9b1d9a58042b1894e13b7"
 licence = "LGPL"
-meta = false
 provides = "rlog"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rlog-1.4-r4.apk"
 version = "1.4.0-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

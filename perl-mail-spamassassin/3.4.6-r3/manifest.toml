@@ -1,20 +1,16 @@
 checksume = "08577b120190ebae90ab43fb7c54a9d7b2cdfe6f72e746ebe45fc66c585147ca"
 licence = "Apache-2.0"
-meta = false
 provides = "perl-mail-spamassassin"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-mail-spamassassin-3.4.6-r3.apk"
 version = "3.4.6-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl-html-parser", "3.76-r1"], ["perl-digest-sha1", "2.13-r14"], ["perl-netaddr-ip", "4.079-r6"], ["perl-net-dns", "1.32-r0"], ["perl-mail-dkim", "1.20200907-r1"], ["perl-mime-base64", "3.16-r2"], ["perl-time-hires", "1.9764-r2"], ["perl-libwww", "6.58-r0"], ["perl", "5.34.0-r1"], ["gpg", "2.2.31-r1"]]
+    deps = [["perl-html-parser", "3.76.0-r1"], ["perl-digest-sha1", "2.13.0-r14"], ["perl-netaddr-ip", "4.79.0-r6"], ["perl-net-dns", "1.32.0-r0"], ["perl-mail-dkim", "1.20200907.0-r1"], ["perl-mime-base64", "3.16.0-r2"], ["perl-time-hires", "1.9764.0-r2"], ["perl-libwww", "6.58.0-r0"], ["perl", "5.34.0-r1"], ["gpg", "2.2.31-r1"]]

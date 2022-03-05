@@ -1,20 +1,16 @@
 checksume = "1cfec31db4d78b679709c3887f730ecee7f943c440c00d8eee958df1dcd47634"
 licence = "BSD-3-Clause"
-meta = false
 provides = "heimdal"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/heimdal-7.7.0-r6.apk"
 version = "7.7.0-r6"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["krb5-conf", "1.0-r2"], ["heimdal-libs", "7.7.0-r6"], ["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["readline", "8.1.1-r0"]]
+    deps = [["krb5-conf", "1.0.0-r2"], ["heimdal-libs", "7.7.0-r6"], ["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["readline", "8.1.1-r0"]]

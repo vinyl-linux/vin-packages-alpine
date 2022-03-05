@@ -1,20 +1,16 @@
 checksume = "cfc51e12ca8113722aa5c1a5565ac4acfff416fe0020adcac4c73e0decc7125b"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "gpg-agent"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gpg-agent-2.2.31-r1.apk"
 version = "2.2.31-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["gnupg-gpgconf", "2.2.31-r1"], ["libassuan", "2.5.5-r0"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42-r1"], ["npth", "1.6-r1"]]
+    deps = [["gnupg-gpgconf", "2.2.31-r1"], ["libassuan", "2.5.5-r0"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42.0-r1"], ["npth", "1.6.0-r1"]]

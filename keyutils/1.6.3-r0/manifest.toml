@@ -1,20 +1,16 @@
 checksume = "bdd2fa48ce36121af7af0314ad198098384c7b5affffdd4c0a3f94ffc1757c7d"
 licence = "GPL-2.0-or-later LGPL-2.0-or-later"
-meta = false
 provides = "keyutils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/keyutils-1.6.3-r0.apk"
 version = "1.6.3-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["keyutils-libs", "1.6.3-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["keyutils-libs", "1.6.3-r0"]]

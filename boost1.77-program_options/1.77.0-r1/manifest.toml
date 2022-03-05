@@ -1,20 +1,16 @@
 checksume = "d498e4d53091644af204a79416cca5ef210868cd8dc5be9b6501b1a546c94da3"
 licence = "BSL-1.0"
-meta = false
 provides = "boost1.77-program_options"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-program_options-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

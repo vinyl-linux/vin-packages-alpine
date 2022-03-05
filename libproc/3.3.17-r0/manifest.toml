@@ -1,20 +1,16 @@
 checksume = "a950dbfef318829ef44babc19698c81dc0e746bbebf4b4731c7b58c83b42ddec"
 licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
-meta = false
 provides = "libproc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libproc-3.3.17-r0.apk"
 version = "3.3.17-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

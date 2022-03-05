@@ -1,20 +1,16 @@
 checksume = "d9e931a0d844eb4744c59feefb973e072e4bd40ac9705985fb78e77394f9ba57"
 licence = "IPL-1.0 EPL-2.0"
-meta = false
 provides = "postfix-pgsql"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postfix-pgsql-3.6.4-r0.apk"
 version = "3.6.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libpq", "14.2-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

@@ -1,20 +1,16 @@
 checksume = "1900906ef3ec2a3dee5b9b04dc3c0fb9a68a9e2d6eca8a062bf4b0c6bcff8c44"
 licence = "ISC"
-meta = false
 provides = "s6-networking-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/s6-networking-dev-2.5.0.0-r0.apk"
 version = "2.5.0.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["s6-networking", "2.5.0.0-r0"]]
+    deps = [["s6-networking", "2.5.0.0-r0"]]

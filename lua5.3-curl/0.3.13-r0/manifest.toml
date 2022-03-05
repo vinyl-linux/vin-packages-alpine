@@ -1,20 +1,16 @@
 checksume = "fd51fce848c4b032d853463c1221a292e6a33cb2844936c17967cc2497d4f014"
 licence = "MIT"
-meta = false
 provides = "lua5.3-curl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-curl-0.3.13-r0.apk"
 version = "0.3.13-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]
+    deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

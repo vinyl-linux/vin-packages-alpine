@@ -1,20 +1,16 @@
 checksume = "3380cadcf74deaa201f3fd63ae2f0f2cb376fb213c6583dbf91cedc5235128c9"
 licence = "BSD-2-Clause"
-meta = false
 provides = "aconf-mod-dnsmasq"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/aconf-mod-dnsmasq-0.8.1-r1.apk"
 version = "0.8.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["aconf", "0.8.1-r1"], ["dnsmasq", "2.86-r0"]]
+    deps = [["aconf", "0.8.1-r1"], ["dnsmasq", "2.86.0-r0"]]

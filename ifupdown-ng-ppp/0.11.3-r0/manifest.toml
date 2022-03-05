@@ -1,20 +1,16 @@
 checksume = "ea91c63f7abafabd9e74885ccf3be3ca77512661d68a01bc36683ee735de21e6"
 licence = "ISC"
-meta = false
 provides = "ifupdown-ng-ppp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ifupdown-ng-ppp-0.11.3-r0.apk"
 version = "0.11.3-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ppp-daemon", "2.4.9-r2"]]
+    deps = [["ppp-daemon", "2.4.9-r2"]]

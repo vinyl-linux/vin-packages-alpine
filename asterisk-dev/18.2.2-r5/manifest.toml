@@ -1,20 +1,16 @@
 checksume = "dfd3cc4c81a405cd5651d53343a3c261b450feeba7ddf2422f8f9cba5482cd3a"
 licence = "GPL-2.0-only WITH OpenSSL-Exception"
-meta = false
 provides = "asterisk-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-dev-18.2.2-r5.apk"
 version = "18.2.2-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["asterisk", "18.2.2-r5"]]
+    deps = [["asterisk", "18.2.2-r5"]]

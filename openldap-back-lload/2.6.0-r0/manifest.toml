@@ -1,20 +1,16 @@
 checksume = "b23e607f311fe64bb5e316b1d24aeca6737796915b7bdc34a1da30b3ec2d6d78"
 licence = "OLDAP-2.8"
-meta = false
 provides = "openldap-back-lload"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-back-lload-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"]]
+    deps = [["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"]]

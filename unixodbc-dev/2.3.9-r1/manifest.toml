@@ -1,20 +1,16 @@
 checksume = "155a47bdf958f8e819e75b775b9c4461f11d19042d41f2943385dbd51ffbf3b8"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "unixodbc-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/unixodbc-dev-2.3.9-r1.apk"
 version = "2.3.9-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["pkgconf", "1.8.0-r0"], ["unixodbc", "2.3.9-r1"]]
+    deps = [["pkgconf", "1.8.0-r0"], ["unixodbc", "2.3.9-r1"]]

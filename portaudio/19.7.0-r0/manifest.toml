@@ -1,20 +1,16 @@
 checksume = "3654cf4de9fd56e694b0a147222b1e72363e5a90dddf6cea21f1bf5cdc1882df"
 licence = "MIT"
-meta = false
 provides = "portaudio"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/portaudio-19.7.0-r0.apk"
 version = "19.7.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["jack", "1.9.19-r2"]]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["jack", "1.9.19-r2"]]

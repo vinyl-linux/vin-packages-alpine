@@ -1,20 +1,16 @@
 checksume = "45d8d87d18b6394c5d21b151292113156cfe59adbc5d5e22ed10229c5a35de4a"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "dtc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dtc-1.6.1-r0.apk"
 version = "1.6.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libfdt", "1.6.1-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libfdt", "1.6.1-r0"]]

@@ -1,20 +1,16 @@
 checksume = "f8557c27ba51a773b5129bc0225f11ff123ac1baa4b55e0f0e01da45c2b066b3"
 licence = "Apache-2.0"
-meta = false
 provides = "openssl3"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openssl3-3.0.0-r4.apk"
 version = "3.0.0-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto3", "3.0.0-r4"], ["libssl3", "3.0.0-r4"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto3", "3.0.0-r4"], ["libssl3", "3.0.0-r4"]]

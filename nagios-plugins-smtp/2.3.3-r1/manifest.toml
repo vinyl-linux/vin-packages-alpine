@@ -1,20 +1,16 @@
 checksume = "f61e38408c3d1176e678e358301451a3f6f621f50af36c3a9fbba74d04031e97"
 licence = "GPL-3.0-only"
-meta = false
 provides = "nagios-plugins-smtp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-smtp-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

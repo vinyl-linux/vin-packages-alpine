@@ -1,20 +1,16 @@
 checksume = "1e9d92df863ed159b75c947e5e6313692462e4acd886655ea9bb158221b6bdd3"
 licence = "GPL-2.0-only"
-meta = false
 provides = "lxc-download"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lxc-download-4.0.11-r0.apk"
 version = "4.0.11-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lxc", "4.0.11-r0"], ["gpg", "2.2.31-r1"], ["gnupg-dirmngr", "2.2.31-r1"], ["tar", "1.34-r0"], ["wget", "1.21.2-r2"]]
+    deps = [["lxc", "4.0.11-r0"], ["gpg", "2.2.31-r1"], ["gnupg-dirmngr", "2.2.31-r1"], ["tar", "1.34.0-r0"], ["wget", "1.21.2-r2"]]

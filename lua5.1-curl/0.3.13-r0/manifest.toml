@@ -1,20 +1,16 @@
 checksume = "5f228bfc46b92286544e13e61826e6c0940c0e50236b2a98eb8b02d6d9184311"
 licence = "MIT"
-meta = false
 provides = "lua5.1-curl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-curl-0.3.13-r0.apk"
 version = "0.3.13-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]
+    deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

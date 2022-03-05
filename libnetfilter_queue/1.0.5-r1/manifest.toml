@@ -1,20 +1,16 @@
 checksume = "c0be617d509acb924657bc3addce0c5b92679ad279a3e7627244be2bec20c48f"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "libnetfilter_queue"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnetfilter_queue-1.0.5-r1.apk"
 version = "1.0.5-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libmnl", "1.0.4-r2"], ["libnfnetlink", "1.0.1-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["libmnl", "1.0.4-r2"], ["libnfnetlink", "1.0.1-r3"]]

@@ -1,20 +1,16 @@
 checksume = "3f58a372945e65cf9b82dd69aa50bc3988d5431ee3368b34e8a37e084c0f28a4"
 licence = "OLDAP-2.8"
-meta = false
 provides = "openldap-overlay-remoteauth"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-overlay-remoteauth-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

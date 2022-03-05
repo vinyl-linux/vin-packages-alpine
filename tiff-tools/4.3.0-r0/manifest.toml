@@ -1,20 +1,16 @@
 checksume = "14a3efa144cc444366317c841b61f2716cbabdb81e8871fd9d9368703379dfe8"
 licence = "libtiff"
-meta = false
 provides = "tiff-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tiff-tools-4.3.0-r0.apk"
 version = "4.3.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["tiff", "4.3.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["tiff", "4.3.0-r0"]]

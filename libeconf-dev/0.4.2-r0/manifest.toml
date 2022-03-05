@@ -1,20 +1,16 @@
 checksume = "d01106e7232efef683aa852450788f64d1f0e65b91e9d15dc9bab75386891161"
 licence = "MIT"
-meta = false
 provides = "libeconf-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libeconf-dev-0.4.2-r0.apk"
 version = "0.4.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libeconf", "0.4.2-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libeconf", "0.4.2-r0"], ["pkgconf", "1.8.0-r0"]]

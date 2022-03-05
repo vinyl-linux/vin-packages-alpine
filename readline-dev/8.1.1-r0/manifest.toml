@@ -1,20 +1,16 @@
 checksume = "1e31e999298728ff7a536ac0766e5792b622fe00c9109325cddd35ad352b80c7"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "readline-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/readline-dev-8.1.1-r0.apk"
 version = "8.1.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libhistory", "8.1.1-r0"], ["ncurses-dev", "6.3_p20211120-r0"], ["pkgconf", "1.8.0-r0"], ["readline", "8.1.1-r0"]]
+    deps = [["libhistory", "8.1.1-r0"], ["ncurses-dev", "6.3.0"], ["pkgconf", "1.8.0-r0"], ["readline", "8.1.1-r0"]]

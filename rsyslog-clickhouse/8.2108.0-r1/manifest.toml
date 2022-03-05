@@ -1,20 +1,16 @@
 checksume = "eed00d513f1310d39c755f142c51b75765af826a2323717972bfa49374ca2528"
 licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
-meta = false
 provides = "rsyslog-clickhouse"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-clickhouse-8.2108.0-r1.apk"
 version = "8.2108.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]
+    deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

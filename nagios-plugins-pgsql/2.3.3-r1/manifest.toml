@@ -1,20 +1,16 @@
 checksume = "af7f075fb8420b17e3e50efd1fc80fd96c204ea4c3444728df38ba66802a9f79"
 licence = "GPL-3.0-only"
-meta = false
 provides = "nagios-plugins-pgsql"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-pgsql-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libpq", "14.2-r0"]]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libpq", "14.2.0-r0"]]

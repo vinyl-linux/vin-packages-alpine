@@ -1,20 +1,16 @@
 checksume = "1b7f3e5adddaae6dbada78300ef5f40ff28f12f4a4a1662a7e124e6b7cd9177e"
 licence = "AGPL-3.0-or-later WITH OpenSSL-Exception"
-meta = false
 provides = "monit"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/monit-5.29.0-r2.apk"
 version = "5.29.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

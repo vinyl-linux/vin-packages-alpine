@@ -1,20 +1,16 @@
 checksume = "20d09b93bfe0fcb4fa52fdef4e911a416962cbb5d93dac4362ee696c2a38c106"
 licence = "ISC"
-meta = false
 provides = "py3-pexpect"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-pexpect-4.8.0-r1.apk"
 version = "4.8.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["python3", "3.9.7-r4"], ["py3-ptyprocess", "0.7.0-r1"]]
+    deps = [["python3", "3.9.7-r4"], ["py3-ptyprocess", "0.7.0-r1"]]

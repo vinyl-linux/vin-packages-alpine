@@ -1,20 +1,16 @@
 checksume = "de60a2529dcb1743d12fbf49c0d4479432c5c94116da528244e75632e51b487e"
 licence = "BSD-2-Clause"
-meta = false
 provides = "libnet-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnet-dev-1.2-r0.apk"
 version = "1.2.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libnet", "1.2-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libnet", "1.2.0-r0"], ["pkgconf", "1.8.0-r0"]]

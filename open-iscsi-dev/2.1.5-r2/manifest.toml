@@ -1,20 +1,16 @@
 checksume = "cf9b937b6b1729b05285d33673ba8f20b2cf4907996778ff807d8b3b0aebe8ee"
 licence = "GPL-2.0-only"
-meta = false
 provides = "open-iscsi-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/open-iscsi-dev-2.1.5-r2.apk"
 version = "2.1.5-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["open-iscsi-libs", "2.1.5-r2"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["open-iscsi-libs", "2.1.5-r2"], ["pkgconf", "1.8.0-r0"]]

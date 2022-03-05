@@ -1,20 +1,16 @@
 checksume = "323c90561cb8293e44622441eb3578d35a8bfccff9a4cac87354ee6226806597"
 licence = "custom"
-meta = false
 provides = "uwsgi-pty"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-pty-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

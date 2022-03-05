@@ -1,20 +1,16 @@
 checksume = "32302d8afa167c4e8f81ea98749c70ce9a799c2885d2e3a86027370a62dfd5b3"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-ev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-ev-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libev", "4.33-r0"]]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libev", "4.33.0-r0"]]

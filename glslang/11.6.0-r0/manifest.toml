@@ -1,20 +1,16 @@
 checksume = "1fd1ffa8b04469cb02ed65e11ccca6ae497f42652a050e1bc04ac891735cdd5a"
 licence = "BSD-3-Clause"
-meta = false
 provides = "glslang"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/glslang-11.6.0-r0.apk"
 version = "11.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

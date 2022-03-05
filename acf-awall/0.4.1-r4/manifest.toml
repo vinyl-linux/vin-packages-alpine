@@ -1,20 +1,16 @@
 checksume = "3dd2f6ae209243d0fce920523800cc0ef4328369598a102f9a038b9fd27b7a3d"
 licence = "GPL-2.0-only"
-meta = false
 provides = "acf-awall"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-awall-0.4.1-r4.apk"
 version = "0.4.1-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["acf-core", "0.22.0-r2"], ["awall", "1.10.2-r0"]]
+    deps = [["acf-core", "0.22.0-r2"], ["awall", "1.10.2-r0"]]

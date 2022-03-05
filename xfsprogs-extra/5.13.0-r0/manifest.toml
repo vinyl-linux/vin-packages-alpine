@@ -1,20 +1,16 @@
 checksume = "9c13db4fa929ac4f57c149d492a0049670b0d7e62d6642621828dc4a6bb12b72"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "xfsprogs-extra"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xfsprogs-extra-5.13.0-r0.apk"
 version = "5.13.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["xfsprogs", "5.13.0-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]
+    deps = [["xfsprogs", "5.13.0-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

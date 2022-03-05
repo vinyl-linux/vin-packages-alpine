@@ -1,20 +1,16 @@
 checksume = "b2600a113bd57c06e4f062330d9521d95a0d99f63b99f5923c870285b9732769"
 licence = "Apache-2.0"
-meta = false
 provides = "py3-clang"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-clang-12.0.1-r1.apk"
 version = "12.0.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["clang-libs", "12.0.1-r1"], ["python3", "3.9.7-r4"]]
+    deps = [["clang-libs", "12.0.1-r1"], ["python3", "3.9.7-r4"]]

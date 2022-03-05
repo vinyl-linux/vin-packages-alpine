@@ -1,20 +1,16 @@
 checksume = "437d99a98c85626898db4796616cd92c4f156e7bedb6de90968a597de5189474"
 licence = "OLDAP-2.8"
-meta = false
 provides = "libldap"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libldap-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libsasl", "2.1.27-r14"], ["libssl1.1", "1.1.1l-r8"]]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libsasl", "2.1.27-r14"], ["libssl1.1", "1.1.1-l-r8"]]

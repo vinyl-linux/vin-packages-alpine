@@ -1,20 +1,16 @@
 checksume = "13fe7abeab378ab45be070753b574f04039a2f8d7975b61970ee78d01c5ae2df"
 licence = "OLDAP-2.8"
-meta = false
 provides = "lmdb"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lmdb-0.9.29-r1.apk"
 version = "0.9.29-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "eb290c76621932fd5f730e6ec01ac4a21d54a4830fb366642fdf0a574f7afc9e"
 licence = "custom"
-meta = false
 provides = "openvpn-auth-pam"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openvpn-auth-pam-2.5.4-r0.apk"
 version = "2.5.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["iproute2", "5.15.0-r0"], ["musl", "1.2.2-r7"], ["linux-pam", "1.5.2-r0"]]
+    deps = [["iproute2", "5.15.0-r0"], ["musl", "1.2.2-r7"], ["linux-pam", "1.5.2-r0"]]

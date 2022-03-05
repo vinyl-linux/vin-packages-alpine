@@ -1,20 +1,16 @@
 checksume = "334b9f69c17c09a3cc73fed6a85ea09297c02c189d8cb498dd86001448cc0b66"
 licence = "MIT"
-meta = false
 provides = "tiny-ec2-bootstrap"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tiny-ec2-bootstrap-1.4.3-r1.apk"
 version = "1.4.3-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["openrc", "0.44.7-r3"], ["e2fsprogs-extra", "1.46.4-r0"], ["partx", "2.37.4-r0"], ["sfdisk", "2.37.4-r0"]]
+    deps = [["openrc", "0.44.7-r3"], ["e2fsprogs-extra", "1.46.4-r0"], ["partx", "2.37.4-r0"], ["sfdisk", "2.37.4-r0"]]

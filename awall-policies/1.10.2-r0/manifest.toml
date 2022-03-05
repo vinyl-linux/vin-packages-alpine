@@ -1,20 +1,16 @@
 checksume = "387751b4efd49af814e995e31a582af61c68fe4206861f65b5f7161d59e7dc28"
 licence = "GPL-2.0-only"
-meta = false
 provides = "awall-policies"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/awall-policies-1.10.2-r0.apk"
 version = "1.10.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["awall", "1.10.2-r0"]]
+    deps = [["awall", "1.10.2-r0"]]

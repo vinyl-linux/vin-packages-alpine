@@ -1,20 +1,16 @@
 checksume = "5fb06f22fd6d2f68d7a232e818fdf75bc5423349efdbe34101ff98264ea21753"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "irqbalance"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/irqbalance-1.8.0-r0.apk"
 version = "1.8.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["ncurses-libs", "6.3_p20211120-r0"], ["numactl", "2.0.14-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["ncurses-libs", "6.3.0"], ["numactl", "2.0.14-r0"]]

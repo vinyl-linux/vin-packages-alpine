@@ -1,20 +1,16 @@
 checksume = "b28964ebd7893bafade4c94feef26d51edf3a79f3293750de82fb6c6a2236fa0"
 licence = "OLDAP-2.8"
-meta = false
 provides = "openldap-overlay-sssvlv"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-overlay-sssvlv-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

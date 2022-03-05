@@ -1,20 +1,16 @@
 checksume = "c4829302c5717ff1a2e712e2b70baab9ac7a2cb4fc5fdefa786b16e259c62293"
 licence = "Apache-2.0"
-meta = false
 provides = "llvm11-test-utils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/llvm11-test-utils-11.1.0-r5.apk"
 version = "11.1.0-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

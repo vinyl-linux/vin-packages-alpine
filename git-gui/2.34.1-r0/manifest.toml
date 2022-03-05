@@ -1,20 +1,16 @@
 checksume = "17e13b08e2a7998ef975ea302f00682c34653c2e16ba1818406701b3a1a467ee"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "git-gui"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/git-gui-2.34.1-r0.apk"
 version = "2.34.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["git", "2.34.1-r0"], ["tcl", "8.6.11-r0"], ["tk", "8.6.11-r0"]]
+    deps = [["git", "2.34.1-r0"], ["tcl", "8.6.11-r0"], ["tk", "8.6.11-r0"]]

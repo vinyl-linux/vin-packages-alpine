@@ -1,20 +1,16 @@
 checksume = "176c7cba1b35b1d39192991b8bcdbd41e775b60e2d636999f1330a63916bf145"
 licence = "custom"
-meta = false
 provides = "uwsgi-ugreen"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-ugreen-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["libucontext", "1.1-r0"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["libucontext", "1.1.0-r0"]]

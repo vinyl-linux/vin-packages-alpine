@@ -1,20 +1,16 @@
 checksume = "2ddf55165742b3eb057165011b758d399407c1ae23fb8e35d529fd9cbb5d05f8"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "xl2tpd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xl2tpd-1.3.16-r0.apk"
 version = "1.3.16-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ppp-l2tp", "2.4.9-r2"], ["musl", "1.2.2-r7"], ["libpcap", "1.10.1-r0"]]
+    deps = [["ppp-l2tp", "2.4.9-r2"], ["musl", "1.2.2-r7"], ["libpcap", "1.10.1-r0"]]

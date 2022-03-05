@@ -1,20 +1,16 @@
 checksume = "a40272bb99cd9bfb4c249f129c9b9958eb18c4204e377dca624367a49b5e5ba6"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "bash-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bash-dev-5.1.16-r0.apk"
 version = "5.1.16-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["pkgconf", "1.8.0-r0"]]
+    deps = [["pkgconf", "1.8.0-r0"]]

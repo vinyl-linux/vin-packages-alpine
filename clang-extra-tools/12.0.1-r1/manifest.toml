@@ -1,20 +1,16 @@
 checksume = "1a23bdc923942aff10ad286acf767c3e6ee8585f4045ce6427f9d0a4be99927c"
 licence = "Apache-2.0"
-meta = false
 provides = "clang-extra-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/clang-extra-tools-12.0.1-r1.apk"
 version = "12.0.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libstdc++", "10.3.1"]]

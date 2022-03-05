@@ -1,20 +1,16 @@
 checksume = "6e70111a26184ce9f651ac82461c5b6d6954389234caac5a7f7736d6a33d7eba"
 licence = "LGPL-2.0-or-later"
-meta = false
 provides = "dovecot-lmtpd"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dovecot-lmtpd-2.3.17.1-r0.apk"
 version = "2.3.17.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["dovecot", "2.3.17.1-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["dovecot", "2.3.17.1-r0"], ["musl", "1.2.2-r7"]]

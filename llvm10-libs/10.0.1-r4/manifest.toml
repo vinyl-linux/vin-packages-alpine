@@ -1,20 +1,16 @@
 checksume = "1dd21a945e8619311ff287493bd69f7280a987b691dde5c491a28c79c61550a4"
 licence = "Apache-2.0"
-meta = false
 provides = "llvm10-libs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/llvm10-libs-10.0.1-r4.apk"
 version = "10.0.1-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

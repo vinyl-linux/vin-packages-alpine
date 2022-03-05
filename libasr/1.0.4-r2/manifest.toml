@@ -1,20 +1,16 @@
 checksume = "be99d54fc269469c8440f6526b370d2711b32a87da6486a42da7abf61b992bd6"
 licence = "ISC"
-meta = false
 provides = "libasr"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libasr-1.0.4-r2.apk"
 version = "1.0.4-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"]]
+    deps = [["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"]]

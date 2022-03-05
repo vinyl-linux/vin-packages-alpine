@@ -1,20 +1,16 @@
 checksume = "b11411bac677af85c318075f93516c742cc4bf7adb357386dd3642e6af1ca04c"
 licence = "MIT"
-meta = false
 provides = "lua5.2-pc"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-pc-1.0.0-r11.apk"
 version = "1.0.0-r11"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

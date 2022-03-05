@@ -1,20 +1,16 @@
 checksume = "17be9fe43924a3ff48bcf069e58b44e48ccd4962d43c8151c971d697dc8a88f4"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "attr-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/attr-dev-2.5.1-r1.apk"
 version = "2.5.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libattr", "2.5.1-r1"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libattr", "2.5.1-r1"], ["pkgconf", "1.8.0-r0"]]

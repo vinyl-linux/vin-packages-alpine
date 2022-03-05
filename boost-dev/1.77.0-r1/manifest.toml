@@ -1,20 +1,16 @@
 checksume = "36534bdedafa340606383680eb91300bcb0c0a82f899c549def0d3973a78f182"
 licence = "BSL-1.0"
-meta = false
 provides = "boost-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost-dev-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["boost1.77-dev", "1.77.0-r1"]]
+    deps = [["boost1.77-dev", "1.77.0-r1"]]

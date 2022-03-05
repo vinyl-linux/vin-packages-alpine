@@ -1,20 +1,16 @@
 checksume = "ebc6997c1c7ed48da48a5767b48bcaf6bd164bc1b570a40696b45ede50fd3393"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "grub-efi"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/grub-efi-2.06-r2.apk"
 version = "2.6.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["grub", "2.06-r2"]]
+    deps = [["grub", "2.6.0-r2"]]

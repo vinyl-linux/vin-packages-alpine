@@ -1,20 +1,16 @@
 checksume = "5b5ef5b1fbb8ae0834cbdf0368a876bbfd83bc8a70c06e42f8e9a446517035b3"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "musl-obstack-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/musl-obstack-dev-1.2.2-r0.apk"
 version = "1.2.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl-obstack", "1.2.2-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["musl-obstack", "1.2.2-r0"], ["pkgconf", "1.8.0-r0"]]

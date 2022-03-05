@@ -1,20 +1,16 @@
 checksume = "524ee4484d7a38e7ac5542f38d776c0eaf81b04f2b70642ed4cf862428458816"
 licence = "MIT"
-meta = false
 provides = "jq"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/jq-1.6-r1.apk"
 version = "1.6.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["oniguruma", "6.9.7.1-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["oniguruma", "6.9.7.1-r0"]]

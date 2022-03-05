@@ -1,20 +1,16 @@
 checksume = "37629b5d1476db3fbce63e48f8e85ffcee06169ea34b20a3437e8215802e81bc"
 licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
-meta = false
 provides = "runuser"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/runuser-2.37.4-r0.apk"
 version = "2.37.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libeconf", "0.4.2-r0"], ["linux-pam", "1.5.2-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["libeconf", "0.4.2-r0"], ["linux-pam", "1.5.2-r0"]]

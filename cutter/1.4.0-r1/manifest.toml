@@ -1,20 +1,16 @@
 checksume = "fffb70fedec6ef858bee5cd2e7fea8f7462103b6e25ad967614e8dc27087abb7"
 licence = "GPL-2.0"
-meta = false
 provides = "cutter"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cutter-1.04-r1.apk"
 version = "1.4.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

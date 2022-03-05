@@ -1,20 +1,16 @@
 checksume = "e832e7f51c5cfaa800bec50758ecb1eb56f29f931a15ad1855a29a9a43d2e17f"
 licence = "MIT"
-meta = false
 provides = "nghttp2"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nghttp2-1.46.0-r0.apk"
 version = "1.46.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1l-r8"], ["libev", "4.33-r0"], ["libgcc", "10.3.1_git20211027-r0"], ["nghttp2-libs", "1.46.0-r0"], ["libssl1.1", "1.1.1l-r8"], ["libstdc++", "10.3.1_git20211027-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["libev", "4.33.0-r0"], ["libgcc", "10.3.1"], ["nghttp2-libs", "1.46.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

@@ -1,20 +1,16 @@
 checksume = "19a285b26c431cd44e303a94e21fe4a79ce7dfe4d69bb0553e7f5f633c82a436"
 licence = "BSD-3-Clause"
-meta = false
 provides = "kyua"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kyua-0.13-r4.apk"
 version = "0.13.0-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["atf", "0.21-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["lutok", "0.4-r3"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["atf", "0.21.0-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["lutok", "0.4.0-r3"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"]]

@@ -1,20 +1,16 @@
 checksume = "e0e686d85f670629233ecde7a6c19eea15006f3644e97d19ca70b912bcd3d7bb"
 licence = "Apache-2.0"
-meta = false
 provides = "apache-mod-fcgid"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apache-mod-fcgid-2.3.9-r3.apk"
 version = "2.3.9-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["apache2", "2.4.52-r0"], ["musl", "1.2.2-r7"]]

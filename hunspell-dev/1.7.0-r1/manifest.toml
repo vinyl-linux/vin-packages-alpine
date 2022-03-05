@@ -1,20 +1,16 @@
 checksume = "26578910ba2c5903bfb19a90e82dd8fc7192a7c3b37cfe94dbcabec271e5a111"
 licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
-meta = false
 provides = "hunspell-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/hunspell-dev-1.7.0-r1.apk"
 version = "1.7.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libhunspell", "1.7.0-r1"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libhunspell", "1.7.0-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,20 +1,16 @@
 checksume = "e531f191dcde0e917e6e2d011975c592263bd652116e3190e241ad5480917038"
 licence = "LGPL-2.1-only"
-meta = false
 provides = "spandsp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/spandsp-0.0.6-r1.apk"
 version = "0.0.6-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["tiff", "4.3.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["tiff", "4.3.0-r0"]]

@@ -1,20 +1,16 @@
 checksume = "0c2b7cfab1bb333858c810b139716b7e84a778fb27f0d9d0e30245665b4c9498"
 licence = "X11"
-meta = false
 provides = "libice-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libice-dev-1.0.10-r0.apk"
 version = "1.0.10-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libice", "1.0.10-r0"], ["xorgproto", "2021.5-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libice", "1.0.10-r0"], ["xorgproto", "2021.5.0-r0"], ["pkgconf", "1.8.0-r0"]]

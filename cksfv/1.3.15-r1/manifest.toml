@@ -1,20 +1,16 @@
 checksume = "b0367f87c66196eefd1b9ebdfe8e7f321166084d74a958c5c13bd0836e4dc607"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "cksfv"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cksfv-1.3.15-r1.apk"
 version = "1.3.15-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

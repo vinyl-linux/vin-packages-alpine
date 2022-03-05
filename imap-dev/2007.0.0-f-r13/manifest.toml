@@ -1,20 +1,16 @@
 checksume = "14e898767a73a6eb01d64b1f2dc11e03065093664d5169564e807812b3543079"
 licence = "Apache-2.0"
-meta = false
 provides = "imap-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/imap-dev-2007f-r13.apk"
 version = "2007.0.0-f-r13"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["c-client", "2007f-r13"]]
+    deps = [["c-client", "2007.0.0-f-r13"]]

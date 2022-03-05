@@ -1,20 +1,16 @@
 checksume = "20a8a76b73478ce51e9b4403addf7a61d9911440cb97fc286d39fbef8c28b88f"
 licence = "custom"
-meta = false
 provides = "uwsgi-legion_cache_fetch"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-legion_cache_fetch-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "a824a3a6dfb5f695aeadfc041cf0f1852e4832b9cd51a9aa1327de8617f65f41"
 licence = "custom"
-meta = false
 provides = "uwsgi-python3"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-python3-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]

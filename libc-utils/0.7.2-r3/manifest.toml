@@ -1,20 +1,16 @@
 checksume = "ec0d524a5b78b0084ad4f10e4f51bcccf9d1d9856d18996f41e12fc6c8c2ed8a"
 licence = "BSD-2-Clause AND BSD-3-Clause"
-meta = false
 provides = "libc-utils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libc-utils-0.7.2-r3.apk"
 version = "0.7.2-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl-utils", "1.2.2-r7"]]
+    deps = [["musl-utils", "1.2.2-r7"]]

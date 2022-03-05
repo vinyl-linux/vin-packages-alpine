@@ -1,20 +1,16 @@
 checksume = "1722d88e31fbbe2a32a0f4e593d3ea5a59f691e43a2304893e71197f414e623d"
 licence = "IPL-1.0 EPL-2.0"
-meta = false
 provides = "postfix-stone"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postfix-stone-3.6.4-r0.apk"
 version = "3.6.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["postfix", "3.6.4-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["postfix", "3.6.4-r0"]]

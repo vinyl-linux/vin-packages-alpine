@@ -1,20 +1,16 @@
 checksume = "f08ddb98ceaf586ee5172f1843322080532733496a8d2b25c9fc909e19c2b1eb"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "valgrind"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/valgrind-3.18.1-r0.apk"
 version = "3.18.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

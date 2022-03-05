@@ -1,20 +1,16 @@
 checksume = "62b92961f75e6c1398de27d48e84e24ad35d42de61defeba3bcd8364f4ffc477"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "obex-data-server"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/obex-data-server-0.4.6-r4.apk"
 version = "0.4.6-r4"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["bluez-libs", "5.63-r0"], ["musl", "1.2.2-r7"], ["dbus-glib", "0.112-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["openobex", "1.7.2-r2"], ["libusb-compat", "0.1.7-r1"]]
+    deps = [["bluez-libs", "5.63.0-r0"], ["musl", "1.2.2-r7"], ["dbus-glib", "0.112.0-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["openobex", "1.7.2-r2"], ["libusb-compat", "0.1.7-r1"]]

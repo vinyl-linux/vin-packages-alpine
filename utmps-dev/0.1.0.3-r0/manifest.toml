@@ -1,20 +1,16 @@
 checksume = "1a03d6c7c32d7aef3d888a68fb3399ab8130826e7a41a5ae1a17f0b381cb66c6"
 licence = "ISC"
-meta = false
 provides = "utmps-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/utmps-dev-0.1.0.3-r0.apk"
 version = "0.1.0.3-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["skalibs-dev", "2.11.0.0-r0"], ["pkgconf", "1.8.0-r0"], ["utmps", "0.1.0.3-r0"]]
+    deps = [["skalibs-dev", "2.11.0.0-r0"], ["pkgconf", "1.8.0-r0"], ["utmps", "0.1.0.3-r0"]]

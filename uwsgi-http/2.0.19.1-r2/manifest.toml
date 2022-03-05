@@ -1,20 +1,16 @@
 checksume = "a193ff47d47c5c6ff598aab76277a2f71512fedeb855c70bc85c3d3edf46e69a"
 licence = "custom"
-meta = false
 provides = "uwsgi-http"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-http-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["uwsgi", "2.0.19.1-r2"], ["uwsgi-corerouter", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["uwsgi-corerouter", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

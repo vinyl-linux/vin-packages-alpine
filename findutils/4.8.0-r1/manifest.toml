@@ -1,20 +1,16 @@
 checksume = "d57a9c08eed80a208c0412d32e695bc5d92065151de7e5c51e1cf1709d999dc4"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "findutils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/findutils-4.8.0-r1.apk"
 version = "4.8.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

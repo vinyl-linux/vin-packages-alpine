@@ -1,20 +1,16 @@
 checksume = "66803fda1d5f0c09a6e3f5ccce685107cb6e1277920913923b0b924ef4a44bc6"
 licence = "MIT"
-meta = false
 provides = "libxft-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxft-dev-2.3.4-r0.apk"
 version = "2.3.4-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["zlib-dev", "1.2.11-r3"], ["libxft", "2.3.4-r0"], ["fontconfig-dev", "2.13.1-r4"], ["freetype-dev", "2.11.0-r0"], ["xorgproto", "2021.5-r0"], ["libxrender-dev", "0.9.10-r3"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["zlib-dev", "1.2.11-r3"], ["libxft", "2.3.4-r0"], ["fontconfig-dev", "2.13.1-r4"], ["freetype-dev", "2.11.0-r0"], ["xorgproto", "2021.5.0-r0"], ["libxrender-dev", "0.9.10-r3"], ["pkgconf", "1.8.0-r0"]]

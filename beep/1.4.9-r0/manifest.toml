@@ -1,20 +1,16 @@
 checksume = "4029c148ee1042f183dbc0c6bd9d697a91d70d1ffd19816ba410ae02e1661c04"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "beep"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/beep-1.4.9-r0.apk"
 version = "1.4.9-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

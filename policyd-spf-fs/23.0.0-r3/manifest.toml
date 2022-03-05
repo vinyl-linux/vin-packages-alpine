@@ -1,20 +1,16 @@
 checksume = "6c6d3bb16205146fe1dd49c1779ceb7a171d00f08dfd7ab4c5551e5a8de4e6f7"
 licence = "GPL"
-meta = false
 provides = "policyd-spf-fs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/policyd-spf-fs-23-r3.apk"
 version = "23.0.0-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libspf2", "1.2.10-r6"]]
+    deps = [["musl", "1.2.2-r7"], ["libspf2", "1.2.10-r6"]]

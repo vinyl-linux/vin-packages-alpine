@@ -1,20 +1,16 @@
 checksume = "29eb90a69a503cd3834bdd27163e45209c7ad76b8ec93648692cab5a290b4955"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "libseccomp-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libseccomp-dev-2.5.2-r0.apk"
 version = "2.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["linux-headers", "5.10.41-r0"], ["libseccomp", "2.5.2-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["linux-headers", "5.10.41-r0"], ["libseccomp", "2.5.2-r0"], ["pkgconf", "1.8.0-r0"]]

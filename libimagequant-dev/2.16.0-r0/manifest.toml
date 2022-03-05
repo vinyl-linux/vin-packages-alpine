@@ -1,20 +1,16 @@
 checksume = "bdfe31f6516e5ab448ab57e0908be50be4556714a01bcdd604d5e79ab7ccb2d9"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "libimagequant-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libimagequant-dev-2.16.0-r0.apk"
 version = "2.16.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libimagequant", "2.16.0-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libimagequant", "2.16.0-r0"], ["pkgconf", "1.8.0-r0"]]

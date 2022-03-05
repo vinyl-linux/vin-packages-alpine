@@ -1,20 +1,16 @@
 checksume = "dcfcae4697592ad7e0bcd54c65fd0432f4a7c56033ab1f63f3d860fb1083d4a2"
 licence = "MPL-1.1"
-meta = false
 provides = "freeswitch-python3"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeswitch-python3-1.10.7-r0.apk"
 version = "1.10.7-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["freeswitch", "1.10.7-r0"], ["libgcc", "10.3.1_git20211027-r0"], ["python3", "3.9.7-r4"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["freeswitch", "1.10.7-r0"], ["libgcc", "10.3.1"], ["python3", "3.9.7-r4"], ["libstdc++", "10.3.1"]]

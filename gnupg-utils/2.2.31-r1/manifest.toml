@@ -1,20 +1,16 @@
 checksume = "9bee21af40a905824bc4d9ced8e5d730c4ba96d8f8948d315bbf776a6e9264fb"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "gnupg-utils"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gnupg-utils-2.2.31-r1.apk"
 version = "2.2.31-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42-r1"], ["libksba", "1.6.0-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42.0-r1"], ["libksba", "1.6.0-r0"], ["zlib", "1.2.11-r3"]]

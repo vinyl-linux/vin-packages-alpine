@@ -1,20 +1,16 @@
 checksume = "1ab209afe149cc7e151034aba1a9f7a88831db3556656f23e3ab5a2fd296ad1b"
 licence = "LGPL-3.0-or-later"
-meta = false
 provides = "ldb"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ldb-2.4.1-r0.apk"
 version = "2.4.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["lmdb", "0.9.29-r1"], ["talloc", "2.3.3-r0"], ["tdb-libs", "1.4.5-r0"], ["tevent", "0.11.0-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["lmdb", "0.9.29-r1"], ["talloc", "2.3.3-r0"], ["tdb-libs", "1.4.5-r0"], ["tevent", "0.11.0-r0"]]

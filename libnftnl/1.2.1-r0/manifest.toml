@@ -1,20 +1,16 @@
 checksume = "5ef154b96f4c493baa2b78a920ff0206622834d396799e33b638a44aa5e107a1"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "libnftnl"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnftnl-1.2.1-r0.apk"
 version = "1.2.1-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["libmnl", "1.0.4-r2"]]
+    deps = [["musl", "1.2.2-r7"], ["libmnl", "1.0.4-r2"]]

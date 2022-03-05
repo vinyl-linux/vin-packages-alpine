@@ -1,20 +1,16 @@
 checksume = "bdf53c96caf94faf33c0894c24e4d6430c485ef3b73299acbaee27142c9179b5"
 licence = "bzip2-1.0.6"
-meta = false
 provides = "bzip2-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bzip2-dev-1.0.8-r1.apk"
 version = "1.0.8-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libbz2", "1.0.8-r1"]]
+    deps = [["libbz2", "1.0.8-r1"]]

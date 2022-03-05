@@ -1,20 +1,16 @@
 checksume = "16b24ac1d34582304166d021609bc77608de69d80e0ad521e2a4106874feb67e"
 licence = "GPL-2.0+ OR LGPL-3.0+"
-meta = false
 provides = "libunistring"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libunistring-0.9.10-r1.apk"
 version = "0.9.10-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

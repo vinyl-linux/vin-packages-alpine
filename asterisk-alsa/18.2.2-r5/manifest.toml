@@ -1,20 +1,16 @@
 checksume = "1e7cfe63455fbd61d4feec3f0ca7c454c61c21a8d53406b9b3cfc094f42f53ff"
 licence = "GPL-2.0-only WITH OpenSSL-Exception"
-meta = false
 provides = "asterisk-alsa"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-alsa-18.2.2-r5.apk"
 version = "18.2.2-r5"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"]]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"]]

@@ -1,20 +1,16 @@
 checksume = "26b2f706ed73e1ac9c80a6169aca63813f967f7d2264c64cce3d5693b34f64b3"
 licence = "BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain"
-meta = false
 provides = "ppp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ppp-2.4.9-r2.apk"
 version = "2.4.9-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ppp-chat", "2.4.9-r2"], ["ppp-radius", "2.4.9-r2"], ["ppp-atm", "2.4.9-r2"], ["ppp-pppoe", "2.4.9-r2"], ["ppp-l2tp", "2.4.9-r2"], ["ppp-winbind", "2.4.9-r2"], ["ppp-passprompt", "2.4.9-r2"], ["ppp-passwordfd", "2.4.9-r2"], ["ppp-minconn", "2.4.9-r2"], ["ppp-daemon", "2.4.9-r2"]]
+    deps = [["ppp-chat", "2.4.9-r2"], ["ppp-radius", "2.4.9-r2"], ["ppp-atm", "2.4.9-r2"], ["ppp-pppoe", "2.4.9-r2"], ["ppp-l2tp", "2.4.9-r2"], ["ppp-winbind", "2.4.9-r2"], ["ppp-passprompt", "2.4.9-r2"], ["ppp-passwordfd", "2.4.9-r2"], ["ppp-minconn", "2.4.9-r2"], ["ppp-daemon", "2.4.9-r2"]]

@@ -1,20 +1,16 @@
 checksume = "58c6e74386180ccf2e2110c2b52fa15fb33a84e4a680c3c68a91352cb2329e2a"
 licence = "GPL-3.0"
-meta = false
 provides = "byobu"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/byobu-5.133-r1.apk"
 version = "5.133.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["python3", "3.9.7-r4"], ["tmux", "3.2a-r0"]]
+    deps = [["python3", "3.9.7-r4"], ["tmux", "3.2.0-a-r0"]]

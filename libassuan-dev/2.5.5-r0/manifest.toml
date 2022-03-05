@@ -1,20 +1,16 @@
 checksume = "222f7befba71c4e3aa5541d4a76f7f86e859dc8c44c680740ba2ffedb71f4e18"
 licence = "LGPL-2.1-or-later"
-meta = false
 provides = "libassuan-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libassuan-dev-2.5.5-r0.apk"
 version = "2.5.5-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libassuan", "2.5.5-r0"], ["libgpg-error-dev", "1.42-r1"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libassuan", "2.5.5-r0"], ["libgpg-error-dev", "1.42.0-r1"], ["pkgconf", "1.8.0-r0"]]

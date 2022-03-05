@@ -1,20 +1,16 @@
 checksume = "46cde466ec46896a119ee237378d28bb98aca93664b2721be95f6c3812fa6fe6"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "kamailio-jsdt"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-jsdt-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"]]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"]]

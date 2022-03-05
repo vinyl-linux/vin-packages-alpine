@@ -1,20 +1,16 @@
 checksume = "896d77b1f9c8661d9b8e5c1c033581ba06df2dc9a02f54654f184821d3bf9210"
 licence = "LGPL-2.0-or-later VSL"
-meta = false
 provides = "ortp-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ortp-dev-5.0.51-r0.apk"
 version = "5.0.51-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ortp", "5.0.51-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["ortp", "5.0.51-r0"], ["pkgconf", "1.8.0-r0"]]

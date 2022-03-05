@@ -1,20 +1,16 @@
 checksume = "e5ea441634502cc0af6a27db1e422f019066c1f5f75014174f4bfdea3f6ccdea"
 licence = "LGPL-3.0-or-later OR GPL-2.0-or-later"
-meta = false
 provides = "gmp"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gmp-6.2.1-r1.apk"
 version = "6.2.1-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

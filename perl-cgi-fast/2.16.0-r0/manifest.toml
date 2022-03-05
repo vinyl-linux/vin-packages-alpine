@@ -1,20 +1,16 @@
 checksume = "bfe8541d296586eec4fa2af10f1580bb704082e2a6346d64bfeecfc1ef9827f1"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
-meta = false
 provides = "perl-cgi-fast"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-cgi-fast-2.16-r0.apk"
 version = "2.16.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["perl-cgi", "4.53-r0"], ["perl-fcgi", "0.82-r0"]]
+    deps = [["perl", "5.34.0-r1"], ["perl-cgi", "4.53.0-r0"], ["perl-fcgi", "0.82.0-r0"]]

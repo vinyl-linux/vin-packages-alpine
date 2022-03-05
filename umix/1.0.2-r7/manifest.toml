@@ -1,20 +1,16 @@
 checksume = "359ef75398420ab9c9b863cf58a8f62767ab172c0cf5958eabc0470af0eb60a1"
 licence = "GPL-2.0-or-later"
-meta = false
 provides = "umix"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/umix-1.0.2-r7.apk"
 version = "1.0.2-r7"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3_p20211120-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

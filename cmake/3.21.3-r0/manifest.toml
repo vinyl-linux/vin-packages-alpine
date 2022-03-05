@@ -1,20 +1,16 @@
 checksume = "14370242819e67f8e076ced4c085f0893dcd6946f88d469b0149eebf762c5d2a"
 licence = "BSD-3-Clause"
-meta = false
 provides = "cmake"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cmake-3.21.3-r0.apk"
 version = "3.21.3-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libarchive", "3.6.0-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["expat", "2.4.6-r0"], ["ncurses-libs", "6.3_p20211120-r0"], ["libgcc", "10.3.1_git20211027-r0"], ["rhash-libs", "1.4.2-r2"], ["libstdc++", "10.3.1_git20211027-r0"], ["libuv", "1.42.0-r0"], ["zlib", "1.2.11-r3"]]
+    deps = [["libarchive", "3.6.0-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["expat", "2.4.6-r0"], ["ncurses-libs", "6.3.0"], ["libgcc", "10.3.1"], ["rhash-libs", "1.4.2-r2"], ["libstdc++", "10.3.1"], ["libuv", "1.42.0-r0"], ["zlib", "1.2.11-r3"]]

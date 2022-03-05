@@ -1,20 +1,16 @@
 checksume = "6beab58dcf30a25dad978934e58af7b5a395c66f56da7015ac7c60a4cc8d5dab"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
-meta = false
 provides = "perl-test-sharedfork"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-test-sharedfork-0.35-r2.apk"
 version = "0.35.0-r2"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["perl-test-requires", "0.11-r1"]]
+    deps = [["perl", "5.34.0-r1"], ["perl-test-requires", "0.11.0-r1"]]

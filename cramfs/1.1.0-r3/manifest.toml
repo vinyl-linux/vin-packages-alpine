@@ -1,20 +1,16 @@
 checksume = "cbfdf0a275feb044be52ebb4de196f3fec98d194efa75fa54bae586cc09719e6"
 licence = "GPL"
-meta = false
 provides = "cramfs"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cramfs-1.1-r3.apk"
 version = "1.1.0-r3"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

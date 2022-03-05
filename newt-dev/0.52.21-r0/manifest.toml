@@ -1,20 +1,16 @@
 checksume = "3350e55990a961ee8cd72cfc1d3496067ab5464809d2d829968eb66608aa9262"
 licence = "LGPL-2.0"
-meta = false
 provides = "newt-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/newt-dev-0.52.21-r0.apk"
 version = "0.52.21-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["newt", "0.52.21-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["newt", "0.52.21-r0"], ["pkgconf", "1.8.0-r0"]]

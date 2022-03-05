@@ -1,20 +1,16 @@
 checksume = "1f00733084796592d307b6c78064d68990f20d1cf1c6c5879113cdbd8743ae2c"
 licence = "GPL-2.0+"
-meta = false
 provides = "libid3tag"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libid3tag-0.15.1b-r8.apk"
 version = "0.15.1-b-r8"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]
+    deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

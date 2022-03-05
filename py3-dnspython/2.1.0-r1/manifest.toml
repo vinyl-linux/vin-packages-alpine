@@ -1,20 +1,16 @@
 checksume = "d3bd76922c17baeab4eeb72f9caa9e0ddc3da87e44054e4acaff790319e906d4"
 licence = "ISC"
-meta = false
 provides = "py3-dnspython"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-dnspython-2.1.0-r1.apk"
 version = "2.1.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

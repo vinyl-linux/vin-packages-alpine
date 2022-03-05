@@ -1,20 +1,16 @@
 checksume = "65a4d8c8d65b9f36ab143e84cf4e21f6f8d01d1d315742525abe3ad406d2c9cc"
 licence = "GPL-2.0-only LGPL-2.1-only"
-meta = false
 provides = "dmraid"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dmraid-1.0.0_rc16-r0.apk"
 version = "1.0.0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["device-mapper-event-libs", "2.02.187-r2"], ["device-mapper-libs", "2.02.187-r2"]]
+    deps = [["musl", "1.2.2-r7"], ["device-mapper-event-libs", "2.2.187-r2"], ["device-mapper-libs", "2.2.187-r2"]]

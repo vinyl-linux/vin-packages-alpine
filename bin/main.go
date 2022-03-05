@@ -59,18 +59,20 @@ func init() {
 func main() {
 	for _, url := range []string{
 		apk.BaseURL("v3.15", "main", "x86_64"),
-		apk.BaseURL("v3.15", "community", "x86_64"),
+		//apk.BaseURL("v3.15", "community", "x86_64"),
 	} {
 		work(url)
 	}
 
 	// now we know what packages and versions we have, we can generate
 	// the correct vin config files with the correct version constraints
+
 	bar := progressbar.Default(int64(len(packages)))
 
 	for _, pkg := range packages {
 		bar.Add(1)
-		deps := make([]*apk.Package, 0)
+
+		deps := make([]VersionedPackage, 0)
 
 		for _, dep := range pkg.VDepends {
 			d, err := getDep(dep)
@@ -80,7 +82,7 @@ func main() {
 				continue
 			}
 
-			deps = append(deps, d.Package)
+			deps = append(deps, d)
 		}
 
 		// dedupe deps
@@ -285,10 +287,10 @@ func work(url string) {
 	}
 }
 
-func dedupe(deps []*apk.Package) (out []*apk.Package) {
-	out = make([]*apk.Package, 0)
+func dedupe(deps []VersionedPackage) (out []VersionedPackage) {
+	out = make([]VersionedPackage, 0)
 	for _, dep := range deps {
-		if dep == nil || dep.Name == "" {
+		if dep.Package == nil || dep.Name == "" {
 			continue
 		}
 
@@ -300,7 +302,7 @@ func dedupe(deps []*apk.Package) (out []*apk.Package) {
 	return
 }
 
-func contains(deps []*apk.Package, name string) bool {
+func contains(deps []VersionedPackage, name string) bool {
 	for _, dep := range deps {
 		if dep.Name == name {
 			return true

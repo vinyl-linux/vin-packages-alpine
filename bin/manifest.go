@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/hex"
+	"fmt"
 	"io"
 	"os"
 	"path/filepath"
@@ -34,8 +35,8 @@ type Manifest struct {
 	Checksum   string           `toml:"checksume"`
 	Licence    string           `toml:"licence"`
 	Tarball    string           `toml:"tarball"`
-	Meta       bool             `toml:"meta"`
-	ServiceDir string           `toml:"service_directory"`
+	Meta       bool             `toml:"meta,omitempty"`
+	ServiceDir string           `toml:"service_directory,omitempty"`
 
 	Profiles map[string]Profile `toml:"profiles"`
 	Commands Commands           `toml:"commands"`
@@ -44,7 +45,7 @@ type Manifest struct {
 	filename string
 }
 
-func NewManifest(vp VersionedPackage, deps []*apk.Package) (m Manifest, err error) {
+func NewManifest(vp VersionedPackage, deps []VersionedPackage) (m Manifest, err error) {
 	m.Provides = vp.Name
 	m.VersionStr = vp.VV.String()
 	m.Licence = vp.Licence
@@ -69,12 +70,12 @@ func NewManifest(vp VersionedPackage, deps []*apk.Package) (m Manifest, err erro
 	}
 
 	for idx, dep := range deps {
-		m.Profiles["default"].Deps[idx] = [2]string{dep.Name, dep.Version}
+		m.Profiles["default"].Deps[idx] = [2]string{dep.Name, dep.VV.String()}
 	}
 
-	m.Tarball = vp.baseurl
-
 	client.BaseURL = vp.baseurl
+	m.Tarball = fmt.Sprintf("%s/%s-%s.apk", client.BaseURL, vp.Name, vp.Version)
+
 	fn, err := client.DownloadPackage(vp.Package)
 	if err != nil {
 		return
@@ -113,7 +114,13 @@ func (m Manifest) Write() (err error) {
 		return
 	}
 
-	return os.Symlink("../../scripts/install.sh", filepath.Join(m.dir, "install.sh"))
+	symlink := filepath.Join(m.dir, "install.sh")
+	_, err = os.Stat(symlink)
+	if err != nil && os.IsNotExist(err) {
+		return os.Symlink("../../scripts/install.sh", symlink)
+	}
+
+	return
 }
 
 func checksum(fn string) (sum string, err error) {
@@ -144,7 +151,7 @@ func checksum(fn string) (sum string, err error) {
 // as only including GUI dependencies when building X11 apps, or
 // bundling extra packages for larger/ less disk constrained systems
 type Profile struct {
-	Deps []Dep
+	Deps []Dep `toml:"deps"`
 }
 
 // Commands provides a set of 'commands' which are used in our three stages:
@@ -158,10 +165,10 @@ type Profile struct {
 //
 // They also include an optional 'WorkingDir' which is appended to manifest.dir
 type Commands struct {
-	Configure  *string  `toml:"configure"`
-	Compile    *string  `toml:"compile"`
-	Install    *string  `toml:"install"`
-	WorkingDir string   `toml:"working_dir"`
-	Patches    []string `toml:"patches"`
-	Skipenv    bool     `toml:"skipenv"`
+	Configure  *string  `toml:"configure,omitempty"`
+	Compile    *string  `toml:"compile,omitempyy"`
+	Install    *string  `toml:"install,omitempty"`
+	WorkingDir string   `toml:"working_dir,omitempty"`
+	Patches    []string `toml:"patches,omitempty"`
+	Skipenv    bool     `toml:"skipenv,omitempty"`
 }

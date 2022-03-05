@@ -1,20 +1,16 @@
 checksume = "29a09dde5c2b8994199cf9b68e1d2407535723bd9cdcedfc7c05f523e88b495b"
 licence = "BSD-3-Clause"
-meta = false
 provides = "p11-kit-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/p11-kit-dev-0.24.0-r1.apk"
 version = "0.24.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["p11-kit", "0.24.0-r1"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["p11-kit", "0.24.0-r1"], ["pkgconf", "1.8.0-r0"]]

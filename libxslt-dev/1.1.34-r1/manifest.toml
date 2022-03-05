@@ -1,20 +1,16 @@
 checksume = "304d9c3d5b04af049724234a2f9a84e00b20986b190ceb1de384bfb8ca3cc440"
 licence = "custom"
-meta = false
 provides = "libxslt-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxslt-dev-1.1.34-r1.apk"
 version = "1.1.34-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libxslt", "1.1.34-r1"], ["libxml2-dev", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["libxslt", "1.1.34-r1"], ["libxml2-dev", "2.9.12-r2"], ["pkgconf", "1.8.0-r0"]]

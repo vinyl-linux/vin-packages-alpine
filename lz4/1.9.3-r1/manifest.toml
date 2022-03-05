@@ -1,20 +1,16 @@
 checksume = "61e78183c7e16ff99ab1e2ff0f0b257803d8dd3b72c1e226c2095b19b7f48458"
 licence = "BSD-2-Clause GPL-2.0-only"
-meta = false
 provides = "lz4"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lz4-1.9.3-r1.apk"
 version = "1.9.3-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"]]
+    deps = [["musl", "1.2.2-r7"]]

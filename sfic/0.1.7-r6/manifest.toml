@@ -1,20 +1,16 @@
 checksume = "53df42d30647c0a0768d89978b20ddbdef7188bc170268cd44cb00b91ccce292"
 licence = "GPL"
-meta = false
 provides = "sfic"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/sfic-0.1.7-r6.apk"
 version = "0.1.7-r6"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["musl", "1.2.2-r7"], ["tdb-libs", "1.4.5-r0"]]
+    deps = [["musl", "1.2.2-r7"], ["tdb-libs", "1.4.5-r0"]]

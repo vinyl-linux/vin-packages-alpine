@@ -1,20 +1,16 @@
 checksume = "89fb8b83095fa9b9dd4380d76a9a7159ea7db7b1533455bca0809da64967b4bf"
 licence = "MIT"
-meta = false
 provides = "ncurses-dev"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ncurses-dev-6.3_p20211120-r0.apk"
 version = "6.3.0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["ncurses-libs", "6.3_p20211120-r0"], ["pkgconf", "1.8.0-r0"]]
+    deps = [["ncurses-libs", "6.3.0"], ["pkgconf", "1.8.0-r0"]]

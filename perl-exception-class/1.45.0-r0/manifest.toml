@@ -1,20 +1,16 @@
 checksume = "1a4d4f2eddefbf716280c5b9f12555a98c61a2e8786ddcaef4367b3cc7974989"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
-meta = false
 provides = "perl-exception-class"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-exception-class-1.45-r0.apk"
 version = "1.45.0-r0"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["perl", "5.34.0-r1"], ["perl-devel-stacktrace", "2.04-r3"], ["perl-class-data-inheritable", "0.09-r0"]]
+    deps = [["perl", "5.34.0-r1"], ["perl-devel-stacktrace", "2.4.0-r3"], ["perl-class-data-inheritable", "0.9.0-r0"]]

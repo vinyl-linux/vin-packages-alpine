@@ -1,20 +1,16 @@
 checksume = "0bd174525e8e93080aaaa8df9ee9dc0a0927c87d8b103149d9b45e2dd292bccd"
 licence = "GPL-3.0-or-later"
-meta = false
 provides = "thin-provisioning-tools"
-service_directory = ""
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/thin-provisioning-tools-0.9.0-r1.apk"
 version = "0.9.0-r1"
 
 [commands]
   compile = "echo"
   configure = "echo"
   install = "{{ .ManifestDir }}/install.sh"
-  patches = []
-  skipenv = false
   working_dir = "."
 
 [profiles]
 
   [profiles.default]
-    Deps = [["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]
+    deps = [["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]
