@@ -1,0 +1,20 @@
+checksume = "438b1e235dfd97ae2c8771896e89b82c3464bc1a504a5efbb29a8a184316f3f5"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "libewf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20201230.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

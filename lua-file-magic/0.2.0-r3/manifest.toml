@@ -1,0 +1,20 @@
+checksume = "971188c4c4a3ba718111005b3e4f2ee1d583a6313e0c4206abac658a6511c53b"
+licence = "LGPL"
+meta = false
+provides = "lua-file-magic"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.2.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.4", "5.4.3-r0"]]

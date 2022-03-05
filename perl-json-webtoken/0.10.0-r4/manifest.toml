@@ -1,0 +1,20 @@
+checksume = "61a3258487ca29dd21996f434225fe6f4a39907598770989fb383260c023f95c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-json-webtoken"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-json", "4.03-r1"], ["perl-module-runtime", "0.016-r4"], ["perl-mime-base64", "3.16-r2"], ["perl-carp", "1.50-r1"]]

@@ -1,0 +1,20 @@
+checksume = "c048b7489fa3adb37e931a3c0cb4272d698ddfc9e135482b52726f9e33181105"
+licence = "GPL-2.0 or Artistic"
+meta = false
+provides = "perl-datetime-format-mail"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.403.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-datetime", "1.54-r1"], ["perl-params-validate", "1.30-r1"]]

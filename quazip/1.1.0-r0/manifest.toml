@@ -1,0 +1,20 @@
+checksume = "ac2bd21c4b5422d804d48a389a4e70d5ed218855cd2a197a6ba27f221b4c7eee"
+licence = "LGPL-2.1-or-later WITH custom-static-linking-exception"
+meta = false
+provides = "quazip"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3_git20210713-r5"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"], ["zlib", "1.2.11-r3"]]

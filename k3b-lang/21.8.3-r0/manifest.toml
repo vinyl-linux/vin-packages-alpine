@@ -1,0 +1,20 @@
+checksume = "5ea8ea71af5a71b7266d03ff7d2cce8f31838a66a802678ba8820ba4e0829321"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+meta = false
+provides = "k3b-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cdrdao", "1.2.4-r0"], ["dvd+rw-tools", "7.1-r1"], ["libburn", "1.5.4-r1"]]

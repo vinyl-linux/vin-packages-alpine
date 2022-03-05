@@ -1,0 +1,20 @@
+checksume = "c49952cd7cb6b70826a2e12b362c7b0e2994123c05d1e76d11cab1856b1aafcc"
+licence = "Artistic-Perl-1.0 GPL+"
+meta = false
+provides = "perl-mail-dkim"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.20200907.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-net-dns", "1.32-r0"], ["perl-net-ip", "1.26-r3"], ["perl-mailtools", "2.21-r2"], ["perl-crypt-openssl-rsa", "0.32-r2"], ["perl-yaml-libyaml", "0.83-r0"], ["perl-net-dns-resolver-mock", "1.20200215-r1"], ["perl-mail-authenticationresults", "2.20210112-r0"]]

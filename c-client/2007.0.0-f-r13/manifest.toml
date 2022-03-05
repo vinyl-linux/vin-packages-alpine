@@ -1,0 +1,20 @@
+checksume = "58574cefd4da75fb9466740c103009a592d589b0290ffe56798cee0421facc85"
+licence = "Apache-2.0"
+meta = false
+provides = "c-client"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2007.0.0-f-r13"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

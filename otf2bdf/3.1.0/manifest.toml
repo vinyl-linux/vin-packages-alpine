@@ -1,0 +1,20 @@
+checksume = "63d2b8c62def51a1a21509784a18ace16511d7417562381e9d2ebd852d24360f"
+licence = "MIT"
+meta = false
+provides = "otf2bdf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.1.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["freetype", "2.11.0-r0"]]

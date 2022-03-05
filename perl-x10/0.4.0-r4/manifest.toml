@@ -1,0 +1,20 @@
+checksume = "9dd7c31b87c0c2232c41096bb4c20882497344ad8d0f63d589036e8fbbe4740b"
+licence = "GPL-3.0-only"
+meta = false
+provides = "perl-x10"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.4.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-time-parsedate", "2015.103-r4"], ["perl-device-serialport", "1.04-r15"], ["perl-astro-suntime", "0.06-r3"]]

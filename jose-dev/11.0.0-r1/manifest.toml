@@ -1,0 +1,20 @@
+checksume = "2b172db76446714499bbbac935186ba76cdae0bfc6a71a28eca4392cfac90263"
+licence = "Apache-2.0"
+meta = false
+provides = "jose-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "11.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libjose", "11-r1"], ["jansson-dev", "2.14-r0"], ["openssl-dev", "1.1.1l-r8"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

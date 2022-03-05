@@ -1,0 +1,20 @@
+checksume = "ac4af2d97e6765371449bc9fe43fc6ff4dee1e6e29563b5ebc8b3c2bbbefb82e"
+licence = "MIT"
+meta = false
+provides = "lua5.3-ossl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "20200709.0.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

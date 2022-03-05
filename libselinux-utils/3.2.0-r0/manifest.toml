@@ -1,0 +1,20 @@
+checksume = "c5db629f72bd27eb82541aa82b31698a68173e8a50dd8bb760c1036cb899a923"
+licence = "Public-Domain"
+meta = false
+provides = "libselinux-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["fts", "1.2.7-r1"], ["pcre", "8.45-r1"], ["libselinux", "3.2-r0"], ["libsepol", "2.8-r0"]]

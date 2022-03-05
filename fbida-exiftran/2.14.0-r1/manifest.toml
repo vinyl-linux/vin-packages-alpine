@@ -1,0 +1,20 @@
+checksume = "f266459648db0418cc6d67f070613f4292159c78366b3cf2a374ee7f22018ac6"
+licence = "GPL-2.0-only"
+meta = false
+provides = "fbida-exiftran"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.14.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libexif", "0.6.23-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["pixman", "0.40.0-r3"]]

@@ -1,0 +1,20 @@
+checksume = "9e3c348ee11cf31264bde994a442c8deb329b2862dfa94e6f80b5f4d72dded26"
+licence = "GPL-2.0"
+meta = false
+provides = "ssmtp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.64.0-r16"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"]]

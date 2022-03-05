@@ -1,0 +1,20 @@
+checksume = "cd2a92f2178e5be401ba2263717d11b665d5cc52dbfe2030794890002cb672fc"
+licence = "Artistic-2.0"
+meta = false
+provides = "rakudo-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2021.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nqp", "2021.10-r0"], ["libffi", "3.4.2-r1"], ["musl", "1.2.2-r7"], ["moarvm", "2021.10-r0"]]

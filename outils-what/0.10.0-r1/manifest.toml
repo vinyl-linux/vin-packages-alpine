@@ -1,0 +1,20 @@
+checksume = "0f062bcdc4520a770f3f8f7ecf4573b1d51550c3b3447bb6f6906e8a5586132f"
+licence = "BSD-3-Clause ISC"
+meta = false
+provides = "outils-what"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

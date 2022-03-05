@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "3523e3adabcc80d8aa28a336c91f1bb1c66681c37307e1ffead4900c0d424749"
 licence = "custom"
 meta = false
 provides = "uwsgi-router_http"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.0.19.1-r2"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

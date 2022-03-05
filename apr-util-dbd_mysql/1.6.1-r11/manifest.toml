@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "b9d388849503bafc26e7e2267cb47e8c3f338c824ea1ea1db86d83ef42cd3054"
 licence = "Apache-2.0"
 meta = false
 provides = "apr-util-dbd_mysql"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "1.6.1-r11"
 
 [commands]
@@ -15,3 +15,6 @@ version = "1.6.1-r11"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]

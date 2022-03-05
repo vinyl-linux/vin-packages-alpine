@@ -1,0 +1,20 @@
+checksume = "64ba4fa76d63d61ab4b66bfd7245fd6516a27f03e2d4b5b9cdaf2885daa70bf9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "dvgrab"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.5.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libavc1394", "0.5.4-r2"], ["musl", "1.2.2-r7"], ["libdv", "1.0.0-r6"], ["libgcc", "10.3.1_git20211027-r0"], ["libiec61883", "1.2.0-r2"], ["libjpeg-turbo", "2.1.2-r0"], ["libraw1394", "2.1.2-r2"], ["libstdc++", "10.3.1_git20211027-r0"]]

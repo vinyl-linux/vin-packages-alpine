@@ -1,0 +1,20 @@
+checksume = "7b9c73a6034c628a09faa03a93b41707b1c0fc54c2717d46838e2ed8120c554a"
+licence = "LicenseRef-KDE-Accepted-GPL"
+meta = false
+provides = "qtvirtualkeyboard-plasma"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtquickcontrols2", "5.15.3_git20201110-r0"], ["qt5-qtvirtualkeyboard", "5.15.3_git20201214-r0"]]

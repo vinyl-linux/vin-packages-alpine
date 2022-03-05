@@ -46,7 +46,7 @@ type Manifest struct {
 
 func NewManifest(vp VersionedPackage, deps []*apk.Package) (m Manifest, err error) {
 	m.Provides = vp.Name
-	m.VersionStr = vp.Version
+	m.VersionStr = vp.VV.String()
 	m.Licence = vp.Licence
 
 	m.Commands.WorkingDir = "."
@@ -69,12 +69,12 @@ func NewManifest(vp VersionedPackage, deps []*apk.Package) (m Manifest, err erro
 	}
 
 	for idx, dep := range deps {
-		m.Profiles["default"].Deps[idx] = [2]string{dep.Name, cleanVersion(dep.Version)}
+		m.Profiles["default"].Deps[idx] = [2]string{dep.Name, dep.Version}
 	}
 
-	m.Tarball = vp.DownloadURL
+	m.Tarball = vp.baseurl
 
-	client.BaseURL = vp.DownloadURL
+	client.BaseURL = vp.baseurl
 	fn, err := client.DownloadPackage(vp.Package)
 	if err != nil {
 		return
@@ -86,17 +86,15 @@ func NewManifest(vp VersionedPackage, deps []*apk.Package) (m Manifest, err erro
 	}
 
 	err = os.Remove(fn)
-	if err != nil {
-		return
-	}
-
-	err = os.Symlink("/etc/vinyl/alpine/scripts/install.sh", filepath.Join(m.dir, "install.sh"))
 
 	return
 }
 
 func (m Manifest) Write() (err error) {
 	err = os.MkdirAll(m.dir, 0750)
+	if err != nil {
+		return
+	}
 
 	f, err := os.Create(m.filename)
 	if err != nil {
@@ -111,8 +109,11 @@ func (m Manifest) Write() (err error) {
 	}
 
 	_, err = f.Write(b)
+	if err != nil {
+		return
+	}
 
-	return
+	return os.Symlink("../../scripts/install.sh", filepath.Join(m.dir, "install.sh"))
 }
 
 func checksum(fn string) (sum string, err error) {

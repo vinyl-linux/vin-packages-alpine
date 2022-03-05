@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "3df8385e9ab333230bfca8467b31d87e8d4421fb66bca705ff7044ebd9511d65"
 licence = "Net-SNMP"
 meta = false
 provides = "net-snmp-gui"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "5.9.1-r5"
 
 [commands]
@@ -15,3 +15,6 @@ version = "5.9.1-r5"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["net-snmp-perl", "5.9.1-r5"], ["perl-tk", "804.036-r1"]]

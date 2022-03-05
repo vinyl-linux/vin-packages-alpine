@@ -1,0 +1,20 @@
+checksume = "19fe34eaaf9605bae2a1327781319e50e4c571d4a121e355e9700460d623dbf6"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "exim-scripts"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.95.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["exim", "4.95-r0"], ["perl", "5.34.0-r1"]]

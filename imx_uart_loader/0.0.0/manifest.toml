@@ -1,0 +1,20 @@
+checksume = "4f238dd5fed08f28b8ece47ef1c360073ec47d8be5b2536e1b1af6bb163f996b"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "imx_uart_loader"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "2bc8ec0a44522e83f495071da7b44f43897cd574a6d501b8c5ba956444c5ea53"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-date-extract"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-datetime-format-natural", "1.12-r0"], ["perl-class-data-inheritable", "0.09-r0"], ["perl-test-mocktime", "0.17-r2"]]

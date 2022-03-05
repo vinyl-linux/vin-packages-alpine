@@ -1,0 +1,20 @@
+checksume = "1a38e779f5cb83c2a41a7251fde6d30a03cf5a3520f576315e5c443c0c2d17a6"
+licence = "GPL-2.0"
+meta = false
+provides = "pdsh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.34.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"], ["readline", "8.1.1-r0"]]

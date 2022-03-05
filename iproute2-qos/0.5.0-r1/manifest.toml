@@ -1,0 +1,20 @@
+checksume = "bbaffe832f55bfe952ad4081d9519d6b7f6a5c399dd9e32710d86e7bbcd6f027"
+licence = "GPL-2.0"
+meta = false
+provides = "iproute2-qos"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.5.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["iproute2", "5.15.0-r0"]]

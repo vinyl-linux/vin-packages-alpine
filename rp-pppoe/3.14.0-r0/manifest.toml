@@ -1,0 +1,20 @@
+checksume = "6f15a087fca28a07ed11d45ecca2e6276c75097fa3402894d8115203834016fd"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "rp-pppoe"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "3.14.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

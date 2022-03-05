@@ -1,0 +1,20 @@
+checksume = "7c8ca6bdf2bc0bd758518ecfc4574fd17c2614595d59d5d698479903d5a3826d"
+licence = "GPL-2.0"
+meta = false
+provides = "lddtree"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.26.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["scanelf", "1.3.3-r0"]]

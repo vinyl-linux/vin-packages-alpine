@@ -1,0 +1,20 @@
+checksume = "89198445da64f75c2b26ee64ff1a68c6bd5c33656dc80e20cae84981a9c18135"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "physlock-elogind"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "13.0.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libelogind", "246.10-r4"], ["linux-pam", "1.5.2-r0"]]

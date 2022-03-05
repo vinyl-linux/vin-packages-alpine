@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "722ad7f28c8d834e3f4f1d1343ed37d4b23a43dae7eae9528f10859ef1abb366"
 licence = "OLDAP-2.8"
 meta = false
 provides = "openldap-passwd-argon2"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.6.0-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.6.0-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["openldap", "2.6.0-r0"], ["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"], ["libsodium", "1.0.18-r0"]]

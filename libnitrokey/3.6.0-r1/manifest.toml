@@ -1,0 +1,20 @@
+checksume = "bc63f23d3948900a4f1e0efe4a8aa091fc10beb040c460ca075254c57012bb4d"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "libnitrokey"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.6.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["hidapi", "0.11.0-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

@@ -1,0 +1,20 @@
+checksume = "820eb77daf54a097019110d1463e91eee938035765272820f8a6045bdbd248b6"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql14-contrib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "14.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql14", "14.2-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libpq", "14.2-r0"], ["libuuid", "2.37.4-r0"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "a64a7ea9050a8e33d34813b48683791986669ed37a5579230f80dc4935eef8e0"
+licence = "GPL-2.0-only"
+meta = false
+provides = "mdadm-udev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.1.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lsblk", "2.37.4-r0"]]

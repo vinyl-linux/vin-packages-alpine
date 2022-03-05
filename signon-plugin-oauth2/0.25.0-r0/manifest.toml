@@ -1,0 +1,20 @@
+checksume = "b584b046cf86785b975c0bce51c085a8837285ac7fec82d05b979ca6f420d8a4"
+licence = "LGPL-2.1-only"
+meta = false
+provides = "signon-plugin-oauth2"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.25.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3_git20210713-r5"], ["musl", "1.2.2-r7"], ["signond", "8.60_git20201105-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

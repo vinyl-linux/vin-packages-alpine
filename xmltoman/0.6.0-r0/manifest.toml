@@ -1,0 +1,20 @@
+checksume = "48761734a827e3d722395d78e660710d573a17b9ca635213acc49e29b97e1de0"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "xmltoman"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-xml-parser", "2.46-r2"]]

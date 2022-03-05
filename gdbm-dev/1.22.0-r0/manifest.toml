@@ -1,0 +1,20 @@
+checksume = "3f2538b147cc47f6a25ae99115dc281cc455dcca56ae3688866536bb92ab06fc"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "gdbm-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.22.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gdbm-tools", "1.22-r0"], ["gdbm", "1.22-r0"]]

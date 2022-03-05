@@ -1,0 +1,20 @@
+checksume = "eef2faf1f17f24c360c70781d188e5a1ea5b6538ef03475091b62b294fe2c0d8"
+licence = "TFL"
+meta = false
+provides = "gopt-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gopt", "10.0-r0"]]

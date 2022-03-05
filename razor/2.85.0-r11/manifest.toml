@@ -1,0 +1,20 @@
+checksume = "9dc7d5b2cd806b3a6047e34cea829114ed40c3860ebca381a871d137a19561b2"
+licence = "Artistic-2.0"
+meta = false
+provides = "razor"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.85.0-r11"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-digest-sha1", "2.13-r14"], ["perl-getopt-long", "2.52-r1"], ["perl-uri", "5.10-r0"], ["musl", "1.2.2-r7"]]

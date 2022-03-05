@@ -1,0 +1,20 @@
+checksume = "7eafa4b076e5fb18e4b5f4176fbb471a09b5b4d29f3d4af834c398d408a0ac8f"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "ead"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.20.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"]]

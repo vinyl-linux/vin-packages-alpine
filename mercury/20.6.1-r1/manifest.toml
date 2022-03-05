@@ -1,0 +1,20 @@
+checksume = "529d393475be115081e05f93010ab7d9613e6609bf5f36c7c69f263910aa5a11"
+licence = "GPL-2.0-only"
+meta = false
+provides = "mercury"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20.6.1-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mercury-libs", "20.06.1-r1"], ["musl", "1.2.2-r7"]]

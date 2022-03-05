@@ -1,0 +1,20 @@
+checksume = "bf9310ad18460f9b9a7d40284ff21a381d6a73efba46f4786af0bb99b8bb54be"
+licence = "BSD-3-Clause"
+meta = false
+provides = "gcovr"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"], ["py3-lxml", "4.6.5-r0"], ["py3-jinja2", "3.0.1-r0"]]

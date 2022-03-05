@@ -1,0 +1,20 @@
+checksume = "8815293c563deb88dc451798b7a210bb41f12f5d4cd618a5201bccbb4630a1ed"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "gnome-builder-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["flatpak-builder", "1.0.14-r0"], ["py3-lxml", "4.6.5-r0"], ["py3-gobject3", "3.42.0-r1"]]

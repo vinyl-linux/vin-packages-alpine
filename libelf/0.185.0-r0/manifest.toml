@@ -1,0 +1,20 @@
+checksume = "79f4f2825accadbf89a526fca22cc1a98a8717e2e1b59e09a1103c844ea07e2d"
+licence = "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)"
+meta = false
+provides = "libelf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.185.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["fts", "1.2.7-r1"], ["xz-libs", "5.2.5-r0"], ["zlib", "1.2.11-r3"]]

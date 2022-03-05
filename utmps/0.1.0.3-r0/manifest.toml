@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "d2ef5ff58b0c3465af491e9b0c0f1fe2a23c5816341b2749a9d29f9effdaf05c"
 licence = "ISC"
 meta = false
 provides = "utmps"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "0.1.0.3-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "0.1.0.3-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["s6-ipcserver", "2.11.0.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["skalibs", "2.11.0.0-r0"]]

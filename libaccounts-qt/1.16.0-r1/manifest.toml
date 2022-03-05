@@ -1,0 +1,20 @@
+checksume = "915d70d4360f8e9aa401119f90e385ff3a74c45c5b894494a7558e10b9495f6b"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libaccounts-qt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.16.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3_git20210713-r5"], ["libaccounts-glib", "1.25-r1"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

@@ -1,0 +1,20 @@
+checksume = "5bbf534d0d22f426b68f179aac4e0ff561136667d089803cff13748cb549c07e"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libcanberra"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.30.0-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["sound-theme-freedesktop", "0.8-r0"], ["musl", "1.2.2-r7"], ["libltdl", "2.4.6-r7"], ["eudev-libs", "3.2.11_pre1-r0"], ["libvorbis", "1.3.7-r0"]]

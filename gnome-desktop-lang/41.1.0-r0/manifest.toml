@@ -1,0 +1,20 @@
+checksume = "bba1e38f9a482079edafafbab985ce952115faa13f7f09f2f3a815f885fb1fbf"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+meta = false
+provides = "gnome-desktop-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bubblewrap", "0.5.0-r0"], ["musl-locales", "0_git20201005-r0"]]

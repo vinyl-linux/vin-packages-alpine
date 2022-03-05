@@ -1,0 +1,20 @@
+checksume = "684adcd93ae6d1d1177bfee516a2c6bb2406c2d2ad72a4fa8279e4d301dcd005"
+licence = "BSD-3-Clause OR GPL-2.0-only"
+meta = false
+provides = "libcap"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.61.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "eda9d502c75f45562d0e07c4974aa2ce8a9ef51110f92378a60d7adb96cf4ecf"
+licence = "MIT"
+meta = false
+provides = "svkbd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["libxft", "2.3.4-r0"], ["libxinerama", "1.1.4-r1"], ["libxtst", "1.2.3-r3"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"]]

@@ -1,0 +1,20 @@
+checksume = "733ebc268a4d625700db92b5d1eacf3329a42fb8871676d6cf9d732405d4ec67"
+licence = "LGPL-2.1"
+meta = false
+provides = "efivar-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "37.0.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["efivar-libs", "37-r2"], ["pkgconf", "1.8.0-r0"]]

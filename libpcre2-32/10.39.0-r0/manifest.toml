@@ -1,0 +1,20 @@
+checksume = "63428d860f69dd90606e6623e03f4fb1a15d29fa234f6e9a43462e49dc010b15"
+licence = "BSD-3-Clause"
+meta = false
+provides = "libpcre2-32"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.39.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

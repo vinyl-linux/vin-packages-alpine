@@ -1,0 +1,20 @@
+checksume = "863b617a7633f6ed15f4c6c366c2cf06b997b8aecd4be1517f67bba17e4b8771"
+licence = "MIT"
+meta = false
+provides = "lua5.1-lunix"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20190403.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

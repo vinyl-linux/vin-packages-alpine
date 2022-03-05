@@ -1,0 +1,20 @@
+checksume = "28191a46604ff4746894ca183ab212819b6308edb6be0b088d4d25887bb38ed9"
+licence = "MirOS AND Unicode-DFS-2016"
+meta = false
+provides = "mksh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "59.0.0-c-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

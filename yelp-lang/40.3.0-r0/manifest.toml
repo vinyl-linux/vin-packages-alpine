@@ -1,0 +1,20 @@
+checksume = "701ac4de6075dc8e242ad5271c6b63c902f08c53aa3c66622c4d6432aef900c3"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "yelp-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "40.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dconf", "0.40.0-r0"], ["desktop-file-utils", "0.26-r0"], ["hicolor-icon-theme", "0.17-r1"], ["yelp-xsl", "41.0-r0"]]

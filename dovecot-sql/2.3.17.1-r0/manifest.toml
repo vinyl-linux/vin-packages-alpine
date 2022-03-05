@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "fd3ad15ff5c05c4bee47fcd0dc03158f7b00aa2567efdb082891c3e86cf7a63a"
 licence = "LGPL-2.0-or-later"
 meta = false
 provides = "dovecot-sql"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.3.17.1-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.3.17.1-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["dovecot", "2.3.17.1-r0"], ["musl", "1.2.2-r7"]]

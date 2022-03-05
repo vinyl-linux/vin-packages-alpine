@@ -1,0 +1,20 @@
+checksume = "4d25f85f04a602cecf5ddd74930edb3c8d16df97a616db2d9830a7b392df7278"
+licence = "GPL-2.0"
+meta = false
+provides = "pdsh-rcmd-ssh"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.34.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pdsh", "2.34-r0"], ["openssh-client-default", "8.8_p1-r1"], ["musl", "1.2.2-r7"]]

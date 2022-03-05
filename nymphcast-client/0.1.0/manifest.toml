@@ -1,0 +1,20 @@
+checksume = "9dc4c9a8709668dc2153bc0a4e9b9725203b423c8956679407e17949039486b4"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nymphcast-client"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["avahi", "0.8-r5"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtbase-x11", "5.15.3_git20210713-r5"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libnymphcast", "0.1_alpha5-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

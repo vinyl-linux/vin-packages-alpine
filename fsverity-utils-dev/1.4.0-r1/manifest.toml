@@ -1,0 +1,20 @@
+checksume = "62ad097855a1059d89de721533e845e587f2edda32e4273f7a1fce35c11846dc"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "fsverity-utils-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fsverity-utils", "1.4-r1"], ["openssl-dev", "1.1.1l-r8"], ["pkgconf", "1.8.0-r0"]]

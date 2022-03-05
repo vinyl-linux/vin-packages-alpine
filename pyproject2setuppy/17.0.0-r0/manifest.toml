@@ -1,0 +1,20 @@
+checksume = "df7425009e76a81b73441e307c68bc3fffe70d3b410d417e3317668d8275f767"
+licence = "BSD-2-Clause"
+meta = false
+provides = "pyproject2setuppy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "17.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-toml", "0.10.2-r2"], ["py3-setuptools", "52.0.0-r4"]]

@@ -1,0 +1,20 @@
+checksume = "dafbd73eaa22295aabe2925da7e2a1af69766d9fb6761f3b46ea3760568725c3"
+licence = "GPL"
+meta = false
+provides = "pcmciautils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "18.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

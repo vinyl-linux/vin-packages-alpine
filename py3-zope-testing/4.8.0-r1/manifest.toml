@@ -1,0 +1,20 @@
+checksume = "e79cc2640f1676a8c73b7711fa157d5c6404bf94bf37792add5c7601cd9408d5"
+licence = "ZPL-2.1"
+meta = false
+provides = "py3-zope-testing"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.8.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"]]

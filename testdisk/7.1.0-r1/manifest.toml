@@ -1,0 +1,20 @@
+checksume = "3c36f32b571323e046390921d16b02cad1cf73cd5d399c79a9a64998eb3f0d73"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "testdisk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "7.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["e2fsprogs-libs", "1.46.4-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["ncurses-libs", "6.3_p20211120-r0"], ["ntfs-3g-libs", "2021.8.22-r0"], ["libuuid", "2.37.4-r0"], ["zlib", "1.2.11-r3"]]

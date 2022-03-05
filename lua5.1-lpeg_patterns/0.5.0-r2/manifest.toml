@@ -1,0 +1,20 @@
+checksume = "99020c41ddd07967cbb2b2aa179109d8ff3ee169b2e8f4584ed3a90244904d29"
+licence = "MIT"
+meta = false
+provides = "lua5.1-lpeg_patterns"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-lpeg", "1.0.2-r2"]]

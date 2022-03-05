@@ -1,0 +1,20 @@
+checksume = "5fbb67e1557ea9ea9d36fe457dbdcaadceda4b0493e9a1a9bade9a5ddb807e98"
+licence = "BSD-3-Clause"
+meta = false
+provides = "nymphcast-nftables"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.1.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["avahi", "0.8-r5"]]

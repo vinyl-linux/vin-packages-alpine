@@ -1,0 +1,20 @@
+checksume = "617e1cc4c30148c9de4b2869ab7311c5248b61c01fde66528b8814837d1bd18a"
+licence = "OpenSSL"
+meta = false
+provides = "openssl-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.1.1-l-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libcrypto1.1", "1.1.1l-r8"], ["libssl1.1", "1.1.1l-r8"], ["pkgconf", "1.8.0-r0"]]

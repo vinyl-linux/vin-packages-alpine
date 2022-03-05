@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "62bd13b0fde9872deac679daaefa0c56db7b7c7dc97e055148531cc37cfcbc81"
 licence = "BSD-3-Clause"
 meta = false
 provides = "openvpn-auth-ldap"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.0.4-r4"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.0.4-r4"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["openvpn", "2.5.4-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"], ["libobjc", "10.3.1_git20211027-r0"]]

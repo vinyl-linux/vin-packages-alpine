@@ -1,0 +1,20 @@
+checksume = "23115bf8b35608d3b51f1ab50666bc1b746638da8c1a476bd55407b3da62216f"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "bpfmon"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.50.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libpcap", "1.10.1-r0"], ["yascreen", "1.86-r0"]]

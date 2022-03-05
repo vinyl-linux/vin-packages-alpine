@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "89fa6548a70c704dc234c4b0dcf7bab91672d381c220b439c46c561e7d7acf34"
 licence = "GPL-2.0-or-later"
 meta = false
 provides = "freeradius-dhcp"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "3.0.25-r1"
 
 [commands]
@@ -15,3 +15,6 @@ version = "3.0.25-r1"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["freeradius", "3.0.25-r1"], ["musl", "1.2.2-r7"]]

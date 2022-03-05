@@ -1,0 +1,20 @@
+checksume = "aacce4953acae9ef31ee5d307e471970319ed2d37525743adbe3a2df2dd7d836"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-datetime-timezone"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.51.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-specio", "0.47-r0"], ["perl-class-singleton", "1.6-r0"], ["perl-module-runtime", "0.016-r4"], ["perl-params-validationcompiler", "0.30-r1"], ["perl-try-tiny", "0.30-r3"], ["perl-namespace-autoclean", "0.29-r2"]]

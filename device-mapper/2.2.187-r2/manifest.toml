@@ -1,0 +1,20 @@
+checksume = "378cb5d923ceb9d2b8d06c3251350b372f5877eb3c371b98cebfe5deb7fef32a"
+licence = "GPL-2.0-only LGPL-2.1-only"
+meta = false
+provides = "device-mapper"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.2.187-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lvm2-libs", "2.02.187-r2"], ["musl", "1.2.2-r7"], ["device-mapper-libs", "2.02.187-r2"]]

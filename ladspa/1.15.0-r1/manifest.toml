@@ -1,0 +1,20 @@
+checksume = "611d74631ef8b975824fbf0f88a53ec86c215884e1b21538646b3953af968d4e"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "ladspa"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.15.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]

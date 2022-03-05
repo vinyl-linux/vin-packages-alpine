@@ -1,0 +1,20 @@
+checksume = "fd835dc6797b4a27818c610ab28e8dd55b56b6d2eb367499f684e398be906efe"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-test-script"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.29.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-ipc-run3", "0.048-r2"], ["perl-probe-perl", "0.03-r2"], ["perl-test-simple", "1.302188-r1"]]

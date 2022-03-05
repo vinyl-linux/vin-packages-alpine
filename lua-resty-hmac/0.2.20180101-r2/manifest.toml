@@ -1,0 +1,20 @@
+checksume = "ab485421294a321016bc57def7d2fd5eba2429c2c41faacfeb40dd0cc9b87a32"
+licence = "BSD-2-Clause"
+meta = false
+provides = "lua-resty-hmac"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.20180101-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nginx-mod-http-lua", "1.20.2-r0"], ["lua-resty-string", "0.11-r2"]]

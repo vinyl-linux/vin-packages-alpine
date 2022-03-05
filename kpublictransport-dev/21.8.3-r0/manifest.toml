@@ -1,0 +1,20 @@
+checksume = "18471fd710fb6200e88266011b31fee696b6381b077161ab3f63f29b39fa81d2"
+licence = "BSD-3-Clause AND LGPL-2.0-or-later AND MIT"
+meta = false
+provides = "kpublictransport-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase-dev", "5.15.3_git20210713-r5"], ["qt5-qtdeclarative-dev", "5.15.3_git20210531-r0"], ["zlib-dev", "1.2.11-r3"], ["protobuf-dev", "3.18.1-r1"], ["kpublictransport", "21.08.3-r0"]]

@@ -1,0 +1,20 @@
+checksume = "608f7d9a67ef5a0dde5e815034cf40e3533d0a58b54d15fc9db315cb4f9b021e"
+licence = "MIT"
+meta = false
+provides = "swaybg"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["wayland-libs-client", "1.19.0-r1"]]

@@ -1,0 +1,20 @@
+checksume = "16346273c8cb9b37554263450e264c9a0bfcd0b9bf6e410f38a16e5072d4a0a1"
+licence = "GPL PerlArtistic"
+meta = false
+provides = "perl-proc-wait3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.5.0-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

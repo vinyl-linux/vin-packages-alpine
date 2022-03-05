@@ -1,0 +1,20 @@
+checksume = "95c2516b4b9396a4fb9f97b5f10db7f43c86fa933d4bfbca45dbe98855052114"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "cloud-utils-ec2metadata"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.32.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"]]

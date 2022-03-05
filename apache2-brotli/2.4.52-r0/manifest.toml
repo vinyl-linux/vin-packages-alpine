@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "446d461d2e8b1433f5bf05a9c63a6fb8de2f55abccab959eb78a7031d33f3e2c"
 licence = "Apache-2.0"
 meta = false
 provides = "apache2-brotli"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.4.52-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.4.52-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["apache2", "2.4.52-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"]]

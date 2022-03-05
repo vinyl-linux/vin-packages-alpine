@@ -1,0 +1,20 @@
+checksume = "c01d36765f0d57a15fd05791e19f7b29a78f7e62b159bc975c5dfe042a32bc68"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-datetime-format-natural"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.12.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-datetime-timezone", "2.51-r0"], ["perl-clone", "0.45-r1"], ["perl-params-validate", "1.30-r1"], ["perl-list-moreutils", "0.430-r0"], ["perl-datetime", "1.54-r1"], ["perl-boolean", "0.46-r2"]]

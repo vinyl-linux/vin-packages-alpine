@@ -1,0 +1,20 @@
+checksume = "4adcd2cfa81c29b5e1514f3907fc2fb736a6cedc405847c2a2c3fe5ea868349c"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "fwupd-efi-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pkgconf", "1.8.0-r0"]]

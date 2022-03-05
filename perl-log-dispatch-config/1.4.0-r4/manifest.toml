@@ -1,0 +1,20 @@
+checksume = "d3898a3c9e29ec10b7cad62facc0c5a490fcd7d7f3d965e936bd45dfae84ea5c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-log-dispatch-config"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.4.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-log-dispatch", "2.70-r1"], ["perl-io-stringy", "2.113-r1"], ["perl-appconfig", "1.71-r4"]]

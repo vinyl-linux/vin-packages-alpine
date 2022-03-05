@@ -1,0 +1,20 @@
+checksume = "76c862360287df376677287a16f9e983120e1b7bc930d306e4adb001a9f44241"
+licence = "BSD-2-Clause"
+meta = false
+provides = "libmediainfo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.9.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"], ["tinyxml2", "9.0.0-r0"], ["zlib", "1.2.11-r3"], ["libzen", "0.4.39-r0"]]

@@ -1,0 +1,20 @@
+checksume = "79c73626380698860e43d36f575c1e03ae3c218e36357fa377324f855640b44b"
+licence = "Perl Artistic"
+meta = false
+provides = "perl-net-dns-resolver-programmable"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-net-dns", "1.32-r0"]]

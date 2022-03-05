@@ -1,0 +1,20 @@
+checksume = "63739cf4ec9e9bcc2fd8f365c432253b2bd662d80ef167d23add454afee16eb0"
+licence = "GPL-2.0-or-later AND MIT"
+meta = false
+provides = "transmission-cli"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.0.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libcurl", "7.80.0-r0"], ["libevent", "2.1.12-r4"], ["libintl", "0.21-r0"], ["libssl1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

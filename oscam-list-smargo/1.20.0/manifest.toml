@@ -1,0 +1,20 @@
+checksume = "5a659798729efa7d69e7aaab6f5649f18afebbd1b9ac60b731446092d7d3b6b1"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "oscam-list-smargo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.20.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

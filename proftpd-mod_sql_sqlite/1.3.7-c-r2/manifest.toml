@@ -1,0 +1,20 @@
+checksume = "76b91f98f42fc26efe0b2732fd162d051edb7c49c2f9d28bd8174428fd403e49"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "proftpd-mod_sql_sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.3.7-c-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["proftpd", "1.3.7c-r2"], ["proftpd-mod_sql", "1.3.7c-r2"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

@@ -1,0 +1,20 @@
+checksume = "2c69b04a8fb94a2976b875332b8be44d8addf4b9df102fa7f5fec2f4d7184f3c"
+licence = "MIT"
+meta = false
+provides = "swayidle"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libelogind", "246.10-r4"], ["wayland-libs-client", "1.19.0-r1"], ["wayland-libs-server", "1.19.0-r1"]]

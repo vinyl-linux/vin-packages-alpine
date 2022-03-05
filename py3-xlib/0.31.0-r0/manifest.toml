@@ -1,0 +1,20 @@
+checksume = "b7d2a3df1858c85265207c0adfa9e7e6e293e39e47e8569e0e034158f77a07e2"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "py3-xlib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.31.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-six", "1.16.0-r0"]]

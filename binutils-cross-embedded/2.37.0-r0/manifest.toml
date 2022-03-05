@@ -1,0 +1,20 @@
+checksume = "d6c47a452fb36b3be8a69932684cd4454844d073737802eac9b3bd553bc7cef3"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+meta = false
+provides = "binutils-cross-embedded"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.37.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["binutils-arm-none-eabi", "2.37-r0"], ["binutils-avr", "2.37-r0"], ["binutils-mips-mti-elf", "2.37-r0"], ["binutils-msp430-elf", "2.37-r0"], ["binutils-or1k-elf", "2.37-r0"], ["binutils-riscv-none-elf", "2.37-r0"], ["binutils-aarch64-none-elf", "2.37-r0"]]

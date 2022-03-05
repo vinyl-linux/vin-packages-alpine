@@ -1,0 +1,20 @@
+checksume = "a9b8c26e13d3e14dc5fdba6bc26d34b96885a9cbde8295668ef0b2df3448510d"
+licence = "Artistic-2.0"
+meta = false
+provides = "perl-business-isbn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-business-isbn-data", "20210112.006-r0"]]

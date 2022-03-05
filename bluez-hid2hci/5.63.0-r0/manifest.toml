@@ -1,0 +1,20 @@
+checksume = "e0b40bdb25a08c87efa1b8ed9469ea618cbe8885dad74f67255a917957ba02e0"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "bluez-hid2hci"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.63.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["eudev-libs", "3.2.11_pre1-r0"]]

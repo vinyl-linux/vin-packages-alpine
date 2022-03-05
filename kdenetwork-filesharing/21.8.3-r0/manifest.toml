@@ -1,0 +1,20 @@
+checksume = "c25f7d16c7584259ada8356e2fb71a76d6945fc4aac59c76d08245f1835897a4"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+meta = false
+provides = "kdenetwork-filesharing"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["samba", "4.15.5-r0"], ["kauth", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdeclarative", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["kservice", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtbase-x11", "5.15.3_git20210713-r5"], ["qt5-qtdeclarative", "5.15.3_git20210531-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]

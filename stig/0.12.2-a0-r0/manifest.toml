@@ -1,0 +1,20 @@
+checksume = "19587360a0b75e542320f4fef312881437607cac10febdd0a729cdb34c941005"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "stig"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.12.2-a0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-urwid", "2.1.2-r1"], ["py3-urwidtrees", "1.0.3-r0"], ["py3-aiohttp", "3.8.1-r0"], ["py3-async-timeout", "4.0.1-r0"], ["py3-xdg", "0.27-r1"], ["py3-blinker", "1.4-r6"], ["py3-natsort", "7.1.1-r1"], ["py3-setproctitle", "1.2.2-r0"]]

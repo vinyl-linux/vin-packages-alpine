@@ -1,0 +1,20 @@
+checksume = "04128ec6999314ff1ea58856c546be9f757e449c25039cb0a5641f8f734fc0bc"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "ostree"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2021.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libarchive", "3.6.0-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libcurl", "7.80.0-r0"], ["fuse", "2.9.9-r1"], ["glib", "2.70.1-r0"], ["libgpg-error", "1.42-r1"], ["gpgme", "1.16.0-r0"], ["xz-libs", "5.2.5-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,20 @@
+checksume = "53c18285dc04c2ea1c90d72b253d7df10abfd65b8193df2ccdb5c7a997a425fc"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libblockdev-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.26.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libblockdev", "2.26-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

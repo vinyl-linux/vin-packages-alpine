@@ -1,0 +1,20 @@
+checksume = "3e86186e1bcaf9dbb8a148df351d8c746e3bc2f009e38c13de027453a2799ad1"
+licence = "MIT"
+meta = false
+provides = "lua5.2-fifo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"]]

@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "95439b2e60a8e12b1c681c1164ddb0c3fe5b367dfcf6256dd4473ed5b2935a75"
 licence = "GPL-2.0"
 meta = false
 provides = "linux-lts"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "5.15.16-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "5.15.16-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["mkinitfs", "3.6.0-r0"], ["linux-firmware-rtw88", "20211027-r0"]]

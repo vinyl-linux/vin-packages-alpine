@@ -1,0 +1,20 @@
+checksume = "aecd413a26a61a6954e1d3233a8ff2913c578befa9d916af91d46ff2d641c00a"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "pulseaudio-equalizer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "15.0.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["pulseaudio", "15.0-r2"], ["py3-qt5", "5.15.2-r1"], ["py3-dbus", "1.2.18-r0"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["fftw-single-libs", "3.3.10-r0"], ["libintl", "0.21-r0"], ["libpulse", "15.0-r2"]]

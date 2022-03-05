@@ -1,0 +1,20 @@
+checksume = "0e8469ba6d1cd03fd1bb071e81df85202d005b6a3228e4fdd35b52503b88b5de"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql12-plpython3-contrib"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql12-plpython3", "12.10-r0"], ["musl", "1.2.2-r7"], ["python3", "3.9.7-r4"]]

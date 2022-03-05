@@ -1,0 +1,20 @@
+checksume = "9df3587ee9b277370aa00b4dc14032e17d453b52a6468824fc711f55c189ea1e"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "chrome-gnome-shell"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "10.1.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-requests", "2.26.0-r1"], ["py3-gobject3", "3.42.0-r1"]]

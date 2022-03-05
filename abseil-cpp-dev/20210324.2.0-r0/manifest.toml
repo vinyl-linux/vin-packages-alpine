@@ -1,0 +1,20 @@
+checksume = "af5552cf5a095c5d6ef19c6b592091e94c82b7420eac0eac3f77360e24b9d5da"
+licence = "Apache-2.0"
+meta = false
+provides = "abseil-cpp-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "20210324.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["abseil-cpp", "20210324.2-r0"], ["pkgconf", "1.8.0-r0"]]

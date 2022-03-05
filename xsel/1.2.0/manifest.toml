@@ -1,0 +1,20 @@
+checksume = "fcefd2b886f3085aaa6c538e4d1120cd2569955e351b33f097631bbd44e624b3"
+licence = "MIT"
+meta = false
+provides = "xsel"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

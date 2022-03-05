@@ -1,0 +1,20 @@
+checksume = "2e93cce2e18c843484cee9a9f9b357e306a945a8f6d165f8c0b26939efdcf6e9"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "libmad"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.15.1-b-r9"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,20 @@
+checksume = "1fe0b3cf6ded1eef529726df71bc18707fb2bc8a0de5d4fa84885a0b91ec2bc1"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "squid-lang-el"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.2.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["logrotate", "3.18.1-r1"]]

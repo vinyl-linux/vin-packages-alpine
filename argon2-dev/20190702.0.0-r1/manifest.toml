@@ -1,0 +1,20 @@
+checksume = "90f3079908ff7ec4e23c5dafbd356824f67ea3ae57ccaa979d15c413d0c06928"
+licence = "Apache-2.0 CC0-1.0"
+meta = false
+provides = "argon2-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "20190702.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["argon2-libs", "20190702-r1"], ["pkgconf", "1.8.0-r0"]]

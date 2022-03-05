@@ -1,0 +1,20 @@
+checksume = "d9aafb4c5ce4fd903080a2755cc19ea58cf0071299cce109e381f77821e2d1db"
+licence = "MIT"
+meta = false
+provides = "kmscube"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mesa-egl", "21.2.6-r0"], ["mesa-gles", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["mesa-gbm", "21.2.6-r0"], ["libpng", "1.6.37-r1"]]

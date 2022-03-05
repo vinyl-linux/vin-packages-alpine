@@ -1,0 +1,20 @@
+checksume = "a093788a99137bb5098f79683a6d6bb1c492b1404320b06351035cfdc39bf24e"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "gnome-disk-utility-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gptfdisk", "1.0.8-r0"], ["parted", "3.4-r0"], ["udisks2", "2.9.4-r0"]]

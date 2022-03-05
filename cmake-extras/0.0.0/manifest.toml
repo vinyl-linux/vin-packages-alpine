@@ -1,0 +1,20 @@
+checksume = "71b95afd7c738afafe30e3c17b78992fb8476be4d08e7188ce0a72254d774bbd"
+licence = "LGPL-3.0-only"
+meta = false
+provides = "cmake-extras"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cmake", "3.21.3-r0"]]

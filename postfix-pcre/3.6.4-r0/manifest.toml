@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "07a10715b5ed534d5a9d1849f31fab5b18b15993932597637226810d254af99b"
 licence = "IPL-1.0 EPL-2.0"
 meta = false
 provides = "postfix-pcre"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "3.6.4-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "3.6.4-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["pcre", "8.45-r1"]]

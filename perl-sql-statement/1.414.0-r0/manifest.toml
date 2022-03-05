@@ -1,0 +1,20 @@
+checksume = "7ee2009d703d02fbd8f52e58f4e1cbcd8f6e72f5477b398475f0a1dbf9502922"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-sql-statement"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.414.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-module-runtime", "0.016-r4"], ["perl-params-util", "1.102-r1"], ["perl-clone", "0.45-r1"]]

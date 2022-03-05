@@ -1,0 +1,20 @@
+checksume = "7248e2c6d2b69181cb1e4905101cbf6e707cb83e29746846926a0d17a23a078b"
+licence = "Apache-2.0"
+meta = false
+provides = "perl-list-moreutils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.430.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-exporter-tiny", "1.002002-r1"], ["perl-list-moreutils-xs", "0.430-r1"]]

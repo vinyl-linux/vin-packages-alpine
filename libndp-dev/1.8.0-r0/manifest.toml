@@ -1,0 +1,20 @@
+checksume = "ad2c3aad8e9a7383184c02f44b3faaa20ab16314f56bde441587503ccb41f8dc"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "libndp-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libndp", "1.8-r0"], ["pkgconf", "1.8.0-r0"]]

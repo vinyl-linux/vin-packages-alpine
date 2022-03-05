@@ -1,0 +1,20 @@
+checksume = "cfb7c212434f00b245260fb5149447ca6bd8445fd44862f27cc1ab5dc507a019"
+licence = "GPL-2.0-only AND GFDL-1.2-only"
+meta = false
+provides = "keditbookmarks"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kbookmarks", "5.88.0-r0"], ["kcompletion", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["kconfigwidgets", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kiconthemes", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["kparts", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtbase-x11", "5.15.3_git20210713-r5"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]

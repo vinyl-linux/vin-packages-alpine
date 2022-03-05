@@ -1,0 +1,20 @@
+checksume = "815c52eeb65021f524f98790f3c0d0f89816c239341f84ff35e16d6b56e48745"
+licence = "BSD-3-Clause AND LGPL-2.0-or-later"
+meta = false
+provides = "itinerary-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kirigami2", "5.88.0-r0"], ["prison", "5.88.0-r0"], ["qt5-qtlocation", "5.15.3_git20201109-r1"], ["tzdata", "2021e-r0"]]

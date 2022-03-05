@@ -1,0 +1,20 @@
+checksume = "bb06aca76236b1b590d4997acbbf923dff46c4aa20281671c4214b39c4805a37"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "iotop"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.0-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"]]

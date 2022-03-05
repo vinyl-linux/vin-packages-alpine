@@ -1,0 +1,20 @@
+checksume = "df158343eda2265d9b6377f5f2fd81728f69cbcb2ac4aea868d0fbfd099cec0c"
+licence = "ISC"
+meta = false
+provides = "farbfeld"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["file", "5.41-r0"], ["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"]]

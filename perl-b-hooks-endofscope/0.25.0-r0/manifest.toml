@@ -1,0 +1,20 @@
+checksume = "e6a18b0b4df138960deac771f7c03c75f8163c47545e54c01b4bcabe377675ea"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-b-hooks-endofscope"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.25.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-sub-exporter-progressive", "0.001013-r2"], ["perl-module-runtime", "0.016-r4"], ["perl-module-implementation", "0.09-r3"], ["perl-variable-magic", "0.62-r5"]]

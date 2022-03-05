@@ -1,0 +1,20 @@
+checksume = "b55543c4352ca41a53f773853c3a15569bf7ea63232275a0d2be63e948badc9d"
+licence = "custom"
+meta = false
+provides = "nmap-scripts"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "7.92.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["nmap-nselibs", "7.92-r2"]]

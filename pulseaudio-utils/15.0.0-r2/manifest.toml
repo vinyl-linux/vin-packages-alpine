@@ -1,0 +1,20 @@
+checksume = "8ffc1829d1f1d0de31107acfc9ed616ebb5177a6479fadba41f140acf8cdca20"
+licence = "LGPL-2.1-or-later"
+meta = false
+provides = "pulseaudio-utils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "15.0.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libintl", "0.21-r0"], ["libpulse", "15.0-r2"], ["libsndfile", "1.0.31-r1"], ["libxcb", "1.14-r2"]]

@@ -1,0 +1,20 @@
+checksume = "e2b5033177d022f6f629bcbb6c6b2be2be45c5c24bfcc92ec60a3a5a89a27986"
+licence = "GPL-2.0-only LGPL-2.1-only"
+meta = false
+provides = "device-mapper-udev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.2.187-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lvm2-libs", "2.02.187-r2"], ["busybox", "1.34.1-r4"]]

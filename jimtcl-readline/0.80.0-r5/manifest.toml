@@ -1,0 +1,20 @@
+checksume = "032b2b0fb3e504be71f94f705e6a1c34e8262f6860e1e65fb6c124a06dcf8bd3"
+licence = "BSD-2-Clause"
+meta = false
+provides = "jimtcl-readline"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.80.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["jimtcl", "0.80-r5"], ["readline", "8.1.1-r0"]]

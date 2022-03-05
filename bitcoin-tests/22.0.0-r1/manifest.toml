@@ -1,0 +1,20 @@
+checksume = "07aae946ab9e923d72ccb9503395a9f2e464f71e08595e5ebad590d47a2795a6"
+licence = "MIT"
+meta = false
+provides = "bitcoin-tests"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "22.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtbase-x11", "5.15.3_git20210713-r5"], ["boost1.77-filesystem", "1.77.0-r1"], ["boost1.77-unit_test_framework", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libgcc", "10.3.1_git20211027-r0"], ["miniupnpc", "2.2.3-r0"], ["libstdc++", "10.3.1_git20211027-r0"], ["libzmq", "4.3.4-r0"]]

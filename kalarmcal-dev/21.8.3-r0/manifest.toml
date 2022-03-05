@@ -1,0 +1,20 @@
+checksume = "37784d7a900e7cb9a95531f8b197492815c637e382742948f17c7c0eac2c06b1"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "kalarmcal-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["kalarmcal", "21.08.3-r0"]]

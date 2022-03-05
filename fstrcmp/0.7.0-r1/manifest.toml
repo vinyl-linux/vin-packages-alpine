@@ -1,0 +1,20 @@
+checksume = "0bbd08aed32e257ddc6e44ee87d35ed8e5f244c65fde46ba8b52be4be40dc09f"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "fstrcmp"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

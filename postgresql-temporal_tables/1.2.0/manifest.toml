@@ -1,0 +1,20 @@
+checksume = "bd7027c5b81b0b4c0cbf0ccbb65d45247ae022a26bc09d1c57b557e6dddb1509"
+licence = "BSD-2-Clause"
+meta = false
+provides = "postgresql-temporal_tables"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.2.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql14", "14.2-r0"], ["musl", "1.2.2-r7"]]

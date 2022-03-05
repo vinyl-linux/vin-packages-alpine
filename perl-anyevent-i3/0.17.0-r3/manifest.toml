@@ -1,0 +1,20 @@
+checksume = "3314722f4395aa575ce19119c457e2cfbbe989345199d38a221fbfc5bad98121"
+licence = "Artistic-1.0 GPL-1.0-only"
+meta = false
+provides = "perl-anyevent-i3"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.17.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-anyevent", "7.17-r3"], ["perl-json-xs", "4.03-r1"], ["i3wm", "4.20-r0"]]

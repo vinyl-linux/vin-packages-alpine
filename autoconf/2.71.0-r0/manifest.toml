@@ -1,0 +1,20 @@
+checksume = "7515d999596b521681155beefcb78eabcee65813089132a925ddfa17cb93c427"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "autoconf"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.71.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["m4", "1.4.18-r2"], ["perl", "5.34.0-r1"]]

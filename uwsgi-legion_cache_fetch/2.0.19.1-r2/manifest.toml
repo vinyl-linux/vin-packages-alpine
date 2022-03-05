@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "20a8a76b73478ce51e9b4403addf7a61d9911440cb97fc286d39fbef8c28b88f"
 licence = "custom"
 meta = false
 provides = "uwsgi-legion_cache_fetch"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.0.19.1-r2"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

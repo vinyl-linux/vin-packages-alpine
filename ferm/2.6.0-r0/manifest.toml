@@ -1,0 +1,20 @@
+checksume = "26dd446daf4ecc91eb9ae4d51982184fed8279d69732347b405ed9cbdb99c5b7"
+licence = "GPL"
+meta = false
+provides = "ferm"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["iptables", "1.8.7-r1"]]

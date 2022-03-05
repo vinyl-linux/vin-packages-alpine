@@ -1,0 +1,20 @@
+checksume = "c763aae7d0601bbdffba179817c4ff20a37be86999e05ad8fb90b17c1f90b708"
+licence = "GPL-2.0-only"
+meta = false
+provides = "in-sync"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["inotify-tools", "3.20.11.0-r0"], ["rsync", "3.2.3-r5"]]

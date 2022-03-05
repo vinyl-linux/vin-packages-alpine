@@ -1,0 +1,20 @@
+checksume = "609fbde510c0dfd4b26540d692c1f27f79af4298788dcd7c7208cb053e4aeca7"
+licence = "BSD-3-Clause"
+meta = false
+provides = "pcre2-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "10.39.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libedit-dev", "20210910.3.1-r0"], ["zlib-dev", "1.2.11-r3"], ["libpcre2-16", "10.39-r0"], ["libpcre2-32", "10.39-r0"], ["pcre2", "10.39-r0"], ["pkgconf", "1.8.0-r0"]]

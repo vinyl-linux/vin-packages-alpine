@@ -1,0 +1,20 @@
+checksume = "eb1acc558b413a9776c40f825be74788fe3e51d0f95a0420c048fce5dbce963b"
+licence = "LGPL-2.0-or-later AND CC-BY-4.0"
+meta = false
+provides = "kweathercore"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtlocation", "5.15.3_git20201109-r1"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]

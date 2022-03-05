@@ -1,0 +1,20 @@
+checksume = "9ed54c8aea5030cb88d0fba642cfef51adfa009ecf6a5976592993708ed7af58"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-readme_renderer"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "29.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-bleach", "4.0.0-r0"], ["py3-docutils", "0.16-r3"], ["py3-pygments", "2.10.0-r0"], ["py3-six", "1.16.0-r0"], ["python3", "3.9.7-r4"]]

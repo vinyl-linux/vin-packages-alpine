@@ -1,0 +1,20 @@
+checksume = "52750b4f1b4a092d9d2de3b7fe4bb3ca1b78410a66e5a8258f6ef17c5272b20f"
+licence = "Apache-2.0"
+meta = false
+provides = "salt-master"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3004.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["salt", "3004-r0"]]

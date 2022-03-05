@@ -1,0 +1,20 @@
+checksume = "6865544756d5d87819f454e24993ebf18b631caa01a6d5f9e86264aebf1cb3e4"
+licence = "LGPL-2.0-or-later"
+meta = false
+provides = "startup-notification-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.12.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libsm-dev", "1.2.3-r0"], ["xcb-util-dev", "0.4.0-r3"], ["pkgconf", "1.8.0-r0"], ["startup-notification", "0.12-r4"]]

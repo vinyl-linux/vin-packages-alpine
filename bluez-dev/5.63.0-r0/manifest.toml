@@ -1,0 +1,20 @@
+checksume = "02ffe8f4c5036bba377fe66c54bc4ef4f3d6dd79ab5957e180b256bc3d6a6463"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "bluez-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "5.63.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bluez-libs", "5.63-r0"], ["pkgconf", "1.8.0-r0"]]

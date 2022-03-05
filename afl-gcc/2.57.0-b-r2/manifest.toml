@@ -1,0 +1,20 @@
+checksume = "60448f50ccef341c01dbe52536c7e97c6fa3b523347da39bf6c37d98a98b4d77"
+licence = "Apache-2.0"
+meta = false
+provides = "afl-gcc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2.57.0-b-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["gcc", "10.3.1_git20211027-r0"], ["musl", "1.2.2-r7"]]

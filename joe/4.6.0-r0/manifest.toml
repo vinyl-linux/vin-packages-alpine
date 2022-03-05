@@ -1,0 +1,20 @@
+checksume = "6b642c40bf04163ea95c231ff6cea4625cb5a9bdd866457f916c78ea5eb0d847"
+licence = "GPL"
+meta = false
+provides = "joe"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "4.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3_p20211120-r0"]]

@@ -1,0 +1,20 @@
+checksume = "cfaf46c9862865bde6c7e966922eba1bcaca4164b660606b6732ae3145b94688"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-test-most"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.37.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-exception-class", "1.45-r0"], ["perl-test-differences", "0.68-r0"], ["perl-test-warn", "0.36-r2"], ["perl-test-exception", "0.43-r2"], ["perl-test-deep", "1.130-r2"]]

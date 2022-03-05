@@ -1,0 +1,20 @@
+checksume = "d4d21e91b3cdf1e2ca9899c675f217d3baf802802c9c6bef3411593a56289a3e"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kpkpass"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["karchive", "5.88.0-r0"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtbase-x11", "5.15.3_git20210713-r5"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]

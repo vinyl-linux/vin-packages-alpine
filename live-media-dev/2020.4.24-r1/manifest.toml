@@ -1,0 +1,20 @@
+checksume = "775bf216670030514fc8d01474869c1aa43a67f9d2d0205eb6bfa4d262c6d31b"
+licence = "LGPL-3.0-or-later"
+meta = false
+provides = "live-media-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "2020.4.24-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["live-media", "2020.04.24-r1"]]

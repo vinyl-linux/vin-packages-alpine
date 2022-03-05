@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "d5210f75eaedc65f7f1e4db147151a6b310af0d162b18391512819372c0700af"
 licence = "OLDAP-2.8"
 meta = false
 provides = "openldap-back-asyncmeta"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "2.6.0-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "2.6.0-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

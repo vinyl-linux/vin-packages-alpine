@@ -1,0 +1,20 @@
+checksume = "e8a50c47d68e1ec77464b1c92531a4ccb6c6de7023b03ee9343ce5e4b3aacbc9"
+licence = "GPL-3.0-only"
+meta = false
+provides = "glpk"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["gmp", "6.2.1-r1"]]

@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "fde6f7a235fbdce8dc94ba8ff47480a1fad3c264310dc7da50788d34873e3ffa"
 licence = "GPL-2.0-only"
 meta = false
 provides = "lxc"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "4.0.11-r0"
 
 [commands]
@@ -15,3 +15,6 @@ version = "4.0.11-r0"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcap", "2.61-r0"], ["libgcc", "10.3.1_git20211027-r0"], ["lxc-libs", "4.0.11-r0"], ["libseccomp", "2.5.2-r0"]]

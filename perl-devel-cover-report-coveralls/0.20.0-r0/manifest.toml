@@ -1,0 +1,20 @@
+checksume = "313b56505c7355852fc094780d2a53776c53098be047a93e8665c5e857dd4402"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-devel-cover-report-coveralls"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.20.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-yaml", "1.30-r2"], ["perl-io-socket-ssl", "2.072-r0"], ["perl-net-ssleay", "1.90-r3"], ["perl-devel-cover", "1.36-r1"], ["perl-mozilla-ca", "20211001-r0"]]

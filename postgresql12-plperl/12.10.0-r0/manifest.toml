@@ -1,0 +1,20 @@
+checksume = "27be18ea9da11f7679ec16d9d635387fa92e4b4585ee5bfec62b60726477e8ab"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql12-plperl"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql12", "12.10-r0"], ["musl", "1.2.2-r7"], ["perl", "5.34.0-r1"]]

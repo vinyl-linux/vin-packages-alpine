@@ -1,0 +1,20 @@
+checksume = "6749a9a2f92317621f837920db44aa50b6faf6ee50caefea6dfea87821d754c9"
+licence = "CC0-1.0"
+meta = false
+provides = "mblaze-crypto"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssl", "1.1.1l-r8"], ["gpg", "2.2.31-r1"]]

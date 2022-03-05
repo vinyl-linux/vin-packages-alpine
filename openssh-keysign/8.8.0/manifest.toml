@@ -1,0 +1,20 @@
+checksume = "9a3db5def2301b55fb26880200d2451464889be26ac802d9420bb89912db1c71"
+licence = "BSD"
+meta = false
+provides = "openssh-keysign"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "8.8.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openssh-client-default", "8.8_p1-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["zlib", "1.2.11-r3"]]

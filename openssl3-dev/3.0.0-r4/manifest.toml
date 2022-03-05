@@ -1,9 +1,9 @@
-checksume = ""
+checksume = "2b202ba9d647c57470c65639b7f1d2140dcac341cb60387c7bf717b4df7ce5a7"
 licence = "Apache-2.0"
 meta = false
 provides = "openssl3-dev"
 service_directory = ""
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
 version = "3.0.0-r4"
 
 [commands]
@@ -15,3 +15,6 @@ version = "3.0.0-r4"
   working_dir = "."
 
 [profiles]
+
+  [profiles.default]
+    Deps = [["libcrypto3", "3.0.0-r4"], ["libssl3", "3.0.0-r4"], ["pkgconf", "1.8.0-r0"]]

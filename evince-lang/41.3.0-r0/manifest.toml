@@ -1,0 +1,20 @@
+checksume = "4534fedda354499fecd3f7d9d3eacb55d2183785917ed53c40d4865bd0879f60"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "evince-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "41.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["adwaita-icon-theme", "40.1.1-r0"], ["gsettings-desktop-schemas", "41.0-r0"]]

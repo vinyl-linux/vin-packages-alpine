@@ -1,0 +1,20 @@
+checksume = "57ee54de62dcd0dac8f3a4b1b1edd48ad1f1452d8ce6a6ef3820535212f2e728"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-moo"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.5004.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-class-method-modifiers", "2.13-r2"], ["perl-sub-quote", "2.006006-r1"], ["perl-role-tiny", "2.002004-r1"]]

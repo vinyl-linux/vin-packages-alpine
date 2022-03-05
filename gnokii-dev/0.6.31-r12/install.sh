@@ -1,1 +1,1 @@
-/etc/vinyl/alpine/scripts/install.sh
+../../scripts/install.sh

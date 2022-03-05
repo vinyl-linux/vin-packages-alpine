@@ -1,0 +1,20 @@
+checksume = "6ab7fa1221951898ee1db1d3453ab24a05060a0a16b33067fed009fca9e1dec5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "kaccounts-providers"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["signon-plugin-oauth2", "0.25-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdeclarative", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["kpackage", "5.88.0-r0"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtbase-x11", "5.15.3_git20210713-r5"], ["qt5-qtdeclarative", "5.15.3_git20210531-r0"], ["qt5-qtwebengine", "5.15.3_git20211127-r3"], ["musl", "1.2.2-r7"], ["kaccounts-integration", "21.08.3-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

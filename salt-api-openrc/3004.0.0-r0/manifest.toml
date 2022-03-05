@@ -1,0 +1,20 @@
+checksume = "7f16fe8d1af8ee569e34069667af40d1e176ca6fbde8a3078c09541e4dea0323"
+licence = "Apache-2.0"
+meta = false
+provides = "salt-api-openrc"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3004.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["openrc", "0.44.7-r3"]]

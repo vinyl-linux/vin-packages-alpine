@@ -1,0 +1,20 @@
+checksume = "a27b3f8ac65f3e1e94b4264be4c9c9a0a35240dbefec4468f503fd1854a50172"
+licence = "LGPL"
+meta = false
+provides = "libdaemon"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.14.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

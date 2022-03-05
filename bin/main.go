@@ -37,6 +37,8 @@ type VersionedPackage struct {
 	VProvides   []Provides
 	VDepends    []Constraint
 	DownloadURL string
+
+	baseurl string
 }
 
 type Constraint struct {
@@ -86,14 +88,20 @@ func main() {
 
 		m, err := NewManifest(pkg, deps)
 		if err != nil {
-			errors[pkg.Name] = err
+			//errors[pkg.Name] = err
+			log.Printf("%#v", m)
 
-			continue
+			panic(err)
+
+			//continue
 		}
 
 		err = m.Write()
 		if err != nil {
-			errors[pkg.Name] = err
+			log.Printf("%#v", m)
+
+			panic(err)
+			//errors[pkg.Name] = err
 		}
 	}
 
@@ -204,7 +212,9 @@ func cleanVersion(s string) string {
 }
 
 func NewVersionedPackage(baseurl string, pkg *apk.Package) (vp VersionedPackage, err error) {
-	vp.DownloadURL = baseurl
+	vp.baseurl = baseurl
+	vp.DownloadURL = fmt.Sprintf("%s/%s-%s.apk", baseurl, pkg.Name, pkg.Version)
+
 	vp.VV, err = version.NewVersion(cleanVersion(pkg.Version))
 	if err != nil {
 		return

@@ -1,0 +1,20 @@
+checksume = "6002e0b87d9b740f2ac682566c6474d77fe42c4456e132277feb85f88ec97d34"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "hwinfo-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "21.78.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"], ["libx86emu", "3.4-r0"]]

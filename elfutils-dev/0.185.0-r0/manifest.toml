@@ -1,0 +1,20 @@
+checksume = "97117681045c5f683a405002350310b53c682a78bcd4362e57403e20f594b372"
+licence = "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)"
+meta = false
+provides = "elfutils-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.185.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["libelf", "0.185-r0"], ["xz-dev", "5.2.5-r0"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

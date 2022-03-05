@@ -1,0 +1,20 @@
+checksume = "43d4ff13c4ecd9d388d130ae0f4316cecf19b8a804866b32985a0d704b197306"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-namespace-autoclean"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.29.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-sub-identify", "0.14-r6"], ["perl-b-hooks-endofscope", "0.25-r0"], ["perl-namespace-clean", "0.27-r2"]]

@@ -1,0 +1,20 @@
+checksume = "3406313db45bd47ce0907fe3606334a95f8f91ff115205c9cfbc7a7638d87ee1"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "polkit-common"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.119.0-r8"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libintl", "0.21-r0"], ["linux-pam", "1.5.2-r0"], ["polkit-elogind-libs", "0.119-r8"]]

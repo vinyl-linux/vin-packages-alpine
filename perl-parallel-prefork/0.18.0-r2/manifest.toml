@@ -1,0 +1,20 @@
+checksume = "6650d72cc8ba5fe0d2c0bc802b7fb116b8e2512c19a27418dc692610b60572bc"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-parallel-prefork"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.18.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-signal-mask", "0.008-r2"], ["perl-class-accessor-lite", "0.08-r7"], ["perl-scope-guard", "0.21-r2"], ["perl-proc-wait3", "0.05-r6"], ["perl-list-moreutils", "0.430-r0"]]

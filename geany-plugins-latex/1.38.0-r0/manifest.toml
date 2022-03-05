@@ -1,0 +1,20 @@
+checksume = "9ca5b47027b7cdacf08be9fc2341ef0eb5840f7ac1e35fce18112f695d46527d"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "geany-plugins-latex"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.38.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["geany", "1.38-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"]]

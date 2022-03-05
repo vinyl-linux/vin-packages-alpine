@@ -1,0 +1,20 @@
+checksume = "ba7b598691cb6067db60cf49240e132f4635e0130f0113ea9e6d6a09f3466059"
+licence = "GPL-2.0"
+meta = false
+provides = "cpufrequtils-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "8.0.0-r4"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["cpufrequtils", "008-r4"]]

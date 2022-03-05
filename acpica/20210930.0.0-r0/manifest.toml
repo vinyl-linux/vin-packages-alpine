@@ -1,0 +1,20 @@
+checksume = "f34daa554ddba366e8292392dbdb2d08d66293de72f99817e0f5ed87f4de1afe"
+licence = "GPL-2.0-only OR BSD-3-Clause OR Intel-ACPI"
+meta = false
+provides = "acpica"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "20210930.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

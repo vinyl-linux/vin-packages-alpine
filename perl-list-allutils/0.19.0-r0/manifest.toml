@@ -1,0 +1,20 @@
+checksume = "9feec7c7188a2bc3eb7948b83b7d0e602e7b8df2c5042e11e146820f8964d029"
+licence = "Artistic-2.0"
+meta = false
+provides = "perl-list-allutils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.19.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-scalar-list-utils", "1.60-r0"], ["perl-list-utilsby", "0.11-r2"], ["perl-list-someutils", "0.58-r1"]]

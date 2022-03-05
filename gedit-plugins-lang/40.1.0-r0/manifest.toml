@@ -1,0 +1,20 @@
+checksume = "a6997d8144e60c19dbc5b214668da42007744e514b9d1c9494180b735cce93bc"
+licence = "GPL-2.0-only"
+meta = false
+provides = "gedit-plugins-lang"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "40.1.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["py3-gobject3", "3.42.0-r1"], ["vte3", "0.66.1-r0"], ["gucharmap", "14.0.0-r0"], ["py3-dbus", "1.2.18-r0"], ["libpeas-python3", "1.30.0-r2"]]

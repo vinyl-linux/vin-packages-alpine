@@ -1,0 +1,20 @@
+checksume = "a12abf2be218e38d876953d758d64f6736b152ed61d8f2c61ef526be775e196a"
+licence = "Apache-2.0"
+meta = false
+provides = "spirv-tools-dev"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2020.3.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["spirv-headers", "1.5.3-r1"], ["spirv-tools", "2020.3-r1"], ["pkgconf", "1.8.0-r0"]]

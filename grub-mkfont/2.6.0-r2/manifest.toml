@@ -1,0 +1,20 @@
+checksume = "694681866811e8fc212d187eab8ccabd3039b95df4a1cf66ebc218e0d57b8811"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "grub-mkfont"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.6.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["grub", "2.06-r2"], ["musl", "1.2.2-r7"], ["device-mapper-libs", "2.02.187-r2"], ["freetype", "2.11.0-r0"]]

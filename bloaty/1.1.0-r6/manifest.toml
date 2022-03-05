@@ -1,0 +1,20 @@
+checksume = "5d6cc0636b8a092e4a92e29030656e988cfcc02a09122dc06bd88d596c854799"
+licence = "Apache-2.0"
+meta = false
+provides = "bloaty"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.1.0-r6"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["capstone", "4.0.2-r1"], ["libgcc", "10.3.1_git20211027-r0"], ["libprotobuf", "3.18.1-r1"], ["re2", "2021.11.01-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

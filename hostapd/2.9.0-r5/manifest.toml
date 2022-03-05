@@ -1,0 +1,20 @@
+checksume = "2cee47ae70c80a7b96fc680e405076feb04519b5d710aa0c6735b6840e8d16d7"
+licence = "custom"
+meta = false
+provides = "hostapd"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.9.0-r5"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["libnl3", "3.5.0-r0"], ["libssl1.1", "1.1.1l-r8"]]

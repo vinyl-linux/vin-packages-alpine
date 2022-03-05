@@ -1,0 +1,20 @@
+checksume = "8dea1ef0cd4f41680bd1d596c3e5ce6d575f16ce76d9187c07ea273361572545"
+licence = "PostgreSQL"
+meta = false
+provides = "postgresql12"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "12.10.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["postgresql12-client", "12.10-r0"], ["postgresql-common", "1.0-r0"], ["tzdata", "2021e-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["icu-libs", "69.1-r1"], ["libldap", "2.6.0-r0"], ["libpq", "14.2-r0"], ["libssl1.1", "1.1.1l-r8"], ["libxml2", "2.9.12-r2"]]

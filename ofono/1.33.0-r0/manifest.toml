@@ -1,0 +1,20 @@
+checksume = "4d40d5e3ae8a754ddd2a559e80a3d1d7716486c94fcd4e0a77acf917a3f45993"
+licence = "GPL-2.0-only"
+meta = false
+provides = "ofono"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.33.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["bluez", "5.63-r0"], ["mobile-broadband-provider-info", "20201225-r0"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["ell", "0.46-r0"], ["glib", "2.70.1-r0"], ["eudev-libs", "3.2.11_pre1-r0"]]

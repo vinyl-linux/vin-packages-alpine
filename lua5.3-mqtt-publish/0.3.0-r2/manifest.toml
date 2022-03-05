@@ -1,0 +1,20 @@
+checksume = "f2c82fa8c11b5c7a03b0d725567051c65a5eb61d414a2cd379b944fca46e2814"
+licence = "MIT"
+meta = false
+provides = "lua5.3-mqtt-publish"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.3.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.3-mosquitto", "0.4.1-r0"]]

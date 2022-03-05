@@ -1,0 +1,20 @@
+checksume = "81a66159ab33c8f60dbb491c3ecd31ee31cd3a59199cd9d5a80efc4df70b2569"
+licence = "Apache-2.0 AND LGPL-2.0-or-later AND LicenseRef-KDE-Accepted-GPL"
+meta = false
+provides = "mycroft-plasmoid"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.0.0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["mycroft-gui", "1.0.1-r1"], ["ki18n", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["qt5-qtbase", "5.15.3_git20210713-r5"], ["qt5-qtdeclarative", "5.15.3_git20210531-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1_git20211027-r0"], ["libstdc++", "10.3.1_git20211027-r0"]]

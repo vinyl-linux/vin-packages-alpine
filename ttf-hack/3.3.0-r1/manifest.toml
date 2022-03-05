@@ -1,0 +1,20 @@
+checksume = "a6a5adfa3bf57bd992e3b044d9d99659e084ede3f6e255c8892561d37e272e11"
+licence = "MIT"
+meta = false
+provides = "ttf-hack"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.3.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["fontconfig", "2.13.1-r4"], ["mkfontscale", "1.2.1-r1"]]

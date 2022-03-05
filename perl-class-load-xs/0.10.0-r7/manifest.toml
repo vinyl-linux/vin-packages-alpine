@@ -1,0 +1,20 @@
+checksume = "1ef0a6bbfdf8e9995b55efd9bd18573ea9744c011e4d421ad506fc8f8547c3fd"
+licence = "Artistic-2.0"
+meta = false
+provides = "perl-class-load-xs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.10.0-r7"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-class-load", "0.25-r2"], ["musl", "1.2.2-r7"]]

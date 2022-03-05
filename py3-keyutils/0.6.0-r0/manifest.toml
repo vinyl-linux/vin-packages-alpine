@@ -1,0 +1,20 @@
+checksume = "afda805064926592e4f8bd93791f8b85b7c5b63c77666c7b88060ebd23cd69a8"
+licence = "Apache-2.0"
+meta = false
+provides = "py3-keyutils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["python3", "3.9.7-r4"], ["keyutils", "1.6.3-r0"], ["musl", "1.2.2-r7"], ["keyutils-libs", "1.6.3-r0"]]

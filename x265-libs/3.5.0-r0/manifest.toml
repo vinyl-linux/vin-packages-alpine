@@ -1,0 +1,20 @@
+checksume = "c9dba8742a5e2e87d95073c634fe3f6a45c33fcd9bc40f4137e41d98fefd52c5"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "x265-libs"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1_git20211027-r0"]]

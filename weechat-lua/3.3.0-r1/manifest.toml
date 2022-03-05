@@ -1,0 +1,20 @@
+checksume = "928d0c3a441b6436dd847a3e09417b45febf77428693e289c28531c545d97d09"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "weechat-lua"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3.3.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["weechat", "3.3-r1"], ["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"]]

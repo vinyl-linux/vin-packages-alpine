@@ -1,0 +1,20 @@
+checksume = "d17772c57ece4bd19f4340b4038b88da694f66f32aa0c296db0f8f0e366bd1d5"
+licence = "GPL-3.0-only"
+meta = false
+provides = "perl-xml-tidy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.20.0-r2"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-xml-xpath", "1.44-r2"], ["perl-math-basecnv", "1.14-r2"]]

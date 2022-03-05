@@ -1,0 +1,20 @@
+checksume = "71eadcfba2da6788f46fbd729b4f7475c4179d837db546dafe94ca3558a64c97"
+licence = "BSD-3-Clause"
+meta = false
+provides = "wpa_supplicant"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "2.9.0-r17"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1l-r8"], ["dbus-libs", "1.12.20-r4"], ["libnl3", "3.5.0-r0"], ["pcsc-lite-libs", "1.9.4-r0"], ["libssl1.1", "1.1.1l-r8"]]

@@ -1,0 +1,20 @@
+checksume = "c058c29c5da8a02f8897f1904e490a9cf3f0b752a729727c2c0af6c167600f03"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-cps"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.19.0-r3"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl-future", "0.47-r0"], ["perl-sub-name", "0.26-r3"]]

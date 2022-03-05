@@ -1,0 +1,20 @@
+checksume = "a677f0ea03d604d52e0f5a77ed15837d8d1cb992d8ce7076f5df7bb8fc2d9aa2"
+licence = "Apache-2.0"
+meta = false
+provides = "salt"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "3004.0.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["py3-yaml", "5.4.1.1-r1"], ["py3-jinja2", "3.0.1-r0"], ["py3-markupsafe", "2.0.1-r0"], ["py3-msgpack", "1.0.2-r1"], ["py3-pycryptodome", "3.10.1-r1"], ["py3-pyzmq", "22.3.0-r0"], ["py3-six", "1.16.0-r0"], ["py3-requests", "2.26.0-r1"], ["py3-pygit2", "1.7.0-r0"], ["py3-dateutil", "2.8.2-r0"], ["py3-distro", "1.6.0-r0"], ["procps", "3.3.17-r0"]]

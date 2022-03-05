@@ -1,0 +1,20 @@
+checksume = "71011acec1f823b51038fa97557a0a03047f2cc3fe303d80a9e3b88be5bab3e8"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-list-someutils"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.58.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-module-implementation", "0.09-r3"], ["perl-list-someutils-xs", "0.58-r3"]]

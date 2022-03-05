@@ -1,0 +1,20 @@
+checksume = "5f80bb3a1f474256c37fefac0d0069af1678822d61df06e3be6c5dd6e9f98f92"
+licence = "GPL-2.0-or-later"
+meta = false
+provides = "igmpproxy"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

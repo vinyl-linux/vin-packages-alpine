@@ -1,0 +1,20 @@
+checksume = "fece7516909484100a38b460a55a76885f72a6671d45056ef57e53e4e5f67b84"
+licence = "GPL-2.0-or-later GPL-3.0-or-later LGPL-3.0-or-later"
+meta = false
+provides = "libidn"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.38.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["musl", "1.2.2-r7"]]

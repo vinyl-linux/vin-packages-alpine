@@ -1,0 +1,20 @@
+checksume = "9b4f17a81766555bb3319e16043be89e14ed2a93e8efebd555b7db6e07e0bb96"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+meta = false
+provides = "perl-dbd-sqlite"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64"
+version = "1.70.0-r1"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["perl", "5.34.0-r1"], ["perl-dbi", "1.643-r3"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

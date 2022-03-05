@@ -1,0 +1,20 @@
+checksume = "3875da6afcec5c44b477594c233acabc5cbd7f7191c1d215a0d7af74282b23ea"
+licence = "GPL-3.0-or-later"
+meta = false
+provides = "lua5.2-dromozoa-utf8"
+service_directory = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64"
+version = "1.17.0-r0"
+
+[commands]
+  compile = "echo"
+  configure = "echo"
+  install = "{{ .ManifestDir }}/install.sh"
+  patches = []
+  skipenv = false
+  working_dir = "."
+
+[profiles]
+
+  [profiles.default]
+    Deps = [["lua5.2", "5.2.4-r7"]]
