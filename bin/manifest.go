@@ -32,7 +32,7 @@ type Manifest struct {
 	Provides   string           `toml:"provides"`
 	VersionStr string           `toml:"version"`
 	Version    *version.Version `toml:"-"`
-	Checksum   string           `toml:"checksume"`
+	Checksum   string           `toml:"checksum"`
 	Licence    string           `toml:"licence"`
 	Tarball    string           `toml:"tarball"`
 	Meta       bool             `toml:"meta,omitempty"`
