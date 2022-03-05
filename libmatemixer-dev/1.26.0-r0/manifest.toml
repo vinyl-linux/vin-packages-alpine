@@ -1,0 +1,15 @@
+checksum = "fe7e6bb42a8f46880f06b4f2fd844a52d657edbb5f70a9782e9734ff6c22b511"
+licence = "GPL-2.0-or-later"
+provides = "libmatemixer-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmatemixer-dev-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmatemixer", "1.26.0-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

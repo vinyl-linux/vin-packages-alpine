@@ -1,0 +1,15 @@
+checksum = "dd480485d72e7c8cfa51dc4c464325b3b1fb2753fcdd2eae6da7378fd4eb9b68"
+licence = "GPL-3.0-only"
+provides = "glpk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/glpk-dev-5.0-r1.apk"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glpk", "5.0.0-r1"]]

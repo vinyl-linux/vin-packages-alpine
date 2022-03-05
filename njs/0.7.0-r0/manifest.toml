@@ -1,0 +1,15 @@
+checksum = "5be0de7d55158cc13d387b04794f0e59f3220574c321cbcc3e5c0c01fb1dc6c1"
+licence = "BSD-2-Clause"
+provides = "njs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/njs-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libedit", "20210910.3.1-r0"], ["pcre", "8.45.0-r1"]]

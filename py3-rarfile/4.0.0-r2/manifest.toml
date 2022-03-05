@@ -1,0 +1,15 @@
+checksum = "025059d1c275eec456484671fca530f7e14a2d19ab48d30bbffb0bce0a948f34"
+licence = "ISC"
+provides = "py3-rarfile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-rarfile-4.0-r2.apk"
+version = "4.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

@@ -1,0 +1,15 @@
+checksum = "faeca456f1b7569d95ebd1073d65fb118c2018ae63bcbcbfcccb785e685af723"
+licence = "MIT"
+provides = "unshield"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unshield-1.4.3-r0.apk"
+version = "1.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

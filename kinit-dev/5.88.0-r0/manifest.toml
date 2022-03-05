@@ -1,0 +1,15 @@
+checksum = "3bff5d511dd42a4f65c7429456aea94ade0ea6ec3820d59c269f6b72dab4a9bd"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kinit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kinit-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.88.0-r0"], ["kcrash-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["kservice-dev", "5.88.0-r0"], ["kwindowsystem-dev", "5.88.0-r0"], ["libcap-dev", "2.61.0-r0"], ["qt5-qtbase-dev", "5.15.3"]]

@@ -1,0 +1,15 @@
+checksum = "e0c61c496198be4ce7725abd1e52e77bcb5c5736d71c6622daaf95535b6f01ce"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtsystems-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtsystems-dev-0_git20190103-r1.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.3"], ["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtsystems", "0.0.0"]]

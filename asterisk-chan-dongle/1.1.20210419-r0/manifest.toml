@@ -1,0 +1,15 @@
+checksum = "b1b25081ea45efc04bb0ec8cd0eb7e351189e555a671853153bebf5046136458"
+licence = "GPL-2.0-or-later"
+provides = "asterisk-chan-dongle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/asterisk-chan-dongle-1.1.20210419-r0.apk"
+version = "1.1.20210419-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["asterisk", "18.2.2-r5"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"]]

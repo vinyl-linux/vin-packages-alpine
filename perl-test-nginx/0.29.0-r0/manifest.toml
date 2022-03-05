@@ -1,0 +1,15 @@
+checksum = "01526ce82e0c40146507f1a9b46733992cf8cffdf37b6ec122babc2491397e4e"
+licence = "BSD-3-Clause"
+provides = "perl-test-nginx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-nginx-0.29-r0.apk"
+version = "0.29.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-libwww", "6.58.0-r0"], ["perl-ipc-run", "20200505.0.0-r1"], ["perl-text-diff", "1.45.0-r3"], ["perl-http-message", "6.35.0-r0"], ["perl-test-longstring", "0.17.0-r2"], ["perl-list-moreutils", "0.430.0-r0"], ["perl-test-base", "0.89.0-r2"], ["perl-uri", "5.10.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "99f59a09ab216ae02a98d6d2c52f45aa51347aae82a56d9413fd6e7a3887c9e3"
+licence = "BSD-3-Clause-Clear"
+provides = "py3-rply"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-rply-0.7.8-r1.apk"
+version = "0.7.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-appdirs", "1.4.4-r2"]]

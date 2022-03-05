@@ -1,0 +1,15 @@
+checksum = "494b31e12967784bb2aa7de83a5fec007acb62c08b9a7efcbd1e1e705a853618"
+licence = "GPL-2.0"
+provides = "ircservices"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ircservices-5.1.24-r5.apk"
+version = "5.1.24-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

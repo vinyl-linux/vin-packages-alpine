@@ -1,0 +1,15 @@
+checksum = "17a7c337d9b20845474afa66a1b372eed91dd6931d1d9ac1d4ec8417e9a3ced7"
+licence = "LGPL-2.1-or-later"
+provides = "appstream-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/appstream-qt-0.14.6-r1.apk"
+version = "0.14.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["appstream", "0.14.6-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

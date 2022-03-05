@@ -1,0 +1,15 @@
+checksum = "cb0cf7390cd1faa5c9fa34d54c939a8164ee8df3e002702bd0c948f8a8b0126b"
+licence = "LGPL-3.0-or-later"
+provides = "libgnome-games-support-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgnome-games-support-dev-1.8.1-r1.apk"
+version = "1.8.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgnome-games-support", "1.8.1-r1"], ["libgee-dev", "0.20.4-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

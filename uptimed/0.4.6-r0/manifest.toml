@@ -1,0 +1,15 @@
+checksum = "94d3e37d9238487171210047f10dec3667cfad2ca63e6570b20901f312098878"
+licence = "GPL-2.0-only"
+provides = "uptimed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uptimed-0.4.6-r0.apk"
+version = "0.4.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

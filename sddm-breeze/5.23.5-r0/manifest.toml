@@ -1,0 +1,15 @@
+checksum = "4e874f9d411e91471c6eec1d9f9cdad3b342c55da528f6c55d277bdd2d01131b"
+licence = "GPL-3.0-or-later"
+provides = "sddm-breeze"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sddm-breeze-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["breeze", "5.23.5-r0"], ["plasma-workspace", "5.23.5-r0"], ["sddm", "0.19.0-r3"]]

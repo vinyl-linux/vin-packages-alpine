@@ -1,0 +1,15 @@
+checksum = "094dd3e30897a3d21302d501bc689423282e34cda3974297dc41b1556e4fb582"
+licence = "Apache-2.0"
+provides = "php8-pecl-maxminddb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-maxminddb-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-bcmath", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libmaxminddb", "1.6.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c58a2cf475578a586a2bfd31fc00f32946d344a287035a8a93ac972145bddb39"
+licence = "MPL2"
+provides = "kea-hook-run-script"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-hook-run-script-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["kea-common", "2.0.1-r0"]]

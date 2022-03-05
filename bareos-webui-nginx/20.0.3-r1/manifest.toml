@@ -1,0 +1,15 @@
+checksum = "222933b325d5c0b343d568bce344fed82000ab71c9df6ef9e053ae6b0f36c37a"
+licence = "AGPL-3.0"
+provides = "bareos-webui-nginx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bareos-webui-nginx-20.0.3-r1.apk"
+version = "20.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos-webui", "20.0.3-r1"], ["nginx", "1.20.2-r0"]]

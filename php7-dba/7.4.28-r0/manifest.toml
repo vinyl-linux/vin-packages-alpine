@@ -1,0 +1,15 @@
+checksum = "8551a0b8e063cd4a4aeba2364c3c284785dea3c09cc67d9dc6580660615ae298"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-dba"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-dba-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["gdbm", "1.22.0-r0"], ["lmdb", "0.9.29-r1"]]

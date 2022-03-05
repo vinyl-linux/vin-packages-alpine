@@ -1,0 +1,15 @@
+checksum = "84fda0ddf08a8a7662cdbb406f5a928205a6c5ef9412bcc28fc9b5eb0899896b"
+licence = "GPL-2.0-or-later AND BSD-3-Clause AND MIT"
+provides = "poppler-data"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/poppler-data-0.4.11-r0.apk"
+version = "0.4.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

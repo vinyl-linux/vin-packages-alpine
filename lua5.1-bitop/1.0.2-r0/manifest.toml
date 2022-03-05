@@ -1,0 +1,15 @@
+checksum = "00a26f3bb430c1ff76b19cf1013c600255b703b0a90272c04e9c937604772c78"
+licence = "MIT"
+provides = "lua5.1-bitop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.1-bitop-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"]]

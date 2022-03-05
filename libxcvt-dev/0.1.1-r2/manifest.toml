@@ -1,0 +1,15 @@
+checksum = "920dd7f15dc6e3204bde80699f5504b031ad558063e9b53481bc9c7217ed716f"
+licence = "custom"
+provides = "libxcvt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libxcvt-dev-0.1.1-r2.apk"
+version = "0.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxcvt", "0.1.1-r2"], ["pkgconf", "1.8.0-r0"]]

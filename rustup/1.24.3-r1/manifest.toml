@@ -1,0 +1,15 @@
+checksum = "f64ae7d141330c9a9a504488218647dadb77cc821fea96c7958db4fbc87d7b4e"
+licence = "Apache-2.0"
+provides = "rustup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rustup-1.24.3-r1.apk"
+version = "1.24.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1-l-r8"]]

@@ -1,0 +1,15 @@
+checksum = "79f527f58f3dbf105e6d0aaf91767f20be8662ced704ffa96cb62efd699edde4"
+licence = "GPL-2.0-or-later OR GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "cd-discid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cd-discid-1.4-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

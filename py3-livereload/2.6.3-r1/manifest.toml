@@ -1,0 +1,15 @@
+checksum = "c03fe86c337c54860a094629843f70a3212d7264a05f682b8656fd1f539e71fa"
+licence = "BSD-3-Clause"
+provides = "py3-livereload"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-livereload-2.6.3-r1.apk"
+version = "2.6.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"], ["py3-tornado", "6.1.0-r1"], ["python3", "3.9.7-r4"]]

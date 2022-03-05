@@ -1,0 +1,15 @@
+checksum = "6c6b63017a806f381e1f1eb79428a2fb9f63b1d91042fabb363546e486289afa"
+licence = "BSD-3-Clause"
+provides = "nymphrpc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nymphrpc-dev-0_git20210801-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["poco-dev", "1.11.1-r0"], ["nymphrpc", "0.0.0"]]

@@ -1,0 +1,15 @@
+checksum = "4b075ae34be50e426763f401ff4239f81e3c38da00747d30f0e90d879d8a2d15"
+licence = "MPL-2.0"
+provides = "libe-book-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libe-book-tools-0.1.3-r12.apk"
+version = "0.1.3-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libe-book", "0.1.3-r12"], ["libgcc", "10.3.1"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "dcf67ce34c7ca742c475c2e78a5c4ecb28509a60fcd24495d14fe1c1d6844bca"
+licence = "GPL-2.0-or-later"
+provides = "xfdesktop-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xfdesktop-lang-4.16.0-r0.apk"
+version = "4.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r1"]]

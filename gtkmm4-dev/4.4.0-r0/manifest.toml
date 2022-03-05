@@ -1,0 +1,15 @@
+checksum = "cd0f3753e37695a290f9ecd959fd1b5c5d5a53e5511968cf7d13ecb78a15acef"
+licence = "LGPL-2.1-or-later"
+provides = "gtkmm4-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtkmm4-dev-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtkmm4", "4.4.0-r0"], ["cairomm1.16-dev", "1.16.1-r0"], ["gdk-pixbuf-dev", "2.42.6-r0"], ["glibmm2.68-dev", "2.68.1-r0"], ["gtk4.0-dev", "4.4.1-r0"], ["pangomm2.48-dev", "2.48.1-r0"], ["pkgconf", "1.8.0-r0"]]

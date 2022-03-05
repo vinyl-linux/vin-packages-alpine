@@ -1,0 +1,15 @@
+checksum = "36fff659585fce260324da20434e25b516fc2e605c2e626131038a7014b169d8"
+licence = "PHP-3.01"
+provides = "php8-pecl-memcached"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-memcached-3.1.5-r1.apk"
+version = "3.1.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-session", "8.0.16-r0"], ["php8-pecl-igbinary", "3.2.6-r0"], ["musl", "1.2.2-r7"], ["libmemcached-libs", "1.0.18-r4"], ["zlib", "1.2.11-r3"]]

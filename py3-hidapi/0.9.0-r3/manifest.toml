@@ -1,0 +1,15 @@
+checksum = "23392c772da51b61b962aea4405e8e9195ae69df7d981aa1e7d6acb698eccdf3"
+licence = "GPL-3.0-or-later"
+provides = "py3-hidapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-hidapi-0.9.0-r3.apk"
+version = "0.9.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["hidapi", "0.11.0-r0"]]

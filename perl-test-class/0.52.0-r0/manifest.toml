@@ -1,0 +1,15 @@
+checksum = "8625316197597ffcd204bd61a89d52377b2bdf6cca678352accff4c8bfe8fc5c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-class"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-class-0.52-r0.apk"
+version = "0.52.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-module-runtime", "0.16.0-r4"], ["perl-mro-compat", "0.13.0-r2"], ["perl-try-tiny", "0.30.0-r3"]]

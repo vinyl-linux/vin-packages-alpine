@@ -1,0 +1,15 @@
+checksum = "4a5795985a34ddf47bce906c791782f405d3f2513e4f6ec57757796bf5df0d8d"
+licence = "LGPL-2.0-or-later AND LGPL-2.0-only AND LGPL-2.1-or-later"
+provides = "kconfig-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kconfig-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"]]

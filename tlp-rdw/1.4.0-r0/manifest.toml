@@ -1,0 +1,15 @@
+checksum = "5ea456c552c4014cb73b15dd7bd49b0970a24cd8dfffc3eddcfbc8a827312996"
+licence = "GPL-2.0-or-later"
+provides = "tlp-rdw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tlp-rdw-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tlp", "1.4.0-r0"]]

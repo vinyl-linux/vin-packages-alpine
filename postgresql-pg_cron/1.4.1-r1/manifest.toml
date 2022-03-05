@@ -1,0 +1,15 @@
+checksum = "bb8a3b5281ea1c9a91ed0110d6edcf0b969b340ca1c806897e9945575cf57f99"
+licence = "PostgreSQL"
+provides = "postgresql-pg_cron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postgresql-pg_cron-1.4.1-r1.apk"
+version = "1.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql14", "14.2.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

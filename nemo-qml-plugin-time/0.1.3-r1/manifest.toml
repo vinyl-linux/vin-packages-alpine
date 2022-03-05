@@ -1,0 +1,15 @@
+checksum = "e5d4ab0069470f5f78cd09bdf4aec58dff81008e796f8c5ee84b6a8ac2f43e96"
+licence = "BSD-3-Clause"
+provides = "nemo-qml-plugin-time"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nemo-qml-plugin-time-0.1.3-r1.apk"
+version = "0.1.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

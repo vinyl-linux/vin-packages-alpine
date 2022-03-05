@@ -1,0 +1,15 @@
+checksum = "4781c77e705272ad508439a54fbfa31ed1b165786c883c02010aa3c932070137"
+licence = "LGPL-2.1-or-later"
+provides = "libnfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libnfs-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "dc0da63ea690b7281c9c6ad0816de6bb176ab9bb12b5b97e3dcbb393df2aaa88"
+licence = "MIT"
+provides = "xf86-input-synaptics-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-input-synaptics-dev-1.9.1-r3.apk"
+version = "1.9.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

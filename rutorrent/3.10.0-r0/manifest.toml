@@ -1,0 +1,15 @@
+checksum = "f22249da8f3dd5210d3c5b4b46c251acf51cc9b2d9fd1096133645505dc11d94"
+licence = "GPL"
+provides = "rutorrent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rutorrent-3.10-r0.apk"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7", "7.4.28-r0"], ["curl", "7.80.0-r0"], ["busybox", "1.34.1-r4"]]

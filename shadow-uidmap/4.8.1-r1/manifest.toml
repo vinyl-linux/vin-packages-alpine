@@ -1,0 +1,15 @@
+checksum = "9a4438c20b499feeae5ab9b0f91444463241554ee7bb6ce7091c968ca22dd6ed"
+licence = "BSD-3-Clause"
+provides = "shadow-uidmap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/shadow-uidmap-4.8.1-r1.apk"
+version = "4.8.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

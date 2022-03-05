@@ -1,0 +1,15 @@
+checksum = "9e19dffefca3218743612e689f11f43a4b8d15e428c4d4b541b1d0b3399e06da"
+licence = "GPL-2.0-or-later"
+provides = "mingetty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mingetty-1.08-r2.apk"
+version = "1.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

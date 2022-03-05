@@ -1,0 +1,15 @@
+checksum = "1eca32688452e9564d198fae3c7204302ad2e88d19c06b77940d7f89bd9c70ce"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "libplist-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libplist-dev-2.2.0-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libplist++", "2.2.0-r1"], ["libplist", "2.2.0-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4339a1608489ba2310826916a725c46006a98717b17db41b76401ba4ffc0289b"
+licence = "LGPL-2.1-only"
+provides = "gnome-themes-extra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-themes-extra-3.28-r3.apk"
+version = "3.28.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ttf-cantarell", "0.301.0-r0"], ["librsvg", "2.50.7-r1"]]

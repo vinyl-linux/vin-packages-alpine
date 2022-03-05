@@ -1,0 +1,15 @@
+checksum = "3174010d579ea862ff11fedf2e08db4d43c9dff0b457f63b6c2f97ed00bc4920"
+licence = "MIT"
+provides = "sqlite3pp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sqlite3pp-1.0.8-r0.apk"
+version = "1.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sqlite-dev", "3.36.0-r0"]]

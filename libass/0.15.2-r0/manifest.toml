@@ -1,0 +1,15 @@
+checksum = "a7bf47d618c15c5c13160dfa05f8e5686f30918fa7a7b12830b308a304c67b00"
+licence = "ISC"
+provides = "libass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libass-0.15.2-r0.apk"
+version = "0.15.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"], ["fribidi", "1.0.11-r0"], ["harfbuzz", "3.0.0-r2"]]

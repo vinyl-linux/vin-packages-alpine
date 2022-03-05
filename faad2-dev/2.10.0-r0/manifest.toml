@@ -1,0 +1,15 @@
+checksum = "04e135d128363e4434cb795712f5b7b6315e4cce08b6bc8fb864a2a8422ecffa"
+licence = "GPL-2.0-or-later"
+provides = "faad2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/faad2-dev-2.10.0-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["faad2-libs", "2.10.0-r0"], ["pkgconf", "1.8.0-r0"]]

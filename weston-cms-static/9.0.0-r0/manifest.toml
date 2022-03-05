@@ -1,0 +1,15 @@
+checksum = "ba661db67d57443a33d2e369666e9e5f5dedf44bfab5b042f4023985d40621a6"
+licence = "MIT"
+provides = "weston-cms-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/weston-cms-static-9.0.0-r0.apk"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["weston", "9.0.0-r0"], ["lcms2", "2.12.0-r1"], ["wayland-libs-server", "1.19.0-r1"], ["libweston", "9.0.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bd76ab0e31b684f51e478fbf8793b39ca0ed2b4ed2e9613cc75f50d62b782b61"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-pipe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-backend-pipe-4.5.3-r0.apk"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.5.3-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

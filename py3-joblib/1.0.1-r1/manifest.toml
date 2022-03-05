@@ -1,0 +1,15 @@
+checksum = "16953e613af1e6385c3954cf8594d22be97561849817c7729768accc23db5c54"
+licence = "BSD-3-Clause"
+provides = "py3-joblib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-joblib-1.0.1-r1.apk"
+version = "1.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cloudpickle", "1.6.0-r1"], ["py3-distributed", "2021.7.0-r0"], ["py3-loky", "3.0.0-r0"], ["python3", "3.9.7-r4"]]

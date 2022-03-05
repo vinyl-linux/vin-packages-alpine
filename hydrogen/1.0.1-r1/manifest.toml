@@ -1,0 +1,15 @@
+checksum = "8af3cf119e83c0be1fb407495f81eca36584bfa2452a73fbf8ff204b5101d487"
+licence = "GPL-2.0-or-later"
+provides = "hydrogen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hydrogen-1.0.1-r1.apk"
+version = "1.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtxmlpatterns", "5.15.3"], ["libarchive", "3.6.0-r0"], ["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["jack", "1.9.19-r2"], ["libpulse", "15.0.0-r2"], ["libsndfile", "1.0.31-r1"], ["libstdc++", "10.3.1"]]

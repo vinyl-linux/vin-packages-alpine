@@ -1,0 +1,15 @@
+checksum = "54b50630e6761fe5f4d8eb6e048647a1419a90e3164b4e8ef8b61c220a143727"
+licence = "MIT"
+provides = "zzz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/zzz-0.1.0-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

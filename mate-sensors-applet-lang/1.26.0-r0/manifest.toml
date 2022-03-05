@@ -1,0 +1,15 @@
+checksum = "bf1e0cbb978ff974d6c2c98ff7eefb47ddb4370a0f636a012dda2156834e4780"
+licence = "GPL-2.0-or-later"
+provides = "mate-sensors-applet-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mate-sensors-applet-lang-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-xml-parser", "2.46.0-r2"]]

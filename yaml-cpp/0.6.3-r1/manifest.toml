@@ -1,0 +1,15 @@
+checksum = "0b208f728744821fb46b6a633b23c0aea6f0b94d70f73197b4a338435387b958"
+licence = "MIT"
+provides = "yaml-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yaml-cpp-0.6.3-r1.apk"
+version = "0.6.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

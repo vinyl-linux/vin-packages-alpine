@@ -1,0 +1,15 @@
+checksum = "3370d14dbfc7e1f09a1d81a7ae3c1709ac89c3ca7be692d66b9214c5cae50db0"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-cryptx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-cryptx-0.074-r0.apk"
+version = "0.74.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

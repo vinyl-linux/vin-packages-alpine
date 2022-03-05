@@ -1,0 +1,15 @@
+checksum = "7854ad34f406fa8292a350ba77fd5ff954e3254d8427126bdf5ac89e3195f816"
+licence = "GPL-2.0-or-later"
+provides = "cheese-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cheese-lang-3.38.0-r1.apk"
+version = "3.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "41.0.0-r0"]]

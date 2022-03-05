@@ -1,0 +1,15 @@
+checksum = "0d50f5b4ed17179febc09d9e31a1adac404ee396cad7b7cc9d5220d01e4a54ad"
+licence = "MIT"
+provides = "lua5.2-loadkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.2-loadkit-1.1.0-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r7"]]

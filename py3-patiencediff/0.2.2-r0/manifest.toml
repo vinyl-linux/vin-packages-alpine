@@ -1,0 +1,15 @@
+checksum = "08f5df0490462b454aee467d1282d96fc8294e02f16b769de6d0456041a67179"
+licence = "GPL-2.0-or-later"
+provides = "py3-patiencediff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-patiencediff-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

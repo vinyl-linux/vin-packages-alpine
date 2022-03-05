@@ -1,0 +1,15 @@
+checksum = "af2349f40c5d9a4b8c2f66534c36ca4495f15bb112e9fe8fe6dca95c54d425fd"
+licence = "Public-Domain"
+provides = "jsoncpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jsoncpp-1.9.5-r0.apk"
+version = "1.9.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

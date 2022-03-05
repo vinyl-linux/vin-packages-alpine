@@ -1,0 +1,15 @@
+checksum = "8434c2d23e51c0b545531f2efc479efe7642954b376b12214c0802c42fd74f41"
+licence = "LGPL-3.0-or-later OR Apache-2.0"
+provides = "lucene++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lucene++-3.0.8-r4.apk"
+version = "3.0.8-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["boost1.77-iostreams", "1.77.0-r1"], ["boost1.77-thread", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

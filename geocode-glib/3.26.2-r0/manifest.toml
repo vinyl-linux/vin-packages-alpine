@@ -1,0 +1,15 @@
+checksum = "d8f92a95221b34002338b2ed311e06181f9f1e471e46f8e1b0c377eb03874728"
+licence = "LGPL-2.0-or-later"
+provides = "geocode-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/geocode-glib-3.26.2-r0.apk"
+version = "3.26.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["json-glib", "1.6.6-r0"], ["libsoup", "2.74.0-r0"]]

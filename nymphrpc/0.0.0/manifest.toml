@@ -1,0 +1,15 @@
+checksum = "fe30b909b389447521ae2c273fa473c059695a2847684b548cd429cfe4af2806"
+licence = "BSD-3-Clause"
+provides = "nymphrpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nymphrpc-0_git20210801-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

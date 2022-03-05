@@ -1,0 +1,15 @@
+checksum = "e04200c2cea4dca65785b4bb2d511be7a02cdfb60be7dee4d0f20e86869ae723"
+licence = "Apache-2.0"
+provides = "php8-pecl-xhprof"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-xhprof-2.3.5-r0.apk"
+version = "2.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

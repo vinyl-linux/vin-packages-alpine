@@ -1,0 +1,15 @@
+checksum = "1c32cb9d07e39d9151a28ab64d49cfddae66d43dc60890d588f47eda4034de5f"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-easy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-xml-easy-0.011-r5.apk"
+version = "0.11.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-params-classify", "0.15.0-r5"], ["musl", "1.2.2-r7"]]

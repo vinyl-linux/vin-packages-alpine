@@ -1,0 +1,15 @@
+checksum = "67b54bb97778860a187f376c23eb385879c981ce1d4d5506dc30772dc40344bb"
+licence = "BSD-2-Clause"
+provides = "ykpers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ykpers-1.20.0-r0.apk"
+version = "1.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"], ["yubico-c", "1.13.0-r0"]]

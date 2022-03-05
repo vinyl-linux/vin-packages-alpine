@@ -1,0 +1,15 @@
+checksum = "0515b21edc9f641c0d00fde4ef586bf97ca3c57357c187a829b65cf2e2d7f2a2"
+licence = "MIT"
+provides = "xf86-video-tdfx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-tdfx-1.5.0-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

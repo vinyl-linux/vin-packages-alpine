@@ -1,0 +1,15 @@
+checksum = "db663381924092df2e415af9faa7898b5b45410c12cac90d4e39a02ae25395c6"
+licence = "GPL-2.0"
+provides = "flawfinder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/flawfinder-2.0.15-r0.apk"
+version = "2.0.15-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

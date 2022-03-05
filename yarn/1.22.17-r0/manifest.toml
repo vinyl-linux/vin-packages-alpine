@@ -1,0 +1,15 @@
+checksum = "a0a16016bce55d51edf2d79bfe9ec49b127327c3c4810e5889b272a5d0252e08"
+licence = "BSD-2-Clause"
+provides = "yarn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yarn-1.22.17-r0.apk"
+version = "1.22.17-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nodejs-current", "17.6.0-r0"]]

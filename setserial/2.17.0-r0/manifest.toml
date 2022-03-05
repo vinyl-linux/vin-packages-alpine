@@ -1,0 +1,15 @@
+checksum = "2597fe477101ef768bf2c73879b2629744524274101b5eb6b87963918a38cca5"
+licence = "GPL-2.0-only"
+provides = "setserial"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/setserial-2.17-r0.apk"
+version = "2.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "b26a7c3e59c164e6f9cc6ec1f4651af8128f7be9218eafebf1483aa5c8c9f614"
+licence = "GPL-2.0-or-later"
+provides = "kvantum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kvantum-0.20.2-r0.apk"
+version = "0.20.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r1"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtsvg", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

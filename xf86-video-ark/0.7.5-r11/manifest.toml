@@ -1,0 +1,15 @@
+checksum = "3cba8aeb750cbf931a7d8a2edf671452f969ba620804a885248701cce2b9281e"
+licence = "MIT"
+provides = "xf86-video-ark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-ark-0.7.5-r11.apk"
+version = "0.7.5-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

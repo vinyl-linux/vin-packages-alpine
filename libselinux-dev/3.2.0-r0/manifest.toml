@@ -1,0 +1,15 @@
+checksum = "08b55e563febb7e76d5560136a81e570ea8700042a3602409ac61fa6b0829886"
+licence = "Public-Domain"
+provides = "libselinux-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libselinux-dev-3.2-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libselinux", "3.2.0-r0"], ["pcre-dev", "8.45.0-r1"], ["libsepol-dev", "2.8.0-r0"], ["pkgconf", "1.8.0-r0"]]

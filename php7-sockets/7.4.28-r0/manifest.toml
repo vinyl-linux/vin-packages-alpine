@@ -1,0 +1,15 @@
+checksum = "d8bc03811e4fdad37cc406b3456f9a673a42afe0100286a68a434d83f4065835"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-sockets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-sockets-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

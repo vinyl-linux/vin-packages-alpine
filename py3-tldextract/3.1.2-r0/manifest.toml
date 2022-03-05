@@ -1,0 +1,15 @@
+checksum = "d13c83830eeef2e64423e63a7cf957e8b796d72fa650c18e959f0af731ad5bee"
+licence = "BSD-3-Clause"
+provides = "py3-tldextract"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-tldextract-3.1.2-r0.apk"
+version = "3.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-idna", "3.3.0-r0"], ["py3-requests", "2.26.0-r1"], ["py3-requests-file", "1.5.1-r1"], ["py3-filelock", "3.0.12-r3"]]

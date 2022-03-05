@@ -1,0 +1,15 @@
+checksum = "32ad2b17510b12976a508204fee597f0a972c4169a71e9cb2aea5decdb5f3710"
+licence = "EPL-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later AND Ruby"
+provides = "jruby-rake"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jruby-rake-9.3.1.0-r0.apk"
+version = "9.3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jruby", "9.3.1.0-r0"]]

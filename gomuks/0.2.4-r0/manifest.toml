@@ -1,0 +1,15 @@
+checksum = "a27b6adf523874f0426febea91ce916b1c6d4d55f4097eae5b7da341c13e6bd3"
+licence = "AGPL-3.0-or-later"
+provides = "gomuks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gomuks-0.2.4-r0.apk"
+version = "0.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses", "6.3.0"], ["musl", "1.2.2-r7"], ["olm", "3.2.7-r1"]]

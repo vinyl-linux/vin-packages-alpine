@@ -1,0 +1,15 @@
+checksum = "5037213f3f260f046bfe9613e24691718e6f9f6df17b21f9781e583935dd9e36"
+licence = "MIT"
+provides = "lua5.3-moonscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-moonscript-0.5.0-r1.apk"
+version = "0.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"], ["lua5.3-alt-getopt", "0.8.0-r0"], ["lua5.3-filesystem", "1.8.0-r1"], ["lua5.3-lpeg", "1.0.2-r2"]]

@@ -1,0 +1,15 @@
+checksum = "826bf2293614c20726c706538eb44f7b456060b8a9ec47043b3edc0754257d9a"
+licence = "MIT"
+provides = "py3-boto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-boto-2.49.0-r3.apk"
+version = "2.49.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

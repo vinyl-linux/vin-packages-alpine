@@ -1,0 +1,15 @@
+checksum = "7bc7d7f1fce9b16606ba3d697aae30fb62dc5fc13b2f9c6d4af00a5e72470007"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-memory-cycle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-memory-cycle-1.06-r1.apk"
+version = "1.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-devel-cycle", "1.12.0-r1"], ["perl-padwalker", "2.5.0-r1"]]

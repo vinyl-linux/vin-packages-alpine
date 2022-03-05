@@ -1,0 +1,15 @@
+checksum = "11f5a3c780b94c0150696f72e75b057fd758a7220a1b6b5c56a3bce6461991a9"
+licence = "MIT"
+provides = "pgbackrest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pgbackrest-2.36-r1.apk"
+version = "2.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-bdr", "9.4.14"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libpq", "14.2.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

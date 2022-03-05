@@ -1,0 +1,15 @@
+checksum = "48509263720920eccac2d06205b94a457e03603e7febe9e84c527da61017fad5"
+licence = "MIT"
+provides = "py3-lupa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-lupa-1.9-r1.apk"
+version = "1.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

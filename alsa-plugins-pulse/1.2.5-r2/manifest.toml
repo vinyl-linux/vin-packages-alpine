@@ -1,0 +1,15 @@
+checksum = "6df7a5c56462e0c8475e71062f22d35943e6f678d2664a39b36b7b77827c5d38"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "alsa-plugins-pulse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/alsa-plugins-pulse-1.2.5-r2.apk"
+version = "1.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["libpulse", "15.0.0-r2"]]

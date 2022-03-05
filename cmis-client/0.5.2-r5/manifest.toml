@@ -1,0 +1,15 @@
+checksum = "568631b126ea7ea5ecc90f5a8a9a9afd5735b0d37dfc98b04ef5979dacb99618"
+licence = "MPL-1.1 GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "cmis-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cmis-client-0.5.2-r5.apk"
+version = "0.5.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-program_options", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libcmis", "0.5.2-r5"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

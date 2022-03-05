@@ -1,0 +1,15 @@
+checksum = "17d72c192cc9c7042a6e351ff811734ee06e6d9e9b48ed9c6f825bb2a82ddf82"
+licence = "MIT"
+provides = "weston-terminal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/weston-terminal-9.0.0-r0.apk"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["libjpeg-turbo", "2.1.2-r0"], ["pango", "1.48.10-r0"], ["pixman", "0.40.0-r3"], ["libpng", "1.6.37-r1"], ["wayland-libs-client", "1.19.0-r1"], ["wayland-libs-cursor", "1.19.0-r1"], ["libwebp", "1.2.2-r0"], ["libxkbcommon", "1.3.1-r0"]]

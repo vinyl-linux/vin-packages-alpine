@@ -2,8 +2,10 @@
 #
 # Install contents from an apk archive
 
-[ -f .pre-install ] && ./.pre-install && .pre-install
+set -e
 
-find . -not -path ./.tarball -not -path .PKGINFO -not -path ".SIGN.RSA.*" -not -path .post-install | cpio -pdm /
+[ -f .pre-install ] && (./.pre-install && rm .pre-install) || true
 
-[ -f .post-install ] && ./.post-install && .post-install
+find . -not -path ./.tarball -not -path ./.PKGINFO -not -path "./.SIGN.RSA.*" -not -path ./.post-install | cpio -pdmuv /
+
+[ -f .post-install ] && (./.post-install && rm .post-install) || true

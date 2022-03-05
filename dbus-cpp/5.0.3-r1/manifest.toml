@@ -1,0 +1,15 @@
+checksum = "e5b1fd246735347ac254a23954a93cc73ce8a611aeb0bc0b59afff9c23f3c875"
+licence = "LGPL-3.0-only"
+provides = "dbus-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dbus-cpp-5.0.3-r1.apk"
+version = "5.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["boost1.77-program_options", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["libgcc", "10.3.1"], ["process-cpp", "3.0.1-r2"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"]]

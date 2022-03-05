@@ -1,0 +1,15 @@
+checksum = "056e1493ff3ef705095b3b9d5c0ca9d009b9e974b06188e1c5a0dcdaabdc74ad"
+licence = "LGPL-2.1-or-later"
+provides = "gspell-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gspell-lang-1.9.1-r1.apk"
+version = "1.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iso-codes", "4.8.0-r0"]]

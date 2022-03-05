@@ -1,0 +1,15 @@
+checksum = "63db9810936bfd1ee3f5e0ff3bff33a91fc78f69bcce4c91721e5d3d9cdc5b7e"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-spa-bluez"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pipewire-spa-bluez-0.3.40-r2.apk"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-libs", "5.63.0-r0"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["fdk-aac", "2.0.2-r0"], ["libfreeaptx", "0.1.1-r0"], ["libldac", "2.0.2.3-r0"], ["sbc", "1.5.0-r0"], ["libusb", "1.0.24-r3"]]

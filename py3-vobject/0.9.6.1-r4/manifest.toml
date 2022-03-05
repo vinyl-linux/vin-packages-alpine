@@ -1,0 +1,15 @@
+checksum = "9810b04b8168274e421ced637d0fa3f6a7afdea74d0bc3fd7bb08c5161fb1817"
+licence = "Apache-2.0"
+provides = "py3-vobject"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-vobject-0.9.6.1-r4.apk"
+version = "0.9.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dateutil", "2.8.2-r0"]]

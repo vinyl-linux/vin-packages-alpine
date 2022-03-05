@@ -1,0 +1,15 @@
+checksum = "3480249c5ebe82e3bc26f906da461c182965836e1e0e716e6d10e2d5aa85ef9a"
+licence = "GPL-2.0-or-later"
+provides = "mate-terminal-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mate-terminal-lang-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r0"], ["yelp-tools", "41.0.0-r0"], ["mate-desktop", "1.26.0-r1"]]

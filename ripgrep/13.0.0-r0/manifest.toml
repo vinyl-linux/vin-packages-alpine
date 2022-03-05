@@ -1,0 +1,15 @@
+checksum = "11aac33d1b3d9ef52c7a38347d9f3a045cb3db50d465346d88a05b94f9695a39"
+licence = "MIT OR Public-Domain"
+provides = "ripgrep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ripgrep-13.0.0-r0.apk"
+version = "13.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["pcre2", "10.39.0-r0"]]

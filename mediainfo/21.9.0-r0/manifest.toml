@@ -1,0 +1,15 @@
+checksum = "cc790997e7020f8d5e676e82d405402fee2a0932ade8f35985a828cd448ede17"
+licence = "BSD-2-Clause"
+provides = "mediainfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mediainfo-21.09-r0.apk"
+version = "21.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libmediainfo", "21.9.0-r0"], ["libstdc++", "10.3.1"], ["libzen", "0.4.39-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1b791ee9f5d071b0502494a7dfd46753789f239549f5ebf836fdbc66256171d0"
+licence = "GPL-2.0-or-later"
+provides = "hwinfo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hwinfo-dev-21.78-r0.apk"
+version = "21.78.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwinfo-libs", "21.78.0-r0"], ["pkgconf", "1.8.0-r0"]]

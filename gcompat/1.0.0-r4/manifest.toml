@@ -1,0 +1,15 @@
+checksum = "9d0c2336a7d80aeca3cd5dd9b615218496601ed4dd272d6d3a151f6d64358eca"
+licence = "NCSA"
+provides = "gcompat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gcompat-1.0.0-r4.apk"
+version = "1.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["musl-obstack", "1.2.2-r0"], ["libucontext", "1.1.0-r0"]]

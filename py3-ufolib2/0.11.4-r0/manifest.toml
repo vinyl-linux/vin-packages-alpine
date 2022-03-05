@@ -1,0 +1,15 @@
+checksum = "2b73748da2132925668551e8e3032b7e30e38a9c223da207193c9a5a17335bc4"
+licence = "Apache-2.0"
+provides = "py3-ufolib2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-ufolib2-0.11.4-r0.apk"
+version = "0.11.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-attrs", "21.2.0-r0"], ["py3-fonttools", "4.28.2-r0"]]

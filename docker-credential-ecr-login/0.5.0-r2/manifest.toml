@@ -1,0 +1,15 @@
+checksum = "3ffe1c47a140b58476e030f198543f0c9f32a1fde8b1db25baf9eceb10efad39"
+licence = "Apache-2.0"
+provides = "docker-credential-ecr-login"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/docker-credential-ecr-login-0.5.0-r2.apk"
+version = "0.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["podman-docker", "3.4.4-r0"], ["musl", "1.2.2-r7"]]

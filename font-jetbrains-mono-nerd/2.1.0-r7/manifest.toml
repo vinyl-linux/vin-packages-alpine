@@ -1,0 +1,15 @@
+checksum = "aa66d6c19153c8890a8208ee800b59d671e52615dfc18bb0b6767700bd7df36b"
+licence = "MIT"
+provides = "font-jetbrains-mono-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-jetbrains-mono-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

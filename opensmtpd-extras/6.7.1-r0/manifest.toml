@@ -1,0 +1,15 @@
+checksum = "47b3dfa56ce3c612621564288d06f2346f490256dabe5ed1feb1f5286b17efdd"
+licence = "ISC"
+provides = "opensmtpd-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/opensmtpd-extras-6.7.1-r0.apk"
+version = "6.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opensmtpd-table-ldap", "6.7.1-r0"], ["opensmtpd-table-mysql", "6.7.1-r0"], ["opensmtpd-table-passwd", "6.7.1-r0"], ["opensmtpd-table-postgres", "6.7.1-r0"], ["opensmtpd-table-redis", "6.7.1-r0"], ["opensmtpd-table-socketmap", "6.7.1-r0"], ["opensmtpd-table-sqlite", "6.7.1-r0"], ["opensmtpd-table-stub", "6.7.1-r0"]]

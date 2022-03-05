@@ -1,0 +1,15 @@
+checksum = "cb438ac879debe94ece53e2f7fb8e8647150d1b4e5416bdddd65fe0c779164fb"
+licence = "GPL-3.0"
+provides = "kbuild"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kbuild-0.1.9998.3407-r0.apk"
+version = "0.1.9998.3407-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

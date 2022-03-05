@@ -1,0 +1,15 @@
+checksum = "2d215488780f4753723c3e3238a61fb8c996bb3a8c8ce2fd1cc7148866735cc8"
+licence = "LGPL-3.0-or-later"
+provides = "libsigc++3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libsigc++3-dev-3.0.7-r0.apk"
+version = "3.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsigc++3", "3.0.7-r0"], ["pkgconf", "1.8.0-r0"]]

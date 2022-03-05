@@ -1,0 +1,15 @@
+checksum = "17bc219c0af6ca6f2e63c3bb4e261ca479cd828bb6af8e8de980f3a7755af24f"
+licence = "GPL-3.0-or-later"
+provides = "py3-listparser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-listparser-0.18-r1.apk"
+version = "0.18.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"], ["py3-requests", "2.26.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "b89e14345c544989c5c595637dc47368ed471dafeb4546a80188a515de556a05"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-timesync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/open-vm-tools-timesync-11.3.5-r0.apk"
+version = "11.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools", "11.3.5-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

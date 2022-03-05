@@ -1,0 +1,15 @@
+checksum = "7fde6c9930f210cd079b666676778f2ed8d00c39b4343e2b508d51ef31e02a25"
+licence = "Apache-2.0"
+provides = "py3-fasteners"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-fasteners-0.16.3-r0.apk"
+version = "0.16.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-monotonic", "1.6.0-r0"], ["py3-six", "1.16.0-r0"]]

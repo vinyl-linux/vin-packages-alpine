@@ -1,0 +1,15 @@
+checksum = "9aee294364c42d120fe0493f5909ca566eb480fd39c5020b3320c7eebf46580a"
+licence = "Apache-2.0"
+provides = "s2geometry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/s2geometry-0.9.0-r4.apk"
+version = "0.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

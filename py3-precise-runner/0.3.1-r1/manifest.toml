@@ -1,0 +1,15 @@
+checksum = "b9cfb92f5fc0028f29bddfd57856acb1a8cf874830b916973bcd26f07b7ab98a"
+licence = "Apache-2.0"
+provides = "py3-precise-runner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-precise-runner-0.3.1-r1.apk"
+version = "0.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-bbopt", "1.3.7-r0"], ["py3-fitipy", "1.0.0-r1"], ["py3-pyaudio", "0.2.11-r1"]]

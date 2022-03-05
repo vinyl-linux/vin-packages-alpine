@@ -1,0 +1,15 @@
+checksum = "cdf5f24100ca82cff33391eacb12fc6b2686ceca9115db4e76ebfd653cc016fc"
+licence = "GPL-2.0-only"
+provides = "openrgb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openrgb-0.6-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["hidapi", "0.11.0-r0"], ["libstdc++", "10.3.1"], ["libusb", "1.0.24-r3"]]

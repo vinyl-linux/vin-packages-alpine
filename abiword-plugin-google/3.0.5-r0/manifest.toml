@@ -1,0 +1,15 @@
+checksum = "517490d800599ef9768044db4695e2e962d03a741ac83858a1fadbf7c90188d3"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-google"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/abiword-plugin-google-3.0.5-r0.apk"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

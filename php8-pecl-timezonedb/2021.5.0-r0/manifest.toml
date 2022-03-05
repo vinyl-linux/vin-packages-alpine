@@ -1,0 +1,15 @@
+checksum = "3226200c13e6e8cd7589402657f369c32ac4c0ac49322f03508d210aacb8e327"
+licence = "PHP-3.01"
+provides = "php8-pecl-timezonedb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-timezonedb-2021.5-r0.apk"
+version = "2021.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"]]

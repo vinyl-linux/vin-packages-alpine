@@ -1,0 +1,15 @@
+checksum = "58f62dfad86e94ab3509d744bfdd01e5c7c1b80fc7a441ae5c24e94e2ad4f795"
+licence = "BSD-3-Clause"
+provides = "php8-pecl-protobuf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-protobuf-3.19.1-r0.apk"
+version = "3.19.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

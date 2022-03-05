@@ -1,0 +1,15 @@
+checksum = "81ad39451d6346f06d7c9cdf266cd9b92d2b23086c635bb44c342ca0c9137693"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-encryption"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-encryption-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"], ["php8-openssl", "8.0.16-r0"]]

@@ -1,0 +1,15 @@
+checksum = "5bed0a6cdeeeeac7977e51fa3283f7f3370c8e5f6a19430c22e099006da272d8"
+licence = "MIT"
+provides = "ruby-listen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-listen-3.7.1-r0.apk"
+version = "3.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"], ["ruby-rb-inotify", "0.10.1-r1"]]

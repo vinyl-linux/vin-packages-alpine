@@ -1,0 +1,15 @@
+checksum = "4d1b305dac6cb7d65c387bb090366845c5ae482bb5dcb8f91f52d2b5f47759b5"
+licence = "(GPL-2.0-only OR GPL-3.0-only) AND GFDL-1.2-only"
+provides = "artikulate-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/artikulate-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"]]

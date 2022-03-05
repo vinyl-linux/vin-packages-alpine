@@ -1,0 +1,15 @@
+checksum = "83e8863e4b8263c694e6ad72fe2fc76599db78def696a83ffabea143d6398192"
+licence = "LGPL-2.0-or-later"
+provides = "libsexy-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libsexy-dev-0.1.11-r9.apk"
+version = "0.1.11-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsexy", "0.1.11-r9"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4dfedc21b8a4954a577a4576e336f515ea89bc6d79d4e57317b8aac306a5f769"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pipewire-0.3.40-r2.apk"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["pipewire-libs", "0.3.40-r2"], ["libsndfile", "1.0.31-r1"], ["eudev-libs", "3.2.11"]]

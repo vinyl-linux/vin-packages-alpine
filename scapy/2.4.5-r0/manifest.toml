@@ -1,0 +1,15 @@
+checksum = "e84d3e8ba1ce98bccbce3a4856b9d5a5f2fba96fab93392914e1e1caf2e57e09"
+licence = "GPL-2.0-only"
+provides = "scapy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/scapy-2.4.5-r0.apk"
+version = "2.4.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["busybox", "1.34.1-r4"]]

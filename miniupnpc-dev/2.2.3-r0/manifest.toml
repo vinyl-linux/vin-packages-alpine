@@ -1,0 +1,15 @@
+checksum = "581f660efb5f1ce7a4e390c12736dc4fe44873d427ee28c79a7061b59cb1d1d1"
+licence = "BSD-3-Clause"
+provides = "miniupnpc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/miniupnpc-dev-2.2.3-r0.apk"
+version = "2.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["miniupnpc", "2.2.3-r0"], ["pkgconf", "1.8.0-r0"]]

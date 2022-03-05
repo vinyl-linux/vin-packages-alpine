@@ -1,0 +1,15 @@
+checksum = "40703a1bdc68155add131abf0eedfce3daa010ce7f1467989c7e22e03cd45a7c"
+licence = "GPL-2.0-or-later"
+provides = "nautilus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nautilus-dev-41.0-r0.apk"
+version = "41.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-desktop-dev", "41.1.0-r0"], ["gnome-autoar-dev", "0.4.0-r0"], ["nautilus", "41.0.0-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

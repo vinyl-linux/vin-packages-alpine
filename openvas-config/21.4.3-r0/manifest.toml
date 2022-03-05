@@ -1,0 +1,15 @@
+checksum = "ca7ee3dfc6d4b6576b303197f84863982f1bb7937517238e5bb2014def17c2aa"
+licence = "GPL-2.0-only"
+provides = "openvas-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openvas-config-21.4.3-r0.apk"
+version = "21.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["redis", "6.2.6-r0"], ["nmap", "7.92.0-r2"], ["coreutils", "9.0.0-r2"], ["openssl", "1.1.1-l-r8"], ["util-linux", "2.37.4-r0"]]

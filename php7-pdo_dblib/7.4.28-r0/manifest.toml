@@ -1,0 +1,15 @@
+checksum = "952236915f2da2e00fd079b1793e54648fe3f93c31fccdbd5c97e4187d663ce6"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-pdo_dblib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pdo_dblib-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["php7-pdo", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["freetds", "1.3.3-r2"]]

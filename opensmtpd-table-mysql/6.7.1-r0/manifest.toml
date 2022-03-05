@@ -1,0 +1,15 @@
+checksum = "2d33ab981e01ffd8fe2a9aea102c8e23d8e38b02bad5fd85133d870b94f88335"
+licence = "ISC"
+provides = "opensmtpd-table-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/opensmtpd-table-mysql-6.7.1-r0.apk"
+version = "6.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]

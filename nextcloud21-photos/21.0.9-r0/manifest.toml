@@ -1,0 +1,15 @@
+checksum = "bcf5000b60b21dc9057d49bc9516ca3039ddc1e41aad672b6111beae55b9dc3e"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-photos"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-photos-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"]]

@@ -1,0 +1,15 @@
+checksum = "816c71baf098092f7105b03c6167b343f2cd4e65ce863fca12dac9de274f6792"
+licence = "GPL-2.0"
+provides = "copy-router-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/copy-router-config-1.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-cisco-copyconfig", "1.4.0-r4"]]

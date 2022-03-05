@@ -1,0 +1,15 @@
+checksum = "4d4c35fc56cc2e1fe608fece09581a2a12e89a98825a02fe354d92782d640d7f"
+licence = "MIT"
+provides = "ruby-posix-spawn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-posix-spawn-0.3.13-r4.apk"
+version = "0.3.13-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

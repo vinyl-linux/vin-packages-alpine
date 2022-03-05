@@ -1,0 +1,15 @@
+checksum = "7e36c32da04814556e939df0f6403bf3168969471412f4f715789818314dd1fd"
+licence = "MIT"
+provides = "cesnet-tcs-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cesnet-tcs-cli-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["curl", "7.80.0-r0"], ["openssl", "1.1.1-l-r8"]]

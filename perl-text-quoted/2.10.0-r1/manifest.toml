@@ -1,0 +1,15 @@
+checksum = "6b8be16b392c6ab985c7e6bc1623abfa94d18332aacbc826bc76f1185750d081"
+licence = "GPL-2.0 or Artistic"
+provides = "perl-text-quoted"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-text-quoted-2.10-r1.apk"
+version = "2.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-text-autoformat", "1.75.0-r1"]]

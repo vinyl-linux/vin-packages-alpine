@@ -1,0 +1,15 @@
+checksum = "a9b217126f0c62f5dec0c88224645141131a154b98be211f32648f974e63aced"
+licence = "Artistic-1.0-Perl GPL-1.0-or-later"
+provides = "exiftool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/exiftool-12.30-r0.apk"
+version = "12.30.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-image-exiftool", "12.30.0-r0"]]

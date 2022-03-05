@@ -1,0 +1,15 @@
+checksum = "1c9a85711aa2f6621eece7e940bb71a9edf5b6df56689f53510bc58ecddcc3c7"
+licence = "GPL-2.0-or-later LGPL-2.0-only"
+provides = "thunar-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/thunar-lang-4.16.10-r0.apk"
+version = "4.16.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r0"], ["hicolor-icon-theme", "0.17.0-r1"], ["shared-mime-info", "2.1.0-r0"]]

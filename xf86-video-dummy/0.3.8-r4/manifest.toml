@@ -1,0 +1,15 @@
+checksum = "f1d632fce43a26e1fa8127cbcfac624a747f673e8cc8ba1c8c601160de71d540"
+licence = "MIT"
+provides = "xf86-video-dummy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-dummy-0.3.8-r4.apk"
+version = "0.3.8-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

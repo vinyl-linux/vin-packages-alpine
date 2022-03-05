@@ -1,0 +1,15 @@
+checksum = "cda5d7fa35d75fce371b3c9711dd2d75dce41e7a93ac58c8c13666223ed192b4"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kdecoration-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdecoration-dev-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["kdecoration", "5.23.5-r0"]]

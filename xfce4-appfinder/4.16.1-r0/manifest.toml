@@ -1,0 +1,15 @@
+checksum = "6fd7d43c25364ef53c444ef9d2efa655be54294830648cd4c5611ec7cc2c2182"
+licence = "GPL-2.0-or-later"
+provides = "xfce4-appfinder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xfce4-appfinder-4.16.1-r0.apk"
+version = "4.16.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r1"], ["musl", "1.2.2-r7"], ["garcon", "4.16.1-r1"], ["gtk+3.0", "3.24.30-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libxfce4ui", "4.16.1-r0"], ["libxfce4util", "4.16.0-r1"], ["xfconf", "4.16.0-r0"]]

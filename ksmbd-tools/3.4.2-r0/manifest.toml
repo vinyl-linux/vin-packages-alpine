@@ -1,0 +1,15 @@
+checksum = "6cd9b66df37d203148752aa9a0e8ba56d26025c94be87812b9d4046683b4a99e"
+licence = "GPL-2.0-or-later"
+provides = "ksmbd-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ksmbd-tools-3.4.2-r0.apk"
+version = "3.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libnl3", "3.5.0-r0"]]

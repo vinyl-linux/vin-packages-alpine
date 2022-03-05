@@ -1,0 +1,15 @@
+checksum = "60515eaff4e592b1b08a4b443117b760084cd8f9e28260296cd2f8b3ef94c6f2"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-ipc-run"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-ipc-run-20200505.0-r1.apk"
+version = "20200505.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-io-tty", "1.16.0-r3"]]

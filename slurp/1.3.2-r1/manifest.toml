@@ -1,0 +1,15 @@
+checksum = "f573289e6ae7508247304e0e081640ff4edc0d8113f566254c721cc193a21f03"
+licence = "MIT"
+provides = "slurp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/slurp-1.3.2-r1.apk"
+version = "1.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["wayland-libs-client", "1.19.0-r1"], ["wayland-libs-cursor", "1.19.0-r1"], ["libxkbcommon", "1.3.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "a60ad798b91203e4ce2d6e784547da04a5830cd83098b293d9878f045e4d5974"
+licence = "MIT"
+provides = "earlyoom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/earlyoom-1.6.2-r0.apk"
+version = "1.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

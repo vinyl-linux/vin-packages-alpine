@@ -1,0 +1,15 @@
+checksum = "ceef143c99cd8995f694c39d82661ec84aa2b3332869f27370fc17259a73b623"
+licence = "MIT"
+provides = "py3-hcloud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-hcloud-1.16.0-r0.apk"
+version = "1.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"], ["py3-dateutil", "2.8.2-r0"]]

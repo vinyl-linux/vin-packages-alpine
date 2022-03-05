@@ -1,0 +1,15 @@
+checksum = "8b6c454974812fc7f0b672ba9184cd4bf012daa18a18ae150c06faef7c2fa09f"
+licence = "Zlib"
+provides = "sdl2_mixer-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sdl2_mixer-dev-2.0.4-r1.apk"
+version = "2.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2-dev", "2.0.16-r4"], ["pkgconf", "1.8.0-r0"], ["sdl2_mixer", "2.0.4-r1"]]

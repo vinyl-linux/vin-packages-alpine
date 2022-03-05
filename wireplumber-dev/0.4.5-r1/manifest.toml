@@ -1,0 +1,15 @@
+checksum = "7605cdbe49d69be8c8fcc5f3b8191cfa251730a7d3fbfc97a828066110ee6eee"
+licence = "LGPL-2.1-or-later"
+provides = "wireplumber-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wireplumber-dev-0.4.5-r1.apk"
+version = "0.4.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind-dev", "246.10.0-r4"], ["glib-dev", "2.70.1-r0"], ["lua5.4-dev", "5.4.3-r0"], ["pipewire-dev", "0.3.40-r2"], ["pkgconf", "1.8.0-r0"], ["wireplumber", "0.4.5-r1"]]

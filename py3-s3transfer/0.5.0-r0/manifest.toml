@@ -1,0 +1,15 @@
+checksum = "73c7a0b77139e0004bd88564c3ee0fe576f987a2e81217e0523b483aa0e2bf67"
+licence = "Apache-2.0"
+provides = "py3-s3transfer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-s3transfer-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-botocore", "1.21.49-r0"]]

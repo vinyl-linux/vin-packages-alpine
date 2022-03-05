@@ -1,0 +1,15 @@
+checksum = "09a0d7291d020aa990c499488728ae21061d35b65c24cbc911d1da70f60a6093"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-autoclose"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/geany-plugins-autoclose-1.38-r0.apk"
+version = "1.38.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["geany", "1.38.0-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"]]

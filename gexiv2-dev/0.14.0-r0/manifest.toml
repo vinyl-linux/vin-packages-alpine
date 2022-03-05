@@ -1,0 +1,15 @@
+checksum = "617e8ed1e8f36f6668afa3727d1121d52a03fe84c4197e26375203790fa4197b"
+licence = "GPL-2.0-or-later"
+provides = "gexiv2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gexiv2-dev-0.14.0-r0.apk"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gexiv2", "0.14.0-r0"], ["exiv2-dev", "0.27.5-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c1ab16d5b074062dc738b030390ffe63c59cf380e0c0a633cb3d417320d26935"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php8-cgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-cgi-8.0.16-r0.apk"
+version = "8.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["argon2-libs", "20190702.0.0-r1"], ["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["pcre2", "10.39.0-r0"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

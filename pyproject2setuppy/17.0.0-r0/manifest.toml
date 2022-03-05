@@ -1,0 +1,15 @@
+checksum = "df7425009e76a81b73441e307c68bc3fffe70d3b410d417e3317668d8275f767"
+licence = "BSD-2-Clause"
+provides = "pyproject2setuppy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pyproject2setuppy-17-r0.apk"
+version = "17.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-toml", "0.10.2-r2"], ["py3-setuptools", "52.0.0-r4"]]

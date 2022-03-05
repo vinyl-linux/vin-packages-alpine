@@ -1,0 +1,15 @@
+checksum = "81f466f8fc03f7e8c7d283c697f05159f68a4d26064f0ba1a3babc04e7efee1c"
+licence = "GPL-2.0-or-later"
+provides = "zabbix-agent2-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/zabbix-agent2-openrc-5.4.9-r1.apk"
+version = "5.4.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.44.7-r3"]]

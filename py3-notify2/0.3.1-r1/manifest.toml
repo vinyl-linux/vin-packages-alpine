@@ -1,0 +1,15 @@
+checksum = "9acc32d2f711f5e3d6f2d10e91ed4b26e744f681bd28adde0c29d150a32a416f"
+licence = "BSD-2-Clause"
+provides = "py3-notify2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-notify2-0.3.1-r1.apk"
+version = "0.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dbus", "1.2.18-r0"], ["py3-gobject3", "3.42.0-r1"]]

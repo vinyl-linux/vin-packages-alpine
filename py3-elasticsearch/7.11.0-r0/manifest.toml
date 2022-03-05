@@ -1,0 +1,15 @@
+checksum = "c09e1249d62a0e57af4fd051eb3b5508ac95227da5a7714924a10796837bb635"
+licence = "Apache-2.0"
+provides = "py3-elasticsearch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-elasticsearch-7.11.0-r0.apk"
+version = "7.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-urllib3", "1.26.7-r0"]]

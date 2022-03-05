@@ -1,0 +1,15 @@
+checksum = "9b91a3257b73df4a2f0ef9393099784907af962ba8e98ec195f59bc2947bbe34"
+licence = "BSD-2-Clause"
+provides = "fossil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fossil-2.17-r1.apk"
+version = "2.17.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

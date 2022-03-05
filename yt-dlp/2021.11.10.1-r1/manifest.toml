@@ -1,0 +1,15 @@
+checksum = "452b688e21a510c1b33af24afc1d691374ee3342d51a1da2e64d562fad9e6f66"
+licence = "Unlicense"
+provides = "yt-dlp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yt-dlp-2021.11.10.1-r1.apk"
+version = "2021.11.10.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

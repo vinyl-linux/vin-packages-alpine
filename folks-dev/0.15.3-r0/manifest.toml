@@ -1,0 +1,15 @@
+checksum = "e4dfb4a94b813f900dd8cccc21386c8be50a5a1da68e56407d1f31e2e4fd30ff"
+licence = "LGPL-2.1-or-later"
+provides = "folks-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/folks-dev-0.15.3-r0.apk"
+version = "0.15.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["folks", "0.15.3-r0"], ["libgee-dev", "0.20.4-r0"], ["glib-dev", "2.70.1-r0"], ["evolution-data-server-dev", "3.42.1-r1"], ["telepathy-glib-dev", "0.24.2-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6e21812b3d93036454b67b2d462d79a786e94fff9cc856e58a961a9bf9e4f2e9"
+licence = "MIT"
+provides = "php8-pecl-zstd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-zstd-0.11.0-r0.apk"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["zstd-libs", "1.5.0-r0"]]

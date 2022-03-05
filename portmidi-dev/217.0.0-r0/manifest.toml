@@ -1,0 +1,15 @@
+checksum = "9c96de5693e6684c144b55055abb21a04c5e33094742c93c721863c6f8538feb"
+licence = "MIT"
+provides = "portmidi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/portmidi-dev-217-r0.apk"
+version = "217.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["portmidi", "217.0.0-r0"]]

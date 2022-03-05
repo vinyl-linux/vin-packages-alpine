@@ -1,0 +1,15 @@
+checksum = "2073361931c36607cd7b83dd177d09d0c32f240c95447d4bd755eac84fb6187e"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-hwclock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calamares-mod-hwclock-3.2.45-r0.apk"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.205.0-r0"], ["musl-locales", "0.0.0"], ["os-prober", "1.79.0-r0"]]

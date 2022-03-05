@@ -1,0 +1,15 @@
+checksum = "e6fb9b76217c469348f32a8c8e3be8987dc7db8d29305b2fc3d5adb49b50f76e"
+licence = "MIT"
+provides = "libinput-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libinput-dev-1.19.2-r0.apk"
+version = "1.19.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libinput-libs", "1.19.2-r0"], ["pkgconf", "1.8.0-r0"]]

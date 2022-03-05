@@ -1,0 +1,15 @@
+checksum = "1bc3709df782126880b691871198183fc2fce9d13390dc407149b4aa9cc116f8"
+licence = "Apache-2.0"
+provides = "py3-sphinxcontrib-images"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-sphinxcontrib-images-0.9.3-r0.apk"
+version = "0.9.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"], ["py3-sphinx", "3.5.4-r0"]]

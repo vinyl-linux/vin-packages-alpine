@@ -1,0 +1,15 @@
+checksum = "e3dbbd4efff68c23372485ca2f0dbd79fc5c7e74acc34e78fd52ffd9f5f114de"
+licence = "ZPL-2.1"
+provides = "py3-zope-hookable"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-zope-hookable-5.0.1-r1.apk"
+version = "5.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "52.0.0-r4"], ["musl", "1.2.2-r7"]]

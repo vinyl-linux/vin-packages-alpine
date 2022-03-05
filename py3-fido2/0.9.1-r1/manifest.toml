@@ -1,0 +1,15 @@
+checksum = "0a80d2806461f76e5ea2ecf72991b412dc9d19406615d503dd2e34ab9da82300"
+licence = "BSD-2-Clause AND Apache-2.0 AND MPL-2.0"
+provides = "py3-fido2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-fido2-0.9.1-r1.apk"
+version = "0.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cryptography", "3.3.2-r3"], ["py3-six", "1.16.0-r0"]]

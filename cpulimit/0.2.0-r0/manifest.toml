@@ -1,0 +1,15 @@
+checksum = "5d2450bde511d2fc756e1d215245e033e0a5eb4aa66180ecba4bb52b67305e5b"
+licence = "GPL-2.0-or-later"
+provides = "cpulimit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cpulimit-0.2-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

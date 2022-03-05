@@ -1,0 +1,15 @@
+checksum = "1f87aa79383613f4e7b8f90cc56cfc6e189c1f9fe1947e9b26be56b02a8d461a"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-hgfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/open-vm-tools-hgfs-11.3.5-r0.apk"
+version = "11.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools", "11.3.5-r0"], ["musl", "1.2.2-r7"], ["fuse", "2.9.9-r1"], ["glib", "2.70.1-r0"]]

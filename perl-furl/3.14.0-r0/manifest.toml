@@ -1,0 +1,15 @@
+checksum = "4821cf7f45224effe59eb0a7163de0664cf48958e9626fbd60cb7f2e65e29388"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-furl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-furl-3.14-r0.apk"
+version = "3.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-http-parser-xs", "0.17.0-r5"], ["perl-class-accessor-lite", "0.8.0-r7"], ["perl-mozilla-ca", "20211001.0.0-r0"]]

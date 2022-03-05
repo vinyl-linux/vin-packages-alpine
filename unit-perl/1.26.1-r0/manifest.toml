@@ -1,0 +1,15 @@
+checksum = "8ac2d76ee3d3bc6bb3b5fbaa4be173d04ac1352f8dbaac79645f794d27123900"
+licence = "Apache-2.0"
+provides = "unit-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unit-perl-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["unit", "1.26.1-r0"], ["musl", "1.2.2-r7"], ["perl", "5.34.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d1387adb6dae4ee3b9ccd476f579b285e19a49bc9bc388ce21111b2decdccbe8"
+licence = "Apache-2.0"
+provides = "py3-msgpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-msgpack-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

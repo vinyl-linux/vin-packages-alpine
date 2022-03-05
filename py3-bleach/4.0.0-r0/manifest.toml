@@ -1,0 +1,15 @@
+checksum = "f5b1aa02db997b1b8f1ab2fec3d427710dafe22d19f7ea9a8a9c7bc3c708505d"
+licence = "Apache-2.0"
+provides = "py3-bleach"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-bleach-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-six", "1.16.0-r0"], ["py3-webencodings", "0.5.1-r4"], ["py3-html5lib", "1.1.0-r1"], ["py3-packaging", "20.9.0-r1"]]

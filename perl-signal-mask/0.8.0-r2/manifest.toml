@@ -1,0 +1,15 @@
+checksum = "a1a6e7a1fd148dc10fc9f61214fd1240341e8f91cef241ac667ee8830509c494"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-signal-mask"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-signal-mask-0.008-r2.apk"
+version = "0.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-ipc-signal", "1.0.0-r4"]]

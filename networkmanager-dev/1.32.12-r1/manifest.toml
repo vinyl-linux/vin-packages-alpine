@@ -1,0 +1,15 @@
+checksum = "c70de7a414b735c115e877268a39bf9b9a077a51cae27453ad8a75887d2c8e64"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/networkmanager-dev-1.32.12-r1.apk"
+version = "1.32.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager", "1.32.12-r1"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

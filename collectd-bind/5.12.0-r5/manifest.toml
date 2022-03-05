@@ -1,0 +1,15 @@
+checksum = "4bd142d01f2dca8e3cd601db0e2e41a7c9a778dc61d8240ca930a34fc621c982"
+licence = "GPL-2.0-or-later"
+provides = "collectd-bind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-bind-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libxml2", "2.9.12-r2"]]

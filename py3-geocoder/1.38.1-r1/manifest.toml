@@ -1,0 +1,15 @@
+checksum = "50de1ce6fbd171c5b6f9758ab150e5289fd5f53d6cb81a340f1deb68e6a6be3f"
+licence = "MIT"
+provides = "py3-geocoder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-geocoder-1.38.1-r1.apk"
+version = "1.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"], ["py3-ratelim", "0.1.6-r1"], ["py3-click", "8.0.1-r0"]]

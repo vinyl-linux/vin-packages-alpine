@@ -1,0 +1,15 @@
+checksum = "44e7260778ca8854563d5c5589c59a0788bd84fb8a8e37a06021cffafdee5006"
+licence = "GPL-3.0-or-later"
+provides = "kyotocabinet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kyotocabinet-1.2.79-r1.apk"
+version = "1.2.79-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["xz-libs", "5.2.5-r0"], ["lzo", "2.10.0-r2"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

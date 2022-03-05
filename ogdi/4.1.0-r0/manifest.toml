@@ -1,0 +1,15 @@
+checksum = "b15550072277196f5df93c20a4224bffd61e40f8684a48674ef13e08f4635d44"
+licence = "MIT"
+provides = "ogdi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ogdi-4.1.0-r0.apk"
+version = "4.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["libtirpc", "1.3.2-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "f1dbcc9a41149003963e089054a3089502fdc0906d41501f2f290b4d5ef89c34"
+licence = "BSD-3-Clause"
+provides = "py3-qrcode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-qrcode-6.1-r3.apk"
+version = "6.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pillow", "8.4.0-r3"], ["py3-six", "1.16.0-r0"]]

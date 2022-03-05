@@ -1,0 +1,15 @@
+checksum = "fd939db14377ac0434c304330edc75a64701789ab1069f4bdc56ec614f9e002a"
+licence = "MIT"
+provides = "font-space-mono-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-space-mono-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

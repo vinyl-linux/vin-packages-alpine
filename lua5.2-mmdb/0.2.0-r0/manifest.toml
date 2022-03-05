@@ -1,0 +1,15 @@
+checksum = "c2d3c38e77c4f701ac4a093641a39c56b80ceff18228099a381c2707e4b4b513"
+licence = "MIT"
+provides = "lua5.2-mmdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.2-mmdb-0.2-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r7"], ["lua5.2-compat53", "0.10.0-r0"]]

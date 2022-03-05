@@ -1,0 +1,15 @@
+checksum = "290ad521d9e43aff39bec83f3ab3ec1c80f6f914f85ab6efc2e7b3301ad27693"
+licence = "GPL-2.0-or-later"
+provides = "irtt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/irtt-0.9.1-r3.apk"
+version = "0.9.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

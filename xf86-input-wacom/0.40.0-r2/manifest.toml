@@ -1,0 +1,15 @@
+checksum = "99ac23c17cc683dd07f1caa6c38ed6b7374616b3422880cd92865487d6116260"
+licence = "GPL-2.0-or-later"
+provides = "xf86-input-wacom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-input-wacom-0.40.0-r2.apk"
+version = "0.40.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxi", "1.8.0-r0"], ["libxinerama", "1.1.4-r1"], ["libxrandr", "1.5.2-r1"], ["musl", "1.2.2-r7"], ["eudev-libs", "3.2.11"]]

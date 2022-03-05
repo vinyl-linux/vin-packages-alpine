@@ -1,0 +1,15 @@
+checksum = "af1057b78c28c9875a4da693d679e5ddc4e79e03d5093ea35567edc25a56df7c"
+licence = "MIT"
+provides = "namecoin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/namecoin-0.22.0-r1.apk"
+version = "0.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libgcc", "10.3.1"], ["miniupnpc", "2.2.3-r0"], ["libstdc++", "10.3.1"]]

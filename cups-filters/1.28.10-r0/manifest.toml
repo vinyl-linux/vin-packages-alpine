@@ -1,0 +1,15 @@
+checksum = "c331b4ff19c0558bf42b2f1accfdaeacca5ee0b2638989cb553ccc852ddf3f50"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later MIT"
+provides = "cups-filters"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cups-filters-1.28.10-r0.apk"
+version = "1.28.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["poppler-utils", "21.11.0-r0"], ["bc", "1.7.1-r1"], ["ttf-freefont", "20120503.0.0-r2"], ["ghostscript", "9.55.0-r0"], ["avahi-libs", "0.8.0-r5"], ["avahi-glib", "0.8.0-r5"], ["musl", "1.2.2-r7"], ["cups-libs", "2.3.3-r5"], ["cups-filters-libs", "1.28.10-r0"], ["fontconfig", "2.13.1-r4"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["lcms2", "2.12.0-r1"], ["poppler", "21.11.0-r0"], ["qpdf-libs", "10.4.0-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

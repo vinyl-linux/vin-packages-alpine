@@ -1,0 +1,15 @@
+checksum = "7a0af7066471ce44a8e6b9cdf4a9821a5db1b09116b78a8d9c243576889f0f5c"
+licence = "LGPL-3.0-only"
+provides = "process-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/process-cpp-3.0.1-r2.apk"
+version = "3.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-iostreams", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libexecinfo", "1.1.0-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

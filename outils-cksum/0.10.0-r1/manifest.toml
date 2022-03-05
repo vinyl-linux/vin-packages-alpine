@@ -1,0 +1,15 @@
+checksum = "307e18325c487b3dd35ce4811c9f49d97a34214101989703121d8cf142d42396"
+licence = "BSD-3-Clause ISC"
+provides = "outils-cksum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/outils-cksum-0.10-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["outils-md5", "0.10.0-r1"]]

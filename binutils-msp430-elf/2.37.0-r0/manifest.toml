@@ -1,0 +1,15 @@
+checksum = "15b1cceaec79bf3a1650a60ca7965321e180fa4fc161480b549b49acf6e9a352"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-msp430-elf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/binutils-msp430-elf-2.37-r0.apk"
+version = "2.37.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "af13e82b4154ccccbffaa9cb349b9fc51fbb0f788961aed3989c63cb0c82597b"
+licence = "MIT"
+provides = "xf86-video-rendition"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-rendition-4.2.7-r1.apk"
+version = "4.2.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

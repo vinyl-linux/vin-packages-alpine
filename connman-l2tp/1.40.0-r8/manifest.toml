@@ -1,0 +1,15 @@
+checksum = "ce897100a93ea6df0831d0a3cdc8bed03cb88bf5a1b99a733c7da45a9f01ec00"
+licence = "GPL-2.0-only"
+provides = "connman-l2tp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/connman-l2tp-1.40-r8.apk"
+version = "1.40.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["connman", "1.40.0-r8"], ["xl2tpd", "1.3.16-r0"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"]]

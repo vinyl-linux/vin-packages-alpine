@@ -1,0 +1,15 @@
+checksum = "aa85dd90bd1994fc7e324d767fe05d0ea9b420c1978de6b5d6b9eca6666e521c"
+licence = "GPL-2.0"
+provides = "cpufrequtils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cpufrequtils-008-r4.apk"
+version = "8.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sysfsutils", "2.1.1-r0"], ["musl", "1.2.2-r7"]]

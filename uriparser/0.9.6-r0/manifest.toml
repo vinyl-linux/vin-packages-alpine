@@ -1,0 +1,15 @@
+checksum = "6b0c4ee66c294b8981e20e3d00635b4df8680a1632cb68e4516c37591ae42f96"
+licence = "BSD-3-Clause"
+provides = "uriparser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uriparser-0.9.6-r0.apk"
+version = "0.9.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["liburiparser", "0.9.6-r0"]]

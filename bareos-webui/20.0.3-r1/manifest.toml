@@ -1,0 +1,15 @@
+checksum = "f69874b887ebf373c8cbd33406298b8e6f4d371eff877e00afdeca43e4280903"
+licence = "AGPL-3.0"
+provides = "bareos-webui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bareos-webui-20.0.3-r1.apk"
+version = "20.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8", "8.0.16-r0"], ["php8-gettext", "8.0.16-r0"], ["php8-mbstring", "8.0.16-r0"], ["php8-session", "8.0.16-r0"], ["php8-ctype", "8.0.16-r0"], ["php8-opcache", "8.0.16-r0"], ["php8-openssl", "8.0.16-r0"]]

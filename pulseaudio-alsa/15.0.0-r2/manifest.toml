@@ -1,0 +1,15 @@
+checksum = "c2da5d1362ab6498fca692a6d9a32741e12657eeff46e33e602bcaad87ccb493"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-alsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pulseaudio-alsa-15.0-r2.apk"
+version = "15.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["libintl", "0.21.0-r0"], ["libpulse", "15.0.0-r2"], ["eudev-libs", "3.2.11"]]

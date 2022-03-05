@@ -1,0 +1,15 @@
+checksum = "178501ca3c4e01d277820e0d8521c773db352ee9bf5b755fdf8282630e326941"
+licence = "GPL-2.0-or-later"
+provides = "kwrited"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kwrited-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["kpty", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

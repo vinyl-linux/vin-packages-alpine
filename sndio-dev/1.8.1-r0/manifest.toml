@@ -1,0 +1,15 @@
+checksum = "f7d2cee2f9420c87484c32cb2127836510899d986dc08b87b81cd2039cd56915"
+licence = "ISC"
+provides = "sndio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sndio-dev-1.8.1-r0.apk"
+version = "1.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["sndio-libs", "1.8.1-r0"]]

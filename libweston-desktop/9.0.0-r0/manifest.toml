@@ -1,0 +1,15 @@
+checksum = "66eed6641c8a4a9cf0103c6b71c8fe7494ced2b0467f22d9d0a1b066ea2fdaaa"
+licence = "MIT"
+provides = "libweston-desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libweston-desktop-9.0.0-r0.apk"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["wayland-libs-server", "1.19.0-r1"], ["libweston", "9.0.0-r0"]]

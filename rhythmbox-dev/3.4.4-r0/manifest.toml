@@ -1,0 +1,15 @@
+checksum = "c8adc1be82045e822a0167dfe569b4bc971c89492d53224045cc8bc887bad0e3"
+licence = "GPL-2.0-or-later"
+provides = "rhythmbox-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rhythmbox-dev-3.4.4-r0.apk"
+version = "3.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-desktop-dev", "41.1.0-r0"], ["libpeas-dev", "1.30.0-r2"], ["glib-dev", "2.70.1-r0"], ["gstreamer-dev", "1.18.5-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libsoup-dev", "2.74.0-r0"], ["libxml2-dev", "2.9.12-r2"], ["totem-pl-parser-dev", "3.26.6-r0"], ["pkgconf", "1.8.0-r0"], ["rhythmbox", "3.4.4-r0"]]

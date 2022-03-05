@@ -1,0 +1,15 @@
+checksum = "94e688f2beadfd0332f89a6ae4b65f0a4c33c25d7dc5ae6cd708ba7736c036b3"
+licence = "GPL-3.0-or-later"
+provides = "mingw-w64-gcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mingw-w64-gcc-11.2.0-r0.apk"
+version = "11.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mingw-w64-binutils", "2.37.0-r1"], ["mingw-w64-winpthreads", "9.0.0-r0"], ["mingw-w64-headers", "9.0.0-r0"], ["mingw-w64-crt", "9.0.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["mpc1", "1.2.1-r0"], ["mpfr4", "4.1.0-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

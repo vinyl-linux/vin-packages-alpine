@@ -1,0 +1,15 @@
+checksum = "e3ab4803072304553e52d27f860ecc8ba7f1bc74ced92f520c35d6dbac35fc9f"
+licence = "GPL-3.0-or-later"
+provides = "notmuch-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/notmuch-dev-0.34-r0.apk"
+version = "0.34.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["notmuch-libs", "0.34.0-r0"]]

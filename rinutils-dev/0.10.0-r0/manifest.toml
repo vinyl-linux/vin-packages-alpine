@@ -1,0 +1,15 @@
+checksum = "432d1eae45764d114777cd0f0bb9cf32448834549001d20b42afa99b583e02a6"
+licence = "MIT"
+provides = "rinutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rinutils-dev-0.10.0-r0.apk"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

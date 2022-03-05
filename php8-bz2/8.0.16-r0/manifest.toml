@@ -1,0 +1,15 @@
+checksum = "38409d4c2e735567290f902a3021aa78a4db0ea1e433fe6aaf0194b730a0a4da"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php8-bz2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-bz2-8.0.16-r0.apk"
+version = "8.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"]]

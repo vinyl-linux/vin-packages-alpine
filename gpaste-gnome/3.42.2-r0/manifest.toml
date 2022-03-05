@@ -1,0 +1,15 @@
+checksum = "fa81903c63a4d6bf2a1c753dd9ce8859021d086454c55e0b06048355d9329be8"
+licence = "BSD-2-Clause"
+provides = "gpaste-gnome"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gpaste-gnome-3.42.2-r0.apk"
+version = "3.42.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-control-center", "41.1.0-r0"]]

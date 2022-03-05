@@ -1,0 +1,15 @@
+checksum = "9f66ffc5c9aa6aea8a327f7236878a50552adc70dca1bb17ad51e0dfdb6f17fe"
+licence = "GPL-2.0-only"
+provides = "zram-init"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/zram-init-11.0-r1.apk"
+version = "11.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["e2fsprogs-extra", "1.46.4-r0"], ["util-linux-misc", "2.37.4-r0"]]

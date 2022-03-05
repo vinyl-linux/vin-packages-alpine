@@ -1,0 +1,15 @@
+checksum = "d8dd98474a73ca0482e78d0625c4846cb8ae89811aca35dc780828a8770f8e7f"
+licence = "GPL-2.0-only"
+provides = "mercury-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mercury-libs-20.06.1-r1.apk"
+version = "20.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

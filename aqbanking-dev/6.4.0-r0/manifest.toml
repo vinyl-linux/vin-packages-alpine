@@ -1,0 +1,15 @@
+checksum = "ae58051fe9a1b3699df7ff47eca494dae75fff5cd2f2e31c68b143ca7dbe3966"
+licence = "GPL-2.0-or-later"
+provides = "aqbanking-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/aqbanking-dev-6.4.0-r0.apk"
+version = "6.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aqbanking", "6.4.0-r0"], ["pkgconf", "1.8.0-r0"]]

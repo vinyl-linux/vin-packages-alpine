@@ -1,0 +1,15 @@
+checksum = "b6b29ea55f48e2c422f0758c94bb0e2974de134297fb5fb20288a82223a14fff"
+licence = "Artistic-1.0"
+provides = "perl-iptables-chainmgr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-iptables-chainmgr-1.6-r3.apk"
+version = "1.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-netaddr-ip", "4.79.0-r6"], ["perl-iptables-parse", "1.6.1-r3"]]

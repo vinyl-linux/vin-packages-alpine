@@ -1,0 +1,15 @@
+checksum = "b009d5e0ff1c2ce964502d91576b859c418af9d08f2f49da4b0c916eaf71ffac"
+licence = "GPL-2.0-only"
+provides = "duo_unix-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/duo_unix-dev-1.11.4-r1.apk"
+version = "1.11.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "1.1.1-l-r8"], ["pkgconf", "1.8.0-r0"]]

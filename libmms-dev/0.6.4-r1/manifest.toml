@@ -1,0 +1,15 @@
+checksum = "dbabb0a1b6b3f97f319be2a0313ef33a0a39a48ad22cefd56db786d9b5d64b16"
+licence = "LGPL-2.0-or-later"
+provides = "libmms-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmms-dev-0.6.4-r1.apk"
+version = "0.6.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmms", "0.6.4-r1"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

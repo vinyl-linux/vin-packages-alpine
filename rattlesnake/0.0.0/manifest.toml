@@ -1,0 +1,15 @@
+checksum = "42eb58966ba108cd1acb7334dfb7881f1a2180085e2b76a103cacd54fb616532"
+licence = "LicenseRef-KDE-Accepted-GPL"
+provides = "rattlesnake"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rattlesnake-0_git20201121-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["gst-plugins-good", "1.18.5-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtmultimedia", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "870dbccf5772535c8db19440c45c7005614a3570410de14f1fc2ba2d45f56103"
+licence = "GPL-2.0-or-later"
+provides = "lsscsi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lsscsi-0.32-r0.apk"
+version = "0.32.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

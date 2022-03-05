@@ -1,0 +1,15 @@
+checksum = "d145bea25b2825556af7e040d0a2fd645a67e820c26c1f48bbc64df639597761"
+licence = "GPL-2.0-or-later"
+provides = "gnome-screenshot-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-screenshot-lang-40.0-r0.apk"
+version = "40.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r0"]]

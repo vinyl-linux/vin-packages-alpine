@@ -1,0 +1,15 @@
+checksum = "6973a3b41cecafce92aaeb71d2ea443450f7d0af7c756a7b5f9cdf990acb65e2"
+licence = "BSD-2-Clause"
+provides = "yubico-c-client-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yubico-c-client-dev-2.15-r0.apk"
+version = "2.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yubico-c-client", "2.15.0-r0"]]

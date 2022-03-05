@@ -1,0 +1,15 @@
+checksum = "032b83f25d8ef071e713b8b7378a03b39d924f12c66288d4858077891576047d"
+licence = "MIT AND CC-BY-SA-4.0"
+provides = "gxr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gxr-dev-0.15.2-r0.apk"
+version = "0.15.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["json-glib-dev", "1.6.6-r0"], ["openxr-dev", "1.0.20-r1"], ["gxr", "0.15.2-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["gulkan-dev", "0.15.2-r1"], ["pkgconf", "1.8.0-r0"]]

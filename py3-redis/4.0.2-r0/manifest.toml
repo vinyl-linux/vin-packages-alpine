@@ -1,0 +1,15 @@
+checksum = "73132ff678d4c7f0c0fe920589df282933a6c46e21c0d56e2319c98e2890b793"
+licence = "MIT"
+provides = "py3-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-redis-4.0.2-r0.apk"
+version = "4.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-deprecated", "1.2.13-r0"], ["py3-hiredis", "1.1.0-r1"]]

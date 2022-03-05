@@ -1,0 +1,15 @@
+checksum = "16c5652336324ac00632e7457667344460aaca19666d99c472099fe625305526"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "libkgapi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libkgapi-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cyrus-sasl-dev", "2.1.27-r14"], ["kcalendarcore-dev", "5.88.0-r0"], ["kcontacts-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["kwallet-dev", "5.88.0-r0"], ["kwindowsystem-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["qt5-qtwebengine-dev", "5.15.3"], ["libkgapi", "21.8.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d451b19a4e6a368a76c8ea66a38f3e68761c772e0aae7a3fefcedb362f670670"
+licence = "GPL-3.0-or-later ISC MIT"
+provides = "uacme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uacme-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libcurl", "7.80.0-r0"], ["libssl1.1", "1.1.1-l-r8"]]

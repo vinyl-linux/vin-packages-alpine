@@ -1,0 +1,15 @@
+checksum = "14816fdbb8a3aea59563dd9949034967fa823c31a2971579476a42435d66e66b"
+licence = "Apache-2.0"
+provides = "imagemagick6-c++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/imagemagick6-c++-6.9.12.32-r0.apk"
+version = "6.9.12.32-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick6-libs", "6.9.12.32-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

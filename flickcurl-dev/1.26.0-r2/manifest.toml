@@ -1,0 +1,15 @@
+checksum = "501f503c376a2281de42d430dfaeb7003c90b7193ea61cff7b3ca1bacbe16241"
+licence = "GPL-2.0"
+provides = "flickcurl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/flickcurl-dev-1.26-r2.apk"
+version = "1.26.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flickcurl-libs", "1.26.0-r2"], ["raptor2-dev", "2.0.15-r4"], ["pkgconf", "1.8.0-r0"]]

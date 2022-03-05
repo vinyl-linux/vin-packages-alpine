@@ -1,0 +1,15 @@
+checksum = "6de0c8b2726b689b05184a376c5204daffdbe4f51c1e230d1de7f8888a416245"
+licence = "GPL-2.0-or-later"
+provides = "libieee1284"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libieee1284-0.2.11-r2.apk"
+version = "0.2.11-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

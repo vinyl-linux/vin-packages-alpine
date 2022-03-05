@@ -1,0 +1,15 @@
+checksum = "467abb4e249bdab8b4fb77a746719ecbf5fcb9b2f932cfe0be347b13fb8c3a3b"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_radius"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/proftpd-mod_radius-1.3.7c-r2.apk"
+version = "1.3.7-c-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-c-r2"], ["musl", "1.2.2-r7"]]

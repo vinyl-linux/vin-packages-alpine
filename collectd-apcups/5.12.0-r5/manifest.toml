@@ -1,0 +1,15 @@
+checksum = "571b63b1f0f5f23494b1aca2710646548c68638779683ba147f282fac597af19"
+licence = "GPL-2.0-or-later"
+provides = "collectd-apcups"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-apcups-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"]]

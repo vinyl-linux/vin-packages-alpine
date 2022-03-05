@@ -1,0 +1,15 @@
+checksum = "d932730fa5c171e185898c7171faea7963aa4523d71c38de8f8a6abe30f29b9c"
+licence = "GPL-3.0-or-later"
+provides = "davfs2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/davfs2-1.6.1-r0.apk"
+version = "1.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["neon", "0.32.1-r0"]]

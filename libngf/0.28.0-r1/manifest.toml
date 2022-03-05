@@ -1,0 +1,15 @@
+checksum = "aff978ec6f2678b97ac3a0c4953e48dcddd65eca8ebff5c0f5caec4c5bbd9562"
+licence = "LGPL-2.1-or-later"
+provides = "libngf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libngf-0.28-r1.apk"
+version = "0.28.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["dbus-glib", "0.112.0-r0"], ["glib", "2.70.1-r0"]]

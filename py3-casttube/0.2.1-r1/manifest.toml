@@ -1,0 +1,15 @@
+checksum = "5d5a2c72be09596a46fe80eb14a2a896ed753e241d1b52bb89fc19ddfc252449"
+licence = "MIT"
+provides = "py3-casttube"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-casttube-0.2.1-r1.apk"
+version = "0.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"]]

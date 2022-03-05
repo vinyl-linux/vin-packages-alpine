@@ -1,0 +1,15 @@
+checksum = "2a1d876d63ed3383150e762ef3aec6193ee856013c652a0f1423be30e5a9b8b8"
+licence = "GPL-2.0-or-later"
+provides = "kcalc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kcalc-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["kconfigwidgets", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kcrash", "5.88.0-r0"], ["kguiaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["gmp", "6.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["libstdc++", "10.3.1"]]

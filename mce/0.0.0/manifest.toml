@@ -1,0 +1,15 @@
+checksum = "3f9c32229154176dcfaad9ffc3bd1edcb0ce52073837d31a48749fc37197f1fc"
+licence = "LGPL-2.1-only"
+provides = "mce"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mce-0_git20200916-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["dbus-glib", "0.112.0-r0"], ["libdsme", "0.66.6-r2"], ["libelogind", "246.10.0-r4"], ["glib", "2.70.1-r0"], ["libiphb", "1.2.7-r1"], ["libngf", "0.28.0-r1"]]

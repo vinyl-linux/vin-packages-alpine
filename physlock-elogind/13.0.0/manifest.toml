@@ -1,0 +1,15 @@
+checksum = "89198445da64f75c2b26ee64ff1a68c6bd5c33656dc80e20cae84981a9c18135"
+licence = "GPL-2.0-or-later"
+provides = "physlock-elogind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/physlock-elogind-13_git20200116-r1.apk"
+version = "13.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libelogind", "246.10.0-r4"], ["linux-pam", "1.5.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "97b4224d21a9f30c00982057fa3e6db317e662d0ebdbc3cf3c6d1dcb8597c087"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "libksane-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libksane-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libksane", "21.8.3-r0"]]

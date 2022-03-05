@@ -1,0 +1,15 @@
+checksum = "719da254492bcd2bf01d5127b97ffa4b3da585d2c111f92847dbc1703ad2bb9c"
+licence = "MIT"
+provides = "ruby-builder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-builder-3.2.4-r2.apk"
+version = "3.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"]]

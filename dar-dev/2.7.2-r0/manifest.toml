@@ -1,0 +1,15 @@
+checksum = "8d17ff6c87391e461fb0467c05c853a831b3aa00ed2248ee799cb5a2ae8ed987"
+licence = "GPL-2.0-or-later"
+provides = "dar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dar-dev-2.7.2-r0.apk"
+version = "2.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dar-libs", "2.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

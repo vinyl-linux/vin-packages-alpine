@@ -1,0 +1,15 @@
+checksum = "bd61a76661cb8c0d523f85ff1f8d7c04aae885d0177dcc008891e105f56cb6b3"
+licence = "GPL-2.0-or-later"
+provides = "netatalk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/netatalk-dev-3.1.12-r5.apk"
+version = "3.1.12-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netatalk", "3.1.12-r5"]]

@@ -1,0 +1,15 @@
+checksum = "7de2e52bbfdd8e6c93ece0d6d3dff9e71d3553d7c3b84efbc36ea0e7c9bb3492"
+licence = "MIT"
+provides = "mtdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mtdev-1.1.6-r0.apk"
+version = "1.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

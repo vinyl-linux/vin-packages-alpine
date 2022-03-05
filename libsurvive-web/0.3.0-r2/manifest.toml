@@ -1,0 +1,15 @@
+checksum = "e2fcdd5f16dea7adcf704fc610e6940071d2daa4e4f07fc4be6800baceb96392"
+licence = "MIT"
+provides = "libsurvive-web"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libsurvive-web-0.3-r2.apk"
+version = "0.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsurvive", "0.3.0-r2"], ["websocketd", "0.4.1-r2"]]

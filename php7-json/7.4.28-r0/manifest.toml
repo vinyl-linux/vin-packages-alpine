@@ -1,0 +1,15 @@
+checksum = "f23bebbf6545e35ada7902c0e144b694d76c147ba63594515ae0328fbab6c71e"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-json"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-json-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

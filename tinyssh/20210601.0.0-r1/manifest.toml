@@ -1,0 +1,15 @@
+checksum = "c090872b6c328c2ec35e115e7b21dd1430cd23ea92a75f762321f5ec12b73f1e"
+licence = "CC0-1.0"
+provides = "tinyssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tinyssh-20210601-r1.apk"
+version = "20210601.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libsodium", "1.0.18-r0"]]

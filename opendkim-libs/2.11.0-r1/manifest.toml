@@ -1,0 +1,15 @@
+checksum = "9af312be2f5c175fed7c4069fd6f6a78eff7560f58995af95490f8c356dea0bc"
+licence = "custom"
+provides = "opendkim-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/opendkim-libs-2.11.0-r1.apk"
+version = "2.11.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

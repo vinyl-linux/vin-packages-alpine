@@ -1,0 +1,15 @@
+checksum = "16dee3b936582f891445e733b844f53c1cf156867f66e2781b93a51469034d19"
+licence = "MIT"
+provides = "libinput-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libinput-tools-1.19.2-r0.apk"
+version = "1.19.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libinput", "1.19.2-r0"], ["python3", "3.9.7-r4"], ["py3-libevdev", "0.9.0-r1"], ["py3-udev", "0.22.0-r1"], ["py3-yaml", "5.4.1.1-r1"], ["musl", "1.2.2-r7"], ["libevdev", "1.12.0-r0"], ["libinput-libs", "1.19.2-r0"], ["eudev-libs", "3.2.11"]]

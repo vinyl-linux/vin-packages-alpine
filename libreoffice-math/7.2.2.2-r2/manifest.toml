@@ -1,0 +1,15 @@
+checksum = "db5d11560108b1a72cfe5378ed25633753b1730deff746a072c0810ee801f33e"
+licence = "MPL-2.0"
+provides = "libreoffice-math"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libreoffice-math-7.2.2.2-r2.apk"
+version = "7.2.2.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-common", "7.2.2.2-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

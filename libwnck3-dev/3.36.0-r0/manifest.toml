@@ -1,0 +1,15 @@
+checksum = "e20eeb041763b0057cbd2fa87650af0d3dd9a698028b839fcca167b1190b6d17"
+licence = "LGPL-2.0-or-later"
+provides = "libwnck3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libwnck3-dev-3.36.0-r0.apk"
+version = "3.36.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwnck3", "3.36.0-r0"], ["cairo-dev", "1.16.0-r3"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["startup-notification-dev", "0.12.0-r4"], ["pango-dev", "1.48.10-r0"], ["libx11-dev", "1.7.2-r0"], ["libxres-dev", "1.2.1-r0"], ["pkgconf", "1.8.0-r0"]]

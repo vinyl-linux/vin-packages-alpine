@@ -1,0 +1,15 @@
+checksum = "4d9caddfc467eda9244352bd654a8ac3869710a7c8b7cac9f1f138b4a70bd46e"
+licence = "MIT"
+provides = "wf-recorder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wf-recorder-0.2.1-r3.apk"
+version = "0.2.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opencl-icd-loader", "2.2.14-r0"], ["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libpulse", "15.0.0-r2"], ["libstdc++", "10.3.1"], ["wayland-libs-client", "1.19.0-r1"]]

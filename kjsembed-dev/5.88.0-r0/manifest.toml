@@ -1,0 +1,15 @@
+checksum = "366a921cd3601757780a78b4d6537317e8a7922e85ae301a702e613c99be1ec9"
+licence = "LGPL-2.1-or-later"
+provides = "kjsembed-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kjsembed-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg-dev", "5.15.3"], ["kjs-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kjsembed", "5.88.0-r0"]]

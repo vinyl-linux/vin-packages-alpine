@@ -1,0 +1,15 @@
+checksum = "47a1ee9e912514dfa7f06cfe5d28884dfa541722775788ced6af8e6025d7b5ad"
+licence = "LGPL-3.0-only"
+provides = "net-cpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/net-cpp-dev-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["net-cpp", "3.0.0-r0"], ["pkgconf", "1.8.0-r0"]]

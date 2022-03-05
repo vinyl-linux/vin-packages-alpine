@@ -1,0 +1,15 @@
+checksum = "5fb30d5afca855579e0bbfc9bc178d918aab6793b565cee521506167fbd5f3e5"
+licence = "MIT"
+provides = "py3-munch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-munch-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pbr", "5.8.0-r0"], ["python3", "3.9.7-r4"]]

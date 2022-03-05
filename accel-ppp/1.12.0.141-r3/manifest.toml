@@ -1,0 +1,15 @@
+checksum = "4c87cca85dedce09646140c0f63ab69fe03c3ae14828b3e6f8d759395e036f35"
+licence = "GPL-2.0-or-later"
+provides = "accel-ppp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/accel-ppp-1.12.0.141-r3.apk"
+version = "1.12.0.141-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["net-snmp-libs", "5.9.1-r5"], ["net-snmp-agent-libs", "5.9.1-r5"], ["pcre", "8.45.0-r1"], ["libssl1.1", "1.1.1-l-r8"], ["libucontext", "1.1.0-r0"]]

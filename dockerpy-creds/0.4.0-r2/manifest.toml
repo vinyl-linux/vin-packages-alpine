@@ -1,0 +1,15 @@
+checksum = "d0369bcd08be5b74f677817037ea1d8ea0b2ec45dd3680a132c4f59a9df777ae"
+licence = "Apache-2.0"
+provides = "dockerpy-creds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dockerpy-creds-0.4.0-r2.apk"
+version = "0.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"]]

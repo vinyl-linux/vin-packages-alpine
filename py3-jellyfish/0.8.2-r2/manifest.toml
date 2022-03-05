@@ -1,0 +1,15 @@
+checksum = "71c67dfa801b6b8439e10f37984e09b40d88b72a4eb7f25510ffe8dfd9098b51"
+licence = "BSD-2-Clause"
+provides = "py3-jellyfish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-jellyfish-0.8.2-r2.apk"
+version = "0.8.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

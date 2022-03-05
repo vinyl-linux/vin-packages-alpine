@@ -1,0 +1,15 @@
+checksum = "fd251e6ab96fd74f3f13eb50f516208cb7371c704fcdefc06d43dcee9730f952"
+licence = "GPL-3.0-or-later"
+provides = "gimp-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gimp-lang-2.10.24-r0.apk"
+version = "2.10.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"]]

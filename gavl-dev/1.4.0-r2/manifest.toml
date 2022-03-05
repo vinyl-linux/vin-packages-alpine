@@ -1,0 +1,15 @@
+checksum = "df464aa8d341b6bd87721aeb860825b0cad4438927164095d0e9388d7a972697"
+licence = "GPL-2.0-or-later"
+provides = "gavl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gavl-dev-1.4.0-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gavl", "1.4.0-r2"], ["pkgconf", "1.8.0-r0"]]

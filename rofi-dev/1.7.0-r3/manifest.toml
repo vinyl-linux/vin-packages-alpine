@@ -1,0 +1,15 @@
+checksum = "6dc70147487824ef8cb5687b1ab1d7f9fb51434044e4620581ea65d0aeb43735"
+licence = "MIT"
+provides = "rofi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rofi-dev-1.7.0-r3.apk"
+version = "1.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cairo-dev", "1.16.0-r3"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

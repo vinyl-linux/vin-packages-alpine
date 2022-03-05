@@ -1,0 +1,15 @@
+checksum = "5e8f3aa92c10a6fdf3e7f21d7600eacc643e86e3bb6a1133732b506e4f13aa7b"
+licence = "Apache-2.0"
+provides = "znc-extra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/znc-extra-1.8.2-r5.apk"
+version = "1.8.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "e77aa81f639ca94dbeafada46c1d07327a5cac08200d6ae0c935f6653d1f9b3e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-des_ede3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-crypt-des_ede3-0.01-r2.apk"
+version = "0.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-crypt-des", "2.7.0-r9"]]

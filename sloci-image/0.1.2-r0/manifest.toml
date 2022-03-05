@@ -1,0 +1,15 @@
+checksum = "828f051a97782cb9a7575e295aea11715c37449812e4c480115f039cdc057e44"
+licence = "MIT"
+provides = "sloci-image"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sloci-image-0.1.2-r0.apk"
+version = "0.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["tar", "1.34.0-r0"]]

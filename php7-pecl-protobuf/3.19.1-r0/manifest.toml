@@ -1,0 +1,15 @@
+checksum = "4080a1015a4df771a7b2de6b62d25e2875c6144c03bd5fea30e93f62c6f8762e"
+licence = "BSD-3-Clause"
+provides = "php7-pecl-protobuf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-protobuf-3.19.1-r0.apk"
+version = "3.19.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

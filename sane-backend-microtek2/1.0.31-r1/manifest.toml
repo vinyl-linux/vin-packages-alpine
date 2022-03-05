@@ -1,0 +1,15 @@
+checksum = "f1d40cc1ad29b17662313b7ba6b09e7703a85b71da3e003de16abb8a453c1ea1"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-microtek2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-backend-microtek2-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"]]

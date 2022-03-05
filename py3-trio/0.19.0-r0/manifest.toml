@@ -1,0 +1,15 @@
+checksum = "0ec5ee5815f36aaa245be5853b3b3472f531583f645d83f3661d08b0d068ccab"
+licence = "MIT OR Apache-2.0"
+provides = "py3-trio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-trio-0.19.0-r0.apk"
+version = "0.19.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-idna", "3.3.0-r0"], ["py3-openssl", "21.0.0-r0"], ["py3-outcome", "1.1.0-r1"], ["py3-sniffio", "1.2.0-r1"], ["py3-sortedcontainers", "2.4.0-r0"], ["python3", "3.9.7-r4"]]

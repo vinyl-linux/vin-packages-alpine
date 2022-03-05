@@ -1,0 +1,15 @@
+checksum = "b1ae1fb28705422cb3e23c6e9637e38674a576b38cebbcabc34b2998fc8162f2"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/claws-mail-dev-4.0.0-r3.apk"
+version = "4.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

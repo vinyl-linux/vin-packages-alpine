@@ -1,0 +1,15 @@
+checksum = "01da416bb1ce51056d4bed2126ca4b0f6684cf1bcfd6c342ed876b608cb94539"
+licence = "Vim"
+provides = "vim-sleuth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vim-sleuth-1.2-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gvim", "8.2.4173-r0"]]

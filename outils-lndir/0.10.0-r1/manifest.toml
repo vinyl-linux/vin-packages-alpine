@@ -1,0 +1,15 @@
+checksum = "175a3df854a9cacfc518c1dbc202c7cd7a51ecb331ae2e24c976340ff1cd96f1"
+licence = "BSD-3-Clause ISC"
+provides = "outils-lndir"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/outils-lndir-0.10-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

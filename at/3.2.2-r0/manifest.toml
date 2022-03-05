@@ -1,0 +1,15 @@
+checksum = "7efc441e756a7b11473794349df902aec93833c2ed860c8cdac7085f6aa7b109"
+licence = "GPL-2.0-or-later"
+provides = "at"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/at-3.2.2-r0.apk"
+version = "3.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

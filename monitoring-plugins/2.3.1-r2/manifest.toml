@@ -1,0 +1,15 @@
+checksum = "dfba65f1d1d332225b991f791d58490972e6c26a03e7536eaaa307f86a9a5b69"
+licence = "GPL-3.0-or-later"
+provides = "monitoring-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/monitoring-plugins-2.3.1-r2.apk"
+version = "2.3.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iputils", "20210722.0.0-r0"], ["procps", "3.3.17-r0"], ["bind-tools", "9.16.25-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libdbi", "0.9.0-r0"], ["mariadb-connector-c", "3.1.13-r2"], ["libpq", "14.2.0-r0"], ["libssl1.1", "1.1.1-l-r8"]]

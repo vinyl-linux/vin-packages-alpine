@@ -1,0 +1,15 @@
+checksum = "c74e57caf2f5d33bc03ca129f5ef97b9271d7e816736d666e76c505ece18bb9f"
+licence = "GPL-3.0-only"
+provides = "tvheadend"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tvheadend-4.2.8-r5.apk"
+version = "4.2.8-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"], ["liburiparser", "0.9.6-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "a42b6cc379514b95785956e269661fb61cb5a5bf4c0a6a828d98cf15059fc566"
+licence = "GPL-2.0-only"
+provides = "iwatch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/iwatch-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-xml-simpleobject-libxml", "0.60.0-r1"], ["perl-event", "1.28.0-r1"], ["perl-linux-inotify2", "2.3.0-r0"], ["perl-mail-sendmail", "0.80.0-r4"]]

@@ -1,0 +1,15 @@
+checksum = "d8505fc3cbb75d5640fd7037f36463629c069a2dfd1c2366779fcae636366da4"
+licence = "MIT"
+provides = "lua-luatz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua-luatz-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tzdata", "2021.0.0-e-r0"]]

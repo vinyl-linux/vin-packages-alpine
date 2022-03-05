@@ -1,0 +1,15 @@
+checksum = "52a98412f06420e8ef8452fa4f34801dad2dfc4ea11ad57e243890eb935fcd6b"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-cardscan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-backend-cardscan-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"], ["libxml2", "2.9.12-r2"]]

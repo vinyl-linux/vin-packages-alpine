@@ -1,0 +1,15 @@
+checksum = "9861b48c0f749511f5f9409b14fa638b7380e0dcf7996d9107bd864fb7bdea79"
+licence = "LGPL-2.1-only"
+provides = "signond-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/signond-dev-8.60_git20201105-r0.apk"
+version = "8.60.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["signond", "8.60.0"]]

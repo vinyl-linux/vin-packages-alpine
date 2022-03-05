@@ -1,0 +1,15 @@
+checksum = "b5021ad88db348e9861a10118b14fc1e9252eb804ccc77bba31fc5c7f62ff16b"
+licence = "MPL-2.0"
+provides = "libreofficekit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libreofficekit-7.2.2.2-r2.apk"
+version = "7.2.2.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-base", "7.2.2.2-r2"], ["libreoffice-calc", "7.2.2.2-r2"], ["libreoffice-common", "7.2.2.2-r2"], ["libreoffice-draw", "7.2.2.2-r2"], ["libreoffice-impress", "7.2.2.2-r2"], ["libreoffice-math", "7.2.2.2-r2"], ["libreoffice-connector-postgres", "7.2.2.2-r2"], ["libreoffice-writer", "7.2.2.2-r2"]]

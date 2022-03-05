@@ -1,0 +1,15 @@
+checksum = "662321d73f417a7b5a6cf3acdadca1e0a60906b1b33d2535bf7a743b654f9a81"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-superio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-superio-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"]]

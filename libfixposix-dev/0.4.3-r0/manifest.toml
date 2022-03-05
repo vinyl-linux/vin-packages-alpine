@@ -1,0 +1,15 @@
+checksum = "7f074be009150441973dbfed09be9bf4201e38e7865ed5d7dd2aa4fe1030c1e9"
+licence = "BSL-1.0"
+provides = "libfixposix-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libfixposix-dev-0.4.3-r0.apk"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfixposix", "0.4.3-r0"], ["pkgconf", "1.8.0-r0"]]

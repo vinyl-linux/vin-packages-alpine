@@ -1,0 +1,15 @@
+checksum = "2935e1a1707640133b0d0e300e59479f0b29aa6da4f28e2fc38b3e6084695199"
+licence = "MIT"
+provides = "dub"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dub-1.27.0-r1.apk"
+version = "1.27.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcurl", "7.80.0-r0"], ["musl", "1.2.2-r7"], ["ldc-runtime", "1.28.0-r0"], ["llvm-libunwind", "12.0.1-r1"]]

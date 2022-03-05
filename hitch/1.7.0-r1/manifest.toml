@@ -1,0 +1,15 @@
+checksum = "d163b80e3fa2e47674124ddd7a00e4a6c9a91c1c2205d69f5e14364638a04ac0"
+licence = "BSD-2-Clause"
+provides = "hitch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hitch-1.7.0-r1.apk"
+version = "1.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libev", "4.33.0-r0"], ["libssl1.1", "1.1.1-l-r8"]]

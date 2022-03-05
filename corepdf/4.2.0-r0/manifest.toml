@@ -1,0 +1,15 @@
+checksum = "ecee75f79e7ec540b020a9a3eadc500efc46734a74262983c9c9a24c2260db73"
+licence = "GPL-3.0-or-later"
+provides = "corepdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/corepdf-4.2.0-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.3"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libcprime", "4.2.2-r1"], ["libgcc", "10.3.1"], ["poppler-qt5", "21.11.0-r0"], ["libstdc++", "10.3.1"]]

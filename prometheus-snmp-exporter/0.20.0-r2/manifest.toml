@@ -1,0 +1,15 @@
+checksum = "ec2a8a444712631035f510b1fe65454e3068e0498f14676ab0d8c4f1c0b336b7"
+licence = "Apache-2.0"
+provides = "prometheus-snmp-exporter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/prometheus-snmp-exporter-0.20.0-r2.apk"
+version = "0.20.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["net-snmp-libs", "5.9.1-r5"]]

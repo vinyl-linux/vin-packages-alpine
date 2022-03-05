@@ -1,0 +1,15 @@
+checksum = "3a2f1a59c7ad67b2d786d9b99a3d74c803663d48af8d2d9297716e88487eda61"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-ep963x"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-ep963x-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"]]

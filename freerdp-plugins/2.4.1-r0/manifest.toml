@@ -1,0 +1,15 @@
+checksum = "77fda4f5fba5b917483a8b555cfd868bea98017d40d605e8694c97b41c6ccff6"
+licence = "Apache-2.0"
+provides = "freerdp-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/freerdp-plugins-2.4.1-r0.apk"
+version = "2.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["cups-libs", "2.3.3-r5"], ["freerdp-libs", "2.4.1-r0"], ["libusb", "1.0.24-r3"]]

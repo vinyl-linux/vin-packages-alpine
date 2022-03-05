@@ -1,0 +1,15 @@
+checksum = "bd7027c5b81b0b4c0cbf0ccbb65d45247ae022a26bc09d1c57b557e6dddb1509"
+licence = "BSD-2-Clause"
+provides = "postgresql-temporal_tables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postgresql-temporal_tables-1.2.0_p20210220-r2.apk"
+version = "1.2.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql14", "14.2.0-r0"], ["musl", "1.2.2-r7"]]

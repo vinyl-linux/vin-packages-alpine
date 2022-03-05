@@ -1,0 +1,15 @@
+checksum = "c88b0df3847714424c47216252cd21cb9a1b774fc7d378273449227d8875495e"
+licence = "BSL-1.0"
+provides = "poco-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/poco-dev-1.11.1-r0.apk"
+version = "1.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["poco", "1.11.1-r0"]]

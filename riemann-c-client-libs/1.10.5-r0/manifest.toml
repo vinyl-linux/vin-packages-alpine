@@ -1,0 +1,15 @@
+checksum = "4d137f8fa5ab9c5bd5d8dd45b8f51a63d7d7fe36408914c3f67efe22ecba2fd7"
+licence = "LGPL-3.0-or-later"
+provides = "riemann-c-client-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/riemann-c-client-libs-1.10.5-r0.apk"
+version = "1.10.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gnutls", "3.7.1-r0"], ["protobuf-c", "1.4.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ffd3260a0937e6c7696c2139d35438d5ca6fbfadce4c7de77e34d6b03cd151f3"
+licence = "Apache-2.0"
+provides = "jsvc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jsvc-1.2.4-r1.apk"
+version = "1.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["commons-daemon", "1.2.4-r1"], ["libcap", "2.61.0-r0"], ["musl", "1.2.2-r7"]]

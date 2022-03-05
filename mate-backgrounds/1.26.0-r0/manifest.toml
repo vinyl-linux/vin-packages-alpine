@@ -1,0 +1,15 @@
+checksum = "bc8627c1c19946a27237cbcd852c4a418a8cb18341a818c46a82d8016fd727b3"
+licence = "GPL-2.0-or-later"
+provides = "mate-backgrounds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mate-backgrounds-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c8b44cb2af40cbb0e59920018f3eb8b4e4228f8d28052d1923750a0c963d69b4"
+licence = "GPL-2.0-or-later"
+provides = "collectd-ipmi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-ipmi-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["openipmi-libs", "2.0.32-r0"], ["musl", "1.2.2-r7"]]

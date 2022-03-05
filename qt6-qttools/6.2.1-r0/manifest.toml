@@ -1,0 +1,15 @@
+checksum = "37e4183301f09ecf9c520ebaa7b65a8e14c7342549fd2313fbd2b61589b7e216"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qttools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt6-qttools-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.2.1-r2"], ["qt6-qtbase-x11", "6.2.1-r2"], ["qt6-qtdeclarative", "6.2.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "ee8a46f8265fb8666521b83c9fdfebe729cf4641796b962fb44655576e0def2e"
+licence = "MIT"
+provides = "namecoin-bench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/namecoin-bench-0.22.0-r1.apk"
+version = "0.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libgcc", "10.3.1"], ["miniupnpc", "2.2.3-r0"], ["libstdc++", "10.3.1"]]

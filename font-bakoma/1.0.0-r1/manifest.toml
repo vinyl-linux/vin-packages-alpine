@@ -1,0 +1,15 @@
+checksum = "844072718f8c3e0780bdd6c9d261e67a3f2a0fec7ad6da577f4e4efb0455cfe7"
+licence = "custom"
+provides = "font-bakoma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-bakoma-1-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-bakoma-ttf", "1.0.0-r1"]]

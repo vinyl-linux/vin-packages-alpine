@@ -1,0 +1,15 @@
+checksum = "ba644acfe0858b11883066fdc702d60c9dbb7aa87e21e43f0e30811c8a7c856c"
+licence = "GPL-3.0-or-later GFDL-1.3-only"
+provides = "gucharmap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gucharmap-dev-14.0.0-r0.apk"
+version = "14.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gucharmap", "14.0.0-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

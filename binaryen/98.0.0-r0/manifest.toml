@@ -1,0 +1,15 @@
+checksum = "174b0ee1a7033d0607662b18f0d2f44296da38b067ca57189ea0800b29ee0d1b"
+licence = "Apache-2.0"
+provides = "binaryen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/binaryen-98-r0.apk"
+version = "98.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

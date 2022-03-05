@@ -1,0 +1,15 @@
+checksum = "103f55750ddff5c1696655d8a121d6e62017d6923e9e52f716be8f88fb497ef9"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-comments"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-comments-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"]]

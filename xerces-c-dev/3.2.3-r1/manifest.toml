@@ -1,0 +1,15 @@
+checksum = "e2ea62fc8d014e3d49aaa8dc916b96379e549404ece4e7ad382c21054d60997b"
+licence = "Apache-2.0"
+provides = "xerces-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xerces-c-dev-3.2.3-r1.apk"
+version = "3.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["xerces-c", "3.2.3-r1"]]

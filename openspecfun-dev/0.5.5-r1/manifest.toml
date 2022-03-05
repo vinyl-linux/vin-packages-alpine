@@ -1,0 +1,15 @@
+checksum = "4a2b0fdd7ca48136aab1095461bc997e1c38fe04d187b113a94dd15c239d1e54"
+licence = "MIT Public-Domain"
+provides = "openspecfun-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openspecfun-dev-0.5.5-r1.apk"
+version = "0.5.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openspecfun", "0.5.5-r1"], ["openlibm-dev", "0.8.0-r0"], ["pkgconf", "1.8.0-r0"]]

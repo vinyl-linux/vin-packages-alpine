@@ -1,0 +1,15 @@
+checksum = "bea2d7d8248c330329f47c1855f41071cf011e60bd8c21fe4d5c7279d7510d71"
+licence = "Apache-2.0"
+provides = "py3-parsedatetime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-parsedatetime-2.6-r2.apk"
+version = "2.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-future", "0.18.2-r3"]]

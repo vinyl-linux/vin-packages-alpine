@@ -1,0 +1,15 @@
+checksum = "1238c2ed82993ae1a3f654362e76de9074b04f838102a87a1adb76e9d0119810"
+licence = "MIT"
+provides = "xwayland-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xwayland-dbg-21.1.2-r1.apk"
+version = "21.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xorg-server-common", "21.1.2-r0"], ["xkbcomp", "1.4.5-r0"]]

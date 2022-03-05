@@ -1,0 +1,15 @@
+checksum = "5a659798729efa7d69e7aaab6f5649f18afebbd1b9ac60b731446092d7d3b6b1"
+licence = "GPL-3.0-or-later"
+provides = "oscam-list-smargo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/oscam-list-smargo-1.20_svn20201119-r2.apk"
+version = "1.20.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

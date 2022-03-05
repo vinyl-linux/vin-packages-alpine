@@ -1,0 +1,15 @@
+checksum = "a0f2aad9646823da80f69f708e29d199204255617c415095d68d632671740c81"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-daemon-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/clamav-daemon-openrc-0.104.1-r0.apk"
+version = "0.104.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freshclam-openrc", "0.104.1-r0"]]

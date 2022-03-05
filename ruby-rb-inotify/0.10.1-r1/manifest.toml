@@ -1,0 +1,15 @@
+checksum = "1c2ed0538c72ebea5ebba6a0cd8aefd21f8ec58c9872937136754d0734cc7046"
+licence = "MIT"
+provides = "ruby-rb-inotify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-rb-inotify-0.10.1-r1.apk"
+version = "0.10.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"], ["ruby-ffi", "1.15.5-r0"]]

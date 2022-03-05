@@ -1,0 +1,15 @@
+checksum = "964f0398872d1ac82a5bb2c98c78c3b44e2297cab1430c67a025898203a772c0"
+licence = "BSD-2-Clause"
+provides = "libmediainfo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmediainfo-dev-21.09-r0.apk"
+version = "21.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["libmediainfo", "21.9.0-r0"], ["curl-dev", "7.80.0-r0"], ["libzen-dev", "0.4.39-r0"], ["pkgconf", "1.8.0-r0"]]

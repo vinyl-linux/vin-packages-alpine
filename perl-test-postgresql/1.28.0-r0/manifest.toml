@@ -1,0 +1,15 @@
+checksum = "c6468b73bcd311ad0226f25f2c9ffb13772057e40f3b2e48e5029c581d37e99a"
+licence = "Artistic-2.0"
+provides = "perl-test-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-postgresql-1.28-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-class-accessor-lite", "0.8.0-r7"]]

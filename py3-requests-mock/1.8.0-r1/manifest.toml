@@ -1,0 +1,15 @@
+checksum = "d5ddc209ba6dc4b03b0a066d6f0a59b7634b5f7fbbb2773979d3e38408469ab0"
+licence = "Apache-2.0"
+provides = "py3-requests-mock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-requests-mock-1.8.0-r1.apk"
+version = "1.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"], ["py3-six", "1.16.0-r0"]]

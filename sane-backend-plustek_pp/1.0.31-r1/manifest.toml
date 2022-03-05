@@ -1,0 +1,15 @@
+checksum = "8f897678772af848e3db0a7fa965d8018f926c812542eb0b2c297d67afb882bd"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-plustek_pp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-backend-plustek_pp-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"], ["libieee1284", "0.2.11-r2"]]

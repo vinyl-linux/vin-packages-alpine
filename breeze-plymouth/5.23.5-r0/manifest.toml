@@ -1,0 +1,15 @@
+checksum = "4750a16814a0c0074b6c1db770e1ec24bab06f9926adc664bc6b7fe39c1f0a43"
+licence = "GPL-2.0-or-later"
+provides = "breeze-plymouth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/breeze-plymouth-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["plymouth", "0.9.5-r0"]]

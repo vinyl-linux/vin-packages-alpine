@@ -1,0 +1,15 @@
+checksum = "6437b19a3c9885b5f39f596da2b654c6b8c75139096bdea7ed3689a19583759a"
+licence = "MIT"
+provides = "py3-wgnlpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-wgnlpy-0.1.5-r1.apk"
+version = "0.1.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyroute2-minimal", "0.6.5-r0"], ["py3-cryptography", "3.3.2-r3"]]

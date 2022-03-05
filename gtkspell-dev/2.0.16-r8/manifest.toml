@@ -1,0 +1,15 @@
+checksum = "81986600bee94a7c82e28efe1d40d7e1ab2e80549df6a0784aeac1f5b22de256"
+licence = "GPL-2.0-only"
+provides = "gtkspell-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtkspell-dev-2.0.16-r8.apk"
+version = "2.0.16-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtkspell", "2.0.16-r8"], ["gtk+2.0-dev", "2.24.33-r0"], ["pkgconf", "1.8.0-r0"]]

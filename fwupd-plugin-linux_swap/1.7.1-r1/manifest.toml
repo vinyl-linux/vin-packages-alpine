@@ -1,0 +1,15 @@
+checksum = "58829b5b803c6af63bb5a948ce53f125200f8ca0a7c237c427d9522f0f4af6f3"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-linux_swap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-linux_swap-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"]]

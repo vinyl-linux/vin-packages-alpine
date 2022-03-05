@@ -1,0 +1,15 @@
+checksum = "88a50e3214b664a20f17a6bb2d39b8d49b23aae4e434f4812217049258863b3f"
+licence = "LGPL-3.0-or-later"
+provides = "babl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/babl-dev-0.1.88-r0.apk"
+version = "0.1.88-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["babl", "0.1.88-r0"], ["lcms2-dev", "2.12.0-r1"], ["pkgconf", "1.8.0-r0"]]

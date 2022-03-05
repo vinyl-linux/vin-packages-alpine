@@ -1,0 +1,15 @@
+checksum = "79a169cd8be7428197386ac98f2ff4c4bfa7445b5ab903ef8e877633cc174bb1"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-alien-build"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-alien-build-2.45-r0.apk"
+version = "2.45.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-file-chdir", "0.1011.0-r1"], ["perl-path-tiny", "0.120.0-r0"], ["perl-capture-tiny", "0.48.0-r2"], ["perl-ffi-checklib", "0.28.0-r0"], ["perl-file-which", "1.27.0-r0"]]

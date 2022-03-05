@@ -1,0 +1,15 @@
+checksum = "ec9d1dd86c8521b2d6d0c71f9b5abf1f72cc9b62a1930909ef290a6c472a3752"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "libgnome-keyring-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgnome-keyring-lang-3.12.0-r3.apk"
+version = "3.12.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-keyring", "40.0.0-r0"]]

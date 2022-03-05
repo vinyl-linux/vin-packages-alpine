@@ -1,0 +1,15 @@
+checksum = "eecbcdb45d6674bf8d627017c12a4c1cee499d1b0d39bf432425d7e720cc6093"
+licence = "GPL-2.0-only"
+provides = "kodi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kodi-19.1-r5.apk"
+version = "19.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kodi-x11", "19.1.0-r5"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["giflib", "5.2.1-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["lzo", "2.10.0-r2"], ["libpng", "1.6.37-r1"], ["libstdc++", "10.3.1"]]

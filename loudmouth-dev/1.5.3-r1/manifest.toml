@@ -1,0 +1,15 @@
+checksum = "21da1ae3a0fbb2db6d9c2c69bbb32c3f6271d3c6ecfccf6e60f52d262054d7aa"
+licence = "LGPL-2.0-or-later"
+provides = "loudmouth-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/loudmouth-dev-1.5.3-r1.apk"
+version = "1.5.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["gnutls-dev", "3.7.1-r0"], ["libidn-dev", "1.38.0-r0"], ["libasyncns-dev", "0.8.0-r1"], ["check-dev", "0.15.2-r0"], ["autoconf", "2.71.0-r0"], ["loudmouth", "1.5.3-r1"], ["glib-dev", "2.70.1-r0"]]

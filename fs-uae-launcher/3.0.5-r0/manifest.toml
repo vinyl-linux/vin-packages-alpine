@@ -1,0 +1,15 @@
+checksum = "e550e998ca743a0c03132bd9fa995b69a017ccb67dc8cf4f11e83455be594abe"
+licence = "GPL-2.0-only"
+provides = "fs-uae-launcher"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fs-uae-launcher-3.0.5-r0.apk"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fs-uae", "3.0.5-r0"], ["py3-qt5", "5.15.2-r1"], ["py3-sip-pyqt5", "4.19.24-r1"]]

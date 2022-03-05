@@ -1,0 +1,15 @@
+checksum = "2475f98ff0281bb8feda50560c98a43f10c6192171d4a5d6c28b2a74d5fc9fa9"
+licence = "custom:chromiumos"
+provides = "vboot-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vboot-utils-6310032-r5.apk"
+version = "6310032.0.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["xz-libs", "5.2.5-r0"], ["libstdc++", "10.3.1"], ["yaml", "0.2.5-r0"]]

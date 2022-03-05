@@ -1,0 +1,15 @@
+checksum = "cc0ce7d96aae5d0a31625b57510cb90db2e1fb2db5ea1b46f6b322a5162f926c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-authcas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-authcas-1.7-r2.apk"
+version = "1.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-io-socket-ssl", "2.72.0-r0"], ["perl-libwww", "6.58.0-r0"]]

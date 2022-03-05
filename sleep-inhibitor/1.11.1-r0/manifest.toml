@@ -1,0 +1,15 @@
+checksum = "787be1a2424aeb79c4a6a5b4295fcf497c40e58e4dd428e682347a2739ea28da"
+licence = "GPL-3.0-or-later"
+provides = "sleep-inhibitor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sleep-inhibitor-1.11.1-r0.apk"
+version = "1.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind", "246.10.0-r4"], ["py3-ruamel.yaml", "0.16.12-r1"]]

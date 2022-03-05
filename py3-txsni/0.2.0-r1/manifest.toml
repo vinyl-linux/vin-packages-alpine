@@ -1,0 +1,15 @@
+checksum = "d942be5b6fad3370d1dfbd16dd7a11da5fd525ffce0c4baeeea445830de31d4e"
+licence = "MIT"
+provides = "py3-txsni"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-txsni-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-openssl", "21.0.0-r0"], ["py3-twisted", "21.7.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ca46ce86a23ea338481b283598fd24ae9efd1e076758681d8ca263b05a8e63b8"
+licence = "MIT"
+provides = "wmname"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wmname-0.1-r1.apk"
+version = "0.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

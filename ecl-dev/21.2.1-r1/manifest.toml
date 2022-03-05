@@ -1,0 +1,15 @@
+checksum = "d96525ba5a24d9da9580a8fd7a24879884442a2f1c40dbd2630c1b5cf6464d14"
+licence = "LGPL-2.1-or-later"
+provides = "ecl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ecl-dev-21.2.1-r1.apk"
+version = "21.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ecl", "21.2.1-r1"]]

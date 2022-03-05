@@ -1,0 +1,15 @@
+checksum = "10ae991887bcc8de7a2a49c05b7b556818d6c2867e19b96c6e440e3f2fc50261"
+licence = "Zlib"
+provides = "irrlicht"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/irrlicht-1.8.4-r2.apk"
+version = "1.8.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "21.2.6-r0"], ["libxxf86vm", "1.1.4-r2"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "54d719bef9056cf06de19560dc817c5a8ca4aa62a4081b0ad42838fcf5342cb3"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-luksopenswaphookcfg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calamares-mod-luksopenswaphookcfg-3.2.45-r0.apk"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.205.0-r0"], ["musl-locales", "0.0.0"], ["os-prober", "1.79.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "dc3570929a0cbf7fd60aad7db7edc9d62764def9ba4d2c7717f5a57b64507542"
+licence = "MPL-1.1"
+provides = "uchardet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uchardet-dev-0.0.7-r0.apk"
+version = "0.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["uchardet", "0.0.7-r0"]]

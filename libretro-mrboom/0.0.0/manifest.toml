@@ -1,0 +1,15 @@
+checksum = "a1e6c154bb687879cb5fe385fe60a21572b1f6373863db7bd843148bc02d006b"
+licence = "MIT"
+provides = "libretro-mrboom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-mrboom-0_git20200402-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

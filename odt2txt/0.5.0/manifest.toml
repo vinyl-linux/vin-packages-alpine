@@ -1,0 +1,15 @@
+checksum = "6ead5032110285c05f663c0ddc7bd67482bdc3d5f0abf16546b76bd60a88fa13"
+licence = "GPL-2.0-only"
+provides = "odt2txt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/odt2txt-0.5_git20170928-r0.apk"
+version = "0.5.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"], ["libzip", "1.8.0-r1"]]

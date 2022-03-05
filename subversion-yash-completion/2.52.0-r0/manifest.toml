@@ -1,0 +1,15 @@
+checksum = "6ad444626d4e00a6ba4d87e5b3bca537acc9f3771fbd431f599b12634023b503"
+licence = "GPL-2.0-or-later"
+provides = "subversion-yash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/subversion-yash-completion-2.52-r0.apk"
+version = "2.52.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-completion", "2.52.0-r0"]]

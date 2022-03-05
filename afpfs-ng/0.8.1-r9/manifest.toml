@@ -1,0 +1,15 @@
+checksum = "5a72d2c9a94bef5a978f39cd08676d303a1582aed96c447bf3b889b0f7c31f25"
+licence = "GPL-2.0-only"
+provides = "afpfs-ng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/afpfs-ng-0.8.1-r9.apk"
+version = "0.8.1-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["libgcrypt", "1.9.4-r0"]]

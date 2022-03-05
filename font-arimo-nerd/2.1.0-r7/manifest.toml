@@ -1,0 +1,15 @@
+checksum = "aadf559b3a4715f66c4dfcdca93d3c00358db2f1bb11c2575cf0dd5920779c94"
+licence = "MIT"
+provides = "font-arimo-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-arimo-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

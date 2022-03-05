@@ -1,0 +1,15 @@
+checksum = "2b9b5fe2f2144297d15e897cb14f8feffc58d894a2e67527df4e6566ca482ee0"
+licence = "GPL-2.0-or-later"
+provides = "pacman-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pacman-dev-6.0.1-r1.apk"
+version = "6.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext-dev", "0.21.0-r0"], ["pacman", "6.0.1-r1"], ["gpgme-dev", "1.16.0-r0"], ["libarchive-dev", "3.6.0-r0"], ["openssl-dev", "1.1.1-l-r8"], ["curl-dev", "7.80.0-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4e331fd02d1169a6f6b51c709e9f610e76caaea2515224f019c750898d8fd63c"
+licence = "GPL-2.0-only"
+provides = "duo_unix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/duo_unix-1.11.4-r1.apk"
+version = "1.11.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh", "8.8.0"], ["openssh-server-pam", "8.8.0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["linux-pam", "1.5.2-r0"], ["libssl1.1", "1.1.1-l-r8"]]

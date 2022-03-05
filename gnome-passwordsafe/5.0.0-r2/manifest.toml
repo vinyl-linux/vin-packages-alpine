@@ -1,0 +1,15 @@
+checksum = "f75adf3368f2fbbcce8c8ebd0b687089ba4d43593787408abf6aacb896d092a9"
+licence = "GPL-3.0-only"
+provides = "gnome-passwordsafe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-passwordsafe-5.0-r2.apk"
+version = "5.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-keepass", "3.2.1-r4"], ["py3-pycryptodomex", "3.10.1-r1"], ["libhandy1", "1.5.0-r0"], ["py3-libpwquality", "1.4.4-r2"], ["py3-gobject3", "3.42.0-r1"]]

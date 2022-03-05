@@ -1,0 +1,15 @@
+checksum = "e40dbd4be7d21079c034fa4e381831154c3d167e78c064ea32d53f19f1e9229a"
+licence = "LGPL-2.0-or-later"
+provides = "kalarmcal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kalarmcal-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["akonadi", "21.8.3-r0"], ["kcalendarcore", "5.88.0-r0"], ["kcalutils", "21.8.3-r0"], ["kholidays", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kidentitymanagement", "21.8.3-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

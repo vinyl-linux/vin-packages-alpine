@@ -1,0 +1,15 @@
+checksum = "2b172db76446714499bbbac935186ba76cdae0bfc6a71a28eca4392cfac90263"
+licence = "Apache-2.0"
+provides = "jose-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jose-dev-11-r1.apk"
+version = "11.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libjose", "11.0.0-r1"], ["jansson-dev", "2.14.0-r0"], ["openssl-dev", "1.1.1-l-r8"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

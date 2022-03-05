@@ -1,0 +1,15 @@
+checksum = "c2040b84fd2324219685a6e398f8cea7266ce553b70958f4a3f5de6deb0335e5"
+licence = "GPL-2.0-or-later"
+provides = "bird"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bird-2.0.8-r1.apk"
+version = "2.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"], ["readline", "8.1.1-r0"], ["libssh", "0.9.6-r1"]]

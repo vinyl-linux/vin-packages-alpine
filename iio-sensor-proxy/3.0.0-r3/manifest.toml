@@ -1,0 +1,15 @@
+checksum = "92a200194ce1fd12ff2140c8f9ab48bbee2829c7c823c1d4a2955419adda33c0"
+licence = "GPL-2.0-or-later"
+provides = "iio-sensor-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/iio-sensor-proxy-3.0-r3.apk"
+version = "3.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libgudev", "237.0.0-r0"]]

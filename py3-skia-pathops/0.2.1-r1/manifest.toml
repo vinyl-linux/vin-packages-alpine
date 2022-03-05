@@ -1,0 +1,15 @@
+checksum = "77f38ec6640c1e8945f010e193b84c8c3216e90eb904b93a767802e11d1e95f7"
+licence = "BSD-3-Clause"
+provides = "py3-skia-pathops"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-skia-pathops-0.2.1-r1.apk"
+version = "0.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["cython", "0.29.24-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

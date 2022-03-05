@@ -1,0 +1,15 @@
+checksum = "ef3f3541dc18c521ee2a12f20eff679b0214a9a5187a40374e6f310f20f7e972"
+licence = "GPL-3.0-or-later"
+provides = "gdnsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gdnsd-2.4.3-r0.apk"
+version = "2.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libev", "4.33.0-r0"], ["libmaxminddb", "1.6.0-r0"], ["userspace-rcu", "0.12.2-r0"]]

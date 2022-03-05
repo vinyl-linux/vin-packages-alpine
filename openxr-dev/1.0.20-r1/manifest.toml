@@ -1,0 +1,15 @@
+checksum = "72801ce978f37eaa47bfc2c54858108a0efb02425aec6e0bf45f9b7badb4d36c"
+licence = "Apache-2.0"
+provides = "openxr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openxr-dev-1.0.20-r1.apk"
+version = "1.0.20-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openxr", "1.0.20-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "938920390275afc9f9f260928a40149c3e82555dd167e25a20add3bf8543e4d2"
+licence = "PHP-3.01"
+provides = "php7-pecl-memcache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-memcache-4.0.5.2-r1.apk"
+version = "4.0.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-session", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

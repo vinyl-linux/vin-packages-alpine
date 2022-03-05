@@ -1,0 +1,15 @@
+checksum = "5621feca7930fdf69177dc292aa0cf5992ec80d36b66104c80d5f223cd4a2272"
+licence = "Zlib"
+provides = "libzen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libzen-0.4.39-r0.apk"
+version = "0.4.39-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "ca2f086fff62b7235fc9e33671fc96c19a22f0d0a153164c6b38eb8a6233468e"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-recursor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-recursor-4.5.7-r1.apk"
+version = "4.5.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["boost1.77-context", "1.77.0-r1"], ["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["lua5.3-libs", "5.3.6-r1"], ["net-snmp-libs", "5.9.1-r5"], ["net-snmp-agent-libs", "5.9.1-r5"], ["libsodium", "1.0.18-r0"], ["libstdc++", "10.3.1"]]

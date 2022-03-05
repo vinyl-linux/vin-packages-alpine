@@ -1,0 +1,15 @@
+checksum = "6439ddb056e13549ba34028943b1ee2c8f77341732bc9a5b80e5dbbad0d94f5b"
+licence = "BSD-3-Clause"
+provides = "py3-protobuf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-protobuf-3.15.7-r0.apk"
+version = "3.15.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"]]

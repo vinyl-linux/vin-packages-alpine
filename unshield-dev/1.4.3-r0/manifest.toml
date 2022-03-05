@@ -1,0 +1,15 @@
+checksum = "9da9a0696aece377cfaa0e8a80b941df2608474f540ee8fde4f4424b0a883f82"
+licence = "MIT"
+provides = "unshield-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unshield-dev-1.4.3-r0.apk"
+version = "1.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["unshield", "1.4.3-r0"]]

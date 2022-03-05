@@ -1,0 +1,15 @@
+checksum = "420880c197a548e874bd88925d13c8d45b4fcbe48fd0f9ef511a534e009bc89c"
+licence = "BSD-3-Clause"
+provides = "double-conversion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/double-conversion-3.1.5-r0.apk"
+version = "3.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "a305bcd696eea4c843312a14de685608a35af9d092cb4434317c0a3dd9bafaf7"
+licence = "GPL-3.0-only"
+provides = "py3-zipstream"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-zipstream-1.1.4-r5.apk"
+version = "1.1.4-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

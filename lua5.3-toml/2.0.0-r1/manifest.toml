@@ -1,0 +1,15 @@
+checksum = "be28133e4e05a83c4582853d9cf30e998343681dda5d9a1e6b630572423a951d"
+licence = "Happy"
+provides = "lua5.3-toml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-toml-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

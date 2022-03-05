@@ -1,0 +1,15 @@
+checksum = "ddd86fdeb9b9170488dc7f9c604d10a0afddbef56bfee5e38bb22af7eadbc2ae"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-gd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-gd-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["libxpm", "3.5.13-r0"], ["musl", "1.2.2-r7"], ["freetype", "2.11.0-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["libwebp", "1.2.2-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "49dca7fabb9cb913b110e45648e0a6e321430e3f961ce9eb15bc91d076d3b223"
+licence = "LGPL-2.1-or-later"
+provides = "phonon-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/phonon-dev-4.11.1-r2.apk"
+version = "4.11.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.3"], ["glib-dev", "2.70.1-r0"], ["phonon", "4.11.1-r2"], ["pkgconf", "1.8.0-r0"]]

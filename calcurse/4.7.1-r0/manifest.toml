@@ -1,0 +1,15 @@
+checksum = "ed38b771f46d6dd9555a96ca7ebc03caca440b3de54d387caa9fb627396d2d32"
+licence = "BSD-2-Clause"
+provides = "calcurse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calcurse-4.7.1-r0.apk"
+version = "4.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

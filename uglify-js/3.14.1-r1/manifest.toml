@@ -1,0 +1,15 @@
+checksum = "d180c08c9618388d31a88145f5c21b1d2721598a73c88a9d3e235849811abc5e"
+licence = "BSD-2-Clause"
+provides = "uglify-js"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uglify-js-3.14.1-r1.apk"
+version = "3.14.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nodejs-current", "17.6.0-r0"]]

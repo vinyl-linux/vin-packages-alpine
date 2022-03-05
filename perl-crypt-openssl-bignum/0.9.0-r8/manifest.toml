@@ -1,0 +1,15 @@
+checksum = "9e33f6c6e4e7c117861edb8d2a000dfea4ac4124dcfdd67c71d908605d6eaa9e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-openssl-bignum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-crypt-openssl-bignum-0.09-r8.apk"
+version = "0.9.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

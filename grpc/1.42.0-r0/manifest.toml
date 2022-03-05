@@ -1,0 +1,15 @@
+checksum = "01e0d7f3e5bafa9f1bc30de60357f93967bb48ce7fcd62a9362b628125a93094"
+licence = "Apache-2.0"
+provides = "grpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/grpc-1.42.0-r0.apk"
+version = "1.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["protobuf", "3.18.1-r1"], ["abseil-cpp", "20210324.2.0-r0"], ["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libprotobuf", "3.18.1-r1"], ["libprotoc", "3.18.1-r1"], ["re2", "2021.11.1-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

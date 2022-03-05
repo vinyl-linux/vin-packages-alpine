@@ -1,0 +1,15 @@
+checksum = "b7fb063e18f51f98cbf3bd4e6451482044cb205a01b8005c6cc6989c5f9d89cf"
+licence = "LGPL-2.1-only"
+provides = "lipstick-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lipstick-tools-0.44-r0.apk"
+version = "0.44.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["lipstick", "0.44.0-r0"], ["libstdc++", "10.3.1"]]

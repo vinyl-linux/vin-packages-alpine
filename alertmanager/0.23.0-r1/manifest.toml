@@ -1,0 +1,15 @@
+checksum = "296f89f0891da6e0cb8de8750fe29d6b78b8253d96f28745e5503e097b3a7faf"
+licence = "Apache-2.0"
+provides = "alertmanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/alertmanager-0.23.0-r1.apk"
+version = "0.23.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

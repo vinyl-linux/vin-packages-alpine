@@ -1,0 +1,15 @@
+checksum = "9fa82522388e766f02801f5b186307ee0b85781601a2a0d533e2c15323c04c1a"
+licence = "BSD-3-Clause"
+provides = "php8-pecl-ast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-ast-1.0.16-r0.apk"
+version = "1.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

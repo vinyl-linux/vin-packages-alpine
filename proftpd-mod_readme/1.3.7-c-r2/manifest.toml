@@ -1,0 +1,15 @@
+checksum = "9378fa0fcd2ee2896e114bd3e901b114060349189dd53cca1a31412ad8fffa67"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_readme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/proftpd-mod_readme-1.3.7c-r2.apk"
+version = "1.3.7-c-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-c-r2"], ["musl", "1.2.2-r7"]]

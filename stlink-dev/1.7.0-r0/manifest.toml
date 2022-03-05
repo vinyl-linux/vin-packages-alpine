@@ -1,0 +1,15 @@
+checksum = "8de6fb0e526e28c2a21775adf625317acdd44e381392bccb9c8d8b09147eb267"
+licence = "MIT"
+provides = "stlink-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/stlink-dev-1.7.0-r0.apk"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["stlink", "1.7.0-r0"]]

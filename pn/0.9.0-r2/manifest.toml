@@ -1,0 +1,15 @@
+checksum = "512fa4e83446a175faeae24d933ed970a91f9cd788c9af85990053a03326d7c1"
+licence = "Apache-2.0"
+provides = "pn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pn-0.9.0-r2.apk"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libphonenumber", "8.12.36-r0"], ["icu-libs", "69.1.0-r1"], ["libstdc++", "10.3.1"]]

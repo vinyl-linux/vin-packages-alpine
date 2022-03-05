@@ -1,0 +1,15 @@
+checksum = "9efb4704681a6f1b3cb833bef2dc2e8c74435d63cc1f31a532485d813b60f058"
+licence = "MPL-2.0"
+provides = "libmspub-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmspub-tools-0.1.4-r10.apk"
+version = "0.1.4-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libmspub", "0.1.4-r10"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"]]

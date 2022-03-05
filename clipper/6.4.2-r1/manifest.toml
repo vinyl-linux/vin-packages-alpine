@@ -1,0 +1,15 @@
+checksum = "4d3a6b1cb085b6f1408a24f119f7fc826b50b9f6eba77df5d486b2b8ae1543f6"
+licence = "BSL-1.0"
+provides = "clipper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/clipper-6.4.2-r1.apk"
+version = "6.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

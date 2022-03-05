@@ -1,0 +1,15 @@
+checksum = "f3b583e9acdb5050c8bb389767e96b6b5adc29a930c1183b5e824ef612b55f0d"
+licence = "GPL-2.0-or-later"
+provides = "py3-qtwebengine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-qtwebengine-5.15.2-r2.apk"
+version = "5.15.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtwebengine", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

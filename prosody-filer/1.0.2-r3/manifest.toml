@@ -1,0 +1,15 @@
+checksum = "b167d839e1eae75a3d6370454905ecd4082bc2d69aba3b49adb394757148fe54"
+licence = "MIT"
+provides = "prosody-filer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/prosody-filer-1.0.2-r3.apk"
+version = "1.0.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

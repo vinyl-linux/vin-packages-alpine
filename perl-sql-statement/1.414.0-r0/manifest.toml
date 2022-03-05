@@ -1,0 +1,15 @@
+checksum = "7ee2009d703d02fbd8f52e58f4e1cbcd8f6e72f5477b398475f0a1dbf9502922"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-sql-statement"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-sql-statement-1.414-r0.apk"
+version = "1.414.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-module-runtime", "0.16.0-r4"], ["perl-params-util", "1.102.0-r1"], ["perl-clone", "0.45.0-r1"]]

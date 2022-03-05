@@ -1,0 +1,15 @@
+checksum = "a8a424ad27a152a280d2a57dbcf6fdea4bed90edfff5a5166be59c84b1bfa264"
+licence = "LGPL-2.0-or-later"
+provides = "libewf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libewf-dev-20201230-r1.apk"
+version = "20201230.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["bzip2-dev", "1.0.8-r1"], ["openssl-dev", "1.1.1-l-r8"], ["libewf", "20201230.0.0-r1"], ["pkgconf", "1.8.0-r0"]]

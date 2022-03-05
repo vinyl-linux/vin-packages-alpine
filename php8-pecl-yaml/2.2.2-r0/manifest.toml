@@ -1,0 +1,15 @@
+checksum = "da1e33c325fd17aafd46b593d56ec1b2a763a8418ea95005de11f41add63c34c"
+licence = "MIT"
+provides = "php8-pecl-yaml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-yaml-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["yaml", "0.2.5-r0"]]

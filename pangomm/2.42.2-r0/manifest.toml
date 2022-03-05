@@ -1,0 +1,15 @@
+checksum = "df29bf1b1e9454d13cd4fddbf0ffc33f2f806e8cc861ff0d325e153d777b03e8"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "pangomm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pangomm-2.42.2-r0.apk"
+version = "2.42.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["cairomm", "1.14.0-r0"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["glibmm", "2.66.0-r1"], ["pango", "1.48.10-r0"], ["libsigc++", "2.10.6-r0"], ["libstdc++", "10.3.1"]]

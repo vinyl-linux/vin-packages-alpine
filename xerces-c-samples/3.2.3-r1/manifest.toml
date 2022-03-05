@@ -1,0 +1,15 @@
+checksum = "6469d8c59428881f3c4782231c166a5da9677acde6a4d029af700962ad33cd61"
+licence = "Apache-2.0"
+provides = "xerces-c-samples"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xerces-c-samples-3.2.3-r1.apk"
+version = "3.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["xerces-c", "3.2.3-r1"]]

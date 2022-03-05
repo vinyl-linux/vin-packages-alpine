@@ -1,0 +1,15 @@
+checksum = "cb8c2173264767954df9550ee913d22dbcc08e991153820f7de3c280337b3b7b"
+licence = "custom"
+provides = "libressl3.4-libssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libressl3.4-libssl-3.4.1-r0.apk"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libressl3.4-libcrypto", "3.4.1-r0"]]

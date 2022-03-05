@@ -1,0 +1,15 @@
+checksum = "200e8fba286e926d282b1e0ab8d0de936c4152c4ef4f4526c662dab1d33337d4"
+licence = "BSD-2-clause BSD-3-clause GPL-2.0-or-later"
+provides = "ipmiutil-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ipmiutil-dev-3.1.7-r1.apk"
+version = "3.1.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "1.1.1-l-r8"], ["ipmiutil", "3.1.7-r1"]]

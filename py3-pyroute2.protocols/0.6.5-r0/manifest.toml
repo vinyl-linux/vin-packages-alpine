@@ -1,0 +1,15 @@
+checksum = "dcc0fbc8a79e75a1ff06fae8ba2bda7ce472655786866446af33f05f1cfbf5f0"
+licence = "GPL-2.0-or-later OR Apache-2.0"
+provides = "py3-pyroute2.protocols"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyroute2.protocols-0.6.5-r0.apk"
+version = "0.6.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyroute2.core", "0.6.5-r0"]]

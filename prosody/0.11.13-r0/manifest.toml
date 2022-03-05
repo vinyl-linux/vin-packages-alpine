@@ -1,0 +1,15 @@
+checksum = "72b267a54167ac555d2354172be55ec8de4c709b365095bfb9a42358e31c01b5"
+licence = "MIT"
+provides = "prosody"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/prosody-0.11.13-r0.apk"
+version = "0.11.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2-socket", "3.0.0"], ["lua5.2-expat", "1.3.0-r4"], ["lua5.2-filesystem", "1.8.0-r1"], ["lua5.2-sec", "1.0.2-r2"], ["lua5.2", "5.2.4-r7"], ["lua5.2-busted", "2.0.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libidn", "1.38.0-r0"]]

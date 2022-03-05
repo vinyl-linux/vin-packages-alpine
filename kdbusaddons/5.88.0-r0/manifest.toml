@@ -1,0 +1,15 @@
+checksum = "940faa5ba7027c8288e81519de492d5cc5254846994dfb31f0f1ddd334d28791"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kdbusaddons"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdbusaddons-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

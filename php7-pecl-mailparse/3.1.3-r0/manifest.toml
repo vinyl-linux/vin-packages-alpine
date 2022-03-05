@@ -1,0 +1,15 @@
+checksum = "d9959814a38fc7a4a0525f6660d7d09aaf1f9986c40e515b73e1fdedaa1dc7cb"
+licence = "PHP-3.01"
+provides = "php7-pecl-mailparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-mailparse-3.1.3-r0.apk"
+version = "3.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-mbstring", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

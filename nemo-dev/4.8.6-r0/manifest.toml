@@ -1,0 +1,15 @@
+checksum = "1906f39c09397cac80cd9347aec060e8494e420ad8b694199389e6ec96357d20"
+licence = "GPL-2.0-only"
+provides = "nemo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nemo-dev-4.8.6-r0.apk"
+version = "4.8.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nemo", "4.8.6-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

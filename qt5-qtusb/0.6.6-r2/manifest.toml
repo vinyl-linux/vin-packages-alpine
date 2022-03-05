@@ -1,0 +1,15 @@
+checksum = "fdd7d1fab242dc096b08901dfc0a920deee8a587bf341af863146cf3dee65b8d"
+licence = "LGPL-3.0-only"
+provides = "qt5-qtusb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtusb-0.6.6-r2.apk"
+version = "0.6.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["hidapi", "0.11.0-r0"], ["libstdc++", "10.3.1"], ["libusb", "1.0.24-r3"]]

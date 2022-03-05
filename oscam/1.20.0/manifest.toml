@@ -1,0 +1,15 @@
+checksum = "52ce6be80ab976159806f24f47c7d469fcd6b5e7a150bc6f32de2f59c6a6b850"
+licence = "GPL-3.0-or-later"
+provides = "oscam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/oscam-1.20_svn20201119-r2.apk"
+version = "1.20.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["pcsc-lite-libs", "1.9.4-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libusb", "1.0.24-r3"]]

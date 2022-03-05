@@ -1,0 +1,15 @@
+checksum = "2a75f5376b8adf48148eb6e67609263a6be9ffa240fbbac1a03e7af173b5020d"
+licence = "GPL"
+provides = "dvd+rw-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dvd+rw-tools-7.1-r1.apk"
+version = "7.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cdrkit", "1.1.11-r3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

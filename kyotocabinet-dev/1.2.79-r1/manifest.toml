@@ -1,0 +1,15 @@
+checksum = "32d6b309ecaefd7dfc0567c70a156a21610ec559f95370ee74e301a0a76d443e"
+licence = "GPL-3.0-or-later"
+provides = "kyotocabinet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kyotocabinet-dev-1.2.79-r1.apk"
+version = "1.2.79-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kyotocabinet", "1.2.79-r1"], ["pkgconf", "1.8.0-r0"]]

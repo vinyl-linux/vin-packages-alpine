@@ -1,0 +1,15 @@
+checksum = "bb85645fa4dcb5370c0af182e0d7ee88ab6554ff489b4d9f1adb1e9d86d05716"
+licence = "MIT"
+provides = "xf86-video-nv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-nv-2.1.21-r4.apk"
+version = "2.1.21-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

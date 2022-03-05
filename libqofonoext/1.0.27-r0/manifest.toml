@@ -1,0 +1,15 @@
+checksum = "d3404535aa0fe92e9b4de0f36a35e68eee6e11be290f2a89d75191cf10d0718c"
+licence = "LGPL-2.1-only"
+provides = "libqofonoext"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libqofonoext-1.0.27-r0.apk"
+version = "1.0.27-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libqofono", "0.103.0-r0"], ["libstdc++", "10.3.1"]]

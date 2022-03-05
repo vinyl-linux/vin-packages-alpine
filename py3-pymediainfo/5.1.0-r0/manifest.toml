@@ -1,0 +1,15 @@
+checksum = "17b307a64a4f18a7b5669e63fbc530023917719b8e07f0d72ae4a23841fda8e0"
+licence = "MIT"
+provides = "py3-pymediainfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pymediainfo-5.1.0-r0.apk"
+version = "5.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["libmediainfo", "21.9.0-r0"]]

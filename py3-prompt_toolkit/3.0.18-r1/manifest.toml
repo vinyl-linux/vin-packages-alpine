@@ -1,0 +1,15 @@
+checksum = "c6f99122a5e8aa3711cb6cf5ea5599485e0b3d9e53a332be505f3ae99f95a03b"
+licence = "BSD-3-Clause"
+provides = "py3-prompt_toolkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-prompt_toolkit-3.0.18-r1.apk"
+version = "3.0.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"], ["py3-wcwidth", "0.2.5-r1"]]

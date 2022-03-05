@@ -1,0 +1,15 @@
+checksum = "0f11cf8ea1da6414375574fd883592a56c2b29012c557e80375c3025e8330a85"
+licence = "Apache-2.0"
+provides = "libjose"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libjose-11-r1.apk"
+version = "11.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["jansson", "2.14.0-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "00917c1dd8ddb0b5b5502e6921e19b609403147624b70b76c9130758800e40cd"
+licence = "LGPL-2.1-or-later"
+provides = "libpulse-mainloop-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libpulse-mainloop-glib-15.0-r2.apk"
+version = "15.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libpulse", "15.0.0-r2"]]

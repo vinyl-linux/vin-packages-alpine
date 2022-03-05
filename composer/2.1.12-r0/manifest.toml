@@ -1,0 +1,15 @@
+checksum = "9ce25a092bee78b48783b8601d3d306cf10d860d2da1286565e8d67d51410e63"
+licence = "MIT"
+provides = "composer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/composer-2.1.12-r0.apk"
+version = "2.1.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8", "8.0.16-r0"], ["php8-phar", "8.0.16-r0"], ["php8-curl", "8.0.16-r0"], ["php8-iconv", "8.0.16-r0"], ["php8-mbstring", "8.0.16-r0"], ["php8-openssl", "8.0.16-r0"], ["php8-zip", "8.0.16-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3809548c3d959e687bef7ad30ceed825864c6e3333637faa84bb1125d1815f1e"
+licence = "BSD-3-Clause AND MIT"
+provides = "intel-media-driver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/intel-media-driver-dev-21.4.1-r0.apk"
+version = "21.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["intel-media-driver", "21.4.1-r0"], ["pkgconf", "1.8.0-r0"]]

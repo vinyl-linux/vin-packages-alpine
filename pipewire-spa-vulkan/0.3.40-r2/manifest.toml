@@ -1,0 +1,15 @@
+checksum = "b8a4c169901239430d6e1fe691aaece58648761993c29ed3a5de1471ffe28cd4"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-spa-vulkan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pipewire-spa-vulkan-0.3.40-r2.apk"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["vulkan-loader", "1.2.196-r0"]]

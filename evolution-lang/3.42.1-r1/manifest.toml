@@ -1,0 +1,15 @@
+checksum = "4c557ee8638012b6b51102b5ea900c77c4b1f3bd691bd8816b8b7a1641dd2728"
+licence = "GPL-2.0-or-later"
+provides = "evolution-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/evolution-lang-3.42.1-r1.apk"
+version = "3.42.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["highlight", "4.1.0-r1"], ["gsettings-desktop-schemas", "41.0.0-r0"]]

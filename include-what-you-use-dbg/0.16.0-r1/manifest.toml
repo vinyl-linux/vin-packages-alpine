@@ -1,0 +1,15 @@
+checksum = "761aa81aa16be069b0f319335ec4adba156010d25b04f0fcdd88b1f6a2814fa3"
+licence = "NCSA"
+provides = "include-what-you-use-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/include-what-you-use-dbg-0.16-r1.apk"
+version = "0.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

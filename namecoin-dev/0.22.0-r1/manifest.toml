@@ -1,0 +1,15 @@
+checksum = "92d1f03b25dd26efd63bc373ca2f6d155230647b3f048978b245aab08c81c952"
+licence = "MIT"
+provides = "namecoin-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/namecoin-dev-0.22.0-r1.apk"
+version = "0.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

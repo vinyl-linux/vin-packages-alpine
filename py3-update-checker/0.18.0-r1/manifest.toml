@@ -1,0 +1,15 @@
+checksum = "e194cd1c41b0f09d377c31588820a84ab945122e55ba570f3ab07c10149abbca"
+licence = "BSD-2-Clause"
+provides = "py3-update-checker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-update-checker-0.18.0-r1.apk"
+version = "0.18.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"]]

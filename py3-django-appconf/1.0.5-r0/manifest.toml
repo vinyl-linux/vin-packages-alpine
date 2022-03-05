@@ -1,0 +1,15 @@
+checksum = "7e1c2f37fa75bb8ef55ced94802e3ba3cad172466629ef68c6aa247468dde29c"
+licence = "BSD-3-Clause"
+provides = "py3-django-appconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-django-appconf-1.0.5-r0.apk"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-django", "3.1.13-r0"], ["py3-six", "1.16.0-r0"]]

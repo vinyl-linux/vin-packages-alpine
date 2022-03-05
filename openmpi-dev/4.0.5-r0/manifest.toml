@@ -1,0 +1,15 @@
+checksum = "111fa4eacf6eb1fda3e2c32a895cd5aec8d450d110b784be660f5f743038979d"
+licence = "custom"
+provides = "openmpi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openmpi-dev-4.0.5-r0.apk"
+version = "4.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openmpi", "4.0.5-r0"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "0c9d107748c1865f8cc588a3f9de90659dd7a51fe628f6bd762b18374a6e99fe"
+licence = "MIT"
+provides = "bitcoin-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bitcoin-cli-22.0-r1.apk"
+version = "22.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

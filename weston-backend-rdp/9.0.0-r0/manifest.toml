@@ -1,0 +1,15 @@
+checksum = "a595b0a01e078dc138bb0c61d36225489a7a3ee3fe1e12db70a26e9aa55d4c5c"
+licence = "MIT"
+provides = "weston-backend-rdp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/weston-backend-rdp-9.0.0-r0.apk"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["freerdp-libs", "2.4.1-r0"], ["pixman", "0.40.0-r3"], ["wayland-libs-server", "1.19.0-r1"], ["libweston", "9.0.0-r0"], ["libxkbcommon", "1.3.1-r0"]]

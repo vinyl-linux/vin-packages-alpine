@@ -1,0 +1,15 @@
+checksum = "371db918b92d7ef6230faf278982383be48e99e456c1eb6ee4169276324ae22d"
+licence = "LGPL-2.1-only or MPL-1.1"
+provides = "taglib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/taglib-1.12-r0.apk"
+version = "1.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

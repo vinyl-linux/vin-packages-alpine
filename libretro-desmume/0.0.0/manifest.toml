@@ -1,0 +1,15 @@
+checksum = "433f55167f25a2698b2ba5e5e94847542850b35e82c47f286df07821b48d9fd9"
+licence = "GPL-2.0-or-later"
+provides = "libretro-desmume"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-desmume-0_git20200525-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

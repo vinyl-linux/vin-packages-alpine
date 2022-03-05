@@ -1,0 +1,15 @@
+checksum = "74a3e15e099330c6ebd7a0d38921aad6886eb481eee06aed33e2728b33766455"
+licence = "LGPL-2.1-or-later"
+provides = "libu2f-host-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libu2f-host-libs-1.1.10-r4.apk"
+version = "1.1.10-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["hidapi", "0.11.0-r0"], ["json-c", "0.15.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "c7096cf9a1ff3cd6c1f19373b3e3cce5494ce77323aad2f3379ed4a29e28514a"
+licence = "GPL-3.0-or-later"
+provides = "ddnsc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ddnsc-2.3.0-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-requests", "2.26.0-r1"]]

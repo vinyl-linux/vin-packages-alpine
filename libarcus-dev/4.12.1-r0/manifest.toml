@@ -1,0 +1,15 @@
+checksum = "cecde4b723e68ddfdc507080bd0dd23c6b5d302a0d78b214230b8e361b3d1ec7"
+licence = "LGPL-3.0-or-later"
+provides = "libarcus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libarcus-dev-4.12.1-r0.apk"
+version = "4.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarcus", "4.12.1-r0"]]

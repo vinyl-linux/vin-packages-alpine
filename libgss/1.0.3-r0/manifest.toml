@@ -1,0 +1,15 @@
+checksum = "d57bab89fab8251415a56c2026b92f96828dd9d6e3e183fc0239927646348080"
+licence = "GPL-3.0-or-later"
+provides = "libgss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgss-1.0.3-r0.apk"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

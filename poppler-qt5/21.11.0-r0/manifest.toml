@@ -1,0 +1,15 @@
+checksum = "82ab28be0a18094d820e10c88ca89e6ec14b021bcf0d2cbe292a1ffa44b6e79a"
+licence = "GPL-2.0-only"
+provides = "poppler-qt5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/poppler-qt5-21.11.0-r0.apk"
+version = "21.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["freetype", "2.11.0-r0"], ["lcms2", "2.12.0-r1"], ["poppler", "21.11.0-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "c8f0b6f836e66dc022b512d5d82044658fd00bbaf5d47df546d49c75acf8f5dc"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "dnsdist-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dnsdist-common-1.6.1-r2.apk"
+version = "1.6.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"]]

@@ -1,0 +1,15 @@
+checksum = "d3d0766d21f62732c675d188aa788759820859013634d7b022bebf34eab55428"
+licence = "MPL-2.0"
+provides = "libpagemaker-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libpagemaker-dev-0.0.4-r3.apk"
+version = "0.0.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.77.0-r1"], ["librevenge-dev", "0.0.4-r6"], ["libpagemaker", "0.0.4-r3"], ["pkgconf", "1.8.0-r0"]]

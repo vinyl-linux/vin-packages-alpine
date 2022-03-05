@@ -1,0 +1,15 @@
+checksum = "99aa7419e6acbad877d0d7ab898aea355a9e300ee721e63323bd0d14dfa28b64"
+licence = "BSL-1.0"
+provides = "asio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/asio-dev-1.18.2-r1.apk"
+version = "1.18.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.77.0-r1"], ["openssl-dev", "1.1.1-l-r8"]]

@@ -1,0 +1,15 @@
+checksum = "0b4dacd335e21f68e5830477573ca41c3735e84ec82e37a7bec328560151135e"
+licence = "BSD-3-Clause"
+provides = "py3-pytest-flake8"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pytest-flake8-1.0.7-r1.apk"
+version = "1.0.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pytest", "6.2.5-r0"], ["py3-flake8", "3.9.2-r0"]]

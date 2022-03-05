@@ -1,0 +1,15 @@
+checksum = "e1f4df3139b0073ebba746b0e4438e37429f6bda3bb8a2d16e0ad454f67fcc04"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-dmc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-backend-dmc-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"]]

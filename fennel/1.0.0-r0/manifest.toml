@@ -1,0 +1,15 @@
+checksum = "14a04c64716f949b63cb78d87fde7ba3c061f477b79e8bb1bf1275f6b7f613db"
+licence = "MIT"
+provides = "fennel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fennel-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "d556557c99dbb9caf3e6e969aacf6346525ca61262cd65c6f43372f14c45d006"
+licence = "MIT"
+provides = "ronn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ronn-0.7.3-r5.apk"
+version = "0.7.3-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["groff", "1.22.4-r1"], ["ruby", "3.0.3-r0"], ["ruby-hpricot", "0.8.6-r5"], ["ruby-mustache", "1.1.1-r4"], ["ruby-rdiscount", "2.2.0.1-r6"]]

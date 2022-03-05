@@ -1,0 +1,15 @@
+checksum = "b6cb579a33d646be887980c3540458a2842ebc46af9df270b94234fdcaad88b3"
+licence = "MIT"
+provides = "ruby-terminal-table"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-terminal-table-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"], ["ruby-unicode-display_width", "1.7.0-r1"]]

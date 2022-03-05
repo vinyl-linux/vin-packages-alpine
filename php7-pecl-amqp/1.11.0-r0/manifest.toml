@@ -1,0 +1,15 @@
+checksum = "2b315d789f3abe4889b500fdb00f79eac5aec06249b334799288f438f39790c1"
+licence = "PHP-3.01"
+provides = "php7-pecl-amqp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-amqp-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["rabbitmq-c", "0.11.0-r1"]]

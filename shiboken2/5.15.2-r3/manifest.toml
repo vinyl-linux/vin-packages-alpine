@@ -1,0 +1,15 @@
+checksum = "d338a005b3177240e97592f05dedf3ccfbbf491441ff763505f08aefa13cbce1"
+licence = "GPL-2.0-or-later"
+provides = "shiboken2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/shiboken2-5.15.2-r3.apk"
+version = "5.15.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"], ["libxslt", "1.1.34-r1"]]

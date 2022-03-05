@@ -1,0 +1,15 @@
+checksum = "a858d8c98bbe5091fca5c4b00ee2563ca2c5202dd78feb39554fb55f807dc06b"
+licence = "LGPL-2.1-or-later"
+provides = "colord-gtk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/colord-gtk-dev-0.2.0-r2.apk"
+version = "0.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["colord-gtk", "0.2.0-r2"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

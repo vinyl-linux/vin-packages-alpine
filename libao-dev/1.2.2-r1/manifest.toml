@@ -1,0 +1,15 @@
+checksum = "784c1628a7c7d35393d2f63c685f685cc37ad288696485484ee879e7306b0edc"
+licence = "GPL-2.0-or-later"
+provides = "libao-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libao-dev-1.2.2-r1.apk"
+version = "1.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libao", "1.2.2-r1"], ["pkgconf", "1.8.0-r0"]]

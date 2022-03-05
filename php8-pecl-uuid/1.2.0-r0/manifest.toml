@@ -1,0 +1,15 @@
+checksum = "094021571f071b853ba367efe8666bc271964eccf2eaa015882adf6fe27caa98"
+licence = "LGPL-2.1-or-later"
+provides = "php8-pecl-uuid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-uuid-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

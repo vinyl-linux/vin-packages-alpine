@@ -1,0 +1,15 @@
+checksum = "1ba8c1bd103e2db31067c3be2916c39112e9ef626ee8285c61f599b1940b736f"
+licence = "GPL-3.0-or-later"
+provides = "snapcast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/snapcast-0.25.0-r1.apk"
+version = "0.25.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["snapcast-client", "0.25.0-r1"], ["snapcast-server", "0.25.0-r1"]]

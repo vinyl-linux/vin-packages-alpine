@@ -1,0 +1,15 @@
+checksum = "7f0f286d32936318e4d223c2e68151fb19c04e62e73ed7d49c7cdb18c4ba505b"
+licence = "MPL-2.0"
+provides = "libcdr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcdr-dev-0.1.7-r2.apk"
+version = "0.1.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.77.0-r1"], ["libcdr", "0.1.7-r2"], ["icu-dev", "69.1.0-r1"], ["lcms2-dev", "2.12.0-r1"], ["librevenge-dev", "0.0.4-r6"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

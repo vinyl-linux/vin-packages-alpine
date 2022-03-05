@@ -1,0 +1,15 @@
+checksum = "e45ee488b4ef783467a6cbd92179b3c6ed824e04f1a1656da714a9acc98bb847"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "elogind-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/elogind-lang-246.10-r4.apk"
+version = "246.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["shadow", "4.8.1-r1"]]

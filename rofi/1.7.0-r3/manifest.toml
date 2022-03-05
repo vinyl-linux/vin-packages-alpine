@@ -1,0 +1,15 @@
+checksum = "89ae3eb0fc4522f767249947b83c60974880c8139d33ece9effde424a02042bd"
+licence = "MIT"
+provides = "rofi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rofi-1.7.0-r3.apk"
+version = "1.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rofi-themes", "1.7.0-r3"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["pango", "1.48.10-r0"], ["startup-notification", "0.12.0-r4"], ["xcb-util-cursor", "0.1.3-r2"], ["xcb-util-wm", "0.4.1-r1"], ["libxcb", "1.14.0-r2"], ["xcb-util", "0.4.0-r3"], ["libxkbcommon-x11", "1.3.1-r0"], ["libxkbcommon", "1.3.1-r0"]]

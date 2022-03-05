@@ -1,0 +1,15 @@
+checksum = "83815e4312b8ada22dc4be20fed5123203d32249836ceb2659d75e02ef914ddb"
+licence = "MIT"
+provides = "ii"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ii-1.8-r2.apk"
+version = "1.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

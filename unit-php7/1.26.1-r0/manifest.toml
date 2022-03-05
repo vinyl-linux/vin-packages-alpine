@@ -1,0 +1,15 @@
+checksum = "d87843cfc5a5ad3fa250509cd2f59cc6cff6302b814e5223706ee94ec4cab74a"
+licence = "Apache-2.0"
+provides = "unit-php7"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unit-php7-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["unit", "1.26.1-r0"], ["musl", "1.2.2-r7"], ["php7-embed", "7.4.28-r0"]]

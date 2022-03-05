@@ -1,0 +1,15 @@
+checksum = "e47884dd9d3d5da5fdd2bc35d9da6181f4cacb0b3c79cf0d3dc531325cb166a5"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-backend-pgsql-4.5.3-r0.apk"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.5.3-r0"], ["postgresql-bdr-client", "9.4.14"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libpq", "14.2.0-r0"], ["libstdc++", "10.3.1"]]

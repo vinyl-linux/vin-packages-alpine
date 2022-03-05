@@ -1,0 +1,15 @@
+checksum = "6eccf608bb1cb827140a89d0eef7a2fbf46b142627ece0f2a180ae74c35596ab"
+licence = "LGPL-2.0-or-later"
+provides = "clutter-gtk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/clutter-gtk-dev-1.8.4-r1.apk"
+version = "1.8.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clutter-gtk", "1.8.4-r1"], ["clutter-dev", "1.26.4-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

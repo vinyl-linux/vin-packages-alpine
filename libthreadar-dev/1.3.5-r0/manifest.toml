@@ -1,0 +1,15 @@
+checksum = "57d75116582374ae38639bd5831feb454f6c0cc790c69933b38f36df9d0d2275"
+licence = "LGPL-3.0-or-later"
+provides = "libthreadar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libthreadar-dev-1.3.5-r0.apk"
+version = "1.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libthreadar", "1.3.5-r0"], ["pkgconf", "1.8.0-r0"]]

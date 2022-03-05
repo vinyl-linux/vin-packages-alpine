@@ -1,0 +1,15 @@
+checksum = "f463f7eec577efec80f3d86ae8cc12bbaea26940f78b42e1d6e8907a8b9fb146"
+licence = "MIT"
+provides = "py3-dns-lexicon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-dns-lexicon-3.8.3-r0.apk"
+version = "3.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-tldextract", "3.1.2-r0"], ["py3-requests", "2.26.0-r1"], ["py3-yaml", "5.4.1.1-r1"], ["py3-future", "0.18.2-r3"], ["py3-cryptography", "3.3.2-r3"], ["py3-beautifulsoup4", "4.9.3-r1"]]

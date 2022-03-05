@@ -1,0 +1,15 @@
+checksum = "300d33c59154ace8843c134526ac0a08d9e3f679b18dadd8d90761469f06d3c8"
+licence = "BSD-2-Clause"
+provides = "libtss2-tcti-armbd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libtss2-tcti-armbd-2.4.0-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["tpm2-tss-mu", "3.0.3-r1"], ["tpm2-tss-rc", "3.0.3-r1"], ["tpm2-tss-sys", "3.0.3-r1"], ["tpm2-tss-tctildr", "3.0.3-r1"]]

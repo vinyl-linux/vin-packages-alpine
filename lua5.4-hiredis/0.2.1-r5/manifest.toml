@@ -1,0 +1,15 @@
+checksum = "d6e2e7cb170f3d45a00d9789e656c40db01efc63c90cd4057f4a283d061dc30a"
+licence = "MIT"
+provides = "lua5.4-hiredis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.4-hiredis-0.2.1-r5.apk"
+version = "0.2.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["hiredis", "1.0.2-r0"], ["lua5.4-libs", "5.4.3-r0"]]

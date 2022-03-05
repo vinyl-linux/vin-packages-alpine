@@ -1,0 +1,15 @@
+checksum = "5b794c120191c28750af6a822dc590579184fb02d6c50abb0daec5280c1de7cb"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-spice-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-ui-spice-core-6.1.0-r2.apk"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ui-opengl", "6.1.0-r2"], ["musl", "1.2.2-r7"], ["pixman", "0.40.0-r3"], ["spice-server", "0.15.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "296aaf6aec5c2bea58b93b0cdcddb9d502d3eaec225aae16318824cc8b56bf5b"
+licence = "(GPL-2.0-only OR GPL-3.0-only) AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "akonadi-search-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/akonadi-search-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["akonadi-dev", "21.8.3-r0"], ["akonadi-mime-dev", "21.8.3-r0"], ["kcalendarcore-dev", "5.88.0-r0"], ["kcmutils-dev", "5.88.0-r0"], ["kconfig-dev", "5.88.0-r0"], ["kcontacts-dev", "5.88.0-r0"], ["kcrash-dev", "5.88.0-r0"], ["kdbusaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["kmime-dev", "21.8.3-r0"], ["krunner-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["xapian-core-dev", "1.4.18-r0"], ["akonadi-search", "21.8.3-r0"]]

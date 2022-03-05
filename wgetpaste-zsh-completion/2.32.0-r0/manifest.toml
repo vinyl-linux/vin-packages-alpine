@@ -1,0 +1,15 @@
+checksum = "b29ea051f3c78c3cf155d885e48cc32694cf4036eb604d4f4002773ceb4611aa"
+licence = "MIT"
+provides = "wgetpaste-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wgetpaste-zsh-completion-2.32-r0.apk"
+version = "2.32.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wget", "1.21.2-r2"], ["bash", "5.1.16-r0"]]

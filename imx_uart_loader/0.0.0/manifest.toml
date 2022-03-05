@@ -1,0 +1,15 @@
+checksum = "4f238dd5fed08f28b8ece47ef1c360073ec47d8be5b2536e1b1af6bb163f996b"
+licence = "LGPL-2.1-only"
+provides = "imx_uart_loader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/imx_uart_loader-0_git20201102-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

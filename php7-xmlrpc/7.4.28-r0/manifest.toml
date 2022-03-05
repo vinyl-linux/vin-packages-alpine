@@ -1,0 +1,15 @@
+checksum = "cd4c8ceac312770f3a97e5534b67d14e7abdb739e749cc0824d8f2ba7d797158"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-xmlrpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-xmlrpc-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["php7-xml", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "44c52d0450dbf72e5acd267ce958a52cebbf34dbd603d4a445a17eff698c6007"
+licence = "BSD-3-Clause"
+provides = "ruby-rdiscount"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-rdiscount-2.2.0.1-r6.apk"
+version = "2.2.0.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

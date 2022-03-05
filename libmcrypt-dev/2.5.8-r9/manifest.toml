@@ -1,0 +1,15 @@
+checksum = "147f9025cfe857ed1800179fd316ab4bff63890552929c60cfcfecbe1aaf0c50"
+licence = "LGPL-2.1-or-later"
+provides = "libmcrypt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmcrypt-dev-2.5.8-r9.apk"
+version = "2.5.8-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmcrypt", "2.5.8-r9"]]

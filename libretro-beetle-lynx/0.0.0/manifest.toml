@@ -1,0 +1,15 @@
+checksum = "4d71cfd29f89fa830207de9b45bd3764d396e7514a2f73361d1e3514d9603165"
+licence = "GPL-2.0-only AND Zlib"
+provides = "libretro-beetle-lynx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-beetle-lynx-0_git20210324-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

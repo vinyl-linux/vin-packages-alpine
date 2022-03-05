@@ -1,0 +1,15 @@
+checksum = "a97025bd2193b97ce1ad59305dcc1a5af3ef50cd3c1c7ce41eb0272f52db911a"
+licence = "MPL2"
+provides = "kea-dhcp4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-dhcp4-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kea-common", "2.0.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

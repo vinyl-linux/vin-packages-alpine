@@ -1,0 +1,15 @@
+checksum = "e172c5667dee847218576b8eac203fa6dcda91e9ea92c4742b69a8abd000c3dc"
+licence = "LGPL-2.1-or-later BSD-2-Clause"
+provides = "libssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libssh-0.9.6-r1.apk"
+version = "0.9.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "04529674854ef66aa7f5dfdaf336beebea4dcd85d6c65391e25fbb82b2e2ad94"
+licence = "PHP-3.01"
+provides = "php7-pecl-ssh2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-ssh2-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libssh2", "1.10.0-r2"]]

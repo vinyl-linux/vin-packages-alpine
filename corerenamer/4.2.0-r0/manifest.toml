@@ -1,0 +1,15 @@
+checksum = "89fc9c01c98bc0d6fa943d7a6c542b9dd86c21caa22509f7dea66e395e700e7e"
+licence = "GPL-3.0-or-later"
+provides = "corerenamer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/corerenamer-4.2.0-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.3"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libcprime", "4.2.2-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

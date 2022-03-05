@@ -1,0 +1,15 @@
+checksum = "60b4f6b1638692d06a3bc96982252dd52b8139bd45b3f5046dc63cbe539c95c2"
+licence = "MIT"
+provides = "fcft"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fcft-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"], ["harfbuzz", "3.0.0-r2"], ["pixman", "0.40.0-r3"], ["utf8proc", "2.6.1-r0"]]

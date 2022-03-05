@@ -1,0 +1,15 @@
+checksum = "52c1d6363cf9cc24f27628b3e8a5b7e81a312d94018f60b187f6c5e5e3f4142c"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-guest-agent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-guest-agent-6.1.0-r2.apk"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "08f87f38ee8e746b01e8c1fd76dceb5d681e2c386b943c6a03c3f951a3f14f1e"
+licence = "MIT"
+provides = "xf86-video-qxl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-qxl-0.1.5-r7.apk"
+version = "0.1.5-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

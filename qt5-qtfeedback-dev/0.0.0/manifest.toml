@@ -1,0 +1,15 @@
+checksum = "de710991b2ab803193a8334f553a8e802121e5c8d236513619863410241c6b14"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtfeedback-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtfeedback-dev-0_git20180903-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.3"], ["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtfeedback", "0.0.0"]]

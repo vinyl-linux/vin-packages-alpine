@@ -1,0 +1,15 @@
+checksum = "2f26569f6c278d6cfe53cdf33fd22ed395b41eed2440244d0203cd1b1cb0a022"
+licence = "BSD-3-Clause"
+provides = "radsecproxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/radsecproxy-1.9.1-r3.apk"
+version = "1.9.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["nettle", "3.7.3-r0"], ["libssl1.1", "1.1.1-l-r8"]]

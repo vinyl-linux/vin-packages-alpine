@@ -1,0 +1,15 @@
+checksum = "386a616b88555d7e2a279d1c3c9b8e73c3696312043871dc7b71d3dd5cc11bad"
+licence = "BSD-2-Clause"
+provides = "sniproxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sniproxy-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libev", "4.33.0-r0"], ["pcre", "8.45.0-r1"], ["udns", "0.4.0-r1"]]

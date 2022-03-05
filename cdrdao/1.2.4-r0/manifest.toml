@@ -1,0 +1,15 @@
+checksum = "d5a82b10f6e9b9b03895dd0e76ae5faa46979acbf8ab8e5d80a4c074e628492f"
+licence = "GPL-2.0-only"
+provides = "cdrdao"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cdrdao-1.2.4-r0.apk"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

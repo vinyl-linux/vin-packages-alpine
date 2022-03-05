@@ -1,0 +1,15 @@
+checksum = "22973bd1be3c4caefabf17d0062355cbcd7924ab7703b9071b3b3ebc31e3b2a2"
+licence = "LGPL-3.0-or-later"
+provides = "libopenv2g-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libopenv2g-dev-0.9.4-r4.apk"
+version = "0.9.4-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libopenv2g", "0.9.4-r4"], ["pkgconf", "1.8.0-r0"]]

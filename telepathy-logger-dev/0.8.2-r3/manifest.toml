@@ -1,0 +1,15 @@
+checksum = "549f2a6caf9978b7feac37459f12d6504e45c2777bddfcdb9ec6e3a3a9d4e8d5"
+licence = "LGPL-2.1-or-later"
+provides = "telepathy-logger-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/telepathy-logger-dev-0.8.2-r3.apk"
+version = "0.8.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-dev", "2.9.12-r2"], ["telepathy-glib-dev", "0.24.2-r1"], ["pkgconf", "1.8.0-r0"], ["telepathy-logger", "0.8.2-r3"]]

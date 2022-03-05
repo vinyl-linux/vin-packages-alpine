@@ -1,0 +1,15 @@
+checksum = "e7a06a3d049ab9e57f8cda19b95b56ded3ff9b452afe50a31a02abfa81ea0d1e"
+licence = "BSD-2-Clause"
+provides = "py3-flask-assets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-flask-assets-2.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-flask", "2.0.2-r0"], ["py3-webassets", "0.12.1-r4"]]

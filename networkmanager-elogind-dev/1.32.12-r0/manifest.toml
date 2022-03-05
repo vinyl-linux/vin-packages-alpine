@@ -1,0 +1,15 @@
+checksum = "e3ba6079a1c651aeea5b7cd23c24f65247a168b0460e681d680b695809faa4af"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-elogind-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/networkmanager-elogind-dev-1.32.12-r0.apk"
+version = "1.32.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.32.12-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9701e5ca7cb4403e499f216075badb2926dbecdc660fda209e15ddf3436e6af1"
+licence = "GPL-2.0-or-later"
+provides = "cups-pk-helper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cups-pk-helper-0.2.6-r1.apk"
+version = "0.2.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["cups-libs", "2.3.3-r5"], ["glib", "2.70.1-r0"], ["polkit-elogind-libs", "0.119.0-r8"]]

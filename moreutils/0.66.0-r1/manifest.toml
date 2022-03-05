@@ -1,0 +1,15 @@
+checksum = "c62faf752337016c39d7b824c392a58647095c7cf8803b3e1c878ce16989af36"
+licence = "GPL-2.0-or-later"
+provides = "moreutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/moreutils-0.66-r1.apk"
+version = "0.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-timedate", "2.33.0-r1"], ["perl-ipc-run", "20200505.0.0-r1"], ["musl", "1.2.2-r7"]]

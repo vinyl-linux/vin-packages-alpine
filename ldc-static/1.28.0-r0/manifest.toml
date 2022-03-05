@@ -1,0 +1,15 @@
+checksum = "9f1867cf180bee821d143032c091d12f7fb02cc5603488969d472cb5c297158f"
+licence = "BSD-3-Clause AND BSL-1.0 AND ( Artistic-1.0 OR GPL-2.0-or-later ) AND NCSA AND MIT"
+provides = "ldc-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ldc-static-1.28.0-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libexecinfo-static", "1.1.0-r1"]]

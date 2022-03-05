@@ -1,0 +1,15 @@
+checksum = "04b20cb76b5272e6d0c776c816ff10a8c36708c15466e3404ff5b6a5ee10ce21"
+licence = "MIT"
+provides = "uidmapshift"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uidmapshift-0.1.0-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.3-r0"], ["lua-lunix", "20190403.0.0-r0"], ["lua-optarg", "0.2.0-r2"]]

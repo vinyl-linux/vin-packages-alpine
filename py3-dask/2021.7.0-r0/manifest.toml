@@ -1,0 +1,15 @@
+checksum = "766c76b5860cf7f2909ee9a2e38ef703f1343991cc2261d2729ddcd904ca6a94"
+licence = "BSD-3-Clause"
+provides = "py3-dask"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-dask-2021.7.0-r0.apk"
+version = "2021.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cloudpickle", "1.6.0-r1"], ["py3-fsspec", "2021.8.1-r0"], ["py3-numpy", "1.21.4-r0"], ["py3-pandas", "1.3.2-r0"], ["py3-partd", "1.2.0-r0"], ["py3-toolz", "0.11.1-r1"], ["py3-yaml", "5.4.1.1-r1"], ["python3", "3.9.7-r4"]]

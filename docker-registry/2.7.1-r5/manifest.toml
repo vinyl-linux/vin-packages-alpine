@@ -1,0 +1,15 @@
+checksum = "23a38e26a41cc8a185f4303f8a0a45f5ffd29bfd460111ad2fe3df0c79d0070b"
+licence = "Apache-2.0"
+provides = "docker-registry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/docker-registry-2.7.1-r5.apk"
+version = "2.7.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "61277cb5c19a503f522418774fdb2cae2245b69562c860ac1a85d9f73091978f"
+licence = "BSD-3-Clause"
+provides = "py3-requests-cache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-requests-cache-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"], ["py3-responses", "0.14.0-r0"], ["py3-url-normalize", "1.4.3-r0"], ["python3", "3.9.7-r4"]]

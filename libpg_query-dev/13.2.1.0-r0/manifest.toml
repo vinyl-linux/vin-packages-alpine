@@ -1,0 +1,15 @@
+checksum = "cd855dc2e4de2a2e2f94315c1cf2235e4f0edc86adf9f183b874f14cd14167a4"
+licence = "BSD-3-Clause"
+provides = "libpg_query-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libpg_query-dev-13.2.1.0-r0.apk"
+version = "13.2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpg_query", "13.2.1.0-r0"]]

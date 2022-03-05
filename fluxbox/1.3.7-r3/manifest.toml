@@ -1,0 +1,15 @@
+checksum = "587fa33f7b9b6f0cce290a8e94a40d5277e7825f5fc12362b486d9341d856602"
+licence = "MIT"
+provides = "fluxbox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fluxbox-1.3.7-r3.apk"
+version = "1.3.7-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.7.4-r0"], ["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["libxft", "2.3.4-r0"], ["libxinerama", "1.1.4-r1"], ["libxpm", "3.5.13-r0"], ["libxrandr", "1.5.2-r1"], ["libxrender", "0.9.10-r3"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

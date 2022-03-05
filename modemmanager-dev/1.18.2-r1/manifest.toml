@@ -1,0 +1,15 @@
+checksum = "44a7b7709c419baf79b746383cad0b670cad2389df748d43cd0af465d9ccd8ca"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "modemmanager-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/modemmanager-dev-1.18.2-r1.apk"
+version = "1.18.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmm-glib", "1.18.2-r1"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

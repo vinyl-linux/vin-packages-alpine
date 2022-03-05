@@ -1,0 +1,15 @@
+checksum = "0aff0a39cbbff2360712070b29b5964e8038f9ef5645a9db0593dc1c5bdf59e5"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-dashboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-dashboard-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"], ["nextcloud-accessibility", "22.2.5-r0"]]

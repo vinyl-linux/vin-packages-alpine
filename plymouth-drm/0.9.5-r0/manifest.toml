@@ -1,0 +1,15 @@
+checksum = "6618d9939a3018a9f096804b16827366d59c72d0052e116ed9a6b05574f79318"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-drm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plymouth-drm-0.9.5-r0.apk"
+version = "0.9.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["plymouth", "0.9.5-r0"]]

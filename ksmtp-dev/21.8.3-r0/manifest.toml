@@ -1,0 +1,15 @@
+checksum = "e2fc9b1a0705f1472fbbb291f89794641e1225d36a87071e01b4f5026615c1e1"
+licence = "LGPL-2.1-or-later"
+provides = "ksmtp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ksmtp-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cyrus-sasl-dev", "2.1.27-r14"], ["kcoreaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["ksmtp", "21.8.3-r0"]]

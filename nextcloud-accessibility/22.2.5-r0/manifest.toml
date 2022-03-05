@@ -1,0 +1,15 @@
+checksum = "9472450645e6587515d5b7168702cf8e777d4551d1fd2046402c46f4ee691d20"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-accessibility"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-accessibility-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"]]

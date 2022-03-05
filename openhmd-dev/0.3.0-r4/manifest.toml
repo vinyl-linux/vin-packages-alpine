@@ -1,0 +1,15 @@
+checksum = "b21c864299f9eba65b90f27c3075b396853eabd2aa587d0c2056bb08ad53f9e4"
+licence = "BSL-1.0"
+provides = "openhmd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openhmd-dev-0.3.0-r4.apk"
+version = "0.3.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openhmd", "0.3.0-r4"], ["hidapi-dev", "0.11.0-r0"], ["pkgconf", "1.8.0-r0"]]

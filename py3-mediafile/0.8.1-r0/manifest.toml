@@ -1,0 +1,15 @@
+checksum = "e7fc05f690918320ee37f025cea9789e1c54c4020498660c2d1424445e9e167d"
+licence = "MIT"
+provides = "py3-mediafile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-mediafile-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-mutagen", "1.45.1-r1"]]

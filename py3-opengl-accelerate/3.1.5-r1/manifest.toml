@@ -1,0 +1,15 @@
+checksum = "7ca476ef25c6cdb088e5fc856ab9533f1c069604428cc37b64f6a904af962bc5"
+licence = "BSD-3-Clause"
+provides = "py3-opengl-accelerate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-opengl-accelerate-3.1.5-r1.apk"
+version = "3.1.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-opengl", "3.1.5-r1"], ["musl", "1.2.2-r7"]]

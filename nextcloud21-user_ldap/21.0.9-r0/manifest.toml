@@ -1,0 +1,15 @@
+checksum = "d884c2af1bb3e03a4d24a71c0c73c0a97e7527e889daa83166c7861dfbf30327"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-user_ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-user_ldap-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"], ["php7-ldap", "7.4.28-r0"]]

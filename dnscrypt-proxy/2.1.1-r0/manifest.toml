@@ -1,0 +1,15 @@
+checksum = "f2d26b71857ba72a257f5846a8f6fae053841718e953a51b949815de0ec0dd75"
+licence = "ISC"
+provides = "dnscrypt-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dnscrypt-proxy-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

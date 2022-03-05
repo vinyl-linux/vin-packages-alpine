@@ -1,0 +1,15 @@
+checksum = "f1ffc402410fce0a4e0a410103f4c05b6f76031e47f7a576b821e7204ca06b14"
+licence = "GPL-1.0-only"
+provides = "perl-curses"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-curses-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

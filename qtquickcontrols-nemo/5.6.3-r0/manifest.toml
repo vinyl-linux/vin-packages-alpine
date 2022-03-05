@@ -1,0 +1,15 @@
+checksum = "d30a8c0bcffdb9cb32c3f28a49d26ef55c43ed12a60e4e531a4182d4704acdaf"
+licence = "LGPL-2.1-only AND Apache-2.0"
+provides = "qtquickcontrols-nemo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qtquickcontrols-nemo-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtquickcontrols", "5.15.3"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libglacierapp", "0.7.0-r0"], ["mlite", "0.3.7-r0"], ["libstdc++", "10.3.1"]]

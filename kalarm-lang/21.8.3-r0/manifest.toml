@@ -1,0 +1,15 @@
+checksum = "eefa9a9c29179a8a0edca256896e0e1bd2b4e37a9f6f72c2469c8d515cd8f013"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kalarm-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kalarm-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "21.8.3-r1"]]

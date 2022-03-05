@@ -1,0 +1,15 @@
+checksum = "4bfd7b6e65b78d5bd567d34db1f888ad4f17ab3d7e25a229da633cb6e97cd979"
+licence = "MIT"
+provides = "lua5.1-depgraph"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.1-depgraph-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-filesystem", "1.8.0-r1"]]

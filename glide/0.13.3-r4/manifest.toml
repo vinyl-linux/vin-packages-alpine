@@ -1,0 +1,15 @@
+checksum = "09ad94cbfdc5e5169292b6f955c6604f88419607fde4599b23477fad213684e3"
+licence = "MIT"
+provides = "glide"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/glide-0.13.3-r4.apk"
+version = "0.13.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["go", "1.17.4-r0"], ["musl", "1.2.2-r7"]]

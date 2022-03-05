@@ -1,0 +1,15 @@
+checksum = "82c5f63a896fd9d70c139d65e02ff0ce3883e27850253c5fdfc232cae01ed8c6"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "powerdevil-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/powerdevil-lang-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["upower", "0.99.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "838a90cd7b6269da596ee44ae5b1a9171b889ce59a111e017a47d0b2d0a114f1"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-backend-ldap-4.5.3-r0.apk"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.5.3-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["krb5-libs", "1.19.2-r4"], ["libldap", "2.6.0-r0"], ["libstdc++", "10.3.1"]]

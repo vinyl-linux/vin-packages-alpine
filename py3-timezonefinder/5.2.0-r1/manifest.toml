@@ -1,0 +1,15 @@
+checksum = "7b650601d85c6fc9a47439ef26d92e9c034961ae8f370361638de170885131a7"
+licence = "MIT"
+provides = "py3-timezonefinder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-timezonefinder-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-numpy", "1.21.4-r0"], ["python3", "3.9.7-r4"]]

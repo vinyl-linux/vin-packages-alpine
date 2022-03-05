@@ -1,0 +1,15 @@
+checksum = "58ac43ffbe23810ac92ae15d7af1fa24f277441bcd74ae8ca7bcfbe54e25c9a4"
+licence = "LGPL-2.0-or-later"
+provides = "kmime-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kmime-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcodecs-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["kmime", "21.8.3-r0"]]

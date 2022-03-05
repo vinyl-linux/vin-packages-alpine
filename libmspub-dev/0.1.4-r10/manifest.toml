@@ -1,0 +1,15 @@
+checksum = "f97111b69070f6a8007cc783cbac361dbec026eecb3c729a87a29c5abc49c5eb"
+licence = "MPL-2.0"
+provides = "libmspub-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmspub-dev-0.1.4-r10.apk"
+version = "0.1.4-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.77.0-r1"], ["librevenge-dev", "0.0.4-r6"], ["zlib-dev", "1.2.11-r3"], ["icu-dev", "69.1.0-r1"], ["libwpd-dev", "0.10.3-r0"], ["libwpg-dev", "0.3.3-r0"], ["libmspub", "0.1.4-r10"], ["pkgconf", "1.8.0-r0"]]

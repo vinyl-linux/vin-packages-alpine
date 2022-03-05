@@ -1,0 +1,15 @@
+checksum = "3de557327d65adb01f93cf83f5200cdebacc876792cd0f016f57333824a14956"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/proftpd-mod_snmp-1.3.7c-r2.apk"
+version = "1.3.7-c-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-c-r2"], ["musl", "1.2.2-r7"]]

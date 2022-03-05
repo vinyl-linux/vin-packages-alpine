@@ -1,0 +1,15 @@
+checksum = "2a65d5cb44225ee0f37953c9fdd4ff3e58ce8b3b01a09db7ac8982da3b4a13bb"
+licence = "LGPL-2.0-or-later"
+provides = "py3-enchant"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-enchant-3.2.1-r0.apk"
+version = "3.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["enchant2", "2.3.1-r1"], ["python3", "3.9.7-r4"]]

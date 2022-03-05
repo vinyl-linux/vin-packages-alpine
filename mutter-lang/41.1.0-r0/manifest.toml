@@ -1,0 +1,15 @@
+checksum = "73e8e18399f3a363b3da1d4706e172ecae105deba3a4aa05fb7b1d5db5f5ede5"
+licence = "GPL-2.0-or-later"
+provides = "mutter-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mutter-lang-41.1-r0.apk"
+version = "41.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xkeyboard-config", "2.34.0-r0"], ["zenity", "3.32.0-r0"], ["gsettings-desktop-schemas", "41.0.0-r0"], ["xwayland", "21.1.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "c26b68674273726a42e3b5fb3e930b5088550dfccc1ec28f00f30e7117926b84"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "minuet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/minuet-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["minuet", "21.8.3-r0"]]

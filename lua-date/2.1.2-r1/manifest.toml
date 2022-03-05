@@ -1,0 +1,15 @@
+checksum = "eeecc5afd2e6ac7ccfd0709d6dadb4438542e2ad3118db408644e34c178848b4"
+licence = "MIT"
+provides = "lua-date"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua-date-2.1.2-r1.apk"
+version = "2.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.3-r0"]]

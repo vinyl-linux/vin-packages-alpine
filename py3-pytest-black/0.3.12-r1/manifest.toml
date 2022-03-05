@@ -1,0 +1,15 @@
+checksum = "d5a90ca9144a16f96582653412a4e11e2609c45a116a84ebb78146fa3d40d9a9"
+licence = "MIT"
+provides = "py3-pytest-black"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pytest-black-0.3.12-r1.apk"
+version = "0.3.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-pytest", "6.2.5-r0"], ["black", "21.11.0"], ["py3-toml", "0.10.2-r2"]]

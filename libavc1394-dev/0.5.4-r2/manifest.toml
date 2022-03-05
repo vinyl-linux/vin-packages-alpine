@@ -1,0 +1,15 @@
+checksum = "843b7220ce5db359ea624f51537a81d6f202ba547ae16c8aa63dc95f1f0a1eeb"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "libavc1394-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libavc1394-dev-0.5.4-r2.apk"
+version = "0.5.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libavc1394", "0.5.4-r2"], ["libraw1394-dev", "2.1.2-r2"], ["pkgconf", "1.8.0-r0"]]

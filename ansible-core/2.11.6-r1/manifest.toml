@@ -1,0 +1,15 @@
+checksum = "92f406d81d0b242bfe04770135547e6b748dc0ba29daf55df3bf6b57541c2dea"
+licence = "GPL-3.0-or-later"
+provides = "ansible-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ansible-core-2.11.6-r1.apk"
+version = "2.11.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-jinja2", "3.0.1-r0"], ["py3-packaging", "20.9.0-r1"], ["py3-yaml", "5.4.1.1-r1"], ["py3-cryptography", "3.3.2-r3"], ["py3-paramiko", "2.7.2-r1"], ["py3-resolvelib", "0.5.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "03c1cfb4edb1b1f84f17ee1eeacbdcbfc9288563ff8d18894ad8ab1fb5ed8866"
+licence = "MIT Apache-2.0"
+provides = "fd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fd-8.2.1-r1.apk"
+version = "8.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

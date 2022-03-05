@@ -1,0 +1,15 @@
+checksum = "00333b80ddaca72a0938177f487090df4a782e95e6990df5f541ad20202b8237"
+licence = "GPL-3.0-or-later"
+provides = "gnome-photos-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-photos-lang-40.0-r0.apk"
+version = "40.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "41.0.0-r0"], ["tracker-miners", "3.1.3-r0"]]

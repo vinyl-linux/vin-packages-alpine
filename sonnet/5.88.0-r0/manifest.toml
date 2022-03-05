@@ -1,0 +1,15 @@
+checksum = "75a1d3d8a15d20b25c5c8a4fa26f6680df17ec5fa53395b814060a7682e5958a"
+licence = "LGPL-2.1-only"
+provides = "sonnet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sonnet-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hunspell", "1.7.0-r1"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libhunspell", "1.7.0-r1"], ["libstdc++", "10.3.1"]]

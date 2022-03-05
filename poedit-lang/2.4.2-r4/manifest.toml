@@ -1,0 +1,15 @@
+checksum = "e36d11b909fe8d711a9362e91a7d3d6181033ca658234bcf9bfd3b752c922f4b"
+licence = "MIT"
+provides = "poedit-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/poedit-lang-2.4.2-r4.apk"
+version = "2.4.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext-tiny", "0.3.2-r1"]]

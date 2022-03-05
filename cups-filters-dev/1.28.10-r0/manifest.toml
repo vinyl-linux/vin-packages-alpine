@@ -1,0 +1,15 @@
+checksum = "d36f738c31329098aff6bda5f067b138455e0eca27ce4c6f922176ab64e3593e"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later MIT"
+provides = "cups-filters-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cups-filters-dev-1.28.10-r0.apk"
+version = "1.28.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cups-filters-libs", "1.28.10-r0"], ["pkgconf", "1.8.0-r0"]]

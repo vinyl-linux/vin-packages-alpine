@@ -1,0 +1,15 @@
+checksum = "3a6230a14c6312097e06aa93ed6132dd7cda6657caf1d9f00383c03b3dc1c9d5"
+licence = "LGPL-2.1-or-later GPL-3.0-or-later"
+provides = "gpgme-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gpgme-dev-1.16.0-r0.apk"
+version = "1.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpgme", "1.16.0-r0"], ["gpgmepp", "1.16.0-r0"], ["glib-dev", "2.70.1-r0"], ["libgpg-error-dev", "1.42.0-r1"], ["libassuan-dev", "2.5.5-r0"], ["pkgconf", "1.8.0-r0"], ["qgpgme", "1.16.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "a08b0ba348f2c50cb7f3ad887ba9f2ef9724da9b56df6343e0b523aad4fe566b"
+licence = "Apache-2.0"
+provides = "py3-deprecation"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-deprecation-2.1.0-r2.apk"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-packaging", "20.9.0-r1"]]

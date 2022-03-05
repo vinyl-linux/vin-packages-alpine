@@ -1,0 +1,15 @@
+checksum = "4207a8d18b01f7431fe73e7760271c8f1814479c8c09ee1fdc6962e925a33e67"
+licence = "BSD-3-Clause"
+provides = "yadifa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yadifa-2.5.3-r0.apk"
+version = "2.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

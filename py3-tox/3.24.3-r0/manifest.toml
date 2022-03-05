@@ -1,0 +1,15 @@
+checksum = "97da55ab8cddd2ce2abb4fe813910b145ff03d90c312dfd07bc184d6500fc823"
+licence = "MIT"
+provides = "py3-tox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-tox-3.24.3-r0.apk"
+version = "3.24.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-packaging", "20.9.0-r1"], ["py3-pluggy", "0.13.1-r4"], ["py3-py", "1.10.0-r1"], ["py3-six", "1.16.0-r0"], ["py3-virtualenv", "20.4.7-r0"], ["py3-toml", "0.10.2-r2"], ["py3-filelock", "3.0.12-r3"]]

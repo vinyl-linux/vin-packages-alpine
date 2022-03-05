@@ -1,0 +1,15 @@
+checksum = "ff69e091102cc38b2b8122ffbf5f64e0565a840a2e68103c8b93e9fd5509a7c8"
+licence = "MIT"
+provides = "gitea"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gitea-1.15.6-r0.apk"
+version = "1.15.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.34.1-r0"], ["git-lfs", "3.0.2-r0"], ["gnupg", "2.2.31-r1"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

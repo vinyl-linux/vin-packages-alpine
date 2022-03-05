@@ -1,0 +1,15 @@
+checksum = "9aabaeb71775b50988a00f4e6aeefea0d0a2b0db598a040c7fa3470c5b0df62a"
+licence = "GPL-3.0-or-later"
+provides = "woff2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/woff2-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libwoff2common", "1.0.2-r1"], ["libwoff2enc", "1.0.2-r1"], ["libwoff2dec", "1.0.2-r1"]]

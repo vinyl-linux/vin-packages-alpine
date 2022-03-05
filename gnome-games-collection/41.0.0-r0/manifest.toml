@@ -1,0 +1,15 @@
+checksum = "6199af8a5c9d89b9e33d6930129991f0985ea8a0a71f1ec0a7e8e2aba7cc2ca9"
+licence = "GPL-3.0-or-later"
+provides = "gnome-games-collection"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-games-collection-41-r0.apk"
+version = "41.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aisleriot", "3.22.17-r0"], ["gnome-2048", "3.38.2-r1"], ["gnome-chess", "41.1.0-r0"], ["gnome-taquin", "3.38.1-r1"], ["lightsoff", "40.0.1-r0"]]

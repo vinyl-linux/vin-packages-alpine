@@ -1,0 +1,15 @@
+checksum = "ac4f0ca5b6aa00b7c9af6ffe7aa440e4af1ea2623b9a067f0032a62e9f2db111"
+licence = "GPL-2.0-or-later"
+provides = "virt-what"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/virt-what-1.21-r1.apk"
+version = "1.21.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

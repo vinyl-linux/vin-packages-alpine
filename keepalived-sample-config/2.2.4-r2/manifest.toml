@@ -1,0 +1,15 @@
+checksum = "1c4106b8e2d336fb4737e356f652d7092709d0c5a09d86d50c2adc0197a214d3"
+licence = "GPL-2.0-only"
+provides = "keepalived-sample-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/keepalived-sample-config-2.2.4-r2.apk"
+version = "2.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["keepalived-common", "2.2.4-r2"]]

@@ -1,0 +1,15 @@
+checksum = "c5ce64d5b2bcfd496ba0a6a875d97def60c3b8fedb83d36d53123a910b350076"
+licence = "GPL-2.0-or-later"
+provides = "libtorrent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libtorrent-0.13.8-r2.apk"
+version = "0.13.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

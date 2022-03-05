@@ -1,0 +1,15 @@
+checksum = "4d54cc7c77157b8c96441ee6045c751413a653dbf8fbebc947457f5902272455"
+licence = "MIT"
+provides = "libxpresent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libxpresent-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

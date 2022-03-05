@@ -1,0 +1,15 @@
+checksum = "a1ee4ae46f912844c6add87322ac4b376cd5a1e79af2b3cb00e1de4eddbbc1b6"
+licence = "LGPL-2.1"
+provides = "dcadec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dcadec-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

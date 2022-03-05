@@ -1,0 +1,15 @@
+checksum = "8a39c7c1ae66a1b4a8cb41acf1dd475315fabaa019894605cfee369879710c29"
+licence = "GPL-2.0"
+provides = "openvas-smb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openvas-smb-dev-21.4.0-r1.apk"
+version = "21.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openvas-smb", "21.4.0-r1"], ["pkgconf", "1.8.0-r0"]]

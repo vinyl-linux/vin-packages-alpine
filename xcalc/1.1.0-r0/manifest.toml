@@ -1,0 +1,15 @@
+checksum = "35deb656d02c2bd504d2fdbcb36dbb3d89396ad4acef0d20d4dbf095b5c9b3b2"
+licence = "MIT"
+provides = "xcalc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xcalc-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxaw", "1.0.14-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.2-r7"]]

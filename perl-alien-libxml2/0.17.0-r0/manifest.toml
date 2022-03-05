@@ -1,0 +1,15 @@
+checksum = "1bcd75442ca570ecdbd63fc5983925f60b121e190b1780f715187df0ee4b1d22"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-alien-libxml2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-alien-libxml2-0.17-r0.apk"
+version = "0.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-alien-build", "2.45.0-r0"]]

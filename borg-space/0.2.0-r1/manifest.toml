@@ -1,0 +1,15 @@
+checksum = "38f5274d42977b018e4f5bae871b6166e454e4945e01d773452d1e0919f7db92"
+licence = "GPL-3.0-or-later"
+provides = "borg-space"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/borg-space-0.2-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["emborg", "1.28.0-r0"], ["python3", "3.9.7-r4"], ["py3-appdirs", "1.4.4-r2"], ["py3-arrow", "0.17.0-r1"], ["py3-docopt", "0.6.2-r6"], ["py3-inform", "1.26.0-r0"], ["py3-matplotlib", "3.3.3-r1"], ["py3-nestedtext", "3.1.0-r1"], ["py3-quantiphy", "2.15.0-r0"]]

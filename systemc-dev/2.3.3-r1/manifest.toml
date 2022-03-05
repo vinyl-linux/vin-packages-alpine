@@ -1,0 +1,15 @@
+checksum = "084b0dd2c7f98b4b9b40cec75660501ce116ca4aa9c11732a5e65de24ead2d81"
+licence = "Apache-2.0"
+provides = "systemc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/systemc-dev-2.3.3-r1.apk"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["systemc", "2.3.3-r1"]]

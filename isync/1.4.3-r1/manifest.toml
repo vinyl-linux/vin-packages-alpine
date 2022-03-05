@@ -1,0 +1,15 @@
+checksum = "8324889154835bccce1fb0959641d8575d55d0af3a485023629d1ebb5b4c30aa"
+licence = "GPL-3.0-or-later"
+provides = "isync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/isync-1.4.3-r1.apk"
+version = "1.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libsasl", "2.1.27-r14"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

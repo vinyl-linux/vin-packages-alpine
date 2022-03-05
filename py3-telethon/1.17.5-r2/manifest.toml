@@ -1,0 +1,15 @@
+checksum = "4a93211b632ce690c03ed04bb3ec3adb58f3db5a9b4522cf46c076962e8599be"
+licence = "MIT"
+provides = "py3-telethon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-telethon-1.17.5-r2.apk"
+version = "1.17.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyaes", "1.6.1-r2"], ["py3-rsa", "4.7.2-r0"], ["python3", "3.9.7-r4"]]

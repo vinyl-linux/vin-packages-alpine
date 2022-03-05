@@ -1,0 +1,15 @@
+checksum = "23c5ed451c1e870155260ed6b0060286064e7f94e21463b24ca28d0e6faa6da1"
+licence = "GPL-2.0-or-later"
+provides = "mpdscribble"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mpdscribble-0.23-r2.apk"
+version = "0.23.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libgcrypt", "1.9.4-r0"], ["libmpdclient", "2.19.0-r0"], ["libstdc++", "10.3.1"]]

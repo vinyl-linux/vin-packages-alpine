@@ -1,0 +1,15 @@
+checksum = "31acdfd9a7fb9232d2d9de6483ccd06afea6c06b56dd3a72a95f6cf8439a9b2d"
+licence = "GPL-2.0-or-later"
+provides = "polkit-kde-agent-1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/polkit-kde-agent-1-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-elogind", "0.119.0-r8"], ["kcoreaddons", "5.88.0-r0"], ["kcrash", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kiconthemes", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["polkit-qt-1", "0.114.0-r0"], ["libstdc++", "10.3.1"]]

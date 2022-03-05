@@ -1,0 +1,15 @@
+checksum = "2e471878a71eafbe95e501354367401c88ee4f231f7432cbf17914e5d8782ce7"
+licence = "Zlib"
+provides = "bullet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bullet-dev-2.89-r2.apk"
+version = "2.89.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bullet", "2.89.0-r2"], ["pkgconf", "1.8.0-r0"]]

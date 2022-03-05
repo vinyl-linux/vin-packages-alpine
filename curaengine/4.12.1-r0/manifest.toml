@@ -1,0 +1,15 @@
+checksum = "f78417040ee715933535a9ffbaa838cb77456d8db037d3833afdffaa854ba943"
+licence = "AGPL-3.0-or-later"
+provides = "curaengine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/curaengine-4.12.1-r0.apk"
+version = "4.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarcus", "4.12.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libgomp", "10.3.1"], ["libprotobuf", "3.18.1-r1"]]

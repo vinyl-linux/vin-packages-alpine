@@ -1,0 +1,15 @@
+checksum = "2372a10071476a8b11d6e4c1a108af5c12d348bf489f52baa39a6d0c75f79d34"
+licence = "GPL-2.0-or-later"
+provides = "mate-menus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mate-menus-dev-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-menus", "1.26.0-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

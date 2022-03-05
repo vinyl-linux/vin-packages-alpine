@@ -1,0 +1,15 @@
+checksum = "99e369957aad36b089be8f65f5c995d8f70c4c71d0619a4bdb8ee18ce2a75698"
+licence = "BSD-2-Clause"
+provides = "liblzf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/liblzf-dev-3.6-r0.apk"
+version = "3.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["liblzf", "3.6.0-r0"], ["pkgconf", "1.8.0-r0"]]

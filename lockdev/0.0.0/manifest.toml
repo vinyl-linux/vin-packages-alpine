@@ -1,0 +1,15 @@
+checksum = "9b4757ace4301e3a8d7f9cc1ddf6ffadacc6d331254395b51864bf7bfa609d5f"
+licence = "LGPL-2.1-or-later"
+provides = "lockdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lockdev-0_git20130107-r3.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

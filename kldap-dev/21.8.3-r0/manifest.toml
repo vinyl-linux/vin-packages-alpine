@@ -1,0 +1,15 @@
+checksum = "e163d6672bf1f4883245a06177b17befa19387fb735b896ff446739dcec7b4cb"
+licence = "LGPL-2.0-or-later"
+provides = "kldap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kldap-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcompletion-dev", "5.88.0-r0"], ["kdoctools-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["kwidgetsaddons-dev", "5.88.0-r0"], ["openldap-dev", "2.6.0-r0"], ["qt5-qtkeychain-dev", "0.12.0-r0"], ["kldap", "21.8.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "031c1e614d011132a213c9190dd69c5b4859d4494e2198afd7949fc9b56c21b8"
+licence = "Apache-2.0"
+provides = "docker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/docker-20.10.11-r0.apk"
+version = "20.10.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docker-engine", "20.10.11-r0"], ["docker-cli", "20.10.11-r0"], ["busybox", "1.34.1-r4"]]

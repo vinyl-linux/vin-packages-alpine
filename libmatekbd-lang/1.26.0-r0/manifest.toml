@@ -1,0 +1,15 @@
+checksum = "573b39752b1d608c4c78f75eae576c9b39b61c3bafc475e73ca0d96231ab0ceb"
+licence = "LGPL-2.1-or-later"
+provides = "libmatekbd-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmatekbd-lang-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r0"], ["freetype", "2.11.0-r0"]]

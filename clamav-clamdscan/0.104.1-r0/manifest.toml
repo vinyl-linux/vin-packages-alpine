@@ -1,0 +1,15 @@
+checksum = "babecc4ca4f4ebb99fbf62f0c2748c82a434d5696b3ca70570859b6a767dc228"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-clamdscan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/clamav-clamdscan-0.104.1-r0.apk"
+version = "0.104.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl", "1.1.1-l-r8"], ["musl", "1.2.2-r7"], ["clamav-libs", "0.104.1-r0"]]

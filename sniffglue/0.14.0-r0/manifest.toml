@@ -1,0 +1,15 @@
+checksum = "3340266d4ae410459bc487c8e131912c8ef60a17d66f419d7e27a9f397fecc64"
+licence = "GPL-3.0-or-later"
+provides = "sniffglue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sniffglue-0.14.0-r0.apk"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libpcap", "1.10.1-r0"], ["libseccomp", "2.5.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0c18dccf09008cae32814d39b5e4e332c7d970d65fd60196741365bc79ad04ef"
+licence = "Apache-2.0"
+provides = "salt-cloud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/salt-cloud-3004-r0.apk"
+version = "3004.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["salt-master", "3004.0.0-r0"], ["py3-apache-libcloud", "3.4.1-r0"]]

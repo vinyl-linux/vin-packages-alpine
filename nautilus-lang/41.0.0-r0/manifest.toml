@@ -1,0 +1,15 @@
+checksum = "5f75dd323677b4bc71da91c2611025b676bc73faa93e33ea4f8c4d3ec8f5c4e1"
+licence = "GPL-2.0-or-later"
+provides = "nautilus-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nautilus-lang-41.0-r0.apk"
+version = "41.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tracker-miners", "3.1.3-r0"], ["gsettings-desktop-schemas", "41.0.0-r0"]]

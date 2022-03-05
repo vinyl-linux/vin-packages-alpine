@@ -1,0 +1,15 @@
+checksum = "6c45fe33226b546e02b801b0eda1cff069883327439203a4960decb4898c219a"
+licence = "Apache-2.0 OR BSD-3-Clause"
+provides = "py3-cryptography"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-cryptography-3.3.2-r3.apk"
+version = "3.3.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-cffi", "1.14.5-r2"], ["py3-idna", "3.3.0-r0"], ["py3-asn1crypto", "1.4.0-r1"], ["py3-six", "1.16.0-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

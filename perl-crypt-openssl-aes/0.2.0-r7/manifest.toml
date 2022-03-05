@@ -1,0 +1,15 @@
+checksum = "9f885daf3955d1666e323e704f82b41fdcfab86f33cc5a2aba5e9ee647f45b60"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-openssl-aes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-crypt-openssl-aes-0.02-r7.apk"
+version = "0.2.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

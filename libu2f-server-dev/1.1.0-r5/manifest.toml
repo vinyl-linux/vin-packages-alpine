@@ -1,0 +1,15 @@
+checksum = "b1d042d586c914fbbef3406a92b2f8ec0a8be7c6810d28ec7f7f7cc3e94ef93a"
+licence = "BSD-2-Clause"
+provides = "libu2f-server-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libu2f-server-dev-1.1.0-r5.apk"
+version = "1.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libu2f-server", "1.1.0-r5"], ["pkgconf", "1.8.0-r0"]]

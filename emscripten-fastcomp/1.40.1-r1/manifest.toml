@@ -1,0 +1,15 @@
+checksum = "951bdc8dd03904626dd1a6e05ca0b63341250870991d8178921793f03a5b63a0"
+licence = "NCSA"
+provides = "emscripten-fastcomp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/emscripten-fastcomp-1.40.1-r1.apk"
+version = "1.40.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

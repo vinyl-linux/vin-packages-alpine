@@ -1,0 +1,15 @@
+checksum = "37784d7a900e7cb9a95531f8b197492815c637e382742948f17c7c0eac2c06b1"
+licence = "LGPL-2.0-or-later"
+provides = "kalarmcal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kalarmcal-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kalarmcal", "21.8.3-r0"]]

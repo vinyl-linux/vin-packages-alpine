@@ -1,0 +1,15 @@
+checksum = "6d069fc8eca92c4bb4c83e87af10625f410051a7a7f3f1a33f53bcd1d4691dd4"
+licence = "GPL-2.0-or-later"
+provides = "ts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ts-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

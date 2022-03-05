@@ -1,0 +1,15 @@
+checksum = "124a6e32fe629b62fafcfca059f1762ee3d38ef48330a1c26549e7b21f327539"
+licence = "ISC"
+provides = "aml-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/aml-dev-0.2.1-r0.apk"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aml", "0.2.1-r0"], ["pkgconf", "1.8.0-r0"]]

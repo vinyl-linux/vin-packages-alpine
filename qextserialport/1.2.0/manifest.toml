@@ -1,0 +1,15 @@
+checksum = "5aa59c6f65122b58d23293abcf370f277071e34a53395012f097bf60103ecd01"
+licence = "MIT"
+provides = "qextserialport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qextserialport-1.2_rc1-r1.apk"
+version = "1.2.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

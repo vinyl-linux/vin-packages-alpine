@@ -1,0 +1,15 @@
+checksum = "fe764947ab4f447b7aa6685fb5788559c11d90de60f63e29b36e39cefa4e73b1"
+licence = "GPL-2.0-or-later"
+provides = "py3-bluez"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-bluez-0.23-r2.apk"
+version = "0.23.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-libs", "5.63.0-r0"], ["musl", "1.2.2-r7"]]

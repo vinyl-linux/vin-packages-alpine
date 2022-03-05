@@ -1,0 +1,15 @@
+checksum = "f9f38eb8b080c0c44ec2a3f821630778f46d1075f306a12d376e4c6028b182a0"
+licence = "TFL"
+provides = "gopt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gopt-10.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

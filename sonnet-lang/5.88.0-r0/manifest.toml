@@ -1,0 +1,15 @@
+checksum = "039d96392e1a4f3b4cd0d58d500c24f84517ebcff14b9c922adc3e5e78959384"
+licence = "LGPL-2.1-only"
+provides = "sonnet-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sonnet-lang-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hunspell", "1.7.0-r1"]]

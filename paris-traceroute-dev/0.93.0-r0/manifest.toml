@@ -1,0 +1,15 @@
+checksum = "13856628ab76f70dcb82105f5a329b4d99122134526ec2c6343d192b4d981044"
+licence = "GPL-3.0-only"
+provides = "paris-traceroute-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/paris-traceroute-dev-0.93-r0.apk"
+version = "0.93.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["paris-traceroute", "0.93.0-r0"], ["pkgconf", "1.8.0-r0"]]

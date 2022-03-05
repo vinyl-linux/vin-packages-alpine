@@ -1,0 +1,15 @@
+checksum = "17e64aa1c9fb60264586c6dc6ee543fd6aab4983898fbaa66e60b1209debe6b0"
+licence = "LGPL-2.1-or-later"
+provides = "py3-augeas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-augeas-1.1.0-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["augeas-libs", "1.12.0-r0"], ["py3-cffi", "1.14.5-r2"], ["python3", "3.9.7-r4"]]

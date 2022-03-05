@@ -1,0 +1,15 @@
+checksum = "65c6eaf8ae4bfd9931b4319d9694e3ac429a7f28f8576be8823c6c58c8c20abd"
+licence = "GPL-2.0-only"
+provides = "libretro-stella2014"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-stella2014-0_git20210325-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

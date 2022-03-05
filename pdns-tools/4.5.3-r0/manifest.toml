@@ -1,0 +1,15 @@
+checksum = "b5a6e478de5c6467ca4ab3d7e5ed0a663ebbf698363aea3fc42ff4b765d4732c"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-tools-4.5.3-r0.apk"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-program_options", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libsodium", "1.0.18-r0"], ["libstdc++", "10.3.1"]]

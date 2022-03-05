@@ -1,0 +1,15 @@
+checksum = "dc7f6c480d49baa6efe1853d2ec135fd279ee7094b560180b8c4bbf456068ba7"
+licence = "BSD-3-Clause"
+provides = "ilmbase-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ilmbase-dev-2.2.0-r5.apk"
+version = "2.2.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ilmbase", "2.2.0-r5"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "60fd4e0963e1e020f4aa56c4a2ec7ff7e29a204a69b10351cd9c4668d0fa2a4f"
+licence = "GPL-2.0-or-later"
+provides = "cpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cpd-0.5.3-r0.apk"
+version = "0.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["fgt", "0.4.9-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "2807bf7c230f6ac1acdb6cc26997152711239ad1174ae6c6dd97d76bf0f282cf"
+licence = "Apache-2.0"
+provides = "grpc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/grpc-dev-1.42.0-r0.apk"
+version = "1.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grpc", "1.42.0-r0"], ["abseil-cpp-dev", "20210324.2.0-r0"], ["openssl-dev", "1.1.1-l-r8"], ["pkgconf", "1.8.0-r0"]]

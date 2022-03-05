@@ -1,0 +1,15 @@
+checksum = "62879cab8e5a31647d703a3c717094efa811367ba8333982115d0fd75f606135"
+licence = "GPL-2.0-or-later"
+provides = "collectd-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-redis-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["hiredis", "1.0.2-r0"]]

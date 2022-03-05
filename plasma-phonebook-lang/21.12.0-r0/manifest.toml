@@ -1,0 +1,15 @@
+checksum = "eeee5211dd53b52ad4b07f76f198befa6bd9ff4c4aa0b137a54d1812f1e05075"
+licence = "LicenseRef-KDE-Accepted-GPL"
+provides = "plasma-phonebook-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-phonebook-lang-21.12-r0.apk"
+version = "21.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["qt5-qtbase-sqlite", "5.15.3"], ["qt5-qtquickcontrols", "5.15.3"]]

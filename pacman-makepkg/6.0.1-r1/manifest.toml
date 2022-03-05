@@ -1,0 +1,15 @@
+checksum = "190ea077c67885f73105a5ec3dc12e3717c10b9be1328f1f5d51e4b99c730cfb"
+licence = "GPL-2.0-or-later"
+provides = "pacman-makepkg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pacman-makepkg-6.0.1-r1.apk"
+version = "6.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["libarchive-tools", "3.6.0-r0"], ["pacman", "6.0.1-r1"], ["musl", "1.2.2-r7"], ["libintl", "0.21.0-r0"]]

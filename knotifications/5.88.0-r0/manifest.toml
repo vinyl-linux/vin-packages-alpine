@@ -1,0 +1,15 @@
+checksum = "118e0d6b0fb113913647e3c39bb37696e869ab67721622a90c95e3e6774f34c9"
+licence = "BSD-3-Clause AND LGPL-2.0-or-later AND LGPL-2.0-only AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "knotifications"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/knotifications-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtspeech", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libx11", "1.7.2-r0"], ["libxtst", "1.2.3-r3"], ["musl", "1.2.2-r7"], ["libcanberra", "0.30.0-r8"], ["libstdc++", "10.3.1"]]

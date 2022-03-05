@@ -1,0 +1,15 @@
+checksum = "5c078b12e8fe6117fbb7e80e88d9c92f61763abb6d6b61de16303196b3d30d93"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "ktouch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ktouch-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcompletion", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["kconfigwidgets", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kitemviews", "5.88.0-r0"], ["kcmutils", "5.88.0-r0"], ["kservice", "5.88.0-r0"], ["ktextwidgets", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"], ["qt5-qtxmlpatterns", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

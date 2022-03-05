@@ -1,0 +1,15 @@
+checksum = "f04c04fb064e750aed8fb3838a1528b373a6f5ba854587a3a070b3d80b94ae56"
+licence = "LGPL-2.0-or-later"
+provides = "kdnssd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdnssd-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r5"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

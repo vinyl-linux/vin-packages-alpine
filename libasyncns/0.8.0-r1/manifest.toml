@@ -1,0 +1,15 @@
+checksum = "e367e6e362876c40d85db7d783146fd8b53e8e90af03306542e99d378d5f0458"
+licence = "LGPL-2.0-or-later"
+provides = "libasyncns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libasyncns-0.8-r1.apk"
+version = "0.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "e356e709f4c3d15ae2bcd1aba73aed3a10a67cca1911a0e2ffa7f8ed8b197c19"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "kdegraphics-thumbnailers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdegraphics-thumbnailers-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["karchive", "5.88.0-r0"], ["libkdcraw", "21.8.3-r0"], ["libkexiv2", "21.8.3-r0"], ["kio", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

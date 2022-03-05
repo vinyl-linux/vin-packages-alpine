@@ -1,0 +1,15 @@
+checksum = "2dc1da011d31ba971514100f15378b161114fc7100a40acf1caf16294218c19f"
+licence = "LGPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "kcoreaddons-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kcoreaddons-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["kcoreaddons", "5.88.0-r0"]]

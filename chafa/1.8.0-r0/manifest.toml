@@ -1,0 +1,15 @@
+checksum = "cb7378db924fb2ddf4e7908a01c56affeec905ac5f47244da245c0a7b2e35374"
+licence = "LGPL-3.0-or-later"
+provides = "chafa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chafa-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick-libs", "7.1.0.16-r0"], ["musl", "1.2.2-r7"], ["chafa-libs", "1.8.0-r0"], ["freetype", "2.11.0-r0"], ["glib", "2.70.1-r0"]]

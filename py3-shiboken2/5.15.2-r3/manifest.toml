@@ -1,0 +1,15 @@
+checksum = "b8637bc93cde1091796c7b18180c60952ca35dff5ac445b9b86c57e0a5c3bd84"
+licence = "LGPL-2.1-or-later"
+provides = "py3-shiboken2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-shiboken2-5.15.2-r3.apk"
+version = "5.15.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libshiboken2", "5.15.2-r3"], ["libstdc++", "10.3.1"]]

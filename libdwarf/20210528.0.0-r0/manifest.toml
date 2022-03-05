@@ -1,0 +1,15 @@
+checksum = "dcc942894348b6b48d2d783a8da0719286305ec4ebee6b34ae13f644b75f1d33"
+licence = "LGPL-2.1-or-later"
+provides = "libdwarf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libdwarf-20210528-r0.apk"
+version = "20210528.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libelf", "0.185.0-r0"], ["zlib", "1.2.11-r3"]]

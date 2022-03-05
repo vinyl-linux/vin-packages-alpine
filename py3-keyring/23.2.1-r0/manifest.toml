@@ -1,0 +1,15 @@
+checksum = "ef4f550a429211435c27abe89bde6628b864187982e90d441e5443eefaf43878"
+licence = "GPL-3.0-only"
+provides = "py3-keyring"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-keyring-23.2.1-r0.apk"
+version = "23.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-importlib-metadata", "4.8.1-r0"], ["py3-jeepney", "0.7.1-r0"], ["py3-secretstorage", "3.3.1-r0"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a75e3ec6b1123ad8387904ad76fc381b330ee2796872203df8b4c39250ee8448"
+licence = "GPL-2.0-only"
+provides = "acf-clamsmtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/acf-clamsmtp-0.6.0-r5.apk"
+version = "0.6.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["clamsmtp", "1.10.0-r18"]]

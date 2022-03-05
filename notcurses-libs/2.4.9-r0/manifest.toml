@@ -1,0 +1,15 @@
+checksum = "6d3c7c0528bf99522c62c055a81db3ee07abd2b01f8ae1844fcf9f03fff3ea66"
+licence = "Apache-2.0"
+provides = "notcurses-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/notcurses-libs-2.4.9-r0.apk"
+version = "2.4.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "10.3.1"], ["libunistring", "0.9.10-r1"], ["zlib", "1.2.11-r3"]]

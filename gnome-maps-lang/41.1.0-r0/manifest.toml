@@ -1,0 +1,15 @@
+checksum = "20b0c8e9e46b5424caee555bd475c840980067ff416dbb56068ef81c98fddf82"
+licence = "GPL-2.0-or-later"
+provides = "gnome-maps-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-maps-lang-41.1-r0.apk"
+version = "41.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gfbgraph", "0.2.5-r0"], ["gjs", "1.70.1-r0"], ["geoclue", "2.5.7-r3"]]

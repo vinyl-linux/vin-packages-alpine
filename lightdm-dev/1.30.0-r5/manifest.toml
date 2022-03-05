@@ -1,0 +1,15 @@
+checksum = "ebae4b556fb384a25eb3bf52a23e6c63f2cf3c29757d8731109b37a3b607ace5"
+licence = "GPL-3.0-or-later"
+provides = "lightdm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lightdm-dev-1.30.0-r5.apk"
+version = "1.30.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lightdm-qt5", "1.30.0-r5"], ["lightdm", "1.30.0-r5"], ["glib-dev", "2.70.1-r0"], ["libxklavier-dev", "5.4.0-r5"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

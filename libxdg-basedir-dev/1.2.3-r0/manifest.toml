@@ -1,0 +1,15 @@
+checksum = "fafc2027852fe3aa840757b13732e80470ceae5126c34c1e7d281368885819b5"
+licence = "MIT"
+provides = "libxdg-basedir-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libxdg-basedir-dev-1.2.3-r0.apk"
+version = "1.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxdg-basedir", "1.2.3-r0"], ["pkgconf", "1.8.0-r0"]]

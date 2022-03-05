@@ -1,0 +1,15 @@
+checksum = "8176b6026481fe0b2e1ac589ffcdb1477a9ceeab2d9a8f0d2ee440117a5bd9e9"
+licence = "Zlib"
+provides = "girara-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/girara-dev-0.3.6-r0.apk"
+version = "0.3.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["girara", "0.3.6-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["json-c-dev", "0.15.0-r1"], ["pango-dev", "1.48.10-r0"], ["pkgconf", "1.8.0-r0"]]

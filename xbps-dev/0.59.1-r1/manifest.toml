@@ -1,0 +1,15 @@
+checksum = "4e7dd116b240dff45d70d093d522f2f266e4e0a7e78c2ce403dafdf35b4c7936"
+licence = "BSD-2-Clause AND (BSD-3-Clause AND ISC AND BSD-2-Clause-NetBSD)"
+provides = "xbps-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xbps-dev-0.59.1-r1.apk"
+version = "0.59.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["xbps", "0.59.1-r1"]]

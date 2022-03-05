@@ -1,0 +1,15 @@
+checksum = "c6e9c07ef1b8e0311a87ca14bddc630baa139c27eae992754c21c73f9cde18e5"
+licence = "MPL-2.0"
+provides = "libstaroffice-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libstaroffice-dev-0.0.7-r2.apk"
+version = "0.0.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["boost-dev", "1.77.0-r1"], ["libstaroffice", "0.0.7-r2"], ["librevenge-dev", "0.0.4-r6"], ["pkgconf", "1.8.0-r0"]]

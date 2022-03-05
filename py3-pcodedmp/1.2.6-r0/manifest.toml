@@ -1,0 +1,15 @@
+checksum = "494172bf72b7397005c9f788a853048b180cf147cb4ef452a3e0c9f94d8b8c0f"
+licence = "GPL-3.0-only"
+provides = "py3-pcodedmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pcodedmp-1.2.6-r0.apk"
+version = "1.2.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

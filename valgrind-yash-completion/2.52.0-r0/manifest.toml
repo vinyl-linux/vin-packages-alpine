@@ -1,0 +1,15 @@
+checksum = "e52af6c813ed400957366927710cbdf7e35ef00298b2faf97897a5acb3b63a68"
+licence = "GPL-2.0-or-later"
+provides = "valgrind-yash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/valgrind-yash-completion-2.52-r0.apk"
+version = "2.52.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-completion", "2.52.0-r0"]]

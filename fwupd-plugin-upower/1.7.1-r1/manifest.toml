@@ -1,0 +1,15 @@
+checksum = "087b021961af3d174d38e953785261e5ff420cce4187da61a424452891e0c518"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-upower"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-upower-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"]]

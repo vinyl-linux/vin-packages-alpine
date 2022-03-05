@@ -1,0 +1,15 @@
+checksum = "dc8fbdc30539e746608bca4c6332980b0ffa46d9cedc6e7875be0deaa0bab103"
+licence = "MIT"
+provides = "go-task-task"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/go-task-task-3.9.0-r1.apk"
+version = "3.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["go-task", "3.9.0-r1"]]

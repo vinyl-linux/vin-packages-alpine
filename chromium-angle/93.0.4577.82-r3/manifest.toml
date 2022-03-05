@@ -1,0 +1,15 @@
+checksum = "7d3043813300314aab763785643a3b56a260f053236dce0541447e996ce166a2"
+licence = "BSD-3-Clause"
+provides = "chromium-angle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chromium-angle-93.0.4577.82-r3.apk"
+version = "93.0.4577.82-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["libxcb", "1.14.0-r2"]]

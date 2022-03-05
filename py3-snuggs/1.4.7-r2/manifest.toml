@@ -1,0 +1,15 @@
+checksum = "a1e2bee783645561b2b83d5caf164b43cb81234d4f7f1c1c8c78c1080b15e841"
+licence = "MIT"
+provides = "py3-snuggs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-snuggs-1.4.7-r2.apk"
+version = "1.4.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-numpy", "1.21.4-r0"], ["py3-parsing", "2.4.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "c276770384f312952a66f1f73f93149d73df49cb9167de0b987e88a4dbd134fd"
+licence = "MIT"
+provides = "py3-pynamecheap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pynamecheap-0.0.3-r1.apk"
+version = "0.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"]]

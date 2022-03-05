@@ -1,0 +1,15 @@
+checksum = "a064aabf160ed04c97e4de940cef058ca3c11fe15cd97d699344f57fcb655d2d"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "gnome-settings-daemon-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-settings-daemon-lang-41.0-r0.apk"
+version = "41.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pulseaudio", "15.0.0-r2"]]

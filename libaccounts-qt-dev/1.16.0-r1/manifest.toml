@@ -1,0 +1,15 @@
+checksum = "06a06bfccf84560b4995bd6b19a25ec436177b396539f8ad26723a06649d7511"
+licence = "LGPL-2.1-or-later"
+provides = "libaccounts-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libaccounts-qt-dev-1.16-r1.apk"
+version = "1.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaccounts-glib-dev", "1.25.0-r1"], ["libaccounts-qt", "1.16.0-r1"], ["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"]]

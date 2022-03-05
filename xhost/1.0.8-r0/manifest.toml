@@ -1,0 +1,15 @@
+checksum = "7d2457e2842fe55467d39c3ac243e269d4b8421fe6ced849ef1b02a98d9d0dbf"
+licence = "MIT"
+provides = "xhost"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xhost-1.0.8-r0.apk"
+version = "1.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxmu", "1.1.3-r0"], ["musl", "1.2.2-r7"]]

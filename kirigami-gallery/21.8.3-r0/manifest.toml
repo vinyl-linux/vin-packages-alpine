@@ -1,0 +1,15 @@
+checksum = "348223e6c4419510462b5d1f90099fcbb4f1bf6b9d0dc339a884f1ae8e7d718a"
+licence = "LGPL-2.0-or-later"
+provides = "kirigami-gallery"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kirigami-gallery-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

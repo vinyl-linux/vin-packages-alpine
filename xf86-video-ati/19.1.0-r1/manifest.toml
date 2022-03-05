@@ -1,0 +1,15 @@
+checksum = "3ffe3ba9e1d3c315f39015a5966802a3a4dda41429c0cc8657b7ee6f781cc3dc"
+licence = "MIT"
+provides = "xf86-video-ati"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-ati-19.1.0-r1.apk"
+version = "19.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dri-ati", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["mesa-gbm", "21.2.6-r0"], ["libpciaccess", "0.16.0-r0"], ["eudev-libs", "3.2.11"]]

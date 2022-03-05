@@ -1,0 +1,15 @@
+checksum = "94f7add40b356949bb8ab3bc7dd12577bef46e9a5dde31b2d55366d6736117aa"
+licence = "MPL2"
+provides = "kea-admin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-admin-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kea-common", "2.0.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "7e94b692106305cca3187f9ee5f4c098cce9440f81b5b5e975cca66545f376dd"
+licence = "(LGPL-2.1-only OR LGPL-3.0-only) AND LGPL-2.1-only AND ((LGPL-2.1-only WITH Nokia-Qt-exception-1.1) OR (GPL-3.0-only WITH Nokia-Qt-exception-1.1))"
+provides = "plasma-integration-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-integration-lang-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-noto", "0.0.0"], ["qqc2-desktop-style", "5.88.0-r0"], ["ttf-hack", "3.3.0-r1"]]

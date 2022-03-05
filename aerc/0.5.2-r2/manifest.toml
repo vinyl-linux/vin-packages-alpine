@@ -1,0 +1,15 @@
+checksum = "c676fe381f110694817cffd96a230e7162fb130491b41d81f992a49bf1f8a6f1"
+licence = "MIT"
+provides = "aerc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/aerc-0.5.2-r2.apk"
+version = "0.5.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["less", "590.0.0-r0"], ["ncurses", "6.3.0"], ["musl", "1.2.2-r7"]]

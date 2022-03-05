@@ -1,0 +1,15 @@
+checksum = "740f6cd9e220201c063e717aabfa8caeca031fc1fcaadc4e2bf7cbea8c79a810"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plymouth-dev-0.9.5-r0.apk"
+version = "0.9.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pango-dev", "1.48.10-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libpng-dev", "1.6.37-r1"], ["libdrm-dev", "2.4.109-r0"], ["eudev-dev", "3.2.11"], ["pkgconf", "1.8.0-r0"], ["plymouth", "0.9.5-r0"]]

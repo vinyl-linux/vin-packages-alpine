@@ -1,0 +1,15 @@
+checksum = "e6132b30cce14ff91bfcd08755cf9603207107952e91ec17336f2670eaabca24"
+licence = "MPL-2.0"
+provides = "libqxp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libqxp-dev-0.0.2-r5.apk"
+version = "0.0.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libqxp", "0.0.2-r5"], ["librevenge-dev", "0.0.4-r6"], ["pkgconf", "1.8.0-r0"]]

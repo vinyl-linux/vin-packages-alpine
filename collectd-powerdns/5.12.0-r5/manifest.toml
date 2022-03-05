@@ -1,0 +1,15 @@
+checksum = "715f54ca07c0aa349ea33917a05ff83dbce123eb3ec23d732a732c5ff82bcc59"
+licence = "GPL-2.0-or-later"
+provides = "collectd-powerdns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-powerdns-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"]]

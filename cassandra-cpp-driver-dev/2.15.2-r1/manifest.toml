@@ -1,0 +1,15 @@
+checksum = "64166801d9514231209c117b7bb7ca50e41523ac93326a22afe94061c1b43f43"
+licence = "Apache-2.0"
+provides = "cassandra-cpp-driver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cassandra-cpp-driver-dev-2.15.2-r1.apk"
+version = "2.15.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cassandra-cpp-driver", "2.15.2-r1"], ["libuv-dev", "1.42.0-r0"], ["openssl-dev", "1.1.1-l-r8"], ["pkgconf", "1.8.0-r0"]]

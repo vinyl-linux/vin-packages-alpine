@@ -1,0 +1,15 @@
+checksum = "5a720acab21cab598930f4fd3836dd1849143fcc9f27bda1a0d70cfe77e19f0f"
+licence = "Perl"
+provides = "perl-sys-meminfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-sys-meminfo-0.99-r5.apk"
+version = "0.99.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

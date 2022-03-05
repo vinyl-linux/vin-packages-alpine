@@ -1,0 +1,15 @@
+checksum = "94f80e686b1d5054e595c872dbb245896c2c79dbc1b97971ff1d78372c1e6f27"
+licence = "GPL-2.0-or-later"
+provides = "recode-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/recode-dev-3.7.9-r0.apk"
+version = "3.7.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["recode", "3.7.9-r0"]]

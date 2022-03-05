@@ -1,0 +1,15 @@
+checksum = "fd676e9ebfb3da671df0bc4732bd0bcc80f4c5342f77d3a0be4273c3ed4cab52"
+licence = "BSD-3-Clause"
+provides = "py3-scikit-learn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-scikit-learn-0.24.0-r1.apk"
+version = "0.24.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-numpy", "1.21.4-r0"], ["py3-scipy", "1.7.2-r0"], ["py3-joblib", "1.0.1-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libgomp", "10.3.1"], ["libstdc++", "10.3.1"]]

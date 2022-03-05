@@ -1,0 +1,15 @@
+checksum = "bf8337759fbbb737b96085845f047b7d88173ad2e3e0ba452d771019a428dc97"
+licence = "GPL-2.0-only"
+provides = "ofono-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ofono-dev-1.33-r0.apk"
+version = "1.33.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-dev", "1.12.20-r4"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

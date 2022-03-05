@@ -1,0 +1,15 @@
+checksum = "5017eb262479291465a2a38e1f5694e198f4824ede00411bea78788881ab419a"
+licence = "Apache-2.0"
+provides = "unit-ruby"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unit-ruby-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["unit", "1.26.1-r0"], ["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

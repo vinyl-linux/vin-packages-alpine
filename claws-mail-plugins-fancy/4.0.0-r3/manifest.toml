@@ -1,0 +1,15 @@
+checksum = "e81fe57334d2b2e1dee11e82aafe81e0fbaac817ddfa0a9df19db350a4eec6a3"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-fancy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/claws-mail-plugins-fancy-4.0.0-r3.apk"
+version = "4.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.0.0-r3"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["libintl", "0.21.0-r0"], ["webkit2gtk", "2.34.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "dea6339f8d31ce3e22d9aa9dd2436de590084fc2adc6d48624a2eb3de4bef698"
+licence = "ISC"
+provides = "vis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vis-0.7-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3-lpeg", "1.0.2-r2"], ["libacl", "2.2.53-r0"], ["musl", "1.2.2-r7"], ["lua5.3-libs", "5.3.6-r1"], ["ncurses-libs", "6.3.0"], ["libtermkey", "0.22.0-r0"]]

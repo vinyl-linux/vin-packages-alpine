@@ -1,0 +1,15 @@
+checksum = "52f065fc6fa11b68efd016c4bd5dc7f8b3b33ed0c4dc75ec7b8fb5761322ee24"
+licence = "GPL-3.0-or-later AND BSD-2-Clause"
+provides = "kalendar-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kalendar-lang-0.2.1-r0.apk"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "21.8.3-r1"], ["kirigami2", "5.88.0-r0"], ["qt5-qtlocation", "5.15.3"]]

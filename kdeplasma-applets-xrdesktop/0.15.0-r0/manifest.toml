@@ -1,0 +1,15 @@
+checksum = "e14aeb98c94f95e750da14a0eb706f49aa8a0b40dda9cbf12f75863b0673e72e"
+licence = "MIT"
+provides = "kdeplasma-applets-xrdesktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdeplasma-applets-xrdesktop-0.15.0-r0.apk"
+version = "0.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwin-effect-xrdesktop", "0.15.1-r1"], ["qt5-qtquickcontrols", "5.15.3"]]

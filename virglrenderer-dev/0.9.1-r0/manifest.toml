@@ -1,0 +1,15 @@
+checksum = "7686f230c8a030812caa0666ee70aa5ee447adf0ce60ac54906e9e1c1e1b7519"
+licence = "MIT"
+provides = "virglrenderer-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/virglrenderer-dev-0.9.1-r0.apk"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["virglrenderer", "0.9.1-r0"]]

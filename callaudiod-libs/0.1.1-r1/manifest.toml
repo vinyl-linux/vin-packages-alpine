@@ -1,0 +1,15 @@
+checksum = "520c126235ea051f14406c715ee01085ede3d383c54b957883a6fc3b8d873731"
+licence = "LGPL-3.0-or-later"
+provides = "callaudiod-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/callaudiod-libs-0.1.1-r1.apk"
+version = "0.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

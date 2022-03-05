@@ -1,0 +1,15 @@
+checksum = "662f3c55d6cf1f7495851776ec75822cd3d15b71690013dadba5bbd238807584"
+licence = "GPL-2.0-or-later"
+provides = "mauikit-texteditor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mauikit-texteditor-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["syntax-highlighting", "5.88.0-r0"], ["mauikit", "2.1.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

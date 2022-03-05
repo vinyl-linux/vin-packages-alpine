@@ -1,0 +1,15 @@
+checksum = "b3ed2df69cbe7603662cd8b36c373d73f614f3df5803b0c1be1e6b77d546afd9"
+licence = "MIT"
+provides = "xvfb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xvfb-21.1.2-r0.apk"
+version = "21.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-misc-misc", "1.1.2-r1"], ["font-cursor-misc", "1.0.3-r1"], ["xkeyboard-config", "2.34.0-r0"], ["xkbcomp", "1.4.5-r0"], ["xinit", "1.4.1-r0"], ["xorg-server-common", "21.1.2-r0"], ["mesa-gl", "21.2.6-r0"], ["libxau", "1.0.9-r0"], ["libxdmcp", "1.1.3-r0"], ["libxfont2", "2.0.5-r0"], ["musl", "1.2.2-r7"], ["nettle", "3.7.3-r0"], ["pixman", "0.40.0-r3"]]

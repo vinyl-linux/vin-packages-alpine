@@ -1,0 +1,15 @@
+checksum = "fafdcfce006a1b24a6e395293e99835f4df3f6199f2b40e3ca06171c50de8128"
+licence = "GPL-2.0-or-later"
+provides = "linuxconsoletools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/linuxconsoletools-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.0.16-r4"], ["musl", "1.2.2-r7"]]

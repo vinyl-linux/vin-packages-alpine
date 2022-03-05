@@ -1,0 +1,15 @@
+checksum = "f1cc78801be2cd2c304047be2d7c1862016d39e4ddb4ba4d6be9fef2a5fdf3ce"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-fstab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calamares-mod-fstab-3.2.45-r0.apk"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.205.0-r0"], ["musl-locales", "0.0.0"], ["os-prober", "1.79.0-r0"]]

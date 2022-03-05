@@ -1,0 +1,15 @@
+checksum = "5872a4dc3a0447682a0c106b8ef4c4e8a26c5cbcad2625ae9b9d5687a6f8a5d8"
+licence = "GPL-3.0-or-later"
+provides = "font-manager-nemo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-manager-nemo-0.8.8-r0.apk"
+version = "0.8.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["font-manager-common", "0.8.8-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["nemo", "4.8.6-r0"]]

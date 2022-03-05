@@ -1,0 +1,15 @@
+checksum = "3c712ca4d6ecc604a033288a8b9bc9e88d1ddd4371766b309b1da61ad72aafa2"
+licence = "GPL"
+provides = "fcron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fcron-3.2.1-r2.apk"
+version = "3.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["readline", "8.1.1-r0"]]

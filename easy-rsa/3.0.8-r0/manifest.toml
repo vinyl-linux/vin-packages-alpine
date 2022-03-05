@@ -1,0 +1,15 @@
+checksum = "5923b1a89451be7b88490c3af20303565ab498f90b5d655603fd743960da4286"
+licence = "GPL-2.0-only"
+provides = "easy-rsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/easy-rsa-3.0.8-r0.apk"
+version = "3.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl", "1.1.1-l-r8"]]

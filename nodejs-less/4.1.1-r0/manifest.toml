@@ -1,0 +1,15 @@
+checksum = "0973317a94fb3209ebb57979cc0f8a8c0292135109649933372d489c02551f56"
+licence = "AGPL-3.0-or-later"
+provides = "nodejs-less"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nodejs-less-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nodejs-current", "17.6.0-r0"]]

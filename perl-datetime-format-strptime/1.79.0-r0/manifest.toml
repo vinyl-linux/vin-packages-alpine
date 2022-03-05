@@ -1,0 +1,15 @@
+checksum = "3f04fda977661631fa156371112a7e6338ef5c33441d4bc67a965ce92df9ea1d"
+licence = "Artistic-2.0"
+provides = "perl-datetime-format-strptime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-datetime-format-strptime-1.79-r0.apk"
+version = "1.79.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-params-validate", "1.30.0-r1"], ["perl-datetime", "1.54.0-r1"], ["perl-try-tiny", "0.30.0-r3"], ["perl-package-deprecationmanager", "0.17.0-r2"], ["perl-datetime-timezone", "2.51.0-r0"], ["perl-datetime-locale", "1.33.0-r0"]]

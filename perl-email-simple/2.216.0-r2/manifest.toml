@@ -1,0 +1,15 @@
+checksum = "ffde8e769fd416be60bea88ff5e765c9e557cbd55e4edd9d218ae8ddadfc4aca"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-email-simple"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-email-simple-2.216-r2.apk"
+version = "2.216.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-email-date-format", "1.5.0-r2"]]

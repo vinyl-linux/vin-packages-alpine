@@ -1,0 +1,15 @@
+checksum = "884f53fd270ac8ecec9948291469e6b35463d60481ee978db560c23cf9f636a7"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtscxml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt6-qtscxml-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.2.1-r2"], ["qt6-qtbase-x11", "6.2.1-r2"], ["qt6-qtdeclarative", "6.2.1-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

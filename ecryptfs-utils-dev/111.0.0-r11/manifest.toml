@@ -1,0 +1,15 @@
+checksum = "4e0896177e17d3bd0671ef9cf5c348b564b0eb802b7a8f760e0f90d154844935"
+licence = "GPL-2.0-or-later"
+provides = "ecryptfs-utils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ecryptfs-utils-dev-111-r11.apk"
+version = "111.0.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["keyutils-dev", "1.6.3-r0"], ["linux-pam-dev", "1.5.2-r0"], ["nss-dev", "3.72.1-r0"], ["linux-headers", "5.10.41-r0"], ["ecryptfs-utils", "111.0.0-r11"], ["pkgconf", "1.8.0-r0"]]

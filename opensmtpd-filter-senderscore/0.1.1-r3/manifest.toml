@@ -1,0 +1,15 @@
+checksum = "df6b7ac4f88cb10b57bf586cb3eabf330cb42d379df25821acd16de05acead3e"
+licence = "ISC"
+provides = "opensmtpd-filter-senderscore"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/opensmtpd-filter-senderscore-0.1.1-r3.apk"
+version = "0.1.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opensmtpd", "6.8.0-p2-r2"], ["musl", "1.2.2-r7"]]

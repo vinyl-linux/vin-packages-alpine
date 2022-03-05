@@ -1,0 +1,15 @@
+checksum = "1cd978296b36baa04bbba16399cafdd220ff5d4b8af5227d42abccb760d4648c"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND GFDL-1.2-only"
+provides = "knotes-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/knotes-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "21.8.3-r1"]]

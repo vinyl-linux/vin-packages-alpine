@@ -1,0 +1,15 @@
+checksum = "eba8c4c714014ddf5a454499b64d7c18a81cc013056db26b26041f6f1b770578"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "krunner-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/krunner-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.88.0-r0"], ["kcoreaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kio-dev", "5.88.0-r0"], ["kservice-dev", "5.88.0-r0"], ["plasma-framework-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["threadweaver-dev", "5.88.0-r0"], ["krunner", "5.88.0-r0"]]

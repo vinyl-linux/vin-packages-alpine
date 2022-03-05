@@ -1,0 +1,15 @@
+checksum = "1f561ed136d03bb955ef31eb4b7390d9b9c4cfc17a584a529ae5572221cb54a6"
+licence = "BSD-3-Clause"
+provides = "py3-pronouncing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pronouncing-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cmudict", "1.0.2-r0"], ["python3", "3.9.7-r4"]]

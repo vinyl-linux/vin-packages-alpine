@@ -1,0 +1,15 @@
+checksum = "e68ac88760fe7261ee78918c90c003dd6d50d13ce7b8e03fa2c90aa361a5e2b2"
+licence = "BSD-2-Clause"
+provides = "libcmark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcmark-0.30.2-r0.apk"
+version = "0.30.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

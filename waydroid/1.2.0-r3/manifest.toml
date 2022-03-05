@@ -1,0 +1,15 @@
+checksum = "dd6ee9abe092f96d65c2c8302065505952e7f069a298c8c4b335d4d42f88c1eb"
+licence = "GPL-3.0-only"
+provides = "waydroid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/waydroid-1.2.0-r3.apk"
+version = "1.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gbinder-python", "0.0.0"], ["lxc", "4.0.11-r0"], ["py3-gobject3", "3.42.0-r1"], ["py3-pyclip", "0.5.4-r1"], ["python3", "3.9.7-r4"], ["busybox", "1.34.1-r4"]]

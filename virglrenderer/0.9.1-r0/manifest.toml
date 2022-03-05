@@ -1,0 +1,15 @@
+checksum = "1a799a34dddc6bf70789ef8d4f5ac0a1d32c3f07bbccd977d20e8b1a759d8769"
+licence = "MIT"
+provides = "virglrenderer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/virglrenderer-0.9.1-r0.apk"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["libepoxy", "1.5.9-r0"], ["mesa-gbm", "21.2.6-r0"]]

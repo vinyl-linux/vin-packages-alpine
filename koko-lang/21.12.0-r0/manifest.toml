@@ -1,0 +1,15 @@
+checksum = "954a5d98abd7a6b13c26c1005a2156de92b1a5788f448afc4a131cd81fc41642"
+licence = "LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-GPL"
+provides = "koko-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/koko-lang-21.12-r0.apk"
+version = "21.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdeclarative", "5.88.0-r0"], ["kirigami2", "5.88.0-r0"], ["kquickimageeditor", "0.2.0-r0"], ["purpose", "5.88.0-r0"], ["qt5-qtbase-sqlite", "5.15.3"]]

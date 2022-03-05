@@ -1,0 +1,15 @@
+checksum = "e68572d4ddcedadc28994e6defc6e4a3bb784fb4cce21dc9cec6c7b8efd5b134"
+licence = "MIT"
+provides = "xwininfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xwininfo-1.1.5-r0.apk"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libxcb", "1.14.0-r2"]]

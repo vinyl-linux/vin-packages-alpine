@@ -1,0 +1,15 @@
+checksum = "77b1c640709ea9e153f7c6fa2c51144ee7e22d8d63a6361406d5314a43555f7a"
+licence = "GPL-3.0-only OR BSD-3-Clause"
+provides = "hidapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hidapi-0.11.0-r0.apk"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["eudev-libs", "3.2.11"], ["libusb", "1.0.24-r3"]]

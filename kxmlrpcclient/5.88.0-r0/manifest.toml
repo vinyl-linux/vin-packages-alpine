@@ -1,0 +1,15 @@
+checksum = "14843d9bb039118bcd439ee44881ff0771244abd798b78b91f205defa26ea837"
+licence = "BSD-2-Clause"
+provides = "kxmlrpcclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kxmlrpcclient-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

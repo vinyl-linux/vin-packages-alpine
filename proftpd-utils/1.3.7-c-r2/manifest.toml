@@ -1,0 +1,15 @@
+checksum = "e39d3aeeed837db9664d9cf23eab20cde1395d8db378c43f2d3fa0a8a067d5c1"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/proftpd-utils-1.3.7c-r2.apk"
+version = "1.3.7-c-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-c-r2"], ["perl-mail-sendmail", "0.80.0-r4"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "ede58c3e701b69594b3942a7a04b78a20036728480fdeb501cf467ed486b19fb"
+licence = "Apache-2.0"
+provides = "php7-pecl-mongodb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-mongodb-1.11.1-r0.apk"
+version = "1.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-json", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["icu-libs", "69.1.0-r1"], ["libsasl", "2.1.27-r14"], ["snappy", "1.1.9-r1"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

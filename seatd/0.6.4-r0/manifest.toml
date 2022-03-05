@@ -1,0 +1,15 @@
+checksum = "458bb32184c13d48ca80ed7cebc5265e79bce30276eb10a03d91ea4a4817ff6d"
+licence = "MIT"
+provides = "seatd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/seatd-0.6.4-r0.apk"
+version = "0.6.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

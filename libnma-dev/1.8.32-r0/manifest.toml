@@ -1,0 +1,15 @@
+checksum = "726be7cd410773555245cb322b2a1daa7685bdc3ff99494b824df81a392104ad"
+licence = "LGPL-2.1-or-later"
+provides = "libnma-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libnma-dev-1.8.32-r0.apk"
+version = "1.8.32-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnma", "1.8.32-r0"], ["networkmanager-dev", "1.32.12-r1"], ["pkgconf", "1.8.0-r0"]]

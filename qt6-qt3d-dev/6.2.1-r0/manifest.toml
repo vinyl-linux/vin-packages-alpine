@@ -1,0 +1,15 @@
+checksum = "42efb0fa61a3e171861ecd8744f38dec12b7477bc1d2f93c288ba8792407bffc"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qt3d-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt6-qt3d-dev-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase-dev", "6.2.1-r2"], ["qt6-qtdeclarative-dev", "6.2.1-r0"], ["qt6-qtshadertools-dev", "6.2.1-r0"], ["qt6-qt3d", "6.2.1-r0"]]

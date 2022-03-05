@@ -1,0 +1,15 @@
+checksum = "102ee106d1e9f56969dd2ce068639eef7d37775aa2f2ec39926464d08cace3c7"
+licence = "GPL-2.0"
+provides = "fastjar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fastjar-0.98-r3.apk"
+version = "0.98.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

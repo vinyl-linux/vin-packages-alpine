@@ -1,0 +1,15 @@
+checksum = "894126cb6fb1f9567b020743f4b9189fac4419abd4c287fdb7a78d3c03fafc64"
+licence = "Apache-2.0"
+provides = "libbson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libbson-1.16.2-r1.apk"
+version = "1.16.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "2ecfb14ff07ab2be2b8602dc4a56f241673393502c6144a0c527969b41991f0a"
+licence = "BSD-2-clause BSD-3-clause GPL-2.0-or-later"
+provides = "ipmiutil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ipmiutil-3.1.7-r1.apk"
+version = "3.1.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

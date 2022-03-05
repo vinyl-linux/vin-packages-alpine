@@ -1,0 +1,15 @@
+checksum = "1ff4d6846bf40506f918e809102d58b58ca4c659b0f64f4110d0b7f37fd414a2"
+licence = "GPL-3.0-or-later"
+provides = "ansible"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ansible-4.8.0-r0.apk"
+version = "4.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["ansible-core", "2.11.6-r1"]]

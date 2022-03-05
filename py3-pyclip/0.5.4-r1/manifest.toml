@@ -1,0 +1,15 @@
+checksum = "21e1dd78832bd62c696b08bb92b32011b40190f18413b963c3b9d39b2ea55b52"
+licence = "Apache-2.0"
+provides = "py3-pyclip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyclip-0.5.4-r1.apk"
+version = "0.5.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xclip", "0.13.0-r2"], ["python3", "3.9.7-r4"]]

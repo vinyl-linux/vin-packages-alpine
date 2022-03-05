@@ -1,0 +1,15 @@
+checksum = "9a0d46d45a05023cde454c211532bd6441d0b8dca85a54dcc9c99985eb9f977f"
+licence = "GPL-2.0-or-later"
+provides = "tsocks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tsocks-1.8_beta5-r0.apk"
+version = "1.8.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

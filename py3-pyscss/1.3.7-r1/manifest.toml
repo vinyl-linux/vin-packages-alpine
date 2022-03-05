@@ -1,0 +1,15 @@
+checksum = "43000308dfdc16b9a547cde6ad5eb2dd16d434b5a719e006b79341a045b988ac"
+licence = "MIT"
+provides = "py3-pyscss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyscss-1.3.7-r1.apk"
+version = "1.3.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["pcre", "8.45.0-r1"]]

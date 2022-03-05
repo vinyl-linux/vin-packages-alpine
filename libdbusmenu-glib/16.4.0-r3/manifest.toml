@@ -1,0 +1,15 @@
+checksum = "b131a8602a583f15d033bf4579d47306aca3473a476f843257c07130d647d43c"
+licence = "GPL-3.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later"
+provides = "libdbusmenu-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libdbusmenu-glib-16.04.0-r3.apk"
+version = "16.4.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["json-glib", "1.6.6-r0"]]

@@ -1,0 +1,15 @@
+checksum = "aa146508969d3edc541ba6237a44763a54410a7693c8961e08748488744dca66"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-activity"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-activity-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"]]

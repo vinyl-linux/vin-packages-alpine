@@ -1,0 +1,15 @@
+checksum = "418cb93db7341700fc58234e51345af3412fb0f33733832f8b965bde30919bdf"
+licence = "MIT"
+provides = "black-hole-solver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/black-hole-solver-1.10.1-r0.apk"
+version = "1.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-env-path", "0.19.0-r3"], ["perl-path-tiny", "0.120.0-r0"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "58c6bc6dcff1589ee356e1e3dedd4dae7715ed3238879d466f8aa8b8c8ae881e"
+licence = "GPL-3.0-or-later"
+provides = "flatseal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/flatseal-1.7.4-r0.apk"
+version = "1.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["appstream-glib", "0.7.18-r1"], ["gjs", "1.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["libhandy1", "1.5.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1a1b2ea9ea5d7b82aca69669aa4e7b1427c645ee784d653149590ed039463520"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-dev-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fwupd", "1.7.1-r1"], ["glib-dev", "2.70.1-r0"], ["libgudev-dev", "237.0.0-r0"], ["libgusb-dev", "0.3.8-r0"], ["libjcat-dev", "0.1.8-r0"], ["json-glib-dev", "1.6.6-r0"], ["libarchive-dev", "3.6.0-r0"], ["curl-dev", "7.80.0-r0"], ["libgcab-dev", "1.4.0-r2"], ["libxmlb-dev", "0.2.1-r1"], ["pkgconf", "1.8.0-r0"]]

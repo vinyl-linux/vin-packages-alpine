@@ -1,0 +1,15 @@
+checksum = "58ec23d2c6ae8241c03bb0250753902f181a931fb82f931fbe1b815bf1665296"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-net-iptrie"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-net-iptrie-0.7-r4.apk"
+version = "0.7.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-netaddr-ip", "4.79.0-r6"], ["perl-module-build", "0.4231.0-r1"]]

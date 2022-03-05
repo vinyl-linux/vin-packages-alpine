@@ -1,0 +1,15 @@
+checksum = "7a05cd30d8461c74a16b2e2fa39aaa173c666605de8a0e80bc5ac6aaf06d0780"
+licence = "MIT"
+provides = "xrandr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xrandr-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxrandr", "1.5.2-r1"], ["musl", "1.2.2-r7"]]

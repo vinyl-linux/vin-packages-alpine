@@ -1,0 +1,15 @@
+checksum = "7d7690b6c55b6a77f55efd6e4cde9d245ba817ee9706ea224adb8403be22b2d9"
+licence = "BSD-3-Clause"
+provides = "libslirp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libslirp-dev-4.6.1-r0.apk"
+version = "4.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libslirp", "4.6.1-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

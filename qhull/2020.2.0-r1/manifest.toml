@@ -1,0 +1,15 @@
+checksum = "64aaf519902aee796244ddd0efc230ba94cafd08f27658ce741e7a8a9c4d7a5a"
+licence = "custom"
+provides = "qhull"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qhull-2020.2-r1.apk"
+version = "2020.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

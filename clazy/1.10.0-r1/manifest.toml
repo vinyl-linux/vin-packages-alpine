@@ -1,0 +1,15 @@
+checksum = "667d68ef2378452b932b28395a7489367ef57ddee1ec7eb65df468c402e6c0bd"
+licence = "LGPL-2.0-only"
+provides = "clazy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/clazy-1.10-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libstdc++", "10.3.1"]]

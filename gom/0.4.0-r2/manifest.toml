@@ -1,0 +1,15 @@
+checksum = "f379a37f006510726c617a7679d41b4142ede9e5146e8e4c70773e7e73436d6a"
+licence = "LGPL-2.1-or-later"
+provides = "gom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gom-0.4-r2.apk"
+version = "0.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["sqlite-libs", "3.36.0-r0"]]

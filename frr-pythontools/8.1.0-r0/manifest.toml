@@ -1,0 +1,15 @@
+checksum = "6cba1a38c25b63424a1887cc31009b27bf9d10412672479878a2387a66cf8fa0"
+licence = "GPL-2.0-or-later"
+provides = "frr-pythontools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/frr-pythontools-8.1-r0.apk"
+version = "8.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-ipaddr", "2.2.0-r6"]]

@@ -1,0 +1,15 @@
+checksum = "38359f8fc9f217d5c97bf86e2ff522d9dd0155dd5a115a1856eeff2ce46c379d"
+licence = "GPL-2.0-or-later"
+provides = "py3-distutils-extra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-distutils-extra-2.45-r2.apk"
+version = "2.45.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

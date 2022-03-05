@@ -1,0 +1,15 @@
+checksum = "c0b7f6e46fb780dc8eda3b055b32428e69ecf3da3afa9855ad3f054cd5db3f3d"
+licence = "LGPL-2.0-only OR LGPL-3.0-only"
+provides = "kontactinterface"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kontactinterface-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["kparts", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

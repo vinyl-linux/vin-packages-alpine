@@ -1,0 +1,15 @@
+checksum = "10494b48c385e4ec8e70c35571bfc71f6591a886ce84c9ec76b0300dc30975f0"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-sqlite3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-backend-sqlite3-4.5.3-r0.apk"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.5.3-r0"], ["sqlite", "3.36.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

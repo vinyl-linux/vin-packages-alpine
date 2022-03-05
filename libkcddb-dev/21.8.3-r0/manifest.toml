@@ -1,0 +1,15 @@
+checksum = "974560c6c4d27f608ebc2c4045671c44ce76fd35da4e7a0c40f67a338e80379d"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+provides = "libkcddb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libkcddb-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libkcddb", "21.8.3-r0"]]

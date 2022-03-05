@@ -1,0 +1,15 @@
+checksum = "5649d11477ee9effbd8027bfe55e94e34ac1fbd112380338244ba6d715775884"
+licence = "Apache-2.0"
+provides = "llvm-libunwind-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/llvm-libunwind-dev-12.0.1-r1.apk"
+version = "12.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm-libunwind", "12.0.1-r1"]]

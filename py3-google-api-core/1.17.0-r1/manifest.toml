@@ -1,0 +1,15 @@
+checksum = "98297e64f2c0cf0fd6e0d5d5f98de5c2314bad38314b702c30e9cc23505c8509"
+licence = "Apache-2.0"
+provides = "py3-google-api-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-google-api-core-1.17.0-r1.apk"
+version = "1.17.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-setuptools", "52.0.0-r4"], ["py3-googleapis-common-protos", "1.52.0-r1"], ["py3-protobuf", "3.15.7-r0"], ["py3-tz", "2021.1.0-r1"], ["py3-requests", "2.26.0-r1"]]

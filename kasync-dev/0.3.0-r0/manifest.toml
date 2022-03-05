@@ -1,0 +1,15 @@
+checksum = "e8cdb9d8db4182835312ac923f038774b28746a0338b63fbb38c744c809bb296"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+provides = "kasync-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kasync-dev-0.3.0-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["kasync", "0.3.0-r0"]]

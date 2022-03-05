@@ -1,0 +1,15 @@
+checksum = "8c85a75071c8c9e90598dd35989d93904faac5b2e1efc28aa38b90bd1001dcb5"
+licence = "GPL-3.0-or-later"
+provides = "mingw-w64-binutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mingw-w64-binutils-2.37-r1.apk"
+version = "2.37.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

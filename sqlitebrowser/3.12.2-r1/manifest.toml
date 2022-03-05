@@ -1,0 +1,15 @@
+checksum = "8fa90dee3f0ddad233dd72c4ec968e39141c69a3fc0286ec04f6ab61c01c0869"
+licence = "GPL-3.0-only"
+provides = "sqlitebrowser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sqlitebrowser-3.12.2-r1.apk"
+version = "3.12.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["qscintilla", "2.11.6-r0"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"]]

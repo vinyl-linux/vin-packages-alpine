@@ -1,0 +1,15 @@
+checksum = "bdf62d505ec2e280549a2eea414924057a6479c383f3b309ababffba4b8b5702"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-automark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/geany-plugins-automark-1.38-r0.apk"
+version = "1.38.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["geany", "1.38.0-r0"], ["glib", "2.70.1-r0"]]

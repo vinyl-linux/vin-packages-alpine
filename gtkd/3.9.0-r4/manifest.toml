@@ -1,0 +1,15 @@
+checksum = "b912c82a9aac35c79e500e0c64ed9439f38f35025c13e5d563a1c28730b760c0"
+licence = "LGPL-3.0-or-later"
+provides = "gtkd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtkd-3.9.0-r4.apk"
+version = "3.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ldc-runtime", "1.28.0-r0"], ["llvm-libunwind", "12.0.1-r1"]]

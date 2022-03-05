@@ -1,0 +1,15 @@
+checksum = "ca3d83a534fa44d5c6d6fb4d8d9f37a24591f95b486757cfd106fb465b4a891b"
+licence = "Zlib"
+provides = "ois-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ois-dev-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ois", "1.5.1-r0"], ["pkgconf", "1.8.0-r0"]]

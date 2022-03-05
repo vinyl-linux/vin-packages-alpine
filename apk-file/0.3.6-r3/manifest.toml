@@ -1,0 +1,15 @@
+checksum = "15f27629dbf8b90d130b95681a1c3ee6a3fab91c2120d9a7022b49414534476c"
+licence = "MIT"
+provides = "apk-file"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/apk-file-0.3.6-r3.apk"
+version = "0.3.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

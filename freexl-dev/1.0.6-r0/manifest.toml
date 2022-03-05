@@ -1,0 +1,15 @@
+checksum = "054a0142eb5464e258070fd567b8ee937087b3f4affdd9d2935ecf63782b8fa6"
+licence = "MPL-1.1 GPL-2.0-only LGPL-2.1-only"
+provides = "freexl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/freexl-dev-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freexl", "1.0.6-r0"], ["pkgconf", "1.8.0-r0"]]

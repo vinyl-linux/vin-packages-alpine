@@ -1,0 +1,15 @@
+checksum = "820c75d4c539f04f0d3863d2183bb24c4c1a6956ebc66e79ef8faaf1b80e2555"
+licence = "LGPL-2.1-or-later"
+provides = "libplacebo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libplacebo-dev-4.157.0-r0.apk"
+version = "4.157.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libplacebo", "4.157.0-r0"], ["libepoxy-dev", "1.5.9-r0"], ["lcms2-dev", "2.12.0-r1"], ["shaderc-dev", "2021.1.0-r0"], ["vulkan-loader-dev", "1.2.196-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b2f4af5776f2748699d66c3991d9289d895bda5f6c2952170afa9e868c90510f"
+licence = "GPL-3.0-only"
+provides = "kgx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kgx-0.4.0-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["gsettings-desktop-schemas", "41.0.0-r0"], ["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libgtop", "2.40.0-r0"], ["libhandy1", "1.5.0-r0"], ["libintl", "0.21.0-r0"], ["pango", "1.48.10-r0"], ["vte3", "0.66.1-r0"]]

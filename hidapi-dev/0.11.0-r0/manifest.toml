@@ -1,0 +1,15 @@
+checksum = "5d0561ffbb104b7ed1c7f9a913574fb140f99a5c853c83ff758ccf4b42e37d3c"
+licence = "GPL-3.0-only OR BSD-3-Clause"
+provides = "hidapi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hidapi-dev-0.11.0-r0.apk"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hidapi", "0.11.0-r0"], ["pkgconf", "1.8.0-r0"]]

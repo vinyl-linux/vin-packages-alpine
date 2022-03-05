@@ -1,0 +1,15 @@
+checksum = "65f99a6629b64cff7e4147fee5d3f327af3b901313abc750e4e16c2c83d93a9a"
+licence = "MIT AND BSD-2-Clause AND BSD-3-Clause AND BSD-4-Clause AND Apache-2.0 AND CDLA-Permissive-1.0"
+provides = "mimic1-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mimic1-dev-1.3.0.1-r0.apk"
+version = "1.3.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mimic1", "1.3.0.1-r0"], ["alsa-lib-dev", "1.2.5.1-r1"], ["pcre2-dev", "10.39.0-r0"], ["pkgconf", "1.8.0-r0"]]

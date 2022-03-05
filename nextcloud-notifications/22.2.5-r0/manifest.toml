@@ -1,0 +1,15 @@
+checksum = "1176048b35dddc40ce8c58bca95857abf76218a49309196fe6af72c0059609cf"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-notifications"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-notifications-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"]]

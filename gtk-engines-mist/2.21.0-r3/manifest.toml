@@ -1,0 +1,15 @@
+checksum = "7dbc770f313a6b5a0abf4173d8996e8ea7aed61cddde9b333335da693f2f3ed4"
+licence = "LGPL-2.1-or-later"
+provides = "gtk-engines-mist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtk-engines-mist-2.21.0-r3.apk"
+version = "2.21.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gtk+2.0", "2.24.33-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"]]

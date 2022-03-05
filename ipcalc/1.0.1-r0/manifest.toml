@@ -1,0 +1,15 @@
+checksum = "8234275586340f24b3aef4c370185ff68681e397d1629e16849d2fe7fbeea6c4"
+licence = "GPL-2.0-or-later"
+provides = "ipcalc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ipcalc-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmaxminddb", "1.6.0-r0"], ["musl", "1.2.2-r7"]]

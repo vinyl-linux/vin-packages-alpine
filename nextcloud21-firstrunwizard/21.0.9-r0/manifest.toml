@@ -1,0 +1,15 @@
+checksum = "725cf7e99735efefc6730bcc5bad6739e1d084aeeed911e6707f23ddd1dc58fb"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-firstrunwizard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-firstrunwizard-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"]]

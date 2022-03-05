@@ -1,0 +1,15 @@
+checksum = "a90a66b3f97bf2bd1299fcef15e4e1e9a9bd80a366d3a999afffebc1589da097"
+licence = "MIT"
+provides = "gdal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gdal-dev-3.4.1-r0.apk"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdal", "3.4.1-r0"], ["pkgconf", "1.8.0-r0"]]

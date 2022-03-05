@@ -1,0 +1,15 @@
+checksum = "5fc0618abe4140b343e6ebf063dfa8cd635d2a7ca0612fc285999c65afd7e77d"
+licence = "LGPL-2.1-or-later"
+provides = "libngf-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libngf-qt-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtfeedback", "0.0.0"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "a28539fd0db8f9434069f429ed0d70f42f8d546c9c04be0453ae64e8b23108cb"
+licence = "BSD-2-Clause"
+provides = "mapbox-gl-native"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mapbox-gl-native-1.6.0-r1.apk"
+version = "1.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

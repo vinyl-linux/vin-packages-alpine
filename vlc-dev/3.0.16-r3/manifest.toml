@@ -1,0 +1,15 @@
+checksum = "0e0a067214af56aae53929732c28b3c1d474070d9237065667fd5a160ae1f6d5"
+licence = "GPL-2.0-or-later"
+provides = "vlc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vlc-dev-3.0.16-r3.apk"
+version = "3.0.16-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["vlc-libs", "3.0.16-r3"]]

@@ -1,0 +1,15 @@
+checksum = "7eacad57a743b8b9f591d02b3db60acd7453047ea6104fa0467eb0f37d3b18e7"
+licence = "GPL-3.0-or-later"
+provides = "ansible-base"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ansible-base-2.10.5-r1.apk"
+version = "2.10.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-jinja2", "3.0.1-r0"], ["py3-packaging", "20.9.0-r1"], ["py3-yaml", "5.4.1.1-r1"], ["py3-cryptography", "3.3.2-r3"], ["py3-paramiko", "2.7.2-r1"]]

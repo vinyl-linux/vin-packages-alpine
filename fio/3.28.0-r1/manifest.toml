@@ -1,0 +1,15 @@
+checksum = "ccfe410c49251c2c7074c0d98ca853cd9c105aceb9de7849c21dea19198acd29"
+licence = "GPL-2.0-only"
+provides = "fio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fio-3.28-r1.apk"
+version = "3.28.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["numactl", "2.0.14-r0"], ["zlib", "1.2.11-r3"]]

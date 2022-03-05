@@ -1,0 +1,15 @@
+checksum = "40312e048f603ad1149daa846b9ee873a134012e805c1405fc674a530e0942bc"
+licence = "BSD-2-Clause"
+provides = "profiled"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/profiled-1.0.12-r2.apk"
+version = "1.0.12-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["glib", "2.70.1-r0"]]

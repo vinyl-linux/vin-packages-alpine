@@ -1,0 +1,15 @@
+checksum = "95e67b148237b33bc23ff28df5d36721b2586228441e8631d852238fcb158258"
+licence = "ISC"
+provides = "libmowgli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmowgli-2.1.3-r5.apk"
+version = "2.1.3-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

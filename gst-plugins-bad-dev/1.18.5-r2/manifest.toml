@@ -1,0 +1,15 @@
+checksum = "7ee6ceb5e185837a8d7f07ac53264018d1266e753a9beb1dc13336b3a21eeb15"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "gst-plugins-bad-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gst-plugins-bad-dev-1.18.5-r2.apk"
+version = "1.18.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-bad", "1.18.5-r2"], ["gstreamer-dev", "1.18.5-r0"], ["gst-plugins-base-dev", "1.18.5-r0"], ["pkgconf", "1.8.0-r0"]]

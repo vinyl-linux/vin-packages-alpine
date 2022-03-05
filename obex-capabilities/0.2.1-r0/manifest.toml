@@ -1,0 +1,15 @@
+checksum = "f914a806ab4f85d3f1c9a7f7c326e0188f0e5ea2cd0753cad2e788bdbece3aa1"
+licence = "GPL-3.0-or-later"
+provides = "obex-capabilities"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/obex-capabilities-0.2.1-r0.apk"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dbus", "1.2.18-r0"]]

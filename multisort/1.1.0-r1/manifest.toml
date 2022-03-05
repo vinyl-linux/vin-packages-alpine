@@ -1,0 +1,15 @@
+checksum = "1401fe7b11ec78ccb3027518f2d331728fd83117aaecddf43faee87ef6353a70"
+licence = "GPL-2.0-or-later"
+provides = "multisort"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/multisort-1.1-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

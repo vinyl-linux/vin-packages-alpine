@@ -1,0 +1,15 @@
+checksum = "4f815850ac4c9f17350a6381fe8df2bf8e70de390e4bf9f9d2bd9fc8f25db241"
+licence = "LGPL-2.0-or-later"
+provides = "libzbarqt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libzbarqt-0.23.90-r1.apk"
+version = "0.23.90-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libzbar", "0.23.90-r1"]]

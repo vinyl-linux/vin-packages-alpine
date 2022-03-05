@@ -1,0 +1,15 @@
+checksum = "407e2d726633a49ddf648580ecd8f9145f9f2f4b02fe865d884ae4c3ed9dc286"
+licence = "GPL-2.0-or-later"
+provides = "collectd-mcelog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-mcelog-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"]]

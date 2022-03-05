@@ -1,0 +1,15 @@
+checksum = "13adcbc33632e6b9d93553c1d2b58d7eb0898c25dadcab215dc9e947d0654bee"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "kdesdk-thumbnailers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdesdk-thumbnailers-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["gettext-libs", "0.21.0-r0"], ["libstdc++", "10.3.1"]]

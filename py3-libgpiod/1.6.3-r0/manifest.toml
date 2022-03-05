@@ -1,0 +1,15 @@
+checksum = "19574d14a9bf87d40bf5178fe65e445a6041563a0f588d0adc4d487a901a4451"
+licence = "LGPL-2.1-or-later"
+provides = "py3-libgpiod"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-libgpiod-1.6.3-r0.apk"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libgpiod", "1.6.3-r0"]]

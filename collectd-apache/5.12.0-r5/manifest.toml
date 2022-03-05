@@ -1,0 +1,15 @@
+checksum = "14f11a631438ccf1043dbf2410c14987311601a8478bcaaa1aff4b73135db9ba"
+licence = "GPL-2.0-or-later"
+provides = "collectd-apache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-apache-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

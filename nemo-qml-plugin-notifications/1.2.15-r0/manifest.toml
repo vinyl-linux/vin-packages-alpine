@@ -1,0 +1,15 @@
+checksum = "0ef3b5d2f3594916920daac0d64e18a4eeb9fc7ac9eb1287437fc04df4750368"
+licence = "BSD-3-Clause"
+provides = "nemo-qml-plugin-notifications"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nemo-qml-plugin-notifications-1.2.15-r0.apk"
+version = "1.2.15-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

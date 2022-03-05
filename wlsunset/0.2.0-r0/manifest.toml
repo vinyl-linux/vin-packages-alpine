@@ -1,0 +1,15 @@
+checksum = "6275b069ff058f49202405e592ca8c2b37f9f6265b19d5a166fb2e04618ff96d"
+licence = "MIT"
+provides = "wlsunset"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wlsunset-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["wayland-libs-client", "1.19.0-r1"]]

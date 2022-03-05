@@ -1,0 +1,15 @@
+checksum = "ea8a872ad1f5a1764e5ac4e9772d4e7a4d827fdec35c0fd28b620ebb9d05cb23"
+licence = "MIT"
+provides = "font-hermit-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-hermit-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1b5f4e8f0ef2caf74172707743bfb04597fd023f0828e6b26ef14e035f037373"
+licence = "BSD-3-Clause"
+provides = "libnjb-examples"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libnjb-examples-2.2.7-r4.apk"
+version = "2.2.7-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"], ["libnjb", "2.2.7-r4"], ["zlib", "1.2.11-r3"]]

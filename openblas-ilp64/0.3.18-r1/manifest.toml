@@ -1,0 +1,15 @@
+checksum = "0c63b5feee2e5b392e3c62ddfef91564521f2192cd250ffae5008ff3c6fc2935"
+licence = "BSD-3-Clause"
+provides = "openblas-ilp64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openblas-ilp64-0.3.18-r1.apk"
+version = "0.3.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgfortran", "10.3.1"]]

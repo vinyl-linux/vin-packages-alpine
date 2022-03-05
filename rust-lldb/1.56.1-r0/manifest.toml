@@ -1,0 +1,15 @@
+checksum = "d035eff4e41a07f091a2804458cfe2f428640d5f29d7f2ae238d17759cf2e8a7"
+licence = "Apache-2.0 AND MIT"
+provides = "rust-lldb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rust-lldb-1.56.1-r0.apk"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust", "1.56.1-r0"], ["lldb", "12.0.1-r1"], ["py3-lldb", "12.0.1-r1"]]

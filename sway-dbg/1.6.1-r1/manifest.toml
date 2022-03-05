@@ -1,0 +1,15 @@
+checksum = "a3751dda903b62a484523ba6c5d819bfe364de6a744b54b58c6947ee59757cd7"
+licence = "MIT"
+provides = "sway-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sway-dbg-1.6.1-r1.apk"
+version = "1.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["swaybg", "1.1.0-r0"]]

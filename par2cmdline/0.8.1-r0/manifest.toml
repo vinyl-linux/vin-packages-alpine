@@ -1,0 +1,15 @@
+checksum = "6b0fd36f320f75f8e7706f83df658f006888e3e2f620677273fece7505a01235"
+licence = "GPL-2.0-or-later"
+provides = "par2cmdline"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/par2cmdline-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libgomp", "10.3.1"], ["libstdc++", "10.3.1"]]

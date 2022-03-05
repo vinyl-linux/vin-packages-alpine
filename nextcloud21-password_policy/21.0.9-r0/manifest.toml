@@ -1,0 +1,15 @@
+checksum = "ddc3b5b543836bc62b1b14dbfd08d091dc21cd871bfe2d1203967f1755b2cd40"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-password_policy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-password_policy-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"]]

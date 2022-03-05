@@ -1,0 +1,15 @@
+checksum = "90a78b29a9183e6c7c05ca99fb7fc3a5ad905bb6b27935728225eb9a4594e67e"
+licence = "ISC"
+provides = "py3-pyotherside"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyotherside-1.5.9-r2.apk"
+version = "1.5.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtsvg", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["python3", "3.9.7-r4"], ["libstdc++", "10.3.1"]]

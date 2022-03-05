@@ -1,0 +1,15 @@
+checksum = "2b64e3c310f4ad983abdf0c30092cdbe13d862f187fa507a3f259e14129bdd70"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ceph-dbg-16.2.7-r0.apk"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph-osd", "16.2.7-r0"], ["ceph-mds", "16.2.7-r0"], ["ceph-mon", "16.2.7-r0"]]

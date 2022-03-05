@@ -1,0 +1,15 @@
+checksum = "e98072d3cd559b79713c8a6acb805bd9f1fd348343231240fa7ad61f299e1934"
+licence = "GPL-2.0-only"
+provides = "e2tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/e2tools-0.1.0-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["e2fsprogs-libs", "1.46.4-r0"]]

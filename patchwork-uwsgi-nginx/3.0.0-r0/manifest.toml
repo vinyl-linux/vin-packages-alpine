@@ -1,0 +1,15 @@
+checksum = "64ea4012928970e0620cff567d210e2fec4f0f97516b13e8ed342946debe3e32"
+licence = "GPL-2.0-or-later"
+provides = "patchwork-uwsgi-nginx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/patchwork-uwsgi-nginx-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.20.2-r0"], ["uwsgi-python3", "2.0.19.1-r2"]]

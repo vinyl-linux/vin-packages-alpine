@@ -1,0 +1,15 @@
+checksum = "77466435f5ccd019558c5f8ef5effc4258d95e42f25643e9bcc11675754cb9ec"
+licence = "LGPL-2.0-or-later"
+provides = "openal-soft"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openal-soft-1.21.1-r0.apk"
+version = "1.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

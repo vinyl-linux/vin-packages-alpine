@@ -1,0 +1,15 @@
+checksum = "b4b15fa88e25c1308bb1352e0e0fce4ebbacc0085f77ff026050fae5578e7e46"
+licence = "GPL-3.0-or-later"
+provides = "coova-chilli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/coova-chilli-1.6-r1.apk"
+version = "1.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

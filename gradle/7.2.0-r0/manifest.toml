@@ -1,0 +1,15 @@
+checksum = "8b7c77ba1d05c473fde85a7e596e9e075b5d0516c6bc431a7eec861f8eabd0e5"
+licence = "Apache-2.0"
+provides = "gradle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gradle-7.2-r0.apk"
+version = "7.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jdk", "9.0.4"]]

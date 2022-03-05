@@ -1,0 +1,15 @@
+checksum = "22764a70062d78999f089076a2af7fe4643af7451e62176eb64fc1c6646ffd93"
+licence = "Apache-2.0"
+provides = "py3-pynvim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pynvim-0.4.3-r2.apk"
+version = "0.4.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["neovim", "0.5.1-r1"], ["python3", "3.9.7-r4"], ["py3-msgpack", "1.0.2-r1"], ["py3-greenlet", "1.1.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "65005ebf58ea4b20bd0f0088749de7df7a637c5ba86850432c65e33af29bb0ff"
+licence = "GPL-2.0-or-later AND GFDL-1.3-only"
+provides = "gnome-terminal-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-terminal-lang-3.42.0-r0.apk"
+version = "3.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["desktop-file-utils", "0.26.0-r0"], ["gsettings-desktop-schemas", "41.0.0-r0"], ["ncurses-terminfo-base", "6.3.0"]]

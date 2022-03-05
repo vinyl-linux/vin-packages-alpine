@@ -1,0 +1,15 @@
+checksum = "fb72a0f75f7b75cd84e3ccc77e2a2a8412bc36094b8b246993d7e380969fe453"
+licence = "LGPL-3.0-or-later"
+provides = "gtkd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtkd-dev-3.9.0-r4.apk"
+version = "3.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtkd", "3.9.0-r4"], ["pkgconf", "1.8.0-r0"]]

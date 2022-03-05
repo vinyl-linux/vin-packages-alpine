@@ -1,0 +1,15 @@
+checksum = "8a6300ea5fa1cd3a1f3b3b792e9b97626c1b5a96c525df68ebb6e52b73d9681f"
+licence = "GPL-3.0-or-later"
+provides = "gnome-latex-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-latex-lang-3.38.0-r1.apk"
+version = "3.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texlive", "20210325.0.0-r5"]]

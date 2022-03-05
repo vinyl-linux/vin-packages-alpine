@@ -1,0 +1,15 @@
+checksum = "d32f552c469db221e7fce4ea1d41359b37fead480a9d384c018894973e51fa21"
+licence = "BSD-2-Clause"
+provides = "restic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/restic-0.12.1-r3.apk"
+version = "0.12.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

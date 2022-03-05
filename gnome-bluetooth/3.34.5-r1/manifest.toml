@@ -1,0 +1,15 @@
+checksum = "1809fa07a568ecd769733133e7ee3615f1a9514fef6041884500011d33be9c79"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "gnome-bluetooth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-bluetooth-3.34.5-r1.apk"
+version = "3.34.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r1"], ["bluez", "5.63.0-r0"], ["bluez-obexd", "5.63.0-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gnome-bluetooth-libs", "3.34.5-r1"], ["gtk+3.0", "3.24.30-r0"], ["libintl", "0.21.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1bb651a170c2228593e46c039257f96d37dfeaaa4c07ef18a52cadea5dd32f1a"
+licence = "GPL-2.0-or-later"
+provides = "txt2man"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/txt2man-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gawk", "5.1.1-r0"]]

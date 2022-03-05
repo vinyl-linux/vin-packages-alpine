@@ -1,0 +1,15 @@
+checksum = "c4e792d602ce436ad0083ba9fc12f1a2628db2b808df34a6f7470d4291d82542"
+licence = "MIT"
+provides = "lua5.1-copas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.1-copas-2.0.2-r4.apk"
+version = "2.0.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-socket", "3.0.0"], ["lua5.1-coxpcall", "1.17.0-r0"]]

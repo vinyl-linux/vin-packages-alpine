@@ -1,0 +1,15 @@
+checksum = "f6863e70124056cc0d8e14799f07398b06f45b4515216a5ac54eeec4549bc859"
+licence = "BSD-2-Clause"
+provides = "xfce4-stopwatch-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xfce4-stopwatch-plugin-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["xfce4-panel", "4.16.3-r0"], ["libxfce4util", "4.16.0-r1"]]

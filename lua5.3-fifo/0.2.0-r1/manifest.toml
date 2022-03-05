@@ -1,0 +1,15 @@
+checksum = "cdbb2b472a700757cc9b1217be1b9e7d29188ffac5d2eb8245c07883b12b977d"
+licence = "MIT"
+provides = "lua5.3-fifo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-fifo-0.2-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

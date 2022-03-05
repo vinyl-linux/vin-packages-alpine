@@ -1,0 +1,15 @@
+checksum = "5448f74a99711cb1362aa281a8264004e68d9479022ea271211f03daf5605880"
+licence = "LGPL-2.1-only"
+provides = "caribou-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/caribou-dev-0.4.21-r6.apk"
+version = "0.4.21-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["caribou", "0.4.21-r6"], ["gtk+3.0-dev", "3.24.30-r0"], ["libgee-dev", "0.20.4-r0"], ["libxklavier-dev", "5.4.0-r5"], ["libxml2-dev", "2.9.12-r2"], ["libxtst-dev", "1.2.3-r3"], ["pkgconf", "1.8.0-r0"]]

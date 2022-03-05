@@ -1,0 +1,15 @@
+checksum = "c29d717d02dfa70632f734e1f0604675dbc669a2537c909138ef39fcff93a1eb"
+licence = "Apache-2.0"
+provides = "thrift"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/thrift-0.15.0-r1.apk"
+version = "0.15.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

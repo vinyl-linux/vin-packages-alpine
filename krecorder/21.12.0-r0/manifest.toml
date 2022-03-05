@@ -1,0 +1,15 @@
+checksum = "e10764aa42a656a1abd91be0d8edd693e94387d5a7de0531fcbd1f42f7991716"
+licence = "GPL-3.0-or-later"
+provides = "krecorder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/krecorder-21.12-r0.apk"
+version = "21.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtmultimedia", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

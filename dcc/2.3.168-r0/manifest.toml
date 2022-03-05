@@ -1,0 +1,15 @@
+checksum = "17e8d0e4fbb4f1d1b7aa4e1711bf678def1cb9b8f0438c57f41e09cb71c9a63a"
+licence = "custom"
+provides = "dcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dcc-2.3.168-r0.apk"
+version = "2.3.168-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

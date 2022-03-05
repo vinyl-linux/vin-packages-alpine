@@ -1,0 +1,15 @@
+checksum = "4693c01196f741dd04cd457e8a1ce3a0f4416e764761bedba8163aeaaaf0a889"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-thunderbolt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-thunderbolt-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libxmlb", "0.2.1-r1"]]

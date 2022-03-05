@@ -1,0 +1,15 @@
+checksum = "e21d4504a77b21276502b9c9b383cce9a6fa89e3da01aaa50fa5d3c3134a7798"
+licence = "GPL-3.0-or-later"
+provides = "corefm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/corefm-4.2.0-r1.apk"
+version = "4.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.3"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libcprime", "4.2.2-r1"], ["libcsys", "4.2.0-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "673f07ed79b5c0e32d6ccc06be49d692c553e0bd81b0f6de60bb273dd44bc5e2"
+licence = "LGPL-2.1-or-later"
+provides = "php7-pecl-uuid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-uuid-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

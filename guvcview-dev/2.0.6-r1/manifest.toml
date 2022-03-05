@@ -1,0 +1,15 @@
+checksum = "b848677e1f1fccca8aae42056c4b66ecf5d8b8d6701ab5e2bd9f391951ede170"
+licence = "GPL-3.0-or-later"
+provides = "guvcview-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/guvcview-dev-2.0.6-r1.apk"
+version = "2.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["guvcview-libs", "2.0.6-r1"], ["pkgconf", "1.8.0-r0"]]

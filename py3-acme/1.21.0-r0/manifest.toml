@@ -1,0 +1,15 @@
+checksum = "ed137cdcbb13e4ef5a72695fa8c7039c4c5be378ea40e94f200e2c06ddb2223a"
+licence = "Apache-2.0"
+provides = "py3-acme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-acme-1.21.0-r0.apk"
+version = "1.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "52.0.0-r4"], ["py3-cryptography", "3.3.2-r3"], ["py3-josepy", "1.11.0-r0"], ["py3-openssl", "21.0.0-r0"], ["py3-pyrfc3339", "1.1.0-r4"], ["py3-tz", "2021.1.0-r1"], ["py3-requests", "2.26.0-r1"], ["py3-requests-toolbelt", "0.9.1-r2"]]

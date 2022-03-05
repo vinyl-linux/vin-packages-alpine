@@ -1,0 +1,15 @@
+checksum = "ab08b080dec77e01a88e09af9a51cae42c55be4acdedade39a525820eba54ad6"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-accessibility"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kde-applications-accessibility-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kmag", "21.8.3-r0"], ["kmousetool", "21.8.3-r0"], ["kmouth", "21.8.3-r0"]]

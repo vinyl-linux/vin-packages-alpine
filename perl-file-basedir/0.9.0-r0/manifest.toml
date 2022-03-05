@@ -1,0 +1,15 @@
+checksum = "2bb85fca1e41fecc1b1c4bbde547ebfccaea0228d7f446778161959443c26ee0"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-file-basedir"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-file-basedir-0.09-r0.apk"
+version = "0.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-ipc-system-simple", "1.30.0-r2"]]

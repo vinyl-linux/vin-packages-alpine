@@ -1,0 +1,15 @@
+checksum = "87503322a896980616169e24ecc7f10fcfa090e4fd3138c7a851773e92471097"
+licence = "MIT"
+provides = "diakonos"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/diakonos-0.9.7-r1.apk"
+version = "0.9.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"]]

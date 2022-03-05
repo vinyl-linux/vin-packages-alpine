@@ -1,0 +1,15 @@
+checksum = "3e8630193a39620c68ce1f0799790ccfea12e77e729667df1a82bfed26b35865"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "alsa-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/alsa-plugins-1.2.5-r2.apk"
+version = "1.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["libsamplerate", "0.1.9-r1"]]

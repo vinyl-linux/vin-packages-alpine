@@ -1,0 +1,15 @@
+checksum = "6866161fee037b420f3dde49c4368891fac4ef11ad3c1bfa875e7f92410b0d23"
+licence = "Apache-2.0"
+provides = "lldb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lldb-dev-12.0.1-r1.apk"
+version = "12.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lldb", "12.0.1-r1"]]

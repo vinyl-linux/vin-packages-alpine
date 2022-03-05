@@ -1,0 +1,15 @@
+checksum = "c6304ac82700d4d8f1a70cdc4fd57fd4d7ac9c6a648cc74acaa96b85386ed5f0"
+licence = "GPL-2.0-only"
+provides = "libretro-gambatte"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-gambatte-0_git20210325-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

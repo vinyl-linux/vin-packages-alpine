@@ -1,0 +1,15 @@
+checksum = "c44783f25b537c1bc985f26a92e9095cda3338d21036dfce1c726bd8cf39712c"
+licence = "BSD-3-Clause ISC"
+provides = "outils-calendar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/outils-calendar-0.10-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

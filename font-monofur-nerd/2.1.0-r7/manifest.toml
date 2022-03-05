@@ -1,0 +1,15 @@
+checksum = "21c3b86e6e0ee03d1bc69c4c431c3c530472296d8d50ea4ef8e1aa4c1456fbc1"
+licence = "MIT"
+provides = "font-monofur-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-monofur-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

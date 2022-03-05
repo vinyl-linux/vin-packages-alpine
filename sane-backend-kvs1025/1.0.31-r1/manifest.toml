@@ -1,0 +1,15 @@
+checksum = "29e81120f5dc3cfe51099baf97f831c0d4f2b157f5f36ff0512c0d9498b77420"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-kvs1025"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-backend-kvs1025-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"], ["libxml2", "2.9.12-r2"]]

@@ -1,0 +1,15 @@
+checksum = "9169c6490bbb56efdba0584b3cb63e58e3228d69064a541280cc67de5b18945d"
+licence = "LGPL-2.1-or-later"
+provides = "basu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/basu-dev-0.2.0-r2.apk"
+version = "0.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["basu", "0.2.0-r2"], ["libcap-dev", "2.61.0-r0"], ["pkgconf", "1.8.0-r0"]]

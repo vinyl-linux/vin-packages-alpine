@@ -1,0 +1,15 @@
+checksum = "cec7eb5e54f40b3d19bffdc26138f230f9c90a247c0ad1e9079f9a118fe0b0fa"
+licence = "AGPL-3.0-only"
+provides = "masscan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/masscan-1.3.2-r0.apk"
+version = "1.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

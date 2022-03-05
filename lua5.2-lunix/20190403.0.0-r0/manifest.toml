@@ -1,0 +1,15 @@
+checksum = "47a178905ff114c6b000f75516c9494a13957a98e14ce483acfc62e7ce63b665"
+licence = "MIT"
+provides = "lua5.2-lunix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.2-lunix-20190403-r0.apk"
+version = "20190403.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

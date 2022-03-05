@@ -1,0 +1,15 @@
+checksum = "c43f214a0b0d2734625eff1b2f520a12a62a0987fd9773a0e4fec596f78e9eea"
+licence = "BSD-3-Clause"
+provides = "dep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dep-0.5.4-r4.apk"
+version = "0.5.4-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

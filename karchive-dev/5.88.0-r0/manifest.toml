@@ -1,0 +1,15 @@
+checksum = "2e2c9677f73064ddbad0c5e4940b98d35b9abcea0e25ca6c65ba9ac874363a0c"
+licence = "LGPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "karchive-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/karchive-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bzip2-dev", "1.0.8-r1"], ["xz-dev", "5.2.5-r0"], ["karchive", "5.88.0-r0"]]

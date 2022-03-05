@@ -1,0 +1,15 @@
+checksum = "e1d52048ea56521166b6dd5cd4236dd425b300a8c2f4768914222c2ed72350b4"
+licence = "GPL-2.0-or-later"
+provides = "dar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dar-2.7.2-r0.apk"
+version = "2.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["dar-libs", "2.7.2-r0"], ["libgcc", "10.3.1"], ["gpgme", "1.16.0-r0"], ["libintl", "0.21.0-r0"], ["libstdc++", "10.3.1"], ["libthreadar", "1.3.5-r0"]]

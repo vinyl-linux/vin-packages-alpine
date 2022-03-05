@@ -1,0 +1,15 @@
+checksum = "a8c0ba3c8821a7d5f4610578e373a473953829170c5cffd4dadf456556e1e6e4"
+licence = "GPL-3.0-or-later"
+provides = "minetest-mineclone2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/minetest-mineclone2-0.71.0-r0.apk"
+version = "0.71.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["minetest-common", "5.4.1-r2"]]

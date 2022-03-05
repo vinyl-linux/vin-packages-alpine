@@ -1,0 +1,15 @@
+checksum = "21c9831abfda7bbdc6decacaf47c4c8a20c197df14c9ea92c100745071cd7e40"
+licence = "GPL-2.0-only"
+provides = "perl-toml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-toml-0.97-r0.apk"
+version = "0.97.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-toml-parser", "0.91.0-r0"]]

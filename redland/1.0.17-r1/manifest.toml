@@ -1,0 +1,15 @@
+checksum = "f4b50efc7bb78f6e843108f7f0335e3efa625edcd881fdb06ad32f29f32cc56d"
+licence = "LGPL-2.1-or-later"
+provides = "redland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/redland-1.0.17-r1.apk"
+version = "1.0.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["raptor2", "2.0.15-r4"], ["rasqal", "0.9.33-r2"], ["sqlite-libs", "3.36.0-r0"]]

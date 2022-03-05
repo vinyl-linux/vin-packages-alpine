@@ -1,0 +1,15 @@
+checksum = "09d93cd00dfce12d03e1353e970699f9a93df7c47c1c22575b5268cb7c11e065"
+licence = "GPL-2.0-only"
+provides = "id3lib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/id3lib-dev-3.8.3-r0.apk"
+version = "3.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["id3lib-libs", "3.8.3-r0"]]

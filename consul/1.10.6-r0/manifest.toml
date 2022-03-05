@@ -1,0 +1,15 @@
+checksum = "2fa66e3acfbf0ef31d6f78cca3346ca0a225516caa5db4343362641765080c0d"
+licence = "MPL-2.0"
+provides = "consul"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/consul-1.10.6-r0.apk"
+version = "1.10.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

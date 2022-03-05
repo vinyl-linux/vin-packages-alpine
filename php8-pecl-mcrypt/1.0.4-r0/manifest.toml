@@ -1,0 +1,15 @@
+checksum = "63b34b2d1eea1900f5b40ed79475dee0ec3327c63c26002419463bd344a5422f"
+licence = "PHP-3.01"
+provides = "php8-pecl-mcrypt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-mcrypt-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libmcrypt", "2.5.8-r9"]]

@@ -1,0 +1,15 @@
+checksum = "ea639a55f3348ba2fbbce4549e6d63fb1676b31491d69bfcefc28d7257818c59"
+licence = "BSD-3-Clause"
+provides = "perl-math-random-mt-auto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-math-random-mt-auto-6.23-r6.apk"
+version = "6.23.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-exception-class", "1.45.0-r0"], ["perl-object-insideout", "4.5.0-r5"], ["musl", "1.2.2-r7"]]

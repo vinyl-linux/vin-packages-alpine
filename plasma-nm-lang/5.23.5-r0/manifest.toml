@@ -1,0 +1,15 @@
+checksum = "feb918796ea719612687ee00ed2d5187175e07a3fa0ed3eb34909d5ab8d02409"
+licence = "(LGPL-2.1-only OR LGPL-3.0-only) AND LGPL-2.0-or-later"
+provides = "plasma-nm-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-nm-lang-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["networkmanager", "1.32.12-r1"]]

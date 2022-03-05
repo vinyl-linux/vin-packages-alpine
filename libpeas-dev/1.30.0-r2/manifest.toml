@@ -1,0 +1,15 @@
+checksum = "efc4e76fb2d7999dacb76d1490323e09fcdc57975fc03d2f37d243390add9d51"
+licence = "LGPL-2.1-or-later"
+provides = "libpeas-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libpeas-dev-1.30.0-r2.apk"
+version = "1.30.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpeas", "1.30.0-r2"], ["glib-dev", "2.70.1-r0"], ["gobject-introspection-dev", "1.70.0-r1"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

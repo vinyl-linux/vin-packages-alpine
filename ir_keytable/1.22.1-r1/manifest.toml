@@ -1,0 +1,15 @@
+checksum = "a6b4cd1278039a8018f268e200d8e3f02134335ecbb9cdfeeabff986194b9a0d"
+licence = "LGPL-2.0-or-later"
+provides = "ir_keytable"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ir_keytable-1.22.1-r1.apk"
+version = "1.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libintl", "0.21.0-r0"]]

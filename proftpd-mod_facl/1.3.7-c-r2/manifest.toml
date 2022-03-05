@@ -1,0 +1,15 @@
+checksum = "3d3403e58cf2698c71341bee07371a53b052810a28d56fb457a1125dfe187da0"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_facl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/proftpd-mod_facl-1.3.7c-r2.apk"
+version = "1.3.7-c-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-c-r2"], ["musl", "1.2.2-r7"]]

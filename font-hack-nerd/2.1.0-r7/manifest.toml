@@ -1,0 +1,15 @@
+checksum = "5a1a009b5b2aedbceee39f40ce60da9cfe6f34645865982a7407406dab714215"
+licence = "MIT"
+provides = "font-hack-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-hack-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

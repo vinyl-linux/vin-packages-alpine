@@ -1,0 +1,15 @@
+checksum = "6eb61b6efdd6ce7a413e645c571dbdd18a194d52446549ab5660d4043e42692f"
+licence = "GPL-2.0-only"
+provides = "dnsrecon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dnsrecon-0.10.1-r0.apk"
+version = "0.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dnspython", "2.1.0-r1"], ["py3-lxml", "4.6.5-r0"], ["py3-netaddr", "0.8.0-r1"]]

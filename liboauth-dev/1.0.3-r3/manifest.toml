@@ -1,0 +1,15 @@
+checksum = "cd41e2c17c0bb1a83b3bbe0d555964ccc06dd60848d2a1d78ff3e975f076fbfc"
+licence = "MIT"
+provides = "liboauth-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/liboauth-dev-1.0.3-r3.apk"
+version = "1.0.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["liboauth", "1.0.3-r3"], ["curl-dev", "7.80.0-r0"], ["nss-dev", "3.72.1-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "46dc655377eebc950073a1ccd9f8bf6dd9f7c5fab4b0669ea5dba8412cee1860"
+licence = "GPL-2.0-or-later"
+provides = "lxterminal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lxterminal-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["pango", "1.48.10-r0"], ["vte3", "0.66.1-r0"]]

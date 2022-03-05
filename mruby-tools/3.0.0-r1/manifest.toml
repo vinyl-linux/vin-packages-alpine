@@ -1,0 +1,15 @@
+checksum = "9d19a3df6b088bf34436d362c9fef7ab7182f93f58ade4e738db84e097d293ac"
+licence = "MIT"
+provides = "mruby-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mruby-tools-3.0.0-r1.apk"
+version = "3.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["readline", "8.1.1-r0"]]

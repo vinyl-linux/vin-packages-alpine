@@ -1,0 +1,15 @@
+checksum = "a1cf754daa9d7f6c9ea8a38d1ae89426f5f5d10d16b9e51477c01a9d299264f4"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-treepp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-xml-treepp-0.43-r3.apk"
+version = "0.43.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-libwww", "6.58.0-r0"]]

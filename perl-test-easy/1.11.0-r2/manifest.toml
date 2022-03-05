@@ -1,0 +1,15 @@
+checksum = "29f53f81cb9e17c66ee1c762238a3e3a2b63175f0e50579b850124316434a74f"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-easy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-easy-1.11-r2.apk"
+version = "1.11.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-functional-utility", "1.2.0-r3"], ["perl-data-denter", "0.15.0-r3"], ["perl-hash-mostutils", "1.7.0-r3"], ["perl-test-resub", "2.3.0-r3"], ["perl-data-difflet", "0.11.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "1dcc36d8d4e0c7d0d09897fd5307faf788f24f13254ce813030be60090327be6"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-pdo_pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pdo_pgsql-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["php7-pdo", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

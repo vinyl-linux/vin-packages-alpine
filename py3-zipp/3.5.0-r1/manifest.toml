@@ -1,0 +1,15 @@
+checksum = "731bc45fb2c5c1ba524080e888979d20acc009a3b12ea19ba76a1577a4cd1f3a"
+licence = "MIT"
+provides = "py3-zipp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-zipp-3.5.0-r1.apk"
+version = "3.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jaraco.itertools", "6.0.3-r1"], ["py3-func-timeout", "4.3.5-r1"]]

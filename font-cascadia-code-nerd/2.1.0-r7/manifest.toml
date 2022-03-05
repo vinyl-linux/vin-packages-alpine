@@ -1,0 +1,15 @@
+checksum = "304c01c9d4b1f7f6af9fb86d5087bc3631e3ad506bacb485bce01e3c083e6173"
+licence = "MIT"
+provides = "font-cascadia-code-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-cascadia-code-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c3ce240a51e975d78715c0c88522f077ebd823b0e79915c6ed63b21e7047a411"
+licence = "MIT"
+provides = "py3-pyclipper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyclipper-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["clipper", "6.4.2-r1"], ["libstdc++", "10.3.1"]]

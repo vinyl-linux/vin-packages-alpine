@@ -1,0 +1,15 @@
+checksum = "7cc004a969c573062939a45250dc047a652e91edf7429fb450dc0f713cd27d7e"
+licence = "LGPL-2.1-only"
+provides = "nxp-mfgtools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nxp-mfgtools-1.4.72-r2.apk"
+version = "1.4.72-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nxp-mfgtools-uuu", "1.4.72-r2"], ["libnxp-mfgtools-static", "1.4.72-r2"], ["libnxp-mfgtools-dev", "1.4.72-r2"]]

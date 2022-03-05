@@ -1,0 +1,15 @@
+checksum = "be73404766a8ef544928da68e1cba35d509e55be81489309261223a765c25ba1"
+licence = "GPL-2.0-or-later"
+provides = "quassel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/quassel-0.13.1-r9.apk"
+version = "0.13.1-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["quassel-mono", "0.13.1-r9"]]

@@ -1,0 +1,15 @@
+checksum = "a4636fb948604cd14373d62db0e6007f5081c2812b1a3e7be34a25179e6ba8b7"
+licence = "LGPL-2.1-or-later"
+provides = "kunitconversion-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kunitconversion-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["ki18n-dev", "5.88.0-r0"], ["kunitconversion", "5.88.0-r0"]]

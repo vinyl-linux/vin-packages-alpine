@@ -1,0 +1,15 @@
+checksum = "cb661835839da234adece2a735799b6091fe66b95f8cbdeb613d2507fcbcfc9e"
+licence = "MIT custom"
+provides = "utf8proc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/utf8proc-2.6.1-r0.apk"
+version = "2.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

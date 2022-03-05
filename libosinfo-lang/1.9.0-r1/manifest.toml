@@ -1,0 +1,15 @@
+checksum = "b8ad8a7d1dabd30983b891e80dd416e8d2672863a8eeb13c7b6c6a7b71e573ac"
+licence = "LGPL-2.0-or-later"
+provides = "libosinfo-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libosinfo-lang-1.9.0-r1.apk"
+version = "1.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwids", "20210613.0.0-r0"], ["osinfo-db", "20210903.0.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b9756e79d2e30e332f59cff18f084d711d01dfb19be8b478f7b2c8a0f22ba6ca"
+licence = "BSD-3-Clause"
+provides = "php8-pecl-msgpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-msgpack-2.2.0_rc1-r0.apk"
+version = "2.2.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-session", "8.0.16-r0"], ["php8-sockets", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

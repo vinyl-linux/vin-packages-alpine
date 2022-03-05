@@ -1,0 +1,15 @@
+checksum = "d19c3d27515b3d712abf10f5e85024f73e2c8a98e265517f0e188a7f1a6b6114"
+licence = "LGPL-2.0-or-later"
+provides = "libsepol-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libsepol-dev-2.8-r0.apk"
+version = "2.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bsd-compat-headers", "0.7.2-r3"], ["libsepol", "2.8.0-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9e6c1be5720f70dcd5d9a9980284c75576f8c78d99f97cd18f65e9ece2557d94"
+licence = "MIT"
+provides = "xf86-input-evdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-input-evdev-2.10.6-r1.apk"
+version = "2.10.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libevdev", "1.12.0-r0"], ["mtdev", "1.1.6-r0"], ["eudev-libs", "3.2.11"]]

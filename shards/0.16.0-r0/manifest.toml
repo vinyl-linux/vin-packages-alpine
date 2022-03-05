@@ -1,0 +1,15 @@
+checksum = "0d89ea275ec1bbf17cc69dbe2a9daf5a790abfe3b1677cc48eb2fa6333ba74a5"
+licence = "Apache-2.0"
+provides = "shards"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/shards-0.16.0-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["crystal", "1.2.2-r0"], ["git", "2.34.1-r0"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["gc", "8.0.6-r0"], ["libgcc", "10.3.1"], ["pcre", "8.45.0-r1"], ["yaml", "0.2.5-r0"]]

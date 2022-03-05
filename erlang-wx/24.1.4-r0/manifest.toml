@@ -1,0 +1,15 @@
+checksum = "c84967560cacd8ee5c66bd0dabd70dc66129264ccbe5b0d3a2105b39d1e81fbd"
+licence = "Apache-2.0"
+provides = "erlang-wx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/erlang-wx-24.1.4-r0.apk"
+version = "24.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang", "24.1.4-r0"], ["glu", "9.0.2-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["wxgtk-base", "3.0.4-r7"], ["wxgtk", "3.0.4-r7"]]

@@ -1,0 +1,15 @@
+checksum = "792bd601a12a42230ed1d4772298d307ddf47d82924ceff385dc1197f1cf16ab"
+licence = "GPL-3.0-or-later"
+provides = "fuse-overlayfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fuse-overlayfs-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fuse3", "3.10.5-r0"], ["musl", "1.2.2-r7"], ["fuse3-libs", "3.10.5-r0"]]

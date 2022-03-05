@@ -1,0 +1,15 @@
+checksum = "cd69f83f1317a44c9fdceeff7a77e95912d83f9174f96ac8d53a23de18e5849a"
+licence = "BSD-3-Clause"
+provides = "py3-configobj"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-configobj-5.0.6-r8.apk"
+version = "5.0.6-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-six", "1.16.0-r0"]]

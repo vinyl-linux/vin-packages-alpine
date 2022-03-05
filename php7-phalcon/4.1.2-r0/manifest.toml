@@ -1,0 +1,15 @@
+checksum = "8f7464ff549c53352c9a00353606936a5186ab3ebfa0b12ed98762e6566865a3"
+licence = "BSD-3-Clause"
+provides = "php7-phalcon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-phalcon-4.1.2-r0.apk"
+version = "4.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-curl", "7.4.28-r0"], ["php7-fileinfo", "7.4.28-r0"], ["php7-gettext", "7.4.28-r0"], ["php7-json", "7.4.28-r0"], ["php7-mbstring", "7.4.28-r0"], ["php7-openssl", "7.4.28-r0"], ["php7-pdo", "7.4.28-r0"], ["php7-session", "7.4.28-r0"], ["php7-pecl-psr", "1.1.0-r0"], ["musl", "1.2.2-r7"]]

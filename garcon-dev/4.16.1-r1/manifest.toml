@@ -1,0 +1,15 @@
+checksum = "444f1445dcfe0ffc4507869c77b5be6db6af33dc049ee4c71f6a881a03c6157a"
+licence = "GPL-2.0-or-later"
+provides = "garcon-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/garcon-dev-4.16.1-r1.apk"
+version = "4.16.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["garcon", "4.16.1-r1"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libxfce4ui-dev", "4.16.1-r0"], ["pkgconf", "1.8.0-r0"]]

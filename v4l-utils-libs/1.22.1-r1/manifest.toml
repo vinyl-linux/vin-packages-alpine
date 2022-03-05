@@ -1,0 +1,15 @@
+checksum = "54b1283dd2b1e60e7a346a74d003044fffaac0724f2bd1ab07261f5fd58277a7"
+licence = "LGPL-2.0-or-later"
+provides = "v4l-utils-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/v4l-utils-libs-1.22.1-r1.apk"
+version = "1.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"]]

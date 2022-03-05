@@ -1,0 +1,15 @@
+checksum = "7bc0c7ff8dda8739053cb1a6067b964172dc956f8794adbbefc64460ac1f2152"
+licence = "PSF-2.0"
+provides = "python3-tkinter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/python3-tkinter-3.9.7-r1.apk"
+version = "3.9.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["tcl", "8.6.11-r0"], ["tk", "8.6.11-r0"]]

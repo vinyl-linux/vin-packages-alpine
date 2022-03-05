@@ -1,0 +1,15 @@
+checksum = "37f4d1fd9f5e171dc4aad77f73a9499e6ec250995cd09f66b6979a50f2a62e8c"
+licence = "MIT"
+provides = "influxdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/influxdb-1.8.3-r4.apk"
+version = "1.8.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

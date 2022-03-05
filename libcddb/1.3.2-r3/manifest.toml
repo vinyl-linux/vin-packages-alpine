@@ -1,0 +1,15 @@
+checksum = "6ba0b66f6265bd12caa66e4a7238a23e96a9d82c58057444f18ed3ab9ca9f30b"
+licence = "LGPL-2.0-or-later"
+provides = "libcddb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcddb-1.3.2-r3.apk"
+version = "1.3.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

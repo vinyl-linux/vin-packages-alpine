@@ -1,0 +1,15 @@
+checksum = "80f899089cc0bc2920507eb93a3da5374652ad6bd6f860837ab846e2b0c4760a"
+licence = "GPL-3.0-or-later"
+provides = "oath-toolkit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/oath-toolkit-dev-2.6.7-r1.apk"
+version = "2.6.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["oath-toolkit-liboath", "2.6.7-r1"], ["oath-toolkit-libpskc", "2.6.7-r1"], ["pkgconf", "1.8.0-r0"]]

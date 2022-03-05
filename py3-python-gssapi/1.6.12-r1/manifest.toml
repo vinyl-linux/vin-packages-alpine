@@ -1,0 +1,15 @@
+checksum = "a41f3255c015bb2697548ca0be144a34b3c587406678d1a5fa53c0f706ea8ef3"
+licence = "ISC"
+provides = "py3-python-gssapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-python-gssapi-1.6.12-r1.apk"
+version = "1.6.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["krb5-dev", "1.19.2-r4"], ["py3-decorator", "5.1.0-r0"], ["musl", "1.2.2-r7"], ["krb5-libs", "1.19.2-r4"]]

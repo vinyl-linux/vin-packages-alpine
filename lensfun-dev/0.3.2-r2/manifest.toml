@@ -1,0 +1,15 @@
+checksum = "66e6e648c6c3c7c5a91cbf93dc540e0b2b92026ad1f2a3f2f8f6fa4f1570e5b8"
+licence = "LGPL-3.0-or-later"
+provides = "lensfun-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lensfun-dev-0.3.2-r2.apk"
+version = "0.3.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lensfun", "0.3.2-r2"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

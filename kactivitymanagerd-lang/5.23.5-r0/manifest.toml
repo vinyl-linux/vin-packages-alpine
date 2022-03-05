@@ -1,0 +1,15 @@
+checksum = "7b75972a26bf2e7457386553d5360077917c3ea1cbd81398841332be718182fd"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "kactivitymanagerd-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kactivitymanagerd-lang-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.3"]]

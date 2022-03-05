@@ -1,0 +1,15 @@
+checksum = "7283ab079061b19ae07a4913da2a196b0d3341fcd371bff0a2813594879f6c92"
+licence = "GPL-2.0-only"
+provides = "jool-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jool-tools-4.1.5-r0.apk"
+version = "4.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libnl3", "3.5.0-r0"]]

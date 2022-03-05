@@ -1,0 +1,15 @@
+checksum = "ce2410d5e75cf9b0105cb6030891d2fda4306bc717937810d53a525de38f1666"
+licence = "MPL-2.0"
+provides = "syncthing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/syncthing-1.18.4-r1.apk"
+version = "1.18.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"]]

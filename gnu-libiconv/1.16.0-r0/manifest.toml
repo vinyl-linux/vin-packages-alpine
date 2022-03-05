@@ -1,0 +1,15 @@
+checksum = "04c2b664fb1d67dae69827f8ede494fa78d1441236ef2e337c43b824116a597a"
+licence = "LGPL-2.1-or-later"
+provides = "gnu-libiconv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnu-libiconv-1.16-r0.apk"
+version = "1.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

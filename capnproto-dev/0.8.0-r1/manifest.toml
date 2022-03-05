@@ -1,0 +1,15 @@
+checksum = "456efe212d641a5c693c5220d1cbb5cf84f82567ec0cbef519f021857c9e8b7d"
+licence = "MIT"
+provides = "capnproto-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/capnproto-dev-0.8.0-r1.apk"
+version = "0.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libucontext-dev", "1.1.0-r0"], ["capnproto", "0.8.0-r1"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

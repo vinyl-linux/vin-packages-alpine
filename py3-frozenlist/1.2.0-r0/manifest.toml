@@ -1,0 +1,15 @@
+checksum = "6fd6b9734fd5f0573c32a9205dc2e2f5925eddd5f33c4ae184c9caebfca812a6"
+licence = "Apache-2.0"
+provides = "py3-frozenlist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-frozenlist-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

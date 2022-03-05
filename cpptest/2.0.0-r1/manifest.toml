@@ -1,0 +1,15 @@
+checksum = "08f2701fbacfb2ce4f610b5386163279f63716b62631abd5cdd641734c968788"
+licence = "LGPL-2.0-or-later"
+provides = "cpptest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cpptest-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

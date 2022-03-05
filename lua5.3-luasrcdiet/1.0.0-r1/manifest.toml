@@ -1,0 +1,15 @@
+checksum = "f3b12423224f3e842d7c696a885efa8d0f8e1fad9a13998c4db1b27841f11d10"
+licence = "MIT"
+provides = "lua5.3-luasrcdiet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-luasrcdiet-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

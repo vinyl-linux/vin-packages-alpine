@@ -1,0 +1,15 @@
+checksum = "3b13bf690521fd4e5952851a78485f081e0af69954ec615e11789a69bb7e406d"
+licence = "Unlicense"
+provides = "translate-shell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/translate-shell-0.9.6.12-r0.apk"
+version = "0.9.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gawk", "5.1.1-r0"], ["bash", "5.1.16-r0"]]

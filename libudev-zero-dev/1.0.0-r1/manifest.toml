@@ -1,0 +1,15 @@
+checksum = "1ea0eb4fc73242508c3a586717e0803d1d5fd4a8fbd802ce0da2b8a9c661ddb3"
+licence = "ISC"
+provides = "libudev-zero-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libudev-zero-dev-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libudev-zero", "1.0.0-r1"], ["pkgconf", "1.8.0-r0"]]

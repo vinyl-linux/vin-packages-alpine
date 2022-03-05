@@ -1,0 +1,15 @@
+checksum = "ba16e1340f32817061a388c9ea20449a07d087ddf2e3ef7e47c56d26b719b361"
+licence = "Apache-2.0"
+provides = "commons-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/commons-daemon-1.2.4-r1.apk"
+version = "1.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"]]

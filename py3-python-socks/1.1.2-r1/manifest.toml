@@ -1,0 +1,15 @@
+checksum = "9589099a43fdd52df5e412a2b3bc826b4e1593bf5fe091b05fc416eeb8f25d9a"
+licence = "Apache-2.0"
+provides = "py3-python-socks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-python-socks-1.1.2-r1.apk"
+version = "1.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-async-timeout", "4.0.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b472d0ee314e8522b09acccc79d65d1b7b13a74296ea5b2784433d6adbeacb14"
+licence = "MIT"
+provides = "janet-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/janet-static-1.18.1-r0.apk"
+version = "1.18.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

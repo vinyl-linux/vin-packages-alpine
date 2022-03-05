@@ -1,0 +1,15 @@
+checksum = "3d567b6c9955bef0e881095abd685794a2b037408f98f3cbf8e21803792a2480"
+licence = "MPL-2.0"
+provides = "terraform"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/terraform-1.0.11-r0.apk"
+version = "1.0.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

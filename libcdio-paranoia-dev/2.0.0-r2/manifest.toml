@@ -1,0 +1,15 @@
+checksum = "a81504b43dc20bd6bcc29593d430497d6dc4a1dd8f4f940db4eeb9be29397df8"
+licence = "GPL-2.0-or-later and LGPL-2.0-or-later"
+provides = "libcdio-paranoia-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcdio-paranoia-dev-2.0.0-r2.apk"
+version = "2.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcdio-paranoia", "2.0.0-r2"], ["libcdio-dev", "2.1.0-r0"], ["pkgconf", "1.8.0-r0"]]

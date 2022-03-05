@@ -1,0 +1,15 @@
+checksum = "54a907526f0cfebca805cf5d69c5b157f1b3fc5e8a65d61821206ebe7021bcb6"
+licence = "GPL-2.0-or-later"
+provides = "korganizer-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/korganizer-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "21.8.3-r1"]]

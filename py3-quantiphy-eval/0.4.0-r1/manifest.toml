@@ -1,0 +1,15 @@
+checksum = "1ff0df49d8cf40febad327564cec7810c750af9512b721bb897396fe9a5d5392"
+licence = "GPL-3.0-or-later"
+provides = "py3-quantiphy-eval"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-quantiphy-eval-0.4-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-quantiphy", "2.15.0-r0"], ["py3-inform", "1.26.0-r0"], ["py3-sly", "0.4.0-r1"]]

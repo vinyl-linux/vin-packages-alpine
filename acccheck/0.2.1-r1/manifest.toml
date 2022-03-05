@@ -1,0 +1,15 @@
+checksum = "3c0e027f2a335d798342c3dfaeb24c0dd7afb68548315295be1c57229975c980"
+licence = "GPL-2.0"
+provides = "acccheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/acccheck-0.2.1-r1.apk"
+version = "0.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"]]

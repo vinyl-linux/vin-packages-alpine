@@ -1,0 +1,15 @@
+checksum = "97854125ad90e9e020c75bc58aa18aae2d8fc84bc69132e5398633c0e083f6d3"
+licence = "BSD-3-Clause"
+provides = "libupnp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libupnp-dev-1.14.12-r0.apk"
+version = "1.14.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libupnp", "1.14.12-r0"], ["pkgconf", "1.8.0-r0"]]

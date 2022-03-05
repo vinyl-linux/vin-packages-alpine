@@ -1,0 +1,15 @@
+checksum = "b689fc300034bf1b11ea2c72ca4496fbd12d43d8ea5d55d7151d0ce061252d0d"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-sereal-decoder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-sereal-decoder-4.018-r2.apk"
+version = "4.18.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"], ["zstd-libs", "1.5.0-r0"]]

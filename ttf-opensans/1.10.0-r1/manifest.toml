@@ -1,0 +1,15 @@
+checksum = "bd4bab18cc5c375774dc4f197bfe3dd39effc69e08bcbad5ea4943b5fc3feaf3"
+licence = "Apache-2.0"
+provides = "ttf-opensans"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ttf-opensans-1.10-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"], ["mkfontscale", "1.2.1-r1"], ["busybox", "1.34.1-r4"]]

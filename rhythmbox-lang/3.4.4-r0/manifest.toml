@@ -1,0 +1,15 @@
+checksum = "d006bbda09e630d7c366141067c95fc1720d245f617e9e452d491aed3f1de22a"
+licence = "GPL-2.0-or-later"
+provides = "rhythmbox-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rhythmbox-lang-3.4.4-r0.apk"
+version = "3.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "b183a47cffb5f1479a62d77b559b4d3faed79d977c682288b5677395758fcdd2"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php8-pear"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pear-8.0.16-r0.apk"
+version = "8.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8", "8.0.16-r0"], ["php8-xml", "8.0.16-r0"]]

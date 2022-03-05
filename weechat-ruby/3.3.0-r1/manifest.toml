@@ -1,0 +1,15 @@
+checksum = "8a2231de4a43fc2de3b0ed2f369796e1a92a0e2c480a9fda215bbd381f549b0b"
+licence = "GPL-3.0-or-later"
+provides = "weechat-ruby"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/weechat-ruby-3.3-r1.apk"
+version = "3.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["weechat", "3.3.0-r1"], ["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

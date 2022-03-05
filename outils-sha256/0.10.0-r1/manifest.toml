@@ -1,0 +1,15 @@
+checksum = "fdcefa86d4e9ad7c26b79712a33643b29304a10723b5d19e50cbb7faa93e4421"
+licence = "BSD-3-Clause ISC"
+provides = "outils-sha256"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/outils-sha256-0.10-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["outils-md5", "0.10.0-r1"]]

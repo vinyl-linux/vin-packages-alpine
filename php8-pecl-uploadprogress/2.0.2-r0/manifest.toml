@@ -1,0 +1,15 @@
+checksum = "8bbd7776e22d6d0108012876152df884840b45f2c80a15addc2f0ace2177cc90"
+licence = "PHP-3.01"
+provides = "php8-pecl-uploadprogress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-uploadprogress-2.0.2-r0.apk"
+version = "2.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

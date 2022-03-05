@@ -1,0 +1,15 @@
+checksum = "04026f4a2e0ba147cfd9e6f074227c05c02872d82d8e2615af050a48f939a64f"
+licence = "GPL-2.0-only"
+provides = "smenu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/smenu-0.9.18-r0.apk"
+version = "0.9.18-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "aa9c9c948ddae8aef97efc7694d2f8f803cbc0b81492f79a29c7fdf74866de8f"
+licence = "Apache-2.0"
+provides = "py3-distro"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-distro-1.6.0-r0.apk"
+version = "1.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

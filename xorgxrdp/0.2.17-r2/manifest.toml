@@ -1,0 +1,15 @@
+checksum = "9e136d32495168462aef8df02cd2e005b564842f11886589e31ea27b65f5c6ed"
+licence = "X11"
+provides = "xorgxrdp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xorgxrdp-0.2.17-r2.apk"
+version = "0.2.17-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

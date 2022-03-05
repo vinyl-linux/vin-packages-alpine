@@ -1,0 +1,15 @@
+checksum = "e9e5f820ca4d6f184a3f1c9725abcca7cea11689c8e74f833d2854802aa8857d"
+licence = "MIT"
+provides = "py3-lsp-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-lsp-server-1.2.4-r0.apk"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jedi", "0.18.0-r1"], ["py3-pluggy", "0.13.1-r4"], ["py3-ujson", "4.1.0-r0"], ["py3-lsp-jsonrpc", "1.0.0-r0"], ["py3-pydocstyle", "5.1.1-r1"], ["python3", "3.9.7-r4"]]

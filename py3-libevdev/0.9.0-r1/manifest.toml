@@ -1,0 +1,15 @@
+checksum = "85b977802a1e50739d4f29c4303bce629e2d7c875a0512e03d35d6100a313844"
+licence = "MIT"
+provides = "py3-libevdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-libevdev-0.9-r1.apk"
+version = "0.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libevdev", "1.12.0-r0"], ["python3", "3.9.7-r4"]]

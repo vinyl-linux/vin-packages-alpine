@@ -1,0 +1,15 @@
+checksum = "4adcd2cfa81c29b5e1514f3907fc2fb736a6cedc405847c2a2c3fe5ea868349c"
+licence = "LGPL-3.0-or-later"
+provides = "fwupd-efi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-efi-dev-1.1-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9202e9c27637c77de69ebc037028adcb7b6c92ccb2b7af0edebfef9d2be3d52b"
+licence = "MIT AND Apache-2.0"
+provides = "tokei"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tokei-12.1.2-r1.apk"
+version = "12.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

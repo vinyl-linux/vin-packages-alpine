@@ -1,0 +1,15 @@
+checksum = "da6449e6aede789beb3efe2389fe16093d2b727e4ae438487e78338055535422"
+licence = "GPL-3.0-or-later"
+provides = "fisher"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fisher-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

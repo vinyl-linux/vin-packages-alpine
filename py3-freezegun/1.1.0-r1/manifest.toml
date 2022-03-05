@@ -1,0 +1,15 @@
+checksum = "2d2ecbdbb04915879b57f3e771eabca863f6bd623925ed1fd5a57eec0a9962b3"
+licence = "Apache-2.0"
+provides = "py3-freezegun"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-freezegun-1.1.0-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dateutil", "2.8.2-r0"], ["py3-six", "1.16.0-r0"]]

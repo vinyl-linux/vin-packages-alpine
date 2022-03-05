@@ -1,0 +1,15 @@
+checksum = "ce121eba9da71a07d7695986567d741d7a847c3a761a1f965aff489909c23b75"
+licence = "MIT"
+provides = "py3-oscrypto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-oscrypto-1.2.1-r3.apk"
+version = "1.2.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-asn1crypto", "1.4.0-r1"], ["libssl1.1", "1.1.1-l-r8"], ["libcrypto1.1", "1.1.1-l-r8"]]

@@ -1,0 +1,15 @@
+checksum = "7e77d05327ff71d44c5a4e0b279c316c89c09a14b2e57cdfc3053c3a588a8f06"
+licence = "Apache-2.0"
+provides = "py3-speech2text"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-speech2text-0.2.1-r1.apk"
+version = "0.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"], ["py3-speechrecognition", "3.8.1-r1"], ["python3", "3.9.7-r4"]]

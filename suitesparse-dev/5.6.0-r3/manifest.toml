@@ -1,0 +1,15 @@
+checksum = "78649dc1614ad421050231153a67aff6e01560fbbf2b0e64accefd91d682d4ca"
+licence = "GPL-3.0-only"
+provides = "suitesparse-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/suitesparse-dev-5.6.0-r3.apk"
+version = "5.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openblas-dev", "0.3.18-r1"], ["suitesparse", "5.6.0-r3"]]

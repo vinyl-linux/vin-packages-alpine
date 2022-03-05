@@ -1,0 +1,15 @@
+checksum = "ac5bfeea784d19086c2966393c0a42acf6419cb9d0f69d271aa715c2326c75ba"
+licence = "Apache-2.0"
+provides = "py3-pyache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyache-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-numpy", "1.21.4-r0"], ["python3", "3.9.7-r4"]]

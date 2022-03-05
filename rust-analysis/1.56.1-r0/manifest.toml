@@ -1,0 +1,15 @@
+checksum = "780e0a61d265bae85641b34a29e159916b01eb589853a7aa6b9e0b423edc462b"
+licence = "Apache-2.0 AND MIT"
+provides = "rust-analysis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rust-analysis-1.56.1-r0.apk"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust-stdlib", "1.56.1-r0"]]

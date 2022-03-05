@@ -1,0 +1,15 @@
+checksum = "a27223112ae56d182815481f203b493e93657ba417be383b2795aa3598f03e67"
+licence = "GPL-2.0-or-later"
+provides = "collectd-rrdtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-rrdtool-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["librrd", "1.7.2-r5"]]

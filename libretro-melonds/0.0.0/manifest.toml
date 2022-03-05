@@ -1,0 +1,15 @@
+checksum = "de22872d8bb220af32b6168845a8a8f07349cbf3ad3c11d43936630cacfc405e"
+licence = "GPL-3.0-only"
+provides = "libretro-melonds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-melonds-0_git20210411-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

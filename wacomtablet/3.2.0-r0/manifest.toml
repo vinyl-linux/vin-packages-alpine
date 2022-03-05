@@ -1,0 +1,15 @@
+checksum = "517c874b37b088b59e1e7b83fab4e931274809ed5fa2a21c779d7f625bf0bc60"
+licence = "GPL-2.0-or-later"
+provides = "wacomtablet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wacomtablet-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xinput", "1.6.3-r0"], ["kconfig", "5.88.0-r0"], ["kconfigwidgets", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["kglobalaccel", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["plasma-framework", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libxi", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["libwacom", "1.12.0-r0"], ["libxcb", "1.14.0-r2"]]

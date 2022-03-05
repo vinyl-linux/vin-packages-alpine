@@ -1,0 +1,15 @@
+checksum = "111730f432efa24e878ebc517315d9b3d90416f0037bb028fae722a6ff8b968c"
+licence = "BSD"
+provides = "pcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pcc-20211109-r0.apk"
+version = "20211109.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcc-libs-dev", "20211109.0.0-r0"], ["musl", "1.2.2-r7"]]

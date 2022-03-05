@@ -1,0 +1,15 @@
+checksum = "f818137892a697c937915d113abc8ec052f0eabe6822b1569a5b264474d8472a"
+licence = "GPL-2.0-or-later"
+provides = "thunar-volman"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/thunar-volman-4.16.0-r0.apk"
+version = "4.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["thunar", "4.16.10-r0"], ["musl", "1.2.2-r7"], ["exo-libs", "4.16.2-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["libgudev", "237.0.0-r0"], ["libnotify", "0.7.9-r1"], ["pango", "1.48.10-r0"], ["libxfce4ui", "4.16.1-r0"], ["libxfce4util", "4.16.0-r1"], ["xfconf", "4.16.0-r0"]]

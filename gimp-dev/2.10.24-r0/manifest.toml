@@ -1,0 +1,15 @@
+checksum = "bc08bd87fd5e0569ccacf1a3cb10b29c4fd1a06123b0426734618f62fd247b52"
+licence = "GPL-3.0-or-later"
+provides = "gimp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gimp-dev-2.10.24-r0.apk"
+version = "2.10.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gimp", "2.10.24-r0"], ["cairo-dev", "1.16.0-r3"], ["gdk-pixbuf-dev", "2.42.6-r0"], ["gegl-dev", "0.4.30-r2"], ["gtk+2.0-dev", "2.24.33-r0"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

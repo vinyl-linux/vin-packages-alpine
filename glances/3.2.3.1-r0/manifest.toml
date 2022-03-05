@@ -1,0 +1,15 @@
+checksum = "ac6663e52878d33e66792899bfd5826ce7291653359d91ffb4a5031b49f69fd3"
+licence = "LGPL-3.0-or-later"
+provides = "glances"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/glances-3.2.3.1-r0.apk"
+version = "3.2.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-future", "0.18.2-r3"], ["py3-psutil", "5.8.0-r1"], ["py3-bottle", "0.12.19-r1"], ["py3-snmp", "4.4.12-r1"], ["py3-batinfo", "0.4.2-r5"], ["docker-py", "5.0.3-r0"], ["py3-defusedxml", "0.7.1-r1"]]

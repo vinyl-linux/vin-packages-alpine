@@ -1,0 +1,15 @@
+checksum = "8691a59fef04a35e61d9304b417437de763bd45e15a6716f93800c20a9b9ed03"
+licence = "CC0-1.0"
+provides = "tinyssh-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tinyssh-openrc-20210601-r1.apk"
+version = "20210601.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["s6-networking", "2.5.0.0-r0"]]

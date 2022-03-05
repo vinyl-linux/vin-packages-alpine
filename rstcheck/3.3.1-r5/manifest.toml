@@ -1,0 +1,15 @@
+checksum = "6faf395130c27c4afa0a67a904824a364e49377c34922170355d24e8440d45d4"
+licence = "MIT"
+provides = "rstcheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rstcheck-3.3.1-r5.apk"
+version = "3.3.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-docutils", "0.16.0-r3"]]

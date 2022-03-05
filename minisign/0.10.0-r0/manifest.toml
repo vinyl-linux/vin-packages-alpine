@@ -1,0 +1,15 @@
+checksum = "67081bd0caedf19ce4ff28230736bc791185f00fe2eb41ebbb175be37b48ca1e"
+licence = "ISC"
+provides = "minisign"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/minisign-0.10-r0.apk"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libsodium", "1.0.18-r0"]]

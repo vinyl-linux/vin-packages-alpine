@@ -1,0 +1,15 @@
+checksum = "63d2b8c62def51a1a21509784a18ace16511d7417562381e9d2ebd852d24360f"
+licence = "MIT"
+provides = "otf2bdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/otf2bdf-3.1_p1-r0.apk"
+version = "3.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["freetype", "2.11.0-r0"]]

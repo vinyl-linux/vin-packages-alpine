@@ -1,0 +1,15 @@
+checksum = "0f5e2fc62c0dec77a1908672e789c65dcd2ce8c6eacac83c02486ac57e11996f"
+licence = "Apache-2.0"
+provides = "unit-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unit-openrc-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.80.0-r0"]]

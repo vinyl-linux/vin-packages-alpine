@@ -1,0 +1,15 @@
+checksum = "a0e45782defc36fa2327f7281e70011f30230028fba00ee798ce4a976bf0469e"
+licence = "GPL-3.0-or-later"
+provides = "radicale"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/radicale-3.0.6-r2.apk"
+version = "3.0.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-passlib", "1.7.4-r1"], ["py3-vobject", "0.9.6.1-r4"], ["py3-defusedxml", "0.7.1-r1"], ["py3-dateutil", "2.8.2-r0"], ["py3-setuptools", "52.0.0-r4"], ["busybox", "1.34.1-r4"]]

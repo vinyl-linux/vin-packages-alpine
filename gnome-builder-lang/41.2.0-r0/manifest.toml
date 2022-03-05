@@ -1,0 +1,15 @@
+checksum = "8815293c563deb88dc451798b7a210bb41f12f5d4cd618a5201bccbb4630a1ed"
+licence = "GPL-3.0-or-later"
+provides = "gnome-builder-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-builder-lang-41.2-r0.apk"
+version = "41.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flatpak-builder", "1.0.14-r0"], ["py3-lxml", "4.6.5-r0"], ["py3-gobject3", "3.42.0-r1"]]

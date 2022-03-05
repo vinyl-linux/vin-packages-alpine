@@ -1,0 +1,15 @@
+checksum = "870705abc582eb9f9d9613628ff1f5b3e24c8f67f12aa9259f8d201d37a56b2f"
+licence = "BSD-3-Clause-No-Nuclear-License-2014"
+provides = "rancid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rancid-3.13-r0.apk"
+version = "3.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["expect", "5.45.4-r2"], ["perl", "5.34.0-r1"], ["logrotate", "3.18.1-r1"], ["iputils", "20210722.0.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

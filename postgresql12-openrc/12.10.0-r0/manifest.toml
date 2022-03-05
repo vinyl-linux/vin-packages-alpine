@@ -1,0 +1,15 @@
+checksum = "dd236d0d5ddbf5aadf00fdf5ee5af646d327526816568500bf14dd3bb10f7ad4"
+licence = "PostgreSQL"
+provides = "postgresql12-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postgresql12-openrc-12.10-r0.apk"
+version = "12.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-common-openrc", "1.0.0-r0"]]

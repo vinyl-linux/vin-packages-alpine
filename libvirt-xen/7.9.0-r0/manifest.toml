@@ -1,0 +1,15 @@
+checksum = "743596fc879eaef5a028144857166ee61c8307abacdb265f843776cd6068180e"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-xen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libvirt-xen-7.9.0-r0.apk"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt-daemon", "7.9.0-r0"], ["libvirt-common-drivers", "7.9.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["libvirt-libs", "7.9.0-r0"], ["xen-libs", "4.15.1-r2"], ["libxml2", "2.9.12-r2"]]

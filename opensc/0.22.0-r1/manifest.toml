@@ -1,0 +1,15 @@
+checksum = "ac5d2ffa1108952273088bc42bc28779a3618e5c0a99175160b4ccea37c21d65"
+licence = "LGPL-2.1-or-later"
+provides = "opensc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/opensc-0.22.0-r1.apk"
+version = "0.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite", "1.9.4-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["readline", "8.1.1-r0"], ["zlib", "1.2.11-r3"]]

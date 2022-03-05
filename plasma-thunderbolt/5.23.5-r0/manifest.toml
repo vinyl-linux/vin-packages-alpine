@@ -1,0 +1,15 @@
+checksum = "a5063193d74ab9c7495aba1660137ab6b4f44ce34c9df5c05483f31cc37876ae"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "plasma-thunderbolt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-thunderbolt-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bolt", "0.9.1-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["kdeclarative", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

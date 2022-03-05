@@ -1,0 +1,15 @@
+checksum = "509e7e91c29ec772cdb981b0e9bac922006f7996e87c7e98e8fc619220d872c7"
+licence = "LGPL-2.1-or-later"
+provides = "uhttpmock-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/uhttpmock-dev-0.5.3-r1.apk"
+version = "0.5.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.70.1-r0"], ["libsoup-dev", "2.74.0-r0"], ["pkgconf", "1.8.0-r0"], ["uhttpmock", "0.5.3-r1"]]

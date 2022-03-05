@@ -1,0 +1,15 @@
+checksum = "60e3492b641184537e9ac010fb4f5c98eee23ca561ec8cb357bd48445f84ec96"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-clamd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/claws-mail-plugins-clamd-4.0.0-r3.apk"
+version = "4.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.0.0-r3"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["libintl", "0.21.0-r0"]]

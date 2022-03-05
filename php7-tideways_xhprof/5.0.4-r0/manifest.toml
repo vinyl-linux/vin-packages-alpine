@@ -1,0 +1,15 @@
+checksum = "1199b04133dd150ebbf69f8e06b8504dbdf1b3be81ab6cd39b1b87917579822a"
+licence = "Apache-2.0"
+provides = "php7-tideways_xhprof"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-tideways_xhprof-5.0.4-r0.apk"
+version = "5.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

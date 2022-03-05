@@ -1,0 +1,15 @@
+checksum = "77fc2c36586cabc915a454b74edf7400388d0bf3d65b2c87b9ea433ada44c06b"
+licence = "GPL-2.0-only"
+provides = "libretro-vba-next"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-vba-next-0_git20210312-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

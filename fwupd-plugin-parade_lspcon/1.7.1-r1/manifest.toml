@@ -1,0 +1,15 @@
+checksum = "665287724e59bec4e85fce096a3699bf98a3f78ece88b69b50251c6b2a5d3c1d"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-parade_lspcon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-parade_lspcon-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libgudev", "237.0.0-r0"]]

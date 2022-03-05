@@ -1,0 +1,15 @@
+checksum = "de2844b2d39608a2b1d94a5b1f04f328ea6e845cb2d371f32cee44e54fea62b8"
+licence = "GPL-3.0-or-later"
+provides = "peek-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/peek-lang-1.5.1-r1.apk"
+version = "1.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg", "4.4.1-r2"], ["gst-plugins-good", "1.18.5-r0"], ["gst-plugins-bad", "1.18.5-r2"]]

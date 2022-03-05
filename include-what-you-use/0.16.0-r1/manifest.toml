@@ -1,0 +1,15 @@
+checksum = "012b565884633e40206b65d10d9f88ac3a727f47755f7e82f0fb5ecb7b932a0b"
+licence = "NCSA"
+provides = "include-what-you-use"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/include-what-you-use-0.16-r1.apk"
+version = "0.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["llvm12-libs", "12.0.1-r0"], ["musl", "1.2.2-r7"], ["clang-libs", "12.0.1-r1"], ["libstdc++", "10.3.1"]]

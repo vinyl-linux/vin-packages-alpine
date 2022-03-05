@@ -1,0 +1,15 @@
+checksum = "fae9899b011a98f7ce9a32827e70bd0bfc40e5c477f856f051a3337d14fbac08"
+licence = "Apache-2.0"
+provides = "cni-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cni-plugins-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

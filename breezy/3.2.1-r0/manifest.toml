@@ -1,0 +1,15 @@
+checksum = "22698a1935195a8ce5422b29428544e29f9df22c73aec7a9a3fd44b53efdc175"
+licence = "GPL-2.0-or-later"
+provides = "breezy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/breezy-3.2.1-r0.apk"
+version = "3.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-configobj", "5.0.6-r8"], ["py3-six", "1.16.0-r0"], ["py3-dulwich", "0.20.18-r1"], ["py3-patiencediff", "0.2.2-r0"], ["musl", "1.2.2-r7"]]

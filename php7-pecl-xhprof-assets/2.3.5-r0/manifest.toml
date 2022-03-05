@@ -1,0 +1,15 @@
+checksum = "e94ad9ab83dbb496db3d38ebd116463571a02249687d7f7645b9fc2599b33c78"
+licence = "Apache-2.0"
+provides = "php7-pecl-xhprof-assets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-xhprof-assets-2.3.5-r0.apk"
+version = "2.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-ctype", "7.4.28-r0"], ["graphviz", "2.49.3-r0"], ["ghostscript-fonts", "8.11.0-r2"]]

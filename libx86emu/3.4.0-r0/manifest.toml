@@ -1,0 +1,15 @@
+checksum = "8ff4a222ddca2ee5506c38c6853cf0fabc1eaf0e531eb6b6dafb94570bbe01e9"
+licence = "MIT"
+provides = "libx86emu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libx86emu-3.4-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

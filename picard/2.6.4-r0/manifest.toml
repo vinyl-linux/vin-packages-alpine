@@ -1,0 +1,15 @@
+checksum = "a61764963553a56305094eed3d3831ef6856c3e76331bd53ad188ae95347d0b4"
+licence = "GPL-2.0-or-later"
+provides = "picard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/picard-2.6.4-r0.apk"
+version = "2.6.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chromaprint", "1.5.0-r0"], ["py3-fasteners", "0.16.3-r0"], ["py3-mutagen", "1.45.1-r1"], ["py3-qt5", "5.15.2-r1"], ["musl", "1.2.2-r7"]]

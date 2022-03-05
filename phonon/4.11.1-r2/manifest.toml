@@ -1,0 +1,15 @@
+checksum = "064254fb0b1a9490217f7c79a0cccbf404a647951ec0764f661dafc878c42f16"
+licence = "LGPL-2.1-or-later"
+provides = "phonon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/phonon-4.11.1-r2.apk"
+version = "4.11.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qttools", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

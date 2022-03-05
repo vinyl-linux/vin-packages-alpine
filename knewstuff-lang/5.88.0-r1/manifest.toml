@@ -1,0 +1,15 @@
+checksum = "81cd77f497fe89d721d3de8c760c813a4b651a005fa6ddd37590db1c96cde27c"
+licence = "LGPL-2.1-or-later"
+provides = "knewstuff-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/knewstuff-lang-5.88.0-r1.apk"
+version = "5.88.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"]]

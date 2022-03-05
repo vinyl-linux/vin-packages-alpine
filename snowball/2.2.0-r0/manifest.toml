@@ -1,0 +1,15 @@
+checksum = "9a4d10f1531f6a6fdcd035d21950e04dbcda98cf699367fe22d4a683f81e0138"
+licence = "BSD-3-Clause"
+provides = "snowball"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/snowball-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

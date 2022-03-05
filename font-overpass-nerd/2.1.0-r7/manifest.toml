@@ -1,0 +1,15 @@
+checksum = "2c30eb6488e83cb9bea121b67742d8b2f3bd63835d1e0b53ac3154786ed3394f"
+licence = "MIT"
+provides = "font-overpass-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-overpass-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

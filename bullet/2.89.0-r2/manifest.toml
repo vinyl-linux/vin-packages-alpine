@@ -1,0 +1,15 @@
+checksum = "a39a51e7d628e63e1f1520d3cf575fc98741937c82fd629277a6d37ea92e0fc0"
+licence = "Zlib"
+provides = "bullet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bullet-2.89-r2.apk"
+version = "2.89.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

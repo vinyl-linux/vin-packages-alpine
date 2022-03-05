@@ -1,0 +1,15 @@
+checksum = "e379c22388af9d943bfe66a83b37ea98a41033eed552e0fb023bf78c62c9b5bf"
+licence = "MIT"
+provides = "xrefresh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xrefresh-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

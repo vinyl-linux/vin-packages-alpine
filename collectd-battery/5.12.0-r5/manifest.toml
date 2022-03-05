@@ -1,0 +1,15 @@
+checksum = "c43bffa4f113b04fc29d2105d500020602161d1003557d3457704bcb08922039"
+licence = "GPL-2.0-or-later"
+provides = "collectd-battery"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-battery-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"]]

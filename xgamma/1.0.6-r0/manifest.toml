@@ -1,0 +1,15 @@
+checksum = "1c8df8217d02f840565c2eb3d0eea168d9cbacdd6a90b1ed575aee56fe2aeedf"
+licence = "custom"
+provides = "xgamma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xgamma-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxxf86vm", "1.1.4-r2"], ["musl", "1.2.2-r7"]]

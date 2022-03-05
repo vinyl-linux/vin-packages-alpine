@@ -1,0 +1,15 @@
+checksum = "8959004e3f62d8f9c3dcbe2d102c4dc21103391d8169ab3676c4c335b6e8b8bd"
+licence = "0BSD"
+provides = "bfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bfs-2.2.1-r0.apk"
+version = "2.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.2.53-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"]]

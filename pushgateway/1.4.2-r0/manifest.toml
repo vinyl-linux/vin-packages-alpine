@@ -1,0 +1,15 @@
+checksum = "bdb988e93cef74d2f8e58b160d56f3018900939435bd974f007741782450f607"
+licence = "Apache-2.0"
+provides = "pushgateway"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pushgateway-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

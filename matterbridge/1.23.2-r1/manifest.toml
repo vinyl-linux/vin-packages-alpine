@@ -1,0 +1,15 @@
+checksum = "e88b0f707a6dbbd9f68225facadc68aaf3c215b1b0c6f7fe34bc0074cb0dba36"
+licence = "Apache-2.0"
+provides = "matterbridge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/matterbridge-1.23.2-r1.apk"
+version = "1.23.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

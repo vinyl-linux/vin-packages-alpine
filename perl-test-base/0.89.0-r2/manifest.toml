@@ -1,0 +1,15 @@
+checksum = "23e2471c0d06fcebd592fb4ef578e596373bfbbe898fb492a16a01006a6f7dc2"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-base"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-base-0.89-r2.apk"
+version = "0.89.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-spiffy", "0.46.0-r3"]]

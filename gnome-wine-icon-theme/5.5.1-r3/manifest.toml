@@ -1,0 +1,15 @@
+checksum = "a83444f3a9afc3ac0ebfaa90de81137a2112c1b5da4073bbb58aab72a09d4f40"
+licence = "GPL-2.0-only"
+provides = "gnome-wine-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-wine-icon-theme-5.5.1-r3.apk"
+version = "5.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-colors-common", "5.5.1-r3"]]

@@ -1,0 +1,15 @@
+checksum = "03ab0535c93d7305e3f083b10fc913c6fb82f4787cef8b54c574c576e1697a59"
+licence = "MIT"
+provides = "py3-gdal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-gdal-3.4.1-r0.apk"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-numpy", "1.21.4-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gdal", "3.4.1-r0"], ["libstdc++", "10.3.1"]]

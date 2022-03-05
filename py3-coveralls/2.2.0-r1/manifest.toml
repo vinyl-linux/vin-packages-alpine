@@ -1,0 +1,15 @@
+checksum = "3de765ea54ddea4352a7193aa40331a898e2cc30accc8eef1885aa7536266cf7"
+licence = "MIT"
+provides = "py3-coveralls"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-coveralls-2.2.0-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-coverage", "5.5.0-r0"], ["py3-docopt", "0.6.2-r6"], ["py3-requests", "2.26.0-r1"]]

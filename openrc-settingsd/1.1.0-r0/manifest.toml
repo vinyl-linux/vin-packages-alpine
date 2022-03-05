@@ -1,0 +1,15 @@
+checksum = "8dbbcc850d666c8ba1b1a3d23ae22c778779f944cfc26e60a3adb2ff479383cd"
+licence = "GPL-2.0-or-later"
+provides = "openrc-settingsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openrc-settingsd-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tzdata", "2021.0.0-e-r0"], ["musl", "1.2.2-r7"], ["libdaemon", "0.14.0-r2"], ["glib", "2.70.1-r0"], ["polkit-elogind-libs", "0.119.0-r8"], ["openrc", "0.44.7-r3"]]

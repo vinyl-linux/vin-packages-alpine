@@ -1,0 +1,15 @@
+checksum = "19fe34eaaf9605bae2a1327781319e50e4c571d4a121e355e9700460d623dbf6"
+licence = "GPL-2.0-or-later"
+provides = "exim-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/exim-scripts-4.95-r0.apk"
+version = "4.95.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.95.0-r0"], ["perl", "5.34.0-r1"]]

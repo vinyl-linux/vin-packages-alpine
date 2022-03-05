@@ -1,0 +1,15 @@
+checksum = "5228ce7a26cbbe5d1a3e566f940ef5c264e2c3f6c4ec6db6c80b1a4b34943520"
+licence = "MPL2"
+provides = "kea-ctrl-agent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-ctrl-agent-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kea-common", "2.0.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

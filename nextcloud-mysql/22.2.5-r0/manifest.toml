@@ -1,0 +1,15 @@
+checksum = "060b242a141f8cfe17a74c345a7966d3c3f091c3675e9e70e2d9e1e37c947f13"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-mysql-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"], ["php8-pdo_mysql", "8.0.16-r0"]]

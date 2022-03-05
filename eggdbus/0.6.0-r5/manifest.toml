@@ -1,0 +1,15 @@
+checksum = "3a0b01fed9fa22859ef144affef583652db09d2cd54b8044ad0663d3e3562a19"
+licence = "LGPL-2.1-or-later"
+provides = "eggdbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/eggdbus-0.6-r5.apk"
+version = "0.6.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"], ["dbus-glib", "0.112.0-r0"], ["glib", "2.70.1-r0"]]

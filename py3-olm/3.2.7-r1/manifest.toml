@@ -1,0 +1,15 @@
+checksum = "cc6ab71620267b7ae287beb7e0472140d77b5252d50ec68cb059d23607993738"
+licence = "Apache-2.0"
+provides = "py3-olm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-olm-3.2.7-r1.apk"
+version = "3.2.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-future", "0.18.2-r3"], ["py3-cffi", "1.14.5-r2"], ["musl", "1.2.2-r7"], ["olm", "3.2.7-r1"]]

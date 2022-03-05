@@ -1,0 +1,15 @@
+checksum = "9763b84475dbb57b4affee02893084d33464a9912d51d916d90b95ad46abff7c"
+licence = "GPL-2.0-or-later"
+provides = "lxsession"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lxsession-0.5.5-r0.apk"
+version = "0.5.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gtk+2.0", "2.24.33-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["polkit-elogind-libs", "0.119.0-r8"]]

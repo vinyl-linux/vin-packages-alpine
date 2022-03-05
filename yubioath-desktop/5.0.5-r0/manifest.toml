@@ -1,0 +1,15 @@
+checksum = "956a953f6e01fb2fb7163da8f16de6ebc12c83b51cb6178387a82ead7b832393"
+licence = "BSD-2-Clause"
+provides = "yubioath-desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yubioath-desktop-5.0.5-r0.apk"
+version = "5.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyotherside", "1.5.9-r2"], ["py3-ykman", "4.0.1-r0"], ["ccid", "1.4.36-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

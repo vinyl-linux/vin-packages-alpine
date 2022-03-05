@@ -1,0 +1,15 @@
+checksum = "1b2446efe4500eb0a90a18ffe577f2f395c222e6ee7f6751fb76bdb0380504e4"
+licence = "MIT"
+provides = "font-anonymous-pro-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-anonymous-pro-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

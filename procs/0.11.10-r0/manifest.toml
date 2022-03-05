@@ -1,0 +1,15 @@
+checksum = "9fb88eec352475fb9148f12528e9e7fd0bfb13d0c517c3f81837debb6922e95b"
+licence = "MIT"
+provides = "procs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/procs-0.11.10-r0.apk"
+version = "0.11.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

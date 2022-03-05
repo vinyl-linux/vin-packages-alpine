@@ -1,0 +1,15 @@
+checksum = "865ea7646fd4c621572fd82797084be9b50413963045f291e38923fa4aa012e1"
+licence = "LicenseRef-KDE-Accepted-GPL"
+provides = "kclock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kclock-21.12-r0.apk"
+version = "21.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami-addons", "0.2.0-r0"], ["kirigami2", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["plasma-framework", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtmultimedia", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

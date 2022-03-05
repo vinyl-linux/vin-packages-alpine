@@ -1,0 +1,15 @@
+checksum = "036433ec4c321eeede5d0153a445a081a2afba6f3b8364951d156ea99e845281"
+licence = "GPL-2.0-or-later"
+provides = "vala-lint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vala-lint-0_git20210203-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.70.1-r0"], ["vala", "0.54.3-r0"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

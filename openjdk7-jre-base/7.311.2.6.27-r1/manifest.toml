@@ -1,0 +1,15 @@
+checksum = "37ee89ddc9e4aacf6f09b9408f8b87d529caba956cae9001b5e6fc078434703a"
+licence = "GPL-2.0 with Classpath"
+provides = "openjdk7-jre-base"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk7-jre-base-7.311.2.6.27-r1.apk"
+version = "7.311.2.6.27-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk7-jre-lib", "7.311.2.6.27-r1"], ["java-common", "0.4.0-r0"], ["java-cacerts", "1.0.0-r1"], ["libx11", "1.7.2-r0"], ["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"], ["libgcc", "10.3.1"], ["gtk+2.0", "2.24.33-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["krb5-libs", "1.19.2-r4"], ["lcms2", "2.12.0-r1"], ["pango", "1.48.10-r0"], ["pcsc-lite-libs", "1.9.4-r0"], ["liblksctp", "1.0.19-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

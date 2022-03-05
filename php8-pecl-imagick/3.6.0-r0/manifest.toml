@@ -1,0 +1,15 @@
+checksum = "39f9c907536226eb9a28146c60637053326a2721ded492441d0c341687de72fd"
+licence = "PHP-3.01"
+provides = "php8-pecl-imagick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-imagick-3.6.0-r0.apk"
+version = "3.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["imagemagick", "7.1.0.16-r0"], ["imagemagick-libs", "7.1.0.16-r0"], ["musl", "1.2.2-r7"], ["libgomp", "10.3.1"]]

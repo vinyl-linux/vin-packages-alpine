@@ -1,0 +1,15 @@
+checksum = "d45c781b2980a44c05ee2b050406e5d5f1cbdcb2e525c15f95841748a38e8d36"
+licence = "ZPL-2.1"
+provides = "py3-zope-interface"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-zope-interface-5.4.0-r0.apk"
+version = "5.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

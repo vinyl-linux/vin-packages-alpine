@@ -1,0 +1,15 @@
+checksum = "e6cf8f6e94a5275489e05491fcc754031821a47e73658786cd53d91b5f7823be"
+licence = "custom"
+provides = "libxres"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libxres-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["musl", "1.2.2-r7"]]

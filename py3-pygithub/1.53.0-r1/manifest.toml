@@ -1,0 +1,15 @@
+checksum = "464ff5b54ab5e7f92433ad0ca742a0013d4ad5354438f2d40bf2efe0f54af41f"
+licence = "LGPL-3.0-or-later"
+provides = "py3-pygithub"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pygithub-1.53-r1.apk"
+version = "1.53.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-jwt", "1.7.1-r4"], ["py3-requests", "2.26.0-r1"], ["py3-deprecated", "1.2.13-r0"]]

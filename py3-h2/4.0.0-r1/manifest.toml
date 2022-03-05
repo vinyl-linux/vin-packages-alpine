@@ -1,0 +1,15 @@
+checksum = "2ca02254e1d32e2c9bfa7347a5bb5f8817186c7f2e1273f8e4be1b7411a29d01"
+licence = "MIT"
+provides = "py3-h2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-h2-4.0.0-r1.apk"
+version = "4.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-hyperframe", "6.0.0-r1"], ["py3-hpack", "4.0.0-r1"]]

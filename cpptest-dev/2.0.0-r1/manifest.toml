@@ -1,0 +1,15 @@
+checksum = "596dde424e3f63831527fa198471ab19d5cc291337762f7713326d4a92e6108d"
+licence = "LGPL-2.0-or-later"
+provides = "cpptest-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cpptest-dev-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cpptest", "2.0.0-r1"], ["pkgconf", "1.8.0-r0"]]

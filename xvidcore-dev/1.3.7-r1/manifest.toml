@@ -1,0 +1,15 @@
+checksum = "5f7dc11fafdbec898d965ace3cf506385d8864745c80a72837b792daced7b74a"
+licence = "GPL-2.0-or-later"
+provides = "xvidcore-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xvidcore-dev-1.3.7-r1.apk"
+version = "1.3.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xvidcore", "1.3.7-r1"]]

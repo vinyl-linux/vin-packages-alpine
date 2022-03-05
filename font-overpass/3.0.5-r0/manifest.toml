@@ -1,0 +1,15 @@
+checksum = "6a9ef0f7109a014a42435e12ca12b985413e530b91e49baa7b992df46b462f71"
+licence = "OFL-1.1"
+provides = "font-overpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-overpass-3.0.5-r0.apk"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

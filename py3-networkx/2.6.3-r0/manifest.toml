@@ -1,0 +1,15 @@
+checksum = "7e7193529c2b53b242e1b098bd3acee2cca88f9858650c999a9c1dad045e9cea"
+licence = "BSD-3-Clause"
+provides = "py3-networkx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-networkx-2.6.3-r0.apk"
+version = "2.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-decorator", "5.1.0-r0"], ["python3", "3.9.7-r4"]]

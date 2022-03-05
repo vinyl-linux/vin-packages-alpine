@@ -1,0 +1,15 @@
+checksum = "c80044dc45f1eb4277deb98967f18c0aa25749d423c30230d4ecd41dd3fdd0a7"
+licence = "GPL-3.0-or-later"
+provides = "celluloid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/celluloid-0.21-r0.apk"
+version = "0.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "41.0.0-r0"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["libepoxy", "1.5.9-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["mpv-libs", "0.34.0-r1"], ["pango", "1.48.10-r0"]]

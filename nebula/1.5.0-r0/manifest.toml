@@ -1,0 +1,15 @@
+checksum = "c87f073b6c72e9730782edd54c8a6101f275daaf9fac82ce08fcf52934632900"
+licence = "MIT"
+provides = "nebula"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nebula-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"]]

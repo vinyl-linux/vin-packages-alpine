@@ -1,0 +1,15 @@
+checksum = "48e38cdd3199bac5f77682b727db704b508834deeb3acf96aa2504320ae93615"
+licence = "BSD-3-Clause"
+provides = "hwloc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hwloc-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["eudev-libs", "3.2.11"], ["libxml2", "2.9.12-r2"]]

@@ -1,0 +1,15 @@
+checksum = "3618f0cfa36d5f20c5a1aeb6b95d93ee507f0eee2995cf6dc970ea5c35a6e5f5"
+licence = "MIT"
+provides = "bitcoin-bench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bitcoin-bench-22.0-r1.apk"
+version = "22.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libgcc", "10.3.1"], ["miniupnpc", "2.2.3-r0"], ["libstdc++", "10.3.1"], ["libzmq", "4.3.4-r0"]]

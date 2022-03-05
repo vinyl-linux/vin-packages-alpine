@@ -1,0 +1,15 @@
+checksum = "6d2d32cdefd15b892f6a34af19521ff939551e94c0216b87acb70e1caa3e38d5"
+licence = "MIT"
+provides = "ruby-rmagick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-rmagick-4.2.3-r1.apk"
+version = "4.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghostscript-fonts", "8.11.0-r2"], ["imagemagick6-libs", "6.9.12.32-r0"], ["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

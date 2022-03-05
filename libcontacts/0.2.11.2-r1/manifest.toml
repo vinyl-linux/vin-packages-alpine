@@ -1,0 +1,15 @@
+checksum = "ee2b5d297d65ae0ad40caa66024481236def88241d30a449ece520267cfefd97"
+licence = "BSD-3-Clause"
+provides = "libcontacts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcontacts-0.2.11.2-r1.apk"
+version = "0.2.11.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtpim", "0.0.0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mlite", "0.3.7-r0"], ["libmlocale", "0.7.4-r2"], ["libphonenumber", "8.12.36-r0"], ["libstdc++", "10.3.1"]]

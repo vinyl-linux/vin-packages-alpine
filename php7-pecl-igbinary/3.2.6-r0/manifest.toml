@@ -1,0 +1,15 @@
+checksum = "2ca82a3a31bc893e800cf90980f5f64e27d3f9605adcfcd8d54ea70e787e0b6c"
+licence = "BSD-3-Clause"
+provides = "php7-pecl-igbinary"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-igbinary-3.2.6-r0.apk"
+version = "3.2.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

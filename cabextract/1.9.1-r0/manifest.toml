@@ -1,0 +1,15 @@
+checksum = "e059e6410d8daf520233599e0f615ed5aaca03094e0d6d92ff1b1b737692b458"
+licence = "GPL-2.0-or-later"
+provides = "cabextract"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cabextract-1.9.1-r0.apk"
+version = "1.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libmspack", "0.10.1"]]

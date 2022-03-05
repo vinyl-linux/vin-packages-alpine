@@ -1,0 +1,15 @@
+checksum = "9992953d4ad3290be2c2ae2a049e95acf212a63554e52ed38d39c392e0a5cec1"
+licence = "GPL-2.0-or-later"
+provides = "thunar-vcs-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/thunar-vcs-plugin-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apr", "1.7.0-r0"], ["musl", "1.2.2-r7"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["pango", "1.48.10-r0"], ["subversion-libs", "1.14.1-r7"], ["thunar", "4.16.10-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d4d21e91b3cdf1e2ca9899c675f217d3baf802802c9c6bef3411593a56289a3e"
+licence = "GPL-2.0-or-later"
+provides = "kpkpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kpkpass-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["karchive", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

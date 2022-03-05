@@ -1,0 +1,15 @@
+checksum = "af550e4d957db1792e586675709e715d17313729ed0e16a1b10d3169232390d9"
+licence = "LGPL-2.1-or-later"
+provides = "libpeas-python3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libpeas-python3-1.30.0-r2.apk"
+version = "1.30.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.0-r1"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libpeas", "1.30.0-r2"], ["python3", "3.9.7-r4"]]

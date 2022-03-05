@@ -1,0 +1,15 @@
+checksum = "8717b4fc10552ae8cc97e11dcf7ed093c538c0271a236c54e1b3289680405aac"
+licence = "CDDL-1.0 OR LGPL-2.1-only"
+provides = "libraw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libraw-0.20.2-r0.apk"
+version = "0.20.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libgomp", "10.3.1"], ["libstdc++", "10.3.1"]]

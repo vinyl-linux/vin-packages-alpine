@@ -1,0 +1,15 @@
+checksum = "91e155d4553dc0f1f901b5774a481f6c4e4833330404a25e6186f12d6b798a90"
+licence = "Apache-2.0"
+provides = "perl-http-cookiejar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-http-cookiejar-0.012-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-http-date", "6.5.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "6eccd4798f5e30df61bd35fa1049a7baa5d6b5131b5e7a884985589712ccc7bf"
+licence = "BSD-3-Clause"
+provides = "tg_owt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tg_owt-dev-20211105-r0.apk"
+version = "20211105.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tg_owt", "20211105.0.0-r0"]]

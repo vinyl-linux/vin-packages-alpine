@@ -1,0 +1,15 @@
+checksum = "320fae6bd5835cd7a601f082cdffa72c904be128830cb2c49664af045a718540"
+licence = "MIT"
+provides = "foot-themes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/foot-themes-1.10.3-r0.apk"
+version = "1.10.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"]]

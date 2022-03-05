@@ -1,0 +1,15 @@
+checksum = "2ac14eacce8a87dab772f479aa45342a6269ae9f09be3ad1da13e0c2f33dd0f0"
+licence = "LGPL-2.1-or-later"
+provides = "gspell-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gspell-dbg-1.9.1-r1.apk"
+version = "1.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iso-codes", "4.8.0-r0"]]

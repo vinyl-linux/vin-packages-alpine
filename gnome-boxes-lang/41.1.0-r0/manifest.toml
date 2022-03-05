@@ -1,0 +1,15 @@
+checksum = "2f43a534763ac70bbabde71a99f868296582122eda4ec0fe76b32b2260722b73"
+licence = "GPL-2.0-only"
+provides = "gnome-boxes-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-boxes-lang-41.1-r0.apk"
+version = "41.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt-daemon", "7.9.0-r0"]]

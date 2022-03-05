@@ -1,0 +1,15 @@
+checksum = "af90c1bc13eb97aa0c77213d15ed9fb01c61635cabc2b1c5b87b88cd625f3aca"
+licence = "MIT"
+provides = "lua5.1-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.1-redis-2.0.4-r3.apk"
+version = "2.0.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-socket", "3.0.0"]]

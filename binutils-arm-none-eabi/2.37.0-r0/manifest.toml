@@ -1,0 +1,15 @@
+checksum = "93f0c931e03ec72cb795f23fa230f3ce7a4ef58c51538790cc453dbbe2716832"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-arm-none-eabi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/binutils-arm-none-eabi-2.37-r0.apk"
+version = "2.37.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

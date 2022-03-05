@@ -1,0 +1,15 @@
+checksum = "05c047a105c90bc13a6f5aa39a6fcee469fcd8a576bdf590dfbf465ef65e1694"
+licence = "custom"
+provides = "opendkim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/opendkim-2.11.0-r1.apk"
+version = "2.11.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libmilter", "1.0.2-r7"], ["opendkim-libs", "2.11.0-r1"], ["libssl1.1", "1.1.1-l-r8"]]

@@ -1,0 +1,15 @@
+checksum = "c32544f3931efb30dd281e04b7a18555e6f20fd8e4b5a8705699f545cd65aaec"
+licence = "BSD-3-Clause"
+provides = "libglibutil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libglibutil-1.0.61-r0.apk"
+version = "1.0.61-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

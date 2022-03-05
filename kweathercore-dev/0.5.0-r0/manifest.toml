@@ -1,0 +1,15 @@
+checksum = "4e7eaa3147f0bb766c9eaa760fa0664f49bfb830785f2fcbfa9709cfe89bbb26"
+licence = "LGPL-2.0-or-later AND CC-BY-4.0"
+provides = "kweathercore-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kweathercore-dev-0.5-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["qt5-qtlocation-dev", "5.15.3"], ["kweathercore", "0.5.0-r0"]]

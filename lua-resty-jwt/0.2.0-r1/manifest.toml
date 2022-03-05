@@ -1,0 +1,15 @@
+checksum = "58c9f37a3a71f9d9a27f669e360f25647419cefd793c50751cb6c3ae97092d3c"
+licence = "BSD2"
+provides = "lua-resty-jwt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua-resty-jwt-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua-resty-hmac", "0.2.20180101-r2"]]

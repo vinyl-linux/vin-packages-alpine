@@ -1,0 +1,15 @@
+checksum = "3cd112463426a1ee59bc6965865b35b7595257531a5106d0110c49b080eba1c0"
+licence = "GPL-3.0-or-later"
+provides = "netdata-nodejs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/netdata-nodejs-1.31.0-r2.apk"
+version = "1.31.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netdata", "1.31.0-r2"], ["nodejs-current", "17.6.0-r0"]]

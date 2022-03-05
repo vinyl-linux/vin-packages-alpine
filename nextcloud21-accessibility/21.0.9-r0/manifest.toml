@@ -1,0 +1,15 @@
+checksum = "2e07634d6f0890aa90a4241dccca07f885246a59b50e667b9a857dc66e97dc88"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-accessibility"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-accessibility-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"]]

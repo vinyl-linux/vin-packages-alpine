@@ -1,0 +1,15 @@
+checksum = "b601f4b8984d5974ea26283507aacad9b55eafbeaa48a03f507c7e5763b082a4"
+licence = "BSD-2-Clause"
+provides = "ntpsec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ntpsec-1.2.1-r2.apk"
+version = "1.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["busybox", "1.34.1-r4"], ["python3", "3.9.7-r4"], ["py3-gpsd", "3.23.0-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

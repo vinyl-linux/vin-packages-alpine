@@ -1,0 +1,15 @@
+checksum = "163c0bd0d22f15c4662b49686715c3a7a03a3cfb0117e32b89a65cf3bd4a7102"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "libmbim-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmbim-dev-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmbim", "1.26.0-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

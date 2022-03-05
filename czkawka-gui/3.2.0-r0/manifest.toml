@@ -1,0 +1,15 @@
+checksum = "e77b67cb4af8fa6f9a3c84c01455448ea529ded093e13f9c52000b18703f88cc"
+licence = "MIT AND CC-BY-4.0"
+provides = "czkawka-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/czkawka-gui-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"]]

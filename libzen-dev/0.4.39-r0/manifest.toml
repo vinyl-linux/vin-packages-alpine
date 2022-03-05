@@ -1,0 +1,15 @@
+checksum = "6931c8bb4680a60936fbfb22cd85579ef78a7a8a4f05000e2c618806fe407a8a"
+licence = "Zlib"
+provides = "libzen-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libzen-dev-0.4.39-r0.apk"
+version = "0.4.39-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libzen", "0.4.39-r0"], ["pkgconf", "1.8.0-r0"]]

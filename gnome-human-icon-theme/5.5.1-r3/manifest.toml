@@ -1,0 +1,15 @@
+checksum = "ad6088caab7fbc7974ad913efdf8a3b3cc51327955b0844b8bca4b90249c7825"
+licence = "GPL-2.0-only"
+provides = "gnome-human-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-human-icon-theme-5.5.1-r3.apk"
+version = "5.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-colors-common", "5.5.1-r3"]]

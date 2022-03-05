@@ -1,0 +1,15 @@
+checksum = "770bb62ddbcb378405a37f2754b03a53e68d2e216ce7a9dbb723d5816a0acfd4"
+licence = "GPL-3.0-or-later"
+provides = "keysmith"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/keysmith-21.12-r0.apk"
+version = "21.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtquickcontrols2", "5.15.3"], ["musl", "1.2.2-r7"], ["libsodium", "1.0.18-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "80e7b064772360dfd43eaa1806b2749091b0a6e902700393b28dfcbaeab92f8c"
+licence = "BSD-3-Clause"
+provides = "blas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/blas-3.10.0-r0.apk"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgfortran", "10.3.1"]]

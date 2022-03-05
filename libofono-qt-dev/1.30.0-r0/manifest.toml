@@ -1,0 +1,15 @@
+checksum = "e39852c97a4dfb9bab7408136a823f2d8b6da7919f582e725696787d5b2c7a03"
+licence = "LGPL-2.1-or-later"
+provides = "libofono-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libofono-qt-dev-1.30-r0.apk"
+version = "1.30.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libofono-qt", "1.30.0-r0"], ["pkgconf", "1.8.0-r0"]]

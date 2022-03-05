@@ -1,0 +1,15 @@
+checksum = "22ba4275f4c94cc30f51abc06c145f7d2b412bcf0c1c1e272da55ab9feeee7f6"
+licence = "MIT"
+provides = "lua5.3-argparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-argparse-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

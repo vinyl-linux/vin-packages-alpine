@@ -1,0 +1,15 @@
+checksum = "a0d753ea1d8e9a98297107a2e5aea79ff1bd0aa81275f50026d66dffeaf11d0e"
+licence = "custom"
+provides = "sbcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sbcl-2.1.7-r0.apk"
+version = "2.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

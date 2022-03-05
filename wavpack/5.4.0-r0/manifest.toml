@@ -1,0 +1,15 @@
+checksum = "21d7ed507e5bf4a88221266f47948dd5607693adccab0e62cb91a8f5a74ff8ba"
+licence = "BSD-3-Clause"
+provides = "wavpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wavpack-5.4.0-r0.apk"
+version = "5.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "923c54d6c6cb9126bff6bf289e5e7999e698a319fdf925eebddbbfecf4e0f6d1"
+licence = "GPL-2.0-or-later"
+provides = "polkit-elogind-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/polkit-elogind-libs-0.119-r8.apk"
+version = "0.119.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libelogind", "246.10.0-r4"], ["glib", "2.70.1-r0"]]

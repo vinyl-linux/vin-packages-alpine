@@ -1,0 +1,15 @@
+checksum = "ba7a1b39a4691f0623ab1a1b63a1ac5f17cd5bd4fef55aac8257620fcba68397"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "kded"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kded-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kcrash", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["kservice", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

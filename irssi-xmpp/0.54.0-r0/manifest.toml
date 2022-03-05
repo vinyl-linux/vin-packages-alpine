@@ -1,0 +1,15 @@
+checksum = "80ebb8faa57367c49f2a26715dc6b3853b10a5764aa6b698f1d3e9025b99c666"
+licence = "GPL-2.0"
+provides = "irssi-xmpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/irssi-xmpp-0.54-r0.apk"
+version = "0.54.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["loudmouth", "1.5.3-r1"]]

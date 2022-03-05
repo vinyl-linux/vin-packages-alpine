@@ -1,0 +1,15 @@
+checksum = "42f57428ababf9802ded891cb8857dfa761932f321ab1e3ff3bc3db238fe8a2a"
+licence = "MIT"
+provides = "py3-parametrize-from-file"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-parametrize-from-file-0.7.1-r0.apk"
+version = "0.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-toml", "0.10.2-r2"], ["py3-yaml", "5.4.1.1-r1"], ["py3-nestedtext", "3.1.0-r1"], ["py3-tidyexc", "0.9.0-r1"], ["py3-more-itertools", "8.11.2-r0"], ["py3-contextlib2", "21.6.0-r1"], ["py3-decopatch", "1.4.8-r0"], ["py3-voluptuous", "0.12.1-r1"]]

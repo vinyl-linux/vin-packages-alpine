@@ -1,0 +1,15 @@
+checksum = "44b389430703ab936d093323a1a4ed621b4bf021f9f74eb7abcd5de92f40504e"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php8-litespeed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-litespeed-8.0.16-r0.apk"
+version = "8.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["argon2-libs", "20190702.0.0-r1"], ["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["pcre2", "10.39.0-r0"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

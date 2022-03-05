@@ -1,0 +1,15 @@
+checksum = "31601cf6a8ce7eac92b75be4414c661aaf5c4a911bc35b19b964a04155a0f99a"
+licence = "MIT"
+provides = "ldap-passwd-webui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ldap-passwd-webui-2.1.0-r2.apk"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-bottle", "0.12.19-r1"], ["py3-ldap3", "2.8.0-r1"]]

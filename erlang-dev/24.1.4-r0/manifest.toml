@@ -1,0 +1,15 @@
+checksum = "8721407db162a4118594b9869f5ccedb2613ed6ed475e099276484cbe7688545"
+licence = "Apache-2.0"
+provides = "erlang-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/erlang-dev-24.1.4-r0.apk"
+version = "24.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang", "24.1.4-r0"]]

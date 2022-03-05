@@ -1,0 +1,15 @@
+checksum = "9a1c6cecf9bd01d49d176c6c26fc9210db0974a95312554701cd8c42fafbed3b"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-event"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-event-1.28-r1.apk"
+version = "1.28.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

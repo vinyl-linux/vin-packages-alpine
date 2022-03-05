@@ -1,0 +1,15 @@
+checksum = "173e3741fe57cb35a1ca2f7c1e602a5b043795dc40d0b86441058a202e23e465"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kleopatra-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kleopatra-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg", "2.2.31-r1"], ["pinentry-qt", "1.2.0-r0"]]

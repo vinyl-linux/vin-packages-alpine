@@ -1,0 +1,15 @@
+checksum = "9a5622bdce31657b6d53a00b73baef9d48a4a01bf8aa8e11bdfbd4f517a295ac"
+licence = "MIT"
+provides = "foot-extra-terminfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/foot-extra-terminfo-1.10.3-r0.apk"
+version = "1.10.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"]]

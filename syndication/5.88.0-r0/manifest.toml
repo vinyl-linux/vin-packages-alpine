@@ -1,0 +1,15 @@
+checksum = "529ed0a298206e7cc46c2ada37970fc9ad9126e5dbb10ad68a73853bc96be063"
+licence = "LGPL-2.0-or-later AND BSD-3-Clause"
+provides = "syndication"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/syndication-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcodecs", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

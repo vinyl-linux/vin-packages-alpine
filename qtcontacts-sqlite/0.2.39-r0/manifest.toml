@@ -1,0 +1,15 @@
+checksum = "6564776245995ebab88cf699036c75f78e345d302baf1998ffcce79fec14b96f"
+licence = "BSD-3-Clause"
+provides = "qtcontacts-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qtcontacts-sqlite-0.2.39-r0.apk"
+version = "0.2.39-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtpim", "0.0.0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mlite", "0.3.7-r0"], ["libstdc++", "10.3.1"]]

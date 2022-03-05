@@ -1,0 +1,15 @@
+checksum = "841b1a3e44b23545c4547baf61dfd363feb6e3607a2c663991babfb12021a814"
+licence = "MIT"
+provides = "py3-fontmath"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-fontmath-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-fonttools", "4.28.2-r0"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,15 @@
+checksum = "04bb7dc9b7508f3d377c737d0cb271dec2c2892834331ee00bf11cd06e59c074"
+licence = "Apache-2.0"
+provides = "wrk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wrk-4.1.0-r4.apk"
+version = "4.1.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["luajit", "2.1.0"], ["libssl1.1", "1.1.1-l-r8"]]

@@ -1,0 +1,15 @@
+checksum = "8594ff4d0e71383bbb16176a4268f542e4553ece9caabe38f86ef28d71298b6c"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kinit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kinit-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kcrash", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["kservice", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"], ["libstdc++", "10.3.1"], ["libxcb", "1.14.0-r2"]]

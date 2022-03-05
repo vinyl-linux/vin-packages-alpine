@@ -1,0 +1,15 @@
+checksum = "73c93f651073ba8f9e88d28f90c827f7c6e140439d053f49859b0c5328932eed"
+licence = "GPL-3.0"
+provides = "shellcheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/shellcheck-0.7.2-r2.apk"
+version = "0.7.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["gmp", "6.2.1-r1"]]

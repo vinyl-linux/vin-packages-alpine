@@ -1,0 +1,15 @@
+checksum = "5f9b156d7ba923cf3cd6192339eca886ed570c52b6a3aa284bce3f8fb87fd417"
+licence = "LGPL-2.1-only or MPL-1.1"
+provides = "taglib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/taglib-dev-1.12-r0.apk"
+version = "1.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["taglib", "1.12.0-r0"]]

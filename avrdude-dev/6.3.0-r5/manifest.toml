@@ -1,0 +1,15 @@
+checksum = "b7021bdea3d9567aa4176f2ba4856162eb8132e381d269621573fb5512d64618"
+licence = "GPL"
+provides = "avrdude-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/avrdude-dev-6.3-r5.apk"
+version = "6.3.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avrdude", "6.3.0-r5"]]

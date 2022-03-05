@@ -1,0 +1,15 @@
+checksum = "3c0973e7d5b81b7f788f089ceb92bd82db3e52171605ead8ab43268cda2b29a1"
+licence = "GPL-2.0"
+provides = "sysbench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sysbench-1.0.20-r0.apk"
+version = "1.0.20-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

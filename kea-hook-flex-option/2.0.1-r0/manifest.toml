@@ -1,0 +1,15 @@
+checksum = "ae01fb6c19c0d5af9284b4af4fa231746e79d1f29f2bcfecb2b47b5d36d2bcd8"
+licence = "MPL2"
+provides = "kea-hook-flex-option"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-hook-flex-option-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["kea-common", "2.0.1-r0"]]

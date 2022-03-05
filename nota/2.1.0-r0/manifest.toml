@@ -1,0 +1,15 @@
+checksum = "9a5d7467492d04bb6a8a0b8f9cccdd48c5d9fb211f5224a85cdfd5bbe9e4b8eb"
+licence = "GPL-2.0-or-later"
+provides = "nota"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nota-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mauikit-texteditor", "2.1.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["mauikit", "2.1.0-r0"], ["mauikit-filebrowsing", "2.1.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

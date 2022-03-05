@@ -1,0 +1,15 @@
+checksum = "938dd6360e5ae9c5a14a070bf04a97721603a2f4a5279f529d4938c733e7024e"
+licence = "GPL-3.0-or-later"
+provides = "nitrokey-app"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nitrokey-app-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libnitrokey", "3.6.0-r1"], ["libstdc++", "10.3.1"]]

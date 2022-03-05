@@ -1,0 +1,15 @@
+checksum = "d1a2151d39b32b80ce807c6b8119d7a8c05db847fe0b7c48ec1f2999b8977de6"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-only"
+provides = "kwayland-server-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kwayland-server-dev-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwayland-dev", "5.88.0-r0"], ["plasma-wayland-protocols", "1.5.0-r1"], ["qt5-qtbase-dev", "5.15.3"], ["kwayland-server", "5.23.5-r0"]]

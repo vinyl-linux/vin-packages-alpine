@@ -1,0 +1,15 @@
+checksum = "e3281679b1cb00339774615e541ff8419b14484e55fe853ca43c9409ecf5a3bf"
+licence = "Apache-2.0"
+provides = "olm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/olm-3.2.7-r1.apk"
+version = "3.2.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

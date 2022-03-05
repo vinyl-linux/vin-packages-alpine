@@ -1,0 +1,15 @@
+checksum = "f3c007cfbad6b29ba678444cc2d5068b150a94d232e4e736920d4aed8ccee68b"
+licence = "LGPL-2.1-or-later"
+provides = "libcanberra-pulse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcanberra-pulse-0.30-r8.apk"
+version = "0.30.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcanberra", "0.30.0-r8"], ["musl", "1.2.2-r7"], ["libpulse", "15.0.0-r2"]]

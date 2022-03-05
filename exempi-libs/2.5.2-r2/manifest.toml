@@ -1,0 +1,15 @@
+checksum = "fa189a6bfe6eddef6adc688a46bbdf6984d1938651a58f948545f6fa40a3780f"
+licence = "BSD-3-Clause"
+provides = "exempi-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/exempi-libs-2.5.2-r2.apk"
+version = "2.5.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

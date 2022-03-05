@@ -1,0 +1,15 @@
+checksum = "e4d3acc8aca4502066272f96eac91bd7620b29270004db8dad926be57b6e147e"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-mkinitfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calamares-mod-mkinitfs-3.2.45-r0.apk"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.205.0-r0"], ["musl-locales", "0.0.0"], ["os-prober", "1.79.0-r0"], ["mkinitfs", "3.6.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c1f3055f749fb84b9e63427140b26058cae6025d02a3c97d3e4e41192b9e2519"
+licence = "LGPL-2.0-or-later and GPL-2.0-or-later or BSD-3-Clause"
+provides = "openipmi-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openipmi-libs-2.0.32-r0.apk"
+version = "2.0.32-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["glib", "2.70.1-r0"], ["ncurses-libs", "6.3.0"]]

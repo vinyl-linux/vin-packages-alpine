@@ -1,0 +1,15 @@
+checksum = "2505814fdcb7bedf8a46f8bc76f1337ef10ec396aade664227156cae222371f3"
+licence = "Apache-2.0"
+provides = "java-sigar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/java-sigar-1.6.4-r1.apk"
+version = "1.6.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-sigar-native", "1.6.4-r1"]]

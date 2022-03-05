@@ -1,0 +1,15 @@
+checksum = "45bf49e0d9b7a2191d0bab2ca5037068c59928f3308ce760ebf0dc38a57d7a85"
+licence = "MIT"
+provides = "ruby-hpricot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-hpricot-0.8.6-r5.apk"
+version = "0.8.6-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

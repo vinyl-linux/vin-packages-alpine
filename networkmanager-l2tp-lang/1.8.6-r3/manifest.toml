@@ -1,0 +1,15 @@
+checksum = "8f27029d0f6d3a60555e04357c59c7da45ddce3e784503854ff15180c19f9932"
+licence = "GPL-2.0-only"
+provides = "networkmanager-l2tp-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/networkmanager-l2tp-lang-1.8.6-r3.apk"
+version = "1.8.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp", "2.4.9-r2"], ["xl2tpd", "1.3.16-r0"], ["strongswan", "5.9.1-r3"]]

@@ -1,0 +1,15 @@
+checksum = "ab89fc62de8a44d56fd8d17b124987d8733e0caa012fca654f7f2e604b59b961"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-unicode-string"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-unicode-string-2.10-r3.apk"
+version = "2.10.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

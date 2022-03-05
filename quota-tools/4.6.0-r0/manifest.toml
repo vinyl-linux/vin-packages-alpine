@@ -1,0 +1,15 @@
+checksum = "6625ca233e30b9a74df66953d37f3bbe3af69d47b906de572ed582b8ca10ec7a"
+licence = "GPL-2.0-or-later"
+provides = "quota-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/quota-tools-4.06-r0.apk"
+version = "4.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["e2fsprogs-libs", "1.46.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b9e933c15253e68fabfe23e67a8f1516ff2e2cb843d887cfc94581c890e7a730"
+licence = "GPL-3.0-only"
+provides = "gmni"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gmni-1.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

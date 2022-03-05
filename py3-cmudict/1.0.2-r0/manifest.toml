@@ -1,0 +1,15 @@
+checksum = "e34bbefd84abe725958e2fbc0b1e1d2662918ecb248d96d2a7f048713ea59da2"
+licence = "GPL-3.0-only"
+provides = "py3-cmudict"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-cmudict-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

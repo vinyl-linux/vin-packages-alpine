@@ -1,0 +1,15 @@
+checksum = "a59bbfd48ffaf01f946bafe3f788dd30e28bd725a2360ddeb09c3a3ec4af9fa7"
+licence = "MPL2"
+provides = "kea-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-dev-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.77.0-r1"], ["log4cplus-dev", "2.0.7-r0"], ["kea-common", "2.0.1-r0"], ["kea-dhcp-ddns", "2.0.1-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

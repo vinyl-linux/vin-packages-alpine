@@ -1,0 +1,15 @@
+checksum = "2495c019aff204aa129ad3c8e1cba4ce3926542126b16bd3e02f5c63871801b9"
+licence = "LGPL-3.0-or-later"
+provides = "libarcus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libarcus-4.12.1-r0.apk"
+version = "4.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libprotobuf", "3.18.1-r1"], ["libstdc++", "10.3.1"]]

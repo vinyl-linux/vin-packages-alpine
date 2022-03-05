@@ -1,0 +1,15 @@
+checksum = "5f68b97f4f93e04602ec244e098acc0da8e3ecf158af7089792ced52fdbc7cae"
+licence = "BSD 3-Clause"
+provides = "avr-libc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/avr-libc-2.0.0-r4.apk"
+version = "2.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc-avr", "10.3.0-r0"]]

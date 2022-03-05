@@ -1,0 +1,15 @@
+checksum = "7eafa4b076e5fb18e4b5f4176fbb471a09b5b4d29f3d4af834c398d408a0ac8f"
+licence = "LGPL-2.1-or-later"
+provides = "ead"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ead-1.20-r0.apk"
+version = "1.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"]]

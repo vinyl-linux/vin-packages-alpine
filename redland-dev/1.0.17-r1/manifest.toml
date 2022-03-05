@@ -1,0 +1,15 @@
+checksum = "b16445cbfa9174fc7d8ca8cc3d028108a1476d5303d58462655ee83cb760ad2b"
+licence = "LGPL-2.1-or-later"
+provides = "redland-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/redland-dev-1.0.17-r1.apk"
+version = "1.0.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["raptor2-dev", "2.0.15-r4"], ["rasqal-dev", "0.9.33-r2"], ["sqlite-dev", "3.36.0-r0"], ["pkgconf", "1.8.0-r0"], ["redland", "1.0.17-r1"]]

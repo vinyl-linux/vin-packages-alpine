@@ -1,0 +1,15 @@
+checksum = "ed6f3d8eb9bea3fd11438b5b0d393bc052f52bfb4e8e8fdd9694f9bc6ec640f9"
+licence = "GPL-2.0-only"
+provides = "acf-fetchmail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/acf-fetchmail-0.9.0-r4.apk"
+version = "0.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["fetchmail", "6.4.24-r0"]]

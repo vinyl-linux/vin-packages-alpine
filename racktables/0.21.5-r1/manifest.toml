@@ -1,0 +1,15 @@
+checksum = "6a49d45499391dfba4a882c7a585b63feac6ac716fbed6dbfe24cb7943a9d09e"
+licence = "GPL-2.0-only BSD-3-Clause MIT CC-BY-SA-3.0 Custom"
+provides = "racktables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/racktables-0.21.5-r1.apk"
+version = "0.21.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8", "8.0.16-r0"], ["php8-bcmath", "8.0.16-r0"], ["php8-gd", "8.0.16-r0"], ["php8-mysqli", "8.0.16-r0"], ["php8-pdo_mysql", "8.0.16-r0"], ["php8-opcache", "8.0.16-r0"], ["php8-mbstring", "8.0.16-r0"]]

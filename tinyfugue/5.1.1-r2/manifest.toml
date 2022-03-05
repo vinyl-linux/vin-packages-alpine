@@ -1,0 +1,15 @@
+checksum = "937dc6bc2b2ba8f89c2b856467423caf403affeb095419dc7e41cd0f0642b446"
+licence = "GPL-2.0-or-later"
+provides = "tinyfugue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tinyfugue-5.1.1-r2.apk"
+version = "5.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["icu-libs", "69.1.0-r1"], ["ncurses-libs", "6.3.0"], ["pcre", "8.45.0-r1"], ["python3", "3.9.7-r4"], ["libssl1.1", "1.1.1-l-r8"]]

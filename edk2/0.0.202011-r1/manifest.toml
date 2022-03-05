@@ -1,0 +1,15 @@
+checksum = "61c7f1c65a1b46776b2d7cd42abfaa970c1dad8b605442628a69b174b0e05fb3"
+licence = "BSD-2-Clause-Patent"
+provides = "edk2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/edk2-0.0.202011-r1.apk"
+version = "0.0.202011-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

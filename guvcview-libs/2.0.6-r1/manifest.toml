@@ -1,0 +1,15 @@
+checksum = "289ffe3fecc0e2aabf194c41e683611ec4cef6009f65e369b2b70e788f0c7d92"
+licence = "GPL-3.0-or-later"
+provides = "guvcview-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/guvcview-libs-2.0.6-r1.apk"
+version = "2.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["gsl", "2.7.0-r0"], ["libpng", "1.6.37-r1"], ["portaudio", "19.7.0-r0"], ["eudev-libs", "3.2.11"], ["libusb", "1.0.24-r3"], ["v4l-utils-libs", "1.22.1-r1"]]

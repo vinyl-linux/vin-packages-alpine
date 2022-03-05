@@ -1,0 +1,15 @@
+checksum = "32a9c26aeeb40d54dbadf992125a537ff31ecf82d901a9d0b2c985475b2b6753"
+licence = "MIT"
+provides = "py3-aiorpcx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-aiorpcx-0.18.7-r1.apk"
+version = "0.18.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-websockets", "10.0.0-r0"]]

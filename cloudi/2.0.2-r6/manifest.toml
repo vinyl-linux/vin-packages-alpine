@@ -1,0 +1,15 @@
+checksum = "e2a5e424e1bbe16f12ca064039913835f4602f95896315ceabb6b26683b7ed8f"
+licence = "MIT"
+provides = "cloudi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cloudi-2.0.2-r6.apk"
+version = "2.0.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang", "24.1.4-r0"], ["g++", "10.3.1"], ["boost1.77-thread", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libelf", "0.185.0-r0"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["ncurses-libs", "6.3.0"], ["libseccomp", "2.5.2-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

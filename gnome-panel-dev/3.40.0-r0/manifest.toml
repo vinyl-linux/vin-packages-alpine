@@ -1,0 +1,15 @@
+checksum = "dc761f6bb6c12d800cce48db91c67241a627d0f2784e561b73347bcd2fc42470"
+licence = "GPL-2.0-or-later"
+provides = "gnome-panel-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-panel-dev-3.40.0-r0.apk"
+version = "3.40.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-panel", "3.40.0-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

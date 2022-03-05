@@ -1,0 +1,15 @@
+checksum = "8c25327b0f360249c135ed92f300691dc66e3ba094bad2dbb5c0ab9d5b74c157"
+licence = "MIT"
+provides = "libinput-debug-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libinput-debug-gui-1.19.2-r0.apk"
+version = "1.19.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["libevdev", "1.12.0-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libinput-libs", "1.19.2-r0"], ["eudev-libs", "3.2.11"], ["wayland-libs-client", "1.19.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "0ea0c2ecc2c66a175baf9bb3a81d1f350ccc2ba8aea180a2eeb562530a1a47d9"
+licence = "Apache-2.0"
+provides = "openvpn-auth-script"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openvpn-auth-script-0_git20180315-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openvpn", "2.5.4-r0"], ["musl", "1.2.2-r7"]]

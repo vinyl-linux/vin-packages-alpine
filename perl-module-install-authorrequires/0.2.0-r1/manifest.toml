@@ -1,0 +1,15 @@
+checksum = "effebf7739ba2d7a6fa1ac31fe79d9b0853986a69957efbeec8926deccaabe86"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-module-install-authorrequires"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-module-install-authorrequires-0.02-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-module-install", "1.19.0-r2"]]

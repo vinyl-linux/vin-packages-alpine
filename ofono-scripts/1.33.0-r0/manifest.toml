@@ -1,0 +1,15 @@
+checksum = "1e5389d9fd7bc7aaef87819c232dabcee46a43c6552af219cfd357ea2f93a851"
+licence = "GPL-2.0-only"
+provides = "ofono-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ofono-scripts-1.33-r0.apk"
+version = "1.33.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dbus", "1.2.18-r0"], ["py3-gobject3", "3.42.0-r1"]]

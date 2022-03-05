@@ -1,0 +1,15 @@
+checksum = "c5ea034a45aa5d61308e50a4a6ea301c1a7e6d0f4a94bca2e5e38166d30a3898"
+licence = "GPL-3.0-or-later"
+provides = "deja-dup-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/deja-dup-lang-42.8-r1.apk"
+version = "42.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.88.0-r0"], ["duplicity", "0.8.20-r2"]]

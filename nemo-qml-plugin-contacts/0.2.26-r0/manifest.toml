@@ -1,0 +1,15 @@
+checksum = "54a51228a47faa3eadbc201707860f7805d0e9eb45a4e9e1644fbd7f754449bc"
+licence = "BSD-3-Clause"
+provides = "nemo-qml-plugin-contacts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nemo-qml-plugin-contacts-0.2.26-r0.apk"
+version = "0.2.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qtcontacts-sqlite", "0.2.39-r0"], ["qt5-qtpim", "0.0.0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libcontacts", "0.2.11.2-r1"], ["libgcc", "10.3.1"], ["mlite", "0.3.7-r0"], ["libmlocale", "0.7.4-r2"], ["libstdc++", "10.3.1"]]

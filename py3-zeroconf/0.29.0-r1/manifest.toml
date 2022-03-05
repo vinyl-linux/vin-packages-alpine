@@ -1,0 +1,15 @@
+checksum = "fe3a8575549b03779484376902da287a97328b21cc56f4fe365b6c061c3ed1ea"
+licence = "LGPL-2.0-or-later"
+provides = "py3-zeroconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-zeroconf-0.29.0-r1.apk"
+version = "0.29.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-ifaddr", "0.1.7-r1"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,15 @@
+checksum = "d01cd09d67827f5425975e6a54252e5408feb47fc1a94adb19357821a9fd0016"
+licence = "BSD-3-Clause"
+provides = "netcdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/netcdf-4.8.1-r2.apk"
+version = "4.8.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["hdf5", "1.12.1-r1"]]

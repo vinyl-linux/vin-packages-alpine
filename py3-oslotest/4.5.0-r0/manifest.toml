@@ -1,0 +1,15 @@
+checksum = "a28a51d5663feb0b1a975a5ec9c84faf532c8c02a9033b9e97916100514462b3"
+licence = "Apache-2.0"
+provides = "py3-oslotest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-oslotest-4.5.0-r0.apk"
+version = "4.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

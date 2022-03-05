@@ -1,0 +1,15 @@
+checksum = "b6284a6e1976dc07ced7514c072204154d8376d2b7ed8cf5c9d4185f0da16538"
+licence = "MPL-2.0"
+provides = "librevenge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/librevenge-0.0.4-r6.apk"
+version = "0.0.4-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

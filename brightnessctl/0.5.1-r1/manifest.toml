@@ -1,0 +1,15 @@
+checksum = "1adb92d942fe7535fe11c084698dc1b98eacca2eacd4430c0c81e72e03ae64b0"
+licence = "MIT"
+provides = "brightnessctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/brightnessctl-0.5.1-r1.apk"
+version = "0.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

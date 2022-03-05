@@ -1,0 +1,15 @@
+checksum = "dbb69f69cd38375966fff1c4ecf075c5faa685ac12ff49dccaf2458c56e5b502"
+licence = "MIT"
+provides = "libretro-craft"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-craft-0_git20210317-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "21.2.6-r0"], ["musl", "1.2.2-r7"]]

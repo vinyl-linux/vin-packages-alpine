@@ -1,0 +1,15 @@
+checksum = "9a48c8c05339c036891a80b7980bc7dfde8ae723affd6da93fbbf9b3dab6a1e3"
+licence = "GPL-3.0-or-later"
+provides = "jsonrpc-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jsonrpc-glib-3.40.0-r0.apk"
+version = "3.40.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["json-glib", "1.6.6-r0"]]

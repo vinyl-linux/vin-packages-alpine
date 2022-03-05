@@ -1,0 +1,15 @@
+checksum = "f337b53339a4142f6891cc89b6b7c8542f68f1576b257fe005ac9accf21e1c54"
+licence = "LGPL-3.0-or-later"
+provides = "py3-cairosvg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-cairosvg-2.5.2-r1.apk"
+version = "2.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-tinycss2", "1.1.0-r1"], ["py3-cssselect2", "0.4.1-r1"], ["py3-defusedxml", "0.7.1-r1"], ["py3-cairocffi", "1.2.0-r2"], ["py3-webencodings", "0.5.1-r4"]]

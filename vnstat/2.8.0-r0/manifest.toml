@@ -1,0 +1,15 @@
+checksum = "b16dbdbc5f8dcb8bf8b397abc2c997976e56924faa015faae730ee76e7c5a921"
+licence = "GPL-2.0-or-later"
+provides = "vnstat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vnstat-2.8-r0.apk"
+version = "2.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgd", "2.3.2-r1"], ["sqlite-libs", "3.36.0-r0"]]

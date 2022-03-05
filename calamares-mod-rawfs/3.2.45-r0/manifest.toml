@@ -1,0 +1,15 @@
+checksum = "c337a3a02ae194d3f9f424f1644b09ee31af6f01f3e6cf1c23d1480bc629f9d5"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-rawfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calamares-mod-rawfs-3.2.45-r0.apk"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.205.0-r0"], ["musl-locales", "0.0.0"], ["os-prober", "1.79.0-r0"]]

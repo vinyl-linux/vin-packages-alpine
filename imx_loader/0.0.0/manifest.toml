@@ -1,0 +1,15 @@
+checksum = "8502a770b1821c469ebbb73e7316ab2ff1353c3689d712454fd7647285428eb9"
+licence = "LGPL-2.1-only"
+provides = "imx_loader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/imx_loader-0_git20201102-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imx_usb_loader", "0.0.0"], ["imx_uart_loader", "0.0.0"]]

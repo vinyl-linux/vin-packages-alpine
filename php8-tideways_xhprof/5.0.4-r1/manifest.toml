@@ -1,0 +1,15 @@
+checksum = "3f73f686f8bdf3d9efdb733d96cdffca95987140d473feb7361b6be04cc600fe"
+licence = "Apache-2.0"
+provides = "php8-tideways_xhprof"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-tideways_xhprof-5.0.4-r1.apk"
+version = "5.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

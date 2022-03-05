@@ -1,0 +1,15 @@
+checksum = "a8d978562ead258778db4f2a2e26744e85a2fec323af436b282a00d74c1b9067"
+licence = "GPL-2.0-only"
+provides = "ark-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ark-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lrzip", "0.641.0-r0"], ["p7zip", "16.2.0-r4"], ["unzip", "6.0.0-r9"], ["zip", "3.0.0-r9"], ["zstd", "1.5.0-r0"]]

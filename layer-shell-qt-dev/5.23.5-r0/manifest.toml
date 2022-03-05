@@ -1,0 +1,15 @@
+checksum = "16615436e5503a4b2b3eb95f4914fc9e67cccdd8fb5420ab55072fa49030bcdf"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only)"
+provides = "layer-shell-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/layer-shell-qt-dev-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.3"], ["qt5-qtwayland-dev", "5.15.3"], ["layer-shell-qt", "5.23.5-r0"]]

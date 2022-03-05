@@ -1,0 +1,15 @@
+checksum = "c047a1ef6d5768eb11a596e868356cc7a3755bf87e343e888ccd40c973597a7c"
+licence = "GPL+"
+provides = "ytnef"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ytnef-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ytnef-libs", "2.0.0-r0"]]

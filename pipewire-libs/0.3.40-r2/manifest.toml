@@ -1,0 +1,15 @@
+checksum = "bed8c00f95fcd950909b68cbb216352c3f05854d0be453f9ceb8d79a61d5acb2"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pipewire-libs-0.3.40-r2.apk"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libintl", "0.21.0-r0"]]

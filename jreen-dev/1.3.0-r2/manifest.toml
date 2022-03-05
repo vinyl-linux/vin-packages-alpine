@@ -1,0 +1,15 @@
+checksum = "7cefa2ea73a27af933930ace8eceecabb088e8fc41f8d22f8f90198353376795"
+licence = "GPL-2.0"
+provides = "jreen-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jreen-dev-1.3.0-r2.apk"
+version = "1.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["speex-dev", "1.2.0-r0"], ["libgsasl-dev", "1.8.1-r2"], ["jreen", "1.3.0-r2"], ["pkgconf", "1.8.0-r0"]]

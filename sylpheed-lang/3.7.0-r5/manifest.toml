@@ -1,0 +1,15 @@
+checksum = "4f986c2140a0ba33a507b0e7449946f99613fc77f53dc7bd72c0c2e59d5f2531"
+licence = "GPL-3.0-only"
+provides = "sylpheed-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sylpheed-lang-3.7.0-r5.apk"
+version = "3.7.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pinentry-gtk", "1.2.0-r0"], ["gnupg", "2.2.31-r1"]]

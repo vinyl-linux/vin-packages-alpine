@@ -1,0 +1,15 @@
+checksum = "e96dc327a7b0934902752210beea5150e2be1aab86e02b62cefc5778e2354903"
+licence = "PHP-3.01"
+provides = "php8-pecl-ssh2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-ssh2-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libssh2", "1.10.0-r2"]]

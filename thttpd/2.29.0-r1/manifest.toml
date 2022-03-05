@@ -1,0 +1,15 @@
+checksum = "8164959517215e45dcd1cd1de565be51abd9677a30fb0fbaaa728a6e39104abb"
+licence = "custom:BSD"
+provides = "thttpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/thttpd-2.29-r1.apk"
+version = "2.29.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

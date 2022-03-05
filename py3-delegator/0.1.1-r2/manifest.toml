@@ -1,0 +1,15 @@
+checksum = "5f07393e46927d2a840a95849b1cc78231bb693594ef1cfdb93bda0609408676"
+licence = "MIT"
+provides = "py3-delegator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-delegator-0.1.1-r2.apk"
+version = "0.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-pexpect", "4.8.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "565951f3f8af7cead42db292e0f3cc3b64b89d1efb6f999c4fcf596ff92205bc"
+licence = "BSD-3-Clause"
+provides = "py3-numpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-numpy-1.21.4-r0.apk"
+version = "1.21.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["openblas", "0.3.18-r1"]]

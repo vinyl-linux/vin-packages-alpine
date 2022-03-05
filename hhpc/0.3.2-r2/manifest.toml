@@ -1,0 +1,15 @@
+checksum = "837b5709cf3e1f369367e5fc04364a3f1fb85b81ea8219ab3d9ee29e953c3f3b"
+licence = "BSD-3-Clause"
+provides = "hhpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hhpc-0.3.2-r2.apk"
+version = "0.3.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

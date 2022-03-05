@@ -1,0 +1,15 @@
+checksum = "d59fc3bace9f79e45ea4e0eb22ca0d93e08a60284649e43265a6f69fc32710f9"
+licence = "LGPL-2.1-or-later"
+provides = "libqca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libqca-2.3.4-r0.apk"
+version = "2.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libsasl", "2.1.27-r14"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"]]

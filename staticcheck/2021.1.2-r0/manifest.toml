@@ -1,0 +1,15 @@
+checksum = "0c0aaca0cb418b1d4847c17c10681488f8cc3e0f3bd2a051c22145665bc5a3bc"
+licence = "MIT"
+provides = "staticcheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/staticcheck-2021.1.2-r0.apk"
+version = "2021.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

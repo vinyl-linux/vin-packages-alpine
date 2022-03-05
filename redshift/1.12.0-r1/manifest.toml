@@ -1,0 +1,15 @@
+checksum = "b1d84f5b7ddc46bc585d15670bc99ed357caf2029babfe9bb50e4abf7ffa591a"
+licence = "GPL-3.0"
+provides = "redshift"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/redshift-1.12-r1.apk"
+version = "1.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxxf86vm", "1.1.4-r2"], ["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["libxcb", "1.14.0-r2"]]

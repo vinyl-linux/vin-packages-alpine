@@ -1,0 +1,15 @@
+checksum = "bbf21fcc61968adefc6f3253350c81233ed07c5e9743ad6a42fc99ef3b408411"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-alsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pipewire-alsa-0.3.40-r2.apk"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["pipewire-libs", "0.3.40-r2"]]

@@ -1,0 +1,15 @@
+checksum = "f692327371476e52aaf287d8891e065287964cc8706fbf22f8f732debaaaa437"
+licence = "MIT"
+provides = "glab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/glab-1.21.1-r0.apk"
+version = "1.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.34.1-r0"]]

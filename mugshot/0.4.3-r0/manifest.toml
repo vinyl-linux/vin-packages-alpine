@@ -1,0 +1,15 @@
+checksum = "620f67111a3ee4fcbdb98b769f87aaa9c4118e0199f1b0c8cf549537e7903926"
+licence = "GPL-3.0-or-later"
+provides = "mugshot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mugshot-0.4.3-r0.apk"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["shadow", "4.8.1-r1"], ["py3-cairo", "1.20.1-r0"], ["py3-gobject3", "3.42.0-r1"], ["py3-pexpect", "4.8.0-r1"]]

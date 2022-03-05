@@ -1,0 +1,15 @@
+checksum = "c0581042cbd5da502247b9410edaceb2989a967c655304bfd961f04179ae49c1"
+licence = "MIT"
+provides = "yq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yq-4.14.1-r0.apk"
+version = "4.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "f284f96117f94f3a652f64f108fffaba71dace21404b9b09b8c1876e69173a54"
+licence = "LGPL-2.0-or-later"
+provides = "libgudev-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgudev-dev-237-r0.apk"
+version = "237.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgudev", "237.0.0-r0"], ["glib-dev", "2.70.1-r0"], ["eudev-dev", "3.2.11"], ["pkgconf", "1.8.0-r0"]]

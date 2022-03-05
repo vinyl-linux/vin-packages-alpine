@@ -1,0 +1,15 @@
+checksum = "57b870c1b495318d773444658b96c69b1f50bd977e80a66fa7c809066b3bcf92"
+licence = "MIT AND CC-BY-SA-4.0"
+provides = "xrdesktop-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xrdesktop-dev-0.15.2-r1.apk"
+version = "0.15.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3-dev", "3.42.0-r1"], ["gxr-dev", "0.15.2-r0"], ["pkgconf", "1.8.0-r0"], ["xrdesktop", "0.15.2-r1"]]

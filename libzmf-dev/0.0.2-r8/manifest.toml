@@ -1,0 +1,15 @@
+checksum = "dd443238ed801f2f3299ee6137c31236cc84a1528f7d56e7beaa0c66509168b5"
+licence = "MPL-2.0"
+provides = "libzmf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libzmf-dev-0.0.2-r8.apk"
+version = "0.0.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.77.0-r1"], ["icu-dev", "69.1.0-r1"], ["libpng-dev", "1.6.37-r1"], ["zlib-dev", "1.2.11-r3"], ["libzmf", "0.0.2-r8"], ["librevenge-dev", "0.0.4-r6"], ["pkgconf", "1.8.0-r0"]]

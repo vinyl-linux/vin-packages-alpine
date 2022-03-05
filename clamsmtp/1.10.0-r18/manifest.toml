@@ -1,0 +1,15 @@
+checksum = "0388f65cd818f134406c949bbd04f855b663c3c5f7f5bd914c3a80f8345cc858"
+licence = "BSD-3-Clause"
+provides = "clamsmtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/clamsmtp-1.10-r18.apk"
+version = "1.10.0-r18"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "38a5caaf906671c796efda006a5413b99e379d8e95f812ed141ae2b8bba1f34f"
+licence = "MIT"
+provides = "tut"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tut-0.0.37-r0.apk"
+version = "0.0.37-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

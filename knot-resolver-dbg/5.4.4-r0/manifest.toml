@@ -1,0 +1,15 @@
+checksum = "6c79bc30273f883f9e00b1071551ecc57c4bea65baa84c67d777b4a90fa4d77e"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/knot-resolver-dbg-5.4.4-r0.apk"
+version = "5.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnssec-root", "20190225.0.0-r1"], ["lua5.1-cqueues", "20200726.0.0-r3"], ["lua5.1-http", "0.4.0-r1"]]

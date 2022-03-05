@@ -1,0 +1,15 @@
+checksum = "9a959b0a01b7222b928145ef85290d3d9285b8f5629842b0b8c3548c6f04c755"
+licence = "BSD-3-Clause"
+provides = "charls-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/charls-dev-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["charls", "2.2.0-r0"], ["pkgconf", "1.8.0-r0"]]

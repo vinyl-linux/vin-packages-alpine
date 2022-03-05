@@ -1,0 +1,15 @@
+checksum = "9d046b57cf4f44c61cc9add61a05575a5072385f7bd8e7f72e6acd19b10c7c2e"
+licence = "LGPL-3.0-only"
+provides = "net-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/net-cpp-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

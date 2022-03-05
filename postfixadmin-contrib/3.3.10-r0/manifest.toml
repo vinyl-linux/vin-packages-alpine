@@ -1,0 +1,15 @@
+checksum = "8c0224678e78682dccd87e4eb29b4fb7d4e27b15b1957d945e55c506101d9635"
+licence = "GPL-2.0-or-later"
+provides = "postfixadmin-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postfixadmin-contrib-3.3.10-r0.apk"
+version = "3.3.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8", "8.0.16-r0"]]

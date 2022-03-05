@@ -1,0 +1,15 @@
+checksum = "0042a85b7defc257ec29064665f023c03e5736e1b40569dff6af6d37f17e6528"
+licence = "custom"
+provides = "aom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/aom-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aom-libs", "3.2.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "8b67f27b4cba9506faa1b1a92b507b3dee284bbac244ac25a05c80a8446da7ca"
+licence = "GPL-2.0-or-later"
+provides = "vdr-vdrmanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vdr-vdrmanager-2.4.6-r3.apk"
+version = "2.4.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.4.6-r3"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

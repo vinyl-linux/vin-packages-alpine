@@ -1,0 +1,15 @@
+checksum = "bded51d393372bef226222d35629f4cbc8624dd9852eb3b35f7e9a97f5359262"
+licence = "GPL-2.0-or-later"
+provides = "ghex-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ghex-lang-3.18.4-r1.apk"
+version = "3.18.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dconf", "0.40.0-r0"]]

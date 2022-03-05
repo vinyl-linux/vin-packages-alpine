@@ -1,0 +1,15 @@
+checksum = "ee92eb9427febd2e97f7cc6570759e4a75c9606a4e0bf97ec68431c28308afa4"
+licence = "LGPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND GFDL-1.2-only"
+provides = "discover-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/discover-lang-5.23.5-r1.apk"
+version = "5.23.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "663e3ae417a50e4950361931e562942f00d5499aeb86dad41fae65510624f3b8"
+licence = "MIT"
+provides = "font-ibm-plex-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-ibm-plex-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

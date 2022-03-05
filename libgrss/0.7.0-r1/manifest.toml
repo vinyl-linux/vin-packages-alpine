@@ -1,0 +1,15 @@
+checksum = "d46ac002a70384a9e334156c3c54a06d2be75ae00b670f45bd8386b1dfd04d5c"
+licence = "LGPL-3.0-or-later"
+provides = "libgrss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgrss-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libsoup", "2.74.0-r0"], ["libxml2", "2.9.12-r2"]]

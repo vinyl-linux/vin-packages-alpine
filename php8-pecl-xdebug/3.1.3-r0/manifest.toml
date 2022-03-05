@@ -1,0 +1,15 @@
+checksum = "81dc48033ac83be97345e74086cc6dfa708902ac294ce5b5b3630fbfeee4406a"
+licence = "PHP-3.0"
+provides = "php8-pecl-xdebug"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-xdebug-3.1.3-r0.apk"
+version = "3.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

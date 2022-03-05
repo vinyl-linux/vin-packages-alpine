@@ -1,0 +1,15 @@
+checksum = "4b62b545a25f4e679b65c6ad11d22e2b5dd236b75fc0e5a9a9534f05fb3f942f"
+licence = "Apache-2.0"
+provides = "php8-pecl-couchbase"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-couchbase-3.2.2-r0.apk"
+version = "3.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-pecl-igbinary", "3.2.6-r0"], ["musl", "1.2.2-r7"], ["libcouchbase", "3.2.4-r0"], ["zlib", "1.2.11-r3"]]

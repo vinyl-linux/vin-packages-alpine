@@ -1,0 +1,15 @@
+checksum = "4f7bfd9f52c19e3e7ad18612cb8ab19500a79fd87e93a7f3b0728f4932f96cae"
+licence = "MIT"
+provides = "valhalla"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/valhalla-3.1.4-r0.apk"
+version = "3.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libprotobuf-lite", "3.18.1-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

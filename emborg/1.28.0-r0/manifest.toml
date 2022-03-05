@@ -1,0 +1,15 @@
+checksum = "86def944587f6f51ac58a9ca37f9511194bea38f531f0ba475a4bb3fc6bfff8a"
+licence = "GPL-3.0-or-later"
+provides = "emborg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/emborg-1.28-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["borgbackup", "1.1.17-r2"], ["python3", "3.9.7-r4"], ["py3-appdirs", "1.4.4-r2"], ["py3-arrow", "0.17.0-r1"], ["py3-docopt", "0.6.2-r6"], ["py3-inform", "1.26.0-r0"], ["py3-quantiphy", "2.15.0-r0"], ["py3-requests", "2.26.0-r1"], ["py3-shlib", "1.4.0-r0"]]

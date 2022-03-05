@@ -1,0 +1,15 @@
+checksum = "49a460c5308e32614e0c38a3297ca91eff941e2680be9ccb350656060862d669"
+licence = "MIT"
+provides = "py3-blessings"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-blessings-1.7-r6.apk"
+version = "1.7.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"]]

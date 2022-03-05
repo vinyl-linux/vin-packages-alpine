@@ -1,0 +1,15 @@
+checksum = "591ea811bdd758e105f59cae1c95f609501f0d523b31db648111c264408b75ae"
+licence = "LGPL-2.1-or-later"
+provides = "acsccid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/acsccid-1.1.8-r1.apk"
+version = "1.1.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite", "1.9.4-r0"], ["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

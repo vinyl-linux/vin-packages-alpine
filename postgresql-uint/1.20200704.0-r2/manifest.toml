@@ -1,0 +1,15 @@
+checksum = "55fce4d785396d0e0e3b5a374fd29d839f36115b0553c8605994bdeda3de964e"
+licence = "PostgreSQL"
+provides = "postgresql-uint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postgresql-uint-1.20200704-r2.apk"
+version = "1.20200704.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql14", "14.2.0-r0"], ["musl", "1.2.2-r7"]]

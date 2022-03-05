@@ -1,0 +1,15 @@
+checksum = "02b9eed73ef08f852d5e2209bd616153a7bc1096999c6032af487638923b4d62"
+licence = "LGPL-2.1-or-later"
+provides = "bluez-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bluez-qt-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["bluez-qt", "5.88.0-r0"], ["pkgconf", "1.8.0-r0"]]

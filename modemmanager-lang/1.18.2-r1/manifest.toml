@@ -1,0 +1,15 @@
+checksum = "fc32b1ee3a5c2373a7c9fca4159fd928f0c1bfb9bb9f256d122c7e08cadb72a6"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "modemmanager-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/modemmanager-lang-1.18.2-r1.apk"
+version = "1.18.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["polkit", "0.119.0-r8"]]

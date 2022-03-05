@@ -1,0 +1,15 @@
+checksum = "ba4a209b1ae6be57fd9eceff2365c285e639d5ba210fd03ec2aa194dd1f5c9a6"
+licence = "BSD-2-Clause"
+provides = "dhcpcd-ui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dhcpcd-ui-0.7.8-r1.apk"
+version = "0.7.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dhcpcd-dbus", "0.6.1-r5"], ["hicolor-icon-theme", "0.17.0-r1"], ["musl", "1.2.2-r7"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["libintl", "0.21.0-r0"], ["libnotify", "0.7.9-r1"]]

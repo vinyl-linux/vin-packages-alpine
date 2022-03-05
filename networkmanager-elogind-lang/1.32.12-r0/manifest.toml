@@ -1,0 +1,15 @@
+checksum = "a529cd51529b44a1a2c25754cfbbf73ae0a0abdf159c9212174a03a29c749eef"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-elogind-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/networkmanager-elogind-lang-1.32.12-r0.apk"
+version = "1.32.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iptables", "1.8.7-r1"], ["dbus", "1.12.20-r4"], ["mobile-broadband-provider-info", "20201225.0.0-r0"], ["openresolv", "3.12.0-r0"]]

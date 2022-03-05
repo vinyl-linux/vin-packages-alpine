@@ -1,0 +1,15 @@
+checksum = "20b2e7368feb824aa167ca7347714acd50325a14340aca348430ecc936e5edf6"
+licence = "Zlib"
+provides = "pngcrush"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pngcrush-1.8.13-r1.apk"
+version = "1.8.13-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libpng", "1.6.37-r1"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "45f186f08bff7aa25fe342ff165822b65ed6a8d8f11ed7be5accdc6f0519fc17"
+licence = "MIT"
+provides = "libmpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmpack-1.0.5-r0.apk"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

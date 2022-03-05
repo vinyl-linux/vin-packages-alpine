@@ -1,0 +1,15 @@
+checksum = "35e7ba2784d5b567fbe7220e1f6aba30a454b80ce3cf7416ff93e4a7dcf08194"
+licence = "Artistic-2.0"
+provides = "nqp-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nqp-doc-2021.10-r0.apk"
+version = "2021.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["moarvm", "2021.10.0-r0"]]

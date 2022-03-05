@@ -1,0 +1,15 @@
+checksum = "5b98dd8927f6cf3a3557a87d64928ec7f18cd4c2a3d8c5fa253c6c2731cf73d3"
+licence = "GPL-2.0-or-later"
+provides = "vdr-osd2web"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vdr-osd2web-2.4.6-r3.apk"
+version = "2.4.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.4.6-r3"], ["musl", "1.2.2-r7"], ["libexif", "0.6.23-r0"], ["libgcc", "10.3.1"], ["jansson", "2.14.0-r0"], ["libstdc++", "10.3.1"], ["tinyxml2", "9.0.0-r0"], ["libwebsockets", "4.3.0-r0"]]

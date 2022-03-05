@@ -1,0 +1,15 @@
+checksum = "59869d5078a2e012553c2f0fc85333e0f420cf59d58de638a1c29d0a63484ea4"
+licence = "LGPL-2.1-only"
+provides = "libsignon-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libsignon-glib-2.1-r1.apk"
+version = "2.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

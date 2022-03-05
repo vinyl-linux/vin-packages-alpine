@@ -1,0 +1,15 @@
+checksum = "9139edb1d49f73c84ce4a7148d29ac7e1071c643430c2bf83dd230a933cb60ee"
+licence = "BSD-3-Clause"
+provides = "s-nail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/s-nail-14.9.22-r2.apk"
+version = "14.9.22-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libidn", "1.38.0-r0"], ["ncurses-libs", "6.3.0"], ["libssl1.1", "1.1.1-l-r8"]]

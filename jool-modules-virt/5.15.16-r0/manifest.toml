@@ -1,0 +1,15 @@
+checksum = "9bb4e871d710665d894489c80c96053de4f1a508527daa51d674ece556d2b26b"
+licence = "GPL-2.0-or-later"
+provides = "jool-modules-virt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jool-modules-virt-5.15.16-r0.apk"
+version = "5.15.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-virt", "5.15.16-r0"]]

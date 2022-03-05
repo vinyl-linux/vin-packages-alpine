@@ -1,0 +1,15 @@
+checksum = "9304a097a9397b9c868fb4a1a70402e7e179779c4800ba6b9dafe2651532faa0"
+licence = "LGPL-2.1-or-later"
+provides = "sdl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sdl-1.2.15-r13.apk"
+version = "1.2.15-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["tslib", "1.22.0-r0"]]

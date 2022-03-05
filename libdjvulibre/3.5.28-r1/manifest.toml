@@ -1,0 +1,15 @@
+checksum = "251531a6644ca3e4b7ed6451d05347515c298f285739ed05c329eb1601ccd3e3"
+licence = "GPL-2.0-only"
+provides = "libdjvulibre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libdjvulibre-3.5.28-r1.apk"
+version = "3.5.28-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libjpeg-turbo", "2.1.2-r0"], ["libstdc++", "10.3.1"]]

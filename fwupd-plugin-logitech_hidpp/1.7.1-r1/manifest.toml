@@ -1,0 +1,15 @@
+checksum = "552f0bbdca40d6ec05df4749ce0be6e45843dcdb0ffc49f63b926dbeaee51c17"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-logitech_hidpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-logitech_hidpp-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libgudev", "237.0.0-r0"], ["libgusb", "0.3.8-r0"]]

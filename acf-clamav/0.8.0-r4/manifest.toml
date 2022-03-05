@@ -1,0 +1,15 @@
+checksum = "527a6b623714b567499180d84ca4c4781eb0dc885c76490cfa05ebb9435cbfeb"
+licence = "GPL-2.0-only"
+provides = "acf-clamav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/acf-clamav-0.8.0-r4.apk"
+version = "0.8.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["clamav", "0.104.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "8fe6d4323d0a0fc199b2698b8c77f36e60d872e4e6f157e87a2827aa468260bd"
+licence = "BSD-3-Clause"
+provides = "php8-pecl-oauth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-oauth-2.0.7-r0.apk"
+version = "2.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

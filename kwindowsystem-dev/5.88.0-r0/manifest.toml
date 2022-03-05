@@ -1,0 +1,15 @@
+checksum = "71458ce605d8159c35a164a7609289ec2251a88ee1d34c16c9b30d5ab4c4f085"
+licence = "MIT AND (LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kwindowsystem-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kwindowsystem-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtx11extras-dev", "5.15.3"], ["kwindowsystem", "5.88.0-r0"]]

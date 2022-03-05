@@ -1,0 +1,15 @@
+checksum = "68bda007f00bea30873b7bdf6a03fdd0851491a43f8fe0affe2f6aff8239970a"
+licence = "GPL-3.0-or-later"
+provides = "cloud-utils-growpart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cloud-utils-growpart-0.32-r5.apk"
+version = "0.32.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["blkid", "2.37.4-r0"], ["partx", "2.37.4-r0"], ["sfdisk", "2.37.4-r0"]]

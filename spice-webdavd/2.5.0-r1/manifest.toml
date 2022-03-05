@@ -1,0 +1,15 @@
+checksum = "d0568d95de530da866330e8ec793bfbd9b798fbc0e0b5e768b1890a96ae2bd43"
+licence = "LGPL-2.0-or-later"
+provides = "spice-webdavd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/spice-webdavd-2.5-r1.apk"
+version = "2.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r5"], ["avahi-glib", "0.8.0-r5"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"]]

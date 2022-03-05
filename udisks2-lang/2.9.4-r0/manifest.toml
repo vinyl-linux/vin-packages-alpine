@@ -1,0 +1,15 @@
+checksum = "c6c9cb787522da951e0b70d546349fd25a0dcd7fd486ac11f37b9ae61c4ad1b6"
+licence = "GPL-2.0-or-later"
+provides = "udisks2-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/udisks2-lang-2.9.4-r0.apk"
+version = "2.9.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"]]

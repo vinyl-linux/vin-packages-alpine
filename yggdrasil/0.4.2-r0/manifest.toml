@@ -1,0 +1,15 @@
+checksum = "c75b93c4b286a7a015c18c30cdc9f788c320ae7ba4e604189aca90c09f18dece"
+licence = "LGPL-3.0-only"
+provides = "yggdrasil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yggdrasil-0.4.2-r0.apk"
+version = "0.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

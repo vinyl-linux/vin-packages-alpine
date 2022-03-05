@@ -1,0 +1,15 @@
+checksum = "4bea05f5c9bb48ffe361492e17781f26c732a8a8be25cc97bc91780c3b781052"
+licence = "custom"
+provides = "hdf5-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hdf5-dev-1.12.1-r1.apk"
+version = "1.12.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["hdf5-fortran", "1.12.1-r1"], ["hdf5", "1.12.1-r1"], ["pkgconf", "1.8.0-r0"]]

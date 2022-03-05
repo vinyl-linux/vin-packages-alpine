@@ -1,0 +1,15 @@
+checksum = "6711ea9f7abd904286ea5f304ef7fa4f37666aa14eabe74cd2da223fca74a650"
+licence = "MIT"
+provides = "py3-jsonschema"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-jsonschema-4.2.1-r0.apk"
+version = "4.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-pyrsistent", "0.18.0-r0"], ["py3-attrs", "21.2.0-r0"], ["py3-six", "1.16.0-r0"]]

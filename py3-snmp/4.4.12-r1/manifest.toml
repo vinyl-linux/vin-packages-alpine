@@ -1,0 +1,15 @@
+checksum = "c469be91bbbd70a7fd7aba45c31c1213f08785b2417a62b4a0914a71e6c462e4"
+licence = "BSD-2-Clause"
+provides = "py3-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-snmp-4.4.12-r1.apk"
+version = "4.4.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-asn1", "0.4.8-r1"], ["py3-pycryptodome", "3.10.1-r1"]]

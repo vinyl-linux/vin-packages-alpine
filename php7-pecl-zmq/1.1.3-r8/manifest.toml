@@ -1,0 +1,15 @@
+checksum = "3de750256c324b8e18d2ffc0163e3d83cef94617662ace196cb9087e871b418b"
+licence = "PHP-3.01"
+provides = "php7-pecl-zmq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-zmq-1.1.3-r8.apk"
+version = "1.1.3-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libzmq", "4.3.4-r0"]]

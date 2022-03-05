@@ -1,0 +1,15 @@
+checksum = "bf0a2eae0300bd4cb0835c1175bd0d2d2d608601b917f423cad06e7ea9eba493"
+licence = "GPL-2.0-or-later"
+provides = "obs-studio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/obs-studio-dev-27.1.3-r1.apk"
+version = "27.1.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["obs-studio", "27.1.3-r1"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

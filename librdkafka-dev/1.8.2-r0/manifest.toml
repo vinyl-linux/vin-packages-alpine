@@ -1,0 +1,15 @@
+checksum = "361e66feb1be4bc43c1ac36d0aa3c063f0cfba93e7428c95c38cddcddbe4991b"
+licence = "BSD-2-Clause"
+provides = "librdkafka-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/librdkafka-dev-1.8.2-r0.apk"
+version = "1.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librdkafka", "1.8.2-r0"], ["openssl-dev", "1.1.1-l-r8"], ["lz4-dev", "1.9.3-r1"], ["cyrus-sasl-dev", "2.1.27-r14"], ["zstd-dev", "1.5.0-r0"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"]]

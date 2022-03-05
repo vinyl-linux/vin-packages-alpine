@@ -1,0 +1,15 @@
+checksum = "d0247b5e9b96a6ed4c05efd86d1ce08cedf8f0891c3e38103422f4c46594394b"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-mysqli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-mysqli-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["php7-mysqlnd", "7.4.28-r0"], ["php7-openssl", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

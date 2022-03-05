@@ -1,0 +1,15 @@
+checksum = "c4a24962a3800e92ccd1bf715d84cf20f3cd98e6b52898e38335ac6f8be8b524"
+licence = "LGPL-2.0-or-later"
+provides = "appstream-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/appstream-glib-0.7.18-r1.apk"
+version = "0.7.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "41.0.0-r0"], ["libarchive", "3.6.0-r0"], ["musl", "1.2.2-r7"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["libsoup", "2.74.0-r0"], ["libuuid", "2.37.4-r0"], ["yaml", "0.2.5-r0"]]

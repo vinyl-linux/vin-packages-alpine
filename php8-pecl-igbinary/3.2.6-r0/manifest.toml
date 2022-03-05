@@ -1,0 +1,15 @@
+checksum = "7e099610934521208e785653cadf2c21f740c1dea853644cd2669e7ba4c80a19"
+licence = "BSD-3-Clause"
+provides = "php8-pecl-igbinary"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-igbinary-3.2.6-r0.apk"
+version = "3.2.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "5f38829fa5f42a6d4aaabf07a7143f2bc512a649e4904c8c153577ca5f24645e"
+licence = "BSD-3-Clause"
+provides = "openexr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openexr-dev-3.1.4-r0.apk"
+version = "3.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openexr", "3.1.4-r0"], ["pkgconf", "1.8.0-r0"]]

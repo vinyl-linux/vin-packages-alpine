@@ -1,0 +1,15 @@
+checksum = "ac2bd21c4b5422d804d48a389a4e70d5ed218855cd2a197a6ba27f221b4c7eee"
+licence = "LGPL-2.1-or-later WITH custom-static-linking-exception"
+provides = "quazip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/quazip-1.1-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

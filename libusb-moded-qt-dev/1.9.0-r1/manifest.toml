@@ -1,0 +1,15 @@
+checksum = "75bbb02e432e5138adc616a9c5f1d53f3c40f2ea29d087b95de4e7dfbbd31d19"
+licence = "BSD-2-Clause"
+provides = "libusb-moded-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libusb-moded-qt-dev-1.9-r1.apk"
+version = "1.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["usb-moded-dev", "0.86.0.56-r0"], ["libusb-moded-qt", "1.9.0-r1"], ["pkgconf", "1.8.0-r0"]]

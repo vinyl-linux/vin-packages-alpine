@@ -1,0 +1,15 @@
+checksum = "7dfe1a6b3abe751b3ff410cbfb372313c3c3361ce6423fad13c1961d39073fa8"
+licence = "LGPL-2.1-or-later GPL-3.0-or-later"
+provides = "gpgme-lisp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gpgme-lisp-1.16.0-r0.apk"
+version = "1.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.31-r1"], ["gpg-agent", "2.2.31-r1"], ["gpgsm", "2.2.31-r1"], ["gpgme", "1.16.0-r0"]]

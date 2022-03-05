@@ -1,0 +1,15 @@
+checksum = "a115395dc71a0e626b06d675084d3599d746bf45ab061f09f05161d72d89d297"
+licence = "BSD-3-Clause"
+provides = "chibi-scheme-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chibi-scheme-dev-0.10-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chibi-scheme", "0.10.0-r1"], ["pkgconf", "1.8.0-r0"]]

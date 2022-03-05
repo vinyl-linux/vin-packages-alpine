@@ -1,0 +1,15 @@
+checksum = "04df18b7d3059aa7eea40b219362e8b430e70102a60ec259f9ab97f7db5549c0"
+licence = "GPL-2.0-only"
+provides = "gnome-brave-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-brave-icon-theme-5.5.1-r3.apk"
+version = "5.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-colors-common", "5.5.1-r3"]]

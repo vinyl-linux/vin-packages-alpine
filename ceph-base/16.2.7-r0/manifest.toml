@@ -1,0 +1,15 @@
+checksum = "53c5a540959986839937a86e8b573a9cb5545b98b26e3549c4525be8688a9ee1"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph-base"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ceph-base-16.2.7-r0.apk"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cryptsetup", "2.4.3-r0"], ["e2fsprogs", "1.46.4-r0"], ["logrotate", "3.18.1-r1"], ["parted", "3.4.0-r0"], ["util-linux", "2.37.4-r0"], ["xfsprogs", "5.13.0-r0"], ["ceph-user", "16.2.7-r0"], ["ceph-common", "16.2.7-r0"], ["librbd", "16.2.7-r0"], ["librados", "16.2.7-r0"], ["libcephfs", "16.2.7-r0"], ["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["leveldb", "1.22.0-r1"], ["lua5.3-libs", "5.3.6-r1"], ["lz4-libs", "1.9.3-r1"], ["oath-toolkit-liboath", "2.6.7-r1"], ["snappy", "1.1.9-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

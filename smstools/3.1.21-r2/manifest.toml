@@ -1,0 +1,15 @@
+checksum = "72cec74c0761b6dfcfde622e145a63ac9636623c97d5de10934341f32d5623ad"
+licence = "GPL-2.0-only"
+provides = "smstools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/smstools-3.1.21-r2.apk"
+version = "3.1.21-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

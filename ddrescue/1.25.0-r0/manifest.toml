@@ -1,0 +1,15 @@
+checksum = "66236337148347377c1238411269368e749734ce4f1cbe59c1900933c38b9aee"
+licence = "GPL-3.0-or-later"
+provides = "ddrescue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ddrescue-1.25-r0.apk"
+version = "1.25.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

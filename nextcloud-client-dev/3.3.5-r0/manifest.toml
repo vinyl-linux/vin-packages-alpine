@@ -1,0 +1,15 @@
+checksum = "982153aa3a7f84679f72664a92a192fc3c40174c9cd10eff4895d80cf7dd2d41"
+licence = "GPL-2.0-only"
+provides = "nextcloud-client-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-client-dev-3.3.5-r0.apk"
+version = "3.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud-client", "3.3.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2f064dee52297408bd819af15f783cf5ddaa469c2e0ec2e836d7de2c2f498e3a"
+licence = "GPL-2.0-or-later"
+provides = "collectd-dns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-dns-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["libpcap", "1.10.1-r0"]]

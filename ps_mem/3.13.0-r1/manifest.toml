@@ -1,0 +1,15 @@
+checksum = "795dc7cd76fb2ab1f64ea53b4f7b2ad38526632d85c0649d54336ef2eb809d76"
+licence = "LGPL-2.1-or-later"
+provides = "ps_mem"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ps_mem-3.13-r1.apk"
+version = "3.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

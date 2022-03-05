@@ -1,0 +1,15 @@
+checksum = "616143bb7c539c6c498f64fbd8d020e8f39847b034c0c7c0b2b0b14d595b6566"
+licence = "GPL-2.0-or-later"
+provides = "gammu-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gammu-lang-1.42.0-r0.apk"
+version = "1.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez", "5.63.0-r0"], ["dialog", "1.3.20211107-r0"]]

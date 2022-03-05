@@ -1,0 +1,15 @@
+checksum = "0cd8e1502adafa7ecd170b9d9be116e57320a411d09cd5e7b5a8f2870430f326"
+licence = "MIT"
+provides = "swaylockd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/swaylockd-0.1.0-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["swaylock-effects", "1.6.3-r2"], ["musl", "1.2.2-r7"]]

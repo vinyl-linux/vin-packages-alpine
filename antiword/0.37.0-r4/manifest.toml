@@ -1,0 +1,15 @@
+checksum = "3045e6710b9fb506ee18b5f987af238a204cc323b94850cb93989362e1445947"
+licence = "GPL-2.0-only"
+provides = "antiword"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/antiword-0.37-r4.apk"
+version = "0.37.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "f4f6b15cff768f7cafda2caf51a8998c238d78ec8b403ae3b263df05094b6738"
+licence = "GPL-2.0-or-later"
+provides = "collectd-write_http"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-write_http-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["yajl", "2.1.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "ad71411cebfc8bb9c2c48b975837b3c8b186717f62f5aab2fe949b03b7b50459"
+licence = "MIT"
+provides = "ipmitool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ipmitool-1.8.18-r10.apk"
+version = "1.8.18-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["readline", "8.1.1-r0"]]

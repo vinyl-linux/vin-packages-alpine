@@ -1,0 +1,15 @@
+checksum = "952dfc8e398be920d2aaa13de4574c17471f7cdca3459a03258954e274a76327"
+licence = "LGPL-3.0-only"
+provides = "xapp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xapp-dev-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cairo-dev", "1.16.0-r3"], ["gdk-pixbuf-dev", "2.42.6-r0"], ["glib-dev", "2.70.1-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["libgnomekbd-dev", "3.26.1-r1"], ["libx11-dev", "1.7.2-r0"], ["libxkbfile-dev", "1.1.0-r0"], ["pkgconf", "1.8.0-r0"], ["xapp", "2.2.2-r0"]]

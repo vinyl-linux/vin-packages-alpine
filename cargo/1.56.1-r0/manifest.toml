@@ -1,0 +1,15 @@
+checksum = "fdb66ca4c0e178132cfedb43c5344682e1aa08fa7edb79105c5367de3da783d1"
+licence = "Apache-2.0 MIT UNLICENSE"
+provides = "cargo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cargo-1.56.1-r0.apk"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust", "1.56.1-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

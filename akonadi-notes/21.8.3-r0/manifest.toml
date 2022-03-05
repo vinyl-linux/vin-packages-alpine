@@ -1,0 +1,15 @@
+checksum = "5fa8d6202751a11ceda5aece3ec898e1f0600613cadf2b413eb8c08d7f253b0b"
+licence = "LGPL-2.0-or-later"
+provides = "akonadi-notes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/akonadi-notes-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.88.0-r0"], ["kmime", "21.8.3-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

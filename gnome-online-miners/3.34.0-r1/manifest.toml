@@ -1,0 +1,15 @@
+checksum = "05361c5f20617e384a1f028ddb91cdcd7b2cee383803c9b739313c49b8afc538"
+licence = "GPL-2.0-or-later"
+provides = "gnome-online-miners"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-online-miners-3.34.0-r1.apk"
+version = "3.34.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgdata", "0.18.1-r1"], ["gfbgraph", "0.2.5-r0"], ["glib", "2.70.1-r0"], ["gnome-online-accounts", "3.40.0-r0"], ["grilo-libs", "0.3.14-r0"], ["libtracker", "3.2.0-r1"]]

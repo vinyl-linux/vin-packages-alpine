@@ -1,0 +1,15 @@
+checksum = "09635f9c374d5790f70093be3e207ebdd6c7fecbcbc56b2b6ac16e94964fd3ee"
+licence = "GPL-2.0-or-later"
+provides = "collectd-sensors"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-sensors-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["lm-sensors", "3.6.0-r1"]]

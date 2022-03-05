@@ -1,0 +1,15 @@
+checksum = "46a76c8a7b56cbe10f3791e1f4d7d6c46c0a15346d22866e92a15bb88f9b1d7d"
+licence = "GPL-3.0-or-later"
+provides = "goimapnotify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/goimapnotify-2.3.7-r0.apk"
+version = "2.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

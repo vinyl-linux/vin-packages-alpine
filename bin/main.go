@@ -59,7 +59,7 @@ func init() {
 func main() {
 	for _, url := range []string{
 		apk.BaseURL("v3.15", "main", "x86_64"),
-		//apk.BaseURL("v3.15", "community", "x86_64"),
+		apk.BaseURL("v3.15", "community", "x86_64"),
 	} {
 		work(url)
 	}

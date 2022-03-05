@@ -1,0 +1,15 @@
+checksum = "6af24e8fc9e71772a1ad9665755e1ae0d7987942c5ab33274abec8653ceea1db"
+licence = "LGPL-2.1-only"
+provides = "py3-xdg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-xdg-0.27-r1.apk"
+version = "0.27.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

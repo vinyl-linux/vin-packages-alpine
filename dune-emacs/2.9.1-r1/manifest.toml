@@ -1,0 +1,15 @@
+checksum = "834a57346fa9c4d3ae14a81c3825949a765d6a342f0de216bf4aceff35bda07a"
+licence = "Apache-2.0"
+provides = "dune-emacs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dune-emacs-2.9.1-r1.apk"
+version = "2.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dune", "2.9.1-r1"]]

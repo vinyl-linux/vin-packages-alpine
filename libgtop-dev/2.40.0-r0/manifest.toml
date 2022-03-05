@@ -1,0 +1,15 @@
+checksum = "9a3d24f9c896214294c0d02e38fa4a3b18e2ae7fd0a61d523aadf9685f8e310b"
+licence = "LGPL-2.1-or-later"
+provides = "libgtop-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgtop-dev-2.40.0-r0.apk"
+version = "2.40.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgtop", "2.40.0-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

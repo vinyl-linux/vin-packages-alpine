@@ -1,0 +1,15 @@
+checksum = "70c6883c07421d1757e886280936b8bc99c873a4c81a223af4b6fa9ea381ef75"
+licence = "MIT"
+provides = "ttf2ufm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ttf2ufm-3.4.4-r0.apk"
+version = "3.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

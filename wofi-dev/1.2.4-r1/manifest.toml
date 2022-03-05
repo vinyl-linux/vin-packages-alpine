@@ -1,0 +1,15 @@
+checksum = "fdb381aca6e56b370849c42f54c069cfb76cad94d7e4799d2b0d7dad2ab37b36"
+licence = "GPL-3.0-only"
+provides = "wofi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wofi-dev-1.2.4-r1.apk"
+version = "1.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wayland-dev", "1.19.0-r1"], ["pkgconf", "1.8.0-r0"]]

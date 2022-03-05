@@ -1,0 +1,15 @@
+checksum = "9f335e05a0607bae23f701e72c8b7644c5babe27e244967d8729316f8f60538c"
+licence = "Apache-2.0"
+provides = "salt-syndic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/salt-syndic-3004-r0.apk"
+version = "3004.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["salt-master", "3004.0.0-r0"]]

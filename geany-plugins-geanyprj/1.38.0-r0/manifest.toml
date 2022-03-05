@@ -1,0 +1,15 @@
+checksum = "ee45b770e731cfa9cea048d396d23a8304919d3b9539c8185555f2d33036b4d4"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geanyprj"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/geany-plugins-geanyprj-1.38-r0.apk"
+version = "1.38.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["geany", "1.38.0-r0"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["pango", "1.48.10-r0"]]

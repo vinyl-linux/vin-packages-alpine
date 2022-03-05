@@ -1,0 +1,15 @@
+checksum = "5541c16c06197ce45f42ac68365e0aa0b96b9ab8db73af46958ae05c6ad93b9a"
+licence = "Apache-2.0"
+provides = "alacritty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/alacritty-0.9.0-r2.apk"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"], ["wayland-libs-egl", "1.19.0-r1"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"], ["libgcc", "10.3.1"], ["libxcb", "1.14.0-r2"]]

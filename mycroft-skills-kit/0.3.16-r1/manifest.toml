@@ -1,0 +1,15 @@
+checksum = "3cd59849fb9b8aee660787b6b684a6b81e53d00b3f7757e2f9a5caf6c60dcc76"
+licence = "Apache-2.0"
+provides = "mycroft-skills-kit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mycroft-skills-kit-0.3.16-r1.apk"
+version = "0.3.16-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["mycroft-skills-manager", "0.9.0-r2"], ["py3-colorama", "0.4.4-r1"], ["py3-requests", "2.26.0-r1"], ["py3-pygithub", "1.53.0-r1"], ["py3-pip", "20.3.4-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d861be949974c8b0ac53cbe45fbae7d4e4afccaea6d8827314e7d82060335168"
+licence = "GPL-3.0-or-later"
+provides = "apk-polkit-rs-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/apk-polkit-rs-dbg-0.93.0-r2.apk"
+version = "0.93.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit", "0.119.0-r8"]]

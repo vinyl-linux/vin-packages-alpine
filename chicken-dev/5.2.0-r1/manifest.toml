@@ -1,0 +1,15 @@
+checksum = "b7e68b4c89a3484013ec95fa3a4768cc93aa557b28b923068129ab7005be5975"
+licence = "BSD-3-Clause"
+provides = "chicken-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chicken-dev-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chicken-libs", "5.2.0-r1"]]

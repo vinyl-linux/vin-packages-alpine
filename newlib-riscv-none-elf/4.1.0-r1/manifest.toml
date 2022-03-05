@@ -1,0 +1,15 @@
+checksum = "18381a89b3cbdb7fbb3a956a1d1c4f5f727260cf6aff6547fe77245c4936f7d1"
+licence = "GPL-2.0-only AND LGPL-2.1-only AND 0BSD AND BSD-3-Clause AND GPL-3.0-only AND LGPL-3.0-only"
+provides = "newlib-riscv-none-elf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/newlib-riscv-none-elf-4.1.0-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils-riscv-none-elf", "2.37.0-r0"], ["gcc-riscv-none-elf", "10.3.0-r0"]]

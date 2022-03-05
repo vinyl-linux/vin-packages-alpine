@@ -1,0 +1,15 @@
+checksum = "c391f54c0096604edeb4c1e5f03ad6428c1a825a62becb55b4239c392a1eb9d3"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qt5compat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt6-qt5compat-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.2.1-r2"], ["musl", "1.2.2-r7"], ["icu-libs", "69.1.0-r1"], ["libstdc++", "10.3.1"]]

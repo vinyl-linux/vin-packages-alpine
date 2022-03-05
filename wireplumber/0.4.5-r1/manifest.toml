@@ -1,0 +1,15 @@
+checksum = "6a66ca0a95cda4a9addc0a48abcaae851f5510487900964327c32f33189418e0"
+licence = "LGPL-2.1-or-later"
+provides = "wireplumber"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wireplumber-0.4.5-r1.apk"
+version = "0.4.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["lua5.4-libs", "5.4.3-r0"], ["pipewire-libs", "0.3.40-r2"]]

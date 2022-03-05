@@ -1,0 +1,15 @@
+checksum = "d6198162ffdcc29a6cc0d98aba3b8652a884044a859f014147d885cb53325c66"
+licence = "BSD-3-Clause"
+provides = "libgbinder-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgbinder-tools-1.1.14-r0.apk"
+version = "1.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgbinder", "1.1.14-r0"], ["glib", "2.70.1-r0"], ["libglibutil", "1.0.61-r0"]]

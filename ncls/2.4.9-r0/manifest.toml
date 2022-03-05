@@ -1,0 +1,15 @@
+checksum = "578412148565bc9abb89cf20767774c9cc27c0cc6a2f3db95faf39160c80c0ae"
+licence = "Apache-2.0"
+provides = "ncls"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ncls-2.4.9-r0.apk"
+version = "2.4.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["notcurses-libs", "2.4.9-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "149153f61c38d467d289eff487cc364a15500ab25e86a45a4f868376a3b62736"
+licence = "MPL2"
+provides = "kea-hook-bootp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kea-hook-bootp-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["kea-common", "2.0.1-r0"]]

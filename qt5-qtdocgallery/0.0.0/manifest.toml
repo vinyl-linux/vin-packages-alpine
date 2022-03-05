@@ -1,0 +1,15 @@
+checksum = "b5440ad9d4f43e9fea33e1374a40cd9f2dbbef92c6174bd932cdacf495c75554"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtdocgallery"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtdocgallery-0_git20200525-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

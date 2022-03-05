@@ -1,0 +1,15 @@
+checksum = "62d0099ed77e66bb86f502f2d7fefa1b17cc9568d7779fef92b63b60d72465cd"
+licence = "MIT"
+provides = "prison"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/prison-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libdmtx-libs", "0.7.5-r1"], ["libqrencode", "4.1.1-r0"], ["libstdc++", "10.3.1"]]

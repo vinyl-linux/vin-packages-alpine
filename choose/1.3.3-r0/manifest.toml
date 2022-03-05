@@ -1,0 +1,15 @@
+checksum = "7f362d286c168587c5bd4baa2edfb51cbbeb96f5058aa4943d16c9a459a69e74"
+licence = "GPL-3.0-or-later"
+provides = "choose"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/choose-1.3.3-r0.apk"
+version = "1.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "df73bb1a0c3a6e7865001906c8535bfac2c0b9b0b1e5121f4ba840a59eeae2eb"
+licence = "LGPL-2.0-or-later"
+provides = "laszip-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/laszip-dev-3.4.3-r2.apk"
+version = "3.4.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["laszip", "3.4.3-r2"]]

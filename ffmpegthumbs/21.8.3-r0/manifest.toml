@@ -1,0 +1,15 @@
+checksum = "5b00670cf0058d7add3c71609a301c18cf28d3af80e6f5206eba5b921b3263fd"
+licence = "GPL-2.0-or-later"
+provides = "ffmpegthumbs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ffmpegthumbs-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["taglib", "1.12.0-r0"]]

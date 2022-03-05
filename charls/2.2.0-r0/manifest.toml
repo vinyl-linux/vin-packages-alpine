@@ -1,0 +1,15 @@
+checksum = "dbedb54af0cc4b3be381391d2cdfdef5c226af2a8c010cb04163d27f22b58f51"
+licence = "BSD-3-Clause"
+provides = "charls"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/charls-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

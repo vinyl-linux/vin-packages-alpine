@@ -1,0 +1,15 @@
+checksum = "d1680f8cee2a3a121fdf165a0dc5c2151d7592f3dea5571edcbb6bc31db27914"
+licence = "MPL-2.0"
+provides = "libixion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libixion-0.16.1-r1.apk"
+version = "0.16.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

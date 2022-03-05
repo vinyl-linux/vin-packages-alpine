@@ -1,0 +1,15 @@
+checksum = "d592a5fbba8e6fc83c08aeb05315631153ccf55468cbe9c6c5d9a96abd604707"
+licence = "GPL-2.0-only"
+provides = "libapparmor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libapparmor-3.0.3-r0.apk"
+version = "3.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["sed", "4.8.0-r0"], ["musl", "1.2.2-r7"]]

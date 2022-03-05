@@ -1,0 +1,15 @@
+checksum = "cf2d7b316c2dd5798d49ae867bb35771d49acd5368aaafa23e0d72b4a5630cbe"
+licence = "LGPL-2.0-or-later and GPL-2.0-or-later or BSD-3-Clause"
+provides = "openipmi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openipmi-2.0.32-r0.apk"
+version = "2.0.32-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openipmi-libs", "2.0.32-r0"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["net-snmp-libs", "5.9.1-r5"], ["readline", "8.1.1-r0"]]

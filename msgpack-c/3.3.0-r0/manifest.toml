@@ -1,0 +1,15 @@
+checksum = "a0e014aad5afa2be7d01c736c6f4675be917e1ab37a09fc22661a5a9bf0b9f16"
+licence = "BSL-1.0"
+provides = "msgpack-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/msgpack-c-3.3.0-r0.apk"
+version = "3.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

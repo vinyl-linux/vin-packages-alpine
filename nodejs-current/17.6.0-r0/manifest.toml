@@ -1,0 +1,15 @@
+checksum = "54f0815c2db3a372b13fad1baabdb45f998e88857159fa015c7bb03b34d325cd"
+licence = "MIT"
+provides = "nodejs-current"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nodejs-current-17.6.0-r0.apk"
+version = "17.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["icu-libs", "69.1.0-r1"], ["nghttp2-libs", "1.46.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["libuv", "1.42.0-r0"], ["zlib", "1.2.11-r3"]]

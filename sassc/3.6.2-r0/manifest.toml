@@ -1,0 +1,15 @@
+checksum = "4277d08f6330de080e41013e1051bb75373c84aef2e7f4f679b83fbfc5845b85"
+licence = "MIT"
+provides = "sassc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sassc-3.6.2-r0.apk"
+version = "3.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libsass", "3.6.5-r0"]]

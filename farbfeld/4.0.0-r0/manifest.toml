@@ -1,0 +1,15 @@
+checksum = "df158343eda2265d9b6377f5f2fd81728f69cbcb2ac4aea868d0fbfd099cec0c"
+licence = "ISC"
+provides = "farbfeld"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/farbfeld-4-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["file", "5.41.0-r0"], ["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"]]

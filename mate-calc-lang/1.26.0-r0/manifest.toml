@@ -1,0 +1,15 @@
+checksum = "9514d23de737281fcfc4a038fd45c2f33c36cbe93e2bf5e0580a0808c3bd16ca"
+licence = "GPL-2.0-or-later"
+provides = "mate-calc-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mate-calc-lang-1.26.0-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r0"]]

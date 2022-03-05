@@ -1,0 +1,15 @@
+checksum = "484d9749548d81ae542da9c0c09b8d43e5ffadb7f1356cb25f283ed0f9ec0d23"
+licence = "MIT"
+provides = "py3-gunicorn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-gunicorn-20.0.4-r1.apk"
+version = "20.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "52.0.0-r4"]]

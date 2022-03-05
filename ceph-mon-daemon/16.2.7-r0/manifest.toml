@@ -1,0 +1,15 @@
+checksum = "adaf132911abe19522849d04d63668711cbcf20a33dbef6aee0813414fb9e58e"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph-mon-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ceph-mon-daemon-16.2.7-r0.apk"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph-user", "16.2.7-r0"], ["musl", "1.2.2-r7"], ["librados", "16.2.7-r0"], ["libgcc", "10.3.1"], ["leveldb", "1.22.0-r1"], ["lz4-libs", "1.9.3-r1"], ["snappy", "1.1.9-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "78c3d945aefbca94d3d9316074183d435927618bec39f4487ab9b362d5f7fe62"
+licence = "BSD-3-Clause"
+provides = "libmce-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmce-qt-dev-1.4.2-r1.apk"
+version = "1.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mce-dev", "1.29.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["libmce-qt", "1.4.2-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f928fe20ca51ec3a3bda69a0a89a1f23ca74199475eaaba9ab9f4e19030e627e"
+licence = "MIT"
+provides = "py3-pychromecast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pychromecast-9.2.1-r0.apk"
+version = "9.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-casttube", "0.2.1-r1"], ["py3-protobuf", "3.15.7-r0"], ["py3-zeroconf", "0.29.0-r1"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,15 @@
+checksum = "65a00af6a22d554d818e2eea35c0faff32f4a812f7438f5235ed6a796c74e91c"
+licence = "MIT"
+provides = "libva-glx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libva-glx-2.13.0-r0.apk"
+version = "2.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "21.2.6-r0"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libva", "2.13.0-r0"]]

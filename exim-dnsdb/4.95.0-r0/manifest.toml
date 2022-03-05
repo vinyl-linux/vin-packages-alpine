@@ -1,0 +1,15 @@
+checksum = "1bb5431a69c63760c05e21339e12dcb6005b80c1eb4e2893e75d90deedf67ced"
+licence = "GPL-2.0-or-later"
+provides = "exim-dnsdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/exim-dnsdb-4.95-r0.apk"
+version = "4.95.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.95.0-r0"], ["musl", "1.2.2-r7"]]

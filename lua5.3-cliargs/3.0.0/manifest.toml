@@ -1,0 +1,15 @@
+checksum = "cf930d44f224fdfa2615eb6a23f6973b3abfc6e76bf8986d695fbfa69b5cf354"
+licence = "MIT"
+provides = "lua5.3-cliargs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-cliargs-3.0_p2-r0.apk"
+version = "3.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

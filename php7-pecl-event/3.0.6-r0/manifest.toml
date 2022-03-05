@@ -1,0 +1,15 @@
+checksum = "3e53e281391a7e43cbf8de36928aa27584e23a0531daa5dd2ef18214f3df4e0e"
+licence = "PHP-3.01"
+provides = "php7-pecl-event"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-event-3.0.6-r0.apk"
+version = "3.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-sockets", "7.4.28-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libevent", "2.1.12-r4"], ["libssl1.1", "1.1.1-l-r8"]]

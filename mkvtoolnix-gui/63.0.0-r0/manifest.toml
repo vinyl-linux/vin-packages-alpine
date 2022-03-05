@@ -1,0 +1,15 @@
+checksum = "6c0e042c12a20535da036c3108f2bb20a340bc3466244b198a10d77d07da02f0"
+licence = "GPL-2.0-only"
+provides = "mkvtoolnix-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mkvtoolnix-gui-63.0.0-r0.apk"
+version = "63.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkvtoolnix", "63.0.0-r0"], ["qt5-qtmultimedia", "5.15.3"], ["flac", "1.3.4-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libcmark", "0.30.2-r0"], ["libebml", "1.4.2-r0"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["libmatroska", "1.6.3-r0"], ["libstdc++", "10.3.1"], ["libvorbis", "1.3.7-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "6fd387569ab1d961d428ef5a32601be787976d81c1808945222a585ea8c47881"
+licence = "GPL-3.0-or-later"
+provides = "lua5.3-dromozoa-utf8"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.3-dromozoa-utf8-1.17-r0.apk"
+version = "1.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

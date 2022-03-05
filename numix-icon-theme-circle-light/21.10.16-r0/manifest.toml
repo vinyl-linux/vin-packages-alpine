@@ -1,0 +1,15 @@
+checksum = "09cbbc90d622d572ef40e7e666b6c52e0a2e91845df523e75614e819895c0d8b"
+licence = "GPL-3.0-only"
+provides = "numix-icon-theme-circle-light"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/numix-icon-theme-circle-light-21.10.16-r0.apk"
+version = "21.10.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["numix-icon-theme", "20.6.7-r1"], ["numix-icon-theme-circle", "21.10.16-r0"]]

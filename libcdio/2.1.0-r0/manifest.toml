@@ -1,0 +1,15 @@
+checksum = "94ad04e4717fcef3313e2df56ac981af6168fe5467bba4227ac26230e2c73a5c"
+licence = "GPL-3.0-or-later"
+provides = "libcdio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcdio-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

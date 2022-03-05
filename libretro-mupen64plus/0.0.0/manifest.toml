@@ -1,0 +1,15 @@
+checksum = "0bc452446fcf30a72bacc4c61edf9dbbaccb3bad4151e555baae4ef9af18823e"
+licence = "GPL-2.0-or-later"
+provides = "libretro-mupen64plus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-mupen64plus-0_git20200430-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "21.2.6-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

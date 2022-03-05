@@ -1,0 +1,15 @@
+checksum = "d88bb3669fed204a1170b4331589fb9789c3e61724543912499c29c4c8951a78"
+licence = "BSD-2-Clause"
+provides = "njs-debug"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/njs-debug-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libedit", "20210910.3.1-r0"], ["pcre", "8.45.0-r1"]]

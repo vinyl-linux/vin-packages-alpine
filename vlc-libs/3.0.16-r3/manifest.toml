@@ -1,0 +1,15 @@
+checksum = "6adb31affb6164c6adc406d63bb70ea363e9ff2efa12d11a7e42bba0edda7414"
+licence = "GPL-2.0-or-later"
+provides = "vlc-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vlc-libs-3.0.16-r3.apk"
+version = "3.0.16-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"]]

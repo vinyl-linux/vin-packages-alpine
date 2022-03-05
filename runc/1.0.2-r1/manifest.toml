@@ -1,0 +1,15 @@
+checksum = "e35f7f89de20345b5aabf009466f52e7cd5061b4b337064482f2c4160703b7b6"
+licence = "Apache-2.0"
+provides = "runc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/runc-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libseccomp", "2.5.2-r0"]]

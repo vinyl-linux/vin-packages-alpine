@@ -1,0 +1,15 @@
+checksum = "1686b93fe7b47962805ba86c654555c3948a2339acd50e42ef13216a27eeab9a"
+licence = "MIT"
+provides = "st-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/st-dbg-0.8.4-r0.apk"
+version = "0.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"]]

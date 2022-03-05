@@ -1,0 +1,15 @@
+checksum = "4df41e065c93505c8def5c7b6119e307ad421522c54f1114438a7db6470a64e9"
+licence = "Apache-2.0"
+provides = "java-jffi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/java-jffi-1.3.6-r0.apk"
+version = "1.3.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-jffi-native", "1.3.6-r0"], ["openjdk9-jre-headless", "9.0.4"]]

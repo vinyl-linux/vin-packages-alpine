@@ -1,0 +1,15 @@
+checksum = "3ecd5b6cc8fdcc0127813cbaf838aa63a497f1f86eafda6b81f17e6631beb756"
+licence = "MIT"
+provides = "libva-intel-driver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libva-intel-driver-2.4.1-r0.apk"
+version = "2.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"]]

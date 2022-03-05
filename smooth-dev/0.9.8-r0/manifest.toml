@@ -1,0 +1,15 @@
+checksum = "f36db7f3f1e5a447fe0684d5e07b955896474b75a2826cd16f0f4c1e08ca0ca6"
+licence = "Artistic-2.0"
+provides = "smooth-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/smooth-dev-0.9.8-r0.apk"
+version = "0.9.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["smooth", "0.9.8-r0"]]

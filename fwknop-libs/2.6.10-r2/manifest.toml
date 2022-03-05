@@ -1,0 +1,15 @@
+checksum = "3bdfd7a924bc0ef00ddffaeaf0b851af12a5075224c3fb3ae5c290621c97b79a"
+licence = "GPL-2.0-or-later"
+provides = "fwknop-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwknop-libs-2.6.10-r2.apk"
+version = "2.6.10-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gpgme", "1.16.0-r0"]]

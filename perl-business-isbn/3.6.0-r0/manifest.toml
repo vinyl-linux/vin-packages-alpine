@@ -1,0 +1,15 @@
+checksum = "a9b8c26e13d3e14dc5fdba6bc26d34b96885a9cbde8295668ef0b2df3448510d"
+licence = "Artistic-2.0"
+provides = "perl-business-isbn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-business-isbn-3.006-r0.apk"
+version = "3.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-business-isbn-data", "20210112.6.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ab06c8e8b501ffbf8edd67eb34f0d9273e2d4bf7c50ee81c4e4fd46ad1c01105"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kalzium-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kalzium-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kalzium", "21.8.3-r0"]]

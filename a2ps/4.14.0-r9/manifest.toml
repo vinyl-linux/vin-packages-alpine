@@ -1,0 +1,15 @@
+checksum = "46bb4ebb986d414a64bcf4e0d8973ca8a64a8bfdf43648fe8bca4e653543e96d"
+licence = "GPL-3.0"
+provides = "a2ps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/a2ps-4.14-r9.apk"
+version = "4.14.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghostscript", "9.55.0-r0"], ["imagemagick", "7.1.0.16-r0"], ["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

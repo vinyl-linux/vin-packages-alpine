@@ -1,0 +1,15 @@
+checksum = "eab990e1246677fcc7f612099c1c1177a07d87621d140721b0f0467e81dd7c38"
+licence = "GPL-3.0-or-later"
+provides = "yamllint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yamllint-1.26.3-r0.apk"
+version = "1.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-pathspec", "0.9.0-r0"], ["py3-yaml", "5.4.1.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "efd5b38b3a60d53b20f8da5919047b2c22cc713af729eda90521b19a1ef5de3d"
+licence = "GPL-2.0-only AND LGPL-2.1-only AND Unicode-DFS-2016"
+provides = "kwidgetsaddons"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kwidgetsaddons-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

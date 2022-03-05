@@ -1,0 +1,15 @@
+checksum = "dbafdf842d4178c55a4cfd65744ce20c2f7474a09483cb3069671204e92f7ee9"
+licence = "MIT"
+provides = "py3-port-for"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-port-for-0.4-r2.apk"
+version = "0.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

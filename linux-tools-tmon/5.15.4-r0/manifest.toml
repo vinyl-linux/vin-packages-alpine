@@ -1,0 +1,15 @@
+checksum = "25f342f7c586fec2819b4db1b813a526eeb838d03cfd1fe72e262ef56b2dd274"
+licence = "GPL-2.0-only"
+provides = "linux-tools-tmon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/linux-tools-tmon-5.15.4-r0.apk"
+version = "5.15.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

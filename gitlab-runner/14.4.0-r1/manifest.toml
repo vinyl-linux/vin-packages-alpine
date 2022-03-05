@@ -1,0 +1,15 @@
+checksum = "d1185d24e225dc5515998c2be585c1c81ade92eff3f070777205216c0eee03f5"
+licence = "MIT"
+provides = "gitlab-runner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gitlab-runner-14.4.0-r1.apk"
+version = "14.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c12b05ba42dc9a2b9dcac51c9de914b8b1509c01cf1e743d3a99da98faa409cc"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "gnome-desktop-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gnome-desktop-dbg-41.1-r0.apk"
+version = "41.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.5.0-r0"], ["musl-locales", "0.0.0"]]

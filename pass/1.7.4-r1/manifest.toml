@@ -1,0 +1,15 @@
+checksum = "a4707f176b78e7b8eb2efc5617e7d53b10282889e529829a1f1809e730b28423"
+licence = "GPL-2.0-or-later"
+provides = "pass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pass-1.7.4-r1.apk"
+version = "1.7.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["tree", "1.8.0-r0"], ["gpg", "2.2.31-r1"]]

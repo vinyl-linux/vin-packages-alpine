@@ -1,0 +1,15 @@
+checksum = "404e4e62f1e5cbc8dac8ab6c483278eb35d38a8aaa9f9486020712936985937e"
+licence = "Apache-2.0"
+provides = "py3-geoip2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-geoip2-4.2.0-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"], ["py3-maxminddb", "2.0.3-r1"], ["py3-aiohttp", "3.8.1-r0"], ["py3-urllib3", "1.26.7-r0"]]

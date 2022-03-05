@@ -1,0 +1,15 @@
+checksum = "07f15dfc379c7b116e2d4decb9bd15bd693bac63cca738edd7adaf70ca415d31"
+licence = "MIT"
+provides = "keyd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/keyd-1.1.2-r1.apk"
+version = "1.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["eudev-libs", "3.2.11"]]

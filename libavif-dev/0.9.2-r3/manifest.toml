@@ -1,0 +1,15 @@
+checksum = "4389b641f08337fe37d5ebec900677e471647bc074f4dd2b212784df9507539f"
+licence = "BSD-2-Clause"
+provides = "libavif-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libavif-dev-0.9.2-r3.apk"
+version = "0.9.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libavif", "0.9.2-r3"], ["pkgconf", "1.8.0-r0"]]

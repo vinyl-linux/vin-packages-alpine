@@ -1,0 +1,15 @@
+checksum = "7c901da17be0a5e2e288bc0a1004c0b7b4c9c412c8a321561df0d6792c7a39c3"
+licence = "MIT"
+provides = "py3-pyee"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pyee-8.2.2-r0.apk"
+version = "8.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-async_generator", "1.10.0-r2"], ["py3-trio", "0.19.0-r0"], ["py3-twisted", "21.7.0-r1"], ["py3-vcversioner", "2.16.0.0-r3"], ["python3", "3.9.7-r4"]]

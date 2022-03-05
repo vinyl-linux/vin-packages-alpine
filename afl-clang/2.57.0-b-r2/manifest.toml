@@ -1,0 +1,15 @@
+checksum = "6b9e87f329ed2b13564c7da1c0282c2c52bbf5a43d828c1e5937af9f4768066e"
+licence = "Apache-2.0"
+provides = "afl-clang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/afl-clang-2.57b-r2.apk"
+version = "2.57.0-b-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clang", "12.0.1-r1"], ["afl-gcc", "2.57.0-b-r2"]]

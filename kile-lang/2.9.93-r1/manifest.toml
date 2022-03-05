@@ -1,0 +1,15 @@
+checksum = "5412297ed468bbc4622befb59421b3c7ad3d3765aa291948c65da02696969216"
+licence = "GPL-2.0-or-later"
+provides = "kile-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kile-lang-2.9.93-r1.apk"
+version = "2.9.93-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texlive", "20210325.0.0-r5"]]

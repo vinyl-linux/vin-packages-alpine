@@ -1,0 +1,15 @@
+checksum = "ada242dacc5710bf5dbd6a7ca3f63a14c694c715dabc8248fc3074a5ed476aba"
+licence = "LGPL-2.0-or-later"
+provides = "wine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wine-6.23-r0.apk"
+version = "6.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libgphoto2", "2.5.27-r0"], ["openal-soft", "1.21.1-r0"], ["libpcap", "1.10.1-r0"], ["sane", "1.0.31-r1"], ["eudev-libs", "3.2.11"], ["libusb", "1.0.24-r3"], ["vkd3d", "1.2.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "9def5800496b1c9deac2acf4ef663f593ffef017a760b8bf884a6e25d633e1c0"
+licence = "GPL-2.0-only"
+provides = "mtr-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mtr-gtk-0.94-r1.apk"
+version = "0.94.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["gtk+2.0", "2.24.33-r0"], ["jansson", "2.14.0-r0"], ["ncurses-libs", "6.3.0"]]

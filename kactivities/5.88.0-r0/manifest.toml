@@ -1,0 +1,15 @@
+checksum = "aae849d16dc296ab6c0f6823d930a6e8779e6d8ed5f3f000a51fcd85e4e04556"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "kactivities"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kactivities-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.3"], ["kactivities-libs", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

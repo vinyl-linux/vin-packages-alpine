@@ -1,0 +1,15 @@
+checksum = "fd36b27ec33be57a1d953c82b5d63d4d864ca6080f7449215baaea904f450735"
+licence = "MIT"
+provides = "apitrace"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/apitrace-10.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libpng", "1.6.37-r1"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

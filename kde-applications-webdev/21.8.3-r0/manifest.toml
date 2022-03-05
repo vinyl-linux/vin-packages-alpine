@@ -1,0 +1,15 @@
+checksum = "4838ac51b978e76fe7edb777cd3f638d28fa0e22c9f6b564c0c6f6ab554dc3a6"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-webdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kde-applications-webdev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kimagemapeditor", "21.8.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "fa0156bf53569f8012c129cdccffe74224a1149c8c42f42e9e9a11ddae174129"
+licence = "Happy"
+provides = "lua5.2-toml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lua5.2-toml-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r7"]]

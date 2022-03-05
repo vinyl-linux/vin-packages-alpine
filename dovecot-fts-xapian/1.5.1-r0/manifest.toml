@@ -1,0 +1,15 @@
+checksum = "40103c1bf406821bb8716019970dccee142147aa026b49f97f429e75d340094b"
+licence = "LGPL-2.1-or-later"
+provides = "dovecot-fts-xapian"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dovecot-fts-xapian-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.17.1-r0"], ["xapian-core", "1.4.18-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["icu-libs", "69.1.0-r1"], ["libstdc++", "10.3.1"], ["libxapian", "1.4.18-r0"]]

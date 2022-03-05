@@ -1,0 +1,15 @@
+checksum = "959053a74b64182ea21afc15a6d9a1bdd72f57933084c0733e55af9c68b38231"
+licence = "GPL-2.0-only"
+provides = "libretro-beetle-wswan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-beetle-wswan-0_git20210405-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

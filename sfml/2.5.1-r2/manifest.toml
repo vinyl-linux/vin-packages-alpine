@@ -1,0 +1,15 @@
+checksum = "072ecaa04207f1398ccdf910a5b2576a40d688baefc82320676efc74bad9f466"
+licence = "Zlib"
+provides = "sfml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sfml-2.5.1-r2.apk"
+version = "2.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flac", "1.3.4-r0"], ["mesa-gl", "21.2.6-r0"], ["libx11", "1.7.2-r0"], ["libxrandr", "1.5.2-r1"], ["musl", "1.2.2-r7"], ["freetype", "2.11.0-r0"], ["libgcc", "10.3.1"], ["libogg", "1.3.5-r0"], ["openal-soft", "1.21.1-r0"], ["libstdc++", "10.3.1"], ["eudev-libs", "3.2.11"], ["libvorbis", "1.3.7-r0"]]

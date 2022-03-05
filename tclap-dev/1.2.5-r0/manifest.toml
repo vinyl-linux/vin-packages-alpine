@@ -1,0 +1,15 @@
+checksum = "fe63d31b27b72608ff67f530affb1f5bf83bf53d96c9b5df36667bc80a695d6e"
+licence = "MIT"
+provides = "tclap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tclap-dev-1.2.5-r0.apk"
+version = "1.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

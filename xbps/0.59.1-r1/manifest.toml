@@ -1,0 +1,15 @@
+checksum = "b4d0d6a4b634f68d607ed3e4b75e957d33cb6f15ed6fca1d936972656a41fe70"
+licence = "BSD-2-Clause AND (BSD-3-Clause AND ISC AND BSD-2-Clause-NetBSD)"
+provides = "xbps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xbps-0.59.1-r1.apk"
+version = "0.59.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["libarchive", "3.6.0-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

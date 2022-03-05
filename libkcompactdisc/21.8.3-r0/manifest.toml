@@ -1,0 +1,15 @@
+checksum = "6423803e91267aa654b1a4325f771ee0bc2377ced16c92342ac95228b9ccd5af"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "libkcompactdisc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libkcompactdisc-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.88.0-r0"], ["solid-libs", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["phonon", "4.11.1-r2"], ["libstdc++", "10.3.1"]]

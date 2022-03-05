@@ -1,0 +1,15 @@
+checksum = "87b04bf8027d288c8aaf4bcdf7a694e3b36ade661fab939c28b300876bff3b32"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/knot-resolver-openrc-5.4.4-r0.apk"
+version = "5.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"]]

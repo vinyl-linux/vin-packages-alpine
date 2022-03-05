@@ -1,0 +1,15 @@
+checksum = "0b2ef8714a2eebd3fb30da26482aeac2f4deccd471dd735f1dc7a74a79a9f893"
+licence = "MIT"
+provides = "font-tinos-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-tinos-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f3dc65a1cb07d59575b48203b0efec0c2bb83f96c4dc8407ec76421168d78f88"
+licence = "GPL-2.0-or-later"
+provides = "libdvdread-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libdvdread-dev-6.1.2-r0.apk"
+version = "6.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdvdread", "6.1.2-r0"], ["libdvdcss-dev", "1.4.3-r0"], ["pkgconf", "1.8.0-r0"]]

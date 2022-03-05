@@ -1,0 +1,15 @@
+checksum = "a7dcdbaa57301516d4f67a131ad9434652db4f932004c2e7855d7a8476bc56c1"
+licence = "Vim"
+provides = "runvimtests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/runvimtests-1.30-r1.apk"
+version = "1.30.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gvim", "8.2.4173-r0"], ["bash", "5.1.16-r0"], ["busybox", "1.34.1-r4"]]

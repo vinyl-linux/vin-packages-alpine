@@ -1,0 +1,15 @@
+checksum = "94dce7d2610068efa5a30ca2cf9561de9d2b8a5d96a053ecc16f7f56716da15f"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-embed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-embed-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["argon2-libs", "20190702.0.0-r1"], ["musl", "1.2.2-r7"], ["libedit", "20210910.3.1-r0"], ["pcre2", "10.39.0-r0"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

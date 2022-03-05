@@ -1,0 +1,15 @@
+checksum = "190ae161f5f490db27237698eae6768f12f462f7005c418329b82187e947c647"
+licence = "LGPL-2.0-or-later"
+provides = "openal-soft-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openal-soft-dev-1.21.1-r0.apk"
+version = "1.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib-dev", "1.2.5.1-r1"], ["openal-soft", "1.21.1-r0"], ["pkgconf", "1.8.0-r0"]]

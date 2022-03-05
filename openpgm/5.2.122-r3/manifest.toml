@@ -1,0 +1,15 @@
+checksum = "fc547c149c077797fa69281a4c36a395fd9aaabe6cd6f8197326666fc6711daf"
+licence = "LGPL-2.1-or-later"
+provides = "openpgm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openpgm-5.2.122-r3.apk"
+version = "5.2.122-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

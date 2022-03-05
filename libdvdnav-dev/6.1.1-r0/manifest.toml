@@ -1,0 +1,15 @@
+checksum = "94da27a0bd8a9d766a29a6ed57d06c1936c3b9b848c85b9f41a5ed7fc42da3d1"
+licence = "GPL-2.0-or-later"
+provides = "libdvdnav-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libdvdnav-dev-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdvdnav", "6.1.1-r0"], ["libdvdread-dev", "6.1.2-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "846daf472d954e697acfe6d313818b301da87f68f19402db05cb35612c0e6db6"
+licence = "LGPL-2.1"
+provides = "qxmpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qxmpp-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

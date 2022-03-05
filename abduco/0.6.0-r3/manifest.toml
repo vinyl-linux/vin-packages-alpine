@@ -1,0 +1,15 @@
+checksum = "22dff87d1389c241352df78ced7e9aa36b50fa64a2e8897ccee87ff5c0463b85"
+licence = "ISC"
+provides = "abduco"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/abduco-0.6-r3.apk"
+version = "0.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "913f4856f1577182d37cdaf9bc77382b44264442dc940460833a14b8d5b81c16"
+licence = "Apache-2.0"
+provides = "vulkan-loader-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vulkan-loader-dev-1.2.196-r0.apk"
+version = "1.2.196-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vulkan-headers", "1.2.196-r0"], ["pkgconf", "1.8.0-r0"], ["vulkan-loader", "1.2.196-r0"]]

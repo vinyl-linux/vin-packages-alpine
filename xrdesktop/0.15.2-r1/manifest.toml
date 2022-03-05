@@ -1,0 +1,15 @@
+checksum = "3867691cbdf600deee46ae370779e2e5b2a1c72112c06f6aa9c41c2eff2644d3"
+licence = "MIT AND CC-BY-SA-4.0"
+provides = "xrdesktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xrdesktop-0.15.2-r1.apk"
+version = "0.15.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["gtk+3.0", "3.24.30-r0"], ["gdk-pixbuf", "2.42.6-r0"], ["glib", "2.70.1-r0"], ["graphene", "1.10.6-r1"], ["gulkan", "0.15.2-r1"], ["gxr", "0.15.2-r0"], ["vulkan-loader", "1.2.196-r0"]]

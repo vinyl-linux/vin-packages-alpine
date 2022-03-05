@@ -1,0 +1,15 @@
+checksum = "bfa1a5e3153f3bc33ffe50000d1c22205784804b9182a391d35076ca9c81a309"
+licence = "GPL-2.0-or-later"
+provides = "breeze-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/breeze-dev-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfigwidgets-dev", "5.88.0-r0"], ["kdecoration-dev", "5.23.5-r0"], ["kguiaddons-dev", "5.88.0-r0"], ["ki18n-dev", "5.88.0-r0"], ["kiconthemes-dev", "5.88.0-r0"], ["kpackage-dev", "5.88.0-r0"], ["kwindowsystem-dev", "5.88.0-r0"]]

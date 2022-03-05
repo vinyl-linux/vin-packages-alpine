@@ -1,0 +1,15 @@
+checksum = "f8cac7bf0b041d8566967b6bb1e4245df3b52c341bf8d0ec1889dfad775f5456"
+licence = "LGPL-2.1-or-later"
+provides = "nemo-qml-plugin-statusnotifier"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nemo-qml-plugin-statusnotifier-1.0_git20200911-r0.apk"
+version = "1.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

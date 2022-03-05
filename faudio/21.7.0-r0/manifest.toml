@@ -1,0 +1,15 @@
+checksum = "220afdb48104ae2a676e136f8472ca2ce03e432b24f523dcb6333a600ebcd734"
+licence = "Zlib"
+provides = "faudio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/faudio-21.07-r0.apk"
+version = "21.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.0.16-r4"], ["musl", "1.2.2-r7"]]

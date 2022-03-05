@@ -1,0 +1,15 @@
+checksum = "2043b7194c7249b0b05e015b93137f848f1f597b8d44866af314a961048de8ca"
+licence = "MIT"
+provides = "wlr-randr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wlr-randr-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["wayland-libs-client", "1.19.0-r1"]]

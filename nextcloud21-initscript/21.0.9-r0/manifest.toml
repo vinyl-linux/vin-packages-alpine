@@ -1,0 +1,15 @@
+checksum = "f641de8c35b91018a01b943d9041ab949c1b93c3a3675a3bd04cbb0acd0f1ee4"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-initscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-initscript-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"], ["php7-fpm", "7.4.28-r0"], ["busybox", "1.34.1-r4"]]

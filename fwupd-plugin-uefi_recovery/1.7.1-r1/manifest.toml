@@ -1,0 +1,15 @@
+checksum = "e63df8bbcc80fea5c0e80fc8a1b2da32dd4c576bd36c49cf1245019067709ba2"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-uefi_recovery"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-uefi_recovery-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"]]

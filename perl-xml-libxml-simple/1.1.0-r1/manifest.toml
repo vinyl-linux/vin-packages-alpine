@@ -1,0 +1,15 @@
+checksum = "6d457f79fc487c7afab5bdf8e8e6565219ac84a21c91abdf43e33bc2638609a1"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-libxml-simple"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-xml-libxml-simple-1.01-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-file-slurp-tiny", "0.4.0-r2"], ["perl-xml-libxml", "2.207.0-r1"]]

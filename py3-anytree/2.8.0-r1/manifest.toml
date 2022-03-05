@@ -1,0 +1,15 @@
+checksum = "c03da10aa137b77d8bab79ea77ba6ceb44e263629e9b9e31ca914a792030b06f"
+licence = "Apache-2.0"
+provides = "py3-anytree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-anytree-2.8.0-r1.apk"
+version = "2.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6e54a5a73d4051445b8f589ba7e175d7f5d93caa77883bdbf6e97fa404643434"
+licence = "LGPL-3.0-or-later"
+provides = "libheif"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libheif-1.12.0-r2.apk"
+version = "1.12.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aom-libs", "3.2.0-r0"], ["musl", "1.2.2-r7"], ["libde265", "1.0.8-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["x265-libs", "3.5.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c13b10ef5ede0e81210f0c025a2c97d20f87f9012c63ac0b808204cd7bd5da47"
+licence = "MIT"
+provides = "gomplate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gomplate-3.10.0-r2.apk"
+version = "3.10.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20211220.0.0-r0"]]

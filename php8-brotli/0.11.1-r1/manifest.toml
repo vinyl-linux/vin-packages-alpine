@@ -1,0 +1,15 @@
+checksum = "55cd7bbfbca65cf2b243f5b5f08d0fbbcc9216cae97930de59bccbf78faab602"
+licence = "MIT"
+provides = "php8-brotli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-brotli-0.11.1-r1.apk"
+version = "0.11.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"]]

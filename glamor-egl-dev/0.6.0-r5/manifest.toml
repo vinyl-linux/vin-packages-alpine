@@ -1,0 +1,15 @@
+checksum = "4441bf4e3afa879e6c62f674c7661f77de67f0ca9d289314aa1c193dd01ad57b"
+licence = "MIT"
+provides = "glamor-egl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/glamor-egl-dev-0.6.0-r5.apk"
+version = "0.6.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dev", "21.2.6-r0"], ["glamor-egl", "0.6.0-r5"], ["pkgconf", "1.8.0-r0"]]

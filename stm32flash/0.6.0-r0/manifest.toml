@@ -1,0 +1,15 @@
+checksum = "8013f275c86b79e6dd92e97a3edd76cccbbea9674da833ce8810ffbda0ae0973"
+licence = "GPL-2.0-or-later"
+provides = "stm32flash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/stm32flash-0.6-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

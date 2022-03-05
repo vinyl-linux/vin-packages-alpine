@@ -1,0 +1,15 @@
+checksum = "880f868e40c950926b396877fe7993a8500e8edec5d74d5c03ba3a072aef0ae8"
+licence = "Apache-2.0"
+provides = "imagemagick6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/imagemagick6-6.9.12.32-r0.apk"
+version = "6.9.12.32-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick6-libs", "6.9.12.32-r0"], ["musl", "1.2.2-r7"]]

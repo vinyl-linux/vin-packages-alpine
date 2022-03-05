@@ -1,0 +1,15 @@
+checksum = "4e82a9f919e97b3ca98fbf86e932f297073cb969077e0626dfe00d5d5f8e9603"
+licence = "GPL-3.0-or-later"
+provides = "pngquant"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pngquant-2.16.0-r0.apk"
+version = "2.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgomp", "10.3.1"], ["libimagequant", "2.16.0-r0"], ["lcms2", "2.12.0-r1"], ["libpng", "1.6.37-r1"]]

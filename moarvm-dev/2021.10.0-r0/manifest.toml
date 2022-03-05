@@ -1,0 +1,15 @@
+checksum = "c0e0f9682159717abca62880a8e1da2bdf5bb5e594ff4c4197277c24ed42c02a"
+licence = "Artistic-2.0"
+provides = "moarvm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/moarvm-dev-2021.10-r0.apk"
+version = "2021.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

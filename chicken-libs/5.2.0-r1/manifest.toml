@@ -1,0 +1,15 @@
+checksum = "341ccada7e02dcd56966b09a597f054ed042a3187e5482ad698763b251232633"
+licence = "BSD-3-Clause"
+provides = "chicken-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chicken-libs-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

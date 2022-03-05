@@ -1,0 +1,15 @@
+checksum = "d98d530e068a9b08c2bc2c174bcef787ead7459b9b05250655f3173e3367f932"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-libs-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/knot-resolver-libs-static-5.4.4-r0.apk"
+version = "5.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["knot-resolver-dev", "5.4.4-r0"]]

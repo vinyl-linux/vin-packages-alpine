@@ -1,0 +1,15 @@
+checksum = "e686f4fcc5be59c08a4a3f0b5d2ea1c2baa68b41f21371727bf8c4b7b1924500"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "bluedevil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bluedevil-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez", "5.63.0-r0"], ["bluez-obexd", "5.63.0-r0"], ["kded", "5.88.0-r0"], ["bluez-qt", "5.88.0-r0"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["kdeclarative", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

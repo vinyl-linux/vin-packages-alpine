@@ -1,0 +1,15 @@
+checksum = "61a3258487ca29dd21996f434225fe6f4a39907598770989fb383260c023f95c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-json-webtoken"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-json-webtoken-0.10-r4.apk"
+version = "0.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-json", "4.3.0-r1"], ["perl-module-runtime", "0.16.0-r4"], ["perl-mime-base64", "3.16.0-r2"], ["perl-carp", "1.50.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "1de95f4f7f232fe8f025417e254a298b75bb8852d39717089facba3e9e8a63bf"
+licence = "GPL-2.0-or-later"
+provides = "icinga-director-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/icinga-director-openrc-1.8.1-r3.apk"
+version = "1.8.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8", "8.0.16-r0"], ["php8-posix", "8.0.16-r0"], ["php8-iconv", "8.0.16-r0"], ["php8-sockets", "8.0.16-r0"], ["php8-curl", "8.0.16-r0"], ["php8-gettext", "8.0.16-r0"]]

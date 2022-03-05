@@ -1,0 +1,15 @@
+checksum = "55988e0861836cdcc245fa3d741322dade6c23dfd619c9077050aa3fb3e0c06d"
+licence = "ISC"
+provides = "libmypaint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmypaint-1.6.1-r0.apk"
+version = "1.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["json-c", "0.15.0-r1"]]

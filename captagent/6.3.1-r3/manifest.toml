@@ -1,0 +1,15 @@
+checksum = "8ac8ab1bcc6f8049c14441bf7b698ba867402bc339cc7e916ee8d46476c98bda"
+licence = "GPL-3.0-or-later"
+provides = "captagent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/captagent-6.3.1-r3.apk"
+version = "6.3.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["flex-libs", "2.6.4-r2"], ["json-c", "0.15.0-r1"], ["libpcap", "1.10.1-r0"], ["libuv", "1.42.0-r0"]]

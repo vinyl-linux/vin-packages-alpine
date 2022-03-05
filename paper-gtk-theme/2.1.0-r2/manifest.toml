@@ -1,0 +1,15 @@
+checksum = "9e62836607c390613bda95431be451324e5c5dded4efd37fcc9c81277c2eab8e"
+licence = "GPL-3.0-only"
+provides = "paper-gtk-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/paper-gtk-theme-2.1.0-r2.apk"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk-murrine-engine", "0.98.2-r2"]]

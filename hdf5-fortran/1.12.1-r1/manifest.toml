@@ -1,0 +1,15 @@
+checksum = "778cc48296372703adfbead579583c53e058640121ac8b270d7f44b95f5e5106"
+licence = "custom"
+provides = "hdf5-fortran"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/hdf5-fortran-1.12.1-r1.apk"
+version = "1.12.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgfortran", "10.3.1"], ["hdf5", "1.12.1-r1"]]

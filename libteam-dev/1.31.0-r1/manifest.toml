@@ -1,0 +1,15 @@
+checksum = "c567940c54ad927a7a6849b8d1deaa0585fb18ff9651762b4ad353fa77d65435"
+licence = "LGPL-2.1-or-later"
+provides = "libteam-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libteam-dev-1.31-r1.apk"
+version = "1.31.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libteam", "1.31.0-r1"], ["libnl3-dev", "3.5.0-r0"], ["pkgconf", "1.8.0-r0"]]

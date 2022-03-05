@@ -1,0 +1,15 @@
+checksum = "66c6364c9c206af8572e45042f11558757d052ee8fec0f4b40bbfcc44b1dd1da"
+licence = "PHP-3.01"
+provides = "php8-pecl-amqp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-amqp-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["rabbitmq-c", "0.11.0-r1"]]

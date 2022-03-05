@@ -1,0 +1,15 @@
+checksum = "d4475691d5e8aa9669fed86c2ea121e1663c133ebf6608bed9f51ed9928a65e4"
+licence = "Apache-2.0"
+provides = "py3-canonicaljson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-canonicaljson-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-simplejson", "3.17.5-r0"], ["py3-frozendict", "1.2.0-r4"]]

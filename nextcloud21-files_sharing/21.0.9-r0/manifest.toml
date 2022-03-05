@@ -1,0 +1,15 @@
+checksum = "577860000c363d15f86319d097f83bcb1658518a077b83e22bc13425ab0967f3"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-files_sharing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-files_sharing-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"]]

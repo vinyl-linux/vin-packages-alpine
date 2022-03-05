@@ -1,0 +1,15 @@
+checksum = "80ff0f8361322a7cc0314de0cbe785ac918c1a359e3495abe0bfe7644f5977a9"
+licence = "BSD-3-Clause"
+provides = "vectorscan-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vectorscan-dev-5.4.4-r0.apk"
+version = "5.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["vectorscan", "5.4.4-r0"]]

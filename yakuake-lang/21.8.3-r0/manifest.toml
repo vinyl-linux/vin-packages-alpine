@@ -1,0 +1,15 @@
+checksum = "881f038006304a9feeeeb948c744bab89892c7543515ba417524e138bb6073bf"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "yakuake-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yakuake-lang-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["konsole", "21.8.3-r0"]]

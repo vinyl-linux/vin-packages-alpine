@@ -1,0 +1,15 @@
+checksum = "74c0f3c57c8cf262c5482a277fbc3e17e3b01633cdbe1e70b1fa452730accbb5"
+licence = "MIT"
+provides = "xf86-video-vesa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-vesa-2.5.0-r1.apk"
+version = "2.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

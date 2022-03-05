@@ -1,0 +1,15 @@
+checksum = "40c1e9ffc061170293de12a71304178de4187465b31eaf99ff45b0d4c7c67f6c"
+licence = "LGPL-2.1-or-later"
+provides = "git-flow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/git-flow-1.12.3-r0.apk"
+version = "1.12.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.34.1-r0"]]

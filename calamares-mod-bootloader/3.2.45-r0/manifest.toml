@@ -1,0 +1,15 @@
+checksum = "642c2156bf52b76e75d7c711d4fb979836cf80439e0d27609cff9409662a91d9"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-bootloader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/calamares-mod-bootloader-3.2.45-r0.apk"
+version = "3.2.45-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.205.0-r0"], ["musl-locales", "0.0.0"], ["os-prober", "1.79.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "89d7af08457799c8798ba91ec337ff264e379563a4e226552d12ad4ceeaf38a6"
+licence = "GPL-2.0-or-later"
+provides = "whois"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/whois-5.5.10-r0.apk"
+version = "5.5.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libidn", "1.38.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "353fd9f293804608ccdb4172b04000efb809441bf8e0da855007e041699e458e"
+licence = "BSD-3-Clause"
+provides = "py3-html-sanitizer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-html-sanitizer-1.9.1-r1.apk"
+version = "1.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-lxml", "4.6.5-r0"], ["python3", "3.9.7-r4"]]

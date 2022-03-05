@@ -1,0 +1,15 @@
+checksum = "708db371f090c6f3a4db2c0fe2467ca23ad214ddfd61a80ec996ee48920fc91e"
+licence = "MIT"
+provides = "libtermkey"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libtermkey-0.22-r0.apk"
+version = "0.22.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["unibilium", "2.1.1-r0"]]

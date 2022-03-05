@@ -1,0 +1,15 @@
+checksum = "9433062e181288b3182a5cc6a0082492f6b1b170eeb1bfc261e87eeb1b359375"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-mock-furl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-mock-furl-0.05-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-furl", "3.14.0-r0"], ["perl-test-mockobject", "1.20200122.0-r1"]]

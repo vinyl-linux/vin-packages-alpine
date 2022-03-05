@@ -1,0 +1,15 @@
+checksum = "48d1e04ccfa1fa65c5e5054a446a9655ffc77f202e3687cd455c7b6a25beda42"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only)"
+provides = "kscreenlocker-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kscreenlocker-lang-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind", "246.10.0-r4"], ["linux-pam", "1.5.2-r0"]]

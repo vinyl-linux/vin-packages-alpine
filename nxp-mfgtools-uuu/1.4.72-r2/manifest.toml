@@ -1,0 +1,15 @@
+checksum = "3c2d7000af69b6cca6d94181c5c2735ed5597f55509ad10312f8c995da902d32"
+licence = "LGPL-2.1-only"
+provides = "nxp-mfgtools-uuu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nxp-mfgtools-uuu-1.4.72-r2.apk"
+version = "1.4.72-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["libusb", "1.0.24-r3"], ["zlib", "1.2.11-r3"]]

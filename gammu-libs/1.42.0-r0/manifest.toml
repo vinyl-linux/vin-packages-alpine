@@ -1,0 +1,15 @@
+checksum = "466fe6e1946c605f4e33930040253e8b5f1f74284d5687d594a1744f8f81e557"
+licence = "GPL-2.0-or-later"
+provides = "gammu-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gammu-libs-1.42.0-r0.apk"
+version = "1.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-libs", "5.63.0-r0"], ["musl", "1.2.2-r7"], ["libdbi", "0.9.0-r0"], ["libintl", "0.21.0-r0"], ["mariadb-connector-c", "3.1.13-r2"], ["unixodbc", "2.3.9-r1"], ["libpq", "14.2.0-r0"], ["libusb", "1.0.24-r3"]]

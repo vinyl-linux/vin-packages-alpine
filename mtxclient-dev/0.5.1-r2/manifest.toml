@@ -1,0 +1,15 @@
+checksum = "501a6b45a01f15a03376ac993af2ed53db889f1527621bf7a3ef83e720009503"
+licence = "MIT"
+provides = "mtxclient-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mtxclient-dev-0.5.1-r2.apk"
+version = "0.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nlohmann-json", "3.10.4-r0"], ["openssl-dev", "1.1.1-l-r8"], ["zlib-dev", "1.2.11-r3"], ["olm-dev", "3.2.7-r1"], ["libsodium-dev", "1.0.18-r0"], ["boost-dev", "1.77.0-r1"], ["mtxclient", "0.5.1-r2"]]

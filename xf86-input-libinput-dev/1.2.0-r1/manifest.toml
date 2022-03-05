@@ -1,0 +1,15 @@
+checksum = "915a832c7de9bf7d3a6192c6e963de27cbcfab00fcb9bd55200dcfef25d7edf3"
+licence = "MIT"
+provides = "xf86-input-libinput-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-input-libinput-dev-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libinput-dev", "1.19.2-r0"], ["xorg-server-dev", "21.1.2-r0"], ["pkgconf", "1.8.0-r0"]]

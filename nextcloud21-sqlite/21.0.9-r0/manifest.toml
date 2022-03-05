@@ -1,0 +1,15 @@
+checksum = "cf42d8567e4d9ed6d86f079cec55197264f63c8814e443e4894845f7fd791055"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-sqlite-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"], ["php7-sqlite3", "7.4.28-r0"], ["php7-pdo_sqlite", "7.4.28-r0"]]

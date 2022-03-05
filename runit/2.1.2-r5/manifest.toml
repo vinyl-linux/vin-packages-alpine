@@ -1,0 +1,15 @@
+checksum = "96a8e867d519a4b4114af133d03568f74f805c483a40272cd9d927fc686f0232"
+licence = "BSD"
+provides = "runit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/runit-2.1.2-r5.apk"
+version = "2.1.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

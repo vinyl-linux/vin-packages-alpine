@@ -1,0 +1,15 @@
+checksum = "d7c629ad53c8d1f1e5e7775af0ec860a9468458b0ff4724b1f74fb0a3c775c95"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only)"
+provides = "kscreenlocker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kscreenlocker-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind", "246.10.0-r4"], ["linux-pam", "1.5.2-r0"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kcrash", "5.88.0-r0"], ["kdeclarative", "5.88.0-r0"], ["kglobalaccel", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kidletime", "5.88.0-r0"], ["kcmutils", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["kpackage", "5.88.0-r0"], ["kwayland", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["kxmlgui", "5.88.0-r0"], ["layer-shell-qt", "5.23.5-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtx11extras", "5.15.3"], ["libx11", "1.7.2-r0"], ["libxi", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"], ["wayland-libs-client", "1.19.0-r1"], ["wayland-libs-server", "1.19.0-r1"], ["xcb-util-keysyms", "0.4.0-r1"], ["libxcb", "1.14.0-r2"]]

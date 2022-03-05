@@ -1,0 +1,15 @@
+checksum = "846a38a5b9a1f03c12fab5aec4363221489c3191b64c1467d2544ed261905114"
+licence = "LGPL-2.1-or-later"
+provides = "libmodbus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmodbus-dev-3.1.6-r1.apk"
+version = "3.1.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmodbus", "3.1.6-r1"], ["pkgconf", "1.8.0-r0"]]

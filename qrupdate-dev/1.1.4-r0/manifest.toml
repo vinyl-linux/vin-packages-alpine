@@ -1,0 +1,15 @@
+checksum = "1e622d1341a38f4734e9218294ef61642419e3836d64029431fa76618a67b5ca"
+licence = "GPL-3.0-only"
+provides = "qrupdate-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qrupdate-dev-1.1.4-r0.apk"
+version = "1.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["qrupdate", "1.1.4-r0"]]

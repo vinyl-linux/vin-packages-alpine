@@ -1,0 +1,15 @@
+checksum = "1020207f54f5154c5011e792db5c9ff1d5f2842d9ec29fad86a0ecbc8c7b1efe"
+licence = "Apache-2.0"
+provides = "gumbo-parser-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gumbo-parser-dev-0.10.1-r0.apk"
+version = "0.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gumbo-parser", "0.10.1-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "8ecc21772f195aed6c2da9e65e2d40e0b84d4157a18a64073f0a8326ffe2a0c9"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/claws-mail-plugins-perl-4.0.0-r3.apk"
+version = "4.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.0.0-r3"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gtk+3.0", "3.24.30-r0"], ["perl", "5.34.0-r1"]]

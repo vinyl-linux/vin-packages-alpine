@@ -1,0 +1,15 @@
+checksum = "dc35f4c9578d58f0b142a29d2073f8857883ce5adae392114bf99f57f4cb4d3a"
+licence = "MIT"
+provides = "ruby-escape_utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-escape_utils-1.2.1-r5.apk"
+version = "1.2.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ruby-libs", "3.0.3-r0"]]

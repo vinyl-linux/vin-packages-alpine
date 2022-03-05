@@ -1,0 +1,15 @@
+checksum = "f27339f89527ad3297f3081a075aa411836e2511795df44cb3e8cd8eb297c301"
+licence = "BSD-2-Clause GPL-2.0-or-later"
+provides = "xxhash-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xxhash-dev-0.8.0-r1.apk"
+version = "0.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxxhash", "0.8.0-r1"], ["pkgconf", "1.8.0-r0"]]

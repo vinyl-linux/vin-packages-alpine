@@ -1,0 +1,15 @@
+checksum = "933518ee52ae619e4e5af9ca53a90ca502b8bec4abcd08e18287a973e1672901"
+licence = "LGPL-2.0-or-later"
+provides = "py3-psycopg2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-psycopg2-2.8.6-r1.apk"
+version = "2.8.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "450943ce5a2d44446b892b2c7d8ccf6c878b74352e86e7230ab3232e443fdb69"
+licence = "LGPL-2.0-only WITH FLTK-exception"
+provides = "fltk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fltk-dev-1.3.8-r0.apk"
+version = "1.3.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11-dev", "1.7.2-r0"], ["libxext-dev", "1.3.4-r0"], ["libxft-dev", "2.3.4-r0"], ["mesa-dev", "21.2.6-r0"], ["libxinerama-dev", "1.1.4-r1"], ["fltk", "1.3.8-r0"]]

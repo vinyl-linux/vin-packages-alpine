@@ -1,0 +1,15 @@
+checksum = "af1b036423fe882ac07cd908fa6bbe8d9567277bb42ec28b386f00093eb007f6"
+licence = "LGPL-2.1-or-later"
+provides = "kcompletion-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kcompletion-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.88.0-r0"], ["kwidgetsaddons-dev", "5.88.0-r0"], ["kcompletion", "5.88.0-r0"]]

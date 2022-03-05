@@ -1,0 +1,15 @@
+checksum = "07fe822a01c853032e03a715ff32d4ecdecf6ca00e2317feb16aa1fce342b120"
+licence = "custom"
+provides = "dcc-dccm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/dcc-dccm-2.3.168-r0.apk"
+version = "2.3.168-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dcc", "2.3.168-r0"], ["musl", "1.2.2-r7"], ["libmilter", "1.0.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "bb560b978b3636cce2b8da034ac5d841454fc98e7998d899c0e073f7b86cf01d"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-hpljm1005"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-backend-hpljm1005-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.0.31-r1"], ["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"], ["libxml2", "2.9.12-r2"]]

@@ -1,0 +1,15 @@
+checksum = "59293a4610eaa74337c6736578dd53b1aea56204c2589d4e347c877b29b79342"
+licence = "Apache-2.0"
+provides = "zxing-cpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/zxing-cpp-dev-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["zxing-cpp", "1.2.0-r0"]]

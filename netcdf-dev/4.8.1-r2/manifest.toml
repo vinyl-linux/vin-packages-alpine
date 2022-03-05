@@ -1,0 +1,15 @@
+checksum = "ec4ebc6503cfc5ec87f88283579f0d1433450d91c4f3d4866171574c2aa93b9e"
+licence = "BSD-3-Clause"
+provides = "netcdf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/netcdf-dev-4.8.1-r2.apk"
+version = "4.8.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netcdf", "4.8.1-r2"], ["pkgconf", "1.8.0-r0"]]

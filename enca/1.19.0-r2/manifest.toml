@@ -1,0 +1,15 @@
+checksum = "275e04e1f94bf84a0efc8052f78c86e0d4b8514bf71b58dc5f78359fe8f25100"
+licence = "GPL-2.0-only"
+provides = "enca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/enca-1.19-r2.apk"
+version = "1.19.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

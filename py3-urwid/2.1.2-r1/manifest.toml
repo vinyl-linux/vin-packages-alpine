@@ -1,0 +1,15 @@
+checksum = "49d9a35ab33d60eb1119edbd990e162fd9bdaef16478204ad707c94eb0ea9eb1"
+licence = "LGPL-2.0-or-later"
+provides = "py3-urwid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-urwid-2.1.2-r1.apk"
+version = "2.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

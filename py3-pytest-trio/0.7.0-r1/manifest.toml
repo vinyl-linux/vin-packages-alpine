@@ -1,0 +1,15 @@
+checksum = "3c8128eb8fc5ff15e3ba49342588e53b5e5c22f558e67472c3d10fe57c40a7ce"
+licence = "MIT OR Apache-2.0"
+provides = "py3-pytest-trio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pytest-trio-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-pytest", "6.2.5-r0"], ["py3-trio", "0.19.0-r0"], ["py3-outcome", "1.1.0-r1"], ["py3-async_generator", "1.10.0-r2"]]

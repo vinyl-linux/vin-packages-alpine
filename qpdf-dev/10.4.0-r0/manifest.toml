@@ -1,0 +1,15 @@
+checksum = "4555c1a2026445003e5198ec81cc66af84955ef15e916d43cbb6247eb7f84c04"
+licence = "Apache-2.0"
+provides = "qpdf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qpdf-dev-10.4.0-r0.apk"
+version = "10.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libjpeg-turbo-dev", "2.1.2-r0"], ["zlib-dev", "1.2.11-r3"], ["pkgconf", "1.8.0-r0"], ["qpdf-libs", "10.4.0-r0"]]

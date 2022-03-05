@@ -1,0 +1,15 @@
+checksum = "74772343269159a5c3fb720940ff239e2d0756bc7fbbda39d4dad5f7f2a825fe"
+licence = "GPL-2.0-or-later"
+provides = "aura-browser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/aura-browser-0_git20210423-r2.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["qt5-qtvirtualkeyboard", "5.15.3"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtmultimedia", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["qt5-qtwebengine", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

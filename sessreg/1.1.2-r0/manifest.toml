@@ -1,0 +1,15 @@
+checksum = "2825826943a926a3f9fe5e54d562b73de6332b11cfad66d3185d16904f762c95"
+licence = "ICU"
+provides = "sessreg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sessreg-1.1.2-r0.apk"
+version = "1.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "8eb031b0a090ea09eab895e793567e5e5b1c47f76447dd7cfaf5bf17814c52d4"
+licence = "MIT"
+provides = "py3-defcon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-defcon-0.7.2-r1.apk"
+version = "0.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-fonttools", "4.28.2-r0"]]

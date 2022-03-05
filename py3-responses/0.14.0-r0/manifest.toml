@@ -1,0 +1,15 @@
+checksum = "62a53ee483797ac819765b5151a7bc8d3e8056df0a2701b1cbc97804d56a1fa9"
+licence = "Apache-2.0"
+provides = "py3-responses"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-responses-0.14.0-r0.apk"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"], ["py3-six", "1.16.0-r0"]]

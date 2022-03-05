@@ -1,0 +1,15 @@
+checksum = "a8d9d8bda04b409cebf4e2a6d3c6baa7dbc5f5d7fcc49f9a63820290b0edd8b4"
+licence = "GPL-2.0-only"
+provides = "arch-install-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/arch-install-scripts-23-r0.apk"
+version = "23.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["coreutils", "9.0.0-r2"], ["pacman", "6.0.1-r1"], ["util-linux", "2.37.4-r0"]]

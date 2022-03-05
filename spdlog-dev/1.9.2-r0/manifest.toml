@@ -1,0 +1,15 @@
+checksum = "a9cab1cc82bbe9afb48d5c5e676d6791abb4be29e2a33c81861902fcc38c0280"
+licence = "MIT"
+provides = "spdlog-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/spdlog-dev-1.9.2-r0.apk"
+version = "1.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fmt-dev", "8.0.1-r0"], ["pkgconf", "1.8.0-r0"], ["spdlog", "1.9.2-r0"]]

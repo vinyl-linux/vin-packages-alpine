@@ -1,0 +1,15 @@
+checksum = "43f153a2bf5a7965a52d59bc0761ec4885c8d971fc460d77fa72635c0d8aecf3"
+licence = "MIT"
+provides = "qemu-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-openrc-0.10.0-r0.apk"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu", "6.1.0-r2"], ["socat", "1.7.4.2-r0"], ["busybox", "1.34.1-r4"]]

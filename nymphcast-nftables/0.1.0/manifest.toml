@@ -1,0 +1,15 @@
+checksum = "5fbb67e1557ea9ea9d36fe457dbdcaadceda4b0493e9a1a9bade9a5ddb807e98"
+licence = "BSD-3-Clause"
+provides = "nymphcast-nftables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nymphcast-nftables-0.1_alpha5-r3.apk"
+version = "0.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r5"]]

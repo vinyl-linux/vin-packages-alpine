@@ -1,0 +1,15 @@
+checksum = "8fa8ca60d578e17a75ff074d38dc6f9c16ad4bd668a2ff80ce077e6ce432460c"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libvirt-lang-7.9.0-r0.apk"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lvm2", "2.2.187-r2"]]

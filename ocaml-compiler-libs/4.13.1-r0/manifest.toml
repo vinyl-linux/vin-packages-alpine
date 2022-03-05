@@ -1,0 +1,15 @@
+checksum = "8ee96066d57d38544ded515ebf9ebf4b269d7d17086f60b2343ef59f333ec729"
+licence = "LGPL-2.1-or-later-WITH-linking-exception"
+provides = "ocaml-compiler-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ocaml-compiler-libs-4.13.1-r0.apk"
+version = "4.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ocaml", "4.13.1-r0"]]

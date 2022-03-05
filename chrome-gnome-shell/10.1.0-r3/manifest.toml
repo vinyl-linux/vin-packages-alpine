@@ -1,0 +1,15 @@
+checksum = "9df3587ee9b277370aa00b4dc14032e17d453b52a6468824fc711f55c189ea1e"
+licence = "GPL-3.0-or-later"
+provides = "chrome-gnome-shell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chrome-gnome-shell-10.1-r3.apk"
+version = "10.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.26.0-r1"], ["py3-gobject3", "3.42.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "a0ac32973af98a4be87b3ae9656865215534f7d2504d56e593f1990da9b7cce9"
+licence = "MIT"
+provides = "py2-setuptools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py2-setuptools-44.0.0-r0.apk"
+version = "44.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python2", "2.7.18-r4"]]

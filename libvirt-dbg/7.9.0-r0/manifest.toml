@@ -1,0 +1,15 @@
+checksum = "6886ff2d3e031f14a3caac11ddba6c5f246c92a3e0d69323da1cb0bdf8799792"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libvirt-dbg-7.9.0-r0.apk"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lvm2", "2.2.187-r2"]]

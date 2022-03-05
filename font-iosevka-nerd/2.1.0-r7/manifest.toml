@@ -1,0 +1,15 @@
+checksum = "21dba2288b1fd789937a00f5e126776f20403d831a295aed0b90c6668804bc83"
+licence = "MIT"
+provides = "font-iosevka-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-iosevka-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

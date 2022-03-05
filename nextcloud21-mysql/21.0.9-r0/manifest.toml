@@ -1,0 +1,15 @@
+checksum = "52039c5fabe1af3de79d1faad413f9eb5a91b567523f4fc6c8a85829fb95aee7"
+licence = "AGPL-3.0-only"
+provides = "nextcloud21-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud21-mysql-21.0.9-r0.apk"
+version = "21.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud21", "21.0.9-r0"], ["php7-pdo_mysql", "7.4.28-r0"]]

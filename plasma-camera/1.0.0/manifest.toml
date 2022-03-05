@@ -1,0 +1,15 @@
+checksum = "40cd40c92b5a1562a8cb818b94779ff6ee30e32aa7d4e984773fa3df5222020f"
+licence = "GPL-3.0-or-later AND BSD-3-Clause"
+provides = "plasma-camera"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-camera-1.0_git20210328-r0.apk"
+version = "1.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-bad", "1.18.5-r2"], ["gst-plugins-good", "1.18.5-r0"], ["kirigami2", "5.88.0-r0"], ["qt5-qtmultimedia", "5.15.3"], ["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "e754405b2fd4b0c5e298d458e0620d7e48b56758ac1e927c87b8893afa949db0"
+licence = "MIT"
+provides = "xf86-video-siliconmotion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xf86-video-siliconmotion-1.7.9-r4.apk"
+version = "1.7.9-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

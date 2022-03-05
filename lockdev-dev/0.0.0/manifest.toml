@@ -1,0 +1,15 @@
+checksum = "9db9a5e3f136747c361a0e046d93e9a927164704c40803f09afb077bfcd12a7a"
+licence = "LGPL-2.1-or-later"
+provides = "lockdev-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/lockdev-dev-0_git20130107-r3.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lockdev", "0.0.0"], ["pkgconf", "1.8.0-r0"]]

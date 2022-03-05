@@ -1,0 +1,15 @@
+checksum = "43209abc6533218790808a70568536874823fc2e832e061c0230824d9a7d1e3f"
+licence = "MIT"
+provides = "gtk-layer-shell-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtk-layer-shell-dev-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk-layer-shell", "0.6.0-r1"], ["gtk+3.0-dev", "3.24.30-r0"], ["wayland-dev", "1.19.0-r1"], ["pkgconf", "1.8.0-r0"]]

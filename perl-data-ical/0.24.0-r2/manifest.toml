@@ -1,0 +1,15 @@
+checksum = "12acf6b01e4b1c7d36cd60d53407de47614c4d19c3930c5e7e76791ad7910824"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-data-ical"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-data-ical-0.24-r2.apk"
+version = "0.24.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-test-nowarnings", "1.6.0-r0"], ["perl-test-warn", "0.36.0-r2"], ["perl-text-vfile-asdata", "0.8.0-r2"], ["perl-class-returnvalue", "0.55.0-r3"], ["perl-test-longstring", "0.17.0-r2"], ["perl-class-accessor", "0.51.0-r2"], ["perl-file-slurp", "9999.32.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "453b80355e3377a04d6f0dcc3f1c369241e12d80df8f44da4f9442e22c691f37"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-jack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pipewire-jack-0.3.40-r2.apk"
+version = "0.3.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wireplumber", "0.4.5-r1"], ["musl", "1.2.2-r7"], ["pipewire-libs", "0.3.40-r2"]]

@@ -1,0 +1,15 @@
+checksum = "19b647f01c2bff92f2b781ea8c9dc65aa50e0f2f0612e285be615d4c6c9db0d9"
+licence = "MPL-1.1 GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "libcmis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libcmis-0.5.2-r5.apk"
+version = "0.5.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"]]

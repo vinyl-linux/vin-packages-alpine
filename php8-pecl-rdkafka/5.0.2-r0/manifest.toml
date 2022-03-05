@@ -1,0 +1,15 @@
+checksum = "cce738fb671a907b4fd7e343afe45e11d51999c1fc2f24de9abc458998e81b70"
+licence = "MIT"
+provides = "php8-pecl-rdkafka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-rdkafka-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-common", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["librdkafka", "1.8.2-r0"]]

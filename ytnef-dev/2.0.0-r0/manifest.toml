@@ -1,0 +1,15 @@
+checksum = "1dc11ca6977f7adb48f89b8966bbf37874ac95ef49be20c4f36ad6e0ade8badb"
+licence = "GPL+"
+provides = "ytnef-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ytnef-dev-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["ytnef-libs", "2.0.0-r0"]]

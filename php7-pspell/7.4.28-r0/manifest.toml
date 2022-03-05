@@ -1,0 +1,15 @@
+checksum = "a9c34a4f51a490678d047aab29c5e41150419e2d67430886b395b65aa054bf22"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php7-pspell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pspell-7.4.28-r0.apk"
+version = "7.4.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["aspell-libs", "0.60.8-r1"], ["musl", "1.2.2-r7"]]

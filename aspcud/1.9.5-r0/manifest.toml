@@ -1,0 +1,15 @@
+checksum = "56b85bebe5758499440a1ce6d5963beeabc75412d9f830ed65ea57fec6c661eb"
+licence = "MIT"
+provides = "aspcud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/aspcud-1.9.5-r0.apk"
+version = "1.9.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77", "1.77.0-r1"], ["clingo", "5.5.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

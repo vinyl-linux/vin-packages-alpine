@@ -1,0 +1,15 @@
+checksum = "8f3f90adb0c288b2d802131d0eab7b26d40502ebb267ce431785e084483076e4"
+licence = "Apache-2.0"
+provides = "py3-evtx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-evtx-0.7.4-r1.apk"
+version = "0.7.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

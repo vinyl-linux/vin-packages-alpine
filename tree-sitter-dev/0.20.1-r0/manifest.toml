@@ -1,0 +1,15 @@
+checksum = "494a7ed557c2cba17a33ec34b296007374e138a56492f686ba939bc074d2e6c3"
+licence = "MIT"
+provides = "tree-sitter-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tree-sitter-dev-0.20.1-r0.apk"
+version = "0.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["tree-sitter", "0.20.1-r0"]]

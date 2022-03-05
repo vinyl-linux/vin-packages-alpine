@@ -1,0 +1,15 @@
+checksum = "4ad16451054061c4e190adb7f4f35cdd357793e43b2762dbe34bb9d2aebcccb6"
+licence = "Zlib"
+provides = "tinyxml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tinyxml-2.6.2-r1.apk"
+version = "2.6.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "6764a2371dcc84d69817d2e2641875a69270152107f81c949ceb26f769963aaa"
+licence = "BSD-2-Clause AND BSD-3-Clause AND ISC AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND GPL-3.0-or-later"
+provides = "audacious-plugins-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/audacious-plugins-lang-4.0.5-r2.apk"
+version = "4.0.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["audacious", "4.0.5-r0"]]

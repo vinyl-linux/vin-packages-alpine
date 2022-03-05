@@ -1,0 +1,15 @@
+checksum = "ce1189587ffbbd6ce213822c9ed7f71fc1249ebfb1ee017e61b40d2673418442"
+licence = "GPL-3.0-or-later"
+provides = "swayr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/swayr-0.9.1-r0.apk"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

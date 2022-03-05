@@ -1,0 +1,15 @@
+checksum = "bc585a496c488b701e765f6efa78de4f5b4ef563c06d3f56b09d0b6908939d89"
+licence = "MIT"
+provides = "neko-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/neko-libs-2.3.0-r3.apk"
+version = "2.3.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gc", "8.0.6-r0"]]

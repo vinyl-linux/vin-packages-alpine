@@ -1,0 +1,15 @@
+checksum = "d5413d57e3e3b45c98c5b666f800db5627a2666540dacb8d90c35e5ef463eeca"
+licence = "BSD-3-Clause"
+provides = "php7-pecl-ast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-ast-1.0.16-r0.apk"
+version = "1.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

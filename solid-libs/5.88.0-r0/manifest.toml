@@ -1,0 +1,15 @@
+checksum = "88f1fab893ff35f92c58d9e5c51505ce6d06b63a09e4202c19f19ae693ee7851"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "solid-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/solid-libs-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["musl", "1.2.2-r7"], ["libmount", "2.37.4-r0"], ["libstdc++", "10.3.1"], ["eudev-libs", "3.2.11"]]

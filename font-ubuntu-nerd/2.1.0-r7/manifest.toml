@@ -1,0 +1,15 @@
+checksum = "0cb19167ba888bca8fc8ec11f5cf0be6f1ca8287e171a01fd34af52717140e7b"
+licence = "MIT"
+provides = "font-ubuntu-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/font-ubuntu-nerd-2.1.0-r7.apk"
+version = "2.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.13.1-r4"]]

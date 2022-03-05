@@ -1,0 +1,15 @@
+checksum = "075eefbf9757d56f1d255a97c7fea6d75e3044df95fe4df63646c7bd3d11b091"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "okular-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/okular-dev-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["okular-common", "21.8.3-r0"]]

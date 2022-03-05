@@ -1,0 +1,15 @@
+checksum = "22b861d7f00f321518a9b9c27cd1c500127b12f656803869b01b4a0ea249d550"
+licence = "GPL-3.0-or-later"
+provides = "py3-shlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-shlib-1.4-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-braceexpand", "0.1.7-r0"], ["py3-inform", "1.26.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "62efa23d7d967dd1e8776e5520cd6fdde00238634bfe5070d62275eece9f9575"
+licence = "GPL-2.0-only"
+provides = "libtbb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libtbb-2020.3-r1.apk"
+version = "2020.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

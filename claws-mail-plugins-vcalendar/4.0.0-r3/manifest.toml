@@ -1,0 +1,15 @@
+checksum = "a53778cac6f23b097bc2db1bba8b1f3b3bd92a09af450a7109bf601054645b6d"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-vcalendar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/claws-mail-plugins-vcalendar-4.0.0-r3.apk"
+version = "4.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.0.0-r3"], ["musl", "1.2.2-r7"], ["cairo", "1.16.0-r3"], ["libcurl", "7.80.0-r0"], ["gtk+3.0", "3.24.30-r0"], ["glib", "2.70.1-r0"], ["libical", "3.0.11-r2"], ["libintl", "0.21.0-r0"], ["pango", "1.48.10-r0"]]

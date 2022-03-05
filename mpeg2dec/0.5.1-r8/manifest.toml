@@ -1,0 +1,15 @@
+checksum = "adef396490018d226df042de9d5c505f142a4b1e3afbbc85a9883ab272642e92"
+licence = "GPL-2.0"
+provides = "mpeg2dec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mpeg2dec-0.5.1-r8.apk"
+version = "0.5.1-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["libxv", "1.0.11-r2"], ["musl", "1.2.2-r7"], ["libmpeg2", "0.5.1-r8"]]

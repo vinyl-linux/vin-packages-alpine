@@ -1,0 +1,15 @@
+checksum = "036f6bae374e2d5cf16deaca3d81d8e2d4ba076e2f93a14227d6bd97538d733d"
+licence = "Apache-2.0"
+provides = "php7-pecl-xhprof"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-xhprof-2.3.5-r0.apk"
+version = "2.3.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["musl", "1.2.2-r7"]]

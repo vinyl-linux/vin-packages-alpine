@@ -1,0 +1,15 @@
+checksum = "30dc9a383c1efb58316851671ef9632c8f745cb982d7ecc568d85f71ee7542bb"
+licence = "GPL-2.0-or-later"
+provides = "spi-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/spi-tools-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

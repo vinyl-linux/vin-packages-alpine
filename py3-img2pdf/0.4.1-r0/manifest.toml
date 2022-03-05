@@ -1,0 +1,15 @@
+checksum = "3a3bb01b6039928639f6410fd9efa023bbc4bec4656218f78e77f1f438db35ab"
+licence = "LGPL-3.0-or-later"
+provides = "py3-img2pdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-img2pdf-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-pillow", "8.4.0-r3"], ["py3-pikepdf", "2.15.1-r0"]]

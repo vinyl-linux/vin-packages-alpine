@@ -1,0 +1,15 @@
+checksum = "cce7ca725992e89a15cda19da8730ca88d6498f9d752007880380bc0fa3bba0b"
+licence = "MPL-2.0"
+provides = "libexttextcat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libexttextcat-3.4.5-r1.apk"
+version = "3.4.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

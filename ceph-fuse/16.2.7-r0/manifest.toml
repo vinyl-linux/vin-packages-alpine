@@ -1,0 +1,15 @@
+checksum = "0cbbaf6b370af6711ea2968c8345626e3777dc32a2f43781c339638c167e7ce2"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph-fuse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ceph-fuse-16.2.7-r0.apk"
+version = "16.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["librados", "16.2.7-r0"], ["fmt", "8.0.1-r0"], ["fuse", "2.9.9-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "47ad303f0686708f70e944ad994b118b6dcb1e5d718fea3e0b342540613ea419"
+licence = "MIT"
+provides = "wait4x"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/wait4x-0.4.0-r2.apk"
+version = "0.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

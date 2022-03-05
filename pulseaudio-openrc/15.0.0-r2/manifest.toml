@@ -1,0 +1,15 @@
+checksum = "61546090f71eaeba018b9548d21a20fbdd9caf5debcdfcb56f6ec831ac4fb771"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pulseaudio-openrc-15.0-r2.apk"
+version = "15.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-utils-openrc", "1.2.5.1-r2"]]

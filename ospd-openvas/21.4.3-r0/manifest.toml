@@ -1,0 +1,15 @@
+checksum = "915e72988a23e03b482918862d6167ddde1438139b51fa0b346f75380924d56e"
+licence = "AGPL-3.0-or-later"
+provides = "ospd-openvas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ospd-openvas-21.4.3-r0.apk"
+version = "21.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-psutil", "5.8.0-r1"], ["py3-redis", "4.0.2-r0"], ["py3-packaging", "20.9.0-r1"], ["py3-deprecated", "1.2.13-r0"], ["ospd", "21.4.4-r0"], ["busybox", "1.34.1-r4"]]

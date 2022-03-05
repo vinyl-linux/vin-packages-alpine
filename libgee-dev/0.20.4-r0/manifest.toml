@@ -1,0 +1,15 @@
+checksum = "3cd53864a034917cc23994200e4aa101baec14b7d0e912c85996efb4c2298df4"
+licence = "LGPL-2.1-or-later"
+provides = "libgee-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgee-dev-0.20.4-r0.apk"
+version = "0.20.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgee", "0.20.4-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

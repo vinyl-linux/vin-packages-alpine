@@ -1,0 +1,15 @@
+checksum = "9878e05ec1015ebb001ab30c9646d6ddeb92e5c0e98f5c4e2d1abbfc22d884a0"
+licence = "BSD-3-Clause"
+provides = "py3-websockets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-websockets-10.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "644ef943fac63dc06b384a20fa99ad3352beff7d84e5542cf2264f009137493e"
+licence = "GPL-3.0-only"
+provides = "libindicator-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libindicator-dev-16.10-r0.apk"
+version = "16.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libindicator", "16.10.0-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

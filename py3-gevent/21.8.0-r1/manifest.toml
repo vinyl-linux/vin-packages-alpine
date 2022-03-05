@@ -1,0 +1,15 @@
+checksum = "384c40f2316fa546cf6a945a0829c3bbdeb97df867f984f38b291be05aea201b"
+licence = "MIT"
+provides = "py3-gevent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-gevent-21.8.0-r1.apk"
+version = "21.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-greenlet", "1.1.2-r0"], ["py3-setuptools", "52.0.0-r4"], ["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libev", "4.33.0-r0"]]

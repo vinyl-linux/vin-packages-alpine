@@ -1,0 +1,15 @@
+checksum = "7bb947f0b2d86450df4e88e3266f1be92cd6a0b00968819a05bae29cbe6412ba"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libvirt-daemon-7.9.0-r0.apk"
+version = "7.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt-client", "7.9.0-r0"], ["bridge-utils", "1.7.1-r0"], ["dmidecode", "3.3.0-r1"], ["dnsmasq", "2.86.0-r0"], ["ip6tables", "1.8.7-r1"], ["iptables", "1.8.7-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libintl", "0.21.0-r0"], ["libtirpc", "1.3.2-r0"], ["libvirt-libs", "7.9.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9e6f5a7f880c80374e2b1c8ac433ee8546c45d5d4d88ec8632caaed08df061f9"
+licence = "custom"
+provides = "libretro-fmsx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libretro-fmsx-0_git20210327-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

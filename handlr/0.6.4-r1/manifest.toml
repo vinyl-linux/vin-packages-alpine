@@ -1,0 +1,15 @@
+checksum = "a63de0450295090a7ff5e1944dd67cd51b2e05b2063787c02bf95256e1e31600"
+licence = "MIT"
+provides = "handlr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/handlr-0.6.4-r1.apk"
+version = "0.6.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shared-mime-info", "2.1.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

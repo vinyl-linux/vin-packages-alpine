@@ -1,0 +1,15 @@
+checksum = "1f65306eec3aa3717ebbbecd402ea76f5f4b27c053e393d089c9b2bfef1708cf"
+licence = "LGPL-3.0-only AND (GPL-2.0-only OR GPL-3.0-only)"
+provides = "qqc2-desktop-style-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qqc2-desktop-style-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfigwidgets-dev", "5.88.0-r0"], ["kiconthemes-dev", "5.88.0-r0"], ["kirigami2-dev", "5.88.0-r0"], ["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["qt5-qtx11extras-dev", "5.15.3"]]

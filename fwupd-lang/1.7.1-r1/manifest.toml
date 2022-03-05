@@ -1,0 +1,15 @@
+checksum = "a7f3bd771367b2d9c048001a9687de00488c606b0246fc20e3935bd51b2abb9c"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-lang-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"]]

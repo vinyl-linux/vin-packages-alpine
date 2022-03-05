@@ -1,0 +1,15 @@
+checksum = "e355a233f0e1b61881140ed11ee062c21d54aca537d20db79011ccfe1e3823c1"
+licence = "LGPL-2.1-or-later"
+provides = "telepathy-idle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/telepathy-idle-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["dbus-glib", "0.112.0-r0"], ["glib", "2.70.1-r0"], ["telepathy-glib", "0.24.2-r1"]]

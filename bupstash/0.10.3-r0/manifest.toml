@@ -1,0 +1,15 @@
+checksum = "06dff08f21b8e7df8576b5b20b7a367a05add32a3606d3bb5d2ba5e8bd679d5f"
+licence = "MIT"
+provides = "bupstash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bupstash-0.10.3-r0.apk"
+version = "0.10.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libsodium", "1.0.18-r0"]]

@@ -1,0 +1,15 @@
+checksum = "036ce3d2910c1723b524faf8d80b997edbd72a48241a0d468d19882a6c7c9b3d"
+licence = "MIT"
+provides = "rofi-wayland-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rofi-wayland-dev-1.7.0_p1-r2.apk"
+version = "1.7.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cairo-dev", "1.16.0-r3"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

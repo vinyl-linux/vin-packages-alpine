@@ -1,0 +1,15 @@
+checksum = "4a9793f2e5a46addc9ee94c8c355415d6207d9caa8ac05df08ed3e3d5525ccdf"
+licence = "GPL-2.0-or-later"
+provides = "collectd-curl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-curl-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["libxml2", "2.9.12-r2"], ["yajl", "2.1.0-r2"]]

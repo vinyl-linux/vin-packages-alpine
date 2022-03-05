@@ -1,0 +1,15 @@
+checksum = "ba7a8d0946fe7760b2a87ed597d3be868bc4d9244719fb5a579a808623539c91"
+licence = "LGPL-2.0-or-later"
+provides = "libmtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmtp-1.1.19-r0.apk"
+version = "1.1.19-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

@@ -1,0 +1,15 @@
+checksum = "0ecc028674075b9d858be9d97ed49115f849512b7340db89c120e2a0b4be0dd3"
+licence = "GPL-2.0-or-later"
+provides = "libportal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libportal-dev-0.4-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libportal", "0.4.0-r0"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

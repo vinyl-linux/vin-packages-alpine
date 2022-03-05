@@ -1,0 +1,15 @@
+checksum = "c1c015b5312699ce7fa4f15bf69ccee7c328df5356e045b799fc78a30efa69ec"
+licence = "Apache-2.0 AND MIT"
+provides = "rust-gdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rust-gdb-1.56.1-r0.apk"
+version = "1.56.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust", "1.56.1-r0"], ["gdb", "11.1.0-r0"]]

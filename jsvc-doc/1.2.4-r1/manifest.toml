@@ -1,0 +1,15 @@
+checksum = "fad0e0afceb54fa47975327986f025517b04801fe3bca502a0d880d3efab85d0"
+licence = "Apache-2.0"
+provides = "jsvc-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jsvc-doc-1.2.4-r1.apk"
+version = "1.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"]]

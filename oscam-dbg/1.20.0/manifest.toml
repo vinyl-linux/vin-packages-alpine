@@ -1,0 +1,15 @@
+checksum = "98929b905f3bdf812c4c8741584c21859a03843a06b275edcd32d57a29515bc8"
+licence = "GPL-3.0-or-later"
+provides = "oscam-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/oscam-dbg-1.20_svn20201119-r2.apk"
+version = "1.20.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["pcsc-lite-libs", "1.9.4-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libusb", "1.0.24-r3"]]

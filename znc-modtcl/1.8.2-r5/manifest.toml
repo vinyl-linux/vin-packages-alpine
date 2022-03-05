@@ -1,0 +1,15 @@
+checksum = "7ec32a313e924d581262abfd6a269adfc7ee6bc7d7cf169384e27b8dae1c9c4f"
+licence = "Apache-2.0"
+provides = "znc-modtcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/znc-modtcl-1.8.2-r5.apk"
+version = "1.8.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["znc", "1.8.2-r5"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["tcl", "8.6.11-r0"]]

@@ -1,0 +1,15 @@
+checksum = "501581107ca345e224528b9f3db411dcf0bb5cfba3a5f38b0ce568e0d69f833d"
+licence = "GPL-3.0-or-later"
+provides = "bear"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/bear-3.0.17-r1.apk"
+version = "3.0.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abseil-cpp", "20210324.2.0-r0"], ["musl", "1.2.2-r7"], ["fmt", "8.0.1-r0"], ["libgcc", "10.3.1"], ["grpc", "1.42.0-r0"], ["libprotobuf", "3.18.1-r1"], ["spdlog", "1.9.2-r0"], ["libstdc++", "10.3.1"]]

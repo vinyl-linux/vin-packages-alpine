@@ -1,0 +1,15 @@
+checksum = "ea7ff729ff8d87cbf5e89efd94261988190be01332cc85863233544bb360c639"
+licence = "LGPL-2.1-or-later AND BSD-3-Clause AND MIT"
+provides = "kjs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kjs-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["pcre", "8.45.0-r1"], ["libstdc++", "10.3.1"]]

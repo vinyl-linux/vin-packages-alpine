@@ -1,0 +1,15 @@
+checksum = "bbcbe7deac40f68d06bc8961096271a2574a641fa20faa2f9ea39aedcb6bd74a"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-privacy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/nextcloud-privacy-22.2.5-r0.apk"
+version = "22.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "22.2.5-r0"]]

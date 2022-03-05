@@ -1,0 +1,15 @@
+checksum = "1ee2b626be9278b9a595c608ac584baab2cc56d13df23f3d987aebba32e3a2a6"
+licence = "GPL-3.0-or-later"
+provides = "plasma-angelfish-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-angelfish-lang-21.12-r0.apk"
+version = "21.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["plasma-framework", "5.88.0-r0"], ["purpose", "5.88.0-r0"], ["qt5-qtbase-sqlite", "5.15.3"], ["qt5-qtfeedback", "0.0.0"], ["qt5-qtquickcontrols2", "5.15.3"]]

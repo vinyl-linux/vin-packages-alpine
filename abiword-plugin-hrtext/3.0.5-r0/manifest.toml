@@ -1,0 +1,15 @@
+checksum = "899410f3d6ba7837d91a4e53aadbde3b195c20f29343288a534c51d8075ddf81"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-hrtext"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/abiword-plugin-hrtext-3.0.5-r0.apk"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libstdc++", "10.3.1"]]

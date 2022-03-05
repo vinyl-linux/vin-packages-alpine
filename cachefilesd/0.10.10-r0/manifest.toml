@@ -1,0 +1,15 @@
+checksum = "6ddf36f12ea409936e66d7dc4cfbe5ce5b5b0bc739a9d1449182b103b1fa006f"
+licence = "GPL"
+provides = "cachefilesd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/cachefilesd-0.10.10-r0.apk"
+version = "0.10.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["attr", "2.5.1-r1"], ["musl", "1.2.2-r7"]]

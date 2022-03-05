@@ -1,0 +1,15 @@
+checksum = "9c8265f87f6600c196a2e37af411e90e359753744da4ffd13bc84ebd2941cd0e"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-network"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kde-applications-network-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kget", "21.8.3-r0"], ["krfb", "21.8.3-r0"], ["zeroconf-ioslave", "21.8.3-r0"], ["kio-extras", "21.8.3-r0"]]

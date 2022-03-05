@@ -1,0 +1,15 @@
+checksum = "b920c7eead8c6540428d2243852e2a5e2aac85f6a6a6e0eb3f42b6ad40cb83db"
+licence = "LGPL-2.1-or-later"
+provides = "gtkmm3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/gtkmm3-dev-3.24.5-r0.apk"
+version = "3.24.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtkmm3", "3.24.5-r0"], ["atkmm-dev", "2.28.0-r1"], ["cairomm-dev", "1.14.0-r0"], ["gdk-pixbuf-dev", "2.42.6-r0"], ["glibmm-dev", "2.66.0-r1"], ["gtk+3.0-dev", "3.24.30-r0"], ["pangomm-dev", "2.42.2-r0"], ["pkgconf", "1.8.0-r0"]]

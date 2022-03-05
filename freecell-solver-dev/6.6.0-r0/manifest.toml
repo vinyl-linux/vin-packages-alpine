@@ -1,0 +1,15 @@
+checksum = "e610aefd4d09aa25578b9b7ce1ffd0a833a3314a06442a360edace4ea7cac10f"
+licence = "MIT"
+provides = "freecell-solver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/freecell-solver-dev-6.6.0-r0.apk"
+version = "6.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freecell-solver", "6.6.0-r0"], ["pkgconf", "1.8.0-r0"]]

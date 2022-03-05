@@ -1,0 +1,15 @@
+checksum = "6fcfa01d06134f6a14fb2b4f810759e665549d56864d4b9e4dba6f3156ef8c90"
+licence = "MIT"
+provides = "py3-gtts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-gtts-2.2.3-r0.apk"
+version = "2.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-beautifulsoup4", "4.9.3-r1"], ["py3-click", "8.0.1-r0"], ["py3-gtts-token", "1.1.4-r1"], ["python3", "3.9.7-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f69c2961bf470d532df1f08f4ec5e834072e222852856a4866a245bb1aa0f84f"
+licence = "custom"
+provides = "mobile-broadband-provider-info"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mobile-broadband-provider-info-20201225-r0.apk"
+version = "20201225.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"]]

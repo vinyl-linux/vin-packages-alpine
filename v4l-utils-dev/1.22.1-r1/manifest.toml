@@ -1,0 +1,15 @@
+checksum = "e170ef0bc46b5b205a17ebad3c957cc3fcfcdf9f2d5895bef5c2880812034a3b"
+licence = "LGPL-2.0-or-later"
+provides = "v4l-utils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/v4l-utils-dev-1.22.1-r1.apk"
+version = "1.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev-dev", "3.2.11"], ["pkgconf", "1.8.0-r0"], ["v4l-utils-dvbv5", "1.22.1-r1"], ["v4l-utils-libs", "1.22.1-r1"]]

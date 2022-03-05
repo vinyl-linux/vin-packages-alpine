@@ -1,0 +1,15 @@
+checksum = "439726fed957f6a9820a2a3e446219165e9146b597887c927aa80b042db54ae7"
+licence = "Apache-2.0"
+provides = "unit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unit-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["pcre2", "10.39.0-r0"], ["libssl1.1", "1.1.1-l-r8"]]

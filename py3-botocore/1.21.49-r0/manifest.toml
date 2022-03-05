@@ -1,0 +1,15 @@
+checksum = "4a5d44451167b021616e17702e78050c0cff4ed7114c6974edebde133b53487e"
+licence = "Apache-2.0"
+provides = "py3-botocore"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-botocore-1.21.49-r0.apk"
+version = "1.21.49-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dateutil", "2.8.2-r0"], ["py3-docutils", "0.16.0-r3"], ["py3-jmespath", "0.10.0-r1"], ["py3-urllib3", "1.26.7-r0"]]

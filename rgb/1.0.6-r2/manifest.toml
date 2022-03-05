@@ -1,0 +1,15 @@
+checksum = "7fcbe518af9f49f12dc0588573a434a797e67dea0e00be9c7da494badafa0328"
+licence = "MIT"
+provides = "rgb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rgb-1.0.6-r2.apk"
+version = "1.0.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

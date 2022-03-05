@@ -1,0 +1,15 @@
+checksum = "09f653c8bf057717d9cb8b8797b6a336a07de0a930356d9d8d83b7a124876265"
+licence = "BSD-3-Clause"
+provides = "py3-flask-wtf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-flask-wtf-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-flask", "2.0.2-r0"], ["py3-wtforms", "3.0.0-r0"]]

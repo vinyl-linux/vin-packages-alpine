@@ -1,0 +1,15 @@
+checksum = "be59e846bc61e292ab191b18a10d0f1ab1c465bca77f788ab7299bc1b654b56c"
+licence = "MPL-2.0"
+provides = "libzmf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libzmf-0.0.2-r8.apk"
+version = "0.0.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["icu-libs", "69.1.0-r1"], ["libpng", "1.6.37-r1"], ["librevenge", "0.0.4-r6"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

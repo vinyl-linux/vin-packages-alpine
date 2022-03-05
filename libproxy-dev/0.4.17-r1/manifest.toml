@@ -1,0 +1,15 @@
+checksum = "fc155b8db227b77638f6527a513ed58d04e043d66acf5a41fc2832e483fac923"
+licence = "LGPL-2.0-or-later"
+provides = "libproxy-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libproxy-dev-0.4.17-r1.apk"
+version = "0.4.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["libproxy", "0.4.17-r1"], ["pkgconf", "1.8.0-r0"]]

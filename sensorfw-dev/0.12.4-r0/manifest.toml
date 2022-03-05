@@ -1,0 +1,15 @@
+checksum = "60245c82c904430df10a7487328816f7b2b0dd9d0674eb4ec4e8ef19aa370a0d"
+licence = "LGPL-2.1-only"
+provides = "sensorfw-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sensorfw-dev-0.12.4-r0.apk"
+version = "0.12.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["sensorfw", "0.12.4-r0"]]

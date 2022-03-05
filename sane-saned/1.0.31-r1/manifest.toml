@@ -1,0 +1,15 @@
+checksum = "b52122b3414e8f75c1dccdd6934831dbf52aec3b470b79064dd5fe57009b813c"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-saned"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/sane-saned-1.0.31-r1.apk"
+version = "1.0.31-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["avahi-libs", "0.8.0-r5"], ["musl", "1.2.2-r7"], ["sane", "1.0.31-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ac5146971d075b653b89330d30d72d5f130f67037c8de131caf0f5ff586749f7"
+licence = "GPL-2.0-or-later"
+provides = "boca-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/boca-dev-1.0.5-r1.apk"
+version = "1.0.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boca", "1.0.5-r1"]]

@@ -1,0 +1,15 @@
+checksum = "82084d4732bfae7cb636c572cec92c86ff92ffd1cb80e83dda73a764218ed277"
+licence = "BSD-3-Clause"
+provides = "discount-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/discount-dev-2.2.7-r1.apk"
+version = "2.2.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["discount-libs", "2.2.7-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f21ff1665b3043fe92823b9099fc8606215436b8b2267e4e602d4acab1f5ce9c"
+licence = "LGPL-2.0-or-later"
+provides = "tslib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/tslib-1.22-r0.apk"
+version = "1.22.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

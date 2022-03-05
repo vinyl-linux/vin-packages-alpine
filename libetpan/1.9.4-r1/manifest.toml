@@ -1,0 +1,15 @@
+checksum = "4699b4f8f8eff587af78f574360941fc38538644bf8382ebba75e954654933c8"
+licence = "custom:etpan"
+provides = "libetpan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libetpan-1.9.4-r1.apk"
+version = "1.9.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gnutls", "3.7.1-r0"], ["libsasl", "2.1.27-r14"], ["zlib", "1.2.11-r3"]]

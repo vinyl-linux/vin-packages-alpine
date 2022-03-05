@@ -1,0 +1,15 @@
+checksum = "967db1b89ba5eec353a835809bcd6c83f83fed9d48a812b1a00a1d457609bdef"
+licence = "GPL-2.0-or-later"
+provides = "system-config-printer-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/system-config-printer-lang-1.5.15-r2.apk"
+version = "1.5.15-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dbus", "1.2.18-r0"], ["py3-pycups", "2.0.1-r1"]]

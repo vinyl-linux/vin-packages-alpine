@@ -1,0 +1,15 @@
+checksum = "296b50eebbdbbe00752d1311aaf0f5467d98028bd2a493778eff21a66b7a242f"
+licence = "MIT"
+provides = "chromaprint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/chromaprint-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "4.4.1-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

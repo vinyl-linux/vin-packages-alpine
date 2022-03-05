@@ -1,0 +1,15 @@
+checksum = "6983cc8d48d0888e8461ac93f115da118dceff39f80cbc9d08b2f34daebdce39"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kdialog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdialog-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.88.0-r0"], ["kcoreaddons", "5.88.0-r0"], ["kdbusaddons", "5.88.0-r0"], ["kguiaddons", "5.88.0-r0"], ["ki18n", "5.88.0-r0"], ["kiconthemes", "5.88.0-r0"], ["kio", "5.88.0-r0"], ["knotifications", "5.88.0-r0"], ["ktextwidgets", "5.88.0-r0"], ["kwidgetsaddons", "5.88.0-r0"], ["kwindowsystem", "5.88.0-r0"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "df457cc00fee79c613b7086abc1a964b033038de9ae1497c951c9dd898d775a7"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-date-calc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-date-calc-6.4-r2.apk"
+version = "6.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-carp-clan", "6.8.0-r1"], ["perl-bit-vector", "7.4.0-r10"]]

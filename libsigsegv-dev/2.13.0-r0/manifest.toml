@@ -1,0 +1,15 @@
+checksum = "0e0a2030358637c60145a2796b9e0c527f9d927217ae920a33e6702676c3b8fe"
+licence = "GPL-2.0-or-later"
+provides = "libsigsegv-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libsigsegv-dev-2.13-r0.apk"
+version = "2.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsigsegv", "2.13.0-r0"]]

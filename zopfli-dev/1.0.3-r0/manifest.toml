@@ -1,0 +1,15 @@
+checksum = "b1c68c7ed9be87f46454606bca29e9de6daea768168b76fad7f8d8edd16fdb5a"
+licence = "Apache-2.0"
+provides = "zopfli-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/zopfli-dev-1.0.3-r0.apk"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zopfli", "1.0.3-r0"]]

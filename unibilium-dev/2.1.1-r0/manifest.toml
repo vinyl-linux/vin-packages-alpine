@@ -1,0 +1,15 @@
+checksum = "f77dedf3d4774312e84cdf7062350ae3723f8c4501ce4d2574e23c69dfb9e517"
+licence = "LGPL-3.0-or-later"
+provides = "unibilium-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/unibilium-dev-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["unibilium", "2.1.1-r0"]]

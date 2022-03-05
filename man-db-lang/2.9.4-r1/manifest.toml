@@ -1,0 +1,15 @@
+checksum = "e59a0905e3a240259134427b6bc7ab7491834c40ba04358bd9cc49608b5b207a"
+licence = "GPL-2.0-or-later"
+provides = "man-db-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/man-db-lang-2.9.4-r1.apk"
+version = "2.9.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["groff", "1.22.4-r1"], ["less", "590.0.0-r0"]]

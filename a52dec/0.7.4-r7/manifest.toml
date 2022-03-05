@@ -1,0 +1,15 @@
+checksum = "cf42aeffd0ea97c5ddfe617aabb99e66f7b6acf0d9917f94d375df2b69725a19"
+licence = "GPL-2.0-or-later"
+provides = "a52dec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/a52dec-0.7.4-r7.apk"
+version = "0.7.4-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

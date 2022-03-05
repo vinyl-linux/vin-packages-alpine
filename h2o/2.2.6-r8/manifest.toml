@@ -1,0 +1,15 @@
+checksum = "47872bdfc08c007d048df2929668e137018c904151d162394c8bb2bf4b1ae417"
+licence = "MIT"
+provides = "h2o"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/h2o-2.2.6-r8.apk"
+version = "2.2.6-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["openssl", "1.1.1-l-r8"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["libuv", "1.42.0-r0"], ["wslay", "1.1.1-r1"], ["zlib", "1.2.11-r3"]]

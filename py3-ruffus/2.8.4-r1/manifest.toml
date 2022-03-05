@@ -1,0 +1,15 @@
+checksum = "7a3f657af935f572c0cbce2d529f9bfd1bb02041192bc944ccf4adc38784c9f2"
+licence = "MIT"
+provides = "py3-ruffus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-ruffus-2.8.4-r1.apk"
+version = "2.8.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

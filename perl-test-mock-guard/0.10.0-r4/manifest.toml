@@ -1,0 +1,15 @@
+checksum = "ebd3bb910af4d5f201084fecf2b34797bcc75acb07c7d9378df2e67806561248"
+licence = "PerlArtistic"
+provides = "perl-test-mock-guard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-test-mock-guard-0.10-r4.apk"
+version = "0.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-class-load", "0.25.0-r2"], ["perl-exporter", "5.74.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "950b6a85ea375072d17b710653f4133c3c14a8d4e5bf6437ab55f7b3e4a79dc4"
+licence = "BSL-1.0"
+provides = "xr-hardware"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/xr-hardware-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11"]]

@@ -1,0 +1,15 @@
+checksum = "12389309e295cdf6d6c66dbfed2f25081c29d6da69b15a0d0cbcbebc054d24cc"
+licence = "Apache-2.0"
+provides = "qpdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qpdf-10.4.0-r0.apk"
+version = "10.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["qpdf-libs", "10.4.0-r0"], ["libstdc++", "10.3.1"]]

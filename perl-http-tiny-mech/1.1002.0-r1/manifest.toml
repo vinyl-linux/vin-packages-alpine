@@ -1,0 +1,15 @@
+checksum = "5d49f82076012f99dd0c4ff8312d686e6ee5d9e97052cb12a64dfb9dc6c4945f"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-http-tiny-mech"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-http-tiny-mech-1.001002-r1.apk"
+version = "1.1002.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-http-message", "6.35.0-r0"], ["perl-www-mechanize", "2.6.0-r0"]]

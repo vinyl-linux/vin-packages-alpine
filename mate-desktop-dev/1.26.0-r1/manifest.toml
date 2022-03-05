@@ -1,0 +1,15 @@
+checksum = "a2c14e131edaeb93c81495ad43eef79b57441721c1e3f95a0da8518860c5ee05"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "mate-desktop-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mate-desktop-dev-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-desktop", "1.26.0-r1"], ["dconf-dev", "0.40.0-r0"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

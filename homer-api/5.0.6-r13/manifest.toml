@@ -1,0 +1,15 @@
+checksum = "0c74e6d0745e8b350252b468d83c0b5cc962a5ee9007a9095c5b4d02e160b346"
+licence = "GPL"
+provides = "homer-api"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/homer-api-5.0.6-r13.apk"
+version = "5.0.6-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["homer-db", "5.0.6-r13"], ["php7-ctype", "7.4.28-r0"], ["php7-json", "7.4.28-r0"], ["php7-pdo_mysql", "7.4.28-r0"], ["php7-session", "7.4.28-r0"]]

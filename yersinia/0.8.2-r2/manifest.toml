@@ -1,0 +1,15 @@
+checksum = "02dcbd8e17d0e77aba2eee580814b1e6e5be3ce44964808309c3075a85d2eb1f"
+licence = "GPL"
+provides = "yersinia"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/yersinia-0.8.2-r2.apk"
+version = "0.8.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"], ["libnet", "1.2.0-r0"], ["libpcap", "1.10.1-r0"]]

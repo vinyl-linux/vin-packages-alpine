@@ -1,0 +1,15 @@
+checksum = "e7ad5ddcddaf90eb4c1eb16bd55c4c84cc76c21c61cfc9d18a6e3313720f9995"
+licence = "GPL-2.0-or-later"
+provides = "kdiagram-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdiagram-dev-2.8.0-r0.apk"
+version = "2.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["qt5-qtsvg-dev", "5.15.3"], ["qt5-qttools-dev", "5.15.3"], ["kdiagram", "2.8.0-r0"]]

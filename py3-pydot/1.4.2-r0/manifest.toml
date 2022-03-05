@@ -1,0 +1,15 @@
+checksum = "915369eb94de15141273b01ee41da4d2841818b917a472e593a8e717f784a73d"
+licence = "MIT"
+provides = "py3-pydot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pydot-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-parsing", "2.4.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "44cc7734a536e3426744ae95cd8c8311d5d465f5df87120253e1acf52d23dbb3"
+licence = "BSD-2-Clause"
+provides = "py3-core-api"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-core-api-2.3.3-r7.apk"
+version = "2.3.3-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-coreschema", "0.0.4-r4"], ["py3-itypes", "1.2.0-r1"], ["py3-requests", "2.26.0-r1"], ["py3-uritemplate", "3.0.1-r1"]]

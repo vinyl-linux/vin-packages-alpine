@@ -1,0 +1,15 @@
+checksum = "c6f9fd18a4f2fe40f5d47ea9a2713b7eb5ecab28e6df5f07ec2006484955c731"
+licence = "LGPL-2.1-or-later"
+provides = "fwupd-plugin-bcm57xx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/fwupd-plugin-bcm57xx-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["fwupd", "1.7.1-r1"], ["glib", "2.70.1-r0"], ["libxmlb", "0.2.1-r1"]]

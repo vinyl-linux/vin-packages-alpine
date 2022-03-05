@@ -1,0 +1,15 @@
+checksum = "14211237a93ca0b3b32b78165f96fcbe3d3b9570486068383abca5ff7b024568"
+licence = "BSD-3-Clause"
+provides = "i2pd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/i2pd-2.39.0-r1.apk"
+version = "2.39.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl-utils", "1.2.2-r7"], ["busybox", "1.34.1-r4"], ["boost1.77-filesystem", "1.77.0-r1"], ["boost1.77-program_options", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["miniupnpc", "2.2.3-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

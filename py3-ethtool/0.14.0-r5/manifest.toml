@@ -1,0 +1,15 @@
+checksum = "2385d01b5c6f98c1dae741e2557a265a92646881881bec55fc79404a37292c23"
+licence = "GPL-2.0-only"
+provides = "py3-ethtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-ethtool-0.14-r5.apk"
+version = "0.14.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["libnl3", "3.5.0-r0"]]

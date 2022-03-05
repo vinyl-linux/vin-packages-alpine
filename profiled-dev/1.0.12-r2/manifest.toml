@@ -1,0 +1,15 @@
+checksum = "e322562b838eb0ef66da29493b7163065a354fa0eb3a8c531b9179416031a9e5"
+licence = "BSD-2-Clause"
+provides = "profiled-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/profiled-dev-1.0.12-r2.apk"
+version = "1.0.12-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-dev", "1.12.20-r4"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"], ["profiled", "1.0.12-r2"]]

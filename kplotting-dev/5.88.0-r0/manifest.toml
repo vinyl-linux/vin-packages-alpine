@@ -1,0 +1,15 @@
+checksum = "67a02c97e206fd5b4faf1519470b92fdfe775ffd1d71b0c2c691d7b3ecec9e91"
+licence = "LGPL-2.1-or-later"
+provides = "kplotting-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kplotting-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["kplotting", "5.88.0-r0"]]

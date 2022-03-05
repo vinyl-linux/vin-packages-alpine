@@ -1,0 +1,15 @@
+checksum = "b45702c18d7bd062171fd1d8cba67e336b938ba292100663913d3bbb7cc51971"
+licence = "LGPL-3.0-or-later"
+provides = "py3-dbusmock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-dbusmock-0.24.1-r0.apk"
+version = "0.24.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dbus", "1.2.18-r0"], ["py3-gobject3", "3.42.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "41aace7107b9ae0a7f28fc393f74a2459c876e898a3407ff06c4bb16a451e57b"
+licence = "GPL-3.0-or-later"
+provides = "blueman-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/blueman-lang-2.2.4-r1.apk"
+version = "2.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez", "5.63.0-r0"], ["dbus", "1.12.20-r4"], ["libappindicator", "12.10.1"], ["gtk+3.0", "3.24.30-r0"], ["python3", "3.9.7-r4"], ["py3-cairo", "1.20.1-r0"], ["py3-gobject3", "3.42.0-r1"]]

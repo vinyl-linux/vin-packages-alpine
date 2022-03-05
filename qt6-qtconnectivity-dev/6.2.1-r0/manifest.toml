@@ -1,0 +1,15 @@
+checksum = "061aa2ec59d8b3af20c6df09057f075460ded8c39aef2de5e8dd3fe692a1a32b"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtconnectivity-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt6-qtconnectivity-dev-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-dev", "5.63.0-r0"], ["qt6-qtbase-dev", "6.2.1-r2"], ["qt6-qtdeclarative-dev", "6.2.1-r0"], ["qt6-qtconnectivity", "6.2.1-r0"]]

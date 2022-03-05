@@ -1,0 +1,15 @@
+checksum = "b9f72cb5107d06df6e33aecfb6cc72e68b68fc8f2ad1da8d2e0d1925961bfca4"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-applix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/abiword-plugin-applix-3.0.5-r0.apk"
+version = "3.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["libgsf", "1.14.47-r0"], ["libstdc++", "10.3.1"]]

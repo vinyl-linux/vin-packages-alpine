@@ -1,0 +1,15 @@
+checksum = "e7fee8fa10941efe466c690347d993a37ba0d684d0de64f863c0aa4dbad92ddc"
+licence = "BSL-1.0"
+provides = "poco"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/poco-1.11.1-r0.apk"
+version = "1.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["mariadb-connector-c", "3.1.13-r2"], ["unixodbc", "2.3.9-r1"], ["libpq", "14.2.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"]]

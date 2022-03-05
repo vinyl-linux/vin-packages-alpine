@@ -1,0 +1,15 @@
+checksum = "9bf4b365dbc8001fb4619e53061a7c2c9c6777462a1cb061ac6f78619e860c0b"
+licence = "GPL-3.0-only"
+provides = "onboard-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/onboard-lang-1.4.1-r5.apk"
+version = "1.4.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["hunspell", "1.7.0-r1"], ["iso-codes", "4.8.0-r0"], ["py3-cairo", "1.20.1-r0"], ["py3-dbus", "1.2.18-r0"], ["py3-gobject3", "3.42.0-r1"], ["dbus-x11", "1.12.20-r4"], ["ncurses", "6.3.0"], ["gsettings-desktop-schemas", "41.0.0-r0"], ["librsvg", "2.50.7-r1"]]

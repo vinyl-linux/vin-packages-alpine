@@ -1,0 +1,15 @@
+checksum = "9bcda215fff3e94bbbd22fe2930a9b2a75c50678934c0163e9a1d92320c3c088"
+licence = "GPL-2.0-or-later"
+provides = "zabbix-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/zabbix-utils-5.4.9-r1.apk"
+version = "5.4.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["pcre", "8.45.0-r1"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

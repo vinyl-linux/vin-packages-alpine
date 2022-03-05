@@ -1,0 +1,15 @@
+checksum = "deba56f7ab35322fd938df78ae64ea66143432dcad76ee0055f8f6dd9ef4dcac"
+licence = "MIT"
+provides = "py3-pem"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-pem-21.2.0-r0.apk"
+version = "21.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-twisted", "21.7.0-r1"]]

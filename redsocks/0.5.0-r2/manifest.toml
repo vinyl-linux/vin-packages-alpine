@@ -1,0 +1,15 @@
+checksum = "21decd0422301c808f1c1f2d085e8d4fb8ab26f535713373f81b69a06fd5bba7"
+licence = "Apache-2.0"
+provides = "redsocks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/redsocks-0.5-r2.apk"
+version = "0.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"]]

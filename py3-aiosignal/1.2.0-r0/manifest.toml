@@ -1,0 +1,15 @@
+checksum = "cf907a56302a5fd7242a95ad6d10a13a094ef1bdce7215790ca46ec245aa1be8"
+licence = "Apache-2.0"
+provides = "py3-aiosignal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-aiosignal-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-frozenlist", "1.2.0-r0"]]

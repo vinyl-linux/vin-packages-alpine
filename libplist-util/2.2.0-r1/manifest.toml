@@ -1,0 +1,15 @@
+checksum = "1f3e2890253de84f24c933949b3d87e66d1d26f0525a791ea8151da147d94b5b"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "libplist-util"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libplist-util-2.2.0-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libplist", "2.2.0-r1"]]

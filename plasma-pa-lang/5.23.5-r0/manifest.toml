@@ -1,0 +1,15 @@
+checksum = "eed1dcb3accc8a37bc43e5c06b64d6ad6a8f97731fab71b672bb43c99e491c73"
+licence = "LGPL-2.1-only OR LGPL-3.0-only AND GPL-2.0-only"
+provides = "plasma-pa-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-pa-lang-5.23.5-r0.apk"
+version = "5.23.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pulseaudio", "15.0.0-r2"], ["kirigami2", "5.88.0-r0"]]

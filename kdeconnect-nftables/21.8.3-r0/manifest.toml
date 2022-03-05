@@ -1,0 +1,15 @@
+checksum = "0fb13868b8897e6a0ef30dff3228bb0e6987e1d3e35a67d5795c93a63894e8bd"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "kdeconnect-nftables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kdeconnect-nftables-21.08.3-r0.apk"
+version = "21.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.88.0-r0"], ["qt5-qtquickcontrols", "5.15.3"], ["sshfs", "3.7.2-r0"]]

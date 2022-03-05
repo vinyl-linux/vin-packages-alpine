@@ -1,0 +1,15 @@
+checksum = "9c33a51b11e44e19d24658ff82fa9871c13262fe1bede5a7c26255ee010fb945"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-geoip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/pdns-backend-geoip-4.5.3-r0.apk"
+version = "4.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.5.3-r0"], ["geoip", "1.6.12-r2"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libmaxminddb", "1.6.0-r0"], ["libstdc++", "10.3.1"], ["yaml-cpp", "0.6.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "651b8689af1dfbb8838efbfabcaa26dfdcd607fc328f788b65ecbfb8d8c01b41"
+licence = "LGPL-2.1-or-later"
+provides = "libu2f-host-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libu2f-host-dev-1.1.10-r4.apk"
+version = "1.1.10-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libu2f-host-libs", "1.1.10-r4"], ["pkgconf", "1.8.0-r0"]]

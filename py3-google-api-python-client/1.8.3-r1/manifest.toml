@@ -1,0 +1,15 @@
+checksum = "549eaff044ec611c75cd2ede3f8e53a38ff38612a395f15b2b538aaa128dc69c"
+licence = "Apache-2.0"
+provides = "py3-google-api-python-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-google-api-python-client-1.8.3-r1.apk"
+version = "1.8.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-google-auth", "1.19.2-r1"], ["py3-google-auth-httplib2", "0.0.4-r1"], ["py3-uritemplate", "3.0.1-r1"], ["py3-six", "1.16.0-r0"], ["py3-httplib2", "0.19.1-r0"], ["py3-oauth2client", "4.1.3-r3"], ["py3-google-api-core", "1.17.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "3db3b6b1e7fc339ed087e7b9342b26109e92e103a958b7e504eb3fe159297ec2"
+licence = "GPL-2.0-or-later"
+provides = "collectd-log_logstash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/collectd-log_logstash-5.12.0-r5.apk"
+version = "5.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r5"], ["musl", "1.2.2-r7"], ["yajl", "2.1.0-r2"]]

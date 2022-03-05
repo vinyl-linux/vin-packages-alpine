@@ -1,0 +1,15 @@
+checksum = "f958587d85278d411c9b445734c76f2ff0677d07440dbcfc4d4cf41768ab5a35"
+licence = "GPL-3.0"
+provides = "mu4e"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mu4e-1.6.6-r0.apk"
+version = "1.6.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mu", "1.6.6-r0"], ["emacs-x11", "27.2.0-r1"]]

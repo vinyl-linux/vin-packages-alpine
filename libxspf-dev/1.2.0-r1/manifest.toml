@@ -1,0 +1,15 @@
+checksum = "a8309d706a9a0dc85948611d296ee02a775ab4278f203d146cb4c4be763ead3a"
+licence = "BSD-3-Clause"
+provides = "libxspf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libxspf-dev-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxspf", "1.2.0-r1"], ["pkgconf", "1.8.0-r0"]]

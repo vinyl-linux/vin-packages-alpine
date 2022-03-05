@@ -1,0 +1,15 @@
+checksum = "573e725c1b45a7fdb77cfaa58f24506afd0f86567fe483d21c6123a6a18456ec"
+licence = "GPL-3.0-only"
+provides = "py3-keepass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/py3-keepass-3.2.1-r4.apk"
+version = "3.2.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-dateutil", "2.8.2-r0"], ["py3-pycryptodomex", "3.10.1-r1"], ["py3-construct", "2.10.67-r0"], ["py3-lxml", "4.6.5-r0"], ["py3-argon2-cffi", "21.1.0-r0"], ["py3-cffi", "1.14.5-r2"], ["py3-future", "0.18.2-r3"]]

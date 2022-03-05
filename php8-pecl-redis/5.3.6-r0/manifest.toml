@@ -1,0 +1,15 @@
+checksum = "5bb8ff114526dea39fee018688861e2e7016de2d4b8c10f66043e51b3df45634"
+licence = "PHP-3.01"
+provides = "php8-pecl-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php8-pecl-redis-5.3.6-r0.apk"
+version = "5.3.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php8-pecl-igbinary", "3.2.6-r0"], ["php8-session", "8.0.16-r0"], ["musl", "1.2.2-r7"], ["lz4-libs", "1.9.3-r1"], ["zstd-libs", "1.5.0-r0"]]

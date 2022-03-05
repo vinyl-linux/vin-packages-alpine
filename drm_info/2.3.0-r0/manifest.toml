@@ -1,0 +1,15 @@
+checksum = "bd55c119b9612a5637a0b87ff41b10f82f4a7698fb32dcc8e47f84baf2f25168"
+licence = "MIT"
+provides = "drm_info"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/drm_info-2.3.0-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libdrm", "2.4.109-r0"], ["json-c", "0.15.0-r1"], ["pciutils-libs", "3.7.0-r0"]]

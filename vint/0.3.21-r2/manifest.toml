@@ -1,0 +1,15 @@
+checksum = "1602229ae8d60532af1e7a843a5aec53ef85b566150f51fd3159b8358e1dd666"
+licence = "MIT"
+provides = "vint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/vint-0.3.21-r2.apk"
+version = "0.3.21-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-yaml", "5.4.1.1-r1"], ["py3-chardet", "4.0.0-r2"], ["py3-ansicolor", "0.3.2-r0"]]

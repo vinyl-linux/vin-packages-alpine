@@ -1,0 +1,15 @@
+checksum = "1b789c16306dcf725382a4bc25c85b48ce4a48a6e0b737bb5cdbc160b6c81261"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-hw-display-virtio-gpu-gl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-hw-display-virtio-gpu-gl-6.1.0-r2.apk"
+version = "6.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-hw-display-virtio-gpu", "6.1.0-r2"], ["musl", "1.2.2-r7"], ["virglrenderer", "0.9.1-r0"]]

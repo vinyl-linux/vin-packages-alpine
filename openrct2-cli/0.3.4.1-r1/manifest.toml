@@ -1,0 +1,15 @@
+checksum = "bd5bb3d0663c3f9eb0cfb89063b3f63b801083062a1a91e79543ffcdef2cfa8e"
+licence = "GPL-3.0-only"
+provides = "openrct2-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openrct2-cli-0.3.4.1-r1.apk"
+version = "0.3.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrct2-data", "0.3.4.1-r1"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["openrct2", "0.3.4.1-r1"], ["libstdc++", "10.3.1"]]

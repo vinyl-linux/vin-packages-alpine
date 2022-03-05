@@ -1,0 +1,15 @@
+checksum = "5b27d2b8c7e40b65f15f2d5e3e42f1965d4221acae96a1209ec18cc8791cd08e"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kguiaddons-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kguiaddons-dev-5.88.0-r0.apk"
+version = "5.88.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qttools-dev", "5.15.3"], ["qt5-qtwayland-dev", "5.15.3"], ["qt5-qtx11extras-dev", "5.15.3"], ["wayland-dev", "1.19.0-r1"], ["kguiaddons", "5.88.0-r0"]]

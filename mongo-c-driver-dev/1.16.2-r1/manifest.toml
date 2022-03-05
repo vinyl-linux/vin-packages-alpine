@@ -1,0 +1,15 @@
+checksum = "afbef6cbed51dead9575ca7a63fce51e21e47ad3a69f1fcfd9dbefd0bf30aa96"
+licence = "Apache-2.0"
+provides = "mongo-c-driver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mongo-c-driver-dev-1.16.2-r1.apk"
+version = "1.16.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbson-dev", "1.16.2-r1"], ["mongo-c-driver", "1.16.2-r1"], ["pkgconf", "1.8.0-r0"]]

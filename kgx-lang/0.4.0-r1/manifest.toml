@@ -1,0 +1,15 @@
+checksum = "d94fca1e85ec99cae216b4f5bd3e75d2b7729f5640dab7accadebfb4fa55a8d5"
+licence = "GPL-3.0-only"
+provides = "kgx-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/kgx-lang-0.4.0-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["gsettings-desktop-schemas", "41.0.0-r0"]]

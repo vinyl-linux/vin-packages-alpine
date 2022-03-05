@@ -1,0 +1,15 @@
+checksum = "8d4ee5adb6e644f80561fbc94d2154f0c7e10f4069532e1703b053bab31be2b9"
+licence = "GPL-2.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-math-pari"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/perl-math-pari-2.030518-r2.apk"
+version = "2.30518.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "37add9f2ad122c6015c641f4ecd254ea3f596ab6e4a7f6b47b056cc2dd1e69ce"
+licence = "BSD-3-Clause"
+provides = "ruby-ffi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ruby-ffi-1.15.5-r0.apk"
+version = "1.15.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["ruby-libs", "3.0.3-r0"]]

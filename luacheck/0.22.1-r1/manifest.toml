@@ -1,0 +1,15 @@
+checksum = "9e32598ae302f66173f20c5816ad536a3884f374c9d2579c1dd4b17e5d9cc4cb"
+licence = "MIT"
+provides = "luacheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/luacheck-0.22.1-r1.apk"
+version = "0.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r8"], ["lua5.1-filesystem", "1.8.0-r1"]]
