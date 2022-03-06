@@ -1,0 +1,15 @@
+checksum = "664fed66fdfd4225edb7965fad5d18f1e3d37a24cceeb183d8f9a24999568ec4"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgcc-10.3.1_git20211027-r0.apk"
+version = "10.3.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

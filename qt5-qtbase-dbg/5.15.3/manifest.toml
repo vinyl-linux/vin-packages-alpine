@@ -1,0 +1,15 @@
+checksum = "636b7df3a1845682c3644877984ff2c767dd227b041e12f0e792c8fdc4cf2f5f"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtbase-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtbase-dbg-5.15.3_git20210713-r5.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-utils", "1.1.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "06be939651449c8b7e1ebda058ef68f9a48958298c0d8f4270e89d89c9f14072"
+licence = "LGPL-2.1-or-later"
+provides = "libappindicator-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libappindicator-dev-12.10.1_p20200706-r0.apk"
+version = "12.10.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libappindicator", "12.10.1"], ["libdbusmenu-glib-dev", "16.4.0-r3"], ["gtk+3.0-dev", "3.24.30-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b9174477c8b059e6123735a3aa75a693b8e27f67363898cafee4b84bb24520aa"
+licence = "MIT"
+provides = "luarocks5.2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/luarocks5.2-2.4.4-r1.apk"
+version = "2.4.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.80.0-r0"], ["lua5.2", "5.2.4-r7"], ["busybox", "1.34.1-r4"]]

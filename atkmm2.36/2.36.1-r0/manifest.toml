@@ -1,0 +1,15 @@
+checksum = "86e4e9ef6e44889c627c9cd1e9d5246f74a32c90ea7a3f302f2ae54668b55907"
+licence = "LGPL-2.0-or-later"
+provides = "atkmm2.36"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/atkmm2.36-2.36.1-r0.apk"
+version = "2.36.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["atk", "2.36.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["glib", "2.70.1-r0"], ["glibmm2.68", "2.68.1-r0"], ["libsigc++3", "3.0.7-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "cc883e5fba5732f79e2f93dc76e92415594b8d23eda91f6e00232e43c88381c1"
+licence = "OpenSSL"
+provides = "libcrypto1.1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libcrypto1.1-1.1.1l-r8.apk"
+version = "1.1.1-l-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

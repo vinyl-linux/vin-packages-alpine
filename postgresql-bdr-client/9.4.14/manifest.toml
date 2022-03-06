@@ -1,0 +1,15 @@
+checksum = "fea3d39672925d76656c6046054fc8095c97ca0844bcb6a6469e18b3307e9849"
+licence = "PostgreSQL"
+provides = "postgresql-bdr-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postgresql-bdr-client-9.4.14_p1-r12.apk"
+version = "9.4.14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"], ["readline", "8.1.1-r0"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

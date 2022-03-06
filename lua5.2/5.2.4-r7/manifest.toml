@@ -1,0 +1,15 @@
+checksum = "d8e5ea460c4f3dccac6b00d2b81beb8dad8029a479382cca5818f92eaceaa42d"
+licence = "MIT"
+provides = "lua5.2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-5.2.4-r7.apk"
+version = "5.2.4-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["lua5.2-libs", "5.2.4-r7"]]

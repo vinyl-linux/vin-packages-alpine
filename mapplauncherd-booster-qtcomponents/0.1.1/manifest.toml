@@ -1,0 +1,15 @@
+checksum = "1b3df71b568ab9c3450741292a39e49989bc1aa0fafb47caf1b2683e96edc163"
+licence = "LGPL-2.1-only"
+provides = "mapplauncherd-booster-qtcomponents"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/mapplauncherd-booster-qtcomponents-0.1.1_git1-r2.apk"
+version = "0.1.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["mapplauncherd", "4.2.10-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mapplauncherd-qt", "1.1.21-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "45c3e43c282ddb73a841d68b3e9caa6757544b4023c1dafb3ae9c461c78d8846"
+licence = "GPL-2.0"
+provides = "autoconf2.13"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/autoconf2.13-2.13-r1.apk"
+version = "2.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["m4", "1.4.18-r2"], ["perl", "5.34.0-r1"]]

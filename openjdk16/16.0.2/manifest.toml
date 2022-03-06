@@ -1,0 +1,15 @@
+checksum = "07dee9f081d6e033199c9b94c7a74c316e8992d566efeeb0b2c0b9188c59588c"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk16"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk16-16.0.2_p7-r0.apk"
+version = "16.0.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk16-jmods", "16.0.2"], ["openjdk16-demos", "16.0.2"], ["openjdk16-doc", "16.0.2"], ["openjdk16-jdk", "16.0.2"]]

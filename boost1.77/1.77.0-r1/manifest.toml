@@ -1,0 +1,15 @@
+checksum = "7bab08cf5d024a991322989498882f95755b16e0ac774b58a6e875b6edb77781"
+licence = "BSL-1.0"
+provides = "boost1.77"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-1.77.0-r1.apk"
+version = "1.77.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-libs", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

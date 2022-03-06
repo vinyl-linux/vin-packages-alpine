@@ -1,0 +1,15 @@
+checksum = "cb6f7f77cd599501ffd063c3f2863156c5a0fdc190d8893d5797227c121f8af9"
+licence = "GPL-2.0-only"
+provides = "eudev-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/eudev-dev-3.2.11_pre1-r0.apk"
+version = "3.2.11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11"], ["pkgconf", "1.8.0-r0"]]

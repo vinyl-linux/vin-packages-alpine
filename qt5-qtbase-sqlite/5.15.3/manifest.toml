@@ -1,0 +1,15 @@
+checksum = "eb3a4531f08a8fe0e884a214c147df3545fc6314100128b3090da5e0a72df2bc"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtbase-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtbase-sqlite-5.15.3_git20210713-r5.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-utils", "1.1.3-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "38c06b30b217cc45af768e564d1e3f92dc5ef44932653b001572980dd48fcb3a"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk15-jre-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk15-jre-headless-15.0.5_p3-r0.apk"
+version = "15.0.5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-common", "0.4.0-r0"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

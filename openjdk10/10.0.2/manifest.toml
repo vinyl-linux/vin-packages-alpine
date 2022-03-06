@@ -1,0 +1,15 @@
+checksum = "f6e50b83590a61b57db17a19c8c4c68f4e73738973215759b92e2d5f4ce969b0"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk10"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk10-10.0.2_p13-r3.apk"
+version = "10.0.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk10-jmods", "10.0.2"], ["openjdk10-demos", "10.0.2"], ["openjdk10-doc", "10.0.2"], ["openjdk10-jdk", "10.0.2"]]

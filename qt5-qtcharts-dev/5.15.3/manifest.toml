@@ -1,0 +1,15 @@
+checksum = "a9001925129a451a013bc9a7b2b0b5dc3db2e5b2be800ed4ec7eae0b961d147a"
+licence = "(LGPL-2.0-or-later OR GPL-3.0-only OR GPL-2.0-or-later) AND Qt-GPL-exception-1.0"
+provides = "qt5-qtcharts-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtcharts-dev-5.15.3_git20201029-r1.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.3"], ["zlib-dev", "1.2.11-r3"], ["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtcharts", "5.15.3"]]

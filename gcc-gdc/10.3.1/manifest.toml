@@ -1,0 +1,15 @@
+checksum = "ea50722e99aefd7fcda79c8b37ce6b3600257715e6db3b90736645d87d2ff24f"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "gcc-gdc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gcc-gdc-10.3.1_git20211027-r0.apk"
+version = "10.3.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "10.3.1"], ["libgphobos", "10.3.1"], ["musl-dev", "1.2.2-r7"], ["libucontext-dev", "1.1.0-r0"], ["musl", "1.2.2-r7"], ["gmp", "6.2.1-r1"], ["isl22", "0.22.0-r0"], ["mpc1", "1.2.1-r0"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.11-r3"]]

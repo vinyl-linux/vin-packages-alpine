@@ -1,0 +1,15 @@
+checksum = "48fd25509fb2e4399f13fe38105cc8c8bd64c2ee88e2cf1ce71e130621d6f9bc"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libstdc++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libstdc++-10.3.1_git20211027-r0.apk"
+version = "10.3.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

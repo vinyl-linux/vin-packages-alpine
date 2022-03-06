@@ -1,0 +1,15 @@
+checksum = "faadc954daaf4668fff90512b2d345d6125a4ae576ca8fc3cec5e9315f9df996"
+licence = "MPL-2.0"
+provides = "dhcp-libs-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dhcp-libs-static-4.4.2_p1-r1.apk"
+version = "4.4.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dhcp-dev", "4.4.2"]]

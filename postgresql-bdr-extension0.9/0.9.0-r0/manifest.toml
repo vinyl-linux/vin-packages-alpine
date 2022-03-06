@@ -1,0 +1,15 @@
+checksum = "56f8da4ad164cee0a10e5bc5878ebea20caa6ba1d6ee94fbb81e466d3a878f28"
+licence = "GPL"
+provides = "postgresql-bdr-extension0.9"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/postgresql-bdr-extension0.9-0.9.0-r0.apk"
+version = "0.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

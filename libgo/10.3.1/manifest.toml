@@ -1,0 +1,15 @@
+checksum = "59a40124800f6d3a5049eabaf8918ff6d9b97372f6154005436cd931ad1de811"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgo-10.3.1_git20211027-r0.apk"
+version = "10.3.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

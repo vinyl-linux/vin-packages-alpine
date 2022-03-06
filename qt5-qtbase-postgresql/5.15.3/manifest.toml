@@ -1,0 +1,15 @@
+checksum = "c4b94de351e72757348fa4727e1c81b07538c1ee0e1b6e38e556d1e1406876b9"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtbase-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtbase-postgresql-5.15.3_git20210713-r5.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-utils", "1.1.3-r0"], ["qt5-qtbase", "5.15.3"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"], ["libstdc++", "10.3.1"]]

@@ -1,0 +1,15 @@
+checksum = "173d58c5421e49684eb80418d2e6c2bf2f86425c5f1f799e2f96d7622b42c7ca"
+licence = "(LGPL-2.0-or-later OR GPL-3.0-only OR GPL-2.0-or-later) AND Qt-GPL-exception-1.0"
+provides = "qt5-qtremoteobjects-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtremoteobjects-dev-5.15.3_git20201029-r0.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtremoteobjects", "5.15.3"]]

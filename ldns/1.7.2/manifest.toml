@@ -1,0 +1,15 @@
+checksum = "37e731f8fed3079fd9d04aeb757f256ac50581aee0956d71f11334466156234b"
+licence = "Custom"
+provides = "ldns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ldns-1.7.2_git20210911-r1.apk"
+version = "1.7.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

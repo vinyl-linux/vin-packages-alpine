@@ -1,0 +1,15 @@
+checksum = "548a942e0b32e8a29376e059c894e86004b0638e89f7a60eb1a388101f4e7e9c"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk9-jre-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk9-jre-headless-9.0.4_p12-r4.apk"
+version = "9.0.4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-common", "0.4.0-r0"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.2-r7"], ["libelf", "0.185.0-r0"], ["zlib", "1.2.11-r3"]]

@@ -1,0 +1,15 @@
+checksum = "686317568c7e63959fb606bfc91d8c28914d91c4a617d4eb48c6dfdc7b777a77"
+licence = "PHP-3.01"
+provides = "php7-pecl-gmagick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/php7-pecl-gmagick-2.0.6_rc1-r1.apk"
+version = "2.0.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php7-common", "7.4.28-r0"], ["ghostscript-fonts", "8.11.0-r2"], ["graphicsmagick", "1.3.36-r0"], ["musl", "1.2.2-r7"], ["libgomp", "10.3.1"]]

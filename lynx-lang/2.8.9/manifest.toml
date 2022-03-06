@@ -1,0 +1,15 @@
+checksum = "0290b3b7d4f054c629731c5307d97d79a5c3984aa577d09476b0697a49d85a7a"
+licence = "GPL-2.0-only"
+provides = "lynx-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lynx-lang-2.8.9_p1-r7.apk"
+version = "2.8.9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gzip", "1.11.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c309a8f379ac364e0a905d886f71bfabcc43c68d70a379fc75889b127a5a9645"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk10-jre-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk10-jre-headless-10.0.2_p13-r3.apk"
+version = "10.0.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-common", "0.4.0-r0"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

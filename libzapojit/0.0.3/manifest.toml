@@ -1,0 +1,15 @@
+checksum = "1c645d8430e3fd8923d089d733b73069b1b745e60bd6fb36e24fe1a4b062e97a"
+licence = "LGPL-2.1-or-later"
+provides = "libzapojit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libzapojit-0.0.3_git20190715-r0.apk"
+version = "0.0.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gnome-online-accounts", "3.40.0-r0"], ["json-glib", "1.6.6-r0"], ["rest", "0.8.1-r2"], ["libsoup", "2.74.0-r0"]]

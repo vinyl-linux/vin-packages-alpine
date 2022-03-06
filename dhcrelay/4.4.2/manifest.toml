@@ -1,0 +1,15 @@
+checksum = "8e8da649a45dd004d0e48d757ddd7715aad67a5642c2a9873b6d3e407caf431c"
+licence = "MPL-2.0"
+provides = "dhcrelay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dhcrelay-4.4.2_p1-r1.apk"
+version = "4.4.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

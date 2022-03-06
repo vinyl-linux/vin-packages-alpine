@@ -1,0 +1,15 @@
+checksum = "be6e19bbbeb72dee0c3d81dd5ad0a4db341e80569ba805ad485353625dd6d013"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtquick3d-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtquick3d-dev-5.15.3_git20210104-r0.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.3"], ["qt5-qtdeclarative-dev", "5.15.3"], ["pkgconf", "1.8.0-r0"], ["qt5-qtquick3d", "5.15.3"]]

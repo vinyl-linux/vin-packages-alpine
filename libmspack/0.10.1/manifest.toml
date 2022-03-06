@@ -1,0 +1,15 @@
+checksum = "bfa071a843d247b7af1555f15161e5b62301360ee4fa36a0379987d0fdc22e72"
+licence = "LGPL-2.1-only"
+provides = "libmspack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmspack-0.10.1_alpha-r0.apk"
+version = "0.10.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

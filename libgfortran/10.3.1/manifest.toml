@@ -1,0 +1,15 @@
+checksum = "b3fcbc4b03bae5276f18506c0ddbe7625523043753decb73b5994dcadea136dd"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgfortran"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgfortran-10.3.1_git20211027-r0.apk"
+version = "10.3.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libquadmath", "10.3.1"]]

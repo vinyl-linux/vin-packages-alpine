@@ -1,0 +1,15 @@
+checksum = "2457112ba662a61a6fabd4f14d5428454cf854d51340c3a8382444ff7f438287"
+licence = "Custom"
+provides = "ldns-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ldns-tools-1.7.2_git20210911-r1.apk"
+version = "1.7.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["ldns", "1.7.2"], ["libpcap", "1.10.1-r0"], ["libssl1.1", "1.1.1-l-r8"]]

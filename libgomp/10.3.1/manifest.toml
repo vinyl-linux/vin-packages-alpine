@@ -1,0 +1,15 @@
+checksum = "29dcf6b4942a0578037b7ecc7c99ca062087236ec64896d6a547fc632be8feb0"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgomp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgomp-10.3.1_git20211027-r0.apk"
+version = "10.3.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

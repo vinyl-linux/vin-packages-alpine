@@ -1,0 +1,15 @@
+checksum = "8933ca08e09db9274839938a7fe54b2d0a1d3f96b9b6422e64e4668dc9a48f4b"
+licence = "GPL-2.0-only WITH GCC-exception-2.0"
+provides = "libgit2-1.1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libgit2-1.1-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["http-parser", "2.9.4-r0"], ["pcre", "8.45.0-r1"], ["libssh2", "1.10.0-r2"], ["libssl1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

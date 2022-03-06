@@ -1,0 +1,15 @@
+checksum = "8abee31a341c190d1c3d2c69e79e8f0c0db21c5b5bbadb8d536492de97aa4a80"
+licence = "Custom"
+provides = "drill"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/drill-1.7.2_git20210911-r1.apk"
+version = "1.7.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ldns", "1.7.2"]]

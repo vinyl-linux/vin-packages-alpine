@@ -1,0 +1,15 @@
+checksum = "de4e4035e511a5bafa6bdba11c451b24c49b165631f6259b266ff6424d38bbe9"
+licence = "MIT"
+provides = "ion-shell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/ion-shell-1.0.5_git20210627-r0.apk"
+version = "1.0.5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

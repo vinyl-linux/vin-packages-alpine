@@ -1,0 +1,15 @@
+checksum = "420769bb254c9798ecf349fbe3d8619759817e878dbf3ae8e03f98f25ef402d8"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk11-jdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk11-jdk-11.0.14_p9-r0.apk"
+version = "11.0.14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk11-jre", "11.0.14"], ["musl", "1.2.2-r7"], ["openjdk11-jre-headless", "11.0.14"]]

@@ -1,0 +1,15 @@
+checksum = "c73c0935cd87486efa01b63ef5d64c3fb27334f361ac21ad2234cc4d28b0b923"
+licence = "LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtwebview"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qt5-qtwebview-5.15.3_git20201028-r0.apk"
+version = "5.15.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtwebengine", "5.15.3"], ["qt5-qtbase", "5.15.3"], ["qt5-qtbase-x11", "5.15.3"], ["qt5-qtdeclarative", "5.15.3"], ["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

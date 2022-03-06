@@ -1,0 +1,15 @@
+checksum = "f510f3af08c56240fd1080a6c71ea443eda570e123057351f85108f17b85a04a"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk13"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/openjdk13-13.0.9_p3-r0.apk"
+version = "13.0.9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk13-jmods", "13.0.9"], ["openjdk13-demos", "13.0.9"], ["openjdk13-doc", "13.0.9"], ["openjdk13-jdk", "13.0.9"]]

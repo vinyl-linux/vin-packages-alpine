@@ -1,0 +1,15 @@
+checksum = "09fee8c7df6cd1b15f38eb7290bd99055faeebf386402600946da765df834336"
+licence = "LGPL-2.1-only"
+provides = "libmspack-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/libmspack-dev-0.10.1_alpha-r0.apk"
+version = "0.10.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmspack", "0.10.1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c89eee48dbefe16b7747a907d9ce82eced7ec7e55901f6fae749c854f2139b40"
+licence = "GPL-2.0"
+provides = "linux-edge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/linux-edge-5.16.12-r0.apk"
+version = "5.16.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.6.0-r0"], ["linux-firmware-rtw88", "20211027.0.0-r0"]]

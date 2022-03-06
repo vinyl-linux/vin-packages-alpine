@@ -1,0 +1,15 @@
+checksum = "95e2934f9e21ae0c45f2a128f89defcf2c1e2d73851bd1660f17455f26b22592"
+licence = "GPL-2.0"
+provides = "linux-edge4virt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/linux-edge4virt-5.16.12-r0.apk"
+version = "5.16.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.6.0-r0"]]
