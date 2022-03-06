@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a04b3b6b86daef4ce6978673b679c48a329571884a5c84cca5f79b3bf0b77492"
 licence = "GPL-2.0-only"
 provides = "lxc-bridge"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lxc-bridge-4.0.11-r0.apk"
 version = "4.0.11-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.0.11-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["dnsmasq", "2.86.0-r0"]]

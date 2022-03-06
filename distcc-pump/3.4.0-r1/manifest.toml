@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "07ababe178ec070da2e9f4878c81172f82c1167b2025ba89b9a5a562472fc490"
 licence = "GPL-2.0"
 provides = "distcc-pump"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/distcc-pump-3.4-r1.apk"
 version = "3.4.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.4.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

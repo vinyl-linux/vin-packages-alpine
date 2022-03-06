@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "21b843715f504fb9d52758c37dad5e5c1b65c9295ecf0b0bb9c3cd6b289f985f"
 licence = "GPL-2.0-only"
 provides = "lockfile-progs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lockfile-progs-0.1.19-r0.apk"
 version = "0.1.19-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.1.19-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["liblockfile", "1.17.0-r0"]]

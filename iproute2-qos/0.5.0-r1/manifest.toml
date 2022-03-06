@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "bbaffe832f55bfe952ad4081d9519d6b7f6a5c399dd9e32710d86e7bbcd6f027"
 licence = "GPL-2.0"
 provides = "iproute2-qos"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iproute2-qos-0.5-r1.apk"
 version = "0.5.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.5.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "5.15.0-r0"]]

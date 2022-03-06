@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c0b996243577931db2901f21a1b74ba52a0266a5918a79c1082f0a965a6d87b5"
 licence = "MIT"
 provides = "popt"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/popt-1.18-r0.apk"
 version = "1.18.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.18.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

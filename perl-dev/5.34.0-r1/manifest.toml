@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0e676e3591a8a8ea3b45be759f539e2b6294bf4c0a495349cfc78e815b8b21d1"
 licence = "Artistic-Perl OR GPL-1.0-or-later"
 provides = "perl-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-dev-5.34.0-r1.apk"
 version = "5.34.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.34.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl-utils", "5.34.0-r1"]]

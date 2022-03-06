@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c1a19d168ae6da087e58d6444b6ad51692c816244331bf39f8c374a510024147"
 licence = "MIT"
 provides = "libxmu"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxmu-1.1.3-r0.apk"
 version = "1.1.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.1.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxext", "1.3.4-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.2-r7"]]

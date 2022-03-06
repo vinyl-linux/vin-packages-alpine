@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0406689e8ec4f85512901594fa08236cd870a0da577832b52cfbc1ba10f5bacc"
 licence = "GPL-2.0-or-later"
 provides = "mariadb-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mariadb-dev-10.6.4-r2.apk"
 version = "10.6.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "10.6.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "1.1.1-l-r8"], ["zlib-dev", "1.2.11-r3"], ["mariadb-connector-c-dev", "3.1.13-r2"], ["mariadb-embedded", "10.6.4-r2"], ["pkgconf", "1.8.0-r0"]]

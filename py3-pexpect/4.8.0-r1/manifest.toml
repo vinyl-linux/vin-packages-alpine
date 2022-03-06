@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "20d09b93bfe0fcb4fa52fdef4e911a416962cbb5d93dac4362ee696c2a38c106"
 licence = "ISC"
 provides = "py3-pexpect"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-pexpect-4.8.0-r1.apk"
 version = "4.8.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.8.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-ptyprocess", "0.7.0-r1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "cbeec480799ab1b442ef02e642a86b6f61c2220f03fdfb4479f4b4bb7dbd27fd"
 licence = "GPL-2.0-or-later"
 provides = "git-p4"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/git-p4-2.34.1-r0.apk"
 version = "2.34.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.34.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["git", "2.34.1-r0"], ["git-fast-import", "2.34.1-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "eddb6f15a1ea014767345eb8f26ed1d1f3efd5c6ddea4c6b83ba31b9cbe6e0e8"
 licence = "BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain"
 provides = "ppp-passwordfd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ppp-passwordfd-2.4.9-r2.apk"
 version = "2.4.9-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.4.9-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r2"], ["musl", "1.2.2-r7"]]

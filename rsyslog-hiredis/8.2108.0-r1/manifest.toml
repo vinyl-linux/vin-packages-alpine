@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1dac7a8207d7b219a2d92f8ca3787e4c542ddc49a90a5b8492cb5e2055514b37"
 licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
 provides = "rsyslog-hiredis"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-hiredis-8.2108.0-r1.apk"
 version = "8.2108.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "8.2108.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"], ["hiredis", "1.0.2-r0"]]

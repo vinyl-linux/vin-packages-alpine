@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7f62886d1cc58365d00e981d0cd2350e0f2f0db422ff3483ba5dd2eee96d2d64"
 licence = "MIT"
 provides = "isl-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/isl-dev-0.22-r0.apk"
 version = "0.22.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.22.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gmp-dev", "6.2.1-r1"], ["isl22", "0.22.0-r0"], ["pkgconf", "1.8.0-r0"]]

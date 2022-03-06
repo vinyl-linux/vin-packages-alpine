@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9147765822b86d54919a59b33a8d9d083910290e41d4f470d704d5b0275d6e34"
 licence = "MIT"
 provides = "py3-yaml"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-yaml-5.4.1.1-r1.apk"
 version = "5.4.1.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.4.1.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["yaml", "0.2.5-r0"]]

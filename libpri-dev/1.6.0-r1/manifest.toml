@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "df658e7892e17b47c64df5ff4188c9d1d9f82de32ea8f01bfbabaa2e9e95aa71"
 licence = "GPL-2.0-only"
 provides = "libpri-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libpri-dev-1.6.0-r1.apk"
 version = "1.6.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.6.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libpri", "1.6.0-r1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b88f08f77824376aad46362a0ec85ffd200bf81db422c6d5132ea6b75ece0c74"
 licence = "GPL-2.0-only"
 provides = "daq"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/daq-2.0.7-r0.apk"
 version = "2.0.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libdnet", "1.14.0-r0"], ["libnetfilter_queue", "1.0.5-r1"], ["libpcap", "1.10.1-r0"], ["daq-sfbpf", "2.0.7-r0"]]

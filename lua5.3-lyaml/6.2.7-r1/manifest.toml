@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "efbb130ff5a620674be14e3f38c8ab5b5d823ffd2cd96c7b3052cab325fe48ec"
 licence = "MIT"
 provides = "lua5.3-lyaml"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-lyaml-6.2.7-r1.apk"
 version = "6.2.7-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "6.2.7-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"], ["lua-stdlib-normalize", "2.0.3-r1"], ["musl", "1.2.2-r7"], ["yaml", "0.2.5-r0"]]

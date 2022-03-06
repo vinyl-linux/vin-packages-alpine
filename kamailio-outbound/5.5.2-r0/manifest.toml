@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "33d141f0928ad0b30d1c210448aa64c6734e8e155ff7d709f9350badd61104ef"
 licence = "GPL-2.0-or-later"
 provides = "kamailio-outbound"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-outbound-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.5.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

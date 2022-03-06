@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "aea17767ea473b2165e8b05d909f25d7616061db75042d9ce1cf87f55712e905"
 licence = "GPL-2.0-or-later"
 provides = "quagga-dbg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/quagga-dbg-1.2.4-r5.apk"
 version = "1.2.4-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.4-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "5.15.0-r0"]]

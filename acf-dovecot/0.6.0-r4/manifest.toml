@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7b89412d23a086ffbefbc2e689df5fc3d7d5d7bec7465ff5af76068de366965f"
 licence = "GPL-2.0-only"
 provides = "acf-dovecot"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-dovecot-0.6.0-r4.apk"
 version = "0.6.0-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.6.0-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["dovecot", "2.3.17.1-r0"]]

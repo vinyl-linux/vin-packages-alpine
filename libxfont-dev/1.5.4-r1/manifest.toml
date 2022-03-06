@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a305e70b6f030e6a4b36828e08185cb3839abe39c017e6ff78f21a3459e40e50"
 licence = "custom"
 provides = "libxfont-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxfont-dev-1.5.4-r1.apk"
 version = "1.5.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.5.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libxfont", "1.5.4-r1"], ["libfontenc-dev", "1.1.4-r0"], ["xorgproto", "2021.5.0-r0"], ["freetype-dev", "2.11.0-r0"], ["pkgconf", "1.8.0-r0"]]

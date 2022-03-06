@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "524bcfb26d245870b9ef709a77a24f1b8c976a88faa9e85f022f748c116fb9c9"
 licence = "BSD-2-Clause"
 provides = "protobuf-c"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/protobuf-c-1.4.0-r0.apk"
 version = "1.4.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

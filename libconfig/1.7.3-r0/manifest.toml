@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "17bafeefd4c181a5d7e6c1aa74da34d0819f478af2319c6a91d32f61bbe546c3"
 licence = "LGPL-2.1-or-later"
 provides = "libconfig"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libconfig-1.7.3-r0.apk"
 version = "1.7.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.7.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

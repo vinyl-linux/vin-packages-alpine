@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7f9691d21a79c0fc415f098630615543cadcee9adcc55470a8abe406c63d0447"
 licence = "LGPL-2.1-or-later"
 provides = "libattr"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libattr-2.5.1-r1.apk"
 version = "2.5.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.5.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

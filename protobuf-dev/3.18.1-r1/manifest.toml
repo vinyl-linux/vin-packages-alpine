@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "12e75bf7306e0534fc653d2dbb0a9f65e3b8f074707086811c67e7a74e933bb7"
 licence = "BSD-3-Clause"
 provides = "protobuf-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/protobuf-dev-3.18.1-r1.apk"
 version = "3.18.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.18.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["protoc", "3.18.1-r1"], ["libprotobuf-lite", "3.18.1-r1"], ["libprotobuf", "3.18.1-r1"], ["libprotoc", "3.18.1-r1"], ["pkgconf", "1.8.0-r0"]]

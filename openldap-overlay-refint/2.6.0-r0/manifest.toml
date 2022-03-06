@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e35c179f0d7e871899dd309792ef8781f934c53ee0092546a702a585c7d31913"
 licence = "OLDAP-2.8"
 provides = "openldap-overlay-refint"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-overlay-refint-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

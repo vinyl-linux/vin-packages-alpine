@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "469fe9c7da2ff1640011599f502af2a21b13e60b629cb6f7dfee9c4eff1c1876"
 licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
 provides = "blkid"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/blkid-2.37.4-r0.apk"
 version = "2.37.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.37.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"]]

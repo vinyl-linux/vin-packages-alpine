@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a46643f411d8693a1778659162f68328d6e21b5eb81682031836fc7c9dbf9c62"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-test-mockmodule"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-test-mockmodule-0.177.0-r0.apk"
 version = "0.177.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.177.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-super", "1.20190531.0-r1"]]

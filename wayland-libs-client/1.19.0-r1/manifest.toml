@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c6867eca69e22b475ed1b82de20abe1242d9a334bad77ec33977f45ef39a9db5"
 licence = "MIT"
 provides = "wayland-libs-client"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/wayland-libs-client-1.19.0-r1.apk"
 version = "1.19.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.19.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"]]

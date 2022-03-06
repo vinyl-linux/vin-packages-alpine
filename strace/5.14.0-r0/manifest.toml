@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e57e43408a8fe34d0339741f1280f9cef45fde4d45cbb3d0ec58b92306900482"
 licence = "BSD-3-Clause"
 provides = "strace"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/strace-5.14-r0.apk"
 version = "5.14.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.14.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libelf", "0.185.0-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c466e7f795aad1621d5c7b7a21047767aa6d425e7a37ae78880f1115c94aa451"
 licence = "BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain"
 provides = "ppp-winbind"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ppp-winbind-2.4.9-r2.apk"
 version = "2.4.9-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.4.9-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r2"], ["musl", "1.2.2-r7"]]

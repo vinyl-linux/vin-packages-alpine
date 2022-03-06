@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fecdd7c74c146414a8fcdb99e14957ab410052fd65e512841c136c51c20f2955"
 licence = "CDDL-1.0"
 provides = "zfs-utils-py"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zfs-utils-py-2.1.2-r0.apk"
 version = "2.1.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.1.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"]]

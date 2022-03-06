@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "be99d54fc269469c8440f6526b370d2711b32a87da6486a42da7abf61b992bd6"
 licence = "ISC"
 provides = "libasr"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libasr-1.0.4-r2.apk"
 version = "1.0.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"]]

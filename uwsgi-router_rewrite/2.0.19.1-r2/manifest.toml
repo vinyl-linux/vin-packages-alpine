@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5e4ab984b77c6c9548551c189efd3e1c11c48e755bfd3876880185d722f1ca83"
 licence = "custom"
 provides = "uwsgi-router_rewrite"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-router_rewrite-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

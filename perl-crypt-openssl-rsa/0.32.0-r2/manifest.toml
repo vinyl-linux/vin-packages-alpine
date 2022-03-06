@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5522c7bd218a1be3bdce9070c6b11a2dad4d06e1c25b8005db7cc7656cc3aa11"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-crypt-openssl-rsa"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-crypt-openssl-rsa-0.32-r2.apk"
 version = "0.32.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.32.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-crypt-openssl-random", "0.15.0-r9"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

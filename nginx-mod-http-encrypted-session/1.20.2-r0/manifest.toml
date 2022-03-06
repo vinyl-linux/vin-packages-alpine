@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "10a105a7394341f08b00b4be8d5df1f7047332b87c9339acd02209699bd84505"
 licence = "BSD-2-Clause"
 provides = "nginx-mod-http-encrypted-session"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-encrypted-session-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.20.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.20.2-r0"], ["nginx-mod-devel-kit", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

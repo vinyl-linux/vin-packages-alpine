@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0f4c8159a44f452e266c3c0c1da018cbcdb5928c32aef74a45870350cfc15962"
 licence = "GPL-2.0"
 provides = "librtlsdr-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/librtlsdr-dev-0.6.0-r1.apk"
 version = "0.6.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.6.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libusb-dev", "1.0.24-r3"], ["librtlsdr", "0.6.0-r1"], ["pkgconf", "1.8.0-r0"]]

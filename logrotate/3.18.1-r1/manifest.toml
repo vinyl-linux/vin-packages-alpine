@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "96df27dcabf6513af1b68716676e947bd6053f65bdbcd094decff30b45e312a7"
 licence = "GPL-2.0-or-later"
 provides = "logrotate"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/logrotate-3.18.1-r1.apk"
 version = "3.18.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.18.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["popt", "1.18.0-r0"]]

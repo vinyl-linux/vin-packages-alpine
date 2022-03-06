@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1a2297bb3e11e24632b827d81ffde707eb7b52e1b62ec45240b9066239b2a374"
 licence = "MIT"
 provides = "py3-setuptools"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-setuptools-52.0.0-r4.apk"
 version = "52.0.0-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "52.0.0-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-ordered-set", "4.0.2-r2"], ["py3-appdirs", "1.4.4-r2"], ["py3-packaging", "20.9.0-r1"]]

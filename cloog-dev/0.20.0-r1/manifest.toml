@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "272a442090cf7f03b216e7358119e38b65876264e9c4e4b208f84ae9fe70b67c"
 licence = "GPL-2.0-or-later"
 provides = "cloog-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cloog-dev-0.20.0-r1.apk"
 version = "0.20.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.20.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gmp-dev", "6.2.1-r1"], ["isl-dev", "0.22.0-r0"], ["cloog", "0.20.0-r1"], ["pkgconf", "1.8.0-r0"]]

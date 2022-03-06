@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c2ce65ef292f5138f33bcb867f0396899678fa82065720cde3c01fc8bd67e665"
 licence = "Public-Domain"
 provides = "tinydns"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tinydns-1.05-r47.apk"
 version = "1.5.0-r47"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.5.0-r47"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

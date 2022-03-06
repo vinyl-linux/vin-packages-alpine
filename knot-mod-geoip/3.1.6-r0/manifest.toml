@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e7508a27133d34d84f69019e2dcc56241630f4e1a353b39e5d0c71b3c7a52666"
 licence = "GPL-3.0-or-later"
 provides = "knot-mod-geoip"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/knot-mod-geoip-3.1.6-r0.apk"
 version = "3.1.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.1.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["knot", "3.1.6-r0"], ["musl", "1.2.2-r7"], ["libmaxminddb", "1.6.0-r0"]]

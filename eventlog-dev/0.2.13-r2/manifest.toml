@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a71738eb582e54c9e3fe208927cf4404c8adcb06a0e2b5d2ba084d676b0ef6d2"
 licence = "BSD-3-Clause"
 provides = "eventlog-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/eventlog-dev-0.2.13-r2.apk"
 version = "0.2.13-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.2.13-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["eventlog", "0.2.13-r2"], ["pkgconf", "1.8.0-r0"]]

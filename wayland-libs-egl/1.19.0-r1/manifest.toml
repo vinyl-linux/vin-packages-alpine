@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c11ea583f172828eed1320ea6ed5fd8d841ea7fd7869fa6556eac2fefa6ec9ee"
 licence = "MIT"
 provides = "wayland-libs-egl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/wayland-libs-egl-1.19.0-r1.apk"
 version = "1.19.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.19.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

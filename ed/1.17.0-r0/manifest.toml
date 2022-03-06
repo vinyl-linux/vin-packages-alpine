@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "884d095637be34a07b1f5d32babbc6661854d12a45778f6a8ba96ca3608d5abb"
 licence = "GPL-3.0-only"
 provides = "ed"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ed-1.17-r0.apk"
 version = "1.17.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.17.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

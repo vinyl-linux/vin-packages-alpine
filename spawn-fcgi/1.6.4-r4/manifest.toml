@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a18d2b540fe861451234f6d2ceabb9f5f4b63e8daf830c6bee79d570e9adad48"
 licence = "BSD-3-Clause"
 provides = "spawn-fcgi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/spawn-fcgi-1.6.4-r4.apk"
 version = "1.6.4-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.6.4-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

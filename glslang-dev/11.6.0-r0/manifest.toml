@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a8ba43dfdfeb9029bcee877c9d47f02edf85f6027fd9c2479c1dfc04ee9d9302"
 licence = "BSD-3-Clause"
 provides = "glslang-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/glslang-dev-11.6.0-r0.apk"
 version = "11.6.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "11.6.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["glslang", "11.6.0-r0"]]

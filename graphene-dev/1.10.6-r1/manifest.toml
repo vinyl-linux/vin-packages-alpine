@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a507fd3446d56f9fa6eb710b565a3b6981ad2e44a37459ff1fd89375667ee462"
 licence = "MIT"
 provides = "graphene-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/graphene-dev-1.10.6-r1.apk"
 version = "1.10.6-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.6-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["graphene", "1.10.6-r1"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"]]

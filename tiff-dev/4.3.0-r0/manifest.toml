@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6b02374843c2fce652f4a91aa0cb7edbe52680eda47665a12c764b2d0ce051a5"
 licence = "libtiff"
 provides = "tiff-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tiff-dev-4.3.0-r0.apk"
 version = "4.3.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.3.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.11-r3"], ["libjpeg-turbo-dev", "2.1.2-r0"], ["libwebp-dev", "1.2.2-r0"], ["xz-dev", "5.2.5-r0"], ["zstd-dev", "1.5.0-r0"], ["libtiffxx", "4.3.0-r0"], ["pkgconf", "1.8.0-r0"], ["tiff", "4.3.0-r0"]]

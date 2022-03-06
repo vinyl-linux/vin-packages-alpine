@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b19e59e863e0141d9e9d973a73a25254e2e686b30c8348c0483a46c8683d5df7"
 licence = "Apache-2.0"
 provides = "lua5.3-uuid"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-uuid-0.2.0-r2.apk"
 version = "0.2.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.2.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"]]

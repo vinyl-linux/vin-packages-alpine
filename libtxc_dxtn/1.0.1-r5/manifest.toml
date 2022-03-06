@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "88d4014a308fb5d5720a300bca1d08250dafe5caca1932dea556644668dd0a6b"
 licence = "BSD"
 provides = "libtxc_dxtn"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libtxc_dxtn-1.0.1-r5.apk"
 version = "1.0.1-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.1-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

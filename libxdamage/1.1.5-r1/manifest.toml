@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7da23960e64c692e462443e600043702ddf9a34f5ef36695a9453d8842cd89e4"
 licence = "MIT"
 provides = "libxdamage"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxdamage-1.1.5-r1.apk"
 version = "1.1.5-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.1.5-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["musl", "1.2.2-r7"]]

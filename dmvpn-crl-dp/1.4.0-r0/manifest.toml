@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "cfc20104fe45361d45565842f7bde412a14d32e1f0c65c52b88847923c7215d0"
 licence = "MIT"
 provides = "dmvpn-crl-dp"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dmvpn-crl-dp-1.4.0-r0.apk"
 version = "1.4.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lighttpd", "1.4.64-r0"]]

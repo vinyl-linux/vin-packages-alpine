@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "bbb42cd6595aee73ce10ec9b8b515bff17fb6645623c27c3ca78b890ff9803a5"
 licence = "GPL-2.0-or-later"
 provides = "libisofs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libisofs-1.5.4-r2.apk"
 version = "1.5.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.5.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.2.53-r0"], ["musl", "1.2.2-r7"], ["zlib", "1.2.11-r3"]]

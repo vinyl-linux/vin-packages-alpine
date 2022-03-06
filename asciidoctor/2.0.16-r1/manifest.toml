@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9ed3c207852f27433c86f6e3bc755d4f32650d97e0e6308a7b9a1af23a512488"
 licence = "MIT"
 provides = "asciidoctor"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asciidoctor-2.0.16-r1.apk"
 version = "2.0.16-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.16-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"]]

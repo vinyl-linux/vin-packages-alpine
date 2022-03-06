@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "34cbbfe724e1b193850cb8af61d2e01ce913b969e7a84afb6f33bba8acdbaf93"
 licence = "MIT"
 provides = "lua5.1-mqtt-publish"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-mqtt-publish-0.3-r2.apk"
 version = "0.3.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.3.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.1-mosquitto", "0.4.1-r0"]]

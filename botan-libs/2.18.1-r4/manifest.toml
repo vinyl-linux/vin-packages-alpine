@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c6623dfb89ca9a1069d47a1c9b9943cb8fe76043ee621aa224361963712d7c19"
 licence = "BSD-2-Clause"
 provides = "botan-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/botan-libs-2.18.1-r4.apk"
 version = "2.18.1-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.18.1-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libgomp", "10.3.1"], ["xz-libs", "5.2.5-r0"], ["sqlite-libs", "3.36.0-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

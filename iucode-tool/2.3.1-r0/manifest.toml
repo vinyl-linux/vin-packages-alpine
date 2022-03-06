@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "53b25bb689f98d8a9b672f198a263194d030e4bb43a977f4d61a5920393dff6d"
 licence = "GPLv2+"
 provides = "iucode-tool"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iucode-tool-2.3.1-r0.apk"
 version = "2.3.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

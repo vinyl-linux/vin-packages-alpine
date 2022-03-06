@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b8671b3a494f9385ca162b83fbc192ebfa1fc91de33c709986e15cbc992bec44"
 licence = "GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later"
 provides = "xz-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xz-dev-5.2.5-r0.apk"
 version = "5.2.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.2.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["xz-libs", "5.2.5-r0"]]

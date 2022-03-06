@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "21b48c2db0828255623d32ea36529163d0868c7c360eec9ea99342949d149da3"
 licence = "GPL-2.0-or-later"
 provides = "bluez-deprecated"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bluez-deprecated-5.63-r0.apk"
 version = "5.63.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.63.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.12.20-r4"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["readline", "8.1.1-r0"], ["eudev-libs", "3.2.11"]]

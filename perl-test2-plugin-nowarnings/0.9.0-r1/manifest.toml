@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b6bf3f7b1515297eca20b6933c914073b527c46b390eaa47e82f8565c6c9dc4c"
 licence = "Artistic-2.0"
 provides = "perl-test2-plugin-nowarnings"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-test2-plugin-nowarnings-0.09-r1.apk"
 version = "0.9.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.9.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-ipc-run3", "0.48.0-r2"], ["perl-test2-suite", "0.142.0-r0"], ["perl-test-simple", "1.302188.0-r1"]]

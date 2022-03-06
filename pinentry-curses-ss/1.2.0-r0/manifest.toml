@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "63e1a1f74d21f1e568b66cda58569258237c5ea9f4630f66cb86f423b57d476f"
 licence = "GPL-2.0-or-later"
 provides = "pinentry-curses-ss"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pinentry-curses-ss-1.2.0-r0.apk"
 version = "1.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["libassuan", "2.5.5-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"], ["glib", "2.70.1-r0"], ["libgpg-error", "1.42.0-r1"], ["ncurses-libs", "6.3.0"], ["libsecret", "0.20.4-r1"]]

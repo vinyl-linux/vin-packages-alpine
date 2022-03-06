@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "65db28a476d9d0a00f09d57e07f5038d34412e0b86e5f656f4fd43656ca389cf"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-compress-raw-bzip2"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-compress-raw-bzip2-2.101-r1.apk"
 version = "2.101.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.101.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "21ddf6f9ce77476c8ba5f77ab1c8b3c413c69d1ef9b2e5bac5ff0ff24d693951"
 licence = "GPL-2.0-or-later"
 provides = "bluez-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bluez-libs-5.63-r0.apk"
 version = "5.63.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.63.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

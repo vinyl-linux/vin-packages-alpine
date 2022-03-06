@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5d03fb0693e75e82a974d9c48b5fde351d064b89b64ec8e122f793273274679e"
 licence = "GPL-3.0-or-later"
 provides = "gdbm"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gdbm-1.22-r0.apk"
 version = "1.22.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.22.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

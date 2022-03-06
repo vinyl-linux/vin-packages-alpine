@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "46ada03eaacc6b6ed8eb1e246d8711c9c5bb762e6b931078e5e30e63bc78c95c"
 licence = "custom"
 provides = "fcgi-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fcgi-dev-2.4.2-r1.apk"
 version = "2.4.2-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.4.2-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["fcgi++", "2.4.2-r1"], ["fcgi", "2.4.2-r1"], ["pkgconf", "1.8.0-r0"]]

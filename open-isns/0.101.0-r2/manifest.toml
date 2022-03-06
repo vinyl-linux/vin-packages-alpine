@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4f19c816d711a01c5316599780b87e078afba42b11caad7ab1fbe72ce693f53f"
 licence = "LGPL-2.1-or-later"
 provides = "open-isns"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/open-isns-0.101-r2.apk"
 version = "0.101.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.101.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["open-isns-lib", "0.101.0-r2"]]

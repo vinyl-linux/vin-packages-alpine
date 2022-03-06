@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1fd9f93fbc306022cab195491fcd9401ce0a45f5ca4759290b10c4d48f5d2fff"
 licence = "MIT"
 provides = "mqtt-exec"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mqtt-exec-0.4-r5.apk"
 version = "0.4.0-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.4.0-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["mosquitto-libs", "2.0.14-r0"]]

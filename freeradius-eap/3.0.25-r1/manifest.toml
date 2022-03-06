@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "52a8647c72b0d456f633ad7dcccbc41e75922350d3dc240dcff22e2a5b006369"
 licence = "GPL-2.0-or-later"
 provides = "freeradius-eap"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeradius-eap-3.0.25-r1.apk"
 version = "3.0.25-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.0.25-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.25-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["freeradius-lib", "3.0.25-r1"], ["libssl1.1", "1.1.1-l-r8"], ["talloc", "2.3.3-r0"]]

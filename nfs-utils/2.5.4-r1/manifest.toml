@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "369b21a30b6b35becd5b0a852cf7d4c4011791331962fcec46a955552fc2ee54"
 licence = "GPL-2.0-or-later BSD-3-Clause"
 provides = "nfs-utils"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nfs-utils-2.5.4-r1.apk"
 version = "2.5.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.5.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["rpcbind", "1.2.6-r0"], ["python3", "3.9.7-r4"], ["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"], ["libcom_err", "1.46.4-r0"], ["device-mapper-libs", "2.2.187-r2"], ["libevent", "2.1.12-r4"], ["krb5-libs", "1.19.2-r4"], ["keyutils-libs", "1.6.3-r0"], ["libmount", "2.37.4-r0"], ["libnfsidmap", "2.5.4-r1"], ["sqlite-libs", "3.36.0-r0"], ["libtirpc", "1.3.2-r0"], ["libuuid", "2.37.4-r0"]]

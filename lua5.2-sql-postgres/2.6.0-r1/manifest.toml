@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3879a4e704d3e83b8f4cf2cef31860a08a61ce8b785181caee754ee2e79fa7c7"
 licence = "MIT"
 provides = "lua5.2-sql-postgres"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-sql-postgres-2.6.0-r1.apk"
 version = "2.6.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r7"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

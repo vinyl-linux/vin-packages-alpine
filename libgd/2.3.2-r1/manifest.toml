@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "692f264854994bec937a9cfc63891b0ab44c00638e08ee2682d334091dbd8113"
 licence = "custom"
 provides = "libgd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgd-2.3.2-r1.apk"
 version = "2.3.2-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.2-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["freetype", "2.11.0-r0"], ["libjpeg-turbo", "2.1.2-r0"], ["libpng", "1.6.37-r1"], ["libwebp", "1.2.2-r0"], ["zlib", "1.2.11-r3"]]

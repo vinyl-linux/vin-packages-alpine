@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ef505ee32a4688b97e06549f8c9875a328f66e9684b5b3ccee6dc6ca4f7c1002"
 licence = "MIT"
 provides = "libunwind"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libunwind-1.5.0-r1.apk"
 version = "1.5.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.5.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["xz-libs", "5.2.5-r0"]]

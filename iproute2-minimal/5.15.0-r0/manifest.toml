@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "db5d2969e3f52c5e0f70dce6d4b936a30de9482bb9c70c3350785c3cac21299b"
 licence = "GPL-2.0-or-later"
 provides = "iproute2-minimal"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iproute2-minimal-5.15.0-r0.apk"
 version = "5.15.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.15.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libelf", "0.185.0-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "96bff1880006ebb68ba46769f13c78e96f0cd4e7fd4c8850e4e58524ae75f077"
 licence = "GPL-2.0-only LGPL-2.1-only"
 provides = "device-mapper-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/device-mapper-libs-2.02.187-r2.apk"
 version = "2.2.187-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.2.187-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

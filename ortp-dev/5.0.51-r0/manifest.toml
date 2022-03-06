@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "896d77b1f9c8661d9b8e5c1c033581ba06df2dc9a02f54654f184821d3bf9210"
 licence = "LGPL-2.0-or-later VSL"
 provides = "ortp-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ortp-dev-5.0.51-r0.apk"
 version = "5.0.51-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.0.51-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ortp", "5.0.51-r0"], ["pkgconf", "1.8.0-r0"]]

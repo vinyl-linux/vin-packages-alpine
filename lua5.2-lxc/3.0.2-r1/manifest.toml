@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "159877b8a58779ec3df949e228593b923a79b6ef955d71fdc468c0fe7d8e3104"
 licence = "LGPL-2.1-or-later"
 provides = "lua5.2-lxc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-lxc-3.0.2-r1.apk"
 version = "3.0.2-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.0.2-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["lxc-libs", "4.0.11-r0"]]

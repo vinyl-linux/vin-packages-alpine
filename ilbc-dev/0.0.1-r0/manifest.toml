@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0f2357ff483a4ec033dfd5c1a57d35c1d47d1b3ec59cab96947c6064b5e535d1"
 licence = "BSD"
 provides = "ilbc-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ilbc-dev-0.0.1-r0.apk"
 version = "0.0.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.0.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ilbc", "0.0.1-r0"], ["pkgconf", "1.8.0-r0"]]

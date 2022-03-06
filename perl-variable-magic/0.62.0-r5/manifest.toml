@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4c7222d40e4f124746c6332b1773a718b4ba8ba3be55abb72dec82f1006daa34"
 licence = "GPL PerlArtistic"
 provides = "perl-variable-magic"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-variable-magic-0.62-r5.apk"
 version = "0.62.0-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.62.0-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

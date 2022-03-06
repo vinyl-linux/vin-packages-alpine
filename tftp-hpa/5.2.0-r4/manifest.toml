@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4393c6ac7f73ef986f7a1bf190884539f8b8641f8c9a713e9357d4b566785710"
 licence = "BSD"
 provides = "tftp-hpa"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tftp-hpa-5.2-r4.apk"
 version = "5.2.0-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.2.0-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

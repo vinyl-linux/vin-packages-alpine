@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e832e7f51c5cfaa800bec50758ecb1eb56f29f931a15ad1855a29a9a43d2e17f"
 licence = "MIT"
 provides = "nghttp2"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nghttp2-1.46.0-r0.apk"
 version = "1.46.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.46.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["libev", "4.33.0-r0"], ["libgcc", "10.3.1"], ["nghttp2-libs", "1.46.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

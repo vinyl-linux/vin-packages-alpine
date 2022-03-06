@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "aac04e6ff8b1ffe852b2471b20d079185e71d13c91970d8ba5624ab7fff7284a"
 licence = "MIT"
 provides = "lua5.2-rex-posix"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-rex-posix-2.9.1-r1.apk"
 version = "2.9.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.9.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

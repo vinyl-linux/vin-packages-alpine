@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d74ed1768ee2e3a048c9ea11518faf58d3c7e0083ae43d0f0f1d91026a9058b9"
 licence = "BSD-3-Clause"
 provides = "libbsd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libbsd-0.11.3-r1.apk"
 version = "0.11.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.11.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libmd", "1.0.3-r0"]]

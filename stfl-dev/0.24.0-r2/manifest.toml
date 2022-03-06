@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "880d57407cacabd0e77a4b92d5c9c5eabe9eaddb082b8d394605106200a626e6"
 licence = "LGPL-3.0-or-later"
 provides = "stfl-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/stfl-dev-0.24-r2.apk"
 version = "0.24.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.24.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["stfl", "0.24.0-r2"]]

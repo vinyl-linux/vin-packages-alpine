@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "15a5d54df305d1581d4ba73dedd9a35845de5ae24f9a51459d789cbe5d96cec5"
 licence = "GPL-2.0"
 provides = "skytraq-datalogger"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/skytraq-datalogger-0.5.1-r1.apk"
 version = "0.5.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.5.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"]]

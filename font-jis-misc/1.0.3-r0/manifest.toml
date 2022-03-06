@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0806b59fbebfd58edd4ed75c7c7b93efd906586d63be1ed2ad0a47683f9f9c20"
 licence = "custom"
 provides = "font-jis-misc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/font-jis-misc-1.0.3-r0.apk"
 version = "1.0.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

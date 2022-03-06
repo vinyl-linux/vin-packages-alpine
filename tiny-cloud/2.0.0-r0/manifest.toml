@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a5c171cd8269b742ba94ca38bb80dab649a1da85807a9878550dd2d77d33e71a"
 licence = "MIT"
 provides = "tiny-cloud"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tiny-cloud-2.0.0-r0.apk"
 version = "2.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["e2fsprogs-extra", "1.46.4-r0"], ["partx", "2.37.4-r0"], ["sfdisk", "2.37.4-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "587fe03a7dcce3819361fc8f61f721edfd69fac646946b35f29d649028b5ecdc"
 licence = "GPL-2.0-or-later"
 provides = "rdiff-backup"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rdiff-backup-2.0.5-r3.apk"
 version = "2.0.5-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.5-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["librsync", "2.3.2-r0"]]

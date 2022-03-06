@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c8f49a3524ea4e27e549ef49005938a5a8c3f5613c9484f85ab760836fcc7d52"
 licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
 provides = "irssi-otr"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/irssi-otr-1.2.3-r3.apk"
 version = "1.2.3-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.3-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["irssi", "1.2.3-r3"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libotr", "4.1.1-r2"]]

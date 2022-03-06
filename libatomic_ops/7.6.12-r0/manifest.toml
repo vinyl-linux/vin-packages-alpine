@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "eea353aa0a2086706de9291016a0f62df7f481ad850e7bc7495b937aac950cb5"
 licence = "GPL-2.0-or-later AND MIT"
 provides = "libatomic_ops"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libatomic_ops-7.6.12-r0.apk"
 version = "7.6.12-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "7.6.12-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

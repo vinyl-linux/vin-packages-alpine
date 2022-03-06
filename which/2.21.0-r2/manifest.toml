@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5a5bbb6315f0d37bc2c6beb3bee2fb2cae428a6be8be505a05080aa99a506523"
 licence = "GPL-3.0"
 provides = "which"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/which-2.21-r2.apk"
 version = "2.21.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.21.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

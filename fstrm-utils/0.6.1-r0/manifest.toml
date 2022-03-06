@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "941ee4898923807a036ba4026c89539c669991388a0bf2b5989b90c39c7eb44e"
 licence = "MIT"
 provides = "fstrm-utils"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fstrm-utils-0.6.1-r0.apk"
 version = "0.6.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.6.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["fstrm", "0.6.1-r0"]]

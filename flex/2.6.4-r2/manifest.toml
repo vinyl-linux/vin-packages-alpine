@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "761214a6d1522fd2018adec6e7d0b513ffd1db538aeb9842ad3ac0729f08cc44"
 licence = "BSD-2-Clause AND LGPL-2.0-or-later"
 provides = "flex"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/flex-2.6.4-r2.apk"
 version = "2.6.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["m4", "1.4.18-r2"], ["musl", "1.2.2-r7"]]

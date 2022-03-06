@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "879d66092b6f3b5862381827cb0624ceabe1f7ec31e01d640f012e750edbcbb0"
 licence = "BSD-3-Clause AND MIT"
 provides = "xmlrpc-c-client"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xmlrpc-c-client-1.51.07-r0.apk"
 version = "1.51.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.51.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcurl", "7.80.0-r0"], ["xmlrpc-c", "1.51.7-r0"]]

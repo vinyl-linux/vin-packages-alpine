@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ca7fc7204fdb9f861d78af027d7c328e157c77879bfd84ab1fd36fdf88eb12ed"
 licence = "GPL-2.0-or-later"
 provides = "pinentry-tty"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pinentry-tty-1.2.0-r0.apk"
 version = "1.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libassuan", "2.5.5-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"], ["libgpg-error", "1.42.0-r1"]]

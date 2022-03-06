@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "07b260c492d8cb117441ce7a31edf288deb9909c1b165549ac6c9a83ebd38a2e"
 licence = "GPL-2.0-only"
 provides = "acf-freeswitch"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-freeswitch-0.8.0-r4.apk"
 version = "0.8.0-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.8.0-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["freeswitch", "1.10.7-r0"], ["lua-luaxml", "130610.0.0-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5c219f7df35a185c8c1953fc7f9ba5c7f5233f5f9c02a1e92d38182a55420d9e"
 licence = "LGPL-2.1-or-later"
 provides = "libusb-compat"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libusb-compat-0.1.7-r1.apk"
 version = "0.1.7-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.1.7-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libusb", "1.0.24-r3"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e7bd6e991d0b5e000aa41de400a83786e5fd1bd86f488e9ae575c0daa736c69b"
 licence = "BSD-3-Clause"
 provides = "pgtcl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pgtcl-2.1.0-r1.apk"
 version = "2.1.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.1.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

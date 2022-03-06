@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4b26fc2fde289dba4dbd43e8af5b87941c7161dffc1f5ce427b8d0c7a02a6287"
 licence = "GPL-3.0-or-later LGPL-3.0-or-later"
 provides = "samba-server-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/samba-server-libs-4.15.5-r0.apk"
 version = "4.15.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.15.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["samba-libs", "4.15.5-r0"], ["libldap", "2.6.0-r0"], ["samba-util-libs", "4.15.5-r0"], ["samba-common-server-libs", "4.15.5-r0"], ["talloc", "2.3.3-r0"], ["tevent", "0.11.0-r0"]]

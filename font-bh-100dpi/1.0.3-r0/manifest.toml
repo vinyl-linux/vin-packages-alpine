@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5c169812d428c6ed0bd7ea0bcdbaceeb4ea6f58c6aa2b96ba28d5d2025c9f185"
 licence = "custom"
 provides = "font-bh-100dpi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/font-bh-100dpi-1.0.3-r0.apk"
 version = "1.0.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

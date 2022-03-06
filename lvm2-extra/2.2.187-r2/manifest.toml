@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f0fc438bd78fa9bcd4bbb8641bdad2f77e68d74d6f71a0bc568aa9874446a95f"
 licence = "GPL-2.0-only LGPL-2.1-only"
 provides = "lvm2-extra"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lvm2-extra-2.02.187-r2.apk"
 version = "2.2.187-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.2.187-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["coreutils", "9.0.0-r2"]]

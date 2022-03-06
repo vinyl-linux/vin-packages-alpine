@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "249c3d9356092cca7709e1792072b8e62789b3d8b2feb8eedee6aa473906d773"
 licence = "GPL"
 provides = "swish-e"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/swish-e-2.4.7-r12.apk"
 version = "2.4.7-r12"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.4.7-r12"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl-html-parser", "3.76.0-r1"], ["perl-html-tagset", "3.20.0-r3"], ["perl-libwww", "6.58.0-r0"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d05c15867efa8dedb044a68cbd1895f74607a2288ea8fc6d1b48456d345cb2aa"
 licence = "Zlib"
 provides = "tinyxml2"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tinyxml2-9.0.0-r0.apk"
 version = "9.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "9.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

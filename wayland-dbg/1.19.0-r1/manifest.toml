@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8897544f89eafbc01edda0deedf3406e18ec1da0a3192b1f6b0b266c93c35709"
 licence = "MIT"
 provides = "wayland-dbg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/wayland-dbg-1.19.0-r1.apk"
 version = "1.19.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.19.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["wayland-libs-client", "1.19.0-r1"], ["wayland-libs-cursor", "1.19.0-r1"], ["wayland-libs-egl", "1.19.0-r1"], ["wayland-libs-server", "1.19.0-r1"]]

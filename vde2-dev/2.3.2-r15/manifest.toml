@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d14013a7601cde2cc07d863607159d6a7104885a993c5e1e0151d321ca855d41"
 licence = "GPL"
 provides = "vde2-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vde2-dev-2.3.2-r15.apk"
 version = "2.3.2-r15"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.2-r15"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["vde2-libs", "2.3.2-r15"]]

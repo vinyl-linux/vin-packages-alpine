@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1a3e6932ece1aee348e87db203d76b67a2d2e4914141b1702217be640071de78"
 licence = "bzip2-1.0.6"
 provides = "bzip2"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bzip2-1.0.8-r1.apk"
 version = "1.0.8-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.8-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

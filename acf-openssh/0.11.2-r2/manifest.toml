@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b6aaa52efda95b9085479e7eaf213b3ce55a1bced3e532a690819690f4f3e195"
 licence = "GPL-2.0-only"
 provides = "acf-openssh"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-openssh-0.11.2-r2.apk"
 version = "0.11.2-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.11.2-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["openssh", "8.8.0"]]

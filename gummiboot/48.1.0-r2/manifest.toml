@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f9c9c5de598da9a3967c3b93fe9ad0baafb09544b61ff3e23e9853933095721e"
 licence = "LGPL-2.0-or-later"
 provides = "gummiboot"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gummiboot-48.1-r2.apk"
 version = "48.1.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "48.1.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gummiboot-efistub", "48.1.0-r2"], ["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"]]

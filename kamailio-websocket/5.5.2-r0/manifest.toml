@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "41c9bb0ab7899207bf35392e4fa6d4f0e3ee6f3c46b8d7cfcd26d4295cda2ee8"
 licence = "GPL-2.0-or-later"
 provides = "kamailio-websocket"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-websocket-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.5.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libunistring", "0.9.10-r1"]]

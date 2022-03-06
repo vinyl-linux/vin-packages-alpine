@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1722d88e31fbbe2a32a0f4e593d3ea5a59f691e43a2304893e71197f414e623d"
 licence = "IPL-1.0 EPL-2.0"
 provides = "postfix-stone"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postfix-stone-3.6.4-r0.apk"
 version = "3.6.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.6.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["postfix", "3.6.4-r0"]]

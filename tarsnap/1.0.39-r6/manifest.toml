@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "57ad84cf6e2543878735e963b8c1674f40f4f1074979fc3b04d1334bea79c288"
 licence = "custom"
 provides = "tarsnap"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tarsnap-1.0.39-r6.apk"
 version = "1.0.39-r6"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.39-r6"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

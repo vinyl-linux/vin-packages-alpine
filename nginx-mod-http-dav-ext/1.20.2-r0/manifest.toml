@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "07c3fbfb001c6a2e4da2e3f09913741bbc47b7c46da29515eb6671aaf796f7a5"
 licence = "BSD-2-Clause"
 provides = "nginx-mod-http-dav-ext"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-dav-ext-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.20.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"], ["libxml2", "2.9.12-r2"]]

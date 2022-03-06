@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0dda5cf0f159f7d76292297d075a9350385f40bdc689d249363a870767281c32"
 licence = "GPL-3.0-or-later"
 provides = "findutils-locate"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/findutils-locate-4.8.0-r1.apk"
 version = "4.8.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.8.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

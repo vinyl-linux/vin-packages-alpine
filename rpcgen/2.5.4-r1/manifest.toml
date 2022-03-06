@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "bc4010a391b4747984f131727c8b0ef6d01895599231643a24ddc9adb779873f"
 licence = "GPL-2.0-or-later BSD-3-Clause"
 provides = "rpcgen"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rpcgen-2.5.4-r1.apk"
 version = "2.5.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.5.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["rpcbind", "1.2.6-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"]]

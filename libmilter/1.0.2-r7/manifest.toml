@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5bbd8efc403d915500feeea783e295090594bc3b41cf2e2a1665649b80664cf7"
 licence = "Sendmail"
 provides = "libmilter"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libmilter-1.0.2-r7.apk"
 version = "1.0.2-r7"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.2-r7"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

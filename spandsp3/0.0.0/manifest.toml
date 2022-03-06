@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "96145e28344a378e4180a6c5f9b528a6ab1fbad0880c031d90ca96ff9df38117"
 licence = "LGPL-2.1-only"
 provides = "spandsp3"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/spandsp3-0_git20201102-r0.apk"
 version = "0.0.0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.0.0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libjpeg-turbo", "2.1.2-r0"], ["tiff", "4.3.0-r0"]]

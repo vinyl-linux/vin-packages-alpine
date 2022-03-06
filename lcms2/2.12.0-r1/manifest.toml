@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "23fb625f6458208166efca4dc2202e8bec01f5093b6cba6a4fea777886b7e3b3"
 licence = "MIT GPL-3.0-only"
 provides = "lcms2"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lcms2-2.12-r1.apk"
 version = "2.12.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.12.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

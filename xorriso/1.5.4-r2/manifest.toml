@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7a9c26cbae911e71755e61dabe6014b8509ca23be76b39749779c977be0fdc8c"
 licence = "GPL-2.0-or-later"
 provides = "xorriso"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xorriso-1.5.4-r2.apk"
 version = "1.5.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.5.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libisoburn", "1.5.4-r2"]]

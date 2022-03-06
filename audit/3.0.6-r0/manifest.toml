@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "682201a2060abb4cbd3ad6cc184aa5ebf80ad2b15671db1385ffd9b0c25c1b31"
 licence = "GPL-2.0-or-later"
 provides = "audit"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/audit-3.0.6-r0.apk"
 version = "3.0.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.0.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["audit-libs", "3.0.6-r0"], ["musl", "1.2.2-r7"], ["libcap-ng", "0.8.2-r1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d4dc4e7a54c684ba0c9ab6fe30f64dc0e98fa2bfc7d4976c15505e3b6c180ddb"
 licence = "TCL"
 provides = "tcl-tls"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tcl-tls-1.7.22-r2.apk"
 version = "1.7.22-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.7.22-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a1fb2eb5d4fda027a2ea6bc058d399f577c5e120bb220201a198fa17f6838b2a"
 licence = "GPL-3.0-only"
 provides = "nagios-plugins-real"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-real-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

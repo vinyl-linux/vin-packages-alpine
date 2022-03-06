@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e3731fd3a78295cc3875ff75b3a30df478ce514cb7b51a5174f002e79811e9d5"
 licence = "MPL-1.1"
 provides = "freeswitch-pgsql"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeswitch-pgsql-1.10.7-r0.apk"
 version = "1.10.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["freeswitch", "1.10.7-r0"], ["libpq", "14.2.0-r0"]]

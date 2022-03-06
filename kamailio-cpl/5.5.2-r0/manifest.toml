@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3f0ada467003632239ca87dcff06b8b331f4d13cfb7dfbed22d1daaa1d8214ad"
 licence = "GPL-2.0-or-later"
 provides = "kamailio-cpl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-cpl-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.5.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libxml2", "2.9.12-r2"]]

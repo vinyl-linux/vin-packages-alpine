@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4eab8854c08f7ec8af54d47206e19a81e329edb0de9af95dc929235fc0ea2280"
 licence = "BSD-2-Clause-NetBSD"
 provides = "linenoise-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/linenoise-dev-1.0-r1.apk"
 version = "1.0.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["linenoise", "1.0.0-r1"]]

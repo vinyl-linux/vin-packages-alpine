@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "caf1271e38115f688be34c2b79dd429599370c4195201f4e6d2a7085023f8fb7"
 licence = "GPL-3.0-or-later"
 provides = "grub-bios"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/grub-bios-2.06-r2.apk"
 version = "2.6.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["grub", "2.6.0-r2"]]

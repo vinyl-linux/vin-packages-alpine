@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "cf91a20186f05d5042fa3245474d85a268cd6d849614f78e7a78945b7e51ae37"
 licence = "MIT"
 provides = "one-context"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/one-context-0.5.5-r0.apk"
 version = "0.5.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.5.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["blkid", "2.37.4-r0"]]

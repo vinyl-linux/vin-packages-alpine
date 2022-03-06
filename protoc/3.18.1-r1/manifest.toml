@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e33ae53122be87200d85388f68727f853b9122912750bc25f7548597e02a2b09"
 licence = "BSD-3-Clause"
 provides = "protoc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/protoc-3.18.1-r1.apk"
 version = "3.18.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.18.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libprotoc", "3.18.1-r1"], ["libstdc++", "10.3.1"]]

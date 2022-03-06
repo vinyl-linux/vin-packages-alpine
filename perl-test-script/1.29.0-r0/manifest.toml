@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fd835dc6797b4a27818c610ab28e8dd55b56b6d2eb367499f684e398be906efe"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-test-script"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-test-script-1.29-r0.apk"
 version = "1.29.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.29.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl-ipc-run3", "0.48.0-r2"], ["perl-probe-perl", "0.3.0-r2"], ["perl-test-simple", "1.302188.0-r1"]]

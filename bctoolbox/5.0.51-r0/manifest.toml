@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9323bae136c2bf03b42918c1fe3be4a9d850dd7fc099e5921f7c6915a13b390d"
 licence = "GPL-2.0-or-later"
 provides = "bctoolbox"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bctoolbox-5.0.51-r0.apk"
 version = "5.0.51-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.0.51-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["mbedtls", "2.16.12-r0"], ["libstdc++", "10.3.1"]]

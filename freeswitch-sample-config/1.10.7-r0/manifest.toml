@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "77b24f190aa198b0b873fabfcd6bb2f514c8da4dacafdfe8a9f2cc1e6a6b75c4"
 licence = "MPL-1.1"
 provides = "freeswitch-sample-config"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeswitch-sample-config-1.10.7-r0.apk"
 version = "1.10.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["freeswitch-timezones", "1.10.7-r0"]]

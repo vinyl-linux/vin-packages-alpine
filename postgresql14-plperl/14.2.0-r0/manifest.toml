@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b58538651da3feade3a828ebb7cd52651b626b76be46524d886b48e824e13b77"
 licence = "PostgreSQL"
 provides = "postgresql14-plperl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql14-plperl-14.2-r0.apk"
 version = "14.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "14.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["postgresql14", "14.2.0-r0"], ["musl", "1.2.2-r7"], ["perl", "5.34.0-r1"]]

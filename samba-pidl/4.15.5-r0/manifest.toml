@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "28c84f9d7aa0d8ae6ed6fc42e3ef944151671cbf23e0a6f88bc7ca5ed89c5000"
 licence = "GPL-3.0-or-later LGPL-3.0-or-later"
 provides = "samba-pidl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/samba-pidl-4.15.5-r0.apk"
 version = "4.15.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.15.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"]]

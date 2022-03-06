@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "484c9dcacc99b6cb7c9559ce2b0c6a77325d72ed3009463656940030c37c9d93"
 licence = "GPL-2.0-only"
 provides = "acf-dhcp"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-dhcp-0.9.1-r2.apk"
 version = "0.9.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.9.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["dhcp", "4.4.2"]]

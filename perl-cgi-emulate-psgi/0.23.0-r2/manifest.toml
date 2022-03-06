@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5a7fa549ab034b8eee5da1b47de1690b1897c20c0124138d7c89e88aac156713"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-cgi-emulate-psgi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-cgi-emulate-psgi-0.23-r2.apk"
 version = "0.23.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.23.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-http-message", "6.35.0-r0"], ["perl-cgi", "4.53.0-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ea0407377e731ff4ac215290866edc729237e97a9749c50b3d95c267d689c544"
 licence = "LGPL-2.0-or-later"
 provides = "cdparanoia-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cdparanoia-dev-10.2-r9.apk"
 version = "10.2.0-r9"
 
 [commands]
@@ -10,3 +10,6 @@ version = "10.2.0-r9"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["cdparanoia-libs", "10.2.0-r9"]]

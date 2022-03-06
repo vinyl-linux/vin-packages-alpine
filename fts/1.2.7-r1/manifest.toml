@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "313840bf8ef1423ae365ff8a1c6833ac0a94000726a47bdab594fa1da036c25a"
 licence = "BSD-3-Clause"
 provides = "fts"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fts-1.2.7-r1.apk"
 version = "1.2.7-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.7-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5eef48745fcd55303d627a2515be1413d4dd57aa353d280e021714aeee4861f9"
 licence = "MIT"
 provides = "lua5.1-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-libs-5.1.5-r8.apk"
 version = "5.1.5-r8"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.1.5-r8"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

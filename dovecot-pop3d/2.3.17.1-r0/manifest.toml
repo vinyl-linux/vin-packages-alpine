@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2f0acba57b92faa07c7904523552349e958ec48a3c5829a061bad3a9ae733d12"
 licence = "LGPL-2.0-or-later"
 provides = "dovecot-pop3d"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dovecot-pop3d-2.3.17.1-r0.apk"
 version = "2.3.17.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.17.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.17.1-r0"], ["musl", "1.2.2-r7"]]

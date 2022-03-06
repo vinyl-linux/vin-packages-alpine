@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2355a5ecc4e02277145fba04c816296aa2082eb35ed549a8f128d93dd26cfd47"
 licence = "GPL-2.0-or-later or GPL-3.0-or-later"
 provides = "libksba-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libksba-dev-1.6.0-r0.apk"
 version = "1.6.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.6.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libksba", "1.6.0-r0"], ["libgpg-error-dev", "1.42.0-r1"], ["pkgconf", "1.8.0-r0"]]

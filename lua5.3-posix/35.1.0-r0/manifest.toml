@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e49d4df70fd8c2a5ff10109deea9e5752d65cae840bbe44b23295d38dcea8665"
 licence = "MIT"
 provides = "lua5.3-posix"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-posix-35.1-r0.apk"
 version = "35.1.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "35.1.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.3-bit32", "5.3.0-r4"], ["musl", "1.2.2-r7"]]

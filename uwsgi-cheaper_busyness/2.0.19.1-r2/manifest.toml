@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "881a83349ad05a7a0495df4a3d9b6a91544549fd1a7da3107a1fad736d2ebe79"
 licence = "custom"
 provides = "uwsgi-cheaper_busyness"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-cheaper_busyness-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

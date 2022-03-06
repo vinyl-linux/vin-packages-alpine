@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d81faa936d72426080fec238086c132a3f34bfa666e3d475a68f82955c8aeda3"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-net-async-http"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-net-async-http-0.48-r1.apk"
 version = "0.48.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.48.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-io-async", "0.79.0-r0"], ["perl-future", "0.47.0-r0"], ["perl-uri", "5.10.0-r0"], ["perl-http-message", "6.35.0-r0"], ["perl-struct-dumb", "0.12.0-r1"], ["perl-metrics-any", "0.7.0-r0"]]

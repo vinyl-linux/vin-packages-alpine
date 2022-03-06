@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "36a23059c08c2f69242300aef11b57c068894e71db97db8ba799309173f2af3a"
 licence = "Vim"
 provides = "vim"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vim-8.2.4173-r0.apk"
 version = "8.2.4173-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "8.2.4173-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["xxd", "8.2.4173-r0"], ["musl", "1.2.2-r7"], ["lua5.3-libs", "5.3.6-r1"], ["ncurses-libs", "6.3.0"]]

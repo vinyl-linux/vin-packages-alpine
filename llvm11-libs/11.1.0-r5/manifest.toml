@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "450891edaab68e6fe1483a15e352c30d3337fd18e549ef4ddfd3501258cbd8dd"
 licence = "Apache-2.0"
 provides = "llvm11-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/llvm11-libs-11.1.0-r5.apk"
 version = "11.1.0-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "11.1.0-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["libxml2", "2.9.12-r2"], ["zlib", "1.2.11-r3"]]

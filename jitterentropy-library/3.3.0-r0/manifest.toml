@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "90acec09eadaec3000a080e3131eff407ff1d18ff7e48e2caa1a52291ff0c285"
 licence = "BSD-3-Clause OR GPL-2.0-Only"
 provides = "jitterentropy-library"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/jitterentropy-library-3.3.0-r0.apk"
 version = "3.3.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.3.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

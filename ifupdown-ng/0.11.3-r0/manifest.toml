@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "bbc80ba05f207eb5bc020c9ebc3cb8842c2a67ace14ed858df3108ad19789592"
 licence = "ISC"
 provides = "ifupdown-ng"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ifupdown-ng-0.11.3-r0.apk"
 version = "0.11.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.11.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

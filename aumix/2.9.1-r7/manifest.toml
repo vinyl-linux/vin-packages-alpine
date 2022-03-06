@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b227d6cc89f2be539360fd1e41ad010370fe7360fad69f26d5b8a7f1241c8ce1"
 licence = "GPL-2.0-or-later"
 provides = "aumix"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/aumix-2.9.1-r7.apk"
 version = "2.9.1-r7"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.9.1-r7"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

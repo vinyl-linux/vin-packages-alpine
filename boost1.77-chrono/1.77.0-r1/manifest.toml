@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b600359815747f3f35492d9ec03cbe24bf3686130d29ee7dc975ac5d9ee6ff62"
 licence = "BSL-1.0"
 provides = "boost1.77-chrono"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-chrono-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.77.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

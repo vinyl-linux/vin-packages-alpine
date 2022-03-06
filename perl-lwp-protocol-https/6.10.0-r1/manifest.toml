@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2b2995ef8e7502f30db66cca34560c0c41a8964adbc642c1421ca2480bb44f4c"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-lwp-protocol-https"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-lwp-protocol-https-6.10-r1.apk"
 version = "6.10.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "6.10.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-libwww", "6.58.0-r0"], ["perl-mozilla-ca", "20211001.0.0-r0"], ["perl-io-socket-ssl", "2.72.0-r0"], ["perl-net-http", "6.21.0-r0"]]

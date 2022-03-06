@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f068b566d845d057e88b4af54c73280996e87d19d78765aa04dcd3a8150527ba"
 licence = "LGPL-2.0-or-later"
 provides = "gdk-pixbuf-dbg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gdk-pixbuf-dbg-2.42.6-r0.apk"
 version = "2.42.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.42.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["shared-mime-info", "2.1.0-r0"]]

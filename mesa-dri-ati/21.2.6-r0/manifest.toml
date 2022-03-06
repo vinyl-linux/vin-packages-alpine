@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "59c67ee31f40e397f5f05719f8c11a3e57d2e7f330010e8d1c214188b9e0ff22"
 licence = "MIT SGI-B-2.0 BSL-1.0"
 provides = "mesa-dri-ati"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mesa-dri-ati-21.2.6-r0.apk"
 version = "21.2.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "21.2.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["mesa-dri-classic", "21.2.6-r0"], ["mesa-dri-gallium", "21.2.6-r0"], ["mesa-va-gallium", "21.2.6-r0"], ["mesa-vdpau-gallium", "21.2.6-r0"]]

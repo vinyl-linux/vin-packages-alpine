@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "527a7cea9258be25f2beee07bc5ef707b6941d1ea8d975891e8dedcd830e1658"
 licence = "GPL-2.0-only"
 provides = "udev-init-scripts"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/udev-init-scripts-35-r0.apk"
 version = "35.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "35.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"]]

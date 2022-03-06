@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "40abf66307102ce866fec4451eb9b5f6e78d447c093681d901512ab98098de5f"
 licence = "custom"
 provides = "font-bh-type1"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/font-bh-type1-1.0.3-r0.apk"
 version = "1.0.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

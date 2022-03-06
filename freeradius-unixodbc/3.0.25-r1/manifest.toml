@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1f1755bd040a95d180df820a7ed77512e18f6566eefab27373bd5393b6d6644b"
 licence = "GPL-2.0-or-later"
 provides = "freeradius-unixodbc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeradius-unixodbc-3.0.25-r1.apk"
 version = "3.0.25-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.0.25-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.25-r1"], ["musl", "1.2.2-r7"], ["unixodbc", "2.3.9-r1"]]

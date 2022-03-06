@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "43279d3f73e2a4a29cdfe5438cb88e62714c3659e800be25cd028bdd53c477c5"
 licence = "MIT"
 provides = "py3-wheel"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-wheel-0.36.2-r2.apk"
 version = "0.36.2-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.36.2-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["py3-packaging", "20.9.0-r1"]]

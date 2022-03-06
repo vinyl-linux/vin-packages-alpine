@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d1f2c308221766fcabe2c76aefd2d2e75af1b7fd29872d9d808abdafa6972c6b"
 licence = "custom"
 provides = "uwsgi-rsyslog"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-rsyslog-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

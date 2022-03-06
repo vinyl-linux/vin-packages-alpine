@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6583bd6ab216c9b9bee0857ec0174fa018d7e92f359093552deb16d49f7615ad"
 licence = "Public-Domain"
 provides = "byacc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/byacc-20210808-r0.apk"
 version = "20210808.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "20210808.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

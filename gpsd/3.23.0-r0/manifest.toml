@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "90165dcdd7fd2a3f4b4f50f4bb92f278886de11495ece0729319c31f4edecb3a"
 licence = "BSD-2-Clause"
 provides = "gpsd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gpsd-3.23-r0.apk"
 version = "3.23.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.23.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libstdc++", "10.3.1"]]

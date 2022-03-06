@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a94844557741a0d6eb14a25e1c7d06b2045b0301863f7b983e80c1c265657b19"
 licence = "custom"
 provides = "uwsgi-redislog"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-redislog-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

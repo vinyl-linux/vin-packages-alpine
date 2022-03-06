@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "de60a2529dcb1743d12fbf49c0d4479432c5c94116da528244e75632e51b487e"
 licence = "BSD-2-Clause"
 provides = "libnet-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnet-dev-1.2-r0.apk"
 version = "1.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libnet", "1.2.0-r0"], ["pkgconf", "1.8.0-r0"]]

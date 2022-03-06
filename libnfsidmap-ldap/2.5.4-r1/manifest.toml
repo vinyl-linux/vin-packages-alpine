@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "44e6f3b54a2f9504ebe029d9c73ba20e5ab5cd5905fdc4a2b110b2a01687057d"
 licence = "GPL-2.0-or-later BSD-3-Clause"
 provides = "libnfsidmap-ldap"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnfsidmap-ldap-2.5.4-r1.apk"
 version = "2.5.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.5.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["rpcbind", "1.2.6-r0"], ["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["krb5-libs", "1.19.2-r4"], ["libldap", "2.6.0-r0"]]

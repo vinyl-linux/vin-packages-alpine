@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e1a4a0a12c5c364144d410c13768bde437d7cc113c538495d925d56870e48c37"
 licence = "ClArtistic"
 provides = "ncftp"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ncftp-3.2.6-r4.apk"
 version = "3.2.6-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.2.6-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

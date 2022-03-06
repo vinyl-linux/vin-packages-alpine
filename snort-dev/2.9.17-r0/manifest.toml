@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ee8aa32772e489b1531ccd5efad3faf3c72c926ab94bcab833f31d9d01a702ad"
 licence = "GPL-2.0-only"
 provides = "snort-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/snort-dev-2.9.17-r0.apk"
 version = "2.9.17-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.9.17-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["snort", "2.9.17-r0"]]

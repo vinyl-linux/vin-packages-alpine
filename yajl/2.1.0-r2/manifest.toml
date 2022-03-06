@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fc6a6da56d0e07102df5a24be7f2b2ee3535d28706ca861a58ef040ab88cbf8a"
 licence = "MIT"
 provides = "yajl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/yajl-2.1.0-r2.apk"
 version = "2.1.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.1.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

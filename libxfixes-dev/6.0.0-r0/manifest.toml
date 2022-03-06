@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fbcd0677ac869fc273e59cbee4d75d3de40df95cf660a07abbd50c704b7dbfab"
 licence = "custom"
 provides = "libxfixes-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxfixes-dev-6.0.0-r0.apk"
 version = "6.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "6.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libxfixes", "6.0.0-r0"], ["xorgproto", "2021.5.0-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

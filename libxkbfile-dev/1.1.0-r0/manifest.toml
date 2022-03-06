@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9435d7b4e8fd81a6a50cc60e0f74d604758845d0b17b627a33578b6085a49d5f"
 licence = "MIT"
 provides = "libxkbfile-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxkbfile-dev-1.1.0-r0.apk"
 version = "1.1.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.1.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libxkbfile", "1.1.0-r0"], ["xorgproto", "2021.5.0-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

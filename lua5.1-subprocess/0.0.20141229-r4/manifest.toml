@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7b1769458224f97b48905c668b9190ad341bbe56ac71c93c4f7e17891a5f145b"
 licence = "AS-IS"
 provides = "lua5.1-subprocess"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-subprocess-0.0.20141229-r4.apk"
 version = "0.0.20141229-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.0.20141229-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

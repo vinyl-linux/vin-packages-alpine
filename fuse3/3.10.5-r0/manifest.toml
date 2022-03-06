@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "25a785522905a6efcb1ca34a1fdba3d835e28d2f2d9591a0e9c608e9bf800d36"
 licence = "GPL-2.0-only LGPL-2.1-only"
 provides = "fuse3"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fuse3-3.10.5-r0.apk"
 version = "3.10.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.10.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["fuse-common", "3.10.5-r0"], ["musl", "1.2.2-r7"], ["fuse3-libs", "3.10.5-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c8d42ead9a7e4505450a5c099a0833e25129541b3e9f99d1d4b48403d4264e5e"
 licence = "BSL-1.0"
 provides = "boost1.77-serialization"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-serialization-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.77.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

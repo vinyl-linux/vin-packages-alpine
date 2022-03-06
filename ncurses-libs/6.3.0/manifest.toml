@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5cdcdcdf32cb6941cb21b86b22d541cb61ccb693c08a6988247aac2b5e3c45bd"
 licence = "MIT"
 provides = "ncurses-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ncurses-libs-6.3_p20211120-r0.apk"
 version = "6.3.0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "6.3.0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"], ["musl", "1.2.2-r7"]]

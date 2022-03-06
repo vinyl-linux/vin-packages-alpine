@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "251e115b076758e08075f408a037f8767c9bf73eb69c97c55c706931ca040b5c"
 licence = "MIT"
 provides = "cjson"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cjson-1.7.15-r0.apk"
 version = "1.7.15-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.7.15-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

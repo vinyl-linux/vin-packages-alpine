@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0f60c223ebfadb7e2184c615fd3a2f6cee4fd8f951acf8b9118a595dde219818"
 licence = "GPL-2.0-or-later"
 provides = "gnokii-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gnokii-dev-0.6.31-r12.apk"
 version = "0.6.31-r12"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.6.31-r12"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gnokii-libs", "0.6.31-r12"], ["pkgconf", "1.8.0-r0"]]

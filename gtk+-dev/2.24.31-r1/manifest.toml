@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "98ee23a01b440bb646750a2edbd5cd3637a0bde6aece4ba9f823187c4de5fee2"
 licence = "LGPL-2.0-or-later"
 provides = "gtk+-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gtk+-dev-2.24.31-r1.apk"
 version = "2.24.31-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.24.31-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gtk+2.0-dev", "2.24.33-r0"]]

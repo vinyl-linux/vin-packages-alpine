@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "deb6886cd13d09690d6dd6363c54838c0e1997f66a1ed90544ff6e6c821e9c88"
 licence = "AGPL-3.0-or-later WITH OpenSSL-Exception"
 provides = "bacula"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bacula-9.6.7-r2.apk"
 version = "9.6.7-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "9.6.7-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["bacula-libs", "9.6.7-r2"], ["musl", "1.2.2-r7"], ["lzo", "2.10.0-r2"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

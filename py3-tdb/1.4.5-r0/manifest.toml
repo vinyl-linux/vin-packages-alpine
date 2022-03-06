@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "cb19abc4dd280d32bb049f040b13f57e1e5ea3817029adf57de6a26738552116"
 licence = "LGPL-3.0-or-later"
 provides = "py3-tdb"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-tdb-1.4.5-r0.apk"
 version = "1.4.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["tdb-libs", "1.4.5-r0"]]

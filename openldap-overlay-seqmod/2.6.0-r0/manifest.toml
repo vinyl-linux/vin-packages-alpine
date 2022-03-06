@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d1564b69c929370825afaf93d69c7801a4d27f51be8ce1215e35389e704ba653"
 licence = "OLDAP-2.8"
 provides = "openldap-overlay-seqmod"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-overlay-seqmod-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libldap", "2.6.0-r0"]]

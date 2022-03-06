@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c8ef4641b3f76f7edd3a35c50a6878ce56ed6e16d2f8145c7de664a4dd1dfe73"
 licence = "GPL-2.0-or-later"
 provides = "usb-modeswitch"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/usb-modeswitch-2.6.1-r0.apk"
 version = "2.6.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libusb", "1.0.24-r3"]]

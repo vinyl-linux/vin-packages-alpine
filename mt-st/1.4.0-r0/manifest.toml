@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "db0a0d9c02c9e1ba5e33ed8d3d48d6c430a7f2988824ba2a3883181a53bea1b6"
 licence = "GPL-2.0-or-later"
 provides = "mt-st"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mt-st-1.4-r0.apk"
 version = "1.4.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

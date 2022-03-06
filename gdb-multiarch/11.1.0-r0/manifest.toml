@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3ccccc96c71daf190efa5821b1d0f17065ee319fe251cd69b33c9c4c90bfc57c"
 licence = "GPL-3.0-or-later LGPL-3.0-or-later"
 provides = "gdb-multiarch"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gdb-multiarch-11.1-r0.apk"
 version = "11.1.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "11.1.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gdb", "11.1.0-r0"], ["musl", "1.2.2-r7"], ["expat", "2.4.6-r0"], ["libgcc", "10.3.1"], ["gmp", "6.2.1-r1"], ["ncurses-libs", "6.3.0"], ["python3", "3.9.7-r4"], ["readline", "8.1.1-r0"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

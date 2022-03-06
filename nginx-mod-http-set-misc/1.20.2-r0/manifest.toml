@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0a2423179e0d955465aa8ad787290844cf5366d73d016e762d42c5ad9656b6cf"
 licence = "BSD-2-Clause"
 provides = "nginx-mod-http-set-misc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-set-misc-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.20.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.20.2-r0"], ["nginx-mod-devel-kit", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9b4fa32d57029b861ea6e988a61b8c34283ef65f8c9488e1992622cf6eb97b47"
 licence = "custom"
 provides = "uwsgi-gevent3"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-gevent3-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

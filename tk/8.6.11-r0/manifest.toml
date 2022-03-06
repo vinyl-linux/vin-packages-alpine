@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "dd35c40f59347e26968caf90103880b5c077d46cd81c63d90b81e03ad2b72bf1"
 licence = "TCL"
 provides = "tk"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tk-8.6.11-r0.apk"
 version = "8.6.11-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "8.6.11-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxft", "2.3.4-r0"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["tcl", "8.6.11-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b56fe0f1e040c33c1aebb7f1fd262e2e964b3a6164487d2a4aebfedf2a76e10d"
 licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
 provides = "ntfs-3g-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ntfs-3g-dev-2021.8.22-r0.apk"
 version = "2021.8.22-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2021.8.22-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ntfs-3g-libs", "2021.8.22-r0"], ["pkgconf", "1.8.0-r0"]]

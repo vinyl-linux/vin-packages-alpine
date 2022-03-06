@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e09b941142e814cbaf5e62e0fc585547c74f98733d0287f7f8fe6227c5c5216f"
 licence = "MIT-enna"
 provides = "imake"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/imake-1.0.8-r1.apk"
 version = "1.0.8-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.8-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

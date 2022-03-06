@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ab8d85c7016317039cd0735823bbe4a77294b98ddf6acf295d885d8a61c1bd4b"
 licence = "GPL-2.0"
 provides = "libnetfilter_acct"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnetfilter_acct-1.0.3-r1.apk"
 version = "1.0.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libmnl", "1.0.4-r2"]]

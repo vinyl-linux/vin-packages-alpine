@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "81dac32a738d8f787014360e58286a254fd0fdd5b51b4e78a44e8a93e5c54e16"
 licence = "BSD-2-Clause"
 provides = "openrc-dbg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openrc-dbg-0.44.7-r3.apk"
 version = "0.44.7-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.44.7-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox-ifupdown", "1.34.1-r4"]]

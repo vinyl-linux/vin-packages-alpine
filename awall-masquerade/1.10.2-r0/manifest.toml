@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9597b959d2617e019cebdb7d09f7add9208e6a5dd043acefb2e4b093fb5997d2"
 licence = "GPL-2.0-only"
 provides = "awall-masquerade"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/awall-masquerade-1.10.2-r0.apk"
 version = "1.10.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["awall", "1.10.2-r0"]]

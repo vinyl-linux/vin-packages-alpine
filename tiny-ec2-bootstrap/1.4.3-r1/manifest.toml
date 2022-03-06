@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "334b9f69c17c09a3cc73fed6a85ea09297c02c189d8cb498dd86001448cc0b66"
 licence = "MIT"
 provides = "tiny-ec2-bootstrap"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tiny-ec2-bootstrap-1.4.3-r1.apk"
 version = "1.4.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.44.7-r3"], ["e2fsprogs-extra", "1.46.4-r0"], ["partx", "2.37.4-r0"], ["sfdisk", "2.37.4-r0"]]

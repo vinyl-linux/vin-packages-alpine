@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b95bfc7f323b27fd835554cc9c94746de52e3c2e12e03af762e3b538e8e0c0d5"
 licence = "GPL-2.0-or-later"
 provides = "squid-lang-pl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/squid-lang-pl-5.2-r0.apk"
 version = "5.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["logrotate", "3.18.1-r1"]]

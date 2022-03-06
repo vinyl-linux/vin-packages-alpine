@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d1e9a0ece7ad5b45e396ad9462ef77911eadb4f6fdf706de6e382d5132148854"
 licence = "MIT"
 provides = "libxcursor-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxcursor-dev-1.2.0-r0.apk"
 version = "1.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libxcursor", "1.2.0-r0"], ["libx11-dev", "1.7.2-r0"], ["libxfixes-dev", "6.0.0-r0"], ["xorgproto", "2021.5.0-r0"], ["libxrender-dev", "0.9.10-r3"], ["pkgconf", "1.8.0-r0"]]

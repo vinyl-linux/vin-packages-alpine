@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c50b83863f632bb435807dfae0a0f726a41c529ea68ab307ca0ddd63bd836b6f"
 licence = "BSD-2-Clause"
 provides = "nginx-mod-http-naxsi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-naxsi-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.20.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f9b939e46ed0bb9675749e2b36adf4f343c02aa7ef6a3a558c755925e062c6eb"
 licence = "GPL-2.0"
 provides = "alpine-sdk"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/alpine-sdk-1.0-r1.apk"
 version = "1.0.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["abuild", "3.9.0-r0"], ["build-base", "0.5.0-r2"], ["git", "2.34.1-r0"]]

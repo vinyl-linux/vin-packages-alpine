@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6dfb431d1cd6e7dc2c3cc740ed1a73f93c74576e38fc72718518dec56fbc1cf2"
 licence = "LGPL-3.0-or-later"
 provides = "talloc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/talloc-2.3.3-r0.apk"
 version = "2.3.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

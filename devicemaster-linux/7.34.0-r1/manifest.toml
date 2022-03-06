@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1929bedff0931a6374f30a0c0347e9994644b828a847de0b1d8f83afadb2f2b6"
 licence = "GPL-2.0-or-later"
 provides = "devicemaster-linux"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/devicemaster-linux-7.34-r1.apk"
 version = "7.34.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "7.34.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

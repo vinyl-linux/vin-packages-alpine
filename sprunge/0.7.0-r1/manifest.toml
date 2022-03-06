@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d3dc767ea5e1f7cbebc0abeeeca9121f98e98938954b7e556f9621b9190976f4"
 licence = "GPL-2.0-only"
 provides = "sprunge"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/sprunge-0.7-r1.apk"
 version = "0.7.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.7.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.80.0-r0"]]

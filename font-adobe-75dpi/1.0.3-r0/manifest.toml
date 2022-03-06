@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b280c73cd830a2d53e2c971c1f8db57d670c8d22b171147aff73c817acba50df"
 licence = "custom"
 provides = "font-adobe-75dpi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/font-adobe-75dpi-1.0.3-r0.apk"
 version = "1.0.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.5-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.1-r1"], ["fontconfig", "2.13.1-r4"]]

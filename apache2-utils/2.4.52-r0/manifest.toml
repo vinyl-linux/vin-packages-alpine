@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8cfcb0c440ea4314546964e95b3846f922c20800410d4b3d3be853487d149984"
 licence = "Apache-2.0"
 provides = "apache2-utils"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apache2-utils-2.4.52-r0.apk"
 version = "2.4.52-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.4.52-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["apr", "1.7.0-r0"], ["apr-util", "1.6.1-r11"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

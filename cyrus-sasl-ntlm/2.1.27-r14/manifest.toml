@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8c4bf7a7457598f20d3b74650e37c75d4ac55f5e360e0238d68ac07f48e3f8bb"
 licence = "custom"
 provides = "cyrus-sasl-ntlm"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cyrus-sasl-ntlm-2.1.27-r14.apk"
 version = "2.1.27-r14"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.1.27-r14"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "46c7845fc4cb2129af7942fcd3a0cb1eea86a340c86aa1600ca00616cd51090a"
 licence = "GPL-2.0-or-later"
 provides = "rdnssd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rdnssd-1.0.4-r5.apk"
 version = "1.0.4-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.4-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

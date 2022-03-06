@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "aeaeebc55a120c8286f332d39935e07f54fd30bc7a24a6c825eee1340a23cf88"
 licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
 provides = "binutils-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/binutils-dev-2.37-r3.apk"
 version = "2.37.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.37.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["binutils", "2.37.0-r3"]]

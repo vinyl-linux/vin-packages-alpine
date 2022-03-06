@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8abebefb560a1a962c88d16717c473120fc5f9efda577acdf12b64597f605475"
 licence = "GPL-2.0-only"
 provides = "acf-iptables"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-iptables-0.7.1-r4.apk"
 version = "0.7.1-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.7.1-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["iptables", "1.8.7-r1"]]

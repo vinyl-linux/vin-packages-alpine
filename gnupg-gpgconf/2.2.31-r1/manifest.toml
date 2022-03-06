@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3fb02856d8f21f7b10e98f95ed162aba3ff158c11dfc7d1bf16f814a181e218c"
 licence = "GPL-3.0-or-later"
 provides = "gnupg-gpgconf"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gnupg-gpgconf-2.2.31-r1.apk"
 version = "2.2.31-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.2.31-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pinentry", "1.2.0-r0"], ["libassuan", "2.5.5-r0"], ["musl", "1.2.2-r7"], ["libgcrypt", "1.9.4-r0"], ["libgpg-error", "1.42.0-r1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "64dad950562e57f6c27f9b37476abe7ce64ce1115cb9d003e3846b20c89a2150"
 licence = "MIT"
 provides = "dropbear-convert"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dropbear-convert-2020.81-r0.apk"
 version = "2020.81.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2020.81.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

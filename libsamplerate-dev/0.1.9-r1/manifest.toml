@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f61286ff6fe14f30785b458a8468e78cb089f66ebe3110e3da0994168c2f0be5"
 licence = "BSD-2-Clause-NetBSD"
 provides = "libsamplerate-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libsamplerate-dev-0.1.9-r1.apk"
 version = "0.1.9-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.1.9-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libsamplerate", "0.1.9-r1"], ["pkgconf", "1.8.0-r0"]]

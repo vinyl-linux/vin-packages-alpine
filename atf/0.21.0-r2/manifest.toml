@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ba4f89b6ef7c93fef13b74d5907cc9a8518fe550ab3cc98c9972e2a07842808b"
 licence = "BSD-2-Clause AND BSD-3-Clause"
 provides = "atf"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/atf-0.21-r2.apk"
 version = "0.21.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.21.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6db36915facd57a7050e6b6c5ee796eb736cf8edb680b747bea1bbdaf6814c38"
 licence = "custom"
 provides = "libsasl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libsasl-2.1.27-r14.apk"
 version = "2.1.27-r14"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.1.27-r14"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gdbm", "1.22.0-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fce76db980cc407a93bbc8cd3252fdbeebd69c3ea44b283dbf98863f7a2c4ab8"
 licence = "MIT"
 provides = "ncurses-terminfo"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ncurses-terminfo-6.3_p20211120-r0.apk"
 version = "6.3.0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "6.3.0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"]]

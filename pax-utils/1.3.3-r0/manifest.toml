@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "44bb18d85b54971b379534f67090891e343e91b4a934f1a6c4f512bc39bb6361"
 licence = "GPL-2.0-only"
 provides = "pax-utils"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pax-utils-1.3.3-r0.apk"
 version = "1.3.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.3.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["scanelf", "1.3.3-r0"], ["musl", "1.2.2-r7"], ["libcap", "2.61.0-r0"]]

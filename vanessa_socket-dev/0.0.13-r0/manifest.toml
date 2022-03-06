@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2e08505f9e92945caf05d91a5d8b80ce95a940e8b7f3c050c9b9d83b8fcbc0af"
 licence = "LGPL-2.0-or-later"
 provides = "vanessa_socket-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vanessa_socket-dev-0.0.13-r0.apk"
 version = "0.0.13-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.0.13-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["popt-dev", "1.18.0-r0"], ["vanessa_logger-dev", "0.0.10-r1"], ["pkgconf", "1.8.0-r0"], ["vanessa_socket", "0.0.13-r0"]]

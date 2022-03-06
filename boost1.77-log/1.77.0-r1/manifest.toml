@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ccae8a11d5e7ee89f070e88875da55a46eeb92b9f562dc3e82f8d6e278c351c2"
 licence = "BSL-1.0"
 provides = "boost1.77-log"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-log-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.77.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["boost1.77-filesystem", "1.77.0-r1"], ["boost1.77-thread", "1.77.0-r1"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

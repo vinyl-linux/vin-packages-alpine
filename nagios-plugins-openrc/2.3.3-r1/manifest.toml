@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8c9409d11880850972d41c238b29fad6c6843b0ba9203f00d1f69e72797ca490"
 licence = "GPL-3.0-only"
 provides = "nagios-plugins-openrc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-openrc-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["openrc", "0.44.7-r3"], ["doas", "6.8.1-r7"]]

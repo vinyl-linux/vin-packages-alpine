@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fb9a2f36c09f990c2a061954620e1a39331ccb69c2f59e138a78717da7fb7f8a"
 licence = "OLDAP-2.8"
 provides = "openldap-lloadd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-lloadd-2.6.0-r0.apk"
 version = "2.6.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.6.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libldap", "2.6.0-r0"], ["libsasl", "2.1.27-r14"]]

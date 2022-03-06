@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "721a7cbfd297877d6188d3896b2d57957af25e7e08e0b38c432a95b3c1fc2666"
 licence = "MIT"
 provides = "lua-penlight"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua-penlight-1.7.0-r2.apk"
 version = "1.7.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.7.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.3-r0"], ["lua-filesystem", "1.8.0-r1"]]

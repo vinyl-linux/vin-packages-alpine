@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0975552287304680ebf44647cca2c506aaab5dbafe05490dd9a6fe9fd3863e49"
 licence = "BSD"
 provides = "openssh-server"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openssh-server-8.8_p1-r1.apk"
 version = "8.8.0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "8.8.0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["openssh-keygen", "8.8.0"], ["openssh-server-common", "8.8.0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["zlib", "1.2.11-r3"]]

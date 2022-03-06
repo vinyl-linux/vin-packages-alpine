@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5c3e3fe2efc88186de1c0cdc0c309275747312c6c3c28f979404f3e30d1c0f88"
 licence = "MPL-1.1"
 provides = "freeswitch-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeswitch-dev-1.10.7-r0.apk"
 version = "1.10.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["freeswitch", "1.10.7-r0"], ["pkgconf", "1.8.0-r0"]]

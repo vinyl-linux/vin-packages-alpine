@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "853be580c0402aa5097782934121404173771b5f14d87364cbb81ce34cf97140"
 licence = "BSL-1.0"
 provides = "boost1.77-math"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-math-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.77.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"]]

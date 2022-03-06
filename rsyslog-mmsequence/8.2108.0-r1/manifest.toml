@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "434fff98f5be9bf2e524682e4cf74a9954bc6d9b6e5c5c614b0726278ee67aec"
 licence = "Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later"
 provides = "rsyslog-mmsequence"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-mmsequence-8.2108.0-r1.apk"
 version = "8.2108.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "8.2108.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2108.0-r1"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5f450b854d3b3a852d60a172bc243e08ebae36362a703b006a60c72b86b8c862"
 licence = "GPL-2.0-or-later"
 provides = "perdition"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perdition-2.2-r3.apk"
 version = "2.2.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.2.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["gdbm", "1.22.0-r0"], ["popt", "1.18.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["vanessa_adt", "0.0.9-r1"], ["vanessa_logger", "0.0.10-r1"], ["vanessa_socket", "0.0.13-r0"]]

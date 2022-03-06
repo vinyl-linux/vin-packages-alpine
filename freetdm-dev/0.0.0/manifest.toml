@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2e7278986d6566d604047110c8d2fa6cad69d74439ce0b24604b990333377c3d"
 licence = "BSD-3-Clause"
 provides = "freetdm-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freetdm-dev-0_git20210830-r0.apk"
 version = "0.0.0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.0.0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["freetdm", "0.0.0"], ["pkgconf", "1.8.0-r0"]]

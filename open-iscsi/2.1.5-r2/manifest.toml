@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "bb4a94fb03cd2860fc621c6e9782ec7f58c2be320134c3fc83e87591b8fc3c8d"
 licence = "GPL-2.0-only"
 provides = "open-iscsi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/open-iscsi-2.1.5-r2.apk"
 version = "2.1.5-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.1.5-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["open-isns-lib", "0.101.0-r2"], ["kmod-libs", "29.0.0-r2"], ["libmount", "2.37.4-r0"], ["open-iscsi-libs", "2.1.5-r2"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f4c5ac6f3a2b8d09d2849f8c485f212b1637c0f1296f323e7dcbd1a79dfaa7af"
 licence = "GPL-2.0-or-later"
 provides = "lsyncd"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lsyncd-2.2.3-r2.apk"
 version = "2.2.3-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.2.3-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["rsync", "3.2.3-r5"], ["musl", "1.2.2-r7"], ["lua5.4-libs", "5.4.3-r0"]]

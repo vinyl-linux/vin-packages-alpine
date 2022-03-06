@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ae9e9491b3f511c6b1ef12e8848f59a9604203c468d5da46a26389506ba4edc7"
 licence = "GPL-2.0"
 provides = "libnetfilter_cthelper-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnetfilter_cthelper-dev-1.0.0-r2.apk"
 version = "1.0.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libnetfilter_cthelper", "1.0.0-r2"], ["pkgconf", "1.8.0-r0"]]

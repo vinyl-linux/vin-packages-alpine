@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1cdac054b33dfcc26afedbfb0381e2812d2113dea4342c1be93880939ae661a1"
 licence = "BSD-2-Clause"
 provides = "protobuf-c-compiler"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/protobuf-c-compiler-1.4.0-r0.apk"
 version = "1.4.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libprotobuf", "3.18.1-r1"], ["libprotoc", "3.18.1-r1"], ["libstdc++", "10.3.1"]]

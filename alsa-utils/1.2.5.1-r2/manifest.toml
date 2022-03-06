@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0ef057225b7e9098b32451708a83dbc2938d1014e4e7cfb0222cb2a461dffe0f"
 licence = "GPL-2.0-or-later"
 provides = "alsa-utils"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/alsa-utils-1.2.5.1-r2.apk"
 version = "1.2.5.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.5.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["dialog", "1.3.20211107-r0"], ["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["fftw-single-libs", "3.3.10-r0"], ["ncurses-libs", "6.3.0"]]

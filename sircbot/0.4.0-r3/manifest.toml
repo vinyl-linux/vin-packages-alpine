@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "47a00feb82a545ebf2523c6406ff6174cd1285e90cdf58413145696ee509498f"
 licence = "GPL-2.0-only"
 provides = "sircbot"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/sircbot-0.4-r3.apk"
 version = "0.4.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.4.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"]]

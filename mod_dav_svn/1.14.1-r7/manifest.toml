@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0e43e77aa2ebe4599bf569bfca93342901dd2a26fe7ce78b77ee97661df8bde5"
 licence = "Apache-2.0 BSD"
 provides = "mod_dav_svn"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mod_dav_svn-1.14.1-r7.apk"
 version = "1.14.1-r7"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.14.1-r7"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["apr", "1.7.0-r0"], ["apr-util", "1.6.1-r11"], ["musl", "1.2.2-r7"], ["subversion-libs", "1.14.1-r7"]]

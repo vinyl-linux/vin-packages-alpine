@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8ddb40df257b4067d1943d9dd5443b19b89799a5b23e8296e034a53b87c4e871"
 licence = "MPL-1.1"
 provides = "freeswitch-flite"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeswitch-flite-1.10.7-r0.apk"
 version = "1.10.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["flite", "2.2.0-r0"], ["freeswitch", "1.10.7-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a3679df9615c4230ff639060e9a36d728bcf8e09005640884a317e22bbdcc19f"
 licence = "GPL-3.0-or-later"
 provides = "knot-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/knot-dev-3.1.6-r0.apk"
 version = "3.1.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.1.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["knot", "3.1.6-r0"], ["knot-libs-static", "3.1.6-r0"], ["knot-utils", "3.1.6-r0"], ["knot-libs", "3.1.6-r0"], ["gnutls-dev", "3.7.1-r0"], ["pkgconf", "1.8.0-r0"]]

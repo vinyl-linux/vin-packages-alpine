@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3e73972c56cd6a3118cd1350973eb540076dc4e1954ecaeffd3441364851c6f8"
 licence = "custom"
 provides = "uwsgi-emperor_pg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-emperor_pg-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"], ["libpq", "14.2.0-r0"]]

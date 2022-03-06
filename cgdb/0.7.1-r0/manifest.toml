@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "37b99cacde522ee5111d55a3847dbfbac29b17c374d958816df8ddcc36c19a26"
 licence = "GPL-2.0"
 provides = "cgdb"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cgdb-0.7.1-r0.apk"
 version = "0.7.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.7.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gdb", "11.1.0-r0"], ["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["ncurses-libs", "6.3.0"], ["readline", "8.1.1-r0"], ["libstdc++", "10.3.1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "deb3b32d7307a79fa3c149c6197fcc70b32e9b51f917d92a469ea3960e30e8f3"
 licence = "MPL-1.1"
 provides = "freeswitch-perlesl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeswitch-perlesl-1.10.7-r0.apk"
 version = "1.10.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.10.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["perl", "5.34.0-r1"], ["libstdc++", "10.3.1"]]

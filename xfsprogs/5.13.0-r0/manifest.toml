@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "aa84413c5f26b7944528d7833b665713d01c44beace0abc600eeda1d11d77d40"
 licence = "LGPL-2.1-or-later"
 provides = "xfsprogs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xfsprogs-5.13.0-r0.apk"
 version = "5.13.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.13.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["inih", "53.0.0-r1"], ["libuuid", "2.37.4-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "81c89f364ffd14b8482382a9cf0c5b58b2e16b3cffccbb76a007406a0915e327"
 licence = "GPL-2.0-or-later"
 provides = "dtc-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dtc-dev-1.6.1-r0.apk"
 version = "1.6.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.6.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libfdt", "1.6.1-r0"]]

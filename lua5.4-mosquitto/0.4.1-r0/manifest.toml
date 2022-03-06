@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "79a16996c48ee3e529c7580075d688c37bb9407c97bc0f314d1c21396a111551"
 licence = "MIT"
 provides = "lua5.4-mosquitto"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.4-mosquitto-0.4.1-r0.apk"
 version = "0.4.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.4.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.3-r0"], ["musl", "1.2.2-r7"], ["mosquitto-libs", "2.0.14-r0"]]

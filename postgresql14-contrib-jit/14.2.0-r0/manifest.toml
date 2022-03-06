@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9e706146be4eb1488fbfd346ccddbbd1a1c9dfac908f459e17a9fead86b919be"
 licence = "PostgreSQL"
 provides = "postgresql14-contrib-jit"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql14-contrib-jit-14.2-r0.apk"
 version = "14.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "14.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["postgresql14-contrib", "14.2.0-r0"]]

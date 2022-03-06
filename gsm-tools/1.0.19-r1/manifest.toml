@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "afe5e52fb2f888df830865677972d086199f9df0e69e3d9505dd871af8c8f1c1"
 licence = "custom:TU-Berlin-2.0"
 provides = "gsm-tools"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gsm-tools-1.0.19-r1.apk"
 version = "1.0.19-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.19-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["gsm", "1.0.19-r1"]]

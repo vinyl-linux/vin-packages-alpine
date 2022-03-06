@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "af19d391c86e71e5600cc56dd551efffd1b17164218f36a40c0356569a6d75f2"
 licence = "GPL-2.0-or-later"
 provides = "kamailio-dbtext"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-dbtext-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.5.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.5.2-r0"], ["kamailio-db", "5.5.2-r0"], ["musl", "1.2.2-r7"]]

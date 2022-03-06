@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ad6ff9e38655d8515eda4adc92172e5d6fb03cbbef2fe5d98c0c3857a5ba0318"
 licence = "MIT"
 provides = "libxft"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libxft-2.3.4-r0.apk"
 version = "2.3.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.7.2-r0"], ["libxrender", "0.9.10-r3"], ["musl", "1.2.2-r7"], ["fontconfig", "2.13.1-r4"], ["freetype", "2.11.0-r0"]]

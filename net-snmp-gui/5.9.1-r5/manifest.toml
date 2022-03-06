@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3df8385e9ab333230bfca8467b31d87e8d4421fb66bca705ff7044ebd9511d65"
 licence = "Net-SNMP"
 provides = "net-snmp-gui"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/net-snmp-gui-5.9.1-r5.apk"
 version = "5.9.1-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.9.1-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["net-snmp-perl", "5.9.1-r5"], ["perl-tk", "804.36.0-r1"]]

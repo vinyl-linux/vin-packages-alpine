@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "19ff6678696d294d01cd2affe0817a6b6ebc2bfc3449b409a945758ba8665f95"
 licence = "MIT"
 provides = "lua5.3-stringy"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-stringy-0.5.1-r2.apk"
 version = "0.5.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.5.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r1"], ["musl", "1.2.2-r7"]]

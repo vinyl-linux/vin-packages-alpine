@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6f7ff4abfaa32900c6081f24a83c5608655936ce287d9a56b22c7bd002522e58"
 licence = "Public-Domain"
 provides = "mg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mg-20200723-r0.apk"
 version = "20200723.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "20200723.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libbsd", "0.11.3-r1"], ["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

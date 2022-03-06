@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5c72cd1d938d7b8f22a56456ee2e88328b64cc7922e68dfd4ca1bddf329c7b7b"
 licence = "BSD-3-Clause"
 provides = "libbsd-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libbsd-dev-0.11.3-r1.apk"
 version = "0.11.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.11.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["bsd-compat-headers", "0.7.2-r3"], ["linux-headers", "5.10.41-r0"], ["libmd-dev", "1.0.3-r0"], ["libbsd", "0.11.3-r1"], ["pkgconf", "1.8.0-r0"]]

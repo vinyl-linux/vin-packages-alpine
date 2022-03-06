@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "73151214386f8972fc09f2216aef4f18e52b2c05124319a29e52dfc728f260ca"
 licence = "MIT"
 provides = "lua5.2-ldbus"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-ldbus-20150430-r2.apk"
 version = "20150430.0.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "20150430.0.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["dbus-libs", "1.12.20-r4"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f9113598db21cc4c7f309a17c1487bb06c3351ab48c217ac5a0d2a1f7a4dab69"
 licence = "GPL-3.0-or-later OR BSD-2-Clause"
 provides = "less"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/less-590-r0.apk"
 version = "590.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "590.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

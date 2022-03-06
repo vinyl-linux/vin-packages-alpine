@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "72f517cd1ba70851c34ded4c08eb4e07b832be14893b6f60c0c88a5e0c5e336d"
 licence = "ISC"
 provides = "s6-linux-utils"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/s6-linux-utils-2.5.1.6-r0.apk"
 version = "2.5.1.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.5.1.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["skalibs", "2.11.0.0-r0"]]

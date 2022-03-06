@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f3c38345c1c6ee3a8461733e6a23513ea048255432a56e3951df3cd13fb0a278"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-cpan-meta-check"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-cpan-meta-check-0.014-r2.apk"
 version = "0.14.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.14.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-module-metadata", "1.37.0-r1"]]

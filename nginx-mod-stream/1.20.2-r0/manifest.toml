@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1ca76a84806f7b38c7a8b066888a5fa358640890e704d8d6db8ac7d672c0727f"
 licence = "BSD-2-Clause"
 provides = "nginx-mod-stream"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-stream-1.20.2-r0.apk"
 version = "1.20.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.20.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.20.2-r0"], ["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4d22ebd18100e9ec0b760d44e40fe2a3f3e5a69d9d67243278da5b27539c62fe"
 licence = "GPL-3.0-or-later"
 provides = "knot-mod-dnstap"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/knot-mod-dnstap-3.1.6-r0.apk"
 version = "3.1.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.1.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["knot", "3.1.6-r0"], ["musl", "1.2.2-r7"], ["fstrm", "0.6.1-r0"], ["protobuf-c", "1.4.0-r0"]]

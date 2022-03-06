@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "895f1a9fff5dea420c987f5b0b80800730b9c6943a791c069e75f4cadb597865"
 licence = "GPL-2.0-only"
 provides = "lua5.2-posixtz"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-posixtz-0.5-r3.apk"
 version = "0.5.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.5.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

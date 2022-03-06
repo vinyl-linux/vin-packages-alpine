@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6a1b9fc4f80d75ce5706f72b376fb853028fd9a38fb3196de93346beb315bee4"
 licence = "LGPL-2.1-or-later"
 provides = "alsa-lib"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/alsa-lib-1.2.5.1-r1.apk"
 version = "1.2.5.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.5.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

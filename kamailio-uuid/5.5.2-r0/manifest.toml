@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "914ec20ba375f5ddd3705620028550574e25559846a734aa49e0dc38af929920"
 licence = "GPL-2.0-or-later"
 provides = "kamailio-uuid"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-uuid-5.5.2-r0.apk"
 version = "5.5.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.5.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.5.2-r0"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]

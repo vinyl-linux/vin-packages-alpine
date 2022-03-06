@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1a291ccbb1c1b3b310a98f4f2ffdea3945805c21fe0dd56fc1ffbe4f7a7c8106"
 licence = "GPL-2.0-only"
 provides = "acf-provisioning"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-provisioning-0.10.1-r3.apk"
 version = "0.10.1-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.10.1-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["lua-sql-postgres", "2.6.0-r1"], ["postgresql-bdr-client", "9.4.14"], ["lua-posixtz", "0.5.0-r3"], ["lua-luaxml", "130610.0.0-r7"]]

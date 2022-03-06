@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f059932d062ecc3f4eb5ccf642a270610130576adf843567576628efbc12f1db"
 licence = "GPL-2.0-only"
 provides = "pciutils-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pciutils-libs-3.7.0-r0.apk"
 version = "3.7.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.7.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

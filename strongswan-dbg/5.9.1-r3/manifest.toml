@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5d789b13103427417f40e454a829db09f2631b33055d34872f4629eaec96f644"
 licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
 provides = "strongswan-dbg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/strongswan-dbg-5.9.1-r3.apk"
 version = "5.9.1-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.9.1-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "5.15.0-r0"]]

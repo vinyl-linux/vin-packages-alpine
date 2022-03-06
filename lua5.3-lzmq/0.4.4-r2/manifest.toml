@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9b0697e298f9ad49c14c6c406538a6600184ae04ea232d56f3823bfc3482cdcc"
 licence = "MIT"
 provides = "lua5.3-lzmq"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-lzmq-0.4.4-r2.apk"
 version = "0.4.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.4.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["lua5.1-libs", "5.1.5-r8"], ["libzmq", "4.3.4-r0"]]

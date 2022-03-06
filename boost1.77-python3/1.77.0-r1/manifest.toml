@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "bc06786d68107b754f1ef6e70f0047819ad42e61bd1cc76f554f429d9b17098c"
 licence = "BSL-1.0"
 provides = "boost1.77-python3"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-python3-1.77.0-r1.apk"
 version = "1.77.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.77.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["python3", "3.9.7-r4"]]

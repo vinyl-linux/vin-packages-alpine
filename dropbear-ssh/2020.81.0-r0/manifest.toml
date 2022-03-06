@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9f487cab836789bdd90af4c742e64efad4233c1f2013fa878bd1c2d0e52eb678"
 licence = "MIT"
 provides = "dropbear-ssh"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dropbear-ssh-2020.81-r0.apk"
 version = "2020.81.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2020.81.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["dropbear-dbclient", "2020.81.0-r0"]]

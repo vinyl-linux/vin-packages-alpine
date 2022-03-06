@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "93d74118470671ffaa3f6b9144cd16c6aa5d14b1cf82812636364f5bcca186a9"
 licence = "Apache-2.0"
 provides = "imap"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/imap-2007f-r13.apk"
 version = "2007.0.0-f-r13"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2007.0.0-f-r13"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"], ["libssl1.1", "1.1.1-l-r8"]]

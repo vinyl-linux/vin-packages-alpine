@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f501749e65acf2e6808dd27c54647f800255b554916cbb4f3aafb738a3dada35"
 licence = "MIT"
 provides = "libverto-libevent"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libverto-libevent-0.3.2-r0.apk"
 version = "0.3.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.3.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libevent", "2.1.12-r4"], ["libverto", "0.3.2-r0"]]

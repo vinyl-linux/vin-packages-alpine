@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "baa8968e64b8b1aa6c34aa57337a475750b6a124336850a0c3ce3c065040b75b"
 licence = "custom"
 provides = "uwsgi-nagios"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-nagios-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

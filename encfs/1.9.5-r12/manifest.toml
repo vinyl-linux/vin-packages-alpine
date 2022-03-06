@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b5690883418aaa8b3c1af04c08442299a5c2c0d4100c5dde5459bc55f3554ea9"
 licence = "GPL-3.0-only"
 provides = "encfs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/encfs-1.9.5-r12.apk"
 version = "1.9.5-r12"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.9.5-r12"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["encfs-libs", "1.9.5-r12"], ["musl", "1.2.2-r7"], ["fuse", "2.9.9-r1"], ["libgcc", "10.3.1"], ["libintl", "0.21.0-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"]]

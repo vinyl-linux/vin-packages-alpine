@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d23ba8970382647122f0e11318accc624339357f5e1c17bd7cb20c56175ce96c"
 licence = "BSD-3-Clause"
 provides = "leveldb-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/leveldb-dev-1.22-r1.apk"
 version = "1.22.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.22.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["leveldb", "1.22.0-r1"]]

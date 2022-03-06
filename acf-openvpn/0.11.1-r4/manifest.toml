@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b3f3dc1d8f78db005c6ebcc18a68f76da8e62fe62b0bb2da093e2273ff4ed81f"
 licence = "GPL-2.0-only"
 provides = "acf-openvpn"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/acf-openvpn-0.11.1-r4.apk"
 version = "0.11.1-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.11.1-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["acf-core", "0.22.0-r2"], ["openvpn", "2.5.4-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "4983716dc845d18d34732d0044be5be390b252f57fa68223a6b1574d0e65a175"
 licence = "Ruby AND BSD-2-Clause AND MIT"
 provides = "ruby-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ruby-dev-3.0.3-r0.apk"
 version = "3.0.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.0.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.0.3-r0"], ["ruby-rdoc", "3.0.3-r0"], ["gmp-dev", "6.2.1-r1"], ["libucontext-dev", "1.1.0-r0"], ["pkgconf", "1.8.0-r0"], ["ruby-libs", "3.0.3-r0"]]

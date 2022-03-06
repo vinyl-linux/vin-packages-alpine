@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "df2b6e230e4ebd30534b9042b27d5e9aa966f29fa0ab8e3c727fc8b83f77eb9c"
 licence = "MIT"
 provides = "mkfontscale"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mkfontscale-1.2.1-r1.apk"
 version = "1.2.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.2.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libfontenc", "1.1.4-r0"], ["freetype", "2.11.0-r0"], ["zlib", "1.2.11-r3"]]

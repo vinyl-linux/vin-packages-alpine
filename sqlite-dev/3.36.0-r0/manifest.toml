@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6933d2bbc64bc0d49a73b52a6704fa10089b525131c50d037d29a43dfbf19315"
 licence = "blessing"
 provides = "sqlite-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/sqlite-dev-3.36.0-r0.apk"
 version = "3.36.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.36.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["sqlite-libs", "3.36.0-r0"]]

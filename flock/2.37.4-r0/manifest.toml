@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ac1f7f3c49da202d4206a3dbab597a695152bf78e74bf65ccabbecb1f59e0ef6"
 licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND"
 provides = "flock"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/flock-2.37.4-r0.apk"
 version = "2.37.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.37.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

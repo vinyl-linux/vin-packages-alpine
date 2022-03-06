@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3e380a00bd9458a48c95b19da1bdd9a60cb9835102c4fb198ce0d8b6aa873248"
 licence = "AS-IS"
 provides = "jpeg"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/jpeg-9d-r1.apk"
 version = "9.0.0-d-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "9.0.0-d-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libjpeg-turbo-utils", "2.1.2-r0"]]

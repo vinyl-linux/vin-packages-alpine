@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3e0ddc6be665ab6ce410f4106ba05d08871cfb594892f9bf40c3e828b616f1a1"
 licence = "LGPL-2.0-or-later"
 provides = "vanessa_logger-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vanessa_logger-dev-0.0.10-r1.apk"
 version = "0.0.10-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.0.10-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["vanessa_logger", "0.0.10-r1"]]

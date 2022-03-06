@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b559978386dec1abbff635843a803ab4bb8f415ba04619e01ff4e72874d258be"
 licence = "Artistic-1.0-Perl or GPL-1.0-or-later"
 provides = "perl-pod-coverage"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-pod-coverage-0.23-r2.apk"
 version = "0.23.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.23.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-devel-symdump", "2.18.0-r2"], ["perl-test-pod", "1.52.0-r2"], ["perl-pod-parser", "1.63.0-r1"]]

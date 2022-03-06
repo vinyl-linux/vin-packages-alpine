@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d96fb1acd0c650e30886ac8697d63e835439c6fcc7b78ce43326b5714054f268"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-data-optlist"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-data-optlist-0.112-r0.apk"
 version = "0.112.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.112.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-params-util", "1.102.0-r1"], ["perl-sub-install", "0.928.0-r2"]]

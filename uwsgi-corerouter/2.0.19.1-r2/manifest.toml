@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0198dd3949a2274cf0869b7e52b4b132fe0bc8f474287d42cac1df6a7c8b50c3"
 licence = "custom"
 provides = "uwsgi-corerouter"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/uwsgi-corerouter-2.0.19.1-r2.apk"
 version = "2.0.19.1-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.19.1-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.19.1-r2"], ["musl", "1.2.2-r7"]]

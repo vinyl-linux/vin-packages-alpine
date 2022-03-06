@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f4d31eff7be479d78b6f4c2c7e4fe26d4300a925f1c60229c9351f3821e1084f"
 licence = "Apache-2.0"
 provides = "apache2-ctl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/apache2-ctl-2.4.52-r0.apk"
 version = "2.4.52-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.4.52-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lynx", "2.8.9"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a7cce69178333844694e6c1bb16288ff894cab9d1a749b8af894a9595f50c4f2"
 licence = "GPL-3.0-or-later"
 provides = "ccache"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ccache-4.3-r1.apk"
 version = "4.3.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.3.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"], ["zstd-libs", "1.5.0-r0"]]

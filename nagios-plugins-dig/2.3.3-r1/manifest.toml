@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a365396939102b1d7e43012423ad2f46828452ea7120a02e2ee218122015d80f"
 licence = "GPL-3.0-only"
 provides = "nagios-plugins-dig"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-dig-2.3.3-r1.apk"
 version = "2.3.3-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.3-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.3.3-r1"], ["bind-tools", "9.16.25-r0"], ["musl", "1.2.2-r7"], ["libcrypto1.1", "1.1.1-l-r8"]]

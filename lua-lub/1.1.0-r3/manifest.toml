@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e960e9451f9dcca75535d2513be5c252bbdc67ed9046a88600a62a0f0b918b5e"
 licence = "MIT"
 provides = "lua-lub"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua-lub-1.1.0-r3.apk"
 version = "1.1.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.1.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.3-r0"], ["lua-filesystem", "1.8.0-r1"]]

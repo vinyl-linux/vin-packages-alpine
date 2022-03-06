@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "597d01fef2e3d2c499dd73f0ccb6781cba6f26de80bdcf551345ac152ced9354"
 licence = "BSD-3-Clause"
 provides = "py-unbound"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py-unbound-1.13.2-r2.apk"
 version = "1.13.2-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.13.2-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["unbound-libs", "1.13.2-r2"]]

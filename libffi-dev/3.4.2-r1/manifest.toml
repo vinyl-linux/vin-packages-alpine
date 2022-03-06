@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2e51206e11dc38cd7efdf1b9cd3949c60688f175c5545d6cad118c935420ec22"
 licence = "MIT"
 provides = "libffi-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libffi-dev-3.4.2-r1.apk"
 version = "3.4.2-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.4.2-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.10.41-r0"], ["libffi", "3.4.2-r1"], ["pkgconf", "1.8.0-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "b4a50bb52e3bf89f57459fd6982240a6822fbd1cc5dffbd23298c0610f0f1cbb"
 licence = "BSD-2-Clause"
 provides = "liblogging-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/liblogging-dev-1.0.6-r1.apk"
 version = "1.0.6-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.6-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["liblogging", "1.0.6-r1"], ["pkgconf", "1.8.0-r0"]]

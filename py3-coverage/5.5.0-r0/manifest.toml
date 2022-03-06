@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7d22757e5c777c6b2276cf6626c65215b8e2cdb96859f3da7bca6362e6dd2adf"
 licence = "Apache-2.0"
 provides = "py3-coverage"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-coverage-5.5-r0.apk"
 version = "5.5.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.5.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

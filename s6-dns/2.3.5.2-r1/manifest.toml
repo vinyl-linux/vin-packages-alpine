@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "0f874f2fcc16d6a6e7b1086088098250ee833fd3ac4b278f08f1e3502897b367"
 licence = "ISC"
 provides = "s6-dns"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/s6-dns-2.3.5.2-r1.apk"
 version = "2.3.5.2-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.3.5.2-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["skalibs", "2.11.0.0-r0"]]

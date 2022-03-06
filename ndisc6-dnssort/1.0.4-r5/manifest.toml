@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "fc60c446bd3419b092a8e0a034865751f51b1e57fb151310700feeac55889326"
 licence = "GPL-2.0-or-later"
 provides = "ndisc6-dnssort"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ndisc6-dnssort-1.0.4-r5.apk"
 version = "1.0.4-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.4-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"]]

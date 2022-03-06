@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6f15a087fca28a07ed11d45ecca2e6276c75097fa3402894d8115203834016fd"
 licence = "GPL-2.0-or-later"
 provides = "rp-pppoe"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rp-pppoe-3.14-r0.apk"
 version = "3.14.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.14.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

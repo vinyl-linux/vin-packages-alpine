@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "96a34a1bf34b273189e8fcfc4253628182bd501a3be5508cf82543f661ca753f"
 licence = "custom"
 provides = "tmux-zsh-completion"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tmux-zsh-completion-5.8.1-r0.apk"
 version = "5.8.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.8.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.8.1-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6305e594970bd0d3e1c1b6c5e58fa72eb10c119b3cb5d4eae1ab04d720adec75"
 licence = "GPL-3.0-or-later"
 provides = "itstool"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/itstool-2.0.7-r0.apk"
 version = "2.0.7-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.0.7-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["py3-libxml2", "2.9.12-r2"], ["python3", "3.9.7-r4"]]

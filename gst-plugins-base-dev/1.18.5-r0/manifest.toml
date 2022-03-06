@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5504f557d30fe1662ef94c9b3fdad8cc71d667885cd19d7f99c810b497543a79"
 licence = "GPL-2.0-or-later LGPL-2.0-or-later"
 provides = "gst-plugins-base-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gst-plugins-base-dev-1.18.5-r0.apk"
 version = "1.18.5-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.18.5-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["wayland-dev", "1.19.0-r1"], ["gst-plugins-base", "1.18.5-r0"], ["mesa-dev", "21.2.6-r0"], ["glib-dev", "2.70.1-r0"], ["gstreamer-dev", "1.18.5-r0"], ["orc-dev", "0.4.32-r0"], ["libx11-dev", "1.7.2-r0"], ["pkgconf", "1.8.0-r0"]]

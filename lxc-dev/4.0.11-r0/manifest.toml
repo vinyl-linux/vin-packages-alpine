@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2cf95f071e7179030519f267a6f88d51d24b070da440b8ba48d365b9ee7f6823"
 licence = "GPL-2.0-only"
 provides = "lxc-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lxc-dev-4.0.11-r0.apk"
 version = "4.0.11-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.0.11-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lxc-libs", "4.0.11-r0"], ["pkgconf", "1.8.0-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "64a71e715142b6655872594ccb99d265e25a280f15f3934e2223d83d2287ce07"
 licence = "MIT"
 provides = "yx"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/yx-1.0.0-r0.apk"
 version = "1.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["yaml", "0.2.5-r0"]]

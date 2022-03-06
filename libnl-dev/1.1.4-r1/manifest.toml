@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3230f1b4ebb70be15efa38c6167c032263b14c52dca4b70c37795b060ab6eae2"
 licence = "LGPL-2.1-only"
 provides = "libnl-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libnl-dev-1.1.4-r1.apk"
 version = "1.1.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.1.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libnl", "1.1.4-r1"], ["pkgconf", "1.8.0-r0"]]

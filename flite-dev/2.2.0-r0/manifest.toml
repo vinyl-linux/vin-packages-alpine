@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "c4c7c0c8160f068dab4efbe910c20fa2c6f17d597f6a04ca97f53e09e524ea7c"
 licence = "BSD-4-Clause"
 provides = "flite-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/flite-dev-2.2-r0.apk"
 version = "2.2.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.2.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["flite", "2.2.0-r0"], ["pkgconf", "1.8.0-r0"]]

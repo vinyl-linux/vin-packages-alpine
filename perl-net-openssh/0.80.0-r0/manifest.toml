@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "702ac35cb2c1f463dd72ef499097d21ea1189f092bc9018a58fd941098dfab5d"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-net-openssh"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-net-openssh-0.80-r0.apk"
 version = "0.80.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.80.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"]]

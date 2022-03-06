@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6457617e71e64fc801f541af2c1b9a0a81f12468f1780440c9240b87884a25c1"
 licence = "ISC"
 provides = "s6-linux-init"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/s6-linux-init-1.0.6.4-r0.apk"
 version = "1.0.6.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.6.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["s6", "2.11.0.0-r0"], ["skalibs", "2.11.0.0-r0"]]

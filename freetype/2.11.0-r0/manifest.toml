@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9450b9d3ad20a755adc0c9627adead0c60f57c08ac9e3b76a705aff9c0b9b79c"
 licence = "FTL GPL-2.0-or-later"
 provides = "freetype"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freetype-2.11.0-r0.apk"
 version = "2.11.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.11.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["brotli-libs", "1.0.9-r5"], ["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"], ["libpng", "1.6.37-r1"], ["zlib", "1.2.11-r3"]]

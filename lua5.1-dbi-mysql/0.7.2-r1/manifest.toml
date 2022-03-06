@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d00acfce96f9be6148321d73178aadfcacc4001a1c707f6f1843bee82a7c3c5f"
 licence = "MIT"
 provides = "lua5.1-dbi-mysql"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.1-dbi-mysql-0.7.2-r1.apk"
 version = "0.7.2-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.7.2-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r8"], ["musl", "1.2.2-r7"], ["mariadb-connector-c", "3.1.13-r2"]]

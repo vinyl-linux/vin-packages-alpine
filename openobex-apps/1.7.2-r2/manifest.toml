@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "684981b3b1f076bb03d785ade24b0990e1e3ee0ac18c9829700c1480d088c890"
 licence = "GPL LGPL"
 provides = "openobex-apps"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openobex-apps-1.7.2-r2.apk"
 version = "1.7.2-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.7.2-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["bluez-libs", "5.63.0-r0"], ["musl", "1.2.2-r7"], ["openobex", "1.7.2-r2"]]

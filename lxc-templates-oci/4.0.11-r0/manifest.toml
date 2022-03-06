@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "60b1b050ed308145fe6eb213f8954a51b3e961419e1e1a1738bb6c0fddd6fa02"
 licence = "GPL-2.0-only"
 provides = "lxc-templates-oci"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lxc-templates-oci-4.0.11-r0.apk"
 version = "4.0.11-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.0.11-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["jq", "1.6.0-r1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "2428a4b4a9c873e7c5aefe7c180119f73c4a10bb36aae32b71734156b519aa18"
 licence = "MIT"
 provides = "lua5.3-struct"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-struct-0.2-r3.apk"
 version = "0.2.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.2.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e2b433ad30f0f8b82c1d1846c3c2f98978be7fc9b5ece2375752f461fb1bcd85"
 licence = "ISC"
 provides = "skalibs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/skalibs-2.11.0.0-r0.apk"
 version = "2.11.0.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.11.0.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

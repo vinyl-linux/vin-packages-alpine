@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f6ccc17ff75b95160d7eb6c5eb7e74691c9af3ce63013f0533ef968c080afc08"
 licence = "MIT"
 provides = "su-exec"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/su-exec-0.2-r1.apk"
 version = "0.2.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.2.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "8c3f9f7dfe7b5a8afd914904007ca85edc47252e4fa7b38812fe9dd4e23a99e7"
 licence = "BSD-3-clause AND BSD-2-clause AND curl"
 provides = "pcsc-lite-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pcsc-lite-dev-1.9.4-r0.apk"
 version = "1.9.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.9.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["eudev-dev", "3.2.11"], ["pcsc-lite-libs", "1.9.4-r0"], ["pcsc-lite-spy-libs", "1.9.4-r0"], ["pkgconf", "1.8.0-r0"]]

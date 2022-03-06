@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "034466cc6bc45be06f8e5092c51973d8f54b43b6f5dcaf3c4286a18c2bb6f34c"
 licence = "BSD"
 provides = "freeradius-client"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/freeradius-client-1.1.7-r4.apk"
 version = "1.1.7-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.1.7-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["nettle", "3.7.3-r0"]]

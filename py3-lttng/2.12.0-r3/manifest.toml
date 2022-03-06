@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d21b3092125877f15042d98418c3106d1892d0187e631d79bfb27dc497cea2cf"
 licence = "LGPL-2.1-or-later"
 provides = "py3-lttng"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-lttng-2.12.0-r3.apk"
 version = "2.12.0-r3"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.12.0-r3"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["musl", "1.2.2-r7"], ["lttng-ust", "2.12.0-r3"], ["userspace-rcu", "0.12.2-r0"]]

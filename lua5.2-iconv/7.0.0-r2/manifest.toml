@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "eee39d8fc025071e9b5cb29e5c834fcdf97bb8a767c743268cb0eca38cf43c6f"
 licence = "MIT"
 provides = "lua5.2-iconv"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.2-iconv-7-r2.apk"
 version = "7.0.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "7.0.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

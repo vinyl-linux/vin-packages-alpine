@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "719210102c370d9949a4f27d43ea08efca3d146b5a19dbb245d714c2a675a50e"
 licence = "LGPL-3.0-or-later OR GPL-2.0-or-later"
 provides = "gmp-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gmp-dev-6.2.1-r1.apk"
 version = "6.2.1-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "6.2.1-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gmp", "6.2.1-r1"], ["libgmpxx", "6.2.1-r1"], ["pkgconf", "1.8.0-r0"]]

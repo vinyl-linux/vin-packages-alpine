@@ -94,8 +94,15 @@ func main() {
 			log.Printf("%#v", m)
 
 			panic(err)
+		}
 
-			//continue
+		// if checksum is empty, yet NewManifest returns no error,
+		// then that means the manifest already exists.
+		//
+		// If we try to write this to disk we're going to end up
+		// a semi-empty manifest which will bork out
+		if m.Checksum == "" {
+			continue
 		}
 
 		err = m.Write()

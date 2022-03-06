@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e58e8c6f1eda0d58a85fe15424d534a19e8fa125f51fae68507422b651267240"
 licence = "GPL-2.0 or Artistic"
 provides = "perl-dbix-dbschema"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-dbix-dbschema-0.45-r2.apk"
 version = "0.45.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.45.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-dbi", "1.643.0-r3"]]

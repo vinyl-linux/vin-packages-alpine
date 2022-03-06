@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "e3253e9d276871fa0afb7940a24a6937d16102d253429555f530b5de92bfe41c"
 licence = "GPL-2.0-or-later"
 provides = "lzip"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lzip-1.22-r1.apk"
 version = "1.22.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.22.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libstdc++", "10.3.1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "7b95467e206091c7c8c56463c6e5ad1877e873d5b57711acee2ad72be55a7460"
 licence = "GPL-2.1-only"
 provides = "logtail"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/logtail-3.22-r0.apk"
 version = "3.22.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.22.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

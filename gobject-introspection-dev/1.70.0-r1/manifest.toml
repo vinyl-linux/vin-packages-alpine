@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f62198524e0b459199f17a36a376f3c10edeb6f75462a03e0b8e6e79865e79f4"
 licence = "LGPL-2.0-or-later AND GPL-2.0-or-later AND MIT"
 provides = "gobject-introspection-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gobject-introspection-dev-1.70.0-r1.apk"
 version = "1.70.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.70.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.9.7-r4"], ["cairo-dev", "1.16.0-r3"], ["libtool", "2.4.6-r7"], ["gobject-introspection", "1.70.0-r1"], ["glib-dev", "2.70.1-r0"], ["pkgconf", "1.8.0-r0"], ["musl", "1.2.2-r7"], ["libffi", "3.4.2-r1"], ["glib", "2.70.1-r0"]]

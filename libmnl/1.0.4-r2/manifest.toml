@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5e588f872b5db613b31b772e92137b7c9fd3d226fbbecc1a7ec484c0b91ebb69"
 licence = "LGPL-2.1-or-later"
 provides = "libmnl"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libmnl-1.0.4-r2.apk"
 version = "1.0.4-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.4-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

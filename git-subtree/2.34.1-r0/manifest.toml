@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "001ae781e75ca2475fd1ed5c2cbfc691b78efb12446963ae7d6eb1ca766ed2be"
 licence = "GPL-2.0-or-later"
 provides = "git-subtree"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/git-subtree-2.34.1-r0.apk"
 version = "2.34.1-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.34.1-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["git", "2.34.1-r0"]]

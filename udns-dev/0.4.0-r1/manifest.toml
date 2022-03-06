@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5c5237feb5ac108eadece23b4bed841b03150c6dbf73917ba3e979b103ffa691"
 licence = "LGPL-2.1-or-later"
 provides = "udns-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/udns-dev-0.4-r1.apk"
 version = "0.4.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.4.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["udns", "0.4.0-r1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "254d08e9988fdeded327128967ee077b0dde3192f0fb129b9ed6c8a834bb311a"
 licence = "LGPL-2.1-or-later"
 provides = "userspace-rcu-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/userspace-rcu-dev-0.12.2-r0.apk"
 version = "0.12.2-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.12.2-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.8.0-r0"], ["userspace-rcu", "0.12.2-r0"]]

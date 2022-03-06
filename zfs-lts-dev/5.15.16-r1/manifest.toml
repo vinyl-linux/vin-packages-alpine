@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1dca268fb97511ca97bce8432614a31a5ab2d34fcdebcc93dcf76f2ab7b24954"
 licence = "CDDL-1.0"
 provides = "zfs-lts-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zfs-lts-dev-5.15.16-r1.apk"
 version = "5.15.16-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.15.16-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.70.1-r0"], ["e2fsprogs-dev", "1.46.4-r0"], ["util-linux-dev", "2.37.4-r0"], ["libtirpc-dev", "1.3.2-r0"], ["linux-lts-dev", "5.15.16-r0"]]

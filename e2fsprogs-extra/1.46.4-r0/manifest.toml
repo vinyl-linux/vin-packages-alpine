@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "dec73d6497cbc548d7ccb7bffe0da29cccf180e1718af69e070038c1760222bb"
 licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT"
 provides = "e2fsprogs-extra"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/e2fsprogs-extra-1.46.4-r0.apk"
 version = "1.46.4-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.46.4-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["e2fsprogs", "1.46.4-r0"], ["libblkid", "2.37.4-r0"], ["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["e2fsprogs-libs", "1.46.4-r0"], ["libuuid", "2.37.4-r0"]]

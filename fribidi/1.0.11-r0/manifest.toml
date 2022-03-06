@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "f95976238da75ceaba271cc38e86816ee16af31a6fde92d24e16b8467cca6d8e"
 licence = "LGPL-2.0-or-later"
 provides = "fribidi"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fribidi-1.0.11-r0.apk"
 version = "1.0.11-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.11-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

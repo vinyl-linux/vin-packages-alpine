@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "860381cd41bfeaa4158273a202e7c190a2d13f9d6739666e264d9555b53167de"
 licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
 provides = "lm-sensors-sensord-openrc"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lm-sensors-sensord-openrc-3.6.0-r1.apk"
 version = "3.6.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.6.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.1.16-r0"], ["sysfsutils", "2.1.1-r0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "d2a79923a714cf748a8509062b6d18aca2fbe0f770c2b3beb8ee515d5378acd2"
 licence = "MIT"
 provides = "nodejs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nodejs-16.14.0-r0.apk"
 version = "16.14.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "16.14.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20211220.0.0-r0"], ["nghttp2-libs", "1.46.0-r0"], ["busybox", "1.34.1-r4"], ["brotli-libs", "1.0.9-r5"], ["musl", "1.2.2-r7"], ["c-ares", "1.18.1-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["libgcc", "10.3.1"], ["libssl1.1", "1.1.1-l-r8"], ["libstdc++", "10.3.1"], ["zlib", "1.2.11-r3"]]

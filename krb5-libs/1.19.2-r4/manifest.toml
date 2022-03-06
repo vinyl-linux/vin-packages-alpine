@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6504ee59282c7927e7ca3f66bd7fdc79c8a20346a12f1496b633bc8ba368f0e2"
 licence = "MIT"
 provides = "krb5-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/krb5-libs-1.19.2-r4.apk"
 version = "1.19.2-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.19.2-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["krb5-conf", "1.0.0-r2"], ["musl", "1.2.2-r7"], ["libcom_err", "1.46.4-r0"], ["libcrypto1.1", "1.1.1-l-r8"], ["keyutils-libs", "1.6.3-r0"], ["libssl1.1", "1.1.1-l-r8"], ["libverto", "0.3.2-r0"]]

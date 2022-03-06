@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "af1e84224817a1b5036efa4e477a501bb581f526ca0940033abc4ee3273f32fd"
 licence = "custom:GPL-like"
 provides = "libgc++"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgc++-8.0.6-r0.apk"
 version = "8.0.6-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "8.0.6-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gc", "8.0.6-r0"], ["libstdc++", "10.3.1"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a44a1325db8d86ac568718130a77f062038315bf0b15165a13e3450012d11388"
 licence = "LGPL-2.0-or-later"
 provides = "nettle-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nettle-dev-3.7.3-r0.apk"
 version = "3.7.3-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "3.7.3-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["gmp-dev", "6.2.1-r1"], ["nettle", "3.7.3-r0"], ["pkgconf", "1.8.0-r0"]]

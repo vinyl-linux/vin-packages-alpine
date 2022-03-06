@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "a27b3f8ac65f3e1e94b4264be4c9c9a0a35240dbefec4468f503fd1854a50172"
 licence = "LGPL"
 provides = "libdaemon"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libdaemon-0.14-r2.apk"
 version = "0.14.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.14.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

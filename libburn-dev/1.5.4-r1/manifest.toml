@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "987335f447538e9f9121c8e16550f1e3fc4cacc0e8c344e5ca3098da91578f71"
 licence = "GPL-2.0-or-later"
 provides = "libburn-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libburn-dev-1.5.4-r1.apk"
 version = "1.5.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.5.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libburn", "1.5.4-r1"], ["pkgconf", "1.8.0-r0"]]

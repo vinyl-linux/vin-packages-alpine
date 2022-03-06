@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "5f80bb3a1f474256c37fefac0d0069af1678822d61df06e3be6c5dd6e9f98f92"
 licence = "GPL-2.0-or-later"
 provides = "igmpproxy"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/igmpproxy-0.3-r0.apk"
 version = "0.3.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.3.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

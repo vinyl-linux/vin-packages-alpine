@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "55c86eb8729a4d21f2cf1ed08ec69ad628487bb2e2981824fa0c5335954e9764"
 licence = "0BSD"
 provides = "rhash"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rhash-1.4.2-r2.apk"
 version = "1.4.2-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.4.2-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["rhash-libs", "1.4.2-r2"]]

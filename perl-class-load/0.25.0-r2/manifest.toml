@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "1266c50b3a7dc9732232a78657d5dc182628245fc756f88c6b5817b3bef94ff8"
 licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 provides = "perl-class-load"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-class-load-0.25-r2.apk"
 version = "0.25.0-r2"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.25.0-r2"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.34.0-r1"], ["perl-data-optlist", "0.112.0-r0"], ["perl-module-runtime", "0.16.0-r4"], ["perl-module-implementation", "0.9.0-r3"], ["perl-try-tiny", "0.30.0-r3"], ["perl-namespace-clean", "0.27.0-r2"], ["perl-package-stash", "0.39.0-r0"]]

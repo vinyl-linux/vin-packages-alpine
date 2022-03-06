@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "380ea348662b3e9e1fb92b550b62d6c5c448aec9277088808c116a121ac5c7fc"
 licence = "LGPL-2.0-or-later"
 provides = "avahi-tools"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/avahi-tools-0.8-r5.apk"
 version = "0.8.0-r5"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.8.0-r5"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r5"], ["musl", "1.2.2-r7"], ["gdbm", "1.22.0-r0"], ["libintl", "0.21.0-r0"]]

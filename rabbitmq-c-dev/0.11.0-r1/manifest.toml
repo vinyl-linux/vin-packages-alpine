@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "302e87fc8d15c360ec9675a36d832badb8ae8efc66e98cfa234ceae99f1919e6"
 licence = "MIT"
 provides = "rabbitmq-c-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rabbitmq-c-dev-0.11.0-r1.apk"
 version = "0.11.0-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "0.11.0-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["popt-dev", "1.18.0-r0"], ["openssl-dev", "1.1.1-l-r8"], ["pkgconf", "1.8.0-r0"], ["rabbitmq-c", "0.11.0-r1"]]

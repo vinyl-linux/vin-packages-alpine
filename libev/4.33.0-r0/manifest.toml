@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "51e497c36bb70f026a4320970de10ccfee3fc304fad3f0d97843b275cdda031e"
 licence = "BSD-2-Clause OR GPL-2.0-or-later"
 provides = "libev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libev-4.33-r0.apk"
 version = "4.33.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.33.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"]]

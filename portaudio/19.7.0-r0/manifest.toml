@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "3654cf4de9fd56e694b0a147222b1e72363e5a90dddf6cea21f1bf5cdc1882df"
 licence = "MIT"
 provides = "portaudio"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/portaudio-19.7.0-r0.apk"
 version = "19.7.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "19.7.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"], ["jack", "1.9.19-r2"]]

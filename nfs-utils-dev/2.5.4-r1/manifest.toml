@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "ed078521564fab6fd31e82321f32cc4d7b4a40d304813436e8aded0bb160bc95"
 licence = "GPL-2.0-or-later BSD-3-Clause"
 provides = "nfs-utils-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nfs-utils-dev-2.5.4-r1.apk"
 version = "2.5.4-r1"
 
 [commands]
@@ -10,3 +10,6 @@ version = "2.5.4-r1"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libnfsidmap", "2.5.4-r1"], ["pkgconf", "1.8.0-r0"]]

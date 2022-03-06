@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "6b642c40bf04163ea95c231ff6cea4625cb5a9bdd866457f916c78ea5eb0d847"
 licence = "GPL"
 provides = "joe"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/joe-4.6-r0.apk"
 version = "4.6.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "4.6.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["ncurses-libs", "6.3.0"]]

@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "9feaac1efe6e3b78e6117c45aea9da89b9159e631e1370664d6c0084d5a78b3f"
 licence = "BSD-3-Clause"
 provides = "libmemcached-libs"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libmemcached-libs-1.0.18-r4.apk"
 version = "1.0.18-r4"
 
 [commands]
@@ -10,3 +10,6 @@ version = "1.0.18-r4"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["libgcc", "10.3.1"], ["libsasl", "2.1.27-r14"], ["libstdc++", "10.3.1"]]

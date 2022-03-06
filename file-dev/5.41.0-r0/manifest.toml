@@ -1,7 +1,7 @@
-checksum = ""
+checksum = "189d5a3147b54c74031820a7f202920cc1534cfcc54c3d29bea192f19d13a63d"
 licence = "BSD-2-Clause"
 provides = "file-dev"
-tarball = ""
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/file-dev-5.41-r0.apk"
 version = "5.41.0-r0"
 
 [commands]
@@ -10,3 +10,6 @@ version = "5.41.0-r0"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
+
+  [profiles.default]
+    deps = [["libmagic", "5.41.0-r0"], ["pkgconf", "1.8.0-r0"]]
