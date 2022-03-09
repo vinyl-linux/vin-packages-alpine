@@ -1,0 +1,15 @@
+checksum = "7fc34205139eee725387d28f7b49ef2993566ae0971ec92121b199fdaa611f17"
+licence = "GPL-2.0-or-later"
+provides = "dahdi-linux-lts-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dahdi-linux-lts-dev-5.15.26-r0.apk"
+version = "5.15.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dahdi-linux-dev", "3.1.0-r0"]]

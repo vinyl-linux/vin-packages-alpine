@@ -85,6 +85,15 @@ func NewManifest(vp VersionedPackage, deps []VersionedPackage) (m Manifest, err 
 		return
 	}
 
+	f, err := hasFinaliser(fn)
+	if err != nil {
+		return
+	}
+
+	if f {
+		m.Commands.Finaliser = "./.trigger"
+	}
+
 	err = os.Remove(fn)
 
 	return
@@ -170,4 +179,5 @@ type Commands struct {
 	WorkingDir string   `toml:"working_dir,omitempty"`
 	Patches    []string `toml:"patches,omitempty"`
 	Skipenv    bool     `toml:"skipenv,omitempty"`
+	Finaliser  string   `toml:"finaliser,omitempty"`
 }

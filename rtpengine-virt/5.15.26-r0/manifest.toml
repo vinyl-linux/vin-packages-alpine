@@ -1,0 +1,15 @@
+checksum = "4d5683446ca126fd3d9d71e5f0344a5da80c7eae41a7ac6322c6498cab67d55d"
+licence = "GPL-3.0-only"
+provides = "rtpengine-virt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/rtpengine-virt-5.15.26-r0.apk"
+version = "5.15.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-virt", "5.15.26-r0"]]

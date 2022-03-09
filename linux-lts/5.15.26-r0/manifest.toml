@@ -1,0 +1,15 @@
+checksum = "87a09a64f5ba2e66d561dde39b146eff214cd048c241294e8a866c44a56662d5"
+licence = "GPL-2.0"
+provides = "linux-lts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/linux-lts-5.15.26-r0.apk"
+version = "5.15.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.6.0-r0"], ["linux-firmware-rtw88", "20211027.0.0-r0"]]

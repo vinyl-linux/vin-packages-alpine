@@ -1,0 +1,15 @@
+checksum = "105b23dbc9142f1a191a1b4ecf45d2dd7cf8e582dfab7935bacef96e6f990c89"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "plasma-settings-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/plasma-settings-lang-21.12-r1.apk"
+version = "21.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kded", "5.88.0-r0"], ["kirigami2", "5.88.0-r0"], ["openrc-settingsd", "1.1.0-r0"], ["qt5-qtquickcontrols2", "5.15.3"]]

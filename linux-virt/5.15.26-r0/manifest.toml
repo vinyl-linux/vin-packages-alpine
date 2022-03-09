@@ -1,0 +1,15 @@
+checksum = "542026bd8181d9bf3d59d0619e7b3ddbdcd0b12fe715510c32b3df5c8ecab7ef"
+licence = "GPL-2.0"
+provides = "linux-virt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/linux-virt-5.15.26-r0.apk"
+version = "5.15.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.6.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c3434ef260dae6e5aa85ec62eb8312435e7b599a2047e2d47c4d8b0349f6d82b"
+licence = "GPL-2.0-or-later"
+provides = "jool-modules-lts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/jool-modules-lts-5.15.26-r0.apk"
+version = "5.15.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-lts", "5.15.26-r0"]]
