@@ -1,0 +1,15 @@
+checksum = "d4934846d7ee5445ded0564e2a5fd5e6bd865cc43e1215d694e1fdcac743f0b8"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-hw-usb-redirect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-hw-usb-redirect-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["usbredir", "0.8.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "7eee1f73475809c5355830ec2b48663c696dfab4db9a7c32add423a6b05acb26"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-audio-alsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-audio-alsa-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.5.1-r1"], ["musl", "1.2.2-r7"]]

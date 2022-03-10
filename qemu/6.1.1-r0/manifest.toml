@@ -1,0 +1,15 @@
+checksum = "d427f9d55812adfcb24f6bddb79102947bdee2c2775971b364b71fd4a90d5552"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.34.1-r4"], ["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["libcap-ng", "0.8.2-r1"], ["libcurl", "7.80.0-r0"], ["libepoxy", "1.5.9-r0"], ["mesa-gbm", "21.2.6-r0"], ["glib", "2.70.1-r0"], ["gnutls", "3.7.1-r0"], ["pixman", "0.40.0-r3"], ["libseccomp", "2.5.2-r0"], ["virglrenderer", "0.9.1-r0"], ["libxkbcommon", "1.3.1-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

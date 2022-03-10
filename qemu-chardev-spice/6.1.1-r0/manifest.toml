@@ -1,0 +1,15 @@
+checksum = "682b9829834a1e4d9f10bd9480a85a99443f1f3f61a51c3fc11e02b5c1e3e5d0"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-chardev-spice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-chardev-spice-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["spice-server", "0.15.0-r2"]]

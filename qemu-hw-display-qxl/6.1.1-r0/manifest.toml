@@ -1,0 +1,15 @@
+checksum = "eea6ff3cdc600141742edef29f0bc6cc97df0eb4f3daf99b5054bee3e59cd36f"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-hw-display-qxl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-hw-display-qxl-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ui-spice-core", "6.1.1-r0"], ["musl", "1.2.2-r7"], ["pixman", "0.40.0-r3"], ["spice-server", "0.15.0-r2"]]

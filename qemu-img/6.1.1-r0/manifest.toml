@@ -1,0 +1,15 @@
+checksum = "75d9c1632b611c53b1ec2af29bd45a7aa48d48e4942d1faa794d9f9e4ded03b7"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-img"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-img-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaio", "0.3.112-r1"], ["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["gnutls", "3.7.1-r0"], ["zlib", "1.2.11-r3"], ["zstd-libs", "1.5.0-r0"]]

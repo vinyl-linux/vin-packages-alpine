@@ -1,0 +1,15 @@
+checksum = "e63bda84c4b09ba928605f9533269f5902b2c6903cfc673eed8f6c309cbf699f"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-modules"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-modules-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-audio-alsa", "6.1.1-r0"], ["qemu-audio-oss", "6.1.1-r0"], ["qemu-audio-pa", "6.1.1-r0"], ["qemu-audio-sdl", "6.1.1-r0"], ["qemu-block-curl", "6.1.1-r0"], ["qemu-block-dmg-bz2", "6.1.1-r0"], ["qemu-block-nfs", "6.1.1-r0"], ["qemu-block-ssh", "6.1.1-r0"], ["qemu-hw-display-qxl", "6.1.1-r0"], ["qemu-hw-usb-redirect", "6.1.1-r0"], ["qemu-ui-curses", "6.1.1-r0"], ["qemu-ui-gtk", "6.1.1-r0"], ["qemu-ui-sdl", "6.1.1-r0"], ["qemu-ui-spice-app", "6.1.1-r0"], ["qemu-audio-spice", "6.1.1-r0"], ["qemu-chardev-spice", "6.1.1-r0"], ["qemu-hw-display-virtio-gpu-pci", "6.1.1-r0"], ["qemu-hw-display-virtio-gpu", "6.1.1-r0"], ["qemu-hw-display-virtio-vga", "6.1.1-r0"], ["qemu-hw-display-virtio-gpu-gl", "6.1.1-r0"], ["qemu-hw-display-virtio-gpu-pci-gl", "6.1.1-r0"], ["qemu-hw-display-virtio-vga-gl", "6.1.1-r0"], ["qemu-hw-s390x-virtio-gpu-ccw", "6.1.1-r0"], ["qemu-hw-usb-host", "6.1.1-r0"], ["qemu-ui-egl-headless", "6.1.1-r0"], ["qemu-ui-opengl", "6.1.1-r0"], ["qemu-ui-spice-core", "6.1.1-r0"]]

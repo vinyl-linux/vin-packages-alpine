@@ -1,0 +1,15 @@
+checksum = "351fd24191adc8beee2a5fd0e0038e0a63aef33074e1f60bf5bf7733c45e3516"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-block-dmg-bz2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-block-dmg-bz2-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r1"], ["musl", "1.2.2-r7"]]

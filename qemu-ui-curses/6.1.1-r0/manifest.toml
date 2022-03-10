@@ -1,0 +1,15 @@
+checksum = "b76c4543b89d27e3d85068e55d1a5138167aa4ec248572879fda951355f1143c"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-curses"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/community/x86_64/qemu-ui-curses-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.2-r7"], ["glib", "2.70.1-r0"], ["ncurses-libs", "6.3.0"]]
