@@ -1,0 +1,15 @@
+checksum = "987fc7dd248998f84e22a7a0a25dcb8601a58b6972f37556b56d31a668b92438"
+licence = "GPL-3.0-or-later"
+provides = "gnupg-scdaemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-scdaemon-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg-agent", "2.2.40-r0"], ["yash-binsh", "2.53.0-r2"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"], ["libksba", "1.6.3-r0"], ["npth", "1.6.0-r2"], ["libusb", "1.0.26-r0"]]

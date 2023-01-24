@@ -1,0 +1,15 @@
+checksum = "9d593b59b92b7a24d966608b4d9a0f64f96f63e38a9a67193d57c6f40d15b5dc"
+licence = "GPL-3.0-only"
+provides = "ticcutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ticcutils-dev-0.29-r1.apk"
+version = "0.29.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["ticcutils", "0.29.0-r1"]]

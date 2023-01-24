@@ -1,0 +1,15 @@
+checksum = "993faa137cd213be5cef74c5b758f3eaf1cce66a93914a4d400dbddc82ec890a"
+licence = "MIT"
+provides = "intel-gmmlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/intel-gmmlib-22.3.1-r0.apk"
+version = "22.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "39b42b9696f3d4afc3267450fcb41916919292cc713458f98cce414a75c11088"
+licence = "MIT"
+provides = "libdeflate-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdeflate-dev-1.14-r0.apk"
+version = "1.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdeflate", "1.14.0-r0"], ["pkgconf", "1.9.4-r0"]]

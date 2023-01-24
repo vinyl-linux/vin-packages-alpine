@@ -1,0 +1,15 @@
+checksum = "b55de45c9371d26839674866c8c84dcd7ac8902856c89b3c21e7e76eaa5bc505"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-sqlite-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f6112a26c52f7d9473158b7e8aee5500b5f35e50eda3795c9ab2438e8c1d9334"
+licence = "GPL-2.0-or-later"
+provides = "txt2tags"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/txt2tags-3.7-r3.apk"
+version = "3.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

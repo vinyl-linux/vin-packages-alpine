@@ -1,0 +1,15 @@
+checksum = "8a3aed021543532cce4e36848801b8ab1266f9588580816293660a6856022bfe"
+licence = "MIT"
+provides = "scons"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/scons-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

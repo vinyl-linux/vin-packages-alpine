@@ -1,0 +1,15 @@
+checksum = "4c4c837e225f15a9c5bd31a6fafb74d295db5eeb631983393abe28ab9ae197ac"
+licence = "Apache-2.0"
+provides = "py3-regex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-regex-2022.10.31-r0.apk"
+version = "2022.10.31-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

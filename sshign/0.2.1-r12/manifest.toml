@@ -1,0 +1,15 @@
+checksum = "d3125acf90962309e2dbf1b298ec3e90facde3b73caaddaddb6a9bddc4bcb094"
+licence = "MIT"
+provides = "sshign"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sshign-0.2.1-r12.apk"
+version = "0.2.1-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

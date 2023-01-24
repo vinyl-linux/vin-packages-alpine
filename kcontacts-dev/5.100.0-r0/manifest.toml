@@ -1,0 +1,15 @@
+checksum = "77333cf296a9440b5e5b754e65ff42713675b1c25f75f505eb8d7ba2f961b5e7"
+licence = "LGPL-2.0-or-later"
+provides = "kcontacts-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcontacts-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcodecs-dev", "5.100.0-r0"], ["kconfig-dev", "5.100.1-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["kcontacts", "5.100.0-r0"]]

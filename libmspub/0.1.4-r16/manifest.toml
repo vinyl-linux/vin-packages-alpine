@@ -1,0 +1,15 @@
+checksum = "0fb12e0e396ce833c39c6af5678f730036d883036d8d5490dd051fcd28af6b29"
+licence = "MPL-2.0"
+provides = "libmspub"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmspub-0.1.4-r16.apk"
+version = "0.1.4-r16"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

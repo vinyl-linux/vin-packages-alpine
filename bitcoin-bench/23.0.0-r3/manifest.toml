@@ -1,0 +1,15 @@
+checksum = "cce796fba4a663085d858241ba26cf0f6c706bac5404fb437ee571c96ab58263"
+licence = "MIT"
+provides = "bitcoin-bench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitcoin-bench-23.0-r3.apk"
+version = "23.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["db-c++", "5.3.28-r2"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["libzmq", "4.3.4-r1"]]

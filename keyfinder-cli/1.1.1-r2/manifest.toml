@@ -1,0 +1,15 @@
+checksum = "f4f8d63e490f0f53cfe4f19b4de5847d858816c41e5715931bc130b9848585e3"
+licence = "GPL-3.0-only"
+provides = "keyfinder-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keyfinder-cli-1.1.1-r2.apk"
+version = "1.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libkeyfinder", "2.2.7-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "97c2be9635502fb6ff3ad2cf200e4781a615f55d8905db9cd41514a73cb76327"
+licence = "LGPL-2.0-or-later"
+provides = "libusb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libusb-dev-1.0.26-r0.apk"
+version = "1.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libusb", "1.0.26-r0"], ["pkgconf", "1.9.4-r0"]]

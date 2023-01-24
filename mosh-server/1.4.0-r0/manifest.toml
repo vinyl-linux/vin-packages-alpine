@@ -1,0 +1,15 @@
+checksum = "5cc0d1a85645a10393b308d6c313a2a96b57879f12b78c776878c84f25ec8afc"
+licence = "GPL-3.0-or-later"
+provides = "mosh-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mosh-server-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libprotobuf", "3.21.9-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

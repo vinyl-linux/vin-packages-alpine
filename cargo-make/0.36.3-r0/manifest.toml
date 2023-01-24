@@ -1,0 +1,15 @@
+checksum = "5192583e0ea416e26d1596f6635114c076fd0908fccc841dd95a1fb23168621f"
+licence = "Apache-2.0"
+provides = "cargo-make"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-make-0.36.3-r0.apk"
+version = "0.36.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

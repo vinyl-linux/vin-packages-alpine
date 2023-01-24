@@ -1,0 +1,15 @@
+checksum = "fe604ea1baa75e09f1627538cae726320ea1138f776d83a8d675a205b1ba7fa8"
+licence = "MIT"
+provides = "xcb-util-image-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcb-util-image-dev-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xcb-util-dev", "0.4.0-r3"], ["libxcb-dev", "1.15.0-r0"], ["pkgconf", "1.9.4-r0"], ["xcb-util-image", "0.4.1-r0"]]

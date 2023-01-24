@@ -1,0 +1,15 @@
+checksum = "cfb11e189fecbf10395a4ed583d2e1a03e7ff49ea4e38b36b59321a7e80866ff"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-openssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-openssl-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

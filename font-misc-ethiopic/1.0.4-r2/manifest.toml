@@ -1,0 +1,15 @@
+checksum = "1bed4c1df0f855857896b501dead1f8b19dc612f11916e38c223c96ded154af6"
+licence = "MIT"
+provides = "font-misc-ethiopic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-misc-ethiopic-1.0.4-r2.apk"
+version = "1.0.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

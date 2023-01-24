@@ -1,0 +1,15 @@
+checksum = "606bfb35852ed92ad9ae6a1d253ffaaf8fc80a7fee6ee983febd472906e7c995"
+licence = "BSD-3-Clause"
+provides = "jupyter-nbclassic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jupyter-nbclassic-0.4.8-r0.apk"
+version = "0.4.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-traitlets", "5.5.0-r0"], ["jupyter-server", "1.23.2-r0"], ["jupyter-notebook-shim", "0.2.2-r0"]]

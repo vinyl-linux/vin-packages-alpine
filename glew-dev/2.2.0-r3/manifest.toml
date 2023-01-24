@@ -1,0 +1,15 @@
+checksum = "012e92a1d9317f5a3385880ed61107f45b73d595d5f2e55d5920cb8c3a2627e4"
+licence = "GPL-2.0-or-later"
+provides = "glew-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glew-dev-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxmu-dev", "1.1.4-r0"], ["libxi-dev", "1.8.0-r0"], ["mesa-dev", "22.2.5-r1"], ["glu-dev", "9.0.2-r2"], ["glew", "2.2.0-r3"], ["pkgconf", "1.9.4-r0"]]

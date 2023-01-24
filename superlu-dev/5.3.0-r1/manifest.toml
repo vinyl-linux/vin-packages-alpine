@@ -1,0 +1,15 @@
+checksum = "a47805a095cd0459c403b261a403b5c10e9548f4b65c95c97f5c5862e7e48e37"
+licence = "BSD-3-Clause"
+provides = "superlu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/superlu-dev-5.3.0-r1.apk"
+version = "5.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["superlu", "5.3.0-r1"]]

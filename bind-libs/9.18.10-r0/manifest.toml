@@ -1,0 +1,15 @@
+checksum = "44d2e5e305238b12e17e4324ebf45c70bb00276560698d4e53f9d5feb6ee0d22"
+licence = "MPL-2.0"
+provides = "bind-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bind-libs-9.18.10-r0.apk"
+version = "9.18.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["fstrm", "0.6.1-r1"], ["krb5-libs", "1.20.1-r0"], ["nghttp2-libs", "1.51.0-r0"], ["protobuf-c", "1.4.1-r1"], ["libssl3", "3.0.7-r2"], ["libuv", "1.44.2-r0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6ac0508a68e368982e1d0a9cb1d5605fa72b48b7e370c2fdec369b38d8ebfc15"
+licence = "MPL-2.0"
+provides = "libcdr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcdr-0.1.7-r8.apk"
+version = "0.1.7-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["lcms2", "2.14.0-r0"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1d8718492bd136fe4b441450218ddc8f0508c774d1356b890dd6d6f51694089a"
+licence = "ISC"
+provides = "wluma-wlroots"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wluma-wlroots-4.1.2-r2.apk"
+version = "4.1.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wluma", "4.1.2-r2"], ["vulkan-loader", "1.3.231.2-r0"], ["wlroots", "0.15.1-r4"]]

@@ -1,0 +1,15 @@
+checksum = "56bef74da11b5c37f5cfea2e80f4ed87e8797a74c2c66a9b8323e56b34818dea"
+licence = "BSD-3-Clause"
+provides = "sfcapd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sfcapd-1.6.24-r0.apk"
+version = "1.6.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["nfdump", "1.6.24-r0"]]

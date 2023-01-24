@@ -1,0 +1,15 @@
+checksum = "56b04058072c222a00231bfa0d48db083e1fe144160d458c6665079078e86d57"
+licence = "Apache-2.0"
+provides = "py3-boto3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-boto3-1.18.49-r1.apk"
+version = "1.18.49-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-botocore", "1.21.49-r1"], ["py3-s3transfer", "0.5.1-r0"], ["py3-jmespath", "0.10.0-r2"]]

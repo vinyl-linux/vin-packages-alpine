@@ -1,0 +1,15 @@
+checksum = "c7d88064e8a3c9616131ec16eb5e694013bc93493cfe3a50a6c83e50a6c7cac7"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "elogind-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/elogind-dev-246.10-r5.apk"
+version = "246.10.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libelogind", "246.10.0-r5"], ["pkgconf", "1.9.4-r0"]]

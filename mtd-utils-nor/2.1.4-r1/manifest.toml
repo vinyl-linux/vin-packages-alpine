@@ -1,0 +1,15 @@
+checksum = "c55c2fad77e3160e4705474889d8b3f689befe5c4a1a6506a15ee408b4531a45"
+licence = "GPL-2.0-only"
+provides = "mtd-utils-nor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtd-utils-nor-2.1.4-r1.apk"
+version = "2.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "927b2864252c174353fb187b77186d766b8e78c36ace976973f814dac3c70d04"
+licence = "GPL-3.0-only"
+provides = "timbl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/timbl-dev-6.7-r1.apk"
+version = "6.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"], ["timbl", "6.7.0-r1"]]

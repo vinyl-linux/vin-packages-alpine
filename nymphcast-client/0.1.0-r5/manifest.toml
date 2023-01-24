@@ -1,0 +1,15 @@
+checksum = "3123ae28c2c33ac5f0d334817c082e5b84ef4a1ce1c859123d21574db8ece8f5"
+licence = "BSD-3-Clause"
+provides = "nymphcast-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nymphcast-client-0.1-r5.apk"
+version = "0.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r6"], ["poco", "1.12.2-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libnymphcast", "0.1.0-r2"], ["libstdc++", "12.2.1"]]

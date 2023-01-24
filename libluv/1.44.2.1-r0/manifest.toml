@@ -1,0 +1,15 @@
+checksum = "68d0bd28ed72b65a436d0db36b80814acce175a832a3ff52e6c206d564ec2190"
+licence = "Apache-2.0"
+provides = "libluv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libluv-1.44.2.1-r0.apk"
+version = "1.44.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libuv", "1.44.2-r0"]]

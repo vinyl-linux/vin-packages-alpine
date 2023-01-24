@@ -1,0 +1,15 @@
+checksum = "688fecf6206002967b1b9f5a947c9cfe400c06c403ba68a1b81ae29fa8d41dac"
+licence = "LGPL-2.1-or-later AND MPL-1.1"
+provides = "libnice-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnice-dev-0.1.19-r0.apk"
+version = "0.1.19-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnice", "0.1.19-r0"], ["glib-dev", "2.74.5-r0"], ["gnutls-dev", "3.7.8-r2"], ["pkgconf", "1.9.4-r0"]]

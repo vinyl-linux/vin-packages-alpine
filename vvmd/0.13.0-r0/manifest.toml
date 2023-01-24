@@ -1,0 +1,15 @@
+checksum = "7d1d26c0202ddc1ffd26d3903701675ed7729f8fe2b321b55f2d93dd1f2414a6"
+licence = "GPL-2.0-only"
+provides = "vvmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vvmd-0.13-r0.apk"
+version = "0.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mobile-broadband-provider-info", "20221107.0.0-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libmm-glib", "1.20.2-r1"], ["libphonenumber", "8.13.0-r0"], ["libstdc++", "12.2.1"]]

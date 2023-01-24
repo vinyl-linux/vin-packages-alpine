@@ -1,0 +1,15 @@
+checksum = "3fbdce5b8500f3bbb24e897ca731dadce024b8a8483b362f22e452e3e20a685c"
+licence = "LGPL-2.1-or-later"
+provides = "grilo-plugins-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grilo-plugins-dbg-0.3.15-r1.apk"
+version = "0.3.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tracker-miners", "3.4.3-r0"]]

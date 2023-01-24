@@ -1,0 +1,15 @@
+checksum = "ba06fae51a3976a3040fa76a223244467955334c0cdd766c94e23ca936fd1f40"
+licence = "BSD-3-Clause"
+provides = "libgbinder-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgbinder-dev-1.1.26-r0.apk"
+version = "1.1.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgbinder", "1.1.26-r0"], ["glib-dev", "2.74.5-r0"], ["libglibutil-dev", "1.0.67-r0"], ["pkgconf", "1.9.4-r0"]]

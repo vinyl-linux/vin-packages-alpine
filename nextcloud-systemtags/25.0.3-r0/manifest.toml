@@ -1,0 +1,15 @@
+checksum = "15c9314797b7950ce8ea95285319d077f81f91e4391c81349fe6d719298c9fc2"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-systemtags"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-systemtags-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

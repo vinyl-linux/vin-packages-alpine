@@ -1,0 +1,15 @@
+checksum = "af33cde205b22f3d8e835154bfe37f8edc09732b0a1576fe6d129b6553af6514"
+licence = "GPL-2.0-or-later"
+provides = "xfce4-sensors-plugin-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-sensors-plugin-dev-1.4.3-r0.apk"
+version = "1.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xfce4-panel-dev", "4.16.5-r0"], ["lm-sensors-dev", "3.6.0-r4"], ["libxfce4util-dev", "4.16.0-r2"], ["pkgconf", "1.9.4-r0"]]

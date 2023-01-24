@@ -1,0 +1,15 @@
+checksum = "4dffb3632f8e17d10caec2c17d2ae4e069b8b54204d350a854a18ee799ea0e45"
+licence = "GPL-2.0"
+provides = "xtables-addons-lts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xtables-addons-lts-5.15.89-r1.apk"
+version = "5.15.89-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-lts", "5.15.89-r0"]]

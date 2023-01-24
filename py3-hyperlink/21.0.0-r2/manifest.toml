@@ -1,0 +1,15 @@
+checksum = "eda101f9cc1170906cb3fa7a4c0567d9c034881f1605b77b53512e5028e6c540"
+licence = "MIT"
+provides = "py3-hyperlink"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-hyperlink-21.0.0-r2.apk"
+version = "21.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-idna", "3.4.0-r2"]]

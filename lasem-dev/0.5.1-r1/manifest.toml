@@ -1,0 +1,15 @@
+checksum = "994e7a5e62553b39bb0dd869b39f47bec7bfb6d1e7fa4f18a46927e78ddd8a8a"
+licence = "LGPL-2.0 GPL-2.0"
+provides = "lasem-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lasem-dev-0.5.1-r1.apk"
+version = "0.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lasem", "0.5.1-r1"], ["cairo-dev", "1.17.6-r3"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["libxml2-dev", "2.10.3-r1"], ["pango-dev", "1.50.12-r0"], ["pkgconf", "1.9.4-r0"]]

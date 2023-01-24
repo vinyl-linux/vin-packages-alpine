@@ -1,0 +1,15 @@
+checksum = "065b1e8fb16dc61f3f53918b8105e642742160784769b10e9501f7c75e77ddd2"
+licence = "MPL-2.0"
+provides = "libreoffice-connector-postgres"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-connector-postgres-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-base", "7.3.7.2-r0"], ["musl", "1.2.3-r4"], ["libreoffice-common", "7.3.7.2-r0"], ["libgcc", "12.2.1"], ["libpq", "15.1.0-r0"], ["libstdc++", "12.2.1"]]

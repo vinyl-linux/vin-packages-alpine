@@ -1,0 +1,15 @@
+checksum = "321faa7ea6faca416e3f6afeca031e28c998745c10cbc54d916ce2fbdd610f19"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-par-packer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-par-packer-1.056-r0.apk"
+version = "1.56.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-archive-zip", "1.68.0-r2"], ["perl-par", "1.18.0-r0"], ["perl-module-scandeps", "1.31.0-r1"], ["perl-getopt-argvfile", "1.11.0-r3"], ["perl-par-dist", "0.51.0-r0"], ["musl", "1.2.3-r4"], ["perl", "5.36.0-r0"]]

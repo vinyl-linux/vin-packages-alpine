@@ -1,0 +1,15 @@
+checksum = "a73e9c11044ceb6ac491183e1580c67a0c2ae7fa680a7ddaa52d9f3314bf15e2"
+licence = "LGPL-2.1-or-later"
+provides = "anthy-emacs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/anthy-emacs-9100h-r2.apk"
+version = "9100.0.0-h-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["anthy", "9100.0.0-h-r2"]]

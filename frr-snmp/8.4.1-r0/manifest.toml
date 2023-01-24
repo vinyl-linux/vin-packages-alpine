@@ -1,0 +1,15 @@
+checksum = "15abe60974945e9b2c1c55da73526511c92b8e57f1d3424e3172d61bfe48da33"
+licence = "GPL-2.0-or-later"
+provides = "frr-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frr-snmp-8.4.1-r0.apk"
+version = "8.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"]]

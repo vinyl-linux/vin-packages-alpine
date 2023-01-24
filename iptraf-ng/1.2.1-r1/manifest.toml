@@ -1,0 +1,15 @@
+checksum = "8d695c3ca3fa2bf16a0bfd34200f3ed9b1e915b2544569ee81a1155a0684681b"
+licence = "GPL-2.0-only"
+provides = "iptraf-ng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iptraf-ng-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

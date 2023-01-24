@@ -1,0 +1,15 @@
+checksum = "172de052d32c496e7af587eec3981bb0cc1ea2de2c83b0361e3da9ed5765f88e"
+licence = "LGPL-2.1-or-later OR BSD-2-Clause"
+provides = "libspf2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libspf2-1.2.11-r0.apk"
+version = "1.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

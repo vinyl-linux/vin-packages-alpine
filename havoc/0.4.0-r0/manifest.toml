@@ -1,0 +1,15 @@
+checksum = "ca9137a6f7426d7d935e664bf2882c03edd81b5545d3ec2ab8b3993e7079e720"
+licence = "PD OR MIT"
+provides = "havoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/havoc-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

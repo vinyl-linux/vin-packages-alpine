@@ -1,0 +1,15 @@
+checksum = "430fc4948bb01d6bdf1f9702a70a418ad558d30d98ed13da8ffd0588b8ee7d4a"
+licence = "ZPL-2.1"
+provides = "py3-zope-deferredimport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zope-deferredimport-4.4-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "65.6.0-r0"], ["py3-zope-proxy", "4.6.0-r0"]]

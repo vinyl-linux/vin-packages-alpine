@@ -1,0 +1,15 @@
+checksum = "99603eaedac6751ff39b340f9891bba51d9d3c3fce2e5136658e38f6faab1f78"
+licence = "MIT"
+provides = "py3-language-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-language-server-0.36.2-r3.apk"
+version = "0.36.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jedi", "0.18.1-r0"], ["py3-jsonrpc-server", "0.4.0-r2"], ["py3-parso", "0.8.3-r0"], ["py3-pluggy", "1.0.0-r1"], ["py3-pydocstyle", "5.1.1-r2"], ["py3-ujson", "5.5.0-r0"], ["py3-wheel", "0.38.4-r0"], ["python3", "3.10.9-r1"]]

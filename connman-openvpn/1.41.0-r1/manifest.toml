@@ -1,0 +1,15 @@
+checksum = "e29669da7ab22eff938650d5394b9b0188409b803b23665b6a7c8ebeb8b98a13"
+licence = "GPL-2.0-only"
+provides = "connman-openvpn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-openvpn-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["connman", "1.41.0-r1"], ["openvpn", "2.5.8-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"]]

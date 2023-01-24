@@ -1,0 +1,15 @@
+checksum = "ad605979900942a40c4992e24a1a08bd52e666df6d13fc841dc2ff76c464f221"
+licence = "LGPL-2.1-or-later"
+provides = "py3-vlc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-vlc-3.0.12118-r1.apk"
+version = "3.0.12118-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["vlc", "3.0.18-r1"]]

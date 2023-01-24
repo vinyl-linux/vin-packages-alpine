@@ -1,0 +1,15 @@
+checksum = "e284fc7c79a335ede7931456511616f64ec1f4ae635b423bd04245912767ef86"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-rpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-rpc-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["perl", "5.36.0-r0"]]

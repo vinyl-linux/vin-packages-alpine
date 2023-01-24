@@ -1,0 +1,15 @@
+checksum = "bfaf303b57183468b8928542d1aba5187a0074f5d8d86d374afe8071857f79f3"
+licence = "GPL-3.0-or-later"
+provides = "haveged-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/haveged-dev-1.9.18-r0.apk"
+version = "1.9.18-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["haveged", "1.9.18-r0"]]

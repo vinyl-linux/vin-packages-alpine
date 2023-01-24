@@ -1,0 +1,15 @@
+checksum = "d0f3c1dda4939400c0e539964bfe5190cfd2f9dfde514228dc6be897fc5c7e0a"
+licence = "GPL-2.0-only"
+provides = "libxfce4util-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxfce4util-dev-4.16.0-r2.apk"
+version = "4.16.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxfce4util", "4.16.0-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

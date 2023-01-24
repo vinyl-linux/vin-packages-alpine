@@ -1,0 +1,15 @@
+checksum = "1d4adce14974fca2886b62773a98567904a39d6d9976355ebce8e174edcadfdc"
+licence = "GPL-2.0-or-later"
+provides = "yelp-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yelp-tools-42.1-r0.apk"
+version = "42.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-lxml", "4.9.2-r0"]]

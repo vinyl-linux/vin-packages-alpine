@@ -1,0 +1,15 @@
+checksum = "b8f2384b262fffecff7a9816378789c4fdae82b28c05214ac0300af2db21977a"
+licence = "BSD-2-Clause"
+provides = "jimtcl-readline"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jimtcl-readline-0.81-r2.apk"
+version = "0.81.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jimtcl", "0.81.0-r2"], ["readline", "8.2.0-r0"]]

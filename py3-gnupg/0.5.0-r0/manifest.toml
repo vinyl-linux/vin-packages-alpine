@@ -1,0 +1,15 @@
+checksum = "35ff3e05c51af4885fd84fc9901979d26c0c4148a08411e0c98e737b8df97f56"
+licence = "BSD-3-Clause"
+provides = "py3-gnupg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-gnupg-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["gnupg", "2.2.40-r0"]]

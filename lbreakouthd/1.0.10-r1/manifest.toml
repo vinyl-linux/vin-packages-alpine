@@ -1,0 +1,15 @@
+checksum = "f24f8ed346eac485a93120cd120bbcdc0147182792b10bcd309a897830e839cd"
+licence = "GPL-2.0-or-later"
+provides = "lbreakouthd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lbreakouthd-1.0.10-r1.apk"
+version = "1.0.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lbreakouthd-data", "1.0.10-r1"], ["sdl2", "2.26.2-r0"], ["sdl2_image", "2.6.2-r0"], ["sdl2_mixer", "2.6.2-r1"], ["sdl2_ttf", "2.20.1-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "ee691743556511c142c85dcfc9fe9532ddaaf8505e1609f0d12bf005451c79c7"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-unixodbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-unixodbc-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"]]

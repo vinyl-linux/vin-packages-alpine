@@ -1,0 +1,15 @@
+checksum = "46abbeaa68798ba0ba764f2db901f1346f9a607df86d180486f96988c6d33f4f"
+licence = "OLDAP-2.8"
+provides = "openldap-lloadd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-lloadd-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libldap", "2.6.3-r6"], ["libsasl", "2.1.28-r3"]]

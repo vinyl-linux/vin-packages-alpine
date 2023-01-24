@@ -1,0 +1,15 @@
+checksum = "961cfb830e0e35af82dca99b5f471e0d68b3180a4e106297005f9b60ec2862ee"
+licence = "Apache-2.0"
+provides = "flatbuffers-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flatbuffers-dev-22.10.26-r0.apk"
+version = "22.10.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flatc", "22.10.26-r0"], ["flatbuffers", "22.10.26-r0"], ["pkgconf", "1.9.4-r0"]]

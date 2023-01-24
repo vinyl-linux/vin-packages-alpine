@@ -1,0 +1,15 @@
+checksum = "3818e746448140156dd04e79344b2d9b8c1c83e7b142c63eb515ca827556a11c"
+licence = "custom"
+provides = "java-hdf5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/java-hdf5-1.12.2-r1.apk"
+version = "1.12.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["hdf5", "1.12.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "268a9db7e922b8328b19e9fc74cb5694e825450fd2c73aa3f205ac7a5436c7cd"
+licence = "GPL-2.0-or-later"
+provides = "gnome-disk-utility-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-disk-utility-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gptfdisk", "1.0.9-r2"], ["parted", "3.5.0-r0"], ["udisks2", "2.9.4-r1"]]

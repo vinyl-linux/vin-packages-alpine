@@ -1,0 +1,15 @@
+checksum = "137d176648db50fe9ce2f9874fc97e9ef4af9c74fe44ff25e2d0a550f9315fcb"
+licence = "Apache-2.0 AND GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "rsyslog-uxsock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-uxsock-8.2212.0-r0.apk"
+version = "8.2212.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2212.0-r0"], ["musl", "1.2.3-r4"]]

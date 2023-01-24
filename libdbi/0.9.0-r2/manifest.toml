@@ -1,0 +1,15 @@
+checksum = "d3637e3994e457c8953e8a9bc26d1d6eec6c02b9a5fb4dfecb1688af351d709e"
+licence = "LGPL-2.0-or-later"
+provides = "libdbi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libdbi-0.9.0-r2.apk"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

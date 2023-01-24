@@ -1,0 +1,15 @@
+checksum = "0cf885afa8791248f02c1416f21bdd5f16734d7332054e18683b148b7f94fe33"
+licence = "BSD-3-Clause AND GPL-2.0-or-later"
+provides = "opencolorio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencolorio-dev-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opencolorio", "2.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

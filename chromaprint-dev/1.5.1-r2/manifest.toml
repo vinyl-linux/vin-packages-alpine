@@ -1,0 +1,15 @@
+checksum = "6c88766b5ff163be28f524326118abab5bc137690b097f177b7c78b6bd087879"
+licence = "MIT"
+provides = "chromaprint-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chromaprint-dev-1.5.1-r2.apk"
+version = "1.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chromaprint", "1.5.1-r2"], ["pkgconf", "1.9.4-r0"]]

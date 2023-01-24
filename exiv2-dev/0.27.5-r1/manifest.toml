@@ -1,0 +1,15 @@
+checksum = "599257ae5bc0b0b0413c2d22eb5906b229889585472ed25cf491c5f37308c95f"
+licence = "GPL-2.0-or-later"
+provides = "exiv2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exiv2-dev-0.27.5-r1.apk"
+version = "0.27.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["expat-dev", "2.5.0-r0"], ["zlib-dev", "1.2.13-r0"], ["exiv2", "0.27.5-r1"], ["pkgconf", "1.9.4-r0"]]

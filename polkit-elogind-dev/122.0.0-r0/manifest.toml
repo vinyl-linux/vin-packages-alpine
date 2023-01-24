@@ -1,0 +1,15 @@
+checksum = "5b6cab400419739cdd468f9744686be7955ac8643757018bffebc8236be96644"
+licence = "GPL-2.0-or-later"
+provides = "polkit-elogind-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/polkit-elogind-dev-122-r0.apk"
+version = "122.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-dev", "122.0.0-r0"], ["polkit-elogind-libs", "122.0.0-r0"]]

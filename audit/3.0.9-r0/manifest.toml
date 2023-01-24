@@ -1,0 +1,15 @@
+checksum = "d766dfea5207db6b06fc028a55b6857b8e602968b5f719ce17aa5aada356a5b7"
+licence = "GPL-2.0-or-later"
+provides = "audit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/audit-3.0.9-r0.apk"
+version = "3.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["audit-libs", "3.0.9-r0"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"]]

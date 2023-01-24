@@ -1,0 +1,15 @@
+checksum = "fa6744f1f3b6e5afaf4cbba9ce22bfa900eef62c8f65b0b5cb2215dc02e8f14e"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-default-apps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-default-apps-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"], ["nextcloud-activity", "25.0.3-r0"], ["nextcloud-files_pdfviewer", "25.0.3-r0"], ["nextcloud-files_rightclick", "25.0.3-r0"], ["nextcloud-firstrunwizard", "25.0.3-r0"], ["nextcloud-logreader", "25.0.3-r0"], ["nextcloud-nextcloud_announcements", "25.0.3-r0"], ["nextcloud-notifications", "25.0.3-r0"], ["nextcloud-password_policy", "25.0.3-r0"], ["nextcloud-photos", "25.0.3-r0"], ["nextcloud-privacy", "25.0.3-r0"], ["nextcloud-recommendations", "25.0.3-r0"], ["nextcloud-serverinfo", "25.0.3-r0"], ["nextcloud-support", "25.0.3-r0"], ["nextcloud-survey_client", "25.0.3-r0"], ["nextcloud-text", "25.0.3-r0"]]

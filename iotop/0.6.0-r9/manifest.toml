@@ -1,0 +1,15 @@
+checksum = "45832df2d63f778e9f01ef3f5947b530ba40f49e8714bb43f4addce9687a5734"
+licence = "GPL-2.0-or-later"
+provides = "iotop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iotop-0.6-r9.apk"
+version = "0.6.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["yash-binsh", "2.53.0-r2"]]

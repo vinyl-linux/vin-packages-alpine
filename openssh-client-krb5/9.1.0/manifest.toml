@@ -1,0 +1,15 @@
+checksum = "420a9ba247fd63e878674bb68341d0c2a534882f535a848370cf5c8955e8108a"
+licence = "BSD"
+provides = "openssh-client-krb5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-client-krb5-9.1_p1-r1.apk"
+version = "9.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-keygen", "9.1.0"], ["openssh-client-common", "9.1.0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["krb5-libs", "1.20.1-r0"], ["zlib", "1.2.13-r0"]]

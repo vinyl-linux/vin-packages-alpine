@@ -1,0 +1,15 @@
+checksum = "eb93e6fc405c3e087a54216650b8ed0b5b769c433e2df1ebb69c7203ca121b45"
+licence = "GPL-2.0"
+provides = "efibootmgr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/efibootmgr-18-r0.apk"
+version = "18.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["efivar-libs", "38.0.0-r1"], ["libintl", "0.21.1-r1"], ["popt", "1.19.0-r0"]]

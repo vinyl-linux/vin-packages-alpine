@@ -1,0 +1,15 @@
+checksum = "8c6ab9bca3efc18a6a4de081847c83cdf6ad9a0d6228bd1385d78cbfb02d249c"
+licence = "MPL-2.0"
+provides = "mozjs102"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mozjs102-102.3.0-r2.apk"
+version = "102.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["nspr", "4.35.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

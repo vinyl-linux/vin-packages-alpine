@@ -1,0 +1,15 @@
+checksum = "7919416b05c02c6b94b029cf501ce3896e9975ff9b415a275ce23b214f333f10"
+licence = "GPL-3.0"
+provides = "mu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mu-1.8.9-r0.apk"
+version = "1.8.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sqlite", "3.40.1-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gmime", "3.2.13-r0"], ["libstdc++", "12.2.1"], ["libxapian", "1.4.21-r0"]]

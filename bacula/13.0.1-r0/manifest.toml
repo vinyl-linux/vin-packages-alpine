@@ -1,0 +1,15 @@
+checksum = "ef02611375c966cf84f2a4cb528af96d39cffeba41385aac7620c677362f3a08"
+licence = "AGPL-3.0-or-later WITH OpenSSL-Exception"
+provides = "bacula"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bacula-13.0.1-r0.apk"
+version = "13.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["bacula-libs", "13.0.1-r0"], ["musl", "1.2.3-r4"], ["lzo", "2.10.0-r3"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d9777c1d4f287e6ebb6bf01cc97359251c34894cd2a4798f61515571d8db93d6"
+licence = "MIT AND GPL-2.0-only"
+provides = "xdg-user-dirs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdg-user-dirs-0.18-r0.apk"
+version = "0.18.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"]]

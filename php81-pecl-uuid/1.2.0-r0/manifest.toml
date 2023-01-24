@@ -1,0 +1,15 @@
+checksum = "e29fe2502d8cf8964eff87e11def89fdc499be3834b0bbf4e9e77f41a6b9950f"
+licence = "LGPL-2.1-or-later"
+provides = "php81-pecl-uuid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-uuid-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

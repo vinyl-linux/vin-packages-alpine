@@ -1,0 +1,15 @@
+checksum = "0f61769d20c67f65749bf9cac0ec3c175aefb8f3578aba972df731daa1bb101f"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-redis-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hiredis", "1.0.2-r1"]]

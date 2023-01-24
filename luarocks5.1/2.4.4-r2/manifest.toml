@@ -1,0 +1,16 @@
+checksum = "77c797618905a86c2119adfb844b0ddb7f9215e1e5a35eb36bb86d60d12abf77"
+licence = "MIT"
+provides = "luarocks5.1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/luarocks5.1-2.4.4-r2.apk"
+version = "2.4.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"], ["lua5.1", "5.1.5-r11"], ["yash-binsh", "2.53.0-r2"]]

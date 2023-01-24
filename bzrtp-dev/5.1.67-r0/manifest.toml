@@ -1,0 +1,15 @@
+checksum = "ae7658fb1ae4069e5ee2aacc2029a7f343a3b63ca0d59950c1f54d421c92a46a"
+licence = "GPL-3.0-only"
+provides = "bzrtp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bzrtp-dev-5.1.67-r0.apk"
+version = "5.1.67-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bzrtp", "5.1.67-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9e7c8028535a3289dbbde2ad764ce1a1b54c0432be106799510038cd89a02ad7"
+licence = "MIT"
+provides = "py3-setuptools-rust"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-setuptools-rust-1.5.2-r0.apk"
+version = "1.5.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-semantic-version", "2.10.0-r0"], ["py3-typing-extensions", "4.4.0-r0"], ["rust", "1.64.0-r2"], ["cargo", "1.64.0-r2"]]

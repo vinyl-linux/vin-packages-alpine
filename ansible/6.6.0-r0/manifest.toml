@@ -1,0 +1,15 @@
+checksum = "dabec55c46c09972b273f48df6d5620be4f74e9d981b9440c53851175cad5c01"
+licence = "GPL-3.0-or-later"
+provides = "ansible"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ansible-6.6.0-r0.apk"
+version = "6.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["ansible-core", "2.13.6-r0"]]

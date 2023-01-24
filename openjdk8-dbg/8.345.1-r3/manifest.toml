@@ -1,0 +1,15 @@
+checksum = "113dd1e776982ff8110a655e84b1904344f841a21d7257f01bfafbaaf795df99"
+licence = "custom"
+provides = "openjdk8-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk8-dbg-8.345.01-r3.apk"
+version = "8.345.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk8-jre", "8.345.1-r3"], ["java-cacerts", "1.0.0-r1"], ["nss", "3.85.0-r0"]]

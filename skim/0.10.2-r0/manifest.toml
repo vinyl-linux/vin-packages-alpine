@@ -1,0 +1,15 @@
+checksum = "037c69dd52fcfc58cc873b491b91a755f1da6b56d56b0069bb3b9642b394d5d0"
+licence = "MIT"
+provides = "skim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/skim-0.10.2-r0.apk"
+version = "0.10.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

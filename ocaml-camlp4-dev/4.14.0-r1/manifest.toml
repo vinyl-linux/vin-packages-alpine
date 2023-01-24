@@ -1,0 +1,15 @@
+checksum = "dd1fe0cdf72c4c70868c5660237b8e00fe28ca0d8fde6d32875524db25b766c9"
+licence = "LGPL-2.0-or-later-WITH-linking-exception"
+provides = "ocaml-camlp4-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ocaml-camlp4-dev-4.14.0-r1.apk"
+version = "4.14.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ocaml-camlp4", "4.14.0-r1"], ["musl", "1.2.3-r4"]]

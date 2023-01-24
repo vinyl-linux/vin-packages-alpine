@@ -1,0 +1,15 @@
+checksum = "4646f6b51c36b09d4d5b0907404fed5f0ee1cec4517c9c44b43bce37e7d750ce"
+licence = "GPL-2.0-only"
+provides = "smstools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/smstools-3.1.21-r3.apk"
+version = "3.1.21-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "eb483f2ec920f5c761ead73982517403403e6d408c3d1702505230f431151b0d"
+licence = "GPL-3.0-only"
+provides = "megapixels-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/megapixels-tools-1.5.2-r1.apk"
+version = "1.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

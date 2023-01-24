@@ -1,0 +1,15 @@
+checksum = "b54a06f7126e35232ca35bd494c75fbe615691ebc8ddadf080c469022af64479"
+licence = "GPL"
+provides = "vde2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vde2-dev-2.3.3-r0.apk"
+version = "2.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["vde2-libs", "2.3.3-r0"]]

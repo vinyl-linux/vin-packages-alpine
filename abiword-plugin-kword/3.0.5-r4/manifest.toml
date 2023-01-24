@@ -1,0 +1,15 @@
+checksum = "2742163304a5bc201cfd344d1290b7ea7f3b54425630faa4c548e784e8ff2971"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-kword"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-kword-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libstdc++", "12.2.1"]]

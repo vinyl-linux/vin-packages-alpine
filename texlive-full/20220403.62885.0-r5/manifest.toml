@@ -1,0 +1,15 @@
+checksum = "6fffe60473560c8e02cca2e314c5b2120222676b1f6d53c34babf3b1ae0d78cd"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "texlive-full"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texlive-full-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texlive", "20220403.62885.0-r5"], ["texlive-doc", "20220403.62885.0-r5"], ["texlive-luatex", "20220403.62885.0-r5"], ["texlive-xetex", "20220403.62885.0-r5"], ["xdvik", "20220403.62885.0-r5"], ["texlive-dvi", "20220403.62885.0-r5"], ["texmf-dist-full", "2022.63035.0-r0"]]

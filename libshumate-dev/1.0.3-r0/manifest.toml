@@ -1,0 +1,15 @@
+checksum = "eb033d7af1ad0336c579f2460aa87ddf31a4fac18f2117d2633bd3c913679683"
+licence = "LGPL-2.1-or-later"
+provides = "libshumate-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libshumate-dev-1.0.3-r0.apk"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libshumate", "1.0.3-r0"], ["cairo-dev", "1.17.6-r3"], ["glib-dev", "2.74.5-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["libsoup3-dev", "3.2.2-r0"], ["sqlite-dev", "3.40.1-r0"], ["pkgconf", "1.9.4-r0"]]

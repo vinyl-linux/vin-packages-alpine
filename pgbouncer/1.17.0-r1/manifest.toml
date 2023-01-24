@@ -1,0 +1,15 @@
+checksum = "b4d437f765e415eaea35e776b1305a54437b6ea662617767b63ffab0560187c5"
+licence = "ISC"
+provides = "pgbouncer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pgbouncer-1.17.0-r1.apk"
+version = "1.17.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libcrypto3", "3.0.7-r2"], ["libevent", "2.1.12-r5"], ["libssl3", "3.0.7-r2"]]

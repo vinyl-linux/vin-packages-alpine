@@ -1,0 +1,15 @@
+checksum = "a9f911a29444c6ce0e3be11e8f4fc2653544402fcf839955ffda2e2d669a363f"
+licence = "BSD-3-Clause"
+provides = "libpwquality-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpwquality-lang-1.4.4-r3.apk"
+version = "1.4.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cracklib-words", "2.9.8-r0"]]

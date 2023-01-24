@@ -1,0 +1,16 @@
+checksum = "00c51cd6ef5fb7e1ca16e6de4cdc0366f7b3ea4324da787c83c3b2845596587f"
+licence = "GPL-2.0-only"
+provides = "awall"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/awall-1.12.1-r0.apk"
+version = "1.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["drill", "1.8.3-r0"], ["ip6tables", "1.8.8-r2"], ["ipset", "7.15.0-r1"], ["iptables", "1.8.8-r2"], ["lua5.4", "5.4.4-r6"], ["lua5.4-alt-getopt", "0.8.0-r0"], ["lua5.4-cjson", "2.1.0-r10"], ["lua5.4-pc", "1.0.0-r11"], ["lua5.4-posix", "35.1.0-r0"], ["lua-schema", "0.0.0"], ["lua5.4-stringy", "0.5.1-r2"], ["lua5.4-lyaml", "6.2.8-r0"], ["xtables-addons", "3.22.0-r0"], ["yash-binsh", "2.53.0-r2"]]

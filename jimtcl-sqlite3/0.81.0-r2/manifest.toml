@@ -1,0 +1,15 @@
+checksum = "a8cbe82db65c3f6600b20aa631ac0feb04fda9e79f0736185fcfcb0d07fb8947"
+licence = "BSD-2-Clause"
+provides = "jimtcl-sqlite3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jimtcl-sqlite3-0.81-r2.apk"
+version = "0.81.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jimtcl", "0.81.0-r2"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

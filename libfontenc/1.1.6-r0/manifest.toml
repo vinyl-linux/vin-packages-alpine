@@ -1,0 +1,15 @@
+checksum = "5f9b89cf151a0b9dcc271d425416e79e152c82a139e8731562bdeb9d8425aa9f"
+licence = "MIT"
+provides = "libfontenc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libfontenc-1.1.6-r0.apk"
+version = "1.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

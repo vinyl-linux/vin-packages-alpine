@@ -1,0 +1,15 @@
+checksum = "46255f36ec0ad3c053347f0053f35b8acdcd89ff0f5a45759024690ac0c75d6e"
+licence = "LGPL-2.1-or-later"
+provides = "kcrash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcrash-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["kwindowsystem", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

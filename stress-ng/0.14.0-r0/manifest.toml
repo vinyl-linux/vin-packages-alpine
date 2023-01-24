@@ -1,0 +1,15 @@
+checksum = "618cb21fb50874f1c404373d4a9157a9ac16c3f7100c003c3aabdd141cfbae9b"
+licence = "GPL-2.0-or-later"
+provides = "stress-ng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stress-ng-0.14.00-r0.apk"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["judy", "1.0.5-r1"], ["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["liblksctp", "1.0.19-r1"], ["zlib", "1.2.13-r0"]]

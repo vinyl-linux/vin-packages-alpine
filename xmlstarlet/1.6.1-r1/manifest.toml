@@ -1,0 +1,15 @@
+checksum = "f028ea19457f563b27e75a23f8453040239f93bfa8d2d725eb8cb34a5f383443"
+licence = "MIT"
+provides = "xmlstarlet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmlstarlet-1.6.1-r1.apk"
+version = "1.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxslt", "1.1.37-r0"], ["libxml2", "2.10.3-r1"]]

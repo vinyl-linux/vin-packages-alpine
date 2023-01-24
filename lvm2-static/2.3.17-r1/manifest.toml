@@ -1,0 +1,15 @@
+checksum = "94830c610b17d69f8d5d062c62af025323304f51318a0e71fa33fbec078f6228"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "lvm2-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lvm2-static-2.03.17-r1.apk"
+version = "2.3.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lvm2-libs", "2.3.17-r1"]]

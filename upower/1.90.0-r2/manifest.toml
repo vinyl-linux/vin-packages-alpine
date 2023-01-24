@@ -1,0 +1,15 @@
+checksum = "ca6e6dc953d85e57dadabd45e7c719a3cf0d909a5e08117705ff2da0ee6cb99b"
+licence = "GPL-2.0-or-later"
+provides = "upower"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/upower-1.90.0-r2.apk"
+version = "1.90.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"]]

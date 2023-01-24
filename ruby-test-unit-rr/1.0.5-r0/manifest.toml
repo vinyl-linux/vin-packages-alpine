@@ -1,0 +1,15 @@
+checksum = "52bb3a2856f2a85019525de39e346dbbe79aa7d21e0d902c36ff60819493e27c"
+licence = "LGPL-2.0-or-later"
+provides = "ruby-test-unit-rr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-test-unit-rr-1.0.5-r0.apk"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-rr", "3.1.0-r0"]]

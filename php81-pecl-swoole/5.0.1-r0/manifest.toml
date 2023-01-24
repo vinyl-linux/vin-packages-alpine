@@ -1,0 +1,15 @@
+checksum = "585563058b7d05bd5970e38615b0576c1d92c3299d2eba38c316c2a623ea1afd"
+licence = "Apache-2.0"
+provides = "php81-pecl-swoole"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-swoole-5.0.1-r0.apk"
+version = "5.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-curl", "8.1.14-r0"], ["php81-mysqlnd", "8.1.14-r0"], ["php81-openssl", "8.1.14-r0"], ["php81-sockets", "8.1.14-r0"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

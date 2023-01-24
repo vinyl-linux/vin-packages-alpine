@@ -1,0 +1,15 @@
+checksum = "de5e40c29185383ff39eb4f5f3e649037ba5012cd40efe7b5fc52a5fa5e352dd"
+licence = "MIT"
+provides = "py3-pytest-tornasync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-tornasync-0.5.0_git20220715-r0.apk"
+version = "0.5.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-tornado", "6.2.0-r0"]]

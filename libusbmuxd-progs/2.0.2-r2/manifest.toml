@@ -1,0 +1,15 @@
+checksum = "3edcb42df251ffc7f562e5b9d997271e0bb5fc927027bd960661b5dc5d97b50c"
+licence = "LGPL-2.1-or-later"
+provides = "libusbmuxd-progs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libusbmuxd-progs-2.0.2-r2.apk"
+version = "2.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libusbmuxd", "2.0.2-r2"]]

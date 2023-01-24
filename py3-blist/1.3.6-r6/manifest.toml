@@ -1,0 +1,15 @@
+checksum = "f8575e9390aca136f0bed4a77a709faa6f935443687a3363534a30ef1c640004"
+licence = "BSD-3-Clause"
+provides = "py3-blist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-blist-1.3.6-r6.apk"
+version = "1.3.6-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

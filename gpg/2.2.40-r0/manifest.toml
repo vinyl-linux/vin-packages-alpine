@@ -1,0 +1,15 @@
+checksum = "9b56c783a6605df11deeff56f32b35c968af2590f02bd889085f121801e88182"
+licence = "GPL-3.0-or-later"
+provides = "gpg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpg-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg-gpgconf", "2.2.40-r0"], ["libassuan", "2.5.5-r1"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"], ["sqlite-libs", "3.40.1-r0"], ["zlib", "1.2.13-r0"]]

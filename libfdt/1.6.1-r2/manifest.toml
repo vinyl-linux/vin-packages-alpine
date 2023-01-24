@@ -1,0 +1,15 @@
+checksum = "a7a8743ed22e32162029bfd556b3c9c3267971e7d3f46aac60b8a7f477f8f227"
+licence = "GPL-2.0-or-later"
+provides = "libfdt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libfdt-1.6.1-r2.apk"
+version = "1.6.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

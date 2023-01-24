@@ -1,0 +1,15 @@
+checksum = "084529d44f845da3486f67345c2cde6eeba9101847735e12ce98ce16154addd5"
+licence = "GPL-2.0-or-later"
+provides = "git-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-perl-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["perl-git", "2.38.3-r1"], ["perl", "5.36.0-r0"]]

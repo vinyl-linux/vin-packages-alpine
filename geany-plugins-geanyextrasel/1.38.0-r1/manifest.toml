@@ -1,0 +1,15 @@
+checksum = "03e436e1f817ef404098aae61ccc40aef46b7bab322d4a5f2cbe0f7fa78ea0f6"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geanyextrasel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-geanyextrasel-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0", "3.24.36-r0"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"]]

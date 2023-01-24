@@ -1,0 +1,15 @@
+checksum = "71bfde98ddba150d2f78e970a67c6055357c300b61b0002fda9040ed860dbe6c"
+licence = "BSD-3-Clause"
+provides = "ixwebsocket-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ixwebsocket-dev-11.4.3-r1.apk"
+version = "11.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ixwebsocket-libs", "11.4.3-r1"]]

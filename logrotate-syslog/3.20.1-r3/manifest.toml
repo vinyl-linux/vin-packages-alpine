@@ -1,0 +1,15 @@
+checksum = "527c4fbc0eccbd1c7a3ea201fda7950f156193edeea8a5ba3a7d63cc81cc3b8f"
+licence = "GPL-2.0-or-later"
+provides = "logrotate-syslog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/logrotate-syslog-3.20.1-r3.apk"
+version = "3.20.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["logrotate", "3.20.1-r3"]]

@@ -1,0 +1,15 @@
+checksum = "bcd5dd44828a2deb23e7d445c3c9115998ea4e2b242524c5010e7907dcbb36ab"
+licence = "Public-Domain"
+provides = "mg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mg-20221112-r0.apk"
+version = "20221112.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

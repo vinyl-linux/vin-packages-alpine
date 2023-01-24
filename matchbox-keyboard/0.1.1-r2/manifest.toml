@@ -1,0 +1,15 @@
+checksum = "2c89de8e5b14ce11c8bf0ec8862455e52a98dfddd83ba4323b0cddaa05e39701"
+licence = "GPL-2.0-only"
+provides = "matchbox-keyboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/matchbox-keyboard-0.1.1-r2.apk"
+version = "0.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxrender", "0.9.11-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libexpat", "2.5.0-r0"], ["libfakekey", "0.3.0-r0"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libpng", "1.6.38-r0"]]

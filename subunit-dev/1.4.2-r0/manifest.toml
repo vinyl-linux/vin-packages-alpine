@@ -1,0 +1,15 @@
+checksum = "f5e098dde8ea273124ea3394d1503c96a69b0bf94636b3b3c2c4e8fcfe9e6e58"
+licence = "Apache-2.0 AND BSD-3-Clause"
+provides = "subunit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/subunit-dev-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["subunit-libs", "1.4.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "e923a7730a818590c2cd41b9cf6a83cb2163734643e697a0d132f329e51f5645"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-bmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-bmp-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "d79a924cf13c6793cae2705d8f1252ffd14bfb9ba3b14304ec98acb2917c56ac"
+licence = "BSD-3-Clause AND LGPL-2.1-only"
+provides = "nemo-qml-plugin-dbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nemo-qml-plugin-dbus-2.1.30-r0.apk"
+version = "2.1.30-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

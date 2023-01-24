@@ -1,0 +1,15 @@
+checksum = "68394937367b64afcaefbef42a96cce5082ef69138bf53bcf05dd12f6ed15080"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "networkmanager-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-qt-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-dev", "1.40.10-r0"], ["networkmanager-qt", "5.100.0-r0"]]

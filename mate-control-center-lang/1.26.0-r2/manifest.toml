@@ -1,0 +1,15 @@
+checksum = "488ecea90cbe241c12be8f1b0ee5df152c3ca952e5f86ea3de209c367721944d"
+licence = "GPL-2.0-or-later"
+provides = "mate-control-center-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-control-center-lang-1.26.0-r2.apk"
+version = "1.26.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r1"], ["mate-common", "1.26.0-r1"], ["mate-icon-theme", "1.26.0-r0"], ["mate-menus", "1.26.0-r0"]]

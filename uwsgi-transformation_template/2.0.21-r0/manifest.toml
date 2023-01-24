@@ -1,0 +1,15 @@
+checksum = "eb1bbe5c26fa16f9cd19d6b4615c228b1891249c4372a11792c333252db790d7"
+licence = "custom"
+provides = "uwsgi-transformation_template"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-transformation_template-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"]]

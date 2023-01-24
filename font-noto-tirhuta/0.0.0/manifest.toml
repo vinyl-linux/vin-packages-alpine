@@ -1,0 +1,15 @@
+checksum = "5ead82b6a863c0ea1123be41034d66d0bd584568255f057fc4ffb910eb6b6fb5"
+licence = "OFL-1.1"
+provides = "font-noto-tirhuta"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-tirhuta-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

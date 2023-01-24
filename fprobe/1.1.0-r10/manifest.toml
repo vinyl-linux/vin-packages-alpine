@@ -1,0 +1,15 @@
+checksum = "288e5ed899c95cd6fbd80c0642e13063b2632aaabe287d83a81886b6a1a7cf32"
+licence = "GPL"
+provides = "fprobe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fprobe-1.1-r10.apk"
+version = "1.1.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

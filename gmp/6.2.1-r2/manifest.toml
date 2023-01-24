@@ -1,0 +1,15 @@
+checksum = "c3652fa49e70bbf7ce4d835535c76e69de51604cc4573535636e3bd91ca53a2e"
+licence = "LGPL-3.0-or-later OR GPL-2.0-or-later"
+provides = "gmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gmp-6.2.1-r2.apk"
+version = "6.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

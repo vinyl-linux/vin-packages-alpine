@@ -1,0 +1,15 @@
+checksum = "607db514c44ba7bad0a7d34fa3ffc7bd5eaa445df62b6bcc0ede672f5fa1d9f3"
+licence = "BSD-3-Clause"
+provides = "heimdal-su"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/heimdal-su-7.8.0-r0.apk"
+version = "7.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["krb5-conf", "1.0.0-r2"], ["musl", "1.2.3-r4"], ["heimdal-libs", "7.8.0-r0"]]

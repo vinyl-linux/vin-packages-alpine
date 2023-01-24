@@ -1,0 +1,15 @@
+checksum = "1c675674325cb4d9354caef506edf9ee8a07b1b546db10df3bada9c98ddd81a2"
+licence = "BSD-3-Clause"
+provides = "figlet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/figlet-2.2.5-r2.apk"
+version = "2.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

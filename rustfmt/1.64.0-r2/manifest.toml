@@ -1,0 +1,15 @@
+checksum = "43b41d379a8c2a5a22e5353f44f1e884ffbd4c02b4d5bb49be12bfba151b71e6"
+licence = "Apache-2.0"
+provides = "rustfmt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rustfmt-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cargo", "1.64.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

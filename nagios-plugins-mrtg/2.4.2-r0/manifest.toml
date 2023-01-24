@@ -1,0 +1,15 @@
+checksum = "bc86ae505f934877597e113bb9e074709417806390c06610b6dc0f32e89623f2"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-mrtg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-mrtg-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

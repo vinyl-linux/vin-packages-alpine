@@ -1,0 +1,15 @@
+checksum = "0a29dae3dcbe91dc120b561da54993cbde8ba2401c83e8fe1aa2e1ee83bd9bd2"
+licence = "custom"
+provides = "libxtst-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxtst-dev-1.2.4-r0.apk"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxtst", "1.2.4-r0"], ["xorgproto", "2022.2.0-r0"], ["libx11-dev", "1.8.3-r1"], ["libxext-dev", "1.3.5-r0"], ["libxi-dev", "1.8.0-r0"], ["pkgconf", "1.9.4-r0"]]

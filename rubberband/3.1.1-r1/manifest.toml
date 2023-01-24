@@ -1,0 +1,15 @@
+checksum = "cb2722f09539818950a5c0c4b8ecfe8bf77ad661aa15625069865698812cfded"
+licence = "GPL-2.0-only"
+provides = "rubberband"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rubberband-3.1.1-r1.apk"
+version = "3.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libsndfile", "1.1.0-r2"], ["libstdc++", "12.2.1"], ["vamp-sdk-libs", "2.10.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d5f9047794ba92c5a5b0ba54cbb1cb67f87cb602a5af9d3891173cad6b82ba02"
+licence = "GPL-2.0-or-later"
+provides = "cntlm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cntlm-0.92.3-r4.apk"
+version = "0.92.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "0b1303fecc5bc430fee562fcd19102c04eb1c6e237b4d2b47918eb3b55fea2c5"
+licence = "Apache-2.0 AND BSD-2-Clause"
+provides = "py3-packaging"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-packaging-21.3-r2.apk"
+version = "21.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-parsing", "3.0.9-r0"]]

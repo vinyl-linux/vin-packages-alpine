@@ -1,0 +1,15 @@
+checksum = "47caf9c7e35cfcce500eaac4847c36277a3635d81bd059c2a59a63003b7aede6"
+licence = "Apache-2.0"
+provides = "jose"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jose-11-r2.apk"
+version = "11.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["jansson", "2.14.0-r0"], ["libjose", "11.0.0-r2"]]

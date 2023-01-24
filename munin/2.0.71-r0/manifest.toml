@@ -1,0 +1,15 @@
+checksum = "30c2e7afe314d8a393b8824686541f950eb0cb51d177bfb7a234d4b3f94e6483"
+licence = "GPL-2.0-only"
+provides = "munin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/munin-2.0.71-r0.apk"
+version = "2.0.71-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["munin-node", "2.0.71-r0"]]

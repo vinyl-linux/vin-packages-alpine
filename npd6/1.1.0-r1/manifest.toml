@@ -1,0 +1,15 @@
+checksum = "ebd56a319c64e7037b512bd0ad70f67f7c65b65b8c3a3c3b3d198641ae5a7b2a"
+licence = "GPL-3.0-or-later"
+provides = "npd6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/npd6-1.1.0-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

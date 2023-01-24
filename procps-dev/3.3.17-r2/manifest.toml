@@ -1,0 +1,15 @@
+checksum = "f4f8927a829c1b571917a94e0244be9ba7f4fb879dc2de80aa56da9f80a88826"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "procps-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/procps-dev-3.3.17-r2.apk"
+version = "3.3.17-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libproc", "3.3.17-r2"], ["pkgconf", "1.9.4-r0"]]

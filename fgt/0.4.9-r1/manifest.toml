@@ -1,0 +1,15 @@
+checksum = "289d041b3849e5fcb0ed3f510e8051a2278d74fabba7ddee743428edb1b73ad5"
+licence = "LGPL-2.0-or-later"
+provides = "fgt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fgt-0.4.9-r1.apk"
+version = "0.4.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

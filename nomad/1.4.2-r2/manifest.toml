@@ -1,0 +1,15 @@
+checksum = "8341a4942c266ac0a513bb2572d792d3c45e5822fe6dd4d28a24a7bb63a5bea0"
+licence = "MPL-2.0"
+provides = "nomad"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nomad-1.4.2-r2.apk"
+version = "1.4.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cni-plugins", "1.1.1-r9"], ["musl", "1.2.3-r4"]]

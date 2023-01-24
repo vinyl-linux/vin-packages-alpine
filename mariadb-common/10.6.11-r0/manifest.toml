@@ -1,0 +1,15 @@
+checksum = "d0b62a8b7ca29014a5740b0c0403cfb36b8e83bb2186dca9e79a47f4d16521cf"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-common-10.6.11-r0.apk"
+version = "10.6.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

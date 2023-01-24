@@ -1,0 +1,15 @@
+checksum = "d3a390c1f1a98cc38940a2331f8e3f45f12584273345bc89c25330b40321ee56"
+licence = "MIT"
+provides = "py3-nestedtext"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-nestedtext-3.5-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-inform", "1.27.0-r0"]]

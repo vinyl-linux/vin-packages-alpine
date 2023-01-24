@@ -1,0 +1,15 @@
+checksum = "d819dc75268746d1bb4b66551da8c373df7594c992ef0e6e89d0feab663276ce"
+licence = "GPL-2.0 with Classpath"
+provides = "openjdk7-jre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk7-jre-7.321.2.6.28-r3.apk"
+version = "7.321.2.6.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk7-jre-base", "7.321.2.6.28-r3"], ["libx11", "1.8.3-r1"], ["libxcomposite", "0.4.5-r1"], ["libxext", "1.3.5-r0"], ["libxi", "1.8.0-r0"], ["libxrender", "0.9.11-r0"], ["libxtst", "1.2.4-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["giflib", "5.2.1-r2"], ["glib", "2.74.5-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9b8cff36f90d441b7c3ccf29f2df25d2397dd8b55f17ee4b56ddc9b68712ec2f"
+licence = "(LGPL-2.0-or-later OR GPL-3.0-only OR GPL-2.0-or-later) AND Qt-GPL-exception-1.0"
+provides = "qt5-qtimageformats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtimageformats-5.15.6_git20220907-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libmng", "2.0.3-r1"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"]]

@@ -1,0 +1,15 @@
+checksum = "823fd775b566deb107b8c69d833d3697e13084c2ba6daba7575b37f34e98b727"
+licence = "BSD-3-Clause"
+provides = "libnpupnp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnpupnp-5.0.0-r0.apk"
+version = "5.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libmicrohttpd", "0.9.75-r0"], ["libstdc++", "12.2.1"]]

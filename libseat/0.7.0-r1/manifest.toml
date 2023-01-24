@@ -1,0 +1,15 @@
+checksum = "5cf1e5eabff5f4302d1ab81a7be55afe1dea94e3bd43fe3ca37de59550c37113"
+licence = "MIT"
+provides = "libseat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libseat-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"]]

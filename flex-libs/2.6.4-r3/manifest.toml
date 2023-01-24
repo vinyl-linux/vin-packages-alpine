@@ -1,0 +1,15 @@
+checksum = "ac9735f46078009edb9ef7532731b5d207181ae037728996ee6b902891759ff1"
+licence = "BSD-2-Clause AND LGPL-2.0-or-later"
+provides = "flex-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/flex-libs-2.6.4-r3.apk"
+version = "2.6.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

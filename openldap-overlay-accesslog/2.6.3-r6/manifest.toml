@@ -1,0 +1,15 @@
+checksum = "7687eab5135318582204955b4e9066d8b669ff1b08a85d9df222b63466726143"
+licence = "OLDAP-2.8"
+provides = "openldap-overlay-accesslog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-overlay-accesslog-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

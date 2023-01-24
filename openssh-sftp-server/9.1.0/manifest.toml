@@ -1,0 +1,15 @@
+checksum = "94dc8c0f72868c2b63af562a37e4e5f14e0512a1cf4e92cdc96f4a82cab5dbd0"
+licence = "BSD"
+provides = "openssh-sftp-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-sftp-server-9.1_p1-r1.apk"
+version = "9.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

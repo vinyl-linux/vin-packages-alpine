@@ -1,0 +1,15 @@
+checksum = "023c06bf799e27b3612c38ba73809debe901b9727e1973406ef993f55f82766f"
+licence = "PostgreSQL AND Apache-2.0"
+provides = "agensgraph-pltcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/agensgraph-pltcl-2.13.0-r1.apk"
+version = "2.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["agensgraph", "2.13.0-r1"], ["pgtcl", "3.0.0-r0"], ["musl", "1.2.3-r4"], ["tcl", "8.6.12-r1"]]

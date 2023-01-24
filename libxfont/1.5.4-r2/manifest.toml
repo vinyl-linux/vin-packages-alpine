@@ -1,0 +1,15 @@
+checksum = "a6b04fbd0d0f5f651e012cf41e95a828ae1d2faf8bd1e31be9a8d2eba8c996f7"
+licence = "custom"
+provides = "libxfont"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxfont-1.5.4-r2.apk"
+version = "1.5.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libfontenc", "1.1.6-r0"], ["freetype", "2.12.1-r0"], ["zlib", "1.2.13-r0"]]

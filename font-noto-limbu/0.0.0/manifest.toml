@@ -1,0 +1,15 @@
+checksum = "8e0c66d558a5df314bf623446f1d3eba7f085ef6b8cf5012b970782164548b60"
+licence = "OFL-1.1"
+provides = "font-noto-limbu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-limbu-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

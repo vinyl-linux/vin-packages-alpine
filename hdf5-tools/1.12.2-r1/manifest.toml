@@ -1,0 +1,15 @@
+checksum = "df0fb2599bd1968e3530435749a747158555459bec520600b1c8073db1b2f281"
+licence = "custom"
+provides = "hdf5-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hdf5-tools-1.12.2-r1.apk"
+version = "1.12.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["hdf5", "1.12.2-r1"], ["hdf5-hl", "1.12.2-r1"]]

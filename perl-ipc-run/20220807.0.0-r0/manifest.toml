@@ -1,0 +1,15 @@
+checksum = "a7f753f3cea39d8840c6744389a46af69004f1cf18ac13a7f4a52bb25d5fea37"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-ipc-run"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-ipc-run-20220807.0-r0.apk"
+version = "20220807.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-io-tty", "1.17.0-r0"]]

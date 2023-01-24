@@ -1,0 +1,15 @@
+checksum = "4f81861c7e24c62a8cbfd50ff7e200fd3093989132dbbd97558e5cac5325efec"
+licence = "GPL-2.0-or-later"
+provides = "gnokii-smsd-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnokii-smsd-mysql-0.6.31-r13.apk"
+version = "0.6.31-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnokii-smsd", "0.6.31-r13"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

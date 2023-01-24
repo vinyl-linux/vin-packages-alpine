@@ -1,0 +1,15 @@
+checksum = "0c3686cca0b34dd44f7e268b5579db3cc2d57a2016990499c37dfe5b62920498"
+licence = "custom:multiple"
+provides = "linux-firmware-libertas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-firmware-libertas-20221214-r1.apk"
+version = "20221214.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-firmware-mrvl", "20221214.0.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d9f415da2d689a784edddbb53293ada82c5ecf57748d5be864758aa36143c263"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtwebsockets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtwebsockets-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["qt6-qtdeclarative", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "32ab98e7ccf0e581e0b8226b9917c14fb9283adf20d96e68a40ee903be90fff9"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "okular-mobile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/okular-mobile-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["okular-common", "22.8.3-r0"], ["okular-common-qml", "22.8.3-r0"], ["kirigami2", "5.100.0-r1"], ["kitemmodels", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "7e89d62b444dc65adb584f30f58cde8d527acf6dae13d446b35a943f88f3af34"
+licence = "LGPL-2.1-or-later"
+provides = "glib-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glib-static-2.74.5-r0.apk"
+version = "2.74.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext-static", "0.21.1-r1"]]

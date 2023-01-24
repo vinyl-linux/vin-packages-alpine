@@ -1,0 +1,15 @@
+checksum = "1e10a30e67245be89cbe0c11a80f6e6ab42bd5288ba5c2f54e40a7a621edc3ba"
+licence = "MIT"
+provides = "libvterm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvterm-0.3-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

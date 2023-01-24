@@ -1,0 +1,15 @@
+checksum = "08b741a2630dba4ff5985a594210b7d2b5b2023e9688c1bd6700082e59b0636d"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-stream-geoip2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-stream-geoip2-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["nginx-mod-stream", "1.22.1-r0"], ["musl", "1.2.3-r4"], ["libmaxminddb-libs", "1.7.1-r0"]]

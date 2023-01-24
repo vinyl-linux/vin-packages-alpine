@@ -1,0 +1,15 @@
+checksum = "65aa9201372ea691443608f57b73190ece13cec5a6e66f211877fac497fc05ed"
+licence = "ISC"
+provides = "confuse-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/confuse-dev-3.3-r1.apk"
+version = "3.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["confuse", "3.3.0-r1"], ["pkgconf", "1.9.4-r0"]]

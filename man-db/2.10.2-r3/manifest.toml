@@ -1,0 +1,16 @@
+checksum = "7991434ce3fdad3db4d4bae0eaf4778bf9f880f5134a50e9593923e9fd41d22b"
+licence = "GPL-2.0-or-later"
+provides = "man-db"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/man-db-2.10.2-r3.apk"
+version = "2.10.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["groff", "1.22.4-r2"], ["less", "608.0.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["gdbm", "1.23.0-r0"], ["libintl", "0.21.1-r1"], ["libpipeline", "1.5.7-r0"], ["libseccomp", "2.5.4-r0"], ["zlib", "1.2.13-r0"]]

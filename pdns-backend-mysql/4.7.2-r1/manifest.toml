@@ -1,0 +1,15 @@
+checksum = "5432f97d419d93eaf9425f02db85b9452527b1f15535b7bd24a7540685bd19bf"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdns-backend-mysql-4.7.2-r1.apk"
+version = "4.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.7.2-r1"], ["mariadb-client", "10.6.11-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["mariadb-connector-c", "3.3.3-r0"], ["libstdc++", "12.2.1"]]

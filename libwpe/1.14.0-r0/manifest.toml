@@ -1,0 +1,15 @@
+checksum = "3d7258844aa516f904e8795731d6b6e010debff7a1d124b04e3eb040594f8226"
+licence = "BSD-2-Clause"
+provides = "libwpe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwpe-1.14.0-r0.apk"
+version = "1.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["libxkbcommon", "1.4.1-r0"]]

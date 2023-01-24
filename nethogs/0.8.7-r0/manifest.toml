@@ -1,0 +1,15 @@
+checksum = "2aa3c8a9342a9afaecf907ed85f45bcb05629bada51ba4908fadde514350ccb2"
+licence = "GPL-2.0-or-later"
+provides = "nethogs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nethogs-0.8.7-r0.apk"
+version = "0.8.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libpcap", "1.10.1-r1"], ["libstdc++", "12.2.1"]]

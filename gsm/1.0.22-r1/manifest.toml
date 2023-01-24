@@ -1,0 +1,15 @@
+checksum = "1150d581e41329871e5d0491ea162fc86a239473cd21879fc3affe733eedd5e2"
+licence = "custom:TU-Berlin-2.0"
+provides = "gsm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gsm-1.0.22-r1.apk"
+version = "1.0.22-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

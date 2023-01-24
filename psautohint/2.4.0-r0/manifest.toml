@@ -1,0 +1,15 @@
+checksum = "12831e1d8298575784d4382d858efcd15d0d2c771a3f0d34defd0cf9f62372fe"
+licence = "Apache-2.0"
+provides = "psautohint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/psautohint-2.4.0-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-fonttools", "4.38.0-r0"], ["py3-fs", "2.4.16-r0"], ["py3-lxml", "4.9.2-r0"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

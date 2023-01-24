@@ -1,0 +1,15 @@
+checksum = "7801e35770a2301f7eb3bda9a1885b581d3f318b83e400b79d64ccdfa03a2786"
+licence = "GPL-2.0-or-later"
+provides = "lzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lzip-1.23-r0.apk"
+version = "1.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

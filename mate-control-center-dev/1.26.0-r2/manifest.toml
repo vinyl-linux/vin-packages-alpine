@@ -1,0 +1,15 @@
+checksum = "ea7eb4017d5d5dc8c341948f7f4860a8dd222812ff259248c47d0b0e7b47b402"
+licence = "GPL-2.0-or-later"
+provides = "mate-control-center-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-control-center-dev-1.26.0-r2.apk"
+version = "1.26.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-control-center", "1.26.0-r2"], ["gtk+3.0-dev", "3.24.36-r0"], ["mate-desktop-dev", "1.26.0-r2"], ["pkgconf", "1.9.4-r0"]]

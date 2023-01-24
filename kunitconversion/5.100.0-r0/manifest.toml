@@ -1,0 +1,15 @@
+checksum = "bfa5be36ecf04567fca7e6ba820114e816a8bcff7ce17484029786e950d3a23d"
+licence = "LGPL-2.1-or-later"
+provides = "kunitconversion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kunitconversion-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

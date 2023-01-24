@@ -1,0 +1,15 @@
+checksum = "dc69b3ea2740851651e53269c79d3dfe38a6e3b79f355236d68ae26eef6e68fe"
+licence = "MIT"
+provides = "py3-babeltrace"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-babeltrace-2.0.4-r1.apk"
+version = "2.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["babeltrace", "2.0.4-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "f6530610a0523925eaa9a32ba97869049138738b0de7d0d7aebad83d55feebc8"
+licence = "GPL-2.0-or-later"
+provides = "ospd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ospd-21.4.4-r3.apk"
+version = "21.4.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-paramiko", "2.12.0-r0"], ["py3-defusedxml", "0.7.1-r2"], ["py3-deprecated", "1.2.13-r1"], ["py3-psutil", "5.9.4-r0"], ["py3-lxml", "4.9.2-r0"]]

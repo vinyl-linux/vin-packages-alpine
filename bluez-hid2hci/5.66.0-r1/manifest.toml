@@ -1,0 +1,15 @@
+checksum = "db961f644ecf15c08d5e3db58b568232e461479b0c33cc17f9d37660d59c5e0f"
+licence = "GPL-2.0-or-later"
+provides = "bluez-hid2hci"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bluez-hid2hci-5.66-r1.apk"
+version = "5.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

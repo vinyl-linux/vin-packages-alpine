@@ -1,0 +1,15 @@
+checksum = "02c292c7bb5b8b99e311e040ea1384bc9636c187ab630c7c1925ffd4832af746"
+licence = "GPL-2.0-only"
+provides = "scapy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/scapy-2.4.5-r2.apk"
+version = "2.4.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["yash-binsh", "2.53.0-r2"]]

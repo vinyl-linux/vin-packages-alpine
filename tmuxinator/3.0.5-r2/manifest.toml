@@ -1,0 +1,15 @@
+checksum = "7442122a25ddb34a8337bea62038a61425c238367ca46f055f1c4af8ce90f479"
+licence = "MIT"
+provides = "tmuxinator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tmuxinator-3.0.5-r2.apk"
+version = "3.0.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-erubi", "1.11.0-r0"], ["ruby-thor", "1.2.1-r0"], ["ruby-xdg", "6.6.2-r0"]]

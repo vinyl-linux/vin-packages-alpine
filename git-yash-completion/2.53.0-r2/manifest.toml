@@ -1,0 +1,15 @@
+checksum = "f5080427a49aeb86a37fa2eb283c8e342947d42475d9b13d7af5e7627759f351"
+licence = "GPL-2.0-or-later"
+provides = "git-yash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-yash-completion-2.53-r2.apk"
+version = "2.53.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-completion", "2.53.0-r2"]]

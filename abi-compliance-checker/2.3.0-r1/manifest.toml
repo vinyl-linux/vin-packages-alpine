@@ -1,0 +1,15 @@
+checksum = "7cca6f28b52a1d41ebbff93e64f854cec14f65abe594deb2c0243579d6b7babc"
+licence = "LGPL-2.0-or-later"
+provides = "abi-compliance-checker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/abi-compliance-checker-2.3-r1.apk"
+version = "2.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["build-base", "0.5.0-r3"]]

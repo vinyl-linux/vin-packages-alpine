@@ -1,0 +1,15 @@
+checksum = "32077c690508bd6a56b85d4f21e34d6adddb9deafc9a9eea2d0da41d4d254e2e"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "g++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/g++-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libstdc++", "12.2.1"], ["libstdc++-dev", "12.2.1"], ["gcc", "12.2.1"], ["libc-dev", "0.7.2-r3"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.13-r0"]]

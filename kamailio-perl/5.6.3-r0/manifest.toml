@@ -1,0 +1,15 @@
+checksum = "8143cbc9fe998405bed24e7306702f91643d4260c250cd9aae3abb4aa5cf0d00"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-perl-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["perl", "5.36.0-r0"]]

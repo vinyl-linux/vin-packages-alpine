@@ -1,0 +1,15 @@
+checksum = "79d56662eb3351f9bc5b6946838cccccd9bc0799389b7ccc533720dd298ec892"
+licence = "Apache-2.0"
+provides = "openvswitch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openvswitch-2.17.3-r0.apk"
+version = "2.17.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

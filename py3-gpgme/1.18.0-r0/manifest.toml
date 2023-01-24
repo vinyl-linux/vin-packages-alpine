@@ -1,0 +1,15 @@
+checksum = "15a71a8d315920ca9dcc884ae0613bdb1aa82ffe095556de1cf1c823799e2749"
+licence = "LGPL-2.1-or-later GPL-3.0-or-later"
+provides = "py3-gpgme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-gpgme-1.18.0-r0.apk"
+version = "1.18.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.40-r0"], ["gpg-agent", "2.2.40-r0"], ["gpgsm", "2.2.40-r0"], ["gpgme", "1.18.0-r0"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

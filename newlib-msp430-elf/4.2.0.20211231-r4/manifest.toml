@@ -1,0 +1,15 @@
+checksum = "579e47102f563e0b49b8ff0525e3edb702903eb76295c24b524a4eeed19bbb6c"
+licence = "GPL-2.0-only AND LGPL-2.1-only AND 0BSD AND BSD-3-Clause AND GPL-3.0-only AND LGPL-3.0-only"
+provides = "newlib-msp430-elf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/newlib-msp430-elf-4.2.0.20211231-r4.apk"
+version = "4.2.0.20211231-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils-msp430-elf", "2.39.0-r2"], ["gcc-msp430-elf", "12.2.0-r4"]]

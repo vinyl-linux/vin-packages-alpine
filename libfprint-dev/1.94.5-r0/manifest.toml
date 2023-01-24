@@ -1,0 +1,15 @@
+checksum = "ca9ab958280caa2a0e87c6f9418d4764d3c0b8b74d77350d8e53dc9cf3537a9c"
+licence = "LGPL-2.1-or-later"
+provides = "libfprint-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfprint-dev-1.94.5-r0.apk"
+version = "1.94.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfprint", "1.94.5-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

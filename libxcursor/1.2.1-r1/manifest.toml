@@ -1,0 +1,15 @@
+checksum = "5a13f09623e065d21ee18a62322c31087c66488800ddb2b66a0f52d606fd0eeb"
+licence = "MIT"
+provides = "libxcursor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxcursor-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxfixes", "6.0.0-r0"], ["libxrender", "0.9.11-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b5c0343e2c7dd80b7d2667954bccafcc46728264e651ed5d473fc0ac5f71a300"
+licence = "MIT"
+provides = "nebula"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nebula-1.6.1-r2.apk"
+version = "1.6.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

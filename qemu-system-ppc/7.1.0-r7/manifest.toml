@@ -1,0 +1,15 @@
+checksum = "8e4f9e40f7fd9da1528427d9c068314f01db2b89b7bee72f73c10afd7beadacb"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-system-ppc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-system-ppc-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ppc-firmware", "7.1.0-r7"], ["libaio", "0.3.113-r0"], ["musl", "1.2.3-r4"], ["capstone", "4.0.2-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["lzo", "2.10.0-r3"], ["numactl", "2.0.16-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["libsasl", "2.1.28-r3"], ["libseccomp", "2.5.4-r0"], ["libslirp", "4.7.0-r0"], ["snappy", "1.1.9-r4"], ["liburing", "2.3.0-r0"], ["vde2-libs", "2.3.3-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

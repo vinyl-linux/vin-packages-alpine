@@ -1,0 +1,15 @@
+checksum = "e0543faec547009fa3c3d6143bde668b09d1ebb80404b6ac6774e320cd0121a3"
+licence = "MIT"
+provides = "libxp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxp-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxau", "1.0.10-r0"], ["libxext", "1.3.5-r0"], ["musl", "1.2.3-r4"]]

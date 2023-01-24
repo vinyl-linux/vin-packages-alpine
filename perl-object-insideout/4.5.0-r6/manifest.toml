@@ -1,0 +1,15 @@
+checksum = "6e212c0c243b359893fa6e5d0af2986350186b70b1f15d33e6d51c09c0ea1c3e"
+licence = "GPL-2.0-or-later OR Artistic-2.0"
+provides = "perl-object-insideout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-object-insideout-4.05-r6.apk"
+version = "4.5.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-exception-class", "1.45.0-r0"], ["perl-module-build", "0.4231.0-r2"]]

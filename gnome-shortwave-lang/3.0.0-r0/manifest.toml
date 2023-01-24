@@ -1,0 +1,15 @@
+checksum = "09cc532ad802172d9ae7ac6d82ad40b858e98808f756f6b3bae68e9ce000d8e3"
+licence = "GPL-3.0-only"
+provides = "gnome-shortwave-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-shortwave-lang-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-libav", "1.20.5-r0"], ["gst-plugins-bad", "1.20.5-r0"], ["gst-plugins-good", "1.20.5-r0"]]

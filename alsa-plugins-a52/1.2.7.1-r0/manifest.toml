@@ -1,0 +1,15 @@
+checksum = "edd769b1cce9855e495435886a7c497ab4488fd53d4579d0d4aae3a937bbe6fa"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "alsa-plugins-a52"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alsa-plugins-a52-1.2.7.1-r0.apk"
+version = "1.2.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"]]

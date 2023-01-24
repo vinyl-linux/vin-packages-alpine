@@ -1,0 +1,15 @@
+checksum = "614fdc18bfd5d0644d32b5b033141de5741f93c351cec5ac27a506384fc59d5e"
+licence = "MIT"
+provides = "sxmo-st"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sxmo-st-0.8.4.1-r1.apk"
+version = "0.8.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"], ["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"]]

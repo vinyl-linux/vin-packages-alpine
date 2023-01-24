@@ -1,0 +1,15 @@
+checksum = "77187489ae482110fea08bb51d9515ee6110d267874634f1cc718131ccb419f6"
+licence = "GPL-3.0-or-later OpenSSL"
+provides = "sslscan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sslscan-2.0.15-r1.apk"
+version = "2.0.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "99c6e2263dcc057cd3867f3922bfb2d98a324b0a1d1d008705264df896c4169d"
+licence = "Zlib"
+provides = "bullet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bullet-dev-3.24-r0.apk"
+version = "3.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bullet", "3.24.0-r0"], ["pkgconf", "1.9.4-r0"]]

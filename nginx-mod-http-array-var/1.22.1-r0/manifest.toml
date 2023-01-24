@@ -1,0 +1,15 @@
+checksum = "f50bdd9308d4c56365e8d224afeb8cd50f6194b737850503cac68cbfffe6ff21"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-array-var"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-array-var-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["nginx-mod-devel-kit", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "67899e38005f6a4cc2b1616ecbd66ae983060cc52dd195f48e659211ef3cc267"
+licence = "GPL-2.0-or-later"
+provides = "hwdata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hwdata-0.364-r0.apk"
+version = "0.364.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwdata-usb", "0.364.0-r0"], ["hwdata-pci", "0.364.0-r0"], ["hwdata-pnp", "0.364.0-r0"], ["hwdata-net", "0.364.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "57867aa7f175ecae468bd43e00fa930d02a35362ab7a3831e22a5b8a87e665ae"
+licence = "MIT"
+provides = "py3-simplejson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-simplejson-3.17.6-r0.apk"
+version = "3.17.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a719eb75132076fbc4b2d075f4f89ca7460d29a04c9aa86fac535dae427dca46"
+licence = "GPL-3.0-only OR LGPL-2.1-only"
+provides = "qtchooser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qtchooser-66-r2.apk"
+version = "66.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

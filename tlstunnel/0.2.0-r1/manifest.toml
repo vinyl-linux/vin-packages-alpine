@@ -1,0 +1,15 @@
+checksum = "92fa24dd3eef312d85a71ccd6fb4d52f065e5f2d343753db300d851525d64d04"
+licence = "MIT"
+provides = "tlstunnel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tlstunnel-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

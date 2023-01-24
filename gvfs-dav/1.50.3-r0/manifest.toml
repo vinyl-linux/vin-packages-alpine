@@ -1,0 +1,15 @@
+checksum = "0760dc31a2b34e150612cf0b7fc9c6a283c6fc344d24a43861570030a64827f2"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-dav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-dav-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["avahi-libs", "0.8.0-r6"], ["avahi-glib", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gvfs", "1.50.3-r0"], ["libintl", "0.21.1-r1"], ["libsoup3", "3.2.2-r0"], ["libxml2", "2.10.3-r1"]]

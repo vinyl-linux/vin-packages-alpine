@@ -1,0 +1,15 @@
+checksum = "e80216908aa534521a921f230954c559281d807cb25c74dc448f6149b008efe4"
+licence = "PHP-3.01"
+provides = "php81-pecl-mailparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-mailparse-3.1.4-r0.apk"
+version = "3.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-mbstring", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

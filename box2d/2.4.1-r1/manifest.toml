@@ -1,0 +1,15 @@
+checksum = "13e4bf22e85890eca07effe710c22a9d289e1ab4666893a64527dedac398af61"
+licence = "MIT"
+provides = "box2d"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/box2d-2.4.1-r1.apk"
+version = "2.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

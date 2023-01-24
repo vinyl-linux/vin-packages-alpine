@@ -1,0 +1,15 @@
+checksum = "932fb55333867c4162d4ddf81dc4af1d198edcb81ac946d523545654a1c965a7"
+licence = "MIT"
+provides = "lua5.1-ldbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-ldbus-20150430-r3.apk"
+version = "20150430.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"]]

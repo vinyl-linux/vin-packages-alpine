@@ -1,0 +1,15 @@
+checksum = "aaa33826f6bedd26bcd3f9711b897628a0e9a4331dd4bb45fbd28e9e125ed88e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-app-cpanminus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-app-cpanminus-1.7046-r1.apk"
+version = "1.7046.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["wget", "1.21.3-r2"]]

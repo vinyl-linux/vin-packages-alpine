@@ -1,0 +1,15 @@
+checksum = "97253e176ecd086291b05b71962d79fc2621ad379bf121b18b1aa7c7d8b74686"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-sm3840"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-sm3840-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"], ["libxml2", "2.10.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "0c5d1d30cc3c881fa21f9a6a7f8242d22d19fe5d94f65470c26aaf1ba3a9262f"
+licence = "PostgreSQL"
+provides = "postgresql12-contrib-jit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql12-contrib-jit-12.13-r1.apk"
+version = "12.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql12-contrib", "12.13.0-r1"]]

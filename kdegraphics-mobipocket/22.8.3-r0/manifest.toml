@@ -1,0 +1,15 @@
+checksum = "62f3b0bb38baddc441419784d76e8937c92794442f7592fb87b1b27891ecdbf0"
+licence = "GPL-2.0-or-later"
+provides = "kdegraphics-mobipocket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdegraphics-mobipocket-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

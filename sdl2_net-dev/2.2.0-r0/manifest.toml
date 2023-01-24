@@ -1,0 +1,15 @@
+checksum = "6e2020ed141d750a40b0632ebbc24d6da32ef33e98758d6880690f5c2822e6af"
+licence = "Zlib"
+provides = "sdl2_net-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdl2_net-dev-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2-dev", "2.26.2-r0"], ["pkgconf", "1.9.4-r0"], ["sdl2_net", "2.2.0-r0"]]

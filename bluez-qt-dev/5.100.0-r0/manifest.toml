@@ -1,0 +1,15 @@
+checksum = "99c4b27a18f299f524a4230db9aeefb9725c994ba13134e2f9305864058a1ec6"
+licence = "LGPL-2.1-or-later"
+provides = "bluez-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bluez-qt-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["bluez-qt", "5.100.0-r0"], ["pkgconf", "1.9.4-r0"]]

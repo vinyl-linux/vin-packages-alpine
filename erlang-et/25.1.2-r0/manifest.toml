@@ -1,0 +1,15 @@
+checksum = "87c8d9771c901b94166377ba92f332b13b75c3a3b579d45e99d63c44bc2ebbd6"
+licence = "Apache-2.0"
+provides = "erlang-et"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/erlang-et-25.1.2-r0.apk"
+version = "25.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang-wx", "25.1.2-r0"]]

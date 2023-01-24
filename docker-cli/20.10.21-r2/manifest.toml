@@ -1,0 +1,15 @@
+checksum = "308a8284381a816bc2f566ac8cf6149bfeb33d667041dbd698156ae5dc23aebc"
+licence = "Apache-2.0"
+provides = "docker-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-cli-20.10.21-r2.apk"
+version = "20.10.21-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["musl", "1.2.3-r4"]]

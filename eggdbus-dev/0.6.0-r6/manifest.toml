@@ -1,0 +1,15 @@
+checksum = "69c940adf45bb0cd5f29288a8a521415ed62f361d5edd3bd0d5819115c6f30a1"
+licence = "LGPL-2.1-or-later"
+provides = "eggdbus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eggdbus-dev-0.6-r6.apk"
+version = "0.6.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eggdbus", "0.6.0-r6"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

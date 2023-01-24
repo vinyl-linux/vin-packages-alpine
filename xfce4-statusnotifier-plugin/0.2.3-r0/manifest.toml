@@ -1,0 +1,15 @@
+checksum = "07ae881055ddb01cdc2fa59fcd26e4e4f69c29106cba32dce25da50c8dd455ea"
+licence = "GPL-2.0-only"
+provides = "xfce4-statusnotifier-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-statusnotifier-plugin-0.2.3-r0.apk"
+version = "0.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdbusmenu-gtk3", "16.4.0-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["xfce4-panel", "4.16.5-r0"], ["libxfce4ui", "4.16.1-r1"], ["libxfce4util", "4.16.0-r2"], ["xfconf", "4.16.0-r1"]]

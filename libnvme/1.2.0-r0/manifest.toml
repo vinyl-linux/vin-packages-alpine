@@ -1,0 +1,15 @@
+checksum = "2218c4201735b784df75920fe68eab8530fe057de4cd8d999c675ae0febf90b7"
+licence = "LGPL-2.1-or-later"
+provides = "libnvme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnvme-1.2-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["json-c", "0.16.0-r2"]]

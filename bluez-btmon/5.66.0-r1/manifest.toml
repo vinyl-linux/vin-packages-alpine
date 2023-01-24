@@ -1,0 +1,15 @@
+checksum = "4eefdb25b41f2c533902fb364012e7c29ae12b2a8082f63b1cd2b3eb8959ec60"
+licence = "GPL-2.0-or-later"
+provides = "bluez-btmon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bluez-btmon-5.66-r1.apk"
+version = "5.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["eudev-libs", "3.2.11-r4"]]

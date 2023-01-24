@@ -1,0 +1,15 @@
+checksum = "49b499c4178e31476677b52969d10ddfee3ce518d5ea082d97f738375f0e2229"
+licence = "BSD-3-Clause"
+provides = "blas-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blas-dev-3.11-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["blas", "3.11.0-r0"], ["pkgconf", "1.9.4-r0"]]

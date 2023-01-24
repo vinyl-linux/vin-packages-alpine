@@ -1,0 +1,15 @@
+checksum = "84b826e64617409802abb9c90106ce5ff0f3e4f0bf78cab51cd6c70ab0a65728"
+licence = "CC0-1.0"
+provides = "meek"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/meek-0.37.0-r11.apk"
+version = "0.37.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["musl", "1.2.3-r4"]]

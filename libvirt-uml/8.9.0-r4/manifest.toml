@@ -1,0 +1,15 @@
+checksum = "cd7572616aa1f04c20e00dea05a46d078ff243c6284137287e3fca2e983fd263"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-uml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvirt-uml-8.9.0-r4.apk"
+version = "8.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt-daemon", "8.9.0-r4"], ["libvirt-common-drivers", "8.9.0-r4"]]

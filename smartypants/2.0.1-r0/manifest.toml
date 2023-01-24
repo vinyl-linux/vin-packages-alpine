@@ -1,0 +1,15 @@
+checksum = "cf4cafdd356ffe8def4971cb92f576c75b33f2de55d96d5b52fca049b689e272"
+licence = "BSD"
+provides = "smartypants"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/smartypants-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

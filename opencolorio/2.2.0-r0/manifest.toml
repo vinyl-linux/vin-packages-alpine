@@ -1,0 +1,15 @@
+checksum = "24f61098fec85adb18359da934312edf6b074cd3e14f220fee5315b30f8da88b"
+licence = "BSD-3-Clause AND GPL-2.0-or-later"
+provides = "opencolorio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencolorio-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openexr", "3.1.5-r3"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["yaml-cpp", "0.7.0-r0"], ["zlib", "1.2.13-r0"]]

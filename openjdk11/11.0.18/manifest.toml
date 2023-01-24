@@ -1,0 +1,15 @@
+checksum = "b9662a372f2606a6c5d0fb1ff3d482b96e2eab7f062219f359fe5826e1fc37e8"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk11-11.0.18_p10-r0.apk"
+version = "11.0.18"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk11-jdk", "11.0.18"], ["openjdk11-demos", "11.0.18"], ["openjdk11-doc", "11.0.18"]]

@@ -1,0 +1,15 @@
+checksum = "54a5f634fdeea152cb9f0c205ef49409e7481a25191ebe080ca3a68bb533439d"
+licence = "MIT"
+provides = "pueue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pueue-2.1.0-r1.apk"
+version = "2.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

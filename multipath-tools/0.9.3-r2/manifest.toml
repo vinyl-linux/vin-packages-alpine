@@ -1,0 +1,15 @@
+checksum = "c5b7af3ecf3936f205912d2ca9a0bb8ca89b426bcd427ca73a784a01577d9c13"
+licence = "LGPL-2.0-only"
+provides = "multipath-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/multipath-tools-0.9.3-r2.apk"
+version = "0.9.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"], ["device-mapper", "2.3.17-r1"], ["pkgconf", "1.9.4-r0"], ["libaio", "0.3.113-r0"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["json-c", "0.16.0-r2"], ["eudev-libs", "3.2.11-r4"], ["userspace-rcu", "0.13.2-r0"]]

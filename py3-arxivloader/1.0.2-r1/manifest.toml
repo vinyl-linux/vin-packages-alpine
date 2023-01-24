@@ -1,0 +1,15 @@
+checksum = "7ed92f684d584c3a5308504ad0f066036e9a94265eb2f47a991f9548ec6a2c1b"
+licence = "BSD-3-Clause"
+provides = "py3-arxivloader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-arxivloader-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-beautifulsoup4", "4.11.1-r0"], ["py3-lxml", "4.9.2-r0"], ["py3-numpy", "1.23.4-r0"], ["py3-pandas", "1.5.1-r0"], ["py3-requests", "2.28.1-r1"], ["py3-tqdm", "4.63.2-r0"]]

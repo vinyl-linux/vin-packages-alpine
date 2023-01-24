@@ -1,0 +1,15 @@
+checksum = "cb202fe0ba8ca2e5cc617a587437d50a9d6ee91a52fae45e3c2a943003c2a868"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-adsl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-adsl-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

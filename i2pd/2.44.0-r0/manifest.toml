@@ -1,0 +1,15 @@
+checksum = "4b6e270ddf7a88a81dcae9f9566fe7b9fa612c819b839142847d13efe42bd167"
+licence = "BSD-3-Clause"
+provides = "i2pd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/i2pd-2.44.0-r0.apk"
+version = "2.44.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl-utils", "1.2.3-r4"], ["yash-binsh", "2.53.0-r2"], ["boost1.80-filesystem", "1.80.0-r3"], ["boost1.80-program_options", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

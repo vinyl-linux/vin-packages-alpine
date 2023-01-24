@@ -1,0 +1,15 @@
+checksum = "059951b3fded3ef8de233ebe28aa438e0b964904650e1fd0689a29ba575b50ae"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "kactivities-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kactivities-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.100.1-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["kwindowsystem-dev", "5.100.0-r0"], ["qt5-qtdeclarative-dev", "5.15.6"], ["kactivities-libs", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

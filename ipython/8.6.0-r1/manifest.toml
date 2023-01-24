@@ -1,0 +1,15 @@
+checksum = "ae9553e4300114452d806bb1ea87f4c02316dca60d74b563e17fa73a5f364ed1"
+licence = "BSD-3-Clause"
+provides = "ipython"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ipython-8.6.0-r1.apk"
+version = "8.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-backcall", "0.2.0-r2"], ["py3-decorator", "5.1.1-r1"], ["py3-jedi", "0.18.1-r0"], ["py3-matplotlib-inline", "0.1.6-r0"], ["py3-pexpect", "4.8.0-r3"], ["py3-pickleshare", "0.7.5-r5"], ["py3-prompt_toolkit", "3.0.31-r0"], ["py3-pygments", "2.13.0-r0"], ["py3-stack_data", "0.6.1-r0"], ["py3-traitlets", "5.5.0-r0"]]

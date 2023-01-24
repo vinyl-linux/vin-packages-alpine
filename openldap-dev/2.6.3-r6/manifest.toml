@@ -1,0 +1,15 @@
+checksum = "171e17347773c8d56abab308b96687e0a5da669eb0912f97ef46111eb403c7b0"
+licence = "OLDAP-2.8"
+provides = "openldap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-dev-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cyrus-sasl-dev", "2.1.28-r3"], ["libevent-dev", "2.1.12-r5"], ["libsodium-dev", "1.0.18-r2"], ["util-linux-dev", "2.38.1-r1"], ["libldap", "2.6.3-r6"], ["pkgconf", "1.9.4-r0"]]

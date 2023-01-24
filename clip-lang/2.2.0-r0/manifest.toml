@@ -1,0 +1,15 @@
+checksum = "0df7f7a6dc1395a844e0d99217165c4a46c3763754df179f26e536695585975f"
+licence = "GPL-3.0-or-later"
+provides = "clip-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clip-lang-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"]]

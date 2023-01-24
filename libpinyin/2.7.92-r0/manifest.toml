@@ -1,0 +1,15 @@
+checksum = "eeb372a36740f61c9c3c566c5a447107829124f687b0ff46dfc6044ac562aa56"
+licence = "GPL-3.0-or-later"
+provides = "libpinyin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpinyin-2.7.92-r0.apk"
+version = "2.7.92-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["kyotocabinet", "1.2.79-r3"], ["libstdc++", "12.2.1"]]

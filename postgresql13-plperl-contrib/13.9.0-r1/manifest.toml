@@ -1,0 +1,15 @@
+checksum = "981d0a823b462c57215b26e48cc052a823b91a834bf1e433fdd4469ac5a1d506"
+licence = "PostgreSQL"
+provides = "postgresql13-plperl-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql13-plperl-contrib-13.9-r1.apk"
+version = "13.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql13-plperl", "13.9.0-r1"], ["musl", "1.2.3-r4"], ["perl", "5.36.0-r0"]]

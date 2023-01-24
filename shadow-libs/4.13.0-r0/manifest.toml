@@ -1,0 +1,15 @@
+checksum = "e0a496c59bf3b534ee3f185651823974ab4dd6e3c78cfedec9e00d65ddea71e9"
+licence = "BSD-3-Clause"
+provides = "shadow-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shadow-libs-4.13-r0.apk"
+version = "4.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "38d98428cc42aa2aff68fa80c0d2cd8b893b78532daa801ee66f4759d6931044"
+licence = "MPL-2.0"
+provides = "libreoffice-draw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-draw-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-common", "7.3.7.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["poppler", "22.11.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

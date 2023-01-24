@@ -1,0 +1,15 @@
+checksum = "172b9280eff9d23f09ac6bb36572fc6c585ba3885fa5345eb47b0fbfa2911135"
+licence = "CDDL-1.0 OR LGPL-2.1-only"
+provides = "libraw-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libraw-dev-0.20.2-r2.apk"
+version = "0.20.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libraw", "0.20.2-r2"], ["lcms2-dev", "2.14.0-r0"], ["pkgconf", "1.9.4-r0"]]

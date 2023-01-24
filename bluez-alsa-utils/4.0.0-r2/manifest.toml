@@ -1,0 +1,15 @@
+checksum = "cea4bc01197ad2309f0e0c66bd49f7b76ca9355f872e08d0f0563ea51ebf173b"
+licence = "MIT"
+provides = "bluez-alsa-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bluez-alsa-utils-4.0.0-r2.apk"
+version = "4.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez", "5.66.0-r1"], ["alsa-lib", "1.2.8-r0"], ["bluez-libs", "5.66.0-r1"], ["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"]]

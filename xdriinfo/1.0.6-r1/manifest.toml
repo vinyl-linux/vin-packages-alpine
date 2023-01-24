@@ -1,0 +1,15 @@
+checksum = "8ec0cc65046ebd5d6e2de150f675b563359ca11adc2c686d9ed8bb4f9c1f0129"
+licence = "custom"
+provides = "xdriinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdriinfo-1.0.6-r1.apk"
+version = "1.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

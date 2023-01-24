@@ -1,0 +1,15 @@
+checksum = "2a2abddb6addbc8b2f1f6e25cd54b26877a9cd3c52cef688173a1b0ecb4a1f35"
+licence = "BSD-3-Clause OR GPL-2.0-only"
+provides = "libcap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcap-dev-2.66-r0.apk"
+version = "2.66.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libcap2", "2.66.0-r0"], ["pkgconf", "1.9.4-r0"]]

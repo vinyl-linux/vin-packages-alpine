@@ -1,0 +1,15 @@
+checksum = "7123ad96fdeed8e81c4f2de897c969615cab11c8f031713c4a0f95b4788027ce"
+licence = "GPL-3.0-or-later"
+provides = "bubblejail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bubblejail-0.6.2-r3.apk"
+version = "0.6.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["libseccomp", "2.5.4-r0"], ["python3", "3.10.9-r1"], ["py3-tomli", "2.0.1-r1"], ["py3-tomli-w", "1.0.0-r2"], ["py3-xdg", "0.28.0-r0"], ["xdg-dbus-proxy", "0.1.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ac8d48bf7e8b53e1faa965a09e5aef0659aa6f4fdbbb5af721bd25ccbd84f7c5"
+licence = "GPL-3.0-or-later"
+provides = "treedude"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/treedude-1.0.7-r0.apk"
+version = "1.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

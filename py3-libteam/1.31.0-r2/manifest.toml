@@ -1,0 +1,15 @@
+checksum = "f0bb6e4aa4da5c2448b0bcf51fa8fa3cee573d1b3547fa9e3b1c78ff10588b1f"
+licence = "LGPL-2.1-or-later"
+provides = "py3-libteam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-libteam-1.31-r2.apk"
+version = "1.31.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libteam", "1.31.0-r2"]]

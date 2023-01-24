@@ -1,0 +1,15 @@
+checksum = "a590130296b997110561d80232a4a525458655602d869b08da954abf19a101a7"
+licence = "GPL-2.0-or-later"
+provides = "libpurple"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpurple-2.14.10-r0.apk"
+version = "2.14.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libidn", "1.41.0-r0"], ["libintl", "0.21.1-r1"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r0"], ["libsasl", "2.1.28-r3"], ["libxml2", "2.10.3-r1"]]

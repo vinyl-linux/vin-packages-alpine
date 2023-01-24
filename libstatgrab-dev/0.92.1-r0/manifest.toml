@@ -1,0 +1,15 @@
+checksum = "de8e569f61f56f92e150d845cdd0a786b09ffdd0a122c351a3474e03fcc0e704"
+licence = "LGPL-2.0-or-later"
+provides = "libstatgrab-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libstatgrab-dev-0.92.1-r0.apk"
+version = "0.92.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-dev", "6.3.0"], ["libstatgrab", "0.92.1-r0"], ["pkgconf", "1.9.4-r0"]]

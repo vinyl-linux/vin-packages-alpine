@@ -1,0 +1,15 @@
+checksum = "81f2beb8f5392688836fc526613e4569fd5b5877152f4a84048e3bf5b79bc01d"
+licence = "Apache-2.0"
+provides = "buildah"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/buildah-1.28.2-r1.apk"
+version = "1.28.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["crun", "1.7.2-r0"], ["shadow-subids", "4.13.0-r0"], ["fuse-overlayfs", "1.9.0-r0"], ["slirp4netns", "1.2.0-r0"], ["containers-common", "0.50.1-r0"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["gpgme", "1.18.0-r0"], ["libseccomp", "2.5.4-r0"]]

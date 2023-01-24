@@ -1,0 +1,15 @@
+checksum = "1da67f4513e165cee855ca15bba801a175beef4ff8286307f9801123614445c2"
+licence = "BSD-3-Clause OR GPL-2.0-only"
+provides = "libcap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcap-2.66-r0.apk"
+version = "2.66.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcap2", "2.66.0-r0"], ["libcap-utils", "2.66.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6da08bb7b6ccd46d311bec4d87deab44819694a57d140c4c1df3f406eab26c54"
+licence = "NCSA"
+provides = "include-what-you-use"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/include-what-you-use-0.19-r0.apk"
+version = "0.19.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["clang15-libs", "15.0.7-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

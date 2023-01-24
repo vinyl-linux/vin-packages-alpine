@@ -1,0 +1,15 @@
+checksum = "dabd7d9fabdf99f7901e5ee1ec1f7e776727f50c5e24af0412da01e9e18a7d01"
+licence = "GPL-2.0-or-later"
+provides = "network-manager-applet-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/network-manager-applet-lang-1.30.0-r0.apk"
+version = "1.30.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"]]

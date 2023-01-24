@@ -1,0 +1,15 @@
+checksum = "00f3cbc2e5dbba848dd2b255d6be42571818488e8a4c5b27cec78cd2fa836b9b"
+licence = "GPL-2.0-or-later"
+provides = "frr-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frr-dbg-8.4.1-r0.apk"
+version = "8.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["bash", "5.2.15-r0"]]

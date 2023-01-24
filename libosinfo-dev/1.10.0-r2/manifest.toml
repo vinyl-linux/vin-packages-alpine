@@ -1,0 +1,15 @@
+checksum = "428a71764cdd2d923cf0f9029b46020e573b5d12b983b51bbee4be4b3b13cc32"
+licence = "LGPL-2.0-or-later"
+provides = "libosinfo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libosinfo-dev-1.10.0-r2.apk"
+version = "1.10.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libosinfo", "1.10.0-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

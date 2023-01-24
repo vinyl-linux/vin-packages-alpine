@@ -1,0 +1,15 @@
+checksum = "55c46d5ec38e6949ed7a0e1266960762c3076b2ad92314346c80119b7f81122e"
+licence = "MIT"
+provides = "py3-ytmusicapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ytmusicapi-0.24.0-r0.apk"
+version = "0.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "65.6.0-r0"], ["py3-requests", "2.28.1-r1"]]

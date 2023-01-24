@@ -1,0 +1,15 @@
+checksum = "52f09f3a969af577fb67c99267fe88dae4b4212218d5d7da419d91198309af28"
+licence = "GPL-2.0+, LGPL-2.1+, Zlib"
+provides = "rarian"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rarian-0.8.1-r8.apk"
+version = "0.8.1-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

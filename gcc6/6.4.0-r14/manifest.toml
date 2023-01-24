@@ -1,0 +1,15 @@
+checksum = "d58f432df58189124dca882848c3fa147bbd644177bf8dfd42b87198e72dd3a2"
+licence = "GPL LGPL"
+provides = "gcc6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcc6-6.4.0-r14.apk"
+version = "6.4.0-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils", "2.39.0-r2"], ["libstdc++6", "6.4.0-r14"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.13-r0"]]

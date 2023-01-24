@@ -1,0 +1,15 @@
+checksum = "bb6f84525cae2c87b79fb754c85b84b2c6c5b4093d987af8d5c2034f0bd6890d"
+licence = "BSD-3-Clause"
+provides = "py3-pretend"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pretend-1.0.9-r3.apk"
+version = "1.0.9-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

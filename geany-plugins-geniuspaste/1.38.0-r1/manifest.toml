@@ -1,0 +1,15 @@
+checksum = "87be1f168412f72ce5d4f544184da55ba4694e842f844ed670a9183f83f4ea8d"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geniuspaste"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-geniuspaste-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libsoup", "2.74.3-r0"]]

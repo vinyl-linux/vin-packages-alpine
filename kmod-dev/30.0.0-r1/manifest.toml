@@ -1,0 +1,15 @@
+checksum = "1efdb51859d11d2b3352f7ff312cb7da8194c23b4717aef40100c487e1af0ddf"
+licence = "GPL-2.0-or-later"
+provides = "kmod-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kmod-dev-30-r1.apk"
+version = "30.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kmod-libs", "30.0.0-r1"], ["pkgconf", "1.9.4-r0"]]

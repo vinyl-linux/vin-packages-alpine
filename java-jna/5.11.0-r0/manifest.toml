@@ -1,0 +1,15 @@
+checksum = "09577e3148769f6d77b4ecae2fb8cbdf1e0bcec5c34342a7b4334897c20ab274"
+licence = "Apache-2.0 LGPL-2.1"
+provides = "java-jna"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/java-jna-5.11.0-r0.apk"
+version = "5.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"], ["java-jna-native", "5.11.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "e6e9839d73d1721f4ceff67dbecce24f87abbc6acd3b1b97ba7cd4683930a85a"
+licence = "PHP-3.0"
+provides = "php81-pecl-memcache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-memcache-8.0-r0.apk"
+version = "8.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-session", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

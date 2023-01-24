@@ -1,0 +1,15 @@
+checksum = "15f5618dbfef9b4b04b8bc28828ec1f72e21e1650cb8761b2979744d09ea4cdb"
+licence = "Apache-2.0"
+provides = "font-droid-nonlatin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-droid-nonlatin-20200215-r2.apk"
+version = "20200215.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

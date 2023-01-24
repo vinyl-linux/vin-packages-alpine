@@ -1,0 +1,15 @@
+checksum = "fe23f7b9ec6954cd2ae94611a428c9ecb14bc37ac008aa4d48a4d62d1b34f26b"
+licence = "GPL-2.0-or-later"
+provides = "boca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/boca-1.0.6a-r0.apk"
+version = "1.0.6-a-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcdio", "2.1.0-r1"], ["libcdio-paranoia", "10.2.2.0.1-r1"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libpulse", "16.1.0-r6"], ["smooth", "0.9.9-r0"], ["libstdc++", "12.2.1"], ["liburiparser", "0.9.7-r0"], ["zlib", "1.2.13-r0"]]

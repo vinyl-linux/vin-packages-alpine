@@ -1,0 +1,15 @@
+checksum = "3b78450d842ef77d97eb6adfa466ea0546ee6d83134153ba4b6cb249d2bda456"
+licence = "Apache-2.0"
+provides = "libjxl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libjxl-dev-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libjxl", "0.7.0-r0"], ["lcms2-dev", "2.14.0-r0"], ["brotli-dev", "1.0.9-r9"], ["highway-dev", "1.0.2-r0"], ["pkgconf", "1.9.4-r0"]]

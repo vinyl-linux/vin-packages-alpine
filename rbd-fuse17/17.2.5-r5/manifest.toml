@@ -1,0 +1,15 @@
+checksum = "951dc3d1c80d3ba1bfd664f2e6d3a0a3b0c1fe49177b7a8ccc9185c64e8791da"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "rbd-fuse17"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rbd-fuse17-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librados17", "17.2.5-r5"], ["librbd17", "17.2.5-r5"], ["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "30dc3abef3ce7c727872426bf59a0639d969ffef0672f26b70249fefe38a7611"
+licence = "FTL GPL-2.0-or-later"
+provides = "freetype-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freetype-dev-2.12.1-r0.apk"
+version = "2.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freetype", "2.12.1-r0"], ["bzip2-dev", "1.0.8-r4"], ["brotli-dev", "1.0.9-r9"], ["libpng-dev", "1.6.38-r0"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

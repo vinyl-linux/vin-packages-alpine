@@ -1,0 +1,15 @@
+checksum = "9466d5c3a21467639e32863f3793df58d1a788e1133f9e7af91d45a96c20e1c9"
+licence = "Apache-2.0"
+provides = "apache-mod-auth-ntlm-winbind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache-mod-auth-ntlm-winbind-0.1-r7.apk"
+version = "0.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["samba", "4.16.8-r0"], ["samba-winbind", "4.16.8-r0"], ["musl", "1.2.3-r4"]]

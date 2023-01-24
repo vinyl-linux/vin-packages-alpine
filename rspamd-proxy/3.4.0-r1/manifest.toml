@@ -1,0 +1,15 @@
+checksum = "41a18e10284f6caa851fd9826bad1b385b803fc399c3dbc64b97ef26423c1269"
+licence = "Apache-2.0"
+provides = "rspamd-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rspamd-proxy-3.4-r1.apk"
+version = "3.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rspamd", "3.4.0-r1"]]

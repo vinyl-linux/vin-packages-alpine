@@ -1,0 +1,15 @@
+checksum = "f02378ac8f8abc81c1569841e56b8d2261e029da2afbe74c901e9fc039f95b72"
+licence = "custom"
+provides = "psutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/psutils-dev-1.17-r4.apk"
+version = "1.17.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-dev", "5.36.0-r0"]]

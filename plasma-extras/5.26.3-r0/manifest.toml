@@ -1,0 +1,15 @@
+checksum = "3bb6c64d79a72452bd3e00eba9a1f05138cc6c2bd268b264e0fde16a54e8a41f"
+licence = "GPL-3.0-or-later"
+provides = "plasma-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-extras-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["breeze-grub", "5.26.3-r0"], ["breeze-plymouth", "5.26.3-r0"], ["oxygen", "5.26.3-r0"], ["plasma-sdk", "5.26.3-r0"], ["plasma-thunderbolt", "5.26.3-r0"], ["plymouth-kcm", "5.26.3-r0"]]

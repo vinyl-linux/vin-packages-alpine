@@ -1,0 +1,15 @@
+checksum = "881175777658340ea5fd46d6ff2b4fcb0f74bcfdda7c64a15807f44f53eac331"
+licence = "MIT"
+provides = "py3-hatch-vcs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-hatch-vcs-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-hatchling", "1.11.1-r0"], ["py3-setuptools_scm", "7.0.5-r0"]]

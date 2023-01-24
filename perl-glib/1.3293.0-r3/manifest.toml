@@ -1,0 +1,15 @@
+checksum = "ede2a3a115aab6fb21db1aebea5ee675ed9f01170e25ff458384b59858f7ca82"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-glib-1.3293-r3.apk"
+version = "1.3293.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

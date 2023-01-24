@@ -1,0 +1,15 @@
+checksum = "14f9825e9083432fc7259871600e173705016b8261c7108e0579915819e4597d"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-echo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-echo-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

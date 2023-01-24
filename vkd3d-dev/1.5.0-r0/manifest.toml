@@ -1,0 +1,15 @@
+checksum = "bc21951cb2c2115a4abe876a651bf61227401661ce9bac51fe81b30bdff624a1"
+licence = "LGPL-2.1-or-later"
+provides = "vkd3d-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vkd3d-dev-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["vkd3d", "1.5.0-r0"]]

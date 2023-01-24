@@ -1,0 +1,15 @@
+checksum = "d2540e8f9514e5d03bae32b9cea741ea85bc050ae56851272216f5c9b7150399"
+licence = "Apache-2.0"
+provides = "chez-scheme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chez-scheme-9.5.8-r4.apk"
+version = "9.5.8-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lz4-libs", "1.9.4-r1"], ["ncurses-libs", "6.3.0"], ["libuuid", "2.38.1-r1"], ["zlib", "1.2.13-r0"]]

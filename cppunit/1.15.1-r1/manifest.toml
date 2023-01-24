@@ -1,0 +1,15 @@
+checksum = "65f6934ba0be2fd83ad239240f03f69c5910f6fc59922dd28b1b93b01b9db223"
+licence = "LGPL-2.0-or-later"
+provides = "cppunit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cppunit-1.15.1-r1.apk"
+version = "1.15.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

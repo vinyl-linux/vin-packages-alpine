@@ -1,0 +1,15 @@
+checksum = "e8d32dff6160dec2f87c379905e33230a88371a6365396eee9045b722c1bd205"
+licence = "LGPL-2.1-or-later"
+provides = "vkd3d"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vkd3d-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["spirv-tools", "1.3.231.1-r0"], ["musl", "1.2.3-r4"]]

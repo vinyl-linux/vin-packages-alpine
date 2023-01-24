@@ -1,0 +1,15 @@
+checksum = "13f04acdb3210e6d69b8882244ee072f602c80d194a383583a60472f4bfe946b"
+licence = "MIT"
+provides = "py3-pytest-vcr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-vcr-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-vcrpy", "4.2.1-r0"]]

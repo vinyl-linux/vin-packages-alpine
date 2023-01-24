@@ -1,0 +1,15 @@
+checksum = "aea9d84c92e95b616d169c994d45fba07225232c68e0d5cd32a59953ec3f2882"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-gd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-gd-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["libxpm", "3.5.15-r0"], ["libavif", "0.11.1-r0"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["libwebp", "1.2.4-r1"], ["zlib", "1.2.13-r0"]]

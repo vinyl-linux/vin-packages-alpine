@@ -1,0 +1,15 @@
+checksum = "11d7c46a64dcd55343d764a4b2e434bd13a4d543c92236f44f013dcd7af40e0e"
+licence = "GPL-2.0-or-later"
+provides = "aria2-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aria2-daemon-1.36.0-r1.apk"
+version = "1.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aria2", "1.36.0-r1"], ["openrc", "0.45.2-r7"], ["yash-binsh", "2.53.0-r2"]]

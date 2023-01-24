@@ -1,0 +1,15 @@
+checksum = "fa43ba49dc21f03653a10e32cf9c572ab68abb9a01e41e7d4bbb82ceacf6bd3e"
+licence = "GPL-2.0-only"
+provides = "powertop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/powertop-2.15-r0.apk"
+version = "2.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libnl", "1.1.4-r2"], ["pciutils-libs", "3.9.0-r0"], ["libstdc++", "12.2.1"]]

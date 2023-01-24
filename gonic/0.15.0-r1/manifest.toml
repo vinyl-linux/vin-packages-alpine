@@ -1,0 +1,15 @@
+checksum = "7a5838a1e15c89b8573062ac9c992fb6da0aa1a2de7231a0bd401687b93bb5b9"
+licence = "GPL-3.0-or-later"
+provides = "gonic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gonic-0.15.0-r1.apk"
+version = "0.15.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg", "5.1.2-r1"], ["sqlite", "3.40.1-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["taglib", "1.13.0-r0"]]

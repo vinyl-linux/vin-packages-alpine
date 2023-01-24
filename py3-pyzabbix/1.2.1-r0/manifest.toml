@@ -1,0 +1,15 @@
+checksum = "05541ff686ff301095cab89de39c48adfe566ad21be34fa6ea0f53574fe58338"
+licence = "LGPL-2.1-or-later"
+provides = "py3-pyzabbix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyzabbix-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-requests", "2.28.1-r1"], ["py3-semantic-version", "2.10.0-r0"]]

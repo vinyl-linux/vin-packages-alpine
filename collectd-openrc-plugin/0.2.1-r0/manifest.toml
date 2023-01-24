@@ -1,0 +1,15 @@
+checksum = "4fa86d7cc5ba188d0f6285a22910dd03e40ef3a0614c4f63eecae37c49c5f529"
+licence = "GPL-2.0-or-later"
+provides = "collectd-openrc-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-openrc-plugin-0.2.1-r0.apk"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["json-c", "0.16.0-r2"], ["openrc", "0.45.2-r7"]]

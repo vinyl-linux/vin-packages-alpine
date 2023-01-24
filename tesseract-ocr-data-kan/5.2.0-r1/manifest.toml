@@ -1,0 +1,15 @@
+checksum = "d35cbc7be49c06d2832d7da388193f5a9f0fbd655ac0612a34feab5ccd184b2e"
+licence = "Apache-2.0"
+provides = "tesseract-ocr-data-kan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tesseract-ocr-data-kan-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tesseract-ocr", "5.2.0-r1"]]

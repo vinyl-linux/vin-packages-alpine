@@ -1,0 +1,15 @@
+checksum = "e888a143d11886570df99f560f91eaf4f5f9657ee5e8ae5df09876e5ecc1c497"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-gmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-gmp-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"]]

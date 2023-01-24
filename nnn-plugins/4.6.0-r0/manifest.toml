@@ -1,0 +1,15 @@
+checksum = "2e424c0b1bc09bf19c02af048a2d5e85cf032d80b7b3caf243265303c5c15e90"
+licence = "BSD-2-Clause"
+provides = "nnn-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nnn-plugins-4.6-r0.apk"
+version = "4.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

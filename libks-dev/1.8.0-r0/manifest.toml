@@ -1,0 +1,15 @@
+checksum = "dff71b80f7b51ec1a81115127d4c8e1c02dcc7fd10d452e09cc6ca30d51e6db7"
+licence = "MIT"
+provides = "libks-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libks-dev-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libks", "1.8.0-r0"], ["pkgconf", "1.9.4-r0"]]

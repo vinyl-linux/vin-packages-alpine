@@ -1,0 +1,15 @@
+checksum = "f04ae0a5c8c0fefe2b2319cc5709f14e7ddc31f936ca68a7c73f7ba1ee2fca29"
+licence = "NCSA"
+provides = "libtar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtar-1.2.20-r0.apk"
+version = "1.2.20-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

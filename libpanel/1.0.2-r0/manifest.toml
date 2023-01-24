@@ -1,0 +1,15 @@
+checksum = "ea6a883497182f0f33974e9a0f984b6fdd5daa772e81182342116780c00d41ea"
+licence = "LGPL-2.1-or-later"
+provides = "libpanel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpanel-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["graphene", "1.10.8-r1"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"]]

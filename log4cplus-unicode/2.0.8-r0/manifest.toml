@@ -1,0 +1,15 @@
+checksum = "21032b8ddcb7f56025198fc9ffbd7e738720f0e50916bf3e25fc09b559661d30"
+licence = "Apache-2.0"
+provides = "log4cplus-unicode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/log4cplus-unicode-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

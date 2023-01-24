@@ -1,0 +1,15 @@
+checksum = "2eca44f0cabf26a5a8433db21e573ef923385144953b16409ba8c4e50a2a1def"
+licence = "Apache-2.0"
+provides = "py3-betamax_serializers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-betamax_serializers-0.2.1-r3.apk"
+version = "0.2.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-yaml", "6.0.0-r0"], ["py3-betamax", "0.8.1-r3"]]

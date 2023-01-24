@@ -1,0 +1,15 @@
+checksum = "ec3c1f6a45dcbb9a713ded587ae31e5651136a51df5c1a09ca684b00affcbcc3"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-mysql-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"], ["php81-pdo_mysql", "8.1.14-r0"]]

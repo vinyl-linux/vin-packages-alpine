@@ -1,0 +1,15 @@
+checksum = "6e13491a0994a19fad32d289ec005873b657bab00bc62cff6c22c54ebfe940c5"
+licence = "GPL-2.0-only"
+provides = "ttaenc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ttaenc-3.4.1-r1.apk"
+version = "3.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

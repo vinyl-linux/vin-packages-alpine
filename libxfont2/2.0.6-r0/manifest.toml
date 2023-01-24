@@ -1,0 +1,15 @@
+checksum = "11c431386e21d3c5521564ecc8970035ea8fbc8d6281108a3a0694e0dfb55efb"
+licence = "MIT"
+provides = "libxfont2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxfont2-2.0.6-r0.apk"
+version = "2.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libfontenc", "1.1.6-r0"], ["freetype", "2.12.1-r0"], ["zlib", "1.2.13-r0"]]

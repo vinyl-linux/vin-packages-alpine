@@ -1,0 +1,15 @@
+checksum = "54ccfb60722b4e7a0542668370735cbf91eb38053cbe37d6f9ec8cc1dc90f434"
+licence = "LGPL-2.1-or-later"
+provides = "sdbus-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdbus-cpp-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

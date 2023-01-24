@@ -1,0 +1,15 @@
+checksum = "a80d5cfe46c2fc0f24137a99bb33dd420a1b39773729f5f64d4956efe0574fa1"
+licence = "LGPL-2.0-or-later"
+provides = "gtk+2.0-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gtk+2.0-lang-2.24.33-r7.apk"
+version = "2.24.33-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shared-mime-info", "2.2.0-r2"], ["gtk-update-icon-cache", "3.24.36-r0"]]

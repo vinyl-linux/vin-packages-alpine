@@ -1,0 +1,15 @@
+checksum = "ce52765b29cef52630af587c0524aae13630c64428eae1b36098f427c9d87022"
+licence = "Apache-2.0"
+provides = "apr-util-dbd_pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-util-dbd_pgsql-1.6.1-r14.apk"
+version = "1.6.1-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ec6ac34047e57108e32b25442db8116276839f90017a51ccd2dfee9c07353646"
+licence = "bzip2-1.0.6"
+provides = "bzip2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bzip2-dev-1.0.8-r4.apk"
+version = "1.0.8-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["pkgconf", "1.9.4-r0"]]

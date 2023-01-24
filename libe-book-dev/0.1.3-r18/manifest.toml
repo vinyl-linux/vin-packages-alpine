@@ -1,0 +1,15 @@
+checksum = "96a98d214680f29e12fc89961c20f3ad4abd392b24eed8f7b876d23fd18646eb"
+licence = "MPL-2.0"
+provides = "libe-book-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libe-book-dev-0.1.3-r18.apk"
+version = "0.1.3-r18"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.80.0-r3"], ["icu-dev", "72.1.0-r1"], ["librevenge-dev", "0.0.4-r10"], ["libxml2-dev", "2.10.3-r1"], ["zlib-dev", "1.2.13-r0"], ["liblangtag-dev", "0.6.4-r0"], ["libe-book", "0.1.3-r18"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "13b0ca0545021b43099848054380bf9c396530115f34153f4eef97d019b0d59a"
+licence = "GPL-2.0-or-later"
+provides = "vifm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vifm-0.12.1-r1.apk"
+version = "0.12.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmagic", "5.43.0-r0"], ["ncurses-libs", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "d01359c5519ecb606a2cecd6be380823f34dfdfbb4b75ce77c530edb18e4b629"
+licence = "GPL-3.0-or-later"
+provides = "snapcast-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/snapcast-client-0.26.0-r3.apk"
+version = "0.26.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["flac-libs", "1.4.2-r0"], ["alsa-lib", "1.2.8-r0"], ["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libogg", "1.3.5-r2"], ["opus", "1.3.1-r1"], ["soxr", "0.1.3-r3"], ["libstdc++", "12.2.1"], ["libvorbis", "1.3.7-r0"]]

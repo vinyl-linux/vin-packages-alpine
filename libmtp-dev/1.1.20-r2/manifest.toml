@@ -1,0 +1,15 @@
+checksum = "8182efe755ec94756262b2dba5e4c52b55aa68c6a753ac3e5d8161c71cc687a7"
+licence = "LGPL-2.0-or-later"
+provides = "libmtp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmtp-dev-1.1.20-r2.apk"
+version = "1.1.20-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgcrypt-dev", "1.10.1-r0"], ["libusb-dev", "1.0.26-r0"], ["libmtp", "1.1.20-r2"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "76539a9b3a94c24dc764bee53a736f20fded4e32dfd6b9e3103c5c133ed11b50"
+licence = "custom"
+provides = "font-bitstream-speedo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-bitstream-speedo-1.0.2-r2.apk"
+version = "1.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

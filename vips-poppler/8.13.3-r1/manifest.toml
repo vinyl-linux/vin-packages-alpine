@@ -1,0 +1,15 @@
+checksum = "624adc0651863d6d93f72931f4e64f2645b34a8f69c5cde3d2085ae6a6af5a5a"
+licence = "LGPL-2.1-or-later"
+provides = "vips-poppler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vips-poppler-8.13.3-r1.apk"
+version = "8.13.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["poppler-glib", "22.11.0-r0"], ["vips", "8.13.3-r1"]]

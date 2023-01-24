@@ -1,0 +1,15 @@
+checksum = "20c86ac3e733aa97c757a65eb8de43677b7a3a000ed9f129d69cd53749111127"
+licence = "custom"
+provides = "zfs-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

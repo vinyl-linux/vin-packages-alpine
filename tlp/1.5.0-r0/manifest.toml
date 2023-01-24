@@ -1,0 +1,15 @@
+checksum = "4d96428659b5bdeda04386e608fe87522724c4f976b96c62737e8bfad5969934"
+licence = "GPL-2.0-or-later"
+provides = "tlp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tlp-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["util-linux", "2.38.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "323da2d0e6e72055372ff52bc0475dad3cc6320b330a50b9ef5bd5d6c4bb3569"
+licence = "GPL-2.0-only"
+provides = "cinnamon-desktop-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cinnamon-desktop-dev-5.4.2-r0.apk"
+version = "5.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cinnamon-desktop", "5.4.2-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pulseaudio-dev", "16.1.0-r6"], ["libxkbfile-dev", "1.1.1-r0"], ["pkgconf", "1.9.4-r0"]]

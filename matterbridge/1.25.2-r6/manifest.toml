@@ -1,0 +1,15 @@
+checksum = "38250910f7dde58e9ca8777e5ad3eb409423037165ee668a6f903239c6a6e992"
+licence = "Apache-2.0"
+provides = "matterbridge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/matterbridge-1.25.2-r6.apk"
+version = "1.25.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

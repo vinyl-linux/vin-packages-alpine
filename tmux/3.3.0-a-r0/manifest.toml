@@ -1,0 +1,15 @@
+checksum = "252c05c47738585032287cf348560a3bc73a71b79f338680ebfda1220cab54cb"
+licence = "ISC"
+provides = "tmux"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tmux-3.3a-r0.apk"
+version = "3.3.0-a-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["ncurses-libs", "6.3.0"]]

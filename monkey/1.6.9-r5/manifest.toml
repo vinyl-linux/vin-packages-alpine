@@ -1,0 +1,15 @@
+checksum = "c4a502fc290fabaa4103e42bf5ffa1dce6526e02c3d5c3f47f4b59926745a351"
+licence = "Apache-2.0"
+provides = "monkey"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/monkey-1.6.9-r5.apk"
+version = "1.6.9-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mbedtls", "2.28.2-r0"]]

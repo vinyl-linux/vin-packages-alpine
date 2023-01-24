@@ -1,0 +1,15 @@
+checksum = "633ab27d1f8c1f4f793846efce1cf31fb6ebf3d23aab2e057b1528362e328d3b"
+licence = "Zlib"
+provides = "py3-bullet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-bullet-3.24-r0.apk"
+version = "3.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bullet", "3.24.0-r0"], ["musl", "1.2.3-r4"]]

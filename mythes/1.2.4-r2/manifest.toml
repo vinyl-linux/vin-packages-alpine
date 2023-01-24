@@ -1,0 +1,15 @@
+checksum = "ad05cf8eb9e1ecc11c58d0c5e48ddf3a8e7d1848c1146509fd74b7b62b3c5252"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
+provides = "mythes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mythes-1.2.4-r2.apk"
+version = "1.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

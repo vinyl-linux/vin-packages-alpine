@@ -1,0 +1,15 @@
+checksum = "a7be3c46afe89c4a63d489b7ee2ce2f3e328203a7570e7f58e2b5bea10f02569"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-qemu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvirt-qemu-8.9.0-r4.apk"
+version = "8.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt-daemon", "8.9.0-r4"], ["libvirt-common-drivers", "8.9.0-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["libintl", "0.21.1-r1"], ["libvirt-libs", "8.9.0-r4"], ["libxml2", "2.10.3-r1"]]

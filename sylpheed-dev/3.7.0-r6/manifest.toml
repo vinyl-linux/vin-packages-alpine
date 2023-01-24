@@ -1,0 +1,15 @@
+checksum = "604badf6583ccb394266f09beae746d1db13d9c3b6bd035c2c6b9152ed4117cd"
+licence = "GPL-3.0-only"
+provides = "sylpheed-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sylpheed-dev-3.7.0-r6.apk"
+version = "3.7.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sylpheed", "3.7.0-r6"]]

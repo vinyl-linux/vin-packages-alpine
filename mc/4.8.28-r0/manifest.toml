@@ -1,0 +1,15 @@
+checksum = "5c5820db0de6b45e58a13748827d0a29773c80dfc99f2e91e9b811bfde22d555"
+licence = "GPL-3.0-or-later"
+provides = "mc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mc-4.8.28-r0.apk"
+version = "4.8.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["e2fsprogs-libs", "1.46.5-r4"], ["glib", "2.74.5-r0"], ["gpm-libs", "1.20.7-r2"], ["libintl", "0.21.1-r1"], ["slang", "2.3.3-r0"], ["libssh2", "1.10.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "9c3da524694c15ddfab9ecdac7d30c1d3034e85cec40c4f33030a8cd33d4741b"
+licence = "GPL-3.0-or-later"
+provides = "accountsservice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/accountsservice-22.08.8-r0.apk"
+version = "22.8.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["polkit-libs", "122.0.0-r0"]]

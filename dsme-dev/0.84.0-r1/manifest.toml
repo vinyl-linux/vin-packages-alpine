@@ -1,0 +1,15 @@
+checksum = "b4d468764e15903a4bff114f1fff9dfcf9abc0fe10ad2297fed0c0e9dcdf883e"
+licence = "LGPL-2.1-only"
+provides = "dsme-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dsme-dev-0.84.0-r1.apk"
+version = "0.84.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cryptsetup-dev", "2.5.0-r2"], ["libiphb-dev", "1.2.7-r1"], ["libngf-dev", "0.28.0-r1"], ["pkgconf", "1.9.4-r0"]]

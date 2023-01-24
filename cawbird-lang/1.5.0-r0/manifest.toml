@@ -1,0 +1,15 @@
+checksum = "342659a8f5c7e34af3e9f9063309936ea9f2047c41f494ebe1df98eee37a862a"
+licence = "GPL-3.0-or-later"
+provides = "cawbird-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cawbird-lang-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-libav", "1.20.5-r0"]]

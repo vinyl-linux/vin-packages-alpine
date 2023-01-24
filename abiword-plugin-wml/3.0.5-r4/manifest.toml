@@ -1,0 +1,15 @@
+checksum = "dd047e81cc87954afa0807c776795e51f88926bc533a1a791b4e585e4331609e"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-wml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-wml-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libstdc++", "12.2.1"]]

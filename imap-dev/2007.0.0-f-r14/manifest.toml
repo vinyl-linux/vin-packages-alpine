@@ -1,0 +1,15 @@
+checksum = "887788707039b2ecd153bb8eaa7ff351f9f74eb6bec5c194dae62cb2365bf579"
+licence = "Apache-2.0"
+provides = "imap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/imap-dev-2007f-r14.apk"
+version = "2007.0.0-f-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["c-client", "2007.0.0-f-r14"]]

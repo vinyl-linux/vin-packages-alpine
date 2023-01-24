@@ -1,0 +1,15 @@
+checksum = "254d866e45088676511d8695511eaba5cc5dde5c4d6bd1b6c7a856403fe1c65a"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-shibboleth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-shibboleth-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

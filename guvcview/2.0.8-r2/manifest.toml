@@ -1,0 +1,15 @@
+checksum = "9ab74eb2f1171c5d1e05147fc0124763ba98342f42a618f45f67b9ca371237e6"
+licence = "GPL-3.0-or-later"
+provides = "guvcview"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/guvcview-2.0.8-r2.apk"
+version = "2.0.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["guvcview-libs", "2.0.8-r2"], ["libintl", "0.21.1-r1"]]

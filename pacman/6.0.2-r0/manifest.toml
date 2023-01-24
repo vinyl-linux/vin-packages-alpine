@@ -1,0 +1,15 @@
+checksum = "b18b86d43ab4c3b628169db6c8dd0b111246ba13ef93d55fdb2580cbcc767bb0"
+licence = "GPL-2.0-or-later"
+provides = "pacman"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pacman-6.0.2-r0.apk"
+version = "6.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["libarchive-tools", "3.6.1-r2"], ["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["gpgme", "1.18.0-r0"], ["libintl", "0.21.1-r1"]]

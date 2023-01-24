@@ -1,0 +1,15 @@
+checksum = "414101caa941b93c87eb078f511b00f23c584486c207401f2c8a5f8dd8b69e85"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-xerox_mfp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-xerox_mfp-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["libusb", "1.0.26-r0"], ["libxml2", "2.10.3-r1"]]

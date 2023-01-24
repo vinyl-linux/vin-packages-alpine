@@ -1,0 +1,15 @@
+checksum = "f77534aec16e6107000b474b8de106fc5a20d6c4ac80d9052ad9f01d198ba67c"
+licence = "LGPL-3.0-or-later"
+provides = "libcloudproviders"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcloudproviders-0.3.1-r0.apk"
+version = "0.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

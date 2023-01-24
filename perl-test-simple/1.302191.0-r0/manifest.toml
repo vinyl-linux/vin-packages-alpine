@@ -1,0 +1,15 @@
+checksum = "bc71691b285dcb2b0b0e418596b30451b908db43c8f1dce63a0afec55a50d912"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-simple"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-simple-1.302191-r0.apk"
+version = "1.302191.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

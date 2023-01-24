@@ -1,0 +1,15 @@
+checksum = "78ebf63445e9d3280e9b1e66c539960a9afa1917b60837b30477d79a65d606b6"
+licence = "GPL-2.0"
+provides = "evtest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/evtest-1.35-r0.apk"
+version = "1.35.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

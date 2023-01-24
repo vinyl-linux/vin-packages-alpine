@@ -1,0 +1,15 @@
+checksum = "4502c4cff1eab45e2c66b185bfdfa60455f57edbdefdefa67267f108dfc5959d"
+licence = "GPL-3.0-or-later"
+provides = "glibd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glibd-2.3.0-r4.apk"
+version = "2.3.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ldc-runtime", "1.30.0-r1"], ["glib", "2.74.5-r0"], ["llvm-libunwind", "15.0.7-r0"]]

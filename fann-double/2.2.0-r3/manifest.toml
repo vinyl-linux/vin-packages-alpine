@@ -1,0 +1,15 @@
+checksum = "2adf4cc337874923457273cc335b6b92c8760f67f22a42660ff964054ebba89a"
+licence = "LGPL-2.0-or-later"
+provides = "fann-double"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fann-double-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

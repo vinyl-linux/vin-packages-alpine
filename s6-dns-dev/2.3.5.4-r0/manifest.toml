@@ -1,0 +1,15 @@
+checksum = "756e7d2f852f552201379655508c0a4757d998d214ddd8ed9b1acd2f2951e586"
+licence = "ISC"
+provides = "s6-dns-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/s6-dns-dev-2.3.5.4-r0.apk"
+version = "2.3.5.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["s6-dns", "2.3.5.4-r0"]]

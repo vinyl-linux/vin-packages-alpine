@@ -1,0 +1,15 @@
+checksum = "90900f1708776b640565c036fdd84f178c05e92bf1c566b164c58c68a48b2635"
+licence = "GPL-2.0-or-later"
+provides = "htop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/htop-3.2.1-r1.apk"
+version = "3.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

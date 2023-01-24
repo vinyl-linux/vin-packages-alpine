@@ -1,0 +1,15 @@
+checksum = "12bfca36b70bc81a5ec80a8bdfa0e0f78c6648dcfa278788214e78cd35fae000"
+licence = "LGPL-2.1-or-later"
+provides = "libestr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libestr-dev-0.1.11-r2.apk"
+version = "0.1.11-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libestr", "0.1.11-r2"], ["pkgconf", "1.9.4-r0"]]

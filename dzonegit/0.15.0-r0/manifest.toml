@@ -1,0 +1,15 @@
+checksum = "23115056bc9a80eb5b6dd441077596864dc10e08641b856b994088a5be6db56a"
+licence = "MIT"
+provides = "dzonegit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dzonegit-0.15-r0.apk"
+version = "0.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bind-tools", "9.18.10-r0"], ["git", "2.38.3-r1"], ["python3", "3.10.9-r1"]]

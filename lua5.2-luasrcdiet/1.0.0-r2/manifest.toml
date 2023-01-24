@@ -1,0 +1,15 @@
+checksum = "54ca365cbb819a16ee00120786937b5b2c27a301956e59fcd7dfd113e6ad3013"
+licence = "MIT"
+provides = "lua5.2-luasrcdiet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.2-luasrcdiet-1.0.0-r2.apk"
+version = "1.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"]]

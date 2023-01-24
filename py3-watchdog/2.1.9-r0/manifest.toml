@@ -1,0 +1,15 @@
+checksum = "3a743230c9c2dcb482761cf8ef399a88ab912835ed3efce01a51824f3f46aa07"
+licence = "Apache-2.0"
+provides = "py3-watchdog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-watchdog-2.1.9-r0.apk"
+version = "2.1.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pathtools", "0.1.2-r8"], ["py3-yaml", "6.0.0-r0"], ["py3-argh", "0.26.2-r7"]]

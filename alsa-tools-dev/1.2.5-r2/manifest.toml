@@ -1,0 +1,15 @@
+checksum = "8a878bab5e232111c94e87d4a6f0351fa139a011805c4eeea7fc221acc9969c3"
+licence = "GPL-2.0-or-later"
+provides = "alsa-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alsa-tools-dev-1.2.5-r2.apk"
+version = "1.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-tools", "1.2.5-r2"]]

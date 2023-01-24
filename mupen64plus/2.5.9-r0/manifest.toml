@@ -1,0 +1,15 @@
+checksum = "868f595130888db52665212e11220d2013c924a158c36d453020a2f33a89ae16"
+licence = "GPL-2.0-only"
+provides = "mupen64plus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mupen64plus-2.5.9-r0.apk"
+version = "2.5.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gles", "22.2.5-r1"], ["sdl2", "2.26.2-r0"], ["boost1.80-filesystem", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libpng", "1.6.38-r0"], ["libsamplerate", "0.2.2-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

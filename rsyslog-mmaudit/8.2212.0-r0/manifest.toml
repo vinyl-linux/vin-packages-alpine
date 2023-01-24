@@ -1,0 +1,15 @@
+checksum = "2e41a74cc72a0749c4a173e62354d8b4fca4290610f8f7297aa7b09a6751236f"
+licence = "Apache-2.0 AND GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "rsyslog-mmaudit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-mmaudit-8.2212.0-r0.apk"
+version = "8.2212.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2212.0-r0"], ["musl", "1.2.3-r4"]]

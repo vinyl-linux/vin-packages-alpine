@@ -1,0 +1,15 @@
+checksum = "a364463d9f154a29283a2eb433f5059442ffa095b5979709f63b0adb07fe2194"
+licence = "GPL-3.0-or-later"
+provides = "kpmcore-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpmcore-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["device-mapper-udev", "2.3.17-r1"], ["sfdisk", "2.38.1-r1"], ["smartmontools", "7.3.0-r0"]]

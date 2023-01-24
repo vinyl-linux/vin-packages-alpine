@@ -1,0 +1,15 @@
+checksum = "86dc65e3b704cbcc0b121da792f0059d5b8ffaba156d94a60263d84901c752a7"
+licence = "MIT"
+provides = "libva-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libva-dev-2.16.0-r0.apk"
+version = "2.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11-dev", "1.8.3-r1"], ["libxext-dev", "1.3.5-r0"], ["libxfixes-dev", "6.0.0-r0"], ["libdrm-dev", "2.4.114-r0"], ["libva", "2.16.0-r0"], ["wayland-dev", "1.21.0-r1"], ["pkgconf", "1.9.4-r0"]]

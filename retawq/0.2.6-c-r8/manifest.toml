@@ -1,0 +1,15 @@
+checksum = "0e2d52ccab614d9ca2337fec0c104fb63778a7792477feeee7f494c3fa7ec530"
+licence = "GPL-2.0"
+provides = "retawq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/retawq-0.2.6c-r8.apk"
+version = "0.2.6-c-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["ncurses-libs", "6.3.0"], ["libssl3", "3.0.7-r2"]]

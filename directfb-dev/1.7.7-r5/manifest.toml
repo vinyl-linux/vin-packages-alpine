@@ -1,0 +1,15 @@
+checksum = "b6091efcfe0751cf7d6cc3b9006083bef1568f2618d2331b2388185ca71e2176"
+licence = "LGPL-2.0-or-later"
+provides = "directfb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/directfb-dev-1.7.7-r5.apk"
+version = "1.7.7-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["directfb", "1.7.7-r5"], ["pkgconf", "1.9.4-r0"]]

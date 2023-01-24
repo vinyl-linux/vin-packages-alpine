@@ -1,0 +1,15 @@
+checksum = "7d46053fc7e310ac24792218e590951994e15183bfa50bbbd62b8628132cb7a9"
+licence = "GPL-2.0-or-later"
+provides = "gtkspell3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gtkspell3-3.0.10-r1.apk"
+version = "3.0.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["enchant2", "2.3.3-r1"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"]]

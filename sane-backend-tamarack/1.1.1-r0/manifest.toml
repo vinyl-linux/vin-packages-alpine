@@ -1,0 +1,15 @@
+checksum = "b1f8292b16f911be32653628b09ec8e680cde05f5895bf765fda833bb610e65a"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-tamarack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-tamarack-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"]]

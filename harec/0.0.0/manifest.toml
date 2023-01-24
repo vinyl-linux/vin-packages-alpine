@@ -1,0 +1,15 @@
+checksum = "0ac34be01feb4553c5ae901e76e74b07942dc933361c679bea1649e12ab1e1c8"
+licence = "GPL-3.0-only"
+provides = "harec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/harec-0_git20221031-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qbe", "1.0.0-r0"], ["musl", "1.2.3-r4"]]

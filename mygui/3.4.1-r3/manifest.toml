@@ -1,0 +1,15 @@
+checksum = "b1b90845affe6725b79d1fdf23bb2c0f6686afa06f6819a095a0d0baf8bd08b3"
+licence = "MIT"
+provides = "mygui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mygui-3.4.1-r3.apk"
+version = "3.4.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

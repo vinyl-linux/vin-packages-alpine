@@ -1,0 +1,15 @@
+checksum = "4ccd704fb4f548299ff4b38f4f75d0cc2783fce3bc1af2f143096f0ed76392b8"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-v4l"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-v4l-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"], ["v4l-utils-libs", "1.22.1-r2"]]

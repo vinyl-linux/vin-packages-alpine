@@ -1,0 +1,15 @@
+checksum = "b414731411c10beb06bdc4e794a0e4296bbf32fcd3a8ba5832f440fc05df8a83"
+licence = "MIT"
+provides = "py3-ratelim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ratelim-0.1.6-r2.apk"
+version = "0.1.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-decorator", "5.1.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ec457ac421eaf5c0d0e8c22502f1e88039f63b1ed5468b1c0f33c20b5df073b7"
+licence = "LGPL-3.0-or-later"
+provides = "libarchive-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libarchive-qt-dev-2.0.7-r0.apk"
+version = "2.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["xz-dev", "5.2.9-r0"], ["libarchive-dev", "3.6.1-r2"], ["zlib-dev", "1.2.13-r0"], ["bzip2-dev", "1.0.8-r4"], ["libarchive-qt", "2.0.7-r0"], ["pkgconf", "1.9.4-r0"]]

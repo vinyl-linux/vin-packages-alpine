@@ -1,0 +1,15 @@
+checksum = "cd0fb7940276b9055cf6ca520549815ff3914d5cce4565e9488119065d406733"
+licence = "LGPL-2.0-or-later"
+provides = "khealthcertificate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/khealthcertificate-22.09-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["karchive", "5.100.0-r0"], ["kcodecs", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

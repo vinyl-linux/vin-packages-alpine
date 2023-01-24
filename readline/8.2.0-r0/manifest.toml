@@ -1,0 +1,15 @@
+checksum = "99c949b261f51fb517d46c940758d9846bfef4c7be24ff19a0f4c3929cd1cd4a"
+licence = "GPL-2.0-or-later"
+provides = "readline"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/readline-8.2.0-r0.apk"
+version = "8.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

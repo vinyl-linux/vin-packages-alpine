@@ -1,0 +1,15 @@
+checksum = "98440a842d60aef3516b622f54f64f37c46a19bce3dff630ab5422ff8a888a5d"
+licence = "GPL-3.0-or-later"
+provides = "arandr-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/arandr-lang-0.1.10-r4.apk"
+version = "0.1.10-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"], ["py3-cairo", "1.21.0-r1"], ["xrandr", "1.5.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "6fa5616ac2f441aba0f99a066e10673cbeee5126f3844f6ab32743a7aa65f771"
+licence = "BSD-2-Clause"
+provides = "opencl-icd-loader-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencl-icd-loader-dev-2.3.1-r0.apk"
+version = "2.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opencl-icd-loader", "2.3.1-r0"], ["pkgconf", "1.9.4-r0"]]

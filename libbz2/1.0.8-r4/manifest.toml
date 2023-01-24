@@ -1,0 +1,15 @@
+checksum = "454dc261161ee091b8ce23afe0f268d815396e9ef403eca50ce7f5b94af18c93"
+licence = "bzip2-1.0.6"
+provides = "libbz2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libbz2-1.0.8-r4.apk"
+version = "1.0.8-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

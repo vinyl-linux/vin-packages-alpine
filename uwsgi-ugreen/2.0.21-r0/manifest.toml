@@ -1,0 +1,15 @@
+checksum = "6f17bd8c85062bcbb7a9721d14698def0ee4aac19ec8f897625417fe030831d7"
+licence = "custom"
+provides = "uwsgi-ugreen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-ugreen-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["libucontext", "1.2.0-r0"]]

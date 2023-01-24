@@ -1,0 +1,15 @@
+checksum = "1236b135f9b6f338ffbc95d3efafbd24169042d47d5f9325da8a19d8538eba97"
+licence = "Zlib"
+provides = "zlib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zlib-dev-1.2.13-r0.apk"
+version = "1.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["zlib", "1.2.13-r0"]]

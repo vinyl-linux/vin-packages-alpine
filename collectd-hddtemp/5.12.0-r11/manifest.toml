@@ -1,0 +1,15 @@
+checksum = "433bfe02fac5d567ccd2f51f8dc2ec11285858106cb2649cbd003fa810ed0656"
+licence = "GPL-2.0-or-later"
+provides = "collectd-hddtemp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-hddtemp-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"]]

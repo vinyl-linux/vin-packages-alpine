@@ -1,0 +1,15 @@
+checksum = "abf6b2f619341018d5ee6c8f7adf60f14cba0e2203ed7899d84c28c71f673c31"
+licence = "GPL-2.0-or-later"
+provides = "xfce4-power-manager-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-power-manager-lang-4.16.0-r1.apk"
+version = "4.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-elogind", "122.0.0-r0"]]

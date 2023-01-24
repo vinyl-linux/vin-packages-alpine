@@ -1,0 +1,15 @@
+checksum = "b3b23aa43521319b4a4adb00ffdb82cbb270ebef2f28a27e4b6b8daf8935cd38"
+licence = "Apache-2.0 OR MIT"
+provides = "py3-trustme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-trustme-0.9.0-r1.apk"
+version = "0.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cryptography", "38.0.3-r0"], ["py3-idna", "3.4.0-r2"], ["py3-openssl", "22.1.0-r1"], ["py3-service_identity", "21.1.0-r2"], ["python3", "3.10.9-r1"]]

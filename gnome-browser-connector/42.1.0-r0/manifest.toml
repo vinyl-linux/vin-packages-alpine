@@ -1,0 +1,15 @@
+checksum = "9e3760892114a9537cd95d203280798c436516637234c8bc9d0407b45ae70537"
+licence = "GPL-3.0-or-later"
+provides = "gnome-browser-connector"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-browser-connector-42.1-r0.apk"
+version = "42.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"]]

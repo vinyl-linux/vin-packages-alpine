@@ -1,0 +1,15 @@
+checksum = "b0d17b13b0504b07a6b2ecd7fb2bcb008cd5c4f17e894702247c4cd175a72a33"
+licence = "custom"
+provides = "openvpn-auth-pam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openvpn-auth-pam-2.5.8-r0.apk"
+version = "2.5.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2-minimal", "6.0.0-r1"], ["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

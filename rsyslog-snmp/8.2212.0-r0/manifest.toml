@@ -1,0 +1,15 @@
+checksum = "045a2cb5ff87ccee200e4c7ff4801851a24915e66427d7b6373137be8a091f42"
+licence = "Apache-2.0 AND GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "rsyslog-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-snmp-8.2212.0-r0.apk"
+version = "8.2212.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2212.0-r0"], ["musl", "1.2.3-r4"], ["net-snmp-libs", "5.9.3-r2"]]

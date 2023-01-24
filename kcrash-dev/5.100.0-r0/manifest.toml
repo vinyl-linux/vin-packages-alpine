@@ -1,0 +1,15 @@
+checksum = "1d69108a78c96837d6a4e95fd0ecc244f1011561e0b3dc02a3ba47f7d178826e"
+licence = "LGPL-2.1-or-later"
+provides = "kcrash-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcrash-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons-dev", "5.100.0-r0"], ["kwindowsystem-dev", "5.100.0-r0"], ["kcrash", "5.100.0-r0"]]

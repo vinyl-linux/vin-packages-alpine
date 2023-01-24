@@ -1,0 +1,16 @@
+checksum = "a000533bc076b60d7cf55477ddcb6a0135d1090a0331f2a3e4bfba7332783635"
+licence = "GPL-2.0-only"
+provides = "eudev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/eudev-3.2.11-r4.apk"
+version = "3.2.11-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["udev-init-scripts", "35.0.0-r1"], ["yash-binsh", "2.53.0-r2"], ["eudev-libs", "3.2.11-r4"], ["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["kmod-libs", "30.0.0-r1"]]

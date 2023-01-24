@@ -1,0 +1,15 @@
+checksum = "a840191f356b12e9ffd523f3aaa8e8126ea6f3b4113e57d68262b646fc2a1640"
+licence = "OLDAP-2.8"
+provides = "openldap-back-relay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-back-relay-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

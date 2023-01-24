@@ -1,0 +1,15 @@
+checksum = "91f761914b9bc3abfe52af6f7e1cbacd32632e218764f89380861b48eb46db6a"
+licence = "GPL-2.0-or-later"
+provides = "py3-atspi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-atspi-2.46.0-r0.apk"
+version = "2.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"]]

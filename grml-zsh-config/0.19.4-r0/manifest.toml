@@ -1,0 +1,15 @@
+checksum = "78fc0edba2478713a60b20a89601a097a013bff181a36dd693cb4412f84afdd1"
+licence = "GPL-2.0-only"
+provides = "grml-zsh-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grml-zsh-config-0.19.4-r0.apk"
+version = "0.19.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"], ["zsh-vcs", "5.9.0-r0"]]

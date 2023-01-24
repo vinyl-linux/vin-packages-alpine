@@ -1,0 +1,15 @@
+checksum = "c119bce91f05d04e958f60200a049dd2ab35a15fadf0a56f2fc3285c0bb98981"
+licence = "MIT"
+provides = "ruby-tzinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-tzinfo-2.0.5-r0.apk"
+version = "2.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-concurrent-ruby", "1.1.10-r1"], ["tzdata", "2022.0.0-f-r1"]]

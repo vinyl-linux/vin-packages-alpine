@@ -1,0 +1,15 @@
+checksum = "9bb07cc45ff9aee141f412b836fc158c072203cc49d56219e75587c0842c903e"
+licence = "MPL-2.0"
+provides = "bind-dnssec-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bind-dnssec-tools-9.18.10-r0.apk"
+version = "9.18.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dns-root-hints", "2022062901.0.0-r0"], ["bind-tools", "9.18.10-r0"], ["musl", "1.2.3-r4"], ["bind-libs", "9.18.10-r0"]]

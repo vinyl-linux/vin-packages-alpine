@@ -1,0 +1,15 @@
+checksum = "fa445e5c4ea57fd4e61cfa2dce9a742b652a5afc647aa3b07de09c5ca6a46faa"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "py3-libplist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-libplist-2.2.0-r2.apk"
+version = "2.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libplist", "2.2.0-r2"], ["python3", "3.10.9-r1"]]

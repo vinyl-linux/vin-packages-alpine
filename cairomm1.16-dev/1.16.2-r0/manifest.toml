@@ -1,0 +1,15 @@
+checksum = "ae8674b310065a9c63eb120ab4090d44f06f91d7ba35aa47e2d397f2a8b58ea8"
+licence = "LGPL-2.0-or-later AND MPL-1.1"
+provides = "cairomm1.16-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cairomm1.16-dev-1.16.2-r0.apk"
+version = "1.16.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cairomm1.16", "1.16.2-r0"], ["cairo-dev", "1.17.6-r3"], ["libsigc++3-dev", "3.2.0-r3"], ["pkgconf", "1.9.4-r0"]]

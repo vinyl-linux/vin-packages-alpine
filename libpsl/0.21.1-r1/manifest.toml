@@ -1,0 +1,15 @@
+checksum = "b7c1c6ece8ac236d9d093cfb58a23970f146e705816f72ce0b4f5ac0b7f7292d"
+licence = "MIT"
+provides = "libpsl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpsl-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libidn2", "2.3.4-r0"], ["libunistring", "1.1.0-r0"]]

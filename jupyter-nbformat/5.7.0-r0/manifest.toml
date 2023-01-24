@@ -1,0 +1,15 @@
+checksum = "939dd601206391f2f2e165757295fefbba3f8489de92fd19babbf96ffa4c9427"
+licence = "BSD-3-Clause"
+provides = "jupyter-nbformat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jupyter-nbformat-5.7.0-r0.apk"
+version = "5.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-traitlets", "5.5.0-r0"], ["py3-jsonschema", "4.7.2-r2"], ["py3-fastjsonschema", "2.16.2-r0"], ["py3-jupyter_core", "5.0.0-r1"], ["py3-ipython_genutils", "0.2.0-r6"]]

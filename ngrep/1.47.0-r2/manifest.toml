@@ -1,0 +1,15 @@
+checksum = "93b7a758df5cc81a226575b2500a947fd5f25f86e24041a7ecc6fdd124954919"
+licence = "custom"
+provides = "ngrep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ngrep-1.47-r2.apk"
+version = "1.47.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

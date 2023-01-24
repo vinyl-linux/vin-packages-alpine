@@ -1,0 +1,15 @@
+checksum = "633a352f112dcdf9dc3f76bf3dc080a6cad713b466cfa1a47f3e2fce9dbac60c"
+licence = "GPL-3.0-or-later"
+provides = "bannergrab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bannergrab-3.5-r8.apk"
+version = "3.5.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

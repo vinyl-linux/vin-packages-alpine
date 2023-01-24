@@ -1,0 +1,15 @@
+checksum = "dc995925e750bf4a270d2742673eb20b6cfced92edcea867305dc32371c08947"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-fancyindex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-fancyindex-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

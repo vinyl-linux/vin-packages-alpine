@@ -1,0 +1,15 @@
+checksum = "28870b6e6d8edf278856b677e42c1cd98d74646b1c562314730d9272c6bd348e"
+licence = "GPL-2.0-or-later"
+provides = "fsverity-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fsverity-utils-1.5-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

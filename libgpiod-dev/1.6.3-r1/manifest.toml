@@ -1,0 +1,15 @@
+checksum = "00cd3fe473a9f76bb13d77bfbcd61a1a8b2146ab950b79beb005629bc526e04c"
+licence = "LGPL-2.1-or-later"
+provides = "libgpiod-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgpiod-dev-1.6.3-r1.apk"
+version = "1.6.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgpiod", "1.6.3-r1"], ["pkgconf", "1.9.4-r0"]]

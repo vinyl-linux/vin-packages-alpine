@@ -1,0 +1,15 @@
+checksum = "2d75271b7966d108925a6d5f9d44af115c1eee4a20de3eaeceb91b6c299d2ff4"
+licence = "LGPL-2.1-or-later"
+provides = "oath-toolkit-liboath"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oath-toolkit-liboath-2.6.7-r2.apk"
+version = "2.6.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

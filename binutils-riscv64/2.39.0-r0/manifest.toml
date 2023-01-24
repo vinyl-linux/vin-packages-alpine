@@ -1,0 +1,15 @@
+checksum = "ae2b74ed994066cbdb0e8a1b09147e214b437fa9a49b04e5440db485c7d970ad"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-riscv64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-riscv64-2.39-r0.apk"
+version = "2.39.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

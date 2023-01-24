@@ -1,0 +1,15 @@
+checksum = "08fee192e423199ddc78ca23d8f20d1c880f47a91deedb63a5d0d4108a3c9f3d"
+licence = "MIT"
+provides = "tofi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tofi-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["freetype", "2.12.1-r0"], ["musl-fts", "1.2.7-r3"], ["glib", "2.74.5-r0"], ["harfbuzz", "5.3.1-r1"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

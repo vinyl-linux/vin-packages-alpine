@@ -1,0 +1,15 @@
+checksum = "f7539497f9d40b80224e789d355cf8f0864d86c82cc862c53a131415eb105942"
+licence = "GPL-3.0-or-later"
+provides = "librelp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/librelp-1.10.0-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["gnutls", "3.7.8-r2"], ["libssl3", "3.0.7-r2"]]

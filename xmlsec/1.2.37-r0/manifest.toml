@@ -1,0 +1,15 @@
+checksum = "9c42e05fd65d8836114f4565142fbc17dd15aab77e075cba6ecaf4c76445ed16"
+licence = "MIT"
+provides = "xmlsec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmlsec-1.2.37-r0.apk"
+version = "1.2.37-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libltdl", "2.4.7-r0"], ["libxml2", "2.10.3-r1"], ["libxslt", "1.1.37-r0"]]

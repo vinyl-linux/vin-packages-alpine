@@ -1,0 +1,15 @@
+checksum = "82abfdc0038707198ff65e937585bca3e84e69d769c1d08058c3be540e6a0f2b"
+licence = "ISC"
+provides = "ifupdown-ng-iproute2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ifupdown-ng-iproute2-0.12.1-r1.apk"
+version = "0.12.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2-minimal", "6.0.0-r1"]]

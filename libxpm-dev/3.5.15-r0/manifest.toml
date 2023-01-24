@@ -1,0 +1,15 @@
+checksum = "85f9025ef1f9a19cccdbbac025d51444aaf978e89caae4d1e8f4edd64f1167de"
+licence = "custom:BELL"
+provides = "libxpm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxpm-dev-3.5.15-r0.apk"
+version = "3.5.15-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxpm", "3.5.15-r0"], ["libx11-dev", "1.8.3-r1"], ["pkgconf", "1.9.4-r0"]]

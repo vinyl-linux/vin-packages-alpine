@@ -1,0 +1,15 @@
+checksum = "617fa9c979fe888f7d5947f00ad5e5c3b01c5a38e5474c29d300c4cde5b27e6c"
+licence = "Apache-2.0"
+provides = "font-roboto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-roboto-3.004-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["mkfontscale", "1.2.2-r1"]]

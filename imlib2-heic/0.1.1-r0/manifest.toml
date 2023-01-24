@@ -1,0 +1,15 @@
+checksum = "2bd3a3e6ce436e3bd419fa0a7b0d433f7665a41185f6efa414ddacc2f26aef6b"
+licence = "BSD-3-Clause"
+provides = "imlib2-heic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/imlib2-heic-0.1.1-r0.apk"
+version = "0.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.9.1-r2"], ["musl", "1.2.3-r4"], ["libheif", "1.13.0-r0"]]

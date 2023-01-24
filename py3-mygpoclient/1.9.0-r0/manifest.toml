@@ -1,0 +1,15 @@
+checksum = "bc61866b7a80ba5339b09387220f38e148ae3d051bf591f84dee942da949d909"
+licence = "GPL-3.0-or-later"
+provides = "py3-mygpoclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mygpoclient-1.9-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

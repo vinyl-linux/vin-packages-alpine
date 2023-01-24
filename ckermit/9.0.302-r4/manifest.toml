@@ -1,0 +1,15 @@
+checksum = "3ecb9dd3acf8b7c3cbbc8a4df1bba2ddb8728af4d4d2c5933ed661e73794968a"
+licence = "custom"
+provides = "ckermit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ckermit-9.0.302-r4.apk"
+version = "9.0.302-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

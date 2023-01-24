@@ -1,0 +1,15 @@
+checksum = "837c028d9f8240ab8f24b4509ea7a03ed76c6e674f2f20c10a40c40558fe68f7"
+licence = "MIT"
+provides = "slop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slop-7.6-r5.apk"
+version = "7.6.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["slop-libs", "7.6.0-r5"], ["libstdc++", "12.2.1"]]

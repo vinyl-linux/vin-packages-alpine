@@ -1,0 +1,15 @@
+checksum = "d52fac836d62cd16587a1b61d9c8aec783547ad1642f9b4b6b6fe194c2cfe4a2"
+licence = "LGPL-2.1-only"
+provides = "breeze-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/breeze-gtk-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk-engines", "2.21.0-r3"]]

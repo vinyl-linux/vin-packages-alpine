@@ -1,0 +1,15 @@
+checksum = "9d6d7ad4f0ff73a2181b4315c90e619b61ef5bd54f298dd6d3945d4327ee5909"
+licence = "MIT"
+provides = "alpine-conf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-conf-3.15.0-r0.apk"
+version = "3.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"], ["busybox", "1.35.0-r29"], ["musl", "1.2.3-r4"]]

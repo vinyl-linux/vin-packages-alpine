@@ -1,0 +1,15 @@
+checksum = "676fb23a3edf37e5b915c7886e7dba35611236d838751e4f852585fd1de3ed6f"
+licence = "GPL-3.0-only"
+provides = "mbtserver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mbtserver-0.15-r3.apk"
+version = "0.15.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["mbt", "3.8.0-r1"], ["libstdc++", "12.2.1"], ["ticcutils", "0.29.0-r1"], ["timbl", "6.7.0-r1"]]

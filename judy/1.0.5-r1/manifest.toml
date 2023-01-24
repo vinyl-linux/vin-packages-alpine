@@ -1,0 +1,15 @@
+checksum = "6bcfdb5cc989b73abf96e195baf38ff7b51a74a5d380ad3386f7925ce4131bca"
+licence = "LGPL-2.0-only"
+provides = "judy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/judy-1.0.5-r1.apk"
+version = "1.0.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

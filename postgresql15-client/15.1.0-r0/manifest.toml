@@ -1,0 +1,15 @@
+checksum = "47dcb6f73cd6f98ce55c1350b0006b1b072eb6102df2f7892af594a03faf2426"
+licence = "PostgreSQL"
+provides = "postgresql15-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql15-client-15.1-r0.apk"
+version = "15.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-common", "1.1.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["lz4-libs", "1.9.4-r1"], ["libpq", "15.1.0-r0"], ["readline", "8.2.0-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

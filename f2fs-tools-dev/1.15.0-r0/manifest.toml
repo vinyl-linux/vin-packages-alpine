@@ -1,0 +1,15 @@
+checksum = "869357ee7a5230460fb1cef0eaa94f672f4ec33c3423807323b009b2baf4996e"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "f2fs-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/f2fs-tools-dev-1.15.0-r0.apk"
+version = "1.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["f2fs-tools-libs", "1.15.0-r0"]]

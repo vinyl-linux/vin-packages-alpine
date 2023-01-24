@@ -1,0 +1,15 @@
+checksum = "341b075ac1d783bdf6a18678e9c9bc2804d0d007d8e2f681908a21876f0bf69d"
+licence = "Apache-2.0"
+provides = "ccls"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ccls-0.20220729-r1.apk"
+version = "0.20220729.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["clang15-libs", "15.0.7-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

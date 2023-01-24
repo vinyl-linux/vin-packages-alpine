@@ -1,0 +1,15 @@
+checksum = "c9150b7a9f6bb578359574efdca726805cf57b1314055883b67910c34242971e"
+licence = "Apache-2.0"
+provides = "py3-pykka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pykka-3.1.1-r0.apk"
+version = "3.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

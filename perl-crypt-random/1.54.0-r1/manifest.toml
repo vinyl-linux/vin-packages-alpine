@@ -1,0 +1,15 @@
+checksum = "e40740734f9ce0c88e4668031fa0070a93c3a79d9b0e0aed3c34cb1245c83141"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-random"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-crypt-random-1.54-r1.apk"
+version = "1.54.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-math-pari", "2.30523.0-r0"], ["perl-statistics-chisquare", "1.0.0-r1"], ["perl-class-loader", "2.3.0-r2"]]

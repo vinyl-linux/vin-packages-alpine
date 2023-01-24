@@ -1,0 +1,15 @@
+checksum = "e9321fa7ac49c6910c6b1d4d624e0b7ce05a462b85748b748104ef3cea62404e"
+licence = "LGPL-2.1-or-later"
+provides = "dconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dconf-0.40.0-r2.apk"
+version = "0.40.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

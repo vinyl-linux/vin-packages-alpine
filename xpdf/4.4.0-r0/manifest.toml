@@ -1,0 +1,15 @@
+checksum = "d7b5a864d8387c2d8c449f11b9568ef95dd65330e5465b6474bb2ff9576f9eb8"
+licence = "GPL-2.0-or-later OR GPL-3.0-or-later"
+provides = "xpdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xpdf-4.04-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghostscript-fonts", "8.11.0-r3"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

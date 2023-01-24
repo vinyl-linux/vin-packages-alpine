@@ -1,0 +1,15 @@
+checksum = "ab760af4d098a2007d64fc24b50ceca9cd6d955ee72361cce8dd4d32b60b72f1"
+licence = "MIT"
+provides = "xinput"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xinput-1.6.3-r1.apk"
+version = "1.6.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxi", "1.8.0-r0"], ["libxinerama", "1.1.5-r0"], ["libxrandr", "1.5.3-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b369b93d815b80d4dc19ceeec5bed3a17e0c3037f254656e7acc0149c1056bd9"
+licence = "MIT"
+provides = "libxkbfile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxkbfile-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

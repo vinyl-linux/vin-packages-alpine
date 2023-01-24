@@ -1,0 +1,15 @@
+checksum = "c0bb0d4199ca10466058b13c5903e74ddab52f7163746c86da91251436c13661"
+licence = "Hippocratic-2.1"
+provides = "ruby-xdg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-xdg-6.6.2-r0.apk"
+version = "6.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"]]

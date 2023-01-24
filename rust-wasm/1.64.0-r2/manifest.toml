@@ -1,0 +1,15 @@
+checksum = "ce664a4b4e9372f452c8044c58f4dc5649c3f43d17010227b41afc9b7d052ddb"
+licence = "Apache-2.0 AND MIT"
+provides = "rust-wasm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rust-wasm-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust", "1.64.0-r2"], ["lld", "15.0.7-r0"], ["wasi-sdk", "16.0.0-r0"]]

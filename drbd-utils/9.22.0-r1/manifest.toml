@@ -1,0 +1,15 @@
+checksum = "d4fefa28e258355ba14efc55cd5cf129ac1243d8add3ddeee9bd4a021001254a"
+licence = "GPL-2.0-or-later"
+provides = "drbd-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/drbd-utils-9.22.0-r1.apk"
+version = "9.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

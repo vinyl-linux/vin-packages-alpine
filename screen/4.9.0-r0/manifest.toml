@@ -1,0 +1,15 @@
+checksum = "ead081c9d74bbafdf921e2266f199f55b79c8a9840fb5cbbc1e90d76390e93cb"
+licence = "GPL-3.0-or-later"
+provides = "screen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/screen-4.9.0-r0.apk"
+version = "4.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["libutempter", "1.2.1-r5"], ["utmps-libs", "0.1.2.0-r1"]]

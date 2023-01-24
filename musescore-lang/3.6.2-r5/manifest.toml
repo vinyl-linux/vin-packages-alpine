@@ -1,0 +1,15 @@
+checksum = "d33bfc2022d1a5a78edb0e61e31c0737fa64ec4fee984851e0210168f4a458a0"
+licence = "GPL-2.0-or-later"
+provides = "musescore-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/musescore-lang-3.6.2-r5.apk"
+version = "3.6.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtgraphicaleffects", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"]]

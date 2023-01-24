@@ -1,0 +1,15 @@
+checksum = "a7247e9baac7e42e34662621f454293aa4eee1ccd0c1b6aa1d325a783c3f8be1"
+licence = "IPA"
+provides = "font-ipaex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-ipaex-00401-r0.apk"
+version = "401.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

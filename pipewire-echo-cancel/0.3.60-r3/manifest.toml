@@ -1,0 +1,15 @@
+checksum = "1b8a6736bebba0b73e77d9b986969929d693d479563dc4163f79861cfc824664"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-echo-cancel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipewire-echo-cancel-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pipewire", "0.3.60-r3"], ["musl", "1.2.3-r4"], ["pipewire-libs", "0.3.60-r3"]]

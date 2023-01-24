@@ -1,0 +1,15 @@
+checksum = "afde8265aa867e5bb665585ebfa259343d36177e9678069cd5a0cb67d0e4f015"
+licence = "GPL-3.0-or-later"
+provides = "glibd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glibd-dev-2.3.0-r4.apk"
+version = "2.3.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glibd", "2.3.0-r4"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

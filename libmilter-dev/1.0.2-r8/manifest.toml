@@ -1,0 +1,15 @@
+checksum = "d249d514e77b80f39c05cc13ba06c7ec1df9a67776897a86a498119890cdd1d5"
+licence = "Sendmail"
+provides = "libmilter-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmilter-dev-1.0.2-r8.apk"
+version = "1.0.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmilter", "1.0.2-r8"]]

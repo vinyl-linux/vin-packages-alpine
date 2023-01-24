@@ -1,0 +1,15 @@
+checksum = "b846e70ee887b39f64f162fa49723c5725721718bcd246698aba3cfa2784bb05"
+licence = "GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "jack-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jack-dev-1.9.21-r0.apk"
+version = "1.9.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jack", "1.9.21-r0"], ["pkgconf", "1.9.4-r0"]]

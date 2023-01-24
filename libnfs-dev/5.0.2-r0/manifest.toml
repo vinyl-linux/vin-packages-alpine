@@ -1,0 +1,15 @@
+checksum = "a25e1c2ee86343d082a02bbcc999847948cf6a09a2907717efd82e5b4943a790"
+licence = "LGPL-2.1-or-later"
+provides = "libnfs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnfs-dev-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnfs", "5.0.2-r0"], ["pkgconf", "1.9.4-r0"]]

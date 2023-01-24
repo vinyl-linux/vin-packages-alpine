@@ -1,0 +1,15 @@
+checksum = "52e603678786e9442f510338d22525abc0ac44a1c750f641d35c11f0a589937d"
+licence = "GPL-1.0-only"
+provides = "uuidgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uuidgen-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

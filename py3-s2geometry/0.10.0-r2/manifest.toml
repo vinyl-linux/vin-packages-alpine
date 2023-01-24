@@ -1,0 +1,15 @@
+checksum = "289d5f631ffcff99f445af4e0672bdb4a8aed933cbbd45d1036bbc4ecd141100"
+licence = "Apache-2.0"
+provides = "py3-s2geometry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-s2geometry-0.10.0-r2.apk"
+version = "0.10.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["abseil-cpp", "20220623.1.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["s2geometry", "0.10.0-r2"], ["libstdc++", "12.2.1"]]

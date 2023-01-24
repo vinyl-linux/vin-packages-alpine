@@ -1,0 +1,15 @@
+checksum = "4e19f396ea4833e68b2f0950028f93b13e197db78ece8e54cbed3c3f333d77ad"
+licence = "MIT"
+provides = "mprocs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mprocs-0.6.1-r0.apk"
+version = "0.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

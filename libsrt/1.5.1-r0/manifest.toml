@@ -1,0 +1,15 @@
+checksum = "cdccf71ae7dea441b0b5f72f9165d4d9880431999af797722d8420f0d2857fdf"
+licence = "MPL-2.0"
+provides = "libsrt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsrt-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

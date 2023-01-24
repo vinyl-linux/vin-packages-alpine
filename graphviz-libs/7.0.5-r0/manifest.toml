@@ -1,0 +1,15 @@
+checksum = "d7b8180e3ad91a1eaab04f98ccff9c7d82ca091bc6670a8887be58fba5f10678"
+licence = "EPL-1.0"
+provides = "graphviz-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/graphviz-libs-7.0.5-r0.apk"
+version = "7.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["zlib", "1.2.13-r0"]]

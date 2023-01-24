@@ -1,0 +1,15 @@
+checksum = "c5d242c41440851a602be445d53641bffb2cc75310762c815506e2e72957f2eb"
+licence = "GPL-2.0-or-later"
+provides = "evince-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/evince-dev-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gobject-introspection-dev", "1.74.0-r1"], ["gtk+3.0-dev", "3.24.36-r0"], ["libspectre-dev", "0.2.11-r0"], ["libxml2-dev", "2.10.3-r1"], ["poppler-dev", "22.11.0-r0"], ["tiff-dev", "4.4.0-r1"], ["evince-libs", "43.1.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

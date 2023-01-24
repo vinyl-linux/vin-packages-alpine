@@ -1,0 +1,15 @@
+checksum = "fb22afac5cea08ed1afb4c1c44a47390d599fabd9d18dea364578b9203545e0a"
+licence = "GPL-3.0-or-later"
+provides = "profanity"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/profanity-0.13.1-r0.apk"
+version = "0.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["ncurses-libs", "6.3.0"], ["libotr", "4.1.1-r3"], ["readline", "8.2.0-r0"], ["libsignal-protocol-c", "2.3.3-r3"], ["sqlite-libs", "3.40.1-r0"], ["libstrophe", "0.12.2-r0"]]

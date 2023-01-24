@@ -1,0 +1,15 @@
+checksum = "7c7f42efa6905eefb137a3956d2a7a275b3fb35580c169a8e51139882b6e0921"
+licence = "GPL-2.0-or-later"
+provides = "yelp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yelp-dev-42.2-r0.apk"
+version = "42.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yelp", "42.2.0-r0"]]

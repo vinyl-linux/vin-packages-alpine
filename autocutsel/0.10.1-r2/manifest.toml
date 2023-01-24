@@ -1,0 +1,15 @@
+checksum = "8aab6e944b3c64f2b969dc7e8a8cd1e046b3a64eb0a1060b4b260c41cfc9228c"
+licence = "GPL-2.0-or-later"
+provides = "autocutsel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/autocutsel-0.10.1-r2.apk"
+version = "0.10.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxaw", "1.0.14-r0"], ["libxmu", "1.1.4-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"]]

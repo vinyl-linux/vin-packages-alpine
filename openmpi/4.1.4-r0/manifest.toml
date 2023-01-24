@@ -1,0 +1,15 @@
+checksum = "df7770e9314d2030309432a79192b1b8469ee5a648a7a9cdd8a22c5d12460702"
+licence = "custom"
+provides = "openmpi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openmpi-4.1.4-r0.apk"
+version = "4.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["hwloc", "2.8.0-r0"], ["zlib", "1.2.13-r0"]]

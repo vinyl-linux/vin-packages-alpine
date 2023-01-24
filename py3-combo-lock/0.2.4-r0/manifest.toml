@@ -1,0 +1,15 @@
+checksum = "74a877d0d105fcbd18ed6df7b6c626b89fb63e664994329dd45efa857eca1d41"
+licence = "Apache-2.0"
+provides = "py3-combo-lock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-combo-lock-0.2.4-r0.apk"
+version = "0.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-filelock", "3.8.0-r0"], ["py3-memory-tempfile", "2.2.3-r0"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ae374c4e9a0a1e74d2f452cbae0c192c16a933b18f37e4fd644440f715fccd9d"
+licence = "MIT"
+provides = "rmlmapper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rmlmapper-4.15.0-r0.apk"
+version = "4.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"]]

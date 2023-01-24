@@ -1,0 +1,15 @@
+checksum = "aa45bd3d70702c06746c8ddeff070e72c94a0fb1eba079afa53b3cdcb31ebec7"
+licence = "OFL-1.1"
+provides = "font-jetbrains-mono"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-jetbrains-mono-2.242-r0.apk"
+version = "2.242.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["mkfontscale", "1.2.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d6a0d4a886b81147b2b7ee1e2206eabfc7014b77a21027bff4d374568cdf4db7"
+licence = "LGPL-2.0-only AND LGPL-2.0-or-later"
+provides = "kwrite-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kwrite-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kate-common", "22.8.3-r0"]]

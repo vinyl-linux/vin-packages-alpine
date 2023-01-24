@@ -1,0 +1,15 @@
+checksum = "1206ce8f4d2232b5c77011688b07c4823564ca5de1c17d2774eea907b5ed71e2"
+licence = "Apache-2.0"
+provides = "notcurses-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notcurses-dev-3.0.8-r1.apk"
+version = "3.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["notcurses-libs", "3.0.8-r1"], ["ncurses-dev", "6.3.0"], ["pkgconf", "1.9.4-r0"]]

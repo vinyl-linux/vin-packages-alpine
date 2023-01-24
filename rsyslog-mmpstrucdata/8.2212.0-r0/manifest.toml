@@ -1,0 +1,15 @@
+checksum = "7ce8f83d26097a728a88fcd9156b82833fb7263ccf9befddee4d6575bd65d527"
+licence = "Apache-2.0 AND GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "rsyslog-mmpstrucdata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-mmpstrucdata-8.2212.0-r0.apk"
+version = "8.2212.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2212.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "2283874c15487c12d2347bc8ef904c0aa86327b87bdd2ee1ea4802194629a7e9"
+licence = "GPL-3.0-only"
+provides = "sanoid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sanoid-2.1.0-r2.apk"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["procps", "3.3.17-r2"], ["perl-config-inifiles", "3.3.0-r1"], ["perl-capture-tiny", "0.48.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "b998be6dc49dc52bc159782880f4153b29e7885aa82c479e6262184c38d81e46"
+licence = "Artistic-2.0"
+provides = "ack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ack-3.6.0-r0.apk"
+version = "3.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-file-next", "1.18.0-r2"], ["perl", "5.36.0-r0"]]

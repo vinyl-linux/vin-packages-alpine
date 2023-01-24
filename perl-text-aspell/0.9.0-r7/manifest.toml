@@ -1,0 +1,15 @@
+checksum = "1760c9516bc5b65d5f68d5dc9c92415c33a55375c0b374a6eb9385848a949368"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-text-aspell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-text-aspell-0.09-r7.apk"
+version = "0.9.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspell-libs", "0.60.8-r2"], ["musl", "1.2.3-r4"]]

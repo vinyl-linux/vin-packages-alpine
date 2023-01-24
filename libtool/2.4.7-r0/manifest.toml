@@ -1,0 +1,15 @@
+checksum = "fc8df6baad5a9577bae801a382bd3df0a1415f7711b20d944138f7f52f2f92c2"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+provides = "libtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libtool-2.4.7-r0.apk"
+version = "2.4.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libltdl", "2.4.7-r0"]]

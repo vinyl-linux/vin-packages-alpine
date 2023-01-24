@@ -1,0 +1,15 @@
+checksum = "817f4d734a370e55fee32c23d4f2ca61d02ff3de186b6e6a8088af637b4b9861"
+licence = "Apache-2.0"
+provides = "py3-compreffor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-compreffor-0.5.2-r0.apk"
+version = "0.5.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-fonttools", "4.38.0-r0"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

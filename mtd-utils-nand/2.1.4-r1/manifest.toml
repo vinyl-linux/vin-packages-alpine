@@ -1,0 +1,15 @@
+checksum = "603d9affb8ae359d865c37211694d8ba2e2c3456220d0170528c6aa90b6f9de7"
+licence = "GPL-2.0-only"
+provides = "mtd-utils-nand"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtd-utils-nand-2.1.4-r1.apk"
+version = "2.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

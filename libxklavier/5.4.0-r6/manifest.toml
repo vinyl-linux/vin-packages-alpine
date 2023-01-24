@@ -1,0 +1,15 @@
+checksum = "1a7e5e1ab6b8e0a2ab3c05436cf77b3ec9c5e508d711ebd3b67be29e4fbe7499"
+licence = "LGPL-2.0-or-later"
+provides = "libxklavier"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxklavier-5.4-r6.apk"
+version = "5.4.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xkeyboard-config", "2.37.0-r0"], ["iso-codes", "4.12.0-r0"], ["libx11", "1.8.3-r1"], ["libxi", "1.8.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libxkbfile", "1.1.1-r0"], ["libxml2", "2.10.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "97178a845cec4bee1543b55308071de5e5cacf35dc86bcd58b41b2a714de560a"
+licence = "BSD-2-Clause"
+provides = "bspwm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bspwm-0.9.10-r1.apk"
+version = "0.9.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["xcb-util-wm", "0.4.2-r0"], ["xcb-util-keysyms", "0.4.1-r0"], ["libxcb", "1.15.0-r0"], ["xcb-util", "0.4.0-r3"]]

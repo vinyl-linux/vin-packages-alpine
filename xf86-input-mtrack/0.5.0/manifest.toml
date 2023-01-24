@@ -1,0 +1,15 @@
+checksum = "13928d78004de48750408a04498c7a90a34dd58bf2a4068b90b9fb169ac27b8a"
+licence = "GPL-2.0-or-later"
+provides = "xf86-input-mtrack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-input-mtrack-0.5.0_git20220713-r0.apk"
+version = "0.5.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mtdev", "1.1.6-r1"]]

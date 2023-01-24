@@ -1,0 +1,15 @@
+checksum = "a168b9e15f9386fb48205d104f7caf5cf3029d845c33ff479ba1031ba115f979"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "texlive-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texlive-dev-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsynctex", "20220403.62885.0-r5"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"], ["texlive-luatex", "20220403.62885.0-r5"], ["texlive", "20220403.62885.0-r5"]]

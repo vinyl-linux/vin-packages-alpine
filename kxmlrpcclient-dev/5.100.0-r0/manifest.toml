@@ -1,0 +1,15 @@
+checksum = "64a2c97bc46b5ff3ce6a46fcba4d869d5bd0c9f8987112b91d44426810d72e17"
+licence = "BSD-2-Clause"
+provides = "kxmlrpcclient-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kxmlrpcclient-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n-dev", "5.100.0-r0"], ["kio-dev", "5.100.0-r0"], ["kxmlrpcclient", "5.100.0-r0"]]

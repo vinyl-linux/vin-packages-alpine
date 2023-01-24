@@ -1,0 +1,15 @@
+checksum = "88aa105a946d7029d750bc7a408af346349bab8e94a28f91ee84f4da57a381c1"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-io-gzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-io-gzip-0.20-r8.apk"
+version = "0.20.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

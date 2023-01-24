@@ -1,0 +1,15 @@
+checksum = "b6e93b8a54246680fa8d68635cf866cd44d8b0e863a07e1c2f2bbf5c3facff1a"
+licence = "LGPL-2.1-or-later"
+provides = "libteam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libteam-1.31-r2.apk"
+version = "1.31.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdaemon", "0.14.0-r3"], ["dbus-libs", "1.14.4-r0"], ["jansson", "2.14.0-r0"], ["libnl3", "3.7.0-r0"], ["libnl3-cli", "3.7.0-r0"]]

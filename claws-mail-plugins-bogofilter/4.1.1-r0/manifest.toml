@@ -1,0 +1,15 @@
+checksum = "22bb8cfd4044653efdbb7909d7948af1bb8d94d44ab92ff0f4a27cc5bbbb11f6"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-bogofilter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/claws-mail-plugins-bogofilter-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.1.1-r0"], ["bogofilter", "1.2.5-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"]]

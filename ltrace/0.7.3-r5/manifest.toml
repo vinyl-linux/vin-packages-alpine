@@ -1,0 +1,15 @@
+checksum = "31d04de0913553b92f325bbb9b4e2b6d6886284d5f19f0580c85d36b6bfa192f"
+licence = "GPL-2.0-or-later"
+provides = "ltrace"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ltrace-0.7.3-r5.apk"
+version = "0.7.3-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelf", "0.187.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "7eadea6dce03a895f347291fac83350e6490d28381d630adcb0ce9429f41c71d"
+licence = "custom"
+provides = "leptonica-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/leptonica-dev-1.82.0-r1.apk"
+version = "1.82.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["leptonica", "1.82.0-r1"], ["pkgconf", "1.9.4-r0"]]

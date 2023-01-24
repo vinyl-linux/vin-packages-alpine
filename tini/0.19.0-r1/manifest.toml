@@ -1,0 +1,15 @@
+checksum = "08d139df1d79e8885ced74524a1a4a0489dcc063ec28529ea700e9da65968b42"
+licence = "MIT"
+provides = "tini"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tini-0.19.0-r1.apk"
+version = "0.19.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

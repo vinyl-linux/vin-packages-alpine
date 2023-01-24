@@ -1,0 +1,15 @@
+checksum = "9e654a505274dd4b0f482dcd9e6763b3c060f785d75997c9d3bfa2c8e1f19441"
+licence = "MIT"
+provides = "tiny-cloud-gcp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-gcp-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tiny-cloud", "2.1.2-r0"], ["yash-binsh", "2.53.0-r2"]]

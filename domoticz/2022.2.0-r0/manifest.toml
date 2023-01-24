@@ -1,0 +1,15 @@
+checksum = "fc8c88a1d85024feb3856d888d18493f478658eb112459d90471a9946e5433e7"
+licence = "GPL-3.0-or-later"
+provides = "domoticz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/domoticz-2022.2-r0.apk"
+version = "2022.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["jsoncpp", "1.9.5-r0"], ["lua5.3-libs", "5.3.6-r4"], ["minizip", "1.2.13-r0"], ["mosquitto-libs", "2.0.15-r1"], ["openzwave-libs", "1.6.974-r1"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["libusb-compat", "0.1.7-r1"], ["zlib", "1.2.13-r0"]]

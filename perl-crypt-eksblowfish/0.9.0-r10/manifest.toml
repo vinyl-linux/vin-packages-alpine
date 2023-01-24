@@ -1,0 +1,15 @@
+checksum = "28ef5fcce3dffc4b52ad346de617a14a9dccde771dacb3f524fdcdec97d0e8bb"
+licence = "GPL PerlArtistic"
+provides = "perl-crypt-eksblowfish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-crypt-eksblowfish-0.009-r10.apk"
+version = "0.9.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-class-mix", "0.6.0-r2"], ["musl", "1.2.3-r4"]]

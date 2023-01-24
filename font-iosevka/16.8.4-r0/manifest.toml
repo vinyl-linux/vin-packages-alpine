@@ -1,0 +1,15 @@
+checksum = "815926c2cab0f29bb257126d62f1913cab5ac3e02aa674d3cc359800f0ef9c88"
+licence = "OFL-1.1"
+provides = "font-iosevka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-iosevka-16.8.4-r0.apk"
+version = "16.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-iosevka-base", "16.8.4-r0"], ["font-iosevka-slab", "16.8.4-r0"], ["font-iosevka-curly", "16.8.4-r0"], ["font-iosevka-curly-slab", "16.8.4-r0"]]

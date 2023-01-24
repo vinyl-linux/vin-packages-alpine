@@ -1,0 +1,15 @@
+checksum = "a21529a66b3cf5798edadd0672f6a79631a74380b807d3cdf1af8ae3c2aba244"
+licence = "GPL-3.0-or-later"
+provides = "corehunt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corehunt-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

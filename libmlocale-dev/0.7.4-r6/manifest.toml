@@ -1,0 +1,15 @@
+checksum = "983e4980f557ec2ae6973850ff0392a8dd483bc20316220363d26e85ad8c320b"
+licence = "LGPL-2.1-only"
+provides = "libmlocale-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmlocale-dev-0.7.4-r6.apk"
+version = "0.7.4-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["icu-dev", "72.1.0-r1"], ["libmlocale", "0.7.4-r6"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

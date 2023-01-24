@@ -1,0 +1,15 @@
+checksum = "785dda14e37943c748502ad8f0069e2e2c739e52c1b61fa09bb2d4fa77e55d6f"
+licence = "MIT"
+provides = "bitcoin-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitcoin-dev-23.0-r3.apk"
+version = "23.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

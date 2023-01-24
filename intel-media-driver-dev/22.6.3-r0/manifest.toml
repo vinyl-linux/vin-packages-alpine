@@ -1,0 +1,15 @@
+checksum = "32ab676b625b2cecb9de02d24b72294057bae62340ef3892f2939a5a5f7c22cb"
+licence = "BSD-3-Clause AND MIT"
+provides = "intel-media-driver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/intel-media-driver-dev-22.6.3-r0.apk"
+version = "22.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["intel-media-driver", "22.6.3-r0"], ["pkgconf", "1.9.4-r0"]]

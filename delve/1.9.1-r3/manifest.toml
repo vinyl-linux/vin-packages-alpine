@@ -1,0 +1,15 @@
+checksum = "35d6ead49f0e179788e158da0b68eaae22ea5d8114973b8a95bbbae50234ca15"
+licence = "MIT"
+provides = "delve"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/delve-1.9.1-r3.apk"
+version = "1.9.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

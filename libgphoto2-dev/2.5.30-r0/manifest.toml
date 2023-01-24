@@ -1,0 +1,15 @@
+checksum = "9ad2a8939fed471b1451e14446dd576be8a0ab69b27c6d2f85fc91b7c5976ef2"
+licence = "LGPL-2.1-or-later"
+provides = "libgphoto2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgphoto2-dev-2.5.30-r0.apk"
+version = "2.5.30-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libexif-dev", "0.6.24-r0"], ["libusb-dev", "1.0.26-r0"], ["libgphoto2", "2.5.30-r0"], ["pkgconf", "1.9.4-r0"]]

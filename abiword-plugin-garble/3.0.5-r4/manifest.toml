@@ -1,0 +1,15 @@
+checksum = "e442070017d4d5251e8c55c5f586511ded88fbad6c582a62baf40dc164c2920b"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-garble"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-garble-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

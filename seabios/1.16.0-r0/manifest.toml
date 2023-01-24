@@ -1,0 +1,15 @@
+checksum = "56491def57137d9435162f376d644de93ec7a7ac9f64750e50b52ae2650e5b77"
+licence = "LGPL-3.0-or-later"
+provides = "seabios"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/seabios-1.16.0-r0.apk"
+version = "1.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["seabios-bin", "1.16.0-r0"], ["seavgabios-bin", "1.16.0-r0"]]

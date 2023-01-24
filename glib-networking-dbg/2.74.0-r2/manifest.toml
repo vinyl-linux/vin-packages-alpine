@@ -1,0 +1,15 @@
+checksum = "b575c21c29a2ea1f0e2bf44a401cbb6406a0b893b0df828d0c89dbff07b99419"
+licence = "LGPL-2.0-or-later"
+provides = "glib-networking-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glib-networking-dbg-2.74.0-r2.apk"
+version = "2.74.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["gsettings-desktop-schemas", "43.0.0-r0"]]

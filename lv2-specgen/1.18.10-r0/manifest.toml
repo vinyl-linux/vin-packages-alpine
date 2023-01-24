@@ -1,0 +1,15 @@
+checksum = "aa9871fd54890625bfeb2966d963bc2aa34a2e84a880b3fff19bf3e7478eda1c"
+licence = "ISC"
+provides = "lv2-specgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lv2-specgen-1.18.10-r0.apk"
+version = "1.18.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-lxml", "4.9.2-r0"], ["py3-rdflib", "6.1.1-r0"], ["py3-markdown", "3.4.1-r0"], ["py3-pygments", "2.13.0-r0"], ["python3", "3.10.9-r1"]]

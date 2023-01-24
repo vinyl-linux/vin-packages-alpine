@@ -1,0 +1,15 @@
+checksum = "a586f401d0f674146f8e5583aadc581860a767b611e26baa957ffcf2716756f1"
+licence = "custom"
+provides = "android-tools-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/android-tools-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

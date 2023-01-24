@@ -1,0 +1,15 @@
+checksum = "ff9204b8f1f0ea5286e77c6f4efb1259d8097f9fa566d4b26d1dbf2a95c593d3"
+licence = "LGPL-2.1-only"
+provides = "mpg123-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mpg123-dev-1.31.1-r0.apk"
+version = "1.31.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mpg123-libs", "1.31.1-r0"], ["pkgconf", "1.9.4-r0"]]

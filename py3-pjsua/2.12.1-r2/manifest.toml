@@ -1,0 +1,15 @@
+checksum = "0647153c511f2a90da0b23bb7439c33080a3f312f16fe40f5b70717e180c4440"
+licence = "GPL-2.0-or-later"
+provides = "py3-pjsua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pjsua-2.12.1-r2.apk"
+version = "2.12.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["pjproject", "2.12.1-r2"], ["libstdc++", "12.2.1"]]

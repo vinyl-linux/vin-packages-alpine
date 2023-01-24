@@ -1,0 +1,15 @@
+checksum = "996254dda7b6f02e38de2d70df2d61700e7d815c8a32b34e65c27c717e4d1ff4"
+licence = "AGPL-3.0-or-later"
+provides = "git-annex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-annex-10.20221103-r0.apk"
+version = "10.20221103.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"], ["git", "2.38.3-r1"], ["rsync", "3.2.7-r0"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["libmagic", "5.43.0-r0"], ["zlib", "1.2.13-r0"]]

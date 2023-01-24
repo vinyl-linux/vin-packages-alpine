@@ -1,0 +1,15 @@
+checksum = "1be56cc4d138f949a02ba89165d86f48173e0a5c44b9626dc93642e5d7381978"
+licence = "custom:GPL-like"
+provides = "libgc++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgc++-8.2.2-r0.apk"
+version = "8.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gc", "8.2.2-r0"], ["libstdc++", "12.2.1"]]

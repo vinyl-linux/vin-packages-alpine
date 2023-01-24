@@ -1,0 +1,15 @@
+checksum = "7803701db5188b54e0ab5b4f2e5396c25c9a253f84d054564607cc1c56259738"
+licence = "GPL-2.0-or-later"
+provides = "aria2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aria2-1.36.0-r1.apk"
+version = "1.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["gnutls", "3.7.8-r2"], ["nettle", "3.8.1-r0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "23c3877f55a719255ba12510ba06fabc99bda7275770b71ae255a75df45b8290"
+licence = "MIT"
+provides = "lua5.2-lgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.2-lgi-0.9.2-r4.apk"
+version = "0.9.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gobject-introspection", "1.74.0-r1"], ["glib", "2.74.5-r0"]]

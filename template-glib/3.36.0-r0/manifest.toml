@@ -1,0 +1,15 @@
+checksum = "92403c1be07e0b3ededa47ebe43bffbeff01c8c073d95a20c05460683ab952ba"
+licence = "GPL-3.0-or-later"
+provides = "template-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/template-glib-3.36.0-r0.apk"
+version = "3.36.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gobject-introspection", "1.74.0-r1"], ["libintl", "0.21.1-r1"]]

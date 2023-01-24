@@ -1,0 +1,15 @@
+checksum = "bb62fb49b13643a2cbd6e56f6bd432395ac361315728d76e1d7fc873111b7a2f"
+licence = "LGPL-2.1-or-later"
+provides = "vips-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vips-tools-8.13.3-r1.apk"
+version = "8.13.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["vips", "8.13.3-r1"]]

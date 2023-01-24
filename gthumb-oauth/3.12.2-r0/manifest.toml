@@ -1,0 +1,15 @@
+checksum = "905770dbafd75be8d6ee8dd2aed53889928f8a4e226a400ab08e23a3e8cd9f27"
+licence = "GPL-2.0-or-later"
+provides = "gthumb-oauth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gthumb-oauth-3.12.2-r0.apk"
+version = "3.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gthumb", "3.12.2-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"], ["libsecret", "0.20.5-r0"], ["libsoup", "2.74.3-r0"], ["webkit2gtk", "2.38.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f872e948fa982238b9b7b42cb8cc43c4e268952881f4f139364ef0c1d5ad2fad"
+licence = "CDDL-1.0"
+provides = "py3-pyzfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pyzfs-2.1.7-r0.apk"
+version = "2.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["zfs", "2.1.7-r0"]]

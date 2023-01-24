@@ -1,0 +1,15 @@
+checksum = "fa23402dc699061aee3a38c4ef51bb7f5e77942531025642f5d9efd394f75cc4"
+licence = "Public-Domain"
+provides = "ppp-chat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-chat-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "686df2a771dcdc832e8e204cb3976387cd658b73bfb2e0f04644844d2ab8d01d"
+licence = "GPL-2.0-or-later"
+provides = "nftables-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nftables-dev-1.0.5-r2.apk"
+version = "1.0.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nftables", "1.0.5-r2"], ["pkgconf", "1.9.4-r0"]]

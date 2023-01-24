@@ -1,0 +1,15 @@
+checksum = "ab8f3148b9dab1d9804666aa29b74c2c0c5d4663349095782bd02bdd7311c02d"
+licence = "GPL-2.0-or-later"
+provides = "libreswan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreswan-4.9-r0.apk"
+version = "4.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnssec-root", "20190225.0.0-r2"], ["nss-tools", "3.85.0-r0"], ["iproute2", "6.0.0-r1"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["libcurl", "7.87.0-r1"], ["libevent", "2.1.12-r5"], ["ldns", "1.8.3-r0"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r0"], ["linux-pam", "1.5.2-r1"], ["unbound-libs", "1.17.1-r0"]]

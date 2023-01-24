@@ -1,0 +1,15 @@
+checksum = "d88e3972f70f21eac9c9de91f1332269b94a73be1259d2bc48300db3602c75ba"
+licence = "Apache-2.0"
+provides = "py3-pytest-asyncio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-asyncio-0.20.2-r0.apk"
+version = "0.20.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-flaky", "3.7.0-r2"], ["py3-pytest", "7.2.0-r1"], ["py3-pytest-trio", "0.8.0-r0"]]

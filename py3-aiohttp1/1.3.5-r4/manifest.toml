@@ -1,0 +1,15 @@
+checksum = "a6fabf6a85948a06e3098494656fe965f8da66342c4c94bfa7029d8a7f45193e"
+licence = "Apache-2.0"
+provides = "py3-aiohttp1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-aiohttp1-1.3.5-r4.apk"
+version = "1.3.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-async-timeout", "4.0.2-r0"], ["py3-chardet", "5.0.0-r0"], ["py3-multidict", "6.0.2-r1"], ["py3-yarl", "1.8.1-r1"]]

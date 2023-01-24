@@ -1,0 +1,15 @@
+checksum = "8b5bf35168273afcfa65ede16811027d54890898090a409caea188d578ca980b"
+licence = "GPL-2.0-or-later"
+provides = "collectd-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-snmp-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"]]

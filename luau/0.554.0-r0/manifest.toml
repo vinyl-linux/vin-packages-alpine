@@ -1,0 +1,15 @@
+checksum = "c6c31e25edf762fe2e67f608ea0fc12bb6c15859eecddcf276d5201b20988cb8"
+licence = "MIT"
+provides = "luau"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/luau-0.554-r0.apk"
+version = "0.554.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

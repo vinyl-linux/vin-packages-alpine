@@ -1,0 +1,15 @@
+checksum = "b17a679279d2e4cb463249a3d95c0224afddfcdfcda1dbf0aabede445ec3f365"
+licence = "GPL-2.0-or-later"
+provides = "collectd-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-libs-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"]]

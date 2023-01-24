@@ -1,0 +1,15 @@
+checksum = "9eb89e98c7782480b506342a584efbb08e8f7b9bbb1609445a936a7978c0117f"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "xfce4-panel-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-panel-lang-4.16.5-r0.apk"
+version = "4.16.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r2"]]

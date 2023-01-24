@@ -1,0 +1,15 @@
+checksum = "738a8bf40735d11df5aa6fea6a68aa89b24e4655496060d85ac61cae4de738dc"
+licence = "MIT"
+provides = "ruby-bundler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-bundler-2.3.26-r0.apk"
+version = "2.3.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"]]

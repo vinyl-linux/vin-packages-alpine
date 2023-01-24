@@ -1,0 +1,15 @@
+checksum = "0e758055c0891ec3aaf1b9d4bfbe3d31a573541b222582232d0ce3a0f4bd89f6"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/knot-resolver-dev-5.5.3-r0.apk"
+version = "5.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["knot-dev", "3.2.4-r0"], ["libedit-dev", "20221030.3.1-r0"], ["libuv-dev", "1.44.2-r0"], ["luajit-dev", "2.1.0"], ["fstrm-dev", "0.6.1-r1"], ["protobuf-dev", "3.21.9-r0"], ["protobuf-c-dev", "1.4.1-r1"], ["knot-resolver", "5.5.3-r0"], ["gnutls-dev", "3.7.8-r2"], ["lmdb-dev", "0.9.29-r2"], ["pkgconf", "1.9.4-r0"]]

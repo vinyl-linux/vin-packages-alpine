@@ -1,0 +1,15 @@
+checksum = "a49a75f40b01b4612d31b26dce5274abdac77ed96d88f40f23a834f2920c02a7"
+licence = "BSD-3-Clause"
+provides = "dante"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dante-1.4.3-r2.apk"
+version = "1.4.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

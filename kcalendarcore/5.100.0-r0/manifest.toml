@@ -1,0 +1,15 @@
+checksum = "ed09b5db944da11257165f9516bcc50cd34423b449a2e136e877a774d69bc6be"
+licence = "LGPL-2.0-or-later"
+provides = "kcalendarcore"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcalendarcore-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libical", "3.0.16-r1"], ["libstdc++", "12.2.1"]]

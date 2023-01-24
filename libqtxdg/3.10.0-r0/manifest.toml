@@ -1,0 +1,15 @@
+checksum = "d71e6d1f4dfb6bcb0937dc1b6f2fe870d7ad233af4cb690cc9bdcac72b381121"
+licence = "LGPL-2.0-or-later"
+provides = "libqtxdg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libqtxdg-3.10.0-r0.apk"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0", "3.24.36-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "93a0b83fae8abd6ef974737eeb6ea4a8c27e8515ae8d9416955e5e188606d589"
+licence = "BSD-3-Clause"
+provides = "libnymphcast-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnymphcast-dev-0.1-r2.apk"
+version = "0.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nymphrpc-dev", "0.1.0-r2"], ["poco-dev", "1.12.2-r1"], ["libnymphcast", "0.1.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "4274f449500306a42f23895c49033ab24bc1983372b577adaefd7bd3adfdbada"
+licence = "GPL-2.0-or-later"
+provides = "d-feet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/d-feet-0.3.16-r1.apk"
+version = "0.3.16-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"], ["gtk+3.0", "3.24.36-r0"]]

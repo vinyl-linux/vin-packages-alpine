@@ -1,0 +1,15 @@
+checksum = "a11ac5f2da73ef38457acc71f3343826951a43052c4e5a4f9b5c490e95a7cf35"
+licence = "GPL-3.0-or-later"
+provides = "clsync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clsync-0.4.5-r3.apk"
+version = "0.4.5-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"], ["glib", "2.74.5-r0"]]

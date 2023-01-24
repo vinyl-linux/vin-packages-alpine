@@ -1,0 +1,15 @@
+checksum = "4b2c2abf3358cecfc1c4c9a1a3a55d5fa3dee275275e33b6a123d5d472fd3ec2"
+licence = "GPL-2.0-or-later"
+provides = "virt-install"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/virt-install-4.1.0-r0.apk"
+version = "4.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["virt-manager-common", "4.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f0302b15035420cb7d0242e758b5ee7d8b7d1ca81ac6df84d4d95506a92c873c"
+licence = "MIT"
+provides = "py3-alive-progress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-alive-progress-2.4.1-r0.apk"
+version = "2.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-about-time", "4.1.0-r0"], ["py3-grapheme", "0.6.0-r0"]]

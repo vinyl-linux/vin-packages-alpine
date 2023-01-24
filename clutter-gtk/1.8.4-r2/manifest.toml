@@ -1,0 +1,15 @@
+checksum = "370d2c2c76952728ee84bcedb1dcbbacef33e246e7bc9e074db619a703a90a3c"
+licence = "LGPL-2.0-or-later"
+provides = "clutter-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clutter-gtk-1.8.4-r2.apk"
+version = "1.8.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["clutter", "1.26.4-r1"], ["cogl", "1.22.8-r1"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["wayland-libs-client", "1.21.0-r1"]]

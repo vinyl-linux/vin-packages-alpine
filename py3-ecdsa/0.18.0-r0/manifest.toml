@@ -1,0 +1,15 @@
+checksum = "5c86178d8102cec876754864ad396228001839e1b24b3add96460385bcb784a7"
+licence = "MIT"
+provides = "py3-ecdsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ecdsa-0.18.0-r0.apk"
+version = "0.18.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

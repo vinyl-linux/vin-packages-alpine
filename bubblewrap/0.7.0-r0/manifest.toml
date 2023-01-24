@@ -1,0 +1,15 @@
+checksum = "ed3f3d2d24aad2a95a7bc6ce901db358f4b212abd5d84694d1c2a86ef8b61ba4"
+licence = "LGPL-2.0-or-later"
+provides = "bubblewrap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bubblewrap-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"]]

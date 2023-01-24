@@ -1,0 +1,15 @@
+checksum = "37652655940ebf5afca4cec993e6ac8ed908b5fd0519a2ee1c5ea576bf8e1c23"
+licence = "BSD-2-Clause"
+provides = "hitch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hitch-1.7.2-r1.apk"
+version = "1.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libev", "4.33.0-r0"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "001f4bcf35917b082d29c79c8b8c55849fc599183bdf73d665409fcab7460e65"
+licence = "LGPL-2.1-or-later"
+provides = "py3-libmount"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-libmount-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmount", "2.38.1-r1"]]

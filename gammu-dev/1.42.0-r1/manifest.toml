@@ -1,0 +1,15 @@
+checksum = "317c9e68b53b98db761461391e16e618808fd44d6528c31800e4bdfdeeeb27ab"
+licence = "GPL-2.0-or-later"
+provides = "gammu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gammu-dev-1.42.0-r1.apk"
+version = "1.42.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gammu-libs", "1.42.0-r1"], ["pkgconf", "1.9.4-r0"]]

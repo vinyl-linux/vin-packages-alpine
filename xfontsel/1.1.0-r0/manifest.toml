@@ -1,0 +1,15 @@
+checksum = "bd0955ea3d7da7a313c587ce51032e67a23d5bf07945468d1a5f54df550eeab7"
+licence = "MIT"
+provides = "xfontsel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfontsel-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxaw", "1.0.14-r0"], ["libxmu", "1.1.4-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"]]

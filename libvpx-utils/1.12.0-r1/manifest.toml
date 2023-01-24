@@ -1,0 +1,15 @@
+checksum = "6bc902ca1600397fb64ae4a0f014fe7cfde087961baf4f5dff1be1d1b0a3a344"
+licence = "BSD-3-Clause"
+provides = "libvpx-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvpx-utils-1.12.0-r1.apk"
+version = "1.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libvpx", "1.12.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "b5f8422bbe08cf8fda19933d22042c72f860e9eca5b05e824ed0713fbfa25e22"
+licence = "GPL-3.0-or-later"
+provides = "plantuml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plantuml-1.2022.8-r0.apk"
+version = "1.2022.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.35.0-r29"], ["java-common", "0.5.0-r0"], ["openjdk9-jre", "9.0.4"]]

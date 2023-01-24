@@ -1,0 +1,15 @@
+checksum = "1e43e0fc443b858faaf68b68b78fcc8b3bf6208f3fa96bc185417521ad4bb6eb"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "gnome-desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-desktop-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["musl-locales", "0.1.0-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["libseccomp", "2.5.4-r0"], ["eudev-libs", "3.2.11-r4"], ["libxkbcommon", "1.4.1-r0"]]

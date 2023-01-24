@@ -1,0 +1,15 @@
+checksum = "09bcb65b3968ce61aa9a8e42f0721dc2ce96d2c9ad90b54c0393599405fe0a3e"
+licence = "BSD-3-Clause"
+provides = "assimp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/assimp-dev-5.2.5-r0.apk"
+version = "5.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["assimp-libs", "5.2.5-r0"], ["pkgconf", "1.9.4-r0"]]

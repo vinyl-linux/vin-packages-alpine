@@ -1,0 +1,15 @@
+checksum = "3feb3332fc1f65c2c7c92cb1b7b15d8cfea7021b3001a61cc8604978c0fb01ce"
+licence = "MIT"
+provides = "fenneljit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fenneljit-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["luajit", "2.1.0"], ["musl", "1.2.3-r4"]]

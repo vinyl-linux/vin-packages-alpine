@@ -1,0 +1,15 @@
+checksum = "c4da199874b914a354c4644eb2b4112b3af130c58f06d824545bc57d3b654759"
+licence = "BSD-3-Clause"
+provides = "miniupnpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/miniupnpc-2.2.3-r1.apk"
+version = "2.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

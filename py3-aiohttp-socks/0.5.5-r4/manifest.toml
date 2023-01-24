@@ -1,0 +1,15 @@
+checksum = "dadfc84774059029aed36cdeac150fb1d830657bd75c85f92b5a8c3cf5284eaa"
+licence = "Apache-2.0"
+provides = "py3-aiohttp-socks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-aiohttp-socks-0.5.5-r4.apk"
+version = "0.5.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-aiohttp", "3.8.3-r0"], ["py3-attrs", "22.1.0-r0"], ["py3-python-socks", "1.1.2-r2"]]

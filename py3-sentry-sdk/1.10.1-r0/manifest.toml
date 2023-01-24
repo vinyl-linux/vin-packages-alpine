@@ -1,0 +1,15 @@
+checksum = "ed24ca1c1a156e3cff36d6f4b6384ae660f0c696b7fe200d7ddb8eb5c07401e9"
+licence = "BSD-2-Clause"
+provides = "py3-sentry-sdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-sentry-sdk-1.10.1-r0.apk"
+version = "1.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-certifi", "2022.12.7-r0"], ["py3-urllib3", "1.26.12-r0"]]

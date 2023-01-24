@@ -1,0 +1,15 @@
+checksum = "915d9687f2895c0400636e1e37612b560c7527cc777a838f90be92bdcb4d9ce5"
+licence = "MIT"
+provides = "py3-libxml2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-libxml2-2.10.3-r1.apk"
+version = "2.10.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

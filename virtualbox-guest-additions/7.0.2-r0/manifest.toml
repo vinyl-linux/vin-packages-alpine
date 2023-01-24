@@ -1,0 +1,15 @@
+checksum = "7a2a14b94f3c090b1260acf1cc5efc45de43afd7dcca39ce2ab05a0547e3ca8e"
+licence = "GPL custom"
+provides = "virtualbox-guest-additions"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/virtualbox-guest-additions-7.0.2-r0.apk"
+version = "7.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1bcbd85cf5e661148f3efb581650fc5aa6341e631afa959ffaca4da75a7c6f82"
+licence = "GPL-2.0-or-later"
+provides = "qbittorrent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qbittorrent-4.5.0-r0.apk"
+version = "4.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtsvg", "6.4.2-r0"], ["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libtorrent-rasterbar", "2.0.8-r0"], ["zlib", "1.2.13-r0"]]

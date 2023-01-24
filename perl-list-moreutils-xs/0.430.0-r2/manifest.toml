@@ -1,0 +1,15 @@
+checksum = "da07bb28b80a24de7a695c433df6181867b61713cc0f574cae375a44629a82b2"
+licence = "Apache-2.0"
+provides = "perl-list-moreutils-xs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-list-moreutils-xs-0.430-r2.apk"
+version = "0.430.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

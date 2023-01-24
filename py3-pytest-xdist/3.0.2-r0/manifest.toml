@@ -1,0 +1,15 @@
+checksum = "3eeea81972a370faa063bb73541bfb0b23f343ac65ac0d7df927fc735f3790b9"
+licence = "MIT"
+provides = "py3-pytest-xdist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-xdist-3.0.2-r0.apk"
+version = "3.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-execnet", "1.9.0-r0"], ["py3-pytest", "7.2.0-r1"]]

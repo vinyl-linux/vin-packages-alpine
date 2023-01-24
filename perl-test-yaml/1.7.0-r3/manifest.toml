@@ -1,0 +1,15 @@
+checksum = "1e19d460d8b91ad16094a2f19da8d4a0b40918a7effff956b2bd578e3ca1fce0"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-yaml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-test-yaml-1.07-r3.apk"
+version = "1.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-test-base", "0.89.0-r2"]]

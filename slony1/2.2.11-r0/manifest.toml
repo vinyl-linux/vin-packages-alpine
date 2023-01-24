@@ -1,0 +1,15 @@
+checksum = "4f4db86397fc624a2500b7194a1a21c9a0f72ff64b40ffb8cf51571d60da9718"
+licence = "PostgreSQL"
+provides = "slony1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slony1-2.2.11-r0.apk"
+version = "2.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

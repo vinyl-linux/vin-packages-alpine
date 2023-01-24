@@ -1,0 +1,15 @@
+checksum = "8e7646d3c52f7da088cb7cdd998960cfb3b213f9d40f8cc0a243cb50f53a16d9"
+licence = "GPL-2.0-or-later"
+provides = "pinentry-tty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pinentry-tty-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libgpg-error", "1.46.0-r1"]]

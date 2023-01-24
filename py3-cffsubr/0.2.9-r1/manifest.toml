@@ -1,0 +1,15 @@
+checksum = "d6cd23905a591295d45819d05968d26c3f45c431b8c02716b2aff7702943436e"
+licence = "Apache-2.0"
+provides = "py3-cffsubr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cffsubr-0.2.9-r1.apk"
+version = "0.2.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-fonttools", "4.38.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "90dbb6e6326a1f64d4fe30661778c7da109d823d13e20556d3ca502537952370"
+licence = "GPL-3.0-or-later"
+provides = "py3-xxxswf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-xxxswf-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

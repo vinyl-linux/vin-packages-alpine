@@ -1,0 +1,15 @@
+checksum = "cf8b7f57451f78704a32f02d02398ea9a46959fe6993d4605ac1ef7134983093"
+licence = "GPL-3.0-or-later"
+provides = "yascreen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yascreen-1.86-r1.apk"
+version = "1.86.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

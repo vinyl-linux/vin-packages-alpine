@@ -1,0 +1,15 @@
+checksum = "c9f9fd8682c393b7271d22d780177026130dfc499a4f55ce5156b4d11b144e7f"
+licence = "BSD-3-Clause"
+provides = "arpack-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/arpack-dev-3.8.0-r0.apk"
+version = "3.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openblas-dev", "0.3.21-r0"], ["arpack-ilp64", "3.8.0-r0"], ["arpack", "3.8.0-r0"], ["pkgconf", "1.9.4-r0"]]

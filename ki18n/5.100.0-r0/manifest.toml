@@ -1,0 +1,15 @@
+checksum = "99c89fd0460d8ce09e9b745f875b79af21c0fe5145608a86736ca8474697bdac"
+licence = "LGPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-or-later)"
+provides = "ki18n"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ki18n-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["libstdc++", "12.2.1"]]

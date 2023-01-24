@@ -1,0 +1,15 @@
+checksum = "9cb6e0103ee959a37c29c5b55d59fc71323507cbffafe9786da58994af26c330"
+licence = "PostgreSQL"
+provides = "postgresql-uint-bitcode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-uint-bitcode-1.20200704-r4.apk"
+version = "1.20200704.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-uint", "1.20200704.0-r4"]]

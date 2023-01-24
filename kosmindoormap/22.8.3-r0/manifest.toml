@@ -1,0 +1,15 @@
+checksum = "2e8c7ae08df33ece90edd214863afaddcc9a588f77c61e839e35765a7f5205d3"
+licence = "BSD-2-Clause AND BSD-3-Clause MIT AND LGPL-2.0-or-later"
+provides = "kosmindoormap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kosmindoormap-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.100.0-r0"], ["kpublictransport", "22.8.3-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libprotobuf", "3.21.9-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

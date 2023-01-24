@@ -1,0 +1,15 @@
+checksum = "c571983e827e9366049418c35afbc81cf5264830483d0649882dee778a53000a"
+licence = "GPL-3.0-or-later"
+provides = "karlender"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/karlender-0.8.0-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"]]

@@ -1,0 +1,15 @@
+checksum = "628fa961040570330acb8fc326018f6aa094d407ab38fe5fd722ca714c435b08"
+licence = "MPL-2.0"
+provides = "mozjs102-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mozjs102-dev-102.3.0-r2.apk"
+version = "102.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mozjs102", "102.3.0-r2"], ["icu-dev", "72.1.0-r1"], ["libffi-dev", "3.4.4-r0"], ["nspr-dev", "4.35.0-r0"], ["pkgconf", "1.9.4-r0"]]

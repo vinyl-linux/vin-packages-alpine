@@ -1,0 +1,15 @@
+checksum = "d18f1f72c98982624b9f78751aa0133fd5aaa400326abc7e76c3780e0b5a5f85"
+licence = "LGPL-3.0-or-later"
+provides = "libheif-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libheif-dev-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aom-dev", "3.5.0-r0"], ["x265-dev", "3.5.0-r3"], ["libde265-dev", "1.0.9-r0"], ["libheif", "1.13.0-r0"], ["pkgconf", "1.9.4-r0"]]

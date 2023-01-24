@@ -1,0 +1,15 @@
+checksum = "ab622fe8da29d5fa6aca655904b464dfc53e6373204b4c9df75e8aabff3c1dd4"
+licence = "GPL-2.0-or-later"
+provides = "clifm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clifm-1.8-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libmagic", "5.43.0-r0"], ["readline", "8.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "5a51100fc19ef01e5f0cb572dfc008d4849fa557247b5917969e20be421f725c"
+licence = "LGPL-3.0-only"
+provides = "verovio-data"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/verovio-data-3.11.0-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-liberation", "2.1.5-r2"]]

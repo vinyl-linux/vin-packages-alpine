@@ -1,0 +1,15 @@
+checksum = "ce3c311e4a6946cf028d53566eccadcdf2e751add517bae844d17200c7c3eabc"
+licence = "GPL-2.0-or-later"
+provides = "libfilezilla-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfilezilla-dev-0.39.2-r0.apk"
+version = "0.39.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfilezilla", "0.39.2-r0"], ["gnutls-dev", "3.7.8-r2"], ["nettle-dev", "3.8.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "7b7ccd6c6372fb1f5c148f882e75ca04c26f7908c0224293e8a760fe716288d0"
+licence = "GPL-3.0-only"
+provides = "py3-netjsonconfig"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-netjsonconfig-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jinja2", "3.1.2-r0"], ["py3-jsonschema", "4.7.2-r2"]]

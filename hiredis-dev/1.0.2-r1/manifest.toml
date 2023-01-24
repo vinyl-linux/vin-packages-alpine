@@ -1,0 +1,15 @@
+checksum = "13bc304e4c2f1cca692b66489fdfed3ae1d06628b6deab833b668b7f4156185f"
+licence = "BSD-3-Clause"
+provides = "hiredis-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hiredis-dev-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hiredis", "1.0.2-r1"], ["pkgconf", "1.9.4-r0"]]

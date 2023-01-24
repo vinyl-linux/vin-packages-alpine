@@ -1,0 +1,15 @@
+checksum = "39a20f4f29290f713b06cecdfe79063a1c63bd9fc643f51bc603a7e5089cc681"
+licence = "AGPL-3.0"
+provides = "gsad"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gsad-22.4.0-r0.apk"
+version = "22.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsa", "22.4.0-r0"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["gvm-libs", "22.4.0-r0"], ["libmicrohttpd", "0.9.75-r0"], ["libxml2", "2.10.3-r1"]]

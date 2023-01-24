@@ -1,0 +1,15 @@
+checksum = "7880a1f9429aae6bd0344327b84243887527fa46b6684fc20ce131ca38c4a9fe"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-redis-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["hiredis", "1.0.2-r1"], ["syslog-ng", "3.38.1-r0"]]

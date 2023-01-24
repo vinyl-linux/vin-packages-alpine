@@ -1,0 +1,15 @@
+checksum = "f177afdb5f0c61320c4d7c46a91f007c7f790690aa47bf8cc3b290a57c5a7e67"
+licence = "BSD-3-Clause"
+provides = "alembic-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alembic-dev-1.8.4-r0.apk"
+version = "1.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alembic-libs", "1.8.4-r0"]]

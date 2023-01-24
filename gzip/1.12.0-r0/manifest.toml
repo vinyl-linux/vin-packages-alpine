@@ -1,0 +1,15 @@
+checksum = "373fd1865075800c9982d946ede09f37e752d64f028adacd08d95a5678d11a5b"
+licence = "GPL-3.0-or-later"
+provides = "gzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gzip-1.12-r0.apk"
+version = "1.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["less", "608.0.0-r0"], ["musl", "1.2.3-r4"]]

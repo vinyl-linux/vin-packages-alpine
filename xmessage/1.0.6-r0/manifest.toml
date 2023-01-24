@@ -1,0 +1,15 @@
+checksum = "ce1edd754b816a94a009f26d3788ac42196f8a45e35943f44e761edcde21926e"
+licence = "MIT"
+provides = "xmessage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmessage-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxaw", "1.0.14-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"]]

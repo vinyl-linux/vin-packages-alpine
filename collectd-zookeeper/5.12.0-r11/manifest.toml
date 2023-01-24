@@ -1,0 +1,15 @@
+checksum = "5bc5060c959ba9ad76649e8035e358891e6b4db17552d202bc486807b363b363"
+licence = "GPL-2.0-or-later"
+provides = "collectd-zookeeper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-zookeeper-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"]]

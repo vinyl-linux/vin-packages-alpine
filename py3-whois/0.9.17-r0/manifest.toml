@@ -1,0 +1,15 @@
+checksum = "446cf51a742184ed5b4237711c8a1e1fa77baa894453fc948faf928a54c982bf"
+licence = "WTFPL"
+provides = "py3-whois"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-whois-0.9.17-r0.apk"
+version = "0.9.17-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["whois", "5.5.14-r0"]]

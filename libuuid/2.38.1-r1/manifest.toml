@@ -1,0 +1,15 @@
+checksum = "3c4a982310174ae58e5dd74feac1c262846fab415b648d7a3497e763fd459a8f"
+licence = "BSD-3-Clause"
+provides = "libuuid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libuuid-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

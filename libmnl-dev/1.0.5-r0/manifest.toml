@@ -1,0 +1,15 @@
+checksum = "a6484ba73e6f9e3900dfea941357645bf7d9dc920985f195e2ee38af3f8fbead"
+licence = "LGPL-2.1-or-later"
+provides = "libmnl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmnl-dev-1.0.5-r0.apk"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libmnl", "1.0.5-r0"], ["pkgconf", "1.9.4-r0"]]

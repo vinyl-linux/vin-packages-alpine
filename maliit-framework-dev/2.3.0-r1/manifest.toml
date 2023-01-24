@@ -1,0 +1,15 @@
+checksum = "277a1056586af31045add7a12a9ed050a64f54dc4ec98bce5d2c8eb0b9497ef1"
+licence = "LGPL-2.1-only"
+provides = "maliit-framework-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/maliit-framework-dev-2.3.0-r1.apk"
+version = "2.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev-dev", "3.2.11-r4"], ["gtk+3.0-dev", "3.24.36-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["qt5-qtwayland-dev", "5.15.6"], ["wayland-dev", "1.21.0-r1"], ["maliit-framework", "2.3.0-r1"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ecdf6bfcd6f2ad9e622858430bf4c445153ff92ed9259ef8ba5dea722b3b9caa"
+licence = "Apache-2.0"
+provides = "netavark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netavark-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

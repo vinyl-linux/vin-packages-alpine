@@ -1,0 +1,15 @@
+checksum = "3ec9fcf8ccc9a8f78f41b2a1db8138a9dc5c444edc24738d7d982be7652258f4"
+licence = "GPL-2.0-or-later"
+provides = "rasdaemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rasdaemon-0.6.8-r0.apk"
+version = "0.6.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dmidecode", "3.4.0-r0"], ["perl", "5.36.0-r0"], ["perl-dbd-sqlite", "1.72.0-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

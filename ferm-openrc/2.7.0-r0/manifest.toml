@@ -1,0 +1,15 @@
+checksum = "e368d9ed4d0478f7ccea0e839ba9035e2f9d13cf6a15affe8282c56818084213"
+licence = "GPL"
+provides = "ferm-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ferm-openrc-2.7-r0.apk"
+version = "2.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["iptables", "1.8.8-r2"]]

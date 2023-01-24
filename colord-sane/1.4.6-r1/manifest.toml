@@ -1,0 +1,15 @@
+checksum = "a3c6ca9a141063e19e14fedef19382c06f090be24786c671451eb73c720ba629"
+licence = "GPL-2.0-or-later"
+provides = "colord-sane"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/colord-sane-1.4.6-r1.apk"
+version = "1.4.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["colord", "1.4.6-r1"], ["musl", "1.2.3-r4"], ["libcolord", "1.4.6-r1"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["sane", "1.1.1-r0"]]

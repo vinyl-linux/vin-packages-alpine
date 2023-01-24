@@ -1,0 +1,15 @@
+checksum = "49ba51a55160ea0c275ba9f34ceab13219ba86fb9ad8d9f306234b7a6442ccf3"
+licence = "ISC"
+provides = "sord"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sord-0.16.14-r0.apk"
+version = "0.16.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pcre", "8.45.0-r2"], ["serd", "0.30.16-r0"]]

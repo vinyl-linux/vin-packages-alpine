@@ -1,0 +1,15 @@
+checksum = "2f7b5fcb45b9fbe03f16687c990cdfee0e84595365dd3fc70ad861b1fa31ba3b"
+licence = "MPL-2.0"
+provides = "libstaroffice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libstaroffice-0.0.7-r5.apk"
+version = "0.0.7-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

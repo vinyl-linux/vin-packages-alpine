@@ -1,0 +1,15 @@
+checksum = "954c6b8516fe47b91cf56f14cf31c6622e93b94e83f2b440c4b107c3bfc7f824"
+licence = "GPL-2.0-only"
+provides = "ipset"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ipset-7.15-r1.apk"
+version = "7.15.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"]]

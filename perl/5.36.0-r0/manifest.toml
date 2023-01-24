@@ -1,0 +1,15 @@
+checksum = "a69e2477cb6ed667e0be0fda71f147c767d292fbf126deae7fb7c8e006caf4a5"
+licence = "Artistic-Perl OR GPL-1.0-or-later"
+provides = "perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-5.36.0-r0.apk"
+version = "5.36.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

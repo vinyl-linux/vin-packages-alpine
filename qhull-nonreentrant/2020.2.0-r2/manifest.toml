@@ -1,0 +1,15 @@
+checksum = "ae9fbcca270702b34078e58a49eada0505159944092ef54d6530553c1a5ed2aa"
+licence = "custom"
+provides = "qhull-nonreentrant"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qhull-nonreentrant-2020.2-r2.apk"
+version = "2020.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

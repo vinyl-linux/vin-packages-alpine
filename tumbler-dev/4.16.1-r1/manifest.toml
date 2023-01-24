@@ -1,0 +1,15 @@
+checksum = "91f559cb8ddac56540624b61d3b35511ec3b6f21c37d4fae794f15015c060fa5"
+licence = "GPL-2.0-or-later"
+provides = "tumbler-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tumbler-dev-4.16.1-r1.apk"
+version = "4.16.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["tumbler", "4.16.1-r1"]]

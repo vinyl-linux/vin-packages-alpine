@@ -1,0 +1,15 @@
+checksum = "b9620a0635113fd229edbdc8a19bbc446e8a330cb140773c31976582ed0c6b0e"
+licence = "LGPL-3.0-or-later"
+provides = "elisa-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/elisa-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["vlc", "3.0.18-r1"]]

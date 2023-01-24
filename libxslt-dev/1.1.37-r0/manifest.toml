@@ -1,0 +1,15 @@
+checksum = "3c74fed1329d3c7ab5585600fd5d94839c605156c22e1bef9aa097424ef41e92"
+licence = "custom"
+provides = "libxslt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxslt-dev-1.1.37-r0.apk"
+version = "1.1.37-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxslt", "1.1.37-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

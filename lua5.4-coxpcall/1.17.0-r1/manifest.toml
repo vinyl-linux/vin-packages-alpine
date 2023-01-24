@@ -1,0 +1,15 @@
+checksum = "aae7e23b8543413838c95d290348279eef2583d043cc75626422f6627be5dcdd"
+licence = "MIT"
+provides = "lua5.4-coxpcall"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.4-coxpcall-1.17.0-r1.apk"
+version = "1.17.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.4-r6"]]

@@ -1,0 +1,15 @@
+checksum = "55de3ab4b4d600d9b16eec3272b59c8e2e785fe15f71703e9afc735438d34bc7"
+licence = "ISC"
+provides = "py3-vcversioner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-vcversioner-2.16.0.0-r4.apk"
+version = "2.16.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

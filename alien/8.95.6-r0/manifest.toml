@@ -1,0 +1,15 @@
+checksum = "4cb0e0e26cee8875fcb3a80e28cc1dbfeec79249a0b6a0982380b9e6b31ab4e4"
+licence = "GPL-2.0-only"
+provides = "alien"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alien-8.95.6-r0.apk"
+version = "8.95.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

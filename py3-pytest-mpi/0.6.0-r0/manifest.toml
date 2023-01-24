@@ -1,0 +1,15 @@
+checksum = "485adb081feb19c24237d8fed8e2a771a6bf184a4641c36ec4e9ee86a4cceed6"
+licence = "BSD-3-Clause"
+provides = "py3-pytest-mpi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-mpi-0.6-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-mpi4py", "3.1.4-r0"], ["python3", "3.10.9-r1"]]

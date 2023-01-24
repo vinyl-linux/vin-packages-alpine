@@ -1,0 +1,15 @@
+checksum = "d4bfb44bee41eed03ae1c2d750f595c62db082a3b53cf702b1462621090c82cf"
+licence = "CC0-1.0"
+provides = "py3-libarchive-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-libarchive-c-4.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "4831cefa883c3a1148c9b71a693699cc5534a40fbb051b3d4bbeaa8d9e471a8c"
+licence = "MIT"
+provides = "grim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grim-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["wayland-libs-client", "1.21.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "9874cd58d968758b48934164dcb46ab0287b0ef89ec0fe929fb757fe43991c51"
+licence = "LGPL-2.0-or-later"
+provides = "gcr4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcr4-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcr-ssh-agent", "3.41.1-r1"], ["musl", "1.2.3-r4"], ["gcr4-base", "4.0.0-r0"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"]]

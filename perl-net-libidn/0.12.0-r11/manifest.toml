@@ -1,0 +1,15 @@
+checksum = "bfe38f2f6b99356376a227e76406303604e1fa2e2e2f8e07276147cef0cd23ad"
+licence = "Artistic-Perl-1.0 GPL+"
+provides = "perl-net-libidn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-net-libidn-0.12-r11.apk"
+version = "0.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libidn", "1.41.0-r0"]]

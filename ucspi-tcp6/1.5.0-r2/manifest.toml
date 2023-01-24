@@ -1,0 +1,15 @@
+checksum = "5d400837a36797ef1dc70b2d8bd172c4cbb342ac3f2b6cf35a6b5a99e8c84314"
+licence = "Public-Domain"
+provides = "ucspi-tcp6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ucspi-tcp6-1.05-r2.apk"
+version = "1.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

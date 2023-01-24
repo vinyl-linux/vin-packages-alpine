@@ -1,0 +1,15 @@
+checksum = "67627dd9fbf7f362fa40d485382025f2838085de5d6b4c3c0ed268a0d911e9f6"
+licence = "BSD-3-Clause"
+provides = "re2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/re2-dev-2022.06.01-r1.apk"
+version = "2022.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["re2", "2022.6.1-r1"]]

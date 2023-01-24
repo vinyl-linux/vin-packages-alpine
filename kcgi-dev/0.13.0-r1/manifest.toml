@@ -1,0 +1,15 @@
+checksum = "b04e55845610422130c19e9a02c4486617da6a692c6da2a1f7bf2574fb5fc73b"
+licence = "ISC"
+provides = "kcgi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcgi-dev-0.13.0-r1.apk"
+version = "0.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

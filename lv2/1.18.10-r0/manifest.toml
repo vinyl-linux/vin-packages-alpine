@@ -1,0 +1,15 @@
+checksum = "26ad72c364244707b68b1db4f4d0580e86845283f8a3058f09ddfc9bf0bafe1f"
+licence = "ISC"
+provides = "lv2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lv2-1.18.10-r0.apk"
+version = "1.18.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+2.0", "2.24.33-r7"], ["glib", "2.74.5-r0"], ["libsamplerate", "0.2.2-r0"], ["libsndfile", "1.1.0-r2"]]

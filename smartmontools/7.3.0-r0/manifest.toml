@@ -1,0 +1,15 @@
+checksum = "0e31eb3274d4a726cd60e367a88b8cf61d2924872a813193860506142956bd6f"
+licence = "GPL-2.0-or-later"
+provides = "smartmontools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/smartmontools-7.3-r0.apk"
+version = "7.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

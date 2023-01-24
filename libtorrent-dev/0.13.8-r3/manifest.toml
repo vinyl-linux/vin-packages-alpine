@@ -1,0 +1,15 @@
+checksum = "78841d10303d57bbcf299ad82e774cf29913fad08789b8d5eb10e416b3701879"
+licence = "GPL-2.0-or-later"
+provides = "libtorrent-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtorrent-dev-0.13.8-r3.apk"
+version = "0.13.8-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libtorrent", "0.13.8-r3"], ["pkgconf", "1.9.4-r0"]]

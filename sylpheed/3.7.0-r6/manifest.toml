@@ -1,0 +1,15 @@
+checksum = "81d65bcbda1f7978496b6385fe214b079cdd104cd74173e890c23b67262c03d7"
+licence = "GPL-3.0-only"
+provides = "sylpheed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sylpheed-3.7.0-r6.apk"
+version = "3.7.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pinentry-gtk", "1.2.0-r1"], ["gnupg", "2.2.40-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libcrypto3", "3.0.7-r2"], ["gtk+2.0", "2.24.33-r7"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gpgme", "1.18.0-r0"], ["libintl", "0.21.1-r1"], ["libldap", "2.6.3-r6"], ["pango", "1.50.12-r0"], ["libssl3", "3.0.7-r2"]]

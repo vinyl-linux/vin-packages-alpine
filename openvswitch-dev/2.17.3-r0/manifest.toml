@@ -1,0 +1,15 @@
+checksum = "bcdcfc9e5613c1ff64be8b78f2e0d5184e9a914ab8a467f9991f53c8e6fe98d5"
+licence = "Apache-2.0"
+provides = "openvswitch-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openvswitch-dev-2.17.3-r0.apk"
+version = "2.17.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["pkgconf", "1.9.4-r0"]]

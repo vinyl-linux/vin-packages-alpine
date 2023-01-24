@@ -1,0 +1,15 @@
+checksum = "25b4002cef648f9208fd44ae871c48e73dd0568c45939c87890dfc15424bad09"
+licence = "MIT"
+provides = "prosody-filer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prosody-filer-1.0.2-r13.apk"
+version = "1.0.2-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "eda62c70081a04da08e1bad03366f2ede9148f98833afa0ae906fb103de989ea"
+licence = "LGPL-2.1-or-later"
+provides = "py3-udev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-udev-0.24.0-r0.apk"
+version = "0.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"], ["python3", "3.10.9-r1"]]

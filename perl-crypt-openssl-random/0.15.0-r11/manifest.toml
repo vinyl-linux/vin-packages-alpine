@@ -1,0 +1,15 @@
+checksum = "77b24c6c5c54418ffe2270d1d1f47944390495b7b464ed1d2739ee0054a87759"
+licence = "Artistic-1.0 GPL+"
+provides = "perl-crypt-openssl-random"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-crypt-openssl-random-0.15-r11.apk"
+version = "0.15.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "d73c77255066c45de2f5f502e4eb2aa383a915fbddf25fd19eaa3794d71de22a"
+licence = "MIT"
+provides = "cargo-license"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-license-0.5.1-r0.apk"
+version = "0.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

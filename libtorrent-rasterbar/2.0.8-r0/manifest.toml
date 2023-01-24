@@ -1,0 +1,15 @@
+checksum = "f457761f18b113478f4a331a68008f2cb87c2ba488580c3fd591249982d64173"
+licence = "BSD-3-Clause"
+provides = "libtorrent-rasterbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtorrent-rasterbar-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

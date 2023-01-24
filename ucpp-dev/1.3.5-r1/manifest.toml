@@ -1,0 +1,15 @@
+checksum = "65df7ea0ee865287555575000d2f2aadc3e960f90145658f7a1ab840f23af01e"
+licence = "BSD-3-Clause"
+provides = "ucpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ucpp-dev-1.3.5-r1.apk"
+version = "1.3.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libucpp", "1.3.5-r1"], ["pkgconf", "1.9.4-r0"]]

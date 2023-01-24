@@ -1,0 +1,15 @@
+checksum = "be0d8c97d757d5d76e62bec99bad636549fa33d6bd0271b089784d9079b16b40"
+licence = "GPL-3.0-or-later"
+provides = "mosh-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mosh-client-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-client-default", "9.1.0"], ["perl-io-tty", "1.17.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libprotobuf", "3.21.9-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "03f94f2b9e4b847ed18259497c2c953cbd65083e76a29dd0d1ed4fb4f5ff02b6"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-breeze"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-breeze-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["perl", "5.36.0-r0"]]

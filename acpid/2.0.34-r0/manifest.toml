@@ -1,0 +1,15 @@
+checksum = "fbaa6028d5e6ff5d2a9014f07b60bcc53e67d2e43158a5e88833e3b7d854b9a5"
+licence = "GPL-2.0-or-later"
+provides = "acpid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/acpid-2.0.34-r0.apk"
+version = "2.0.34-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

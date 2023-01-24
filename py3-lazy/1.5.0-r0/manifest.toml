@@ -1,0 +1,15 @@
+checksum = "8a42f8b45e010f004e972485b53f244c85e147c7f407abd9bce669b73cd9bdcb"
+licence = "BSD-2-Clause"
+provides = "py3-lazy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-lazy-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

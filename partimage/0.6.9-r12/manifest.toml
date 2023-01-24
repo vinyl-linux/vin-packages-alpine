@@ -1,0 +1,15 @@
+checksum = "58b15dd44883b2aa208427f7a64a07303875507639e78f4d391da12e6982fabb"
+licence = "GPL-2.0-or-later"
+provides = "partimage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/partimage-0.6.9-r12.apk"
+version = "0.6.9-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["newt", "0.52.23-r0"], ["slang", "2.3.3-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

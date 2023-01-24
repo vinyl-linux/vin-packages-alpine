@@ -1,0 +1,15 @@
+checksum = "1825c482e3e27c9122fabef6a8371687ee72062e6e6283502ee82d9404097b10"
+licence = "MIT"
+provides = "fping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fping-5.1-r1.apk"
+version = "5.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

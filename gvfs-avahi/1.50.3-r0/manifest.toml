@@ -1,0 +1,15 @@
+checksum = "5cce908515b277c587f736516f5f8c09e03256b097b4311729b0f7201fbe9858"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-avahi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-avahi-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["avahi-libs", "0.8.0-r6"], ["avahi-glib", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gvfs", "1.50.3-r0"], ["libintl", "0.21.1-r1"]]

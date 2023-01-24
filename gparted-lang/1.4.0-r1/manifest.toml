@@ -1,0 +1,15 @@
+checksum = "4378844a00b79ead50ece38ec0fa6f86a66ca3c028014571f70b08f0c22bda3b"
+licence = "GPL-2.0-or-later"
+provides = "gparted-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gparted-lang-1.4.0-r1.apk"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["e2fsprogs", "1.46.5-r4"], ["ntfs-3g-progs", "2022.10.3-r0"], ["exfatprogs", "1.2.0-r0"]]

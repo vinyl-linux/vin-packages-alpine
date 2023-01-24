@@ -1,0 +1,15 @@
+checksum = "4e395ccc44dbe59f5d3a74b78a6510b3b55f8e98aec925873fc6a62f2547819a"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qt3d-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qt3d-dev-5.15.6_git20220907-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qt5-qt3d", "5.15.6"]]

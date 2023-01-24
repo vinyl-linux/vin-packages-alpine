@@ -1,0 +1,16 @@
+checksum = "5507d819207a966ff1426e3b722b0d9552bbaaaea66bc522586f9b8b10e69d75"
+licence = "GPL-2.0-or-later"
+provides = "vlc-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vlc-libs-3.0.18-r1.apk"
+version = "3.0.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"]]

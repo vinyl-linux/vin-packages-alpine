@@ -1,0 +1,15 @@
+checksum = "f124605a6aafcd6eb65730949c1cf5a99e8e4c730d3c1c9fe8c615a9eaa67b30"
+licence = "MIT"
+provides = "webhook"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webhook-2.8.0-r12.apk"
+version = "2.8.0-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

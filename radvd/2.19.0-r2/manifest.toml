@@ -1,0 +1,15 @@
+checksum = "d5064133f29cdaa896edbf4d2adfccdaf9c546e72679126502e1cc3b594693fc"
+licence = "BSD with advertising"
+provides = "radvd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/radvd-2.19-r2.apk"
+version = "2.19.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

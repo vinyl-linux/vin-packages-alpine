@@ -1,0 +1,15 @@
+checksum = "b99870986ef25aecb187e7c549ca58cd726e1f004ba6382fbdc0f01d8df163a7"
+licence = "PHP-3.01"
+provides = "php81-pecl-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-redis-5.3.7-r0.apk"
+version = "5.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-pecl-igbinary", "3.2.12-r0"], ["php81-session", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["lz4-libs", "1.9.4-r1"], ["zstd-libs", "1.5.2-r9"]]

@@ -1,0 +1,15 @@
+checksum = "bee988059690ba8e37167217f8afde9af325727bbc6a0f5c55ce4aadc1c717c7"
+licence = "MIT"
+provides = "libffi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libffi-3.4.4-r0.apk"
+version = "3.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

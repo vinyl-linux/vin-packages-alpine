@@ -1,0 +1,15 @@
+checksum = "71d7b4b6d4b43e32c68b92dfd7a0fabddc4836c6daade70a4fbb012cca2ce67a"
+licence = "MIT"
+provides = "py3-html5lib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-html5lib-1.1-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r3"], ["py3-webencodings", "0.5.1-r5"]]

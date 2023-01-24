@@ -1,0 +1,15 @@
+checksum = "ceeb630b9eb71145a3f6fb8939d988fb93223d19038208ef0b2711ea421c3046"
+licence = "BSD-2-Clause"
+provides = "liblogging"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/liblogging-1.0.6-r2.apk"
+version = "1.0.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

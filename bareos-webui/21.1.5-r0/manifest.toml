@@ -1,0 +1,15 @@
+checksum = "d7a8de7cd835aa97793a294f34f28e7b800dd117570391bcf6b13aa1d592ff3b"
+licence = "AGPL-3.0"
+provides = "bareos-webui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-webui-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.14-r0"], ["php81-gettext", "8.1.14-r0"], ["php81-mbstring", "8.1.14-r0"], ["php81-session", "8.1.14-r0"], ["php81-ctype", "8.1.14-r0"], ["php81-opcache", "8.1.14-r0"], ["php81-openssl", "8.1.14-r0"]]

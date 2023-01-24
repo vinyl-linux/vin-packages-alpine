@@ -1,0 +1,15 @@
+checksum = "9a36b0d2709e157d60233f5dd00fe8b62bcb9dc0bdaed1cb4d331fe1c43e6d05"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "py3-ceph16-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ceph16-common-16.2.10-r12.apk"
+version = "16.2.10-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "65.6.0-r0"], ["py3-yaml", "6.0.0-r0"]]

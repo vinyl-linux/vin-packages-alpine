@@ -1,0 +1,15 @@
+checksum = "de76c82f163e8548be2d7a0270e0e20799e9d00c182534320324b9a10d72b2a2"
+licence = "MIT"
+provides = "py3-convertdate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-convertdate-2.4.0-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pymeeus", "0.5.11-r2"], ["py3-tz", "2022.6.0-r0"], ["python3", "3.10.9-r1"]]

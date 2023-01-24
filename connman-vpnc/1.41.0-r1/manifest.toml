@@ -1,0 +1,15 @@
+checksum = "9d8f8c6392ca959310ec1ba020c143002ea9890e967addbb7c57d37c5d1d86fd"
+licence = "GPL-2.0-only"
+provides = "connman-vpnc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-vpnc-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["connman", "1.41.0-r1"], ["vpnc", "0.5.3-r10"], ["musl", "1.2.3-r4"]]

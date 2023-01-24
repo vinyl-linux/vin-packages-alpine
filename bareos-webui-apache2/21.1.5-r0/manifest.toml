@@ -1,0 +1,15 @@
+checksum = "50e2924f5d3dd3a97d553f401bd2473c0c2d22230cbd07fc08c56ac29479ff51"
+licence = "AGPL-3.0"
+provides = "bareos-webui-apache2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-webui-apache2-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos-webui", "21.1.5-r0"], ["apache2", "2.4.55-r0"], ["php81-apache2", "8.1.14-r0"]]

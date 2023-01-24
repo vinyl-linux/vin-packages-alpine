@@ -1,0 +1,15 @@
+checksum = "5ca9ffa737e3892f1e403ee03134ba46bb0282b1e57bdf12d9b0caf941d4dd12"
+licence = "BSD-2-Clause"
+provides = "libwpebackend-fdo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwpebackend-fdo-1.14.0-r0.apk"
+version = "1.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-egl", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"], ["libwpe", "1.14.0-r0"]]

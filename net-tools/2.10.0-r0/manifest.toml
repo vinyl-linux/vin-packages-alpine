@@ -1,0 +1,15 @@
+checksum = "4044a549bc2fb2c2cc2625c942618c65d43bc3b6b9a5cbf8bc47c4adcf25cc90"
+licence = "GPL-2.0"
+provides = "net-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/net-tools-2.10-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mii-tool", "2.10.0-r0"], ["musl", "1.2.3-r4"]]

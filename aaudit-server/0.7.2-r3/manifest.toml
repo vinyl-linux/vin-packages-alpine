@@ -1,0 +1,15 @@
+checksum = "fb0dc4785441ee125c1fbf59aeabca69b824f01727904f79b3a81801aa21be59"
+licence = "Unknown"
+provides = "aaudit-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aaudit-server-0.7.2-r3.apk"
+version = "0.7.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aaudit", "0.7.2-r3"], ["git", "2.38.3-r1"], ["lua5.2", "5.2.4-r10"], ["lua5.2-posix", "35.1.0-r0"], ["lua5.2-cjson", "2.1.0-r10"], ["lua5.2-lzlib", "0.4.3-r1"]]

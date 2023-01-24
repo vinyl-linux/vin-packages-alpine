@@ -1,0 +1,15 @@
+checksum = "d09cc23c69bd79aad5bf03a69ec9cf1a8e4628ba8509f013c582f040c2f4b281"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "plasma-settings-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-settings-lang-22.09-r1.apk"
+version = "22.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kded", "5.100.0-r0"], ["kirigami2", "5.100.0-r1"], ["kirigami-addons", "0.5.0-r0"], ["openrc-settingsd", "1.1.0-r0"], ["qt5-qtquickcontrols2", "5.15.6"]]

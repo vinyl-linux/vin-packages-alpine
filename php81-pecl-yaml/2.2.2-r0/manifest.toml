@@ -1,0 +1,15 @@
+checksum = "bb328a8cd5e91e801cb288733223723eaa7d40b9c65c49c195bab15dccde68ab"
+licence = "MIT"
+provides = "php81-pecl-yaml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-yaml-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["yaml", "0.2.5-r0"]]

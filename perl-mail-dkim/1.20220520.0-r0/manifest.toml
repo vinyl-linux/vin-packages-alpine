@@ -1,0 +1,15 @@
+checksum = "9e1d8055e630b3317c7daac36528a34344b459ed9411b9102ba10356c830360e"
+licence = "Artistic-Perl-1.0 GPL+"
+provides = "perl-mail-dkim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-mail-dkim-1.20220520-r0.apk"
+version = "1.20220520.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-net-dns", "1.35.0-r0"], ["perl-net-ip", "1.26.0-r4"], ["perl-mailtools", "2.21.0-r2"], ["perl-crypt-openssl-rsa", "0.33.0-r1"], ["perl-yaml-libyaml", "0.85.0-r0"], ["perl-net-dns-resolver-mock", "1.20220817.0-r0"], ["perl-mail-authenticationresults", "2.20210112.0-r0"]]

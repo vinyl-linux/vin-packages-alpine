@@ -1,0 +1,15 @@
+checksum = "5ca331f401e8379b7ae03f023cbe14e24a492d7e26f9ae799283b149627fd716"
+licence = "Apache-2.0"
+provides = "hstr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hstr-2.5-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"]]

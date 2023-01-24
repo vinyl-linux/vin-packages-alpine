@@ -1,0 +1,15 @@
+checksum = "f2d9df1d5a981fbe74972fc268600a128ae244cc724de4e8020d4a45d8f670f4"
+licence = "GPL-3.0-or-later"
+provides = "font-manager-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-manager-common-0.8.8-r2.apk"
+version = "0.8.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["harfbuzz", "5.3.1-r1"], ["json-glib", "1.6.6-r1"], ["pango", "1.50.12-r0"], ["sqlite-libs", "3.40.1-r0"], ["libxml2", "2.10.3-r1"]]

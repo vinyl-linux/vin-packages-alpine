@@ -1,0 +1,16 @@
+checksum = "e46564ccd1c3014bb329f863d0bbe8a3284924ec0f8c5dac6dd0594fd531371f"
+licence = "AFL-2.1 OR GPL-2.0-or-later"
+provides = "dbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dbus-1.14.4-r0.apk"
+version = "1.14.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libexpat", "2.5.0-r0"]]

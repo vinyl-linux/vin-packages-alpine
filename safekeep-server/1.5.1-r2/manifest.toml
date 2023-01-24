@@ -1,0 +1,15 @@
+checksum = "bf80d253fe542b831e29d03a3f12ae9661850d530a17ff25d6a1531066e3a01b"
+licence = "GPL-2.0-or-later"
+provides = "safekeep-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/safekeep-server-1.5.1-r2.apk"
+version = "1.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["safekeep", "1.5.1-r2"], ["yash-binsh", "2.53.0-r2"]]

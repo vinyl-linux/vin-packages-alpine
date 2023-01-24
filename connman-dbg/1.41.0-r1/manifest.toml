@@ -1,0 +1,15 @@
+checksum = "2bfdd81e2eae54b42cfca6fef1cb44fb26efb2801fb5815ea73a460ab11ca7e1"
+licence = "GPL-2.0-only"
+provides = "connman-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-dbg-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"]]

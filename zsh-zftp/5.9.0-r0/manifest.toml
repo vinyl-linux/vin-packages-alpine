@@ -1,0 +1,15 @@
+checksum = "3e78f1c6abd77be37331a1ee98cdfc76c2a527e9bed55414e809a8dcbb7445b6"
+licence = "custom"
+provides = "zsh-zftp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zsh-zftp-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c8f0adee2ab83d702203cd7cee25a5935152805d15d76e83ba57122ba3f3a546"
+licence = "GPL-2.0-only"
+provides = "ulogd-sqlite3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ulogd-sqlite3-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ulogd", "2.0.8-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

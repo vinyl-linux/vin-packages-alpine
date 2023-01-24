@@ -1,0 +1,15 @@
+checksum = "b2ccf8b74c5172136e6f3c043755a9f6dcc01c2cf85ffde9ac893c6932b3cd8b"
+licence = "GPL-2.0-or-later OFL-1.1 BSD-2-Clause BSD-3-Clause eCos-2.0 IBM-pibs ISC LGPL-2.0-only LGPL-2.1-only X11"
+provides = "u-boot-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/u-boot-tools-2022.10-r0.apk"
+version = "2022.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "b45219b17cdd2826b58584a8bf85cfaee455e9e69e93ce1681f8ca1a8cdc86c0"
+licence = "GPL-3.0-or-later"
+provides = "wimlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wimlib-1.13.6-r0.apk"
+version = "1.13.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"], ["ntfs-3g-libs", "2022.10.3-r0"], ["libxml2", "2.10.3-r1"]]

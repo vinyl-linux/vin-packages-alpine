@@ -1,0 +1,15 @@
+checksum = "3e0639001ca72d5580ad471a53aece05838a8ab4a24383a25c149d2e0b511373"
+licence = "GPL-2.0-or-later"
+provides = "drbd-utils-pacemaker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/drbd-utils-pacemaker-9.22.0-r1.apk"
+version = "9.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["drbd-utils", "9.22.0-r1"]]

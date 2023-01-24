@@ -1,0 +1,15 @@
+checksum = "e8f531b00588131d93c40966d04e0bd9d2eb7b7bfce08cd9fea34eecb3a8a668"
+licence = "LGPL-2.1-or-later"
+provides = "raptor2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/raptor2-2.0.15-r5.apk"
+version = "2.0.15-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libxml2", "2.10.3-r1"], ["libxslt", "1.1.37-r0"], ["yajl", "2.1.0-r5"]]

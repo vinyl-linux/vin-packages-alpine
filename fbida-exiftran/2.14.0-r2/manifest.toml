@@ -1,0 +1,15 @@
+checksum = "bc58f278f69e982fef5172554f8151e50d03216b3dfae35529d019c27ab5a7fb"
+licence = "GPL-2.0-only"
+provides = "fbida-exiftran"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fbida-exiftran-2.14-r2.apk"
+version = "2.14.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexif", "0.6.24-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["pixman", "0.42.2-r0"]]

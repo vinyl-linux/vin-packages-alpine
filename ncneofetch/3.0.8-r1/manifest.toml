@@ -1,0 +1,15 @@
+checksum = "9c61b30971ec337c4025ad5ca68d901fb15af597147f93747dff4f4708a49dfc"
+licence = "Apache-2.0"
+provides = "ncneofetch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ncneofetch-3.0.8-r1.apk"
+version = "3.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["notcurses-libs", "3.0.8-r1"]]

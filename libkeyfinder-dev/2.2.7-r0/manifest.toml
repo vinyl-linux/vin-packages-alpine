@@ -1,0 +1,15 @@
+checksum = "5c03816a46cdf252dbb3b822126baa3d847fbb5306c601cdf3cc1a95128efb22"
+licence = "GPL-3.0-or-later"
+provides = "libkeyfinder-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkeyfinder-dev-2.2.7-r0.apk"
+version = "2.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libkeyfinder", "2.2.7-r0"], ["fftw-dev", "3.3.10-r1"], ["pkgconf", "1.9.4-r0"]]

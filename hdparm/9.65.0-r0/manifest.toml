@@ -1,0 +1,15 @@
+checksum = "4a717a1b26ebe3d0f45db26bb30a20428be7127b82f59037ef91ad9290e289ab"
+licence = "BSD-2-Clause OR GPL-2.0-only"
+provides = "hdparm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hdparm-9.65-r0.apk"
+version = "9.65.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

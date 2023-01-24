@@ -1,0 +1,15 @@
+checksum = "06b61ca4d425ca987b185482f4509400ede3620e2a16f1618737fc8ce3e53fab"
+licence = "GPL-2.0-only"
+provides = "ethtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ethtool-6.0-r0.apk"
+version = "6.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"]]

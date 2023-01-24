@@ -1,0 +1,15 @@
+checksum = "56a1c02c6c1b1ec799b28639c92b9fef6235a2791160e839d93901712be38e53"
+licence = "LGPL-2.0-or-later"
+provides = "fribidi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fribidi-dev-1.0.12-r0.apk"
+version = "1.0.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fribidi", "1.0.12-r0"], ["pkgconf", "1.9.4-r0"]]

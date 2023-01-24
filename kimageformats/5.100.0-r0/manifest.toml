@@ -1,0 +1,15 @@
+checksum = "c091366ecd9bb6bc4dc0e8f99738ea014da0fc2d9e7fd75fb1ede926dc5e117f"
+licence = "LGPL-2.1-or-later"
+provides = "kimageformats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kimageformats-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openexr", "3.1.5-r3"], ["karchive", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libavif", "0.11.1-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libheif", "1.13.0-r0"], ["libjxl", "0.7.0-r0"], ["libraw", "0.20.2-r2"], ["libstdc++", "12.2.1"]]

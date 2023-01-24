@@ -1,0 +1,15 @@
+checksum = "069676dee346404b0489cdbc31339546ca7b4af166c9822f55dfd1ffea42b8d3"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-utils-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libieee1284", "0.2.11-r3"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["sane", "1.1.1-r0"], ["libusb", "1.0.26-r0"], ["libxml2", "2.10.3-r1"]]

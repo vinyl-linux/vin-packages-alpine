@@ -1,0 +1,15 @@
+checksum = "93efd60b823573f4bbfbfc258b76618153013a4fd120e2c6e4046265e3e925d0"
+licence = "GPL-2.0-or-later"
+provides = "squid-lang-hu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/squid-lang-hu-5.7-r0.apk"
+version = "5.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["logrotate", "3.20.1-r3"]]

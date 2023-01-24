@@ -1,0 +1,15 @@
+checksum = "6aef6c6d9acc52206184f8f32b5df9b9ea2bdbb4e343f0400a66fda31a0ff787"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-mime-base64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-mime-base64-3.16-r3.apk"
+version = "3.16.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

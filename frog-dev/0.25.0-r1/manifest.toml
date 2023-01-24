@@ -1,0 +1,15 @@
+checksum = "107d241ed00df9c91da4585726b8b90b869b75f04504f658e9d5df1e294c0ea7"
+licence = "GPL-3.0-only"
+provides = "frog-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frog-dev-0.25-r1.apk"
+version = "0.25.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["frog", "0.25.0-r1"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

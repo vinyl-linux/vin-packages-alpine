@@ -1,0 +1,15 @@
+checksum = "b1461bd46bd86fe2db04379319f881883025da609f03585bdc092dcd253c327c"
+licence = "GPL-3.0-only"
+provides = "recon-ng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/recon-ng-5.1.2-r1.apk"
+version = "5.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dicttoxml", "1.7.4-r6"], ["py3-dnspython", "2.2.1-r0"], ["py3-lxml", "4.9.2-r0"], ["py3-yaml", "6.0.0-r0"], ["py3-mechanize", "0.4.8-r2"], ["py3-requests", "2.28.1-r1"], ["py3-xlsxwriter", "3.0.3-r0"], ["py3-flask", "2.2.2-r0"], ["py3-unicodecsv", "0.14.1-r5"]]

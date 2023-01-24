@@ -1,0 +1,15 @@
+checksum = "4a76e5215559fe33fbe9c4240b344703aaeb71c14c67567c2c6a337164a7a3de"
+licence = "LGPL-2.0-or-later"
+provides = "ivykis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ivykis-0.42.4-r2.apk"
+version = "0.42.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

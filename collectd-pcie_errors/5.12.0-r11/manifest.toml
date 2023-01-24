@@ -1,0 +1,15 @@
+checksum = "44541b1fbe4ae789e8c6c0c8278413ade94b732d0dded19f1da077f09d207da7"
+licence = "GPL-2.0-or-later"
+provides = "collectd-pcie_errors"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-pcie_errors-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"]]

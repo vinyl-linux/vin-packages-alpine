@@ -1,0 +1,15 @@
+checksum = "486064e9c641bca26007636791cc6ed2f1becf263e957f3c052cbcc392338ef1"
+licence = "Apache-2.0"
+provides = "llvm15-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm15-libs-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

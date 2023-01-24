@@ -1,0 +1,15 @@
+checksum = "8e383f3267061dbce20c1c3d64ea0546b81653b90591bec0b58fe9acb9c2f845"
+licence = "MIT"
+provides = "zsh-theme-powerlevel10k"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zsh-theme-powerlevel10k-1.16.1-r0.apk"
+version = "1.16.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gitstatus-zsh-plugin", "1.5.4-r1"], ["zsh", "5.9.0-r0"]]

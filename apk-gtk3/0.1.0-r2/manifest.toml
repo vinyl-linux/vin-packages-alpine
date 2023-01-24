@@ -1,0 +1,15 @@
+checksum = "a105436f96be9509df4c8be8a821f6dc35cc7c59a02db5cf9640421a5893b2a1"
+licence = "MIT"
+provides = "apk-gtk3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apk-gtk3-0.1-r2.apk"
+version = "0.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apk-gtk3-policy", "0.1.0-r2"], ["musl", "1.2.3-r4"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["vte3", "0.70.2-r0"]]

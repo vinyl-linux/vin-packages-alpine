@@ -1,0 +1,15 @@
+checksum = "1ff2746da3ee2fe79dfd2955e384fd4ed049c70bbedb42302423dde8102bd274"
+licence = "Apache-2.0"
+provides = "apache2-ctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-ctl-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lynx", "2.8.9"]]

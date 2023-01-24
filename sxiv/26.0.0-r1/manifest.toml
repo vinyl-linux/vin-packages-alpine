@@ -1,0 +1,15 @@
+checksum = "c2e68d74486f77a242f9d26888d2f7126a252f36a808ebcc7fb18d64189ac939"
+licence = "GPL-2.0"
+provides = "sxiv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sxiv-26-r1.apk"
+version = "26.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.9.1-r2"], ["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["musl", "1.2.3-r4"], ["libexif", "0.6.24-r0"], ["fontconfig", "2.14.1-r0"], ["giflib", "5.2.1-r2"]]

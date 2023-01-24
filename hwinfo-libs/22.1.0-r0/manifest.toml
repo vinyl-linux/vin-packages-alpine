@@ -1,0 +1,15 @@
+checksum = "0fa37202517124beb4438000820deb11fdf0b64e3ec3c34cc0626c7804cbd952"
+licence = "GPL-2.0-or-later"
+provides = "hwinfo-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hwinfo-libs-22.1-r0.apk"
+version = "22.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"], ["libx86emu", "3.5.0-r0"]]

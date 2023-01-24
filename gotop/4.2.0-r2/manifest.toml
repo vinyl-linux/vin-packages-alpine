@@ -1,0 +1,15 @@
+checksum = "a3eb3cecccdf7ff0fb70908f8eb6915feeb60750d1015c74fa1e5cf87f815d05"
+licence = "AGPL-3.0-or-later"
+provides = "gotop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gotop-4.2.0-r2.apk"
+version = "4.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["procps", "3.3.17-r2"], ["musl", "1.2.3-r4"]]

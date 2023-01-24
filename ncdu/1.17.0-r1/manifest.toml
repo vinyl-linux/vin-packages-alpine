@@ -1,0 +1,15 @@
+checksum = "8230f12b81e596b9fd28c50df59efc2610e511d3490269112609f7b840245369"
+licence = "MIT"
+provides = "ncdu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ncdu-1.17-r1.apk"
+version = "1.17.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

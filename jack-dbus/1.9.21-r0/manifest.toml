@@ -1,0 +1,15 @@
+checksum = "eb414f9cc833cc8a0b0a9b934c01b23e145e8efc6764d1f9d491d4f9af4d9771"
+licence = "GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "jack-dbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jack-dbus-1.9.21-r0.apk"
+version = "1.9.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libexpat", "2.5.0-r0"], ["jack", "1.9.21-r0"]]

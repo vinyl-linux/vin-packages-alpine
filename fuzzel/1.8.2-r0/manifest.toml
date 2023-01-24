@@ -1,0 +1,15 @@
+checksum = "a1bae340e8b2020076d8bd5416e2be547375df3ee4f4ae070775d00025a2c944"
+licence = "MIT"
+provides = "fuzzel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fuzzel-1.8.2-r0.apk"
+version = "1.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fcft", "3.1.5-r0"], ["fontconfig", "2.14.1-r0"], ["glib", "2.74.5-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["librsvg", "2.55.1-r0"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

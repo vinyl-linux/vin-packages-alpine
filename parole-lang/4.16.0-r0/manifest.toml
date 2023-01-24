@@ -1,0 +1,15 @@
+checksum = "d7416673ed6687486df13c562d6cccb88a13621be74a1edcff5eda19a3bcb9b4"
+licence = "GPL-2.0-or-later"
+provides = "parole-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/parole-lang-4.16.0-r0.apk"
+version = "4.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-good", "1.20.5-r0"]]

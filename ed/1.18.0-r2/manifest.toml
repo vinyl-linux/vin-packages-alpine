@@ -1,0 +1,15 @@
+checksum = "197ba9da0846e3b8fc7f876ffe59332ab81d6212b68949c928209703f3cf863f"
+licence = "GPL-2.0-or-later"
+provides = "ed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ed-1.18-r2.apk"
+version = "1.18.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1b38183e2fa89f36455fbde3c3dc5579f2103d4cecd3c1bed902bfa1068ddb4d"
+licence = "Apache-2.0 AND GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "rsyslog-crypto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-crypto-8.2212.0-r0.apk"
+version = "8.2212.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsyslog", "8.2212.0-r0"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"]]

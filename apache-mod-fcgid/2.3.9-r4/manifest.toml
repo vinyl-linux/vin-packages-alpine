@@ -1,0 +1,15 @@
+checksum = "fe6f60a4a4729ba65551c229f4314cecbbe9f0929755cf31effb064938e88730"
+licence = "Apache-2.0"
+provides = "apache-mod-fcgid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache-mod-fcgid-2.3.9-r4.apk"
+version = "2.3.9-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["musl", "1.2.3-r4"]]

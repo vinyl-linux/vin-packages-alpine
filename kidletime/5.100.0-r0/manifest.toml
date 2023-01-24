@@ -1,0 +1,15 @@
+checksum = "9e9190f6c7f71591516ce69a2b9504d76ab90d7cf7c1eef3ae59c701933e9de5"
+licence = "LGPL-2.0-only"
+provides = "kidletime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kidletime-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["libxcb", "1.15.0-r0"]]

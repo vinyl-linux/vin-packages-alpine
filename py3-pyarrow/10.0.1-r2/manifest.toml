@@ -1,0 +1,15 @@
+checksum = "04750c68604ccabaf99aff2f434e6856ae6b6cc528f5105cb7a70e5753bd7c4b"
+licence = "Apache-2.0"
+provides = "py3-pyarrow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyarrow-10.0.1-r2.apk"
+version = "10.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cffi", "1.15.1-r0"], ["py3-numpy", "1.23.4-r0"], ["apache-arrow", "10.0.1-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

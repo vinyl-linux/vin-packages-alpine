@@ -1,0 +1,15 @@
+checksum = "7f46e6f23206c75665e1bbfd8051dc2e50ff284edef99404147ba4b48e7f52a1"
+licence = "MIT"
+provides = "py3-branca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-branca-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-jinja2", "3.1.2-r0"]]

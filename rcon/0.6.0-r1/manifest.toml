@@ -1,0 +1,15 @@
+checksum = "beab539144def02598750a579ca9e840c91252bb20eb03f3a4a07912fc5d5882"
+licence = "BSD-2-Clause"
+provides = "rcon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rcon-0.6-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0ed927f4183663ce8f36d8b3a350466e1410e638f742a39b8920242fc5bb580e"
+licence = "GPL-3.0-only AND MIT"
+provides = "rtkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rtkit-0.13-r2.apk"
+version = "0.13.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["dbus-libs", "1.14.4-r0"]]

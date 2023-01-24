@@ -1,0 +1,15 @@
+checksum = "88d74e44dfbd8d989d46bfd2d1a0570c6fb75d7706d4d545f2db3d6a3371d6a8"
+licence = "MPL-2.0"
+provides = "libvisio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvisio-dev-0.1.7-r7.apk"
+version = "0.1.7-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvisio", "0.1.7-r7"], ["icu-dev", "72.1.0-r1"], ["librevenge-dev", "0.0.4-r10"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1ecd35011e1bbb43a5fd2cbfac49184f7a3db7ccb3fcf1477909f524b293073a"
+licence = "ISC"
+provides = "lowdown-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lowdown-libs-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

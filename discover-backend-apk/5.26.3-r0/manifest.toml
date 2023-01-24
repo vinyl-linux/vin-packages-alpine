@@ -1,0 +1,15 @@
+checksum = "4a86831d097ee487fa7bc94a564b109de68e5927da20fa2169d239a1bc7c6698"
+licence = "LGPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND GFDL-1.2-only"
+provides = "discover-backend-apk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/discover-backend-apk-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["appstream-qt", "0.15.5-r2"], ["discover", "5.26.3-r0"], ["kauth", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kjobwidgets", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libapk-qt", "0.4.2-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

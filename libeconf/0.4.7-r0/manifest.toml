@@ -1,0 +1,15 @@
+checksum = "f1e86c89e31d7fd5d64013bbcb379bfea8a955ab5fc348a58fe3a17ac8b43183"
+licence = "MIT"
+provides = "libeconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libeconf-0.4.7-r0.apk"
+version = "0.4.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

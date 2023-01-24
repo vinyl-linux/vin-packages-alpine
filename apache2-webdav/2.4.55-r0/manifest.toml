@@ -1,0 +1,15 @@
+checksum = "2cb6d8fc20cec618a0bd1afa2eab9be9202c98bf6665d8729f333ba2bf26706a"
+licence = "Apache-2.0"
+provides = "apache2-webdav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-webdav-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["musl", "1.2.3-r4"]]

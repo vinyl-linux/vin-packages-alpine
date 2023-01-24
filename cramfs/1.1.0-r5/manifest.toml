@@ -1,0 +1,15 @@
+checksum = "f6e6d592d15e6955be88fdf353ab355d3b360537661d385776db53f12a33c6a9"
+licence = "GPL-2.0-or-later"
+provides = "cramfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cramfs-1.1-r5.apk"
+version = "1.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

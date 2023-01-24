@@ -1,0 +1,15 @@
+checksum = "121f04a728cfcc44a4b101bf162b0fe6de987e25d76ef7610e3470301f801a25"
+licence = "GPL-2.0-or-later"
+provides = "exim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["pcre2", "10.42.0-r0"], ["libspf2", "1.2.11-r0"], ["libssl3", "3.0.7-r2"], ["tdb-libs", "1.4.7-r0"]]

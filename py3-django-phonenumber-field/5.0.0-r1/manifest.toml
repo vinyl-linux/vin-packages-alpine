@@ -1,0 +1,15 @@
+checksum = "9fdcca63acf748cb1cc0f385b4a19b92aeb24faa395edb30ff8a833d3a94850e"
+licence = "MIT"
+provides = "py3-django-phonenumber-field"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-django-phonenumber-field-5.0.0-r1.apk"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-babel", "2.11.0-r0"], ["py3-django", "3.2.16-r0"], ["py3-phonenumbers", "8.12.51-r0"]]

@@ -1,0 +1,15 @@
+checksum = "a53a64edd5769fa4b3b1ba9050641465066f792552cd2eb685c966670142ce3a"
+licence = "Apache-2.0"
+provides = "libcouchbase"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcouchbase-3.3.3-r0.apk"
+version = "3.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

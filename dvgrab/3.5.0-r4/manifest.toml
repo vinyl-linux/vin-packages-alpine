@@ -1,0 +1,15 @@
+checksum = "740b1144d76c9a51a3d8d996a02091482ef320c57d9955aa0445ec1d1961100c"
+licence = "GPL-2.0-or-later"
+provides = "dvgrab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dvgrab-3.5-r4.apk"
+version = "3.5.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libavc1394", "0.5.4-r3"], ["musl", "1.2.3-r4"], ["libdv", "1.0.0-r7"], ["libgcc", "12.2.1"], ["libiec61883", "1.2.0-r3"], ["libjpeg-turbo", "2.1.4-r0"], ["libraw1394", "2.1.2-r3"], ["libstdc++", "12.2.1"]]

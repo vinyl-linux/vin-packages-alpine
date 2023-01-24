@@ -1,0 +1,15 @@
+checksum = "fa66f22c79bd403262ecc66816be6960340c033ef6467174ee5f8ce977e652fc"
+licence = "BSD-3-Clause"
+provides = "osl-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/osl-libs-1.12.7.0-r0.apk"
+version = "1.12.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["openimageio", "2.4.5.0-r0"], ["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["clang15-libs", "15.0.7-r0"], ["libgcc", "12.2.1"], ["pugixml", "1.13.0-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "8f74e460630a38658db8e73fc56f4d310d0a2f2fed34367ba0358f909a35aae6"
+licence = "GPL-3.0-or-later"
+provides = "gitstatus-bash-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gitstatus-bash-plugin-1.5.4-r1.apk"
+version = "1.5.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gitstatus", "1.5.4-r1"], ["bash", "5.2.15-r0"]]

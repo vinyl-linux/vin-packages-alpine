@@ -1,0 +1,15 @@
+checksum = "c08a6bf51461066b6bd0f576a6c7649b557e0c5245ac65ff4b39627a786cb800"
+licence = "GPL-2.0-or-later"
+provides = "cheese-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cheese-dev-43.0-r1.apk"
+version = "43.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cheese-libs", "43.0.0-r1"], ["clutter-dev", "1.26.4-r1"], ["clutter-gst-dev", "3.0.27-r1"], ["clutter-gtk-dev", "1.8.4-r2"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["gstreamer-dev", "1.20.5-r0"], ["gst-plugins-base-dev", "1.20.5-r0"], ["gst-plugins-bad-dev", "1.20.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libx11-dev", "1.8.3-r1"], ["pkgconf", "1.9.4-r0"]]

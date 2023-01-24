@@ -1,0 +1,15 @@
+checksum = "d66806bd09fe613540c1071521ba95876f9ffdde920d35a615c1c6254e332e9d"
+licence = "BSD-3-Clause"
+provides = "yadifa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yadifa-2.6.0-r0.apk"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

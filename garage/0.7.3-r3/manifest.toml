@@ -1,0 +1,15 @@
+checksum = "6582d6e6e641178b9db83434af05b823c8c1101436bed512d523e5fa3c2b27ff"
+licence = "AGPL-3.0"
+provides = "garage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/garage-0.7.3-r3.apk"
+version = "0.7.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libsodium", "1.0.18-r2"], ["zstd-libs", "1.5.2-r9"]]

@@ -1,0 +1,15 @@
+checksum = "99f0f15e304bfa8f1514caa8d9bf19be43d8000844a4cce4f784bbf11007bcd8"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-sodium"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-sodium-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["libsodium", "1.0.18-r2"]]

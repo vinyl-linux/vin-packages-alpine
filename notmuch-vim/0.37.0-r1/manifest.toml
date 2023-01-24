@@ -1,0 +1,15 @@
+checksum = "76408d4bccbf491fc68480b65d1fc852e33a2ac9ecf5a86ab2efd3a5f9bfd873"
+licence = "GPL-3.0-or-later"
+provides = "notmuch-vim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notmuch-vim-0.37-r1.apk"
+version = "0.37.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gvim", "9.0.999-r0"], ["notmuch", "0.37.0-r1"]]

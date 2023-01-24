@@ -1,0 +1,15 @@
+checksum = "6ed46a741f3386f4435de3f539420af68dc68213f6a16885a5c29ca61208b8fd"
+licence = "GPL-2.0-only"
+provides = "mmsd-tng-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mmsd-tng-tools-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mobile-broadband-provider-info", "20221107.0.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

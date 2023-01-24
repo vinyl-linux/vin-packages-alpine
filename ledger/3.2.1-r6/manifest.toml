@@ -1,0 +1,15 @@
+checksum = "32b27e83c94d25d609a752b85877a1841ab70f51410ff92a020a3ed89b083906"
+licence = "BSD-3-Clause"
+provides = "ledger"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ledger-3.2.1-r6.apk"
+version = "3.2.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-filesystem", "1.80.0-r3"], ["boost1.80-iostreams", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["mpfr4", "4.1.0-r0"], ["libstdc++", "12.2.1"]]

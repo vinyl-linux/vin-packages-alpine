@@ -1,0 +1,15 @@
+checksum = "73499a025347e4cb5640a06688544eac35307fd4bef1c8299723e4195b6e9ef0"
+licence = "ImageMagick"
+provides = "imagemagick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/imagemagick-7.1.0.52-r0.apk"
+version = "7.1.0.52-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick-libs", "7.1.0.52-r0"], ["libx11", "1.8.3-r1"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["ghostscript", "10.0.0-r0"], ["libheif", "1.13.0-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["libjxl", "0.7.0-r0"], ["xz-libs", "5.2.9-r0"], ["libpng", "1.6.38-r0"], ["librsvg", "2.55.1-r0"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "00cbb6248546018e6aaa347ff0619b999f499ca9fa15bf3374e22892bebc7356"
+licence = "ISC"
+provides = "signify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/signify-31-r0.apk"
+version = "31.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"]]

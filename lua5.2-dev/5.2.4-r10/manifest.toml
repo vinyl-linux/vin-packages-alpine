@@ -1,0 +1,15 @@
+checksum = "2ab3d6eda363d83a1614a42ba091ba4487adf5c85c05f9946fcc51dc84c42d24"
+licence = "MIT"
+provides = "lua5.2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.2-dev-5.2.4-r10.apk"
+version = "5.2.4-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"], ["lua5.2-libs", "5.2.4-r10"], ["pkgconf", "1.9.4-r0"]]

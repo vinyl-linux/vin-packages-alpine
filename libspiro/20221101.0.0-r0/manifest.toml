@@ -1,0 +1,15 @@
+checksum = "f979583f9f87758eca428bfac0d08ddae8eeceb7fadb84a329c9f4caf51e479c"
+licence = "GPL-3.0-or-later"
+provides = "libspiro"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspiro-20221101-r0.apk"
+version = "20221101.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

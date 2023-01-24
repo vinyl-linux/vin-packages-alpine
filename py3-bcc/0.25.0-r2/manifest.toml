@@ -1,0 +1,15 @@
+checksum = "447e97e07d287e1867c02bcfb13911e744f7cd1d642bc0d8503b77fa613c528b"
+licence = "Apache-2.0"
+provides = "py3-bcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-bcc-0.25.0-r2.apk"
+version = "0.25.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bcc", "0.25.0-r2"], ["python3", "3.10.9-r1"]]

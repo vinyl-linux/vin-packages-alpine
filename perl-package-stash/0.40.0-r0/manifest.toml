@@ -1,0 +1,15 @@
+checksum = "df017b6cf809ff2ae50c1d8cd487aeac213c92e13a1847ee2206f929cfd2f7f8"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-package-stash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-package-stash-0.40-r0.apk"
+version = "0.40.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-dist-checkconflicts", "0.11.0-r2"], ["perl-module-implementation", "0.9.0-r3"]]

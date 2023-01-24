@@ -1,0 +1,15 @@
+checksum = "6cad60017859968b67846bc900ad0f103c4ad12e634cf495c0cc8dc562477d2f"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT"
+provides = "e2fsprogs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/e2fsprogs-dev-1.46.5-r4.apk"
+version = "1.46.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["util-linux-dev", "2.38.1-r1"], ["gawk", "5.1.1-r1"], ["e2fsprogs-libs", "1.46.5-r4"], ["libcom_err", "1.46.5-r4"], ["pkgconf", "1.9.4-r0"]]

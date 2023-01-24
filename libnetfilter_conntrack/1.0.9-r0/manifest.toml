@@ -1,0 +1,15 @@
+checksum = "26c8757779c5e21fe3378e347dc5b03d8766a6ba3f7ff6d82cdfcce3732e29ce"
+licence = "GPL-2.0-or-later"
+provides = "libnetfilter_conntrack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnetfilter_conntrack-1.0.9-r0.apk"
+version = "1.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"], ["libnfnetlink", "1.0.2-r0"]]

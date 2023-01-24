@@ -1,0 +1,15 @@
+checksum = "d8f980cec4ee557928a40847c27720e7b5a6dc48efa20432aae2a6f19752376e"
+licence = "MIT"
+provides = "taplo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/taplo-0.8.0-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

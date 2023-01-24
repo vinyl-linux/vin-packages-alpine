@@ -1,0 +1,15 @@
+checksum = "d0ea8e281bbd82738c2e481cdc5c92adb9264c327886f52295c7291ea5aec78b"
+licence = "MIT"
+provides = "popt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/popt-dev-1.19-r0.apk"
+version = "1.19.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["popt", "1.19.0-r0"]]

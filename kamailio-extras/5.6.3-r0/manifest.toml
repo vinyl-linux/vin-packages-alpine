@@ -1,0 +1,15 @@
+checksum = "0d99c4361e31b7e6d682c7c29579af330d7cff8b76bb7131831df214ad04a532"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-extras-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["hiredis", "1.0.2-r1"]]

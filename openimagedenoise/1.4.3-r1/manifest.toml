@@ -1,0 +1,15 @@
+checksum = "886a84ca8f34e1b3816227e48aac57fc0ea1c189877c683efec47fe49f4ca77a"
+licence = "Apache-2.0"
+provides = "openimagedenoise"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openimagedenoise-1.4.3-r1.apk"
+version = "1.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2d79400b702b7ce0f074ee965a436ee3b9919999dc438aa2fb84b17f61c5c5d0"
+licence = "GPL-2.0-only"
+provides = "linux-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-tools-dev-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pciutils-dev", "3.9.0-r0"], ["readline-dev", "8.2.0-r0"], ["gettext-dev", "0.21.1-r1"], ["cpupower", "5.15.74-r0"], ["linux-tools-usbip", "5.15.74-r0"]]

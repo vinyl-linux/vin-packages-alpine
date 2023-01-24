@@ -1,0 +1,15 @@
+checksum = "440fdf45befb50cda034ad27e44e1c3f4d007415a5055ed63f10d1a49a6c69c3"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "gnome-settings-daemon-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-settings-daemon-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pulseaudio", "16.1.0-r6"]]

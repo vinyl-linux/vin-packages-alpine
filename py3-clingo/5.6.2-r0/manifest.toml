@@ -1,0 +1,15 @@
+checksum = "eb05c4dce669e6509f55a3cc6ea38e22b5c8ad6329f4f30471161fce25f63b1a"
+licence = "MIT"
+provides = "py3-clingo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-clingo-5.6.2-r0.apk"
+version = "5.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["clingo-libs", "5.6.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ad1822b5de51e2429bb521b37f195a1a675ce29d0c7001dbd8143b4fdbbddbe1"
+licence = "BSD-2-Clause"
+provides = "tpm2-tss-engine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-tss-engine-1.1.0-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["tpm2-tss-esys", "3.2.0-r0"], ["tpm2-tss-mu", "3.2.0-r0"], ["tpm2-tss-tctildr", "3.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "61167f5ecd941b7841477a13999a82eaa7442a16554ac4cf27fcb8514e3216a3"
+licence = "GPL-3.0-or-later"
+provides = "source-highlight"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/source-highlight-3.1.9-r7.apk"
+version = "3.1.9-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

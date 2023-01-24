@@ -1,0 +1,15 @@
+checksum = "f5cddbba733efd91a00e6c7f1e84c383d1fa7ce135938d85ddfd720da85ee5f2"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-shiftcolumn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-shiftcolumn-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"]]

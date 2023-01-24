@@ -1,0 +1,15 @@
+checksum = "f84c859ec91ee8e805c12355ebecaaed44c651e53bcb85b11074f37017c1716d"
+licence = "GPL-2.0"
+provides = "cgdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cgdb-0.8.0-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdb", "12.1.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"], ["libstdc++", "12.2.1"]]

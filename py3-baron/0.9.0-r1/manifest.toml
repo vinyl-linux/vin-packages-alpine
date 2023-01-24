@@ -1,0 +1,15 @@
+checksum = "651a95d5ab0e4c2181f454556a3dab45338b1adf7c031660de1f318fbea8fafb"
+licence = "LGPL-3.0-or-later"
+provides = "py3-baron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-baron-0.9-r1.apk"
+version = "0.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-rply", "0.7.8-r2"]]

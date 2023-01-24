@@ -1,0 +1,15 @@
+checksum = "f7a6b23904ea039d043673e32ffcc0101562130fd0ea3df601fb93fecebbba2a"
+licence = "GPL-3.0-or-later"
+provides = "corecollector"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corecollector-0.3.5-r2.apk"
+version = "0.3.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdb", "12.1.0-r2"], ["musl-dbg", "1.2.3-r4"], ["yash-binsh", "2.53.0-r2"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"], ["ldc-runtime", "1.30.0-r1"], ["llvm-libunwind", "15.0.7-r0"]]

@@ -1,0 +1,15 @@
+checksum = "89caba4c789e24522a0ee501099d7eed7d27a8d88fc78b256cc62a4fd1466134"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kquickcharts-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kquickcharts-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kquickcharts", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["qt5-qtquickcontrols2-dev", "5.15.6"]]

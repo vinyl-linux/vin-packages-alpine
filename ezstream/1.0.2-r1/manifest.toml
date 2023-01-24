@@ -1,0 +1,15 @@
+checksum = "d23352e550f19f483247a740b44ee22013e2391579e01c9a0a689e4a5ed50f5d"
+licence = "GPL-2.0"
+provides = "ezstream"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ezstream-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libshout", "2.4.6-r1"], ["taglib", "1.13.0-r0"], ["libxml2", "2.10.3-r1"]]

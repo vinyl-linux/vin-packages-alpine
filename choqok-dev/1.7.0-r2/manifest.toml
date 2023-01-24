@@ -1,0 +1,15 @@
+checksum = "e87ac0f14cc22b41f42f10427cd082f7504cc2f35583eebc4026430759a0a475"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "choqok-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/choqok-dev-1.7.0-r2.apk"
+version = "1.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["choqok", "1.7.0-r2"]]

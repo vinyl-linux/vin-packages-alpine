@@ -1,0 +1,15 @@
+checksum = "2c798217b1fb69d1af214b91186f48257956fd3b55ed6c181716701247ca42aa"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-audio-pa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-audio-pa-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpulse", "16.1.0-r6"]]

@@ -1,0 +1,15 @@
+checksum = "7de5ab953ea1f83553713142dbd967db73582ce145b4c74509a13ab8235e4935"
+licence = "GPL-3.0-or-later"
+provides = "mokutil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mokutil-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["efivar-libs", "38.0.0-r1"], ["keyutils-libs", "1.6.3-r1"]]

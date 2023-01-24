@@ -1,0 +1,15 @@
+checksum = "c898fc9fd6d47809a2c8393ae27293a23f7e7b2fe5d4cc6c263da668fff4e63b"
+licence = "BSD-2-Clause"
+provides = "dos2unix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dos2unix-7.4.3-r1.apk"
+version = "7.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

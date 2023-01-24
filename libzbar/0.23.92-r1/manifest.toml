@@ -1,0 +1,15 @@
+checksum = "53b5add7be3d0c95be31d47f7293466e7686c921486ddfc34cde1ab7388d2e3b"
+licence = "LGPL-2.0-or-later"
+provides = "libzbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzbar-0.23.92-r1.apk"
+version = "0.23.92-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxv", "1.0.11-r3"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libjpeg-turbo", "2.1.4-r0"]]

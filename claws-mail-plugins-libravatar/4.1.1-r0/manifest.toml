@@ -1,0 +1,15 @@
+checksum = "6fcd6b507782cfa68835c6db2b5c623162ac56d978fed5f19989477a23bcdc91"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-libravatar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/claws-mail-plugins-libravatar-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.1.1-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"]]

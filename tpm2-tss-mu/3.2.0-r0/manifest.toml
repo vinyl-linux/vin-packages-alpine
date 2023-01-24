@@ -1,0 +1,15 @@
+checksum = "529df088ca3e882eaa7e1c02cb3ca19cdacb1b2d4cd3ea6d64370270b2775390"
+licence = "BSD-2-Clause"
+provides = "tpm2-tss-mu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-tss-mu-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

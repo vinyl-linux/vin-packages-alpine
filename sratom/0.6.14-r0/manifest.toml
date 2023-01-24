@@ -1,0 +1,15 @@
+checksum = "c044cd6a3b0493e05843dfd59ec367f2e38a836a7cdcd21bc661a0207bfc544a"
+licence = "ISC"
+provides = "sratom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sratom-0.6.14-r0.apk"
+version = "0.6.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["serd", "0.30.16-r0"], ["sord", "0.16.14-r0"]]

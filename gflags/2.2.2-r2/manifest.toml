@@ -1,0 +1,15 @@
+checksum = "3951c298bc062fc84bdb577e89b0aae758860b9b6db0475058a12fc37380f96d"
+licence = "BSD-3-Clause"
+provides = "gflags"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gflags-2.2.2-r2.apk"
+version = "2.2.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

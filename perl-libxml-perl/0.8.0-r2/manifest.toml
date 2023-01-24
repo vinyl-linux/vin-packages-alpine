@@ -1,0 +1,15 @@
+checksum = "4ae0c3e486b58fabc07443a8963bfc3c6561790c1f1ee95c56be7faaf78b3102"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-libxml-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-libxml-perl-0.08-r2.apk"
+version = "0.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-xml-parser", "2.46.0-r3"]]

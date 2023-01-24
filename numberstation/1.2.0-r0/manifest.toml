@@ -1,0 +1,15 @@
+checksum = "242d585c8bb2605fd7c337b98e499ff3d0050d3d4fa2b3e197cacb9d44a681ee"
+licence = "GPL-3.0-or-later"
+provides = "numberstation"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/numberstation-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0", "3.24.36-r0"], ["libhandy1", "1.8.0-r1"], ["py3-gobject3", "3.42.2-r0"], ["py3-keyring", "23.11.0-r0"], ["py3-otp", "2.7.0-r0"], ["python3", "3.10.9-r1"]]

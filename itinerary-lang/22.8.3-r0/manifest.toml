@@ -1,0 +1,15 @@
+checksum = "3516d405c35640e9f7f4d88bb57b843dc375af3256847f4b40b33e50b8350557"
+licence = "BSD-3-Clause AND LGPL-2.0-or-later"
+provides = "itinerary-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/itinerary-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["kopeninghours", "22.8.3-r0"], ["prison", "5.100.0-r0"], ["qt5-qtlocation", "5.15.6"], ["tzdata", "2022.0.0-f-r1"]]

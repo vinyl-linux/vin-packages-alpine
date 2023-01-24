@@ -1,0 +1,15 @@
+checksum = "7455c0322ce31ccdef89f0cacb06ea848da21c9ce3d6d3d462dbf4aa61ec9ea1"
+licence = "BSD-2-Clause"
+provides = "php81-pecl-psr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-psr-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

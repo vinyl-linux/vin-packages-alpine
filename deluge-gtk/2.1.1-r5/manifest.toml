@@ -1,0 +1,15 @@
+checksum = "94dfa6f4ccb3114a1dcd5e92bae4670abe2877b38409d43d7882891a5c8972ca"
+licence = "GPL-3.0-or-later"
+provides = "deluge-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/deluge-gtk-2.1.1-r5.apk"
+version = "2.1.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["deluge", "2.1.1-r5"], ["gtk+3.0", "3.24.36-r0"], ["librsvg", "2.55.1-r0"], ["py3-cairo", "1.21.0-r1"], ["py3-gobject3", "3.42.2-r0"], ["xdg-utils", "1.1.3-r4"]]

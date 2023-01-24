@@ -1,0 +1,15 @@
+checksum = "bcfcd0a987b7934266722df68add12774001fb46ee47400dda435dd35cba150d"
+licence = "GPL-3.0"
+provides = "repmgr-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/repmgr-daemon-5.3.3-r1.apk"
+version = "5.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["repmgr", "5.3.3-r1"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "7d8838664cfff30fad23089f4479705be35cdf505f51dbc6f9d62856830d3289"
+licence = "Apache-2.0"
+provides = "libjxl-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libjxl-tools-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openexr", "3.1.5-r3"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["giflib", "5.2.1-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["libjxl", "0.7.0-r0"], ["lcms2", "2.14.0-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"]]

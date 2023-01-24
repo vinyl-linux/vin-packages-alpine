@@ -1,0 +1,15 @@
+checksum = "11737275c8bf96642ea795dece6453e626b5660079ea9f18e9bc077277d4baa6"
+licence = "GPL-2.0-or-later"
+provides = "collectd-gps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-gps-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["gpsd", "3.24.0-r0"]]

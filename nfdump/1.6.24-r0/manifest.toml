@@ -1,0 +1,15 @@
+checksum = "d16301a88b8504905efa6b441a1b8154ef8259dba525550c4d83a625c99b1442"
+licence = "BSD-3-Clause"
+provides = "nfdump"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nfdump-1.6.24-r0.apk"
+version = "1.6.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"]]

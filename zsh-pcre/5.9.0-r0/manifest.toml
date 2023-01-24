@@ -1,0 +1,15 @@
+checksum = "46f9c9ee5f8a2f1f3ddb6aa6f857d3dec0547f7538c421b976df672a7239ef87"
+licence = "custom"
+provides = "zsh-pcre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zsh-pcre-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"], ["musl", "1.2.3-r4"], ["pcre", "8.45.0-r2"]]

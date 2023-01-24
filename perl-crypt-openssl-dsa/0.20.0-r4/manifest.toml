@@ -1,0 +1,15 @@
+checksum = "4044445f848e16c19b4bfe71a268381bf3a1de25037c686038cef14525ed1103"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-openssl-dsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-crypt-openssl-dsa-0.20-r4.apk"
+version = "0.20.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

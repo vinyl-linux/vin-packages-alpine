@@ -1,0 +1,15 @@
+checksum = "ca519cb6a64609e24f8a9cd916bf0ac2f84c4402dd9692cdb5388dca12a900d1"
+licence = "Apache-2.0"
+provides = "znc-modpython"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/znc-modpython-1.8.2-r12.apk"
+version = "1.8.2-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["znc", "1.8.2-r12"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["python3", "3.10.9-r1"], ["libstdc++", "12.2.1"]]

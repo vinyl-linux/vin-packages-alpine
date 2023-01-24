@@ -1,0 +1,15 @@
+checksum = "cda69b7431590c5972c9dde5cc76b17023b309ed793d39838d2893bc7d3f3657"
+licence = "GPL-3.0-only"
+provides = "hledger"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hledger-1.28-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["ncurses-libs", "6.3.0"]]

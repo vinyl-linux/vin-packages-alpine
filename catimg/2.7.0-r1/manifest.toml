@@ -1,0 +1,15 @@
+checksum = "f7be4ce81974b656bd747f10953f7f020c035138822bd0d87497206158b2e057"
+licence = "MIT"
+provides = "catimg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/catimg-2.7.0-r1.apk"
+version = "2.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "918b11aacbac00af0c0d8ede0d36be83f96172d64ca2867d1c6c4a0b67c2e8cd"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-loadbindings"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-loadbindings-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

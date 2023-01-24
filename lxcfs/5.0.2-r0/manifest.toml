@@ -1,0 +1,15 @@
+checksum = "9b3a7702d38780e39362024c3501bfe6b5dd00a5c050548f3c13d8e434c07f41"
+licence = "Apache-2.0"
+provides = "lxcfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxcfs-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shadow-subids", "4.13.0-r0"], ["uidmapshift", "0.1.0-r0"], ["musl", "1.2.3-r4"], ["fuse3-libs", "3.12.0-r0"], ["libgcc", "12.2.1"]]

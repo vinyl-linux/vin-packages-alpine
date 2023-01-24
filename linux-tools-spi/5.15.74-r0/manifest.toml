@@ -1,0 +1,15 @@
+checksum = "2f473b374c6ce467ec270043636bd8ec20486886393e53b9a2e47574e95c8428"
+licence = "GPL-2.0-only"
+provides = "linux-tools-spi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-tools-spi-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

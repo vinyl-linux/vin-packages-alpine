@@ -1,0 +1,15 @@
+checksum = "dc8218d85ee721ac90de7820d81ed3997199740f5d0299686bd48d8a073fefeb"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtquicktimeline"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtquicktimeline-5.15.6_git20220816-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

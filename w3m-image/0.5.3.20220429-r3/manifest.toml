@@ -1,0 +1,15 @@
+checksum = "3e836a426d2299604556347b2589095733cb5f53120723ed90033c2ed94cdbca"
+licence = "MIT"
+provides = "w3m-image"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/w3m-image-0.5.3.20220429-r3.apk"
+version = "0.5.3.20220429-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.9.1-r2"], ["musl", "1.2.3-r4"]]

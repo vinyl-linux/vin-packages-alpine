@@ -1,0 +1,15 @@
+checksum = "bf3be9560442459ab4c6896f6be952e95918c2267032261b1112cfd12300f263"
+licence = "GPL-2.0-or-later"
+provides = "kmail-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kmail-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "22.8.3-r0"], ["kmail-account-wizard", "22.8.3-r0"], ["gnupg", "2.2.40-r0"]]

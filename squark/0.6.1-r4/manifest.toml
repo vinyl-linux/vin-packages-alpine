@@ -1,0 +1,15 @@
+checksum = "06c6ab153c67abc53091d8b90f78432ea4d6ce243fbb8e64309898401b0aa890"
+licence = "GPL-2.0-only"
+provides = "squark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/squark-0.6.1-r4.apk"
+version = "0.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["haserl", "0.9.36-r2"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcmph", "2.0.2-r2"], ["lua5.1-libs", "5.1.5-r11"], ["net-snmp-libs", "5.9.3-r2"]]

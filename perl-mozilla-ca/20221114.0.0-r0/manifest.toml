@@ -1,0 +1,15 @@
+checksum = "16c12e4916cd6192c487fa19c51df437160d372bf3f0b828bf08ae6712d59376"
+licence = "MPL-2.0"
+provides = "perl-mozilla-ca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-mozilla-ca-20221114-r0.apk"
+version = "20221114.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

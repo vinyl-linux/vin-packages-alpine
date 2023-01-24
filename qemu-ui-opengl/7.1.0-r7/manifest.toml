@@ -1,0 +1,15 @@
+checksum = "26bff0581452b297dbbb8aa01df46825069fc58dda8feca6b745668e9d78f858"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-opengl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-ui-opengl-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"], ["mesa-gbm", "22.2.5-r1"], ["pixman", "0.42.2-r0"]]

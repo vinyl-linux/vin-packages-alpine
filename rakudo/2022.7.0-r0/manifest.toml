@@ -1,0 +1,15 @@
+checksum = "04faa16e0253b8ef91d57d5801069ec8eacaeab3ff9cf87fdad104d1e115bce9"
+licence = "Artistic-2.0"
+provides = "rakudo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rakudo-2022.07-r0.apk"
+version = "2022.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nqp", "2022.7.0-r0"], ["musl", "1.2.3-r4"], ["moarvm", "2022.7.0-r0"]]

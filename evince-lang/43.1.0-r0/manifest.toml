@@ -1,0 +1,15 @@
+checksum = "54d7bfea84c51d6eed38cc277b1639c91e8308f11092991c6a311957221ab537"
+licence = "GPL-2.0-or-later"
+provides = "evince-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/evince-lang-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["evince-libs", "43.1.0-r0"], ["adwaita-icon-theme", "43.0.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"]]

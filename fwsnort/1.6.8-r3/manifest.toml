@@ -1,0 +1,15 @@
+checksum = "7fce0a5d5e746df7bc10a6fcdd872e26d893ab6f633656b68e2331636847766c"
+licence = "GPL"
+provides = "fwsnort"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fwsnort-1.6.8-r3.apk"
+version = "1.6.8-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-netaddr-ip", "4.79.0-r7"], ["perl-iptables-parse", "1.6.1-r3"], ["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["net-tools", "2.10.0-r0"], ["wget", "1.21.3-r2"], ["yash-binsh", "2.53.0-r2"]]

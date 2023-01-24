@@ -1,0 +1,15 @@
+checksum = "9f4402a730266ae0e5d939021686e6a38058a459d6a589d0464e2ca7eba1b255"
+licence = "custom:sip"
+provides = "py3-pyqt-builder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyqt-builder-1.14.0-r0.apk"
+version = "1.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "656a82eb942dd9a207408b6322d537b1f7721c37c85490f06b00b503e79c506e"
+licence = "BSD-3-Clause AND BSL-1.0 AND ( Artistic-1.0 OR GPL-2.0-or-later ) AND NCSA AND MIT"
+provides = "ldc-runtime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ldc-runtime-1.30.0-r1.apk"
+version = "1.30.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["llvm-libunwind", "15.0.7-r0"]]

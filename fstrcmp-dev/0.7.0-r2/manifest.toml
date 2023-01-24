@@ -1,0 +1,15 @@
+checksum = "353db7ca41048130dbe5cffa202c05136e4c91067671df6609ebf90404346b0d"
+licence = "GPL-3.0-or-later"
+provides = "fstrcmp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fstrcmp-dev-0.7-r2.apk"
+version = "0.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fstrcmp", "0.7.0-r2"], ["pkgconf", "1.9.4-r0"]]

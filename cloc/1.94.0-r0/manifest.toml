@@ -1,0 +1,15 @@
+checksum = "ff8ad185f8491c91ef4a20fcfdb206e95f227ae2fc170fee525e7356401cae86"
+licence = "GPL-2.0-or-later Artistic-2.0"
+provides = "cloc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cloc-1.94-r0.apk"
+version = "1.94.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-algorithm-diff", "1.201.0-r0"], ["perl-regexp-common", "2017060201.0.0-r2"], ["perl-parallel-forkmanager", "2.2.0-r3"]]

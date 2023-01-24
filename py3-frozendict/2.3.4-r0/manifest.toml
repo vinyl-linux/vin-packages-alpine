@@ -1,0 +1,15 @@
+checksum = "34352fafdf63ec1b989730120e7fc6a5804b220245ce440916ac05b8be31b481"
+licence = "MIT"
+provides = "py3-frozendict"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-frozendict-2.3.4-r0.apk"
+version = "2.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

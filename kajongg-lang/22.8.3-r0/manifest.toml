@@ -1,0 +1,15 @@
+checksum = "32bfd393b68fd9f22cc82d71a1bf9ca69181c5e0f569d7b9f1fc192b0fc679cb"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kajongg-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kajongg-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-twisted", "22.10.0-r0"]]

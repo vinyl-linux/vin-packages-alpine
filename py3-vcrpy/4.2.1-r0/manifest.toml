@@ -1,0 +1,15 @@
+checksum = "f6876097d7d3c98d67a4666e1f4fc74f129a222e4a64b2eb1dca8599233d989e"
+licence = "MIT"
+provides = "py3-vcrpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-vcrpy-4.2.1-r0.apk"
+version = "4.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-yarl", "1.8.1-r1"], ["py3-yaml", "6.0.0-r0"], ["py3-six", "1.16.0-r3"], ["py3-wrapt", "1.14.1-r0"]]

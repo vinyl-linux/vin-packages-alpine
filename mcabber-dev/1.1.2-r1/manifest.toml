@@ -1,0 +1,15 @@
+checksum = "d768e989ef4b119b4892e37f16cd168c7578b60bb04c6847171f2496c5364ffb"
+licence = "GPL-2.0-or-later"
+provides = "mcabber-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mcabber-dev-1.1.2-r1.apk"
+version = "1.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["loudmouth-dev", "1.5.4-r1"], ["pkgconf", "1.9.4-r0"]]

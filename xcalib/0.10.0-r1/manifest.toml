@@ -1,0 +1,15 @@
+checksum = "f14872bb72ee2355971e0aac76ef6e2f7bcd377bdba1502fa02c3c6780491e1b"
+licence = "GPL-2.0-or-later"
+provides = "xcalib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcalib-0.10-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxrandr", "1.5.3-r0"], ["libxxf86vm", "1.1.5-r0"], ["musl", "1.2.3-r4"]]

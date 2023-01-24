@@ -1,0 +1,15 @@
+checksum = "7df2eead1aceae4983ab0b007a9f31645794eafcb66e4ab5b348290ac4609370"
+licence = "GPL-3.0-or-later"
+provides = "stig"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stig-0.12.3a0-r0.apk"
+version = "0.12.3-a0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-urwid", "2.1.2-r2"], ["py3-urwidtrees", "1.0.3-r1"], ["py3-aiohttp", "3.8.3-r0"], ["py3-async-timeout", "4.0.2-r0"], ["py3-xdg", "0.28.0-r0"], ["py3-blinker", "1.5.0-r0"], ["py3-natsort", "8.2.0-r0"], ["py3-setproctitle", "1.3.1-r0"]]

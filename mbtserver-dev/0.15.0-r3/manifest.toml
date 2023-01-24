@@ -1,0 +1,15 @@
+checksum = "ec45794626ee11d963876733c4605c3a82476f0751838455c8b7635628308520"
+licence = "GPL-3.0-only"
+provides = "mbtserver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mbtserver-dev-0.15-r3.apk"
+version = "0.15.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mbtserver", "0.15.0-r3"], ["mbt-dev", "3.8.0-r1"], ["pkgconf", "1.9.4-r0"]]

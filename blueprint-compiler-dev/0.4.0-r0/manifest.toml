@@ -1,0 +1,15 @@
+checksum = "a0baa2766bf3bddd653b732503cb480921c3540f4bb51f0a3c3e877f3360c355"
+licence = "LGPL-3.0-or-later"
+provides = "blueprint-compiler-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blueprint-compiler-dev-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

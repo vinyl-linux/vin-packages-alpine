@@ -1,0 +1,15 @@
+checksum = "e92ee2adcbbe9f29f912477722f1e02a392dfad5d04df8507b2f497c6597306f"
+licence = "BSD"
+provides = "pcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pcc-20220619-r0.apk"
+version = "20220619.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcc-libs-dev", "20220619.0.0-r0"], ["musl", "1.2.3-r4"]]

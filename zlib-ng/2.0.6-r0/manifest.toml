@@ -1,0 +1,15 @@
+checksum = "16c5eb2cdab1854d5ecb6815c1a8b50ad17efee5de1d8575d59bf61d759d75c7"
+licence = "Zlib"
+provides = "zlib-ng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zlib-ng-2.0.6-r0.apk"
+version = "2.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

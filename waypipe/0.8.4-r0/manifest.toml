@@ -1,0 +1,15 @@
+checksum = "100394a680c9ad4d4d7475a56fd05fffe166cba9f685e39b73313d409eba5c42"
+licence = "MIT"
+provides = "waypipe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waypipe-0.8.4-r0.apk"
+version = "0.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["mesa-gbm", "22.2.5-r1"], ["lz4-libs", "1.9.4-r1"], ["libva", "2.16.0-r0"], ["zstd-libs", "1.5.2-r9"]]

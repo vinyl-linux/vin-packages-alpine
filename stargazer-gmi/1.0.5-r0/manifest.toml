@@ -1,0 +1,15 @@
+checksum = "a566b2d0eb0b3fc83603b8d818640eaaf82c98557f58e49e61b0866fd3555c6f"
+licence = "AGPL-3.0-or-later"
+provides = "stargazer-gmi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stargazer-gmi-1.0.5-r0.apk"
+version = "1.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

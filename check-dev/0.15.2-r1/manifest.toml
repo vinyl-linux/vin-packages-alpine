@@ -1,0 +1,15 @@
+checksum = "7586ddeb1169e5b22b56f7df266cbda7c56bd2bed399a79ef60d600d9683917f"
+licence = "LGPL-2.0-or-later"
+provides = "check-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/check-dev-0.15.2-r1.apk"
+version = "0.15.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["check", "0.15.2-r1"], ["pkgconf", "1.9.4-r0"]]

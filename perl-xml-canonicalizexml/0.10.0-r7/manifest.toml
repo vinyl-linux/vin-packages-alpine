@@ -1,0 +1,15 @@
+checksum = "0cc123b61d3187a3e60a79526e358c9153d5a98a1c5349df4e116327fb4f1037"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-canonicalizexml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-xml-canonicalizexml-0.10-r7.apk"
+version = "0.10.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

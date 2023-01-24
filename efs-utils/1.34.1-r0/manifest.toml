@@ -1,0 +1,15 @@
+checksum = "b8ce6fb7fa82ede10a45c07b6c8cc318991b8e15db032b970942cb5e2b4b7df1"
+licence = "MIT"
+provides = "efs-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/efs-utils-1.34.1-r0.apk"
+version = "1.34.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nfs-utils", "2.6.2-r0"], ["openssl", "3.0.7-r2"], ["py3-botocore", "1.21.49-r1"], ["stunnel", "5.66.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "93fd78eabc8d10f7ab0170452897fef96c84b22ed9ed0cdf468ffb2a835b5bba"
+licence = "GPL-3.0-only"
+provides = "waydroid-nftables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waydroid-nftables-1.3.3-r2.apk"
+version = "1.3.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gbinder-python", "1.1.1-r0"], ["lxc", "5.0.2-r0"], ["py3-gobject3", "3.42.2-r0"], ["py3-pyclip", "0.5.4-r2"], ["python3", "3.10.9-r1"]]

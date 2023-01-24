@@ -1,0 +1,15 @@
+checksum = "20b6ebd8d48778cb31f1968050f738a466dcf633f4422b949f2f921cd85958d1"
+licence = "MIT"
+provides = "py3-pep440"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pep440-0.1.2-r0.apk"
+version = "0.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

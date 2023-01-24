@@ -1,0 +1,15 @@
+checksum = "8aed133a2485bb10944421b6bb5fbfc9ba78a78143a01113b2074d8c64a98d0d"
+licence = "BSD-3-Clause"
+provides = "leveldb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/leveldb-1.23-r0.apk"
+version = "1.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["snappy", "1.1.9-r4"], ["libstdc++", "12.2.1"]]

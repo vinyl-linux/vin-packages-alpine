@@ -1,0 +1,15 @@
+checksum = "8e3f03ab810ceba75553971796116a87b13686f6415b5ec79aa327d04f63f2ac"
+licence = "MIT"
+provides = "py3-rapidyaml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rapidyaml-0.4.1-r1.apk"
+version = "0.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

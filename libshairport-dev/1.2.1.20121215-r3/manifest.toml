@@ -1,0 +1,15 @@
+checksum = "4e57741371433b1d22e8725c0151e02c803cc488b62b9184a2ca4f282dab3b6a"
+licence = "MIT"
+provides = "libshairport-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libshairport-dev-1.2.1.20121215-r3.apk"
+version = "1.2.1.20121215-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-dev", "0.8.0-r6"], ["libao-dev", "1.2.2-r2"], ["openssl-dev", "3.0.7-r2"], ["libshairport", "1.2.1.20121215-r3"]]

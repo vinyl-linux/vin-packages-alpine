@@ -1,0 +1,15 @@
+checksum = "e2058be3087fc1658dcb80a93b40cfbc232532bf2b7d9e41c1e0d61a9f141686"
+licence = "curl"
+provides = "libcurl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcurl-7.87.0-r1.apk"
+version = "7.87.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["nghttp2-libs", "1.51.0-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

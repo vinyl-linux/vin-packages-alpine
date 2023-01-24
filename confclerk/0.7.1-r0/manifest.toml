@@ -1,0 +1,15 @@
+checksum = "1110ad6d13e22298d7bca4a01a8c04f6e71387feed324de9a0f7506c662d6d29"
+licence = "GPL-2.0-or-later"
+provides = "confclerk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/confclerk-0.7.1-r0.apk"
+version = "0.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

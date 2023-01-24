@@ -1,0 +1,15 @@
+checksum = "f0d737b86218e4ee86b5eca82537de9d3d7a9294def3d5bf3dc1f04dc9abc073"
+licence = "GPL-2.0-or-later"
+provides = "mate-system-monitor-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-system-monitor-lang-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-icon-theme", "1.26.0-r0"]]

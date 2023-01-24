@@ -1,0 +1,15 @@
+checksum = "649376761e228e6c453e04b0bc882f48960d2ab83d8f600997fbf69b81e1c724"
+licence = "MIT"
+provides = "sxmo-dmenu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sxmo-dmenu-5.0.14-r1.apk"
+version = "5.0.14-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["libxinerama", "1.1.5-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"]]

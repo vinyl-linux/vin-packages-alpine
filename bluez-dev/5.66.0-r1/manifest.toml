@@ -1,0 +1,15 @@
+checksum = "5734a9be8644662edcd0d752daec8cfaa1af9609876498f53d703ba5f58be1d3"
+licence = "GPL-2.0-or-later"
+provides = "bluez-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bluez-dev-5.66-r1.apk"
+version = "5.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-libs", "5.66.0-r1"], ["pkgconf", "1.9.4-r0"]]

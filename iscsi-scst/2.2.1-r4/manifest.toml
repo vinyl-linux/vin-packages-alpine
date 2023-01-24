@@ -1,0 +1,15 @@
+checksum = "a164a5e0221c8453318f92afe599cd81923866850c5de0a6e47c5227f868f696"
+licence = "GPL-2.0-only"
+provides = "iscsi-scst"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iscsi-scst-2.2.1-r4.apk"
+version = "2.2.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

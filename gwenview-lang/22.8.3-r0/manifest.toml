@@ -1,0 +1,15 @@
+checksum = "e15042e71cf5855a471f05e4b9dd0bb5325656adf1f835409d73f2c604283b16"
+licence = "GPL-2.0-only"
+provides = "gwenview-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gwenview-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kimageformats", "5.100.0-r0"], ["qt5-qtimageformats", "5.15.6"]]

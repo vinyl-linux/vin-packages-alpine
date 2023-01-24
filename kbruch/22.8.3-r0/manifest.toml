@@ -1,0 +1,15 @@
+checksum = "1243ff373300692f72ca3ac4c821d5f2e2780bcc0389bdf7bae399ad458d9ad3"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kbruch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kbruch-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kcrash", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "9ee7a809f27e1a4c2b19c97eeee2a405985db3bf527a2931e34606d5ec0579ff"
+licence = "ISC"
+provides = "loksh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/loksh-7.2-r0.apk"
+version = "7.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

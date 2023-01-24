@@ -1,0 +1,15 @@
+checksum = "c12adfd83aecf67cd408f09d8293fd3746d1df5cfbcf07fc44bd5a00514bc3a8"
+licence = "GPL-2.0-or-later"
+provides = "nut"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nut-2.8.0-r4.apk"
+version = "2.8.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hidapi", "0.12.0-r1"], ["eudev", "3.2.11-r4"], ["udev-init-scripts-openrc", "35.0.0-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libltdl", "2.4.7-r0"], ["libmodbus", "3.1.8-r0"], ["neon", "0.32.4-r0"], ["net-snmp-libs", "5.9.3-r2"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r0"], ["libstdc++", "12.2.1"], ["libusb", "1.0.26-r0"]]

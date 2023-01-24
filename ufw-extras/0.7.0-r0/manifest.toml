@@ -1,0 +1,15 @@
+checksum = "806b4e3cb595946d78993f9d1b8920e29a15df9cc2892cefd0f5b077c1e6a629"
+licence = "GPL-2.0-or-later"
+provides = "ufw-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ufw-extras-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ufw", "0.36.1-r2"]]

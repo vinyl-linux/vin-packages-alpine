@@ -1,0 +1,15 @@
+checksum = "ca1aaf6af7148465e0a323e4c63863732d2d7f5ae107bcf07ff57e1207d5a0bc"
+licence = "GPL-2.0-or-later"
+provides = "fail2ban"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fail2ban-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["logrotate", "3.20.1-r3"]]

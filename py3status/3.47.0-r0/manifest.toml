@@ -1,0 +1,15 @@
+checksum = "5b194ae7310883583f24d08f7816e93f45537d1bd17fe0ad4611d08144007c77"
+licence = "BSD-3-Clause"
+provides = "py3status"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3status-3.47-r0.apk"
+version = "3.47.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-setuptools", "65.6.0-r0"]]

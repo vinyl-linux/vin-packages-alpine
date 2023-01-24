@@ -1,0 +1,15 @@
+checksum = "497270263bc5b72d9cd408f3980570c01b2e4d12c05f244f00f1593022565081"
+licence = "MIT"
+provides = "tiny-cloud-nocloud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-nocloud-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tiny-cloud", "2.1.2-r0"], ["yx", "1.0.0-r0"], ["yash-binsh", "2.53.0-r2"]]

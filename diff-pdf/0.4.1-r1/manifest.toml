@@ -1,0 +1,15 @@
+checksum = "c0c0c656da771b7c639bc82a0c65f8d887597b95e94122334dbe8880425dd5cf"
+licence = "GPL-2.0-or-later"
+provides = "diff-pdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/diff-pdf-0.4.1-r1.apk"
+version = "0.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["poppler-glib", "22.11.0-r0"], ["libstdc++", "12.2.1"], ["wxwidgets", "3.2.1-r2"], ["wxwidgets-gtk3", "3.2.1-r2"]]

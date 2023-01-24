@@ -1,0 +1,15 @@
+checksum = "42417c0814274963b45347aed957ada0e1eb1f446f1e33dc12753538dd747c69"
+licence = "LGPL-2.1-or-later"
+provides = "libaio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libaio-0.3.113-r0.apk"
+version = "0.3.113-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

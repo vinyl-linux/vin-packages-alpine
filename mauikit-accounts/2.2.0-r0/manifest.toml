@@ -1,0 +1,15 @@
+checksum = "408731c7a39028690330228bd1b0dc5e33c1a27a9fd3998c8193fbcdc5de5fdf"
+licence = "GPL-2.0-or-later"
+provides = "mauikit-accounts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mauikit-accounts-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["mauikit", "2.2.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

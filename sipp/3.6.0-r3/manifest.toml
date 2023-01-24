@@ -1,0 +1,15 @@
+checksum = "84bb7a91b3d8b5e87406bbbe3b39e8d2e0cefcad8ecd8d0bb5b23b625002ad09"
+licence = "GPL-2.0-or-later"
+provides = "sipp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sipp-3.6.0-r3.apk"
+version = "3.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libpcap", "1.10.1-r1"], ["liblksctp", "1.0.19-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "ecc306fa4041209b88dd7e82e66e94851999669641628ea591de60b8d1790f3c"
+licence = "GPL-2.0-or-later"
+provides = "exiv2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exiv2-0.27.5-r1.apk"
+version = "0.27.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

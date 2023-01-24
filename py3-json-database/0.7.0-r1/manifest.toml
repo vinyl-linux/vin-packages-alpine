@@ -1,0 +1,15 @@
+checksum = "406cbafefaf169964fce499faa00cfc094ace34ad65af950fbf5849099f4157d"
+licence = "MIT"
+provides = "py3-json-database"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-json-database-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-combo-lock", "0.2.4-r0"], ["python3", "3.10.9-r1"]]

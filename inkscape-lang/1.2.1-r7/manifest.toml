@@ -1,0 +1,15 @@
+checksum = "a307ddce5b46e2435e0baa7c3a272df6be545f9a033696802c824ffb97e427b8"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "inkscape-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inkscape-lang-1.2.1-r7.apk"
+version = "1.2.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r1"], ["adwaita-icon-theme", "43.0.0-r0"]]

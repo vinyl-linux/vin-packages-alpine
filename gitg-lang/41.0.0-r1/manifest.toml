@@ -1,0 +1,15 @@
+checksum = "bf8c2b331a0ec25b68824900a6d8daa43e109bd1f8e4075753df6bf1e4a36b06"
+licence = "GPL-2.0-or-later"
+provides = "gitg-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gitg-lang-41-r1.apk"
+version = "41.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

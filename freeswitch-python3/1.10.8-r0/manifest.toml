@@ -1,0 +1,15 @@
+checksum = "618ea3d88ab08cf52ad8ed4efd4e1c3f882e5db280d540322f3d89fc26613811"
+licence = "MPL-1.1"
+provides = "freeswitch-python3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeswitch-python3-1.10.8-r0.apk"
+version = "1.10.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["freeswitch", "1.10.8-r0"], ["libgcc", "12.2.1"], ["python3", "3.10.9-r1"], ["libstdc++", "12.2.1"]]

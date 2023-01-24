@@ -1,0 +1,15 @@
+checksum = "1b4a9003dfb491b52b8f48279f0f36798d4c899892504e76bc519638abca5568"
+licence = "Apache-2.0"
+provides = "py3-openssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-openssl-22.1.0-r1.apk"
+version = "22.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cryptography", "38.0.3-r0"]]

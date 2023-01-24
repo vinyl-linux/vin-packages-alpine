@@ -1,0 +1,15 @@
+checksum = "c719a851df493f5715623eae5341cc1c722e35858274338885cfd940e8f2fec9"
+licence = "GPL-2.0-only,GPL-2.0-or-later,GPL-3.0-only"
+provides = "openocd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openocd-0.12.0_rc2-r0.apk"
+version = "0.12.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libftdi1", "1.5.0-r1"], ["hidapi", "0.12.0-r1"], ["libjaylink", "0.3.1-r0"], ["jimtcl", "0.81.0-r2"], ["libusb", "1.0.26-r0"]]

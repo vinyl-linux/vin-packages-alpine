@@ -1,0 +1,15 @@
+checksum = "90a0a1256c316fb46b38593f641f4d0a4e62f6294d0070103ae6372fa607d52d"
+licence = "GPL-3.0-or-later"
+provides = "cloud-utils-multipart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cloud-utils-multipart-0.33-r0.apk"
+version = "0.33.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

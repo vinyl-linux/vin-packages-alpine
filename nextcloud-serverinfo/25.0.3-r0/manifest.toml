@@ -1,0 +1,15 @@
+checksum = "0a1c910238479efe84c137915ce6d0d867017a5ee4a47f7d3223ac934339e591"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-serverinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-serverinfo-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"], ["nextcloud-files_sharing", "25.0.3-r0"]]

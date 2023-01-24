@@ -1,0 +1,15 @@
+checksum = "119a96763f1c71a8649bdba6074b8ac886fe4ce82b152779ae63dfe159f36d32"
+licence = "MIT"
+provides = "ogdi-odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ogdi-odbc-4.1.0-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"]]

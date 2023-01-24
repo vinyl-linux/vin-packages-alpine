@@ -1,0 +1,15 @@
+checksum = "06dcd6ccc6532daae947eb78c9a577f63e8a1206f182fbf8a31a3e0c6198470a"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-amqp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-amqp-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["rabbitmq-c", "0.11.0-r5"], ["syslog-ng", "3.38.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "8f2fa019206f34334284606b388f6c3a39c031ce20160bb391959710e0b1852c"
+licence = "Apache-2.0"
+provides = "spamassassin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spamassassin-3.4.6-r4.apk"
+version = "3.4.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-mail-spamassassin", "3.4.6-r4"], ["curl", "7.87.0-r1"]]

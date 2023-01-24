@@ -1,0 +1,15 @@
+checksum = "499a6cfa20b0ba4ca785dd28c570646c2fb4eb8540836846c37d92b9a4b9b51d"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "solid-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/solid-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.6"], ["solid-libs", "5.100.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c8da4692ef581d1af0b725963f7d2c0babb505a8a3de51e5d5f7ab44db64e8c4"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+provides = "irssi-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/irssi-perl-1.4.3-r0.apk"
+version = "1.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["irssi", "1.4.3-r0"], ["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "5dc82039c7d2e64a40eae35da953928cd3a9e6b0f3bbe9ca019ff493f3bb2d69"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtwayland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtwayland-5.15.6_git20220927-r1.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-egl", "22.2.5-r1"], ["mesa-gl", "22.2.5-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxcomposite", "0.4.5-r1"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["wayland-libs-egl", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

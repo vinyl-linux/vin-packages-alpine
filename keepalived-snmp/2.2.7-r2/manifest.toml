@@ -1,0 +1,15 @@
+checksum = "71467c7a40394583496e7ace3aab298853e4e2fec62db2dc18652d47199de6e8"
+licence = "GPL-2.0-only"
+provides = "keepalived-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keepalived-snmp-2.2.7-r2.apk"
+version = "2.2.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["keepalived-common", "2.2.7-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"], ["libnl3", "3.7.0-r0"], ["libssl3", "3.0.7-r2"]]

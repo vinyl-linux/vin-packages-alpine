@@ -1,0 +1,15 @@
+checksum = "cbd1cf4e35f67dd611b42c6af77e9ea23aac66b292bc342ed0a3b6aad6173f7b"
+licence = "Apache-2.0"
+provides = "salt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-yaml", "6.0.0-r0"], ["py3-jinja2", "3.1.2-r0"], ["py3-markupsafe", "2.1.1-r1"], ["py3-msgpack", "1.0.4-r0"], ["py3-pycryptodome", "3.15.0-r0"], ["py3-pyzmq", "23.2.1-r0"], ["py3-six", "1.16.0-r3"], ["py3-requests", "2.28.1-r1"], ["py3-pygit2", "1.11.0-r0"], ["py3-dateutil", "2.8.2-r1"], ["py3-distro", "1.8.0-r0"], ["procps", "3.3.17-r2"]]

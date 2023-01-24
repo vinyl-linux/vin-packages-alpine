@@ -1,0 +1,15 @@
+checksum = "7d9b9b73d15c059156fb2945203c42ad5c8561947619263563993393f307c865"
+licence = "BSD-3-Clause Sendmail"
+provides = "opendmarc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opendmarc-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libmilter", "1.0.2-r8"], ["opendmarc-libs", "1.4.2-r0"]]

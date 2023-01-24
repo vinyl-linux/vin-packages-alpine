@@ -1,0 +1,15 @@
+checksum = "646488503a53950cc644e6cef5d710dcb1c59a5a925a152e2e14406539c7bb8f"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-network"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kde-applications-network-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kget", "22.8.3-r0"], ["krfb", "22.8.3-r0"], ["kio-zeroconf", "22.8.3-r0"], ["kio-extras", "22.8.3-r0"]]

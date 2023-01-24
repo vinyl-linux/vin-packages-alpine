@@ -1,0 +1,15 @@
+checksum = "b79a215c436b0f53b46c32665fac540ebe2ec53453296c1934aa0a32af921308"
+licence = "MIT"
+provides = "go-msgauth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/go-msgauth-0.6.6-r6.apk"
+version = "0.6.6-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a4d2ca0e46c60eaa5759461f937cf5d48ab0580a0ca2fd3b093219358c0a2e8b"
+licence = "MIT"
+provides = "tree-sitter-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tree-sitter-cli-0.20.7-r0.apk"
+version = "0.20.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

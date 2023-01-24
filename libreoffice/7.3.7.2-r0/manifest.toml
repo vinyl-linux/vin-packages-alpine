@@ -1,0 +1,15 @@
+checksum = "6986adfdeeffe68ba90af3ffa1facd17e074d9bc634a992750fe2f57a1fdad06"
+licence = "MPL-2.0"
+provides = "libreoffice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-base", "7.3.7.2-r0"], ["libreoffice-calc", "7.3.7.2-r0"], ["libreoffice-common", "7.3.7.2-r0"], ["libreoffice-draw", "7.3.7.2-r0"], ["libreoffice-impress", "7.3.7.2-r0"], ["libreoffice-math", "7.3.7.2-r0"], ["libreoffice-connector-postgres", "7.3.7.2-r0"], ["libreoffice-writer", "7.3.7.2-r0"], ["libreofficekit", "7.3.7.2-r0"]]

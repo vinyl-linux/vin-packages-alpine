@@ -1,0 +1,15 @@
+checksum = "1dea896483316bf2e51bc064b15131913e73c1f94d23f7e01eccb9717b89c152"
+licence = "GPL-3.0-or-later"
+provides = "wvkbd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wvkbd-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"]]

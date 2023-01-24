@@ -1,0 +1,15 @@
+checksum = "e30aa9827e835568ed91a69da2ab4ca7930e128a1f9a03c267a2d63305d7fb82"
+licence = "MIT"
+provides = "ruby-rspec-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-rspec-core-3.12.0-r0.apk"
+version = "3.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-rspec-support", "3.12.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "47be0bd07c458c2729699d1100c5533e47c3399d8e3687cb0fbd3cb2588c2dac"
+licence = "GPL-2.0-or-later AND OSL-2.1"
+provides = "smbios-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/smbios-utils-2.4.3-r1.apk"
+version = "2.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["libsmbios", "2.4.3-r1"]]

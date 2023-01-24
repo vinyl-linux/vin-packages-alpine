@@ -1,0 +1,15 @@
+checksum = "4314fde1b5891ae90fecae212ba9b5d771b7205527f19b87e6006ff53528815d"
+licence = "MIT"
+provides = "lua-signal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua-signal-1.200-r2.apk"
+version = "1.200.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

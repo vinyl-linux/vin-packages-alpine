@@ -1,0 +1,15 @@
+checksum = "ac2a110030edaa221097644870db29150cc9ad105850685dc85f4e51f11cbe9c"
+licence = "GPL-2.0-or-later"
+provides = "git-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-daemon-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["musl", "1.2.3-r4"], ["pcre2", "10.42.0-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3660a77dd896d6da6337201d157d411a1dc0295a822e3a20d54d05c772d715a8"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-keyboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-mod-keyboard-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["calamares", "3.2.47-r9"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

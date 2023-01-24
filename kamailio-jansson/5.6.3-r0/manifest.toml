@@ -1,0 +1,15 @@
+checksum = "6b60e9b6eb01ccf4e35b818f1b576bb2054b00263c4563614f2ea203b4a52d6d"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-jansson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-jansson-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["jansson", "2.14.0-r0"]]

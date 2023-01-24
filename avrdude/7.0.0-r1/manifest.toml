@@ -1,0 +1,15 @@
+checksum = "606ba902a76a109c3eb109aa133c9f5edd0830788ee37d364b2e5fa2e6fa74c2"
+licence = "GPL-2.0-or-later"
+provides = "avrdude"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/avrdude-7.0-r1.apk"
+version = "7.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelf", "0.187.0-r2"], ["libftdi1", "1.5.0-r1"], ["libusb", "1.0.26-r0"]]

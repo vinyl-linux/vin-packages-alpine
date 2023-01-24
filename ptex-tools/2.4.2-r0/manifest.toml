@@ -1,0 +1,15 @@
+checksum = "3ed303ade280a79ee4ac0d6dd6e36a5a02d0c9f599408e4b63cb290a1e7ac3da"
+licence = "BSD-3-Clause"
+provides = "ptex-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ptex-tools-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "395ea78adb09c062b52205f2e60d8718fe47f7cbf85dac27c44aba1cd73dab8b"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "device-mapper-event-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/device-mapper-event-libs-2.03.17-r1.apk"
+version = "2.3.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"]]

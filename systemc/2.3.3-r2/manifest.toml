@@ -1,0 +1,15 @@
+checksum = "a2298dda1bb947c36023657f8b84e2cead4970d4f529fc3a36df130847bcdba8"
+licence = "Apache-2.0"
+provides = "systemc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/systemc-2.3.3-r2.apk"
+version = "2.3.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

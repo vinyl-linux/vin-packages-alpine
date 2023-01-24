@@ -1,0 +1,15 @@
+checksum = "7863bc1e6576f401796aee4805572c01c46180ad3f74817d0fba3dab30c0f50d"
+licence = "LGPL-2.1-or-later"
+provides = "kpeople"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpeople-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kitemviews", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

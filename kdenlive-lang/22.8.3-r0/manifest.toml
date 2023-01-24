@@ -1,0 +1,15 @@
+checksum = "e85b4319e367234a838dec5bef5ebe7a73bc8b4996371034dbbfd3e7c68464a5"
+licence = "GPL-2.0-or-later"
+provides = "kdenlive-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdenlive-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg", "5.1.2-r1"], ["frei0r-plugins", "1.8.0-r0"], ["qt5-qtquickcontrols", "5.15.6"]]

@@ -1,0 +1,15 @@
+checksum = "e838e6518150d0612d4b35045bba0fe1608731ca84a57ccebe75126d81a36c3c"
+licence = "LGPL-2.1-or-later"
+provides = "py3-pydbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pydbus-0.6.0-r2.apk"
+version = "0.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"]]

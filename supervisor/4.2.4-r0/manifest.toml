@@ -1,0 +1,15 @@
+checksum = "333e0a4a8be925724d0bc4a88d24bbd5b431f53b7446fae19d9fcfd8e3e87e06"
+licence = "BSD-4-Clause and BSD-3-Clause-Clear"
+provides = "supervisor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/supervisor-4.2.4-r0.apk"
+version = "4.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-setuptools", "65.6.0-r0"]]

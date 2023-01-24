@@ -1,0 +1,15 @@
+checksum = "d7988f12828b3a7e0488f39008765ff46eca7ddce6e18ea0dcd618f65f51cecf"
+licence = "BSD-2-Clause"
+provides = "libmagic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmagic-5.43-r0.apk"
+version = "5.43.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b12469f0116254965cbe94cdb7bd35c8eebdb20b060694dc51f1ec2c1be943cc"
+licence = "MIT"
+provides = "py3-openpyxl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-openpyxl-3.0.10-r0.apk"
+version = "3.0.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-lxml", "4.9.2-r0"], ["py3-pandas", "1.5.1-r0"], ["py3-pillow", "9.3.0-r0"]]

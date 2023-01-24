@@ -1,0 +1,15 @@
+checksum = "bf13c7da6a1d1323c3cad9630654aa9da3428e1bf265f55fadfa2f9914f090c2"
+licence = "MIT"
+provides = "lua5.1-sql-sqlite3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-sql-sqlite3-2.6.0-r2.apk"
+version = "2.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

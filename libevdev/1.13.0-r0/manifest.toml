@@ -1,0 +1,15 @@
+checksum = "3c053dc8d530ef03213b1f84f065e199d7c0547d99b4ee9c38aac8420d844f74"
+licence = "MIT"
+provides = "libevdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libevdev-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

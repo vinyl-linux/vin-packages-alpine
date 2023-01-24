@@ -1,0 +1,15 @@
+checksum = "78a20dd74f595ed0d57c7eb11fb6435a4f3ee42387f097d37b6517aacfea6bc9"
+licence = "MIT"
+provides = "py3-watchfiles"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-watchfiles-0.18.1-r0.apk"
+version = "0.18.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-anyio", "3.6.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

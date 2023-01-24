@@ -1,0 +1,15 @@
+checksum = "07edec6fba66491ee91e2b02bff3ca3034b41419c09ff296c21de00ca4dbd4d5"
+licence = "GPL-3.0-or-later"
+provides = "kiwix-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kiwix-tools-3.3.0-r2.apk"
+version = "3.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["kiwix-lib", "11.0.0-r2"], ["libstdc++", "12.2.1"], ["libzim", "8.0.0-r1"]]

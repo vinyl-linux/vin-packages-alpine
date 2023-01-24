@@ -1,0 +1,15 @@
+checksum = "0ab975b184e7fba592d59b9555168307189a6c90d688b1ce5f174e276c22c79a"
+licence = "LGPL-2.0-or-later"
+provides = "kcontacts-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcontacts-lang-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg", "2.2.40-r0"], ["iso-codes", "4.12.0-r0"]]

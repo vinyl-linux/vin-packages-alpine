@@ -1,0 +1,15 @@
+checksum = "566075f1aa285911d134de17457a1e7f7d912f157b69e81313a98426f83f23d1"
+licence = "BSD-2-Clause"
+provides = "xdo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdo-0.5.7-r1.apk"
+version = "0.5.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["xcb-util-wm", "0.4.2-r0"], ["xcb-util", "0.4.0-r3"], ["libxcb", "1.15.0-r0"]]

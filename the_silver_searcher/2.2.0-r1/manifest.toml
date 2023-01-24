@@ -1,0 +1,15 @@
+checksum = "4b1230ebea36e21f4d30b2666dbd4a8071c15cb0516f7bc8345d1ac535c5814a"
+licence = "Apache-2.0"
+provides = "the_silver_searcher"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/the_silver_searcher-2.2.0-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["xz-libs", "5.2.9-r0"], ["pcre", "8.45.0-r2"], ["zlib", "1.2.13-r0"]]

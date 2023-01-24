@@ -1,0 +1,15 @@
+checksum = "2871d40ce8d618698bbcfe394768431e249d0292023b2a491969d5ae8777cf10"
+licence = "BSD-2-Clause AND GPL-2.0-only AND GPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "xdp-tests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdp-tests-1.2.8-r1.apk"
+version = "1.2.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbpf", "1.0.1-r0"], ["musl", "1.2.3-r4"], ["libxdp", "1.2.8-r1"]]

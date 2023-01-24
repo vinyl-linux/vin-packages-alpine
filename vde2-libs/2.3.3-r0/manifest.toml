@@ -1,0 +1,15 @@
+checksum = "3f5842d2e59c25a40cc6d200268819efb3b01680e8572338dce8570c3946bc6b"
+licence = "GPL"
+provides = "vde2-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vde2-libs-2.3.3-r0.apk"
+version = "2.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

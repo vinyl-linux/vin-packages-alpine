@@ -1,0 +1,15 @@
+checksum = "03cef56294d2e686c702bfc5da97b37d929fd8ae9a82fce54ec86a8e828c21c0"
+licence = "GPL-2.0-only"
+provides = "linux-tools-gpio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-tools-gpio-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

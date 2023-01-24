@@ -1,0 +1,15 @@
+checksum = "cdec41df550a5e0b373811a66ccc85cf56efb757319e7b0df1ae4144e2bfc7d8"
+licence = "OFL-1.1"
+provides = "font-mononoki"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-mononoki-1.4-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["mkfontscale", "1.2.2-r1"]]

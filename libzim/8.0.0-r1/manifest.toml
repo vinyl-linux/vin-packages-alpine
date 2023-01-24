@@ -1,0 +1,15 @@
+checksum = "bd67a104e0698910c9c10def21c47f986a580a0a6d0a0792c7bbd461e492ea16"
+licence = "GPL-2.0-or-later"
+provides = "libzim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzim-8.0.0-r1.apk"
+version = "8.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["xz-libs", "5.2.9-r0"], ["libstdc++", "12.2.1"], ["libxapian", "1.4.21-r0"], ["zstd-libs", "1.5.2-r9"]]

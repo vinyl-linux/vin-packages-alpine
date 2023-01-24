@@ -1,0 +1,15 @@
+checksum = "0953c6bde354e5ba2c08b2eaf3238b508cbe8e41636d978ba27ebf397fac369e"
+licence = "MIT"
+provides = "py3-testtools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-testtools-2.5.0-r1.apk"
+version = "2.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pbr", "5.11.0-r0"], ["py3-fixtures", "4.0.1-r0"], ["py3-extras", "1.0.0-r5"], ["py3-setuptools", "65.6.0-r0"]]

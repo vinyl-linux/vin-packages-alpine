@@ -1,0 +1,15 @@
+checksum = "faf6002e39cf83c5dd6e5a1ecbc703ae56d6fbbac2414c01f3f440c3337fbb44"
+licence = "GPL-2.0-or-later OR GPL-3.0-or-later"
+provides = "gnumeric-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnumeric-dev-1.12.53-r0.apk"
+version = "1.12.53-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnumeric", "1.12.53-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["goffice-dev", "0.10.53-r0"], ["libgsf-dev", "1.14.50-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

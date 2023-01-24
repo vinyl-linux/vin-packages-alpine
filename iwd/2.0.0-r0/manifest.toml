@@ -1,0 +1,15 @@
+checksum = "8b4a7de8210bcc5bfd008ff94ea91b692f2ae04b4a46a4173c4daa819a93d74a"
+licence = "LGPL-2.1-or-later"
+provides = "iwd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iwd-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

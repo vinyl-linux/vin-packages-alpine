@@ -1,0 +1,15 @@
+checksum = "e9ae35de7441aedc2a8ea1cd10a4656ea034375591c5cc3e0f8fb280b9e73c99"
+licence = "custom"
+provides = "cyrus-sasl-crammd5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cyrus-sasl-crammd5-2.1.28-r3.apk"
+version = "2.1.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

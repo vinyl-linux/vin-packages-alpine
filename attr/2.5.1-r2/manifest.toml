@@ -1,0 +1,15 @@
+checksum = "c5497f4f9e7a0e7c7c0febfc490596c1728c585e28a126e88a64edfc096ef419"
+licence = "GPL-2.0-or-later"
+provides = "attr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/attr-2.5.1-r2.apk"
+version = "2.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libattr", "2.5.1-r2"], ["musl", "1.2.3-r4"]]

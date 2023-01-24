@@ -1,0 +1,15 @@
+checksum = "eafc5a23aebb6a907ce89ab8bb3686e1ee11d4aca412bd517c297fe3f0d8f9e4"
+licence = "GPL-2.0-or-later"
+provides = "openssh-client-yash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-client-yash-completion-2.53-r2.apk"
+version = "2.53.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-completion", "2.53.0-r2"]]

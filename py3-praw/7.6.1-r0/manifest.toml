@@ -1,0 +1,15 @@
+checksum = "591061290cee95cc3772ff542885e6426c8d49593becfa2920e7829ad0dce733"
+licence = "GPL-3.0-or-later"
+provides = "py3-praw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-praw-7.6.1-r0.apk"
+version = "7.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-prawcore", "2.3.0-r1"], ["py3-update-checker", "0.18.0-r2"], ["py3-requests", "2.28.1-r1"], ["py3-websocket-client", "1.4.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "38df7b13fd5025570e83263d0c1cf29e060f113a4bcf83f20dadc882d7fc63c3"
+licence = "BSD-3-Clause"
+provides = "libxar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxar-1.8.0.487.100.1-r0.apk"
+version = "1.8.0.487.100.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

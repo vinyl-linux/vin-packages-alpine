@@ -1,0 +1,15 @@
+checksum = "948ffb5722b6cd9e28feaa50f5282e108b9e19f9b44b911d1dce56ffa99be8ff"
+licence = "MIT"
+provides = "jenkins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jenkins-2.361.2-r0.apk"
+version = "2.361.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"], ["freetype", "2.12.1-r0"], ["font-dejavu", "2.37.0-r3"], ["xvfb", "21.1.6-r0"], ["fontconfig", "2.14.1-r0"], ["yash-binsh", "2.53.0-r2"]]

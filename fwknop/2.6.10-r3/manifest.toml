@@ -1,0 +1,15 @@
+checksum = "785d871594a80970e75983902ab5f13295bf6b40a045dcd95500cbe4b2e3a41e"
+licence = "GPL-2.0-or-later"
+provides = "fwknop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fwknop-2.6.10-r3.apk"
+version = "2.6.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iptables", "1.8.8-r2"], ["musl", "1.2.3-r4"], ["fwknop-libs", "2.6.10-r3"]]

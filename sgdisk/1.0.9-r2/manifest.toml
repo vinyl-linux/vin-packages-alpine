@@ -1,0 +1,15 @@
+checksum = "c42bb3821416d71cdb8c7aa1c81c0c9bc8c384bbe1a306eb89130224901b1a9a"
+licence = "GPL-2.0-or-later"
+provides = "sgdisk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sgdisk-1.0.9-r2.apk"
+version = "1.0.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["popt", "1.19.0-r0"], ["libstdc++", "12.2.1"], ["libuuid", "2.38.1-r1"]]

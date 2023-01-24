@@ -1,0 +1,15 @@
+checksum = "edcd7e05638b4de7e850c7d32dba8358334b2c79d9b7a3b10562460b544f0a30"
+licence = "GPL-2.0-or-later"
+provides = "filezilla"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/filezilla-3.62.1-r0.apk"
+version = "3.62.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libfilezilla", "0.39.2-r0"], ["libgcc", "12.2.1"], ["gtk+3.0", "3.24.36-r0"], ["libidn", "1.41.0-r0"], ["nettle", "3.8.1-r0"], ["pugixml", "1.13.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["wxwidgets", "3.2.1-r2"], ["wxwidgets-gtk3", "3.2.1-r2"]]

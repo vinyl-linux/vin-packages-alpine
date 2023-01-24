@@ -1,0 +1,15 @@
+checksum = "b259ca0cc681ba0e882531e1858dd4b4d98ea3c5ccb00e567a0ac03ddc4326eb"
+licence = "GPL-2.0-only"
+provides = "nagios"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-4.4.10-r0.apk"
+version = "4.4.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgd", "2.3.3-r3"], ["libssl3", "3.0.7-r2"]]

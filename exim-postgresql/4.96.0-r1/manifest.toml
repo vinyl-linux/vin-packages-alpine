@@ -1,0 +1,15 @@
+checksum = "d633c4740372915a06e57144d32e400488842b0cae314dc28091fe712a4398e7"
+licence = "GPL-2.0-or-later"
+provides = "exim-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-postgresql-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.96.0-r1"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6ec8a13fad8ced2b92071431383afbd8bbc5e3ea437efd2a35c79cc9ea41ec14"
+licence = "LGPL-2.0-or-later"
+provides = "ladspa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ladspa-1.17-r0.apk"
+version = "1.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libsndfile", "1.1.0-r2"], ["libstdc++", "12.2.1"]]

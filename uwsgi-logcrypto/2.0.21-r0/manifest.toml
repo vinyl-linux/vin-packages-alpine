@@ -1,0 +1,15 @@
+checksum = "df2ebfb7ec692310afbcf53d7cab5e7034da1d4156e2305c858f21f360b8fb3e"
+licence = "custom"
+provides = "uwsgi-logcrypto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-logcrypto-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b13d5efd72c0ab7416e7afe2f9da33d1a002d6df32c2b6df6c4841ccbf5e9997"
+licence = "Apache-2.0"
+provides = "notcurses-demo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notcurses-demo-3.0.8-r1.apk"
+version = "3.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["notcurses-libs", "3.0.8-r1"], ["libstdc++", "12.2.1"], ["libunistring", "1.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bf1bf9849813dba8e4d3578558917670945feb4bf4400180c93dd05cd3b2dce2"
+licence = "PostgreSQL"
+provides = "postgresql-bdr-extension"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-bdr-extension-1.0.3-r1.apk"
+version = "1.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

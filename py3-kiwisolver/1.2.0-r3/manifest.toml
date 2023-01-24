@@ -1,0 +1,15 @@
+checksum = "7fdf6bc3826dbb1f6010c99772c4ae5a1df4d644c4b9b14d6b3fe997a79ed750"
+licence = "BSD-3-Clause-Attribution"
+provides = "py3-kiwisolver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-kiwisolver-1.2.0-r3.apk"
+version = "1.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

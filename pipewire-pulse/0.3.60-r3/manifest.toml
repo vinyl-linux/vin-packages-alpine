@@ -1,0 +1,15 @@
+checksum = "40f6d2d8b15fc80d2babe8fc44633b2406d6f1524d15f09ed5087c8013eb1748"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-pulse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipewire-pulse-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wireplumber", "0.4.12-r0"], ["pulseaudio-utils", "16.1.0-r6"], ["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"], ["pipewire-libs", "0.3.60-r3"], ["libpulse", "16.1.0-r6"]]

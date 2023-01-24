@@ -1,0 +1,15 @@
+checksum = "b617610bba2e90117c53a9abf551fb67b8f30e143791b07f6699dd965695541e"
+licence = "BSD-3-Clause"
+provides = "yadifa-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yadifa-dev-2.6.0-r0.apk"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yadifa", "2.6.0-r0"]]

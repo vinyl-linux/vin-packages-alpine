@@ -1,0 +1,15 @@
+checksum = "fedbc62255d0eb5f8ef87671357425841dfc59354a45f6062339da33304573e3"
+licence = "MIT"
+provides = "dotnet6-stage0-bootstrap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet6-stage0-bootstrap-6.0.110-r0.apk"
+version = "6.0.110-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lttng-ust", "2.13.3-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

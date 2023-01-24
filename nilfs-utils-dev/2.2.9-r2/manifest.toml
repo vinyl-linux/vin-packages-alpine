@@ -1,0 +1,15 @@
+checksum = "9a4c1e61988b0bee23a444329b495bc62b3d719223dafd690969306494beb322"
+licence = "GPL-2.0-or-later"
+provides = "nilfs-utils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nilfs-utils-dev-2.2.9-r2.apk"
+version = "2.2.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nilfs-utils-libs", "2.2.9-r2"]]

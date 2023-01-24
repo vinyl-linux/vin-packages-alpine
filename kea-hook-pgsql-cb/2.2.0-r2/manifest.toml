@@ -1,0 +1,15 @@
+checksum = "a7eb3891746b5b1564489656a6647c5f39063cd06302cf4767ea85ff467023f5"
+licence = "MPL2"
+provides = "kea-hook-pgsql-cb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-hook-pgsql-cb-2.2.0-r2.apk"
+version = "2.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["kea-common", "2.2.0-r2"]]

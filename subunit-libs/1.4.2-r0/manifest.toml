@@ -1,0 +1,15 @@
+checksum = "7fb4e20d655ae1ad835b1e8f43a70b63e89d4b0d2e81865e303fe9c03980e8a6"
+licence = "Apache-2.0 AND BSD-3-Clause"
+provides = "subunit-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/subunit-libs-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

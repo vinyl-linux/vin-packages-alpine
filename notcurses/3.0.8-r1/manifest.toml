@@ -1,0 +1,15 @@
+checksum = "50753b42b1af0bf32b835ae65a55d8a8687673a8d4e4d0cc5fb5e5b534f5dda1"
+licence = "Apache-2.0"
+provides = "notcurses"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notcurses-3.0.8-r1.apk"
+version = "3.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdeflate", "1.14.0-r0"], ["libgcc", "12.2.1"], ["notcurses-libs", "3.0.8-r1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "2cdd424b9cfb375390a6357c53d6fa715e456e9d841945907998dedc196e489a"
+licence = "GPL-3.0-or-later"
+provides = "gsl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gsl-dev-2.7.1-r0.apk"
+version = "2.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsl", "2.7.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0c4fd6638071f7d45e30f0ba4aa2688445718982669e2737861940fd0edc2cab"
+licence = "Apache-2.0"
+provides = "py3-cliff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cliff-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-yaml", "6.0.0-r0"], ["python3", "3.10.9-r1"]]

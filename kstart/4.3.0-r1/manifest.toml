@@ -1,0 +1,15 @@
+checksum = "98367e92d4db0af61c77ab5d5d106ef334aaa8541caad5f013b01deb7ee39715"
+licence = "custom"
+provides = "kstart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kstart-4.3-r1.apk"
+version = "4.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["krb5-libs", "1.20.1-r0"]]

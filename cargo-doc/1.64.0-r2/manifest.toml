@@ -1,0 +1,15 @@
+checksum = "9391ce7a3cc8b84ec70959ddfd1b35ac389da98779e79611adae8c1591fc036d"
+licence = "Apache-2.0 MIT"
+provides = "cargo-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-doc-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust-stdlib", "1.64.0-r2"], ["gcc", "12.2.1"], ["musl-dev", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "79d044c2e2c0a574ac6e2f24eadfbc0e36dc1120bf22bf9a730a38ec3cd5d497"
+licence = "BSD-3-Clause AND CC0-1.0 AND LGPL-2.0-or-later"
+provides = "kopeninghours-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kopeninghours-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kopeninghours", "22.8.3-r0"]]

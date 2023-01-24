@@ -1,0 +1,15 @@
+checksum = "2ae6ce8d1791c4e7fc0071e6bd0988d3f0159da603fe3ef1684a6d63422af1d3"
+licence = "GPL-3.0-or-later"
+provides = "mrtest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mrtest-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mrhlpr-common", "1.1.1-r0"]]

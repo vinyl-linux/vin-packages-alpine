@@ -1,0 +1,15 @@
+checksum = "ad3cfb5d7887b484822b7e4e0a863eae01e81c73ec68d43b2abeea2c28f0d455"
+licence = "GPL-2.0-only"
+provides = "duperemove"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/duperemove-0.11.3-r1.apk"
+version = "0.11.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["sqlite-libs", "3.40.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "cb5949be4e165045b0646974f439a532dff13465b06ad4ebdb64bbf466858ee3"
+licence = "GPL-2.0-only AND LGPL-2.1-or-later"
+provides = "lksctp-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lksctp-tools-1.0.19-r1.apk"
+version = "1.0.19-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["liblksctp", "1.0.19-r1"]]

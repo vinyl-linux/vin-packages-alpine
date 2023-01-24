@@ -1,0 +1,15 @@
+checksum = "c203a01d86b8568fa7637e102d679d272890ec02dbf0b3b2e2ad759e92a2e892"
+licence = "LGPL-2.1-or-later"
+provides = "libfreeaptx-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfreeaptx-tools-0.1.1-r1.apk"
+version = "0.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libfreeaptx", "0.1.1-r1"]]

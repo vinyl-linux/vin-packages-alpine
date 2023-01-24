@@ -1,0 +1,15 @@
+checksum = "419cf2b8fd7ebf053def501dcba5c64e81875ac6813c60817ecc59e8c8024605"
+licence = "MIT"
+provides = "harfbuzz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/harfbuzz-5.3.1-r1.apk"
+version = "5.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["glib", "2.74.5-r0"], ["graphite2", "1.3.14-r2"]]

@@ -1,0 +1,15 @@
+checksum = "ae070d66626ee6eaa1594ea1c361c427084738e4e8c94c6aa2191768cf1c1c42"
+licence = "LGPL-2.1-or-later"
+provides = "ibus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ibus-dev-1.5.27-r0.apk"
+version = "1.5.27-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ibus", "1.5.27-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

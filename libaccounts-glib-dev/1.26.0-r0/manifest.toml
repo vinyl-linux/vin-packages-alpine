@@ -1,0 +1,15 @@
+checksum = "1e3589c3d8eb16ae479f250bf2c68d7b2214a403eceef770de45a2e2d4feff02"
+licence = "LGPL-2.1-or-later"
+provides = "libaccounts-glib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libaccounts-glib-dev-1.26-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["check-dev", "0.15.2-r1"], ["gobject-introspection-dev", "1.74.0-r1"], ["libxml2-dev", "2.10.3-r1"], ["py3-gobject3", "3.42.2-r0"], ["sqlite-dev", "3.40.1-r0"], ["libaccounts-glib", "1.26.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

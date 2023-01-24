@@ -1,0 +1,15 @@
+checksum = "a2cff05585ba83788e0f683fc1f02767e3033ab95c2105af8887ec1629f6fc80"
+licence = "GPL-2.0-only AND BSD-3-Clause"
+provides = "can-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/can-utils-2021.08.0-r1.apk"
+version = "2021.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

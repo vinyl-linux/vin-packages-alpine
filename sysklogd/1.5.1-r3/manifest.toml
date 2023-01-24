@@ -1,0 +1,15 @@
+checksum = "559a765222d7e9fa290695ef10e167bfad4dba509856fdab2ddc58fb13c2c813"
+licence = "GPL-2.0-or-later"
+provides = "sysklogd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sysklogd-1.5.1-r3.apk"
+version = "1.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

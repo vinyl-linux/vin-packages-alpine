@@ -1,0 +1,15 @@
+checksum = "1e59b937b772dc282ba5094e8d579eca45f0d9399d0bf5f9292cb9686bb88786"
+licence = "GPL-3.0-only"
+provides = "progress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/progress-0.16-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

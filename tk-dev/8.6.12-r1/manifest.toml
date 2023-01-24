@@ -1,0 +1,15 @@
+checksum = "2f2b31e9102ff0417674cf7029536a131b574ce45cb3388fc3cf9580bcd34ca3"
+licence = "TCL"
+provides = "tk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tk-dev-8.6.12-r1.apk"
+version = "8.6.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tcl-dev", "8.6.12-r1"], ["libx11-dev", "1.8.3-r1"], ["libxft-dev", "2.3.7-r0"], ["fontconfig-dev", "2.14.1-r0"], ["tk", "8.6.12-r1"], ["pkgconf", "1.9.4-r0"]]

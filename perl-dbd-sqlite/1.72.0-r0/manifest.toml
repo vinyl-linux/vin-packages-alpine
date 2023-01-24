@@ -1,0 +1,15 @@
+checksum = "453aa63a57e899ef93f54a43b7b60069519703320fcf9e6dd18645e8db7dbe20"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-dbd-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-dbd-sqlite-1.72-r0.apk"
+version = "1.72.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-dbi", "1.643.0-r4"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

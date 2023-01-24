@@ -1,0 +1,15 @@
+checksum = "cd5bbe9c3f18ffcad0285098c21be9cb4fc4d6ce39b79ee08a66b5d891274c64"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/knot-resolver-openrc-5.5.3-r0.apk"
+version = "5.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

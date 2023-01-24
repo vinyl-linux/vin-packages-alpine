@@ -1,0 +1,15 @@
+checksum = "472e897337b15f329f808a39e2facfa08187fc995022e57605684cbc00669143"
+licence = "MIT OR Apache-2.0"
+provides = "rust-analyzer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rust-analyzer-2022.10.31-r2.apk"
+version = "2022.10.31-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust-src", "1.64.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "dee6968ebbea135993371513f162eb0a682803bce571d5934f164162006ed707"
+licence = "MIT"
+provides = "krb5-server-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/krb5-server-ldap-1.20.1-r0.apk"
+version = "1.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["krb5-conf", "1.0.0-r2"], ["musl", "1.2.3-r4"], ["libcom_err", "1.46.5-r4"], ["krb5-libs", "1.20.1-r0"], ["libldap", "2.6.3-r6"]]

@@ -1,0 +1,15 @@
+checksum = "de285aba9e178a72ea5ab8a4f390f4bed4e4a1ed58e9e4dfb9b8c3320041160c"
+licence = "PostgreSQL"
+provides = "postgresql13"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql13-13.9-r1.apk"
+version = "13.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql13-client", "13.9.0-r1"], ["postgresql-common", "1.1.0-r2"], ["tzdata", "2022.0.0-f-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["icu-libs", "72.1.0-r1"], ["libldap", "2.6.3-r6"], ["libpq", "15.1.0-r0"], ["libssl3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"]]

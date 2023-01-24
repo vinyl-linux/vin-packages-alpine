@@ -1,0 +1,15 @@
+checksum = "746db7848f9df17b6c1aa5dc28993cfa8f4cad79308610adbb10c8136183efde"
+licence = "LGPL-2.0-or-later"
+provides = "libusb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libusb-1.0.26-r0.apk"
+version = "1.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "67a10e8fa3bdb6c868ce407c64234f8478af690965dab22744421b092220be42"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-mail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-mail-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "5c49069661b7b16f47dc4c017635be7fdd8bbd887622b8fb15944ce0bfd94b4f"
+licence = "GPL-3.0-or-later"
+provides = "ddrescue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ddrescue-1.26-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

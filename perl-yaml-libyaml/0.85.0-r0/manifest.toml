@@ -1,0 +1,15 @@
+checksum = "f3bea00fb7f0349a081225a649bac9ea4cef66fa523f40fae9a4604d3d5e2782"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-yaml-libyaml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-yaml-libyaml-0.85-r0.apk"
+version = "0.85.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

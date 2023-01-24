@@ -1,0 +1,15 @@
+checksum = "d2c4ec27e4c45065e92ad8f647a77ffde51d965288429db17142305e7b88e766"
+licence = "ISC"
+provides = "lilv-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lilv-dev-0.24.20-r0.apk"
+version = "0.24.20-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lilv", "0.24.20-r0"], ["lv2-dev", "1.18.10-r0"], ["serd-dev", "0.30.16-r0"], ["sord-dev", "0.16.14-r0"], ["sratom-dev", "0.6.14-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "393934064cde6dca5370096b5c2b0deb5cc61370a665f06a5c4e12ed4da06520"
+licence = "LGPL-3.0-only AND GPL-2.0-only"
+provides = "py3-pyside2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyside2-dev-5.15.6-r0.apk"
+version = "5.15.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libshiboken2-dev", "5.15.6-r0"], ["pkgconf", "1.9.4-r0"], ["py3-pyside2", "5.15.6-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6b1990887398ed68d4a557ac640afa58b40be7153d9b8d9798ff8db054b97312"
+licence = "MIT"
+provides = "image-roll"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/image-roll-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libgcc", "12.2.1"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"]]

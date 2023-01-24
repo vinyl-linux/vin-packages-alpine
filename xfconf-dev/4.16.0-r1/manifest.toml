@@ -1,0 +1,15 @@
+checksum = "ad3f854939b3800887617fe5a656e49a099a96d5256149776f2b6c166dfe54b1"
+licence = "GPL-2.0-only"
+provides = "xfconf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfconf-dev-4.16.0-r1.apk"
+version = "4.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["xfconf", "4.16.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "dd25844d55fb28c9999581981a44a326e540f11aa5b7189cbdf5ae1e333e5c1a"
+licence = "GPL-2.0-or-later"
+provides = "rrdcollect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdcollect-0.2.10-r3.apk"
+version = "0.2.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rrdtool", "1.7.2-r6"], ["musl", "1.2.3-r4"]]

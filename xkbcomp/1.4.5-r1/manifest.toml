@@ -1,0 +1,15 @@
+checksum = "2945312cfdf6555171200f7b2a1da41e6e4fba7d62b04aa5be9d721f3eb782a1"
+licence = "MIT"
+provides = "xkbcomp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xkbcomp-1.4.5-r1.apk"
+version = "1.4.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libxkbfile", "1.1.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3661b9bdb85026246767765ee807eab50929fb1de180964f63f4f7901e6e9a60"
+licence = "BSD-3-Clause"
+provides = "arpack-ilp64"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/arpack-ilp64-3.8.0-r0.apk"
+version = "3.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgfortran", "12.2.1"], ["openblas", "0.3.21-r0"]]

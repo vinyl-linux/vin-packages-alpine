@@ -1,0 +1,15 @@
+checksum = "1067f658277a7430607a05d5b98d2a9349f3e7a110e8d3d58819411d9ac4e067"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulseaudio-dev-16.1-r6.apk"
+version = "16.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpulse-mainloop-glib", "16.1.0-r6"], ["libpulse", "16.1.0-r6"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

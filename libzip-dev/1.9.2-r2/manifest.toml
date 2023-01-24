@@ -1,0 +1,15 @@
+checksum = "8170b692b398801c0b09e473c151a2928c8f4f2c12093e980aef0b3860772ff9"
+licence = "BSD-3-Clause"
+provides = "libzip-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzip-dev-1.9.2-r2.apk"
+version = "1.9.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libzip-tools", "1.9.2-r2"], ["bzip2-dev", "1.0.8-r4"], ["xz-dev", "5.2.9-r0"], ["zlib-dev", "1.2.13-r0"], ["zstd-dev", "1.5.2-r9"], ["libzip", "1.9.2-r2"], ["pkgconf", "1.9.4-r0"]]

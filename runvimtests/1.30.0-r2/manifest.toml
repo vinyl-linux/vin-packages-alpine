@@ -1,0 +1,15 @@
+checksum = "b6251240c8dcea513d078ce5a8adf862ce26ef6b3d4e4cd6ab61b590e35cec29"
+licence = "Vim"
+provides = "runvimtests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/runvimtests-1.30-r2.apk"
+version = "1.30.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gvim", "9.0.999-r0"], ["bash", "5.2.15-r0"], ["yash-binsh", "2.53.0-r2"]]

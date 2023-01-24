@@ -1,0 +1,15 @@
+checksum = "396c66973e0c4da3906f5353171b0347322bca8bbdaa65876a925fed31978515"
+licence = "GPL-2.0-or-later"
+provides = "gnome-clocks-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-clocks-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["waked", "0.1.1-r3"]]

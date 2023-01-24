@@ -1,0 +1,15 @@
+checksum = "8bd31703d6b1255b5839ac9fbf9962c29b66f3fb3a8b5ce73ad9908730619239"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
+provides = "hyphen-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hyphen-dev-2.8.8-r2.apk"
+version = "2.8.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["hyphen", "2.8.8-r2"]]

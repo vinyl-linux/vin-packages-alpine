@@ -1,0 +1,15 @@
+checksum = "7596478d397fd71f96238f47a8bd6dfbf3515f8495007f0975090e3df33bf419"
+licence = "GPL-2.0-only"
+provides = "wireguard-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wireguard-tools-1.0.20210914-r1.apk"
+version = "1.0.20210914-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wireguard-tools-wg", "1.0.20210914-r1"], ["wireguard-tools-wg-quick", "1.0.20210914-r1"]]

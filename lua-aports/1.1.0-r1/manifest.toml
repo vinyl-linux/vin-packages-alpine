@@ -1,0 +1,15 @@
+checksum = "1e4d752734fac3f2517a2c2d235c91cd222c5dcb6e90b435fb4a9cebb91b1076"
+licence = "MIT"
+provides = "lua-aports"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-aports-1.1.0-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2-cjson", "2.1.0-r10"], ["lua5.2-filesystem", "1.8.0-r2"], ["lua5.2-optarg", "0.3.0-r0"], ["lua5.2", "5.2.4-r10"]]

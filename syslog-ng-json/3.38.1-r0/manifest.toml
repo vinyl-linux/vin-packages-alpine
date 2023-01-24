@@ -1,0 +1,15 @@
+checksum = "d0c3d3a9277a459b5260d4b10a5b008e9ac2648a8425991f4837f487ad0ce0b4"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-json"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-json-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["json-c", "0.16.0-r2"], ["syslog-ng", "3.38.1-r0"]]

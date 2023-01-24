@@ -1,0 +1,15 @@
+checksum = "9787978d7306115f0d267ce973c0daab300386a9b51734ae1ddd7a884f774589"
+licence = "GPL-2.0-or-later"
+provides = "recordmydesktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/recordmydesktop-0.3.8.1-r3.apk"
+version = "0.3.8.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxdamage", "1.1.5-r1"], ["libxext", "1.3.5-r0"], ["libxfixes", "6.0.0-r0"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libogg", "1.3.5-r2"], ["libtheora", "1.1.1-r16"], ["libvorbis", "1.3.7-r0"], ["zlib", "1.2.13-r0"]]

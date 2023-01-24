@@ -1,0 +1,15 @@
+checksum = "25716cd6bc8242778814a2fe3040d415230cc45d8e9604676300f9bba3eccfac"
+licence = "GPL-3.0-or-later AND CC0-1.0"
+provides = "gnome-tweaks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-tweaks-40.10-r4.apk"
+version = "40.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dconf", "0.40.0-r2"], ["gnome-settings-daemon", "43.0.0-r0"], ["gnome-shell-schemas", "43.2.0-r0"], ["gtk+3.0", "3.24.36-r0"], ["libhandy1", "1.8.0-r1"], ["libnotify", "0.8.1-r1"], ["mutter-schemas", "43.2.0-r0"], ["py3-gobject3", "3.42.2-r0"]]

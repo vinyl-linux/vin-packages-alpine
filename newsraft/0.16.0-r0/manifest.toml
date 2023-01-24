@@ -1,0 +1,15 @@
+checksum = "8dccad4d38688b1c5967353cb04b91edb27ce8c9b4f3530868e4fba0411a9425"
+licence = "ISC"
+provides = "newsraft"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/newsraft-0.16-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libexpat", "2.5.0-r0"], ["gumbo-parser", "0.10.1-r1"], ["ncurses-libs", "6.3.0"], ["sqlite-libs", "3.40.1-r0"], ["yajl", "2.1.0-r5"]]

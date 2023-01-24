@@ -1,0 +1,15 @@
+checksum = "4edf3b2d4bac8ace51641c1ff13ba6afe7c9db916318c4005c472dc57966544e"
+licence = "SGI-B-1.1 AND SGI-B-2.0"
+provides = "glu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glu-dev-9.0.2-r2.apk"
+version = "9.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dev", "22.2.5-r1"], ["glu", "9.0.2-r2"], ["pkgconf", "1.9.4-r0"]]

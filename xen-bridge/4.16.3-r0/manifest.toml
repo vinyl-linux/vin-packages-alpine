@@ -1,0 +1,15 @@
+checksum = "b6ad2ba900926688ab1357d7a5a9d4bf3393952ed8e80b3982d316608007568d"
+licence = "GPL-2.0-only"
+provides = "xen-bridge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xen-bridge-4.16.3-r0.apk"
+version = "4.16.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnsmasq-dnssec-dbus", "2.87.0-r0"]]

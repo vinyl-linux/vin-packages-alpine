@@ -1,0 +1,15 @@
+checksum = "17f49453f5af45749a347730b3e930ce0c0e5509933c69bfd1ab595adf6c7017"
+licence = "GPL-2.0-or-later"
+provides = "bpfmon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bpfmon-2.50-r1.apk"
+version = "2.50.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"], ["yascreen", "1.86.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "b0aca11ed148135ce76060586efe6a04f791a62c75343d30b50902e50ec81da5"
+licence = "BSD-2-Clause"
+provides = "pdal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdal-dev-2.4.3-r0.apk"
+version = "2.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdal-dev", "3.5.3-r2"], ["libxml2-dev", "2.10.3-r1"], ["pdal", "2.4.3-r0"], ["pkgconf", "1.9.4-r0"]]

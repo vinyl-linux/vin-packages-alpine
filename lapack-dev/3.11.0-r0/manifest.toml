@@ -1,0 +1,15 @@
+checksum = "6f88d5b39453e42afc2a3d013fad20099c94cfed7b6cb2110cdac0e5e436461a"
+licence = "BSD-3-Clause"
+provides = "lapack-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lapack-dev-3.11-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lapack", "3.11.0-r0"], ["blas-dev", "3.11.0-r0"], ["pkgconf", "1.9.4-r0"]]

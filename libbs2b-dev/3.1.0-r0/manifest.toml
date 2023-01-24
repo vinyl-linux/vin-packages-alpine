@@ -1,0 +1,15 @@
+checksum = "98636cce3ea23dba2b87f3a129f8952c75390b7f955ca1ffce0d8d859f2b6419"
+licence = "MIT"
+provides = "libbs2b-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbs2b-dev-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbs2b", "3.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

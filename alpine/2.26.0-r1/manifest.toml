@@ -1,0 +1,15 @@
+checksum = "f3a00846c42e6ede374b5fcdb83acb68d8cdd3994622a1aa42ae29982645e366"
+licence = "Apache-2.0"
+provides = "alpine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alpine-2.26-r1.apk"
+version = "2.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libldap", "2.6.3-r6"], ["ncurses-libs", "6.3.0"], ["libssl3", "3.0.7-r2"]]

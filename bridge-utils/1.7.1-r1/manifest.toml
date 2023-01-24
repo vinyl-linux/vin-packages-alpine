@@ -1,0 +1,15 @@
+checksum = "10c34af98fc16c00cc7d1b392fa0b36db506b50e5bf2701e2d7217606cc54d24"
+licence = "GPL-2.0-or-later"
+provides = "bridge-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bridge-utils-1.7.1-r1.apk"
+version = "1.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

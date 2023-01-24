@@ -1,0 +1,15 @@
+checksum = "c64f4496942ab4516267417548f6f0e17ca9a7d0202a5fc12820ea0d43eed723"
+licence = "Apache-2.0"
+provides = "py3-speechpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-speechpy-2.4-r2.apk"
+version = "2.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-scipy", "1.9.3-r0"]]

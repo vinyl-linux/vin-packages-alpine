@@ -1,0 +1,15 @@
+checksum = "835f634ec48318c6ad412a5f4607a9fa86945f8ec3e3056d38c841626d2efedb"
+licence = "MIT"
+provides = "exa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exa-0.10.1-r3.apk"
+version = "0.10.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgit2", "1.5.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b9fc3ec56475c1cb5627977bb42fc0bd1c563f22ad8dd3ea0adb960720c43700"
+licence = "ISC"
+provides = "libmowgli-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmowgli-dev-2.1.3-r6.apk"
+version = "2.1.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmowgli", "2.1.3-r6"], ["pkgconf", "1.9.4-r0"]]

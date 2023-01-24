@@ -1,0 +1,15 @@
+checksum = "224c524f1e4d8e306d7daba5d5fbbc583b7f1178a1229bf7a9fc74ba64a8164f"
+licence = "GPL-2.0-or-later"
+provides = "kaccounts-providers-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kaccounts-providers-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["signon-plugin-oauth2", "0.25.0-r0"]]

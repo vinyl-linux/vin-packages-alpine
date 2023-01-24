@@ -1,0 +1,15 @@
+checksum = "5ce9a33c6fb4d94e292f33762cd37225331e1cd471d6d6221e9ec775c20ea6c5"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-stone"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-stone-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["postfix", "3.7.4-r0"]]

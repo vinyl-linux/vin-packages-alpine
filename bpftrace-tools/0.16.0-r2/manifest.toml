@@ -1,0 +1,15 @@
+checksum = "e1699155db395cb9702d269d8895908b3a2d24c8df2e3cadf03e9aa60cc1a318"
+licence = "Apache-2.0"
+provides = "bpftrace-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bpftrace-tools-0.16.0-r2.apk"
+version = "0.16.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bpftrace", "0.16.0-r2"]]

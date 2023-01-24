@@ -1,0 +1,15 @@
+checksum = "87547123afe601b585bd7bb57789452a6c86c850eeaefcbafeab3f272a3ca836"
+licence = "custom"
+provides = "uwsgi-router_metrics"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-router_metrics-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

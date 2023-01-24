@@ -1,0 +1,15 @@
+checksum = "81de98a0a18daa74f66499d3a4b474b2db3cae8a6dde3358d5e3e2402467592d"
+licence = "GPL"
+provides = "vde2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vde2-2.3.3-r0.apk"
+version = "2.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"], ["vde2-libs", "2.3.3-r0"], ["wolfssl-fast", "5.5.3-r0"]]

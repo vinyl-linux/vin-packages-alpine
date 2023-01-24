@@ -1,0 +1,15 @@
+checksum = "8e255e9a1ff06a8e17fcd2562d33caaf38488554a5237ba34008ef9b68318e50"
+licence = "GPL"
+provides = "pcmciautils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pcmciautils-018-r2.apk"
+version = "18.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

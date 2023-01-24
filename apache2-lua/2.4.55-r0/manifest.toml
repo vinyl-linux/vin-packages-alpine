@@ -1,0 +1,15 @@
+checksum = "0ccab127e6547355845f9fa70bdac4bfd617040668f8a70a920979f48bd2d4ff"
+licence = "Apache-2.0"
+provides = "apache2-lua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-lua-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["musl", "1.2.3-r4"], ["lua5.1-libs", "5.1.5-r11"]]

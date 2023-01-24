@@ -1,0 +1,15 @@
+checksum = "fbe76aafa8e29b804f05ca13c11ec97665354d531d9cd1e45575c1fdf0f10d25"
+licence = "LGPL-2.1-or-later AND MPL-1.1"
+provides = "libnice-gstreamer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnice-gstreamer-0.1.19-r0.apk"
+version = "0.1.19-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gstreamer", "1.20.5-r0"], ["libnice", "0.1.19-r0"]]

@@ -1,0 +1,15 @@
+checksum = "10fe6ab3fc0eac67c28b29b248bdf501ff78b37f896cedc6cb6ad1bb2d93abc3"
+licence = "GPL-2.0"
+provides = "sysbench-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sysbench-dev-1.0.20-r1.apk"
+version = "1.0.20-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaio-dev", "0.3.113-r0"], ["mariadb-dev", "10.6.11-r0"]]

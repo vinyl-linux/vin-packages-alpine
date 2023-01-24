@@ -1,0 +1,15 @@
+checksum = "b1afaee3e999d449716c89a436f8012c41e1e86d1bbb7dbdb92cfc110b022692"
+licence = "LGPL-3.0-or-later"
+provides = "lensfun"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lensfun-0.3.3-r1.apk"
+version = "0.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

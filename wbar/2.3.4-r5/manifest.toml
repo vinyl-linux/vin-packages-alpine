@@ -1,0 +1,15 @@
+checksum = "b94e6b298c13ca7b8f242a1438ee407b30df1fc725d74d32a3d7660dd7758323"
+licence = "GPL-3.0-only"
+provides = "wbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wbar-2.3.4-r5.apk"
+version = "2.3.4-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.9.1-r2"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libstdc++", "12.2.1"]]

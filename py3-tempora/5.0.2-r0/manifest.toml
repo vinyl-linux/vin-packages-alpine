@@ -1,0 +1,15 @@
+checksum = "c52452948fb337feb13d57f45d5afa7d9e19aeefec759bb4d6134b692b015d89"
+licence = "MIT"
+provides = "py3-tempora"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tempora-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jaraco.functools", "3.5.2-r1"], ["py3-tz", "2022.6.0-r0"], ["python3", "3.10.9-r1"]]

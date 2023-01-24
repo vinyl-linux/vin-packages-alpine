@@ -1,0 +1,15 @@
+checksum = "e26144cecfbb477a90586b3318d4796eb1b1affac61fd12485655f77040fca90"
+licence = "Apache-2.0"
+provides = "py3-requests-unixsocket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-requests-unixsocket-0.3.0-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.28.1-r1"]]

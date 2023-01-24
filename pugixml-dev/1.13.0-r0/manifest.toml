@@ -1,0 +1,15 @@
+checksum = "61f08081ad4855d927a078b6f4e3d1a143ba845c97d82dea3f7d9b33bc4f7fa9"
+licence = "MIT"
+provides = "pugixml-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pugixml-dev-1.13-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["pugixml", "1.13.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "42b82c335b815ea8887cb69525cc3cc4247cf77a880b1d457b0e71ed7688f64e"
+licence = "GPL-3.0-or-later"
+provides = "todo.txt-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/todo.txt-cli-2.12.0-r1.apk"
+version = "2.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"]]

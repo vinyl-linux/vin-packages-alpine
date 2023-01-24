@@ -1,0 +1,15 @@
+checksum = "0fb799ad379414958163b677f3bbacb3b3205c4f2a09ba24935f93c866068d48"
+licence = "MIT"
+provides = "composer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/composer-2.4.4-r0.apk"
+version = "2.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.14-r0"], ["php81-phar", "8.1.14-r0"], ["php81-curl", "8.1.14-r0"], ["php81-iconv", "8.1.14-r0"], ["php81-mbstring", "8.1.14-r0"], ["php81-openssl", "8.1.14-r0"], ["php81-zip", "8.1.14-r0"]]

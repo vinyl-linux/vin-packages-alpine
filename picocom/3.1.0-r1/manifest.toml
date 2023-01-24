@@ -1,0 +1,15 @@
+checksum = "2d84be4de2667e57eb8514c1eb6646849bb96c1cd0d5667a45e063516f6022ab"
+licence = "GPL-2.0"
+provides = "picocom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/picocom-3.1-r1.apk"
+version = "3.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

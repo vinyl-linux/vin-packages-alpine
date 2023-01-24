@@ -1,0 +1,15 @@
+checksum = "3ae6375a6660b7ea965338c7aac63d6ffc1ce9ba8d12e98b53161154204b8112"
+licence = "BSD-2-Clause"
+provides = "lua5.3-unit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.3-unit-3.4-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"]]

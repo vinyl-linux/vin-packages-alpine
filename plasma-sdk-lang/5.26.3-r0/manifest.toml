@@ -1,0 +1,15 @@
+checksum = "9faaa02a20a4ab178f7596d53d0c7123b1e411a42d4ec0f282e14dba5580dc8c"
+licence = "GPL-2.0-or-later"
+provides = "plasma-sdk-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-sdk-lang-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["qt5-qtquickcontrols", "5.15.6"]]

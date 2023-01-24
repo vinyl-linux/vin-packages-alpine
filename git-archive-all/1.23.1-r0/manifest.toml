@@ -1,0 +1,15 @@
+checksum = "f3b98977e662583940dc7502b2b6a47eb75be8ad8e031005de4a6a904f0042ff"
+licence = "MIT"
+provides = "git-archive-all"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-archive-all-1.23.1-r0.apk"
+version = "1.23.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

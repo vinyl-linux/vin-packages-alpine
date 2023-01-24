@@ -1,0 +1,15 @@
+checksum = "002893e110730cfb3466ceb6de16390dac8905c570560b44fa184fce8f8bb52b"
+licence = "GPL-3.0-only"
+provides = "distrobox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/distrobox-1.4.1-r0.apk"
+version = "1.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["podman", "4.3.1-r1"]]

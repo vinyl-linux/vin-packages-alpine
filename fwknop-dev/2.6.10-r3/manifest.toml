@@ -1,0 +1,15 @@
+checksum = "05f53c781efa045b0bb2bbd5e112d9b203c767b5f7741224833b680d5a522711"
+licence = "GPL-2.0-or-later"
+provides = "fwknop-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fwknop-dev-2.6.10-r3.apk"
+version = "2.6.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fwknop-libs", "2.6.10-r3"]]

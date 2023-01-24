@@ -1,0 +1,15 @@
+checksum = "6f11e12c58827fe6af30a21337ba487969ba4a68c2d8a87213ae963f90f66f9e"
+licence = "ISC"
+provides = "doas-sudo-shim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/doas-sudo-shim-0.1.1-r0.apk"
+version = "0.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["doas", "6.8.2-r3"]]

@@ -1,0 +1,15 @@
+checksum = "a7a5db63d28ed104fb4d890fb86f7be889eecabd98839b68199351aa06221cd7"
+licence = "GPL-3.0-or-later"
+provides = "sngrep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sngrep-1.6.0-r0.apk"
+version = "1.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sed", "4.9.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["ncurses-libs", "6.3.0"], ["libpcap", "1.10.1-r1"], ["pcre", "8.45.0-r2"], ["libssl3", "3.0.7-r2"]]

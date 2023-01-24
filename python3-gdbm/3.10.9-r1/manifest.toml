@@ -1,0 +1,15 @@
+checksum = "e2669f191c7e67d7182c5f0063ab99d774df4def9c24bf31f27e035793dc079f"
+licence = "PSF-2.0"
+provides = "python3-gdbm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/python3-gdbm-3.10.9-r1.apk"
+version = "3.10.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gdbm", "1.23.0-r0"]]

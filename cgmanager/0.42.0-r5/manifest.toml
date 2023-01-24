@@ -1,0 +1,15 @@
+checksum = "111c075307106445d52fd9d1bbf3b791fd90aeb3ff2df16de10fa9ec6cea1155"
+licence = "LGPL-2.0-or-later"
+provides = "cgmanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cgmanager-0.42-r5.apk"
+version = "0.42.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libnih", "1.0.3-r6"], ["linux-pam", "1.5.2-r1"], ["popt", "1.19.0-r0"]]

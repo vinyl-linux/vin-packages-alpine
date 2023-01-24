@@ -1,0 +1,15 @@
+checksum = "6b510dce1055d8fdf2e098551e70f018c051dd86d0e68ba4eb6add22f2020c70"
+licence = "BSD-2-Clause"
+provides = "libcoap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcoap-dev-4.3.1-r0.apk"
+version = "4.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcoap", "4.3.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "69059674b7458d06daf628633724aceaca803c27963c4e8d45d7b54904f37dd7"
+licence = "PostgreSQL"
+provides = "pg_probackup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pg_probackup-2.5.8-r0.apk"
+version = "2.5.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"], ["zlib", "1.2.13-r0"]]

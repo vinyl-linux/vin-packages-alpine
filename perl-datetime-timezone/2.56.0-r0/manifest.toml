@@ -1,0 +1,15 @@
+checksum = "003381d82013628323950e18bb03ad37efb19ad3acd728f3697a2aa3ef8ef03f"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-datetime-timezone"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-datetime-timezone-2.56-r0.apk"
+version = "2.56.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-specio", "0.48.0-r0"], ["perl-class-singleton", "1.6.0-r0"], ["perl-module-runtime", "0.16.0-r4"], ["perl-params-validationcompiler", "0.30.0-r1"], ["perl-try-tiny", "0.31.0-r0"], ["perl-namespace-autoclean", "0.29.0-r2"]]

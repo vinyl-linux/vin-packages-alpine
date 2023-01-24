@@ -1,0 +1,15 @@
+checksum = "87ccc48cb687b3a1cc471491f2adf856b551b7fde9ad4b536119d7e85dd7ab2f"
+licence = "MIT"
+provides = "xkill"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xkill-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxmu", "1.1.4-r0"], ["musl", "1.2.3-r4"]]

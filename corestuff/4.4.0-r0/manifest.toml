@@ -1,0 +1,15 @@
+checksum = "631cbcc1b204357481c2d4ab09064894791eab4ba3650859368c932df1e44d11"
+licence = "GPL-3.0-or-later"
+provides = "corestuff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corestuff-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["kglobalaccel", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxcomposite", "0.4.5-r1"], ["libxi", "1.8.0-r0"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libcsys", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["xcb-util-wm", "0.4.2-r0"], ["libxcb", "1.15.0-r0"]]

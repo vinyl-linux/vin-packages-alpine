@@ -1,0 +1,15 @@
+checksum = "a9ce04c2af332ac57a2afc196fdab971e8b693176ce4dcd0333615b11bf314d5"
+licence = "GPL-2.0-or-later"
+provides = "vidstab-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vidstab-dev-1.1.0-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["vidstab", "1.1.0-r2"]]

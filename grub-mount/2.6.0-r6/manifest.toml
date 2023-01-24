@@ -1,0 +1,15 @@
+checksum = "ddc4d34c3be4f7e52b7747b6611c47672c75a958b63843a6132cac7453a8da53"
+licence = "GPL-3.0-or-later"
+provides = "grub-mount"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/grub-mount-2.06-r6.apk"
+version = "2.6.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grub", "2.6.0-r6"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["fuse", "2.9.9-r2"]]

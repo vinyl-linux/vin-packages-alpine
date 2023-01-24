@@ -1,0 +1,15 @@
+checksum = "0592eddb8681e497bc2263c1ad70e772c4d09040774d1c9d20a5468acd225281"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-initscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-initscript-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"], ["php81-fpm", "8.1.14-r0"], ["yash-binsh", "2.53.0-r2"]]

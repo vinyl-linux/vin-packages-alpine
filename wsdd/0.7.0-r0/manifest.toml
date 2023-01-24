@@ -1,0 +1,15 @@
+checksum = "bb02222c77133ee5f437c142f6f3abb4f4697b3f111ba3319ba906438c51c4aa"
+licence = "MIT"
+provides = "wsdd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wsdd-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["yash-binsh", "2.53.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "5465b941d56c3f84156b52458175d176873a1ea39493527c105092bf0fe02bde"
+licence = "Public Domain and BSD"
+provides = "py3-webpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-webpy-0.62-r0.apk"
+version = "0.62.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cheroot", "9.0.0-r0"]]

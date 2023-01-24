@@ -1,0 +1,15 @@
+checksum = "1ea04495825147f94a3a2b567c49610630150535c4c653f030d9dbf3cdeb915b"
+licence = "BSD"
+provides = "openssh-client-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-client-common-9.1_p1-r1.apk"
+version = "9.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libedit", "20221030.3.1-r0"], ["zlib", "1.2.13-r0"]]

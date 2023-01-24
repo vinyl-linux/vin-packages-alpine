@@ -1,0 +1,15 @@
+checksum = "6618f2ecaf6057b43d45d21ad9a5321bfd4643a5f4c39f5e91155034da776c29"
+licence = "GPL-2.0-or-later FIPL"
+provides = "freeimage-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freeimage-dev-3.18.0-r3.apk"
+version = "3.18.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeimage", "3.18.0-r3"]]

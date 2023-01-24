@@ -1,0 +1,15 @@
+checksum = "f83b77addce2ab470982e0f8eabdbe63b3678367edaa858618f9776b1a65ed2e"
+licence = "GPL-2.0-or-later"
+provides = "quagga-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/quagga-dev-1.2.4-r6.apk"
+version = "1.2.4-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["quagga", "1.2.4-r6"]]

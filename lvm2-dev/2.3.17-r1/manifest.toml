@@ -1,0 +1,15 @@
+checksum = "b4c9c60d02e023bebf13c4ed0e7c84d49af6a747517183559e78eeb1f22ca712"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "lvm2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lvm2-dev-2.03.17-r1.apk"
+version = "2.3.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["device-mapper-event-libs", "2.3.17-r1"], ["device-mapper-libs", "2.3.17-r1"], ["lvm2-libs", "2.3.17-r1"], ["pkgconf", "1.9.4-r0"]]

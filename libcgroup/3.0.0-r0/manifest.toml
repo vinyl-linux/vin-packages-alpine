@@ -1,0 +1,15 @@
+checksum = "77ddae4cc813ea089d119767d2945d9dba6e2d6c2db51b0535765347f7febf90"
+licence = "LGPL-2.1-only"
+provides = "libcgroup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcgroup-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"]]

@@ -1,0 +1,15 @@
+checksum = "2488b55632a452fc2d7cb6bcca70cba021e12741c7f5c0c020aed70bd6f21640"
+licence = "BSD-2"
+provides = "netifrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netifrc-0.7.3-r1.apk"
+version = "0.7.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"]]

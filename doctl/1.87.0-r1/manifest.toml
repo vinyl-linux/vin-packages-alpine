@@ -1,0 +1,15 @@
+checksum = "46984a99dc7c5b207d9fe2d357c20d92aa82aae22ec24184c88d96a6267198c5"
+licence = "Apache-2.0"
+provides = "doctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/doctl-1.87.0-r1.apk"
+version = "1.87.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

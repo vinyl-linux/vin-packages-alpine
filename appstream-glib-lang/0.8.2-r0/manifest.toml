@@ -1,0 +1,15 @@
+checksum = "0d0b174bf5e59f7b029a08e6944c47ec75a8459d4254ec553f76f132f291e468"
+licence = "LGPL-2.0-or-later"
+provides = "appstream-glib-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/appstream-glib-lang-0.8.2-r0.apk"
+version = "0.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

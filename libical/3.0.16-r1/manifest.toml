@@ -1,0 +1,15 @@
+checksum = "2000c5c8bf2286431556f256434aaa8be3e99752866f0eed78a27d945c35db2c"
+licence = "LGPL-2.1-only OR MPL-2.0"
+provides = "libical"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libical-3.0.16-r1.apk"
+version = "3.0.16-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "fce0911a9f719a1efda83322c77a5d48871ae767f67b8c3ddc206f73029a21ba"
+licence = "BSD-2-Clause-NetBSD"
+provides = "openjpeg-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openjpeg-dev-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjpeg-tools", "2.5.0-r0"], ["openjpeg", "2.5.0-r0"], ["pkgconf", "1.9.4-r0"]]

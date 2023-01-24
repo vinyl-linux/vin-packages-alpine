@@ -1,0 +1,15 @@
+checksum = "f1b6ea4395c049e461c07cfa7ced0bd1b8b42479b8214310f082a972c7e6fdc1"
+licence = "LicenseRef-KDE-Accepted-GPL AND CC0-1.0"
+provides = "kasts-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kasts-lang-22.09.2-r0.apk"
+version = "22.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["qt5-qtbase-sqlite", "5.15.6"], ["gst-plugins-good", "1.20.5-r0"]]

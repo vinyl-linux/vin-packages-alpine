@@ -1,0 +1,15 @@
+checksum = "f9d05e7986d9626d40e0789e0a0184eb51f198a7134b6eb7d7e9ad088b4e5c96"
+licence = "custom"
+provides = "gd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gd-2.3.3-r3.apk"
+version = "2.3.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgd", "2.3.3-r3"]]

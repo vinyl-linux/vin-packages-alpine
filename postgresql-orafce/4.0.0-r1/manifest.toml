@@ -1,0 +1,15 @@
+checksum = "ae178b60a5349c18708ef250420df25dbb28ac5bd127f4b63bb6ec4b50387925"
+licence = "0BSD"
+provides = "postgresql-orafce"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-orafce-4.0.0-r1.apk"
+version = "4.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["musl", "1.2.3-r4"]]

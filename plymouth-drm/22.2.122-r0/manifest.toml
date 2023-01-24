@@ -1,0 +1,15 @@
+checksum = "54e6c1de29f3ea00cfae47ec329c55b5e94fa8363d7a17a0c13c66d8e5d55014"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-drm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-drm-22.02.122-r0.apk"
+version = "22.2.122-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["plymouth", "22.2.122-r0"]]

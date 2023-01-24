@@ -1,0 +1,15 @@
+checksum = "73ecd92a4e1cec33e20a3aa1194a809a95f64b8724e23f1665ed412f8b23dabf"
+licence = "LGPL-2.1-only WITH OCaml-LGPL-linking-exception"
+provides = "opam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opam-2.1.3-r1.apk"
+version = "2.1.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"], ["patch", "2.7.6-r8"], ["unzip", "6.0.0-r13"], ["coreutils", "9.1.0-r0"], ["bubblewrap", "0.7.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

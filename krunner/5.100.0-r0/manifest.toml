@@ -1,0 +1,15 @@
+checksum = "a676de07c5ecfd724826d53a67a949b47081873e41ff1d089906c60170c5755a"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "krunner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/krunner-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kactivities-libs", "5.100.0-r0"], ["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["plasma-framework", "5.100.1-r0"], ["kservice", "5.100.0-r0"], ["threadweaver", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

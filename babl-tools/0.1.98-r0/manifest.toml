@@ -1,0 +1,15 @@
+checksum = "84695a18e8c23121f22e819dc53794698fa13d6224134cb8a48e0d4ffd168d27"
+licence = "LGPL-3.0-or-later"
+provides = "babl-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/babl-tools-0.1.98-r0.apk"
+version = "0.1.98-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["babl", "0.1.98-r0"], ["musl", "1.2.3-r4"]]

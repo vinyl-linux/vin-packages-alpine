@@ -1,0 +1,15 @@
+checksum = "c70f1f608dce20a31cae5d4d548a05961b7f6b32af4e2bbb03c7cd4e72d5d39f"
+licence = "Public-Domain"
+provides = "rover"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rover-1.0.1-r1.apk"
+version = "1.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

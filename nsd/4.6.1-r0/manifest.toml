@@ -1,0 +1,15 @@
+checksum = "e9caa77fbd6187ca9d20d385cea423d8c2441c178794c0f1ecc19f7677968ddc"
+licence = "BSD-3-Clause"
+provides = "nsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nsd-4.6.1-r0.apk"
+version = "4.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libevent", "2.1.12-r5"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "40e08fa2edacff8e8fd8e82b39c9171c06144dcf2f40f89bf578293798f37691"
+licence = "GPL-3.0-or-later"
+provides = "fuse-overlayfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fuse-overlayfs-1.9-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fuse3", "3.12.0-r0"], ["musl", "1.2.3-r4"], ["fuse3-libs", "3.12.0-r0"]]

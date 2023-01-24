@@ -1,0 +1,15 @@
+checksum = "b4c848585cc171d3a18b8be62c2ce9480d8d8057a911bf971c97d2414b4b5754"
+licence = "GPL-2.0-or-later"
+provides = "libgnomekbd-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgnomekbd-lang-3.28.1-r0.apk"
+version = "3.28.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r1"]]

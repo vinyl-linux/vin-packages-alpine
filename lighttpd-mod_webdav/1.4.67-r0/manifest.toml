@@ -1,0 +1,15 @@
+checksum = "e8501e74901d1ba1d4b54f22f22405e486cdc716f6cbf5eaef73b6734d222e9b"
+licence = "BSD-3-Clause"
+provides = "lighttpd-mod_webdav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lighttpd-mod_webdav-1.4.67-r0.apk"
+version = "1.4.67-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"], ["libuuid", "2.38.1-r1"], ["libxml2", "2.10.3-r1"]]

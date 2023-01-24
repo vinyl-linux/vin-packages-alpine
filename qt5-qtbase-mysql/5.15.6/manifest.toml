@@ -1,0 +1,15 @@
+checksum = "8fdf9c31d6a497e2155a1c3d92a4832020aba7c35930c7888413d843aa3fb3b3"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtbase-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtbase-mysql-5.15.6_git20221010-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "25dd2c5dc329aeac79f46f7e01ed778ee37818d8ee59272ac8edfae7874cbf19"
+licence = "GPL-3.0-or-later LGPL-3.0-or-later"
+provides = "samba-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/samba-libs-4.16.8-r0.apk"
+version = "4.16.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["samba-dc-libs", "4.16.8-r0"], ["samba-util-libs", "4.16.8-r0"], ["gnutls", "3.7.8-r2"], ["jansson", "2.14.0-r0"], ["libldap", "2.6.3-r6"], ["ldb", "2.5.2-r0"], ["linux-pam", "1.5.2-r1"], ["popt", "1.19.0-r0"], ["talloc", "2.3.4-r0"], ["tdb-libs", "1.4.7-r0"], ["tevent", "0.13.0-r0"], ["libwbclient", "4.16.8-r0"], ["zlib", "1.2.13-r0"]]

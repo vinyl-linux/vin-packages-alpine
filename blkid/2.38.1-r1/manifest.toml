@@ -1,0 +1,15 @@
+checksum = "db729e150cce69b0c1f6ab4791745e76ff77a0ee4962e8b4363be35b98df97c9"
+licence = "LGPL-1.0-only"
+provides = "blkid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/blkid-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"]]

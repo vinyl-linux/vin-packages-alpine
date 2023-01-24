@@ -1,0 +1,15 @@
+checksum = "7bed8a8eb2c9ebc1c7315cd6b5cc28b50fc559590b07ff6381a75b116927c4cf"
+licence = "LGPL-3.0-or-later"
+provides = "live-media-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/live-media-dev-2022.10.01-r0.apk"
+version = "2022.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["live-media", "2022.10.1-r0"]]

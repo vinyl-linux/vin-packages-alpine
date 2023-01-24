@@ -1,0 +1,15 @@
+checksum = "82eafd0a68e4e1f5a0c7b5472f1ef7915c3abe09eb46b28069b716c530b29abb"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "gcc-objc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gcc-objc-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libc-dev", "0.7.2-r3"], ["gcc", "12.2.1"], ["libobjc", "12.2.1"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.13-r0"]]

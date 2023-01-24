@@ -1,0 +1,15 @@
+checksum = "51a02245afd6405540bad748f26b1e4f4192e63073a28405b921715c1bbbd3cf"
+licence = "custom"
+provides = "xcmsdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcmsdb-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

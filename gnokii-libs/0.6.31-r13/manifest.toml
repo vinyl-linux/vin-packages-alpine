@@ -1,0 +1,15 @@
+checksum = "4da2377d318a8ff94c0988a13b154c72f1744faf29bd200ab32397b3ef9ffcf4"
+licence = "GPL-2.0-or-later"
+provides = "gnokii-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnokii-libs-0.6.31-r13.apk"
+version = "0.6.31-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-libs", "5.66.0-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libical", "3.0.16-r1"], ["libintl", "0.21.1-r1"], ["libusb-compat", "0.1.7-r1"]]

@@ -1,0 +1,15 @@
+checksum = "c574ca4ab2ba4fd2225af958a70b62323f3edd0c2fb1ae5396fdbb784d33638b"
+licence = "LGPL-2.1-or-later"
+provides = "libshiboken2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libshiboken2-5.15.6-r0.apk"
+version = "5.15.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

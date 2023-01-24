@@ -1,0 +1,15 @@
+checksum = "66caa28863c2fc45b9df44659443a7b7945eefd0745ff2b5e99d2316bcb57574"
+licence = "GPL-3.0-or-later"
+provides = "i3blocks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/i3blocks-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

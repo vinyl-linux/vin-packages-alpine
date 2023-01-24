@@ -1,0 +1,15 @@
+checksum = "731d1edfb35cc4df57c2a2e84072d2e264a690e238826b89b477ef3f1d89cbae"
+licence = "GPL-3.0-or-later"
+provides = "spacefm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/spacefm-1.0.6-r3.apk"
+version = "1.0.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["ffmpegthumbnailer", "2.2.2-r5"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["eudev-libs", "3.2.11-r4"]]

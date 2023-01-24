@@ -1,0 +1,15 @@
+checksum = "a402860f7b411964cbd59c062d17f0d523c4082325ad6e8e43a66bd5eb1530d1"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-osd-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-osd-tools-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph17-base", "17.2.5-r5"], ["lz4-libs", "1.9.4-r1"], ["librados17", "17.2.5-r5"], ["libaio", "0.3.113-r0"], ["boost1.80-program_options", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["fmt", "9.1.0-r0"], ["fuse", "2.9.9-r2"], ["libgcc", "12.2.1"], ["rocksdb", "7.7.3-r0"], ["libstdc++", "12.2.1"], ["liburing", "2.3.0-r0"]]

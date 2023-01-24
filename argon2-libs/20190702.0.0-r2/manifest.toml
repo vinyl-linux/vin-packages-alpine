@@ -1,0 +1,15 @@
+checksum = "b1af6083c4708c8865fbabc95eaf0627d6503452242b1932d6a7d41076d461e0"
+licence = "Apache-2.0 CC0-1.0"
+provides = "argon2-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/argon2-libs-20190702-r2.apk"
+version = "20190702.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

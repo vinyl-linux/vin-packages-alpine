@@ -1,0 +1,15 @@
+checksum = "0745b9e65100e9baa31166cb70c43bd044db511abbfb5f035d19bef8db7756c5"
+licence = "LGPL-2.0-or-later"
+provides = "soundtouch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/soundtouch-2.3.2-r1.apk"
+version = "2.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgomp", "12.2.1"], ["libstdc++", "12.2.1"]]

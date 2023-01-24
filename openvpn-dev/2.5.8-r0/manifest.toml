@@ -1,0 +1,15 @@
+checksum = "f19d313140e9e595d479af000ee4cc82be28b6bc2ba5f3773966e8b2c2d65018"
+licence = "custom"
+provides = "openvpn-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openvpn-dev-2.5.8-r0.apk"
+version = "2.5.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"]]

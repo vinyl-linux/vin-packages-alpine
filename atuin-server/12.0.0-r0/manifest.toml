@@ -1,0 +1,15 @@
+checksum = "7b6faab3fb862df5b0786518da9c7cd8c6552532de4a13c2d874a6961b652153"
+licence = "MIT"
+provides = "atuin-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/atuin-server-12.0.0-r0.apk"
+version = "12.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libsodium", "1.0.18-r2"], ["libssl3", "3.0.7-r2"]]

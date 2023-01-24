@@ -1,0 +1,15 @@
+checksum = "3c39b34bf2b25f4525771dd5a44bc20f9409b2bcd33a7b37254fb0fbfbbb696d"
+licence = "GPL-3.0-only"
+provides = "kitty-x11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kitty-x11-0.26.5-r0.apk"
+version = "0.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kitty", "0.26.5-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libxkbcommon-x11", "1.4.1-r0"], ["libxkbcommon", "1.4.1-r0"]]

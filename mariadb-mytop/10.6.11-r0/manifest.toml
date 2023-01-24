@@ -1,0 +1,15 @@
+checksum = "0400e4aa1c722c1d43f852abe4770302b2eac8961faafc69fa13a628a4e2d99d"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-mytop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-mytop-10.6.11-r0.apk"
+version = "10.6.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-dbi", "1.643.0-r4"], ["perl-dbd-mysql", "4.50.0-r5"], ["perl-getopt-long", "2.54.0-r0"], ["perl-socket", "2.36.0-r0"], ["perl-term-readkey", "2.38.0-r7"]]

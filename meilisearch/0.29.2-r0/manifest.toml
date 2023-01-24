@@ -1,0 +1,15 @@
+checksum = "18025a36ddda4dfc408707d6e4f192c2db3ae3bbaac31da813ff2001dd2ca455"
+licence = "MIT"
+provides = "meilisearch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/meilisearch-0.29.2-r0.apk"
+version = "0.29.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lmdb", "0.9.29-r2"], ["mimalloc2", "2.0.6-r2"]]

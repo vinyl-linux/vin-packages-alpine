@@ -1,0 +1,15 @@
+checksum = "b0e7b248cd5d686f9eca3fc125077eb29c55d4f546ed87a898cbb98d96855fda"
+licence = "(GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-or-later"
+provides = "R-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/R-dev-4.2.2-r0.apk"
+version = "4.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bzip2-dev", "1.0.8-r4"], ["curl-dev", "7.87.0-r1"], ["gcc", "12.2.1"], ["gfortran", "12.2.1"], ["icu-dev", "72.1.0-r1"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng-dev", "1.6.38-r0"], ["make", "4.3.0-r1"], ["musl-dev", "1.2.3-r4"], ["openblas-dev", "0.3.21-r0"], ["pcre2-dev", "10.42.0-r0"], ["readline-dev", "8.2.0-r0"], ["xz-dev", "5.2.9-r0"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

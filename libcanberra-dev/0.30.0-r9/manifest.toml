@@ -1,0 +1,15 @@
+checksum = "ebf2b9c095fa0719c79300bf64baf4783412b80ef4691cdb2ac08709b21a0cd2"
+licence = "LGPL-2.1-or-later"
+provides = "libcanberra-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcanberra-dev-0.30-r9.apk"
+version = "0.30.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcanberra-gtk2", "0.30.0-r9"], ["libcanberra-gtk3", "0.30.0-r9"], ["libcanberra", "0.30.0-r9"], ["gtk+2.0-dev", "2.24.33-r7"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

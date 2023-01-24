@@ -1,0 +1,15 @@
+checksum = "19d79a102088b9a9e4c3e6a3a1e42efa35416fbea251434cd932b70a25c3ba23"
+licence = "LGPL-2.1"
+provides = "efivar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/efivar-38-r1.apk"
+version = "38.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["efivar-libs", "38.0.0-r1"]]

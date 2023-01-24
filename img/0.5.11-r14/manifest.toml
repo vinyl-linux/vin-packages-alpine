@@ -1,0 +1,15 @@
+checksum = "0ae1aed54d7611122fe2d6a6ba8383cc66dbf669ec87103a9f044ccf0b69984a"
+licence = "MIT"
+provides = "img"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/img-0.5.11-r14.apk"
+version = "0.5.11-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["runc", "1.1.4-r4"], ["shadow-subids", "4.13.0-r0"], ["musl", "1.2.3-r4"]]

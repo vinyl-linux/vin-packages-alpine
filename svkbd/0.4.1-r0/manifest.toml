@@ -1,0 +1,15 @@
+checksum = "5a5c829bb77b740a669a1881c5f0b8ae45ca325a857fbd2b4537adc54306479c"
+licence = "MIT"
+provides = "svkbd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/svkbd-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["libxinerama", "1.1.5-r0"], ["libxtst", "1.2.4-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"]]

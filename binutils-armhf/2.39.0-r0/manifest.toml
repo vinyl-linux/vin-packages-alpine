@@ -1,0 +1,15 @@
+checksum = "fa5ae71f031888209fd3409ef433b3ef3c36cdfff6aa615e1640381922251718"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-armhf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-armhf-2.39-r0.apk"
+version = "2.39.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

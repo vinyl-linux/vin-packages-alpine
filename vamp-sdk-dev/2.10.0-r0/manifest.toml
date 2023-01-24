@@ -1,0 +1,15 @@
+checksum = "2fe06fee8b44dfe328848b05224f331075380d8cc5a671a0b41e8c1976ac683a"
+licence = "BSD-3-Clause"
+provides = "vamp-sdk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vamp-sdk-dev-2.10.0-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["vamp-sdk-libs", "2.10.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "275f96185867b297ab9782847e70511d4447dc73ca7f554b0e5f8cca15c29563"
+licence = "GPL-2.0-only"
+provides = "fish-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fish-lang-3.5.1-r1.apk"
+version = "3.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bc", "1.7.1-r2"]]

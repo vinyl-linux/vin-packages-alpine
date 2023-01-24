@@ -1,0 +1,15 @@
+checksum = "cad70a933c4129c22d3e4f53718fe621d4b0261e6770b8d0570b2c15b2e8a0c9"
+licence = "BSD-3-Clause"
+provides = "py3-setproctitle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-setproctitle-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

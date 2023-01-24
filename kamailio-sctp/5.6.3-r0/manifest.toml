@@ -1,0 +1,15 @@
+checksum = "09039f4d139ac99e3b4d18137baf96f4a796fa577cf8c7a2b5fa5f11a9664193"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-sctp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-sctp-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["liblksctp", "1.0.19-r1"]]

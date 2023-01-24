@@ -1,0 +1,15 @@
+checksum = "f3d541c5d88adee7dad1fd9ccec0039c533d6496c93444603b899a6c36955095"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-ssl_validity"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-ssl_validity-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["perl", "5.36.0-r0"]]

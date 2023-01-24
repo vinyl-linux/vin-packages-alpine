@@ -1,0 +1,15 @@
+checksum = "32d3b35d242bd3fe812598ad2fb3cf76916dcc2542878126b8240e2b1b59a4ad"
+licence = "GPL-2.0-or-later"
+provides = "collectd-varnish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-varnish-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["varnish-libs", "7.2.1-r0"]]

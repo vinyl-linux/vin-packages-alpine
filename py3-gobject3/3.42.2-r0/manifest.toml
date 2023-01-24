@@ -1,0 +1,15 @@
+checksum = "0b17cf52fe375e80418eecb88e252d7830a3fd34b0ead9583bc6d72edbfbb667"
+licence = "LGPL-2.1-or-later"
+provides = "py3-gobject3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-gobject3-3.42.2-r0.apk"
+version = "3.42.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["cairo-gobject", "1.17.6-r3"], ["cairo", "1.17.6-r3"], ["libffi", "3.4.4-r0"], ["gobject-introspection", "1.74.0-r1"], ["glib", "2.74.5-r0"]]

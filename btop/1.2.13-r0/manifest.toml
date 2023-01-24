@@ -1,0 +1,15 @@
+checksum = "5184b23403cf2d335b27b4d7069c0df49cd0f378a217446ec90a2de954f4a2db"
+licence = "Apache-2.0"
+provides = "btop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/btop-1.2.13-r0.apk"
+version = "1.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

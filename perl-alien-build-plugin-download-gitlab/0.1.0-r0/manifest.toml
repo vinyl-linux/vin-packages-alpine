@@ -1,0 +1,15 @@
+checksum = "3014525a5cbdf1a8ccac9a8104d45564c27da6e9a03a4b2f93bd6d96a9eb0306"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-alien-build-plugin-download-gitlab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-alien-build-plugin-download-gitlab-0.01-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-alien-build", "2.72.0-r0"], ["perl-uri", "5.17.0-r0"], ["perl-path-tiny", "0.142.0-r0"]]

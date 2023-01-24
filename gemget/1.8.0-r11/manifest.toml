@@ -1,0 +1,15 @@
+checksum = "c675f5ef58814b3633066026b5a31228a6b3afa7df02ebad99f54048135e5979"
+licence = "MIT"
+provides = "gemget"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gemget-1.8.0-r11.apk"
+version = "1.8.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

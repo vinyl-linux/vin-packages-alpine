@@ -1,0 +1,15 @@
+checksum = "1eb75205b73a74d43d6c62d1741ecc6cced8634fb833db6c6744f391d9fed1c2"
+licence = "GPL-2.0-only"
+provides = "openvas-scanner-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openvas-scanner-config-22.4.0-r0.apk"
+version = "22.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["redis", "7.0.8-r0"], ["nmap", "7.93.0-r0"], ["coreutils", "9.1.0-r0"], ["openssl", "3.0.7-r2"], ["util-linux", "2.38.1-r1"]]

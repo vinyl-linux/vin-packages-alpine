@@ -1,0 +1,15 @@
+checksum = "d06e8b72b3dc2442a619d669eeb1379fcc7a086c9605283a4a6b4bf072fecedb"
+licence = "Apache-2.0"
+provides = "armadillo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/armadillo-dev-11.4.2-r0.apk"
+version = "11.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hdf5-dev", "1.12.2-r1"], ["superlu-dev", "5.3.0-r1"], ["armadillo", "11.4.2-r0"], ["pkgconf", "1.9.4-r0"]]

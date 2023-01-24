@@ -1,0 +1,15 @@
+checksum = "b35639fe76d4a4e6a1bb6705c97d211960acd284a50e6d20d56ab980e9240d19"
+licence = "GPL-2.0-only"
+provides = "bpftool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bpftool-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perf", "5.15.74-r0"], ["cpupower", "5.15.74-r0"], ["linux-tools-gpio", "5.15.74-r0"], ["linux-tools-iio", "5.15.74-r0"], ["binutils", "2.39.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libelf", "0.187.0-r2"], ["zlib", "1.2.13-r0"]]

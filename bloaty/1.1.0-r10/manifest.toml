@@ -1,0 +1,15 @@
+checksum = "1881067e9e377b31e032983fd4d7643e28d0154d7056cf83d2eb37ddd9f4b71f"
+licence = "Apache-2.0"
+provides = "bloaty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bloaty-1.1-r10.apk"
+version = "1.1.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["capstone", "4.0.2-r4"], ["libgcc", "12.2.1"], ["libprotobuf", "3.21.9-r0"], ["re2", "2022.6.1-r1"], ["libstdc++", "12.2.1"]]

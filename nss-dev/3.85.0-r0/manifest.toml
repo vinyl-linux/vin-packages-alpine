@@ -1,0 +1,15 @@
+checksum = "5626989878447497523a529562e097b431a7f0d4fb5542ec2096efdc52b82dcb"
+licence = "MPL-2.0"
+provides = "nss-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nss-dev-3.85-r0.apk"
+version = "3.85.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nss", "3.85.0-r0"], ["nspr-dev", "4.35.0-r0"], ["pkgconf", "1.9.4-r0"]]

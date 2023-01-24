@@ -1,0 +1,15 @@
+checksum = "e95fcedc989e584c1497f58a4f344ef49617a1fd00159b22418ba5565b5bfd8a"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-ldap-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

@@ -1,0 +1,15 @@
+checksum = "00cb3c68cbdf208c07dc2b8f9ea8f79e0937befdca607c9819fba757be3f85ee"
+licence = "ISC"
+provides = "yubikey-touch-detector"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yubikey-touch-detector-1.10.0-r5.apk"
+version = "1.10.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

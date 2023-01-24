@@ -1,0 +1,15 @@
+checksum = "376d6899f9cdf030628e812f5c08b432a687c9273c3038742372826a4b89055e"
+licence = "custom"
+provides = "dcc-dccd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dcc-dccd-2.3.168-r1.apk"
+version = "2.3.168-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dcc", "2.3.168-r1"], ["musl", "1.2.3-r4"]]

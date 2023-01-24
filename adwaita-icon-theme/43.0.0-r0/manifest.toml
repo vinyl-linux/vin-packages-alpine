@@ -1,0 +1,15 @@
+checksum = "2af9a7af55784679a14c8e763f582c2d8fd25d5051c68eee5fa925dc57669886"
+licence = "LGPL-3.0-or-later OR CC-BY-SA-3.0"
+provides = "adwaita-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/adwaita-icon-theme-43-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librsvg", "2.55.1-r0"]]

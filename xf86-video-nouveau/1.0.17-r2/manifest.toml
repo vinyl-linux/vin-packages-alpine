@@ -1,0 +1,15 @@
+checksum = "e268772d97dbd276d6a0e9914d8398fb2e6d674af1558221c4b22fde2817728c"
+licence = "MIT"
+provides = "xf86-video-nouveau"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-video-nouveau-1.0.17-r2.apk"
+version = "1.0.17-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dri-gallium", "22.2.5-r1"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["eudev-libs", "3.2.11-r4"]]

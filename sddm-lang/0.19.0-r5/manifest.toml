@@ -1,0 +1,15 @@
+checksum = "a24ef4eabdd0fb17661ae3fc13ab95e2b66564f20dfe0dd66875091969b8d9aa"
+licence = "GPL-2.0-only"
+provides = "sddm-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sddm-lang-0.19.0-r5.apk"
+version = "0.19.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-x11", "1.14.4-r0"], ["elogind", "246.10.0-r5"], ["linux-pam", "1.5.2-r1"], ["upower", "1.90.0-r2"], ["xorg-server", "21.1.6-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3952bc37eb4b27a9b40321f806514506b03353711f3bc6ca36dc7dd676578d1b"
+licence = "LGPL-2.0-or-later and GPL-2.0-or-later or BSD-3-Clause"
+provides = "openipmi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openipmi-dev-2.0.33-r1.apk"
+version = "2.0.33-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openipmi-lanserv", "2.0.33-r1"], ["openipmi-libs", "2.0.33-r1"], ["ncurses-dev", "6.3.0"], ["pkgconf", "1.9.4-r0"]]

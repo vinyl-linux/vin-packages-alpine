@@ -1,0 +1,15 @@
+checksum = "ec12c0f951feb1bd3b820a4e399e94d7fd02df056bcb2ecfdc352277f3fdaec0"
+licence = "custom"
+provides = "cyrus-sasl-gs2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cyrus-sasl-gs2-2.1.28-r3.apk"
+version = "2.1.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["heimdal-libs", "7.8.0-r0"]]

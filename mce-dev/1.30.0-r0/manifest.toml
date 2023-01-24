@@ -1,0 +1,15 @@
+checksum = "c84df8b66534b770d93ab46381dfa6e695a467a74895a0b685e05b0270459fa5"
+licence = "LGPL-2.1-or-later"
+provides = "mce-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mce-dev-1.30.0-r0.apk"
+version = "1.30.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

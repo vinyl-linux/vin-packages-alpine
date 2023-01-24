@@ -1,0 +1,15 @@
+checksum = "d40630f13508236ed0261bf4fd6d8334a86799e49c90fdf48805cfd27123a0d0"
+licence = "GPL-3.0-or-later"
+provides = "corestats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corestats-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libcsys", "4.4.1-r0"], ["libgcc", "12.2.1"], ["lm-sensors-libs", "3.6.0-r4"], ["libstdc++", "12.2.1"]]

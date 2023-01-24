@@ -1,0 +1,15 @@
+checksum = "b41ce19d4f503f8f3cb38d147b35db21aebc6cf6f5860023903f2f12bf74b9bf"
+licence = "MPL-1.1"
+provides = "freeswitch-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeswitch-snmp-1.10.8-r0.apk"
+version = "1.10.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["freeswitch", "1.10.8-r0"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"]]

@@ -1,0 +1,15 @@
+checksum = "c8dc7b0f8463e21206e07f1e0c9dad2dc567c4e96022eb5f2bb286f276c109b1"
+licence = "GPL-2.0-only WITH GCC-exception-2.0"
+provides = "libgit2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgit2-dev-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl-dev", "7.87.0-r1"], ["libssh2-dev", "1.10.0-r3"], ["http-parser-dev", "2.9.4-r0"], ["libgit2", "1.5.1-r0"], ["pcre2-dev", "10.42.0-r0"], ["openssl-dev", "3.0.7-r2"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

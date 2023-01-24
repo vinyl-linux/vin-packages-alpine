@@ -1,0 +1,15 @@
+checksum = "2935ebbacb89ec089ff1d1cffe7bf59f2a4dc786daba08a7faea9863390ee827"
+licence = "MPL-2.0"
+provides = "openvdb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openvdb-dev-10.0.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openvdb", "10.0.0-r0"]]

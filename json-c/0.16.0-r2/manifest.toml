@@ -1,0 +1,15 @@
+checksum = "2a2b3350e24c9cd355da9af15b03095fbd5d2f083d2656ce5d4a257a06d0fbe5"
+licence = "MIT"
+provides = "json-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/json-c-0.16-r2.apk"
+version = "0.16.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

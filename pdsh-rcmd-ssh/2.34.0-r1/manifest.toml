@@ -1,0 +1,15 @@
+checksum = "bfaea4de03f145d469a637b2522235f4ec6a307e2e1d8eb90950dfd6374d151c"
+licence = "GPL-2.0"
+provides = "pdsh-rcmd-ssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdsh-rcmd-ssh-2.34-r1.apk"
+version = "2.34.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdsh", "2.34.0-r1"], ["openssh-client-default", "9.1.0"], ["musl", "1.2.3-r4"]]

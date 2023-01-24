@@ -1,0 +1,15 @@
+checksum = "f587fb3046da5c7fb862334c5462dd4e3f89657f2663830a149de63167cc0319"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-babelfish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-babelfish-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

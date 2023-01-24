@@ -1,0 +1,15 @@
+checksum = "37a7c3d5057c59105c1a81e422f19dc162804b935d4fcd0ffeaeae9bcd2a4d5f"
+licence = "GPL-3.0-or-later"
+provides = "stow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stow-2.3.1-r1.apk"
+version = "2.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

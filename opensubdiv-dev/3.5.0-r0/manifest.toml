@@ -1,0 +1,15 @@
+checksum = "a1f4b90ca15f8a500ea2e96b97817fb83fd43fad9cca1e54f86343c48c90ea2a"
+licence = "Apache-2.0"
+provides = "opensubdiv-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opensubdiv-dev-3.5.0-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opensubdiv", "3.5.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "36d245eeb934f0bf14d48e3e5ae4534675394a8aa491238978738d26fbb93e23"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_geoip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proftpd-mod_geoip-1.3.7f-r1.apk"
+version = "1.3.7-f-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-f-r1"], ["geoip", "1.6.12-r3"], ["musl", "1.2.3-r4"]]

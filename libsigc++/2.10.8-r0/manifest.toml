@@ -1,0 +1,15 @@
+checksum = "6f0d3620261c46a92fd262cafbdc73107cef3835620d00fbf06b894b0f40b00d"
+licence = "LGPL-3.0-or-later"
+provides = "libsigc++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsigc++-2.10.8-r0.apk"
+version = "2.10.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

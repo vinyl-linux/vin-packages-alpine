@@ -1,0 +1,15 @@
+checksum = "2896b30a25e9a86d3c43aec2bc0218e15f13fb35cb6260c460df8b57ac4898ef"
+licence = "GPL-2.0"
+provides = "cunit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cunit-2.1.3-r4.apk"
+version = "2.1.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

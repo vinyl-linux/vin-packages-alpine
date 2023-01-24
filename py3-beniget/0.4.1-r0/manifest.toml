@@ -1,0 +1,15 @@
+checksum = "27a87b2b6c6d7f1d12291f0d468f82d8eaaad800a46e5f394ea96cb789adaef8"
+licence = "BSD-3-Clause"
+provides = "py3-beniget"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-beniget-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gast", "0.5.3-r0"]]

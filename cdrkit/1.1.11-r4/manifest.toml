@@ -1,0 +1,15 @@
+checksum = "ccc33de639361b7a5777d72b6befc68b495ea3226df4672e319e5c21c571aae9"
+licence = "GPL-2.0-only"
+provides = "cdrkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cdrkit-1.1.11-r4.apk"
+version = "1.1.11-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["file", "5.43.0-r0"], ["bzip2", "1.0.8-r4"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["zlib", "1.2.13-r0"]]

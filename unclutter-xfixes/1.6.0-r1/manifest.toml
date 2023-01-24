@@ -1,0 +1,15 @@
+checksum = "711995e8fd64289d6b7213c63a398b7c0335b479e37e6aadf48bb8fb0440fc9c"
+licence = "MIT"
+provides = "unclutter-xfixes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unclutter-xfixes-1.6-r1.apk"
+version = "1.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxfixes", "6.0.0-r0"], ["libxi", "1.8.0-r0"], ["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"]]

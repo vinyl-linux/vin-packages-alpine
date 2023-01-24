@@ -1,0 +1,16 @@
+checksum = "0d32ed7d5912bb396049c145f3ac0aed9c366b23264199c0d9e2e8251bffb90a"
+licence = "MIT"
+provides = "mkfontscale"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mkfontscale-1.2.2-r1.apk"
+version = "1.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libfontenc", "1.1.6-r0"], ["freetype", "2.12.1-r0"], ["zlib", "1.2.13-r0"]]

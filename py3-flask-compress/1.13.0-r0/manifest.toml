@@ -1,0 +1,15 @@
+checksum = "c07503add758929488afec9555389031f0b8785ea309ca7fe3335a291c2ccf8e"
+licence = "MIT"
+provides = "py3-flask-compress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flask-compress-1.13-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-brotli", "1.0.9-r9"], ["py3-flask", "2.2.2-r0"]]

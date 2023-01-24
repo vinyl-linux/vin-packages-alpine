@@ -1,0 +1,15 @@
+checksum = "622cf970cfaed7007b635c2050ac41f4905105b974555deef4363a977a958710"
+licence = "MIT"
+provides = "rtrlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rtrlib-0.8.0-r3.apk"
+version = "0.8.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libssh", "0.10.4-r0"]]

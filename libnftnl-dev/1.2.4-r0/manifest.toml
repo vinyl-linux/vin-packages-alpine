@@ -1,0 +1,15 @@
+checksum = "23bef589ad1333e46518f727ea566b875b52e0be8a1ffdef972dbda43abfab43"
+licence = "GPL-2.0-or-later"
+provides = "libnftnl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnftnl-dev-1.2.4-r0.apk"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnftnl", "1.2.4-r0"], ["libmnl-dev", "1.0.5-r0"], ["pkgconf", "1.9.4-r0"]]

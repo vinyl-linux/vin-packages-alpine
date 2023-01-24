@@ -1,0 +1,15 @@
+checksum = "bcd2319f9fffe0dadac49d3883f85e107aeab3f46b49c5921c86f5767c16ddc1"
+licence = "LGPL-3.0-or-later with exceptions"
+provides = "zeromq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zeromq-4.3.4-r1.apk"
+version = "4.3.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libzmq", "4.3.4-r1"]]

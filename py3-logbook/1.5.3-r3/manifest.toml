@@ -1,0 +1,15 @@
+checksum = "57fbbe9906310c1c4097f94832334510d200497dc1d09c4f43a2737708f07004"
+licence = "BSD-3-Clause"
+provides = "py3-logbook"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-logbook-1.5.3-r3.apk"
+version = "1.5.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "4494f8dff3c12286ba9da52622d66cb05d8a7c3a8afe4b139e47442601db26d9"
+licence = "BSD-2-Clause AND BSD-3-Clause AND CC0-1.0 AND (LGPL-2.1-only OR LGPL-3.0-only) AND LicenseRef-KDE-Accepted-LGPL"
+provides = "ksanecore"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ksanecore-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["sane", "1.1.1-r0"], ["libstdc++", "12.2.1"]]

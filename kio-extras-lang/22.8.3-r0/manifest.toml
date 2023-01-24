@@ -1,0 +1,15 @@
+checksum = "1b21b61d5759b967d4d1a4673dc1a08b6ee5399c3bde5bb66488f9bc16f4f26f"
+licence = "GPL-2.0-or-later (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "kio-extras-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kio-extras-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kinit", "5.100.0-r0"]]

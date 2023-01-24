@@ -1,0 +1,15 @@
+checksum = "c78abf583167731592bae7e51508ffca6bac3af79a2c537687f401e8aa77fabd"
+licence = "BSD-3-Clause"
+provides = "ispc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ispc-1.18.0-r2.apk"
+version = "1.18.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

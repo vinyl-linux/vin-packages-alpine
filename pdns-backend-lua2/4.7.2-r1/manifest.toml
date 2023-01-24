@@ -1,0 +1,15 @@
+checksum = "6ca17a8e4c54909a900e1a442bfa08e2f36801fc7f7a0bd8e7fe37384cbdcf93"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-lua2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdns-backend-lua2-4.7.2-r1.apk"
+version = "4.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.7.2-r1"], ["lua5.4", "5.4.4-r6"], ["luajit", "2.1.0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

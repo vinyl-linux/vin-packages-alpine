@@ -1,0 +1,15 @@
+checksum = "301ac364f4bcc87a9d622d5069ef85d2dac181e12282e436ae3791b2a658be5b"
+licence = "MIT"
+provides = "date-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/date-dev-3.0.1-r1.apk"
+version = "3.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["date", "3.0.1-r1"], ["pkgconf", "1.9.4-r0"]]

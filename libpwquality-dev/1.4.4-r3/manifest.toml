@@ -1,0 +1,15 @@
+checksum = "c9143deaa364ba5e7f9641b8a8d7de7128696ba49efe03b8afa94efeaad6411f"
+licence = "BSD-3-Clause"
+provides = "libpwquality-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpwquality-dev-1.4.4-r3.apk"
+version = "1.4.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpwquality", "1.4.4-r3"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c4faa25a82f2b6cf68d367f66253472e04ac4b8cfba7eb9707e56d0b1219c890"
+licence = "LGPL-2.1-or-later"
+provides = "libgusb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgusb-0.4.3-r0.apk"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["json-glib", "1.6.6-r1"], ["libusb", "1.0.26-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1f0f6b966cf22a0d610f1cabb04f6d83eabbb41f2b97973d8cc2035121f10a2a"
+licence = "MIT Public-Domain"
+provides = "openspecfun"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openspecfun-0.5.5-r2.apk"
+version = "0.5.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgfortran", "12.2.1"], ["openlibm", "0.8.1-r0"]]

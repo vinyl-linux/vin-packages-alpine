@@ -1,0 +1,15 @@
+checksum = "0d21aba77db64a0cb4a68f79d97c9dec90f7101a22a7974badbd80fbc666122c"
+licence = "BSD-3-Clause AND CC0-1.0 AND LGPL-2.1-only AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-LGPL"
+provides = "kpipewire-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpipewire-dev-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kpipewire", "5.26.3-r0"]]

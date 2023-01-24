@@ -1,0 +1,15 @@
+checksum = "7d7a7c4d31bcbafecd1960529ea40d87826efe1024bc19160e192609fe798709"
+licence = "LGPL-2.0-or-later"
+provides = "libspectre-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspectre-dev-0.2.11-r0.apk"
+version = "0.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libspectre", "0.2.11-r0"], ["pkgconf", "1.9.4-r0"]]

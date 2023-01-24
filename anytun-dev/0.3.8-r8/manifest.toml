@@ -1,0 +1,15 @@
+checksum = "00b1ef7f28b12ccafb1f7fdc72456b1d1f7152928c15d2398ddcb14b430f4aca"
+licence = "GPL-3.0-or-later"
+provides = "anytun-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/anytun-dev-0.3.8-r8.apk"
+version = "0.3.8-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["boost-dev", "1.80.0-r3"], ["linux-headers", "5.19.5-r0"], ["boost1.80-serialization", "1.80.0-r3"], ["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

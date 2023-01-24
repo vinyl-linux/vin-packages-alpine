@@ -1,0 +1,15 @@
+checksum = "64e75218c3dd2ae81226a31c169cad2fe4bb02b8ebc657352b5e287081980476"
+licence = "Zlib"
+provides = "minizip-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minizip-dev-1.2.13-r0.apk"
+version = "1.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["minizip", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

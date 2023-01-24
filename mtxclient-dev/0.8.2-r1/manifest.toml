@@ -1,0 +1,15 @@
+checksum = "c7ff519620d083ddbb7c46b65bd9961aa3bcff1376deeacd744f2822ebb0c836"
+licence = "MIT"
+provides = "mtxclient-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mtxclient-dev-0.8.2-r1.apk"
+version = "0.8.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.80.0-r3"], ["coeurl-dev", "0.2.1-r4"], ["libsodium-dev", "1.0.18-r2"], ["nlohmann-json", "3.11.2-r0"], ["olm-dev", "3.2.13-r0"], ["openssl-dev", "3.0.7-r2"], ["zlib-dev", "1.2.13-r0"], ["mtxclient", "0.8.2-r1"]]

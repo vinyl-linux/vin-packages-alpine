@@ -1,0 +1,15 @@
+checksum = "19d2dba9f1ddb5530d9961e6cdf5165c5287688e13fcbfcff5ad068ecc6af649"
+licence = "MIT"
+provides = "py3-arxiv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-arxiv-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-feedparser", "6.0.10-r0"]]

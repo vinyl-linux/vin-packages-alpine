@@ -1,0 +1,15 @@
+checksum = "703391024708c8ff6c1f2966bff11afe9b9f0bc1017c7028f64d8171a45ccc10"
+licence = "GPL-3.0-only"
+provides = "libfolia"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfolia-2.11-r1.apk"
+version = "2.11.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"], ["ticcutils", "0.29.0-r1"], ["libxml2", "2.10.3-r1"]]

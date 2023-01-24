@@ -1,0 +1,15 @@
+checksum = "2f692b1c9268a34833050796e99b854dea30d66da55e19ca8cb5004c698a51bb"
+licence = "MIT"
+provides = "py3-freecell-solver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-freecell-solver-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cffi", "1.15.1-r0"], ["python3", "3.10.9-r1"]]

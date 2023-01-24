@@ -1,0 +1,15 @@
+checksum = "2a62550a3a9a1e16a68cd489390e12440aee4e325689bd45e29f76921f385acd"
+licence = "GPL-2.0-only"
+provides = "cgit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cgit-1.2.3-r3.apk"
+version = "1.2.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lua5.3-libs", "5.3.6-r4"], ["zlib", "1.2.13-r0"]]

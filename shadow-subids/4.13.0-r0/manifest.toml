@@ -1,0 +1,15 @@
+checksum = "2665d93151ed71f167e0c16be7c7d757ff920f02a73495c41a7b2220fbdd9e8d"
+licence = "BSD-3-Clause"
+provides = "shadow-subids"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shadow-subids-4.13-r0.apk"
+version = "4.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["shadow-libs", "4.13.0-r0"]]

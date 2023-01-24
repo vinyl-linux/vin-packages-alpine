@@ -1,0 +1,15 @@
+checksum = "2e7c7c0f4076cf3aa5480377a5fc0a81876f3048af5aec7278d6819678b30b75"
+licence = "GPL-3.0-only"
+provides = "gnome-console"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-console-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libgtop", "2.40.0-r1"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["vte3-gtk4", "0.70.2-r0"]]

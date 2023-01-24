@@ -1,0 +1,15 @@
+checksum = "b967a3d02549ab106e135b653aee72f15971b6f295701b46fca9e7e865474bea"
+licence = "GPL-2.0-or-later"
+provides = "traceroute"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/traceroute-2.1.0-r1.apk"
+version = "2.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

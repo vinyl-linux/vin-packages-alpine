@@ -1,0 +1,15 @@
+checksum = "12cb045b2c31a5ff56c480ecbb25a53d9f3b78006ce97459e7b0834af46776b8"
+licence = "LGPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "libmikmod-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmikmod-dev-3.3.11.1-r3.apk"
+version = "3.3.11.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmikmod", "3.3.11.1-r3"], ["pkgconf", "1.9.4-r0"]]

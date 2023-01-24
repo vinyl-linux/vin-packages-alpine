@@ -1,0 +1,15 @@
+checksum = "241dbff2b6ae128841dd3f9962702332327c9a29b4378f780db8538bcbb8c325"
+licence = "GPL-3.0-or-later"
+provides = "ifstate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ifstate-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["python3", "3.10.9-r1"], ["py3-jsonschema", "4.7.2-r2"], ["py3-pyroute2", "0.7.3-r0"], ["py3-yaml", "6.0.0-r0"]]

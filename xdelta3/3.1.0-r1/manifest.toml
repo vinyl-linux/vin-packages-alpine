@@ -1,0 +1,15 @@
+checksum = "e878800c6e9f35787923c2e7c81359fbbd45636e9715a84252f8b9f901a7ec1c"
+licence = "Apache-2.0"
+provides = "xdelta3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdelta3-3.1.0-r1.apk"
+version = "3.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b4095fae3950698f13f2f60b88dcc81a8e785b5866bdc56b71f67f4f0602881f"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-audio-sdl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-audio-sdl-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"]]

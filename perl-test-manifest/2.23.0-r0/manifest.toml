@@ -1,0 +1,15 @@
+checksum = "113cedc42ffc4fb3dee35f6f2522f1025b4c9627abb6bd13194d82f5658345f0"
+licence = "Artistic-2.0"
+provides = "perl-test-manifest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-manifest-2.023-r0.apk"
+version = "2.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

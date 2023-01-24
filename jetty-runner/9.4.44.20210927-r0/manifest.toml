@@ -1,0 +1,15 @@
+checksum = "89d62454223d0a0c5faaf7dba9c8c4743e722c36a3df692919f2b5f418e8b1a3"
+licence = "Apache-2.0"
+provides = "jetty-runner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jetty-runner-9.4.44.20210927-r0.apk"
+version = "9.4.44.20210927-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"]]

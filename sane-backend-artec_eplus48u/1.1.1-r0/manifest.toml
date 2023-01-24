@@ -1,0 +1,15 @@
+checksum = "3eb0b531e3b56edbf440b93daa143c4e9b7a57a09c080f07b9766ac88b1d79b6"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-artec_eplus48u"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-artec_eplus48u-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"], ["libxml2", "2.10.3-r1"]]

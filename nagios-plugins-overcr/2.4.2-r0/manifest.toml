@@ -1,0 +1,15 @@
+checksum = "a28d1b6966a6c5717915cf7a93b5917f5e200197fc93f0db60a9890950ea3d54"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-overcr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-overcr-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

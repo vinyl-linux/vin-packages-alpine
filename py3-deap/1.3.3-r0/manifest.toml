@@ -1,0 +1,15 @@
+checksum = "82722c451977b7b2a0486b33cf479444746addbdef92d3546bc1d665a3dab54f"
+licence = "LGPL-3.0-or-later"
+provides = "py3-deap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-deap-1.3.3-r0.apk"
+version = "1.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-matplotlib", "3.6.2-r1"]]

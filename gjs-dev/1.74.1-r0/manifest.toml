@@ -1,0 +1,15 @@
+checksum = "09f0713a9116bf22a9c33a99897499c7b21397b50bbaf2cd0563acd6e316e41b"
+licence = "MIT AND LGPL-2.0-or-later"
+provides = "gjs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gjs-dev-1.74.1-r0.apk"
+version = "1.74.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gjs", "1.74.1-r0"], ["cairo-dev", "1.17.6-r3"], ["glib-dev", "2.74.5-r0"], ["gobject-introspection-dev", "1.74.0-r1"], ["libffi-dev", "3.4.4-r0"], ["mozjs102-dev", "102.3.0-r2"], ["pkgconf", "1.9.4-r0"]]

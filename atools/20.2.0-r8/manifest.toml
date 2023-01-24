@@ -1,0 +1,15 @@
+checksum = "963b7c291ad45f0af4d94d26b021bafc252d1d80651b69e2f5f40c29a12b47d0"
+licence = "MIT"
+provides = "atools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/atools-20.2.0-r8.apk"
+version = "20.2.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"]]

@@ -1,0 +1,15 @@
+checksum = "e3fc26bd3468c4cad1ab4157ab6ba31ee4ff78ba401a27af236fa4cf63e1a1be"
+licence = "GPL-2.0"
+provides = "mlocate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mlocate-0.26-r8.apk"
+version = "0.26.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

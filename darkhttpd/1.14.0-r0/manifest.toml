@@ -1,0 +1,15 @@
+checksum = "e206c568f2b89a2a0f17db63bdcdcd4d70ef808521b9df84cf5e9164cb4914e5"
+licence = "ISC"
+provides = "darkhttpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/darkhttpd-1.14-r0.apk"
+version = "1.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

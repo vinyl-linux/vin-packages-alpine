@@ -1,0 +1,15 @@
+checksum = "31b0ef518686263f704a8a792c6fd6741e69244336092c82a105cbb71c035a4d"
+licence = "MIT OR Apache-2.0"
+provides = "py3-uvloop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-uvloop-0.16.0-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libuv", "1.44.2-r0"]]

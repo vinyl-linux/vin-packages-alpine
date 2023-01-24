@@ -1,0 +1,15 @@
+checksum = "ef29c9f7fdf028bf8b0482b60bd1baff9e97d97c6567a705eb98d358b6b548fa"
+licence = "CC0-1.0"
+provides = "libb2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libb2-dev-0.98.1-r2.apk"
+version = "0.98.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libb2", "0.98.1-r2"], ["pkgconf", "1.9.4-r0"]]

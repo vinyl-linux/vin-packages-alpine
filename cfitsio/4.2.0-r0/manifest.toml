@@ -1,0 +1,15 @@
+checksum = "fee5f707f777e7d09cd049388f40079632e1c08f93ae69eaae62d0e3557af44e"
+licence = "custom"
+provides = "cfitsio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cfitsio-4.2.0-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["zlib", "1.2.13-r0"]]

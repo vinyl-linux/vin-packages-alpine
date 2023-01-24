@@ -1,0 +1,15 @@
+checksum = "5495b68c55af3cbd1b7e97b164427ccc5f67bde74eab1badec6260475a2cb6c8"
+licence = "MIT"
+provides = "czkawka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/czkawka-4.1.0-r0.apk"
+version = "4.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

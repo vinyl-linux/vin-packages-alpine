@@ -1,0 +1,15 @@
+checksum = "52b7128426f898beaf1d10c730d204b192c730a7fbbca56e73188b8e9109e72b"
+licence = "GPL-2.0-or-later"
+provides = "psmisc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/psmisc-23.5-r0.apk"
+version = "23.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"]]

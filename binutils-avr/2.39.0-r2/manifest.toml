@@ -1,0 +1,15 @@
+checksum = "cb91f6a4cb2a4380c7c14e8c2334ef77197dfba6a137a235c4250e5c831a783c"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-avr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-avr-2.39-r2.apk"
+version = "2.39.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

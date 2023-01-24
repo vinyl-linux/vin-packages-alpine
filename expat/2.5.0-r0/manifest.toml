@@ -1,0 +1,15 @@
+checksum = "80242bc8db1cce838fefb4d575cd2fa19f0714c2220815aa6a29026404b4babb"
+licence = "MIT"
+provides = "expat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/expat-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"]]

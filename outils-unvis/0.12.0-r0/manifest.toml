@@ -1,0 +1,15 @@
+checksum = "fda3e22fe39e3430d9c6e1cffa3727acb79086b7322651d834cdd2c9a934f4b2"
+licence = "BSD-3-Clause ISC"
+provides = "outils-unvis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/outils-unvis-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

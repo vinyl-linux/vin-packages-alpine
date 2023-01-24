@@ -1,0 +1,15 @@
+checksum = "b191915452a6ce614957cfd9a166ee78baa6af4245af8d1cd41a5e51e2c27885"
+licence = "LGPL-2.0-or-later"
+provides = "libdbi-drivers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdbi-drivers-0.9.0-r2.apk"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdbi", "0.9.0-r2"], ["mariadb-connector-c", "3.3.3-r0"], ["libpq", "15.1.0-r0"], ["sqlite-libs", "3.40.1-r0"]]

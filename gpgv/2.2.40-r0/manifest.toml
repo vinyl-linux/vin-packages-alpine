@@ -1,0 +1,15 @@
+checksum = "3027d849574da645f3f69ddc571e5e73b80acdf77eafa7c48733361b09de7612"
+licence = "GPL-3.0-or-later"
+provides = "gpgv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpgv-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"], ["zlib", "1.2.13-r0"]]

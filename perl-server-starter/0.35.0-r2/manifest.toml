@@ -1,0 +1,15 @@
+checksum = "09749f4698c4d75f985b230af298885037f231f0156509cb64bc48eeaaa83c8e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-server-starter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-server-starter-0.35-r2.apk"
+version = "0.35.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

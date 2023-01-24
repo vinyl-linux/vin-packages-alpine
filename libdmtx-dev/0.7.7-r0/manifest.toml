@@ -1,0 +1,15 @@
+checksum = "ca7a0fb4188dca891ad3180c588a2e4fb0e21b81f4a714ad29434ef2567a87b9"
+licence = "BSD-2-Clause"
+provides = "libdmtx-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdmtx-dev-0.7.7-r0.apk"
+version = "0.7.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdmtx-libs", "0.7.7-r0"], ["pkgconf", "1.9.4-r0"]]

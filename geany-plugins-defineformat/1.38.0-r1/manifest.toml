@@ -1,0 +1,15 @@
+checksum = "43ada2f312794cbfcb88bd681d4859de28d1d7c66bb0745da49f921679883109"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-defineformat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-defineformat-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"]]

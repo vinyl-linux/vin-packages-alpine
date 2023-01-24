@@ -1,0 +1,15 @@
+checksum = "54a03fd269e50894edcf7ccc2f1de483b3c0098e2a74265944ad93a2098a5d0e"
+licence = "GPL-2.0"
+provides = "nikto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nikto-2.1.6-r3.apk"
+version = "2.1.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["nmap", "7.93.0-r0"], ["openssl", "3.0.7-r2"]]

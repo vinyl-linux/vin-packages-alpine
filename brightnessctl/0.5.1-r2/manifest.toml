@@ -1,0 +1,15 @@
+checksum = "8ab637ff61d5fd1250359419e41eb3fdef63716684f935a7aa91c8626fc8e21c"
+licence = "MIT"
+provides = "brightnessctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/brightnessctl-0.5.1-r2.apk"
+version = "0.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

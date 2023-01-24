@@ -1,0 +1,15 @@
+checksum = "8aae49aedbdab9307b0c7a293bdefa9d434856b93814360f01225a9d266ca06a"
+licence = "MIT"
+provides = "py3-fuzzylogic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-fuzzylogic-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-matplotlib", "3.6.2-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-pandas", "1.5.1-r0"]]

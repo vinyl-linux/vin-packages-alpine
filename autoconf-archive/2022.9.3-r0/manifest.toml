@@ -1,0 +1,15 @@
+checksum = "7ca93018520d029aeae4d01c744c7de5af7aba72c6b3ac52854b988700c61045"
+licence = "GPL-3.0-or-later"
+provides = "autoconf-archive"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/autoconf-archive-2022.09.03-r0.apk"
+version = "2022.9.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["autoconf", "2.71.0-r1"]]

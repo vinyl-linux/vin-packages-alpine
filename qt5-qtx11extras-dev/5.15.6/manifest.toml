@@ -1,0 +1,15 @@
+checksum = "9f34516e8f1a6b073800926e1b63a313735f144468fe83e5aacba87dc4b4db94"
+licence = "(LGPL-3.0-or-later OR GPL-3.0-only OR GPL-2.0-or-later) AND Qt-GPL-exception-1.0"
+provides = "qt5-qtx11extras-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtx11extras-dev-5.15.6_git20220816-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qt5-qtx11extras", "5.15.6"]]

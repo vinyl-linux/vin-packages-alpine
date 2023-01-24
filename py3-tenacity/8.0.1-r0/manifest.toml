@@ -1,0 +1,15 @@
+checksum = "71311f0f893734695b962da0d55afbbbca12887eb408229080fe49ad70805c17"
+licence = "Apache-2"
+provides = "py3-tenacity"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tenacity-8.0.1-r0.apk"
+version = "8.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-tomli", "2.0.1-r1"]]

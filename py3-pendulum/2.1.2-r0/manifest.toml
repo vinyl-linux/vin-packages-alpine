@@ -1,0 +1,15 @@
+checksum = "17566ac4587f1832094bd1e07eea775106dd07af5fdafd5d12db90b89f065a22"
+licence = "MIT"
+provides = "py3-pendulum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pendulum-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-dateutil", "2.8.2-r1"], ["py3-tzdata", "2020.1.0-r0"]]

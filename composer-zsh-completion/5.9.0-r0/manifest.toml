@@ -1,0 +1,15 @@
+checksum = "ad11adb0a8a075a756cb8dd638175aeb305e707cd78a3289f0346f695699a142"
+licence = "custom"
+provides = "composer-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/composer-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

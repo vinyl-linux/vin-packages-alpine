@@ -1,0 +1,15 @@
+checksum = "874f15113f3397dfff605cb3e2f11b74c9590a58221807c56624dddbd16f5951"
+licence = "LGPL-2.1-only"
+provides = "kiconthemes-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kiconthemes-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["karchive-dev", "5.100.0-r0"], ["kconfigwidgets-dev", "5.100.0-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kitemviews-dev", "5.100.0-r0"], ["kwidgetsaddons-dev", "5.100.0-r0"], ["qt5-qtsvg-dev", "5.15.6"], ["kiconthemes", "5.100.0-r0"]]

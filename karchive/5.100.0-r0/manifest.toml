@@ -1,0 +1,15 @@
+checksum = "163450abf919c67f5e129dc0e4555192e5fcddad1405e7f90a0c3fdb962bc67f"
+licence = "LGPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "karchive"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/karchive-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["xz-libs", "5.2.9-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

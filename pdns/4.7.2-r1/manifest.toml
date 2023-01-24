@@ -1,0 +1,15 @@
+checksum = "f8d8a2cb6c718a2ad3cf4c800e8042d2b3dd5ead52b382fa0e8cea6ae1006dec"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdns-4.7.2-r1.apk"
+version = "4.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["boost1.80-program_options", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["luajit", "2.1.0"], ["libsodium", "1.0.18-r2"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"]]

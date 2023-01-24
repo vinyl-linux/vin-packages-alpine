@@ -1,0 +1,15 @@
+checksum = "0b205755e9f6aadc0bfa2898ae75ab723788f2a2aa73fe47269dbb92880a70b6"
+licence = "Apache-2.0"
+provides = "py3-pyfakefs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyfakefs-4.5.3-r1.apk"
+version = "4.5.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "1f95da26dce4c10c938edabf00fc89ea736e0aa949d627a5904eac422f439eea"
+licence = "MIT"
+provides = "gettext-tiny-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gettext-tiny-dev-0.3.2-r3.apk"
+version = "0.3.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl-libintl", "1.2.3-r4"], ["gettext-tiny", "0.3.2-r3"]]

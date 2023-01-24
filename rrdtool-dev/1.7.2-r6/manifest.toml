@@ -1,0 +1,15 @@
+checksum = "558b67e92560a9d67d52987c3398f55ecd6946c9f3c88a4a3d8e266014b6a4ed"
+licence = "GPL-2.0-or-later"
+provides = "rrdtool-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdtool-dev-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librrd", "1.7.2-r6"], ["pkgconf", "1.9.4-r0"]]

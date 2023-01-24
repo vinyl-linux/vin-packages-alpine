@@ -1,0 +1,15 @@
+checksum = "e8865acb2784fa257258907d078e790e24771dc1131abf19f995ec6549c3fe2c"
+licence = "GPL-3.0-or-later"
+provides = "touchegg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/touchegg-2.0.15-r0.apk"
+version = "2.0.15-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxi", "1.8.0-r0"], ["libxrandr", "1.5.3-r0"], ["libxtst", "1.2.4-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libgcc", "12.2.1"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libinput-libs", "1.22.1-r0"], ["pugixml", "1.13.0-r0"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a697379d25fd56a9ae3546ccb7d5679c7397314c603b370e37a0d9a44fce4ba1"
+licence = "MIT"
+provides = "lua5.3-mqtt-publish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.3-mqtt-publish-0.4-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3-mosquitto", "0.4.1-r1"]]

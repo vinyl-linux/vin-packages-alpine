@@ -1,0 +1,15 @@
+checksum = "b4285238df4c78b0e622ad5638e9a28156ea9a7eb0ee5bf4d9f41777eb400705"
+licence = "LGPL-2.1-or-later"
+provides = "libgtop-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgtop-tools-2.40.0-r1.apk"
+version = "2.40.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxau", "1.0.10-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgtop", "2.40.0-r1"]]

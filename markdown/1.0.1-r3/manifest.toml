@@ -1,0 +1,15 @@
+checksum = "2b3e280eceef2789eb6995b095768a74db02952afd416b49f57cba809a38d1d9"
+licence = "BSD-3-Clause"
+provides = "markdown"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/markdown-1.0.1-r3.apk"
+version = "1.0.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

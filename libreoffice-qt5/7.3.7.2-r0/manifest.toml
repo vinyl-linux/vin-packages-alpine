@@ -1,0 +1,15 @@
+checksum = "f3a2862ea99753c09135e1761f7833250c22520beb9f73c5294c270791806597"
+licence = "MPL-2.0"
+provides = "libreoffice-qt5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-qt5-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-common", "7.3.7.2-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libepoxy", "1.5.10-r0"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["harfbuzz", "5.3.1-r1"], ["libstdc++", "12.2.1"], ["libxcb", "1.15.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1fd73a0d7793548a816bf4443a9ce7e2e6be4358525786782cefdc3945d52634"
+licence = "MIT-feh"
+provides = "feh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/feh-3.9.1-r0.apk"
+version = "3.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.9.1-r2"], ["libx11", "1.8.3-r1"], ["libxinerama", "1.1.5-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libmagic", "5.43.0-r0"], ["libpng", "1.6.38-r0"]]

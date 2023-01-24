@@ -1,0 +1,15 @@
+checksum = "3947e0854023ad636945ab7f15569b5dfd3b4a00dae1f6141e4ce33fc30ff497"
+licence = "LGPL-3.0-or-later"
+provides = "py3-ssdeep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ssdeep-3.4.1-r0.apk"
+version = "3.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cffi", "1.15.1-r0"], ["py3-six", "1.16.0-r3"], ["musl", "1.2.3-r4"], ["libfuzzy2", "2.14.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "4dadd3b500f304d2d95c1c439badf877ddd4aba3f198cda0cc68a55a1246c43d"
+licence = "BSD"
+provides = "openssh-sk-helper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-sk-helper-9.1_p1-r1.apk"
+version = "9.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-keygen", "9.1.0"], ["openssh-server-common", "9.1.0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libfido2", "1.12.0-r0"]]

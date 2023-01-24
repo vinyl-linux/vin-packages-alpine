@@ -1,0 +1,15 @@
+checksum = "b9972bf5457cc1288c0ef7947beba59e789055360e5e2f549fd842d06fc39ff6"
+licence = "GPL-3.0-or-later"
+provides = "highlight"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/highlight-4.4-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lua5.4-libs", "5.4.4-r6"], ["libstdc++", "12.2.1"]]

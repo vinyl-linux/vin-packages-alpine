@@ -1,0 +1,15 @@
+checksum = "0cc894447101be5547f930ac770ae4f2aa52a0059ad6399e6ab0d5aa0c7209ab"
+licence = "GPL-2.0-only"
+provides = "fbida-fbi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fbida-fbi-2.14-r2.apk"
+version = "2.14.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["libexif", "0.6.24-r0"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["giflib", "5.2.1-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"]]

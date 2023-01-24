@@ -1,0 +1,15 @@
+checksum = "caae8f78976d03c9a54b10ed60df928855c53b0fddd019f50db56055d028069c"
+licence = "MIT"
+provides = "libcbor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcbor-0.9.0-r1.apk"
+version = "0.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

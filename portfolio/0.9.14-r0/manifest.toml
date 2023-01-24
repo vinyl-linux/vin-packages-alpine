@@ -1,0 +1,15 @@
+checksum = "c9b7adeb1016f141d2b62eb0f445d212d0167efd4967c828662d40b8742c1326"
+licence = "GPL-3.0-or-later"
+provides = "portfolio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/portfolio-0.9.14-r0.apk"
+version = "0.9.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0", "3.24.36-r0"], ["libhandy1", "1.8.0-r1"], ["py3-gettext", "4.1.0-r0"], ["py3-gobject3", "3.42.2-r0"]]

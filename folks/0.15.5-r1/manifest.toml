@@ -1,0 +1,15 @@
+checksum = "1cdaf54cae2e523c77b8c71e1f838d2342c33a147cd9594dbfd34a4f826a55b4"
+licence = "LGPL-2.1-or-later"
+provides = "folks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/folks-0.15.5-r1.apk"
+version = "0.15.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["evolution-data-server", "3.46.3-r0"], ["libgee", "0.20.6-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["readline", "8.2.0-r0"], ["telepathy-glib", "0.24.2-r1"], ["libxml2", "2.10.3-r1"]]

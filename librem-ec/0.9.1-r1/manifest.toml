@@ -1,0 +1,15 @@
+checksum = "bf91f9dba734a73e3bebca7030873b6c7630a464b8b79531b6c63294924cc161"
+licence = "GPL-2.0-only"
+provides = "librem-ec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librem-ec-0.9.1-r1.apk"
+version = "0.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["akms", "0.2.0-r0"]]

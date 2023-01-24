@@ -1,0 +1,15 @@
+checksum = "d718a0131d83f51936c189d4e22b4f74b496fb29795f9901dc7e51d0f2a3e3a4"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-presence"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-presence-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libxml2", "2.10.3-r1"]]

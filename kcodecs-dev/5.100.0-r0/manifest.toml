@@ -1,0 +1,15 @@
+checksum = "e22f31c782d5538a8fd0345ec0c8b7d6ff075464f5522da6eacca7f9a92fbcfc"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "kcodecs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcodecs-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcodecs", "5.100.0-r0"]]

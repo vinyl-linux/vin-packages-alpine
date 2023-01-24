@@ -1,0 +1,15 @@
+checksum = "8851b183b2cb6b82481d0dda35ea0b54d19f5ed2473647cb9ab0b62a51cf7855"
+licence = "MIT"
+provides = "xf86-video-amdgpu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-video-amdgpu-22.0.0-r1.apk"
+version = "22.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dri-gallium", "22.2.5-r1"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["mesa-gbm", "22.2.5-r1"], ["eudev-libs", "3.2.11-r4"]]

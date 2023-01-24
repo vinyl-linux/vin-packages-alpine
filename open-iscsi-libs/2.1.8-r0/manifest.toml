@@ -1,0 +1,15 @@
+checksum = "e32d82a60b87156adfe97508f18fb1886542f5a326b08e763805a7a38fb7761c"
+licence = "GPL-2.0-only"
+provides = "open-iscsi-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/open-iscsi-libs-2.1.8-r0.apk"
+version = "2.1.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["kmod-libs", "30.0.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "c82f2f71b81f325667a053505930ff3bf58eca47d0de92491428f31c9b7d8c35"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "acl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/acl-dev-2.3.1-r1.apk"
+version = "2.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.3.1-r1"], ["pkgconf", "1.9.4-r0"]]

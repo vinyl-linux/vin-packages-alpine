@@ -1,0 +1,15 @@
+checksum = "128e6aa1d91031e242ce610076711c246350a426aee253912e841375af825cd8"
+licence = "custom"
+provides = "zsh-vcs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zsh-vcs-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

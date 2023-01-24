@@ -1,0 +1,15 @@
+checksum = "14fb060ff12cae47e75b4d9a2a79d4de35cf0c42a08dbbb19df4812ecf84d2d8"
+licence = "BSD-3-Clause ISC"
+provides = "outils-md5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/outils-md5-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

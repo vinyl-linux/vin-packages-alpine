@@ -1,0 +1,15 @@
+checksum = "fc16352669f933784fc0b0bf7a94c43c9fc1250fa1ad75b7db7f3fcb3f13402d"
+licence = "custom"
+provides = "libmodplug"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmodplug-0.8.9.0-r2.apk"
+version = "0.8.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

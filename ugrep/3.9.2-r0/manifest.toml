@@ -1,0 +1,15 @@
+checksum = "7fbde25ea87188ed806f3cf4f990f24ae67c73319432517df478775b8b82592b"
+licence = "BSD-3-Clause"
+provides = "ugrep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ugrep-3.9.2-r0.apk"
+version = "3.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lz4-libs", "1.9.4-r1"], ["xz-libs", "5.2.9-r0"], ["pcre2", "10.42.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

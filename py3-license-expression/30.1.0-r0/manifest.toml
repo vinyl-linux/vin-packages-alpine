@@ -1,0 +1,15 @@
+checksum = "8d6381b5489788db366a0448a94d076df0154a258cadb82d57f876e1478f292e"
+licence = "Apache-2.0"
+provides = "py3-license-expression"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-license-expression-30.1.0-r0.apk"
+version = "30.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-boolean.py", "4.0.0-r0"]]

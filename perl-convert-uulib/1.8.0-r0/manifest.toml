@@ -1,0 +1,15 @@
+checksum = "75f74f0cd03ad2600252125440279e0615a45535606e28ffcb468a6f45d64c8a"
+licence = "(GPL-2.0-or-later OR Artistic-1.0-Perl) AND GPL-2.0-or-later AND ZLib"
+provides = "perl-convert-uulib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-convert-uulib-1.8-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-common-sense", "3.75.0-r2"], ["musl", "1.2.3-r4"]]

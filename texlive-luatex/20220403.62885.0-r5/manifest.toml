@@ -1,0 +1,15 @@
+checksum = "3f2aace2677556c5f7a42bd95e06f063d3096c8af2de2d6de6c3709aa8388522"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "texlive-luatex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texlive-luatex-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["texlive", "20220403.62885.0-r5"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["harfbuzz", "5.3.1-r1"], ["libpng", "1.6.38-r0"], ["zlib", "1.2.13-r0"], ["zziplib", "0.13.72-r1"]]

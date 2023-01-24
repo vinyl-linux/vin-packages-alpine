@@ -1,0 +1,15 @@
+checksum = "00914f51f3f991c72c3c0a5471a921ed2b9ffe3a72acdda9d81a9533bf52469b"
+licence = "LGPL-2.1-or-later"
+provides = "basu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/basu-0.2.0-r3.apk"
+version = "0.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

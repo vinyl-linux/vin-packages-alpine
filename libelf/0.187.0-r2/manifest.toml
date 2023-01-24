@@ -1,0 +1,15 @@
+checksum = "a19a4d9fd7420f6675460875fecd9b904722fc657718edfd9f355dfe01f84b34"
+licence = "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)"
+provides = "libelf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libelf-0.187-r2.apk"
+version = "0.187.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"]]

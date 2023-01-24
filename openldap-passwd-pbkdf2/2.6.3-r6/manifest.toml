@@ -1,0 +1,15 @@
+checksum = "5274e11e1d914b09f824d5eaba990b44b29a2b7c41a20a667ef1307cc32e62ec"
+licence = "OLDAP-2.8"
+provides = "openldap-passwd-pbkdf2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-passwd-pbkdf2-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openldap", "2.6.3-r6"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

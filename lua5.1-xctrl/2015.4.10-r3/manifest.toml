@@ -1,0 +1,15 @@
+checksum = "fae979cda9a8eeeb60b9e20e7674f0a3ad8aa520564de1b8540de448eb9c95bf"
+licence = "GPL-2.0-or-later"
+provides = "lua5.1-xctrl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-xctrl-2015.04.10-r3.apk"
+version = "2015.4.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["libx11", "1.8.3-r1"], ["libxmu", "1.1.4-r0"], ["musl", "1.2.3-r4"]]

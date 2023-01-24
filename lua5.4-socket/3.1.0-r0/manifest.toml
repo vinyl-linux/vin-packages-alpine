@@ -1,0 +1,15 @@
+checksum = "6afd003857178dd38be4ddcdb9ce43619b174e933feca58319362c16090350ef"
+licence = "MIT"
+provides = "lua5.4-socket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.4-socket-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "7f18d0d27b588a44fe5ca50576954423fd50130cc3e6285f8b7bc1dc2f3ba9b6"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "texlive-dvi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texlive-dvi-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texlive", "20220403.62885.0-r5"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["libgd", "2.3.3-r3"], ["libpaper", "2.0.4-r0"]]

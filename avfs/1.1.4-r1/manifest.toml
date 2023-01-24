@@ -1,0 +1,15 @@
+checksum = "7c3f881cc8b4a312428bce5fedd6c5cecf7103a4ca30073a654d4f170953a608"
+licence = "GPL-2.0-or-later"
+provides = "avfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/avfs-1.1.4-r1.apk"
+version = "1.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

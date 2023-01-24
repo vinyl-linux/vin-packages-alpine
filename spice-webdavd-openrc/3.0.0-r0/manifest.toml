@@ -1,0 +1,15 @@
+checksum = "703cd27577ca4a689591f96ac9037b81fff600630441bad9c64d81adbe35ed7c"
+licence = "LGPL-2.0-or-later"
+provides = "spice-webdavd-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/spice-webdavd-openrc-3.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r6"]]

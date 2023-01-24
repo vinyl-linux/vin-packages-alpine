@@ -1,0 +1,15 @@
+checksum = "731d20d6cdf41d38c849637b3ccc7d17c4674494f8e46838e3a09e7fcf40d27a"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-spamreport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/claws-mail-plugins-spamreport-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.1.1-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"]]

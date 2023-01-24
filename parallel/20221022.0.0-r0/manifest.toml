@@ -1,0 +1,15 @@
+checksum = "999d485318194fc3d06dbab61767f00ae4f93699d2acacf9c51e504c21bf5beb"
+licence = "GPL-3.0-or-later"
+provides = "parallel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/parallel-20221022-r0.apk"
+version = "20221022.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "e20bd85bdc8898f7e413ecd7f79aa8ad95b8c0dcca4aaf6baaf1785caf0a3b1a"
+licence = "MPL-2.0 LGPL-2.1-or-later"
+provides = "libwpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwpd-0.10.3-r1.apk"
+version = "0.10.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"]]

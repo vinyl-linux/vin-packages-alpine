@@ -1,0 +1,15 @@
+checksum = "6cadaa490aca512c3a5afdb1e61859fc58a08044ea13ff7b90ffc8615a472c0c"
+licence = "GPL-3.0-only"
+provides = "frogdata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frogdata-0.21-r0.apk"
+version = "0.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

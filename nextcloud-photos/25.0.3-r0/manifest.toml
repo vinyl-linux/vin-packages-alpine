@@ -1,0 +1,15 @@
+checksum = "2c5137ef1751a746e67cdc9311f6ea25ab5f23d1cdeeb5d6880451b2dd3c3d49"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-photos"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-photos-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

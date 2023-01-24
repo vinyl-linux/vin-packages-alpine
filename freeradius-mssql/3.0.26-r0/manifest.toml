@@ -1,0 +1,15 @@
+checksum = "d4fdd0affa1c150c18b0abafec14bf973a873efdaa137489f01252f5d985822d"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-mssql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-mssql-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius-sql", "3.0.26-r0"]]

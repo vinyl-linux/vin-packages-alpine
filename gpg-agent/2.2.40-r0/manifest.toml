@@ -1,0 +1,15 @@
+checksum = "e6ee60706fa3149b77b7d20502e6437f541f669d84f18c52d19bba9b2d46e55f"
+licence = "GPL-3.0-or-later"
+provides = "gpg-agent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpg-agent-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg-gpgconf", "2.2.40-r0"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"], ["npth", "1.6.0-r2"]]

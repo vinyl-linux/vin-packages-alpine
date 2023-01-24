@@ -1,0 +1,15 @@
+checksum = "50d4e3462c6a2e7e2d92a328a97db45cefda2e125add1fb930e0e56740f3475f"
+licence = "GPL-2.0-or-later"
+provides = "dash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dash-0.5.11.5-r2.apk"
+version = "0.5.11.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "efa15446a7697551d9f9179e128c7579f6cb3680c2a0a6f4162fd1c3b7f5194e"
+licence = "MIT"
+provides = "py3-pyaudio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyaudio-0.2.12-r0.apk"
+version = "0.2.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["portaudio", "19.7.0-r0"]]

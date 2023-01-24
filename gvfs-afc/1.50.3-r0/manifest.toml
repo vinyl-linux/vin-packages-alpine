@@ -1,0 +1,15 @@
+checksum = "cb755fe5f0f47514d2ba4dccca5d264d57f16489df0c3c3fc9d59cc1fcf0bcd9"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-afc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-afc-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gvfs", "1.50.3-r0"], ["libimobiledevice", "1.3.0-r4"], ["libintl", "0.21.1-r1"], ["libplist", "2.2.0-r2"]]

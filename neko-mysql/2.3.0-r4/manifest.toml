@@ -1,0 +1,15 @@
+checksum = "2799483740a82838460e64fedf00525a3ef68f34f32b8b4bc57830b2d346508c"
+licence = "MIT"
+provides = "neko-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/neko-mysql-2.3.0-r4.apk"
+version = "2.3.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"], ["neko-libs", "2.3.0-r4"]]

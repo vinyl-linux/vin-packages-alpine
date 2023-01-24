@@ -1,0 +1,15 @@
+checksum = "c79f5c3242f987b56e5c0348207e7b2e59fe9fa4081f0b5d849ee6c19530e8bf"
+licence = "MIT"
+provides = "fnott"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fnott-1.3.0-r0.apk"
+version = "1.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["fcft", "3.1.5-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"]]

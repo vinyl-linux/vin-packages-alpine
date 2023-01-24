@@ -1,0 +1,15 @@
+checksum = "ea7b18fe0a82d6df75fd73bdc56cc40e1782fe9a8273236de331480acde701d4"
+licence = "GPL-3.0-or-later"
+provides = "apk-polkit-rs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apk-polkit-rs-dev-2.0.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apk-polkit-rs", "2.0.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

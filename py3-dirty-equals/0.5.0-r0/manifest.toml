@@ -1,0 +1,15 @@
+checksum = "14949b24a6e2980d9736f4a3105a990aa01a0788d00e9cd0c5e882537c7e0d36"
+licence = "MIT"
+provides = "py3-dirty-equals"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-dirty-equals-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-tz", "2022.6.0-r0"], ["py3-typing-extensions", "4.4.0-r0"]]

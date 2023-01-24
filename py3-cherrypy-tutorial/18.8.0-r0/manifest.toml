@@ -1,0 +1,15 @@
+checksum = "0c9fb24125fca87edd9e559ba5999cd4fce8098ab7583ece3a4e592281bd3bdf"
+licence = "BSD-3-Clause"
+provides = "py3-cherrypy-tutorial"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cherrypy-tutorial-18.8.0-r0.apk"
+version = "18.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cheroot", "9.0.0-r0"], ["py3-jaraco.collections", "3.8.0-r0"], ["py3-portend", "3.1.0-r2"], ["py3-zc.lockfile", "2.0.0-r1"]]

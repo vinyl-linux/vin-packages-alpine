@@ -1,0 +1,15 @@
+checksum = "e47d1efb2349ce7e173e9033212d0d62899f8bd381d20bff1cede34b984e70ed"
+licence = "MIT"
+provides = "yaml-cpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yaml-cpp-dev-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["yaml-cpp", "0.7.0-r0"]]

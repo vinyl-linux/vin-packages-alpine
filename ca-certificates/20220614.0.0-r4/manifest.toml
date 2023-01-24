@@ -1,0 +1,16 @@
+checksum = "2865979d64adb9e890839c519b6bfc52b153ec220928a7307568fd9a15b23b6f"
+licence = "MPL-2.0 AND MIT"
+provides = "ca-certificates"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ca-certificates-20220614-r4.apk"
+version = "20220614.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

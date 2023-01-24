@@ -1,0 +1,15 @@
+checksum = "6c1da564ed924b00fa2eab3b3c21900c0409c267005e05a8b927e0c899f8f648"
+licence = "BSD-2-Clause"
+provides = "gpaste-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gpaste-dev-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpaste", "43.0.0-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["libadwaita-dev", "1.2.1-r0"], ["pkgconf", "1.9.4-r0"]]

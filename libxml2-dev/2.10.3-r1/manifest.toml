@@ -1,0 +1,15 @@
+checksum = "fc06c412c4157d6ca421286b397063fca8652e6ca4def4ebe2ba4d3fbedbbe10"
+licence = "MIT"
+provides = "libxml2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxml2-dev-2.10.3-r1.apk"
+version = "2.10.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.13-r0"], ["xz-dev", "5.2.9-r0"], ["libxml2-utils", "2.10.3-r1"], ["libxml2", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

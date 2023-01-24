@@ -1,0 +1,15 @@
+checksum = "78f6475b07add0ac5d967d02c97054d367ef81ac768b2d27e90f246bc4093e19"
+licence = "BSD-3-Clause"
+provides = "libnumbertext"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnumbertext-1.0.11-r0.apk"
+version = "1.0.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

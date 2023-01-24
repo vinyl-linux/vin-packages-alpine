@@ -1,0 +1,15 @@
+checksum = "e3ac953304d50240165bc541d18ba6f67c869d5ae3f30783f238c3fd39ebf4d2"
+licence = "MIT"
+provides = "rofi-calc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-calc-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rofi-wayland", "1.7.5"], ["qalc", "4.4.0-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

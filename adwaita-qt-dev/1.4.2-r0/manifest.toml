@@ -1,0 +1,15 @@
+checksum = "e88d5705967a78a7bde1e2fa7f1488f33d93a3859f6512bc4353fdf38f52431b"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "adwaita-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/adwaita-qt-dev-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["adwaita-qt", "1.4.2-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

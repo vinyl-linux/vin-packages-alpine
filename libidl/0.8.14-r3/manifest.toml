@@ -1,0 +1,15 @@
+checksum = "5621cb862fc95d16185157525f09b6e0855e53e4dd4f3d906b9e76bd0bd61cca"
+licence = "LGPL-2.0-or-later"
+provides = "libidl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libidl-0.8.14-r3.apk"
+version = "0.8.14-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

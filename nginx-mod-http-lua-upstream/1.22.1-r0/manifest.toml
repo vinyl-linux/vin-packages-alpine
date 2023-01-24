@@ -1,0 +1,15 @@
+checksum = "2e48fe3276b5586b91ca036cb8ff94d6c0b90d4ed4d8ae9b72e62e2c90287aba"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-lua-upstream"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-lua-upstream-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["nginx-mod-http-lua", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

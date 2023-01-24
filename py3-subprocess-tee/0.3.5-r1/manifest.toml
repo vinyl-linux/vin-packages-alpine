@@ -1,0 +1,15 @@
+checksum = "d1221b645b95b240421123073e1283216795e3015c802ac4b2acf75e1825831f"
+licence = "MIT"
+provides = "py3-subprocess-tee"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-subprocess-tee-0.3.5-r1.apk"
+version = "0.3.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-enrich", "1.2.7-r0"]]

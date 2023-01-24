@@ -1,0 +1,15 @@
+checksum = "321f401cfb9a5576aee3ed3ba42883c57e03e8e423e762ce2adb415cd933662f"
+licence = "MIT"
+provides = "py3-stack_data"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-stack_data-0.6.1-r0.apk"
+version = "0.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-executing", "1.2.0-r0"], ["py3-asttokens", "2.1.0-r0"], ["py3-pure_eval", "0.2.2-r0"]]

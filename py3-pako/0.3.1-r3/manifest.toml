@@ -1,0 +1,15 @@
+checksum = "5cf6382030474cb8d96b57d8fd6aa92dfd15dcbbd6e2a5bf1c96582d0a4e39d2"
+licence = "Apache-2.0"
+provides = "py3-pako"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pako-0.3.1-r3.apk"
+version = "0.3.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-appdirs", "1.4.4-r4"]]

@@ -1,0 +1,15 @@
+checksum = "bcd8cccd39fba55d6316497575960f0a83810a1a14994b724b727764c51b0502"
+licence = "MIT"
+provides = "py3-path"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-path-16.5.0-r0.apk"
+version = "16.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

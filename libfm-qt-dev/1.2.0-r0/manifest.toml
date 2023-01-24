@@ -1,0 +1,15 @@
+checksum = "b27abd03e31b67d5c3d300e15bf1291432f583014d2c96cf3587bb5a298921b7"
+licence = "LGPL-2.0-or-later"
+provides = "libfm-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfm-qt-dev-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfm-qt", "1.2.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtx11extras-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

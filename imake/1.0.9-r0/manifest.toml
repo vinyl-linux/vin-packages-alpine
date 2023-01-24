@@ -1,0 +1,15 @@
+checksum = "a2db60fa5c8f31b94591f6d83beb5ecf189096939110aab54d20f8a37a0d397c"
+licence = "MIT-enna"
+provides = "imake"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/imake-1.0.9-r0.apk"
+version = "1.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

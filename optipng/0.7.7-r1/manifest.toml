@@ -1,0 +1,15 @@
+checksum = "d00d61651c543a5a9a8e36c6c2c20137d0dd7604339bb11b22c49ee4c9046432"
+licence = "Zlib"
+provides = "optipng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/optipng-0.7.7-r1.apk"
+version = "0.7.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpng", "1.6.38-r0"], ["zlib", "1.2.13-r0"]]

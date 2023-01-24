@@ -1,0 +1,15 @@
+checksum = "b6962acd6922429499c06dd80b5b84eee9255954d037f6d93ffe03b4625aa038"
+licence = "GPL-2.0-or-later"
+provides = "uncrustify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/uncrustify-0.76.0-r0.apk"
+version = "0.76.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

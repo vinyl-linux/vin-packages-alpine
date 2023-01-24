@@ -1,0 +1,15 @@
+checksum = "0600ef7492d73da5ca9e527c4f0824f4bf5b1f9dde5fd608b986f6070e358d9e"
+licence = "GPL-2.0-only"
+provides = "apk-tools-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apk-tools-static-2.12.10-r1.apk"
+version = "2.12.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ca-certificates-bundle", "20220614.0.0-r4"]]

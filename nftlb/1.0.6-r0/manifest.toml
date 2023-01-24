@@ -1,0 +1,15 @@
+checksum = "3811ca8f9eae2a5eff78b2b444f1fda4a0f28eab2931a74a46ea881fbbd12be9"
+licence = "AGPL-3.0"
+provides = "nftlb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nftlb-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"], ["jansson", "2.14.0-r0"], ["libmnl", "1.0.5-r0"], ["nftables", "1.0.5-r2"]]

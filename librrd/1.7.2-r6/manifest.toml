@@ -1,0 +1,15 @@
+checksum = "e971604e2bef0887738a15c08d164a28da1f4b7b01f847348a7e262c270cb433"
+licence = "GPL-2.0-or-later"
+provides = "librrd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/librrd-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["pango", "1.50.12-r0"], ["libpng", "1.6.38-r0"], ["libxml2", "2.10.3-r1"]]

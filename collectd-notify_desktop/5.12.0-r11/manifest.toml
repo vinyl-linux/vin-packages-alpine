@@ -1,0 +1,15 @@
+checksum = "7a2303b6fd5f8e679d6e29331bfec550b1894c0d36d9d3cefb1927ea085118d8"
+licence = "GPL-2.0-or-later"
+provides = "collectd-notify_desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-notify_desktop-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libnotify", "0.8.1-r1"]]

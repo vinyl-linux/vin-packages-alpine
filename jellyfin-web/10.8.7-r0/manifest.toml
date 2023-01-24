@@ -1,0 +1,15 @@
+checksum = "e3d820e088f79378ecb3ff4b6f7eea85e12dd97e1a4eb37365602823924b1f01"
+licence = "GPL-2.0-only"
+provides = "jellyfin-web"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jellyfin-web-10.8.7-r0.apk"
+version = "10.8.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jellyfin", "10.8.7-r0"], ["yash-binsh", "2.53.0-r2"]]

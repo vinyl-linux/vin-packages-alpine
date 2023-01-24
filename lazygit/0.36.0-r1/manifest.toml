@@ -1,0 +1,15 @@
+checksum = "9fb626b9c0cf5d74bb4e51ebc83e9fe32df2c207d365e17ab84f6fa3b54cf9e3"
+licence = "MIT"
+provides = "lazygit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lazygit-0.36.0-r1.apk"
+version = "0.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses", "6.3.0"], ["musl", "1.2.3-r4"]]

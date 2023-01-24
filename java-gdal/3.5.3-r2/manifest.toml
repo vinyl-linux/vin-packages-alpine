@@ -1,0 +1,15 @@
+checksum = "a9a41db6db85f13fe1da083f4fd6643552e8ffaaaa4e30cb8f03482c306ef59d"
+licence = "MIT"
+provides = "java-gdal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/java-gdal-3.5.3-r2.apk"
+version = "3.5.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gdal", "3.5.3-r2"], ["libstdc++", "12.2.1"]]

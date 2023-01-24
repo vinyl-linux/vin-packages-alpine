@@ -1,0 +1,15 @@
+checksum = "21abdce9c22472f49bb6a9ad350647f2cf3acd3e3b9162d46d0ae02fa4585340"
+licence = "LGPL-3.0-only"
+provides = "qmenumodel-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qmenumodel-dev-0.9.1-r0.apk"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.6"], ["qt5-qtbase-dev", "5.15.6"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["qmenumodel", "0.9.1-r0"]]

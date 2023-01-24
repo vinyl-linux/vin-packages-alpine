@@ -1,0 +1,15 @@
+checksum = "53c2bfe73a2c970335a7cfac1d9a32dc4ec16f1de432fc3633ee816c136d70c3"
+licence = "LGPL-2.1-or-later"
+provides = "py3-lxc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-lxc-3.0.4-r4.apk"
+version = "3.0.4-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["lxc-libs", "5.0.2-r0"]]

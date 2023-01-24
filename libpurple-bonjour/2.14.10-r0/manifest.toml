@@ -1,0 +1,15 @@
+checksum = "6287ba4b71cf1109e0e93933688111ec91f141316db632d0bc4105b7c76d16d2"
+licence = "GPL-2.0-or-later"
+provides = "libpurple-bonjour"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpurple-bonjour-2.14.10-r0.apk"
+version = "2.14.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r6"], ["avahi-glib", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libxml2", "2.10.3-r1"]]

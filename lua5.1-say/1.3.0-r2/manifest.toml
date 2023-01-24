@@ -1,0 +1,15 @@
+checksum = "2da7ca5a5c4d662f26c3b788a55e974ba493443598073e199d79e6c4409ecaae"
+licence = "MIT"
+provides = "lua5.1-say"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.1-say-1.3-r2.apk"
+version = "1.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"]]

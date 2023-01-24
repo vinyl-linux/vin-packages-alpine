@@ -1,0 +1,15 @@
+checksum = "6177bec19175d5825563cb94315d33c1e1cf9c6a5b54a0758ce68f3c4f782913"
+licence = "BSD-3-Clause"
+provides = "php81-pecl-ast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-ast-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1006459644dcf7709a747a81b1114a426dd0906fe7d4f423c610ce876d6eb8f0"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtserialport-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtserialport-dev-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase-dev", "6.4.2-r0"], ["pkgconf", "1.9.4-r0"], ["qt6-qtserialport", "6.4.2-r0"]]

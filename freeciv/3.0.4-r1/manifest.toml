@@ -1,0 +1,15 @@
+checksum = "125c44c99adbf3ce2200362a1a3ae36f38b40b9cc42fa725d18a315cf92e414f"
+licence = "GPL-2.0-or-later"
+provides = "freeciv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freeciv-3.0.4-r1.apk"
+version = "3.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeciv-server", "3.0.4-r1"], ["freeciv-client-gtk3", "3.0.4-r1"]]

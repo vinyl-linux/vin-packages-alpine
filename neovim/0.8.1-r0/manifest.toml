@@ -1,0 +1,15 @@
+checksum = "a69d2b0b48b787269f3fa88bd8b3ad1e0a3bb698734d72c943ed9a30f04e6a5d"
+licence = "Apache-2.0 AND Vim"
+provides = "neovim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/neovim-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["luajit", "2.1.0"], ["libluv", "1.44.2.1-r0"], ["msgpack-c", "4.0.0-r0"], ["libtermkey", "0.22.0-r0"], ["tree-sitter", "0.20.7-r0"], ["unibilium", "2.1.1-r0"], ["libuv", "1.44.2-r0"], ["libvterm", "0.3.0-r0"]]

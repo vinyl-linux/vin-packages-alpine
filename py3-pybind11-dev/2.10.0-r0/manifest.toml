@@ -1,0 +1,15 @@
+checksum = "bb016389f8f6965fe2243b4e3fc8fb9f93d96003edca41bd07f01c1e07edb4f7"
+licence = "MPL-2.0"
+provides = "py3-pybind11-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pybind11-dev-2.10.0-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pybind11", "2.10.0-r0"]]

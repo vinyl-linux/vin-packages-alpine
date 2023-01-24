@@ -1,0 +1,15 @@
+checksum = "77bbeead4da5fdb4650108a2900b4723601d12d2ae45967a1ddf6fcd6b4855fd"
+licence = "(LGPL-2.0-or-later OR GPL-3.0-only OR GPL-2.0-or-later) AND Qt-GPL-exception-1.0"
+provides = "qt5-qtserialport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtserialport-5.15.6_git20220816-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

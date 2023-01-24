@@ -1,0 +1,15 @@
+checksum = "ada2ee5e9027046df40b5822853bac2bceda7a892adc960f72aa4522ee1eeaeb"
+licence = "Libpng"
+provides = "libpng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpng-1.6.38-r0.apk"
+version = "1.6.38-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bbc9502f0115e9bc14be55c9b639aa77ffbfa67acf7619e844bfa7132842df22"
+licence = "MIT"
+provides = "swaybg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/swaybg-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["wayland-libs-client", "1.21.0-r1"]]

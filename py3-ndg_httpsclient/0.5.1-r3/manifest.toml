@@ -1,0 +1,15 @@
+checksum = "dbca291bc6f8ce1ffa4960e18d40cfbdec2c3b2e88ab10b53ac6df877802492d"
+licence = "BSD-2-Clause"
+provides = "py3-ndg_httpsclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ndg_httpsclient-0.5.1-r3.apk"
+version = "0.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-openssl", "22.1.0-r1"], ["py3-asn1", "0.4.8-r2"]]

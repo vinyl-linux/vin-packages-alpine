@@ -1,0 +1,15 @@
+checksum = "0545621b86d5ce44c1fc2a3fe2622826e958e43a0455f52dceb62d2d70ea892e"
+licence = "Apache-2.0"
+provides = "flatbuffers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flatbuffers-22.10.26-r0.apk"
+version = "22.10.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

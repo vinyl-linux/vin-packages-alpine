@@ -1,0 +1,15 @@
+checksum = "79dd7d50d0201411e4bb298671e47730caa8a39d4c03f0f773ad4c113ad07376"
+licence = "LGPL-2.0-only"
+provides = "newt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/newt-dev-0.52.23-r0.apk"
+version = "0.52.23-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["newt", "0.52.23-r0"], ["slang-dev", "2.3.3-r0"], ["pkgconf", "1.9.4-r0"]]

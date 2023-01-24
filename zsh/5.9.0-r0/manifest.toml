@@ -1,0 +1,15 @@
+checksum = "bd18e943c68b60d4cc231cc41c9595f662ef42dcf9009ac8a0736cb8804a4e1a"
+licence = "custom"
+provides = "zsh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zsh-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["ncurses-libs", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "57fa17b75ed7b49150ee925e29a1c2d979ed35466076209cf3ac221726fbf422"
+licence = "GPL-2.0-or-later"
+provides = "cdw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cdw-0.8.1-r4.apk"
+version = "0.8.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cdrkit", "1.1.11-r4"], ["libburn", "1.5.4-r2"], ["musl", "1.2.3-r4"], ["libcdio", "2.1.0-r1"], ["ncurses-libs", "6.3.0"], ["libintl", "0.21.1-r1"]]

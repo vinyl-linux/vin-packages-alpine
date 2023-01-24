@@ -1,0 +1,15 @@
+checksum = "fec6bfc0fb6c35e9152c636ee3ac25acb7cae97a9f1d393449bbc356c386f5e6"
+licence = "GPL-2.0-or-later"
+provides = "libxapian"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxapian-1.4.21-r0.apk"
+version = "1.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libuuid", "2.38.1-r1"], ["zlib", "1.2.13-r0"]]

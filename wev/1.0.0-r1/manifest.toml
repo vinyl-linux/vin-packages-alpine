@@ -1,0 +1,15 @@
+checksum = "6c208dc0cfeaa10dcebb28e6c675117b205e11db5fd9b42089f98f708f68c6f4"
+licence = "MIT"
+provides = "wev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wev-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["wayland-libs-client", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f131eb2f644e0a43ddee0968126182866dc302dafb72a5c0a24c3972c123c3fe"
+licence = "BSD-2-Clause"
+provides = "ruby-xmlrpc-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-xmlrpc-doc-0.3.2-r1.apk"
+version = "0.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-webrick", "1.7.0-r1"]]

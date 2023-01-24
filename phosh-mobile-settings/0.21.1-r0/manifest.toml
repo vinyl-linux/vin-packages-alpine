@@ -1,0 +1,15 @@
+checksum = "2a315da946d375ee37bd4e10f7e12bdbe478684f5cdb37ac34aadde593dad021"
+licence = "GPL-3.0-or-later"
+provides = "phosh-mobile-settings"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/phosh-mobile-settings-0.21.1-r0.apk"
+version = "0.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["lm-sensors-libs", "3.6.0-r4"], ["wayland-libs-client", "1.21.0-r1"]]

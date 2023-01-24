@@ -1,0 +1,15 @@
+checksum = "c4380898201e1d44a5a8394974f373df9641d0f52d3797769c12a483dad513c1"
+licence = "LGPL-2.0-or-later"
+provides = "libgravatar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgravatar-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.100.1-r0"], ["ki18n-dev", "5.100.0-r0"], ["kio-dev", "5.100.0-r0"], ["ktextwidgets-dev", "5.100.0-r0"], ["kwidgetsaddons-dev", "5.100.0-r0"], ["pimcommon-dev", "22.8.3-r0"], ["qt5-qtbase-dev", "5.15.6"], ["samurai", "1.2.0-r2"], ["libgravatar", "22.8.3-r0"]]

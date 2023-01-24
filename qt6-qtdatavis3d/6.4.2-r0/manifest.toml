@@ -1,0 +1,15 @@
+checksum = "b4a41681abaa0cb276cd8ed26a352f677ab97ba5077e9ca4f4950498dcdfda03"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtdatavis3d"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtdatavis3d-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["qt6-qtdeclarative", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "2e154f100f4c88e6f92f72d6ab1181b5e40678959872abd2d9d74c581c9a785c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-libxslt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-xml-libxslt-2.002000-r0.apk"
+version = "2.2000.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-xml-libxml", "2.208.0-r0"], ["musl", "1.2.3-r4"], ["libxslt", "1.1.37-r0"], ["libxml2", "2.10.3-r1"]]

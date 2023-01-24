@@ -1,0 +1,15 @@
+checksum = "16e0d61897b87fcaf8d21c3c7121067d2eedbfc255c61e91cdd53a2c10523d7e"
+licence = "MPL-2.0"
+provides = "dhcp-server-vanilla"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dhcp-server-vanilla-4.4.3_p1-r1.apk"
+version = "4.4.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dhcp", "4.4.3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

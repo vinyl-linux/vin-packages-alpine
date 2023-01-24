@@ -1,0 +1,15 @@
+checksum = "a63737ff96faf1de8b2799935e4ff35e5631289974c94aa176a1df97e08ccfa9"
+licence = "custom"
+provides = "uwsgi-rrdtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-rrdtool-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

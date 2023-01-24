@@ -1,0 +1,15 @@
+checksum = "d240da6e4d155a26beae9e79432abf9f91cc3a26b646037de6e25af8f8161612"
+licence = "GPL-3.0-or-later"
+provides = "keepassxc-proxy-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keepassxc-proxy-static-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

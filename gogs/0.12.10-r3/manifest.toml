@@ -1,0 +1,15 @@
+checksum = "dd0820aa70adaaf267c1911c5d838353ef10f671b1a14612fc07a7fbc2fa15cf"
+licence = "MIT"
+provides = "gogs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gogs-0.12.10-r3.apk"
+version = "0.12.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

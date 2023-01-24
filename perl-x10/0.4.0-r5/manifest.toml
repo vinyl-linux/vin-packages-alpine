@@ -1,0 +1,15 @@
+checksum = "8a4cdce0032ed81e21fc3d68e1ed0b4ad23ba9ed3cc730a8c3cd3993045e24fa"
+licence = "GPL-3.0-only"
+provides = "perl-x10"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-x10-0.04-r5.apk"
+version = "0.4.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-time-parsedate", "2015.103.0-r4"], ["perl-device-serialport", "1.4.0-r16"], ["perl-astro-suntime", "0.6.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "272e4b43821b8ca7ebd99d12d5e3f95fb228844c1d649cbaf906e919f8019280"
+licence = "LGPL-2.1-or-later"
+provides = "libqrtr-glib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libqrtr-glib-dev-1.2.2-r0.apk"
+version = "1.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libqrtr-glib", "1.2.2-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f67dc2f39aec023d11c5c202d821823cbad0bb7d5abf9a5abb958b6795209dbd"
+licence = "custom"
+provides = "unzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/unzip-6.0-r13.apk"
+version = "6.0.0-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

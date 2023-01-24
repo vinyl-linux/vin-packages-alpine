@@ -1,0 +1,15 @@
+checksum = "d6b756bdccc727a5e68e382cad6236f5238a8d26f1f3160817ebbaf6665502a5"
+licence = "MIT"
+provides = "py3-wsproto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-wsproto-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-h11", "0.14.0-r0"]]

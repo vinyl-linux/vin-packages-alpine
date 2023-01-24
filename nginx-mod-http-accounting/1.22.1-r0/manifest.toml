@@ -1,0 +1,15 @@
+checksum = "a7ea8bc8689fe69ecd5f489c3d16324558a9b8216e8fa7c26290b79889f68035"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-accounting"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-accounting-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

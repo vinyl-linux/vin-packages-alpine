@@ -1,0 +1,15 @@
+checksum = "4caaa974b52a89c49f386214722989debf3112845827e47bab4456c504050bac"
+licence = "LGPL-2.1-or-later"
+provides = "mwm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mwm-2.3.8-r1.apk"
+version = "2.3.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["motif", "2.3.8-r1"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"]]

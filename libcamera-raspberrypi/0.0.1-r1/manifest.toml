@@ -1,0 +1,15 @@
+checksum = "b8566bba88257af8791ffac7014e8cce981c2db62e2d976a863074363ee007c4"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "libcamera-raspberrypi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcamera-raspberrypi-0.0.1-r1.apk"
+version = "0.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcamera", "0.0.1-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

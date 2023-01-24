@@ -1,0 +1,15 @@
+checksum = "30f7576f3b3ec13147d6e29e7ee81024a096db9fbd6f246191d126d708a4a191"
+licence = "LGPL-2.1-or-later"
+provides = "telepathy-mission-control-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/telepathy-mission-control-dev-5.16.6-r1.apk"
+version = "5.16.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-dev", "1.14.4-r0"], ["dbus-glib-dev", "0.112.0-r1"], ["glib-dev", "2.74.5-r0"], ["networkmanager-dev", "1.40.10-r0"], ["telepathy-glib-dev", "0.24.2-r1"], ["pkgconf", "1.9.4-r0"], ["telepathy-mission-control", "5.16.6-r1"]]

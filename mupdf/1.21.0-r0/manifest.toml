@@ -1,0 +1,15 @@
+checksum = "29841b8b51ae3e792715e9cabe55f97ddfb35505fe10cbafb23105f895f24873"
+licence = "AGPL-3.0-or-later"
+provides = "mupdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mupdf-1.21.0-r0.apk"
+version = "1.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mupdf-x11", "1.21.0-r0"]]

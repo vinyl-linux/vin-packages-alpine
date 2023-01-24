@@ -1,0 +1,15 @@
+checksum = "d89efbc84bff3e1a24a3e2930bfe4b3f24d3137727b392e6d243029861a35f0a"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "asterisk-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/asterisk-pgsql-18.15.0-r0.apk"
+version = "18.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

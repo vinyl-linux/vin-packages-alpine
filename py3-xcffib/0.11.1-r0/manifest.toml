@@ -1,0 +1,15 @@
+checksum = "4e5b09093fe083455ce7dd2197bde064008c704c996d1b18b5821df09649c72a"
+licence = "Apache-2.0"
+provides = "py3-xcffib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-xcffib-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r3"], ["py3-cffi", "1.15.1-r0"], ["libxcb", "1.15.0-r0"]]

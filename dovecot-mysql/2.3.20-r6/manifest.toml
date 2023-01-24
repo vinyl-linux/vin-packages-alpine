@@ -1,0 +1,15 @@
+checksum = "1995f121320a63810608d837d25df1720fc519759c2846cccecbbacac6b78bf1"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-mysql-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot-sql", "2.3.20-r6"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c742f324ec9a8084f79531c8f5763f14f20e966b6ba12e975fc7761d301fbd52"
+licence = "LGPL-2.0-or-later"
+provides = "gcr4-base"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcr4-base-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["p11-kit", "0.24.1-r1"]]

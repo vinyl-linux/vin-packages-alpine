@@ -1,0 +1,15 @@
+checksum = "f57d15456b763cfe1f8815d1c80ebfb27cf1eb653b78bf6d7b63a1671b5666f1"
+licence = "MIT"
+provides = "rofi-emoji-x11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-emoji-x11-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xsel", "1.2.0"]]

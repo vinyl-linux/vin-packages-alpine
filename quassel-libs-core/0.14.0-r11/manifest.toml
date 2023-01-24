@@ -1,0 +1,15 @@
+checksum = "9f067942ead3c073b2e601d8c45ce9c04c1df8de7365d9d1d3d283437e95bf95"
+licence = "GPL-2.0-or-later"
+provides = "quassel-libs-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/quassel-libs-core-0.14.0-r11.apk"
+version = "0.14.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libldap", "2.6.3-r6"], ["libqca", "2.3.4-r2"], ["quassel-libs-common", "0.14.0-r11"], ["libstdc++", "12.2.1"]]

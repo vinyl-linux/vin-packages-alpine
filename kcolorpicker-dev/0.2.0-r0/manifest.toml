@@ -1,0 +1,15 @@
+checksum = "085eeb6ee2026fceb9e98ac80bde7ce89984d959fbf101010a82849c889148d4"
+licence = "LGPL-3.0-or-later"
+provides = "kcolorpicker-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcolorpicker-dev-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["kcolorpicker", "0.2.0-r0"]]

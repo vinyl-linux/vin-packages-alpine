@@ -1,0 +1,15 @@
+checksum = "589d3afd85b41f19bc047ab83a48255179afcdb347d44f24c0fc5f52c525d23f"
+licence = "BSD-3-Clause"
+provides = "libnpupnp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnpupnp-dev-5.0.0-r0.apk"
+version = "5.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnpupnp", "5.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

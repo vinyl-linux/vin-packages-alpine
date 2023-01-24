@@ -1,0 +1,15 @@
+checksum = "b93d5df9a762cde500894b4907912a03fce96f254fc23ce679a3e4521e61ad49"
+licence = "MPL-2.0 LGPL-2.1-or-later"
+provides = "libwpg-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwpg-tools-0.3.3-r1.apk"
+version = "0.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["libwpg", "0.3.3-r1"]]

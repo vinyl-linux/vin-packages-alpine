@@ -1,0 +1,15 @@
+checksum = "c6efd7bd6394e3bbf8448fa448d8a103df22fae4b593fe76bd58f2627cfebc98"
+licence = "MIT"
+provides = "slock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slock-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxrandr", "1.5.3-r0"], ["musl", "1.2.3-r4"]]

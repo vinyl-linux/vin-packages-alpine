@@ -1,0 +1,15 @@
+checksum = "72f4e56e6c00587e682d2cbe8778fd29d373eebd8f6a30ca4430395423001180"
+licence = "EPL-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later AND Ruby"
+provides = "jruby-irb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jruby-irb-9.3.4.0-r0.apk"
+version = "9.3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jruby", "9.3.4.0-r0"], ["jruby-readline", "9.3.4.0-r0"]]

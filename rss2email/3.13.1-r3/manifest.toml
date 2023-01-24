@@ -1,0 +1,15 @@
+checksum = "fbba89024dd4f5973d9c2cec087c05a797065f7d2434ad2199061756762409de"
+licence = "GPL-2.0-only"
+provides = "rss2email"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rss2email-3.13.1-r3.apk"
+version = "3.13.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-feedparser", "6.0.10-r0"], ["py3-html2text", "2020.1.16-r2"], ["py3-beautifulsoup4", "4.11.1-r0"]]

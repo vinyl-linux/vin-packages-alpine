@@ -1,0 +1,15 @@
+checksum = "88f7721bf54cb7930bffb321affe23b160fdc6faa158b1697af4ccc4ea832984"
+licence = "GPL-2.0-or-later"
+provides = "brlaser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/brlaser-6-r2.apk"
+version = "6.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cups-filters", "1.28.16-r2"], ["musl", "1.2.3-r4"], ["cups-libs", "2.4.2-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

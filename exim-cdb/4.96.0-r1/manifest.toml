@@ -1,0 +1,15 @@
+checksum = "77c5f6117002e8f4ac56bf5787e75418e554f7c7acf26135a7c5c7074b1c71a9"
+licence = "GPL-2.0-or-later"
+provides = "exim-cdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-cdb-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.96.0-r1"], ["musl", "1.2.3-r4"]]

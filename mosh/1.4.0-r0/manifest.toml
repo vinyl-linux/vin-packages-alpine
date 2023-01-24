@@ -1,0 +1,15 @@
+checksum = "aa9fdf29c4f827734f94974e567a1823998b223c98b92486f1f6c5c1b18d1934"
+licence = "GPL-3.0-or-later"
+provides = "mosh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mosh-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mosh-client", "1.4.0-r0"], ["mosh-server", "1.4.0-r0"]]

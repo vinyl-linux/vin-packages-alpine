@@ -1,0 +1,15 @@
+checksum = "207fe8ce18f7d98a92545f7fec06211824aad159279dd62feac9b55ac5bcdbe6"
+licence = "LGPL-3.0-or-later with exceptions"
+provides = "zeromq-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zeromq-dev-4.3.4-r1.apk"
+version = "4.3.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libzmq", "4.3.4-r1"], ["libsodium-dev", "1.0.18-r2"], ["pkgconf", "1.9.4-r0"]]

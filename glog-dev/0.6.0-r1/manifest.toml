@@ -1,0 +1,15 @@
+checksum = "c589ab5391e107a4bf59d776d6ae10e8ff56efde6b10fc1d71c5e4dde5cf063c"
+licence = "BSD-3-Clause"
+provides = "glog-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glog-dev-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gflags-dev", "2.2.2-r2"], ["glog", "0.6.0-r1"], ["pkgconf", "1.9.4-r0"]]

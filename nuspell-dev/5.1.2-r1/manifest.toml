@@ -1,0 +1,15 @@
+checksum = "f326152fb9df83504983ceea2d658a5f885ddb9c45a14e4863ec6cb4c5590253"
+licence = "LGPL-3.0-or-later"
+provides = "nuspell-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nuspell-dev-5.1.2-r1.apk"
+version = "5.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nuspell-libs", "5.1.2-r1"], ["icu-dev", "72.1.0-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ed0a44c6fc30bddbc27ed6199ae233bece0757e63a48f1247b7626a6ea155a07"
+licence = "GPL-2.0-or-later"
+provides = "msttcorefonts-installer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/msttcorefonts-installer-3.8-r1.apk"
+version = "3.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cabextract", "1.9.1-r1"], ["wget", "1.21.3-r2"], ["yash-binsh", "2.53.0-r2"]]

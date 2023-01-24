@@ -1,0 +1,15 @@
+checksum = "6d17291d251616ab454e7d352a2ca2c93a4c90f37b3211aa7d3c6129bff887b5"
+licence = "BSD-4-Clause"
+provides = "flite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/flite-2.2-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

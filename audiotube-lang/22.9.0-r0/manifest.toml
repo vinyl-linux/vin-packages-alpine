@@ -1,0 +1,15 @@
+checksum = "e82cdac903c21eb9db9f4230eb254f9a5b67003619d1f4faa297920730305795"
+licence = "GPL-2.0-or-later"
+provides = "audiotube-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/audiotube-lang-22.09-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-good", "1.20.5-r0"], ["kirigami2", "5.100.0-r1"], ["py3-ytmusicapi", "0.24.0-r0"], ["qt5-qtimageformats", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["yt-dlp", "2022.11.11-r0"]]

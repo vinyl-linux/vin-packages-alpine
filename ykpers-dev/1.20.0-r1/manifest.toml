@@ -1,0 +1,15 @@
+checksum = "ca017b42f39faaf866e25b17bd10f3d7b58be60e1a005fc3cfb0e0b79acae420"
+licence = "BSD-2-Clause"
+provides = "ykpers-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ykpers-dev-1.20.0-r1.apk"
+version = "1.20.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["ykpers", "1.20.0-r1"]]

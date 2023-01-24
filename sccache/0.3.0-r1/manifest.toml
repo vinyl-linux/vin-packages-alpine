@@ -1,0 +1,15 @@
+checksum = "d66643f79cfc3816e3b2bf1a190f65cce7779b4f5c08decbf2eef32c0666060a"
+licence = "Apache-2.0"
+provides = "sccache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sccache-0.3.0-r1.apk"
+version = "0.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

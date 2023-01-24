@@ -1,0 +1,15 @@
+checksum = "b184b259a949e645fae896abd79a00867b22b699019af7b11033898934d22163"
+licence = "Apache-2.0 AND BSD-3-Clause"
+provides = "subunit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/subunit-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-extras", "1.0.0-r5"], ["py3-testtools", "2.5.0-r1"]]

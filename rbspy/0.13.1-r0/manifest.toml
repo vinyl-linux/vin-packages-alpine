@@ -1,0 +1,15 @@
+checksum = "dffa94c5d9308f35f74d9b24af285c31acf3305015a17a63456a8f135f6e9227"
+licence = "MIT"
+provides = "rbspy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rbspy-0.13.1-r0.apk"
+version = "0.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

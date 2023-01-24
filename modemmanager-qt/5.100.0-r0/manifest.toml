@@ -1,0 +1,15 @@
+checksum = "0b445411014b5327653774572ef1542a7db32425e1f7dbdc1941a9ee923d7fea"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "modemmanager-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/modemmanager-qt-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

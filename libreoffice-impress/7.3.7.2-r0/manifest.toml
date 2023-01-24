@@ -1,0 +1,15 @@
+checksum = "e20c6d634cbded5c04e56c33750273203ef8f2a1944d2d9319922b1d5d639b28"
+licence = "MPL-2.0"
+provides = "libreoffice-impress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-impress-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-common", "7.3.7.2-r0"], ["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"], ["libetonyek", "0.1.10-r4"], ["libgcc", "12.2.1"], ["libmwaw", "0.3.21-r0"], ["libodfgen", "0.1.8-r4"], ["librevenge", "0.0.4-r10"], ["libstaroffice", "0.0.7-r5"], ["libstdc++", "12.2.1"]]

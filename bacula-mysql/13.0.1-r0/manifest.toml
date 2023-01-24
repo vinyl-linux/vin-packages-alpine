@@ -1,0 +1,15 @@
+checksum = "4063a9e0254124575a5455286fae6e44b11992f8fa0329cbf7a8d0612f36259f"
+licence = "AGPL-3.0-or-later WITH OpenSSL-Exception"
+provides = "bacula-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bacula-mysql-13.0.1-r0.apk"
+version = "13.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bacula", "13.0.1-r0"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

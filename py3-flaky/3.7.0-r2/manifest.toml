@@ -1,0 +1,15 @@
+checksum = "4f234315842c1783641194c988598df5620fcab8c4ba82dc207bb57b49e78de4"
+licence = "Apache-2.0"
+provides = "py3-flaky"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flaky-3.7.0-r2.apk"
+version = "3.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

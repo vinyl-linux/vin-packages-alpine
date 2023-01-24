@@ -1,0 +1,15 @@
+checksum = "28670348ebee45be786b5f4f3299b6da833c94148179468b07e29300c65f7520"
+licence = "MIT"
+provides = "lua-dmvpn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-dmvpn-1.4.0-r1.apk"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua-asn1", "2.2.0-r1"]]

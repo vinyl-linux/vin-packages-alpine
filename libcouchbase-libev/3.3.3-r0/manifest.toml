@@ -1,0 +1,15 @@
+checksum = "fb7deb29bb0bb2ecb3e564c458f78b0f4247401a344f09c4420a6a7573d23963"
+licence = "Apache-2.0"
+provides = "libcouchbase-libev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcouchbase-libev-3.3.3-r0.apk"
+version = "3.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcouchbase", "3.3.3-r0"], ["libev", "4.33.0-r0"], ["musl", "1.2.3-r4"]]

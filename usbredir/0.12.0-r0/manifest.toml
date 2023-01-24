@@ -1,0 +1,15 @@
+checksum = "05168321281723a794472f30cd780d9c4ad570ae08330529cd41918fcaaa7020"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "usbredir"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/usbredir-0.12.0-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libusb", "1.0.26-r0"]]

@@ -1,0 +1,15 @@
+checksum = "857fa4397b838fcaee68a045712f778d85dc8580d0cd5642dc8770099a37eb1c"
+licence = "custom"
+provides = "docbook-xsl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/docbook-xsl-1.79.2-r8.apk"
+version = "1.79.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-utils", "2.10.3-r1"], ["libxslt", "1.1.37-r0"], ["docbook-xml", "4.5.0-r8"], ["yash-binsh", "2.53.0-r2"]]

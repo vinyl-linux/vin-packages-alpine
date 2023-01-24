@@ -1,0 +1,15 @@
+checksum = "ed36b245ef92b04a7cc0cd62697701e9def11fb4e019f42f5d1a7be05f2f4848"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-perl-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.26-r0"], ["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

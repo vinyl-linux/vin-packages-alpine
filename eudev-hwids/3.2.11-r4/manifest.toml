@@ -1,0 +1,16 @@
+checksum = "6ced07f1456072ea00df8efccc0fc3e2c9dff56d0e5abd800d247cef2b571f5e"
+licence = "GPL-2.0-only"
+provides = "eudev-hwids"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/eudev-hwids-3.2.11-r4.apk"
+version = "3.2.11-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["udev-init-scripts", "35.0.0-r1"], ["yash-binsh", "2.53.0-r2"]]

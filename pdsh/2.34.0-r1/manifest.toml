@@ -1,0 +1,15 @@
+checksum = "e6c70082c8eed8e57c3db3e4230ca30aaf0f349795da4d711926734e5cb2d177"
+licence = "GPL-2.0"
+provides = "pdsh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdsh-2.34-r1.apk"
+version = "2.34.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

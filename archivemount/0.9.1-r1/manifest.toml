@@ -1,0 +1,15 @@
+checksum = "d51f53bb7ba18c7193b5bdcb40809fd4828887472e405a5fa868c5e6757fac04"
+licence = "LGPL-2.0-or-later"
+provides = "archivemount"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/archivemount-0.9.1-r1.apk"
+version = "0.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"]]

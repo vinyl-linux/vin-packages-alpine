@@ -1,0 +1,15 @@
+checksum = "2d594ece0336f27be4ef5e6c10530804fd716991132c69ac048d9b4a09d26e4f"
+licence = "MPL2"
+provides = "kea-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-common-2.2.0-r2.apk"
+version = "2.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["botan-libs", "2.19.3-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["log4cplus", "2.0.8-r0"], ["mariadb-connector-c", "3.3.3-r0"], ["libpq", "15.1.0-r0"], ["libstdc++", "12.2.1"]]

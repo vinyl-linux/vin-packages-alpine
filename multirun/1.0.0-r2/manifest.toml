@@ -1,0 +1,15 @@
+checksum = "95f9ade9d8080b33904a4f92bb0a7c5f42365194c8cfdf6a76b0f0b81a960353"
+licence = "MIT"
+provides = "multirun"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/multirun-1.0.0-r2.apk"
+version = "1.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

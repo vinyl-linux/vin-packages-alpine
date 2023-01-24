@@ -1,0 +1,15 @@
+checksum = "6705806d565f5055f318a05c346cdd7d49d844fd1e7b14f102d69ec6f9673f0d"
+licence = "GPL-3.0-or-later"
+provides = "axc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/axc-0.3.7-r0.apk"
+version = "0.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["libsignal-protocol-c", "2.3.3-r3"], ["sqlite-libs", "3.40.1-r0"]]

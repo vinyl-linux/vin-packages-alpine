@@ -1,0 +1,15 @@
+checksum = "bfc68cffafcf639ca82e3cd095e238c751b63e00cfccb20209ba37c19e4071d7"
+licence = "GPL-3.0-or-later"
+provides = "xmlindent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xmlindent-0.2.17-r2.apk"
+version = "0.2.17-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["flex-libs", "2.6.4-r3"]]

@@ -1,0 +1,15 @@
+checksum = "167a8b15142796a961cee54bcb5d52356a942f815d786f10907d3054134c0b0e"
+licence = "SGI-B-1.1 AND SGI-B-2.0"
+provides = "glu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glu-9.0.2-r2.apk"
+version = "9.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-osmesa", "22.2.5-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

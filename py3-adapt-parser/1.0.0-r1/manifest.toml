@@ -1,0 +1,15 @@
+checksum = "3ddcea00017657d394c4fe0ac0b6a8ff518955900df587782f9861c839b60865"
+licence = "Apache-2.0"
+provides = "py3-adapt-parser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-adapt-parser-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyee", "8.2.2-r1"], ["python3", "3.10.9-r1"]]

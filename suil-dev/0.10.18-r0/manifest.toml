@@ -1,0 +1,15 @@
+checksum = "ad909b3f3ae8fa045bde1de6b33b43f5f17d7ad576f8ab19b8ee54396683fee9"
+licence = "ISC"
+provides = "suil-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/suil-dev-0.10.18-r0.apk"
+version = "0.10.18-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lv2-dev", "1.18.10-r0"], ["pkgconf", "1.9.4-r0"], ["suil", "0.10.18-r0"]]

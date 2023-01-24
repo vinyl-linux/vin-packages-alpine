@@ -1,0 +1,15 @@
+checksum = "9c5621375c378c110a15e9e15d911cf2b2379835675e5a582c16f55747b2b853"
+licence = "GPL-2.0-or-later"
+provides = "mkpasswd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mkpasswd-5.5.14-r0.apk"
+version = "5.5.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

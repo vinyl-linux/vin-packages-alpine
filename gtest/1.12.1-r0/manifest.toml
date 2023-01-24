@@ -1,0 +1,15 @@
+checksum = "a7b29d4364dbf59ba9eed87e4fef2f23d6d8a625cd36cda016ef50fa603576e9"
+licence = "BSD-3-Clause"
+provides = "gtest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gtest-1.12.1-r0.apk"
+version = "1.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

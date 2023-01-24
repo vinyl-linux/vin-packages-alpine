@@ -1,0 +1,15 @@
+checksum = "6ee00e9d6a0d538d02a8fcb0da154161dc8af40b108fdf42a0ccc86fc7069ee5"
+licence = "ISC"
+provides = "lv2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lv2-dev-1.18.10-r0.apk"
+version = "1.18.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lv2-specgen", "1.18.10-r0"], ["pkgconf", "1.9.4-r0"]]

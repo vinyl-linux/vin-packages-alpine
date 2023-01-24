@@ -1,0 +1,15 @@
+checksum = "ce0fd0c11b467ac354fb5ca8ebbb0dfc2590fa5c6d3f75213769883837f3659c"
+licence = "BSD-3-Clause"
+provides = "pcre2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pcre2-10.42-r0.apk"
+version = "10.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

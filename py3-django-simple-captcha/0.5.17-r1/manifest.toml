@@ -1,0 +1,15 @@
+checksum = "299fe782acb493dd5dbe3452b014f5df206bd01d933b3ad64bc696923bbf8719"
+licence = "MIT"
+provides = "py3-django-simple-captcha"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-django-simple-captcha-0.5.17-r1.apk"
+version = "0.5.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-django", "3.2.16-r0"], ["py3-pillow", "9.3.0-r0"]]

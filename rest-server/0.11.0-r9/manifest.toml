@@ -1,0 +1,15 @@
+checksum = "5d9c677e7bfe258948b435ecca52deb93c7a56518da04c4508dadb618b191784"
+licence = "BSD-2-Clause"
+provides = "rest-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rest-server-0.11.0-r9.apk"
+version = "0.11.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

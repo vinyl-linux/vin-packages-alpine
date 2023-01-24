@@ -1,0 +1,15 @@
+checksum = "d5bfc1a1bb9372e3450074ea8d2abaddb3fbce2627b3bbe56e156e2871a674a8"
+licence = "GPL-3.0-or-later"
+provides = "apk-polkit-rs-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apk-polkit-rs-dbg-2.0.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-elogind", "122.0.0-r0"]]

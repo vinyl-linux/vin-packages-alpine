@@ -1,0 +1,15 @@
+checksum = "bb50545042849e30fb3a548bce0e4577cb497f09664f976c71ac095e079e0536"
+licence = "MIT"
+provides = "libdroplet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdroplet-2.0-r11.apk"
+version = "2.0.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["json-c", "0.16.0-r2"], ["libssl3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"]]

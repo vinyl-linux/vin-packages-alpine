@@ -1,0 +1,15 @@
+checksum = "583c1521191a3f60861eeb6742a483c0b4843e8e5d80bbd2043b01b202e99b6b"
+licence = "Apache-2.0"
+provides = "bcc-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bcc-tools-0.25.0-r2.apk"
+version = "0.25.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-bcc", "0.25.0-r2"], ["bcc", "0.25.0-r2"], ["libbpf", "1.0.1-r0"], ["musl", "1.2.3-r4"]]

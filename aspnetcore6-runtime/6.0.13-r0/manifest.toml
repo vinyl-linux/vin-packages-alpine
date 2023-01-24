@@ -1,0 +1,15 @@
+checksum = "10787e62497a82b75ab32a46c1d12aa180981078338957d42979315471289d8a"
+licence = "MIT"
+provides = "aspnetcore6-runtime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aspnetcore6-runtime-6.0.13-r0.apk"
+version = "6.0.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet6-runtime", "6.0.13-r0"]]

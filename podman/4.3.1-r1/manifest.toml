@@ -1,0 +1,15 @@
+checksum = "8a6b16a9cf90cab35344393765231c1ea3516956bf71074f0acea2faed6fbe95"
+licence = "Apache-2.0"
+provides = "podman"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/podman-4.3.1-r1.apk"
+version = "4.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["conmon", "2.1.5-r0"], ["crun", "1.7.2-r0"], ["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["slirp4netns", "1.2.0-r0"], ["shadow-subids", "4.13.0-r0"], ["containers-common", "0.50.1-r0"], ["netavark", "1.4.0-r0"], ["aardvark-dns", "1.4.0-r0"], ["catatonit", "0.1.7-r0"], ["musl", "1.2.3-r4"], ["gpgme", "1.18.0-r0"], ["libseccomp", "2.5.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c320605f936b9b4a326669d2930468c564ab9ed03402ba583d7fd76943196b21"
+licence = "MIT"
+provides = "py3-opfunu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-opfunu-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-matplotlib", "3.6.2-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-pandas", "1.5.1-r0"], ["py3-pillow", "9.3.0-r0"], ["py3-requests", "2.28.1-r1"], ["py3-scipy", "1.9.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "af4c9dd5eade6bd00a775937afac744717b5862a83ee96089d6884b70272a977"
+licence = "custom"
+provides = "openjade-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openjade-libs-1.3.2-r7.apk"
+version = "1.3.2-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["opensp", "1.5.2-r2"], ["libstdc++", "12.2.1"]]

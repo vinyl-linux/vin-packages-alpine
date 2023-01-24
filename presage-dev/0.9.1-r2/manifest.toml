@@ -1,0 +1,15 @@
+checksum = "52a47b8891791cac2a00c6360ec5bf7dacef074c9df03b2906ffca5510d49dab"
+licence = "GPL-3.0-or-later"
+provides = "presage-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/presage-dev-0.9.1-r2.apk"
+version = "0.9.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sqlite-dev", "3.40.1-r0"], ["tinyxml-dev", "2.6.2-r1"], ["presage", "0.9.1-r2"]]

@@ -1,0 +1,15 @@
+checksum = "3bde7febc850d84fa9aef66e40b1a866ae5bc39cc209052794ec438c1d6b9874"
+licence = "BSD-3-Clause"
+provides = "gyp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gyp-20220714-r0.apk"
+version = "20220714.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["samurai", "1.2.0-r2"], ["py3-six", "1.16.0-r3"]]

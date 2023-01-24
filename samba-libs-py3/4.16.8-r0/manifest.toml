@@ -1,0 +1,15 @@
+checksum = "153a9aabbecea8396e367a9e266479a867f8785818210586362c6830f4e48f43"
+licence = "GPL-3.0-or-later LGPL-3.0-or-later"
+provides = "samba-libs-py3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/samba-libs-py3-4.16.8-r0.apk"
+version = "4.16.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samba-libs", "4.16.8-r0"], ["musl", "1.2.3-r4"], ["samba-client-libs", "4.16.8-r0"], ["gnutls", "3.7.8-r2"], ["ldb", "2.5.2-r0"], ["py3-ldb", "2.5.2-r0"], ["py3-talloc", "2.3.4-r0"], ["python3", "3.10.9-r1"], ["samba-util-libs", "4.16.8-r0"], ["talloc", "2.3.4-r0"], ["tevent", "0.13.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "927cf4b9d9ee037182694adc039af73e9910c648f3d699bb14dfb091907f50c7"
+licence = "BSD-3-Clause"
+provides = "heimdal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/heimdal-dev-7.8.0-r0.apk"
+version = "7.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["e2fsprogs-dev", "1.46.5-r4"], ["heimdal-libs", "7.8.0-r0"], ["pkgconf", "1.9.4-r0"]]

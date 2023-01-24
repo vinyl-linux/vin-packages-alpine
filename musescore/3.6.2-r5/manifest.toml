@@ -1,0 +1,15 @@
+checksum = "d1579499929d64fbc9d281286bfbdafbeec95adf2c981f6e41ec421868f754e4"
+licence = "GPL-2.0-or-later"
+provides = "musescore"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/musescore-3.6.2-r5.apk"
+version = "3.6.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtgraphicaleffects", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["yash-binsh", "2.53.0-r2"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qttools", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtxmlpatterns", "5.15.6"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["portaudio", "19.7.0-r0"], ["portmidi", "2.0.4-r0"], ["libpulse", "16.1.0-r6"], ["libsndfile", "1.1.0-r2"], ["libstdc++", "12.2.1"], ["libvorbis", "1.3.7-r0"], ["zlib", "1.2.13-r0"]]

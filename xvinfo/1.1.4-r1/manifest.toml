@@ -1,0 +1,15 @@
+checksum = "c7e0dbdd5752ee9b099646f60152ddacb5810eab19a5cef49e325ace0027ec70"
+licence = "MIT"
+provides = "xvinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xvinfo-1.1.4-r1.apk"
+version = "1.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxv", "1.0.11-r3"], ["musl", "1.2.3-r4"]]

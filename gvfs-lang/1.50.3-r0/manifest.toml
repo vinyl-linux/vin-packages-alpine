@@ -1,0 +1,15 @@
+checksum = "8d5a341318fc2d46b158e2ca329db158f37c1aa8245c3f8d867c5f3c420210fb"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-lang-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"]]

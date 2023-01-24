@@ -1,0 +1,15 @@
+checksum = "26b9b0a68cc8e8de8910a4189f9ac37659469294dd6786a34364b98c4d8f1057"
+licence = "LGPL-2.1-or-later"
+provides = "gstreamer-vaapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gstreamer-vaapi-1.20.5-r0.apk"
+version = "1.20.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-egl", "22.2.5-r1"], ["mesa-gl", "22.2.5-r1"], ["mesa-gles", "22.2.5-r1"], ["libx11", "1.8.3-r1"], ["libxrandr", "1.5.3-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gstreamer", "1.20.5-r0"], ["gst-plugins-bad", "1.20.5-r0"], ["eudev-libs", "3.2.11-r4"], ["libva", "2.16.0-r0"]]

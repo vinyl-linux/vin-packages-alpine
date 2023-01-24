@@ -1,0 +1,15 @@
+checksum = "831db8ffbd5996358cb780a9c72ae25a508bb2ce5e1af610b79c82c3722609e5"
+licence = "MIT"
+provides = "alpine-git-mirror-syncd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-git-mirror-syncd-0.3.1-r1.apk"
+version = "0.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["git", "2.38.3-r1"], ["lua5.1", "5.1.5-r11"], ["lua5.1-cjson", "2.1.0-r10"], ["lua5.1-mosquitto", "0.4.1-r1"]]

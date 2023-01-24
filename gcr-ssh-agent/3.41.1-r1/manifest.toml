@@ -1,0 +1,15 @@
+checksum = "acda2111e262f412abacdbbc31d5b3ac779e945b5eff39b2c46126fd692796ca"
+licence = "LGPL-2.0-or-later"
+provides = "gcr-ssh-agent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gcr-ssh-agent-3.41.1-r1.apk"
+version = "3.41.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gcr-base", "3.41.1-r1"], ["glib", "2.74.5-r0"], ["libsecret", "0.20.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2d567dc281d038b41cb0a7bb8bd9c9a7583ff8eb92426ed49cf7d67bb615cdf5"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-hw-usb-host"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-hw-usb-host-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"]]

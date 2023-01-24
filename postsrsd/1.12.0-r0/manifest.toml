@@ -1,0 +1,15 @@
+checksum = "91d3dade25b9aa0a17b4092b24bde67685e16bf00180f8b4a488b9be619c4004"
+licence = "GPL-2.0-or-later AND ( GPL-2.0-only OR BSD-3-Clause )"
+provides = "postsrsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postsrsd-1.12-r0.apk"
+version = "1.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

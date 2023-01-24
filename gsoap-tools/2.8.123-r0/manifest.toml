@@ -1,0 +1,15 @@
+checksum = "b1afe1300ceeabf6b5b88cd58a3aa4708f29260bba545d6dda0c84037c1805c6"
+licence = "GPL-2.0-or-later gSOAP-1.3b"
+provides = "gsoap-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gsoap-tools-2.8.123-r0.apk"
+version = "2.8.123-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["gsoap", "2.8.123-r0"], ["libstdc++", "12.2.1"]]

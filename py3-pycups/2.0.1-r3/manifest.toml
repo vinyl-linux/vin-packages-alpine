@@ -1,0 +1,15 @@
+checksum = "fa6adca05e51593a95c163a03a4a6d54b650616df46ccae8ce9784ab0ad729c6"
+licence = "GPL-2.0-or-later"
+provides = "py3-pycups"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pycups-2.0.1-r3.apk"
+version = "2.0.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["cups-libs", "2.4.2-r1"]]

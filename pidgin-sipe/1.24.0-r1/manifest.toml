@@ -1,0 +1,15 @@
+checksum = "ab0f89dae0c4702b37ccb38d5476d241f0450e9052a5a0deda507ecc0bd3c1ba"
+licence = "GPL-2.0-or-later"
+provides = "pidgin-sipe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pidgin-sipe-1.24.0-r1.apk"
+version = "1.24.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gmime", "3.2.13-r0"], ["heimdal-libs", "7.8.0-r0"], ["libintl", "0.21.1-r1"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r0"], ["libpurple", "2.14.10-r0"], ["libxml2", "2.10.3-r1"]]

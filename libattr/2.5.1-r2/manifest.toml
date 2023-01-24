@@ -1,0 +1,15 @@
+checksum = "132e64dd2702b5bbba3bca7ec89556acaa770d7aae90c3f94ae78eafdfc2f131"
+licence = "LGPL-2.1-or-later"
+provides = "libattr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libattr-2.5.1-r2.apk"
+version = "2.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f8100579f2eb4a10550b9b6c4b418a4038a63c65be0a4f8fe5a2f3b590808e96"
+licence = "GPL-3.0-only"
+provides = "cfengine-masterfiles"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cfengine-masterfiles-3.20.0-r0.apk"
+version = "3.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cfengine", "3.20.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "73a55f784a58cb396e0e1f615b4e6a6829d1872cef94ffe09845faad5c42f593"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-mouse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-mouse-2.5.10-r2.apk"
+version = "2.5.10-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-module-build", "0.4231.0-r2"], ["perl-module-build-xsutil", "0.19.0-r0"], ["musl", "1.2.3-r4"]]

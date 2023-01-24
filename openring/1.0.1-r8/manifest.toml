@@ -1,0 +1,15 @@
+checksum = "bcac5f6bc2eef5995298e94f0c6f60362a28a2d01c9b2c77051a51aed83eceac"
+licence = "GPL-3.0-only and CC0-1.0"
+provides = "openring"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openring-1.0.1-r8.apk"
+version = "1.0.1-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

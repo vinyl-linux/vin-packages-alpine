@@ -1,0 +1,15 @@
+checksum = "1a0c3ff79fbca0a005984ad5d2b0fcd36803b274718e91761b1ea614dc235c60"
+licence = "GPL"
+provides = "rutorrent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rutorrent-3.10-r2.apk"
+version = "3.10.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.14-r0"], ["curl", "7.87.0-r1"], ["yash-binsh", "2.53.0-r2"]]

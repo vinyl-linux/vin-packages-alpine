@@ -1,0 +1,15 @@
+checksum = "63d9ff2be25fca8361627977a524285d1865e3a79e335718ced2dcc7ea874bdb"
+licence = "MIT"
+provides = "php81-pecl-vips"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-vips-1.0.13-r0.apk"
+version = "1.0.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["vips", "8.13.3-r1"]]

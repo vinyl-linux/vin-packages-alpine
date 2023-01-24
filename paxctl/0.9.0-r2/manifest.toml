@@ -1,0 +1,15 @@
+checksum = "90a952b9ab729bd90bbf675f48670e29784e1e3bd90eac4832125c16d226fc0c"
+licence = "GPL-2.0-only"
+provides = "paxctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/paxctl-0.9-r2.apk"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

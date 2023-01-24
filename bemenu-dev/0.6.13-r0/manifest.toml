@@ -1,0 +1,15 @@
+checksum = "ed831e379859c2d938ecd2cfc74eededc873af4fdba0fa5702bdabd644490f4d"
+licence = "GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "bemenu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bemenu-dev-0.6.13-r0.apk"
+version = "0.6.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxinerama-dev", "1.1.5-r0"], ["libxkbcommon-dev", "1.4.1-r0"], ["ncurses-dev", "6.3.0"], ["pango-dev", "1.50.12-r0"], ["scdoc", "1.11.2-r0"], ["wayland-dev", "1.21.0-r1"], ["wayland-protocols", "1.30.0-r0"], ["bemenu", "0.6.13-r0"], ["pkgconf", "1.9.4-r0"]]

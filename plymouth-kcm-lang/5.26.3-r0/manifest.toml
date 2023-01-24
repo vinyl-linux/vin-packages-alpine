@@ -1,0 +1,15 @@
+checksum = "1c0c33458a227edfe6dc6b661f0d737bf0aa9124bfb1c9ed60c587bbbaf2037f"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-kcm-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-kcm-lang-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["plymouth", "22.2.122-r0"]]

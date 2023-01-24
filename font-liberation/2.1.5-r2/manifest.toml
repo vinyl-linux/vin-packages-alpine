@@ -1,0 +1,15 @@
+checksum = "2978e4479e41ab5948834c3a8345c73114ed034b9fa96a65d9dfd38925b2d765"
+licence = "OFL-1.1"
+provides = "font-liberation"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-liberation-2.1.5-r2.apk"
+version = "2.1.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

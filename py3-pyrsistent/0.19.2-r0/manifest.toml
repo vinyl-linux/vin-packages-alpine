@@ -1,0 +1,15 @@
+checksum = "100ef26b6aefd2eb90f175b80a646f7a41680add20a8f41d31b74dae8477549f"
+licence = "MIT"
+provides = "py3-pyrsistent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyrsistent-0.19.2-r0.apk"
+version = "0.19.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

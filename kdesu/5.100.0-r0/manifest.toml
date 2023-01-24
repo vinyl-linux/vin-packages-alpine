@@ -1,0 +1,15 @@
+checksum = "7f4b1a76f5e6ba0f4588a2a0ceb4b461effdd16c7156a7c972497502948a6a26"
+licence = "LGPL-2.1-only"
+provides = "kdesu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdesu-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kpty", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "49124a56ee2cf1256bfc239bed01eab06782f175d6dc1cd7cc145e59daf7dfe6"
+licence = "GPL-2.0-or-later"
+provides = "sipsak"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sipsak-0.9.8.1-r0.apk"
+version = "0.9.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libcrypto3", "3.0.7-r2"]]

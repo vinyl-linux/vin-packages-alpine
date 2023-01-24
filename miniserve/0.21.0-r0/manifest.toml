@@ -1,0 +1,15 @@
+checksum = "3656554394e85e4a994a8345bd3e5a1bca9d1dd395afe826d37e8808e85760ff"
+licence = "MIT"
+provides = "miniserve"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/miniserve-0.21.0-r0.apk"
+version = "0.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

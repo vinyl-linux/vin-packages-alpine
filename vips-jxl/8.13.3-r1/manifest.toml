@@ -1,0 +1,15 @@
+checksum = "44ba86eb32fde374c152a638f4d2876e8df699032846d636f723f93e901e5a9e"
+licence = "LGPL-2.1-or-later"
+provides = "vips-jxl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vips-jxl-8.13.3-r1.apk"
+version = "8.13.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libjxl", "0.7.0-r0"], ["vips", "8.13.3-r1"]]

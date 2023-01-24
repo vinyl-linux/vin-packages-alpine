@@ -1,0 +1,15 @@
+checksum = "11fb56d41c6ea321852cde1b4d7fb6fd3a4355db9cf713017eeae9547230557f"
+licence = "TCL"
+provides = "tcl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tcl-dev-8.6.12-r1.apk"
+version = "8.6.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tcl", "8.6.12-r1"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

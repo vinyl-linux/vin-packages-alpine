@@ -1,0 +1,15 @@
+checksum = "350d8d2008dc2124b5ff86a230f09522740b9f4d5963935f76e07daf268968e3"
+licence = "Apache-2.0"
+provides = "pn-gawk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pn-gawk-0.9.0-r5.apk"
+version = "0.9.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libphonenumber", "8.13.0-r0"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"]]

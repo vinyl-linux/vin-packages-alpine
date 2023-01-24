@@ -1,0 +1,15 @@
+checksum = "36a886ac832553cf220ff6d89faa328e2d6ae02f10fa98e595399cc9944f178b"
+licence = "MIT"
+provides = "py3-overpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-overpy-0.6-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

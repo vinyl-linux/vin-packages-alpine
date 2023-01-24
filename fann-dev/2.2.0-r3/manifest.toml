@@ -1,0 +1,15 @@
+checksum = "a70bfb6c9f97727d140ddf43ad58783b2333932a9e50b4c3c76403b75a244162"
+licence = "LGPL-2.0-or-later"
+provides = "fann-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fann-dev-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fann-double", "2.2.0-r3"], ["fann-fixed", "2.2.0-r3"], ["fann-float", "2.2.0-r3"], ["fann", "2.2.0-r3"], ["pkgconf", "1.9.4-r0"]]

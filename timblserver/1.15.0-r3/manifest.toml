@@ -1,0 +1,15 @@
+checksum = "dc405bfa49e2d9729748dee208a64a83bddfdd3cf8f207df392747fe09b1a690"
+licence = "GPL-3.0-only"
+provides = "timblserver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/timblserver-1.15-r3.apk"
+version = "1.15.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["ticcutils", "0.29.0-r1"], ["timbl", "6.7.0-r1"], ["libxml2", "2.10.3-r1"]]

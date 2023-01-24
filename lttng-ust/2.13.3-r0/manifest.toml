@@ -1,0 +1,15 @@
+checksum = "68756e5e216e07fabb6f28f384b9b6cd21bbde07c69902634f447c5c7d9142ac"
+licence = "LGPL-2.1-or-later"
+provides = "lttng-ust"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lttng-ust-2.13.3-r0.apk"
+version = "2.13.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

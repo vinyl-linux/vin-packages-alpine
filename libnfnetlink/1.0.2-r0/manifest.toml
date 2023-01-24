@@ -1,0 +1,15 @@
+checksum = "c8e7eaecf1af752bc6f288f6bcfe96483640962e32dc0c5af58f2d36c8db7be4"
+licence = "GPL-2.0-only"
+provides = "libnfnetlink"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnfnetlink-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

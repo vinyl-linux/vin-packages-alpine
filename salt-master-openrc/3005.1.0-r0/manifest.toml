@@ -1,0 +1,15 @@
+checksum = "663b34971703e37daccb45eaf7a3075dfef88d2ffa04939842cda5e5a47da241"
+licence = "Apache-2.0"
+provides = "salt-master-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-master-openrc-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "f5892be4711a6e4a7ac41e08a7b8888e9729573fc1b532592cd59df32e7e7f4e"
+licence = "LGPL-2.0-or-later"
+provides = "obconf-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/obconf-qt-0.16.2-r0.apk"
+version = "0.16.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["openbox-libs", "3.6.1-r3"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

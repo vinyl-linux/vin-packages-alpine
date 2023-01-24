@@ -1,0 +1,15 @@
+checksum = "9048c886535fa9352555708ff973ebd54fb104cbc583a49eb9d7798b06d8488b"
+licence = "ISC"
+provides = "execline-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/execline-dev-2.9.0.1-r0.apk"
+version = "2.9.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["execline", "2.9.0.1-r0"]]

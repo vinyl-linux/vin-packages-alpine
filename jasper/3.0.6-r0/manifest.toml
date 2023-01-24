@@ -1,0 +1,15 @@
+checksum = "d23019e64c421322e64283849954b46b532a92ac958c6723730249e6c0e47ab4"
+licence = "custom:JasPer2.0"
+provides = "jasper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jasper-3.0.6-r0.apk"
+version = "3.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

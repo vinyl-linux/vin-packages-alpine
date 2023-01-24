@@ -1,0 +1,15 @@
+checksum = "5a105dfdfe387bb3156391cf927766aaca0d1e79867c25d96024ab3e705e7522"
+licence = "GPL-3.0-or-later"
+provides = "yad-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yad-lang-12.0-r0.apk"
+version = "12.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r2"]]

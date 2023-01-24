@@ -1,0 +1,15 @@
+checksum = "92cf0e848ae25b32d19967c7a6f7562b1741d22785ce90f3d9acc440bf728760"
+licence = "MIT"
+provides = "libdrm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libdrm-dev-2.4.114-r0.apk"
+version = "2.4.114-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libdrm", "2.4.114-r0"], ["libpciaccess-dev", "0.17.0-r0"], ["pkgconf", "1.9.4-r0"]]

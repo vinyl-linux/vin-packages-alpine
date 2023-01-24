@@ -1,0 +1,15 @@
+checksum = "39e13a7fc7efdc80f0432b671bdf01ae1adb78f691a1a06ebed1afe57855b2dd"
+licence = "CC0-1.0"
+provides = "nq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nq-0.5-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

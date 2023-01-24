@@ -1,0 +1,15 @@
+checksum = "9b0d184cefc0c296f1a6ee81ecc6afa027921ccf9cd9da00a099d1459e730929"
+licence = "BSD-3-Clause"
+provides = "libwebp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libwebp-dev-1.2.4-r1.apk"
+version = "1.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwebp", "1.2.4-r1"], ["pkgconf", "1.9.4-r0"]]

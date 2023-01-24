@@ -1,0 +1,15 @@
+checksum = "cc15e20defd53e37f7ef9c41f5e94edc6fbf5109926f7704140f7e022f23d962"
+licence = "Apache-2.0"
+provides = "php81-pecl-xhprof"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-xhprof-2.3.9-r0.apk"
+version = "2.3.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

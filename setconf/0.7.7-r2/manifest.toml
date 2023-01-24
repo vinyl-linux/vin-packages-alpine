@@ -1,0 +1,15 @@
+checksum = "0f86e3dbf4edf15680e48a7551aecb522aa993b47d638a108c07327930c87a74"
+licence = "GPL-2.0"
+provides = "setconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/setconf-0.7.7-r2.apk"
+version = "0.7.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

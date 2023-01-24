@@ -1,0 +1,15 @@
+checksum = "b355e03c17e206af213faa7b0d47e9dbb450f0d8defdd5415c8d2f9dbeacc71e"
+licence = "Apache-2.0"
+provides = "lldb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lldb-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["clang15-libs", "15.0.7-r0"], ["libedit", "20221030.3.1-r0"], ["libgcc", "12.2.1"], ["xz-libs", "5.2.9-r0"], ["ncurses-libs", "6.3.0"], ["python3", "3.10.9-r1"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

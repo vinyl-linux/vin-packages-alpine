@@ -1,0 +1,15 @@
+checksum = "f4d4033864799c2c19559a7b0ad13d65bc4ff9801c72230c4c3cfc796ac94f8c"
+licence = "MIT"
+provides = "py3-mypy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mypy-0.991-r0.apk"
+version = "0.991.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-mypy-extensions", "0.4.3-r2"], ["py3-tomli", "2.0.1-r1"], ["py3-typing-extensions", "4.4.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "87aee58c2c4851173db77cfb5fc94ae51176e64b3bb75fab31db58fb62593ebc"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "openobex-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openobex-dev-1.7.2-r4.apk"
+version = "1.7.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libusb-dev", "1.0.26-r0"], ["openobex", "1.7.2-r4"], ["pkgconf", "1.9.4-r0"]]

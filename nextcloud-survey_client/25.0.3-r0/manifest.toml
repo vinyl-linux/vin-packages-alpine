@@ -1,0 +1,15 @@
+checksum = "6551a353e6e63455584c1e04aa1297eb22ecc136b93616c9bee81b1a0a60a6f1"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-survey_client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-survey_client-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

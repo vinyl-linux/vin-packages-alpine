@@ -1,0 +1,15 @@
+checksum = "f9f69c8e216c6b7e458d630d1473f96e6cf2c8e63a9059cc3c3f1d4fab3f0baa"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-logreader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-logreader-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

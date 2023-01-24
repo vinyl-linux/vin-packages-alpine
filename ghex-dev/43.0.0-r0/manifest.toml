@@ -1,0 +1,15 @@
+checksum = "676df9b2b1d2c7afefc32c76a2332f5d531ae88f8cf8dc1bbbf09f3c183b7cb4"
+licence = "GPL-2.0-or-later"
+provides = "ghex-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ghex-dev-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghex", "43.0.0-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["pkgconf", "1.9.4-r0"]]

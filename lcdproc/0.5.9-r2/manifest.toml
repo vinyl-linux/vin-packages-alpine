@@ -1,0 +1,15 @@
+checksum = "45dddd4834ccd24ed18a26f74db4a961dce97bdeb2125e6a9980631b7bd55292"
+licence = "GPL-2.0-or-later"
+provides = "lcdproc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lcdproc-0.5.9-r2.apk"
+version = "0.5.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libftdi1", "1.5.0-r1"], ["lirc", "0.10.1-r4"], ["ncurses-libs", "6.3.0"], ["libpng", "1.6.38-r0"], ["libusb-compat", "0.1.7-r1"], ["libusb", "1.0.26-r0"]]

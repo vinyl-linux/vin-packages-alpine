@@ -1,0 +1,15 @@
+checksum = "3ecca1956b644073ec8d9fb742d834b832d8c51f6566e310d962ff536125ec42"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-epub"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-epub-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["gtk+3.0", "3.24.36-r0"], ["libstdc++", "12.2.1"]]

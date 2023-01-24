@@ -1,0 +1,15 @@
+checksum = "37c761a435e19d64367e2c456092255305e18af9c8f37469396caf872f963033"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "libcamera-gstreamer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcamera-gstreamer-0.0.1-r1.apk"
+version = "0.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcamera", "0.0.1-r1"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gstreamer", "1.20.5-r0"], ["libstdc++", "12.2.1"]]

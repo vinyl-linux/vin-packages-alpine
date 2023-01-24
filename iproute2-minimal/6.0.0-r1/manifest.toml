@@ -1,0 +1,15 @@
+checksum = "c6ce8110f7d425173351f105aba5e79f0964f377147179bc4b880c6bcd7b9fc8"
+licence = "GPL-2.0-or-later"
+provides = "iproute2-minimal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iproute2-minimal-6.0.0-r1.apk"
+version = "6.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libelf", "0.187.0-r2"], ["libmnl", "1.0.5-r0"]]

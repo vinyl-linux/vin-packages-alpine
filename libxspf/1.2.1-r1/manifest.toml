@@ -1,0 +1,15 @@
+checksum = "60bc32f29332b64af0ad17dd8fa73975a9e6d0af5aafe12da5a8de2e63322221"
+licence = "BSD-3-Clause"
+provides = "libxspf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxspf-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["liburiparser", "0.9.7-r0"]]

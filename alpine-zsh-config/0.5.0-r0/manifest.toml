@@ -1,0 +1,15 @@
+checksum = "dfbf6971cfcf8561345682835e020bc19d27511d34eb412069092fa3c6330a25"
+licence = "MIT"
+provides = "alpine-zsh-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alpine-zsh-config-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tty-copy", "0.2.2-r0"], ["zsh", "5.9.0-r0"]]

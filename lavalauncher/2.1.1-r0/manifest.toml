@@ -1,0 +1,15 @@
+checksum = "4aa0289ed9d3e3cbeaf1361720f9178e8659851cdd9d6619a1f9be27fb0407f7"
+licence = "GPL-3.0-or-later"
+provides = "lavalauncher"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lavalauncher-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["librsvg", "2.55.1-r0"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

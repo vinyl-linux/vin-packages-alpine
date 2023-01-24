@@ -1,0 +1,15 @@
+checksum = "ebcdb13ae300f1dcfebe81b46ec918fb58d71c12ab93fd2d46d6b540b66e95c4"
+licence = "LGPL-2.0"
+provides = "netcf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/netcf-0.2.8-r7.apk"
+version = "0.2.8-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["netcf-libs", "0.2.8-r7"], ["readline", "8.2.0-r0"]]

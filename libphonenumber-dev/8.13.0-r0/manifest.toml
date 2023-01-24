@@ -1,0 +1,15 @@
+checksum = "0f8ca2ee00a0e1df03421a034a85c3537d8f524d3e5bfe6d7009f2ff55458dae"
+licence = "Apache-2.0"
+provides = "libphonenumber-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libphonenumber-dev-8.13.0-r0.apk"
+version = "8.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abseil-cpp-dev", "20220623.1.0-r1"], ["boost-dev", "1.80.0-r3"], ["icu-dev", "72.1.0-r1"], ["protobuf-dev", "3.21.9-r0"], ["libphonenumber", "8.13.0-r0"]]

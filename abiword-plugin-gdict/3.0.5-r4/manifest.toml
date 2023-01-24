@@ -1,0 +1,15 @@
+checksum = "79c1ddc3a38c2986ee2b69bbd9f94e3ec9925cf62de6fd43343c204b8668b377"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-gdict"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-gdict-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"]]

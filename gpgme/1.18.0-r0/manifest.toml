@@ -1,0 +1,15 @@
+checksum = "eb503d8e340d040dd1a537fc64f4375a588b0608111f6c3e7f7d94c1b0d8133d"
+licence = "LGPL-2.1-or-later GPL-3.0-or-later"
+provides = "gpgme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gpgme-1.18.0-r0.apk"
+version = "1.18.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.40-r0"], ["gpg-agent", "2.2.40-r0"], ["gpgsm", "2.2.40-r0"], ["yash-binsh", "2.53.0-r2"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libgpg-error", "1.46.0-r1"]]

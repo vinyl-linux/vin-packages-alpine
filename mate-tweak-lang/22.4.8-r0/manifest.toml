@@ -1,0 +1,15 @@
+checksum = "e7d3d08253cd47320be83510c7f591e961edad72bfbd683864e97381972e9013"
+licence = "GPL-2.0-or-later"
+provides = "mate-tweak-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-tweak-lang-22.04.8-r0.apk"
+version = "22.4.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-distro", "1.8.0-r0"], ["py3-psutil", "5.9.4-r0"], ["py3-setproctitle", "1.3.1-r0"]]

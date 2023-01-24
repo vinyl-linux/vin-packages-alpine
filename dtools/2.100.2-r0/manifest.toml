@@ -1,0 +1,15 @@
+checksum = "c67c52bcf517912626ec6d8e611aa900ced5fa9e89050950863ca92e4f3a7d13"
+licence = "BSL-1.0"
+provides = "dtools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dtools-2.100.2-r0.apk"
+version = "2.100.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ldc-runtime", "1.30.0-r1"], ["llvm-libunwind", "15.0.7-r0"]]

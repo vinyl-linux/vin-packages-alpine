@@ -1,0 +1,15 @@
+checksum = "8eff7a2db909e40dfb3b75a59760ed8227ddcd18dd78d556f4075e0ab0e59fe1"
+licence = "Zlib"
+provides = "sdl2_ttf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdl2_ttf-2.20.1-r0.apk"
+version = "2.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"]]

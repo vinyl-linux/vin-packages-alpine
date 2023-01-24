@@ -1,0 +1,15 @@
+checksum = "1fbd6607b04acb9dbb2aba823d5a51034f30a12763dbfbd27a90c16960638205"
+licence = "BSD-3-Clause"
+provides = "py3-cma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cma-3.2.2-r1.apk"
+version = "3.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-matplotlib", "3.6.2-r1"], ["py3-numpy", "1.23.4-r0"]]

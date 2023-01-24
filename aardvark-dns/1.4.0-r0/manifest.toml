@@ -1,0 +1,15 @@
+checksum = "b1ebb0526e282b706a32148426ae6533964d5c421f98ff505dfbff0339906baf"
+licence = "Apache-2.0"
+provides = "aardvark-dns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aardvark-dns-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

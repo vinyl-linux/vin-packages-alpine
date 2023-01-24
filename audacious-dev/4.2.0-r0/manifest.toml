@@ -1,0 +1,15 @@
+checksum = "3dc1644bfade3c735653276b07d4efb4adbbed3dcb0fdf3dbbce52f722280f6b"
+licence = "BSD-2-Clause AND ISC"
+provides = "audacious-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/audacious-dev-4.2-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-glib-dev", "0.112.0-r1"], ["qt5-qtbase-dev", "5.15.6"], ["audacious", "4.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

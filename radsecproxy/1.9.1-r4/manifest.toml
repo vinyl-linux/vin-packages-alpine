@@ -1,0 +1,15 @@
+checksum = "c469bda592f58f5fb9263332361c1fc35b209f5eb0084fe3d5463ff2ba9f03d0"
+licence = "BSD-3-Clause"
+provides = "radsecproxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/radsecproxy-1.9.1-r4.apk"
+version = "1.9.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["nettle", "3.8.1-r0"], ["libssl3", "3.0.7-r2"]]

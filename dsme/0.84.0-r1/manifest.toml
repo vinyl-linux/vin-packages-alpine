@@ -1,0 +1,15 @@
+checksum = "a3f79cd3e02579d0a5dec327146da44c31533c14d27ebe000bf39d506bdccb42"
+licence = "LGPL-2.1-only"
+provides = "dsme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dsme-0.84.0-r1.apk"
+version = "0.84.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cryptsetup-libs", "2.5.0-r2"], ["dbus-libs", "1.14.4-r0"], ["libdsme", "0.66.8-r0"], ["glib", "2.74.5-r0"], ["libngf", "0.28.0-r1"]]

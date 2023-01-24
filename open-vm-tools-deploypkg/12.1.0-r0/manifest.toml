@@ -1,0 +1,15 @@
+checksum = "e270d869ccf1105131919f99d6965c5015067a982e2b3ee3414c000d15a1dd5f"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-deploypkg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/open-vm-tools-deploypkg-12.1.0-r0.apk"
+version = "12.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools", "12.1.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libmspack", "0.10.1"]]

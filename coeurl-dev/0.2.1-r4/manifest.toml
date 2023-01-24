@@ -1,0 +1,15 @@
+checksum = "007d400a024d4b36c85c300230cac107d37fb50ddf2e94afc6c7181a34bb21f7"
+licence = "MIT"
+provides = "coeurl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coeurl-dev-0.2.1-r4.apk"
+version = "0.2.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["coeurl", "0.2.1-r4"], ["curl-dev", "7.87.0-r1"], ["libevent-dev", "2.1.12-r5"], ["spdlog-dev", "1.11.0-r0"], ["pkgconf", "1.9.4-r0"]]

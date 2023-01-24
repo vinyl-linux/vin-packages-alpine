@@ -1,0 +1,15 @@
+checksum = "e6780da6254d35eddb5a7ad696bb495a6abe83e625a94338d8d42659bf534455"
+licence = "GPL-2.0-or-later"
+provides = "kcron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcron-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kauth", "5.100.0-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

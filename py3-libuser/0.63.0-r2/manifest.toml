@@ -1,0 +1,15 @@
+checksum = "f10d777ba4fa924ea47d8c0342e2e57712219f3e8eb0c9737a006eff935412fa"
+licence = "LGPL-2.0-or-later"
+provides = "py3-libuser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-libuser-0.63-r2.apk"
+version = "0.63.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libuser", "0.63.0-r2"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

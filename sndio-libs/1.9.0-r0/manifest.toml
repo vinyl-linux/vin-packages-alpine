@@ -1,0 +1,15 @@
+checksum = "793fffc9bc8b6e4fd8e8209ba18b13874318d7cc666730c4e9f704eee596d406"
+licence = "ISC"
+provides = "sndio-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sndio-libs-1.9.0-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

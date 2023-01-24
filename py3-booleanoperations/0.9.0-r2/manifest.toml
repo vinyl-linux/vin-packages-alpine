@@ -1,0 +1,15 @@
+checksum = "6e14d3c0e2084a44c1141f14d9e6be59dd78bdba007e1bac21257de3b79c5199"
+licence = "MIT"
+provides = "py3-booleanoperations"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-booleanoperations-0.9.0-r2.apk"
+version = "0.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pyclipper", "1.2.1-r1"], ["py3-fonttools", "4.38.0-r0"]]

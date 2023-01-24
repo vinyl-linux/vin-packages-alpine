@@ -1,0 +1,15 @@
+checksum = "5bf07ce0c82046f6661ea84f42880733c02f9c8c13b9cfe46064231238ba8cff"
+licence = "Artistic-2.0"
+provides = "perl-list-someutils-xs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-list-someutils-xs-0.58-r4.apk"
+version = "0.58.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

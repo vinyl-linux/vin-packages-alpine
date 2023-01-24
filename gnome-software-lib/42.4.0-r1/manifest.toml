@@ -1,0 +1,15 @@
+checksum = "727af01f83fa488d3b7cd9340570cafbcebb1a5b20b97a597d663b57b730140a"
+licence = "GPL-2.0-or-later"
+provides = "gnome-software-lib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-software-lib-42.4-r1.apk"
+version = "42.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["appstream", "0.15.5-r2"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["json-glib", "1.6.6-r1"], ["polkit-libs", "122.0.0-r0"], ["libsoup3", "3.2.2-r0"], ["libxmlb", "0.3.10-r0"]]

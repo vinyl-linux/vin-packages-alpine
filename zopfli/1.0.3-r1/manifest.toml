@@ -1,0 +1,15 @@
+checksum = "0ad4b4b48080f41cf1b421c4a449db51cdd7460ba34f4059d7a974466cfd8178"
+licence = "Apache-2.0"
+provides = "zopfli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zopfli-1.0.3-r1.apk"
+version = "1.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

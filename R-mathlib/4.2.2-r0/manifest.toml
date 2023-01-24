@@ -1,0 +1,15 @@
+checksum = "1c5299beac5cce4be48916005f1b59ffa08c3ccdb679e64142e84af92293ca8f"
+licence = "(GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-or-later"
+provides = "R-mathlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/R-mathlib-4.2.2-r0.apk"
+version = "4.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

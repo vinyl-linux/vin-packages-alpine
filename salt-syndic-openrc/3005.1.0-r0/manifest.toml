@@ -1,0 +1,15 @@
+checksum = "fa485540e5fb392d878cdab9543101e5ec3dd071b1fb7199527604615864e1be"
+licence = "Apache-2.0"
+provides = "salt-syndic-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-syndic-openrc-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"]]

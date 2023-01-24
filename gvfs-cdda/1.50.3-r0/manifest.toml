@@ -1,0 +1,15 @@
+checksum = "b621d152d8d83ba431a729a6a584f82ff5af1053b6f667f6708ecdcae803ec2d"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-cdda"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-cdda-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["musl", "1.2.3-r4"], ["libcdio", "2.1.0-r1"], ["libcdio-paranoia", "10.2.2.0.1-r1"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["gvfs", "1.50.3-r0"], ["libintl", "0.21.1-r1"]]

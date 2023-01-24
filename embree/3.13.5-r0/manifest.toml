@@ -1,0 +1,15 @@
+checksum = "e6381a3cc5ef8dc32bebc9fea7cea0a89dbb44b842ae1fd99c270e86d38065f6"
+licence = "Apache-2.0"
+provides = "embree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/embree-3.13.5-r0.apk"
+version = "3.13.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"]]

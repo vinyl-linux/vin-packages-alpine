@@ -1,0 +1,15 @@
+checksum = "0dfc0b7efbcd443404e1afa3c852e936ed8e6afde8508f7f2badf00e0a1b7d37"
+licence = "BSL-1.0"
+provides = "boost1.80-fiber"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost1.80-fiber-1.80.0-r3.apk"
+version = "1.80.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-context", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

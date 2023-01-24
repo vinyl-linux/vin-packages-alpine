@@ -1,0 +1,15 @@
+checksum = "7a7292f9b501f1f0b0e342bb6267af4cdd7851090475b71860bbe8968ffcee09"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-clone"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-clone-0.46-r0.apk"
+version = "0.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "db5a19d4924f85ccdd35d960c669d7b95ca3dcc10108952bcf107d18c754e2d4"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgpg-error-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgpg-error-dev-1.46-r1.apk"
+version = "1.46.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgpg-error", "1.46.0-r1"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"]]

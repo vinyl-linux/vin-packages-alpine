@@ -1,0 +1,15 @@
+checksum = "43d86682498545d3a0dc2e3f604734635408308769fd72610c3a7b8c1cd3ce31"
+licence = "LGPL-3.0-only"
+provides = "termrec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/termrec-0.19-r1.apk"
+version = "0.19.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"]]

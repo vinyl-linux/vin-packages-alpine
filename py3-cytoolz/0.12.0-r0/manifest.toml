@@ -1,0 +1,15 @@
+checksum = "400ca4d7e0c19f14bcf4ae98485c0c2973e1f2f67da77554c66c3f4c1735ee8c"
+licence = "BSD-3-Clause"
+provides = "py3-cytoolz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cytoolz-0.12.0-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["cython", "0.29.32-r0"], ["py3-toolz", "0.12.0-r0"], ["musl", "1.2.3-r4"]]

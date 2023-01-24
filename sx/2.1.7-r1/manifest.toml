@@ -1,0 +1,15 @@
+checksum = "5f43f9245e7fe0ef64ca4cae48ab724de69ba9460c7477a09230076b8f970e5f"
+licence = "MIT"
+provides = "sx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sx-2.1.7-r1.apk"
+version = "2.1.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xauth", "1.1.2-r0"], ["xorg-server", "21.1.6-r0"]]

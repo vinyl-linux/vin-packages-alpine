@@ -1,0 +1,15 @@
+checksum = "e2486fe0f9e272dc16ee5e45f6299b2536be191aca0b5e3ae1e26d561f8f9727"
+licence = "GPL-3.0-or-later"
+provides = "tar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tar-1.34-r1.apk"
+version = "1.34.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"]]

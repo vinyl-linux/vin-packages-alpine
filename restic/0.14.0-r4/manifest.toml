@@ -1,0 +1,15 @@
+checksum = "bdd02e87cf11ebc73beea1e8f5728043f6353e52b38bcecc8eaf4950de42a440"
+licence = "BSD-2-Clause"
+provides = "restic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/restic-0.14.0-r4.apk"
+version = "0.14.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

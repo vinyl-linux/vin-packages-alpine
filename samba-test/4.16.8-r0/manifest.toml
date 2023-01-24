@@ -1,0 +1,15 @@
+checksum = "54a3ff1bb23ef961fd02d130428ebdb4dfc5721ce4f64993c12a6552645fc24c"
+licence = "GPL-3.0-or-later LGPL-3.0-or-later"
+provides = "samba-test"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/samba-test-4.16.8-r0.apk"
+version = "4.16.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samba-libs", "4.16.8-r0"], ["musl", "1.2.3-r4"], ["samba-client-libs", "4.16.8-r0"], ["samba-dc-libs", "4.16.8-r0"], ["samba-util-libs", "4.16.8-r0"], ["gnutls", "3.7.8-r2"], ["ldb", "2.5.2-r0"], ["samba-common-server-libs", "4.16.8-r0"], ["popt", "1.19.0-r0"], ["samba-libs-py3", "4.16.8-r0"], ["libsmbclient", "4.16.8-r0"], ["samba-dc", "4.16.8-r0"], ["talloc", "2.3.4-r0"], ["tdb-libs", "1.4.7-r0"], ["tevent", "0.13.0-r0"], ["libwbclient", "4.16.8-r0"]]

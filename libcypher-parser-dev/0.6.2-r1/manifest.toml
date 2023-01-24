@@ -1,0 +1,15 @@
+checksum = "06fcf24ba0681f1b54785828272272f741a344326aed39be1243907183732fe6"
+licence = "Apache-2.0"
+provides = "libcypher-parser-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcypher-parser-dev-0.6.2-r1.apk"
+version = "0.6.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcypher-parser", "0.6.2-r1"], ["pkgconf", "1.9.4-r0"]]

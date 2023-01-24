@@ -1,0 +1,15 @@
+checksum = "b172b2112b3b17dbae880d4d2885f25e9698c3b9cd3bc8ed1f17d31d073f7acd"
+licence = "BSD-3-Clause"
+provides = "superlu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/superlu-5.3.0-r1.apk"
+version = "5.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["openblas", "0.3.21-r0"]]

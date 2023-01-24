@@ -1,0 +1,15 @@
+checksum = "2abd4dd63d81545ea18c0a9a940c62171fe32ae35e9f488d324d2ad4416af29b"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-upload"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-upload-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

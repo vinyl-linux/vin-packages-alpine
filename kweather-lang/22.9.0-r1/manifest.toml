@@ -1,0 +1,15 @@
+checksum = "64880574b6487fdb2b849c1b7558553e6a947701723f68aae002459d071e9797"
+licence = "GPL-2.0-or-later AND CC-BY-4.0"
+provides = "kweather-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kweather-lang-22.09-r1.apk"
+version = "22.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["kirigami-addons", "0.5.0-r0"], ["kquickcharts", "5.100.0-r0"]]

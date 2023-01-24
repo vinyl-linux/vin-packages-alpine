@@ -1,0 +1,15 @@
+checksum = "70610fe68354528e710ec406acfea2b5c4f6311167bd2f70c6b0fd670458bc04"
+licence = "BSD-3-Clause"
+provides = "libgssglue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgssglue-0.7-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["heimdal-dev", "7.8.0-r0"], ["heimdal-libs", "7.8.0-r0"], ["musl", "1.2.3-r4"]]

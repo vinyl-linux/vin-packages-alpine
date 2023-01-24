@@ -1,0 +1,15 @@
+checksum = "f8a8f5894613af4ad5dbb5f7263ae1988601b57d1ec7a5152eea3b93947349ed"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-armv7"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-armv7-2.39-r0.apk"
+version = "2.39.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

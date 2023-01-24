@@ -1,0 +1,15 @@
+checksum = "735ad4123da328d573516f5c6584239e566b5862821dddb778401028bc8532dd"
+licence = "MPL-2.0"
+provides = "py3-certifi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-certifi-2022.12.7-r0.apk"
+version = "2022.12.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["ca-certificates-bundle", "20220614.0.0-r4"]]

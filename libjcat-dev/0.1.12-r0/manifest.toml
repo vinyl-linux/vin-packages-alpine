@@ -1,0 +1,15 @@
+checksum = "12e51faf73c134e220bfa8111bfc56ef306ffbb7449017c059dd03ec419fd13f"
+licence = "LGPL-2.1-or-later"
+provides = "libjcat-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libjcat-dev-0.1.12-r0.apk"
+version = "0.1.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libjcat", "0.1.12-r0"], ["glib-dev", "2.74.5-r0"], ["gnutls-dev", "3.7.8-r2"], ["nettle-dev", "3.8.1-r0"], ["json-glib-dev", "1.6.6-r1"], ["pkgconf", "1.9.4-r0"]]

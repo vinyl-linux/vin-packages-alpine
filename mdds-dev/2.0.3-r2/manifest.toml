@@ -1,0 +1,15 @@
+checksum = "2aea4cd6f0ad5d3637bca8814316e6d7383b77ba557406fcd863418ba07a84e0"
+licence = "MIT"
+provides = "mdds-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mdds-dev-2.0.3-r2.apk"
+version = "2.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

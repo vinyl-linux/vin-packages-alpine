@@ -1,0 +1,15 @@
+checksum = "3971a516d076a356116fd55f9455d7d8e72333a2b6becca2b9b91e18ed7cd7c5"
+licence = "GPL-3.0-or-later"
+provides = "wslu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wslu-3.2.4-r0.apk"
+version = "3.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bc", "1.7.1-r2"], ["bash-completion", "2.11.0-r4"], ["grep", "3.8.0-r1"], ["psmisc", "23.5.0-r0"], ["yash-binsh", "2.53.0-r2"]]

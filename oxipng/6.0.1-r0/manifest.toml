@@ -1,0 +1,15 @@
+checksum = "5b7a653defca721b2933443c7ea0fa0c6d4ecdd17304d068790d4de1c07d93e5"
+licence = "MIT"
+provides = "oxipng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oxipng-6.0.1-r0.apk"
+version = "6.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "be5c62bdb0f49c056afa8acf5a3eb498c867fd5ddf62050ee7527bc7f6f1ed3a"
+licence = "GPL-3.0-or-later"
+provides = "coova-chilli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coova-chilli-1.6-r2.apk"
+version = "1.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

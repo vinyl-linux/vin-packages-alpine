@@ -1,0 +1,15 @@
+checksum = "093ed6c13bb20dfaced8cb05afcf5f2f98cef8b3b150ce9c1266f9b8946c3495"
+licence = "LGPL-2.0-or-later and GPL-2.0-or-later"
+provides = "liblockfile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/liblockfile-1.17-r1.apk"
+version = "1.17.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

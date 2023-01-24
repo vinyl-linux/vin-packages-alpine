@@ -1,0 +1,15 @@
+checksum = "8c5ca9b0837a7d0c85f1709c9febf4fe14ded0fc8be3a1e7ac9f71a8173f825a"
+licence = "Apache-2.0"
+provides = "scrcpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/scrcpy-1.24-r1.apk"
+version = "1.24.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["android-tools", "33.0.3-p1-r2"], ["sdl2", "2.26.2-r0"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"]]

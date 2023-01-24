@@ -1,0 +1,15 @@
+checksum = "052bb3b14840504d30ca38a6e13c87350a81d08b97d7fc104ac2ab19bfb87252"
+licence = "MIT"
+provides = "py3-pkginfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pkginfo-1.8.3-r0.apk"
+version = "1.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

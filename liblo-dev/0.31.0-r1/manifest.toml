@@ -1,0 +1,15 @@
+checksum = "ee2d27e6cad11210633b27e069d51596106cd3bfda8c868094303706d16ead10"
+licence = "LGPL-2.1-or-later"
+provides = "liblo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liblo-dev-0.31-r1.apk"
+version = "0.31.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["liblo", "0.31.0-r1"], ["pkgconf", "1.9.4-r0"]]

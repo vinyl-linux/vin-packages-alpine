@@ -1,0 +1,15 @@
+checksum = "1dad0072437799449d02f192d09d8adcf04ea093515be121ed8e88c29025acd1"
+licence = "MIT"
+provides = "libepoxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libepoxy-1.5.10-r0.apk"
+version = "1.5.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

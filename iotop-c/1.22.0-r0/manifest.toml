@@ -1,0 +1,15 @@
+checksum = "72d50b13533168c322277c7083e1fcbcc8e0fad9e9a469f99869e49c55c56f9b"
+licence = "GPL-2.0-or-later"
+provides = "iotop-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iotop-c-1.22-r0.apk"
+version = "1.22.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

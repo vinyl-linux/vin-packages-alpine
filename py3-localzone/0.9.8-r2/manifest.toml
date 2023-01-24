@@ -1,0 +1,15 @@
+checksum = "5533b33317f6179d0307dfad8a49520ffe4f4bdaf27430e65922c71534bcd061"
+licence = "BSD-3-Clause"
+provides = "py3-localzone"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-localzone-0.9.8-r2.apk"
+version = "0.9.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dnspython", "2.2.1-r0"]]

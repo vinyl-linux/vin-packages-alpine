@@ -1,0 +1,15 @@
+checksum = "c8f49cc33d6838f17f3353780533ce010b480d341a5d79b1afe96453ec0e8fe5"
+licence = "MIT"
+provides = "lisgd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lisgd-0.3.6-r0.apk"
+version = "0.3.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libinput-libs", "1.22.1-r0"], ["wayland-libs-client", "1.21.0-r1"]]

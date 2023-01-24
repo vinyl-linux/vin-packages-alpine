@@ -1,0 +1,15 @@
+checksum = "0e93d6edd087be8cbbed355877c906efe94a4fc9914c74ce311b1681af1c2b7c"
+licence = "MIT"
+provides = "ldap-passwd-webui-waitress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ldap-passwd-webui-waitress-2.1.0-r3.apk"
+version = "2.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ldap-passwd-webui", "2.1.0-r3"], ["py3-waitress", "2.1.2-r1"]]

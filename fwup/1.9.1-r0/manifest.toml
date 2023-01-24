@@ -1,0 +1,15 @@
+checksum = "736e90f2c8685f52a2fbe20b98b2c7a2781fdf3084a528d345df8e23f45aebb1"
+licence = "Apache-2.0"
+provides = "fwup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fwup-1.9.1-r0.apk"
+version = "1.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["confuse", "3.3.0-r1"]]

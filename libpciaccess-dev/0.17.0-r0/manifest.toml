@@ -1,0 +1,15 @@
+checksum = "5dd7ee78c4ff0bd657c7ee3b384d1e481e68b45ffd3c54012f668329ba4cf83d"
+licence = "X11"
+provides = "libpciaccess-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpciaccess-dev-0.17-r0.apk"
+version = "0.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpciaccess", "0.17.0-r0"], ["pkgconf", "1.9.4-r0"]]

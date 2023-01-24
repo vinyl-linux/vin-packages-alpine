@@ -1,0 +1,15 @@
+checksum = "71d51589e8bed086e5174703ce4b27921623ff41ff042f1ecb723f583ba41736"
+licence = "Public-Domain"
+provides = "libselinux"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libselinux-3.4-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"], ["pcre2", "10.42.0-r0"]]

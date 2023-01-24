@@ -1,0 +1,15 @@
+checksum = "ec05c89c3a6f1e2e3d5d2e2cd5ea6c89041bfff08242732e2c588507108a7acb"
+licence = "GPL-2.0 and Artistic"
+provides = "perl-netaddr-ip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-netaddr-ip-4.079-r7.apk"
+version = "4.79.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

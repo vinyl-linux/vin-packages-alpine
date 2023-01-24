@@ -1,0 +1,15 @@
+checksum = "469562a9246e926ea538f112460bc14ca2af85e3035257b10dca9d42b329a28f"
+licence = "MIT"
+provides = "sad"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sad-0.4.22-r0.apk"
+version = "0.4.22-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

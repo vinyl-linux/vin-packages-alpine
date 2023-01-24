@@ -1,0 +1,15 @@
+checksum = "ec63c1c87892c604e76587954884329b5260490dd66361682ccf499cb2412efd"
+licence = "MIT"
+provides = "py3-openant"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-openant-0.4-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-usb", "1.2.1-r0"], ["eudev", "3.2.11-r4"]]

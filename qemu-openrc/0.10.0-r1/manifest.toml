@@ -1,0 +1,15 @@
+checksum = "4f48ae29dd3a419fba2aef80151335f4cd2a2f92a3641b266fbae8f5e7a0d294"
+licence = "MIT"
+provides = "qemu-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-openrc-0.10.0-r1.apk"
+version = "0.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu", "7.1.0-r7"], ["socat", "1.7.4.4-r0"], ["yash-binsh", "2.53.0-r2"]]

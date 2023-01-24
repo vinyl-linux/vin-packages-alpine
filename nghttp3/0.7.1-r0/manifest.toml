@@ -1,0 +1,15 @@
+checksum = "394f92413da5e31350f0bfac9c1776a0f6910f3c0916f3739e23e0ad001c8339"
+licence = "MIT"
+provides = "nghttp3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nghttp3-0.7.1-r0.apk"
+version = "0.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

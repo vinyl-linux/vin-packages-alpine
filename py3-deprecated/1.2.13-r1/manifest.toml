@@ -1,0 +1,15 @@
+checksum = "5aab8fe4da09aad582ec26d0f740fb29cb11f1650eb458a1bf8178ca9ae84ed0"
+licence = "MIT"
+provides = "py3-deprecated"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-deprecated-1.2.13-r1.apk"
+version = "1.2.13-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-wrapt", "1.14.1-r0"]]

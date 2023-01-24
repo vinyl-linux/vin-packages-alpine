@@ -1,0 +1,15 @@
+checksum = "7aadbfaaa0438ea0f1d6f192e16e4e0a62063272d5738750478ba073e20432bb"
+licence = "MIT"
+provides = "atuin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/atuin-12.0.0-r0.apk"
+version = "12.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"]]

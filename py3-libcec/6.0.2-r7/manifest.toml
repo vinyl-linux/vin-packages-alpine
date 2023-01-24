@@ -1,0 +1,15 @@
+checksum = "4bc7149147b82f56759eecc5380866e3a28c38d35c42029b60ad0a4fd20d6785"
+licence = "GPL-2.0-or-later"
+provides = "py3-libcec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-libcec-6.0.2-r7.apk"
+version = "6.0.2-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcec", "6.0.2-r7"], ["libgcc", "12.2.1"], ["p8-platform", "2.1.0.1-r2"], ["python3", "3.10.9-r1"], ["libstdc++", "12.2.1"]]

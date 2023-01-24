@@ -1,0 +1,15 @@
+checksum = "b9ed222ee4200d3ac40f5c774ebe897af051415e8682accaf44e105e9fac236f"
+licence = "GPL-2.0-or-later"
+provides = "minicom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/minicom-2.8-r1.apk"
+version = "2.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"]]

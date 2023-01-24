@@ -1,0 +1,15 @@
+checksum = "c4eaed9aa55f30bd81f0b264064c7893c2cb0b38412d297f449bb1edc805f955"
+licence = "MPL-2.0"
+provides = "py3-hypothesis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-hypothesis-6.58.0-r0.apk"
+version = "6.58.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-attrs", "22.1.0-r0"], ["py3-sortedcontainers", "2.4.0-r1"], ["py3-exceptiongroup", "1.0.4-r0"]]

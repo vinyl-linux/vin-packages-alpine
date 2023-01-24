@@ -1,0 +1,15 @@
+checksum = "721245f309c8c824b31806d6b76b4d3cc1fc69f83cd74edfc1b4aaa2b0672dfa"
+licence = "GPL-2.0-only"
+provides = "gedit-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gedit-lang-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

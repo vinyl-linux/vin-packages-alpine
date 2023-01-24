@@ -1,0 +1,15 @@
+checksum = "ffbb12bf3dea5229f8409929549c754e876c8c0b7d21030a627da133dccc2eec"
+licence = "MPL-2.0"
+provides = "libwps-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwps-dev-0.4.12-r1.apk"
+version = "0.4.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librevenge-dev", "0.0.4-r10"], ["libwps", "0.4.12-r1"], ["pkgconf", "1.9.4-r0"]]

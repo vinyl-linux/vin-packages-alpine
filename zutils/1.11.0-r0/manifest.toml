@@ -1,0 +1,15 @@
+checksum = "12d73e6b4d2f1ddd558dd92a9e4c295178ebee8a4d294854cfe762e4c2ca5d80"
+licence = "GPL-2.0-or-later"
+provides = "zutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zutils-1.11-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

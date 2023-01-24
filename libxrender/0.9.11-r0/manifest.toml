@@ -1,0 +1,15 @@
+checksum = "35e215d7ae1e52bf428e7745672b79d14e31f620849ee0d1affd9b398f85fa3d"
+licence = "custom"
+provides = "libxrender"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxrender-0.9.11-r0.apk"
+version = "0.9.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

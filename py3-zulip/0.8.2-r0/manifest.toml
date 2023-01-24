@@ -1,0 +1,15 @@
+checksum = "daa72ae324117cb7655fe513f8e2319186a32c9e4f2a63bf82d2680f5905244b"
+licence = "Apache-2.0"
+provides = "py3-zulip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zulip-0.8.2-r0.apk"
+version = "0.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.28.1-r1"], ["py3-distro", "1.8.0-r0"], ["py3-openssl", "22.1.0-r1"], ["py3-typing-extensions", "4.4.0-r0"]]

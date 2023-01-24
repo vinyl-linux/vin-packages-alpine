@@ -1,0 +1,15 @@
+checksum = "39c72640b59b10edf57f985d926690c972f16c45587ef84d980dfa9ccea9c43e"
+licence = "LGPL-2.1-or-later"
+provides = "gnutls-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnutls-dev-3.7.8-r2.apk"
+version = "3.7.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnutls-c++", "3.7.8-r2"], ["gnutls", "3.7.8-r2"], ["nettle-dev", "3.8.1-r0"], ["libtasn1-dev", "4.19.0-r0"], ["p11-kit-dev", "0.24.1-r1"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

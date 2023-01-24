@@ -1,0 +1,15 @@
+checksum = "6b8a1df0cdd94ce3ca0a0ed0d66e9baff15b4807e1c447a5509c3349d629ee44"
+licence = "LGPL-2.1-or-later AND CC-BY-SA-3.0"
+provides = "minetest-server-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minetest-server-openrc-5.6.1-r0.apk"
+version = "5.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["minetest-common", "5.6.1-r0"]]

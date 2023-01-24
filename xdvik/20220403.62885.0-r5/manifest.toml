@@ -1,0 +1,15 @@
+checksum = "03410d09b80127ac03ce2df3114974e6e689c142f5cade22be1edf5b5b1bb4f3"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "xdvik"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdvik-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texlive", "20220403.62885.0-r5"], ["libx11", "1.8.3-r1"], ["libxaw", "1.0.14-r0"], ["libxmu", "1.1.4-r0"], ["libxpm", "3.5.15-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"]]

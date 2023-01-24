@@ -1,0 +1,15 @@
+checksum = "f2c7f0bc120373da336e396010dcadb9e3702b02a96fb3ef00d083f3c83ae275"
+licence = "ISC"
+provides = "utmps-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/utmps-static-0.1.2.0-r1.apk"
+version = "0.1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["skalibs-static", "2.12.0.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b2c3bb8452024d2ed02b36c6174987789537b2eb43b8102fee5247d74cd9622e"
+licence = "LGPL-2.1-or-later"
+provides = "grilo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grilo-0.3.15-r1.apk"
+version = "0.3.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["grilo-libs", "0.3.15-r1"], ["liboauth", "1.0.3-r4"]]

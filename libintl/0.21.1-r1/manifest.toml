@@ -1,0 +1,15 @@
+checksum = "789baaef622ffa611b603acc840ab5cf26d53a62c1eeef64d3b9d11b900ed5c8"
+licence = "LGPL-2.1-or-later"
+provides = "libintl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libintl-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

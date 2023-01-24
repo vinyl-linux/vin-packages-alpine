@@ -1,0 +1,15 @@
+checksum = "e6237335d1d469a07e0aa57b9ecff9d2494499d1806239dd4a38c35c26bae257"
+licence = "GPL LGPL"
+provides = "libgcj6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgcj6-6.4.0-r14.apk"
+version = "6.4.0-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libstdc++6", "6.4.0-r14"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["zlib", "1.2.13-r0"]]

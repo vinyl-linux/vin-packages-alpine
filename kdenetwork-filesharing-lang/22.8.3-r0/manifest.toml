@@ -1,0 +1,15 @@
+checksum = "c095e299a11f5ce0328185a6f337bbbed8d6ba212d83ecfd6e6c7f8612262990"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "kdenetwork-filesharing-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdenetwork-filesharing-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samba", "4.16.8-r0"]]

@@ -1,0 +1,15 @@
+checksum = "892002a529c82bbde62efb893a0c12e52710026dd54d354603d4a1e2476a3971"
+licence = "MIT"
+provides = "libsurvive-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsurvive-dev-1.01-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["blas-dev", "3.11.0-r0"], ["eigen-dev", "3.4.0-r6"], ["lapack-dev", "3.11.0-r0"], ["libpcap-dev", "1.10.1-r1"], ["libusb-dev", "1.0.26-r0"], ["zlib-dev", "1.2.13-r0"], ["libsurvive", "1.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

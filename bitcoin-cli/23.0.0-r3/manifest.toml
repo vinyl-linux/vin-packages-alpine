@@ -1,0 +1,15 @@
+checksum = "e86301d9c22fdee94382023a273213b5527e28770e031b18b8ffaead5a8d7102"
+licence = "MIT"
+provides = "bitcoin-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitcoin-cli-23.0-r3.apk"
+version = "23.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

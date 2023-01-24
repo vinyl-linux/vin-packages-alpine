@@ -1,0 +1,15 @@
+checksum = "08ae1d5e2ed976ab221059098039b29a92f875ead7a8df9bfe48a632f7bbdffe"
+licence = "GPL-2.0-or-later"
+provides = "collectd-write_riemann"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-write_riemann-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["riemann-c-client-libs", "2.1.0-r0"]]

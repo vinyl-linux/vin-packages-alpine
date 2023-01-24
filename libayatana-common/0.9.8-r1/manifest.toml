@@ -1,0 +1,15 @@
+checksum = "0e4edad9206357a20f81d5ee73d25f18ade59c8a9ca0da285657b34308715bc9"
+licence = "GPL-3.0-only"
+provides = "libayatana-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libayatana-common-0.9.8-r1.apk"
+version = "0.9.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

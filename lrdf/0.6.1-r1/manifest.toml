@@ -1,0 +1,15 @@
+checksum = "62e470769b150d707cd11f0e79557163007c2e208469c13682e998cbad68f331"
+licence = "GPL-2.0-only"
+provides = "lrdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lrdf-0.6.1-r1.apk"
+version = "0.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["raptor2", "2.0.15-r5"]]

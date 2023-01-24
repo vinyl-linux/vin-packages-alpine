@@ -1,0 +1,15 @@
+checksum = "7810a0ceb2cf101c19b149efe7fc329cf507f56816beb52b403bccf08fc85ba5"
+licence = "GPL-2.0-or-later"
+provides = "cpd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cpd-dev-0.5.3-r1.apk"
+version = "0.5.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cpd", "0.5.3-r1"]]

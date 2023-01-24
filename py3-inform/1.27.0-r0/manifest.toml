@@ -1,0 +1,15 @@
+checksum = "6f950f28b3c3b70a49fd50b8b3d16a6bc4bc164cf6fbee18542a91bb7808771a"
+licence = "GPL-3.0-or-later"
+provides = "py3-inform"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-inform-1.27-r0.apk"
+version = "1.27.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-arrow", "1.2.3-r0"], ["py3-six", "1.16.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "adc0def43eef189d0ec99811a245392b45549ce7e597649ab46252ab2c4da02d"
+licence = "MIT"
+provides = "lua5.4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.4-5.4.4-r6.apk"
+version = "5.4.4-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lua5.4-libs", "5.4.4-r6"], ["readline", "8.2.0-r0"]]

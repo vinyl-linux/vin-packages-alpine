@@ -1,0 +1,15 @@
+checksum = "310d8850f15a6e2c5ded330d93b882b6f1ba9b8e4ca47f2d70b2389c22bc65b9"
+licence = "GPL-2.0-only"
+provides = "gnome-noble-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-noble-icon-theme-5.5.1-r4.apk"
+version = "5.5.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-colors-common", "5.5.1-r4"]]

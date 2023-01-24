@@ -1,0 +1,15 @@
+checksum = "c0ee0b285902ab16a0798c6e0ba0806878de71c7407be07be78763a670212486"
+licence = "MIT"
+provides = "lua5.2-optarg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.2-optarg-0.3-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"]]

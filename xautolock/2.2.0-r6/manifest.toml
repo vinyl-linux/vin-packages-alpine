@@ -1,0 +1,15 @@
+checksum = "1a6cbe45923c723f85a5c5068bda24fd1198773a235a2a77a57d58b00f37f8d8"
+licence = "GPL-2.0"
+provides = "xautolock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xautolock-2.2-r6.apk"
+version = "2.2.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxscrnsaver", "1.2.3-r0"], ["musl", "1.2.3-r4"]]

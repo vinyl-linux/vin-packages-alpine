@@ -1,0 +1,15 @@
+checksum = "88e0c195d3a5b897340dd84c2f7acde516035b34829ecb310cb11c331982d8a4"
+licence = "MIT"
+provides = "pianobar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pianobar-2022.04.01-r0.apk"
+version = "2022.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libao", "1.2.2-r2"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcrypt", "1.10.1-r0"], ["json-c", "0.16.0-r2"]]

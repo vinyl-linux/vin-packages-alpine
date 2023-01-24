@@ -1,0 +1,15 @@
+checksum = "cdf41182f91336f5a88fc68513a609999e55b5e8b56d32276586d591d023cd57"
+licence = "MIT"
+provides = "emptty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/emptty-0.9.0-r4.apk"
+version = "0.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

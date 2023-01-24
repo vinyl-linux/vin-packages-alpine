@@ -1,0 +1,15 @@
+checksum = "291411754b3ae29adf9c41193a163e5ff970af73c1f9cc5542aca77c58608858"
+licence = "LGPL-3.0"
+provides = "dqlite-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dqlite-dev-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dqlite", "1.13.0-r0"], ["pkgconf", "1.9.4-r0"]]

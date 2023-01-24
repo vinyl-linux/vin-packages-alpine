@@ -1,0 +1,15 @@
+checksum = "b98b3fa8a9019515f4c4f044495f3791129c16d22bd3347d74c5ad7e3939875b"
+licence = "BSD-3-Clause OR LGPL-2.1-only"
+provides = "tinycompress-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tinycompress-dev-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["tinycompress", "1.2.8-r0"]]

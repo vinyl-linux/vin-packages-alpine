@@ -1,0 +1,15 @@
+checksum = "301ee658004c4f6c08695054554f237755589a3c9bde00a0a5ecb8e20473f83e"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kactivities-stats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kactivities-stats-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kactivities-libs", "5.100.0-r0"], ["kconfig", "5.100.1-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

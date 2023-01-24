@@ -1,0 +1,15 @@
+checksum = "74329f5ac8913ad19d052f21587283ebfd67877bc332dce5da9789ef53d51f20"
+licence = "GPL-2.0-or-later"
+provides = "libgnt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgnt-dev-2.14.3-r2.apk"
+version = "2.14.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgnt", "2.14.3-r2"], ["glib-dev", "2.74.5-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

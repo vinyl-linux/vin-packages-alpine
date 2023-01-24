@@ -1,0 +1,15 @@
+checksum = "3784ba51dcde09123a245c40bd51ea1a59b42af91883353e7734d95d97152c36"
+licence = "BSD-3-Clause GPL-2.0-or-later"
+provides = "zstd-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zstd-libs-1.5.2-r9.apk"
+version = "1.5.2-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

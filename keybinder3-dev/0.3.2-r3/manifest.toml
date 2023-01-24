@@ -1,0 +1,15 @@
+checksum = "5fbf8ff2d484840a12416d274b3345ae481bde3c67a466a3384eba745ce96621"
+licence = "MIT"
+provides = "keybinder3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keybinder3-dev-0.3.2-r3.apk"
+version = "0.3.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["keybinder3", "0.3.2-r3"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

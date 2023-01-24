@@ -1,0 +1,15 @@
+checksum = "89601b6045de45f380e2b8f2cb065ed2e5c943e1162be7042753fb77106ee428"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-pop3d"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-pop3d-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"]]

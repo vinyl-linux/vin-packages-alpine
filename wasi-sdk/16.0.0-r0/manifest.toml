@@ -1,0 +1,15 @@
+checksum = "bd3062755668b570734d43cd47c7d3114c3fc4ad7ad8bfafa14cf018ecdbf6ac"
+licence = "Apache-2.0"
+provides = "wasi-sdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wasi-sdk-16-r0.apk"
+version = "16.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wasi-libc", "0.20220525.0-r1"], ["wasi-libcxx", "15.0.7-r0"], ["wasi-libcxxabi", "15.0.7-r0"], ["wasi-compiler-rt", "15.0.7-r0"]]

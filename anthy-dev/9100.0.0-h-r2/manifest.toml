@@ -1,0 +1,15 @@
+checksum = "4c744fac010230976c937ac9e34aaddfc3ebc7700c49c4ae3cb137a65e603100"
+licence = "LGPL-2.1-or-later"
+provides = "anthy-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/anthy-dev-9100h-r2.apk"
+version = "9100.0.0-h-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["anthy", "9100.0.0-h-r2"], ["pkgconf", "1.9.4-r0"]]

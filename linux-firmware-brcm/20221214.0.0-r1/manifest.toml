@@ -1,0 +1,15 @@
+checksum = "bda64c1c63e3b2cb7a4c864d0269a6dd026a5afe7e75532bb78afef4f6378195"
+licence = "custom:multiple"
+provides = "linux-firmware-brcm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-firmware-brcm-20221214-r1.apk"
+version = "20221214.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-firmware-cypress", "20221214.0.0-r1"]]

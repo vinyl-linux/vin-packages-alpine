@@ -1,0 +1,15 @@
+checksum = "97f19d892871175030aacec73fe26de8a86c3e476439da6e97655e6e0b5b2ea7"
+licence = "BSD-3-Clause"
+provides = "libtirpc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libtirpc-dev-1.3.3-r0.apk"
+version = "1.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bsd-compat-headers", "0.7.2-r3"], ["krb5-dev", "1.20.1-r0"], ["libtirpc-nokrb", "1.3.3-r0"], ["libtirpc", "1.3.3-r0"], ["pkgconf", "1.9.4-r0"]]

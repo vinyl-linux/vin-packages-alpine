@@ -1,0 +1,15 @@
+checksum = "a0ad10df499a48ee8dfc5b5bb3152643f17cf036dd2545efb4190021ee7cbc40"
+licence = "LGPL-3.0-only"
+provides = "mapbox-gl-qml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mapbox-gl-qml-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["maplibre-gl-native", "1.6.0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtlocation", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

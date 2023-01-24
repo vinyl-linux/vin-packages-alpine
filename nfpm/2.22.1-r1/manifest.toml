@@ -1,0 +1,15 @@
+checksum = "1bd4651d2884487100de70344be67ec2d038ad197d43f70b3588556fec6e1551"
+licence = "MIT"
+provides = "nfpm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nfpm-2.22.1-r1.apk"
+version = "2.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

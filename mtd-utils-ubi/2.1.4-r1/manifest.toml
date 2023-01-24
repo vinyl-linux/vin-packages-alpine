@@ -1,0 +1,15 @@
+checksum = "e75dc13fb806cdad78e89e06403c1c2c33644ea9ccec487ad780faf747ec8cc2"
+licence = "GPL-2.0-only"
+provides = "mtd-utils-ubi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtd-utils-ubi-2.1.4-r1.apk"
+version = "2.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["lzo", "2.10.0-r3"], ["libuuid", "2.38.1-r1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

@@ -1,0 +1,15 @@
+checksum = "41d1a7dd497b5ccf859c1dec40b62229aaf937c4d6d24d1e4b9462bd92b6afcb"
+licence = "BSD-2-Clause-NetBSD"
+provides = "libsamplerate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libsamplerate-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

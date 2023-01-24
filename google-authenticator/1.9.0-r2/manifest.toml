@@ -1,0 +1,15 @@
+checksum = "da25be5a7ca1d7f79b632e697b1863a5eb9fde11145a9a27c340fc296532253c"
+licence = "Apache-2.0"
+provides = "google-authenticator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/google-authenticator-1.09-r2.apk"
+version = "1.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

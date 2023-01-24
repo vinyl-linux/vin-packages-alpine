@@ -1,0 +1,15 @@
+checksum = "17a7489a3ba39dc6253745901fa7b458a2cd3796f5486818fa27b6dd7d504316"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl", "3.0.7-r2"], ["yash-binsh", "2.53.0-r2"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libcrypto3", "3.0.7-r2"], ["icu-libs", "72.1.0-r1"], ["xz-libs", "5.2.9-r0"], ["libsodium", "1.0.18-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

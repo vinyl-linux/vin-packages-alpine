@@ -1,0 +1,15 @@
+checksum = "335d6b3e2831bd8250bd2048685f15052b2007d3727820d71d1f93f6aaa84b4c"
+licence = "GPL-3.0-only"
+provides = "yadm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yadm-3.2.1-r0.apk"
+version = "3.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["git", "2.38.3-r1"], ["gawk", "5.1.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "a32c3a41b9bebe3c4589fc8a97d0ba1c8b6a1e9250712f1bb1c1aaaa953992e2"
+licence = "GPL-3.0-or-later"
+provides = "py3-fontforge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-fontforge-20220308-r3.apk"
+version = "20220308.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontforge-libs", "20220308.0.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "e6827640191037da70e63fd51caa543abcdf61ffbaba399a86470e66f824be27"
+licence = "GPL-3.0-or-later"
+provides = "kooha-mp4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kooha-mp4-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kooha", "2.2.2-r0"], ["gst-plugins-ugly", "1.20.5-r0"]]

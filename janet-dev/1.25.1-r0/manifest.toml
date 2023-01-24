@@ -1,0 +1,15 @@
+checksum = "988dddf7d4db4a13b78d6066d8c47e80579e8b9d515039fd70fb5ff58dade7d9"
+licence = "MIT"
+provides = "janet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/janet-dev-1.25.1-r0.apk"
+version = "1.25.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["janet", "1.25.1-r0"], ["pkgconf", "1.9.4-r0"]]

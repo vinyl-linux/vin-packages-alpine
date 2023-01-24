@@ -1,0 +1,15 @@
+checksum = "88d584fbd2c74647ae8f4df0105d7bafc127fae895fc5c82c1e7d3eaea4abfe8"
+licence = "AGPL-3.0-or-later"
+provides = "minio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minio-0.20221029.062133-r2.apk"
+version = "0.20221029.62133-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

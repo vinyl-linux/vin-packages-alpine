@@ -1,0 +1,15 @@
+checksum = "1dcd25816994b48c6a3794463c721bd6e5b09e2c4106e3103c45c1dac964648c"
+licence = "LGPL-2.0-or-later"
+provides = "at-spi2-core-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/at-spi2-core-dev-2.46.0-r0.apk"
+version = "2.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["at-spi2-core", "2.46.0-r0"], ["libatk-1.0", "2.46.0-r0"], ["libatk-bridge-2.0", "2.46.0-r0"], ["dbus-dev", "1.14.4-r0"], ["glib-dev", "2.74.5-r0"], ["libx11-dev", "1.8.3-r1"], ["libxi-dev", "1.8.0-r0"], ["libxtst-dev", "1.2.4-r0"], ["pkgconf", "1.9.4-r0"]]

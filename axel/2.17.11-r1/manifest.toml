@@ -1,0 +1,15 @@
+checksum = "a53fa73f26e55aa1bec5cc8514b751784ac5ef901ac2ba2237bba1dfc4248ed0"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+provides = "axel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/axel-2.17.11-r1.apk"
+version = "2.17.11-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

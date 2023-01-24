@@ -1,0 +1,15 @@
+checksum = "f6623b3491ed6a412b429f3a6dd38ec761e143e743afdbcafcb30e86a5d4c11e"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "k3b-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/k3b-lang-22.08.3-r1.apk"
+version = "22.8.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cdrdao", "1.2.4-r1"], ["dvd+rw-tools", "7.1.0-r2"], ["libburn", "1.5.4-r2"]]

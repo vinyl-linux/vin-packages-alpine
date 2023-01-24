@@ -1,0 +1,15 @@
+checksum = "66d046db6eed0f7831afec3ff25ac68904f494714519862ce1ddc21c60a00052"
+licence = "LGPL-2.1-only"
+provides = "py3-dialog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-dialog-3.5.3-r2.apk"
+version = "3.5.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dialog", "1.3.20220728-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b6c4a5e4dac84d7dc2a34cdfedd1593a30cec8ef2fedef0e8aba737d347f3456"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "libmm-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmm-glib-1.20.2-r1.apk"
+version = "1.20.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

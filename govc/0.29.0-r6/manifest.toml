@@ -1,0 +1,15 @@
+checksum = "5b90ccbc7fe1883ffab8dc8ff76c6dd8b57360d41353b3146e98c7bcd0a413f4"
+licence = "Apache-2.0"
+provides = "govc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/govc-0.29.0-r6.apk"
+version = "0.29.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

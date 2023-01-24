@@ -1,0 +1,15 @@
+checksum = "c0f5250e07ec5c9d4b650f002f95392745df7a85f1166d14000623a366846438"
+licence = "GPL-3.0-only"
+provides = "ayatana-indicator-keyboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ayatana-indicator-keyboard-22.9.0-r1.apk"
+version = "22.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libaccountsservice", "22.8.8-r0"], ["libayatana-common", "0.9.8-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libxkbcommon", "1.4.1-r0"], ["libxklavier", "5.4.0-r6"]]

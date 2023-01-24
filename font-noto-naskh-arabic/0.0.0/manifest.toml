@@ -1,0 +1,15 @@
+checksum = "f9cba8ac28faeb9570ec0885c0f6a3a816c4b4354a8ea15850016bb0b3c63b36"
+licence = "OFL-1.1"
+provides = "font-noto-naskh-arabic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-naskh-arabic-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

@@ -1,0 +1,15 @@
+checksum = "dadc7c916b1a33d2d25ae249d6a250098ff2a617330cd4b1b70557506eac6c38"
+licence = "LGPL-3.0"
+provides = "dqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dqlite-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["raft", "0.16.0-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"], ["libuv", "1.44.2-r0"]]

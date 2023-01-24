@@ -1,0 +1,15 @@
+checksum = "744fcd329c5ff77efee7e2d0e3d0093b05e55e17d10521e15119e81a79b20e37"
+licence = "GPL-2.0-or-later"
+provides = "libcec4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcec4-4.0.7-r1.apk"
+version = "4.0.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxrandr", "1.5.3-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["p8-platform", "2.1.0.1-r2"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

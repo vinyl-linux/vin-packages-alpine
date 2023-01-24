@@ -1,0 +1,15 @@
+checksum = "319897a79bce009bca378c1470ad14de3e3ca7b7eaa5740ddff0091fbfaff26b"
+licence = "GPL-2.0-only"
+provides = "gnome-dust-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-dust-icon-theme-5.5.1-r4.apk"
+version = "5.5.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-colors-common", "5.5.1-r4"]]

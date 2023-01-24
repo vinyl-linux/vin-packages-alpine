@@ -1,0 +1,15 @@
+checksum = "b19bff1e41880a9c8666bfee3bafb66c3732f5452b2663df3fa027f2024bfb76"
+licence = "Apache-2.0"
+provides = "nerdctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nerdctl-1.0.0-r2.apk"
+version = "1.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["containerd", "1.6.12-r1"], ["cni-plugins", "1.1.1-r9"], ["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["musl", "1.2.3-r4"]]

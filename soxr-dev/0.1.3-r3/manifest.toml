@@ -1,0 +1,15 @@
+checksum = "12ca4dace540cc51ddd09e4ceaaa50e6d00622654dc03e78681565b947ac60a1"
+licence = "LGPL-2.1-or-later"
+provides = "soxr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/soxr-dev-0.1.3-r3.apk"
+version = "0.1.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cmake", "3.24.3-r0"], ["pkgconf", "1.9.4-r0"], ["soxr", "0.1.3-r3"]]

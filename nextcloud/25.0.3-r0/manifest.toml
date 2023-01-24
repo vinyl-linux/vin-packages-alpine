@@ -1,0 +1,15 @@
+checksum = "8d8b86df82510802b6a048e88dbeb4104186b25f924f790564d1c657c75196ed"
+licence = "AGPL-3.0-only"
+provides = "nextcloud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["php81", "8.1.14-r0"], ["php81-bcmath", "8.1.14-r0"], ["php81-ctype", "8.1.14-r0"], ["php81-curl", "8.1.14-r0"], ["php81-dom", "8.1.14-r0"], ["php81-gd", "8.1.14-r0"], ["php81-fileinfo", "8.1.14-r0"], ["php81-gmp", "8.1.14-r0"], ["php81-iconv", "8.1.14-r0"], ["php81-intl", "8.1.14-r0"], ["php81-mbstring", "8.1.14-r0"], ["php81-opcache", "8.1.14-r0"], ["php81-openssl", "8.1.14-r0"], ["php81-pcntl", "8.1.14-r0"], ["php81-posix", "8.1.14-r0"], ["php81-session", "8.1.14-r0"], ["php81-simplexml", "8.1.14-r0"], ["php81-xml", "8.1.14-r0"], ["php81-xmlreader", "8.1.14-r0"], ["php81-xmlwriter", "8.1.14-r0"], ["php81-zip", "8.1.14-r0"], ["yash-binsh", "2.53.0-r2"]]

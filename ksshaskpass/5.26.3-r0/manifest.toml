@@ -1,0 +1,15 @@
+checksum = "013363109d9aa1b5cdf295a66b5959ee13cef24caf4bd916aad8b6b5223b99a6"
+licence = "GPL-2.0-or-later"
+provides = "ksshaskpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ksshaskpass-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kwallet", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

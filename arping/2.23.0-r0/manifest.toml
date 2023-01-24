@@ -1,0 +1,15 @@
+checksum = "035dbda1f18546d4ee1c206286e45cbc2e71f1fe846befea7b78807bc8efb57d"
+licence = "GPL-2.0-or-later"
+provides = "arping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/arping-2.23-r0.apk"
+version = "2.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libnet", "1.2.0-r1"], ["libpcap", "1.10.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "970d0382f603230d4085f47dc54b54a20e061016dc26e16af3363121daaf6be4"
+licence = "LGPL-2.0-or-later"
+provides = "libewf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libewf-20201230-r4.apk"
+version = "20201230.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["fuse", "2.9.9-r2"], ["zlib", "1.2.13-r0"]]

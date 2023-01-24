@@ -1,0 +1,15 @@
+checksum = "eadf761026f6e4c801693cab775a7158bff6b5313f51a1760cfb1a96b427544a"
+licence = "MIT"
+provides = "dvtm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dvtm-0.15_git20210309-r0.apk"
+version = "0.15.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

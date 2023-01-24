@@ -1,0 +1,15 @@
+checksum = "c3e57c40f89c197f6c99d309e5401178c46330a3cb59f740bc4f29002f8926ad"
+licence = "ISC"
+provides = "cwm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cwm-7.1-r1.apk"
+version = "7.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["libxrandr", "1.5.3-r0"], ["musl", "1.2.3-r4"]]

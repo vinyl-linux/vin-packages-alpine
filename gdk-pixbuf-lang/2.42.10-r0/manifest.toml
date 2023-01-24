@@ -1,0 +1,15 @@
+checksum = "0ca589b4052eae89947052d86e9a5e1bf4ad44e808d9b079bcb352bd98d0bc57"
+licence = "LGPL-2.0-or-later"
+provides = "gdk-pixbuf-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdk-pixbuf-lang-2.42.10-r0.apk"
+version = "2.42.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shared-mime-info", "2.2.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "e7f53ff0ffd845bdef27d2840c1e66be88af895695d71c6479e0534092bc24b3"
+licence = "GPL-3.0-or-later"
+provides = "rdesktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rdesktop-1.9.0-r3.apk"
+version = "1.9.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxcursor", "1.2.1-r1"], ["libxrandr", "1.5.3-r0"], ["libao", "1.2.2-r2"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["gnutls", "3.7.8-r2"], ["nettle", "3.8.1-r0"], ["libsamplerate", "0.2.2-r0"], ["libtasn1", "4.19.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "58ac6198511fcafb23a4c78debebcb927a9de691f17c31dde723cbeece89d8d3"
+licence = "GPL-2.0-or-later"
+provides = "poppler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/poppler-22.11.0-r0.apk"
+version = "22.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["lcms2", "2.14.0-r0"], ["openjpeg", "2.5.0-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"], ["zlib", "1.2.13-r0"]]

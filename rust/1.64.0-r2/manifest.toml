@@ -1,0 +1,15 @@
+checksum = "46b932aca3f471a503ce8f804ec7a879ef2fff2e63b0b1453a59d33ffbec309a"
+licence = "Apache-2.0 AND MIT"
+provides = "rust"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rust-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust-stdlib", "1.64.0-r2"], ["gcc", "12.2.1"], ["musl-dev", "1.2.3-r4"], ["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

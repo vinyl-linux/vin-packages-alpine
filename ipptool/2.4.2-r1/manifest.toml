@@ -1,0 +1,15 @@
+checksum = "45d99ff7b39973ea4febb87684a04c4fc5eb2e32894a6b81c02b4ffd6614d315"
+licence = "GPL-2.0-only"
+provides = "ipptool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ipptool-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cups-libs", "2.4.2-r1"]]

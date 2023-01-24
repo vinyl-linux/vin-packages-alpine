@@ -1,0 +1,15 @@
+checksum = "64ebbab634b82f848d6cf10a0c507ab41bb5fa29d091aad9b0788aebfad4cc3c"
+licence = "BSD-3-Clause"
+provides = "php81-pecl-msgpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-msgpack-2.2.0_rc2-r0.apk"
+version = "2.2.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-session", "8.1.14-r0"], ["php81-sockets", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

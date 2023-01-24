@@ -1,0 +1,15 @@
+checksum = "f330c3b054f20e6f166a01d27100e0bbfa2f788fdccbe63e88d2f535e91eed9d"
+licence = "LGPL-3.0-or-later OR Apache-2.0"
+provides = "lucene++-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lucene++-dev-3.0.8-r8.apk"
+version = "3.0.8-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.80.0-r3"], ["zlib-dev", "1.2.13-r0"], ["lucene++", "3.0.8-r8"], ["pkgconf", "1.9.4-r0"]]

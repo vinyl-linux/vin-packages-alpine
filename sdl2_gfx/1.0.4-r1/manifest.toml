@@ -1,0 +1,15 @@
+checksum = "b1f35a9e89c83642aefff20598506c643cc016dc1413208ba9930b3e32dd377a"
+licence = "Zlib"
+provides = "sdl2_gfx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdl2_gfx-1.0.4-r1.apk"
+version = "1.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"]]

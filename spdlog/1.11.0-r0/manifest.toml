@@ -1,0 +1,15 @@
+checksum = "4e6ab34bf9edaa0d5b70dba0e89a9e3faac8312205d4005f98e5caf61c82800a"
+licence = "MIT"
+provides = "spdlog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/spdlog-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

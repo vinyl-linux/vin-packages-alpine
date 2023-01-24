@@ -1,0 +1,15 @@
+checksum = "95984d9fcfa03d244ec498b37d4c3397d6c7861986e891156de8724d7e66acf0"
+licence = "LGPL-2.0-or-later"
+provides = "libuser-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libuser-dev-0.63-r2.apk"
+version = "0.63.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libuser", "0.63.0-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

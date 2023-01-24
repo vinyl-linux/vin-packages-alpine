@@ -1,0 +1,15 @@
+checksum = "985e1637a06c0c2a38352754e91a7c280b6f754d6eeec254d1a708c3f506c462"
+licence = "GPL-2.0-or-later"
+provides = "alsa-utils-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alsa-utils-dbg-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dialog", "1.3.20220728-r0"], ["alsa-ucm-conf", "1.2.8-r1"]]

@@ -1,0 +1,15 @@
+checksum = "52c4adda315e55b084f44b493678b8e7981365a4b55d356a061639d7347446d1"
+licence = "BSD-3-Clause"
+provides = "libzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzip-1.9.2-r2.apk"
+version = "1.9.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

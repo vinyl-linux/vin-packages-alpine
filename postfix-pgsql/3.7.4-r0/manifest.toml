@@ -1,0 +1,15 @@
+checksum = "50761d59a195fb256c56f2a73eee27944a5d9b8253477bfd1ee334478d38e202"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-pgsql-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

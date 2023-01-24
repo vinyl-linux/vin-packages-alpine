@@ -1,0 +1,15 @@
+checksum = "afc2f56bb375d980edfb69d6b28e96535efc42d2fa6edec47e20d256ae935622"
+licence = "BSD-2-Clause"
+provides = "wayshot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wayshot-1.2.2-r0.apk"
+version = "1.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wlroots", "0.15.1-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

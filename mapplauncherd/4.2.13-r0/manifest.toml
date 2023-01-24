@@ -1,0 +1,15 @@
+checksum = "287b8af58920ead7c508a87467e6fe05663bad469bb42bcf2f4adc9ac53234ec"
+licence = "LGPL-2.1-only"
+provides = "mapplauncherd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mapplauncherd-4.2.13-r0.apk"
+version = "4.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["dbus-libs", "1.14.4-r0"], ["libelogind", "246.10.0-r5"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

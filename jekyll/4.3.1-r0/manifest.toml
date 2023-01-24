@@ -1,0 +1,15 @@
+checksum = "71d93e820fc5b3f5d4ca0f9d0e94d5321f49589b4402b0ccc0ac300448190211"
+licence = "MIT"
+provides = "jekyll"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jekyll-4.3.1-r0.apk"
+version = "4.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby-jekyll", "4.3.1-r0"]]

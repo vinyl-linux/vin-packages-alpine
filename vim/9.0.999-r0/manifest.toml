@@ -1,0 +1,15 @@
+checksum = "918212542a484915b5f77f60be95528d2a30e69acde1311105188886851990d8"
+licence = "Vim"
+provides = "vim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vim-9.0.0999-r0.apk"
+version = "9.0.999-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xxd", "9.0.999-r0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

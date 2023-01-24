@@ -1,0 +1,15 @@
+checksum = "15833b455fb77ab760bfd75247d812861d364078677d85102d28cbad9d0c16d4"
+licence = "GPL-2.0-only"
+provides = "lrdf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lrdf-dev-0.6.1-r1.apk"
+version = "0.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lrdf", "0.6.1-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2a9c2483fcae36c24748d48f674c672b8e0f29b6075bd1deeb44b8b423a8a361"
+licence = "OFL-1.1"
+provides = "font-noto-kufi-arabic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-kufi-arabic-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

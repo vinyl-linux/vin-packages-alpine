@@ -1,0 +1,15 @@
+checksum = "bea8741f46f028f2dae2e6a826a565ddd9cdb9ae6a7e05c6623ae6755984957d"
+licence = "custom"
+provides = "uwsgi-symcall"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-symcall-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

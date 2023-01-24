@@ -1,0 +1,15 @@
+checksum = "78de77430bec3ed76e6ec49d84287329e498b93aea09439ea57fc746500f021b"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "libkipi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkipi-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.100.1-r0"], ["kservice-dev", "5.100.0-r0"], ["kxmlgui-dev", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["libkipi", "22.8.3-r0"]]

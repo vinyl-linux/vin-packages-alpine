@@ -1,0 +1,15 @@
+checksum = "03020e58e6a410d282bd5766e7fbc17438d4c3f8f621875725b822457ec33ba7"
+licence = "LGPL-2.0-or-later"
+provides = "avahi-ui-gtk3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/avahi-ui-gtk3-0.8-r3.apk"
+version = "0.8.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r6"], ["avahi-glib", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["gdbm", "1.23.0-r0"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

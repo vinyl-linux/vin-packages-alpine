@@ -1,0 +1,15 @@
+checksum = "5ca1575893937539f4cec6da13a80c8bce7d34c2eabd7a268a1df7c960c4d16a"
+licence = "BSD"
+provides = "gross"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gross-1.0.2-r12.apk"
+version = "1.0.2-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"]]

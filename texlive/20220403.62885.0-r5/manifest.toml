@@ -1,0 +1,16 @@
+checksum = "a19ee74807781c3b038e0c6d11c42860ebb7719f25c856b852f2e0711c9d2ae0"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "texlive"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texlive-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["texmf-dist", "2022.63035.0-r0"], ["yash-binsh", "2.53.0-r2"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["mpfr4", "4.1.0-r0"], ["libpaper", "2.0.4-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["libsynctex", "20220403.62885.0-r5"], ["zlib", "1.2.13-r0"]]

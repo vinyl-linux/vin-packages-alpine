@@ -1,0 +1,15 @@
+checksum = "7b301140e8a2a8ed1100d8872fc7ceb7f30efc6f21fdeb3c79a4d27fdab961a4"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kguiaddons"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kguiaddons-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtwayland", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "5b05c45f72ccd856539eff34f6dd2937f1f856b1a4b576dda522b00979cd7d53"
+licence = "GPL-2.0-or-later"
+provides = "tracker-miners-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tracker-miners-dbg-3.4.3-r0.apk"
+version = "3.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tracker", "3.4.2-r0"]]

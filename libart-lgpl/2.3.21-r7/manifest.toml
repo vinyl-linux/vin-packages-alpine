@@ -1,0 +1,15 @@
+checksum = "ae8bb81fbad29e8903a68bd1c36eb70195f699a66148ce09b220217980e0aaae"
+licence = "LGPL-2.0-or-later"
+provides = "libart-lgpl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libart-lgpl-2.3.21-r7.apk"
+version = "2.3.21-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

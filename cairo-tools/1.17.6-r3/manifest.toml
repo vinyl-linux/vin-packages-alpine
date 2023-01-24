@@ -1,0 +1,15 @@
+checksum = "9e861e418a2c45a1e5c3ce0026385d9b0a53d8ca63c5370208a575472cc20674"
+licence = "LGPL-2.0-or-later MPL-1.1"
+provides = "cairo-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cairo-tools-1.17.6-r3.apk"
+version = "1.17.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

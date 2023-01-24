@@ -1,0 +1,15 @@
+checksum = "2e8b0a488d5768fc9d5661cca8570a13c36b624574577d13639361daf5e6ef2b"
+licence = "OLDAP-2.8"
+provides = "openldap-back-mdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-back-mdb-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

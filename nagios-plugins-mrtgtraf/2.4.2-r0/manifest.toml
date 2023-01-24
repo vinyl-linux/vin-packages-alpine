@@ -1,0 +1,15 @@
+checksum = "fe397a7566e2e9a3da7fd464b25e059d0325c23cad63492f0e42278382866de5"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-mrtgtraf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-mrtgtraf-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

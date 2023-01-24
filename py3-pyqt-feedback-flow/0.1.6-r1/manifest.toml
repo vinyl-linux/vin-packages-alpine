@@ -1,0 +1,15 @@
+checksum = "fe6185eb5de495b61cb9b618823127dcb0a1e54a429611b9df4b9153527e8283"
+licence = "MIT"
+provides = "py3-pyqt-feedback-flow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyqt-feedback-flow-0.1.6-r1.apk"
+version = "0.1.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-emoji", "2.2.0-r0"], ["py3-qt5", "5.15.7-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4a85f20f3e34bbdcf4cc6da78e2806d96a9843f72d60a2cd2e9040639882abee"
+licence = "LGPL-3.0-or-later"
+provides = "chafa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chafa-1.12.4-r0.apk"
+version = "1.12.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["chafa-libs", "1.12.4-r0"], ["freetype", "2.12.1-r0"], ["glib", "2.74.5-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["librsvg", "2.55.1-r0"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"]]

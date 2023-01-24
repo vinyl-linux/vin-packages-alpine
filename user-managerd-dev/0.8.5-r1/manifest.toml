@@ -1,0 +1,15 @@
+checksum = "d995b0c3efd1e034ee958c933e029e5e826153bde9762ef68e64bf8b591a4366"
+licence = "BSD-3-Clause"
+provides = "user-managerd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/user-managerd-dev-0.8.5-r1.apk"
+version = "0.8.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind-dev", "246.10.0-r5"], ["libmce-qt-dev", "1.4.2-r1"], ["libuser-dev", "0.63.0-r2"], ["qt5-qtbase-dev", "5.15.6"], ["sailfish-access-control", "0.0.5-r1"], ["dbus-dev", "1.14.4-r0"], ["pkgconf", "1.9.4-r0"]]

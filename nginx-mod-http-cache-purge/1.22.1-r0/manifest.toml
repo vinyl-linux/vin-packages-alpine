@@ -1,0 +1,15 @@
+checksum = "6efbdaa27bab51ab2c64325056ecc57d8434471befe25c10c2f745b1c9f89229"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-cache-purge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-cache-purge-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

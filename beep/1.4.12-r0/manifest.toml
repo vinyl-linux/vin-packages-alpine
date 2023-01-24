@@ -1,0 +1,15 @@
+checksum = "3537c11f2704d57d853adaa18c9dad0221effa8bb7672e38d4c9b6606db4fc08"
+licence = "GPL-2.0-or-later"
+provides = "beep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/beep-1.4.12-r0.apk"
+version = "1.4.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

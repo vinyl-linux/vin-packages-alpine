@@ -1,0 +1,15 @@
+checksum = "f42bc1673e2513ad89069eaded88e959d35cae44e8588834ceccb3799b8ee574"
+licence = "MIT AND Apache-2.0"
+provides = "py3-glad"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-glad-2.0.2-r0.apk"
+version = "2.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jinja2", "3.1.2-r0"], ["python3", "3.10.9-r1"]]

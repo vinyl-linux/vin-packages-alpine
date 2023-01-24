@@ -1,0 +1,15 @@
+checksum = "4617fb30fbc67199cfeabfeace524edfa02af0728d1dddbb12e53dd76eca158f"
+licence = "LGPL-3.0-or-later"
+provides = "live-media-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/live-media-utils-2022.10.01-r0.apk"
+version = "2022.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["live-media", "2022.10.1-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

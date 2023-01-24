@@ -1,0 +1,15 @@
+checksum = "7cf4263479cc1f4be47d44250255cccdad8a38dddb4d985772207ee80dd46b33"
+licence = "LGPL-2.0-or-later"
+provides = "laz-perf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/laz-perf-3.0.0-r1.apk"
+version = "3.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

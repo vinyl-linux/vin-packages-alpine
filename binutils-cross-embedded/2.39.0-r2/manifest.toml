@@ -1,0 +1,15 @@
+checksum = "97f22e43663fdc0c48eeb9c5e1e7e35faff715f4fd4d8be166370d5e3beaa8cf"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-cross-embedded"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-cross-embedded-2.39-r2.apk"
+version = "2.39.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils-arm-none-eabi", "2.39.0-r2"], ["binutils-avr", "2.39.0-r2"], ["binutils-riscv-none-elf", "2.39.0-r2"], ["binutils-msp430-elf", "2.39.0-r2"], ["binutils-or1k-elf", "2.39.0-r2"], ["binutils-aarch64-none-elf", "2.39.0-r2"]]

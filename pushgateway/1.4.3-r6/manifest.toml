@@ -1,0 +1,15 @@
+checksum = "3d69dee232fbe8fa3198dde6709379d0be10f53747f8787d44c232220895a6b7"
+licence = "Apache-2.0"
+provides = "pushgateway"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pushgateway-1.4.3-r6.apk"
+version = "1.4.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

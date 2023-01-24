@@ -1,0 +1,15 @@
+checksum = "32047efbbb4a280be16762a534f6d2f0572522f5029380c010bacbc1de659bae"
+licence = "GPL-2.0-or-later"
+provides = "seahorse-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/seahorse-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh", "9.1.0"], ["dconf", "0.40.0-r2"], ["gnome-keyring", "42.1.0-r0"], ["gnupg-dirmngr", "2.2.40-r0"]]

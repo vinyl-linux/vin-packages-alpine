@@ -1,0 +1,15 @@
+checksum = "a20075e86175ad23d1e5e171d361c8c573d10e455d46db373e27e9eb28319d1e"
+licence = "Public-Domain"
+provides = "tinydns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tinydns-1.05-r49.apk"
+version = "1.5.0-r49"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

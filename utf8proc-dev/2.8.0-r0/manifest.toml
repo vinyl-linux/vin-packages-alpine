@@ -1,0 +1,15 @@
+checksum = "7b6f05481c33df95ccf98012494aefe36cabaaeee15cb703c80f9253b6fd7244"
+licence = "MIT custom"
+provides = "utf8proc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/utf8proc-dev-2.8.0-r0.apk"
+version = "2.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["utf8proc", "2.8.0-r0"]]

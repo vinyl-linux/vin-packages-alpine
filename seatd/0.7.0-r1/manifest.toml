@@ -1,0 +1,15 @@
+checksum = "2786dd1d2fd5c09636fe92376c39238a5027fdb9b47c605297ec68297b3f4f73"
+licence = "MIT"
+provides = "seatd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/seatd-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

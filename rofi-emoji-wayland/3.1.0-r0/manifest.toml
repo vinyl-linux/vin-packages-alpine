@@ -1,0 +1,15 @@
+checksum = "018ab2f96bec2a13ad4731ba9cb0eb885001d4a1e675b6d7fa4aae534175b023"
+licence = "MIT"
+provides = "rofi-emoji-wayland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-emoji-wayland-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wl-clipboard", "2.1.0-r0"]]

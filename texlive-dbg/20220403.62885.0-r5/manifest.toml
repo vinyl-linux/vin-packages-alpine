@@ -1,0 +1,15 @@
+checksum = "272a605fbf9f3b9f3dab0da28b427b350383fe2b97adf5a1c2b6a3322540f097"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "texlive-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texlive-dbg-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["texmf-dist", "2022.63035.0-r0"]]

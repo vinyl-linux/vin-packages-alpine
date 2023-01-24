@@ -1,0 +1,15 @@
+checksum = "bdb9b6c6ca5e2c4cf7c3b9b036e55195ca49f384f12bdee2fc371ca14760d485"
+licence = "GPL-2.0-or-later LGPL-3.0-or-later"
+provides = "btrfs-progs-extra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/btrfs-progs-extra-6.0.2-r0.apk"
+version = "6.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["btrfs-progs", "6.0.2-r0"], ["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libcom_err", "1.46.5-r4"], ["e2fsprogs-libs", "1.46.5-r4"], ["eudev-libs", "3.2.11-r4"], ["libuuid", "2.38.1-r1"], ["zlib", "1.2.13-r0"]]

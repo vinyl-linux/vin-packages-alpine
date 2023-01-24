@@ -1,0 +1,15 @@
+checksum = "3a26a73b1df75c400bb46689dab24ea1e23b44d290e819409f65a6290edd6f99"
+licence = "BSD-3-Clause"
+provides = "fortune"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fortune-0.1-r2.apk"
+version = "0.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"]]

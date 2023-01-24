@@ -1,0 +1,15 @@
+checksum = "f8874bfb489f4e6fbda7e83f177ab0bd5f7a6422ca94388d5fc5258f5fa5b851"
+licence = "GPL-3.0-or-later"
+provides = "eg25-manager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eg25-manager-0.4.6-r0.apk"
+version = "0.4.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["glib", "2.74.5-r0"], ["libgpiod", "1.6.3-r1"], ["libgudev", "237.0.0-r1"], ["libmm-glib", "1.20.2-r1"], ["libusb", "1.0.26-r0"]]

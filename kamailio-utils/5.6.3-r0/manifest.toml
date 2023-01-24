@@ -1,0 +1,15 @@
+checksum = "ef215cde38a16a7251f1f2a22ea189a2ba8d42743d200bc61baebcf59e23267b"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-utils-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libxml2", "2.10.3-r1"]]

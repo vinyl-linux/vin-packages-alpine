@@ -1,0 +1,15 @@
+checksum = "5f00c07ec416a221c1e9103463c73fff627d290a53f7b81a418ace1e8c18a00d"
+licence = "custom"
+provides = "mesa-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mesa-utils-8.5.0-r0.apk"
+version = "8.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-egl", "22.2.5-r1"], ["mesa-gl", "22.2.5-r1"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

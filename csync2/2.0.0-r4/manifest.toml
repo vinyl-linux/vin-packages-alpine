@@ -1,0 +1,15 @@
+checksum = "393a5d44e2ae470fa4332d3188d96b77ac2e9b3ba2db7eeaf3e146e185588011"
+licence = "GPL-2.0-or-later"
+provides = "csync2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/csync2-2.0-r4.apk"
+version = "2.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["gnutls", "3.7.8-r2"], ["librsync", "2.3.2-r2"]]

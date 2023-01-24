@@ -1,0 +1,15 @@
+checksum = "ff380c1d15079adc14ff6d84ba4261a9798fdf45f388584115ed1efed3fd60c9"
+licence = "Apache-2.0"
+provides = "bcc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bcc-dev-0.25.0-r2.apk"
+version = "0.25.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bcc", "0.25.0-r2"], ["pkgconf", "1.9.4-r0"]]

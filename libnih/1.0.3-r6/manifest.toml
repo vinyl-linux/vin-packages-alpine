@@ -1,0 +1,15 @@
+checksum = "20a131ee30f14dc971c2d704cb3b004a6039fa21cc0114d4690bc393311b88f6"
+licence = "GPL-2.0-only"
+provides = "libnih"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnih-1.0.3-r6.apk"
+version = "1.0.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libexpat", "2.5.0-r0"]]

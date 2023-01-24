@@ -1,0 +1,15 @@
+checksum = "134310e906bddf1666af34c549365566cae14d76bc69a1b9d6fd354722f821c4"
+licence = "GPL-3.0-or-later"
+provides = "freeipmi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freeipmi-dev-1.6.10-r0.apk"
+version = "1.6.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeipmi-libs", "1.6.10-r0"], ["pkgconf", "1.9.4-r0"]]

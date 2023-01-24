@@ -1,0 +1,15 @@
+checksum = "34bb8d5783217a18a20064590e6e8198f9ebfb35956c972d25766098d4c9cbde"
+licence = "MIT"
+provides = "iceauth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iceauth-1.0.9-r0.apk"
+version = "1.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libice", "1.0.10-r1"], ["musl", "1.2.3-r4"]]

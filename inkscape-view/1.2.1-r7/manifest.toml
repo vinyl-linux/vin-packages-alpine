@@ -1,0 +1,15 @@
+checksum = "cee2d73fdcb7b7922c2e30a53dd345201ceed8c6d85372293ae7eaca7f581821"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "inkscape-view"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inkscape-view-1.2.1-r7.apk"
+version = "1.2.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["inkscape", "1.2.1-r7"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gtkmm3", "3.24.7-r0"], ["libstdc++", "12.2.1"]]

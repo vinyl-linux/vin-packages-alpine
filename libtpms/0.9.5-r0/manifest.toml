@@ -1,0 +1,15 @@
+checksum = "300aa5e9a415b2635c2b3c89631bb064360486b0c5744f4fa00f3c4a8192e214"
+licence = "BSD-3-Clause"
+provides = "libtpms"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtpms-0.9.5-r0.apk"
+version = "0.9.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

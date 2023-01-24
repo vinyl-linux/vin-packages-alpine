@@ -1,0 +1,15 @@
+checksum = "60b728b85719ccb86bff11d87bd3c7ff4394498a7243dc03149d43f6d2d6b1b8"
+licence = "GPL-2.0-or-later"
+provides = "sshpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sshpass-1.09-r1.apk"
+version = "1.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

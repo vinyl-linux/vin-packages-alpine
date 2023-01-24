@@ -1,0 +1,15 @@
+checksum = "dc6fa7f4b262f25be7891c10fcfe46c3ee896977dba38155a0f9dc4598e38b6e"
+licence = "Apache-2.0"
+provides = "py3-tornado"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tornado-6.2-r0.apk"
+version = "6.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

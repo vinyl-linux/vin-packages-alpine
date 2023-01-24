@@ -1,0 +1,15 @@
+checksum = "7df7051df42ac53e627a10ad90fbf492a64e4be175a5b41f370a04eda2b5f79e"
+licence = "GPL-2.0-or-later"
+provides = "exim-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-sqlite-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.96.0-r1"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

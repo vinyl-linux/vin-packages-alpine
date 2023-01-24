@@ -1,0 +1,15 @@
+checksum = "35323bb05d5653c943109403edf103c6c54bb9bad4da52c517e406ea4430cc66"
+licence = "MIT"
+provides = "yajl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/yajl-dev-2.1.0-r5.apk"
+version = "2.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["yajl", "2.1.0-r5"]]

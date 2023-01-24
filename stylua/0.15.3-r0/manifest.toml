@@ -1,0 +1,15 @@
+checksum = "e38adfbb74d29cde7fa88d173cc8a370ab68469da6f1093143362749c6dd0f3f"
+licence = "MPL-2.0"
+provides = "stylua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stylua-0.15.3-r0.apk"
+version = "0.15.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "cf851e54f2329338ce2a13c97fe877a54d9d44dad6fe1bb26bc299c9498e6fef"
+licence = "GPL-3.0-only"
+provides = "n2n"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/n2n-3.0-r1.apk"
+version = "3.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

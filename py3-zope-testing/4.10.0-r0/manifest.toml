@@ -1,0 +1,15 @@
+checksum = "cda8344dddc96ff97c95c339371aee26487f590d35728e7b057f768dce57383b"
+licence = "ZPL-2.1"
+provides = "py3-zope-testing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zope-testing-4.10-r0.apk"
+version = "4.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-setuptools", "65.6.0-r0"]]

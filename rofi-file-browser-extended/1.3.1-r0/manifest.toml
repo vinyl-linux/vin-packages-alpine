@@ -1,0 +1,15 @@
+checksum = "8b51232732251027b18d4effbadc226211bfd1bbf6964ab92d28f80566d2595e"
+licence = "MIT"
+provides = "rofi-file-browser-extended"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-file-browser-extended-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rofi-wayland", "1.7.5"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

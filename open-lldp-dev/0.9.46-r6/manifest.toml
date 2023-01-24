@@ -1,0 +1,15 @@
+checksum = "25f7a5d8a5bb9ea7dd7d6ba69dd497456773c7f054df1afcba5c0234a7ff789c"
+licence = "GPL-2.0-only"
+provides = "open-lldp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/open-lldp-dev-0.9.46-r6.apk"
+version = "0.9.46-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-lldp", "0.9.46-r6"], ["pkgconf", "1.9.4-r0"]]

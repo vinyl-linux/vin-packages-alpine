@@ -1,0 +1,15 @@
+checksum = "928fc6e41c0c8d4824f023fd7908d218ef5ee69f84ff2c19151ebacab5bd186a"
+licence = "LGPL-2.0-or-later"
+provides = "neon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/neon-0.32.4-r0.apk"
+version = "0.32.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libexpat", "2.5.0-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

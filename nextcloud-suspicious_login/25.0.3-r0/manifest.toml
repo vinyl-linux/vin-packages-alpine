@@ -1,0 +1,15 @@
+checksum = "283a15b01eae03d4e172d096b6fc57e9a0531972a688fa6c3a055a57425c2a83"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-suspicious_login"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-suspicious_login-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

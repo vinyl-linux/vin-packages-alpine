@@ -1,0 +1,15 @@
+checksum = "fdf95700c1c3530493b4cf275fee8dcaf7a7dc74b3074a87630084d5a65c03b0"
+licence = "BSD-2-Clause"
+provides = "kcat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcat-1.7.0-r1.apk"
+version = "1.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["librdkafka", "1.9.2-r0"], ["yajl", "2.1.0-r5"]]

@@ -1,0 +1,15 @@
+checksum = "47dd9229ee90695142ebcb499e07e1c274ca2be4ddca4295b00e2d9df1b00d3a"
+licence = "MIT"
+provides = "aspnetcore7-runtime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aspnetcore7-runtime-7.0.2-r0.apk"
+version = "7.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet7-runtime", "7.0.2-r0"]]

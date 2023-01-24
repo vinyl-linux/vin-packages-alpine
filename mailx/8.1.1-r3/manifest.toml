@@ -1,0 +1,15 @@
+checksum = "254713bd98cbbd6f1cb629cbc725f399bf336059105f9ea27a2a0942c7af52ea"
+licence = "BSD-4-Clause-UC"
+provides = "mailx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mailx-8.1.1-r3.apk"
+version = "8.1.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

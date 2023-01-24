@@ -1,0 +1,15 @@
+checksum = "b61a9a3704e8819cc92f19e5db1235dfea6a3a8732a043004688450bb37e894a"
+licence = "GPL-2.0-or-later"
+provides = "mate-screensaver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-screensaver-dev-1.26.1-r1.apk"
+version = "1.26.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

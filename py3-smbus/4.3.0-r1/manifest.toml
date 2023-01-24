@@ -1,0 +1,15 @@
+checksum = "84226dd61d3223851e0e9ef0496f8508f7111a85f633a52a45abe77b6bc0d063"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "py3-smbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-smbus-4.3-r1.apk"
+version = "4.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["i2c-tools", "4.3.0-r1"]]

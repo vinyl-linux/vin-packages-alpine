@@ -1,0 +1,15 @@
+checksum = "3dec2fc54e9f1118e0e97ea188a1cf0bf89c1d8d96ab21872346ea310c8b6f1e"
+licence = "LGPL-2.0-only AND GFDL-1.2-only"
+provides = "carddecks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/carddecks-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libkdegames", "22.8.3-r0"]]

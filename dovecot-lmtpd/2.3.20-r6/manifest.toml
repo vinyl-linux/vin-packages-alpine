@@ -1,0 +1,15 @@
+checksum = "473295d85dfdfcf603a81079e7c9777dbb9b046028d831c841f2bd5011fb9133"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-lmtpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-lmtpd-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "278d7bbbc50e492f42e82146d30621ebef80749b59c5f135a5be1a2a6220f60f"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "kitemviews"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kitemviews-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

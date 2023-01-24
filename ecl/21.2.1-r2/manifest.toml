@@ -1,0 +1,15 @@
+checksum = "1fad3df15095498d57b58b22f4fecc562283e4ce1647ef19a4d788f9f066580d"
+licence = "LGPL-2.1-or-later"
+provides = "ecl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ecl-21.2.1-r2.apk"
+version = "21.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gc", "8.2.2-r0"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"]]

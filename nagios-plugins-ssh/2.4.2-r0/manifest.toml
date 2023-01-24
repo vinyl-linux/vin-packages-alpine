@@ -1,0 +1,15 @@
+checksum = "4f6011f3e4360f79c015efcbb3b4775177751403071e8a5c4e4bc8fb5fba0372"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-ssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-ssh-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

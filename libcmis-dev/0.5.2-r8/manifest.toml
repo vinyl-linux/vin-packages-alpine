@@ -1,0 +1,15 @@
+checksum = "9ed36d861da272b8236d208d99cf7d46f520a100f4481284f547d275b7b6c51a"
+licence = "MPL-1.1 GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "libcmis-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcmis-dev-0.5.2-r8.apk"
+version = "0.5.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl-dev", "7.87.0-r1"], ["libxml2-dev", "2.10.3-r1"], ["cppunit-dev", "1.15.1-r1"], ["boost-dev", "1.80.0-r3"], ["libcmis", "0.5.2-r8"], ["pkgconf", "1.9.4-r0"]]

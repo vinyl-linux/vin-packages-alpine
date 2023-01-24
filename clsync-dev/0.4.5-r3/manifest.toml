@@ -1,0 +1,15 @@
+checksum = "1ec60121f096976b4c885ec0bc17bb01069393ff2284f86ae6360f0a7b52330f"
+licence = "GPL-3.0-or-later"
+provides = "clsync-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clsync-dev-0.4.5-r3.apk"
+version = "0.4.5-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["musl-fts-dev", "1.2.7-r3"], ["libcap-dev", "2.66.0-r0"], ["linux-headers", "5.19.5-r0"], ["musl-dev", "1.2.3-r4"]]

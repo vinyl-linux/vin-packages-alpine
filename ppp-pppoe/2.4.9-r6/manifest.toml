@@ -1,0 +1,15 @@
+checksum = "02542de05dd3ca7dd2196f39f446cd5c77a86b227a3b56193037a5bd7cd21523"
+licence = "GPL-2.0-or-later"
+provides = "ppp-pppoe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-pppoe-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r6"], ["musl", "1.2.3-r4"]]

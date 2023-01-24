@@ -1,0 +1,15 @@
+checksum = "d9997e029ad04eebbf941aabafd4bf610fb59a54f3516bbc45239718f023ff5a"
+licence = "MIT"
+provides = "py3-xmlschema"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-xmlschema-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-elementpath", "3.0.2-r0"]]

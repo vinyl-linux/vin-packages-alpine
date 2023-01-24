@@ -1,0 +1,15 @@
+checksum = "df4136dcde03c0293b55a8d045cd6e4b58db8240dfd54b768089ccd3856607aa"
+licence = "Net-SNMP"
+provides = "net-snmp-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/net-snmp-perl-5.9.3-r2.apk"
+version = "5.9.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"]]

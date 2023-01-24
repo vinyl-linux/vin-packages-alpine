@@ -1,0 +1,15 @@
+checksum = "12ba65ac76c51a5296d1dca400c525dc23f472e84816f7397c68f2dfcec8f9b3"
+licence = "BSD-3-Clause"
+provides = "hwloc-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hwloc-tools-2.8.0-r0.apk"
+version = "2.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["hwloc", "2.8.0-r0"], ["ncurses-libs", "6.3.0"]]

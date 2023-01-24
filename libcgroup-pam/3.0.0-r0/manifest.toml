@@ -1,0 +1,15 @@
+checksum = "7d1c785da817b8ccd6bed47fe16e5cf29063bec0a9a4458f409a93d39a365651"
+licence = "LGPL-2.1-only"
+provides = "libcgroup-pam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcgroup-pam-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcgroup", "3.0.0-r0"], ["linux-pam", "1.5.2-r1"]]

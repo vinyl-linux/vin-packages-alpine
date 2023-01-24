@@ -1,0 +1,15 @@
+checksum = "e97f87189841d7a035f54c24a6d4b50e6d7f3b65386ec70c411c4a61592ed512"
+licence = "custom"
+provides = "uwsgi-transformation_gzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-transformation_gzip-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

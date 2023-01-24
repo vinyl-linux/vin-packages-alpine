@@ -1,0 +1,15 @@
+checksum = "33d5df907959a5b4e0158871a62141772dc843f2b260025a9c99228abdbe48fd"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-canon_lide70"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-canon_lide70-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"], ["libxml2", "2.10.3-r1"]]

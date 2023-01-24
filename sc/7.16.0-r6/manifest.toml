@@ -1,0 +1,15 @@
+checksum = "70525e7f12bcbe3acd1725ae89750156e3f977e17ede6f17b208c676189a8bd8"
+licence = "Public-Domain"
+provides = "sc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sc-7.16-r6.apk"
+version = "7.16.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

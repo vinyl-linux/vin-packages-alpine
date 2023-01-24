@@ -1,0 +1,15 @@
+checksum = "bd83eb582255b7f2f96df76a763fe6f21657cc06ac7376e41d5d129f13f0edd7"
+licence = "PostgreSQL"
+provides = "postgresql12-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql12-dev-12.13-r1.apk"
+version = "12.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpq-dev", "15.1.0-r0"], ["libecpg-dev", "15.1.0-r0"], ["clang14", "14.0.6-r1"], ["icu-dev", "72.1.0-r1"], ["llvm14", "14.0.6-r7"], ["openssl-dev", "3.0.7-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1e16e9c94037262c42b5ef47956d0d4e82fdc62cbfe67cf1b8537b0d814bdc23"
+licence = "Zlib"
+provides = "girara"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/girara-0.3.7-r0.apk"
+version = "0.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["json-c", "0.16.0-r2"], ["pango", "1.50.12-r0"]]

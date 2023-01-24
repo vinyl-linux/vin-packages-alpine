@@ -1,0 +1,15 @@
+checksum = "a1df162fe0defc0ca521edc6e84427754c5c17c883a21f81f57205c7ef24fcf9"
+licence = "GPL-3.0"
+provides = "espeak-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/espeak-dev-1.48.04-r3.apk"
+version = "1.48.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["espeak", "1.48.4-r3"]]

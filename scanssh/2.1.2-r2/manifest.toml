@@ -1,0 +1,15 @@
+checksum = "e9cbf383100605b56064ca6ecbb2c836b0087d2a51e56a6e95c0a34bc15beeb4"
+licence = "BSD"
+provides = "scanssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/scanssh-2.1.2-r2.apk"
+version = "2.1.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdnet", "1.16.1-r0"], ["libevent", "2.1.12-r5"], ["libpcap", "1.10.1-r1"]]

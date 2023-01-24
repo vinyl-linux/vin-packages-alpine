@@ -1,0 +1,15 @@
+checksum = "229ba4b335b6102951cbb555595a59192585b8e87e34eb625da7d24441aea860"
+licence = "BSD-3-Clause"
+provides = "libprotobuf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libprotobuf-3.21.9-r0.apk"
+version = "3.21.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

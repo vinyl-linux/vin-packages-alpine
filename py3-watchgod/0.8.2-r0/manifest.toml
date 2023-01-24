@@ -1,0 +1,15 @@
+checksum = "06be8f05476243a9b76d6b4276a484e89a48bb7a715020392ece97de42ec7fe3"
+licence = "MIT"
+provides = "py3-watchgod"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-watchgod-0.8.2-r0.apk"
+version = "0.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-anyio", "3.6.2-r0"]]

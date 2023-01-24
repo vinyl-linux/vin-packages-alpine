@@ -1,0 +1,15 @@
+checksum = "ed0ccb8705baa45f904887cba3654f7a3822ac0dbcb609413a120eeb143f1755"
+licence = "MIT"
+provides = "docopt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docopt-dev-0.6.3-r0.apk"
+version = "0.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docopt", "0.6.3-r0"], ["pkgconf", "1.9.4-r0"]]

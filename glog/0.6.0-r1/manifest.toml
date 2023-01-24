@@ -1,0 +1,15 @@
+checksum = "db9cfc9cd9b06767e2f28df1567c3a7fe947107f38e67f327d211a1784925e3d"
+licence = "BSD-3-Clause"
+provides = "glog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glog-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gflags", "2.2.2-r2"], ["libstdc++", "12.2.1"], ["libunwind", "1.6.2-r0"]]

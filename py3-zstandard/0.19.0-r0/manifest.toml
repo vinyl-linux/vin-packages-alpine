@@ -1,0 +1,15 @@
+checksum = "f4d6921a1473636a14526f62f68c45ec82bcd413c08cf587e8e25cd67053a1bb"
+licence = "BSD-3-Clause"
+provides = "py3-zstandard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zstandard-0.19.0-r0.apk"
+version = "0.19.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a1a5e7420c668e21c42fdfda1159d503310753152d938a2d3ce0f4262d81aa0a"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-lua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-lua-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"], ["lua5.3-libs", "5.3.6-r4"]]

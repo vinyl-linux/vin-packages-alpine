@@ -1,0 +1,15 @@
+checksum = "7d2301969833a89eb666bf48cdd5f11e95d49aabf35f3c65fe77ea8f71796c3d"
+licence = "LGPL-2.0-or-later"
+provides = "py3-zbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zbar-0.23.92-r1.apk"
+version = "0.23.92-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libzbar", "0.23.92-r1"]]

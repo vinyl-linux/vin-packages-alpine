@@ -1,0 +1,15 @@
+checksum = "b2f824a001650a3884ad0b3b561f43ddde7aadc4783397b4b9ad11ecfb86945d"
+licence = "GPL-2.0-or-later"
+provides = "vnstat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vnstat-2.10-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgd", "2.3.3-r3"], ["sqlite-libs", "3.40.1-r0"]]

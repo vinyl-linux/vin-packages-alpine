@@ -1,0 +1,15 @@
+checksum = "f7fc8fe6e58ce022aedf7a96a9f59bc07f60b40e7cf633332c4f2f4e30412567"
+licence = "Apache-2.0"
+provides = "py3-padatious"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-padatious-0.4.8-r3.apk"
+version = "0.4.8-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-padaos", "0.1.10-r3"], ["py3-xxhash", "0.8.1-r0"], ["py3-fann2", "1.2.0-r3"]]

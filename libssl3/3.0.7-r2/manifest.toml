@@ -1,0 +1,15 @@
+checksum = "fdb3f570a643bcfe541f36e651b0295705ff5094769f8d045989522c72c59f48"
+licence = "Apache-2.0"
+provides = "libssl3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libssl3-3.0.7-r2.apk"
+version = "3.0.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

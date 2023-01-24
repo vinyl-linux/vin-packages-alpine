@@ -1,0 +1,15 @@
+checksum = "df97984eb4ac529acaca0b9675899baf6a34fbe7433d294f38dbdfdac174fc41"
+licence = "Apache-2.0"
+provides = "opensubdiv-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opensubdiv-tools-3.5.0-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["opencl", "2022.9.30-r0"], ["ptex", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glfw", "3.3.8-r0"], ["opensubdiv", "3.5.0-r0"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"]]

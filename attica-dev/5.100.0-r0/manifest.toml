@@ -1,0 +1,15 @@
+checksum = "01ee4240cefc961f96bfa6496f7f44d200137edcb7a8ba14f1b84e0c150a7fba"
+licence = "LGPL-2.0-or-later"
+provides = "attica-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/attica-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["attica", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

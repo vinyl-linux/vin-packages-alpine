@@ -1,0 +1,15 @@
+checksum = "93fb422820a3d1760419fd89ff7c54bcbb7f5bf5796c2b5568e75fa95528238e"
+licence = "GPL-2.0-or-later"
+provides = "patchwork-uwsgi-apache2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/patchwork-uwsgi-apache2-3.1.1-r0.apk"
+version = "3.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["apache2-mod-wsgi", "4.9.4-r0"]]

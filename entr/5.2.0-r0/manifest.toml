@@ -1,0 +1,15 @@
+checksum = "191af6069cba2f54cde35384fde8416d0105c1311db515d9bd14474c90381375"
+licence = "ISC"
+provides = "entr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/entr-5.2-r0.apk"
+version = "5.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

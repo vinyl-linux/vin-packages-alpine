@@ -1,0 +1,15 @@
+checksum = "1f141e32b56f04d4256f514a1cdd3c813b0f6aedefb1b72ba0dd128a7f83be82"
+licence = "LGPL-2.1-or-later"
+provides = "sdbus-cpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdbus-cpp-dev-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind-dev", "246.10.0-r5"], ["pkgconf", "1.9.4-r0"], ["sdbus-cpp", "1.2.0-r0"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

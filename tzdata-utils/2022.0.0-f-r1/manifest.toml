@@ -1,0 +1,15 @@
+checksum = "af1a1f206ac255c25cd36218bda1125a3d123ff428eb49e0d9da45c22edcd9bf"
+licence = "Public-Domain"
+provides = "tzdata-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tzdata-utils-2022f-r1.apk"
+version = "2022.0.0-f-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

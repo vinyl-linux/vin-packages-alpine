@@ -1,0 +1,15 @@
+checksum = "d10da8f271c5af04de5f4c8d379910d37357ee48ab66c95cbdc2dcaa05deb767"
+licence = "MIT"
+provides = "py3-rich"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rich-12.6.0-r0.apk"
+version = "12.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-colorama", "0.4.6-r0"], ["py3-commonmark", "0.9.1-r2"], ["py3-pygments", "2.13.0-r0"], ["py3-typing-extensions", "4.4.0-r0"], ["python3", "3.10.9-r1"]]

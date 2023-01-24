@@ -1,0 +1,15 @@
+checksum = "54fd41f84e4b7097f04c013e6b84613f711cbd850abd51b7748997ec4c7025c4"
+licence = "LGPL-2.1-only"
+provides = "tinycompress-fcplay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tinycompress-fcplay-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["tinycompress", "1.2.8-r0"]]

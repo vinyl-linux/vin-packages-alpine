@@ -1,0 +1,15 @@
+checksum = "a80787adeda883f5a4b6aae2584203afdde34c26a9f7c74bfd24c7ad7b71ba82"
+licence = "Apache-2.0"
+provides = "llvm14-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm14-dev-14.0.6-r7.apk"
+version = "14.0.6-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm14", "14.0.6-r7"], ["llvm14-test-utils", "14.0.6-r7"], ["llvm14-libs", "14.0.6-r7"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

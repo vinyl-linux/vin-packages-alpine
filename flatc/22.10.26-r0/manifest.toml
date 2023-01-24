@@ -1,0 +1,15 @@
+checksum = "251fbfde7e891418fd654fefe8ac71e04a51e163b92a177b53820e5dfae3ced8"
+licence = "Apache-2.0"
+provides = "flatc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flatc-22.10.26-r0.apk"
+version = "22.10.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

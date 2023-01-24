@@ -1,0 +1,15 @@
+checksum = "65a46cd2a3d73bb2299b810d9d9edf505e35cec279e38a8040e5b9ca95bbf79c"
+licence = "LGPL-2.0-or-later"
+provides = "p7zip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/p7zip-17.04-r3.apk"
+version = "17.4.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "8b80a1fcbf36c25cec006bd5ece121ee6b8e465bb43435e6ef72cb531c2cc262"
+licence = "BSD-3-Clause"
+provides = "py3-secretstorage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-secretstorage-3.3.3-r0.apk"
+version = "3.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cryptography", "38.0.3-r0"], ["py3-jeepney", "0.8.0-r0"]]

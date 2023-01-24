@@ -1,0 +1,15 @@
+checksum = "e5ff6a232165f6e8431bbe3b44113e6021ffbd26e71bc3e8f55b006e305cb9a2"
+licence = "MIT"
+provides = "py3-pytest-httpbin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-httpbin-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-httpbin", "0.7.0-r4"], ["py3-six", "1.16.0-r3"]]

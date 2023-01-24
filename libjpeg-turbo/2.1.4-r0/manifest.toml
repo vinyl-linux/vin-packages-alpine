@@ -1,0 +1,15 @@
+checksum = "d00320cd388a65ca9303ed7c6d7c89f7466335d85215d15c53656cca6632536a"
+licence = "BSD-3-Clause AND IJG AND Zlib"
+provides = "libjpeg-turbo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libjpeg-turbo-2.1.4-r0.apk"
+version = "2.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "7138d49a73187da9f11fc0fa89b034120a3926f83c30154d85f3750fdb9fa357"
+licence = "MIT"
+provides = "libwebsockets-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libwebsockets-dev-4.3.2-r1.apk"
+version = "4.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwebsockets", "4.3.2-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "aee2f6d0ce82a066711ada00184d81744a096184b602da67cf22302048599e4a"
+licence = "MIT"
+provides = "py3-pytest-freezegun"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-freezegun-0.4.2-r0.apk"
+version = "0.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-freezegun", "1.2.2-r0"], ["py3-pytest", "7.2.0-r1"]]

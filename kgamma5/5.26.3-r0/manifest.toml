@@ -1,0 +1,15 @@
+checksum = "9f82af03aca8f075106cedaf7b42ecd8f8b1e924c73d0887fd9aa52de373a121"
+licence = "GPL-2.0-or-later"
+provides = "kgamma5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kgamma5-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxxf86vm", "1.1.5-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "74a6818717d7c6e27c9fd83f2f76b5569edca4d170c6f76e17dd25ec6bda4bc8"
+licence = "X11"
+provides = "libice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libice-1.0.10-r1.apk"
+version = "1.0.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

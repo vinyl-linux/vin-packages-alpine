@@ -1,0 +1,15 @@
+checksum = "c0d7f396b6fad20cbd7c5cd2d7f2902b08d9aa651def44a4a91103a1fd353ef0"
+licence = "Apache-2.0"
+provides = "apache2-mod-wsgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-mod-wsgi-4.9.4-r0.apk"
+version = "4.9.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

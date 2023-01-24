@@ -1,0 +1,15 @@
+checksum = "27d47af16b9b0a13d6d13c2c24b3b26ef84b5956176b22e840c0330b9f07825f"
+licence = "MIT"
+provides = "libpsl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpsl-dev-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpsl", "0.21.1-r1"], ["pkgconf", "1.9.4-r0"]]

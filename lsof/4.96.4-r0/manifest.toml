@@ -1,0 +1,15 @@
+checksum = "b4c2e8be6be3d4c5d93925e16d138abec4ba89ce7391bd8e70c382c39b37f796"
+licence = "lsof"
+provides = "lsof"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lsof-4.96.4-r0.apk"
+version = "4.96.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

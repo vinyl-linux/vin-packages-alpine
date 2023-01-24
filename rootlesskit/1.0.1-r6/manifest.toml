@@ -1,0 +1,15 @@
+checksum = "b6c4838d7c8a050e61c26545c3aba509c2f28707e614719cf2c79cf4ad844e2d"
+licence = "Apache-2.0"
+provides = "rootlesskit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rootlesskit-1.0.1-r6.apk"
+version = "1.0.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shadow-subids", "4.13.0-r0"], ["musl", "1.2.3-r4"]]

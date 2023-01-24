@@ -1,0 +1,15 @@
+checksum = "b8c53869455f303729806e3267b52a2d7c95e80d83a34f12b00b397edb99234b"
+licence = "GPL-2.0-or-later"
+provides = "mercurial"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mercurial-6.3.1-r0.apk"
+version = "6.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

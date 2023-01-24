@@ -1,0 +1,15 @@
+checksum = "3881b8b5d6cd1138bda8862ec70b776b4fcb8f7b2c9574cd630528e2721823a4"
+licence = "GPL-2.0-or-later AND LGPL-3.0-or-later"
+provides = "libidn2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libidn2-dev-2.3.4-r0.apk"
+version = "2.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libidn2", "2.3.4-r0"], ["pkgconf", "1.9.4-r0"]]

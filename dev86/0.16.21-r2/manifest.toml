@@ -1,0 +1,15 @@
+checksum = "ad051b21ad07f1d9454d1f93b137919c041d3e78fc4065bb0463430ae88620c9"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "dev86"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dev86-0.16.21-r2.apk"
+version = "0.16.21-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

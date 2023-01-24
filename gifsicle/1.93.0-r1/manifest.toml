@@ -1,0 +1,15 @@
+checksum = "241742e9cb68fb477e931416ea227edc0fd6a7a1cb9ab5c5d9bf3e10741a7b15"
+licence = "GPL-2.0-only"
+provides = "gifsicle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gifsicle-1.93-r1.apk"
+version = "1.93.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

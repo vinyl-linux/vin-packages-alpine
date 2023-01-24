@@ -1,0 +1,15 @@
+checksum = "bfd4bc9dc775879f79c30330455a85f7b45321fc79e7a0b7a8f4d2d3a5550212"
+licence = "GPL-2.0-or-later"
+provides = "frr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frr-8.4.1-r0.apk"
+version = "8.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["bash", "5.2.15-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["c-ares", "1.18.1-r1"], ["json-c", "0.16.0-r2"], ["readline", "8.2.0-r0"], ["libyang", "2.1.30-r0"]]

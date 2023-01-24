@@ -1,0 +1,15 @@
+checksum = "e36c62e1ee1778eb8374062d10400015995ac4976dd3e9df00c5c8760da1a7b0"
+licence = "MIT AND BSD-2-Clause AND GPL-2.0-or-later"
+provides = "musl-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/musl-utils-1.2.3-r4.apk"
+version = "1.2.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["scanelf", "1.3.5-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "45519eb79d6feb0fcf9f57a47d59b40fd097e39765549312ed84134dc2333339"
+licence = "GPL-3.0"
+provides = "awake-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/awake-doc-1.0-r7.apk"
+version = "1.0.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-awake", "1.0.0-r7"]]

@@ -1,0 +1,15 @@
+checksum = "9f2b9e847d2e8e96ece499fb1a393314910819d323e5bb8e2ef60600bead7766"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-mysql-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

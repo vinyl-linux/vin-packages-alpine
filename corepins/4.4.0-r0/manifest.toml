@@ -1,0 +1,15 @@
+checksum = "95879142bc32fb5bee8838e3f9c24553d590e4111f129b2ebe3459e0886275e0"
+licence = "GPL-3.0-or-later"
+provides = "corepins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corepins-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

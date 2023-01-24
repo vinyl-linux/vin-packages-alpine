@@ -1,0 +1,15 @@
+checksum = "71ace7b3bc8153b725216771173610f39b5917f611aa5489c4f943fff54074a6"
+licence = "Apache-2.0"
+provides = "certbot-apache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/certbot-apache-1.32.0-r0.apk"
+version = "1.32.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["certbot", "1.32.0-r0"], ["py3-acme", "1.32.0-r0"], ["py3-mock", "4.0.3-r3"], ["py3-augeas", "1.1.0-r2"], ["py3-setuptools", "65.6.0-r0"], ["py3-pip", "22.3.1-r1"], ["py3-zope-component", "5.0.1-r0"], ["py3-zope-interface", "5.5.1-r0"]]

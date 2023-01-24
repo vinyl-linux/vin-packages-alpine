@@ -1,0 +1,15 @@
+checksum = "ac00cc3e14b97390b0bc1530f7e86d5a6b88725c742136c7c1d8881619616970"
+licence = "BSD-3-Clause"
+provides = "libzip-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzip-tools-1.9.2-r2.apk"
+version = "1.9.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"], ["libzip", "1.9.2-r2"]]

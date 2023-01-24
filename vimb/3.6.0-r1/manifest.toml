@@ -1,0 +1,15 @@
+checksum = "a62e39040169fcc33dc5e0c47116dad93786ffdba86ee9435eed70bdf93d226d"
+licence = "GPL-3.0-or-later"
+provides = "vimb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vimb-3.6.0-r1.apk"
+version = "3.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["webkit2gtk", "2.38.3-r0"], ["libsoup", "2.74.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "724d5ff67492d63390c88a3dae055dbbe9caf01837a3d6b80c252de56865d14a"
+licence = "GPL-3.0"
+provides = "mu4e"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mu4e-1.8.9-r0.apk"
+version = "1.8.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mu", "1.8.9-r0"], ["emacs-gtk3", "28.2.0-r0"]]

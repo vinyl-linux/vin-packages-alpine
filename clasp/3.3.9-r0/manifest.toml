@@ -1,0 +1,15 @@
+checksum = "a679a1c224ceb2c9136fd74913fd50b861e75d50ca637f73d5a5aa944c439c90"
+licence = "MIT"
+provides = "clasp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clasp-3.3.9-r0.apk"
+version = "3.3.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

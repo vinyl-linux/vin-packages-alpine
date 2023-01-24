@@ -1,0 +1,15 @@
+checksum = "371596731e7b49f1db258239352cb4de5f513ef454a4809161e4a23569f84f1d"
+licence = "GPL-2.0-only"
+provides = "hermes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hermes-1.9-r9.apk"
+version = "1.9.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libspf2", "1.2.11-r0"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "08db237707f28a15c7aa3ba7cdc20ecf569c3f113abedf81186d913d1b53e591"
+licence = "Apache-2.0 OR MIT"
+provides = "csview"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/csview-1.2.2-r0.apk"
+version = "1.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

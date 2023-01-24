@@ -1,0 +1,15 @@
+checksum = "2eb8e66629a1042d71dd309f167669282f616bef959dc9223f7b909b032bba05"
+licence = "ISC"
+provides = "s6-networking"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/s6-networking-2.5.1.1-r0.apk"
+version = "2.5.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bearssl", "0.6.0-r2"], ["musl", "1.2.3-r4"], ["s6", "2.11.1.2-r0"], ["s6-dns", "2.3.5.4-r0"], ["skalibs", "2.12.0.1-r0"]]

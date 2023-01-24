@@ -1,0 +1,15 @@
+checksum = "38b34204565d4bacfffc1948b662c7fd5583d797dd747b6752ff06f0c82bda24"
+licence = "LGPL-2.1-or-later"
+provides = "kauth-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kauth-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons-dev", "5.100.0-r0"], ["polkit-qt-1-dev", "0.114.0-r1"], ["qt5-qtbase-dev", "5.15.6"], ["kauth", "5.100.0-r0"]]

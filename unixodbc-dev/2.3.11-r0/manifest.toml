@@ -1,0 +1,15 @@
+checksum = "b37fdde5e59ab9f88358f1f3539fd5e23a00488c877fb7c76671626832a0d05d"
+licence = "LGPL-2.0-or-later"
+provides = "unixodbc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/unixodbc-dev-2.3.11-r0.apk"
+version = "2.3.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["unixodbc", "2.3.11-r0"]]

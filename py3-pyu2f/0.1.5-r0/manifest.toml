@@ -1,0 +1,15 @@
+checksum = "d73e16b1a233e018aac1793afa956c0da9ad4ae6ebd3948e3db469c41fc2da83"
+licence = "Apache-2.0"
+provides = "py3-pyu2f"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyu2f-0.1.5-r0.apk"
+version = "0.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

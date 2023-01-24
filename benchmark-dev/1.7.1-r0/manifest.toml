@@ -1,0 +1,15 @@
+checksum = "5298fb050f41cb44308dac51c55542594dc04719732b2c82c0372f77e0df9f9a"
+licence = "Apache-2.0"
+provides = "benchmark-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/benchmark-dev-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["benchmark", "1.7.1-r0"], ["pkgconf", "1.9.4-r0"]]

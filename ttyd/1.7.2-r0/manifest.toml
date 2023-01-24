@@ -1,0 +1,15 @@
+checksum = "9db154507aafc0fb3a930b3a64b58ba187e70642bff0d22121a67ae9294ed23b"
+licence = "MIT"
+provides = "ttyd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ttyd-1.7.2-r0.apk"
+version = "1.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwebsockets-evlib_uv", "4.3.2-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["json-c", "0.16.0-r2"], ["libssl3", "3.0.7-r2"], ["libuv", "1.44.2-r0"], ["libwebsockets", "4.3.2-r1"], ["zlib", "1.2.13-r0"]]

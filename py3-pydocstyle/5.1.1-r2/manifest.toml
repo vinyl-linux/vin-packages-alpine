@@ -1,0 +1,15 @@
+checksum = "8129b1ba6e316241a23604d07c78865e4a1410370c5e162bc193e5b90d161d81"
+licence = "MIT"
+provides = "py3-pydocstyle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pydocstyle-5.1.1-r2.apk"
+version = "5.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-snowballstemmer", "2.2.0-r0"]]

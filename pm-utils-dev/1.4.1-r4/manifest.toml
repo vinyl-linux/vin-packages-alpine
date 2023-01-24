@@ -1,0 +1,15 @@
+checksum = "07d8df6f53b905d4565d19b93eee7aef8c3bad15e67309014ffb8b83bd1d1365"
+licence = "GPL-2.0-only"
+provides = "pm-utils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pm-utils-dev-1.4.1-r4.apk"
+version = "1.4.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

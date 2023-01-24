@@ -1,0 +1,15 @@
+checksum = "3015bbfc463b2d6cd95c538d173877375d18f170e9a570b691117a66a34975a4"
+licence = "GPL-2.0-only"
+provides = "enca-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/enca-dev-1.19-r3.apk"
+version = "1.19.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["enca", "1.19.0-r3"], ["pkgconf", "1.9.4-r0"]]

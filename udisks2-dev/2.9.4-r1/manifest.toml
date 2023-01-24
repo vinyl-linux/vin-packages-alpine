@@ -1,0 +1,15 @@
+checksum = "8e805eabf78c1312a88058ff648d068349eb8ba7019cb3dd107a91ebe1f21c68"
+licence = "GPL-2.0-or-later"
+provides = "udisks2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/udisks2-dev-2.9.4-r1.apk"
+version = "2.9.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["acl-dev", "2.3.1-r1"], ["gobject-introspection-dev", "1.74.0-r1"], ["libatasmart-dev", "0.19.0-r2"], ["libgudev-dev", "237.0.0-r1"], ["lvm2-dev", "2.3.17-r1"], ["polkit-dev", "122.0.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["udisks2-libs", "2.9.4-r1"]]

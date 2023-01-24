@@ -1,0 +1,15 @@
+checksum = "1b94d02bf2413891e6161c1d45b9d528eab196c616fdcfd24d680cd5e33f7890"
+licence = "MIT"
+provides = "wtype"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wtype-0.4-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["wayland-libs-client", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

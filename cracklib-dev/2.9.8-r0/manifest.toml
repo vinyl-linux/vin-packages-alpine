@@ -1,0 +1,15 @@
+checksum = "deb01e6954ac0ff552ddbc22d38eb5daae24cde166bda53b059f58bdaa06d01f"
+licence = "LGPL-2.0-or-later"
+provides = "cracklib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cracklib-dev-2.9.8-r0.apk"
+version = "2.9.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cracklib", "2.9.8-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0401aefd7f8a59431aea8707fed63f3a489a6d4cc417407fa2b823471c56f560"
+licence = "BSD-3-Clause"
+provides = "chicken-feathers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chicken-feathers-5.3.0-r2.apk"
+version = "5.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tk", "8.6.12-r1"]]

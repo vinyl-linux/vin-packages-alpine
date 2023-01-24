@@ -1,0 +1,15 @@
+checksum = "e594be68be01e971c9534a4dc9152093784d18c0fa95ac5c027b2d06d231eceb"
+licence = "GPL-3.0-or-later"
+provides = "tinydm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tinydm-1.1.2-r1.apk"
+version = "1.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["autologin", "1.0.0-r4"]]

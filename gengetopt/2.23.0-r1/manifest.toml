@@ -1,0 +1,15 @@
+checksum = "3655f0f4e9d3747750673b2c9d5c664890312461d3f48f75620518e08d6bb67e"
+licence = "GPL-3.0-or-later"
+provides = "gengetopt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gengetopt-2.23-r1.apk"
+version = "2.23.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

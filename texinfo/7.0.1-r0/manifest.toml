@@ -1,0 +1,15 @@
+checksum = "c1d702f5957968515e863c8577521131ee9976c91b35234cc343a5f58804511a"
+licence = "GPL-3.0-or-later"
+provides = "texinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/texinfo-7.0.1-r0.apk"
+version = "7.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

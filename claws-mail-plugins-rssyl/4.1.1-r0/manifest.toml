@@ -1,0 +1,15 @@
+checksum = "cf4e52a1795db4ef9313316bd3483ad6604b63a4bd27951c1eed4d0a3a2f6aae"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-rssyl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/claws-mail-plugins-rssyl-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.1.1-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libexpat", "2.5.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"]]

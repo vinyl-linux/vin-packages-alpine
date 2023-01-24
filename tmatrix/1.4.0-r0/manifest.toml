@@ -1,0 +1,15 @@
+checksum = "8964cabe438490162ea07cd820d9cc55ec1ebd83742bab425f01d7190f687ed0"
+licence = "GPL-2.0-only"
+provides = "tmatrix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tmatrix-1.4-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "12.2.1"]]

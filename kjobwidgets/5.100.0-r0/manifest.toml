@@ -1,0 +1,15 @@
+checksum = "be40acf5620e03429b5325eb7828293ecafa926293dbc289203cd2dbe51e33fe"
+licence = "LGPL-2.1-only AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "kjobwidgets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kjobwidgets-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

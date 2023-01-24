@@ -1,0 +1,15 @@
+checksum = "173216031f2427646893fa826106c2e4c83d8d374605c09eac71bed38bfabb78"
+licence = "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)"
+provides = "elfutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/elfutils-dev-0.187-r2.apk"
+version = "0.187.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libelf", "0.187.0-r2"], ["xz-dev", "5.2.9-r0"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

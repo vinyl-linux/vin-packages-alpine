@@ -1,0 +1,15 @@
+checksum = "1b6e7d2aefdadd2a9586d653b29714b8ac225be68fef7e80d4ad5810dc65abaa"
+licence = "Apache-2.0"
+provides = "syncplay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/syncplay-1.6.9-r0.apk"
+version = "1.6.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-twisted", "22.10.0-r0"], ["py3-pyside2", "5.15.6-r0"]]

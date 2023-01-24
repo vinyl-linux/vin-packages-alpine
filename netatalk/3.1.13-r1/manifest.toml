@@ -1,0 +1,15 @@
+checksum = "301da55dec22e868786dbb1df1a29be45d1f65ba2ad013e4843737aa9fedca54"
+licence = "GPL-2.0-or-later"
+provides = "netatalk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netatalk-3.1.13-r1.apk"
+version = "3.1.13-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["db", "5.3.28-r2"], ["libevent", "2.1.12-r5"], ["libgcrypt", "1.10.1-r0"], ["mariadb-connector-c", "3.3.3-r0"], ["tdb-libs", "1.4.7-r0"]]

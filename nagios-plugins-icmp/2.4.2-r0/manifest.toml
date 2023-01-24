@@ -1,0 +1,15 @@
+checksum = "8f37cc335991b4368cf5e1b9e3082e9d6fd18cc4f4771b94ec53b61e84ed6c80"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-icmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-icmp-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

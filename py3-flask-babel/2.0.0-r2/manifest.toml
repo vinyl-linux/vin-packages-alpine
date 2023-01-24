@@ -1,0 +1,15 @@
+checksum = "328eb850ebd811eb61242d9ce7093d2c2be1027052fa8cbf86c0bc7929fadbca"
+licence = "BSD-3-Clause"
+provides = "py3-flask-babel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flask-babel-2.0.0-r2.apk"
+version = "2.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-flask", "2.2.2-r0"], ["py3-jinja2", "3.1.2-r0"], ["py3-babel", "2.11.0-r0"]]

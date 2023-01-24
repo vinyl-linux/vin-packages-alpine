@@ -1,0 +1,15 @@
+checksum = "4d25d6ae335adf636ec6ec8a539a9e6afd680d9051543799da011c494f450fa1"
+licence = "Apache-2.0"
+provides = "buildctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/buildctl-0.10.6-r1.apk"
+version = "0.10.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["containerd", "1.6.12-r1"]]

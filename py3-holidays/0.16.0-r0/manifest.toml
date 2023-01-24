@@ -1,0 +1,15 @@
+checksum = "7dd8d0f34eba90f4e418a1ed1561558b854d39f9a28cf11630d1c557c2f81f24"
+licence = "MIT"
+provides = "py3-holidays"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-holidays-0.16-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-convertdate", "2.4.0-r0"], ["py3-dateutil", "2.8.2-r1"], ["py3-hijri-converter", "2.2.4-r0"], ["py3-korean-lunar-calendar", "0.3.1-r0"], ["python3", "3.10.9-r1"]]

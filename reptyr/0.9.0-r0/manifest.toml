@@ -1,0 +1,15 @@
+checksum = "17c3c1990a77742de971dcd31363f63706e0fe8637543c5b44242e43e4557245"
+licence = "MIT"
+provides = "reptyr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/reptyr-0.9.0-r0.apk"
+version = "0.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

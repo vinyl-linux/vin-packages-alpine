@@ -1,0 +1,15 @@
+checksum = "15c3a691b460665211589e0ec66791a28ed574698a8bcf2cc091136a2897a412"
+licence = "GPL-2.0-only"
+provides = "gigolo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gigolo-0.5.2-r1.apk"
+version = "0.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

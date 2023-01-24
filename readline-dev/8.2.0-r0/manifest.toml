@@ -1,0 +1,15 @@
+checksum = "e727c98d5342095c64a59cfb2366ad154c02559ff6d8e17d3dcf7f6e72f7a05c"
+licence = "GPL-2.0-or-later"
+provides = "readline-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/readline-dev-8.2.0-r0.apk"
+version = "8.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libhistory", "8.2.0-r0"], ["ncurses-dev", "6.3.0"], ["pkgconf", "1.9.4-r0"], ["readline", "8.2.0-r0"]]

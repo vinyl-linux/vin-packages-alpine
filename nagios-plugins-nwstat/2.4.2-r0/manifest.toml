@@ -1,0 +1,15 @@
+checksum = "58b0b652206b1736d990d9387ba17f9bc3b23d57a565e349ea1b0a64e21a39a8"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-nwstat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-nwstat-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

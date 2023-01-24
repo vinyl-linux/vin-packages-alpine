@@ -1,0 +1,15 @@
+checksum = "923bcf969019cf3283942cadf9b2dfa92062191934b7d13389bd3919ed4e1f84"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-mqtt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-mqtt-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"], ["mosquitto-libs", "2.0.15-r1"]]

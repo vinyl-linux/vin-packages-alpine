@@ -1,0 +1,15 @@
+checksum = "d1a9fd9341e20dd08f4b4c4e287e9ecb8a492d70f4c67f93e32c0b495940aee4"
+licence = "MIT"
+provides = "freeglut"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freeglut-3.4.0-r1.apk"
+version = "3.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["libx11", "1.8.3-r1"], ["libxi", "1.8.0-r0"], ["libxxf86vm", "1.1.5-r0"], ["musl", "1.2.3-r4"]]

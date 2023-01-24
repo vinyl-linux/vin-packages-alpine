@@ -1,0 +1,15 @@
+checksum = "898a8ca48fd2ae59ef40d5a743787f67910797ef8d5eaec5593f622e5fe8e31c"
+licence = "OLDAP-2.8"
+provides = "libldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libldap-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libsasl", "2.1.28-r3"], ["libssl3", "3.0.7-r2"]]

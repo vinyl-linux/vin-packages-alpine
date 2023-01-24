@@ -1,0 +1,15 @@
+checksum = "e5ee8eff6ac5213967b92983166841164f758dca072afebaa89ed5040693b3f8"
+licence = "BSD-3-Clause ISC"
+provides = "outils-signify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/outils-signify-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

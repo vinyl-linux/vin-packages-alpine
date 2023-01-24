@@ -1,0 +1,15 @@
+checksum = "5123a09e75d22c1781ac55359c7763f48aba3de16e53c8781565c007c36ef53d"
+licence = "lgpl_2_1"
+provides = "perl-pdf-api2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-pdf-api2-2.044-r0.apk"
+version = "2.44.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-font-ttf", "1.6.0-r1"]]

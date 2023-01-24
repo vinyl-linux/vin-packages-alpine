@@ -1,0 +1,15 @@
+checksum = "079ebcdb91b8abc2d466c83884fb141bf8bb59be2cfb8c467303461a06c375ed"
+licence = "GPL-2.0-or-later"
+provides = "poppler-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/poppler-dev-22.11.0-r0.apk"
+version = "22.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cairo-dev", "1.17.6-r3"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["poppler-glib", "22.11.0-r0"], ["poppler", "22.11.0-r0"]]

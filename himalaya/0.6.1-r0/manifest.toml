@@ -1,0 +1,15 @@
+checksum = "aa3b31c20af73ef2ed4f899863a7a257bb86c7ec79792ac0b931842cf6d5e554"
+licence = "MIT"
+provides = "himalaya"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/himalaya-0.6.1-r0.apk"
+version = "0.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "60dac17eb75523a674dcc03f8fb7a5c3f43ab7d826e71659203974452d23d2c1"
+licence = "GPL-3.0-or-later"
+provides = "weechat-python"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weechat-python-3.7.1-r0.apk"
+version = "3.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["weechat", "3.7.1-r0"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

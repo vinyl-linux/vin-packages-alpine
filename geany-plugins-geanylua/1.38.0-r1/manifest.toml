@@ -1,0 +1,15 @@
+checksum = "a9d69a87f0d6e6bb51ce7c03f2372cf72597b97cdb6a7f75f09accdc8e98fe23"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geanylua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-geanylua-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["lua5.1-libs", "5.1.5-r11"]]

@@ -1,0 +1,15 @@
+checksum = "9f7e02ccd92329133c2164138bc0a1acf0c943b4f1616dd5396462d1ccea01da"
+licence = "GPL-3.0-or-later"
+provides = "libpipeline-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpipeline-dev-1.5.7-r0.apk"
+version = "1.5.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpipeline", "1.5.7-r0"], ["pkgconf", "1.9.4-r0"]]

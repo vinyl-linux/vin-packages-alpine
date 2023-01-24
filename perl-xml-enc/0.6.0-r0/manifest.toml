@@ -1,0 +1,15 @@
+checksum = "ab5bc070dc88bc0382dd16cac7f742698a14fb99491433e0b0a1be5d02137c87"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-enc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-xml-enc-0.06-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-crypt-openssl-bignum", "0.9.0-r10"], ["perl-crypt-random", "1.54.0-r1"], ["perl-crypt-openssl-x509", "1.914.0-r2"], ["perl-cryptx", "0.77.0-r0"], ["perl-crypt-openssl-rsa", "0.33.0-r1"], ["perl-xml-libxml", "2.208.0-r0"]]

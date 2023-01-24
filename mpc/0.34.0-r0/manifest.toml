@@ -1,0 +1,15 @@
+checksum = "04261680bfcf7c08c13f3f7232d04b8586a0c0f43271216fd6078fe9ff38f478"
+licence = "GPL-2.0-or-later"
+provides = "mpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mpc-0.34-r0.apk"
+version = "0.34.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmpdclient", "2.20.0-r0"]]

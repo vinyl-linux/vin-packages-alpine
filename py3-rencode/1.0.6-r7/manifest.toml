@@ -1,0 +1,15 @@
+checksum = "50449feaf05882a444e19902ccea329e79f9c5ba13bb4f0b3e78789477323346"
+licence = "GPL-3.0-or-later"
+provides = "py3-rencode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rencode-1.0.6-r7.apk"
+version = "1.0.6-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

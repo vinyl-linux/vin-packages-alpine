@@ -1,0 +1,15 @@
+checksum = "6c3b24777ab867cd5d0f2cdf57c74f2231dbd1b79b75deb9b747e2d0cd52b1e5"
+licence = "GPL-2.0-or-later"
+provides = "gnokii-smsd-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnokii-smsd-pgsql-0.6.31-r13.apk"
+version = "0.6.31-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnokii-smsd", "0.6.31-r13"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

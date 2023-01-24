@@ -1,0 +1,15 @@
+checksum = "249fe5573a9f25960c88e478e9452e386d9e00e12ffbfb8971be11de3d7e8360"
+licence = "NGPL"
+provides = "nethack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nethack-3.6.6-r1.apk"
+version = "3.6.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "adba38ef51aa9e8481ce5cd93df2614a39a35896797f4bd05c3e92cdc30d5402"
+licence = "BSD-2-Clause"
+provides = "openh264-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openh264-dev-2.3.1-r0.apk"
+version = "2.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openh264", "2.3.1-r0"], ["pkgconf", "1.9.4-r0"]]

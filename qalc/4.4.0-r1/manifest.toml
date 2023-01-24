@@ -1,0 +1,15 @@
+checksum = "9ecab028a463016a1ce01d29811ccf03dbd933e9c9f9a205c40b0f1adf11d76e"
+licence = "GPL-2.0-or-later"
+provides = "qalc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qalc-4.4.0-r1.apk"
+version = "4.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libqalculate", "4.4.0-r1"], ["readline", "8.2.0-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "05e77d926515321c38748402835af28c7983c4aab06c0d34e8bdea1a893807ea"
+licence = "GPL-2.0-or-later"
+provides = "collectd-dbi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-dbi-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["libdbi", "0.9.0-r2"]]

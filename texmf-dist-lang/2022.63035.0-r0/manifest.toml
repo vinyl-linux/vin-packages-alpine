@@ -1,0 +1,15 @@
+checksum = "da65aea3a385e7f1d2a1cf518383b6164d5d3ae1b5862d22db98536a1158f54c"
+licence = "LPPL-1.0 LPPL-1.1 LPPL-1.2 LPPL-1.3a LPPL-1.3c GPL-2.0-only"
+provides = "texmf-dist-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texmf-dist-lang-2022.63035-r0.apk"
+version = "2022.63035.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texmf-dist", "2022.63035.0-r0"], ["texmf-dist-langchinese", "2022.63035.0-r0"], ["texmf-dist-langcyrillic", "2022.63035.0-r0"], ["texmf-dist-langextra", "2022.63035.0-r0"], ["texmf-dist-langgreek", "2022.63035.0-r0"], ["texmf-dist-langjapanese", "2022.63035.0-r0"], ["texmf-dist-langkorean", "2022.63035.0-r0"]]

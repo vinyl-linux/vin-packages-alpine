@@ -1,0 +1,15 @@
+checksum = "51acdb3943e0a50c14a96165539bf9175e7a97e05ddc8a785257171103a89ef0"
+licence = "MIT"
+provides = "weston-shell-fullscreen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weston-shell-fullscreen-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["weston", "11.0.1-r0"], ["pixman", "0.42.2-r0"], ["wayland-libs-server", "1.21.0-r1"], ["libweston", "11.0.1-r0"]]

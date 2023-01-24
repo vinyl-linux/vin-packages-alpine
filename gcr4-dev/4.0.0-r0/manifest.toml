@@ -1,0 +1,15 @@
+checksum = "d4ce1ff4655523d9e04a2d90566d1be4f1e203c0e21d860f66270efda8d9b31f"
+licence = "LGPL-2.0-or-later"
+provides = "gcr4-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcr4-dev-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcr4-base", "4.0.0-r0"], ["glib-dev", "2.74.5-r0"], ["p11-kit-dev", "0.24.1-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "a0300df9d0ab6017c4607519174102c5c6bca6e7cab46ec238078b9e67409d5a"
+licence = "BSD-3-Clause"
+provides = "openimageio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openimageio-dev-2.4.5.0-r0.apk"
+version = "2.4.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openimageio", "2.4.5.0-r0"], ["pkgconf", "1.9.4-r0"]]

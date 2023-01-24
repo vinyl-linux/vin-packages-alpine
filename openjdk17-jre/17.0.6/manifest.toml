@@ -1,0 +1,15 @@
+checksum = "439c421d35de7aa914b66300fc417ff83a47d0556b910c253aec53f71332c9bb"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk17-jre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk17-jre-17.0.6_p10-r0.apk"
+version = "17.0.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk17-jre-headless", "17.0.6"], ["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxi", "1.8.0-r0"], ["libxrender", "0.9.11-r0"], ["libxtst", "1.2.4-r0"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["giflib", "5.2.1-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["lcms2", "2.14.0-r0"], ["libpng", "1.6.38-r0"]]

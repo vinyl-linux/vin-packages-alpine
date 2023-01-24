@@ -1,0 +1,15 @@
+checksum = "96252203d962752a4490825c217c50736edc1034ee99ac0a1e866ff43477a41e"
+licence = "GPL-3.0-only"
+provides = "qrupdate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qrupdate-1.1.5-r0.apk"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgfortran", "12.2.1"], ["openblas", "0.3.21-r0"]]

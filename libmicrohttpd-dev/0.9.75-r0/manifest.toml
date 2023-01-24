@@ -1,0 +1,15 @@
+checksum = "cb3f475c457ccd6f030c1415e4df28e6da2f91135dd676308756e68ded611f31"
+licence = "LGPL-2.1-or-later"
+provides = "libmicrohttpd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmicrohttpd-dev-0.9.75-r0.apk"
+version = "0.9.75-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmicrohttpd", "0.9.75-r0"], ["gnutls-dev", "3.7.8-r2"], ["pkgconf", "1.9.4-r0"]]

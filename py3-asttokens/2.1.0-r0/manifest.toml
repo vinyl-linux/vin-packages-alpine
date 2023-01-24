@@ -1,0 +1,15 @@
+checksum = "554b7646aa8097f2bcd77573a5f5a8c165def8f4f66b8c33a7970cc0a4c20e13"
+licence = "Apache-2.0"
+provides = "py3-asttokens"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-asttokens-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

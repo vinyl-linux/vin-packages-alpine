@@ -1,0 +1,15 @@
+checksum = "1ca075400dd5321f8108e69050f98ab10e0d62000f8a92e6629ef66c8c9bff57"
+licence = "GPL-2.0-or-later"
+provides = "alsaconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alsaconf-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-utils", "1.2.8-r0"], ["bash", "5.2.15-r0"]]

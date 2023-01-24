@@ -1,0 +1,15 @@
+checksum = "7de530835a68dfb75b1c5f8f8c712622587f3dd4a58f8d06f9a4254d8775c054"
+licence = "Public-Domain"
+provides = "althttpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/althttpd-202209261657-r0.apk"
+version = "202209261657.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

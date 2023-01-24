@@ -1,0 +1,15 @@
+checksum = "39815ed4efc77437fafbcbb3cf6af1531520df30ad49544afc50045b8083096c"
+licence = "custom"
+provides = "nmap-nping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nmap-nping-7.93-r0.apk"
+version = "7.93.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libpcap", "1.10.1-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

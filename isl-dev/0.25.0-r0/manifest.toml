@@ -1,0 +1,15 @@
+checksum = "923f8cb8b7b6f6446e1aa7cea67768f5c76f4d552f28c4b685cdf410da9c48d0"
+licence = "MIT"
+provides = "isl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/isl-dev-0.25-r0.apk"
+version = "0.25.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gmp-dev", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["pkgconf", "1.9.4-r0"]]

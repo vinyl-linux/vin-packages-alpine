@@ -1,0 +1,15 @@
+checksum = "90b41d023cf6c71f16561f6fb569dbcf8f27c73f3b7f327eb54e236a87e84aee"
+licence = "GPL-2.0-or-later"
+provides = "zim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zim-0.75.1-r0.apk"
+version = "0.75.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"], ["py3-xdg", "0.28.0-r0"], ["xdg-utils", "1.1.3-r4"], ["gtk+3.0", "3.24.36-r0"]]

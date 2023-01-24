@@ -1,0 +1,15 @@
+checksum = "2353098621d1704642158a163839546bae3d088f2c44fb3abc5055787524d134"
+licence = "Apache-2.0"
+provides = "mxml-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mxml-dev-3.3.1-r0.apk"
+version = "3.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mxml", "3.3.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "238c2c895863ae5f2140d8bea6990a62cc7dd67781ed8fa123606ff0d316f177"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-openssl-x509"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-crypt-openssl-x509-1.914-r2.apk"
+version = "1.914.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-convert-asn1", "0.33.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

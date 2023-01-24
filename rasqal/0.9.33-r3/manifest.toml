@@ -1,0 +1,15 @@
+checksum = "7191c5187fcf544a16d0b3ae03be3f8b4a458e36415812e6fc95baffcf463c69"
+licence = "LGPL-2.1-or-later"
+provides = "rasqal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rasqal-0.9.33-r3.apk"
+version = "0.9.33-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["raptor2", "2.0.15-r5"]]

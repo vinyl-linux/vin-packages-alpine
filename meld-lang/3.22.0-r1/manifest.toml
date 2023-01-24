@@ -1,0 +1,15 @@
+checksum = "28214e7d96c23649f34f9105b09b6ebc0ca3bc4bcd9121f22caa1ce2d9429b75"
+licence = "GPL-2.0-or-later"
+provides = "meld-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/meld-lang-3.22.0-r1.apk"
+version = "3.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dconf", "0.40.0-r2"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["gtksourceview4", "4.8.4-r0"], ["py3-cairo", "1.21.0-r1"], ["py3-gobject3", "3.42.2-r0"], ["python3", "3.10.9-r1"]]

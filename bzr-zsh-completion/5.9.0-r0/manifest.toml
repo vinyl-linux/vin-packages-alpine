@@ -1,0 +1,15 @@
+checksum = "e677a6c1e6684446e9e17e15b86ca0068921c12dba298bd2968786d91238db0d"
+licence = "custom"
+provides = "bzr-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bzr-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

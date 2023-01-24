@@ -1,0 +1,15 @@
+checksum = "796a59bde290de6d5e51ccfdabf5ea3a0a45712f60b274eb6b06a9be3b49509c"
+licence = "LGPL-2.1-only"
+provides = "threadweaver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/threadweaver-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["threadweaver", "5.100.0-r0"]]

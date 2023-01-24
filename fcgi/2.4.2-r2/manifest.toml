@@ -1,0 +1,15 @@
+checksum = "9096dc983134a3fdba5741fc342ba127fafa850c0dffc6152ded1b693afb6de7"
+licence = "custom"
+provides = "fcgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fcgi-2.4.2-r2.apk"
+version = "2.4.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "0b05d3aaafa18ccf4ee3f4e7cb68e4e508bbd4cca7bee15239e0d6d1578ef2ce"
+licence = "LGPL-2.1-or-later"
+provides = "libestr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libestr-0.1.11-r2.apk"
+version = "0.1.11-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

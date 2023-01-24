@@ -1,0 +1,15 @@
+checksum = "8d758f25ae4c5e8e370f3c33f666fcda1f4c6a44c41fb9e0ecb8d0add8f80d2b"
+licence = "GPL-2.0-or-later"
+provides = "flashrom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/flashrom-1.2-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dmidecode", "3.4.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["pciutils-libs", "3.9.0-r0"], ["libusb", "1.0.26-r0"]]

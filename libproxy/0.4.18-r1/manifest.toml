@@ -1,0 +1,15 @@
+checksum = "178e5d59dec16fa74bdcfadfa9223ca633ce8dd36a24183a87a8e9329d2c0ba0"
+licence = "LGPL-2.0-or-later"
+provides = "libproxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libproxy-0.4.18-r1.apk"
+version = "0.4.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

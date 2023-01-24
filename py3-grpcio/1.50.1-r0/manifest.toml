@@ -1,0 +1,15 @@
+checksum = "06027e69fd39173cc0b7d2262fac772a5e50cbb5829be3c36c68e1d4f21ab715"
+licence = "Apache-2.0 AND BSD-3-Clause AND MIT"
+provides = "py3-grpcio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-grpcio-1.50.1-r0.apk"
+version = "1.50.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-six", "1.16.0-r3"], ["abseil-cpp", "20220623.1.0-r1"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libcrypto3", "3.0.7-r2"], ["re2", "2022.6.1-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

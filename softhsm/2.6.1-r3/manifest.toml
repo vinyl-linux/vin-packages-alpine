@@ -1,0 +1,15 @@
+checksum = "9f570c79aee238eec4fecfc6773cfb0e8516cef6cf3ac9ba0faeb61581b13c16"
+licence = "BSD-2-Clause"
+provides = "softhsm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/softhsm-2.6.1-r3.apk"
+version = "2.6.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sqlite", "3.40.1-r0"], ["botan-libs", "2.19.3-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"]]

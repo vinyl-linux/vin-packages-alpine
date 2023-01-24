@@ -1,0 +1,15 @@
+checksum = "83494558cfce53665afadeb2c1b3d0603e98c102878e33eab580f8238045c714"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "sysfsutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sysfsutils-dev-2.1.1-r1.apk"
+version = "2.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["sysfsutils", "2.1.1-r1"]]

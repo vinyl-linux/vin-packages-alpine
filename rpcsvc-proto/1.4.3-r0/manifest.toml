@@ -1,0 +1,15 @@
+checksum = "ca235d5bc84868a976b5037cfd4e6ab688797e9fe9a2f11ec4ed158691d36364"
+licence = "BSD-3-Clause"
+provides = "rpcsvc-proto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rpcsvc-proto-1.4.3-r0.apk"
+version = "1.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

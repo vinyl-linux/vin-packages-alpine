@@ -1,0 +1,15 @@
+checksum = "843677be814cefd93726988f4684b508471f8cbc09c83dbb37511d6ad108f0c7"
+licence = "LGPL-3.0-only"
+provides = "py3-autocommand"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-autocommand-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

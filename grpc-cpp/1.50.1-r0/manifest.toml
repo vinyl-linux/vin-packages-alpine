@@ -1,0 +1,15 @@
+checksum = "7100e0c6489182737a44399633b9a33c5889cb05d61ac5ee2238f6d2c9c8756d"
+licence = "Apache-2.0 AND BSD-3-Clause AND MIT"
+provides = "grpc-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grpc-cpp-1.50.1-r0.apk"
+version = "1.50.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grpc", "1.50.1-r0"], ["abseil-cpp", "20220623.1.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libprotobuf", "3.21.9-r0"], ["libprotoc", "3.21.9-r0"], ["libstdc++", "12.2.1"]]

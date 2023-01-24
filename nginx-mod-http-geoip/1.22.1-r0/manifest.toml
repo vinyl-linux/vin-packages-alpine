@@ -1,0 +1,15 @@
+checksum = "619e05419f668b37a921e2906466686a62a1dffdfe87c198ad09a9538bfe6fd7"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-geoip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-geoip-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["geoip", "1.6.12-r3"], ["musl", "1.2.3-r4"]]

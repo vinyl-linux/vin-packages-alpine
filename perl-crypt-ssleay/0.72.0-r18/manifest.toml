@@ -1,0 +1,15 @@
+checksum = "40ca7c71d9bf7ffe9afcbf93de5510a50fc57b4d3cb92c41c2198b2b9737d883"
+licence = "GPL PerlArtistic"
+provides = "perl-crypt-ssleay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-crypt-ssleay-0.72-r18.apk"
+version = "0.72.0-r18"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-path-class", "0.37.0-r2"], ["perl-try-tiny", "0.31.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

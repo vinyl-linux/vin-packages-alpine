@@ -1,0 +1,15 @@
+checksum = "57818262960169ba2890ba077e7d892d01c906db7d13468fd1def0ac68db9544"
+licence = "MIT"
+provides = "py3-plyer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-plyer-2.0.0-r2.apk"
+version = "2.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

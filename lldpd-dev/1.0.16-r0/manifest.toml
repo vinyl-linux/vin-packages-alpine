@@ -1,0 +1,15 @@
+checksum = "78c0b455737662668e21ce57935b3f68433909f108e2a3abdf6e16e836afffb5"
+licence = "ISC"
+provides = "lldpd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lldpd-dev-1.0.16-r0.apk"
+version = "1.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lldpd", "1.0.16-r0"], ["pkgconf", "1.9.4-r0"]]

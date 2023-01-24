@@ -1,0 +1,15 @@
+checksum = "22043e1c806bf951c5d536ba8c56e59bdbd82ea125d37f7d48911384bc640ae3"
+licence = "LGPL-2.1-or-later"
+provides = "libdc1394-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdc1394-dev-2.2.6-r1.apk"
+version = "2.2.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libusb-dev", "1.0.26-r0"], ["libraw1394-dev", "2.1.2-r3"], ["libdc1394", "2.2.6-r1"], ["pkgconf", "1.9.4-r0"]]

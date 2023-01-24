@@ -1,0 +1,15 @@
+checksum = "48308c77cc124adf677ef7114e84a5eff2bedf9756a74e9210ef24d895bf4db8"
+licence = "GPL-3.0-only"
+provides = "wlcs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wlcs-1.4.0-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmock", "1.12.1-r0"], ["gtest", "1.12.1-r0"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"]]

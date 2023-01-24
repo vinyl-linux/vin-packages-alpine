@@ -1,0 +1,15 @@
+checksum = "97f3660e7ef4a0c126c667fe74745ff176b334f2ba5d346dc4448ebd97de0188"
+licence = "LGPL-2.0-or-later"
+provides = "cppunit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cppunit-dev-1.15.1-r1.apk"
+version = "1.15.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cppunit", "1.15.1-r1"], ["pkgconf", "1.9.4-r0"]]

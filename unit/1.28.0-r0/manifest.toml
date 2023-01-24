@@ -1,0 +1,15 @@
+checksum = "666602663cca030edd282a8b2f8873f21f7356e97522c412eaa80a605fd23f60"
+licence = "Apache-2.0"
+provides = "unit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unit-1.28.0-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["pcre2", "10.42.0-r0"], ["libssl3", "3.0.7-r2"]]

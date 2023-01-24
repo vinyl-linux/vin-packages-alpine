@@ -1,0 +1,15 @@
+checksum = "7c231b2c4e76b4458a28a827df4587b4e7f954609d1e6defe6212e883139bf4b"
+licence = "LGPL-2.1-or-later"
+provides = "libzeitgeist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzeitgeist-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["sqlite-libs", "3.40.1-r0"]]

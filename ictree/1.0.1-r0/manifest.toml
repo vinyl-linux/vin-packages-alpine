@@ -1,0 +1,15 @@
+checksum = "c225172033dd6f9aaeb74514a03f760923d6e0487ce3c18ed7ad1795c3085a14"
+licence = "GPL-3.0-or-later AND MIT"
+provides = "ictree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ictree-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

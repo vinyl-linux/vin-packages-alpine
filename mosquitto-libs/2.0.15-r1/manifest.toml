@@ -1,0 +1,15 @@
+checksum = "f381b7e013bc07af50da0b61df97994cc5a78150e9d8abaf347ff5206f5f5b4c"
+licence = "EPL-1.0"
+provides = "mosquitto-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mosquitto-libs-2.0.15-r1.apk"
+version = "2.0.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

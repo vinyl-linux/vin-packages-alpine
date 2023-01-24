@@ -1,0 +1,15 @@
+checksum = "30e7fd39124093657ea9c3bfed2f20cfc3a1ba3fc3e4f4164feedf7f7251b862"
+licence = "GPL-2.0-or-later"
+provides = "plymouth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-22.02.122-r0.apk"
+version = "22.2.122-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["libpng", "1.6.38-r0"], ["eudev-libs", "3.2.11-r4"]]

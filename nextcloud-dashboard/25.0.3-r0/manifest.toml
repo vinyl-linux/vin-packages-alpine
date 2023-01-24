@@ -1,0 +1,15 @@
+checksum = "992c0570b112f1e5566c0004512b0a8f470c25b68d742b451768a942cddaf462"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-dashboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-dashboard-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

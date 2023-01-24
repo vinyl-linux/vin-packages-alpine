@@ -1,0 +1,15 @@
+checksum = "4c14aacf098d0b8961398559d30a6de2bd65bcd8fab929be8ed670fb7d3eb937"
+licence = "Apache-2.0"
+provides = "py3-clang15"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-clang15-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clang15-libs", "15.0.7-r0"], ["python3", "3.10.9-r1"]]

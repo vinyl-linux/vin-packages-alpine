@@ -1,0 +1,15 @@
+checksum = "634a23faab736148b99f9c6444b2b8b68ece1604d82c3d4727a9e42b43fba5c2"
+licence = "BSD-3-Clause"
+provides = "py3-louvain"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-louvain-0.16-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-networkx", "2.8.8-r0"], ["py3-numpy", "1.23.4-r0"]]

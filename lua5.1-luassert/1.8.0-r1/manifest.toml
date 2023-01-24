@@ -1,0 +1,15 @@
+checksum = "1b9094291b9f5dd7e30d562cdbc0f5a464573485ab7186e8b6c9ada0dc74621b"
+licence = "MIT"
+provides = "lua5.1-luassert"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.1-luassert-1.8.0-r1.apk"
+version = "1.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["lua5.1-say", "1.3.0-r2"]]

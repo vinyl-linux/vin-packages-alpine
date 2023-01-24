@@ -1,0 +1,15 @@
+checksum = "6ab059f32a362c626513ddcce672f861e854e1f849e41c2f14d4a43f38ba8065"
+licence = "GPL-2.0-or-later"
+provides = "galculator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/galculator-2.1.4-r3.apk"
+version = "2.1.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"]]

@@ -1,0 +1,15 @@
+checksum = "872c73ea8e3351e93b41fa23acf85606cb66187f926e97c94a8f7b719ff6ecfb"
+licence = "GPL-2.0-or-later"
+provides = "wipefs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wipefs-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libsmartcols", "2.38.1-r1"]]

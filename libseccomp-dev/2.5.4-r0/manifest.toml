@@ -1,0 +1,15 @@
+checksum = "420db3b05608de169164364fe36ecc2531bc46a32510fdab68202ecb7a9fde0a"
+licence = "LGPL-2.1-or-later"
+provides = "libseccomp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libseccomp-dev-2.5.4-r0.apk"
+version = "2.5.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libseccomp", "2.5.4-r0"], ["pkgconf", "1.9.4-r0"]]

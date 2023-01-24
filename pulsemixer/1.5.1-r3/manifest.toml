@@ -1,0 +1,15 @@
+checksum = "5f0234ff40b2f602e29cc2602e39aa4deb09de474e767bf14f462535c7181009"
+licence = "MIT"
+provides = "pulsemixer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulsemixer-1.5.1-r3.apk"
+version = "1.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["libpulse", "16.1.0-r6"]]

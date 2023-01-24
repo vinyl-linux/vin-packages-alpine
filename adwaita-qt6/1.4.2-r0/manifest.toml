@@ -1,0 +1,15 @@
+checksum = "6d60ee346951bb0a705b47885122fe864c56584578026ca9740e36f9cac0b237"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "adwaita-qt6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/adwaita-qt6-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

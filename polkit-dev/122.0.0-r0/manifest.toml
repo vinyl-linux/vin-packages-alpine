@@ -1,0 +1,15 @@
+checksum = "5b9b0fd77c4191ce6de2388b024d51b4c207cbd6073c6099eb4a3413402af24c"
+licence = "GPL-2.0-or-later"
+provides = "polkit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/polkit-dev-122-r0.apk"
+version = "122.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-common", "122.0.0-r0"], ["polkit-libs", "122.0.0-r0"], ["dbus-glib-dev", "0.112.0-r1"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ec0ff5040a076d4d52cef208d39a851c4801b799e2dccba96629072dd7bf1de0"
+licence = "BSD-2-Clause AND GPL-2.0-or-later"
+provides = "sg3_utils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sg3_utils-dev-1.47-r0.apk"
+version = "1.47.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sg3_utils", "1.47.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6c520cc6d0e3b4d918236dfce49ff781db9b9ae7632b6caafb40b386b21bf569"
+licence = "GPL-2.0-only"
+provides = "mercury"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mercury-22.01.3-r0.apk"
+version = "22.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mercury-libs", "22.1.3-r0"], ["musl", "1.2.3-r4"]]

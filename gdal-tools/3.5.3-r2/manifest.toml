@@ -1,0 +1,15 @@
+checksum = "22edf002198ac3c40e8367b68a89fa567a7f23033033b5428576c8f61318e628"
+licence = "MIT"
+provides = "gdal-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gdal-tools-3.5.3-r2.apk"
+version = "3.5.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gdal", "3.5.3-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gdal", "3.5.3-r2"], ["libstdc++", "12.2.1"]]

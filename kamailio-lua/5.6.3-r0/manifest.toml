@@ -1,0 +1,15 @@
+checksum = "9b3e23399e30587e30529511c9535559f70f12dfe5d678b33aa88a06e10c97ff"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-lua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-lua-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["lua5.1-libs", "5.1.5-r11"]]

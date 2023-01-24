@@ -1,0 +1,15 @@
+checksum = "95af277635f6bc80cbb073d2d3264ace98b2070b3a8aa134920de7be8f1c96c4"
+licence = "MIT"
+provides = "py3-ruamel.yaml.clib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ruamel.yaml.clib-0.2.7-r0.apk"
+version = "0.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

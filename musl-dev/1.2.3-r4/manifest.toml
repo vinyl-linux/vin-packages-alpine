@@ -1,0 +1,15 @@
+checksum = "47857403c1c483a116dcb45853d39f0d928b23d321a2b7a5b23d39f805374505"
+licence = "MIT"
+provides = "musl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/musl-dev-1.2.3-r4.apk"
+version = "1.2.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

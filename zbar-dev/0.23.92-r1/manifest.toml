@@ -1,0 +1,15 @@
+checksum = "70db2058421831eb6f60398a82f362c869f6bf32363a930364dc2143a547f5d1"
+licence = "LGPL-2.0-or-later"
+provides = "zbar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zbar-dev-0.23.92-r1.apk"
+version = "0.23.92-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libzbar", "0.23.92-r1"], ["libzbargtk", "0.23.92-r1"], ["libzbarqt", "0.23.92-r1"], ["qt5-qtbase-dev", "5.15.6"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

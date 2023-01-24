@@ -1,0 +1,15 @@
+checksum = "6ca53fb83055b81dd6d041ea25cf79ab704b9c5b3aa4c144f706593b8f8937d4"
+licence = "GPL-2.0-only"
+provides = "nagios-web"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-web-4.4.10-r0.apk"
+version = "4.4.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

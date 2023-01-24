@@ -1,0 +1,15 @@
+checksum = "f54d7200cb8be1467413b415d6b9495fa6a1268bbc759525c6be75213fe6d542"
+licence = "LGPL-2.1-or-later"
+provides = "gom-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gom-dev-0.4-r3.apk"
+version = "0.4.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gom", "0.4.0-r3"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

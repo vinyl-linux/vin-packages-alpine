@@ -1,0 +1,15 @@
+checksum = "ed602af35eb65dca851c23ebf3255d1b18a87721f7687dc4ff121616a45e3023"
+licence = "GPL-2.0-or-later"
+provides = "rrdtool-cached"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdtool-cached-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["librrd", "1.7.2-r6"]]

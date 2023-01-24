@@ -1,0 +1,15 @@
+checksum = "b5b2db05ea578ea155221adab97326057304e868b350bc862f1332115052f77a"
+licence = "BSD-2-Clause"
+provides = "editorconfig-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/editorconfig-dev-0.12.5-r1.apk"
+version = "0.12.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libeditorconfig", "0.12.5-r1"], ["pkgconf", "1.9.4-r0"]]

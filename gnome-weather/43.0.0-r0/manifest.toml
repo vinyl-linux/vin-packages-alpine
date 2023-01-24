@@ -1,0 +1,15 @@
+checksum = "9002deb6405c7b0fadcff0d1c38855ee5ae0171a5c99825b896500dd2b22c897"
+licence = "GPL-2.0-only"
+provides = "gnome-weather"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-weather-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["geoclue", "2.6.0-r0"], ["gjs", "1.74.1-r0"], ["gobject-introspection", "1.74.0-r1"], ["gtk4.0", "4.8.3-r0"], ["libadwaita", "1.2.1-r0"], ["libgweather4", "4.2.0-r0"]]

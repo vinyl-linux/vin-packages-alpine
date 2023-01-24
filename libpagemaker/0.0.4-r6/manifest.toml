@@ -1,0 +1,15 @@
+checksum = "22bcc064589458fc4a8bc951ad60d2c95bbd3cf0785e13ca1e620023beeee002"
+licence = "MPL-2.0"
+provides = "libpagemaker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpagemaker-0.0.4-r6.apk"
+version = "0.0.4-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"]]

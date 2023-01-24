@@ -1,0 +1,15 @@
+checksum = "07f880d9d748993ab98f08a4b31db3b1c963d12e90f28ea8130a19558d34f0bd"
+licence = "GPL-2.0-only"
+provides = "connman-iptables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-iptables-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"], ["iptables", "1.8.8-r2"]]

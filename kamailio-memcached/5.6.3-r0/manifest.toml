@@ -1,0 +1,15 @@
+checksum = "25eee7aeaf0b5e5e888f76b58e9bdcaa0a25c211999e8bab0caf2404d03ab67d"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-memcached"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-memcached-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libmemcached-libs", "1.0.18-r5"]]

@@ -1,0 +1,15 @@
+checksum = "f940b1f2c8c5b4917f087f7a79366a75d62a03a64d662e4c64ca2ee44cd2b2e3"
+licence = "GPL-3.0"
+provides = "cvechecker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cvechecker-4.0-r2.apk"
+version = "4.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gawk", "5.1.1-r1"], ["wget", "1.21.3-r2"], ["libxslt", "1.1.37-r0"], ["jq", "1.6.0-r2"], ["yash-binsh", "2.53.0-r2"], ["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["libconfig", "1.7.3-r0"], ["mariadb-connector-c", "3.3.3-r0"], ["sqlite-libs", "3.40.1-r0"]]

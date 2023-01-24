@@ -1,0 +1,15 @@
+checksum = "651a3736c54a725290d7be0d50e69f227beceb9c0e40539aaeaa2732ef4b36ef"
+licence = "GPL-3.0-or-later"
+provides = "macchanger"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/macchanger-1.7.0-r2.apk"
+version = "1.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

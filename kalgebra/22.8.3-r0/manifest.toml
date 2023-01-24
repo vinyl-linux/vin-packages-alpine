@@ -1,0 +1,15 @@
+checksum = "db5543110c283e8f14b0c7dadb513a19065873d2356b19b858b4934141c7bd1f"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kalgebra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kalgebra-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["analitza", "22.8.3-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"], ["libstdc++", "12.2.1"]]

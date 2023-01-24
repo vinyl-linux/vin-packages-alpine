@@ -1,0 +1,15 @@
+checksum = "c6fbb903b75d54f0ca44efc237f4f71b6fd9478b517c45839c825a87f7d2d968"
+licence = "GPL-3.0-or-later"
+provides = "coreinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coreinfo-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libmediainfo", "22.9.0-r0"], ["libstdc++", "12.2.1"], ["libzen", "0.4.39-r0"]]

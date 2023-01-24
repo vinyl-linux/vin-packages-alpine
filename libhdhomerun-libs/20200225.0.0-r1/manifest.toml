@@ -1,0 +1,15 @@
+checksum = "9fac3767b0d2c2b79bb5475b955aa0112ebde79f5414a391ea553f74c5d2261f"
+licence = "LGPL-2.1-or-later"
+provides = "libhdhomerun-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libhdhomerun-libs-20200225-r1.apk"
+version = "20200225.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

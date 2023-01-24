@@ -1,0 +1,15 @@
+checksum = "80fcc810c3b8912679bf696c2ffd7f78504df128258deb262a9e883500331698"
+licence = "MIT"
+provides = "connman-resolvconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-resolvconf-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openresolv", "3.12.0-r1"], ["connman", "1.41.0-r1"], ["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libgcc", "12.2.1"]]

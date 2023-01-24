@@ -1,0 +1,15 @@
+checksum = "e0c7d0d25c85cccb0d9182ca03f1ba47e9177ab27d0a1aa8fee11a2a5c9d94ed"
+licence = "OFL-1.1"
+provides = "ttf-liberation"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ttf-liberation-2.1.5-r2.apk"
+version = "2.1.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-liberation", "2.1.5-r2"], ["font-liberation-sans-narrow", "1.7.6-r1"]]

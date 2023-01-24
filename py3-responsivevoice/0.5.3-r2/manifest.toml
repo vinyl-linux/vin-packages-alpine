@@ -1,0 +1,15 @@
+checksum = "e0aa0e9d9d37b6b30ba865b321dbceafcb86110da9883c30ba2451b6b77fd484"
+licence = "Apache-2.0"
+provides = "py3-responsivevoice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-responsivevoice-0.5.3-r2.apk"
+version = "0.5.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.28.1-r1"], ["python3", "3.10.9-r1"]]

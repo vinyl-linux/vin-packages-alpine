@@ -1,0 +1,15 @@
+checksum = "69652d7a4b8cf89b667e94631914e7061d3de09bf37b5f8d269c886482f1d7cd"
+licence = "MIT"
+provides = "tiny-cloud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["e2fsprogs-extra", "1.46.5-r4"], ["partx", "2.38.1-r1"], ["sfdisk", "2.38.1-r1"]]

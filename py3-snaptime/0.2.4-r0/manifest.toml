@@ -1,0 +1,15 @@
+checksum = "e6331bdaae1a15ef04699828c0abdd1e4264a4dc81e870008920487e0495d71c"
+licence = "MIT"
+provides = "py3-snaptime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-snaptime-0.2.4-r0.apk"
+version = "0.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-tz", "2022.6.0-r0"], ["py3-dateutil", "2.8.2-r1"]]

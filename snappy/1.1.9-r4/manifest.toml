@@ -1,0 +1,15 @@
+checksum = "502e8bc7aad1a80555aabd0b22c6660e74125250d052c62af4ba63e0bb5d843e"
+licence = "BSD-3-Clause"
+provides = "snappy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/snappy-1.1.9-r4.apk"
+version = "1.1.9-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

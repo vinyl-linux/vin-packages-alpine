@@ -1,0 +1,15 @@
+checksum = "c637fc6a7de7e9d0286f8f4ecb576710c5d4788d22443186c6bede48a521f0f7"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-spellcheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-spellcheck-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["enchant2", "2.3.3-r1"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"]]

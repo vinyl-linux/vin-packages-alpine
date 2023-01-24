@@ -1,0 +1,15 @@
+checksum = "22897726d58a472a52b6c56c073d9b64a0c36558d35058d0f83fe71cbecf0523"
+licence = "BSD-3-Clause"
+provides = "ghc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ghc-9.0.2-r1.apk"
+version = "9.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gmp-dev", "6.2.1-r2"], ["libffi-dev", "3.4.4-r0"], ["perl", "5.36.0-r0"], ["gcc", "12.2.1"], ["llvm14", "14.0.6-r7"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["ncurses-libs", "6.3.0"]]

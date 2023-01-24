@@ -1,0 +1,15 @@
+checksum = "61b21fa607f1479acdc185c5aad1b86ff99e47fe1946cfb5867c0d403f7c39c3"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-multimedia"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kde-applications-multimedia-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["audiocd-kio", "22.8.3-r0"], ["dragon", "22.8.3-r0"], ["juk", "22.8.3-r0"], ["kamoso", "22.8.3-r0"], ["kdenlive", "22.8.3-r0"], ["kmix", "22.8.3-r0"], ["kwave", "22.8.3-r0"]]

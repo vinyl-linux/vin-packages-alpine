@@ -1,0 +1,15 @@
+checksum = "287e5d3cd30b47656bb693bbf041c4eec7064f3f75447930265f2ea9b5e93db9"
+licence = "ISC"
+provides = "ifupdown-ng-wireguard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ifupdown-ng-wireguard-0.12.1-r1.apk"
+version = "0.12.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wireguard-tools-wg", "1.0.20210914-r1"]]

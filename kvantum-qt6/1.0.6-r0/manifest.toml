@@ -1,0 +1,15 @@
+checksum = "69f6b9caa6f06d251b5d798ff5a923b29cdb86ea03e70ec0452190545febbf81"
+licence = "GPL-2.0-or-later"
+provides = "kvantum-qt6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kvantum-qt6-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kvantum", "1.0.6-r0"], ["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["qt6-qtsvg", "6.4.2-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

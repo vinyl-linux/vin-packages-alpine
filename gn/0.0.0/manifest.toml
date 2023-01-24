@@ -1,0 +1,15 @@
+checksum = "87400048d3134c1f885c8bed0572ca164f9f84620ff5295f861a3e537e6ce5fd"
+licence = "BSD-3-Clause"
+provides = "gn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gn-0_git20221024-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samurai", "1.2.0-r2"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

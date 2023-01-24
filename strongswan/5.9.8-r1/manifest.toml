@@ -1,0 +1,15 @@
+checksum = "bd6b99e7cc49fd921398c87ccaa06cbf6ca40f68c9d4b28d8ee9e4f8e2be46c3"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+provides = "strongswan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/strongswan-5.9.8-r1.apk"
+version = "5.9.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["gmp", "6.2.1-r2"], ["sqlite-libs", "3.40.1-r0"]]

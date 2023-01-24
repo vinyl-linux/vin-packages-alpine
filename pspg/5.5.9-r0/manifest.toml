@@ -1,0 +1,15 @@
+checksum = "27c70db3ac55539dc55182ca04e9d0719454e0e80076d49a8fbb07d35eebb117"
+licence = "BSD-2-Clause"
+provides = "pspg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pspg-5.5.9-r0.apk"
+version = "5.5.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["libpq", "15.1.0-r0"], ["readline", "8.2.0-r0"]]

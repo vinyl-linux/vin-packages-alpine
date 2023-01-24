@@ -1,0 +1,15 @@
+checksum = "8039e7cd056fec512a0fafda1e56bb3ff51628aa82ec6f0e7e50ea0441a73703"
+licence = "BSD-3-Clause"
+provides = "lapack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lapack-3.11-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["blas", "3.11.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgfortran", "12.2.1"]]

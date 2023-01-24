@@ -1,0 +1,15 @@
+checksum = "d17aa85b6ae33295f029a910163bac297bceb34b6db4b65421bedc33935edac3"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_sql_postgres"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proftpd-mod_sql_postgres-1.3.7f-r1.apk"
+version = "1.3.7-f-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-f-r1"], ["proftpd-mod_sql", "1.3.7-f-r1"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2cedc46807bc0ac1308ab48e0bed9667f097007d4ffd15b6584ebf7b851566c5"
+licence = "GPL-2.0-or-later"
+provides = "vdr-dvbapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vdr-dvbapi-2.6.1-r4.apk"
+version = "2.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.6.1-r4"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

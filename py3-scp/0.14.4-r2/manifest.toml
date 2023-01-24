@@ -1,0 +1,15 @@
+checksum = "9c6491deef0678e39b3b71a0af346bd552a20ce71bb97361c68e935720115395"
+licence = "LGPL-2.1-or-later"
+provides = "py3-scp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-scp-0.14.4-r2.apk"
+version = "0.14.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-paramiko", "2.12.0-r0"], ["py3-cffi", "1.15.1-r0"], ["py3-idna", "3.4.0-r2"], ["py3-cparser", "2.21.0-r0"]]

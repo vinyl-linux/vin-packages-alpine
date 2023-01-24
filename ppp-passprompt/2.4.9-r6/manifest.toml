@@ -1,0 +1,15 @@
+checksum = "086e3896bdf9903af532a4a590a9b38af2fbcb270f37413c6b2720feea0c738b"
+licence = "GPL-2.0-or-later"
+provides = "ppp-passprompt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-passprompt-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r6"], ["musl", "1.2.3-r4"]]

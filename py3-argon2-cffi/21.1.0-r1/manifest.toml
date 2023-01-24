@@ -1,0 +1,15 @@
+checksum = "0a1c7b32efe1adbae3b45281fca062fc19747c851b1c57693c76ac9079009b5e"
+licence = "MIT"
+provides = "py3-argon2-cffi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-argon2-cffi-21.1.0-r1.apk"
+version = "21.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cffi", "1.15.1-r0"], ["argon2-libs", "20190702.0.0-r2"], ["musl", "1.2.3-r4"]]

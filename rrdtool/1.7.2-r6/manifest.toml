@@ -1,0 +1,15 @@
+checksum = "9a2d3089b3824c178b82ed0d9b81663f063a087dace64e9fd37de30d6aeefa0a"
+licence = "GPL-2.0-or-later"
+provides = "rrdtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdtool-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-sony-misc", "1.0.3-r3"], ["musl", "1.2.3-r4"], ["librrd", "1.7.2-r6"]]

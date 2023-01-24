@@ -1,0 +1,15 @@
+checksum = "bbd0c815316a0ab6645981b725221307f60a13d49a90144e84d644b4637909b8"
+licence = "BSD-3-Clause AND MIT"
+provides = "xmlrpc-c-abyss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xmlrpc-c-abyss-1.51.08-r1.apk"
+version = "1.51.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["xmlrpc-c", "1.51.8-r1"]]

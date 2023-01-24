@@ -1,0 +1,15 @@
+checksum = "b814a7adb654b61d7fc4f2323abd2d87a5a4e184ae82692857aa1c82ee7bc8ab"
+licence = "GPL-2.0-or-later"
+provides = "tracker-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tracker-dev-3.4.2-r0.apk"
+version = "3.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libtracker", "3.4.2-r0"], ["glib-dev", "2.74.5-r0"], ["icu-dev", "72.1.0-r1"], ["json-glib-dev", "1.6.6-r1"], ["libxml2-dev", "2.10.3-r1"], ["sqlite-dev", "3.40.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bc25a7add676af41c0594eff821a402927dcf106b030c62fec4b1d2f845aae8d"
+licence = "MIT"
+provides = "py3-wordcloud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-wordcloud-1.8.2.2-r0.apk"
+version = "1.8.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-matplotlib", "3.6.2-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-pillow", "9.3.0-r0"], ["musl", "1.2.3-r4"]]

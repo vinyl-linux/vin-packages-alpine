@@ -1,0 +1,15 @@
+checksum = "c7eb5e2b41fee1ff1c4d664ca46d2e720d84500f74e8aed614df4fa87ec85330"
+licence = "LGPL-2.1-or-later"
+provides = "libshiboken2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libshiboken2-dev-5.15.6-r0.apk"
+version = "5.15.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3-dev", "3.10.9-r1"], ["libshiboken2", "5.15.6-r0"], ["pkgconf", "1.9.4-r0"]]

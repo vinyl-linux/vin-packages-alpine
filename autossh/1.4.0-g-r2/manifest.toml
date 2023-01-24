@@ -1,0 +1,15 @@
+checksum = "9217dc5cf0665c33b177e0acc434f15f038ca38cc28b5dc26a0765c248e01ce3"
+licence = "MIT"
+provides = "autossh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/autossh-1.4g-r2.apk"
+version = "1.4.0-g-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-client-default", "9.1.0"], ["musl", "1.2.3-r4"]]

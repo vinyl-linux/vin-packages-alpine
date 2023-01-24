@@ -1,0 +1,15 @@
+checksum = "51fdd004f9bc0938c3282c6ecbc46f48c697e927dacde011d069be50db8095c2"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "caja-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/caja-dev-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["caja", "1.26.1-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

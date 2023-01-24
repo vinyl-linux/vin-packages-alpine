@@ -1,0 +1,15 @@
+checksum = "cfcfc789c643f5dddc7990f1daeae00fc7c0da0e04e2eec66a4c9278580b4ba9"
+licence = "GPL-2.0-or-later"
+provides = "poppler-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/poppler-utils-22.11.0-r0.apk"
+version = "22.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["freetype", "2.12.1-r0"], ["lcms2", "2.14.0-r0"], ["poppler", "22.11.0-r0"], ["libstdc++", "12.2.1"]]

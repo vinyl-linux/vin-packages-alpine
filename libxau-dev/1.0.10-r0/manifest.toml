@@ -1,0 +1,15 @@
+checksum = "902cade16ad0394cedbaa29d160691113d78b64ae2b56fb4dd6cc47da7109de8"
+licence = "MIT"
+provides = "libxau-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxau-dev-1.0.10-r0.apk"
+version = "1.0.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxau", "1.0.10-r0"], ["xorgproto", "2022.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

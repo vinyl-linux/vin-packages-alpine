@@ -1,0 +1,15 @@
+checksum = "95590e2a0994c4bb360324ad4b9f8b7dacd91b14a85f8a850a317ed9ea54bd4f"
+licence = "MIT"
+provides = "py3-inotify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-inotify-0.9.6-r9.apk"
+version = "0.9.6-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

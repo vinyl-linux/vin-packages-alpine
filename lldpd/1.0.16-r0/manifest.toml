@@ -1,0 +1,15 @@
+checksum = "33485449473a41f8d2f239180f44d415446718deac811b8e74eabd0a2164f98d"
+licence = "ISC"
+provides = "lldpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lldpd-1.0.16-r0.apk"
+version = "1.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"], ["readline", "8.2.0-r0"], ["libxml2", "2.10.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "3da6716222e401a5e9462a7e032428f36f2d3d81544da9427c84bfb80fb04eb6"
+licence = "NCSA"
+provides = "nyancat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nyancat-1.5.2-r1.apk"
+version = "1.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

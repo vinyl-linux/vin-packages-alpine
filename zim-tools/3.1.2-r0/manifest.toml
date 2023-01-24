@@ -1,0 +1,15 @@
+checksum = "09a302b0a5c20409404549f73380ea67893beaa5e67e7a991e250a575f194932"
+licence = "GPL-3.0-or-later"
+provides = "zim-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zim-tools-3.1.2-r0.apk"
+version = "3.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["docopt", "0.6.3-r0"], ["libgcc", "12.2.1"], ["gumbo-parser", "0.10.1-r1"], ["libmagic", "5.43.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["libzim", "8.0.0-r1"]]

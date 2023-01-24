@@ -1,0 +1,15 @@
+checksum = "8eee0b79764623e4f81a982cd9e083ccb874384ed11ef06b42cd442066f37c91"
+licence = "BSD-2-Clause"
+provides = "tpm2-tss-tcti-cmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-tss-tcti-cmd-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["tpm2-tss-mu", "3.2.0-r0"]]

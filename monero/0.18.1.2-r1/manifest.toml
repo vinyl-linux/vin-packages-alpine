@@ -1,0 +1,15 @@
+checksum = "1df74cb9c34383956b2a1c75787ac213db12102886ac2ca561eb86ab5e22c947"
+licence = "BSD-3-Clause"
+provides = "monero"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/monero-0.18.1.2-r1.apk"
+version = "0.18.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-chrono", "1.80.0-r3"], ["boost1.80-filesystem", "1.80.0-r3"], ["boost1.80-program_options", "1.80.0-r3"], ["boost1.80-serialization", "1.80.0-r3"], ["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["hidapi", "0.12.0-r1"], ["miniupnpc", "2.2.3-r1"], ["readline", "8.2.0-r0"], ["libsodium", "1.0.18-r2"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["unbound-libs", "1.17.1-r0"], ["libzmq", "4.3.4-r1"]]

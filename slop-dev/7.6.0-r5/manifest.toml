@@ -1,0 +1,15 @@
+checksum = "8580bf10b1489287b914a604fca0f81689812f2884ec438e3b888ef2b23ce523"
+licence = "MIT"
+provides = "slop-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slop-dev-7.6-r5.apk"
+version = "7.6.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["slop-libs", "7.6.0-r5"]]

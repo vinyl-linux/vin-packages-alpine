@@ -1,0 +1,15 @@
+checksum = "9acbdca76997db8a7bf984eba70ccacbcffd9b94b51f4b18c5aa2613120eaf62"
+licence = "BSL-1.0"
+provides = "poco-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/poco-dev-1.12.2-r1.apk"
+version = "1.12.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["expat-dev", "2.5.0-r0"], ["libpq-dev", "15.1.0-r0"], ["mariadb-connector-c-dev", "3.3.3-r0"], ["openssl-dev", "3.0.7-r2"], ["pcre2-dev", "10.42.0-r0"], ["sqlite-dev", "3.40.1-r0"], ["unixodbc-dev", "2.3.11-r0"], ["zlib-dev", "1.2.13-r0"], ["poco", "1.12.2-r1"]]

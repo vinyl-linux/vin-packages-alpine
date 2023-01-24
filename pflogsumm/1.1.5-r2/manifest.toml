@@ -1,0 +1,15 @@
+checksum = "e9b7aee14b06b50682c76f67c9913f2cac86926ffaa1abcfc14fd372d546920b"
+licence = "GPL-2.0-or-later"
+provides = "pflogsumm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pflogsumm-1.1.5-r2.apk"
+version = "1.1.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-date-calc", "6.4.0-r2"]]

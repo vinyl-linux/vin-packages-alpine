@@ -1,0 +1,15 @@
+checksum = "800525cb4819268604ec51e107894520b667cfd04a6f5ef7bb2bc33fa152a8be"
+licence = "GPL-2.0-or-later"
+provides = "rrdtool-cgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdtool-cgi-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["librrd", "1.7.2-r6"]]

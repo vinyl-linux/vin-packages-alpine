@@ -1,0 +1,15 @@
+checksum = "5c7f05b098c11e12c03639fbf2c577cc13a683a056e800f3918dae20c9ec7a3e"
+licence = "GPL-2.0-only"
+provides = "perl-apparmor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-apparmor-3.1.2-r0.apk"
+version = "3.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libapparmor", "3.1.2-r0"], ["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "5bddd5068fef4ea8e982a59c3903ed9676ac4cbe5d1a8d5ba7d098873abb5600"
+licence = "BSD-3-Clause"
+provides = "py3-pysocks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pysocks-1.7.1-r3.apk"
+version = "1.7.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

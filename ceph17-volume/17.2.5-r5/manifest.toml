@@ -1,0 +1,15 @@
+checksum = "467f4baa3d641a08bfe739ad7102fd8e11592083df919c1d497a52fd6b35c842"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-volume"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-volume-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph17-common", "17.2.5-r5"], ["ceph17-osd-tools", "17.2.5-r5"], ["lvm2", "2.3.17-r1"], ["py3-ceph17-common", "17.2.5-r5"]]

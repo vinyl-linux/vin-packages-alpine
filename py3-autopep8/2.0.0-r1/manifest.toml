@@ -1,0 +1,15 @@
+checksum = "8fd56a256ec4e83c081d960e07f05ffa1a78f2a7f46181cdc4a248d083c8bad0"
+licence = "MIT"
+provides = "py3-autopep8"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-autopep8-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pycodestyle", "2.9.0-r0"], ["py3-tomli", "2.0.1-r1"], ["python3", "3.10.9-r1"]]

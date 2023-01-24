@@ -1,0 +1,15 @@
+checksum = "fe7f450e11a4090ccc62519fcd723407b82873a26132c9720ae23a5666bbf5b2"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "blinken"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blinken-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["kcrash", "5.100.0-r0"], ["kdbusaddons", "5.100.0-r0"], ["kguiaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["musl", "1.2.3-r4"], ["phonon", "4.11.1-r3"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "472cf15a5ad6ba60baeac79f276e2f91ad1e9255433bf023cc9f4cd545cbdea3"
+licence = "Zlib"
+provides = "bam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bam-0.5.1-r4.apk"
+version = "0.5.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

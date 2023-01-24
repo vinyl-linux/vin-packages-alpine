@@ -1,0 +1,15 @@
+checksum = "eb2ab962327b92dea60a529fea6ec73fc65951fce0ec73caabca65f0275bb344"
+licence = "BSD-3-Clause"
+provides = "py3-elsapy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-elsapy-0.5.1-r0.apk"
+version = "0.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-requests", "2.28.1-r1"]]

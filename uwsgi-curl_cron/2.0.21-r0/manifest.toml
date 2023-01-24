@@ -1,0 +1,15 @@
+checksum = "4ec34b6fcc4ee078d587d5aeb976c6fe4fbaf6539c51daca4079cf180cb0aa4e"
+licence = "custom"
+provides = "uwsgi-curl_cron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-curl_cron-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"]]

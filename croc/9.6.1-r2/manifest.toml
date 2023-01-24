@@ -1,0 +1,15 @@
+checksum = "98e35d5040e0661dcc0c8e7316f6a10a6dfd245611658d0d5af65578f116564c"
+licence = "MIT"
+provides = "croc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/croc-9.6.1-r2.apk"
+version = "9.6.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

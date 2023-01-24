@@ -1,0 +1,15 @@
+checksum = "374aab9817cf109639128bc0ea2135164c4f05be536aa7654a24c65c5cc1cd2e"
+licence = "BSD-3-Clause"
+provides = "py3-setuptools-git"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-setuptools-git-1.2-r5.apk"
+version = "1.2.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["git", "2.38.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "afe2d8614e085da73a26d133a73eae84db6803507678b884edb6ff8781f550da"
+licence = "GPL-3.0+"
+provides = "sharutils-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sharutils-lang-4.15.2-r2.apk"
+version = "4.15.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bzip2", "1.0.8-r4"], ["xz", "5.2.9-r0"]]

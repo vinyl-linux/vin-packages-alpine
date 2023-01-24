@@ -1,0 +1,15 @@
+checksum = "01bee451c9fd995719fe57fe372cb3ccd4b420fdb0af687d10ec814b579ec4b1"
+licence = "GPL-2.0"
+provides = "multitail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/multitail-6.5.2-r0.apk"
+version = "6.5.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses", "6.3.0"], ["coreutils", "9.1.0-r0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

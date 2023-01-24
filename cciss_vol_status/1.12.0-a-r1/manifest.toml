@@ -1,0 +1,15 @@
+checksum = "0d37cc81bb4a60a64ce5b06bc13e97b49da59c5fc5f6f3fa237f4b2e29365f20"
+licence = "GPL-2.0-or-later"
+provides = "cciss_vol_status"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cciss_vol_status-1.12a-r1.apk"
+version = "1.12.0-a-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "2bf2b3dc59d4a14f6fb720b25008f518e1b53b607959213e8fee002f82c4c68d"
+licence = "GPL-2.0-or-later"
+provides = "git-daemon-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-daemon-openrc-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git-daemon", "2.38.3-r1"]]

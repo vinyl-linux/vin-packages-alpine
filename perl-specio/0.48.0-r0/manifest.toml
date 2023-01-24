@@ -1,0 +1,15 @@
+checksum = "de47eac623aa8ef12e1737064d3851f2ab0046e48f639abbfabe8623e5ec19e3"
+licence = "Artistic-2.0"
+provides = "perl-specio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-specio-0.48-r0.apk"
+version = "0.48.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-sub-quote", "2.6006.0-r1"], ["perl-devel-stacktrace", "2.4.0-r3"], ["perl-role-tiny", "2.2004.0-r1"], ["perl-mro-compat", "0.15.0-r0"], ["perl-try-tiny", "0.31.0-r0"], ["perl-test-fatal", "0.16.0-r3"], ["perl-eval-closure", "0.14.0-r2"], ["perl-module-runtime", "0.16.0-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c23e74e07d4ab5773e8c49f163ecbb00105f7b3c2f3fe07b200b6010b2ef4936"
+licence = "LGPL-2.1-or-later"
+provides = "libndp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libndp-1.8-r1.apk"
+version = "1.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

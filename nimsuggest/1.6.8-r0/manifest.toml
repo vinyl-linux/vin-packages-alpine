@@ -1,0 +1,15 @@
+checksum = "5f744985412e161a11dd3b6c39499feb45d9d540356992fd7756f49d22b24206"
+licence = "MIT"
+provides = "nimsuggest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nimsuggest-1.6.8-r0.apk"
+version = "1.6.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libucontext-dev", "1.2.0-r0"], ["musl", "1.2.3-r4"]]

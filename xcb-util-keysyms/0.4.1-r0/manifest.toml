@@ -1,0 +1,15 @@
+checksum = "3eea1874d4496cb336745af914612e25db15c6d31643aebe0a54b3038b261219"
+licence = "MIT"
+provides = "xcb-util-keysyms"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcb-util-keysyms-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxcb", "1.15.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "43274193dd096067d7150f63ba7a5c8de1894be0a0bfb5503b6fe2a231e203eb"
+licence = "Apache-2.0 OR MIT"
+provides = "racket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/racket-8.7-r1.apk"
+version = "8.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["musl", "1.2.3-r4"], ["lz4-libs", "1.9.4-r1"], ["ncurses-libs", "6.3.0"], ["zlib", "1.2.13-r0"]]

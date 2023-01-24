@@ -1,0 +1,15 @@
+checksum = "f8d8fdeb48c64c0c90ac365ed34140cf8f07bcb7856615eb2f557557d65297a1"
+licence = "GPL-2.0-or-later"
+provides = "remmina-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/remmina-dev-1.4.27-r1.apk"
+version = "1.4.27-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

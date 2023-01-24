@@ -1,0 +1,15 @@
+checksum = "7df800957457a00721744b707737d1955634e28a4b29cd5f48a89edeb77f7b39"
+licence = "BSD-3-Clause"
+provides = "vtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vtk-9.2.2-r0.apk"
+version = "9.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["hdf5", "1.12.2-r1"], ["netcdf", "4.8.1-r4"], ["libstdc++", "12.2.1"]]

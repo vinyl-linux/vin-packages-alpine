@@ -1,0 +1,15 @@
+checksum = "10d55968ae0844bdd1824b92f4bd769d6a9c4d26d0061fbc8ef8c331d3d86251"
+licence = "Apache-2.0"
+provides = "gadget-tool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gadget-tool-0_git20220508-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libconfig", "1.7.3-r0"], ["libusbgx", "0.2.0-r0"]]

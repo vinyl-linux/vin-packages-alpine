@@ -1,0 +1,15 @@
+checksum = "61d38b7a9d93488374eac0c07da59696f316362740c3eff94dda2e8e6fb70d61"
+licence = "LGPL-2.1-only"
+provides = "mpg123"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mpg123-1.31.1-r0.apk"
+version = "1.31.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["mpg123-libs", "1.31.1-r0"]]

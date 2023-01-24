@@ -1,0 +1,15 @@
+checksum = "aeee4f25e1112e9fb76b71863655ed4bdd656e085d5879d7a4243862b6b76a2e"
+licence = "BSD-2-Clause"
+provides = "py3-lazy-object-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-lazy-object-proxy-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

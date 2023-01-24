@@ -1,0 +1,15 @@
+checksum = "276b9bc85ec8d8382c40a974ef2b166e52831e567e08fca9e0673f50c770e4d6"
+licence = "GPL-3.0-or-later"
+provides = "wl-clipboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wl-clipboard-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["wayland-libs-client", "1.21.0-r1"]]

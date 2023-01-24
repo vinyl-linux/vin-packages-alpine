@@ -1,0 +1,15 @@
+checksum = "fc9c9010e627bc4049b3016b1a00e20ba1164ce13b7790a793877dfaef295ca7"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-http"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-http-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["syslog-ng", "3.38.1-r0"]]

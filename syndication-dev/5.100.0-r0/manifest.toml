@@ -1,0 +1,15 @@
+checksum = "116807a4bdb4cbc2b191da21888f266b14e1f957de43fbbc0460a16183cdf5d5"
+licence = "LGPL-2.0-or-later AND BSD-3-Clause"
+provides = "syndication-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/syndication-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["kcodecs-dev", "5.100.0-r0"], ["syndication", "5.100.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "47a99df733353f694c7f38d064f3f358db0f1540426d4683d5a0befc47d9c8ed"
+licence = "MIT"
+provides = "diffsitter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/diffsitter-0.7.1-r0.apk"
+version = "0.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

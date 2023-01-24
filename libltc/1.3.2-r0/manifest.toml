@@ -1,0 +1,15 @@
+checksum = "f0363a6706545d2e3593a50b24da0011a812e8c4e638c8a7677029c1d6e0da56"
+licence = "LGPL-3.0-only"
+provides = "libltc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libltc-1.3.2-r0.apk"
+version = "1.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

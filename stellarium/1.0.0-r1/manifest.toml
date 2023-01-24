@@ -1,0 +1,15 @@
+checksum = "f2a3211e33f5c8d132e5db0273ff4961760a6742fef89cac8e5fd70f2c154c5f"
+licence = "GPL-2.0-or-later"
+provides = "stellarium"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stellarium-1.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtcharts", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["qt5-qtlocation", "5.15.6"], ["qt5-qtscript", "5.15.6"], ["qt5-qtserialport", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gpsd", "3.24.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

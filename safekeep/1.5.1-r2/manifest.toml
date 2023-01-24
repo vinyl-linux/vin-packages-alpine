@@ -1,0 +1,15 @@
+checksum = "b53c5bc0b877d491771ce9d42459fb11259611108e99daf6346943d925ed8a01"
+licence = "GPL-2.0-or-later"
+provides = "safekeep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/safekeep-1.5.1-r2.apk"
+version = "1.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-client-default", "9.1.0"], ["python3", "3.10.9-r1"], ["rdiff-backup", "2.0.5-r5"], ["util-linux-misc", "2.38.1-r1"]]

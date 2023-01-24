@@ -1,0 +1,15 @@
+checksum = "0bd795e75298846151dc9546f5fd9cabd621d920c4dda49d33f14610d96b450e"
+licence = "BSD-3-Clause"
+provides = "py3-protobuf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-protobuf-4.21.9-r1.apk"
+version = "4.21.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["tzdata", "2022.0.0-f-r1"]]

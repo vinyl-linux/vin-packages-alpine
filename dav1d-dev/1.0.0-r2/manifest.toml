@@ -1,0 +1,15 @@
+checksum = "93dd3a7b738154a0eb879cd9e905bc34eb568c2b8887249c35740eea7b643e81"
+licence = "BSD-2-Clause"
+provides = "dav1d-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dav1d-dev-1.0.0-r2.apk"
+version = "1.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdav1d", "1.0.0-r2"], ["pkgconf", "1.9.4-r0"]]

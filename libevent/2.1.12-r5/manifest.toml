@@ -1,0 +1,15 @@
+checksum = "44ec2be581998bb88dec8b320c48db652d2abf6be58bb3c2dfb015b22210b8c9"
+licence = "BSD-3-Clause"
+provides = "libevent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libevent-2.1.12-r5.apk"
+version = "2.1.12-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

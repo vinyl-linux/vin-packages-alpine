@@ -1,0 +1,15 @@
+checksum = "95ddda5a98bd1ef0ccb27910273f63ac293ea4540d1916181745aac3dab48766"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT"
+provides = "fuse2fs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fuse2fs-1.46.5-r4.apk"
+version = "1.46.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libcom_err", "1.46.5-r4"], ["e2fsprogs-libs", "1.46.5-r4"], ["fuse", "2.9.9-r2"], ["libuuid", "2.38.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "1397564fee01e83470caa6bc321cc36ed6bfe5ea10039422fdeaf08ef774b035"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
+provides = "hunspell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hunspell-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libhunspell", "1.7.1-r0"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "23723974fcc0daffcfb84307ebc0f821985222a07dc061862cd982e88afb82b2"
+licence = "GPL-2.0-or-later"
+provides = "gammaray"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gammaray-2.11.3-r1.apk"
+version = "2.11.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lldb", "15.0.7-r0"], ["kcoreaddons", "5.100.0-r0"], ["syntax-highlighting", "5.100.0-r0"], ["qt5-qtconnectivity", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qttools", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtlocation", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtscript", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtwayland", "5.15.6"], ["qt5-qtwebengine", "5.15.12-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["wayland-libs-server", "1.21.0-r1"]]

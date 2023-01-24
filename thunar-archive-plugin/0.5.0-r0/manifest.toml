@@ -1,0 +1,15 @@
+checksum = "e46fdafba58bb14aa2f6b7a896d01fe300fb222504f0bfd03319587b89028561"
+licence = "GPL-2.0-only"
+provides = "thunar-archive-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/thunar-archive-plugin-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["thunar", "4.16.11-r0"]]

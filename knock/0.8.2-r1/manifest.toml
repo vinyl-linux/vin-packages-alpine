@@ -1,0 +1,15 @@
+checksum = "490ca16f553e8bad47027c41b61cead0b13c7c710af4fe2272b9bd519c31f9cf"
+licence = "GPL-2.0-or-later"
+provides = "knock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/knock-0.8.2-r1.apk"
+version = "0.8.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iptables", "1.8.8-r2"], ["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "19d3081ecba3dbf4085a9d1351b684c45978fd25b5066ea201326e35ee5025b4"
+licence = "GPL-2.0"
+provides = "rtl-sdr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rtl-sdr-0.6.0-r3.apk"
+version = "0.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["librtlsdr", "0.6.0-r3"]]

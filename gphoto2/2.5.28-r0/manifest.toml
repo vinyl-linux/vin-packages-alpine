@@ -1,0 +1,15 @@
+checksum = "211ecb712162844245270ae731fba06767715508c2f2565ed5679283e65db3a0"
+licence = "LGPL-2.1-or-later"
+provides = "gphoto2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gphoto2-2.5.28-r0.apk"
+version = "2.5.28-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexif", "0.6.24-r0"], ["libgphoto2", "2.5.30-r0"], ["libintl", "0.21.1-r1"], ["popt", "1.19.0-r0"]]

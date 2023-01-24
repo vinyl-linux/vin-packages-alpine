@@ -1,0 +1,15 @@
+checksum = "f9d5e4ca50c466aab1e54d6983ad658f177ff093afb3d00a0c43f7512c9c0464"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtbase-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtbase-dbg-5.15.6_git20221010-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["icu-data-full", "72.1.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "6108fc6e970d2ff572eedb0a508dfef7a4c1804e2e80ab923351cb70fdb484ff"
+licence = "ImageMagick"
+provides = "imagemagick-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/imagemagick-dev-7.1.0.52-r0.apk"
+version = "7.1.0.52-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick", "7.1.0.52-r0"], ["imagemagick-c++", "7.1.0.52-r0"], ["imagemagick-libs", "7.1.0.52-r0"], ["pkgconf", "1.9.4-r0"]]

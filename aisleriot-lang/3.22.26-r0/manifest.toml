@@ -1,0 +1,15 @@
+checksum = "f925f1014b2f50fb271701234bca2542a928c89184a8c93eff0fbb226f4aef05"
+licence = "GPL-3.0-or-later"
+provides = "aisleriot-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aisleriot-lang-3.22.26-r0.apk"
+version = "3.22.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["guile", "3.0.8-r3"]]

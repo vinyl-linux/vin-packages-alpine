@@ -1,0 +1,15 @@
+checksum = "e646129e62b103336753c9df77f1b0c3f68ddd6ef2d8293c4a177ff9a2490830"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kwayland-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kwayland-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtwayland-dev", "5.15.6"], ["wayland-dev", "1.21.0-r1"], ["kwayland", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

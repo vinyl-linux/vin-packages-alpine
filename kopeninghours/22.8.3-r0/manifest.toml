@@ -1,0 +1,15 @@
+checksum = "1f203c245fb2c6ac23f1b2291f980c4018b7f70b1b6cfcaa34ca15cc5070218f"
+licence = "BSD-3-Clause AND CC0-1.0 AND LGPL-2.0-or-later"
+provides = "kopeninghours"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kopeninghours-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kholidays", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

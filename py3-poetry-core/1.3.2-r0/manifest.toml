@@ -1,0 +1,15 @@
+checksum = "8341df289bae4ba4e5d26ad4e460838a9c5df8d715ee0cec835f72d88616dec8"
+licence = "MIT"
+provides = "py3-poetry-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-poetry-core-1.3.2-r0.apk"
+version = "1.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-jsonschema", "4.7.2-r2"], ["py3-lark-parser", "0.11.3-r1"], ["py3-packaging", "21.3.0-r2"], ["py3-tomlkit", "0.11.6-r0"]]

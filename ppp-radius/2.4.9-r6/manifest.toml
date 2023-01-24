@@ -1,0 +1,15 @@
+checksum = "4911ddd7f3ec5b0828885c403a71e5d4515cfc836f086336a731e84009740ad8"
+licence = "GPL-2.0-or-later AND HPND"
+provides = "ppp-radius"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-radius-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r6"], ["musl", "1.2.3-r4"]]

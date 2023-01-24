@@ -1,0 +1,15 @@
+checksum = "8adbeda371ff20f90b504ccf271d0a653b0492011f5af15186463d240d0c767a"
+licence = "LGPL-2.1-or-later GPL-3.0-or-later"
+provides = "qgpgme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qgpgme-1.18.0-r0.apk"
+version = "1.18.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.40-r0"], ["gpg-agent", "2.2.40-r0"], ["gpgsm", "2.2.40-r0"], ["yash-binsh", "2.53.0-r2"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgpg-error", "1.46.0-r1"], ["gpgmepp", "1.18.0-r0"], ["libstdc++", "12.2.1"]]

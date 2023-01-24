@@ -1,0 +1,15 @@
+checksum = "48f41a9d78b053c41d8a0036a2ed7795305599d519bcd16949ffa2c1114bf8ac"
+licence = "BSD-3-Clause"
+provides = "libprotobuf-lite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libprotobuf-lite-3.21.9-r0.apk"
+version = "3.21.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

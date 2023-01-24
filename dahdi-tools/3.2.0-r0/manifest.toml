@@ -1,0 +1,15 @@
+checksum = "13661476183e7258275027f433a2dc05fc8874a5f6572fd3f252fb5d7523a45f"
+licence = "GPL-2.0-or-later"
+provides = "dahdi-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dahdi-tools-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["newt", "0.52.23-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0ae9c5826122c3b8d1e091ace40ad7830eff5c45951844711e3814a574485355"
+licence = "BSD-3-Clause"
+provides = "dnstop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dnstop-20140915-r5.apk"
+version = "20140915.0.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["libpcap", "1.10.1-r1"]]

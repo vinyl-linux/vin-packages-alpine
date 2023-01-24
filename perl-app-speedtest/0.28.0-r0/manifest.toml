@@ -1,0 +1,15 @@
+checksum = "f9ec8aa761b344840b57ec5889a9d0fac5ffa9d843c1d3d21384c3711205df8e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-app-speedtest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-app-speedtest-0.28-r0.apk"
+version = "0.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-html-tree", "5.7.0-r3"], ["perl-xml-simple", "2.25.0-r2"], ["perl-libwww", "6.67.0-r0"], ["perl-data-peek", "0.51.0-r1"]]

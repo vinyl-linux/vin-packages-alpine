@@ -1,0 +1,15 @@
+checksum = "3bff80cd8ee7457286f174320e4f28896c9e7b804bbb3175d6441c09753d6724"
+licence = "MIT"
+provides = "py3-h11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-h11-0.14.0-r0.apk"
+version = "0.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "a174c4758c1a499448eaa33c82c830d4395a420715f9e1a678a2fd9bfe7dd2d0"
+licence = "GPL-3.0-or-later"
+provides = "gnupg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.40-r0"], ["gpg-agent", "2.2.40-r0"], ["gpg-wks-server", "2.2.40-r0"], ["gpgsm", "2.2.40-r0"], ["gpgv", "2.2.40-r0"], ["gnupg-dirmngr", "2.2.40-r0"], ["gnupg-utils", "2.2.40-r0"], ["gnupg-wks-client", "2.2.40-r0"]]

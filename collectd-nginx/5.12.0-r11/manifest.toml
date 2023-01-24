@@ -1,0 +1,15 @@
+checksum = "62d9f68a45a109d8a9cb55c32e1619c578df5b8d3b5e60f841c598bea1b47ee7"
+licence = "GPL-2.0-or-later"
+provides = "collectd-nginx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-nginx-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"]]

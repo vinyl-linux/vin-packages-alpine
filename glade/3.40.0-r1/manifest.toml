@@ -1,0 +1,15 @@
+checksum = "9e409b2498a720d4e1f0fc56b3d42070b3e4514dfa8a6560f67a484f6d274f43"
+licence = "GPL-2.0-or-later"
+provides = "glade"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glade-3.40.0-r1.apk"
+version = "3.40.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gjs", "1.74.1-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["python3", "3.10.9-r1"], ["webkit2gtk", "2.38.3-r0"], ["libxml2", "2.10.3-r1"]]

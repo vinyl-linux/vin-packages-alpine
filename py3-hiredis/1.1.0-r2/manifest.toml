@@ -1,0 +1,15 @@
+checksum = "5abe4a8ed9bd4b18b4cac9dc37ccdb439903a85f2c474db6e1952505c0f0d24e"
+licence = "BSD-3-Clause"
+provides = "py3-hiredis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-hiredis-1.1.0-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

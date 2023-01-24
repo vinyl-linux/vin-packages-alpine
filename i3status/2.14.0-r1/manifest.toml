@@ -1,0 +1,15 @@
+checksum = "307891608c35c802eca9c7a708f9528442bf84a4c880bbc4bbe45e4536c65e8b"
+licence = "BSD-3-Clause"
+provides = "i3status"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/i3status-2.14-r1.apk"
+version = "2.14.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["confuse", "3.3.0-r1"], ["libnl3", "3.7.0-r0"], ["yajl", "2.1.0-r5"]]

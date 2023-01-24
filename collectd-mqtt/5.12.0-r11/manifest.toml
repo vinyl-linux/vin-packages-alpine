@@ -1,0 +1,15 @@
+checksum = "63969a40918bd91f161fa2fdb6b0accaafb2f6dd58c82a5300b5849e928de71e"
+licence = "GPL-2.0-or-later"
+provides = "collectd-mqtt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-mqtt-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["mosquitto-libs", "2.0.15-r1"]]

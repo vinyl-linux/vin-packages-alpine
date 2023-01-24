@@ -1,0 +1,15 @@
+checksum = "950b1615d81177b1f777da1e356ab37dd131c2fd4d02ecad28d44fcc83a9be07"
+licence = "GPL"
+provides = "ser2net"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ser2net-3.5.1-r1.apk"
+version = "3.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "03d776beda21c9d8ecc47ec87541d1b7512f9c16baf1f8316ac1d1bf31ff9098"
+licence = "custom"
+provides = "font-misc-meltho"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-misc-meltho-1.0.3-r2.apk"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

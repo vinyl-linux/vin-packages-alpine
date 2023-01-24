@@ -1,0 +1,15 @@
+checksum = "390332ae2fa336e0370fb6c90babf5a4aaff5345b733bff268b0b452ac0e58c1"
+licence = "custom:altermime"
+provides = "altermime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/altermime-0.3.11-r2.apk"
+version = "0.3.11-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "985f16257fe17fc8b9806c20664ba5b8ee5d2a2fd42c96132e93e8f56ad1706e"
+licence = "BSD-3-Clause"
+provides = "ghc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ghc-dev-9.0.2-r1.apk"
+version = "9.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghc", "9.0.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ac50adcf43b7e2c2cf09436b2da2c724ef84e202a48bf8ef6c88b6965e0fd5b6"
+licence = "BSD-3-Clause"
+provides = "py3-jsonpatch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jsonpatch-1.32-r2.apk"
+version = "1.32.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jsonpointer", "2.1.0-r2"]]

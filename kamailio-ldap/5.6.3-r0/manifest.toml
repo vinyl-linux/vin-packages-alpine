@@ -1,0 +1,15 @@
+checksum = "6d11a2a2a7e8fdc6615fb835cfe7ac35a047ec6bd9d43cbaa08d4d7325ef8b69"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-ldap-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

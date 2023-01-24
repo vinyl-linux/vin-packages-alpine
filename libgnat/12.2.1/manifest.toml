@@ -1,0 +1,15 @@
+checksum = "d300cede77e980f5f2ca563b6d84601ee43fbf33ac6fe1003da00870e548e8e8"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgnat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgnat-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

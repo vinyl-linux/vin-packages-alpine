@@ -1,0 +1,15 @@
+checksum = "746a4a0e95f8068951210215ab91334dddf5d98a4d5cf07fa2a5fcd7bfeeedc2"
+licence = "ISC"
+provides = "ucarp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ucarp-1.5.2-r10.apk"
+version = "1.5.2-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

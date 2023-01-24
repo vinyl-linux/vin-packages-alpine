@@ -1,0 +1,15 @@
+checksum = "b09368457a449f1d863645b65b4a192ddc038ebe5ff0d07bb5ff575a32fa8355"
+licence = "MIT Apache-2.0"
+provides = "kubo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kubo-0.16.0-r3.apk"
+version = "0.16.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

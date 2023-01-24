@@ -1,0 +1,15 @@
+checksum = "16cd6c32e123c1c817d9b717934e8354136bb1cf0f86f923ec2fb509ab59d19b"
+licence = "GPL-2.0-only"
+provides = "perf-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perf-bash-completion-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perf", "5.15.74-r0"], ["cpupower", "5.15.74-r0"], ["linux-tools-gpio", "5.15.74-r0"], ["linux-tools-iio", "5.15.74-r0"]]

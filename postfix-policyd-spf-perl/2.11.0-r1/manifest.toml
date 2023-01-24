@@ -1,0 +1,15 @@
+checksum = "f989aa025d4b813d18d8e837adb2c43535114f0a3e8c4f4f017976d36b73f43f"
+licence = "GPL"
+provides = "postfix-policyd-spf-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-policyd-spf-perl-2.011-r1.apk"
+version = "2.11.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-mail-spf", "2.9.0-r4"], ["perl-netaddr-ip", "4.79.0-r7"], ["perl-sys-hostname-long", "1.5.0-r4"]]

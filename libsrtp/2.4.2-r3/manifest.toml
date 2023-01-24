@@ -1,0 +1,15 @@
+checksum = "091e888dc7ae2aabab337ee0ad4e651c322d8e576a63bc69c4865bc5a2076179"
+licence = "BSD-3-Clause"
+provides = "libsrtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libsrtp-2.4.2-r3.apk"
+version = "2.4.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

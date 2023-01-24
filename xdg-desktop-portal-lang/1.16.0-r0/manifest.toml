@@ -1,0 +1,15 @@
+checksum = "e2ca749e086022587888cf018b6b08873235baea82e3915a339e1f41f3b80d77"
+licence = "LGPL-2.1-or-later"
+provides = "xdg-desktop-portal-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdg-desktop-portal-lang-1.16.0-r0.apk"
+version = "1.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["fuse3", "3.12.0-r0"]]

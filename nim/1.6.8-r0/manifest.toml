@@ -1,0 +1,15 @@
+checksum = "057aa0ae6410d60fccfd8715320ee1e9c0e6452b6c3b6962f0de4e283c9b7958"
+licence = "MIT"
+provides = "nim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nim-1.6.8-r0.apk"
+version = "1.6.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libucontext-dev", "1.2.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "cdea702da7ea0f881c53f46464b5f7e36d271eceb0fb927591f1d7d6a6e9a594"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-notificationd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-notificationd-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwindowsystem", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libqtxdg", "3.10.0-r0"], ["musl", "1.2.3-r4"], ["liblxqt", "1.2.0-r0"], ["libstdc++", "12.2.1"]]

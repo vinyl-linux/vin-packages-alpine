@@ -1,0 +1,15 @@
+checksum = "a4d1c915711bbf19ce61dda5b36fd5f56b6b66328d07e53b8ea0064707af157e"
+licence = "MIT"
+provides = "py3-mpv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mpv-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["mpv-libs", "0.35.0-r1"]]

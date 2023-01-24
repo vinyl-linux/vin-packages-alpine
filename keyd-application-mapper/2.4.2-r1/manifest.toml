@@ -1,0 +1,15 @@
+checksum = "4f8d9c4a8e126cf6261d35ac9ebd01100384b6120ac86946e80a4fbc7284dda3"
+licence = "MIT"
+provides = "keyd-application-mapper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keyd-application-mapper-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["keyd", "2.4.2-r1"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "03a53c67223d60a2cdacb72b28eea0edf21e7f17f8ca533a0e661441a8f8670b"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-mgr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-mgr-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph17-base", "17.2.5-r5"], ["ceph17-mgr-modules-core", "17.2.5-r5"], ["librados17", "17.2.5-r5"], ["libcephsqlite17", "17.2.5-r5"], ["boost1.80-python3", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["python3", "3.10.9-r1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"]]

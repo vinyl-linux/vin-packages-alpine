@@ -1,0 +1,15 @@
+checksum = "28569fd51d36d1b9470d433f5d5a0a4858b0a2b83accf2d6bc9cac3403be274b"
+licence = "Artistic-2.0"
+provides = "perl-datetime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-datetime-1.59-r0.apk"
+version = "1.59.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-specio", "0.48.0-r0"], ["perl-dist-checkconflicts", "0.11.0-r2"], ["perl-datetime-locale", "1.37.0-r0"], ["perl-namespace-autoclean", "0.29.0-r2"], ["perl-try-tiny", "0.31.0-r0"], ["perl-datetime-timezone", "2.56.0-r0"], ["perl-params-validationcompiler", "0.30.0-r1"], ["musl", "1.2.3-r4"]]

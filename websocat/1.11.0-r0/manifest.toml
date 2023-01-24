@@ -1,0 +1,15 @@
+checksum = "f641540cb749c6421d267181bc44562469fb9b33e2dd8615246c023ecabf362f"
+licence = "MIT"
+provides = "websocat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/websocat-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

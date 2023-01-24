@@ -1,0 +1,15 @@
+checksum = "3a12ffe11b0d4aa133233a2957096f335241fc37edb4b7dd9c81d95d2e2c380c"
+licence = "LGPL-2.0-or-later"
+provides = "liboping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liboping-1.10.0-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

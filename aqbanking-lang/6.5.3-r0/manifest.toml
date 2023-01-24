@@ -1,0 +1,15 @@
+checksum = "5379e7bfa013367bbd644342eb158e3035a828eccb87f58c01f1c5d031e47aee"
+licence = "GPL-2.0-or-later"
+provides = "aqbanking-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aqbanking-lang-6.5.3-r0.apk"
+version = "6.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ktoblzcheck", "1.53.0-r3"]]

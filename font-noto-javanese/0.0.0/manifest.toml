@@ -1,0 +1,15 @@
+checksum = "512a932a6b1b1553ddd24ad65836e798fe74baaf947d3766179908062f68391b"
+licence = "OFL-1.1"
+provides = "font-noto-javanese"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-javanese-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

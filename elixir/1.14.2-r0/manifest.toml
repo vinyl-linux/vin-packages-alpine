@@ -1,0 +1,15 @@
+checksum = "f1f8ff084088f8575fc444ef91e698c2d2864aca5b5763a32d46667c3691ffd8"
+licence = "Apache-2.0"
+provides = "elixir"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/elixir-1.14.2-r0.apk"
+version = "1.14.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang-dev", "25.1.2-r0"], ["erlang-dialyzer", "25.1.2-r0"]]

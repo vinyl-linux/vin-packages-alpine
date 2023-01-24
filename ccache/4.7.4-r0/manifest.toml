@@ -1,0 +1,15 @@
+checksum = "9b5e1369e58a19f1fccf5baf95b878ab4dadb3513c4e435d73f1dec34db77d20"
+licence = "GPL-3.0-or-later"
+provides = "ccache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ccache-4.7.4-r0.apk"
+version = "4.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["hiredis", "1.0.2-r1"], ["libstdc++", "12.2.1"], ["zstd-libs", "1.5.2-r9"]]

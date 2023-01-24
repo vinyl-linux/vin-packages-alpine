@@ -1,0 +1,15 @@
+checksum = "dbcc43ae79bf9d965f5bfbd862c673ef02e50f6ea6c5cc388ec8186821be9c73"
+licence = "MIT"
+provides = "py3-k5test"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-k5test-0.10.1-r1.apk"
+version = "0.10.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["krb5-dev", "1.20.1-r0"], ["krb5", "1.20.1-r0"], ["krb5-server", "1.20.1-r0"]]

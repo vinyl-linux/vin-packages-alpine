@@ -1,0 +1,15 @@
+checksum = "bd04b87359b44b8544209f2cc38093d6771cee6e2f44e27ddb751f1625110977"
+licence = "GPL-2.0-or-later"
+provides = "cacti-setup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cacti-setup-1.2.22-r1.apk"
+version = "1.2.22-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cacti", "1.2.22-r1"], ["cacti-doc", "1.2.22-r1"], ["mariadb-client", "10.6.11-r0"], ["yash-binsh", "2.53.0-r2"]]

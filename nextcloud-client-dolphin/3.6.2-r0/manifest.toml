@@ -1,0 +1,15 @@
+checksum = "521d5dcb8ccee975af333cb4e501ae11a211039cfd39f5b9564da91064cd33ea"
+licence = "GPL-2.0-only"
+provides = "nextcloud-client-dolphin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-client-dolphin-3.6.2-r0.apk"
+version = "3.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

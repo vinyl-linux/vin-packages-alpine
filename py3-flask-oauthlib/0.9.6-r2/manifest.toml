@@ -1,0 +1,15 @@
+checksum = "57f9afdeaa42e4ec93acefc8c5d14242e2e7fccebed31f8ee061e538138c982a"
+licence = "BSD-3-Clause"
+provides = "py3-flask-oauthlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flask-oauthlib-0.9.6-r2.apk"
+version = "0.9.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-flask", "2.2.2-r0"], ["py3-requests-oauthlib", "1.3.1-r0"], ["py3-oauthlib", "2.1.0-r7"], ["python3", "3.10.9-r1"]]

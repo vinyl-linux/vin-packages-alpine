@@ -1,0 +1,15 @@
+checksum = "d719c8930054eb85df0f217badd46325c28bd9e15d8e3df8e8e0613092f76416"
+licence = "MIT"
+provides = "ebook-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ebook-tools-0.2.2-r3.apk"
+version = "0.2.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"], ["libzip", "1.9.2-r2"]]

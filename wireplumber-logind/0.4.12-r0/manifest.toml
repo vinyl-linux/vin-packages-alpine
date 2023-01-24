@@ -1,0 +1,15 @@
+checksum = "0bc1cfbbbf728707c9ba65242f535a4ba90392d7e95604d63f720443f113e4c4"
+licence = "LGPL-2.1-or-later"
+provides = "wireplumber-logind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wireplumber-logind-0.4.12-r0.apk"
+version = "0.4.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind", "246.10.0-r5"], ["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["glib", "2.74.5-r0"], ["wireplumber", "0.4.12-r0"]]

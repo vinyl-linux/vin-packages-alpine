@@ -1,0 +1,15 @@
+checksum = "5048e25728b871717c847e5b35d9967eedbdbea781bc3b1a786f38584b96eb33"
+licence = "GPL-2.0-or-later"
+provides = "py3-mysqlclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mysqlclient-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

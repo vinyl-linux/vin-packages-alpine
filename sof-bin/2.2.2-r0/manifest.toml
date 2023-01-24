@@ -1,0 +1,15 @@
+checksum = "b8b6758964aa9e82a8cd3dff312cb1d1e0ff10bb8751b4a6085651af0d75fae7"
+licence = "BSD-3-Clause MIT ISC"
+provides = "sof-bin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sof-bin-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sof-firmware", "2.2.2-r0"]]

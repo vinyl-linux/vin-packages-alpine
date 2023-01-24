@@ -1,0 +1,15 @@
+checksum = "fdf6e3c3f3dd8f44a2c45e8fdf78752f7989ef0353b6b8d9dbab006af3225c30"
+licence = "LGPL-2.1-or-later"
+provides = "libdsme-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdsme-dev-0.66.8-r0.apk"
+version = "0.66.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["check-dev", "0.15.2-r1"], ["glib-dev", "2.74.5-r0"], ["libdsme", "0.66.8-r0"], ["pkgconf", "1.9.4-r0"]]

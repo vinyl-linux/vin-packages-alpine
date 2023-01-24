@@ -1,0 +1,15 @@
+checksum = "19ca78765ce28c69915b0abac1327c5c3b0aa713e63b482a921b06f4e779d1ff"
+licence = "PostgreSQL"
+provides = "libecpg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libecpg-15.1-r0.apk"
+version = "15.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

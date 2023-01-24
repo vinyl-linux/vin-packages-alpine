@@ -1,0 +1,15 @@
+checksum = "f49a9d01cf0846b0d31707ea732cfbad0971c01f4f07fa60514ebe15ebcaf662"
+licence = "GPL-3.0-or-later"
+provides = "acct"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/acct-6.6.4-r1.apk"
+version = "6.6.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

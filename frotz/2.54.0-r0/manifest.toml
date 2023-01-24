@@ -1,0 +1,15 @@
+checksum = "4a568d23db9f5f3662f1bbc846e5394ba47af2c1e690217737e5acfca39dd6e1"
+licence = "GPL-2.0-or-later"
+provides = "frotz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frotz-2.54-r0.apk"
+version = "2.54.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libao", "1.2.2-r2"], ["musl", "1.2.3-r4"], ["libmodplug", "0.8.9.0-r2"], ["ncurses-libs", "6.3.0"], ["libsamplerate", "0.2.2-r0"], ["libsndfile", "1.1.0-r2"]]

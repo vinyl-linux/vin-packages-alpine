@@ -1,0 +1,15 @@
+checksum = "8028ba4dc7fbb40643fb63f029b0f6207fd767fc959c3808be5d23a2a02de42c"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-stomp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-stomp-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["syslog-ng", "3.38.1-r0"]]

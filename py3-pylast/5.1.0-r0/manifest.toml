@@ -1,0 +1,15 @@
+checksum = "9c509b5cb897e2e212fb5fe5b1a1634eff43ba722999c857a259d275bd15931c"
+licence = "Apache-2.0"
+provides = "py3-pylast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pylast-5.1.0-r0.apk"
+version = "5.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-httpx", "0.23.0-r0"]]

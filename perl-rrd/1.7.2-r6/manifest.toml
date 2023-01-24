@@ -1,0 +1,15 @@
+checksum = "beb6b923dc2bc68decec2b82a057b3e9b0da45d338dbd85acd8ffb88b2019179"
+licence = "GPL-2.0-or-later"
+provides = "perl-rrd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-rrd-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["librrd", "1.7.2-r6"]]

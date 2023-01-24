@@ -1,0 +1,15 @@
+checksum = "9eaff0e3d3817bf5696cd4f65fb3487524bcb0acf43bdb0d7ead52384e7cd539"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-b-cow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-b-cow-0.007-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

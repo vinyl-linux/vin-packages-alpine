@@ -1,0 +1,15 @@
+checksum = "69229ab4367eb3b0dd3929396289babc08c8566e5fb49faa85216ea8579825f0"
+licence = "GPL-2.0-or-later"
+provides = "zfs-auto-snapshot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zfs-auto-snapshot-1.2.4-r2.apk"
+version = "1.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zfs", "2.1.7-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6bf20e0dd3decfe8320ef525e04f34755cf64c1a6d500bf5a91776bc95520e13"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "elogind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/elogind-246.10-r5.apk"
+version = "246.10.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["shadow", "4.13.0-r0"], ["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["linux-pam", "1.5.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "20d630368ace4d212e3fa86f3b47b67f42480fa3408316bc116061e095bd08be"
+licence = "GPL-2.0-or-later"
+provides = "iio-sensor-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iio-sensor-proxy-3.4-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["polkit-libs", "122.0.0-r0"]]

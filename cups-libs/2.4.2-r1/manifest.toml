@@ -1,0 +1,15 @@
+checksum = "63eff917986692ccbc4d610202da6ebb270eb70f18804a722e44e3b2f0b97cb3"
+licence = "GPL-2.0-only"
+provides = "cups-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cups-libs-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["gnutls", "3.7.8-r2"], ["zlib", "1.2.13-r0"]]

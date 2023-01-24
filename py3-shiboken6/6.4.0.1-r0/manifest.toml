@@ -1,0 +1,15 @@
+checksum = "55146600bcfb47b08b8abdeade19181d675dd484b263178fab0853cb2c4160f8"
+licence = "LGPL-3.0-only AND GPL-2.0-only"
+provides = "py3-shiboken6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-shiboken6-6.4.0.1-r0.apk"
+version = "6.4.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["clang15-libclang", "15.0.7-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

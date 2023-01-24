@@ -1,0 +1,15 @@
+checksum = "c29f59a013d21958a978d1cb6c99529b4f2235f248d6929b8fa7e0392c6b6155"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "ffmpeg4-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ffmpeg4-dev-4.4.3-r0.apk"
+version = "4.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg4-libs", "4.4.3-r0"], ["pkgconf", "1.9.4-r0"]]

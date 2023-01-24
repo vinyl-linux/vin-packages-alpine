@@ -1,0 +1,15 @@
+checksum = "8039d2b441b673565c425ede0e087cca2c7d6bc5bbe55e4c8442e45aaa406ab2"
+licence = "LGPL-3.0-or-later"
+provides = "libportal-gtk3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libportal-gtk3-0.6-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libportal", "0.6.0-r0"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ff607ea79c196a8bb9ad275223f1a6b5e8bc9e210f2137de5b7dea7a4a61b3f1"
+licence = "EPL-1.0"
+provides = "py3-amply"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-amply-0.1.5-r0.apk"
+version = "0.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-parsing", "3.0.9-r0"]]

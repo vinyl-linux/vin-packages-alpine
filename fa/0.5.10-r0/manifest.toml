@@ -1,0 +1,15 @@
+checksum = "f2c53571e908d3e45831a9848556cfc00b70e9dfaf6fbb74567bed32d935e6ae"
+licence = "AGPL-3.0-only"
+provides = "fa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fa-0.5.10-r0.apk"
+version = "0.5.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"], ["musl", "1.2.3-r4"], ["lua5.3-libs", "5.3.6-r4"]]

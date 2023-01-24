@@ -1,0 +1,15 @@
+checksum = "5470b7b3eb4f65c80150b31c21efc7766b372c74f1840364512842d4c0a7df68"
+licence = "MIT"
+provides = "pulseaudio-ctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulseaudio-ctl-1.70-r1.apk"
+version = "1.70.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["pulseaudio-utils", "16.1.0-r6"]]

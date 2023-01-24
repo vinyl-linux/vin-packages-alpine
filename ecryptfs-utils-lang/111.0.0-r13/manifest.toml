@@ -1,0 +1,15 @@
+checksum = "97b5e8d099372a22122ea685dbbe7ce04e0f421ae9e6228be68078360bf56c69"
+licence = "GPL-2.0-or-later"
+provides = "ecryptfs-utils-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ecryptfs-utils-lang-111-r13.apk"
+version = "111.0.0-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cryptsetup", "2.5.0-r2"], ["keyutils", "1.6.3-r1"], ["gettext", "0.21.1-r1"], ["rsync", "3.2.7-r0"], ["lsof", "4.96.4-r0"]]

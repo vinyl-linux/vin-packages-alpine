@@ -1,0 +1,15 @@
+checksum = "450d52588326c7e2b527e237bf82aa9d7dde1f759ee00a3cba097eb205948a98"
+licence = "GPL-2.0-only"
+provides = "id3lib-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/id3lib-libs-3.8.3-r1.apk"
+version = "3.8.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "4ba15500d2786b9491350b197ba40361db1b0789fef105fdf9108ff5495c910a"
+licence = "MIT"
+provides = "docs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/docs-0.2-r6.apk"
+version = "0.2.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["man-db", "2.10.2-r3"], ["man-pages", "6.1.0-r0"]]

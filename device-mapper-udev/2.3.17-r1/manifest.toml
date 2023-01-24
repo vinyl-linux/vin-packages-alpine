@@ -1,0 +1,15 @@
+checksum = "2c1773449fdf05e440a5a71ec4c81cb6b2d451534ad57cf482940733963b4412"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "device-mapper-udev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/device-mapper-udev-2.03.17-r1.apk"
+version = "2.3.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lvm2-libs", "2.3.17-r1"], ["yash-binsh", "2.53.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "f6e74aded3ab4687dc3b32f6bb7460c5d656ef4a06e72327ca37aa68c9ef05ca"
+licence = "Apache-2.0"
+provides = "maven"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/maven-3.8.6-r0.apk"
+version = "3.8.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jdk", "9.0.4"]]

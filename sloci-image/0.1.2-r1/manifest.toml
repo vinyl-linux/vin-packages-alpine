@@ -1,0 +1,15 @@
+checksum = "40a9613864efa5c2c207fca7d57096a210c9dfd51c41fb76c0f03044ca0d5dc4"
+licence = "MIT"
+provides = "sloci-image"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sloci-image-0.1.2-r1.apk"
+version = "0.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["tar", "1.34.0-r1"]]

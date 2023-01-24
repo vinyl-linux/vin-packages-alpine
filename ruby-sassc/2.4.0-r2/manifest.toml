@@ -1,0 +1,15 @@
+checksum = "8aebc67a1a0c0de174f9ef130deefa6e1e7619a3fb953a057859ba7e857d0b6d"
+licence = "MIT"
+provides = "ruby-sassc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-sassc-2.4.0-r2.apk"
+version = "2.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsass", "3.6.5-r0"], ["ruby", "3.1.3-r0"], ["ruby-ffi", "1.15.5-r1"]]

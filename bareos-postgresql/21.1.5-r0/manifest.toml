@@ -1,0 +1,15 @@
+checksum = "dd6f11271677cee304af84f87344aee7c356f795a1992aa5533dff6f7b714073"
+licence = "AGPL-3.0"
+provides = "bareos-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-postgresql-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos-libs", "21.1.5-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libpq", "15.1.0-r0"], ["libstdc++", "12.2.1"]]

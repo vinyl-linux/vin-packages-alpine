@@ -1,0 +1,15 @@
+checksum = "e772d3c3dd7de3c9c5afcffe1d535e335ea8b4ffdf45230be31351b42e9cc644"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-audio-spice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-audio-spice-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["spice-server", "0.15.1-r0"]]

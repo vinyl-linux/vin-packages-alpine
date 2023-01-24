@@ -1,0 +1,15 @@
+checksum = "a1b073cf7812fde8f55489a6467de9470bcaa2217884fa66a4a8b11f3cd5ebb5"
+licence = "GPL-2.0-or-later"
+provides = "valgrind-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/valgrind-dev-3.20.0-r0.apk"
+version = "3.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

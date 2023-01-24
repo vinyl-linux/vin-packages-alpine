@@ -1,0 +1,15 @@
+checksum = "7fa0fad620a2e23df0a0d7e82bb06978996217df2a50af7d228794866dac0565"
+licence = "GPL-3.0-only"
+provides = "openrct2-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openrct2-cli-0.4.2-r3.apk"
+version = "0.4.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrct2-data", "0.4.2-r3"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["openrct2", "0.4.2-r3"]]

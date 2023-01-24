@@ -1,0 +1,15 @@
+checksum = "4af25ae2a2dd4c43ff610a5d8a22c19b7272fff12891f7f3fb2684dfb5b80e90"
+licence = "MIT"
+provides = "libxcb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxcb-dev-1.15-r0.apk"
+version = "1.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxau-dev", "1.0.10-r0"], ["xcb-proto", "1.15.2-r0"], ["libxcb", "1.15.0-r0"], ["libxdmcp-dev", "1.1.4-r0"], ["pkgconf", "1.9.4-r0"]]

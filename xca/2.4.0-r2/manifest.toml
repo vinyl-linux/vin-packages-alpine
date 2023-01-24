@@ -1,0 +1,15 @@
+checksum = "e9ead77c779c323b5788d5a35889efee3fb9e8b479e91b0bacabd1e1b499fe0b"
+licence = "BSD-3-Clause"
+provides = "xca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xca-2.4.0-r2.apk"
+version = "2.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qttools", "5.15.6"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libltdl", "2.4.7-r0"], ["libstdc++", "12.2.1"]]

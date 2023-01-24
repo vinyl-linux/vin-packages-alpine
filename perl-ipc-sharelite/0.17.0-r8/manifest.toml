@@ -1,0 +1,15 @@
+checksum = "a0a2d01f8df38928ededafd18472675494370a73ad483c2c8639bf004e8f64f0"
+licence = "PerlArtistic GPL"
+provides = "perl-ipc-sharelite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-ipc-sharelite-0.17-r8.apk"
+version = "0.17.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

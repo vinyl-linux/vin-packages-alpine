@@ -1,0 +1,15 @@
+checksum = "375c4735db6e1301b8ee97f4058f63c8e84de7c25932d735c25f6d683471f5e2"
+licence = "Apache-2.0 BSD-1-Clause BSD-2-Clause BSD-3-Clause CC0-1.0 LGPL-2.1-or-later LGPL-3.0-only MIT Zlib"
+provides = "rspamd-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rspamd-libs-3.4-r1.apk"
+version = "3.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["icu-data-full", "72.1.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["vectorscan", "5.4.8-r1"], ["icu-libs", "72.1.0-r1"], ["luajit", "2.1.0"], ["pcre2", "10.42.0-r0"], ["libsodium", "1.0.18-r2"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

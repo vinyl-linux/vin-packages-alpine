@@ -1,0 +1,15 @@
+checksum = "c3c07a3e55a51f2cd33a46a0f527d6095a7a56da2944c7d742ce010a0751d667"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-geoip2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-geoip2-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libmaxminddb-libs", "1.7.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "babe76dbc44a8ddd16565b99029dc4d1796a8818603eba13ff6f08263e3af8a2"
+licence = "GPL-2.0-or-later"
+provides = "slirp4netns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slirp4netns-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libseccomp", "2.5.4-r0"], ["libslirp", "4.7.0-r0"]]

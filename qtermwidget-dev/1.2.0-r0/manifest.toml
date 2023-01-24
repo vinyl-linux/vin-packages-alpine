@@ -1,0 +1,15 @@
+checksum = "57928c67c3958605d2821754e85c7f8c763810d5c685633b39388d83ac0a24c2"
+licence = "LGPL-2.0-or-later"
+provides = "qtermwidget-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qtermwidget-dev-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qtermwidget", "1.2.0-r0"]]

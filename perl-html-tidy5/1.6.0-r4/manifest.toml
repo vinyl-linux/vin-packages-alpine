@@ -1,0 +1,15 @@
+checksum = "643df194e2fe671164bd7ebe0f9c0483c95e0fdc77c3d57cb3fb8980e2deab01"
+licence = "Artistic-2.0"
+provides = "perl-html-tidy5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-html-tidy5-1.06-r4.apk"
+version = "1.6.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["tidyhtml-libs", "5.8.0-r2"]]

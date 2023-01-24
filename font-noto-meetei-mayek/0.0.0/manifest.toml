@@ -1,0 +1,15 @@
+checksum = "7c173b8d03bfd183ed93c74afdf2986fef729b5044f71956e54d75423a303ede"
+licence = "OFL-1.1"
+provides = "font-noto-meetei-mayek"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-meetei-mayek-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

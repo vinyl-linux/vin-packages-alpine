@@ -1,0 +1,15 @@
+checksum = "2dbfd596fb9527a6dc79ae94d60ecfdc12e2428d7c826f1390a31026c480cfce"
+licence = "GPL-3.0-or-later"
+provides = "inetutils-syslogd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inetutils-syslogd-2.4-r1.apk"
+version = "2.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "10b4775fa29ce7380598fb9e9640bc1c1787e5d5e570116bb385ecc9943215be"
+licence = "BSD-3-Clause"
+provides = "oksh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oksh-7.2-r0.apk"
+version = "7.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

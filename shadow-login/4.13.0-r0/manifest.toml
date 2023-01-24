@@ -1,0 +1,15 @@
+checksum = "7d374e0c50d5218d32301c303ba4684183c36b0e44f8c9adcfac5797bd521391"
+licence = "BSD-3-Clause"
+provides = "shadow-login"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shadow-login-4.13-r0.apk"
+version = "4.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

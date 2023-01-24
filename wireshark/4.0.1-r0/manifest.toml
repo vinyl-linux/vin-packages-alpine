@@ -1,0 +1,15 @@
+checksum = "b04a1054bacb56fa0a1eba4f40aeed733f8e09cd9c57fb5f9306500b3dd4162e"
+licence = "GPL-2.0-or-later"
+provides = "wireshark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wireshark-4.0.1-r0.apk"
+version = "4.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["qt6-qt5compat", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["qt6-qtmultimedia", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["libnl3", "3.7.0-r0"], ["libpcap", "1.10.1-r1"], ["pcre2", "10.42.0-r0"], ["libstdc++", "12.2.1"], ["wireshark-common", "4.0.1-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bd2b1acbb03444d6f7e36b71939ce50663aceec846bd3ccc5b272851ca9a5d8d"
+licence = "GPL-3.0-or-later"
+provides = "mqttui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mqttui-0.18.0-r0.apk"
+version = "0.18.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

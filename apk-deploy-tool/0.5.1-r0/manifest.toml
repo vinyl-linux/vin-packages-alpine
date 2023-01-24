@@ -1,0 +1,15 @@
+checksum = "13bce34b75f9c8ed9f057fbebcd8a42c02fa45c4071b21f978534211bbe34d81"
+licence = "MIT"
+provides = "apk-deploy-tool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apk-deploy-tool-0.5.1-r0.apk"
+version = "0.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apk-tools", "2.12.10-r1"], ["doas", "6.8.2-r3"], ["openssh-keygen", "9.1.0"], ["yash-binsh", "2.53.0-r2"]]

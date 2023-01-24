@@ -1,0 +1,15 @@
+checksum = "f876aec6d7ced7fbca6ae5f8d5f30b66cc9c5c86156aa472f6cbf382e4245bda"
+licence = "LGPL-3.0-or-later"
+provides = "libnitrokey-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnitrokey-dev-3.7-r0.apk"
+version = "3.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnitrokey", "3.7.0-r0"], ["hidapi-dev", "0.12.0-r1"], ["pkgconf", "1.9.4-r0"]]

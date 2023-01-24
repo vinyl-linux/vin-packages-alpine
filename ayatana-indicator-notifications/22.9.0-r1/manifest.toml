@@ -1,0 +1,15 @@
+checksum = "220821c864e24bcaeda48a3ec30fc73ddb9c48ca77679cfb42fcac010539e4ed"
+licence = "GPL-3.0-only"
+provides = "ayatana-indicator-notifications"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ayatana-indicator-notifications-22.9.0-r1.apk"
+version = "22.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

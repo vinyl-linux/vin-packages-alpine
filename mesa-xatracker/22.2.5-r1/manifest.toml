@@ -1,0 +1,15 @@
+checksum = "27818d4b9c2c2cc3da9b9a24dae5edd73d37f35f61dd45f2fa70677aa71905df"
+licence = "MIT SGI-B-2.0 BSL-1.0"
+provides = "mesa-xatracker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mesa-xatracker-22.2.5-r1.apk"
+version = "22.2.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa", "22.2.5-r1"], ["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

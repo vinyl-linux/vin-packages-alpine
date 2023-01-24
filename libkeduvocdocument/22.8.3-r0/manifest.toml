@@ -1,0 +1,15 @@
+checksum = "50793e4b896c19962924f17504c1296bb08aa506dcccf63a16f8f43cda934afe"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "libkeduvocdocument"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkeduvocdocument-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["karchive", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

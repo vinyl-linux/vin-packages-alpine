@@ -1,0 +1,15 @@
+checksum = "4d1a09844662d890de45e4f813d15b469e6d3ac49f742f0a195b64bd037e9c19"
+licence = "GPL-2.0-only"
+provides = "cpupower"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cpupower-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["pciutils-libs", "3.9.0-r0"]]

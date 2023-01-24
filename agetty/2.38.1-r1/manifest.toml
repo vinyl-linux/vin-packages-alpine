@@ -1,0 +1,15 @@
+checksum = "19f7ca0174f3c94f52c22ba7d279034d8599914e2eb2c73215e8d450ddd757fe"
+licence = "Public-Domain"
+provides = "agetty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/agetty-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

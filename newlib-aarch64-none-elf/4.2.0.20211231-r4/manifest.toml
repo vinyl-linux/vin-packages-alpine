@@ -1,0 +1,15 @@
+checksum = "4689f8178c31660dec3a4af8a4b620fab7b53e441aa433d6dbe9802adedf9bae"
+licence = "GPL-2.0-only AND LGPL-2.1-only AND 0BSD AND BSD-3-Clause AND GPL-3.0-only AND LGPL-3.0-only"
+provides = "newlib-aarch64-none-elf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/newlib-aarch64-none-elf-4.2.0.20211231-r4.apk"
+version = "4.2.0.20211231-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils-aarch64-none-elf", "2.39.0-r2"], ["gcc-aarch64-none-elf", "12.2.0-r4"]]

@@ -1,0 +1,15 @@
+checksum = "89cdf2ebd02ee82e042a3dbec2406d3953813bb09ec372122988f6bb69472198"
+licence = "GPL-2.0-or-later"
+provides = "libao"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libao-1.2.2-r2.apk"
+version = "1.2.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

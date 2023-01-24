@@ -1,0 +1,15 @@
+checksum = "9cee659ebe792b3640b600d5fadb2ee23473ac35c8d3ebbd84f094bece1ee8cf"
+licence = "Apache-2.0 AND MIT OFL-1.1 GPL-3.0-or-later GPL-3.0-with-GCC-exception CC-BY-SA-3.0 LGPL-3.0"
+provides = "rust-src"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rust-src-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust", "1.64.0-r2"]]

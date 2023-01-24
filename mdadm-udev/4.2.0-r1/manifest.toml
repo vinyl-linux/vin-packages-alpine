@@ -1,0 +1,15 @@
+checksum = "cf7f45a16a16881f5ae30439ba9b1dfb02fc78818146d2286a0f3c6a461bc96e"
+licence = "GPL-2.0-only"
+provides = "mdadm-udev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mdadm-udev-4.2-r1.apk"
+version = "4.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lsblk", "2.38.1-r1"]]

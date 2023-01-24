@@ -1,0 +1,15 @@
+checksum = "f97e1d469bd1ad284999cbcd67bb3e6effbe51431b870a83a880dd6640faab23"
+licence = "GPL"
+provides = "pound"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pound-2.8-r2.apk"
+version = "2.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto1.1", "1.1.1-s-r0"], ["pcre", "8.45.0-r2"], ["libssl1.1", "1.1.1-s-r0"]]

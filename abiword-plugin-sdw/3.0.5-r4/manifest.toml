@@ -1,0 +1,15 @@
+checksum = "5a64b513d888b2c70e23e0d96f35ac7d95e3d7e6492cff6ab94a420a9ac8a530"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-sdw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-sdw-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libstdc++", "12.2.1"]]

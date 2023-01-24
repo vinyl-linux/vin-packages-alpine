@@ -1,0 +1,15 @@
+checksum = "2fa032b584be7fefb305b3becc55f7376702b5458b33b17a5cfc66d2223ed355"
+licence = "GPL-2.0-only"
+provides = "pciutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pciutils-dev-3.9.0-r0.apk"
+version = "3.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pciutils-libs", "3.9.0-r0"], ["pkgconf", "1.9.4-r0"]]

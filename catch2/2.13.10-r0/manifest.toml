@@ -1,0 +1,15 @@
+checksum = "ca9172065f5ffc953059d7f484e1a55e96e79266ebf2dd15160d4bf824d8822e"
+licence = "BSL-1.0"
+provides = "catch2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/catch2-2.13.10-r0.apk"
+version = "2.13.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

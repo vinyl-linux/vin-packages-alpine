@@ -1,0 +1,15 @@
+checksum = "7db51d1067a264134c22e5d4f5b1dc0068eab1fd7ffffd819471b281779c1130"
+licence = "LGPL-2.1-or-later"
+provides = "liburing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/liburing-2.3-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

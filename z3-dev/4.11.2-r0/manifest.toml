@@ -1,0 +1,15 @@
+checksum = "9a15d01affdcb3e589021ecda23a49513565c48dd65a90eca4b693345c2007d9"
+licence = "MIT"
+provides = "z3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/z3-dev-4.11.2-r0.apk"
+version = "4.11.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["z3", "4.11.2-r0"]]

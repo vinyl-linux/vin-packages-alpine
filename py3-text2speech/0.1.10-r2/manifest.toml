@@ -1,0 +1,15 @@
+checksum = "ef1f93bcced84093d78ce894ee0dbd790489779ae6ec6057a6a88361182ed035"
+licence = "Apache-2.0"
+provides = "py3-text2speech"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-text2speech-0.1.10-r2.apk"
+version = "0.1.10-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-boto3", "1.18.49-r1"], ["py3-gtts", "2.2.4-r0"], ["py3-ovos-utils", "0.0.12-r0"], ["py3-psutil", "5.9.4-r0"], ["py3-requests-futures", "1.0.0-r2"], ["py3-responsivevoice", "0.5.3-r2"], ["py3-voxpopuli", "0.3.6-r2"], ["python3", "3.10.9-r1"]]

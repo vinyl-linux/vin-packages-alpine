@@ -1,0 +1,15 @@
+checksum = "5e4c498406480ab59d2826dd0380201a2b7ead4d69e01da397fff0d657be13cf"
+licence = "MIT"
+provides = "ssh-getkey-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ssh-getkey-ldap-0.1.2-r1.apk"
+version = "0.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.4-r6"], ["lua-ldap", "1.2.6-r2"], ["yash-binsh", "2.53.0-r2"]]

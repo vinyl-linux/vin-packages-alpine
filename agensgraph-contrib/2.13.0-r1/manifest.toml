@@ -1,0 +1,15 @@
+checksum = "9775a8163e58d61d18484728c4903506e60f80c3a9f3563368e58ee33fc79586"
+licence = "PostgreSQL AND Apache-2.0"
+provides = "agensgraph-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/agensgraph-contrib-2.13.0-r1.apk"
+version = "2.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["agensgraph", "2.13.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["libuuid", "2.38.1-r1"]]

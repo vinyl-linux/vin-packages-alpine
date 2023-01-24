@@ -1,0 +1,15 @@
+checksum = "9e0c65cf4313073d1d2a8815f27b2c350ac1b1c4946892243fd86ee1fb175ffb"
+licence = "GPL-3.0-or-later"
+provides = "notmuch-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notmuch-libs-0.37-r1.apk"
+version = "0.37.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gmime", "3.2.13-r0"], ["libstdc++", "12.2.1"], ["talloc", "2.3.4-r0"], ["libxapian", "1.4.21-r0"]]

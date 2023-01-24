@@ -1,0 +1,15 @@
+checksum = "39010c7ecfc78bd1068ee46c2de5e71ed993af11a1a8df36eee4c1dc71eb55dd"
+licence = "Apache-2.0"
+provides = "clang15-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang15-dev-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clang15", "15.0.7-r0"], ["clang15-extra-tools", "15.0.7-r0"], ["clang15-libclang", "15.0.7-r0"], ["clang15-libs", "15.0.7-r0"]]

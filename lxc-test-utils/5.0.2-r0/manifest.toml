@@ -1,0 +1,15 @@
+checksum = "cc934039e74511ebfda75de84513b8d402b14b61c15f0023417e87591a0990a7"
+licence = "GPL-2.0-only"
+provides = "lxc-test-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lxc-test-utils-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libgcc", "12.2.1"], ["libseccomp", "2.5.4-r0"]]

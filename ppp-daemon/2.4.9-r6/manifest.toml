@@ -1,0 +1,15 @@
+checksum = "23b441b49c080ae29a30ce452966761f98a02d2256e348b518c6f9a71f8a4484"
+licence = "BSD-3-Clause AND BSD-4-Clause AND BSD-4-Clause-Shortened AND GPL-2.0-or-later AND LGPL-2.0-or-later AND Public-Domain AND RSA-MD"
+provides = "ppp-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-daemon-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libpcap", "1.10.1-r1"], ["libssl3", "3.0.7-r2"]]

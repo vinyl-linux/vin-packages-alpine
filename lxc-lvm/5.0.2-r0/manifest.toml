@@ -1,0 +1,15 @@
+checksum = "5e34eb3e8e8f979ca9e04f0396dd3ac91006fb42024d972dfd37e10069284f64"
+licence = "GPL-2.0-only"
+provides = "lxc-lvm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lxc-lvm-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lxc", "5.0.2-r0"], ["lvm2", "2.3.17-r1"], ["util-linux", "2.38.1-r1"]]

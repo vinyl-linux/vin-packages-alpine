@@ -1,0 +1,15 @@
+checksum = "435a175d7436f6fcd6a5f85210f9f63ec6960edefd38fb993405cc8a2cb6f224"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-radius"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-radius-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["freeradius-client", "1.1.7-r5"]]

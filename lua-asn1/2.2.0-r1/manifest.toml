@@ -1,0 +1,15 @@
+checksum = "e5cd1f207ca3c5da56a168d551b50157c0d0b99d413cef0f94f6a7e2adab3690"
+licence = "MIT"
+provides = "lua-asn1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-asn1-2.2.0-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua-stringy", "0.5.1-r2"]]

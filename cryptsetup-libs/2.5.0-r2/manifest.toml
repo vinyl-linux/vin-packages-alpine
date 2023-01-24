@@ -1,0 +1,15 @@
+checksum = "67bb3795a8e28f08d9f2bff9877ddeee63b0881caf807aec8b5d8af9702ae244"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+provides = "cryptsetup-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cryptsetup-libs-2.5.0-r2.apk"
+version = "2.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["argon2-libs", "20190702.0.0-r2"], ["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["device-mapper-libs", "2.3.17-r1"], ["json-c", "0.16.0-r2"], ["libuuid", "2.38.1-r1"]]

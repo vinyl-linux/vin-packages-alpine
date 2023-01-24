@@ -1,0 +1,15 @@
+checksum = "c22220fb1c15d61fbd447ea5115d5a634d4bf5c1ca31a06ca2d0fdac80211d93"
+licence = "LGPL-3.0-or-later"
+provides = "riemann-c-client-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/riemann-c-client-libs-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["protobuf-c", "1.4.1-r1"], ["libssl3", "3.0.7-r2"]]

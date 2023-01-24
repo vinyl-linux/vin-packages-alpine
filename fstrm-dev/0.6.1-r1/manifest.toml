@@ -1,0 +1,15 @@
+checksum = "6dd0202ed81f613efe1e853cddf64e51d956f3b2123f4bae96c8c79405d28348"
+licence = "MIT"
+provides = "fstrm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fstrm-dev-0.6.1-r1.apk"
+version = "0.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fstrm", "0.6.1-r1"], ["pkgconf", "1.9.4-r0"]]

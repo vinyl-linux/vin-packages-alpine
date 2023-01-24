@@ -1,0 +1,15 @@
+checksum = "1087a0c2cf471fd05bd318b5a79830243fe946c2f6d3499d88dcfb1e586598a0"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-dbd-csv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-dbd-csv-0.59-r0.apk"
+version = "0.59.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-dbi", "1.643.0-r4"], ["perl-text-csv_xs", "1.48.0-r1"], ["perl-sql-statement", "1.414.0-r0"]]

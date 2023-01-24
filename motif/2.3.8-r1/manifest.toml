@@ -1,0 +1,15 @@
+checksum = "61157e3697e97d9b9e2ae5aa4dc14e26e34e099d5c92863d35648d9af3aeecfa"
+licence = "LGPL-2.1-or-later"
+provides = "motif"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/motif-2.3.8-r1.apk"
+version = "2.3.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxft", "2.3.7-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"]]

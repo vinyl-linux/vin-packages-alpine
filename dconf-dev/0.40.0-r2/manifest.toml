@@ -1,0 +1,15 @@
+checksum = "b070e47518a057ea404ae86b64204d790d01d9bc6609bf04fb8951bc78434a26"
+licence = "LGPL-2.1-or-later"
+provides = "dconf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dconf-dev-0.40.0-r2.apk"
+version = "0.40.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dconf", "0.40.0-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

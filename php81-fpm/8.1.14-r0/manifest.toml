@@ -1,0 +1,15 @@
+checksum = "6c6b541d4bba90c257ff3079ebc7bd6f248df301c0b53a97025f72928feacbc1"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-fpm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-fpm-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["libacl", "2.3.1-r1"], ["argon2-libs", "20190702.0.0-r2"], ["musl", "1.2.3-r4"], ["libedit", "20221030.3.1-r0"], ["pcre2", "10.42.0-r0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

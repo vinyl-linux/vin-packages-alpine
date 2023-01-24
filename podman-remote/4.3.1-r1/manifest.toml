@@ -1,0 +1,15 @@
+checksum = "a5fb6327bd315ea6fd47e550c3c363addb74fc3032d49202ab7c576e610a5e68"
+licence = "Apache-2.0"
+provides = "podman-remote"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/podman-remote-4.3.1-r1.apk"
+version = "4.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["conmon", "2.1.5-r0"], ["crun", "1.7.2-r0"], ["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["slirp4netns", "1.2.0-r0"], ["shadow-subids", "4.13.0-r0"], ["containers-common", "0.50.1-r0"], ["netavark", "1.4.0-r0"], ["aardvark-dns", "1.4.0-r0"], ["catatonit", "0.1.7-r0"], ["musl", "1.2.3-r4"]]

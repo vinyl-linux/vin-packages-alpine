@@ -1,0 +1,15 @@
+checksum = "3422fd25d792345f12a4e28ffef46b8a9b2fc20da1997469aaabf7bb652a4663"
+licence = "LGPL-2.1-only"
+provides = "libcgroup-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcgroup-dev-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcgroup", "3.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

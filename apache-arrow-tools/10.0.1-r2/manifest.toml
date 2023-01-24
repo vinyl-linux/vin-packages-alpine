@@ -1,0 +1,15 @@
+checksum = "6921d664ef270539ba56a017c8e7cdb48b4a38ee830d5fa4054d0cc45ef57ee8"
+licence = "Apache-2.0"
+provides = "apache-arrow-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apache-arrow-tools-10.0.1-r2.apk"
+version = "10.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache-arrow", "10.0.1-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gflags", "2.2.2-r2"], ["libstdc++", "12.2.1"]]

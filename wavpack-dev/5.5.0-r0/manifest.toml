@@ -1,0 +1,15 @@
+checksum = "03ef9337a40423330dd1f1938e9c7d2763d8ead33652a652ef76ec18b7d9e34c"
+licence = "BSD-3-Clause"
+provides = "wavpack-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wavpack-dev-5.5.0-r0.apk"
+version = "5.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["wavpack", "5.5.0-r0"]]

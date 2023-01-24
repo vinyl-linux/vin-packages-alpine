@@ -1,0 +1,15 @@
+checksum = "c76b1f80859322208be0aa0b7b9e5a321683fb9b22e6b218370931f735d8e984"
+licence = "GPL-3.0-or-later"
+provides = "lightdm-qt5-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lightdm-qt5-dev-1.32.0-r1.apk"
+version = "1.32.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["accountsservice", "22.8.8-r0"], ["adwaita-icon-theme", "43.0.0-r0"], ["dbus", "1.14.4-r0"], ["xinit", "1.4.1-r1"], ["lightdm-qt5", "1.32.0-r1"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

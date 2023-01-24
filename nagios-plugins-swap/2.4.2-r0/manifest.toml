@@ -1,0 +1,15 @@
+checksum = "3018a58ee8048a18900ae90e809c9462d50490449ae66d5ccc905c484c240ed6"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-swap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-swap-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

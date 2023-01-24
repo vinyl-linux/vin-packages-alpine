@@ -1,0 +1,15 @@
+checksum = "f808239236d35b34e5bf9b4a2b4a805512531778f7e668400bc3c2869f7db58e"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-ldap-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

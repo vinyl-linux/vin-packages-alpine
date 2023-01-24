@@ -1,0 +1,15 @@
+checksum = "91e72e9d0e336d900e18cdbb787ffac37c90284954218236522b86c4d6410f55"
+licence = "GPL-2.0-or-later"
+provides = "pam-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pam-pgsql-0.7.3.2-r2.apk"
+version = "0.7.3.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["linux-pam", "1.5.2-r1"], ["libpq", "15.1.0-r0"]]

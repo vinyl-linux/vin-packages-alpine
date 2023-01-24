@@ -1,0 +1,15 @@
+checksum = "0ec7f652c7131cdb54919f01708bb08479ebbef2ccda39c452da66a3bb174209"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdns-backend-odbc-4.7.2-r1.apk"
+version = "4.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.7.2-r1"], ["unixodbc", "2.3.11-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

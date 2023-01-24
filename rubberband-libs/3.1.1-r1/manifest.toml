@@ -1,0 +1,15 @@
+checksum = "45403af7f805d79a7b094cfd0eaf68fce5aa57cc22b7d380e0dd588f94acbda6"
+licence = "GPL-2.0-only"
+provides = "rubberband-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rubberband-libs-3.1.1-r1.apk"
+version = "3.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

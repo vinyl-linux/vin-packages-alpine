@@ -1,0 +1,15 @@
+checksum = "1b8ffc3c984bd0dcd219d1723c610e1be30439a37316dc3e661cf630f1cc50ba"
+licence = "LGPL-2.1-or-later"
+provides = "libmediaart-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmediaart-dev-1.9.6-r0.apk"
+version = "1.9.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmediaart", "1.9.6-r0"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

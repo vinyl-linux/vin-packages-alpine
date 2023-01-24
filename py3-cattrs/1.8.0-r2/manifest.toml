@@ -1,0 +1,15 @@
+checksum = "1a8deeed7d75521e86d95e93e938b1d17c599cc1d99d6439524f450baeb4582f"
+licence = "MIT"
+provides = "py3-cattrs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cattrs-1.8.0-r2.apk"
+version = "1.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-attrs", "22.1.0-r0"]]

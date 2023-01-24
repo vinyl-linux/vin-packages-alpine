@@ -1,0 +1,15 @@
+checksum = "a2a2010547da2b4fe34b076ae29a1cfeccf6554bf162f5dde22ec20171abeb13"
+licence = "LGPL-2.1-or-later"
+provides = "grilo-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grilo-libs-0.3.15-r1.apk"
+version = "0.3.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libsoup3", "3.2.2-r0"], ["totem-pl-parser", "3.26.6-r0"]]

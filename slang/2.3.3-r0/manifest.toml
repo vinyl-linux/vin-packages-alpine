@@ -1,0 +1,15 @@
+checksum = "39f81a806baf03386e7bbcd3db170920ac15dc7686419d046c44ec7c384cf88b"
+licence = "GPL-2.0-or-later"
+provides = "slang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/slang-2.3.3-r0.apk"
+version = "2.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pcre", "8.45.0-r2"]]

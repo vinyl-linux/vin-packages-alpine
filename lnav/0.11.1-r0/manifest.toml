@@ -1,0 +1,15 @@
+checksum = "7191d0fcc50788d841df2285a04e07bdac4b775b20ec3e073b19478a8feb37e3"
+licence = "BSD-2-Clause"
+provides = "lnav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lnav-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["pcre2", "10.42.0-r0"], ["readline", "8.2.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

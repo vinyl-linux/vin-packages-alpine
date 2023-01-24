@@ -1,0 +1,15 @@
+checksum = "87e62858c19b46a99262b4f3dd943ad4599d88b2af564d0f7be97b5021891c9d"
+licence = "GPL-3.0-only"
+provides = "zps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zps-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "8bbbf2a44d20c344d7cc5ab4d521ede09aeda148fa1b1d780ff224ddcb3e98c1"
+licence = "GPL-3.0-or-later"
+provides = "cmatrix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cmatrix-2.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

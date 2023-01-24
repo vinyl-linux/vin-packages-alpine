@@ -1,0 +1,15 @@
+checksum = "42c4f8b1142cb20ae1a33b800707141d5285493b81f4e9a0ef9627307c2983fb"
+licence = "GPL-2.0-or-later"
+provides = "marco-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/marco-dev-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["marco", "1.26.1-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

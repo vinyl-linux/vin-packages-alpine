@@ -1,0 +1,15 @@
+checksum = "83192e9a093e1d2ec6b2510d27cb605624d8de59e1348aaf9631b8ca99aebbc7"
+licence = "custom"
+provides = "lha"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lha-1.14i-r4.apk"
+version = "1.14.0-i-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

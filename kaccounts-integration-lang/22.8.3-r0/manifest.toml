@@ -1,0 +1,15 @@
+checksum = "b5fb4737de90d78db48f9cbfacf2bca34e31033a2f01f7b5270080f32cf4f11d"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "kaccounts-integration-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kaccounts-integration-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["accounts-qml-module", "0.7.0"], ["signon-ui", "0.17.0"]]

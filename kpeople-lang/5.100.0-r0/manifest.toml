@@ -1,0 +1,15 @@
+checksum = "7fe0b795e68554a692e319ebcc60ed598935972d8b37256b7af43517dd098d86"
+licence = "LGPL-2.1-or-later"
+provides = "kpeople-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpeople-lang-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"]]

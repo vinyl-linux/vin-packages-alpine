@@ -1,0 +1,15 @@
+checksum = "156b2cdbd6be5f6bae3b47a855e37a745345273d330bc28f2205cf31abf0fb1c"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/open-vm-tools-dev-12.1.0-r0.apk"
+version = "12.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools-deploypkg", "12.1.0-r0"], ["open-vm-tools-hgfs", "12.1.0-r0"], ["open-vm-tools", "12.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

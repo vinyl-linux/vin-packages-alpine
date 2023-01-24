@@ -1,0 +1,15 @@
+checksum = "1fa36a780b82e28a3db8c3b88e62ab52ce169bc66f4132dde7c3955df06742c1"
+licence = "GPL-3.0-or-later"
+provides = "diffutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/diffutils-3.8-r1.apk"
+version = "3.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

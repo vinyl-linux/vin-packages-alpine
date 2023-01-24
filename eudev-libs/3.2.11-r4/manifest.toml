@@ -1,0 +1,15 @@
+checksum = "c18b64b6cc28c26d8831df038b09b912ac14d55f4881930f9719903308248bb5"
+licence = "GPL-2.0-only"
+provides = "eudev-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/eudev-libs-3.2.11-r4.apk"
+version = "3.2.11-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

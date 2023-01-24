@@ -1,0 +1,15 @@
+checksum = "98ec20930f3e890c31a7dcd5092f7d8b54a1a32d8ddd5c580f444cd9b5d2b2fe"
+licence = "LGPL-2.1-or-later"
+provides = "libnvme-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnvme-dev-1.2-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["json-c-dev", "0.16.0-r2"], ["linux-headers", "5.19.5-r0"], ["openssl-dev", "3.0.7-r2"], ["libnvme", "1.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

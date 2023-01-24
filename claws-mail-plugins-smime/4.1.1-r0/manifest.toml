@@ -1,0 +1,15 @@
+checksum = "c5c1231eabee6d27727a3412fc066d270c5ca4c69a24bf4e9061e135fb26d440"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-plugins-smime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/claws-mail-plugins-smime-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["claws-mail", "4.1.1-r0"], ["claws-mail-plugins-pgp", "4.1.1-r0"], ["gpgsm", "2.2.40-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgpg-error", "1.46.0-r1"], ["gpgme", "1.18.0-r0"], ["libintl", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "a0280b5a85649acb209a92e957b4acc69c75d1e99ee3e892cc1a51919c18f9af"
+licence = "Apache-2.0"
+provides = "dune-configurator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dune-configurator-3.5.0-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ocaml", "4.14.0-r0"]]

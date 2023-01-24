@@ -1,0 +1,15 @@
+checksum = "e18c365a248384c3c41d0a5e64e73f3e9e2874177023473393ab6fb47f2e3b69"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception AND Public-Domain"
+provides = "fetchmail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fetchmail-6.4.34-r0.apk"
+version = "6.4.34-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

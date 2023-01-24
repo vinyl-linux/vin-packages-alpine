@@ -1,0 +1,15 @@
+checksum = "277c7e6656c2ac8080d8d717b5446725e8fcfe71b9d3191669e8a33b325e5f35"
+licence = "GPL-2.0-or-later"
+provides = "umix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/umix-1.0.2-r9.apk"
+version = "1.0.2-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

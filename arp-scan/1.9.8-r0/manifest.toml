@@ -1,0 +1,15 @@
+checksum = "18d580c4d5bb4b2211152121f6c64835aaac340b6282156715fbc7f95d84cd7d"
+licence = "GPL-3.0-or-later"
+provides = "arp-scan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/arp-scan-1.9.8-r0.apk"
+version = "1.9.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

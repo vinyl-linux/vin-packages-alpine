@@ -1,0 +1,15 @@
+checksum = "215ebcf3b1fa88a1d636a54dfb52f57c2c8c7ae1246bbfb0d490cb9c6df67112"
+licence = "GPL-2.0-only"
+provides = "ulogd-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ulogd-pgsql-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ulogd", "2.0.8-r0"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

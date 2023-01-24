@@ -1,0 +1,15 @@
+checksum = "d48601de2fe0973a51f321b1400f62da02135c784d2161bc4ab480329906b056"
+licence = "GPL-2.0-only"
+provides = "hvtools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hvtools-4.11.9-r2.apk"
+version = "4.11.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "ddbc7142124b5cd11861a7c486b5439cacb0ec58ffa0d66cfdf4d2211f20116b"
+licence = "GPL-3.0-or-later"
+provides = "bash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bash-5.2.15-r0.apk"
+version = "5.2.15-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "8b3c3d72ffebc841060169920995f378242ac4514dbac5deb923f9ad034fea73"
+licence = "GPL-2.0-or-later"
+provides = "virt-manager-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/virt-manager-common-4.1.0-r0.apk"
+version = "4.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt-glib", "4.0.0-r0"], ["py3-libxml2", "2.10.3-r1"], ["py3-libvirt", "8.9.0-r0"], ["py3-gobject3", "3.42.2-r0"], ["py3-requests", "2.28.1-r1"], ["libosinfo", "1.10.0-r2"]]

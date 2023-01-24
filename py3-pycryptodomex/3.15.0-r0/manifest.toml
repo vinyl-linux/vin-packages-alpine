@@ -1,0 +1,15 @@
+checksum = "9884a5acd440125a2fc809739c73adf52530f73f17479ccc113233bf22108c7b"
+licence = "BSD-2-Clause Unlicense"
+provides = "py3-pycryptodomex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pycryptodomex-3.15.0-r0.apk"
+version = "3.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gmp", "6.2.1-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "43a7d9b61aa523789c32f48bda81524c48467b7cd9b176c810d96482511f8b3f"
+licence = "MIT"
+provides = "py3-nashpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-nashpy-0.0.35-r0.apk"
+version = "0.0.35-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-scipy", "1.9.3-r0"], ["py3-numpy", "1.23.4-r0"]]

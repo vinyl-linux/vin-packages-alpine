@@ -1,0 +1,15 @@
+checksum = "8dfeb06a527a22cda425d58b0be32f2b42b51548ba28232e43de7eb84834f059"
+licence = "GPL-2.0-or-later"
+provides = "email"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/email-3.1.4-r12.apk"
+version = "3.1.4-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl", "3.0.7-r2"], ["musl", "1.2.3-r4"]]

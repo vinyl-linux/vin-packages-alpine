@@ -1,0 +1,15 @@
+checksum = "cdfe82a74ade3f31c15051344becbdecdd621203e421dedc1904ed5ae4403d62"
+licence = "MIT"
+provides = "tree-sitter-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tree-sitter-cpp-0.20.0_git20220314-r0.apk"
+version = "0.20.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

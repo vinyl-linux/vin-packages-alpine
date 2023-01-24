@@ -1,0 +1,15 @@
+checksum = "156e14d42d805124fa8a7e755605af7b3dcd386e80a98b3f3a3b9e90127f00ec"
+licence = "MIT"
+provides = "php81-brotli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-brotli-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"]]

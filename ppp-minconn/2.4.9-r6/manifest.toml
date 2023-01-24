@@ -1,0 +1,15 @@
+checksum = "63314be4688025ce087b85f468b71ced9bd7ed71490170fdc5be5d656cda4749"
+licence = "BSD-4-Clause"
+provides = "ppp-minconn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-minconn-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r6"]]

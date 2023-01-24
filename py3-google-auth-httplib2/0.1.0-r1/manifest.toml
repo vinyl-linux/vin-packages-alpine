@@ -1,0 +1,15 @@
+checksum = "64b6bfb008d9f452a469abcd73f79e09f939f0691e726a31beaa046a93e6dcbb"
+licence = "Apache-2.0"
+provides = "py3-google-auth-httplib2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-google-auth-httplib2-0.1.0-r1.apk"
+version = "0.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-google-auth", "2.13.0-r0"], ["py3-httplib2", "0.21.0-r0"]]

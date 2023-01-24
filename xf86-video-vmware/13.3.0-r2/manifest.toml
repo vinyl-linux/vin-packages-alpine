@@ -1,0 +1,15 @@
+checksum = "7f4a8bbc192f744bdb283f3555d8121306846178aff73a3e4c56a49dc4f8d8f3"
+licence = "MIT"
+provides = "xf86-video-vmware"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-video-vmware-13.3.0-r2.apk"
+version = "13.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["eudev-libs", "3.2.11-r4"], ["mesa-xatracker", "22.2.5-r1"]]

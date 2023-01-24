@@ -1,0 +1,15 @@
+checksum = "0cc273ccf6150271b24f0f03bddabb7693f2f257e2b490b1b64cbeee1eaea828"
+licence = "BSD-2-Clause"
+provides = "yubico-c-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yubico-c-client-2.15-r1.apk"
+version = "2.15.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"]]

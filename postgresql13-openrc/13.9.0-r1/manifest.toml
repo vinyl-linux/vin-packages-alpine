@@ -1,0 +1,15 @@
+checksum = "c24e7faa8664d94eb64b9c2e94324ca46a6a6beb62699ea3cb5f92b0cdd896e6"
+licence = "PostgreSQL"
+provides = "postgresql13-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql13-openrc-13.9-r1.apk"
+version = "13.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-common-openrc", "1.1.0-r2"]]

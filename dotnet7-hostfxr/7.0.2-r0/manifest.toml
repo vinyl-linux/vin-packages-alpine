@@ -1,0 +1,15 @@
+checksum = "f8bd0eb67961a6d41e5b79ebbd89077ed25b501f6d1b4ba48924a6278bd56b4f"
+licence = "MIT"
+provides = "dotnet7-hostfxr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet7-hostfxr-7.0.2-r0.apk"
+version = "7.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

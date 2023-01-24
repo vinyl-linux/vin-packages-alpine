@@ -1,0 +1,15 @@
+checksum = "044e3e3f253ad522de08c4f07a516114578c912ce567c402cf911ed421a9c414"
+licence = "Apache-2.0"
+provides = "libcouchbase-libevent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcouchbase-libevent-3.3.3-r0.apk"
+version = "3.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcouchbase", "3.3.3-r0"], ["libevent", "2.1.12-r5"], ["musl", "1.2.3-r4"]]

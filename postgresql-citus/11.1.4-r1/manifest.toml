@@ -1,0 +1,15 @@
+checksum = "8407bd11f14d69a5544a88a8d121b2705d2f407e196ae218f050bbaadb1d55bf"
+licence = "AGPL-3.0-only"
+provides = "postgresql-citus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-citus-11.1.4-r1.apk"
+version = "11.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["lz4-libs", "1.9.4-r1"], ["libpq", "15.1.0-r0"], ["libssl3", "3.0.7-r2"], ["zstd-libs", "1.5.2-r9"]]

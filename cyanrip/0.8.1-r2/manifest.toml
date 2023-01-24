@@ -1,0 +1,15 @@
+checksum = "24bcb8c0bfaf14387a16fd9f750d3e5b8e5f2371bd4f47057b7f9acbb0e26c08"
+licence = "LGPL-2.1-or-later"
+provides = "cyanrip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cyanrip-0.8.1-r2.apk"
+version = "0.8.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libcdio", "2.1.0-r1"], ["libcdio-paranoia", "10.2.2.0.1-r1"], ["libcurl", "7.87.0-r1"], ["libmusicbrainz", "5.1.0-r1"]]

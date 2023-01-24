@@ -1,0 +1,15 @@
+checksum = "8b7412b96b459c4b6fd230f9faca0ecb218ddf5d3affd19176050054a6d7f472"
+licence = "MPL-2.0"
+provides = "libixion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libixion-0.17.0-r2.apk"
+version = "0.17.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

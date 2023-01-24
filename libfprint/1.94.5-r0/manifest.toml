@@ -1,0 +1,15 @@
+checksum = "ad0ca5f4cde9e13b63b99b6b882706745a837bc5f95bc0bc6da9e2e10c0073fb"
+licence = "LGPL-2.1-or-later"
+provides = "libfprint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfprint-1.94.5-r0.apk"
+version = "1.94.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["libgusb", "0.4.3-r0"], ["nss", "3.85.0-r0"], ["pixman", "0.42.2-r0"]]

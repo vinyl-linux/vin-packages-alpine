@@ -1,0 +1,15 @@
+checksum = "f8ea2b939a1fe04d4c9b69093cf78b0513f8b8f841a01a84e6256435126eeae2"
+licence = "GPL-2.0"
+provides = "libmpeg2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmpeg2-0.5.1-r9.apk"
+version = "0.5.1-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "41c8e3809a1be81fad23247e3aa8fda2c867052ec66b6f066a5bcf80a7fccc3d"
+licence = "custom"
+provides = "dcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dcc-2.3.168-r1.apk"
+version = "2.3.168-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

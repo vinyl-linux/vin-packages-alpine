@@ -1,0 +1,15 @@
+checksum = "1a5448b9fe1ffba669eec14a08d3b4272fa5dbb33bc74a10292ca39c4765ba79"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "kxmlgui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kxmlgui-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kglobalaccel", "5.100.0-r0"], ["kguiaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kiconthemes", "5.100.0-r0"], ["kitemviews", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

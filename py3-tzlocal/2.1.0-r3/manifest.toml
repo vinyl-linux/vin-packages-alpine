@@ -1,0 +1,15 @@
+checksum = "f9e9164491d7c84d7cd217580f1dbc5c3479813bf45c3d1420e666acd2bfee95"
+licence = "MIT"
+provides = "py3-tzlocal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tzlocal-2.1-r3.apk"
+version = "2.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-tz", "2022.6.0-r0"]]

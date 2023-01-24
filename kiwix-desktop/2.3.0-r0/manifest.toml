@@ -1,0 +1,15 @@
+checksum = "f0b217f17daa637c4173c8fbc183870389563ec339417ce9e22c02a7e1586959"
+licence = "GPL-3.0-or-later"
+provides = "kiwix-desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kiwix-desktop-2.3.0-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtwebchannel", "5.15.6"], ["qt5-qtwebengine", "5.15.12-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["kiwix-lib", "11.0.0-r2"], ["libstdc++", "12.2.1"], ["libzim", "8.0.0-r1"]]

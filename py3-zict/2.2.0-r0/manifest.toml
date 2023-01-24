@@ -1,0 +1,15 @@
+checksum = "bb6b1b4da31d7b4067534c14540f63c5fa0a1eea258c8d43e7a230253c0b264d"
+licence = "BSD-3-Clause"
+provides = "py3-zict"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zict-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-heapdict", "1.0.1-r2"], ["py3-lmdb", "1.2.1-r2"]]

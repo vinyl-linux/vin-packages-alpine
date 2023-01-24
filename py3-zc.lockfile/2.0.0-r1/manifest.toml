@@ -1,0 +1,15 @@
+checksum = "09f0f4cdd04f6f9c125c7625328351079ffdb44c16b21eb770e35e90011734bf"
+licence = "MIT"
+provides = "py3-zc.lockfile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zc.lockfile-2.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

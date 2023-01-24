@@ -1,0 +1,15 @@
+checksum = "ee439d74b2230428099884e70fa732e07b00bec86ea9dac7aae33de10dd0ee85"
+licence = "GPL-3.0-or-later"
+provides = "corearchiver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corearchiver-4.4.0-r1.apk"
+version = "4.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libarchive-qt", "2.0.7-r0"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

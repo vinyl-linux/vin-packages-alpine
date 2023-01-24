@@ -1,0 +1,15 @@
+checksum = "23c505696b6a85673df4052cbb9946b712531e96383eda8e48519bbf5697cfbf"
+licence = "BSD-2-Clause"
+provides = "libcpuid-tool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcpuid-tool-0.6.2-r0.apk"
+version = "0.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcpuid", "0.6.2-r0"]]

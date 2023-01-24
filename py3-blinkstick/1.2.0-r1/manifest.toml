@@ -1,0 +1,15 @@
+checksum = "47bb0eabbe93b1e26f16294473e06022097c414cde372b625128d9d0725dfbcd"
+licence = "BSD-3-Clause"
+provides = "py3-blinkstick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-blinkstick-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-usb", "1.2.1-r0"], ["python3", "3.10.9-r1"]]

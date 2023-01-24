@@ -1,0 +1,15 @@
+checksum = "2cc656d5f44536e9b1e26b42b51e471e8cf14b92012e90c5e5fcaa6be6e3b516"
+licence = "GPL-2.0-or-later"
+provides = "lingot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lingot-1.1.1-r2.apk"
+version = "1.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fftw-double-libs", "3.3.10-r1"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["jack", "1.9.21-r0"], ["json-c", "0.16.0-r2"], ["libpulse", "16.1.0-r6"]]

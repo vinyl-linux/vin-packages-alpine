@@ -1,0 +1,15 @@
+checksum = "f34a0a9ab12f93139e8b40812f6492869b7b58ec4ceeeee22808e4ff868c2b0a"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "keepassxc-autotype"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keepassxc-autotype-2.7.4-r0.apk"
+version = "2.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxtst", "1.2.4-r0"], ["botan-libs", "2.19.3-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

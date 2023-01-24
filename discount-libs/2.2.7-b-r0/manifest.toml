@@ -1,0 +1,15 @@
+checksum = "79ad328a70ba6bf3f82f9394c09b70d1d8813c4a4b0384f990c359bb4dcf3039"
+licence = "BSD-3-Clause"
+provides = "discount-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/discount-libs-2.2.7b-r0.apk"
+version = "2.2.7-b-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

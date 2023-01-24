@@ -1,0 +1,15 @@
+checksum = "f60e6eaaff50dcc42cf69cd828e428e981e41c0c75184e7aad78fc54c1470201"
+licence = "BSD-2-Clause"
+provides = "tpm2-abrmd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-abrmd-dev-2.4.1-r0.apk"
+version = "2.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libtss2-tcti-armbd", "2.4.1-r0"], ["glib-dev", "2.74.5-r0"], ["tpm2-tss-dev", "3.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

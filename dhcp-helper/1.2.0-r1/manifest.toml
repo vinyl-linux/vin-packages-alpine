@@ -1,0 +1,15 @@
+checksum = "6021b2fe20c1b5d60caa135298b88a46103b87e79f13c32a389db3e00c2f0820"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "dhcp-helper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dhcp-helper-1.2-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

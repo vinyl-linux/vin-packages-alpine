@@ -1,0 +1,15 @@
+checksum = "6ae4008cdd00f2f14d5b15408ec49046aa6fec696cf233575e9a80b05c0f23b2"
+licence = "LGPL-2.1-or-later"
+provides = "stoken"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stoken-0.92-r4.apk"
+version = "0.92.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["nettle", "3.8.1-r0"], ["libxml2", "2.10.3-r1"]]

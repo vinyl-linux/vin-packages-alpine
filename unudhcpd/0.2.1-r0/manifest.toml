@@ -1,0 +1,15 @@
+checksum = "826955a182e579d89a9cf7a8ae5f0dec93e2141c92ad1671c1b42dd9c76f15c1"
+licence = "GPL-3.0-or-later"
+provides = "unudhcpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unudhcpd-0.2.1-r0.apk"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

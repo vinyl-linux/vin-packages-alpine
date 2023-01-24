@@ -1,0 +1,15 @@
+checksum = "7598812860bd37d32a65b56c416f163b356b2865c8f7ec518bdcd786b1babaea"
+licence = "CDDL-1.0"
+provides = "zfs-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-scripts-2.1.7-r0.apk"
+version = "2.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["zfs-libs", "2.1.7-r0"], ["zlib", "1.2.13-r0"]]

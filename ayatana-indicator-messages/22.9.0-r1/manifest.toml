@@ -1,0 +1,15 @@
+checksum = "12c4f603ef9473dfbf109d9ebbde9672b5db73d5475ded9146e5ec757e1af0d7"
+licence = "GPL-3.0-only"
+provides = "ayatana-indicator-messages"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ayatana-indicator-messages-22.9.0-r1.apk"
+version = "22.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaccountsservice", "22.8.8-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

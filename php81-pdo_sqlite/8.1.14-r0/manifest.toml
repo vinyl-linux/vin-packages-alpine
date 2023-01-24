@@ -1,0 +1,15 @@
+checksum = "587227bb17ad3df199801ff32621fc9fc19288bd80827095e25cb68d11ed38b5"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-pdo_sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pdo_sqlite-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["php81-pdo", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

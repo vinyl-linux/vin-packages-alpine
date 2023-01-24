@@ -1,0 +1,15 @@
+checksum = "e8ccdd2f8d7d17a7a6b64bdc55b39933843c1a43fa017f22e58722f7c1c8ba8e"
+licence = "GPL-2.0-or-later"
+provides = "wavemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wavemon-0.9.4-r2.apk"
+version = "0.9.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["ncurses-libs", "6.3.0"], ["libnl3", "3.7.0-r0"], ["libnl3-cli", "3.7.0-r0"]]

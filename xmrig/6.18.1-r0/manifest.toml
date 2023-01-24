@@ -1,0 +1,15 @@
+checksum = "fc0eb22e7899c5dc8e7ffaff4b5db3e3ebce101382864c679976c3f576709fed"
+licence = "GPL-3.0-or-later"
+provides = "xmrig"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmrig-6.18.1-r0.apk"
+version = "6.18.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["hwloc", "2.8.0-r0"], ["libssl3", "3.0.7-r2"], ["libuv", "1.44.2-r0"]]

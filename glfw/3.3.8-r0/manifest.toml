@@ -1,0 +1,15 @@
+checksum = "5619af64371ba91d16a28362671de6d459449cb4406e7954919b03a1764e4f42"
+licence = "Zlib"
+provides = "glfw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glfw-3.3.8-r0.apk"
+version = "3.3.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

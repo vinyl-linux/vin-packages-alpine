@@ -1,0 +1,15 @@
+checksum = "fb179b8510875e32dd81dd7f938e27dc809fa088c700fb456840783646c9f58a"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "fuse-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fuse-dev-2.9.9-r2.apk"
+version = "2.9.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fuse", "2.9.9-r2"], ["pkgconf", "1.9.4-r0"]]

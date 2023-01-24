@@ -1,0 +1,15 @@
+checksum = "00c621593fbb5003887114222f52e18cf24b8aa438a912e742ae51da9f531312"
+licence = "GPL-2.0 with Classpath"
+provides = "openjdk7"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk7-7.321.2.6.28-r3.apk"
+version = "7.321.2.6.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk7-jre", "7.321.2.6.28-r3"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["openjdk7-jre-base", "7.321.2.6.28-r3"]]

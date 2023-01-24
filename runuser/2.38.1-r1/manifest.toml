@@ -1,0 +1,15 @@
+checksum = "bbe4f6258dc807ebb04949ea4d6a20d0b9d7b2cf8969172e7b590485c0b9849f"
+licence = "GPL-2.0-or-later"
+provides = "runuser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/runuser-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libeconf", "0.4.7-r0"], ["linux-pam", "1.5.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "26e9d2373af9b2f8df5035f965b077f531381b0e774c07e9ca215b6eff7102ed"
+licence = "GPL-2.0-or-later"
+provides = "squashfs-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/squashfs-tools-4.5.1-r1.apk"
+version = "4.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lz4-libs", "1.9.4-r1"], ["xz-libs", "5.2.9-r0"], ["lzo", "2.10.0-r3"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

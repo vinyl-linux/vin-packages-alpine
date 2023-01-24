@@ -1,0 +1,15 @@
+checksum = "e737c94568606d16fc62457279913589198edc41671e20e6603c016e09afda78"
+licence = "Apache-2.0"
+provides = "shaderc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shaderc-dev-2022.3-r1.apk"
+version = "2022.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["shaderc", "2022.3.0-r1"]]

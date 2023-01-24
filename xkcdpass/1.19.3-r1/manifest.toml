@@ -1,0 +1,15 @@
+checksum = "bc16d5793fdabc249a64be3caac79a83f0c01402ec62528154418a3efbdd6b15"
+licence = "BSD-3-Clause"
+provides = "xkcdpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xkcdpass-1.19.3-r1.apk"
+version = "1.19.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-xkcdpass", "1.19.3-r1"]]

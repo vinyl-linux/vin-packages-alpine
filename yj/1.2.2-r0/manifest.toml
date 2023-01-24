@@ -1,0 +1,15 @@
+checksum = "27c3d7c2a2a26e72a4add8fd59140a5a4835d94374f696518e04e9c912c1c4a5"
+licence = "Apache-2.0"
+provides = "yj"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yj-1.2.2-r0.apk"
+version = "1.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

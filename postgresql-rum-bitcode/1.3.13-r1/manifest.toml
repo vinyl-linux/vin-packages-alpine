@@ -1,0 +1,15 @@
+checksum = "0dcba3a2b25ec5312d8caea563dc389de681141119bd5ac5f708ca626b806103"
+licence = "PostgreSQL"
+provides = "postgresql-rum-bitcode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-rum-bitcode-1.3.13-r1.apk"
+version = "1.3.13-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-rum", "1.3.13-r1"]]

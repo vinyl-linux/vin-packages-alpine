@@ -1,0 +1,15 @@
+checksum = "21607946e71e0dcb774252f10b5fc3a1d9dd3e50f3d94551d72c0a2c8c8f008f"
+licence = "GPL-2.0-or-later"
+provides = "collectd-smart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-smart-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["libatasmart", "0.19.0-r2"], ["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

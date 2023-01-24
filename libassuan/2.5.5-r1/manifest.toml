@@ -1,0 +1,15 @@
+checksum = "76c75db7216dde67fbe469873616e56b642a7b92ccfe9018614d5e7a130d22bf"
+licence = "LGPL-2.1-or-later"
+provides = "libassuan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libassuan-2.5.5-r1.apk"
+version = "2.5.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgpg-error", "1.46.0-r1"]]

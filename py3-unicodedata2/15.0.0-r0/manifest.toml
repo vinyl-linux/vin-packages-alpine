@@ -1,0 +1,15 @@
+checksum = "8e2967da752a9a9789f2c2ff98e5c16c04652eea7a201ea994bb1050644425a8"
+licence = "Apache-2.0"
+provides = "py3-unicodedata2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-unicodedata2-15.0.0-r0.apk"
+version = "15.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

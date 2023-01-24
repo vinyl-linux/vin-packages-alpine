@@ -1,0 +1,15 @@
+checksum = "118a2247662de78c62ba5dc794d5d3bbcc857c2f21048437036fcf12646e4b5b"
+licence = "GPL-2.0-or-later"
+provides = "colordiff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/colordiff-1.0.20-r0.apk"
+version = "1.0.20-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["diffutils", "3.8.0-r1"], ["less", "608.0.0-r0"], ["perl", "5.36.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "15d02dfde42e9265c9141a8e6897c4474e68bf178a5bfb04c7386f0b6a65f755"
+licence = "LGPL-2.0-or-later"
+provides = "libiptcdata-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libiptcdata-dev-1.0.5-r1.apk"
+version = "1.0.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libiptcdata", "1.0.5-r1"], ["pkgconf", "1.9.4-r0"]]

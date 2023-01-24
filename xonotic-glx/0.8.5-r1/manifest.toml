@@ -1,0 +1,15 @@
+checksum = "d228052e657cb12732cb536a9b60b233cabb8e44b14c2da8b33bd51fc43dd9fa"
+licence = "GPL-2.0-or-later"
+provides = "xonotic-glx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xonotic-glx-0.8.5-r1.apk"
+version = "0.8.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xonotic", "0.8.5-r1"], ["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxpm", "3.5.15-r0"], ["libxxf86vm", "1.1.5-r0"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b2a62fd6b18caefacb19a61e6f4e4ab5d8723b4d2edcf8013fce76a9b2582e72"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-scl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-scl-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["syslog-ng", "3.38.1-r0"]]

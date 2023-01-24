@@ -1,0 +1,15 @@
+checksum = "1c64036d3158dafb537d0c12ed27ab793a0c1e501cf110dbaa201d4e9e2d4533"
+licence = "GPL-2.0-or-later"
+provides = "librttopo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librttopo-dev-1.1.0-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["geos-dev", "3.11.1-r0"], ["librttopo", "1.1.0-r2"], ["pkgconf", "1.9.4-r0"]]

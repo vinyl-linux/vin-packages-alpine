@@ -1,0 +1,15 @@
+checksum = "2d95142c47b40bbe30bc50e2489336842854fcb26d4cf7ae200570d59af7ecc8"
+licence = "GPL-2.0-or-later"
+provides = "openbox-gnome"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openbox-gnome-3.6.1-r3.apk"
+version = "3.6.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxau", "1.0.10-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

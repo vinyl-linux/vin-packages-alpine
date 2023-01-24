@@ -1,0 +1,15 @@
+checksum = "872ca00504f209353c9e4acd38102c0fbd3b11c5f6babd394bb87f1b277fdc40"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-backend-coolscan2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-backend-coolscan2-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sane", "1.1.1-r0"], ["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"], ["libxml2", "2.10.3-r1"]]

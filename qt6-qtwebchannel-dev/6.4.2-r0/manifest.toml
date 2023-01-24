@@ -1,0 +1,15 @@
+checksum = "b5489afeffb5e540f63f49a49543d62f2d5998c97367c41746ee57e264adce5e"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtwebchannel-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtwebchannel-dev-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase-dev", "6.4.2-r0"], ["qt6-qtdeclarative-dev", "6.4.2-r0"], ["qt6-qtwebsockets-dev", "6.4.2-r0"], ["pkgconf", "1.9.4-r0"], ["qt6-qtwebchannel", "6.4.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "85ba09bd21c7c4be38225773b99270483fdac5dfbc4bed6c104b464c2520eb99"
+licence = "GPL-2.0-only"
+provides = "libtbb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtbb-dev-2021.7.0-r0.apk"
+version = "2021.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libtbb", "2021.7.0-r0"], ["pkgconf", "1.9.4-r0"]]

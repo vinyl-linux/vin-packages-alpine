@@ -1,0 +1,15 @@
+checksum = "4d558045ea2d726efe94b0694be86f68c05a7506f9044db2416418fd4f97c06d"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "device-mapper-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/device-mapper-static-2.03.17-r1.apk"
+version = "2.3.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lvm2-libs", "2.3.17-r1"]]

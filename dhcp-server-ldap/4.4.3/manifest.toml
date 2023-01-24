@@ -1,0 +1,15 @@
+checksum = "2addb4fff7a4a1b90fbcf5ceab4d0ccb5f2866481e2bf94db64d2c2d5f104925"
+licence = "MPL-2.0"
+provides = "dhcp-server-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dhcp-server-ldap-4.4.3_p1-r1.apk"
+version = "4.4.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dhcp", "4.4.3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["krb5-libs", "1.20.1-r0"], ["libldap", "2.6.3-r6"]]

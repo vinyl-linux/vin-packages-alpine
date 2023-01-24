@@ -1,0 +1,15 @@
+checksum = "33bb9a0d445f58c65de93e467e0de1313f00c7d69743d008f42b1499baf4203c"
+licence = "GPL-2.0-or-later"
+provides = "mutagen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mutagen-1.46.0-r0.apk"
+version = "1.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-mutagen", "1.46.0-r0"]]

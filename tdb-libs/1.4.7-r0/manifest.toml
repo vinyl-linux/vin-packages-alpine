@@ -1,0 +1,15 @@
+checksum = "2a6f179abb3429e02a15ea9bba402c2ccf12fe94fdf1f1168427a28d7eacf078"
+licence = "LGPL-3.0-or-later"
+provides = "tdb-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tdb-libs-1.4.7-r0.apk"
+version = "1.4.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

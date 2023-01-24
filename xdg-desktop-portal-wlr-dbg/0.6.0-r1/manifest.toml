@@ -1,0 +1,15 @@
+checksum = "920deec2ab62f7f44d9b51c107cd4833b7ac822c19df2f4a103d824c502f194e"
+licence = "MIT"
+provides = "xdg-desktop-portal-wlr-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdg-desktop-portal-wlr-dbg-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-desktop-portal", "1.16.0-r0"]]

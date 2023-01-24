@@ -1,0 +1,15 @@
+checksum = "293a8632898d217f0d4113fec7435fc746e9176931584ec10c43cd8a4a947328"
+licence = "GPL-2.0-or-later"
+provides = "gnome-software-plugin-flatpak"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-software-plugin-flatpak-42.4-r1.apk"
+version = "42.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["appstream", "0.15.5-r2"], ["musl", "1.2.3-r4"], ["flatpak-libs", "1.14.1-r0"], ["glib", "2.74.5-r0"], ["gnome-software-lib", "42.4.0-r1"], ["libintl", "0.21.1-r1"], ["ostree", "2022.6.0-r0"], ["libxmlb", "0.3.10-r0"]]

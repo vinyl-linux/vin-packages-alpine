@@ -1,0 +1,15 @@
+checksum = "1d5d91acea534442be234b47f548ddc546275c040a8db60212e567d5d4df31b0"
+licence = "LGPL-3.0-only"
+provides = "libayatana-appindicator-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libayatana-appindicator-dev-0.5.91-r1.apk"
+version = "0.5.91-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libayatana-appindicator", "0.5.91-r1"], ["libayatana-indicator-dev", "0.9.3-r0"], ["libdbusmenu-glib-dev", "16.4.0-r3"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

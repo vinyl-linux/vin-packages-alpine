@@ -1,0 +1,15 @@
+checksum = "69264bb2c878cd03cc339719ec26e986dc771656444a4867a7d0120583b7967e"
+licence = "GPL-2.0-only AND LGPL-2.1-only AND 0BSD AND BSD-3-Clause AND GPL-3.0-only AND LGPL-3.0-only"
+provides = "newlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/newlib-4.2.0.20211231-r4.apk"
+version = "4.2.0.20211231-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["newlib-arm-none-eabi", "4.2.0.20211231-r4"], ["newlib-riscv-none-elf", "4.2.0.20211231-r4"], ["newlib-msp430-elf", "4.2.0.20211231-r4"], ["newlib-or1k-elf", "4.2.0.20211231-r4"], ["newlib-aarch64-none-elf", "4.2.0.20211231-r4"]]

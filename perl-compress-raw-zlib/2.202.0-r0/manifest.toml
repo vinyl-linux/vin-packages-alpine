@@ -1,0 +1,15 @@
+checksum = "ce200f2d845f0a586f67781dfc27de764bb3f1624f7c4eea6f2c470428747ba0"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-compress-raw-zlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-compress-raw-zlib-2.202-r0.apk"
+version = "2.202.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

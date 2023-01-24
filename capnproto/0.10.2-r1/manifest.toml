@@ -1,0 +1,15 @@
+checksum = "5c7b4ccabd9508ab90f9aa721364f520a8a6984e0481f6d4b139b0c865067a1c"
+licence = "MIT"
+provides = "capnproto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/capnproto-0.10.2-r1.apk"
+version = "0.10.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libucontext", "1.2.0-r0"]]

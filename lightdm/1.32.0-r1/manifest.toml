@@ -1,0 +1,15 @@
+checksum = "ae008a0a6f13b9c82be1d646b908e1f21221b8eb56552a21a639f92d3b155bc5"
+licence = "GPL-3.0-or-later"
+provides = "lightdm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lightdm-1.32.0-r1.apk"
+version = "1.32.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["accountsservice", "22.8.8-r0"], ["adwaita-icon-theme", "43.0.0-r0"], ["dbus", "1.14.4-r0"], ["xinit", "1.4.1-r1"], ["yash-binsh", "2.53.0-r2"], ["libx11", "1.8.3-r1"], ["libxdmcp", "1.1.4-r0"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["linux-pam", "1.5.2-r1"], ["libxcb", "1.15.0-r0"], ["libxklavier", "5.4.0-r6"]]

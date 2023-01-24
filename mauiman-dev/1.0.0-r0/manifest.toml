@@ -1,0 +1,15 @@
+checksum = "114b2e15e5c189c6c3bed1dd1b81f2d84356ba93c68c58c16f3ab3ea1b83c423"
+licence = "GPL-2.0-or-later"
+provides = "mauiman-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mauiman-dev-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mauiman", "1.0.0-r0"], ["qt5-qtbase-dev", "5.15.6"]]

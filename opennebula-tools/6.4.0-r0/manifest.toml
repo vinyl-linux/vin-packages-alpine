@@ -1,0 +1,15 @@
+checksum = "107c3bc7fc039cc7f875d2d43128dd095fb86f2ed2c972f9a23c850679a4b7fb"
+licence = "Apache-2.0"
+provides = "opennebula-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opennebula-tools-6.4.0-r0.apk"
+version = "6.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-activesupport", "7.0.4-r0"], ["ruby-opennebula", "6.4.0-r0"]]

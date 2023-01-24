@@ -1,0 +1,15 @@
+checksum = "a18617281182c6675bb653ffc3d28602154ccb62adb4ff67087851f7adf67eb9"
+licence = "BSD-3-Clause"
+provides = "snappy-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/snappy-dev-1.1.9-r4.apk"
+version = "1.1.9-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["snappy", "1.1.9-r4"]]

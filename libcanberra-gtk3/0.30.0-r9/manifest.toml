@@ -1,0 +1,15 @@
+checksum = "76980c5b5f14c42e2004e2c86005d253c19114a6f8e0b8a62b2c130a0dd6b97c"
+licence = "LGPL-2.1-or-later"
+provides = "libcanberra-gtk3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcanberra-gtk3-0.30-r9.apk"
+version = "0.30.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcanberra", "0.30.0-r9"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"]]

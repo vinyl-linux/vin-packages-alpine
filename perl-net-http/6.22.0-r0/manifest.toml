@@ -1,0 +1,15 @@
+checksum = "a621490d166e54aab52bb5c0c690ae65f2334d20c06d2c90b07c1b04a4196516"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-net-http"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-net-http-6.22-r0.apk"
+version = "6.22.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-uri", "5.17.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2cbd8badb99dc2a9fa8540c3480cfe2224200139363d39a67254bec4616e2e56"
+licence = "GPL-2.0-or-later"
+provides = "sushi-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sushi-lang-43.0-r1.apk"
+version = "43.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["gjs", "1.74.1-r0"], ["webkit2gtk-4.1", "2.38.3-r0"]]

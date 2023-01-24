@@ -1,0 +1,15 @@
+checksum = "2a40ba5ccc474cc4a072eec0cf191d254a5d6e009fd1fe01fd5ae5462d250a98"
+licence = "MIT"
+provides = "gocryptfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gocryptfs-2.3-r4.apk"
+version = "2.3.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fuse", "2.9.9-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

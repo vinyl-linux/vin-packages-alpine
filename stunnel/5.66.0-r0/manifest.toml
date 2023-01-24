@@ -1,0 +1,15 @@
+checksum = "9eb2563acbdccfac41fdbf2b8b13c8ce138e42f8ec805e464f5fdd39ee4fb481"
+licence = "GPL-2.0-or-later with OpenSSL exception"
+provides = "stunnel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stunnel-5.66-r0.apk"
+version = "5.66.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

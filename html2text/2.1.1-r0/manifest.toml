@@ -1,0 +1,15 @@
+checksum = "1c8dfb8a7d2c5d5e25f1a441905474bfac6cbfe567eb5f02780c2f55909566ca"
+licence = "GPL"
+provides = "html2text"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/html2text-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

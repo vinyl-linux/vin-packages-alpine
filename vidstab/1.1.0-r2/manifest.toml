@@ -1,0 +1,15 @@
+checksum = "5ccfb9157b8763d3114e3638ea383ca633cc00fe768ba7b0a1a3396ed76df45e"
+licence = "GPL-2.0-or-later"
+provides = "vidstab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vidstab-1.1.0-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgomp", "12.2.1"]]

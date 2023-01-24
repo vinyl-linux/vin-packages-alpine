@@ -1,0 +1,15 @@
+checksum = "968d36f45e0117dd07338dda37f344c4029e0e30a8a8dd7a5caf910417821925"
+licence = "BSD-3-Clause"
+provides = "libhtp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libhtp-dev-0.5.41-r0.apk"
+version = "0.5.41-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.13-r0"], ["libhtp", "0.5.41-r0"], ["pkgconf", "1.9.4-r0"]]

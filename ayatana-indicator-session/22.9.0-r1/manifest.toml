@@ -1,0 +1,15 @@
+checksum = "c8dc0680f535af932bb9c1d6679bdc57016da7ed6e2c1df51244c12279dc1279"
+licence = "GPL-3.0-only"
+provides = "ayatana-indicator-session"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ayatana-indicator-session-22.9.0-r1.apk"
+version = "22.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libayatana-common", "0.9.8-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

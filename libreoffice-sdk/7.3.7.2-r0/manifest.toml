@@ -1,0 +1,15 @@
+checksum = "3abcdaa74e048941156890b6f3c16dfb94a05b4933c31648c37fe82133694691"
+licence = "MPL-2.0"
+provides = "libreoffice-sdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-sdk-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-common", "7.3.7.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

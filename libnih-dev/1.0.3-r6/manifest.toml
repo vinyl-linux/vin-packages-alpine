@@ -1,0 +1,15 @@
+checksum = "ffd846cddc1bcdf53402509d41a1d00870cf8cba7bda997444ad231001561320"
+licence = "GPL-2.0-only"
+provides = "libnih-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnih-dev-1.0.3-r6.apk"
+version = "1.0.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-dev", "1.14.4-r0"], ["expat-dev", "2.5.0-r0"], ["libnih", "1.0.3-r6"], ["pkgconf", "1.9.4-r0"]]

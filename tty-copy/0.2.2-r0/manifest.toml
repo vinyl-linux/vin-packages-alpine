@@ -1,0 +1,15 @@
+checksum = "b511555e08b7848509666652824fad1eb5de795817059110eecf72118b975d39"
+licence = "MIT"
+provides = "tty-copy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tty-copy-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

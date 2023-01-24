@@ -1,0 +1,15 @@
+checksum = "69ce9022f2dce812a8ac135171961de1ea26e3903bc1293d571eff3259688145"
+licence = "Apache-2.0"
+provides = "php81-pecl-couchbase"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-couchbase-4.0.0-r1.apk"
+version = "4.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-pecl-igbinary", "3.2.12-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

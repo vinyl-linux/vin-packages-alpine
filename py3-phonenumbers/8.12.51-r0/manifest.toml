@@ -1,0 +1,15 @@
+checksum = "b865098e0c72092cf2ee9855e1432bfb9751cbe426b1ac7d0c112ff64de3d9df"
+licence = "Apache-2.0"
+provides = "py3-phonenumbers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-phonenumbers-8.12.51-r0.apk"
+version = "8.12.51-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "8eaf02315271e108cd3781e649c4cd09c9206b2b6fa0b23e7d20f5a125de9789"
+licence = "MIT"
+provides = "py3-pytest-httpx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-httpx-0.21.2-r0.apk"
+version = "0.21.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-httpx", "0.23.0-r0"], ["py3-pytest", "7.2.0-r1"]]

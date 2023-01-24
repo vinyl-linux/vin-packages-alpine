@@ -1,0 +1,15 @@
+checksum = "c1614d67a8f423404f62e3e8d326f7cae22c2a3eafe5c1def34d820b7eb866fc"
+licence = "Public-Domain"
+provides = "libselinux-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libselinux-utils-3.4-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"], ["pcre2", "10.42.0-r0"], ["libselinux", "3.4.0-r0"], ["libsepol", "3.4.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "83dc24d73f5498a9fcc2a9b6015edc95576d8f58114467d3d6cdd1c8cfcafbeb"
+licence = "MPL-2.0"
+provides = "roc-toolkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/roc-toolkit-0.1.5-r2.apk"
+version = "0.1.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["libunwind", "1.6.2-r0"], ["libuv", "1.44.2-r0"]]

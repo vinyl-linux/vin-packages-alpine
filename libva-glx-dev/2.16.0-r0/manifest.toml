@@ -1,0 +1,15 @@
+checksum = "6ea4eb96ab44d6528a292d8adbb2d28c7256483bee141dd919142dbf970ea8e4"
+licence = "MIT"
+provides = "libva-glx-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libva-glx-dev-2.16.0-r0.apk"
+version = "2.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libva-dev", "2.16.0-r0"], ["mesa-dev", "22.2.5-r1"], ["libxfixes-dev", "6.0.0-r0"], ["libva-glx", "2.16.0-r0"], ["pkgconf", "1.9.4-r0"]]

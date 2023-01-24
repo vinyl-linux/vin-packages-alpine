@@ -1,0 +1,15 @@
+checksum = "80b2d387f20f75156d3581ad2a5cad7be528174c9a64df29356c34d3a1cef581"
+licence = "GPL-2.0-only"
+provides = "squark-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/squark-dbg-0.6.1-r4.apk"
+version = "0.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["haserl", "0.9.36-r2"]]

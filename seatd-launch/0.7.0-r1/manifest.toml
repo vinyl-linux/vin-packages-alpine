@@ -1,0 +1,15 @@
+checksum = "0d812ea9f3b92ba525393b1c4b8e7a098928ebe6a3ff05bb4153f2795800047c"
+licence = "MIT"
+provides = "seatd-launch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/seatd-launch-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["seatd", "0.7.0-r1"], ["musl", "1.2.3-r4"]]

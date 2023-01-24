@@ -1,0 +1,15 @@
+checksum = "088ff43e5227545e9552116a16900758b6121b51ec0bbcb735d21a4b77dd8253"
+licence = "LGPL-2.0-or-later"
+provides = "ostree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ostree-2022.6-r0.apk"
+version = "2022.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["fuse3-libs", "3.12.0-r0"], ["glib", "2.74.5-r0"], ["libgpg-error", "1.46.0-r1"], ["gpgme", "1.18.0-r0"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c57f5ffd6d40cb11336461c38262d602f095a2ed4bfbea9c7ad4c4723c23c272"
+licence = "MIT"
+provides = "py3-pytest-cov"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-cov-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pytest", "7.2.0-r1"], ["py3-coverage", "6.5.0-r0"]]

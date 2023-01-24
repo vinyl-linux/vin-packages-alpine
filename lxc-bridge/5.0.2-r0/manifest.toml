@@ -1,0 +1,15 @@
+checksum = "cd0e5915003374887375f1644709fd350a6cd4eda05169b94a1c65af3086a2a7"
+licence = "GPL-2.0-only"
+provides = "lxc-bridge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lxc-bridge-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnsmasq-dnssec-dbus", "2.87.0-r0"]]

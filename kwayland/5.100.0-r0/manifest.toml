@@ -1,0 +1,15 @@
+checksum = "1405f3f08d8b73ef7f992389e13b3a4a85748b146c14c8f7916416f95d7db5e3"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kwayland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kwayland-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-egl", "22.2.5-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtwayland", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "4a9d9d0b04aab1441915bd16f496d437844dcea497a8ea355ce99d68dfe3d780"
+licence = "MPL-2.0"
+provides = "roc-toolkit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/roc-toolkit-dev-0.1.5-r2.apk"
+version = "0.1.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["roc-toolkit-libs", "0.1.5-r2"]]

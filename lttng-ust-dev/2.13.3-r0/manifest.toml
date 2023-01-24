@@ -1,0 +1,15 @@
+checksum = "06111926e5cd89de6acadd2bf107e2d68a3a59100557b3bed2673c397c367270"
+licence = "LGPL-2.1-or-later"
+provides = "lttng-ust-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lttng-ust-dev-2.13.3-r0.apk"
+version = "2.13.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["userspace-rcu-dev", "0.13.2-r0"], ["lttng-ust", "2.13.3-r0"], ["pkgconf", "1.9.4-r0"], ["py3-lttng", "2.13.3-r0"]]

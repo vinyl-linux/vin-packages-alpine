@@ -1,0 +1,15 @@
+checksum = "d81aa41f5cdda0e5a58f2d78c76d9af3b37062d7b524d38cf80386c8f9510166"
+licence = "GPL-3.0-or-later"
+provides = "wdisplays"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wdisplays-1.1-r1.apk"
+version = "1.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libepoxy", "1.5.10-r0"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"]]

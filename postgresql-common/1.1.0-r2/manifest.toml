@@ -1,0 +1,16 @@
+checksum = "b961ac3ba7100818c7e5c147782e2a210a5070a426dd014398255bac4f2a3056"
+licence = "MIT"
+provides = "postgresql-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql-common-1.1-r2.apk"
+version = "1.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

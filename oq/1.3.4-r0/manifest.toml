@@ -1,0 +1,15 @@
+checksum = "779c38daeab31ddc1daeb56c3995ddab708572994da916ef8f96af74bbeb6ccb"
+licence = "MIT"
+provides = "oq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oq-1.3.4-r0.apk"
+version = "1.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jq", "1.6.0-r2"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["gc", "8.2.2-r0"], ["libgcc", "12.2.1"], ["pcre", "8.45.0-r2"], ["libxml2", "2.10.3-r1"], ["yaml", "0.2.5-r0"]]

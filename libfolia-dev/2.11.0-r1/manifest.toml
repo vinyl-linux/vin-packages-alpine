@@ -1,0 +1,15 @@
+checksum = "abe2d02974f3bc8ceeaeba71fe418c260b8a5bc9782cb8ecde4664ee3fc0c328"
+licence = "GPL-3.0-only"
+provides = "libfolia-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfolia-dev-2.11-r1.apk"
+version = "2.11.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfolia", "2.11.0-r1"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

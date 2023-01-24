@@ -1,0 +1,15 @@
+checksum = "fd8e59d84e759ddc3883e3a7efd1b7eec8aedd18979d1e09a0519a088fe7efe7"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-block-ssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-block-ssh-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libssh", "0.10.4-r0"]]

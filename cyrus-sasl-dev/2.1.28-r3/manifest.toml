@@ -1,0 +1,15 @@
+checksum = "4a13f7197824cafeeec0797d540523f7a104c53ad3d3a9b6bb52e0e474dc8be1"
+licence = "custom"
+provides = "cyrus-sasl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cyrus-sasl-dev-2.1.28-r3.apk"
+version = "2.1.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsasl", "2.1.28-r3"], ["pkgconf", "1.9.4-r0"]]

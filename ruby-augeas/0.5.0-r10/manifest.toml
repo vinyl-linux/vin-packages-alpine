@@ -1,0 +1,15 @@
+checksum = "71609c3a08bfcee15a2f8b66a697f37a7e88f9a98ed34b190ea23ca8473a06a7"
+licence = "LGPL-2.1-or-later"
+provides = "ruby-augeas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-augeas-0.5.0-r10.apk"
+version = "0.5.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["augeas-libs", "1.12.0-r1"], ["musl", "1.2.3-r4"], ["ruby-libs", "3.1.3-r0"], ["libucontext", "1.2.0-r0"], ["libxml2", "2.10.3-r1"]]

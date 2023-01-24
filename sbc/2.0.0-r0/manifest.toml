@@ -1,0 +1,15 @@
+checksum = "44d5ab190cdeb599b53b495943f3f2725d350c5549bfd42bfa0c7381452f5b72"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "sbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sbc-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

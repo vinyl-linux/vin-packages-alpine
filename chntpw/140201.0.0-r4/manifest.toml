@@ -1,0 +1,15 @@
+checksum = "2f48488980edb13b5e01ffc236565ab1da9fbdeb48e43d30d7610d116521f48b"
+licence = "GPL-2.0"
+provides = "chntpw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chntpw-140201-r4.apk"
+version = "140201.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

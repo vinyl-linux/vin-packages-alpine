@@ -1,0 +1,15 @@
+checksum = "60ecd9749827b2be3b2ca7841c4c86865e88592b58aaa64100b091c5d4d12e38"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-openssl-verify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-crypt-openssl-verify-0.35-r1.apk"
+version = "0.35.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-crypt-openssl-x509", "1.914.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

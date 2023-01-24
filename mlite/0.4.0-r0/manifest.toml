@@ -1,0 +1,15 @@
+checksum = "25884171a7040e470d80767b819255f0e2792b56aa144e849e857ecaf2bb6f20"
+licence = "LGPL-2.1-only"
+provides = "mlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mlite-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["dconf", "0.40.0-r2"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

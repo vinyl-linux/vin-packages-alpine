@@ -1,0 +1,15 @@
+checksum = "0c506cb882f7afa8137823b554be8e1be31c0a3ede995754210e90733ad16efc"
+licence = "MIT"
+provides = "fdupes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fdupes-2.2.1-r0.apk"
+version = "2.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["libpcre2-32", "10.42.0-r0"]]

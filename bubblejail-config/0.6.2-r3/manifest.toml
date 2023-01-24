@@ -1,0 +1,15 @@
+checksum = "785f71d226c92b35c2495f7979eeeb68b645673af8f4b1058017d1c6eab17140"
+licence = "GPL-3.0-or-later"
+provides = "bubblejail-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bubblejail-config-0.6.2-r3.apk"
+version = "0.6.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblejail", "0.6.2-r3"], ["py3-qt5", "5.15.7-r0"]]

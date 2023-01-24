@@ -1,0 +1,15 @@
+checksum = "9e5cbd02101d610da6a48b0c807628e3377c3e5f00a8b63525b13bf145722e8e"
+licence = "LGPL-2.1-only"
+provides = "spandsp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spandsp-dev-0.0.6-r2.apk"
+version = "0.0.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["spandsp", "0.0.6-r2"]]

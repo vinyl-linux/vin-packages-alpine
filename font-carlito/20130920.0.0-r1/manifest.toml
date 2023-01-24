@@ -1,0 +1,15 @@
+checksum = "3139f731b1dd347b91efd9ad66dd2ffe6cacbd0392b4dd7a2ef880d475ff5d6b"
+licence = "OFL-1.1"
+provides = "font-carlito"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-carlito-20130920-r1.apk"
+version = "20130920.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["mkfontscale", "1.2.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "252733a695bdeccb2253ac81843c681562220080491f3f03b4dd24d18f58ebf2"
+licence = "AGPL-3.0"
+provides = "bareos-filedaemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-filedaemon-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos", "21.1.5-r0"], ["bareos-libs", "21.1.5-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["jansson", "2.14.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

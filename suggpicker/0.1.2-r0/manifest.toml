@@ -1,0 +1,15 @@
+checksum = "8b4fd8aeb4fe936c57c7dfd3e5dc7d71f8921f01b75ab751a16b62daddb565c3"
+licence = "GPL-3.0-only"
+provides = "suggpicker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/suggpicker-0.1.2-r0.apk"
+version = "0.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"]]

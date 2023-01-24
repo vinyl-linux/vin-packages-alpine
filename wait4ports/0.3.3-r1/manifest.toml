@@ -1,0 +1,15 @@
+checksum = "7c1ab748cbd18ad0c3c64369117fcbcac4051b2532e82b958e220a476f9ae67a"
+licence = "MPL-2.0"
+provides = "wait4ports"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wait4ports-0.3.3-r1.apk"
+version = "0.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

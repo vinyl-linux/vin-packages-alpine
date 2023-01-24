@@ -1,0 +1,15 @@
+checksum = "0fb1d4eb01518542faa34a47e66e9f0d3e9df1baa2aa6f4ecc427a481bc15a87"
+licence = "BSD"
+provides = "sipcalc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sipcalc-1.1.6-r2.apk"
+version = "1.1.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "d394c2ac65e99e0091cf1b2c7e51e7be3111a8a7620123765592b9b27a7caeb5"
+licence = "BSD-3-Clause"
+provides = "blosc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blosc-1.21.1-r1.apk"
+version = "1.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lz4-libs", "1.9.4-r1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

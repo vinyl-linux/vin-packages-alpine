@@ -1,0 +1,15 @@
+checksum = "c29aa4b89d52ac44c2217600b418367a3bd37bf76050290100d9144bfb6ebfbf"
+licence = "GPL-2.0-or-later"
+provides = "nrpe-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nrpe-plugin-4.1.0-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

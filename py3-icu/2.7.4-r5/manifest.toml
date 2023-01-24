@@ -1,0 +1,15 @@
+checksum = "4dd67f3978805092589cbf72ff823ce03b51178501eb6d1a3827d00e43aa4a90"
+licence = "MIT"
+provides = "py3-icu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-icu-2.7.4-r5.apk"
+version = "2.7.4-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"]]

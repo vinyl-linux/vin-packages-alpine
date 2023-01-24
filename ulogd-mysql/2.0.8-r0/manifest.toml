@@ -1,0 +1,15 @@
+checksum = "0c478078bfedbc29c6b0628eaae95f6d79b1e03a0a4ae2dc381f72f67f4669f3"
+licence = "GPL-2.0-only"
+provides = "ulogd-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ulogd-mysql-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ulogd", "2.0.8-r0"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

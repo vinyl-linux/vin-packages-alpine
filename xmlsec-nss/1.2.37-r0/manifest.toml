@@ -1,0 +1,15 @@
+checksum = "a66e57e364d6b03c66ab737847bc5d33b2cf83f068792ccf481ad7a68fea4d66"
+licence = "MIT"
+provides = "xmlsec-nss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmlsec-nss-1.2.37-r0.apk"
+version = "1.2.37-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r0"], ["libxml2", "2.10.3-r1"], ["xmlsec", "1.2.37-r0"]]

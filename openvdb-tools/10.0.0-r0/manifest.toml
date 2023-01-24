@@ -1,0 +1,15 @@
+checksum = "ab91a498cc5deed9aac052ac9b9e81e84520e526c48eb1d779ba93e05a2fcf9d"
+licence = "MPL-2.0"
+provides = "openvdb-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openvdb-tools-10.0.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["blosc", "1.21.1-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["openvdb", "10.0.0-r0"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"], ["zlib", "1.2.13-r0"]]

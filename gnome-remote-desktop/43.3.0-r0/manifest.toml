@@ -1,0 +1,15 @@
+checksum = "198aac65f3729fa8036b285cc9c74591816fd7d3406f9f414ffc75961d054650"
+licence = "GPL-2.0-or-later"
+provides = "gnome-remote-desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-remote-desktop-43.3-r0.apk"
+version = "43.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libepoxy", "1.5.10-r0"], ["fdk-aac", "2.0.2-r1"], ["freerdp-libs", "2.9.0-r0"], ["fuse3-libs", "3.12.0-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libnotify", "0.8.1-r1"], ["pipewire-libs", "0.3.60-r3"], ["libsecret", "0.20.5-r0"], ["tpm2-tss-esys", "3.2.0-r0"], ["tpm2-tss-mu", "3.2.0-r0"], ["tpm2-tss-rc", "3.2.0-r0"], ["tpm2-tss-tctildr", "3.2.0-r0"], ["libxkbcommon", "1.4.1-r0"]]

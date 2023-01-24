@@ -1,0 +1,15 @@
+checksum = "9c3ada515f68654cb98a392359e73ad1a37dd48d01bbd5a02969386240834766"
+licence = "PSF-2.0"
+provides = "python3-idle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/python3-idle-3.10.8-r1.apk"
+version = "3.10.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3-tkinter", "3.10.8-r1"], ["python3", "3.10.9-r1"], ["python3-tests", "3.10.9-r1"]]

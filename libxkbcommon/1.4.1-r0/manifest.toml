@@ -1,0 +1,15 @@
+checksum = "71fef88daa869130755afe04a28992e73b01b61eb732941e10992fe6080c2303"
+licence = "MIT"
+provides = "libxkbcommon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxkbcommon-1.4.1-r0.apk"
+version = "1.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xkeyboard-config", "2.37.0-r0"], ["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

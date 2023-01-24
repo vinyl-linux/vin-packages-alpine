@@ -1,0 +1,15 @@
+checksum = "b92d64d4f0269d12ad0acf5934f93b469cb0b1085349016b641ffe48cbb9d20e"
+licence = "ISC"
+provides = "pure-ftpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pure-ftpd-1.0.51-r1.apk"
+version = "1.0.51-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

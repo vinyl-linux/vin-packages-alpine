@@ -1,0 +1,15 @@
+checksum = "a48b1bdb648bb335254be5b4db83efd439928b6ebf5479a8034bd45047aecd6f"
+licence = "MIT"
+provides = "py3-pyfavicon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyfavicon-0.1.1-r4.apk"
+version = "0.1.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-aiohttp", "3.8.3-r0"], ["py3-pillow", "9.3.0-r0"], ["py3-beautifulsoup4", "4.11.1-r0"], ["py3-idna", "3.4.0-r2"]]

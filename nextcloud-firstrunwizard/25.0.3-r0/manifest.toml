@@ -1,0 +1,15 @@
+checksum = "8562e312ddd9386e630d5c6223eb38d34b35a0377356dda5d2544ebd42fce5fb"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-firstrunwizard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-firstrunwizard-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

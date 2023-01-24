@@ -1,0 +1,15 @@
+checksum = "96685d9338f4dafe879bcfa1148de7802db248ea0a3930bb38078ea04a63764c"
+licence = "GPL-2.0-or-later"
+provides = "hwinfo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hwinfo-dev-22.1-r0.apk"
+version = "22.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwinfo-libs", "22.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

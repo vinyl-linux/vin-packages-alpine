@@ -1,0 +1,15 @@
+checksum = "29fe4140ed8a1d4f9a51163a70dfc91e2adfee40c057b59b72fb1c06a97fbd73"
+licence = "GPL-3.0-or-later"
+provides = "gcc-cross-embedded"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcc-cross-embedded-12.2.0-r4.apk"
+version = "12.2.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["gcc-arm-none-eabi", "12.2.0-r4"], ["gcc-riscv-none-elf", "12.2.0-r4"], ["gcc-msp430-elf", "12.2.0-r4"], ["gcc-or1k-elf", "12.2.0-r4"], ["gcc-aarch64-none-elf", "12.2.0-r4"]]

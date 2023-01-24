@@ -1,0 +1,15 @@
+checksum = "8c4a6de65f16deb886c121175f92336e3969bd8e8cc0552b608d09bf27e63944"
+licence = "MIT OR Public-Domain"
+provides = "ripgrep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ripgrep-13.0.0-r1.apk"
+version = "13.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["jemalloc", "5.3.0-r1"], ["pcre2", "10.42.0-r0"]]

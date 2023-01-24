@@ -1,0 +1,15 @@
+checksum = "2bbf396b4d907b8efef7ec74e2c363b51b246a401df251e5dd476c71563a00cc"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-fping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-fping-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["fping", "5.1.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

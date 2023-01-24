@@ -1,0 +1,15 @@
+checksum = "378337256bf393f0a1980cbf9f68b262e22637f45ebee6b7d5f96b8d64f66113"
+licence = "LGPL-2.0-or-later"
+provides = "py3-urlgrabber"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-urlgrabber-4.1.0-r3.apk"
+version = "4.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-curl", "7.45.1-r0"], ["py3-six", "1.16.0-r3"]]

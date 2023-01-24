@@ -1,0 +1,15 @@
+checksum = "d7114c07e395a5b7515c00d4b18cc74625e218eb29c301c249d4b50da8266858"
+licence = "Apache-2.0"
+provides = "cmocka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cmocka-1.1.5-r3.apk"
+version = "1.1.5-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

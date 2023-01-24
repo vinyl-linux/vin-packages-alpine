@@ -1,0 +1,15 @@
+checksum = "50e1bfa69536de137f703ac397af52f545af2e5a115a50d246e14559182babcb"
+licence = "GPL-2.0-or-later"
+provides = "trash-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/trash-cli-0.22.8.27-r0.apk"
+version = "0.22.8.27-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-psutil", "5.9.4-r0"]]

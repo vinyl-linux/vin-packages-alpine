@@ -1,0 +1,15 @@
+checksum = "15f52eca8708243e87f696239c0362cf67c30fcc14175d1c410c7b27d04281f6"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-removeuser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-mod-removeuser-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["calamares", "3.2.47-r9"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

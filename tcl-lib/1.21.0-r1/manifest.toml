@@ -1,0 +1,15 @@
+checksum = "4400ba77f440b09c98ebd967cd6cdc3b611c79616f1debe97e9935080c4645a3"
+licence = "BSD-2-Clause"
+provides = "tcl-lib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tcl-lib-1.21-r1.apk"
+version = "1.21.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tcl", "8.6.12-r1"]]

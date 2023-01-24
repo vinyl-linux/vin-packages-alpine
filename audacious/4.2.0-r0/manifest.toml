@@ -1,0 +1,15 @@
+checksum = "090cc1e3de3d243c547303d5f920fa3fbf690f519d740843eb88c7eb45393520"
+licence = "BSD-2-Clause AND ISC"
+provides = "audacious"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/audacious-4.2-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libstdc++", "12.2.1"]]

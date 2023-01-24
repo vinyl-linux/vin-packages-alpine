@@ -1,0 +1,15 @@
+checksum = "c55026cdd5d042cf26b0f2ba0885051efc8a6528ba4b7b750b97b090d34faade"
+licence = "Apache-2.0"
+provides = "apr-util-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-util-dev-1.6.1-r14.apk"
+version = "1.6.1-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["expat-dev", "2.5.0-r0"], ["gdbm-dev", "1.23.0-r0"], ["libpq-dev", "15.1.0-r0"], ["mariadb-dev", "10.6.11-r0"], ["openldap-dev", "2.6.3-r6"], ["openssl-dev", "3.0.7-r2"], ["sqlite-dev", "3.40.1-r0"], ["apr-util", "1.6.1-r14"], ["apr-dev", "1.7.0-r2"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b9e4b88972b13ef56844f153b59a5d629760505be2a096d3c778a2fea3f2b995"
+licence = "MIT"
+provides = "py3-incremental"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-incremental-22.10.0-r0.apk"
+version = "22.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

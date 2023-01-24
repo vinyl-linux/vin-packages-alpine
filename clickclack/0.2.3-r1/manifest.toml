@@ -1,0 +1,15 @@
+checksum = "114f4ecefbcf1074806ddaf85948ce2a3c50f58400bb05a5930d5cbb1f429a23"
+licence = "MIT"
+provides = "clickclack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clickclack-0.2.3-r1.apk"
+version = "0.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"]]

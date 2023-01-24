@@ -1,0 +1,15 @@
+checksum = "3e3dec04844d57d14f855eeb61e6b84435ff77c7e0ee33cb7450e169abb45b20"
+licence = "BSD-3-Clause"
+provides = "py3-fakeredis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-fakeredis-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"], ["py3-redis", "4.1.0-r0"], ["py3-sortedcontainers", "2.4.0-r1"]]

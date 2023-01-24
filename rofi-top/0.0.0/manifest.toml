@@ -1,0 +1,15 @@
+checksum = "e7f3dcd4304b8e0ad79f96ad86b0d2351b8af84729bbbe404b026873123aaf73"
+licence = "MIT"
+provides = "rofi-top"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-top-0_git20171016-r1.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rofi-wayland", "1.7.5"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgtop", "2.40.0-r1"]]

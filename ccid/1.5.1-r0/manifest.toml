@@ -1,0 +1,15 @@
+checksum = "e315506efde4acf9d3073e000644418c820ae983e0842ab219922d5610f4d728"
+licence = "LGPL-2.1-or-later"
+provides = "ccid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ccid-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite", "1.9.9-r0"], ["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"]]

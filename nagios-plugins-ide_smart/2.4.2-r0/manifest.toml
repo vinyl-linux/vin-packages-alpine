@@ -1,0 +1,15 @@
+checksum = "67fe8b8b5539f819e001128759f7ace8b7783854b6fdbf74d487a446b4795748"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-ide_smart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-ide_smart-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

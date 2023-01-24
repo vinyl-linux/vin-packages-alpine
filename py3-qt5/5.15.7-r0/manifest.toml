@@ -1,0 +1,15 @@
+checksum = "8aeda75299ab12ad5661b5e5d4dfb471ca52ba91959f3cec1607bb3886e0aa7c"
+licence = "GPL-3.0"
+provides = "py3-qt5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-qt5-5.15.7-r0.apk"
+version = "5.15.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyqt5-sip", "12.11.0-r0"], ["python3", "3.10.9-r1"], ["qt5-qtconnectivity", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qttools", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtserialport", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtwebchannel", "5.15.6"], ["qt5-qtwebsockets", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "e6bfe0737a77953bf7326dbe0f70d4d45d4b3d4cc009aabd6172353196b6bd45"
+licence = "LGPL-2.1-or-later"
+provides = "flatpak-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flatpak-dbg-1.14.1-r0.apk"
+version = "1.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["xdg-dbus-proxy", "0.1.4-r0"]]

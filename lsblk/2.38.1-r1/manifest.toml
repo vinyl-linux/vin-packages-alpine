@@ -1,0 +1,15 @@
+checksum = "10cbd78fa23c8f6023673226d54d377893b4d1e137d75ba7d41c58f5e012495f"
+licence = "GPL-2.0-or-later"
+provides = "lsblk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lsblk-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libmount", "2.38.1-r1"], ["libsmartcols", "2.38.1-r1"]]

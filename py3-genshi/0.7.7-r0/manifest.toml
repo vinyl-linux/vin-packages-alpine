@@ -1,0 +1,15 @@
+checksum = "effe96a3d0309584d7e09bf9063d18f9ac4a11644d3391d7aca2c9cc0fc7951c"
+licence = "MIT"
+provides = "py3-genshi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-genshi-0.7.7-r0.apk"
+version = "0.7.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

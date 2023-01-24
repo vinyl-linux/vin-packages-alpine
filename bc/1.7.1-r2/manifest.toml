@@ -1,0 +1,15 @@
+checksum = "05c12d7af1162f6da164581e7fda3a72dafab5c34fb0d78549390c21ddce3213"
+licence = "GPL-2.0-or-later"
+provides = "bc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bc-1.07.1-r2.apk"
+version = "1.7.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

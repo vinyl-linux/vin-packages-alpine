@@ -1,0 +1,15 @@
+checksum = "87c7d1d25bf1ff5b17d02b06a941a0d8f493fb5a9a4e283f81608a609eb3543f"
+licence = "BSD-3-Clause"
+provides = "libevhtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libevhtp-1.2.18-r6.apk"
+version = "1.2.18-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libevent", "2.1.12-r5"], ["oniguruma", "6.9.8-r0"], ["libssl3", "3.0.7-r2"]]

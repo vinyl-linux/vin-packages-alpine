@@ -1,0 +1,15 @@
+checksum = "5266fedc712de98df8ce7d0eceede0162e6e04ccf6479cd0c8de0d900f723807"
+licence = "MIT"
+provides = "libbs2b"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbs2b-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

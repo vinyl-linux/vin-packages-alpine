@@ -1,0 +1,15 @@
+checksum = "77b5dc85427d99c53764be928af41bc4d04ba403502ae245c8a92ecc1864c5ff"
+licence = "GPL-2.0-only"
+provides = "jellyfin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jellyfin-10.8.7-r0.apk"
+version = "10.8.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspnetcore6-runtime", "6.0.13-r0"], ["ffmpeg", "5.1.2-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

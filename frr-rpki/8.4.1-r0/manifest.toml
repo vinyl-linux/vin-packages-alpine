@@ -1,0 +1,15 @@
+checksum = "5eb8affb0ac46c24e8cb79cb4b91a886256b8c94b22aa09c426d63f8f2f2fd7b"
+licence = "GPL-2.0-or-later"
+provides = "frr-rpki"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frr-rpki-8.4.1-r0.apk"
+version = "8.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["json-c", "0.16.0-r2"], ["rtrlib", "0.8.0-r3"]]

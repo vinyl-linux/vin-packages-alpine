@@ -1,0 +1,15 @@
+checksum = "b699640cfb64757c6f4a1da864a5de24d31db30582b28ae524ff89a7503cede6"
+licence = "LGPL-2.0-or-later"
+provides = "spice-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spice-server-0.15.1-r0.apk"
+version = "0.15.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["glib", "2.74.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gstreamer", "1.20.5-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["lz4-libs", "1.9.4-r1"], ["opus", "1.3.1-r1"], ["orc", "0.4.33-r0"], ["pixman", "0.42.2-r0"], ["libsasl", "2.1.28-r3"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "177d37d30b71e352b062dfa81e00d5715fea7e641cdf4cf563e23867888f6e1b"
+licence = "MPL-2.0"
+provides = "libreoffice-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libreoffice-gtk-7.3.7.2-r0.apk"
+version = "7.3.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libreoffice-common", "7.3.7.2-r0"], ["libx11", "1.8.3-r1"], ["libatk-1.0", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libepoxy", "1.5.10-r0"], ["libgcc", "12.2.1"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["pango", "1.50.12-r0"], ["libstdc++", "12.2.1"]]

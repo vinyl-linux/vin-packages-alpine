@@ -1,0 +1,15 @@
+checksum = "99edb8124234934f6dd25a02a6862f1dd6bc8945ba77921b773bba10718c9084"
+licence = "ISC AND ( BSD-3-Clause OR MIT )"
+provides = "libretls"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libretls-3.5.2-r1.apk"
+version = "3.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates-bundle", "20220614.0.0-r4"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

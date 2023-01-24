@@ -1,0 +1,15 @@
+checksum = "63aaf94693f244e866defb7b3e7d004fc59a6eeade5549756e14e680ebcd786e"
+licence = "BSD-2-Clause AND MIT AND X11"
+provides = "xorgproto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xorgproto-2022.2-r0.apk"
+version = "2022.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

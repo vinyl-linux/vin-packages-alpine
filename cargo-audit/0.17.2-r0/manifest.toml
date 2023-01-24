@@ -1,0 +1,15 @@
+checksum = "5640b74a276936d2be93e0742e1bca8dcdd9fc42fe7e685cd816fc4098a1ad79"
+licence = "MIT OR Apache-2.0"
+provides = "cargo-audit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-audit-0.17.2-r0.apk"
+version = "0.17.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

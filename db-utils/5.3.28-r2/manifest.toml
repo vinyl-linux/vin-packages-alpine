@@ -1,0 +1,15 @@
+checksum = "a6687f71ed29d5169b904e18df21d6dd8d4509e99704e6012a80f7408bbdae55"
+licence = "custom"
+provides = "db-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/db-utils-5.3.28-r2.apk"
+version = "5.3.28-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["db", "5.3.28-r2"]]

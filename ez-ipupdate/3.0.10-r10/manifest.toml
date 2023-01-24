@@ -1,0 +1,15 @@
+checksum = "231dfb54be61f5c3a9cfd9a79fa2123aea86eb258c25c6cf1c18995bf677a57c"
+licence = "GPL"
+provides = "ez-ipupdate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ez-ipupdate-3.0.10-r10.apk"
+version = "3.0.10-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

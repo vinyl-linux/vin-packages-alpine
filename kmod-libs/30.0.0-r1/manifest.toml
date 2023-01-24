@@ -1,0 +1,15 @@
+checksum = "09e3c7ca1398656ae0918b8333f60c5964ad850ad80540ce8b8b401eb52a0e99"
+licence = "LGPL-2.1-or-later"
+provides = "kmod-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kmod-libs-30-r1.apk"
+version = "30.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

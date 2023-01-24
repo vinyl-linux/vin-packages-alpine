@@ -1,0 +1,15 @@
+checksum = "7b84619fe41cac0942f661c388e075422c80e7d03fa6d52fb9e294cff4da4610"
+licence = "MIT"
+provides = "lua5.2-evdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.2-evdev-2.2.1-r2.apk"
+version = "2.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"], ["musl", "1.2.3-r4"]]

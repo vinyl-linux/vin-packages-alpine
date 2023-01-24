@@ -1,0 +1,15 @@
+checksum = "050f0ee5dfac7e5f18b30f10d8646a759db658d1307f6daadc9d21b7f72f303a"
+licence = "LGPL-2.1-or-later"
+provides = "qtxdg-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qtxdg-tools-dev-3.10.0-r0.apk"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qtxdg-tools", "3.10.0-r0"]]

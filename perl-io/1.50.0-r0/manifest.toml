@@ -1,0 +1,15 @@
+checksum = "2c11035b50815dc97dc5b4c99bd9d39193338bacfd24c789f3f7cbaad8e97fec"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-io"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-io-1.50-r0.apk"
+version = "1.50.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

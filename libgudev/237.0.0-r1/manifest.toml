@@ -1,0 +1,15 @@
+checksum = "d4caf9c72920d40c71272ac0c2e60821234cb564a3f55f2c6f4927768ea1b417"
+licence = "LGPL-2.1-or-later"
+provides = "libgudev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgudev-237-r1.apk"
+version = "237.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["eudev-libs", "3.2.11-r4"]]

@@ -1,0 +1,15 @@
+checksum = "5c6949355b0655d0434060fecde8de0bd751ef56930017df8f241bb879ee1e17"
+licence = "Apache-2.0"
+provides = "xrdp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xrdp-dev-0.9.21.1-r0.apk"
+version = "0.9.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["xrdp", "0.9.21.1-r0"]]

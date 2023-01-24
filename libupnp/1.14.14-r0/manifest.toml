@@ -1,0 +1,15 @@
+checksum = "b836f664e51f2e6eed7e782e59b406c74e85ae59bea236e688abbfa67f7fa1a5"
+licence = "BSD-3-Clause"
+provides = "libupnp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libupnp-1.14.14-r0.apk"
+version = "1.14.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

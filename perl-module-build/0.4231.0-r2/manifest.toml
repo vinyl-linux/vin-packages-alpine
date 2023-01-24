@@ -1,0 +1,15 @@
+checksum = "d84fdbdc514fa39e02676643aea8ddad1dae8feb400e8b2c09eecbdd2c459b61"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-module-build"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-module-build-0.4231-r2.apk"
+version = "0.4231.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

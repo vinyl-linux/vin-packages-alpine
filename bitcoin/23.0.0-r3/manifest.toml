@@ -1,0 +1,15 @@
+checksum = "92b25657e8f6501e114f801647091087fd6823f930e3c2438f749139c96b652a"
+licence = "MIT"
+provides = "bitcoin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitcoin-23.0-r3.apk"
+version = "23.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["db-c++", "5.3.28-r2"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["libzmq", "4.3.4-r1"]]

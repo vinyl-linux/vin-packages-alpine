@@ -1,0 +1,15 @@
+checksum = "c1c1e025b40c9f043bb356495307f998ccd3610e85820dd0b1f77674404b0967"
+licence = "GPL-3.0-or-later"
+provides = "inxi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inxi-3.3.23-r0.apk"
+version = "3.3.23-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

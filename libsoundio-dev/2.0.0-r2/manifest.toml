@@ -1,0 +1,15 @@
+checksum = "847d35031b4c40965bb81e85a86a7cda6e369295624552818e325b09832ebc16"
+licence = "MIT"
+provides = "libsoundio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsoundio-dev-2.0.0-r2.apk"
+version = "2.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib-dev", "1.2.8-r0"], ["libsoundio", "2.0.0-r2"]]

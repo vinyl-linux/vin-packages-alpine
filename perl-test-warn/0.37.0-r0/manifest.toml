@@ -1,0 +1,15 @@
+checksum = "e676ce87957b2487c2829a0d3404c698d3c1aa65080cad63173c578ca3a9c254"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-warn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-warn-0.37-r0.apk"
+version = "0.37.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-sub-uplevel", "0.2800.0-r2"]]

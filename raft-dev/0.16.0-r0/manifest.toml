@@ -1,0 +1,15 @@
+checksum = "a8a4445fb88c214f9b66713512ea9287abb1b81f1ddf2b56474e14349c3f81fe"
+licence = "LGPL-3.0-only WITH LGPL-3.0-linking-exception"
+provides = "raft-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/raft-dev-0.16.0-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["raft", "0.16.0-r0"]]

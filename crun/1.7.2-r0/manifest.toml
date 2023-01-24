@@ -1,0 +1,15 @@
+checksum = "6cdc17b1e9aa3903865f3186d756f54adc944fe37d735620754958837673b776"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "crun"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/crun-1.7.2-r0.apk"
+version = "1.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libseccomp", "2.5.4-r0"], ["yajl", "2.1.0-r5"]]

@@ -1,0 +1,15 @@
+checksum = "b52374e8923b5883b1509c4f0a9f6e8b95cb0c4ff3565031499e2bf2ecd17903"
+licence = "BSD-3-Clause"
+provides = "ilmbase"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ilmbase-2.2.1-r0.apk"
+version = "2.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

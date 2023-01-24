@@ -1,0 +1,15 @@
+checksum = "6ec7233629be68d9443a7dd144fecfcb320d9192b1e351ac04511ec4184c6678"
+licence = "Apache-2.0"
+provides = "apache2-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-proxy-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["musl", "1.2.3-r4"]]

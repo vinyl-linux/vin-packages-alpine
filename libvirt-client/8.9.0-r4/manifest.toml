@@ -1,0 +1,15 @@
+checksum = "04d63b7595e4840721645f329ffb95513931840e335fd2511bb8ea7975629727"
+licence = "LGPL-2.1-or-later"
+provides = "libvirt-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvirt-client-8.9.0-r4.apk"
+version = "8.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvirt", "8.9.0-r4"], ["pm-utils", "1.4.1-r4"], ["gnutls-utils", "3.7.8-r2"], ["netcat-openbsd", "1.130.0-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["libintl", "0.21.1-r1"], ["readline", "8.2.0-r0"], ["libvirt-libs", "8.9.0-r4"], ["libxml2", "2.10.3-r1"]]

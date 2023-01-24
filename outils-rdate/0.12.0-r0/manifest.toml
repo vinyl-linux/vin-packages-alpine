@@ -1,0 +1,15 @@
+checksum = "2c89dceef478a22b385906faef2ac20464b51cfc0407caf299015a2ee04b8193"
+licence = "BSD-3-Clause ISC"
+provides = "outils-rdate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/outils-rdate-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

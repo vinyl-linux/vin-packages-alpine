@@ -1,0 +1,15 @@
+checksum = "3449392a4a3ce460bfc37a6f1deb0f357c93b504e358b502115babd5fa0283ea"
+licence = "GPL-2.0-or-later"
+provides = "dpns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dpns-0.4-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["podman-docker", "4.3.1-r1"], ["docker-compose", "1.29.2-r2"]]

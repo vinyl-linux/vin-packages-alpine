@@ -1,0 +1,15 @@
+checksum = "d7f998c72a1096bc6a733d273ef733c468d65481fbcdf674dabe23cb9c8690a0"
+licence = "custom"
+provides = "opensp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/opensp-dev-1.5.2-r2.apk"
+version = "1.5.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opensp", "1.5.2-r2"]]

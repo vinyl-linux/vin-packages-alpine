@@ -1,0 +1,15 @@
+checksum = "deeeecbc927ebfe4bb1f13337a72652861facc498a875e92526ca45e914e022e"
+licence = "GPL-2.0-or-later"
+provides = "zabbix-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zabbix-mysql-6.2.6-r1.apk"
+version = "6.2.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zabbix", "6.2.6-r1"], ["openipmi-libs", "2.0.33-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libevent", "2.1.12-r5"], ["mariadb-connector-c", "3.3.3-r0"], ["net-snmp-libs", "5.9.3-r2"], ["unixodbc", "2.3.11-r0"], ["pcre2", "10.42.0-r0"], ["libssh2", "1.10.0-r3"], ["libssl3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

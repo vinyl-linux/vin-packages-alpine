@@ -1,0 +1,15 @@
+checksum = "cf9239910d3a3176da566b5e4ada41554f63c7ef425c55ecf12414f7e5bba182"
+licence = "GPL-2.0-or-later AND GFDL-1.1-or-later"
+provides = "gtk-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gtk-doc-1.33.2-r3.apk"
+version = "1.33.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docbook-xsl", "1.79.2-r8"], ["python3", "3.10.9-r1"], ["pkgconf", "1.9.4-r0"], ["glib-dev", "2.74.5-r0"], ["py3-pygments", "2.13.0-r0"]]

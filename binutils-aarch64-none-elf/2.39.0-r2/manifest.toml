@@ -1,0 +1,15 @@
+checksum = "03f42c6e2c0cc32d99f0cf02d35a3dffe09c30818612be372424432b78f44785"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-aarch64-none-elf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-aarch64-none-elf-2.39-r2.apk"
+version = "2.39.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

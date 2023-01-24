@@ -1,0 +1,15 @@
+checksum = "91724d1625e7497f6ef68202dbe63b38c70975673a47f8b50edd1b2b9eaa2692"
+licence = "MIT"
+provides = "putty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/putty-0.78-r0.apk"
+version = "0.78.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["pango", "1.50.12-r0"]]

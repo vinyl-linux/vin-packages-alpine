@@ -1,0 +1,15 @@
+checksum = "951e8113c48fe24512677538ccee324baad332bbcc383cea1e057256a44c8d0e"
+licence = "GPL-2.0-or-later"
+provides = "consolekit2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/consolekit2-dev-1.2.4-r2.apk"
+version = "1.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["consolekit2", "1.2.4-r2"], ["dbus-dev", "1.14.4-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

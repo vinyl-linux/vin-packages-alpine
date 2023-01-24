@@ -1,0 +1,15 @@
+checksum = "40f05cc2e24d27178124078b857eb8148c9f8c3bf1d660ae648c4aa29bf36d7d"
+licence = "MIT"
+provides = "tiramisu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tiramisu-2.0.20211107-r0.apk"
+version = "2.0.20211107-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

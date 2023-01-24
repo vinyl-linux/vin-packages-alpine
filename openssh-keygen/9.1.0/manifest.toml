@@ -1,0 +1,15 @@
+checksum = "a2c188f08964f325eb7e3fe1015e6ee65f195270a7006771d96f0485da1a6775"
+licence = "BSD"
+provides = "openssh-keygen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-keygen-9.1_p1-r1.apk"
+version = "9.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

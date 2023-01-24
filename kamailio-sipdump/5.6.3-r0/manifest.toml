@@ -1,0 +1,15 @@
+checksum = "6479d11a50538c7c425af370b9f5499e876d65bc58e8679b28836b7bbf34bc95"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-sipdump"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-sipdump-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"]]

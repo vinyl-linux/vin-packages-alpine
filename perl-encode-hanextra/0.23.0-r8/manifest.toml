@@ -1,0 +1,15 @@
+checksum = "e52937950c85b77ba3ee111d1b13c60eef5a3ae77e8e92301341c370ab00a662"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-encode-hanextra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-encode-hanextra-0.23-r8.apk"
+version = "0.23.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

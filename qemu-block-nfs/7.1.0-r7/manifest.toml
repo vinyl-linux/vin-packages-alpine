@@ -1,0 +1,15 @@
+checksum = "f49aba3538e5b4620fab76170f42605899a3da72bc2b5242de8c129d3019f4d8"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-block-nfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-block-nfs-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libnfs", "5.0.2-r0"]]

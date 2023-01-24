@@ -1,0 +1,15 @@
+checksum = "0c55ae3fcdd51e15eeb45dd7031a7c8356010608dbf94e210bff98c07d7a47e6"
+licence = "Apache-2.0"
+provides = "cosign"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cosign-1.12.1-r3.apk"
+version = "1.12.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite-libs", "1.9.9-r0"], ["musl", "1.2.3-r4"]]

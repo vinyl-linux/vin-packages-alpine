@@ -1,0 +1,15 @@
+checksum = "a7cdb88d493826fe5e9f67c4b4bc706d1184278f7ecc8f0e9951f6644d4d270a"
+licence = "MIT"
+provides = "giflib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/giflib-5.2.1-r2.apk"
+version = "5.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

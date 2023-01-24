@@ -1,0 +1,15 @@
+checksum = "8820f29165a12c375220e83c4c19cb77f53485a2a10ead5fb8b8a3fa894b928a"
+licence = "MIT"
+provides = "lua-resty-mail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua-resty-mail-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua-resty-core", "0.1.24-r0"]]

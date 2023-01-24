@@ -1,0 +1,15 @@
+checksum = "92e5e2c36ca8a7d0509f91c9d328790a5caacd6a289323174cc5a6d07fad6a07"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-smime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-crypt-smime-0.28-r2.apk"
+version = "0.28.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

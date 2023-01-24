@@ -1,0 +1,15 @@
+checksum = "1b15ea5efb6c34b1e36f42b2f61a368d62bc76f4ca51f7a5e2cefa115a27974c"
+licence = "LGPL-2.1-or-later"
+provides = "py-libbytesize"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py-libbytesize-2.7-r1.apk"
+version = "2.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

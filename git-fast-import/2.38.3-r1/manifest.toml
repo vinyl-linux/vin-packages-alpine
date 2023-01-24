@@ -1,0 +1,15 @@
+checksum = "5ef36d3146c9b51c5d942c72529829b655846f40dff2848df0cf5cb5aa7860c5"
+licence = "GPL-2.0-or-later"
+provides = "git-fast-import"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-fast-import-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"]]

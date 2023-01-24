@@ -1,0 +1,15 @@
+checksum = "108ea70500fe7f969be98cfe4ae77553e3f40944dd31e441fd0fb25ba461cd4c"
+licence = "GPL-2.0-or-later"
+provides = "ncmpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ncmpc-0.47-r0.apk"
+version = "0.47.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["lirc", "0.10.1-r4"], ["libmpdclient", "2.20.0-r0"], ["ncurses-libs", "6.3.0"], ["pcre2", "10.42.0-r0"], ["libstdc++", "12.2.1"]]

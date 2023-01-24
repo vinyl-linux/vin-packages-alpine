@@ -1,0 +1,15 @@
+checksum = "f313d34353516e6b9a27d1529886ac723ad5caef06a593c67e4060aab6b5bf2e"
+licence = "BSD-3-Clause-Clear"
+provides = "py3-capstone"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-capstone-4.0.2-r4.apk"
+version = "4.0.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["capstone", "4.0.2-r4"]]

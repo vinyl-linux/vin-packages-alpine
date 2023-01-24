@@ -1,0 +1,15 @@
+checksum = "b995219372c98b65f0bc8711dcb8625fa40b8c35e77a83a54e99ad90e596d4a9"
+licence = "BSD-3-Clause"
+provides = "py3-psutil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-psutil-5.9.4-r0.apk"
+version = "5.9.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

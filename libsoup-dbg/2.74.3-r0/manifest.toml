@@ -1,0 +1,15 @@
+checksum = "8db30aa6c156f5b78dcd6582b38ddfac379bc8b7f26cc84dccd2c75935cb1216"
+licence = "LGPL-2.0-or-later"
+provides = "libsoup-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsoup-dbg-2.74.3-r0.apk"
+version = "2.74.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-networking", "2.74.0-r2"], ["gsettings-desktop-schemas", "43.0.0-r0"]]

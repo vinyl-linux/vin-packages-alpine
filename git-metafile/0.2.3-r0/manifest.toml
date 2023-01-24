@@ -1,0 +1,15 @@
+checksum = "e71f3191904832ba5392b2ac6a991a57cba5a4e42576ac8d2cf76b78bf23aceb"
+licence = "MIT"
+provides = "git-metafile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-metafile-0.2.3-r0.apk"
+version = "0.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

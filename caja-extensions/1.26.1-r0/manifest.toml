@@ -1,0 +1,15 @@
+checksum = "7316730ccb582d224e76b6b85b7098507c3779fc45e45e0c11c189443305418d"
+licence = "GPL-2.0-or-later"
+provides = "caja-extensions"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/caja-extensions-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["caja", "1.26.1-r0"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["mate-desktop", "1.26.0-r2"]]

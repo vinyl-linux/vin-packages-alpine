@@ -1,0 +1,15 @@
+checksum = "e55cba1a8c2b68c7f42c2b45bc7a109963e2af1bd6d5de432c5cb5e4661ec361"
+licence = "Apache-2.0"
+provides = "salt-api-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-api-openrc-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"]]

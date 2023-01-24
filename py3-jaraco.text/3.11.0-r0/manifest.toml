@@ -1,0 +1,15 @@
+checksum = "9fa234ca0e406f8e3720978ee09c45ef047a1d329c0f4525846764983f5c2e94"
+licence = "MIT"
+provides = "py3-jaraco.text"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jaraco.text-3.11.0-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jaraco.context", "4.1.2-r0"], ["py3-jaraco.functools", "3.5.2-r1"]]

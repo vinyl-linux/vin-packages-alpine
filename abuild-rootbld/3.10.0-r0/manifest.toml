@@ -1,0 +1,15 @@
+checksum = "cab1d5b7f7051e95e9bc8154d2085888ce294a6bedb69fb2f0dfe287b06c80e2"
+licence = "GPL-2.0-only"
+provides = "abuild-rootbld"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/abuild-rootbld-3.10.0-r0.apk"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abuild", "3.10.0-r0"], ["bubblewrap", "0.7.0-r0"], ["gettext", "0.21.1-r1"], ["git", "2.38.3-r1"]]

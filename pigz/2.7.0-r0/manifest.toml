@@ -1,0 +1,15 @@
+checksum = "6e09d7e8afb254e245fd13266778d02534bab71be71890800af27110589d29b7"
+licence = "Zlib"
+provides = "pigz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pigz-2.7-r0.apk"
+version = "2.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

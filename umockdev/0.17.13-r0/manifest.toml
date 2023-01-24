@@ -1,0 +1,15 @@
+checksum = "45fb0b524e3ec4d89f6e96f8a69b4fb62b4fcf4c5c3eb7576e999e9b670e47d1"
+licence = "LGPL-2.1-or-later"
+provides = "umockdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/umockdev-0.17.13-r0.apk"
+version = "0.17.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libpcap", "1.10.1-r1"], ["eudev-libs", "3.2.11-r4"]]

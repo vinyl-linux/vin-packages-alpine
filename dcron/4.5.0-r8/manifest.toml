@@ -1,0 +1,15 @@
+checksum = "0415d72f5f2f94df216f8afc7dbfa11f2d40c96b96f352cd76ed9635ee6f3ace"
+licence = "GPL-2.0-or-later"
+provides = "dcron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dcron-4.5-r8.apk"
+version = "4.5.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

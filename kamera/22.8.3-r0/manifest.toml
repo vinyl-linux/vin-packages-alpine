@@ -1,0 +1,15 @@
+checksum = "5f8e9c91579717017b171687edcc3f804108b47b519f2ce6ef4c7a9d7cdd4376"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kamera"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kamera-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgphoto2", "2.5.30-r0"], ["libstdc++", "12.2.1"]]

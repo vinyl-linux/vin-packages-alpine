@@ -1,0 +1,15 @@
+checksum = "f4242174534e0066582945836bab8832366f44944340f3772e04cc7a3bb1f7bb"
+licence = "OLDAP-2.8"
+provides = "openldap-backend-all"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-backend-all-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openldap-back-asyncmeta", "2.6.3-r6"], ["openldap-back-dnssrv", "2.6.3-r6"], ["openldap-back-ldap", "2.6.3-r6"], ["openldap-back-lload", "2.6.3-r6"], ["openldap-back-mdb", "2.6.3-r6"], ["openldap-back-meta", "2.6.3-r6"], ["openldap-back-null", "2.6.3-r6"], ["openldap-back-passwd", "2.6.3-r6"], ["openldap-back-relay", "2.6.3-r6"], ["openldap-back-sock", "2.6.3-r6"], ["openldap-back-sql", "2.6.3-r6"]]

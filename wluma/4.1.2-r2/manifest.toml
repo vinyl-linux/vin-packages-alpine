@@ -1,0 +1,15 @@
+checksum = "36fee18ba97a5b091de23f8e4540a6b4795a040855b9955206c2785bc802c130"
+licence = "ISC"
+provides = "wluma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wluma-4.1.2-r2.apk"
+version = "4.1.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["eudev-libs", "3.2.11-r4"], ["v4l-utils-libs", "1.22.1-r2"]]

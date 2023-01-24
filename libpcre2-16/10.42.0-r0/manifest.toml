@@ -1,0 +1,15 @@
+checksum = "3c1c88dfa72196aca78b59c79ba7c48b726b5f891b3cc8e3f94612482b6ea25c"
+licence = "BSD-3-Clause"
+provides = "libpcre2-16"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpcre2-16-10.42-r0.apk"
+version = "10.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

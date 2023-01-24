@@ -1,0 +1,15 @@
+checksum = "67ce2ac62e0e7ffc3c2c4824225accdb65c211560e51139329b9b9c23ede029a"
+licence = "custom"
+provides = "opendkim-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opendkim-dev-2.11.0-r3.apk"
+version = "2.11.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opendkim-libs", "2.11.0-r3"], ["pkgconf", "1.9.4-r0"]]

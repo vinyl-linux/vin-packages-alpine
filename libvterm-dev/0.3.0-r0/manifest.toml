@@ -1,0 +1,15 @@
+checksum = "4ec4fb14c22ad6974eb7484c9bc8d0c4296ea81d71362e5b812d88a95aed5e49"
+licence = "MIT"
+provides = "libvterm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvterm-dev-0.3-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvterm", "0.3.0-r0"], ["pkgconf", "1.9.4-r0"]]

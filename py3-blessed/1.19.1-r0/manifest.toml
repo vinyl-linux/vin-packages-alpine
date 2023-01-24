@@ -1,0 +1,15 @@
+checksum = "19868a1d0c238a48500f22e7b2fe10bc196fad21dd3b5e9276c491d037e4ebd7"
+licence = "MIT"
+provides = "py3-blessed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-blessed-1.19.1-r0.apk"
+version = "1.19.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-wcwidth", "0.2.5-r2"], ["py3-six", "1.16.0-r3"]]

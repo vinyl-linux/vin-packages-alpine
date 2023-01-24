@@ -1,0 +1,15 @@
+checksum = "939bdf51dc108901d52a9bfe2b2701ced2f290be241616efd98f6401571fc70c"
+licence = "MIT SGI-B-2.0 BSL-1.0"
+provides = "mesa-vulkan-layers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mesa-vulkan-layers-22.2.5-r1.apk"
+version = "22.2.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["libxcb", "1.15.0-r0"]]

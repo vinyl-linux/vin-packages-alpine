@@ -1,0 +1,15 @@
+checksum = "4d8866b792ef1cdabde30686cd5f97febb8f63cfcc71a3d5bc67649fb45b36f7"
+licence = "AGPL-3.0-or-later"
+provides = "ghostscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ghostscript-10.0.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cups-libs", "2.4.2-r1"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["jbig2dec", "0.19.0-r1"], ["libjpeg-turbo", "2.1.4-r0"], ["lcms2", "2.14.0-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"], ["zlib", "1.2.13-r0"]]

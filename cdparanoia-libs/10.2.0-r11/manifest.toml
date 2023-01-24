@@ -1,0 +1,15 @@
+checksum = "638932c6ac17d5e559b2b2cff313346888cfc23079283394b121ae2afd27fa6a"
+licence = "LGPL-2.0-or-later"
+provides = "cdparanoia-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cdparanoia-libs-10.2-r11.apk"
+version = "10.2.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

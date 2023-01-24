@@ -1,0 +1,15 @@
+checksum = "a33593dd9f41f606337e4d577b5b2aae9a25604d037e681deb947b080f14d5f8"
+licence = "Apache-2.0"
+provides = "llvm14-test-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm14-test-utils-14.0.6-r7.apk"
+version = "14.0.6-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-setuptools", "65.6.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

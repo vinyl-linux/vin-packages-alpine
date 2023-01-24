@@ -1,0 +1,15 @@
+checksum = "65e639fa2e09e4080fdf1741cc68d9653080f7f4a665247dd65d8114285554ae"
+licence = "BSD-2-Clause"
+provides = "openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openrc-0.45.2-r7.apk"
+version = "0.45.2-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox-ifupdown", "1.35.0-r29"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"]]

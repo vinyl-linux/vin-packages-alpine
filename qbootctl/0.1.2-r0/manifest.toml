@@ -1,0 +1,15 @@
+checksum = "26842088255d3aebf0f58d9d492bcb2ea2e2970dcc032b3d0c43851ffdf46c2b"
+licence = "GPL-3.0-or-later"
+provides = "qbootctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qbootctl-0.1.2-r0.apk"
+version = "0.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

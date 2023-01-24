@@ -1,0 +1,15 @@
+checksum = "63858c5bacb6e43d1ff39ee7b1b9f38d50755c1bfbba0e0dabc5dd31eab602ea"
+licence = "GPL-2.0-or-later"
+provides = "xfce4-terminal-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-terminal-lang-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["startup-notification", "0.12.0-r4"], ["hicolor-icon-theme", "0.17.0-r2"]]

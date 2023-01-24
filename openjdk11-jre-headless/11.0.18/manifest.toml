@@ -1,0 +1,15 @@
+checksum = "c54850d47bf5ec1af0cf2beebb462f05034baa3ad7f528ecb4a58d01e38e50ed"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk11-jre-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk11-jre-headless-11.0.18_p10-r0.apk"
+version = "11.0.18"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-common", "0.5.0-r0"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4c8b5a1b383db57179e876917ecb18ba0fe9f656a42c39a2efcfeb0e5850bdca"
+licence = "BSD-3-Clause"
+provides = "protoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/protoc-3.21.9-r0.apk"
+version = "3.21.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libprotoc", "3.21.9-r0"], ["libstdc++", "12.2.1"]]

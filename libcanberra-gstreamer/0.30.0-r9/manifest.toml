@@ -1,0 +1,15 @@
+checksum = "951a14e3e7a25b1ea6fa67aaaf6058163f60d2c1c147f13bd9c0bc2c0dd8bcb2"
+licence = "LGPL-2.1-or-later"
+provides = "libcanberra-gstreamer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcanberra-gstreamer-0.30-r9.apk"
+version = "0.30.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcanberra", "0.30.0-r9"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gstreamer", "1.20.5-r0"]]

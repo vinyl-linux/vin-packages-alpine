@@ -1,0 +1,15 @@
+checksum = "f9ad567def7b36cbd130b41e2fb8ec0bc3a8cb34dac43d52dd0c0a75e557a98a"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-base"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-base-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cryptsetup", "2.5.0-r2"], ["e2fsprogs", "1.46.5-r4"], ["logrotate", "3.20.1-r3"], ["parted", "3.5.0-r0"], ["psmisc", "23.5.0-r0"], ["xfsprogs", "6.0.0-r0"], ["ceph17-user", "17.2.5-r5"], ["ceph17-common", "17.2.5-r5"], ["librbd17", "17.2.5-r5"], ["librados17", "17.2.5-r5"], ["libcephfs17", "17.2.5-r5"], ["libaio", "0.3.113-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["lua5.4-libs", "5.4.4-r6"], ["lz4-libs", "1.9.4-r1"], ["oath-toolkit-liboath", "2.6.7-r2"], ["rocksdb", "7.7.3-r0"], ["snappy", "1.1.9-r4"], ["libstdc++", "12.2.1"], ["liburing", "2.3.0-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

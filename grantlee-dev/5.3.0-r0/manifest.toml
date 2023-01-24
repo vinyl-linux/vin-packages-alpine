@@ -1,0 +1,15 @@
+checksum = "74dad86e4ca0fab0ec6693b9d4298f85d8c0aab4d66701df25757aed858a95d8"
+licence = "LGPL-2.1-or-later"
+provides = "grantlee-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grantlee-dev-5.3.0-r0.apk"
+version = "5.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["graphviz-dev", "7.0.5-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["qt5-qtscript-dev", "5.15.6"], ["grantlee", "5.3.0-r0"]]

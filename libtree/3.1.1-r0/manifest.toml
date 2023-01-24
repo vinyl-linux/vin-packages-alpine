@@ -1,0 +1,15 @@
+checksum = "389b987242ce48af7566f76c00748846d345394c93b36c6bf189e6f887be6b11"
+licence = "MIT"
+provides = "libtree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtree-3.1.1-r0.apk"
+version = "3.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

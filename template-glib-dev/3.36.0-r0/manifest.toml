@@ -1,0 +1,15 @@
+checksum = "0718cdc36209067563def56537f7ce60e355f3dd6ebb3629703e8b93095bc7d7"
+licence = "GPL-3.0-or-later"
+provides = "template-glib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/template-glib-dev-3.36.0-r0.apk"
+version = "3.36.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["gobject-introspection-dev", "1.74.0-r1"], ["pkgconf", "1.9.4-r0"], ["template-glib", "3.36.0-r0"]]

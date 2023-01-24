@@ -1,0 +1,15 @@
+checksum = "ea53f1ef989fa59b5eeeab1f44c60d5a58e4dc7d2418a7121be446cd85f4f30c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-socket-getaddrinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-socket-getaddrinfo-0.22-r4.apk"
+version = "0.22.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-extutils-cchecker", "0.11.0-r0"]]

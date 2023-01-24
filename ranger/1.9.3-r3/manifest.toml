@@ -1,0 +1,15 @@
+checksum = "10f665e9fa2112a050865971559d3dd825f5c8b80e8e298536f55caf2fb71471"
+licence = "GPL-3.0-only"
+provides = "ranger"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ranger-1.9.3-r3.apk"
+version = "1.9.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

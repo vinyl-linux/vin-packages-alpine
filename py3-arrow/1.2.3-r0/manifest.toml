@@ -1,0 +1,15 @@
+checksum = "268e10d97a0836f33a7b9165e396017f56e086bacf5092a7887b91cf93babf71"
+licence = "Apache-2.0"
+provides = "py3-arrow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-arrow-1.2.3-r0.apk"
+version = "1.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dateutil", "2.8.2-r1"]]

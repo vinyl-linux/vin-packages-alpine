@@ -1,0 +1,15 @@
+checksum = "ca4ed52c8ed8dc16afd24184e03f0be515419698dc2c24eff25881a6f70da9ad"
+licence = "GPL-2.0-only"
+provides = "busybox-mdev-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/busybox-mdev-openrc-1.35.0-r29.apk"
+version = "1.35.0-r29"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"], ["mdev-conf", "4.3.0-r0"]]

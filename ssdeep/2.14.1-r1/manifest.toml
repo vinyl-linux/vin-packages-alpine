@@ -1,0 +1,15 @@
+checksum = "d351ab5fa52cabb2035b0db0513df1d4da732e1fa45a83ffe6701e4e1afda318"
+licence = "GPL-2.0-or-later"
+provides = "ssdeep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ssdeep-2.14.1-r1.apk"
+version = "2.14.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

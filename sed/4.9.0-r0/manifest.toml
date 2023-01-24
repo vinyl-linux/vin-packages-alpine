@@ -1,0 +1,15 @@
+checksum = "c9eed0ae7c30f0cc45bf20dc411b580c6ecc54f66a48e6f12f1ea12ac4ad8f82"
+licence = "GPL-3.0-or-later"
+provides = "sed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sed-4.9-r0.apk"
+version = "4.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

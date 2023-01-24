@@ -1,0 +1,15 @@
+checksum = "f843ad3c9644db9a59af8a244d89595554a0f428021cb447e9f6b91dd2e2bb34"
+licence = "MIT"
+provides = "xcb-util-renderutil-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcb-util-renderutil-dev-0.3.10-r0.apk"
+version = "0.3.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xcb-util-dev", "0.4.0-r3"], ["libxcb-dev", "1.15.0-r0"], ["pkgconf", "1.9.4-r0"], ["xcb-util-renderutil", "0.3.10-r0"]]

@@ -1,0 +1,15 @@
+checksum = "eb8163c0a3b49daabde77c363a3fe914fe216f9beb58420fcf4fa504e7cf63da"
+licence = "MIT"
+provides = "py3-cheetah"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cheetah-3.3.0-r0.apk"
+version = "3.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

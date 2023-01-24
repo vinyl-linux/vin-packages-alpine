@@ -1,0 +1,15 @@
+checksum = "bf7b6ae844ee510e7d1dcc09b8f609d7949ccacd2e7c28c2e2e25a6506d3dd45"
+licence = "LGPL-2.1-or-later"
+provides = "gmime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gmime-3.2.13-r0.apk"
+version = "3.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpgsm", "2.2.40-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gpgme", "1.18.0-r0"], ["libidn2", "2.3.4-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "60576bb12aedc47f0487656df24d4c1952f19f061986c599507bc8742bf48023"
+licence = "GPL-2.0-or-later"
+provides = "polari-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/polari-lang-42.1-r0.apk"
+version = "42.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["telepathy-logger", "0.8.2-r3"], ["telepathy-idle", "0.2.2-r0"], ["telepathy-mission-control", "5.16.6-r1"], ["gspell", "1.12.0-r1"], ["libadwaita", "1.2.1-r0"], ["libsecret", "0.20.5-r0"], ["libsoup", "2.74.3-r0"]]

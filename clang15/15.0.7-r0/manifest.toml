@@ -1,0 +1,15 @@
+checksum = "37c190be67c52dee456b8af89d9e8513c64415243335c1537729c034217d7570"
+licence = "Apache-2.0"
+provides = "clang15"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang15-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clang15-libs", "15.0.7-r0"], ["libstdc++-dev", "12.2.1"], ["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "18978d659d0645696377b3feb2ce3d9489727db344e00ea316cd1efc2249d0bc"
+licence = "GPL-3.0-or-later"
+provides = "light"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/light-1.2.2-r1.apk"
+version = "1.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

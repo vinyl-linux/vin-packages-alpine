@@ -1,0 +1,15 @@
+checksum = "38124931ae891c503b5d45ffdb4f353aeb6bffd7e53da3f0bd12fa84e4435cfe"
+licence = "GPL-3.0-or-later"
+provides = "cutecom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cutecom-0.51.0-r1.apk"
+version = "0.51.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtserialport", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

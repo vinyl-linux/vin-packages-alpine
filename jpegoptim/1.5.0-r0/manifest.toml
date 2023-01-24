@@ -1,0 +1,15 @@
+checksum = "050927ff5f73d6b197c00fca6fb7eec98580eebc0dc1010af098abacd55abc47"
+licence = "GPL-2.0-or-later"
+provides = "jpegoptim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jpegoptim-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"]]

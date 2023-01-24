@@ -1,0 +1,15 @@
+checksum = "2492d8c9c0d9a829fbc923683204604a95cf00c78afb1210609a768fa9cd9528"
+licence = "(LGPL-2.1-only OR LGPL-3.0-only) AND LGPL-2.0-or-later"
+provides = "plasma-nm-mobile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-nm-mobile-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["networkmanager-elogind", "1.40.10-r0"], ["plasma-nm", "5.26.3-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["networkmanager-qt", "5.100.0-r0"], ["kdeclarative", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

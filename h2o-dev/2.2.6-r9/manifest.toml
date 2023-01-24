@@ -1,0 +1,15 @@
+checksum = "6b90fa84886093462aa9de7bb145af463fc42f1a268903dfb3b548ae3e4e8676"
+licence = "MIT"
+provides = "h2o-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/h2o-dev-2.2.6-r9.apk"
+version = "2.2.6-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["h2o", "2.2.6-r9"], ["libuv-dev", "1.44.2-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1e7d8fa5ae4d8dde890a28c3dd6c9c0c3146b5c817b888351b244ee457de2127"
+licence = "GPL-2.0-only"
+provides = "libnids"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnids-1.26-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libnet", "1.2.0-r1"], ["libpcap", "1.10.1-r1"]]

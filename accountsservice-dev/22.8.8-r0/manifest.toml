@@ -1,0 +1,15 @@
+checksum = "c2c2341a1a2cb4af922ab14af8061ca359557332da15704b7f8a8dd3b05c485c"
+licence = "GPL-3.0-or-later"
+provides = "accountsservice-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/accountsservice-dev-22.08.8-r0.apk"
+version = "22.8.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gobject-introspection-dev", "1.74.0-r1"], ["libaccountsservice", "22.8.8-r0"], ["glib-dev", "2.74.5-r0"], ["polkit-dev", "122.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "5b7304b3b5517ea7bf4957d49342746b74d7a7319d92260e9ce06e7f2d546df4"
+licence = "GPL-3.0-only"
+provides = "qscintilla-designer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qscintilla-designer-2.13.3-r0.apk"
+version = "2.13.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qscintilla", "2.13.3-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "3e4a6b8b1a439769a0d607a25ada9ab96eb52a3d9cef179ab2225294a5b62f1f"
+licence = "MIT"
+provides = "bitcoin-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitcoin-qt-23.0-r3.apk"
+version = "23.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["db-c++", "5.3.28-r2"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["libqrencode", "4.1.1-r1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["libzmq", "4.3.4-r1"]]

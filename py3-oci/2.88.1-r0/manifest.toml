@@ -1,0 +1,15 @@
+checksum = "019fe38882cda9c062a208a1197e36ad177dd28fa05c754773f6fdb5c3f6b60c"
+licence = "Apache-2.0"
+provides = "py3-oci"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-oci-2.88.1-r0.apk"
+version = "2.88.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-certifi", "2022.12.7-r0"], ["py3-circuitbreaker", "1.4.0-r0"], ["py3-cryptography", "38.0.3-r0"], ["py3-dateutil", "2.8.2-r1"], ["py3-openssl", "22.1.0-r1"], ["py3-tz", "2022.6.0-r0"]]

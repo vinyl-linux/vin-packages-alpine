@@ -1,0 +1,15 @@
+checksum = "1b6c71ac6a2a42415687e90f003a0268053a25948b04ae0040fad1a130a23ed5"
+licence = "GPL-2.0-only"
+provides = "cups-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cups-dbg-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cups-client", "2.4.2-r1"], ["poppler-utils", "22.11.0-r0"], ["openssl", "3.0.7-r2"], ["dbus", "1.14.4-r0"]]

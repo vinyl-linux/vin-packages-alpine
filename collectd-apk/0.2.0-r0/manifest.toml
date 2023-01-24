@@ -1,0 +1,15 @@
+checksum = "15f26334115f9a6b846ab01a8a2f8bd414886b3950fbae4217555dd1ca0b8e1e"
+licence = "GPL-2.0-or-later"
+provides = "collectd-apk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-apk-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["apk-tools", "2.12.10-r1"], ["musl", "1.2.3-r4"], ["json-c", "0.16.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "0c13bfa56dea797008cf109c6e3feaf6b25f2b1181df0472aee91d2bc34331a9"
+licence = "GPL-3.0-or-later"
+provides = "git-interactive-rebase-tool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-interactive-rebase-tool-2.2.1-r0.apk"
+version = "2.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgit2", "1.5.1-r0"]]

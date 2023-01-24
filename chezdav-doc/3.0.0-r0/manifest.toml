@@ -1,0 +1,15 @@
+checksum = "40a16e6a42310c8a663c8493ca464c8650c11c22c705353bbfb86650160231e4"
+licence = "LGPL-2.0-or-later"
+provides = "chezdav-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chezdav-doc-3.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r6"]]

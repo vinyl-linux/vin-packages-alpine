@@ -1,0 +1,15 @@
+checksum = "1dd70c612a3c6b3841e70487c0a9b3598c2d8e04078b15409b243c173e177348"
+licence = "BSD-3-Clause"
+provides = "nfprofile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nfprofile-1.6.24-r0.apk"
+version = "1.6.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nfdump", "1.6.24-r0"], ["musl", "1.2.3-r4"], ["librrd", "1.7.2-r6"]]

@@ -1,0 +1,15 @@
+checksum = "5cf06078f96dc2b3dbc37ef72b9c4e2713389815e302946799758f15397d5979"
+licence = "BSD-3-Clause"
+provides = "pythran"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pythran-0.12.0-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-beniget", "0.4.1-r0"], ["py3-gast", "0.5.3-r0"], ["py3-numpy", "1.23.4-r0"], ["py3-ply", "3.11.0-r7"], ["python3", "3.10.9-r1"]]

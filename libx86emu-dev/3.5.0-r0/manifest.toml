@@ -1,0 +1,15 @@
+checksum = "f7259f924cce6b0bc9aeee9d360df2e02d1a454a37b46985016a1daa917e9d81"
+licence = "MIT"
+provides = "libx86emu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libx86emu-dev-3.5-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx86emu", "3.5.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "46fcbc5ed4ef54cba8e50140b6bd8c7a5abd096bbc97c1d23dad01e33f03c9a6"
+licence = "GPL-2.0-only"
+provides = "apk-tools-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apk-tools-dbg-2.12.10-r1.apk"
+version = "2.12.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ca-certificates-bundle", "20220614.0.0-r4"]]

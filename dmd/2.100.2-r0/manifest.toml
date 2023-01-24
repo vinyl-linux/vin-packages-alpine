@@ -1,0 +1,15 @@
+checksum = "e5287367466b160819fcceea3fcbdba86614752600014ffe557e75cf7ac1801e"
+licence = "BSL-1.0"
+provides = "dmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dmd-2.100.2-r0.apk"
+version = "2.100.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm-libunwind-dev", "15.0.7-r0"], ["tzdata", "2022.0.0-f-r1"], ["musl", "1.2.3-r4"], ["ldc-runtime", "1.30.0-r1"], ["llvm-libunwind", "15.0.7-r0"]]

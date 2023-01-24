@@ -1,0 +1,15 @@
+checksum = "556f354bfb92db221f9fe1d581c74810c3f3f8b0c22706e545f5a639e080b3f4"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-lipsum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-lipsum-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"]]

@@ -1,0 +1,15 @@
+checksum = "511d8c74600e18346ea13dece6ebb8990bbfa31e6e35243d2fd6b2c40daa56f9"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtbase-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtbase-postgresql-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"], ["libstdc++", "12.2.1"]]

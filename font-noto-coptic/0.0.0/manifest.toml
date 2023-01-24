@@ -1,0 +1,15 @@
+checksum = "a60a84967c9c7d56b893f2b3a74e8818cd1fc78c020ac8e77955fd3e024655aa"
+licence = "OFL-1.1"
+provides = "font-noto-coptic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-coptic-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

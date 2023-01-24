@@ -1,0 +1,15 @@
+checksum = "6dcbae7bd59ebf70050a28c148fbef83742ba04242ebf6660a8ce0c4035ef0c7"
+licence = "Apache-2.0"
+provides = "unit-php81"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unit-php81-1.28.0-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["unit", "1.28.0-r0"], ["musl", "1.2.3-r4"], ["php81-embed", "8.1.14-r0"]]

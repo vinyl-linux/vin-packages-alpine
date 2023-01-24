@@ -1,0 +1,15 @@
+checksum = "8592872000b56b49d555d1a092c0318030b5946193d8e3be6b4afb86e1b0425e"
+licence = "GPL"
+provides = "pdfgrep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdfgrep-2.1.2-r6.apk"
+version = "2.1.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgcrypt", "1.10.1-r0"], ["pcre", "8.45.0-r2"], ["poppler", "22.11.0-r0"], ["libstdc++", "12.2.1"]]

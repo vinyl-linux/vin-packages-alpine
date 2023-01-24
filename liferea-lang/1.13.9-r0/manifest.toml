@@ -1,0 +1,15 @@
+checksum = "3fe268383b422333ba87ba60f4c05c4ab5b2799c856bfa07941bef3010bb1a7e"
+licence = "GPL-2.0-or-later"
+provides = "liferea-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liferea-lang-1.13.9-r0.apk"
+version = "1.13.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.2-r0"], ["libpeas-python3", "1.34.0-r0"]]

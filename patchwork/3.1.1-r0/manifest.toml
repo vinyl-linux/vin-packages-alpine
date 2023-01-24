@@ -1,0 +1,15 @@
+checksum = "1e947a047710645f72d08f31e9681ad2b12beb8d289cf4f66a91de537ca55c20"
+licence = "GPL-2.0-or-later"
+provides = "patchwork"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/patchwork-3.1.1-r0.apk"
+version = "3.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-django", "3.2.16-r0"], ["py3-django-rest-framework", "3.13.1-r0"], ["py3-django-filter", "22.1.0-r0"], ["py3-psycopg2", "2.9.5-r0"], ["py3-sqlparse", "0.4.3-r0"]]

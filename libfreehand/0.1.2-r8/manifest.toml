@@ -1,0 +1,15 @@
+checksum = "1ef6b507574c56652244c041582227f7448b53c1a19de856ad2ccd2615594b8c"
+licence = "MPL-2.0"
+provides = "libfreehand"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfreehand-0.1.2-r8.apk"
+version = "0.1.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lcms2", "2.14.0-r0"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

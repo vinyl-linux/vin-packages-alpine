@@ -1,0 +1,15 @@
+checksum = "bb531319e65d34155d6d0babe4a04480e2cb51f0d8c918b0f1a167927486f626"
+licence = "Net-SNMP"
+provides = "net-snmp-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/net-snmp-tools-5.9.3-r2.apk"
+version = "5.9.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"]]

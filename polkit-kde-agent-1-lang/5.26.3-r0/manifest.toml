@@ -1,0 +1,15 @@
+checksum = "05592f0ea27e9bc220d4726f73ae1165a5b02be4a84aa525ec90c67f3c4b054d"
+licence = "GPL-2.0-or-later"
+provides = "polkit-kde-agent-1-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/polkit-kde-agent-1-lang-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-elogind", "122.0.0-r0"]]

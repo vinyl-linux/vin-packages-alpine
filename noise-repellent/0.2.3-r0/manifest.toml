@@ -1,0 +1,15 @@
+checksum = "8516e23b853307262dbc804dc15778a998cea41bed8386deeea8540ea0f1d14a"
+licence = "LGPL-3.0-only"
+provides = "noise-repellent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/noise-repellent-0.2.3-r0.apk"
+version = "0.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libspecbleach", "0.1.6-r0"], ["musl", "1.2.3-r4"]]

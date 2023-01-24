@@ -1,0 +1,15 @@
+checksum = "7b15b9ec58210ebef0b3a96e2768442681c8894c97863889362e1b0cb46a4afc"
+licence = "GPL-2.0-or-later"
+provides = "libfm-extra-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfm-extra-dev-1.3.1-r1.apk"
+version = "1.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfm-extra", "1.3.1-r1"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

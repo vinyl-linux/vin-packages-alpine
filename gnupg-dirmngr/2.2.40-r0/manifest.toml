@@ -1,0 +1,15 @@
+checksum = "1ac638ace69d50c02585a4f481408530bdf242c32b3b0f6b81bcf56d92dd479c"
+licence = "GPL-3.0-or-later"
+provides = "gnupg-dirmngr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-dirmngr-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg-gpgconf", "2.2.40-r0"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["gnutls", "3.7.8-r2"], ["libgpg-error", "1.46.0-r1"], ["libksba", "1.6.3-r0"], ["libldap", "2.6.3-r6"], ["npth", "1.6.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "6894671ca716065930ac2fef9493e17d7daa39ddd28fb6ae8cb320ddbef173a5"
+licence = "LGPL-2.1-or-later"
+provides = "amtk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/amtk-dev-5.6.0-r0.apk"
+version = "5.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["amtk", "5.6.0-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

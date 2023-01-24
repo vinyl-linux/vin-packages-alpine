@@ -1,0 +1,15 @@
+checksum = "24422f6c55cc495712fa47ffb6e1831007a98004ffcc4c9bb30ca82bea1ce01a"
+licence = "GPL-3.0-only"
+provides = "os-prober"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/os-prober-1.81-r0.apk"
+version = "1.81.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

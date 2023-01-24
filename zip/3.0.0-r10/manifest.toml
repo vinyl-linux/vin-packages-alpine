@@ -1,0 +1,15 @@
+checksum = "9834d22e24a9e4260b3edc77b88957766db8d1d14df72f4e0b117ebc5a4dc06c"
+licence = "Info-ZIP"
+provides = "zip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zip-3.0-r10.apk"
+version = "3.0.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["unzip", "6.0.0-r13"], ["musl", "1.2.3-r4"]]

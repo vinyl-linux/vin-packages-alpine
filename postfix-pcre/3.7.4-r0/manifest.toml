@@ -1,0 +1,15 @@
+checksum = "e778f093a37976ac6909b48ad566c9d148eeb2427b8dfbface0796dd47e180d4"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix-pcre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-pcre-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pcre2", "10.42.0-r0"]]

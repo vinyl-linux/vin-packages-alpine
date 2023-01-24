@@ -1,0 +1,15 @@
+checksum = "22a18d507a7a6651ec6b4f16dc37dc49cf269ebd157a82e58454b9c86a93ddad"
+licence = "GPL-3.0-or-later"
+provides = "zeromq-gsl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zeromq-gsl-4.1.5-r1.apk"
+version = "4.1.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pcre", "8.45.0-r2"]]

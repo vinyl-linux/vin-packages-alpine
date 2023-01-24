@@ -1,0 +1,15 @@
+checksum = "ceac8c5b41165869933a5db51b83d8d919086c3deb34671db60add4986d51230"
+licence = "Apache-2.0"
+provides = "nototools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nototools-0.2.17-r0.apk"
+version = "0.2.17-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-fonttools", "4.38.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "671db32f6076b96849c8ad588f48c915fb78109d389a5ba2f6d556ba99c413b9"
+licence = "PostgreSQL AND Apache-2.0"
+provides = "agensgraph-plpython3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/agensgraph-plpython3-2.13.0-r1.apk"
+version = "2.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["agensgraph", "2.13.0-r1"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

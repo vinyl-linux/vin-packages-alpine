@@ -1,0 +1,15 @@
+checksum = "c04126c7269279effc542cc7783e8ae04a1855c52b31e9feae7c80543e5eb308"
+licence = "Apache-2.0"
+provides = "py3-eliot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-eliot-1.14.0-r2.apk"
+version = "1.14.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"], ["py3-zope-interface", "5.5.1-r0"], ["py3-pyrsistent", "0.19.2-r0"], ["py3-boltons", "21.0.0-r3"], ["py3-twisted", "22.10.0-r0"]]

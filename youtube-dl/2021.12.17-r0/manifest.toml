@@ -1,0 +1,15 @@
+checksum = "f060366fadcf9b62c32e5eb740f8feb2abf7cf0478c08bc316b7c93f09d4b231"
+licence = "Unlicense"
+provides = "youtube-dl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/youtube-dl-2021.12.17-r0.apk"
+version = "2021.12.17-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

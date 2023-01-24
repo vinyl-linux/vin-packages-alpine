@@ -1,0 +1,15 @@
+checksum = "a2ba518f351f15acf0711831f7a3128869989f67909c8a42d96785a7af07cb05"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only)"
+provides = "layer-shell-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/layer-shell-qt-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtwayland", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"]]

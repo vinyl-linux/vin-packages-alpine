@@ -1,0 +1,15 @@
+checksum = "1c38ed4c05cc99fb7623bbf835511b401efe97f7b8dfa2f050912192142e6d6b"
+licence = "GPL-3.0-or-later"
+provides = "font-viewer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-viewer-0.8.8-r2.apk"
+version = "0.8.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["font-manager-common", "0.8.8-r2"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"], ["sqlite-libs", "3.40.1-r0"]]

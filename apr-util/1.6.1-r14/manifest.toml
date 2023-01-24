@@ -1,0 +1,15 @@
+checksum = "95de901465ad8505ed016f0d4020075d26d5faef4086384d80a603cbaa60632d"
+licence = "Apache-2.0"
+provides = "apr-util"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-util-1.6.1-r14.apk"
+version = "1.6.1-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apr", "1.7.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libexpat", "2.5.0-r0"]]

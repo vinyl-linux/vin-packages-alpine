@@ -1,0 +1,15 @@
+checksum = "7fcd1639e13d7757c6e0730996831d7b6d59fba03f64d787538f01ce58ac3b11"
+licence = "Apache-2.0"
+provides = "py3-txredisapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-txredisapi-1.4.7-r0.apk"
+version = "1.4.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-twisted", "22.10.0-r0"]]

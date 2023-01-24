@@ -1,0 +1,15 @@
+checksum = "0e283088c8bb924dd5abcd3a26cffce2d1887e94f3e68d3847a137978db7b6ea"
+licence = "BSL-1.0"
+provides = "boost1.80-thread"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost1.80-thread-1.80.0-r3.apk"
+version = "1.80.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

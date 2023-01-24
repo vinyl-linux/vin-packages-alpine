@@ -1,0 +1,15 @@
+checksum = "ec96b0cd83e7e5562f9a380324be04fccde0cb1830d6b2eb1a8a1589b7371bb3"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-pdo_pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pdo_pgsql-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["php81-pdo", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

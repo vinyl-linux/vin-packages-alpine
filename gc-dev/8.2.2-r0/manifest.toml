@@ -1,0 +1,15 @@
+checksum = "e2a248c49dbf0e6dd0d8cd8db98bf6500e615b548cd8cb2f8090665064b2e15b"
+licence = "custom:GPL-like"
+provides = "gc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gc-dev-8.2.2-r0.apk"
+version = "8.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gc", "8.2.2-r0"], ["libgc++", "8.2.2-r0"], ["pkgconf", "1.9.4-r0"]]

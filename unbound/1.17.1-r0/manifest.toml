@@ -1,0 +1,15 @@
+checksum = "1d83f539d1ad58a218c124ded290515aa0a44f74778e115b7da515cb8c00ede9"
+licence = "BSD-3-Clause"
+provides = "unbound"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/unbound-1.17.1-r0.apk"
+version = "1.17.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnssec-root", "20190225.0.0-r2"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libevent", "2.1.12-r5"], ["libexpat", "2.5.0-r0"], ["libssl3", "3.0.7-r2"], ["unbound-libs", "1.17.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "17173c1d0525bb9e734b6849d6d867a5fc574924b38d98de452af46af25cd56b"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk13-jre-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk13-jre-headless-13.0.12_p4-r2.apk"
+version = "13.0.12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-common", "0.5.0-r0"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "47d7de8ccd2f9d22e16ea2fa56b370fdda6bc2668ac19bb79312dfe31296ece6"
+licence = "Apache-2.0"
+provides = "openimagedenoise-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openimagedenoise-dev-1.4.3-r1.apk"
+version = "1.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openimagedenoise", "1.4.3-r1"]]

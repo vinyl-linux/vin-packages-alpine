@@ -1,0 +1,15 @@
+checksum = "8d20900224f7f41ba36c083f5f34627d5de52d826542d6c51c5dd3220f628ea9"
+licence = "LGPL-2.1-or-later"
+provides = "librsvg-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librsvg-dev-2.55.1-r0.apk"
+version = "2.55.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsvg-convert", "2.55.1-r0"], ["librsvg", "2.55.1-r0"], ["cairo-dev", "1.17.6-r3"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

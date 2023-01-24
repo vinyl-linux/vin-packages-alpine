@@ -1,0 +1,15 @@
+checksum = "790c2b32a9aa15fdfe78bde42cf01ddd61f9e899fe4fbba3ae72c0ed6c0d8fd0"
+licence = "BSD-3-Clause AND LGPL-2.0-or-later AND MIT"
+provides = "kpublictransport-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpublictransport-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["zlib-dev", "1.2.13-r0"], ["protobuf-dev", "3.21.9-r0"], ["kpublictransport", "22.8.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "06803be78403e664cad97aa7261885b4948b9467a8f5025090177eb873b8714a"
+licence = "ISC"
+provides = "opensmtpd-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opensmtpd-dbg-6.8.0p2-r6.apk"
+version = "6.8.0-p2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

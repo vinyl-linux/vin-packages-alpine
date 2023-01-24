@@ -1,0 +1,15 @@
+checksum = "de23e76828176f00cf67d4ccf188c7b931cf452d33e2e12bd8ae607be5664191"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-dev-22.02.122-r0.apk"
+version = "22.2.122-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev-dev", "3.2.11-r4"], ["gtk+3.0-dev", "3.24.36-r0"], ["libdrm-dev", "2.4.114-r0"], ["libpng-dev", "1.6.38-r0"], ["pango-dev", "1.50.12-r0"], ["pkgconf", "1.9.4-r0"], ["plymouth", "22.2.122-r0"]]

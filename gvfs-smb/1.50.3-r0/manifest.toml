@@ -1,0 +1,15 @@
+checksum = "9da93d3bfa71c85897d2003d705948b974b05335abbb42ea7b10d5746562d208"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-smb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-smb-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gvfs", "1.50.3-r0"], ["libintl", "0.21.1-r1"], ["libsmbclient", "4.16.8-r0"]]

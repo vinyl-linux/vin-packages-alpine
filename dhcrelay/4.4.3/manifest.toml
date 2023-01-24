@@ -1,0 +1,15 @@
+checksum = "3dfbc9555b4d0e4dc0a478d881982aa94ba3d6193c5703e973869d6c88bad129"
+licence = "MPL-2.0"
+provides = "dhcrelay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dhcrelay-4.4.3_p1-r1.apk"
+version = "4.4.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

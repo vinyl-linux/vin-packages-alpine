@@ -1,0 +1,15 @@
+checksum = "648435c943afa517531ca9624bd158e4f7d8e5326e9580e99ae856754db05660"
+licence = "BSD-3-Clause"
+provides = "iperf3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iperf3-dev-3.12-r0.apk"
+version = "3.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iperf3", "3.12.0-r0"]]

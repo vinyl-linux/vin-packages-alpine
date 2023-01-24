@@ -1,0 +1,15 @@
+checksum = "92fbcbd9495ef5264bbc60fceb288097baa2eb8002cb1beb0fd0e661f6d7f566"
+licence = "BSD-3-Clause AND GPL-2.0-or-later"
+provides = "opencolorio-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencolorio-tools-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["glew", "2.2.0-r3"], ["glu", "9.0.2-r2"], ["opencolorio", "2.2.0-r0"], ["openexr", "3.1.5-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["freeglut", "3.4.0-r1"], ["lcms2", "2.14.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

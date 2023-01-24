@@ -1,0 +1,15 @@
+checksum = "5c6cc0c2332580c8c15d33355a3eae75513e2d6078a344144c3411c642429f4e"
+licence = "GPL-2.0-only AND LGPL-2.1-or-later AND Unicode-DFS-2016"
+provides = "konsole-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/konsole-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"]]

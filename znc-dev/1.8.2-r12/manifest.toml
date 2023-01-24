@@ -1,0 +1,15 @@
+checksum = "8b8c1c10b5b25c69ecd94da959668436cc23abbf250bfc440454f59fb843d558"
+licence = "Apache-2.0"
+provides = "znc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/znc-dev-1.8.2-r12.apk"
+version = "1.8.2-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

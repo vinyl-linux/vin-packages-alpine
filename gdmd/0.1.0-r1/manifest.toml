@@ -1,0 +1,15 @@
+checksum = "0a08bd6a4dfe5a96918d006638f3db5a10aaf690c44b2291ec54f47354e8710d"
+licence = "GPL-3.0-or-later"
+provides = "gdmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gdmd-0.1.0-r1.apk"
+version = "0.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["gcc-gdc", "12.2.1"]]

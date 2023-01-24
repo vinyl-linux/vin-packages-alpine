@@ -1,0 +1,15 @@
+checksum = "26fc2eda58a3b04ebea11d921c058362d1aaeb857b4313c1dcbb48d34f1c3d30"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-uptime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-uptime-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

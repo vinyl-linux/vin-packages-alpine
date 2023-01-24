@@ -1,0 +1,15 @@
+checksum = "90abdc566ef562712ab3a00970b64776a4c6256bb3314c5f225bdbcd4f8713d6"
+licence = "MIT"
+provides = "dotnet-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet-bash-completion-6.0.113-r0.apk"
+version = "6.0.113-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.2-r0"]]

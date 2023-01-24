@@ -1,0 +1,15 @@
+checksum = "b3a605b6c17d2097ce69494074271e0a4a6d5e3986e26f54b3cf83a3f9570528"
+licence = "MIT"
+provides = "fmt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fmt-dev-9.1.0-r0.apk"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fmt", "9.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f7eb16c82a1144b8fee1e23d2bddd7244b31fdc7da2466daef0df4844c4228f3"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils-cross"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binutils-cross-2.39-r0.apk"
+version = "2.39.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils-aarch64", "2.39.0-r0"], ["binutils-armhf", "2.39.0-r0"], ["binutils-armv7", "2.39.0-r0"], ["binutils-mips64", "2.39.0-r0"], ["binutils-ppc64le", "2.39.0-r0"], ["binutils-riscv64", "2.39.0-r0"], ["binutils-s390x", "2.39.0-r0"], ["binutils-x86", "2.39.0-r0"], ["binutils-x86_64", "2.39.0-r0"]]

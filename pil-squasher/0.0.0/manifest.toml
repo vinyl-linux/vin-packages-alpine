@@ -1,0 +1,15 @@
+checksum = "d7c1d2542224fa50b98cca1ddd13d7853f02f2c79139d288c2b422e124ffa671"
+licence = "BSD-3-Clause"
+provides = "pil-squasher"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pil-squasher-0_git20210529-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

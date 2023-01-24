@@ -1,0 +1,15 @@
+checksum = "e8f1fab42823f74016a78358725c6298fa2a8c3822bd5ec8731fe076e563f0ff"
+licence = "MIT"
+provides = "namecoin-tx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/namecoin-tx-23.0-r1.apk"
+version = "23.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

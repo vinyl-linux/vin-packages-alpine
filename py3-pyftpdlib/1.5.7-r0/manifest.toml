@@ -1,0 +1,15 @@
+checksum = "4f15990ca493dc4ff5bc6a010ca539f55bc737a974fa78f7fc50b262a347ad76"
+licence = "MIT"
+provides = "py3-pyftpdlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyftpdlib-1.5.7-r0.apk"
+version = "1.5.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-openssl", "22.1.0-r1"], ["py3-pysendfile", "2.0.1-r5"]]

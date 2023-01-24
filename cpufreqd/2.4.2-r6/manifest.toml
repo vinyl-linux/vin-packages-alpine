@@ -1,0 +1,15 @@
+checksum = "fd03d3e7f7558f4b1f3acb767baa7b41b8e58461c4ed736e355890d15a11b63d"
+licence = "GPL-2.0-or-later"
+provides = "cpufreqd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cpufreqd-2.4.2-r6.apk"
+version = "2.4.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cpufrequtils", "8.0.0-r5"], ["sysfsutils", "2.1.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "3be232ed38bb89ab6f95978ff99fb4225f815b83507ef271dd50ed09215f8ec0"
+licence = "MIT"
+provides = "uarmsolver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/uarmsolver-0.2.4-r2.apk"
+version = "0.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

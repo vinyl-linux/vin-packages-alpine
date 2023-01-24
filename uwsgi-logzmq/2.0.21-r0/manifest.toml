@@ -1,0 +1,15 @@
+checksum = "034167b1a17ca32e71d250a8b4abd128ce65c6ff8e4e4dda40be9b0e5b6a8c59"
+licence = "custom"
+provides = "uwsgi-logzmq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-logzmq-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["libzmq", "4.3.4-r1"]]

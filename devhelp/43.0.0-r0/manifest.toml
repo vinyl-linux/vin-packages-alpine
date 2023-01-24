@@ -1,0 +1,15 @@
+checksum = "39185090eefe6010f1cfac0d32de78666f9dc8e68763433501cea8eaea5564f1"
+licence = "GPL-2.0-or-later"
+provides = "devhelp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/devhelp-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["webkit2gtk-4.1", "2.38.3-r0"]]

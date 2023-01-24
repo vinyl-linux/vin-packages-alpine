@@ -1,0 +1,15 @@
+checksum = "928a83f6c5bfb52d8208c8661f678899515f659f822179da3e0f97f6b62ee5bb"
+licence = "GPL-2.0-or-later AND MIT"
+provides = "opencpn-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencpn-lang-5.6.2-r1.apk"
+version = "5.6.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpsd", "3.24.0-r0"]]

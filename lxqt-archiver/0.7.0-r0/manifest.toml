@@ -1,0 +1,15 @@
+checksum = "a41248afe20e73ae045d3b9bf8f545c34a8db17f7a6d01372518836a6b2574ef"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-archiver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-archiver-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libfm-qt", "1.2.0-r0"], ["glib", "2.74.5-r0"], ["json-glib", "1.6.6-r1"], ["libstdc++", "12.2.1"]]

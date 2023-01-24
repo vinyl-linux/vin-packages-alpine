@@ -1,0 +1,15 @@
+checksum = "26bc85e27fbea6ebd585d7fd1d846e86ae8cd7bbe8db12c704c1a3cf344ae2d9"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-sqlite-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"], ["php81-sqlite3", "8.1.14-r0"], ["php81-pdo_sqlite", "8.1.14-r0"]]

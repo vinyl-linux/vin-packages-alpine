@@ -1,0 +1,15 @@
+checksum = "d9aa8b19f4be472f6ad2cb953b5637172b59ef71bfedb81f0138998d362796de"
+licence = "LicenseRef-KDE-Accepted-GPL AND LicenseRef-KDE-Accepted-LGPL AND CC0-1.0"
+provides = "plasma-systemmonitor-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-systemmonitor-lang-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["ksystemstats", "5.26.3-r0"]]

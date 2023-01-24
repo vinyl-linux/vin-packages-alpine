@@ -1,0 +1,15 @@
+checksum = "bf3c795e65c81cb025b5cd980b72cc175b1d166e49c6a048028b2855f113e7d0"
+licence = "MIT"
+provides = "libxft"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxft-2.3.7-r0.apk"
+version = "2.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxrender", "0.9.11-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "318279f22051bed3c116f3f098b43ccc9420a4cf009b53a23c414e1213a7672b"
+licence = "LGPL-2.1-or-later"
+provides = "soxr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/soxr-0.1.3-r3.apk"
+version = "0.1.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgomp", "12.2.1"]]

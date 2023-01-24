@@ -1,0 +1,15 @@
+checksum = "6a2432743e8daaed4ae987235c251d6a1fd8a11f2be646baeec81c28cf147afd"
+licence = "Apache-2.0"
+provides = "py3-stestr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-stestr-3.2.1-r0.apk"
+version = "3.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-subunit", "1.4.0-r2"], ["py3-voluptuous", "0.13.1-r0"], ["py3-yaml", "6.0.0-r0"], ["python3", "3.10.9-r1"]]

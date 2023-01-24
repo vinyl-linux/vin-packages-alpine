@@ -1,0 +1,15 @@
+checksum = "1663c4e603563d4d7e59408ef9ee66968396c869a4bc1fb8a599f11e942fab84"
+licence = "GPL-2.0-or-later"
+provides = "osinfo-db-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/osinfo-db-tools-1.10.0-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["json-glib", "1.6.6-r1"], ["libsoup3", "3.2.2-r0"], ["libxml2", "2.10.3-r1"]]

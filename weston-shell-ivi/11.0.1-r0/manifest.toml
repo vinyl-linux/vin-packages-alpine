@@ -1,0 +1,15 @@
+checksum = "191bcf9183560028f15319f7f290eff4cbf72085d4e0e316813491c0819a138f"
+licence = "MIT"
+provides = "weston-shell-ivi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weston-shell-ivi-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["weston", "11.0.1-r0"], ["wayland-libs-server", "1.21.0-r1"], ["libweston", "11.0.1-r0"]]

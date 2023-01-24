@@ -1,0 +1,15 @@
+checksum = "8d289fb25180e2c51fd0e588f67265d35ba6f07b80c7745650c9d55ace730066"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-padwalker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-padwalker-2.5-r2.apk"
+version = "2.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

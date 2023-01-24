@@ -1,0 +1,15 @@
+checksum = "1ac8b9513b443e86819289e037ebdf9dd308ac7af208747338bd3702c4ff682b"
+licence = "GPL-2.0-or-later"
+provides = "bird"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bird-2.0.10-r2.apk"
+version = "2.0.10-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"], ["libssh", "0.10.4-r0"]]

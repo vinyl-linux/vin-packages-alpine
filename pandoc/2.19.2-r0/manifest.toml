@@ -1,0 +1,15 @@
+checksum = "e24ba2f19f6d25f03bee154771c72fc2df8d7ea72a03c01e0c7dbd7210c9e897"
+licence = "GPL-2.0-or-later"
+provides = "pandoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pandoc-2.19.2-r0.apk"
+version = "2.19.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "f331324ed18f807d576f9d03f325b8b4f8f6e36e74eb3865ce23e41cd7e276ab"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "socat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/socat-1.7.4.4-r0.apk"
+version = "1.7.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["readline", "8.2.0-r0"], ["libssl3", "3.0.7-r2"]]

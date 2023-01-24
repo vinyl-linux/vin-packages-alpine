@@ -1,0 +1,15 @@
+checksum = "eed81db96df5186ed29e0038ce8a9642f5103cfeb30b7ed4098f7cdfc510d6d8"
+licence = "MIT"
+provides = "netstandard21-targeting-pack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netstandard21-targeting-pack-6.0.113-r0.apk"
+version = "6.0.113-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.2-r0"]]

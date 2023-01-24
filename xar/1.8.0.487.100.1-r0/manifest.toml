@@ -1,0 +1,15 @@
+checksum = "3132ffbbb12383f09ba79da243b384262b82d85b78e499decd83fc43f40565a6"
+licence = "BSD-3-Clause"
+provides = "xar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xar-1.8.0.487.100.1-r0.apk"
+version = "1.8.0.487.100.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"], ["libxar", "1.8.0.487.100.1-r0"]]

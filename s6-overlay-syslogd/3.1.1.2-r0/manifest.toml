@@ -1,0 +1,15 @@
+checksum = "da76f47385b09f4abcb29135e7daa73874bd70477cc50dfd90a29caf1c41dc6b"
+licence = "ISC"
+provides = "s6-overlay-syslogd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/s6-overlay-syslogd-3.1.1.2-r0.apk"
+version = "3.1.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["execline", "2.9.0.1-r0"], ["s6", "2.11.1.2-r0"], ["s6-rc", "0.5.3.2-r0"], ["s6-linux-init", "1.0.8.0-r0"], ["s6-portable-utils", "2.2.5.0-r0"], ["s6-linux-utils", "2.6.0.0-r0"], ["s6-dns", "2.3.5.4-r0"], ["s6-networking", "2.5.1.1-r0"], ["s6-overlay-helpers", "0.1.0.0-r1"]]

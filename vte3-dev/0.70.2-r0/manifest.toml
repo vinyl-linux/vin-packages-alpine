@@ -1,0 +1,15 @@
+checksum = "820dcf2af413b884384d80694fcb742b49708adddcb4acd5b10777856d39e325"
+licence = "LGPL-2.0-or-later"
+provides = "vte3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vte3-dev-0.70.2-r0.apk"
+version = "0.70.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["pango-dev", "1.50.12-r0"], ["pkgconf", "1.9.4-r0"], ["vte3-gtk4", "0.70.2-r0"], ["vte3", "0.70.2-r0"]]

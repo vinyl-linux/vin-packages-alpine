@@ -1,0 +1,15 @@
+checksum = "a7dff5ad9ce0535c70a0b4891c1afeef4ac43afb5f728baef2a010945cb8e301"
+licence = "Apache-2.0"
+provides = "opensubdiv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opensubdiv-3.5.0-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opencl", "2022.9.30-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgomp", "12.2.1"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"]]

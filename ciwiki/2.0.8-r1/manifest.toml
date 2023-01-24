@@ -1,0 +1,15 @@
+checksum = "22452b3a8e8d384be9d944030d41ce77208a769154887ed53c30e7e40a5806da"
+licence = "GPL-2.0-or-later"
+provides = "ciwiki"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ciwiki-2.0.8-r1.apk"
+version = "2.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

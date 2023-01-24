@@ -1,0 +1,15 @@
+checksum = "aa84dc7a3cb010c2d7ca9135d59a20661641b266382deecf428e90dd1ccecf08"
+licence = "Apache-2.0"
+provides = "dockviz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dockviz-0.6.4-r3.apk"
+version = "0.6.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["podman-docker", "4.3.1-r1"], ["musl", "1.2.3-r4"]]

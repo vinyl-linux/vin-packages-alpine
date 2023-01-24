@@ -1,0 +1,15 @@
+checksum = "db80b06a79e6cade2a0e3515b818522cd186f166c5d272ee5e5c8b890a3c9e95"
+licence = "MIT"
+provides = "py3-statmake"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-statmake-0.5.1-r0.apk"
+version = "0.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-attrs", "22.1.0-r0"], ["py3-cattrs", "1.8.0-r2"], ["py3-fonttools", "4.38.0-r0"], ["py3-fs", "2.4.16-r0"]]

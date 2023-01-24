@@ -1,0 +1,15 @@
+checksum = "e25c37f9ce3d77a5ff6f5e188604e7775f40a2d7aeb21aac3993e4bbb888fc7b"
+licence = "GPL"
+provides = "moc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/moc-2.5.2-r2.apk"
+version = "2.5.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["ffmpeg4-libs", "4.4.3-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["jack", "1.9.21-r0"], ["libltdl", "2.4.7-r0"], ["libmodplug", "0.8.9.0-r2"], ["ncurses-libs", "6.3.0"]]

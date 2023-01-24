@@ -1,0 +1,15 @@
+checksum = "0bd005bec48e4565caef44c77141e189f2787096c2a9e08c41d88b00860e9374"
+licence = "custom"
+provides = "uwsgi-rpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-rpc-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

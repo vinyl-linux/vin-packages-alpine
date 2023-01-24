@@ -1,0 +1,15 @@
+checksum = "083d21aafd7cb534c49cf0e686320bffa65189d2ad9f17f89fac2fc691aaf9ad"
+licence = "GPL-2.0-or-later GPL-3.0-or-later LGPL-3.0-or-later"
+provides = "libidn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libidn-1.41-r0.apk"
+version = "1.41.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

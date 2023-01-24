@@ -1,0 +1,15 @@
+checksum = "55a660f744529f69ade199ee46ccc0cd8e00b74f6a44909e2698d493a93af6db"
+licence = "MIT"
+provides = "xwiimote"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xwiimote-2_git20131227-r0.apk"
+version = "2.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["libxwiimote", "2.0.0"]]

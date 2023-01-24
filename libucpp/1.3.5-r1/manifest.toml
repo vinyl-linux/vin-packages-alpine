@@ -1,0 +1,15 @@
+checksum = "2ee66fac1bb8961e2fef36aff6fa134920b54adbae1a8edcb2099384fede0299"
+licence = "BSD-3-Clause"
+provides = "libucpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libucpp-1.3.5-r1.apk"
+version = "1.3.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

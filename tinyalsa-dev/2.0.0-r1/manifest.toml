@@ -1,0 +1,15 @@
+checksum = "7a26f5df0224c0a3f01efd26eccc571d789167473399711409159fb6a99044b4"
+licence = "BSD-3-Clause"
+provides = "tinyalsa-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tinyalsa-dev-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tinyalsa-libs", "2.0.0-r1"]]

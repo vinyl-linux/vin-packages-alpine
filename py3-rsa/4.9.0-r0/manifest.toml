@@ -1,0 +1,15 @@
+checksum = "d3fcc0d55988a5fb8f5637c3c6f6c7db9cb25bf52d3a8dc4b9184bebbacaa05d"
+licence = "Apache-2.0"
+provides = "py3-rsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rsa-4.9-r0.apk"
+version = "4.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-asn1", "0.4.8-r2"]]

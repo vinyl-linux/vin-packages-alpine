@@ -1,0 +1,15 @@
+checksum = "5c36608db84d6dbd00b9aeec703fcfe3238b16b2e002e3095a13ebf7c2726c97"
+licence = "LGPL-3.0-or-later AND BSD-3-Clause"
+provides = "py3-pyzmq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyzmq-23.2.1-r0.apk"
+version = "23.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libzmq", "4.3.4-r1"]]

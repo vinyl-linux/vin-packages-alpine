@@ -1,0 +1,15 @@
+checksum = "8b6a00a71c01df3acab8a93ebaa22c73db8edfa36d1a3250d0e35ffd7c44938e"
+licence = "GPL-2.0-or-later"
+provides = "rp-pppoe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rp-pppoe-3.15-r0.apk"
+version = "3.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

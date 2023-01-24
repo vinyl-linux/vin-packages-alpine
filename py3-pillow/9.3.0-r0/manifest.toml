@@ -1,0 +1,15 @@
+checksum = "be48cc5d32e2f22d8b1512cec26130b06f48ffd14d92b4e75332c1227a26081c"
+licence = "custom:PIL"
+provides = "py3-pillow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pillow-9.3.0-r0.apk"
+version = "9.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-olefile", "0.46.0-r6"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["libimagequant", "4.0.4-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["lcms2", "2.14.0-r0"], ["openjpeg", "2.5.0-r0"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"], ["libxcb", "1.15.0-r0"], ["zlib", "1.2.13-r0"]]

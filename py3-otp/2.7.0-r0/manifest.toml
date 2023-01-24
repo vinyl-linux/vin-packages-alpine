@@ -1,0 +1,15 @@
+checksum = "6a67f6d092666e0008250fdcd890686feeb6fa384ab44b8767699cc640dae152"
+licence = "MIT"
+provides = "py3-otp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-otp-2.7.0-r0.apk"
+version = "2.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

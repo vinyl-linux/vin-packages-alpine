@@ -1,0 +1,15 @@
+checksum = "82e491ed9d27e8425736cb7534b1650916f339357a42ba2f774678d68feb34d3"
+licence = "LGPL-2.1-or-later"
+provides = "libadwaita-demo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libadwaita-demo-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"]]

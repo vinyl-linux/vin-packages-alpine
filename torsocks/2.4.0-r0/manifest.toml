@@ -1,0 +1,15 @@
+checksum = "b322b7e2f38aaab1ce31f9febbdd6197cfa6907a07bdbe5d14eea03501e9f3ed"
+licence = "GPL-2.0"
+provides = "torsocks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/torsocks-2.4.0-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

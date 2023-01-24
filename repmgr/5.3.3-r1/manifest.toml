@@ -1,0 +1,15 @@
+checksum = "3ee718127743cc752d96ae9a1420d7106767a4e097c9401a02ecb333d5045c66"
+licence = "GPL-3.0"
+provides = "repmgr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/repmgr-5.3.3-r1.apk"
+version = "5.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-client-default", "9.1.0"], ["doas", "6.8.2-r3"], ["postgresql-bdr-client", "9.4.14"], ["postgresql15", "15.1.0-r0"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

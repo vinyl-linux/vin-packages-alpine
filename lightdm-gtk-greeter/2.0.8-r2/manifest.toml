@@ -1,0 +1,15 @@
+checksum = "f3df2bb2d8d6802b46d5e40a5d80775c4be5b33746864cb14a3a866f5a3b0e3a"
+licence = "GPL-3.0-or-later"
+provides = "lightdm-gtk-greeter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lightdm-gtk-greeter-2.0.8-r2.apk"
+version = "2.0.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["lightdm", "1.32.0-r1"], ["libxklavier", "5.4.0-r6"]]

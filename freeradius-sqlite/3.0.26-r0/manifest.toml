@@ -1,0 +1,15 @@
+checksum = "f108654f15c11bb2f8eeaa51074a8e3c7915fd3c0037ae8cb309409877e8bb7f"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-sqlite-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius-sql", "3.0.26-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

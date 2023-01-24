@@ -1,0 +1,15 @@
+checksum = "f42012bbe008634b8c8655091c71446dd9fe1301dd7aacfc429cf29417790a4b"
+licence = "MIT"
+provides = "py3-py-cpuinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-py-cpuinfo-9.0.0-r0.apk"
+version = "9.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

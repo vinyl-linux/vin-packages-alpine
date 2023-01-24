@@ -1,0 +1,15 @@
+checksum = "d82fa99403918bd92e8db5897bc5639e3576bba00e42fe942040d46fa373a469"
+licence = "custom"
+provides = "pgpool-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pgpool-dev-4.3.3-r0.apk"
+version = "4.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pgpool", "4.3.3-r0"]]

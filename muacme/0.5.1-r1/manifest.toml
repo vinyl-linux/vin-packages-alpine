@@ -1,0 +1,15 @@
+checksum = "630e5f41e414d34ac2e3989cae00914ceea7d7ddb906f65cf04c80a75690a2c1"
+licence = "MIT"
+provides = "muacme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/muacme-0.5.1-r1.apk"
+version = "0.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uacme", "1.7.3-r0"], ["openssl", "3.0.7-r2"], ["yash-binsh", "2.53.0-r2"]]

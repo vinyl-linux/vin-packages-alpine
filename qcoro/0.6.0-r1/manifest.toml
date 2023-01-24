@@ -1,0 +1,15 @@
+checksum = "72ebef2f6186c956ba1638f4a37e31a6c906e955ae8c2c6b24c4b74f439f2051"
+licence = "MIT"
+provides = "qcoro"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qcoro-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtwebsockets", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

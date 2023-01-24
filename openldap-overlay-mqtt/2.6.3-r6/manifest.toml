@@ -1,0 +1,15 @@
+checksum = "a3d2ad0f46834d6c89afbee79e65deba8c9d4b3c38d5631224d513f37203f9eb"
+licence = "OLDAP-2.8"
+provides = "openldap-overlay-mqtt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-overlay-mqtt-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"], ["mosquitto-libs", "2.0.15-r1"]]

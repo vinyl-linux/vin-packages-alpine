@@ -1,0 +1,15 @@
+checksum = "b20cb59bc6ee8a87bc074dd197601409e791768f6cee26f6c20eee2ea6253f80"
+licence = "MPL-2.0"
+provides = "eigen-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eigen-dev-3.4.0-r6.apk"
+version = "3.4.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

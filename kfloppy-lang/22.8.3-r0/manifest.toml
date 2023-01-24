@@ -1,0 +1,15 @@
+checksum = "1b174b30aaf75bfe325f592d9c432bddf441e39e32810aa688d1d72c8472348d"
+licence = "GPL-2.0-or-later"
+provides = "kfloppy-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kfloppy-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["coreutils", "9.1.0-r0"], ["dosfstools", "4.2.0-r1"], ["e2fsprogs", "1.46.5-r4"]]

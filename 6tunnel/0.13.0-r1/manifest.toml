@@ -1,0 +1,15 @@
+checksum = "f15a8edb4b7510f148c49e5bfde1ba3188b3f54fc0041b5d7180f1947da7ebff"
+licence = "GPL-2.0-only"
+provides = "6tunnel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/6tunnel-0.13-r1.apk"
+version = "0.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

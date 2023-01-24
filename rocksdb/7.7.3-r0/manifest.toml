@@ -1,0 +1,15 @@
+checksum = "a6eb826d7d62ff193fe9fd62697036dc78f4fb5b6a6bd524012a8f306ebccc8f"
+licence = "Apache-2.0 OR GPL-2.0-only"
+provides = "rocksdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rocksdb-7.7.3-r0.apk"
+version = "7.7.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gflags", "2.2.2-r2"], ["lz4-libs", "1.9.4-r1"], ["snappy", "1.1.9-r4"], ["libstdc++", "12.2.1"], ["liburing", "2.3.0-r0"], ["zstd-libs", "1.5.2-r9"]]

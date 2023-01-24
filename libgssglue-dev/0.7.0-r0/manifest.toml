@@ -1,0 +1,15 @@
+checksum = "79a7691e42c77c36d0e44afbf254a90abb51d3fb42f6ff97bdb8e7162b0f76f7"
+licence = "BSD-3-Clause"
+provides = "libgssglue-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgssglue-dev-0.7-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgssglue", "0.7.0-r0"], ["pkgconf", "1.9.4-r0"]]

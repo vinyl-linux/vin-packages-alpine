@@ -1,0 +1,15 @@
+checksum = "734e7044784d83b1bc3685ee69ff1c8140b38d2d4c3092dad547846374572fde"
+licence = "GPL-3.0-or-later"
+provides = "emacs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/emacs-28.2-r0.apk"
+version = "28.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["emacs-nox", "28.2.0-r0"]]

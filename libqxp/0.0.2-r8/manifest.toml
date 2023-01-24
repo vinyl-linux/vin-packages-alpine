@@ -1,0 +1,15 @@
+checksum = "91ee1b72936c7d7e652d07833217c1f6dec04d693d09c0b0326568694e959dcf"
+licence = "MPL-2.0"
+provides = "libqxp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libqxp-0.0.2-r8.apk"
+version = "0.0.2-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"]]

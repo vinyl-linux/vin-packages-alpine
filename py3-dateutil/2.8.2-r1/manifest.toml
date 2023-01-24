@@ -1,0 +1,15 @@
+checksum = "7cab19c0ee5c17fd241adfa0aea74195098a58368f525c12d251e4ca8c3174e7"
+licence = "Apache-2.0 AND BSD-3-Clause"
+provides = "py3-dateutil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-dateutil-2.8.2-r1.apk"
+version = "2.8.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

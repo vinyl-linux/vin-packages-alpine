@@ -1,0 +1,15 @@
+checksum = "d1cf3aabd6712677ede846f0b064c75725132de33b3b97ccb9626349e4a25f17"
+licence = "LGPL-2.1-or-later"
+provides = "py3-num2words"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-num2words-0.5.12-r0.apk"
+version = "0.5.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-docopt", "0.6.2-r7"], ["py3-delegator", "0.1.1-r3"]]

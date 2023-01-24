@@ -1,0 +1,15 @@
+checksum = "ffe4e4751b94a158c98ae8e364151e560d6e1f82254282e16566eb44c0513252"
+licence = "LGPL-2.0-or-later"
+provides = "libidl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libidl-dev-0.8.14-r3.apk"
+version = "0.8.14-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libidl", "0.8.14-r3"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

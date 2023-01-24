@@ -1,0 +1,15 @@
+checksum = "4ac4ba611cd6bc0bed6ccba216b81076bb0aece400c148062b5470a31ed119b1"
+licence = "GPL-2.0-or-later"
+provides = "iproute2-rdma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iproute2-rdma-6.0.0-r1.apk"
+version = "6.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libmnl", "1.0.5-r0"]]

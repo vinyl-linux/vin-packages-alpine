@@ -1,0 +1,15 @@
+checksum = "f394ca4464b57640812c9d38d75bbf2797fe29447c026fc74757acec40c24da9"
+licence = "GPL-2.0-or-later"
+provides = "py3-pylint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pylint-2.15.6-r0.apk"
+version = "2.15.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-astroid", "2.12.13-r0"], ["py3-dill", "0.3.6-r0"], ["py3-isort", "5.10.1-r1"], ["py3-mccabe", "0.7.0-r0"], ["py3-platformdirs", "2.5.4-r0"], ["py3-tomli", "2.0.1-r1"], ["py3-tomlkit", "0.11.6-r0"]]

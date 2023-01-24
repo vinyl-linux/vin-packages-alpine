@@ -1,0 +1,15 @@
+checksum = "d87e0c93784c68ffabc77cb1a8ba60df713143168c821d689ce38ecfeae65433"
+licence = "BSD-3-Clause"
+provides = "alembic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alembic-1.8.4-r0.apk"
+version = "1.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alembic-libs", "1.8.4-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

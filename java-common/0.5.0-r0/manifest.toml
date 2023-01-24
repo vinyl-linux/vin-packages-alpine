@@ -1,0 +1,16 @@
+checksum = "8f504237446eb6e2c4b4c7a7c6af8082ab7ce7ee148254f9a0ef82e28eb67801"
+licence = "GPL-2.0-or-later"
+provides = "java-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/java-common-0.5-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

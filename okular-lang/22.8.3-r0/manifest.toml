@@ -1,0 +1,15 @@
+checksum = "b0a8c695dd52ff0d1cbaf9d353c9fdc2f1456f40467f0e6995607b038d020b08"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "okular-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/okular-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["okular-common", "22.8.3-r0"]]

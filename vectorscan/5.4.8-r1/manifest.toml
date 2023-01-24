@@ -1,0 +1,15 @@
+checksum = "e165b96e96e7227232a02ef81d7298898035fbb34ddf9c97638f3701645aaf33"
+licence = "BSD-3-Clause"
+provides = "vectorscan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vectorscan-5.4.8-r1.apk"
+version = "5.4.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

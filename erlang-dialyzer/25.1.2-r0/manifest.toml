@@ -1,0 +1,15 @@
+checksum = "22805c5f41da51e8409a011a0af3c7ba500f3e9b058fe4bbef7eaf22fb8b69b0"
+licence = "Apache-2.0"
+provides = "erlang-dialyzer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/erlang-dialyzer-25.1.2-r0.apk"
+version = "25.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang-wx", "25.1.2-r0"]]

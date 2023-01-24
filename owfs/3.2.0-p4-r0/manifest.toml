@@ -1,0 +1,15 @@
+checksum = "80ab32deaba70572afc59f0dd76198a398e18f9b49c4c720b2618443b5be67f6"
+licence = "GPL-2.0-only"
+provides = "owfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/owfs-3.2p4-r0.apk"
+version = "3.2.0-p4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"]]

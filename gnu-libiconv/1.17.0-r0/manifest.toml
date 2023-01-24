@@ -1,0 +1,15 @@
+checksum = "202bfd5f7d9267b952807b413b1bdf96e2b3cf73f8616666131a9d403a0441ea"
+licence = "GPL-3.0-or-later"
+provides = "gnu-libiconv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnu-libiconv-1.17-r0.apk"
+version = "1.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gnu-libiconv-libs", "1.17.0-r0"]]

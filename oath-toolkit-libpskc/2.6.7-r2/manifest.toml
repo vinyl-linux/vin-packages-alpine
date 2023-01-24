@@ -1,0 +1,15 @@
+checksum = "6fe678f7070f5cbe35d99f945bfa79f2ef43d98373ea4150b73e7da7c4b81b10"
+licence = "LGPL-2.1-or-later"
+provides = "oath-toolkit-libpskc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oath-toolkit-libpskc-2.6.7-r2.apk"
+version = "2.6.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"], ["xmlsec", "1.2.37-r0"]]

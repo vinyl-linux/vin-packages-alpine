@@ -1,0 +1,15 @@
+checksum = "353eb29c9f1bf9f8450572a645ecb06dbaba0c632d7c6fafea101d32dff5f179"
+licence = "LGPL-2.1-or-later"
+provides = "gvncviewer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvncviewer-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk-vnc", "1.3.1-r0"]]

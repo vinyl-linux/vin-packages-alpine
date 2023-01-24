@@ -1,0 +1,15 @@
+checksum = "5f1a2875d19430f0108cd384a54800df4903f97dad0701b406c3ae1cc6ce7ecb"
+licence = "GPL-3.0-or-later"
+provides = "caerbannog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/caerbannog-0.3-r2.apk"
+version = "0.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libhandy1", "1.8.0-r1"], ["pinentry-gnome", "1.2.0-r1"], ["py3-anytree", "2.8.0-r2"], ["py3-fuzzyfinder", "2.1.0-r2"], ["py3-gobject3", "3.42.2-r0"], ["py3-gpgme", "1.18.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c9aa311fee064931615aeb6c9776d8aa06af5dcd5cb11d1b4bad137b9d31b6a9"
+licence = "LGPL-2.0-or-later"
+provides = "libosinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libosinfo-1.10.0-r2.apk"
+version = "1.10.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwdata", "0.364.0-r0"], ["osinfo-db", "20221018.0.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libsoup3", "3.2.2-r0"], ["libxml2", "2.10.3-r1"], ["libxslt", "1.1.37-r0"]]

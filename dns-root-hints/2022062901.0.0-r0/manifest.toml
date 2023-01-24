@@ -1,0 +1,15 @@
+checksum = "3fa9cc606ae88ec8e93ab17822dd35b318d64d76bbe391f788884ee5f2be056a"
+licence = "Public-Domain"
+provides = "dns-root-hints"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dns-root-hints-2022062901-r0.apk"
+version = "2022062901.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"], ["gpgv", "2.2.40-r0"]]

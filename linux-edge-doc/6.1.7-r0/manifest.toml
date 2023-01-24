@@ -1,0 +1,15 @@
+checksum = "cf196d92338f05617ad983882ccf257d30447f26269f69864882b7e760787ef3"
+licence = "GPL-2.0"
+provides = "linux-edge-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-edge-doc-6.1.7-r0.apk"
+version = "6.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.7.0-r0"]]

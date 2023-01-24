@@ -1,0 +1,15 @@
+checksum = "687b81489ca7aa549dac8b20d04bf776c9b0870f022ea5026822dabfccba4fdc"
+licence = "GPL-2.0"
+provides = "httpry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/httpry-0.1.8-r2.apk"
+version = "0.1.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

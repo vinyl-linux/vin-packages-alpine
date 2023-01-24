@@ -1,0 +1,15 @@
+checksum = "d0c97c9fe604170d801314c1d7cf3e4e91b66e30a2410428814bc64897e9cf56"
+licence = "MPL-2.0"
+provides = "libabw-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libabw-tools-0.1.3-r1.apk"
+version = "0.1.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libabw", "0.1.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"]]

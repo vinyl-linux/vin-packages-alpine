@@ -1,0 +1,15 @@
+checksum = "a066c9674710cbc4f6497687475735414b205fb899aef2e600124e8418d1c393"
+licence = "Apache-2.0"
+provides = "apache2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-dev-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["apr-util-dev", "1.6.1-r14"]]

@@ -1,0 +1,15 @@
+checksum = "ac26e5e73476e51c66605d0f2657b0557397c8cbe293dda22f44d87490f6d059"
+licence = "GPL-3.0-or-later"
+provides = "py3-nbxmpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-nbxmpp-3.2.5-r0.apk"
+version = "3.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-idna", "3.4.0-r2"], ["py3-precis-i18n", "1.0.4-r0"], ["py3-packaging", "21.3.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "9d0ab029bfd98f462ac1d2848345f750275a9181cfad8754e850fbfaa0c11f1b"
+licence = "LGPL-2.1-or-later"
+provides = "libaccounts-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libaccounts-glib-1.26-r0.apk"
+version = "1.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["sqlite-libs", "3.40.1-r0"], ["libxml2", "2.10.3-r1"]]

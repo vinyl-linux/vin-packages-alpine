@@ -1,0 +1,15 @@
+checksum = "5ad0f4b63146890066604f34cc4db0b965c74091d58daec350584ad18e5ba861"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "alsa-plugins-lavrate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alsa-plugins-lavrate-1.2.7.1-r0.apk"
+version = "1.2.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"]]

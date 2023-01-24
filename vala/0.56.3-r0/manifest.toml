@@ -1,0 +1,15 @@
+checksum = "72ad5d274dd2393129d0d2f929f0a546906db62f33850dfd4fbd83ade0759ecb"
+licence = "LGPL-2.0-or-later"
+provides = "vala"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vala-0.56.3-r0.apk"
+version = "0.56.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["graphviz-dev", "7.0.5-r0"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"], ["graphviz-libs", "7.0.5-r0"], ["glib", "2.74.5-r0"]]

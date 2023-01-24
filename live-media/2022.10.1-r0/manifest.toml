@@ -1,0 +1,15 @@
+checksum = "dfed11afc2343e6e18524570f354d9aa840d897fc32e16c0b9f8781fb382dd90"
+licence = "LGPL-3.0-or-later"
+provides = "live-media"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/live-media-2022.10.01-r0.apk"
+version = "2022.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

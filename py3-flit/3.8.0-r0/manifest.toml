@@ -1,0 +1,15 @@
+checksum = "28945d7eece6068f41c7e78c56e87a085da9c85a14e9223618b25c71fda6fda2"
+licence = "BSD-3-Clause"
+provides = "py3-flit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flit-3.8.0-r0.apk"
+version = "3.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-docutils", "0.19.0-r1"], ["py3-flit-core", "3.8.0-r0"], ["py3-requests", "2.28.1-r1"], ["py3-tomli", "2.0.1-r1"], ["py3-tomli-w", "1.0.0-r2"]]

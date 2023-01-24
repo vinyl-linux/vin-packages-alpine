@@ -1,0 +1,15 @@
+checksum = "4df832ee4f5d99a23a312f843e1e93ecd1b23464ae0fc5a0d4b9be6107088df7"
+licence = "BSD-3-Clause"
+provides = "py3-loky"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-loky-3.3.0-r0.apk"
+version = "3.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cloudpickle", "2.2.0-r0"]]

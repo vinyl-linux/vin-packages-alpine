@@ -1,0 +1,15 @@
+checksum = "9ac76c425615d0844dbfda8a6d7dc5e8b4f5f68b2764a89d85f0ebc001b71ab7"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "librados17"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librados17-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["boost1.80-iostreams", "1.80.0-r3"], ["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

@@ -1,0 +1,15 @@
+checksum = "ac8cb7c330ea3393fe0d3c50c64b1411b9330dc03d6aa052f7335536fe138a01"
+licence = "GPL-2.0-or-later"
+provides = "fstrim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fstrim-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmount", "2.38.1-r1"]]

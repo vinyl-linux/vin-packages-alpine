@@ -1,0 +1,15 @@
+checksum = "0aa6e4d5b0e63de91ca615a38fa5c9e6be6ca1fbaebbd485cad813181dbcf07a"
+licence = "GPL-3.0-only"
+provides = "hledger-web"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hledger-web-1.28-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["ncurses-libs", "6.3.0"], ["zlib", "1.2.13-r0"]]

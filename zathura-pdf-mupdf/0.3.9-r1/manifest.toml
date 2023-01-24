@@ -1,0 +1,15 @@
+checksum = "c4d10c7ca562e67fbb49f3fe1ba9762821a242c51634829ea77e1bc3c95be390"
+licence = "Zlib"
+provides = "zathura-pdf-mupdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zathura-pdf-mupdf-0.3.9-r1.apk"
+version = "0.3.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zathura", "0.5.1-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["girara", "0.3.7-r0"], ["glib", "2.74.5-r0"], ["mupdf-libs", "1.21.0-r0"]]

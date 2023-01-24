@@ -1,0 +1,15 @@
+checksum = "ce83177cdc15732d510470a05b6294d97cb774eef5f8ca8fd887ffe8a7842c32"
+licence = "GPL-2.0-or-later"
+provides = "finch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/finch-2.14.10-r0.apk"
+version = "2.14.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgnt", "2.14.3-r2"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["libpurple", "2.14.10-r0"]]

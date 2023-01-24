@@ -1,0 +1,15 @@
+checksum = "4996065ccdae245bd150556d92a717951864eaf781b809eead60c8f8168662aa"
+licence = "GPL-2.0-only"
+provides = "oidentd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/oidentd-2.5.0-r1.apk"
+version = "2.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libnetfilter_conntrack", "1.0.9-r0"]]

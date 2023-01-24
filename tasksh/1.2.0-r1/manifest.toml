@@ -1,0 +1,15 @@
+checksum = "c7f20acda21ca4d9728e6d0bc303f6302e8af04a2bccaf8604c4e8509f38e307"
+licence = "MIT"
+provides = "tasksh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tasksh-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["task", "2.6.2-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

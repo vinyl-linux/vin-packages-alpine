@@ -1,0 +1,15 @@
+checksum = "f35792ded4dd6295d9d53eae942259b92228a8b9a12588b23a8455cdb3f9edac"
+licence = "BSD-3-Clause AND ZPL-2.0 AND ElementTree"
+provides = "py3-lxml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-lxml-4.9.2-r0.apk"
+version = "4.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxslt", "1.1.37-r0"], ["libxml2", "2.10.3-r1"]]

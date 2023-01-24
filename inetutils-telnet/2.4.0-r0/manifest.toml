@@ -1,0 +1,15 @@
+checksum = "1f7c02bed4e4a9d15d2fb9ebb436190b969eb6ac5d92917957c3d514b305249c"
+licence = "GPL-3.0-or-later"
+provides = "inetutils-telnet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inetutils-telnet-2.4-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses", "6.3.0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

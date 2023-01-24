@@ -1,0 +1,15 @@
+checksum = "e2f4291f942acb72fc44a7d2b76b33a34535db6679519abf78aa6718cd0eaf9f"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "qcam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qcam-0.0.1-r1.apk"
+version = "0.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcamera", "0.0.1-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

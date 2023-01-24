@@ -1,0 +1,15 @@
+checksum = "a7b477c987d945979d66bec702683f49cea0891cad592a2a4b9ff04adcfdf7a4"
+licence = "MIT"
+provides = "telegraf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/telegraf-1.24.3-r1.apk"
+version = "1.24.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "bead9d5d278a07ade58b97d09d1e701edab26801a89184abcd723d6775dcf8c5"
+licence = "LGPL-2.1-or-later"
+provides = "libpulse-mainloop-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpulse-mainloop-glib-16.1-r6.apk"
+version = "16.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libpulse", "16.1.0-r6"]]

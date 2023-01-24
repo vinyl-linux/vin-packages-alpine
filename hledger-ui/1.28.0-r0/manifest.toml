@@ -1,0 +1,15 @@
+checksum = "533bd14be2aafcd8981819ecb6fbc745a260bcb0db69ebc78f1e9b4a0205a6ac"
+licence = "GPL-3.0-only"
+provides = "hledger-ui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hledger-ui-1.28-r0.apk"
+version = "1.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["ncurses-libs", "6.3.0"]]

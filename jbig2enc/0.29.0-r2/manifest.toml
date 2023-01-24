@@ -1,0 +1,15 @@
+checksum = "062361f5acd31f7af4c008518d9198a292d354a82d68b61062b2469e58a4a581"
+licence = "Apache-2.0"
+provides = "jbig2enc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jbig2enc-0.29-r2.apk"
+version = "0.29.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["leptonica", "1.82.0-r1"], ["libstdc++", "12.2.1"]]

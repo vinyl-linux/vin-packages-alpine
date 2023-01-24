@@ -1,0 +1,15 @@
+checksum = "2c7abe00ce879c52901d6a27f9e17eb9529e45d47db0e1a5cd573a64032a6966"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-rabbitmq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-rabbitmq-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["rabbitmq-c", "0.11.0-r5"], ["libuuid", "2.38.1-r1"]]

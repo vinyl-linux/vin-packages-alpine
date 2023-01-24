@@ -1,0 +1,15 @@
+checksum = "7816dd08e00a4397af4d76a08ae1c3eb19fec24a5ac082fac91d55ee027f0705"
+licence = "GPL PerlArtistic"
+provides = "perl-device-serialport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-device-serialport-1.04-r16.apk"
+version = "1.4.0-r16"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

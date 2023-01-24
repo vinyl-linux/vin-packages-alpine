@@ -1,0 +1,15 @@
+checksum = "49e3432a781e93db428d642ca40624626ed5464805e62aca6134671de449e177"
+licence = "LGPL-2.0-or-later"
+provides = "gdk-pixbuf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdk-pixbuf-dev-2.42.10-r0.apk"
+version = "2.42.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdk-pixbuf", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["libjpeg-turbo-dev", "2.1.4-r0"], ["libpng-dev", "1.6.38-r0"], ["tiff-dev", "4.4.0-r1"], ["shared-mime-info", "2.2.0-r2"], ["pkgconf", "1.9.4-r0"]]

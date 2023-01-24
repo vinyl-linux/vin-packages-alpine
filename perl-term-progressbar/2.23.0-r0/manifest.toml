@@ -1,0 +1,15 @@
+checksum = "8640c92c52c3602f7e01e4874a40b53d594a6071e98a10016977334c4a44af1a"
+licence = "GPL"
+provides = "perl-term-progressbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-term-progressbar-2.23-r0.apk"
+version = "2.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-class-methodmaker", "2.24.0-r9"], ["perl-term-readkey", "2.38.0-r7"], ["perl-capture-tiny", "0.48.0-r2"], ["perl-test-exception", "0.43.0-r2"]]

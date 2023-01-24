@@ -1,0 +1,15 @@
+checksum = "5032f6c0cdf986a6ca6d00e2d0ca286652a6a36b44e94deb06873e6d9ed1b887"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "ppp-atm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-atm-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp-daemon", "2.4.9-r6"], ["musl", "1.2.3-r4"]]

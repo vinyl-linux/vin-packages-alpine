@@ -1,0 +1,15 @@
+checksum = "b31777856654398bce89b430c38d550b0f045cb4cafe5ee17b144a17fa1f691b"
+licence = "GPL-2.0-or-later"
+provides = "wireshark-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wireshark-dev-4.0.1-r0.apk"
+version = "4.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["wireshark-common", "4.0.1-r0"]]

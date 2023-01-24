@@ -1,0 +1,15 @@
+checksum = "30c4aaa03dd720e78dc3760a23d5b88ba3d5f38756b08b71f36c948f9bcd3c5a"
+licence = "Apache-2.0"
+provides = "tesseract-ocr-data-sqi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tesseract-ocr-data-sqi-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tesseract-ocr", "5.2.0-r1"]]

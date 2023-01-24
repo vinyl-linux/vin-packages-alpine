@@ -1,0 +1,15 @@
+checksum = "d39f6e3ce61ef465a85114946c843e3bd84541f3c6ba42416fe12eeca8ad4b3a"
+licence = "MIT"
+provides = "alpine-release"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-release-3.17.1-r0.apk"
+version = "3.17.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alpine-keys", "2.4.0-r1"]]

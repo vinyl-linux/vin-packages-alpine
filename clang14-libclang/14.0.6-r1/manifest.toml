@@ -1,0 +1,15 @@
+checksum = "32299d24dbad2809596a530aefe9778809b4c8ba050e38b3f4cca3b71422f27c"
+licence = "Apache-2.0"
+provides = "clang14-libclang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang14-libclang-14.0.6-r1.apk"
+version = "14.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm14-libs", "14.0.6-r7"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

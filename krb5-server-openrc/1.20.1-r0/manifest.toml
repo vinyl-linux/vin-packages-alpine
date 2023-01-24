@@ -1,0 +1,15 @@
+checksum = "bbf83edebc387b08a7e4bbf61ae906fb943c042dc566585f33a0693ce440c73f"
+licence = "MIT"
+provides = "krb5-server-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/krb5-server-openrc-1.20.1-r0.apk"
+version = "1.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["krb5-conf", "1.0.0-r2"]]

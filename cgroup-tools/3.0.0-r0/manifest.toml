@@ -1,0 +1,15 @@
+checksum = "a247ff581b5c5a791ece76fc7107022b16dde90d89ab0b71f21636eddcb229e5"
+licence = "LGPL-2.1-only"
+provides = "cgroup-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cgroup-tools-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcgroup", "3.0.0-r0"]]

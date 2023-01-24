@@ -1,0 +1,15 @@
+checksum = "47d9d0553583fbb55e33d44fea377ae8db67655dcaf6ad002ee64dd9ac7eef4a"
+licence = "LGPL-2.1-only"
+provides = "sofia-sip-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sofia-sip-dev-1.13.9-r0.apk"
+version = "1.13.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["sofia-sip", "1.13.9-r0"]]

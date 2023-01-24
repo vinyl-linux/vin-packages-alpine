@@ -1,0 +1,15 @@
+checksum = "abd2583bb34cf9dd68179a37c647a3fb312e6c39ec53290e5a11541637fb7e64"
+licence = "GPL-3.0"
+provides = "radare2-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/radare2-libs-5.7.8-r0.apk"
+version = "5.7.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["capstone", "4.0.2-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"], ["libzip", "1.9.2-r2"]]

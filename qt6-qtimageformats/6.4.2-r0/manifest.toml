@@ -1,0 +1,15 @@
+checksum = "b0df170cbb3a8326c50703c235adfcaa230bb01f28a25229572aa8b1e3a7df9d"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtimageformats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtimageformats-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libmng", "2.0.3-r1"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ec0d829ef3aa6b57126ff9460e2da2440e1fd0909a2ff4b3e47fb3e55ae98472"
+licence = "CC-PDDC"
+provides = "mobile-broadband-provider-info"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mobile-broadband-provider-info-20221107-r0.apk"
+version = "20221107.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

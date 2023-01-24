@@ -1,0 +1,15 @@
+checksum = "5bafe245a50483775405da0f904445289eb7bc2215a6cb94473f340a27141bda"
+licence = "BSD-3-Clause"
+provides = "assimp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/assimp-5.2.5-r0.apk"
+version = "5.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["assimp-libs", "5.2.5-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

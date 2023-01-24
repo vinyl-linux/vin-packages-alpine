@@ -1,0 +1,15 @@
+checksum = "f8262de377ffcb3cb43daf498aaf0ac169b84943e3158d495ff559e192e793d1"
+licence = "custom"
+provides = "font-adobe-utopia-100dpi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-adobe-utopia-100dpi-1.0.4-r2.apk"
+version = "1.0.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

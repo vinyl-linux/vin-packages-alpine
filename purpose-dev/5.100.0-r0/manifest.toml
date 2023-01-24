@@ -1,0 +1,15 @@
+checksum = "ab040ec1ba1c979afa632417fbf753c049bfb1320129f4c1e5c526dd307801dc"
+licence = "LGPL-2.1-or-later"
+provides = "purpose-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/purpose-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kaccounts-integration-dev", "22.8.3-r0"], ["kconfig-dev", "5.100.1-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kio-dev", "5.100.0-r0"], ["kirigami2-dev", "5.100.0-r1"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["purpose", "5.100.0-r0"]]

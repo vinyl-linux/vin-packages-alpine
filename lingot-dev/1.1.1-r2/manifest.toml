@@ -1,0 +1,15 @@
+checksum = "546f00876b8ae82f53b11441cbd5c2922a7fce2965cbce8b17f1f6ae5533e157"
+licence = "GPL-2.0-or-later"
+provides = "lingot-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lingot-dev-1.1.1-r2.apk"
+version = "1.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lingot", "1.1.1-r2"], ["alsa-lib-dev", "1.2.8-r0"], ["fftw-dev", "3.3.10-r1"], ["gtk+3.0-dev", "3.24.36-r0"], ["jack-dev", "1.9.21-r0"], ["pulseaudio-dev", "16.1.0-r6"], ["pkgconf", "1.9.4-r0"]]

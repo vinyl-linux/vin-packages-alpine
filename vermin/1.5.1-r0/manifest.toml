@@ -1,0 +1,15 @@
+checksum = "66e1f04729efe7a5062fcf03d9c0a12519d16b0076e71d958a82e9e10cda4c34"
+licence = "MIT"
+provides = "vermin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vermin-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

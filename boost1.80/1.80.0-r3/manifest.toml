@@ -1,0 +1,15 @@
+checksum = "7095ea349e69c476ec411ee9a007422a4385ff4c18136635a0503d58c3e1f6ab"
+licence = "BSL-1.0"
+provides = "boost1.80"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost1.80-1.80.0-r3.apk"
+version = "1.80.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-libs", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

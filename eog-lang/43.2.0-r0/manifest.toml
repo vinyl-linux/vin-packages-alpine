@@ -1,0 +1,15 @@
+checksum = "f920a065c0371874eff76f159cbf617102b73c0ef6988fe58c89756460f2594b"
+licence = "GPL-2.0-or-later"
+provides = "eog-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eog-lang-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

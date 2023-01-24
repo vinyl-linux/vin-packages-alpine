@@ -1,0 +1,15 @@
+checksum = "bc734fb97493416b8bf495d6afe317cb005af2173e644fcb6ebe309af68d8ba3"
+licence = "MIT"
+provides = "fclones"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fclones-0.29.1-r0.apk"
+version = "0.29.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

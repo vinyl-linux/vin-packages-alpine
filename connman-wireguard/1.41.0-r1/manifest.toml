@@ -1,0 +1,15 @@
+checksum = "d591e3a10399c1a55a0c1ecfab17fb7e7e195677894d4bb20a1f2bb4293cfdca"
+licence = "GPL-2.0-only"
+provides = "connman-wireguard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-wireguard-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["connman", "1.41.0-r1"], ["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"]]

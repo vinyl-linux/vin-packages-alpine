@@ -1,0 +1,15 @@
+checksum = "1c2c12fd2986368786e9a8249cdb733a5e8ff71376aca1dfb7f6f0d102ac8476"
+licence = "GPL-2.0-or-later"
+provides = "btrfs-compsize"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/btrfs-compsize-1.5-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

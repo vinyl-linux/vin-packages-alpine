@@ -1,0 +1,15 @@
+checksum = "7fabc597193c53dfa7c7a728f75cb2ce488807aeda6c37663b0131719c706d1e"
+licence = "MIT"
+provides = "py3-qtpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-qtpy-2.3.0-r1.apk"
+version = "2.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-packaging", "21.3.0-r2"]]

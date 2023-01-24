@@ -1,0 +1,15 @@
+checksum = "d11f6acbd3c991420ac5b8fac3ee48dac9f3493bfa62041fb44d322f6f48fe2c"
+licence = "LGPL-3.0-only"
+provides = "ryzenadj"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ryzenadj-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pciutils-libs", "3.9.0-r0"]]

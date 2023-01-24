@@ -1,0 +1,15 @@
+checksum = "bfdfefb94cb43dc4c2aee8189bad7ed6b9d57a9be5e95f354d2c7288519877ca"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-tui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-tui-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["newt", "0.52.23-r0"], ["libnm", "1.40.10-r0"]]

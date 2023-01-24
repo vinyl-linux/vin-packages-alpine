@@ -1,0 +1,15 @@
+checksum = "cf714f64912a905984c3424f3a972254399515aba091f83590ef8550f3cf8513"
+licence = "GPL-3.0"
+provides = "radare2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/radare2-5.7.8-r0.apk"
+version = "5.7.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["radare2-libs", "5.7.8-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ba18d0a4a5b3e1c4e5ec03b600d701ae6ad97c281b71947df15ef1efdd2e5a9c"
+licence = "Public-Domain"
+provides = "djbdns-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/djbdns-common-1.05-r49.apk"
+version = "1.5.0-r49"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

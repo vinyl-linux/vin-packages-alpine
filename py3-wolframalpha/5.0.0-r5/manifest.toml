@@ -1,0 +1,15 @@
+checksum = "4f6307833bf44528faf3f435ba12a49d6e36341ceaa487c538b33227f1cb855e"
+licence = "MIT"
+provides = "py3-wolframalpha"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-wolframalpha-5.0.0-r5.apk"
+version = "5.0.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jaraco.context", "4.1.2-r0"], ["py3-jaraco.itertools", "6.2.1-r0"], ["py3-xmltodict", "0.13.0-r0"], ["python3", "3.10.9-r1"]]

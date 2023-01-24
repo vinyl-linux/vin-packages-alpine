@@ -1,0 +1,15 @@
+checksum = "20d599e493a1b9b2d3b8991613fe33b62d064525a402b1200931062911892ca9"
+licence = "custom"
+provides = "uwsgi-msgpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-msgpack-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

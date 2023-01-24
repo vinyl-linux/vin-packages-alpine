@@ -1,0 +1,15 @@
+checksum = "76ab8a3a885cfaff805f94d463875a65b7f7bc87fd506b13ee5be5c145447ff4"
+licence = "MIT"
+provides = "ssh-getkey-gitlab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ssh-getkey-gitlab-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ssl_client", "1.35.0-r29"]]

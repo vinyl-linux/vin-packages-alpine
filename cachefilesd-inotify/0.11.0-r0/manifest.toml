@@ -1,0 +1,15 @@
+checksum = "9c74aff2f46877f09c0ee569dc62b91e3b2281297737daf1bbcbdb1547ee5580"
+licence = "GPL-2.0-or-later"
+provides = "cachefilesd-inotify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cachefilesd-inotify-0.11.0-r0.apk"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["attr", "2.5.1-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "0f1c4989bf08ac3c9b63d2aba1d62b7aa9488dc4cd3ee3853efd6adc45a7697b"
+licence = "MIT"
+provides = "py3-beautifulsoup4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-beautifulsoup4-4.11.1-r0.apk"
+version = "4.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-soupsieve", "2.3.2-r0"]]

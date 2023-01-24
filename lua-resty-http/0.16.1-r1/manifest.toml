@@ -1,0 +1,15 @@
+checksum = "dc7d150cab4b063142cb3890d3e1296ccc413177c15a532b9a8af88bd1507131"
+licence = "BSD-2-Clause"
+provides = "lua-resty-http"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua-resty-http-0.16.1-r1.apk"
+version = "0.16.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.4-r6"]]

@@ -1,0 +1,15 @@
+checksum = "5c5f9a3b5b5dc11354edc7abb4d155169e6fada5b5a8164c1ba6aab5c461d3b4"
+licence = "BSD-3-Clause"
+provides = "milter-greylist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/milter-greylist-4.6.4-r3.apk"
+version = "4.6.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libmaxminddb-libs", "1.7.1-r0"], ["libmilter", "1.0.2-r8"], ["opendkim-libs", "2.11.0-r3"], ["libspf2", "1.2.11-r0"]]

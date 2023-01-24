@@ -1,0 +1,15 @@
+checksum = "41a86ec7369cbacaea06cc12d8141242c3821a5597b12bbd66d78b24e0014911"
+licence = "MIT"
+provides = "py3-lsp-jsonrpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-lsp-jsonrpc-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-ujson", "5.5.0-r0"]]

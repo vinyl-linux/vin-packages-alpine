@@ -1,0 +1,15 @@
+checksum = "160a3d739996009c81be2781a7874dd21713ba49c266c47b6b38be7f074f2f35"
+licence = "BSD-3-Clause"
+provides = "ixwebsocket-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ixwebsocket-libs-11.4.3-r1.apk"
+version = "11.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

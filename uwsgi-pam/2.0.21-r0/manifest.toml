@@ -1,0 +1,15 @@
+checksum = "fca661b8d63a5a50421c367007be4d8b92cf9757408704cd5bfcde35ba0ea0a8"
+licence = "custom"
+provides = "uwsgi-pam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-pam-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

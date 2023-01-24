@@ -1,0 +1,15 @@
+checksum = "c10b8bd8797b08f7b84fd9c067b9b1a6d5cfbfc4fc78498a40d02f8748360c96"
+licence = "GPL-2.0-or-later"
+provides = "mdns-scan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mdns-scan-0.5-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

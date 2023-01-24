@@ -1,0 +1,15 @@
+checksum = "c4082b4498653eb11cfd925637d9b6857f93c8b103fabe94d7c245469dc7b694"
+licence = "BSD-2-Clause"
+provides = "protobuf-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/protobuf-c-1.4.1-r1.apk"
+version = "1.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "5e5ee14129b307414fa74b0164931b71ea2bc5e48e22070de74ee34fe414753d"
+licence = "Apache-2.0 AND BSD-3-Clause AND MIT"
+provides = "grpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grpc-1.50.1-r0.apk"
+version = "1.50.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["abseil-cpp", "20220623.1.0-r1"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["re2", "2022.6.1-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

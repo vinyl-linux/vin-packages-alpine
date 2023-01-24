@@ -1,0 +1,15 @@
+checksum = "7bb03266b1e55493e4ad5e3db4bf74911e73f64474009c550dd5f9a3404f9198"
+licence = "GPL-2.0-or-later"
+provides = "portablexdr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/portablexdr-4.9.1-r2.apk"
+version = "4.9.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

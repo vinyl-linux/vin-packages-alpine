@@ -1,0 +1,15 @@
+checksum = "88ac3163e895c642f2502c02a0dadd9265b38342226ac96da563a08d4362e1dd"
+licence = "Apache-2.0"
+provides = "py3-keyutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-keyutils-0.6-r2.apk"
+version = "0.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["keyutils", "1.6.3-r1"], ["musl", "1.2.3-r4"], ["keyutils-libs", "1.6.3-r1"]]

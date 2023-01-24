@@ -1,0 +1,15 @@
+checksum = "2fca09ac8d65649276948491e1d26dc2eb94bd584ced65450dc538ee61b38f8d"
+licence = "MIT"
+provides = "lfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lfs-2.6.0-r0.apk"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

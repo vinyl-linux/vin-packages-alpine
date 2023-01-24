@@ -1,0 +1,15 @@
+checksum = "166833cc1b54aefe0e8f4779a96d583144a9722c2678364be74421045d5b33f4"
+licence = "BSD-2-Clause"
+provides = "waffle-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waffle-dev-1.7.0-r1.apk"
+version = "1.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dev", "22.2.5-r1"], ["eudev-dev", "3.2.11-r4"], ["wayland-dev", "1.21.0-r1"], ["libx11-dev", "1.8.3-r1"], ["pkgconf", "1.9.4-r0"], ["waffle", "1.7.0-r1"]]

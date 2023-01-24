@@ -1,0 +1,15 @@
+checksum = "49721d5275118605c0b5325c3bdb66ef62c37b5ee5e80fbb3f038c4696593741"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-wwan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-wwan-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["mobile-broadband-provider-info", "20221107.0.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libmm-glib", "1.20.2-r1"]]

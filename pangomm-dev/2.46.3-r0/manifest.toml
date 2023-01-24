@@ -1,0 +1,15 @@
+checksum = "d67124b2c81a743db8cb22c57a9bb1191c47f51444c38d0ca45d88dacbf04db8"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "pangomm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pangomm-dev-2.46.3-r0.apk"
+version = "2.46.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pangomm", "2.46.3-r0"], ["cairomm-dev", "1.14.4-r0"], ["glibmm-dev", "2.66.5-r0"], ["pango-dev", "1.50.12-r0"], ["pkgconf", "1.9.4-r0"]]

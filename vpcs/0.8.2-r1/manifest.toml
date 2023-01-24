@@ -1,0 +1,15 @@
+checksum = "b4fb846472c95342238fbd2a8d187ee987eaeca36c884e039b6a1bf0c4446b7b"
+licence = "BSD-2-Clause"
+provides = "vpcs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vpcs-0.8.2-r1.apk"
+version = "0.8.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "131a812bba7576c1e65827508d373ebd49c2e2fcbe65bfdd4c27e1f084784f99"
+licence = "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)"
+provides = "elfutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/elfutils-0.187-r2.apk"
+version = "0.187.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libelf", "0.187.0-r2"], ["musl", "1.2.3-r4"], ["musl-obstack", "1.2.3-r0"], ["libstdc++", "12.2.1"]]

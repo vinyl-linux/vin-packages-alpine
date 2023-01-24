@@ -1,0 +1,15 @@
+checksum = "d9623bf4e518870b948ec6fd07fc8870836f1b8755adb3ae053481ad589f3eb8"
+licence = "GPL-3.0-only"
+provides = "suitesparse-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/suitesparse-dev-5.10.1-r0.apk"
+version = "5.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gmp-dev", "6.2.1-r2"], ["mpfr-dev", "4.1.0-r0"], ["openblas-dev", "0.3.21-r0"], ["suitesparse-graphblas", "5.10.1-r0"], ["suitesparse", "5.10.1-r0"]]

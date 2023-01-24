@@ -1,0 +1,15 @@
+checksum = "eb35f902a262beb771c9f9221737265c4538dbd6f7437713b57e07b847faf637"
+licence = "GPL-2.0-or-later"
+provides = "kio-gdrive-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kio-gdrive-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kaccounts-providers", "22.8.3-r0"], ["signon-plugin-oauth2", "0.25.0-r0"], ["signon-ui", "0.17.0"]]

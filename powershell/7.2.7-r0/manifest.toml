@@ -1,0 +1,15 @@
+checksum = "1f4ba4dcf57a6c9601c11f3a97335bf903fc4c28beb8fee89207601a9badb8e4"
+licence = "MIT"
+provides = "powershell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/powershell-7.2.7-r0.apk"
+version = "7.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet6-runtime", "6.0.13-r0"], ["libpsl-native", "7.2.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

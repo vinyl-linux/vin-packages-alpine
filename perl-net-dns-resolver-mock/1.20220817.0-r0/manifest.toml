@@ -1,0 +1,15 @@
+checksum = "b117d88187fe85644e8386781f3cdd178694103f79e112c617e1ebc678a25c10"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-net-dns-resolver-mock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-net-dns-resolver-mock-1.20220817-r0.apk"
+version = "1.20220817.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-net-dns", "1.35.0-r0"]]

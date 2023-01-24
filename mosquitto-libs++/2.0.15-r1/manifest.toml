@@ -1,0 +1,15 @@
+checksum = "ff5f79cd5b743ff4a0ec7ba2b8bb5463ab0b2dbb537e9a39b0b62c01e4eb5c84"
+licence = "EPL-1.0"
+provides = "mosquitto-libs++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mosquitto-libs++-2.0.15-r1.apk"
+version = "2.0.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mosquitto-libs", "2.0.15-r1"], ["libstdc++", "12.2.1"]]

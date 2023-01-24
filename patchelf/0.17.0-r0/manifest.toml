@@ -1,0 +1,15 @@
+checksum = "ab2a0c45e8515de5d3f2ae066a7a7e279ebe891000e26a969ebdb0c839989e15"
+licence = "GPL-3.0-or-later"
+provides = "patchelf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/patchelf-0.17.0-r0.apk"
+version = "0.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

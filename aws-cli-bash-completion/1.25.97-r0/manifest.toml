@@ -1,0 +1,15 @@
+checksum = "709d7ac41b61aec5efcc8a2fbc3d1ccee60c6b7cccccb9732b6fca976284491d"
+licence = "Apache-2.0"
+provides = "aws-cli-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aws-cli-bash-completion-1.25.97-r0.apk"
+version = "1.25.97-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aws-cli-completer", "1.25.97-r0"]]

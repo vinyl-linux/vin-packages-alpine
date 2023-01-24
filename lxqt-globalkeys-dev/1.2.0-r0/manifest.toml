@@ -1,0 +1,15 @@
+checksum = "b57a33b795647d5b7175632f9d8d89f85200ba937377c4b8795216ef9f0e335a"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-globalkeys-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-globalkeys-dev-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lxqt-globalkeys", "1.2.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

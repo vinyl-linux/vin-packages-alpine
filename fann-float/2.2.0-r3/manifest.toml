@@ -1,0 +1,15 @@
+checksum = "4c3e0f1338d5addba0bc8983c4e822021a4bc94222016a8b7d542a8abde494f2"
+licence = "LGPL-2.0-or-later"
+provides = "fann-float"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fann-float-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

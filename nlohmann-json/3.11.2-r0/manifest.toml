@@ -1,0 +1,15 @@
+checksum = "b989858a10ccfaad4b90649e026efffb8fa2d46e8cf409bb35be5608fe0d05d8"
+licence = "MIT"
+provides = "nlohmann-json"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nlohmann-json-3.11.2-r0.apk"
+version = "3.11.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

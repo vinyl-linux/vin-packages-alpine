@@ -1,0 +1,15 @@
+checksum = "cfc365c35f2d20f4474e353356633ebb247ffb7a35ff46852e31fb2526af92c8"
+licence = "BSD-3-Clause"
+provides = "nemo-qml-plugin-devicelock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nemo-qml-plugin-devicelock-0.3.7-r1.apk"
+version = "0.3.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libelogind", "246.10.0-r5"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["nemo-keepalive", "1.8.4-r1"], ["nemo-qml-plugin-dbus", "2.1.30-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "64b504e7dcc40e1c76ca388b3c5d109cdb7d5d0ffc3c2cd271d2c88a2312e16b"
+licence = "LGPL-2.0-or-later"
+provides = "kdb-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdb-mysql-3.2.0-r7.apk"
+version = "3.2.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdb", "3.2.0-r7"], ["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"], ["libstdc++", "12.2.1"]]

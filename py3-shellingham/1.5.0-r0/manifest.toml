@@ -1,0 +1,15 @@
+checksum = "4cc5db2c162fd62ed28d47d5e61ba447bd5e17047b6146ba91423c778fa0226f"
+licence = "MIT"
+provides = "py3-shellingham"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-shellingham-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "c091579dec2355569ed5fade0577525c923107e9e8ad8ebb347c75abd806d245"
+licence = "GPL-2.0-or-later"
+provides = "totem-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/totem-dev-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["totem-pl-parser-dev", "3.26.6-r0"], ["pkgconf", "1.9.4-r0"], ["totem", "43.0.0-r0"]]

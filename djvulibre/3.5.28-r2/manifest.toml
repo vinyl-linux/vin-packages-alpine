@@ -1,0 +1,15 @@
+checksum = "a1a23ab51c9fa33d580b74dd6d86f88273e441ec16737085d596d1b2d5692ac6"
+licence = "GPL-2.0-only"
+provides = "djvulibre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/djvulibre-3.5.28-r2.apk"
+version = "3.5.28-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdjvulibre", "3.5.28-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "f6ce8e48dc3feaa9850e1722245a4010806042ea3918d5135b928119ecad3ba4"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-policykit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-policykit-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["liblxqt", "1.2.0-r0"], ["polkit-qt-1", "0.114.0-r1"], ["libstdc++", "12.2.1"]]

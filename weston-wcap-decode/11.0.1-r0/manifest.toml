@@ -1,0 +1,15 @@
+checksum = "960b117f9e845c67fc8682634bb0ac4099ad5332aed95031de80a77d05ef049c"
+licence = "MIT"
+provides = "weston-wcap-decode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weston-wcap-decode-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"]]

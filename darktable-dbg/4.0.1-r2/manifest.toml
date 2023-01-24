@@ -1,0 +1,15 @@
+checksum = "3dfa04b4bb28e21edadf34c82be67488d15768c3d97d588d2b9b139c8c420765"
+licence = "GPL-3.0-or-later"
+provides = "darktable-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/darktable-dbg-4.0.1-r2.apk"
+version = "4.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"]]

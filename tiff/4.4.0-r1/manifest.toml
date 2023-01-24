@@ -1,0 +1,15 @@
+checksum = "42944c03a26b5016e63058cdee6544961fb83f00292d5df2c7cb75b1518be5b8"
+licence = "libtiff"
+provides = "tiff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiff-4.4.0-r1.apk"
+version = "4.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["xz-libs", "5.2.9-r0"], ["libwebp", "1.2.4-r1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

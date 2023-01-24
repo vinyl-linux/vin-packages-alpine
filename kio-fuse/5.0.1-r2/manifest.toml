@@ -1,0 +1,15 @@
+checksum = "32b6bec460aa578ec45725f181b1d078e9a35890f64cc40d472ae5a66a147126"
+licence = "GPL-3.0-only"
+provides = "kio-fuse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kio-fuse-5.0.1-r2.apk"
+version = "5.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["kcoreaddons", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["fuse3-libs", "3.12.0-r0"], ["libstdc++", "12.2.1"]]

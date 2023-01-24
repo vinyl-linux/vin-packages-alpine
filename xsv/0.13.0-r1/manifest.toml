@@ -1,0 +1,15 @@
+checksum = "0353f96b917f9268738a516b0bc4ba0027277760b9b31a36d85164065817031b"
+licence = "MIT OR Unlicense"
+provides = "xsv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xsv-0.13.0-r1.apk"
+version = "0.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

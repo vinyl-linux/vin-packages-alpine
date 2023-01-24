@@ -1,0 +1,15 @@
+checksum = "eb62823aa2a25cdf2a4b59a39b326f5e747bd413458d18840c82190cf480446c"
+licence = "BSD-2-Clause"
+provides = "libspng-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspng-dev-0.7.2-r1.apk"
+version = "0.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libspng", "0.7.2-r1"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

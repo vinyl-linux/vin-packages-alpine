@@ -1,0 +1,15 @@
+checksum = "9e17b7f44c1a9fe0eaa2f00ef557383595e512ae0cd50ec8688c307e64002452"
+licence = "GPL-2.0-or-later"
+provides = "libfilezilla"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfilezilla-0.39.2-r0.apk"
+version = "0.39.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["gnutls", "3.7.8-r2"], ["nettle", "3.8.1-r0"], ["libstdc++", "12.2.1"]]

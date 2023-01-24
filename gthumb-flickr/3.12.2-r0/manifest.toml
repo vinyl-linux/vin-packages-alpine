@@ -1,0 +1,15 @@
+checksum = "4f78126b7466ca2db4388de7e8a96643bf33e8d9d8a36fafd2222c191a93ee2f"
+licence = "GPL-2.0-or-later"
+provides = "gthumb-flickr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gthumb-flickr-3.12.2-r0.apk"
+version = "3.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gthumb", "3.12.2-r0"], ["gthumb-oauth", "3.12.2-r0"], ["musl", "1.2.3-r4"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"], ["libsoup", "2.74.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2a3ecc589d16c5a00e35fcf896ceb0069f4aed569918e5e6a6da387cd0b28868"
+licence = "Apache-2.0"
+provides = "bat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bat-0.22.1-r1.apk"
+version = "0.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["less", "608.0.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgit2", "1.5.1-r0"], ["oniguruma", "6.9.8-r0"]]

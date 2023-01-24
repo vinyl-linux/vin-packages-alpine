@@ -1,0 +1,15 @@
+checksum = "b3b1bc91ccde99c38f62364f7eb9f6a85de5d1f3c38a6d7bfb1a910b17194453"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "adwaita-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/adwaita-qt-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxcb", "1.15.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "be995c8a1ac5e449e77bd14104e0f61358ad74b8d5993b35c25562525f398c9b"
+licence = "BSD-3-Clause"
+provides = "py3-h5py"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-h5py-3.5.0-r1.apk"
+version = "3.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["hdf5", "1.12.2-r1"], ["hdf5-hl", "1.12.2-r1"], ["liblzf", "3.6.0-r1"]]

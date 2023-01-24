@@ -1,0 +1,15 @@
+checksum = "5cf34ed06d0a5a6ef7264395a2149f74b873d1226e89b07c2784e276694c7b95"
+licence = "MIT"
+provides = "bearssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bearssl-0.6-r2.apk"
+version = "0.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

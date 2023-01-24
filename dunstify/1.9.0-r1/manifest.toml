@@ -1,0 +1,15 @@
+checksum = "c32592545daf06169701580917718ec6479cb3b4613b7373923c55fd2bfac648"
+licence = "BSD-3-Clause"
+provides = "dunstify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dunstify-1.9.0-r1.apk"
+version = "1.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libnotify", "0.8.1-r1"]]

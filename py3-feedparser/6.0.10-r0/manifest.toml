@@ -1,0 +1,15 @@
+checksum = "b50decbf240a4fef75cfd1421eb93bc3253141b12370ec08a433aba1ef2ca2e2"
+licence = "BSD-2-Clause"
+provides = "py3-feedparser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-feedparser-6.0.10-r0.apk"
+version = "6.0.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-sgmllib3k", "1.0.0-r5"]]

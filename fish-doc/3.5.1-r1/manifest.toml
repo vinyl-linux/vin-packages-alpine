@@ -1,0 +1,15 @@
+checksum = "0fe419dc77a943f186e461d58ea39a497e2f2fd97cabc77d7ab7431a432c4904"
+licence = "GPL-2.0-only"
+provides = "fish-doc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fish-doc-3.5.1-r1.apk"
+version = "3.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["util-linux-misc", "2.38.1-r1"]]

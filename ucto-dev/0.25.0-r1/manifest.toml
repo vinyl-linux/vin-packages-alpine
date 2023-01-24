@@ -1,0 +1,15 @@
+checksum = "eb1dfb949e4d9e132587881cc835ec2332dbb4c5ec9d76d1092d0fee7cd56040"
+licence = "GPL-3.0-only"
+provides = "ucto-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ucto-dev-0.25-r1.apk"
+version = "0.25.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["ucto", "0.25.0-r1"]]

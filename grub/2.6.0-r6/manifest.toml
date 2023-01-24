@@ -1,0 +1,16 @@
+checksum = "65206a4fc63f1aaea39f648aabd50904788cc07db8b991c19044ddec5eeda220"
+licence = "GPL-3.0-or-later"
+provides = "grub"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/grub-2.06-r6.apk"
+version = "2.6.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.7.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["xz-libs", "5.2.9-r0"]]

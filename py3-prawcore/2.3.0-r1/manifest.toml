@@ -1,0 +1,15 @@
+checksum = "42813edeb0c618e607790d9aa31329c9c5fd1d1a378a075d175bbd98f76d6fcd"
+licence = "BSD-2-Clause"
+provides = "py3-prawcore"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-prawcore-2.3.0-r1.apk"
+version = "2.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-requests", "2.28.1-r1"]]

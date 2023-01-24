@@ -1,0 +1,15 @@
+checksum = "1bbbc36f4527d248507cd44096989e1b9b53e502f1952bc53c24437a7c834a03"
+licence = "GPL-2.0-or-later"
+provides = "gnome-online-accounts-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-online-accounts-dbg-3.46.0-r0.apk"
+version = "3.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"]]

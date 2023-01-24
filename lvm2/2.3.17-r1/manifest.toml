@@ -1,0 +1,15 @@
+checksum = "05f83cd5000cea3bd0a3310c95da105f074ceac1346bf4bbbca031d80fc6e889"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "lvm2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lvm2-2.03.17-r1.apk"
+version = "2.3.17-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lvm2-libs", "2.3.17-r1"], ["libaio", "0.3.113-r0"], ["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["device-mapper-event-libs", "2.3.17-r1"]]

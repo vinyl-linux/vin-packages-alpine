@@ -1,0 +1,15 @@
+checksum = "feaf9f5adf70ba426810d4655d5b672de440a079c0b3a31f3cf43107f5c7065d"
+licence = "BSD-2-Clause"
+provides = "waffle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waffle-1.7.0-r1.apk"
+version = "1.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"], ["wayland-libs-client", "1.21.0-r1"], ["libxcb", "1.15.0-r0"]]

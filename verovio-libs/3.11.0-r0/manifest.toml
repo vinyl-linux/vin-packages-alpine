@@ -1,0 +1,15 @@
+checksum = "4662112b4f494d55d0a43166ba436bb8ca620926c66f761be9095a6934ed257a"
+licence = "LGPL-3.0-only"
+provides = "verovio-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/verovio-libs-3.11.0-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["verovio-data", "3.11.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

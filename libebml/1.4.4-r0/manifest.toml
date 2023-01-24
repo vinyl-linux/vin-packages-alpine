@@ -1,0 +1,15 @@
+checksum = "916fd5193d891a686ce2d3c3d17a3efb56636d3a38e2dbd8ea47c4f91241584d"
+licence = "LGPL-2.1-or-later"
+provides = "libebml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libebml-1.4.4-r0.apk"
+version = "1.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

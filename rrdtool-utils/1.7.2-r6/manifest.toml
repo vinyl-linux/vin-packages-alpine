@@ -1,0 +1,15 @@
+checksum = "f42e96237201985fdb73cf6f70cc3c0881f4a2c5cadfec1a65065d52750741d4"
+licence = "GPL-2.0-or-later"
+provides = "rrdtool-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdtool-utils-1.7.2-r6.apk"
+version = "1.7.2-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "35430f549c8bd2e515cee71b6eed645846dc1fe4f5ca3938dd69585016256516"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "dnsdist-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dnsdist-common-1.7.3-r0.apk"
+version = "1.7.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

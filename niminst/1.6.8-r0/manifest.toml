@@ -1,0 +1,15 @@
+checksum = "41b065469fabc18497a0c23f7aea1776e8e380f2b255135ad13ed250627cda13"
+licence = "MIT"
+provides = "niminst"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/niminst-1.6.8-r0.apk"
+version = "1.6.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libucontext-dev", "1.2.0-r0"], ["musl", "1.2.3-r4"]]

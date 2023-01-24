@@ -1,0 +1,15 @@
+checksum = "7b75457b54bc6d54b31b1a42c5f5a6940f337a6ac93f085e2f8b163a28326c0e"
+licence = "LGPL-2.1-or-later"
+provides = "gsound-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gsound-dev-1.0.3-r1.apk"
+version = "1.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsound", "1.0.3-r1"], ["glib-dev", "2.74.5-r0"], ["libcanberra-dev", "0.30.0-r9"], ["pkgconf", "1.9.4-r0"]]

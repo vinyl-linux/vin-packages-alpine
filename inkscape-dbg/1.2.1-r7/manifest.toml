@@ -1,0 +1,15 @@
+checksum = "2a707625e1e68e6c8147796b3f56dd546fdc05ff621966102e8d81dc229a9d19"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "inkscape-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inkscape-dbg-1.2.1-r7.apk"
+version = "1.2.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r1"], ["adwaita-icon-theme", "43.0.0-r0"]]

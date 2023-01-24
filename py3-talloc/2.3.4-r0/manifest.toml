@@ -1,0 +1,15 @@
+checksum = "24404743ccbdc4053bdc70c3c8fc7c413c9e47b4b80e410cc89873da0870106b"
+licence = "LGPL-3.0-or-later"
+provides = "py3-talloc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-talloc-2.3.4-r0.apk"
+version = "2.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"], ["talloc", "2.3.4-r0"]]

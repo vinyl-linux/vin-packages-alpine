@@ -1,0 +1,15 @@
+checksum = "9632ff807db38d295ee7b562514d9e97f29ea069e7f9b582e2eda268ffca0052"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-http_async"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-http_async-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libevent", "2.1.12-r5"]]

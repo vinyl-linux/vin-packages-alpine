@@ -1,0 +1,15 @@
+checksum = "c03ef2ce616f5b6d6610844ec63cd6b4eafec9bbc3df0eecb1be43061379ff2d"
+licence = "Apache-2.0"
+provides = "py3-prometheus-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-prometheus-client-0.15.0-r0.apk"
+version = "0.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-twisted", "22.10.0-r0"]]

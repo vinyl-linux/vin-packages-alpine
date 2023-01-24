@@ -1,0 +1,15 @@
+checksum = "c5e87136abbb9a1634e849c485ca1e8f2c0b7c97be89a4892f79c29a373c0a7e"
+licence = "ISC"
+provides = "kcgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcgi-0.13.0-r1.apk"
+version = "0.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "25b1aa4d37dbd000c1dd1966433ac78c85c51e6ae867a1fb90ec09956e2f16ed"
+licence = "EPL-1.0"
+provides = "lua5.4-graphviz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.4-graphviz-7.0.5-r0.apk"
+version = "7.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["graphviz-libs", "7.0.5-r0"], ["libgcc", "12.2.1"], ["lua5.4-libs", "5.4.4-r6"], ["libstdc++", "12.2.1"]]

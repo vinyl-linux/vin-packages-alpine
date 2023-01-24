@@ -1,0 +1,15 @@
+checksum = "1835a01b13595f5da5ac1095b17e1cadd8c79fd589da76819c7bf776631839ed"
+licence = "MIT"
+provides = "wgetpaste"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wgetpaste-2.32-r1.apk"
+version = "2.32.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wget", "1.21.3-r2"], ["bash", "5.2.15-r0"]]

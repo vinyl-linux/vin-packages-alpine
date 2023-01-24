@@ -1,0 +1,15 @@
+checksum = "e170713b9fd5feefaec2d125f10ddb469bff8e215c71294af4135cf42f635a16"
+licence = "GPL-3.0-only"
+provides = "greetd-gtkgreet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/greetd-gtkgreet-0.7_git20210325-r0.apk"
+version = "0.7.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["greetd", "0.8.0-r2"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk-layer-shell", "0.8.0-r0"], ["json-c", "0.16.0-r2"]]

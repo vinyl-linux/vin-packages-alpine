@@ -1,0 +1,15 @@
+checksum = "17020a8a293f6183f7cd02f4ac9ea8c7e75bd0d04536301ad5d9a9a084f48346"
+licence = "libtiff"
+provides = "libtiffxx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libtiffxx-4.4.0-r1.apk"
+version = "4.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"]]

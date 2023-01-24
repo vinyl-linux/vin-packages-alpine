@@ -1,0 +1,15 @@
+checksum = "338182bf5f481bed03daca6949ae91c27bd9fb119fa26d90f93a73d7046cf4ee"
+licence = "ISC"
+provides = "sndio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sndio-1.9.0-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["sndio-libs", "1.9.0-r0"]]

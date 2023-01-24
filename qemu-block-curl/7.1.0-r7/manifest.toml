@@ -1,0 +1,15 @@
+checksum = "a7a5ba81cc195812e5fc127dfa4b24ff2d2387199e63185d13c9a7b0b38a2f94"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-block-curl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-block-curl-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"]]

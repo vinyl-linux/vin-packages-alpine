@@ -1,0 +1,15 @@
+checksum = "74043cc648efaaf82b83b2f17b0b53a7b35b81fc8c279526efe55111ba71a617"
+licence = "BSL-1.0"
+provides = "boost-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost-dev-1.80.0-r3.apk"
+version = "1.80.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-dev", "1.80.0-r3"]]

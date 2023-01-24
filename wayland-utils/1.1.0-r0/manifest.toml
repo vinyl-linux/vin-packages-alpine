@@ -1,0 +1,15 @@
+checksum = "6a5ab3d91a2b07a925df386f31e37e629921909f2c109378e087d809f2eb57bb"
+licence = "MIT"
+provides = "wayland-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wayland-utils-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["wayland-libs-client", "1.21.0-r1"]]

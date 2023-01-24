@@ -1,0 +1,15 @@
+checksum = "bd6d092a78c9597ad67b4f3ae1963fa68214759a4b9b9d4b424b6771822e03af"
+licence = "MIT"
+provides = "proj-util"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proj-util-9.1.0-r0.apk"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["proj", "9.1.0-r0"], ["libstdc++", "12.2.1"]]

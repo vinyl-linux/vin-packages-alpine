@@ -1,0 +1,15 @@
+checksum = "6f59c496e62113f332fbfe87c20246794792710db2a48628cc3fd095ba3d2678"
+licence = "GPL-3.0-or-later"
+provides = "bvi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bvi-1.4.1-r1.apk"
+version = "1.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

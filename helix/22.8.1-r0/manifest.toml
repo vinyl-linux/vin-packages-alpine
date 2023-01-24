@@ -1,0 +1,15 @@
+checksum = "4de409d740eb0a4187d87070aad055669b1c78cf450ab5e60c3b965a2ca8750d"
+licence = "MPL-2.0"
+provides = "helix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/helix-22.08.1-r0.apk"
+version = "22.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

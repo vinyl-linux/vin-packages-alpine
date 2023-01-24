@@ -1,0 +1,15 @@
+checksum = "9aa731a59a34b2dcfbb9f6448236f31f87d76867290184d697bb39949ce4f24e"
+licence = "MIT"
+provides = "postgresql-plpgsql_check"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-plpgsql_check-2.2.3-r1.apk"
+version = "2.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["musl", "1.2.3-r4"]]

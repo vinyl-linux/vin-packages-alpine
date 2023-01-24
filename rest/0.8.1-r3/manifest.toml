@@ -1,0 +1,15 @@
+checksum = "97627c87d90bf2a67c3d05c185bdb06cb67c05b0e429347c16c0a23a8a02e988"
+licence = "LGPL-2.0-or-later"
+provides = "rest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rest-0.8.1-r3.apk"
+version = "0.8.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libsoup", "2.74.3-r0"], ["libxml2", "2.10.3-r1"]]

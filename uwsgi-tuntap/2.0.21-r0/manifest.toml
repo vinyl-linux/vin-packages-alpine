@@ -1,0 +1,15 @@
+checksum = "cd98e4c84055baa6bac383b0d8c51139f9ef702bbf03ef70a5e1a29ed0656b6f"
+licence = "custom"
+provides = "uwsgi-tuntap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-tuntap-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

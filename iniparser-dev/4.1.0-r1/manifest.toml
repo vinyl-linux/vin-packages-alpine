@@ -1,0 +1,15 @@
+checksum = "94c50c6172f74f222f4e7b3c2dc1ad3ed7591e4d5afe4598fbb461243e0979c1"
+licence = "MIT"
+provides = "iniparser-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iniparser-dev-4.1-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iniparser", "4.1.0-r1"]]

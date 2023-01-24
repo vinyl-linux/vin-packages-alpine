@@ -1,0 +1,15 @@
+checksum = "aa3c071254c442e324167fcecace3a02cc6d0797eba5c92dc2eeb9756ba9206a"
+licence = "GPL-2.0-or-later"
+provides = "gnokii-smsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnokii-smsd-0.6.31-r13.apk"
+version = "0.6.31-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gnokii-libs", "0.6.31-r13"], ["libintl", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "f08399e0cd8ed0d1bbbbfd68a77f9fd8c7168d231f4384e610ed4b98a4e430ad"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtmultimedia-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtmultimedia-dev-5.15.6_git20220907-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qt5-qtmultimedia", "5.15.6"]]

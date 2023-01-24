@@ -1,0 +1,15 @@
+checksum = "13d4b7affae61d04ef2f4169f8938d715432fa673ac85f77242355d47ff35635"
+licence = "Artistic-2.0"
+provides = "perl-net-ssleay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-net-ssleay-1.92-r2.apk"
+version = "1.92.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

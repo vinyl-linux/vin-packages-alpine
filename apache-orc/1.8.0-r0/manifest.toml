@@ -1,0 +1,15 @@
+checksum = "5059d366b4c1c3b2abab60f82e8f4f7f69f2c4517c21b03bf91f758b70755380"
+licence = "Apache-2.0"
+provides = "apache-orc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apache-orc-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lz4-libs", "1.9.4-r1"], ["libprotobuf", "3.21.9-r0"], ["snappy", "1.1.9-r4"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

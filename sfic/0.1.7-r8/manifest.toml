@@ -1,0 +1,15 @@
+checksum = "bec54cea598bdfd96c4325591fae386abb7183c2533b88ba9b81dc34e18cd8da"
+licence = "GPL"
+provides = "sfic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sfic-0.1.7-r8.apk"
+version = "0.1.7-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["tdb-libs", "1.4.7-r0"]]

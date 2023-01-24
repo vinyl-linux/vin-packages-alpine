@@ -1,0 +1,15 @@
+checksum = "1dd4fc06d76f6f7b632778644dfedf8ab9555ccfc7a37a2354f4edc40440a872"
+licence = "ImageMagick"
+provides = "imagemagick-perlmagick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/imagemagick-perlmagick-7.1.0.52-r0.apk"
+version = "7.1.0.52-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick-libs", "7.1.0.52-r0"], ["musl", "1.2.3-r4"]]

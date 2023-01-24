@@ -1,0 +1,15 @@
+checksum = "2ecdd63bfcbbf130b139632b0cfc58590b9c337db301bb3c1e25d6d159181a86"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "sox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sox-14.4.2-r9.apk"
+version = "14.4.2-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flac-libs", "1.4.2-r0"], ["libao", "1.2.2-r2"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libgomp", "12.2.1"], ["gsm", "1.0.22-r1"], ["libid3tag", "0.16.2-r0"], ["libltdl", "2.4.7-r0"], ["libmad", "0.15.1-b-r9"], ["libmagic", "5.43.0-r0"], ["lame", "3.100.0-r2"], ["libogg", "1.3.5-r2"], ["opusfile", "0.12.0-r3"], ["libpng", "1.6.38-r0"], ["libsndfile", "1.1.0-r2"], ["libvorbis", "1.3.7-r0"], ["zlib", "1.2.13-r0"]]

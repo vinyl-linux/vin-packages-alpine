@@ -1,0 +1,15 @@
+checksum = "a5f22cce9c4549a7a0c2feaf1b739e7fe6c18cdfce100499b52570cdae5cf08b"
+licence = "custom"
+provides = "font-dejavu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-dejavu-2.37-r3.apk"
+version = "2.37.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["encodings", "1.0.6-r0"], ["mkfontscale", "1.2.2-r1"]]

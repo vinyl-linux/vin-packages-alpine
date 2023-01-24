@@ -1,0 +1,15 @@
+checksum = "6e89a0ca36e1336859acdaa9f4d82e2ca6b0b78346a711bb4d985e41873557ce"
+licence = "LGPL-2.1-only OR LGPL-3.0-only AND GPL-2.0-only"
+provides = "plasma-pa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-pa-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pulseaudio", "16.1.0-r6"], ["kirigami2", "5.100.0-r1"], ["kcoreaddons", "5.100.0-r0"], ["kglobalaccel", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["knotifications", "5.100.0-r0"], ["kdeclarative", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libcanberra", "0.30.0-r9"], ["glib", "2.74.5-r0"], ["libpulse-mainloop-glib", "16.1.0-r6"], ["libpulse", "16.1.0-r6"], ["libstdc++", "12.2.1"]]

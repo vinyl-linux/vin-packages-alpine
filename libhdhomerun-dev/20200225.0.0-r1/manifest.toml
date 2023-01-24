@@ -1,0 +1,15 @@
+checksum = "3d38336e613396bbade1cc9c4156ddad241b6dfdebcd8c6be3fd56875e250135"
+licence = "LGPL-2.1-or-later"
+provides = "libhdhomerun-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libhdhomerun-dev-20200225-r1.apk"
+version = "20200225.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libhdhomerun-libs", "20200225.0.0-r1"]]

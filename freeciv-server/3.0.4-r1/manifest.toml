@@ -1,0 +1,15 @@
+checksum = "0accebe0b4d96e9be4dd2da8cb14626da8b371969945da079b2d68b5c2fff69e"
+licence = "GPL-2.0-or-later"
+provides = "freeciv-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freeciv-server-3.0.4-r1.apk"
+version = "3.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeciv-data", "3.0.4-r1"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["icu-libs", "72.1.0-r1"], ["libintl", "0.21.1-r1"], ["xz-libs", "5.2.9-r0"], ["readline", "8.2.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["zlib", "1.2.13-r0"]]

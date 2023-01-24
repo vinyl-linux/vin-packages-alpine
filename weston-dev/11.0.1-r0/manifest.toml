@@ -1,0 +1,15 @@
+checksum = "574a831b6e0885c74ade0d11e7df458b5658589be5dea42da1f5040c35b4a914"
+licence = "MIT"
+provides = "weston-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weston-dev-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["weston", "11.0.1-r0"], ["libweston", "11.0.1-r0"], ["pixman-dev", "0.42.2-r0"], ["wayland-dev", "1.21.0-r1"], ["libxkbcommon-dev", "1.4.1-r0"], ["pkgconf", "1.9.4-r0"]]

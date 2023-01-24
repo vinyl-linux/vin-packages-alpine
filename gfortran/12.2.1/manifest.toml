@@ -1,0 +1,15 @@
+checksum = "9e5b6d541506bedf21bf409ef12a371901470844e7d5ae8a057eb9d72c539261"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "gfortran"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gfortran-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["libgfortran", "12.2.1"], ["libquadmath", "12.2.1"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.13-r0"]]

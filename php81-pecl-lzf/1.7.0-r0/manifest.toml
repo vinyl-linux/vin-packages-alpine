@@ -1,0 +1,15 @@
+checksum = "47ba409cfdfc1415d684f37dc34645db4ae0bd0a6ae19a80cabd81035464d3fc"
+licence = "PHP-3.01"
+provides = "php81-pecl-lzf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-lzf-1.7.0-r0.apk"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

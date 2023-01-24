@@ -1,0 +1,15 @@
+checksum = "25779db59f17fca8c1ddabced6526ee631d29f1b742532d61d4db6fe4fb81415"
+licence = "Net-SNMP"
+provides = "net-snmp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/net-snmp-dev-5.9.3-r2.apk"
+version = "5.9.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["net-snmp-agent-libs", "5.9.3-r2"], ["net-snmp-libs", "5.9.3-r2"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6b7c5d7f131a5c72553469d489ca4dc383d4f669a1da58853e9850edc1f05135"
+licence = "LGPL-3.0-only"
+provides = "process-cpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/process-cpp-dev-3.0.1-r6.apk"
+version = "3.0.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["properties-cpp-dev", "0.0.2-r0"], ["pkgconf", "1.9.4-r0"], ["process-cpp", "3.0.1-r6"]]

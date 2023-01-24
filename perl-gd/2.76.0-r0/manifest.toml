@@ -1,0 +1,15 @@
+checksum = "cee96294528d7e816ed7d777def3c626d0c20038e0ce9cb602eb8ec2ec0e218e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-gd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-gd-2.76-r0.apk"
+version = "2.76.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libgd", "2.3.3-r3"]]

@@ -1,0 +1,15 @@
+checksum = "32ab95497c91ff90e91e2a963702756c0cb26feabce9221225bbcc67b9b1df04"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-sharebymail"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-sharebymail-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

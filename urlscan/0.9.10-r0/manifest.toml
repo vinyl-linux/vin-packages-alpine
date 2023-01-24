@@ -1,0 +1,15 @@
+checksum = "8db795e43f51404ef1a000fafd28ae75e7c8ddebe156ec01653ce35273f32c7e"
+licence = "GPL-2.0-or-later"
+provides = "urlscan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/urlscan-0.9.10-r0.apk"
+version = "0.9.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-urwid", "2.1.2-r2"]]

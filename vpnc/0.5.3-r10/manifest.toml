@@ -1,0 +1,15 @@
+checksum = "b25f91d5cb328b38636cebd11720ffda949e8fdafd4c52794b39f4b866b910ce"
+licence = "GPL-3.0-or-later"
+provides = "vpnc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vpnc-0.5.3-r10.apk"
+version = "0.5.3-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcrypt", "1.10.1-r0"]]

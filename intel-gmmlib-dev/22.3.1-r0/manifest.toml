@@ -1,0 +1,15 @@
+checksum = "575d1e6773f7ef9c1563a95b68f425e8627e0460cfe37e58ae0b2b4093137e24"
+licence = "MIT"
+provides = "intel-gmmlib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/intel-gmmlib-dev-22.3.1-r0.apk"
+version = "22.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["intel-gmmlib", "22.3.1-r0"], ["pkgconf", "1.9.4-r0"]]

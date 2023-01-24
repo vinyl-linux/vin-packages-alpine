@@ -1,0 +1,15 @@
+checksum = "b22f9769617906333c6c18ff79e336b61104088d3530b30745a057d323556972"
+licence = "MPL-2.0"
+provides = "czmq-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/czmq-dev-4.2.1-r2.apk"
+version = "4.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["czmq", "4.2.1-r2"], ["zeromq-dev", "4.3.4-r1"], ["util-linux-dev", "2.38.1-r1"], ["pkgconf", "1.9.4-r0"]]

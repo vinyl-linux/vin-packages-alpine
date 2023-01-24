@@ -1,0 +1,15 @@
+checksum = "e75b9f7873f22c1a421d725f242124a934af4caafbfe0f6a2b70e5742fc7ca47"
+licence = "MPL-1.1"
+provides = "aha"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aha-0.5.1-r2.apk"
+version = "0.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

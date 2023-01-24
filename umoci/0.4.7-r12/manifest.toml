@@ -1,0 +1,15 @@
+checksum = "949951a41dcbea2d550b7bb9ded0032a1647bd665d55c517efcf51b993332f45"
+licence = "Apache-2.0"
+provides = "umoci"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/umoci-0.4.7-r12.apk"
+version = "0.4.7-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

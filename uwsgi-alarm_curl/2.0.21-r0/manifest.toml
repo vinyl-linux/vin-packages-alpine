@@ -1,0 +1,15 @@
+checksum = "1057fb3506e8793e3a2b92436f6a57d9b14891098ab60f79e621c113d0c8f835"
+licence = "custom"
+provides = "uwsgi-alarm_curl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-alarm_curl-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"]]

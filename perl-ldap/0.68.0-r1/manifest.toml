@@ -1,0 +1,15 @@
+checksum = "d913e28c64bce5b73ebb7207f1e151c2ae759f42ca6313c1ea00c748f4f9975c"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-ldap-0.68-r1.apk"
+version = "0.68.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-libwww", "6.67.0-r0"], ["perl-lwp-mediatypes", "6.4.0-r1"], ["perl-json", "4.10.0-r0"], ["perl-convert-asn1", "0.33.0-r0"], ["perl-http-message", "6.44.0-r0"], ["perl-uri", "5.17.0-r0"], ["perl-http-negotiate", "6.1.0-r3"], ["perl-io-socket-ssl", "2.77.0-r0"]]

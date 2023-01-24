@@ -1,0 +1,15 @@
+checksum = "d5e28d6863b9f9c93c6c80bf7b1518205348347f1e3d5eb88abf1d53a6d54a6e"
+licence = "GPL-2.0"
+provides = "bogofilter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bogofilter-1.2.5-r1.apk"
+version = "1.2.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

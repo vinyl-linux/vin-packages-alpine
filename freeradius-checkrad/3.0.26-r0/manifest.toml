@@ -1,0 +1,15 @@
+checksum = "03790a548994777b2dd015b3a3bc956568acd24c179d511b0929a7b25a515569"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-checkrad"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-checkrad-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-net-telnet", "3.5.0-r0"], ["perl-snmp-session", "1.13.0-r4"], ["net-snmp-tools", "5.9.3-r2"]]

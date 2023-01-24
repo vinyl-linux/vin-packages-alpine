@@ -1,0 +1,15 @@
+checksum = "82cec8f296ca2990caff95683608d9897376df1b204ee8e97b989a86ccf7a130"
+licence = "custom"
+provides = "uwsgi-spooler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-spooler-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

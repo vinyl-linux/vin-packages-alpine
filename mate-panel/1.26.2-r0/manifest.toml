@@ -1,0 +1,15 @@
+checksum = "47e087fbb3e97da0a2cc56af1d8a7b10f3c1e161d7b46d93aaf85698c777af40"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "mate-panel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-panel-1.26.2-r0.apk"
+version = "1.26.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r1"], ["libice", "1.0.10-r1"], ["libsm", "1.2.3-r1"], ["libx11", "1.8.3-r1"], ["libxrandr", "1.5.3-r0"], ["libatk-1.0", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["cairo-gobject", "1.17.6-r3"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["mate-desktop", "1.26.0-r2"], ["mate-menus", "1.26.0-r0"], ["libmateweather", "1.26.0-r0"], ["pango", "1.50.12-r0"], ["libwnck3", "43.0.0-r1"]]

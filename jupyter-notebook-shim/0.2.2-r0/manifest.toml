@@ -1,0 +1,15 @@
+checksum = "2a14ec61f03b2f0ff30d14bbc4fde545580d2d42c0895f9f8d531c8f47848204"
+licence = "BSD-3-Clause"
+provides = "jupyter-notebook-shim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jupyter-notebook-shim-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jupyter-server", "1.23.2-r0"]]

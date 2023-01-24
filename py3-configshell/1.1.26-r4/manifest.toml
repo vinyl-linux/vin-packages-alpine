@@ -1,0 +1,15 @@
+checksum = "2af5628eeadb3cefe9ae5d9d10b516909d6327dc7ab5e29dfec8c2a567821142"
+licence = "Apache-2.0"
+provides = "py3-configshell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-configshell-1.1.26-r4.apk"
+version = "1.1.26-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"], ["py3-urwid", "2.1.2-r2"], ["py3-parsing", "3.0.9-r0"]]

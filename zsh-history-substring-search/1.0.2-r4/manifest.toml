@@ -1,0 +1,15 @@
+checksum = "97e0d47d53c35ddd3dadc92773511789071f3f7cf46a9b0a0ecda3ff3293659f"
+licence = "BSD-3-Clause"
+provides = "zsh-history-substring-search"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zsh-history-substring-search-1.0.2-r4.apk"
+version = "1.0.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

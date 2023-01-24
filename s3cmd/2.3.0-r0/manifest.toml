@@ -1,0 +1,15 @@
+checksum = "201374738a0ade96bfe173dec7322c33d8f3ee9568dc47bc6cc7cc0f743e731f"
+licence = "GPL-2.0-or-later"
+provides = "s3cmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/s3cmd-2.3.0-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-dateutil", "2.8.2-r1"], ["py3-magic", "0.4.24-r1"]]

@@ -1,0 +1,15 @@
+checksum = "c9c8f00b14e790d9f22f792203c4982719e07c51f881fa765f27b75b5652fd23"
+licence = "LGPL-3.0-only"
+provides = "cmake-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cmake-extras-1.6-r2.apk"
+version = "1.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cmake", "3.24.3-r0"]]

@@ -1,0 +1,16 @@
+checksum = "eb35563d2a55b93fabf9a9bf46e892ff06ddc7c21c79d087fdc4f77640b8ddde"
+licence = "LGPL-2.1-or-later"
+provides = "pango"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pango-1.50.12-r0.apk"
+version = "1.50.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["libxrender", "0.9.11-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["fribidi", "1.0.12-r0"], ["glib", "2.74.5-r0"], ["harfbuzz", "5.3.1-r1"]]

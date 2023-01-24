@@ -1,0 +1,15 @@
+checksum = "b4107511e29ebd7d98e320315db4f2b0746695e6d06bcf134ca890ccb7b7e433"
+licence = "LGPL-2.0-or-later"
+provides = "chezdav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chezdav-3.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r6"], ["avahi-glib", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["phodav", "3.0.0-r0"], ["libsoup3", "3.2.2-r0"]]

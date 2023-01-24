@@ -1,0 +1,15 @@
+checksum = "01419a2ae01d62b3448b4a3feaedd87d0da778bb2e30774d60361cebaf119f6d"
+licence = "AGPL-3.0-or-later"
+provides = "baculum-web-apache2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/baculum-web-apache2-13.0.1-r0.apk"
+version = "13.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["baculum-web", "13.0.1-r0"], ["apache2", "2.4.55-r0"], ["php81-apache2", "8.1.14-r0"]]

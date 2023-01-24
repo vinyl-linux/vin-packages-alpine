@@ -1,0 +1,15 @@
+checksum = "1d3a03c8b12d26ea4e05b42f723dccd5cebfd7aaa88a670bed4d9c3dad75f8b2"
+licence = "GPL-2.0-only"
+provides = "awall-policies"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/awall-policies-1.12.1-r0.apk"
+version = "1.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["awall", "1.12.1-r0"]]

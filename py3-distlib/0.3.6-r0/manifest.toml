@@ -1,0 +1,15 @@
+checksum = "247cfcfa4ef1cc94c946b0704ef1c1bd067bcfec3ba3dd1af9f06c4524efe02c"
+licence = "PSF-2.0"
+provides = "py3-distlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-distlib-0.3.6-r0.apk"
+version = "0.3.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

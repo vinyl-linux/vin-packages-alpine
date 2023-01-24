@@ -1,0 +1,15 @@
+checksum = "eb27b9288f3197b3c4424c4e1e1b850a508899857fea2ca5a6c78186cf8ef587"
+licence = "GPL-2.0-or-later"
+provides = "pjsua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pjsua-2.12.1-r2.apk"
+version = "2.12.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pjproject", "2.12.1-r2"]]

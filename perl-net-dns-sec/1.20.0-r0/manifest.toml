@@ -1,0 +1,15 @@
+checksum = "094c593e3c15b7a33c3b1f477700e1ad4cf404bd9128f68c56d8d7e46b4b6366"
+licence = "MIT"
+provides = "perl-net-dns-sec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-net-dns-sec-1.20-r0.apk"
+version = "1.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-net-dns", "1.35.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "dfa9acd40a3c0dcfae3fd0c8d1ea3d442e4e419d639e278a23b8e74481d94d60"
+licence = "Apache-2.0"
+provides = "openxr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openxr-1.0.26-r0.apk"
+version = "1.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["jsoncpp", "1.9.5-r0"], ["libstdc++", "12.2.1"]]

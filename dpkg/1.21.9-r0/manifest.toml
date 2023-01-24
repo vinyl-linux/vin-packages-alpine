@@ -1,0 +1,15 @@
+checksum = "f6236e07dfe7bb1299aed90f627058dd68d325ee4cd0a9cbe9ea890a411ac9db"
+licence = "GPL-2.0-or-later BSD-2-Clause"
+provides = "dpkg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dpkg-1.21.9-r0.apk"
+version = "1.21.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tar", "1.34.0-r1"], ["xz", "5.2.9-r0"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

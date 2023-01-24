@@ -1,0 +1,15 @@
+checksum = "302261f0be27bdecb7f7b8e8c44196755871411d7031d1e64b62946e10e9d24d"
+licence = "BSD-2-Clause"
+provides = "oniguruma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/oniguruma-6.9.8-r0.apk"
+version = "6.9.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

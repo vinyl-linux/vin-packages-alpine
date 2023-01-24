@@ -1,0 +1,15 @@
+checksum = "c7f5ed9fb4569cd918d36b1c536fcb22bc32d62bf5673e6dbec49f3ff51053d3"
+licence = "GPL-3.0-or-later"
+provides = "coova-chilli-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coova-chilli-dev-1.6-r2.apk"
+version = "1.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["coova-chilli", "1.6.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "5657f1c79d7d4d63f0ca1bda2d688fc598cde93e3a4fc49fecbe718afbc13bd9"
+licence = "GPL-2.0-only"
+provides = "kodi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kodi-19.4-r5.apk"
+version = "19.4.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kodi-wayland", "19.4.0-r5"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["giflib", "5.2.1-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["lzo", "2.10.0-r3"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"]]

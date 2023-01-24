@@ -1,0 +1,15 @@
+checksum = "631ca0bda82511d4c22cbb1e30feb814c96679d6bf7570fca4901cd565d5045b"
+licence = "BSD-3-Clause"
+provides = "libvpx-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvpx-dev-1.12.0-r1.apk"
+version = "1.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libvpx", "1.12.0-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3c658d277b68641f38041e2b3d6169e5d204a82040bcb6e2373ae49fc3f53fa8"
+licence = "GPL-2.0-or-later BSD-3-Clause"
+provides = "libnfsidmap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnfsidmap-2.6.2-r0.apk"
+version = "2.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rpcbind", "1.2.6-r1"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

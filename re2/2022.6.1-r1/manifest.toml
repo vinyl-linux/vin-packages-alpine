@@ -1,0 +1,15 @@
+checksum = "b1f8798ecacc7e1e69af17b8e095fca78645fb302fea4a8b691aecda52df07a0"
+licence = "BSD-3-Clause"
+provides = "re2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/re2-2022.06.01-r1.apk"
+version = "2022.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

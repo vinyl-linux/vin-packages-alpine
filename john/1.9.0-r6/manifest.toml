@@ -1,0 +1,15 @@
+checksum = "c758f807d73ec11d3e395dbb253ede7f0f7a1c374e2f9908ef1f08aa37d12806"
+licence = "GPL-2.0-or-later"
+provides = "john"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/john-1.9.0-r6.apk"
+version = "1.9.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nss", "3.85.0-r0"], ["opencl", "2022.9.30-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["gmp", "6.2.1-r2"], ["libgomp", "12.2.1"], ["libpcap", "1.10.1-r1"], ["zlib", "1.2.13-r0"]]

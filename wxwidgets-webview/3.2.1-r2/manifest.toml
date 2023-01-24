@@ -1,0 +1,15 @@
+checksum = "56d8ae0e5a9a03437b583a54890cee2fbfd9d959f55bda2f3481d025c5f15888"
+licence = "custom:wxWidgets"
+provides = "wxwidgets-webview"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wxwidgets-webview-3.2.1-r2.apk"
+version = "3.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wxwidgets", "3.2.1-r2"], ["wxwidgets-gtk3", "3.2.1-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["webkit2gtk", "2.38.3-r0"], ["libstdc++", "12.2.1"]]

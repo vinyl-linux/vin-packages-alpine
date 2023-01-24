@@ -1,0 +1,15 @@
+checksum = "b5661ce157671183f69ba5d066b847134ec2adbe19090354d57950cf8adb82e2"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+provides = "strongswan-logfile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/strongswan-logfile-5.9.8-r1.apk"
+version = "5.9.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["strongswan", "5.9.8-r1"]]

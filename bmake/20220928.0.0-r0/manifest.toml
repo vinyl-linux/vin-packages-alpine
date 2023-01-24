@@ -1,0 +1,15 @@
+checksum = "713ba5f4080e58ecfb423549dc07338041ed66509df1c13957ee29acbff6d54d"
+licence = "BSD-2-Clause"
+provides = "bmake"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bmake-20220928-r0.apk"
+version = "20220928.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

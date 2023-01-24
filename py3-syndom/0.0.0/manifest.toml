@@ -1,0 +1,15 @@
+checksum = "f005b11c015cd657d5cd0a9ab31ed6a87b3d1ad6473692fea7575417569487de"
+licence = "AGPL-3.0-or-later"
+provides = "py3-syndom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-syndom-0.0_git20220924-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["pugixml", "1.13.0-r0"], ["libstdc++", "12.2.1"], ["tidyhtml-libs", "5.8.0-r2"]]

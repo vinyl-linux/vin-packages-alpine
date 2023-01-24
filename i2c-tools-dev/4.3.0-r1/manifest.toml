@@ -1,0 +1,15 @@
+checksum = "5504e1a9c68367f8ab4482fcfa89644b8af985ead268f1abac4cf9d11b0eaf66"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "i2c-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/i2c-tools-dev-4.3-r1.apk"
+version = "4.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["i2c-tools", "4.3.0-r1"]]

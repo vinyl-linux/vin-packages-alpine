@@ -1,0 +1,15 @@
+checksum = "e4ae131e6a7a81983168a56907525e83d335b640979fa591237b13c05a6d0c18"
+licence = "LGPL-2.1-or-later"
+provides = "u2f-host"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/u2f-host-1.1.10-r4.apk"
+version = "1.1.10-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libu2f-host", "1.1.10-r4"], ["musl", "1.2.3-r4"]]

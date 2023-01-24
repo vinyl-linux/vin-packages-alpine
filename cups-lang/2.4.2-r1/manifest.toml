@@ -1,0 +1,15 @@
+checksum = "938c3e19fd9c3b9993719bee270d1d903ce0bc69603c2cb024cf2b5c91e237c5"
+licence = "GPL-2.0-only"
+provides = "cups-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cups-lang-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cups-client", "2.4.2-r1"], ["poppler-utils", "22.11.0-r0"], ["openssl", "3.0.7-r2"], ["dbus", "1.14.4-r0"]]

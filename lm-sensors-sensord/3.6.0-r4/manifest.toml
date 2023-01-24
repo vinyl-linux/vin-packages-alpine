@@ -1,0 +1,15 @@
+checksum = "8ed09449348be585b6cf8258cf2e6ba4ff854e5fd0684fbede257e73590defcb"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "lm-sensors-sensord"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lm-sensors-sensord-3.6.0-r4.apk"
+version = "3.6.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sysfsutils", "2.1.1-r1"], ["musl", "1.2.3-r4"], ["librrd", "1.7.2-r6"], ["lm-sensors-libs", "3.6.0-r4"]]

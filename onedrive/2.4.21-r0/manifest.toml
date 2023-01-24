@@ -1,0 +1,15 @@
+checksum = "2538a3e99303d7e777029fcaf46755b5994168b15a06b2df4ae96ea2bd30878e"
+licence = "GPL-3.0-only"
+provides = "onedrive"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/onedrive-2.4.21-r0.apk"
+version = "2.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ldc-runtime", "1.30.0-r1"], ["sqlite-libs", "3.40.1-r0"], ["llvm-libunwind", "15.0.7-r0"]]

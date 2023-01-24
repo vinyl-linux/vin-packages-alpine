@@ -1,0 +1,15 @@
+checksum = "3ff5e2b05d46f2bd8d2eb815b21d67e0024aa40929f45595a342d6dce65d4a8e"
+licence = "GPL"
+provides = "gvm-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvm-tools-22.9.0-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-dialog", "3.5.3-r2"], ["py3-defusedxml", "0.7.1-r2"], ["py3-paramiko", "2.12.0-r0"], ["py3-lxml", "4.9.2-r0"]]

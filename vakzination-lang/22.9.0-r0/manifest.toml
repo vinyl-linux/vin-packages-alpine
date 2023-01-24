@@ -1,0 +1,15 @@
+checksum = "1674978ab7339445966d8d21e26d9cc9ee1f686c7851eb7e1cd3e660a300232d"
+licence = "LGPL-2.0-or-later"
+provides = "vakzination-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vakzination-lang-22.09-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["prison", "5.100.0-r0"], ["qt5-qtquickcontrols2", "5.15.6"]]

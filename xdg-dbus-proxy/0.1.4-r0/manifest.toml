@@ -1,0 +1,15 @@
+checksum = "e77fd045ad12738d6cabfa26154c880c860ec96b688fcd9a3f1f0371c4f51cd8"
+licence = "LGPL-2.1-or-later"
+provides = "xdg-dbus-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdg-dbus-proxy-0.1.4-r0.apk"
+version = "0.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

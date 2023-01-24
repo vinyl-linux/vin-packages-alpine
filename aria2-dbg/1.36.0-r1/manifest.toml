@@ -1,0 +1,15 @@
+checksum = "d0fe01c721699fd2b34efbb7596215fc3d00073a7d5a78416084f82f85b80889"
+licence = "GPL-2.0-or-later"
+provides = "aria2-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aria2-dbg-1.36.0-r1.apk"
+version = "1.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

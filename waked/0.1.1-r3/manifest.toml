@@ -1,0 +1,15 @@
+checksum = "8471e389bf3262b09c585ff771be2bc6acfb9503536c6760ccca765266a2e23b"
+licence = "GPL-2.0-or-later"
+provides = "waked"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waked-0.1.1-r3.apk"
+version = "0.1.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["sdbus-cpp", "1.2.0-r0"], ["libstdc++", "12.2.1"]]

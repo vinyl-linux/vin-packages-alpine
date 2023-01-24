@@ -1,0 +1,15 @@
+checksum = "0c9d9cbf3f39c36ec97a53ed8b8f7ad096f486dea60795177a880b4fa65a401e"
+licence = "MIT"
+provides = "direnv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/direnv-2.32.1-r6.apk"
+version = "2.32.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"]]

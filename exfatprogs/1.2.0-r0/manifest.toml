@@ -1,0 +1,15 @@
+checksum = "2938e08ea8b1c47ec1661c58c47c75bb73f0e6f94b1d715836ef9fc0ffe73120"
+licence = "GPL-2.0-or-later"
+provides = "exfatprogs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exfatprogs-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

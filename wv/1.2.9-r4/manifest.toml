@@ -1,0 +1,15 @@
+checksum = "c84bec4f476b74f5b9659ebb72db7b084697f39153475f728cede46c39032d72"
+licence = "GPL-2.0-or-later"
+provides = "wv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wv-1.2.9-r4.apk"
+version = "1.2.9-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

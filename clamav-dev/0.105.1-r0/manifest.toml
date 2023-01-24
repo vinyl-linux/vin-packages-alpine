@@ -1,0 +1,15 @@
+checksum = "510ddb2115b8005b11d184a3a970063b4e9677ba0d838cb23a4317829db3c835"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamav-dev-0.105.1-r0.apk"
+version = "0.105.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["clamav-libs", "0.105.1-r0"], ["clamav-libunrar", "0.105.1-r0"], ["pkgconf", "1.9.4-r0"]]

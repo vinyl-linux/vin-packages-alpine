@@ -1,0 +1,15 @@
+checksum = "7a8985a2760e155452eb1c58a7dde27b0debfcdd830f8ba050477f81e1a506af"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "dnsdist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dnsdist-1.7.3-r0.apk"
+version = "1.7.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnsdist-common", "1.7.3-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libedit", "20221030.3.1-r0"], ["fstrm", "0.6.1-r1"], ["libgcc", "12.2.1"], ["h2o", "2.2.6-r9"], ["lmdb", "0.9.29-r2"], ["lua5.4-libs", "5.4.4-r6"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"], ["nghttp2-libs", "1.51.0-r0"], ["re2", "2022.6.1-r1"], ["libsodium", "1.0.18-r2"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

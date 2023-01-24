@@ -1,0 +1,15 @@
+checksum = "4ca7baff36bde94e92b65abcc942df99bd31607e2fb5e23cd024a94acc1040f4"
+licence = "BSD-2-Clause"
+provides = "piknik"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/piknik-0.10.1-r12.apk"
+version = "0.10.1-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

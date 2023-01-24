@@ -1,0 +1,15 @@
+checksum = "c527f68868ac0c26a5356edc6185edb5dbf919e14b86b5e7c1330f64a9c59d03"
+licence = "GPL-2.0-or-later"
+provides = "py3-nftables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-nftables-1.0.5-r2.apk"
+version = "1.0.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nftables", "1.0.5-r2"]]

@@ -1,0 +1,15 @@
+checksum = "c496ca4792e589c679c4a769988540f42e271ee04e92194807a7a37bd370b2c4"
+licence = "GPL-2.0-or-later"
+provides = "quassel-core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/quassel-core-0.14.0-r11.apk"
+version = "0.14.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-postgresql", "5.15.6"], ["qt5-qtbase-sqlite", "5.15.6"], ["quassel-common", "0.14.0-r11"], ["yash-binsh", "2.53.0-r2"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["quassel-libs-common", "0.14.0-r11"], ["quassel-libs-core", "0.14.0-r11"], ["libstdc++", "12.2.1"]]

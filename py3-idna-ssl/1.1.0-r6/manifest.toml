@@ -1,0 +1,15 @@
+checksum = "980b8617d8a3929c25c59eb5ebe9ef82c19acd53f48c8532b37aa1f107151ab0"
+licence = "MIT"
+provides = "py3-idna-ssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-idna-ssl-1.1.0-r6.apk"
+version = "1.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-idna", "3.4.0-r2"]]

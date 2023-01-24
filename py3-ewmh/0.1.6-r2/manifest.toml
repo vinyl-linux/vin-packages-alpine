@@ -1,0 +1,15 @@
+checksum = "5b862993958ad7bab420829b3ecc6f72fee5efae9aea04189c91da3dbf3f7e89"
+licence = "LGPL-3.0-or-later"
+provides = "py3-ewmh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ewmh-0.1.6-r2.apk"
+version = "0.1.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-xlib", "0.32.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c9989eb02e8f8b712583602666532e168fbc82bd286b7926385a016c360b0934"
+licence = "GPL-2.0-only"
+provides = "connman-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-dev-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-dev", "1.14.4-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

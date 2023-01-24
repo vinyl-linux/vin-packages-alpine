@@ -1,0 +1,15 @@
+checksum = "f657dfe1bf1229808a2b704ab215236a9c3bded3980d2f3d01ac696df6ad3021"
+licence = "BSD-2-Clause"
+provides = "qt5-qtkeychain"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtkeychain-0.13.2-r0.apk"
+version = "0.13.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

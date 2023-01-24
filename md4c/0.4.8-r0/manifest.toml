@@ -1,0 +1,15 @@
+checksum = "12b93f8a65a313c46063657ab99b0e64e22204e3193ca495f32df9b8f4876cef"
+licence = "MIT"
+provides = "md4c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/md4c-0.4.8-r0.apk"
+version = "0.4.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["md4c-libs", "0.4.8-r0"]]

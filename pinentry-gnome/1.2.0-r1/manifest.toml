@@ -1,0 +1,15 @@
+checksum = "632d883ee38acbb09e95a38fb8dd83847637d28b02e4ecc045f8546d9c2d23e0"
+licence = "GPL-2.0-or-later"
+provides = "pinentry-gnome"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pinentry-gnome-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcr", "3.41.1-r1"], ["yash-binsh", "2.53.0-r2"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["gcr-base", "3.41.1-r1"], ["glib", "2.74.5-r0"], ["libgpg-error", "1.46.0-r1"], ["libsecret", "0.20.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "05ab651fea0d5314c3f40cc4ac738ed39dcd1cc3ee61a08c60f98563e5727856"
+licence = "AGPL-3.0"
+provides = "bareos-webui-nginx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-webui-nginx-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos-webui", "21.1.5-r0"], ["nginx", "1.22.1-r0"], ["php81-fpm", "8.1.14-r0"]]

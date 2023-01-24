@@ -1,0 +1,15 @@
+checksum = "fb9de1a4555cc28833db9612892d4c12ac4521ffab1ecea1b2415c1c07ef18c4"
+licence = "Zlib"
+provides = "zathura-cb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zathura-cb-0.1.10-r0.apk"
+version = "0.1.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r1"], ["zathura", "0.5.1-r0"], ["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["girara", "0.3.7-r0"]]

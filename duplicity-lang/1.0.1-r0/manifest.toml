@@ -1,0 +1,15 @@
+checksum = "2b112c2e061afff0b4d58c69b1cba62c0810b24d9002ba0eebd0670dffdf2378"
+licence = "GPL-2.0-or-later"
+provides = "duplicity-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/duplicity-lang-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-boto", "2.49.0-r4"], ["gpg", "2.2.40-r0"], ["gpg-agent", "2.2.40-r0"], ["ncftp", "3.2.6-r5"], ["py3-fasteners", "0.18.0-r0"], ["py3-future", "0.18.2-r5"]]

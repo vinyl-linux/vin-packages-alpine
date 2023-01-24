@@ -1,0 +1,15 @@
+checksum = "0699ca7c522a42a4f9b3e4ce5c577b148940d314dd5bbad7594c56108553ebbc"
+licence = "Artistic-2.0"
+provides = "npm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/npm-9.1.2-r0.apk"
+version = "9.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nodejs-current", "19.3.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "74e523093cd8e8d3e37679fa8c732cbaf0b0319a56e7571455ac0ca8a6b4996f"
+licence = "GPL-2.0-or-later"
+provides = "nut-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nut-dev-2.8.0-r4.apk"
+version = "2.8.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["libmodbus-dev", "3.1.8-r0"], ["libusb-dev", "1.0.26-r0"], ["net-snmp-dev", "5.9.3-r2"], ["neon-dev", "0.32.4-r0"], ["nss-dev", "3.85.0-r0"], ["nut", "2.8.0-r4"]]

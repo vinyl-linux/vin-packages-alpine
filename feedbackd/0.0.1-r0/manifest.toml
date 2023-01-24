@@ -1,0 +1,15 @@
+checksum = "e9cc451d47a03fff878d9648d0b43e8a75885da32d661ea2088376b705a0ea14"
+licence = "GPL-3.0-or-later"
+provides = "feedbackd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/feedbackd-0.0.1-r0.apk"
+version = "0.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["feedbackd-device-themes", "0.0.0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gsound", "1.0.3-r1"], ["libgudev", "237.0.0-r1"], ["json-glib", "1.6.6-r1"]]

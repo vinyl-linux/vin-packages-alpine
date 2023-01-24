@@ -1,0 +1,15 @@
+checksum = "9f91f4876f13582f2cd91064cf7d4578fd857fb405cd30ade0ae3fd7a580608f"
+licence = "ISC"
+provides = "serd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/serd-dev-0.30.16-r0.apk"
+version = "0.30.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["serd", "0.30.16-r0"]]

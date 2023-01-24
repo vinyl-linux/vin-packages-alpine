@@ -1,0 +1,15 @@
+checksum = "23f0fc5875ea9f5102dcebbf98cd568c54a7dd956f7250457ccc3dfe8f48ffc7"
+licence = "BSD-3-Clause"
+provides = "tinyalsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tinyalsa-2.0.0-r1.apk"
+version = "2.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

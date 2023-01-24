@@ -1,0 +1,15 @@
+checksum = "29ac752ffd830fc745dea64e080978473fc75de710d3e6bedbf4f0327497e4c1"
+licence = "GPL-2.0-or-later"
+provides = "at"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/at-3.2.5-r2.apk"
+version = "3.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

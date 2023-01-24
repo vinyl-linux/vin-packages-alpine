@@ -1,0 +1,15 @@
+checksum = "663b4a0622675d52199f51a90af1f2ea26b3790c8f2fb61ff4134b08696fa159"
+licence = "BSD-3-Clause"
+provides = "murmur"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/murmur-1.4.287-r0.apk"
+version = "1.4.287-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"], ["yash-binsh", "2.53.0-r2"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libcrypto3", "3.0.7-r2"], ["avahi-compat-libdns_sd", "0.8.0-r6"], ["libgcc", "12.2.1"], ["libprotobuf", "3.21.9-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "57732a189dac92b0e8eb0116bdf7f686bc5f6c93269f2b839b8521d0e289f877"
+licence = "GPL-2.0-or-later"
+provides = "collectd-network"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-network-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"]]

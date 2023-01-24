@@ -1,0 +1,15 @@
+checksum = "0ee8947267df0caef05e6675d4580b5a59595e2c19b9c77a8e0d0cf0962948ef"
+licence = "BSD-3-Clause"
+provides = "py3-injector"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-injector-0.20.1-r0.apk"
+version = "0.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-typing-extensions", "4.4.0-r0"]]

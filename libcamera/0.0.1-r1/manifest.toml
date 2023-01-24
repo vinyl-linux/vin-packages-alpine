@@ -1,0 +1,15 @@
+checksum = "848e7716742a7b80c0b64ed320524c330de521e89d4a195f5297f26def2933c7"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "libcamera"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcamera-0.0.1-r1.apk"
+version = "0.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gnutls", "3.7.8-r2"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"], ["libunwind", "1.6.2-r0"], ["yaml", "0.2.5-r0"]]

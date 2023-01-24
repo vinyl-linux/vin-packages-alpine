@@ -1,0 +1,16 @@
+checksum = "ed3864658ec37a47dd5709bd8e829af1b98eb04371c162d95c372a87d8608b4f"
+licence = "LGPL-2.0-or-later"
+provides = "cracklib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cracklib-2.9.8-r0.apk"
+version = "2.9.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

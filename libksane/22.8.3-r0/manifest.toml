@@ -1,0 +1,15 @@
+checksum = "c3dae309091efcddb0b28604913d59fe70dd0813dfd00fffaa13e3992c7c107a"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "libksane"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libksane-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.100.0-r0"], ["ktextwidgets", "5.100.0-r0"], ["kwallet", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["ksanecore", "22.8.3-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

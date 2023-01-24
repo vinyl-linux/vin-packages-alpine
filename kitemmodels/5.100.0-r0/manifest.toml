@@ -1,0 +1,15 @@
+checksum = "ee97b80487a3dc33cb5688bae594bacd6a01868c45aabe83be5a206504322e6a"
+licence = "LGPL-2.0-only AND LGPL-2.0-or-later"
+provides = "kitemmodels"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kitemmodels-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

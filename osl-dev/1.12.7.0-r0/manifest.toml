@@ -1,0 +1,15 @@
+checksum = "01c1acc5c3c961f0524f9ff8a698c0d2cbce4deea89f2e61f0e5fbc06d93c202"
+licence = "BSD-3-Clause"
+provides = "osl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/osl-dev-1.12.7.0-r0.apk"
+version = "1.12.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["osl-libs", "1.12.7.0-r0"], ["pkgconf", "1.9.4-r0"]]

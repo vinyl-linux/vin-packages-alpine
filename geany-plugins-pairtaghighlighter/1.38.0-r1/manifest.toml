@@ -1,0 +1,15 @@
+checksum = "7d30aebd0133832cd741dbf5b4ce2d2ad9bfac75a71f0c9f6866c6d8d36be8e4"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-pairtaghighlighter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-pairtaghighlighter-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"]]

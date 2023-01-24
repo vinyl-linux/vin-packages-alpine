@@ -1,0 +1,15 @@
+checksum = "6fdea05ef302725b6b79afdbcd8e17e99492af332c3310b1be871fab271a41f2"
+licence = "Apache-2.0"
+provides = "notcurses-tetris"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notcurses-tetris-3.0.8-r1.apk"
+version = "3.0.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["notcurses-libs", "3.0.8-r1"], ["libstdc++", "12.2.1"]]

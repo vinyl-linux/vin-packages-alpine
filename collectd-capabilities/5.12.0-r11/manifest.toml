@@ -1,0 +1,15 @@
+checksum = "6a5dfc6c231a25187c84897327eea2e40ada771fb2f501c0c56c0b6afa6fda02"
+licence = "GPL-2.0-or-later"
+provides = "collectd-capabilities"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-capabilities-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["jansson", "2.14.0-r0"], ["libmicrohttpd", "0.9.75-r0"]]

@@ -1,0 +1,15 @@
+checksum = "1cd72c52e7e5a7137a6f2a34211e59d6645e5ccf1763e517959dd9c78609907b"
+licence = "MIT"
+provides = "py3-fs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-fs-2.4.16-r0.apk"
+version = "2.4.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-appdirs", "1.4.4-r4"], ["py3-six", "1.16.0-r3"], ["py3-tz", "2022.6.0-r0"]]

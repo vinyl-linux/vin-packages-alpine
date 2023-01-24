@@ -1,0 +1,15 @@
+checksum = "ba7a4c8c152fbdf163b1a8092d00788491dd15072f4624c85272d98d73e04f06"
+licence = "GPL-2.0-or-later"
+provides = "audit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/audit-dev-3.0.9-r0.apk"
+version = "3.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["audit-libs", "3.0.9-r0"], ["pkgconf", "1.9.4-r0"]]

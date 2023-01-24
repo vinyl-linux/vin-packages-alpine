@@ -1,0 +1,15 @@
+checksum = "b04a8c17b7f7ac8738c6ffe5a6b9f31070b2cac2afea5178ce4de10f84b7c369"
+licence = "GPL-3.0-or-later"
+provides = "falkon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/falkon-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"], ["karchive", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kcrash", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["purpose", "5.100.0-r0"], ["kwallet", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtwebchannel", "5.15.6"], ["qt5-qtwebengine", "5.15.12-r0"], ["qt5-qtx11extras", "5.15.6"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libstdc++", "12.2.1"], ["libxcb", "1.15.0-r0"]]

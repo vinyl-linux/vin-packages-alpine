@@ -1,0 +1,15 @@
+checksum = "3da67c4cb35165cf16676d89a4205b46d7fb2bd46f2f7703871a2caf790a5160"
+licence = "GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD"
+provides = "binutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/binutils-2.39-r2.apk"
+version = "2.39.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

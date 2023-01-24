@@ -1,0 +1,15 @@
+checksum = "2945c4a191469d76a742973941a3de1a9264f04192529d7c4f778461b0628b43"
+licence = "Custom"
+provides = "ldns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ldns-1.8.3-r0.apk"
+version = "1.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

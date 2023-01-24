@@ -1,0 +1,15 @@
+checksum = "16a08b1801128a73e10955e4b81efab14385870961159315d2c1ad247e2a88af"
+licence = "MIT"
+provides = "py3-brotli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-brotli-1.0.9-r9.apk"
+version = "1.0.9-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

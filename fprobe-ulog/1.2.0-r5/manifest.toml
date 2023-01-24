@@ -1,0 +1,15 @@
+checksum = "1d15bf6fa827d85e74b2e01a114b6a00d06822fcb979050dcfe5bbb6933490a2"
+licence = "GPL"
+provides = "fprobe-ulog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fprobe-ulog-1.2-r5.apk"
+version = "1.2.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libnetfilter_log", "1.0.2-r0"]]

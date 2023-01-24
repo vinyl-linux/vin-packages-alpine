@@ -1,0 +1,15 @@
+checksum = "7eadab906e98a6b280e6795efc2aac30775650c212b233e7f31d75181aab4c49"
+licence = "BSD-3-Clause-Clear"
+provides = "cstool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cstool-4.0.2-r4.apk"
+version = "4.0.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

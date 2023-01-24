@@ -1,0 +1,15 @@
+checksum = "e7790f52c500d953468473a0b7e54801cd327413b89e36098be9961271c00631"
+licence = "ISC"
+provides = "s6-overlay-helpers"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/s6-overlay-helpers-0.1.0.0-r1.apk"
+version = "0.1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["execline", "2.9.0.1-r0"], ["skalibs", "2.12.0.1-r0"]]

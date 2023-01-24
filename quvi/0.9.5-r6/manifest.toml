@@ -1,0 +1,15 @@
+checksum = "6c466526b3a6b415bafa5ac3e61c2b020d0cb9bdd61e880b2940934bb66c7728"
+licence = "LGPL-2.0-or-later"
+provides = "quvi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/quvi-0.9.5-r6.apk"
+version = "0.9.5-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libquvi", "0.9.4-r4"]]

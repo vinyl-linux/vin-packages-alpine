@@ -1,0 +1,15 @@
+checksum = "6fb32c337ecb59397b5226154178abc0674b754a652865529dd2c591321d7123"
+licence = "BSD"
+provides = "py3-simframe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-simframe-1.0.2-r1.apk"
+version = "1.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-dill", "0.3.6-r0"], ["py3-h5py", "3.5.0-r1"], ["py3-matplotlib", "3.6.2-r1"], ["py3-scipy", "1.9.3-r0"], ["py3-numpy", "1.23.4-r0"]]

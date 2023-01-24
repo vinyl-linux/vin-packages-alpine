@@ -1,0 +1,15 @@
+checksum = "2c9d55b270ceb2f161e9c07c9644fba6b04d47206a76ad7caf79cc9a9b963c63"
+licence = "GPL-2.0-or-later OR Apache-2.0"
+provides = "py3-dulwich"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-dulwich-0.20.50-r0.apk"
+version = "0.20.50-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-certifi", "2022.12.7-r0"], ["py3-urllib3", "1.26.12-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "95a4c164cf316dbeb8316f57f0707fbaaeff2d9d6f3fb9f9ad1a4157cc5b0cd6"
+licence = "BSD-2-Clause"
+provides = "maplibre-gl-native"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/maplibre-gl-native-1.6.0_git20220315-r3.apk"
+version = "1.6.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

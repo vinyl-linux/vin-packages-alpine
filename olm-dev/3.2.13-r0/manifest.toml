@@ -1,0 +1,15 @@
+checksum = "47e69c14ab6687aa7344829fd11e35d9b302c48c7ebdf722cc8bc666d9e1db8e"
+licence = "Apache-2.0"
+provides = "olm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/olm-dev-3.2.13-r0.apk"
+version = "3.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["olm", "3.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

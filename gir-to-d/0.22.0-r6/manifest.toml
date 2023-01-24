@@ -1,0 +1,15 @@
+checksum = "5f0d791316de9a7f037dddf0c1c89b40a37c6845b02b4dc0ddf13f69444de4bd"
+licence = "LGPL-3.0-or-later"
+provides = "gir-to-d"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gir-to-d-0.22.0-r6.apk"
+version = "0.22.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ldc-runtime", "1.30.0-r1"], ["llvm-libunwind", "15.0.7-r0"]]

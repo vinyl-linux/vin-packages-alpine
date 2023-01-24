@@ -1,0 +1,15 @@
+checksum = "2d6c2bcea8cfdb42dfbde691fb060f6738ffb7e56dc63bf32f962e1f09e15c9d"
+licence = "GPL-3.0-or-later"
+provides = "gnome-calendar-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-calendar-lang-43.1-r1.apk"
+version = "43.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

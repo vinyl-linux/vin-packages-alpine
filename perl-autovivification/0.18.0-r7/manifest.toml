@@ -1,0 +1,15 @@
+checksum = "bd8bb9f0c4ac1040e79c77227b64010d32cdb0db5ad32748908e076059348069"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-autovivification"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-autovivification-0.18-r7.apk"
+version = "0.18.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "6720dc61a409b7982652bc2a5951009091162587e6efc3edba727a8362fbc541"
+licence = "GPL-2.0-or-later AND MIT AND BSD-2-Clause"
+provides = "pev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pev-0.81-r4.apk"
+version = "0.81.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

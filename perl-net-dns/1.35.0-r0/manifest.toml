@@ -1,0 +1,15 @@
+checksum = "9ea15d720b2642e37cddfc370c0b58a1f5b6c34e653a9ce9a32259f01a0e0d54"
+licence = "MIT"
+provides = "perl-net-dns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-net-dns-1.35-r0.apk"
+version = "1.35.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-digest-hmac", "1.4.0-r1"]]

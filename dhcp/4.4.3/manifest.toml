@@ -1,0 +1,15 @@
+checksum = "2da64de0976486c3d70a17c08e7b479bee16a32061a45db4725a7e3bd3727e6f"
+licence = "MPL-2.0"
+provides = "dhcp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dhcp-4.4.3_p1-r1.apk"
+version = "4.4.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "b16085d106d6cc0863642a5008e5fd92f2c2aa346ee92a691cfa36057640548b"
+licence = "LGPL-2.0-or-later"
+provides = "ostree-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ostree-dev-2022.6-r0.apk"
+version = "2022.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ostree", "2022.6.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libsoup", "2.74.3-r0"]]

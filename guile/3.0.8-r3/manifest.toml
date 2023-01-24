@@ -1,0 +1,15 @@
+checksum = "a62687ccdf669f24cd1ba88bdf6ecb489a9b3c61e248fc2de325790d2a311125"
+licence = "LGPL-3.0-or-later AND GPL-3.0-or-later"
+provides = "guile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/guile-3.0.8-r3.apk"
+version = "3.0.8-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["guile-libs", "3.0.8-r3"]]

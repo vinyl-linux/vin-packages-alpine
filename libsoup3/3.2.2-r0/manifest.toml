@@ -1,0 +1,15 @@
+checksum = "4ba83c5899a236a59f3c18730a86c96fd101b965571fb53cff103e3f954af6b1"
+licence = "LGPL-2.0-or-later"
+provides = "libsoup3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsoup3-3.2.2-r0.apk"
+version = "3.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-networking", "2.74.0-r2"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["nghttp2-libs", "1.51.0-r0"], ["libpsl", "0.21.1-r1"], ["sqlite-libs", "3.40.1-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2e88fea5d8c410ad652c7c37e4560a40c348523721e26f80e8cf89328ed13b66"
+licence = "MIT"
+provides = "dummyhttp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dummyhttp-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

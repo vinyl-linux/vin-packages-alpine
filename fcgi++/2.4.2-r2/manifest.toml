@@ -1,0 +1,15 @@
+checksum = "bcceade8d0cb3dd7ef2b344311d8d0a9f50d9752c91b74a30a6095ad043bf3b5"
+licence = "custom"
+provides = "fcgi++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fcgi++-2.4.2-r2.apk"
+version = "2.4.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fcgi", "2.4.2-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

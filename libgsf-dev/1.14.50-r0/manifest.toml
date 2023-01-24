@@ -1,0 +1,15 @@
+checksum = "c7cb333dc68f55305c69e697534ca13ef8bc7878d7a357dfbe59c74112fff461"
+licence = "LGPL-2.1-only"
+provides = "libgsf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgsf-dev-1.14.50-r0.apk"
+version = "1.14.50-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bzip2-dev", "1.0.8-r4"], ["libgsf", "1.14.50-r0"], ["glib-dev", "2.74.5-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

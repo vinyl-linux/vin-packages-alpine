@@ -1,0 +1,15 @@
+checksum = "4cb84b941436496eb01377192e2f618f2b94232fa85dffac6628953f591d87da"
+licence = "GPL-3.0-or-later"
+provides = "bison"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bison-3.8.2-r0.apk"
+version = "3.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["m4", "1.4.19-r1"], ["musl", "1.2.3-r4"]]

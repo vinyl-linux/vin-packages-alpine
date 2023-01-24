@@ -1,0 +1,15 @@
+checksum = "f59edc1c25341bd59fc4e33972d9a968d1081e3617a4d77d04a1e45cf3567ff5"
+licence = "MIT"
+provides = "sxmo-st-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sxmo-st-dbg-0.8.4.1-r1.apk"
+version = "0.8.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "42988f3f749b185b200732f96a085a23794fd7653dd3930965ed563b0d398ef4"
+licence = "GPL-2.0-or-later"
+provides = "xapian-bindings-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xapian-bindings-perl-1.4.21-r0.apk"
+version = "1.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxapian", "1.4.21-r0"]]

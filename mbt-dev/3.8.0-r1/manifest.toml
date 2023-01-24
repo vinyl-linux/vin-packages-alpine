@@ -1,0 +1,15 @@
+checksum = "6ca30dca6d65f5de261ac15c28c646424be5541ff08bdc3c959bde2d946643b5"
+licence = "GPL-3.0-only"
+provides = "mbt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mbt-dev-3.8-r1.apk"
+version = "3.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mbt", "3.8.0-r1"], ["timbl-dev", "6.7.0-r1"], ["pkgconf", "1.9.4-r0"]]

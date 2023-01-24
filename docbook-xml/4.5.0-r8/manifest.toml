@@ -1,0 +1,15 @@
+checksum = "099705274b2b00762845728a4c8af2a85a72b812ffb067aab9ac284857f5e9c4"
+licence = "MIT"
+provides = "docbook-xml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/docbook-xml-4.5-r8.apk"
+version = "4.5.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-utils", "2.10.3-r1"], ["yash-binsh", "2.53.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "5a9793c800c59a84ee6f56de67bd3d98ecf1cd66743ff258aca1e1d92d69cfe9"
+licence = "ISC"
+provides = "lowdown-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lowdown-dev-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

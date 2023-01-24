@@ -1,0 +1,15 @@
+checksum = "f5417bfb6980b84923d22e065ca82996e42a8da607ef9af483909e1c7b0991ec"
+licence = "GPL-3.0-or-later AND GFDL-1.2-only"
+provides = "krfb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/krfb-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kdbusaddons", "5.100.0-r0"], ["kdnssd", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["knotifications", "5.100.0-r0"], ["kwallet", "5.100.0-r0"], ["kwayland", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kwindowsystem", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxtst", "1.2.4-r0"], ["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"], ["mesa-gbm", "22.2.5-r1"], ["pipewire-libs", "0.3.60-r3"], ["libstdc++", "12.2.1"], ["libvncserver", "0.9.13-r5"], ["wayland-libs-client", "1.21.0-r1"], ["libxcb", "1.15.0-r0"], ["xcb-util-image", "0.4.1-r0"]]

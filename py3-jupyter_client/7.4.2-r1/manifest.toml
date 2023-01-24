@@ -1,0 +1,15 @@
+checksum = "7c34226668f89c53cab19675c4337730635e4c239d03570e5a754c70384d033d"
+licence = "BSD-3-Clause"
+provides = "py3-jupyter_client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jupyter_client-7.4.2-r1.apk"
+version = "7.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-traitlets", "5.5.0-r0"], ["py3-pyzmq", "23.2.1-r0"], ["py3-jupyter_core", "5.0.0-r1"], ["py3-entrypoints", "0.4.0-r0"], ["py3-tornado", "6.2.0-r0"], ["py3-nest_asyncio", "1.5.6-r0"], ["py3-dateutil", "2.8.2-r1"]]

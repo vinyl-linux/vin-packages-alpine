@@ -1,0 +1,15 @@
+checksum = "b28dd8f0128939304f88c4201cd0e1957df39018496e7e450aacdc4ced3767c2"
+licence = "OLDAP-2.8"
+provides = "openldap-overlay-dyngroup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-overlay-dyngroup-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

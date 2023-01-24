@@ -1,0 +1,15 @@
+checksum = "2e523e401f9023d23747949c6a9c10688f0a5d3e5bf06710e925bb9eef25b1f6"
+licence = "BSD"
+provides = "tclx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tclx-8.4.4-r0.apk"
+version = "8.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tcl", "8.6.12-r1"], ["musl", "1.2.3-r4"]]

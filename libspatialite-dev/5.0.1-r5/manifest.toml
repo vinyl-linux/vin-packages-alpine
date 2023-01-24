@@ -1,0 +1,15 @@
+checksum = "f7721216aface9889a56b4b61ca0b00626781296ab9d777aa77fc148c54e3c3b"
+licence = "MPL-1.1"
+provides = "libspatialite-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspatialite-dev-5.0.1-r5.apk"
+version = "5.0.1-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["geos-dev", "3.11.1-r0"], ["librttopo-dev", "1.1.0-r2"], ["libxml2-dev", "2.10.3-r1"], ["minizip-dev", "1.2.13-r0"], ["proj-dev", "9.1.0-r0"], ["sqlite-dev", "3.40.1-r0"], ["libspatialite", "5.0.1-r5"], ["pkgconf", "1.9.4-r0"]]

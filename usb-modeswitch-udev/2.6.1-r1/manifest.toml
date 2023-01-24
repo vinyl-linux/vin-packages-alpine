@@ -1,0 +1,15 @@
+checksum = "62834dd5ef14bf3de8d696096ba84ad13ee0fab06d4fa9a315d82e3de0c55945"
+licence = "GPL-2.0-or-later"
+provides = "usb-modeswitch-udev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/usb-modeswitch-udev-2.6.1-r1.apk"
+version = "2.6.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"], ["tcl", "8.6.12-r1"], ["usb-modeswitch", "2.6.1-r1"]]

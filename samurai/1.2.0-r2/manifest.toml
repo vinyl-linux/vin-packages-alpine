@@ -1,0 +1,15 @@
+checksum = "3de723e41f7602142c3804a0b6dfe737c18878c0189a744e62e02401d488cbbe"
+licence = "Apache-2.0"
+provides = "samurai"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/samurai-1.2-r2.apk"
+version = "1.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

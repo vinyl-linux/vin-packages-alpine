@@ -1,0 +1,15 @@
+checksum = "b35d523e7077863d516728502e77d3be68d553e4f5153086c6f4e04c72c13696"
+licence = "MPL2"
+provides = "kea-hook-lease-cmds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-hook-lease-cmds-2.2.0-r2.apk"
+version = "2.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["kea-common", "2.2.0-r2"]]

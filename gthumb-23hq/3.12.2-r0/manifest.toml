@@ -1,0 +1,15 @@
+checksum = "b8dcf496d645ae6eb90950e9770655de297201115b8076e9313723b66dc0c2ba"
+licence = "GPL-2.0-or-later"
+provides = "gthumb-23hq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gthumb-23hq-3.12.2-r0.apk"
+version = "3.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gthumb", "3.12.2-r0"], ["gthumb-flickr", "3.12.2-r0"], ["glib", "2.74.5-r0"]]

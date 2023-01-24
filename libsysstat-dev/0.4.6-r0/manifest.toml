@@ -1,0 +1,15 @@
+checksum = "6867b5a0c1289cee266eadd9f15bec1e6a1e544767390c5f031fb63d4bcd19e6"
+licence = "LGPL-2.1-or-later"
+provides = "libsysstat-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsysstat-dev-0.4.6-r0.apk"
+version = "0.4.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsysstat", "0.4.6-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

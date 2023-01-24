@@ -1,0 +1,15 @@
+checksum = "4faf74f447f8854ebe470d254524bd842c592f54e43b90ca74cc749669c39e63"
+licence = "GPL-2.0-or-later"
+provides = "icingaweb2-module-director"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/icingaweb2-module-director-1.10.2-r0.apk"
+version = "1.10.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["icingaweb2", "2.11.2-r0"], ["php81-curl", "8.1.14-r0"], ["php81-pcntl", "8.1.14-r0"], ["icingaweb2-module-incubator", "0.19.0-r0"], ["yash-binsh", "2.53.0-r2"]]

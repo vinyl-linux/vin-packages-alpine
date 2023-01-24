@@ -1,0 +1,15 @@
+checksum = "4030943f9043ebf954715c335e878a20bc8964397bacc250a27fce34fb300d58"
+licence = "MPL-2.0"
+provides = "keama"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/keama-4.4.3_p1-r1.apk"
+version = "4.4.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

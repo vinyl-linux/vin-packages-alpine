@@ -1,0 +1,15 @@
+checksum = "3c44d7aefebd6e600ea887a9a9ade6a750cd94907ca86066fa446e3c4ef0728f"
+licence = "GPL-2.0"
+provides = "libnetfilter_cttimeout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnetfilter_cttimeout-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"]]

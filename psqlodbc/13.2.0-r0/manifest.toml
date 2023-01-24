@@ -1,0 +1,15 @@
+checksum = "4974f61d005ff892dfb63daf8751b9bec77246ca361a5ad8c71493e5cea0af30"
+licence = "GPL-2.0-or-later"
+provides = "psqlodbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/psqlodbc-13.02.0000-r0.apk"
+version = "13.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"], ["libpq", "15.1.0-r0"]]

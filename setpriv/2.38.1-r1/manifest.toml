@@ -1,0 +1,15 @@
+checksum = "c3e255e4746ee1738325a5ef6baf289e09484aa9b0ee5378d311e7795bb3ff39"
+licence = "GPL-2.0-or-later"
+provides = "setpriv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/setpriv-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"]]

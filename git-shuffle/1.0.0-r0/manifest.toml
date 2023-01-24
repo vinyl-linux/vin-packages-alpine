@@ -1,0 +1,15 @@
+checksum = "bbf295b2496ca445d3ee9198b58547c6d168d498666a5feae3fb12b93427e447"
+licence = "GPL-3.0-or-later"
+provides = "git-shuffle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-shuffle-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgit2", "1.5.1-r0"]]

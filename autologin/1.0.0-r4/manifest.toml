@@ -1,0 +1,15 @@
+checksum = "3aa087d385c7036b2fc28161b021a86416ef8092fee8c8ca5e832b3fe8ad2db5"
+licence = "GPL-3.0-only"
+provides = "autologin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/autologin-1.0.0-r4.apk"
+version = "1.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

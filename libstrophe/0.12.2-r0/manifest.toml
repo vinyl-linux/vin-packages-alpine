@@ -1,0 +1,15 @@
+checksum = "7f7aed3c3b06aa3f1e990d15010682f1230dcac5233750cc68032614508b8e47"
+licence = "GPL-3.0-only MIT"
+provides = "libstrophe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libstrophe-0.12.2-r0.apk"
+version = "0.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libexpat", "2.5.0-r0"], ["libssl3", "3.0.7-r2"]]

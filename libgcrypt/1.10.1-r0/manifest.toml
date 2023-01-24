@@ -1,0 +1,15 @@
+checksum = "f5617f351fe9f3e9b483c1ebc1b4dfa41ac06491f18b805b43d09657f5b92df5"
+licence = "LGPL-2.1-or-later"
+provides = "libgcrypt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgcrypt-1.10.1-r0.apk"
+version = "1.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgpg-error", "1.46.0-r1"]]

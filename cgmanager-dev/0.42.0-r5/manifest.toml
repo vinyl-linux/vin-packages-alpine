@@ -1,0 +1,15 @@
+checksum = "12e3123536da418908fe4c2772ecf7e6db4ce6d46116872faa2b11468fe57c99"
+licence = "LGPL-2.0-or-later"
+provides = "cgmanager-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cgmanager-dev-0.42-r5.apk"
+version = "0.42.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-pam-dev", "1.5.2-r1"], ["cgmanager", "0.42.0-r5"], ["libnih-dev", "1.0.3-r6"], ["pkgconf", "1.9.4-r0"]]

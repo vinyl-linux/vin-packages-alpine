@@ -1,0 +1,15 @@
+checksum = "3a365ce2257bee989a7bd29331c38eb362b27240a02b1e8adfaef5edcb98a704"
+licence = "GPL-3.0-or-later"
+provides = "axc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/axc-dev-0.3.7-r0.apk"
+version = "0.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["axc", "0.3.7-r0"], ["libsignal-protocol-c-dev", "2.3.3-r3"], ["pkgconf", "1.9.4-r0"]]

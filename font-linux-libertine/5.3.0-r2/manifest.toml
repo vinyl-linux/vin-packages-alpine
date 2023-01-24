@@ -1,0 +1,15 @@
+checksum = "257bb6860e1c045e2be6b413721352162fd0bc646a4763472c834f5aad5f3ac7"
+licence = "GPL custom:OFL"
+provides = "font-linux-libertine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-linux-libertine-5.3.0-r2.apk"
+version = "5.3.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["encodings", "1.0.6-r0"], ["mkfontscale", "1.2.2-r1"]]

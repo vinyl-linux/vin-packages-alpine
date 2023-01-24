@@ -1,0 +1,15 @@
+checksum = "070bc19a122fd763f05c22c92f79b590c44285247bf33fdcd5ef3e8f8e705d16"
+licence = "GPL-2.0-or-later"
+provides = "tig"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tig-2.5.7-r0.apk"
+version = "2.5.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

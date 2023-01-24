@@ -1,0 +1,15 @@
+checksum = "94963f4559126470e8075d8fb98f33ea143c914634170f11c62b39c3a7529c47"
+licence = "LGPL-2.1-or-later"
+provides = "libraw1394"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libraw1394-2.1.2-r3.apk"
+version = "2.1.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "cc543d4f613029b53680762b03ed64227c5e01ac828351dcbb003b3e42b8a454"
+licence = "GPL-2.0-or-later"
+provides = "carla-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/carla-dev-2.5.2-r0.apk"
+version = "2.5.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["carla", "2.5.2-r0"], ["pkgconf", "1.9.4-r0"]]

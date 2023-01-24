@@ -1,0 +1,15 @@
+checksum = "626e9950dd152ec82a0440125db246d18272438d38f2f55ceb10e90231e03ba7"
+licence = "BSD-2-Clause AND BSD-3-Clause"
+provides = "atf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/atf-dev-0.21-r4.apk"
+version = "0.21.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["atf", "0.21.0-r4"], ["pkgconf", "1.9.4-r0"]]

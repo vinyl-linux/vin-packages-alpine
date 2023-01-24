@@ -1,0 +1,15 @@
+checksum = "cd58686dea106a0962eeff96fa031dac491abf753c1f406fd212903ca3865269"
+licence = "BSD-3-Clause"
+provides = "user-managerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/user-managerd-0.8.5-r1.apk"
+version = "0.8.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libmce-qt", "1.4.2-r1"], ["sailfish-access-control", "0.0.5-r1"], ["libstdc++", "12.2.1"], ["libuser", "0.63.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "61d7b6d4a9a1eae7bf9cb57179ab5b4375ba24edc6859958c5be7c41f39f9273"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-openvpn-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-openvpn-lang-1.10.2-r0.apk"
+version = "1.10.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["openvpn", "2.5.8-r0"]]

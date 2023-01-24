@@ -1,0 +1,15 @@
+checksum = "3ff58c95a11b46ddb827af2ed4220ae3a215ea00c702d4e6a7b47091b90e150b"
+licence = "GPL-3.0-or-later"
+provides = "osmscout-server-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/osmscout-server-dbg-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["procps", "3.3.17-r2"], ["qt5-qtbase-sqlite", "5.15.6"]]

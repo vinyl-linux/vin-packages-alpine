@@ -1,0 +1,15 @@
+checksum = "7bcda9f1e1a28d8c7f42158febc1ba01483a068bccb8bd3ed6e74de7e5d9c749"
+licence = "LGPL-3.0-only"
+provides = "verovio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/verovio-dev-3.11.0-r0.apk"
+version = "3.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["verovio-libs", "3.11.0-r0"]]

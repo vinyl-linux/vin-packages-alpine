@@ -1,0 +1,15 @@
+checksum = "b5f9d9f844721d1475f291a694f89f1d7414f1670eb5914eac280871f1870cb5"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "ntfs-3g-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ntfs-3g-libs-2022.10.3-r0.apk"
+version = "2022.10.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

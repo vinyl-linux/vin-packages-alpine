@@ -1,0 +1,15 @@
+checksum = "190b07543af43600f63ee3c8581d6b7f8bd6bb6a45a9341a61a119063e3c0467"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-gssapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-gssapi-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"], ["heimdal-libs", "7.8.0-r0"]]

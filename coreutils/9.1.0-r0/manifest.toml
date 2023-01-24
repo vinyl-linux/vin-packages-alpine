@@ -1,0 +1,15 @@
+checksum = "48a2e82a4e2d1b14bd50f2337bccba1ddf130ffae77e493828ef39986650ab01"
+licence = "GPL-3.0-or-later"
+provides = "coreutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/coreutils-9.1-r0.apk"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["libacl", "2.3.1-r1"], ["libattr", "2.5.1-r2"], ["musl", "1.2.3-r4"], ["utmps-libs", "0.1.2.0-r1"]]

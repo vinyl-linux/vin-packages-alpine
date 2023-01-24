@@ -1,0 +1,15 @@
+checksum = "8e816712fbe7eb658a21e217f0205bd9cafc39f49d15e69db478fd9183bb5358"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proftpd-mod_ldap-1.3.7f-r1.apk"
+version = "1.3.7-f-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-f-r1"], ["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

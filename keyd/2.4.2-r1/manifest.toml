@@ -1,0 +1,15 @@
+checksum = "f133b9efba2492183d23c98c3c0f1a90e0b705ed0b92b23a39593d16923930e9"
+licence = "MIT"
+provides = "keyd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keyd-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "e3bd5d4308ec33071186df42c0ca5b36ce0dc28ce1d3ba44a306c681bdc7b118"
+licence = "custom"
+provides = "openjdk8-jre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk8-jre-8.345.01-r3.apk"
+version = "8.345.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-dejavu", "2.37.0-r3"], ["libx11", "1.8.3-r1"], ["libxcomposite", "0.4.5-r1"], ["libxext", "1.3.5-r0"], ["libxi", "1.8.0-r0"], ["libxrender", "0.9.11-r0"], ["libxtst", "1.2.4-r0"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["giflib", "5.2.1-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["openjdk8-jre-base", "8.345.1-r3"]]

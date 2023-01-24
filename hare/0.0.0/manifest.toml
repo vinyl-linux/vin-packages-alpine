@@ -1,0 +1,15 @@
+checksum = "aac034e789679069e90c90019b70846972fda5aedb3115c129666ce3c078778c"
+licence = "MPL-2.0 AND GPL-3.0-only"
+provides = "hare"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hare-0_git20221031-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qbe", "1.0.0-r0"], ["harec", "0.0.0"], ["binutils", "2.39.0-r2"]]

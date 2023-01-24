@@ -1,0 +1,15 @@
+checksum = "335d96eae616724aea5db13e2bb42031adf81ae6bc930443bf3f1d70736d6c32"
+licence = "LGPL-2.0-or-later"
+provides = "lame"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lame-3.100-r2.apk"
+version = "3.100.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

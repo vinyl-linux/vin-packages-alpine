@@ -1,0 +1,15 @@
+checksum = "27d5d7d5fae2909a00e8533457938a96a17e3d9dac6ff7e1498e8e213dc784e3"
+licence = "Apache-2.0"
+provides = "opencore-amr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencore-amr-dev-0.1.6-r0.apk"
+version = "0.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opencore-amr", "0.1.6-r0"], ["pkgconf", "1.9.4-r0"]]

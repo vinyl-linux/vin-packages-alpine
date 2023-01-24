@@ -1,0 +1,15 @@
+checksum = "8065c7611a85f0f00542c9f6875ca7910d5c6c9276b964426356caec6427632c"
+licence = "LGPL-3.0-or-later GPL-3.0-or-later Apache-2.0"
+provides = "openzwave"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openzwave-1.6.974-r1.apk"
+version = "1.6.974-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["openzwave-libs", "1.6.974-r1"], ["libstdc++", "12.2.1"]]

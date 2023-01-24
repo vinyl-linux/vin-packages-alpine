@@ -1,0 +1,15 @@
+checksum = "8e7c237cce3489bef15054439b1701abd66ca7374bac15329b30f6f3eef977b1"
+licence = "GPL-3.0-only MIT"
+provides = "libstrophe-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libstrophe-dev-0.12.2-r0.apk"
+version = "0.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libstrophe", "0.12.2-r0"], ["expat-dev", "2.5.0-r0"], ["openssl-dev", "3.0.7-r2"], ["pkgconf", "1.9.4-r0"]]

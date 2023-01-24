@@ -1,0 +1,15 @@
+checksum = "3ab48c195089747c710b60e4564af1ce4180d311befe15197c26afda063ec50d"
+licence = "custom"
+provides = "font-adobe-100dpi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-adobe-100dpi-1.0.3-r2.apk"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

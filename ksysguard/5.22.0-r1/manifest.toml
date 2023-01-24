@@ -1,0 +1,15 @@
+checksum = "f3dd29a2d2d5809ff5efb99f5fe6c2961e8529e5fb34d4ee119c816b258b2a2d"
+licence = "GPL-2.0-only"
+provides = "ksysguard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ksysguard-5.22.0-r1.apk"
+version = "5.22.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcompletion", "5.100.0-r0"], ["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kdbusaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kiconthemes", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["knewstuff", "5.100.0-r0"], ["knotifications", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kwindowsystem", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["libksysguard", "5.26.3-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["lm-sensors-libs", "3.6.0-r4"], ["libstdc++", "12.2.1"]]

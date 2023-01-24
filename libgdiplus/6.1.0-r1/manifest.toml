@@ -1,0 +1,15 @@
+checksum = "0b6c8d832f1fdfef50af549f4fbda1a892732cc746ae69a04fbd0c201c4ca9a6"
+licence = "MIT"
+provides = "libgdiplus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgdiplus-6.1-r1.apk"
+version = "6.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libexif", "0.6.24-r0"], ["fontconfig", "2.14.1-r0"], ["giflib", "5.2.1-r2"], ["glib", "2.74.5-r0"], ["harfbuzz", "5.3.1-r1"], ["libjpeg-turbo", "2.1.4-r0"], ["pango", "1.50.12-r0"], ["libpng", "1.6.38-r0"], ["tiff", "4.4.0-r1"]]

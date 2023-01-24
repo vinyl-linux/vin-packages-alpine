@@ -1,0 +1,15 @@
+checksum = "a87bf0fc3b32895b35eb46a37b91c1160031df1fcbefd4722506f7f1712de310"
+licence = "Apache-2.0"
+provides = "xilinx_bootgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xilinx_bootgen-2021.1-r2.apk"
+version = "2021.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

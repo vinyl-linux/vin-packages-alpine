@@ -1,0 +1,15 @@
+checksum = "09d2a20f28b9f556ced725949cc4101e713e5248030cf717aac57f1547c78f39"
+licence = "LGPL-2.1"
+provides = "hivex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hivex-1.3.21-r1.apk"
+version = "1.3.21-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"], ["libxml2", "2.10.3-r1"]]

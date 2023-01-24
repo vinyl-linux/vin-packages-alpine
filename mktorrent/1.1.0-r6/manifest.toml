@@ -1,0 +1,15 @@
+checksum = "8924369b943eb1e40278384444ef08fca0726f760328d6a308e6fb6a103f1b69"
+licence = "GPL-2.0-or-later"
+provides = "mktorrent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mktorrent-1.1-r6.apk"
+version = "1.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

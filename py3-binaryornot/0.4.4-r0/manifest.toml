@@ -1,0 +1,15 @@
+checksum = "b486678ed5212dc77e6b9d41ea589950fee541c3a50234f1e8b9418c8facd682"
+licence = "BSD-3-Clause"
+provides = "py3-binaryornot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-binaryornot-0.4.4-r0.apk"
+version = "0.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-chardet", "5.0.0-r0"]]

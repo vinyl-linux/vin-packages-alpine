@@ -1,0 +1,15 @@
+checksum = "916d89874bca251aba5018cb1790d1059038235d1d04d4f5b24a8b4093928484"
+licence = "GPL-2.0-only"
+provides = "gedit-plugins-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gedit-plugins-lang-43.1-r1.apk"
+version = "43.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"], ["vte3", "0.70.2-r0"], ["gucharmap", "15.0.1-r0"], ["py3-dbus", "1.3.2-r0"], ["libpeas-python3", "1.34.0-r0"]]

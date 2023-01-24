@@ -1,0 +1,15 @@
+checksum = "4c3ccc7f12b83aae31b2c999cd744ca3f64bafae3e20bb5c54de3a9c2e189165"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-template-toolkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-template-toolkit-3.101-r0.apk"
+version = "3.101.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-appconfig", "1.71.0-r4"], ["musl", "1.2.3-r4"]]

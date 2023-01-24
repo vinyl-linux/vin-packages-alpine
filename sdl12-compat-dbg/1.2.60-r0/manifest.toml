@@ -1,0 +1,15 @@
+checksum = "54a2bf00e8355ccf1a21b7fbf1cb463d5bacbd8ef4e9e756dbf7854a67834f68"
+licence = "BSD-3-Clause"
+provides = "sdl12-compat-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdl12-compat-dbg-1.2.60-r0.apk"
+version = "1.2.60-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"]]

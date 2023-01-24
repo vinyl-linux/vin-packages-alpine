@@ -1,0 +1,15 @@
+checksum = "50bec70c54ec269f035d2eead86d67eb14a9fa47815532b0acb5b58cf1b1d850"
+licence = "GPL-2.0-or-later"
+provides = "patchutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/patchutils-0.4.2-r1.apk"
+version = "0.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

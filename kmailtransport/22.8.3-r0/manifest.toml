@@ -1,0 +1,15 @@
+checksum = "e6a5b70a82cc4468ab5b5906cec36674f07e4253939e6040aeff1c2667ab4a00"
+licence = "LGPL-2.0-or-later"
+provides = "kmailtransport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kmailtransport-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["akonadi", "22.8.3-r0"], ["akonadi-mime", "22.8.3-r0"], ["kcompletion", "5.100.0-r0"], ["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["kmime", "22.8.3-r0"], ["kwallet", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["libkgapi", "22.8.3-r0"], ["ksmtp", "22.8.3-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["qt5-qtkeychain", "0.13.2-r0"], ["libstdc++", "12.2.1"]]

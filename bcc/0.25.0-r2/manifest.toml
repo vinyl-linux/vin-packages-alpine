@@ -1,0 +1,15 @@
+checksum = "6668a2ec6673647df79f315951b626f3d8650ab9c22e923e38cf71d3fd363972"
+licence = "Apache-2.0"
+provides = "bcc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bcc-0.25.0-r2.apk"
+version = "0.25.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["libbpf", "1.0.1-r0"], ["musl", "1.2.3-r4"], ["clang15-libs", "15.0.7-r0"], ["libelf", "0.187.0-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "001a4e1ae2b2f5acdabfd83bed78d0dc58399f8f86e581847b03f618c66833d9"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "analitza"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/analitza-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

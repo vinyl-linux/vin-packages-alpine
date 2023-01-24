@@ -1,0 +1,15 @@
+checksum = "f24caaca4008ec064654f4ad8381253a8e9da61c635a13d6490b29e66b6429b8"
+licence = "ISC"
+provides = "codemadness-frontends"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/codemadness-frontends-0.6-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libressl3.6-libtls", "3.6.1-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "584e4cb842f7ef33bb1394ef190b20b367ab2759c92caf787b02e41621e1e0ac"
+licence = "GPL-3.0-or-later"
+provides = "libkeyfinder"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkeyfinder-2.2.7-r0.apk"
+version = "2.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fftw-double-libs", "3.3.10-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

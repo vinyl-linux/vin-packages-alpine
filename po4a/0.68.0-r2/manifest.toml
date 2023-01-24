@@ -1,0 +1,15 @@
+checksum = "6c68b9360306c04960a8bd33f4f921bee1b77e7b0616793c6b546523f89c464a"
+licence = "GPL-2.0-or-later"
+provides = "po4a"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/po4a-0.68-r2.apk"
+version = "0.68.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext", "0.21.1-r1"], ["perl", "5.36.0-r0"], ["perl-pod-parser", "1.65.0-r0"]]

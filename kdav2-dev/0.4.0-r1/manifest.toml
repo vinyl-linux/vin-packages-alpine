@@ -1,0 +1,15 @@
+checksum = "37df421ff6f9bb74b4aa98df7be05a94e9dd9240e06adf9d2ff867b783fc6081"
+licence = "GPL-2.0-or-later"
+provides = "kdav2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdav2-dev-0.4.0-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons-dev", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtxmlpatterns-dev", "5.15.6"], ["samurai", "1.2.0-r2"], ["kdav2", "0.4.0-r1"]]

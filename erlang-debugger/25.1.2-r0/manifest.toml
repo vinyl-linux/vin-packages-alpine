@@ -1,0 +1,15 @@
+checksum = "74ee7c1bfec1d98af4ef54a8af3211aa4fb24f6463dab4e01a445243047b874c"
+licence = "Apache-2.0"
+provides = "erlang-debugger"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/erlang-debugger-25.1.2-r0.apk"
+version = "25.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang-wx", "25.1.2-r0"]]

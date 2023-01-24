@@ -1,0 +1,15 @@
+checksum = "fd0a3be4bee2ebfdf51aefe5d29ef9fddacfaedce34a371112f25f4da85d7669"
+licence = "GPL-2.0-or-later"
+provides = "colord-colorhug"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/colord-colorhug-1.4.6-r1.apk"
+version = "1.4.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcolord", "1.4.6-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgusb", "0.4.3-r0"]]

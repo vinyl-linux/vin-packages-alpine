@@ -1,0 +1,15 @@
+checksum = "232612f961e2177b37cbb98455eed08ed54c7ea8622351d4e3c02b5ce4274e5e"
+licence = "X11"
+provides = "libpthread-stubs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpthread-stubs-0.4-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b4e6f27b1ce3fc8e9c04ea0e4b1fa4a84e206500a854327e5941be2de7339d02"
+licence = "BSD-3-Clause"
+provides = "p11-kit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/p11-kit-dev-0.24.1-r1.apk"
+version = "0.24.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["p11-kit", "0.24.1-r1"], ["pkgconf", "1.9.4-r0"]]

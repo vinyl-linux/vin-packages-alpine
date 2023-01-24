@@ -1,0 +1,15 @@
+checksum = "487025dbb927cb2635bf8f763f18caf172914fb10fdfd4571ae0df399bff312a"
+licence = "GPL-3.0-only"
+provides = "ayatana-indicator-application"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ayatana-indicator-application-22.2.0-r1.apk"
+version = "22.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libayatana-appindicator", "0.5.91-r1"], ["libayatana-indicator", "0.9.3-r0"], ["musl", "1.2.3-r4"], ["dbus-glib", "0.112.0-r1"], ["libdbusmenu-gtk3", "16.4.0-r3"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["pango", "1.50.12-r0"]]

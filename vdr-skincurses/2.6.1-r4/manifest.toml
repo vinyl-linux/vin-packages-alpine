@@ -1,0 +1,15 @@
+checksum = "fd67220833cb7ca171a4da6c3328d84fc11c2ff8696424b9f778e25a11f38f19"
+licence = "GPL-2.0-or-later"
+provides = "vdr-skincurses"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vdr-skincurses-2.6.1-r4.apk"
+version = "2.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.6.1-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "12.2.1"]]

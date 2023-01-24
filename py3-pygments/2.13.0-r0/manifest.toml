@@ -1,0 +1,15 @@
+checksum = "4f66c78bbb4b443d169d8e34852178fc0e1ab5cb8a563241da3f92ac743ea184"
+licence = "BSD-2-Clause"
+provides = "py3-pygments"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pygments-2.13.0-r0.apk"
+version = "2.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

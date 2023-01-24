@@ -1,0 +1,15 @@
+checksum = "30e8e5d62ccc648df2cd36f9f98878042c95478ce06691463b413ab129250fcf"
+licence = "IPL-1.0 EPL-2.0"
+provides = "postfix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-3.7.4-r0.apk"
+version = "3.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["icu-libs", "72.1.0-r1"], ["lmdb", "0.9.29-r2"], ["libsasl", "2.1.28-r3"], ["libssl3", "3.0.7-r2"]]

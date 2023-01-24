@@ -1,0 +1,15 @@
+checksum = "b519dfad84a26fbfd67d08aeac6948b14467deab476566e80e7fbf8feff7d39c"
+licence = "GPL-2.0-or-later"
+provides = "bitlbee"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitlbee-3.6-r3.apk"
+version = "3.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"]]

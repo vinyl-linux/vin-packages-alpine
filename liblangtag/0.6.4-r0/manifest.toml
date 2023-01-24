@@ -1,0 +1,15 @@
+checksum = "2a7b3bf96ef50743510fed829d688e70ae007497d7d7483156419e14cc0f02d5"
+licence = "LGPL-3.0-or-later OR MPL-2.0"
+provides = "liblangtag"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liblangtag-0.6.4-r0.apk"
+version = "0.6.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "2957dca1c5d16047e9515aae23d533b8bb292e63f6e542ecea96d812b96e9e7e"
+licence = "GPL-2.0-or-later"
+provides = "picard-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/picard-lang-2.8.3-r0.apk"
+version = "2.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chromaprint", "1.5.1-r2"], ["py3-dateutil", "2.8.2-r1"], ["py3-fasteners", "0.18.0-r0"], ["py3-mutagen", "1.46.0-r0"], ["py3-qt5", "5.15.7-r0"], ["py3-yaml", "6.0.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9c1c884ed5363e3bcc34fcc6f02b917fa439da8244bf5b32dc3b96cbdddecc3b"
+licence = "MIT"
+provides = "py3-enrich"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-enrich-1.2.7-r0.apk"
+version = "1.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-rich", "12.6.0-r0"]]

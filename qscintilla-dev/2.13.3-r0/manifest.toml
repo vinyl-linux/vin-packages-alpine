@@ -1,0 +1,15 @@
+checksum = "b0abff18fd135413d495355fce91bb3453c55f3cf69581c893ddcb6dd6b239a9"
+licence = "GPL-3.0-only"
+provides = "qscintilla-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qscintilla-dev-2.13.3-r0.apk"
+version = "2.13.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qscintilla", "2.13.3-r0"]]

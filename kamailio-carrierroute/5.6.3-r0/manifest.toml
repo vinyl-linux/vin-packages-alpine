@@ -1,0 +1,15 @@
+checksum = "7f122b74d5f4d803bbb8cb1fc09ca0db6fe03457c930fe646309da85e1d01c96"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-carrierroute"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-carrierroute-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"]]

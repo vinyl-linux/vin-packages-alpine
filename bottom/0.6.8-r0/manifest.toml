@@ -1,0 +1,15 @@
+checksum = "3528ccb034e1d3addc7c77d61561d1c83620fe87e12b220dee3cdea5f59ceee6"
+licence = "MIT"
+provides = "bottom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bottom-0.6.8-r0.apk"
+version = "0.6.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

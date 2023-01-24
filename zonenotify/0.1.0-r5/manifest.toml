@@ -1,0 +1,15 @@
+checksum = "3af2a6e402fdc4faa26aeaccf69b896f95b24e1e5c53509e6005a033fb4d76b0"
+licence = "BSD-2-Clause"
+provides = "zonenotify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zonenotify-0.1-r5.apk"
+version = "0.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

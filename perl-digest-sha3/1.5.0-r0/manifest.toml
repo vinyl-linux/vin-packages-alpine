@@ -1,0 +1,15 @@
+checksum = "0e874d534a29e8f49a49d7ccd0506da2095e9a0a827724c94735cd9c3243e4eb"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-digest-sha3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-digest-sha3-1.05-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

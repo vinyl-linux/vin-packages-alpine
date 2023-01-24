@@ -1,0 +1,15 @@
+checksum = "5398b540f8f36a0e60a6755668ad4d87837972e9faddc823d0c7661cd9093f6f"
+licence = "MIT"
+provides = "postgresql-sequential-uuids"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-sequential-uuids-1.0.1-r4.apk"
+version = "1.0.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "31bca6bba2ec268dfb0c39b254323244a6160f823ecb9a788f35478464e6896f"
+licence = "GPL-3.0-or-later"
+provides = "gitstatus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gitstatus-1.5.4-r1.apk"
+version = "1.5.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["http-parser", "2.9.4-r0"], ["pcre", "8.45.0-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

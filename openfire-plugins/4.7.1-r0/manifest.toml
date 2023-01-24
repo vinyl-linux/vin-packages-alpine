@@ -1,0 +1,15 @@
+checksum = "51f7cc2c8331aaae19f22d0b08acb1de6ea545c8b1cac2d2888f59d3eeeeac83"
+licence = "Apache-2.0"
+provides = "openfire-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openfire-plugins-4.7.1-r0.apk"
+version = "4.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"]]

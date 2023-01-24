@@ -1,0 +1,15 @@
+checksum = "55e0a62a3453fee9feb20252f215233d4597486b69e99a16db9c6e8ed239220c"
+licence = "GPL-3.0-only"
+provides = "phoc-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/phoc-dbg-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["mutter-schemas", "43.2.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"]]

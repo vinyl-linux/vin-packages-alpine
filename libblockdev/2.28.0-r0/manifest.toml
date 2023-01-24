@@ -1,0 +1,15 @@
+checksum = "b814c888e7aaa071f06a0b157f9c842a0189e95087981b6a9dae351b2cbdec89"
+licence = "LGPL-2.1-or-later"
+provides = "libblockdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libblockdev-2.28-r0.apk"
+version = "2.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["libbytesize", "2.7.0-r1"], ["musl", "1.2.3-r4"], ["cryptsetup-libs", "2.5.0-r2"], ["device-mapper-libs", "2.3.17-r1"], ["dmraid", "1.0.0"], ["glib", "2.74.5-r0"], ["kmod-libs", "30.0.0-r1"], ["libmount", "2.38.1-r1"], ["ndctl-libs", "74.0.0-r0"], ["nss", "3.85.0-r0"], ["parted", "3.5.0-r0"], ["eudev-libs", "3.2.11-r4"], ["libuuid", "2.38.1-r1"], ["volume_key", "0.3.12-r3"], ["yaml", "0.2.5-r0"]]

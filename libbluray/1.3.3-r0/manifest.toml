@@ -1,0 +1,15 @@
+checksum = "f957ea24d3131a4439363fca33cf097693936bb4040a0aec4f00370a301c4a80"
+licence = "LGPL-2.1-or-later"
+provides = "libbluray"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbluray-1.3.3-r0.apk"
+version = "1.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

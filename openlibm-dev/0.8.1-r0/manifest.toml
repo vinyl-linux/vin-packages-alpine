@@ -1,0 +1,15 @@
+checksum = "afacd6fd3b6748fedddca83007c124aa60021743fff8613b59e013f19f24b120"
+licence = "MIT AND BSD-2-Clause AND ISC AND LGPL-2.1-or-later"
+provides = "openlibm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openlibm-dev-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openlibm", "0.8.1-r0"], ["pkgconf", "1.9.4-r0"]]

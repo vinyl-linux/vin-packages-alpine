@@ -1,0 +1,15 @@
+checksum = "a9127aeb4bced60a3fa2a8b214b40d41a06f4d246674100c8e4b4daceea91601"
+licence = "MIT"
+provides = "secureboot-hook"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/secureboot-hook-0.1-r4.apk"
+version = "0.1.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["efi-mkuki", "0.1.0-r0"], ["kernel-hooks", "0.2.0-r0"], ["mkinitfs", "3.7.0-r0"], ["sbsigntool", "0.9.4-r4"], ["yash-binsh", "2.53.0-r2"]]

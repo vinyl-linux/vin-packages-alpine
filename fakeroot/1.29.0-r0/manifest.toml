@@ -1,0 +1,15 @@
+checksum = "63c9bde42cf35526125e8e870ae2b1bfbf4a4cfb6bb8c8716593ed3a4d0a1fb1"
+licence = "GPL-3.0-or-later"
+provides = "fakeroot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fakeroot-1.29-r0.apk"
+version = "1.29.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

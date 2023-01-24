@@ -1,0 +1,15 @@
+checksum = "74889937e78f8b1612ade2b0f3cf20e5bd700d3fd26312ed8f887abfdad543ea"
+licence = "GPL-3.0-or-later"
+provides = "ufw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ufw-0.36.1-r2.apk"
+version = "0.36.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["python3", "3.10.9-r1"]]

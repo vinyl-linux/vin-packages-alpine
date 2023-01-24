@@ -1,0 +1,15 @@
+checksum = "634f2437788f72a103e4c98ef16950aa72f87a2ea14351b3b8709d962f2f8862"
+licence = "MIT"
+provides = "ibmswtpm2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ibmswtpm2-1682-r1.apk"
+version = "1682.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

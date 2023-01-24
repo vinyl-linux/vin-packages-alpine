@@ -1,0 +1,16 @@
+checksum = "8e6d584d2fe768e35145d5c2ce4276c5754f1e4513db0de042a9230e2551b65f"
+licence = "MIT"
+provides = "fontconfig"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fontconfig-2.14.1-r0.apk"
+version = "2.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["freetype", "2.12.1-r0"]]

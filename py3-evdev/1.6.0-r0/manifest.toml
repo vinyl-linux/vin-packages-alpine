@@ -1,0 +1,15 @@
+checksum = "21902efe314f47da567c900046e4176c1305efce6af7149454a53c88395a2dcc"
+licence = "BSD-3-Clause"
+provides = "py3-evdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-evdev-1.6.0-r0.apk"
+version = "1.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libevdev", "1.13.0-r0"], ["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "0f9171f181cb1eb2c110e678aad0f161199471e9cb8567ec1902be2c477d2651"
+licence = "BSD-2-Clause"
+provides = "prime_server-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prime_server-dev-0.7.0-r2.apk"
+version = "0.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["prime_server", "0.7.0-r2"]]

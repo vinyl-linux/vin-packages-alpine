@@ -1,0 +1,15 @@
+checksum = "13ee1641f4a47c8a673fb0263b39dbead027b0957920c878262b6c9739a28021"
+licence = "OLDAP-2.8"
+provides = "openldap-overlay-retcode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-overlay-retcode-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

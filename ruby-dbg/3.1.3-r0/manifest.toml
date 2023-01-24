@@ -1,0 +1,15 @@
+checksum = "fc8fb578c146a2940b89b3a0969214e618429b831a37e74486a9277b62d8e575"
+licence = "Ruby AND BSD-2-Clause AND MIT"
+provides = "ruby-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-dbg-3.1.3-r0.apk"
+version = "3.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

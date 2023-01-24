@@ -1,0 +1,15 @@
+checksum = "81a61fc1df51164a3c822d1c6579293cc4e635a8d36b93dea62569bd909664ef"
+licence = "Apache-2.0 AND MIT"
+provides = "rust-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rust-dbg-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust-stdlib", "1.64.0-r2"], ["gcc", "12.2.1"], ["musl-dev", "1.2.3-r4"]]

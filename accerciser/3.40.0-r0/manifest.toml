@@ -1,0 +1,15 @@
+checksum = "d720ae56b70d3e79dcf6758daaa49aeadc851cb60384d50a7138cc2968b67e48"
+licence = "BSD-3-Clause"
+provides = "accerciser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/accerciser-3.40.0-r0.apk"
+version = "3.40.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0", "3.24.36-r0"], ["ipython", "8.6.0-r1"], ["librsvg", "2.55.1-r0"], ["libwnck3", "43.0.0-r1"], ["py3-atspi", "2.46.0-r0"], ["py3-gobject3", "3.42.2-r0"], ["py3-xlib", "0.32.0-r0"]]

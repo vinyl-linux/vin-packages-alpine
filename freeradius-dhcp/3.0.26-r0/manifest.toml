@@ -1,0 +1,15 @@
+checksum = "e73fef0608d09894aab9a4736a1c6460626eb8f00cd5f8ce7d3e36ddcad8eb86"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-dhcp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-dhcp-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.26-r0"], ["musl", "1.2.3-r4"]]

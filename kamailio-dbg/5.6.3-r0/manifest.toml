@@ -1,0 +1,15 @@
+checksum = "ed24505a814a755896cc0c230fa173a8d5cb8f92f9262262be48dd9cac1bd564"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-dbg-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gawk", "5.1.1-r1"]]

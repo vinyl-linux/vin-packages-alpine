@@ -1,0 +1,15 @@
+checksum = "470726566b69cb67192f66f1823b371a5f2ce2826f1032468566b6413f16b1cc"
+licence = "GPL-2.0-or-later"
+provides = "libqalculate-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libqalculate-dev-4.4.0-r1.apk"
+version = "4.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libqalculate", "4.4.0-r1"], ["gmp-dev", "6.2.1-r2"], ["libxml2-dev", "2.10.3-r1"], ["mpfr-dev", "4.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

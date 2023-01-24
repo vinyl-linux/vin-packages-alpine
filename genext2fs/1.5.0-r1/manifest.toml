@@ -1,0 +1,15 @@
+checksum = "daa3895a9f3d0f9d0c37727e2875efc9ee9c2c79ea3730688eb8427ca68ddd63"
+licence = "GPL-2.0-only"
+provides = "genext2fs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/genext2fs-1.5.0-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"]]

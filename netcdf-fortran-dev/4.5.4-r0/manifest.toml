@@ -1,0 +1,15 @@
+checksum = "e5e73627040b4ce364ba524d73172b4cd5f2b9eca6668348d630b626efbeb57e"
+licence = "Apache-2.0"
+provides = "netcdf-fortran-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netcdf-fortran-dev-4.5.4-r0.apk"
+version = "4.5.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netcdf-dev", "4.8.1-r4"], ["netcdf-fortran", "4.5.4-r0"], ["pkgconf", "1.9.4-r0"]]

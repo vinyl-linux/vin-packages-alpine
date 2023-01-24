@@ -1,0 +1,15 @@
+checksum = "ac9411894e2bbfab42a9bd14312569a33aba820eadfd768706eec03f3e0792b9"
+licence = "MPL-2.0"
+provides = "libetonyek"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libetonyek-0.1.10-r4.apk"
+version = "0.1.10-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["liblangtag", "0.6.4-r0"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

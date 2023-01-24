@@ -1,0 +1,15 @@
+checksum = "6c9ea7ba7238ede6a1f7004e0932a37ca6eac0990d1852b5c7250716660fabbc"
+licence = "BSD-3-Clause"
+provides = "unbound-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/unbound-dev-1.17.1-r0.apk"
+version = "1.17.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["expat-dev", "2.5.0-r0"], ["libevent-dev", "2.1.12-r5"], ["python3-dev", "3.10.9-r1"], ["pkgconf", "1.9.4-r0"], ["unbound-libs", "1.17.1-r0"]]

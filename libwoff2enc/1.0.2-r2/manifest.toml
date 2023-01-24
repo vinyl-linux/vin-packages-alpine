@@ -1,0 +1,15 @@
+checksum = "bbdae61de91d8046a1c00dfbb2656b64c36d326a398d841571c8031441d3330b"
+licence = "GPL-3.0-or-later"
+provides = "libwoff2enc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwoff2enc-1.0.2-r2.apk"
+version = "1.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libwoff2common", "1.0.2-r2"]]

@@ -1,0 +1,15 @@
+checksum = "8903373864313c330196d974aa29b09ccd4adf7d0e1d67a4cd8d42cc8a0e203e"
+licence = "BSD-3-Clause"
+provides = "pcre2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pcre2-dev-10.42-r0.apk"
+version = "10.42.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libedit-dev", "20221030.3.1-r0"], ["zlib-dev", "1.2.13-r0"], ["libpcre2-16", "10.42.0-r0"], ["libpcre2-32", "10.42.0-r0"], ["pcre2", "10.42.0-r0"], ["pkgconf", "1.9.4-r0"]]

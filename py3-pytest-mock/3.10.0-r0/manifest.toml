@@ -1,0 +1,15 @@
+checksum = "9550fe2b3ad1cb21d01260dc654284e65ea7310f4bde37b9fbef3220033c3d3d"
+licence = "MIT"
+provides = "py3-pytest-mock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-mock-3.10.0-r0.apk"
+version = "3.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-mock", "4.0.3-r3"], ["py3-pytest", "7.2.0-r1"]]

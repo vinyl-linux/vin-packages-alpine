@@ -1,0 +1,15 @@
+checksum = "2c4569bb581140ffeb3c53ab01a2d508df3ff87cbc7d643cee5427fb3d3b6fc7"
+licence = "BSD-2-Clause"
+provides = "libavif-apps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libavif-apps-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libavif", "0.11.1-r0"], ["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"]]

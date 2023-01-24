@@ -1,0 +1,15 @@
+checksum = "105fe57e8856c4c3315d885259642193a9930e1ae246b25d80e667b660d5a517"
+licence = "GPL-3.0-only"
+provides = "gnunet-gtk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnunet-gtk-dev-0.16.0-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnunet-gtk", "0.16.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d8887255be6752ed33f00efb51722ab5f9859fd43b4d399ef647d77ed48ece5c"
+licence = "GPL-2.0-only"
+provides = "libnids-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnids-dev-1.26-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libnids", "1.26.0-r1"]]

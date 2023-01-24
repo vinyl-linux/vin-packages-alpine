@@ -1,0 +1,15 @@
+checksum = "9de81d31bb2bed1d0534afcc070f592cd86fc5ea92f74c970b1a268cf46ed361"
+licence = "BSD-3-Clause"
+provides = "dateutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dateutils-0.4.10-r0.apk"
+version = "0.4.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

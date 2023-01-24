@@ -1,0 +1,15 @@
+checksum = "3df0f6c6881db8ef65176e9e5301ac94f1c7b8d29aaec66083c98da926cd01c0"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-type-tiny"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-type-tiny-2.000001-r1.apk"
+version = "2.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-exporter-tiny", "1.6000.0-r0"]]

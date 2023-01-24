@@ -1,0 +1,15 @@
+checksum = "dab3715d2e5fa206b91b0960cdece5f59ae9f92937007cb165af13ee4c7ff8a6"
+licence = "BSD-3-Clause"
+provides = "exempi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exempi-2.6.3-r0.apk"
+version = "2.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["exempi-libs", "2.6.3-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

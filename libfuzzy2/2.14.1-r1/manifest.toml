@@ -1,0 +1,15 @@
+checksum = "f16257ba3547891173f4257e0cecfe99c80c1416a72b338ca2c29cb456aea74f"
+licence = "GPL-2.0-or-later"
+provides = "libfuzzy2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libfuzzy2-2.14.1-r1.apk"
+version = "2.14.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

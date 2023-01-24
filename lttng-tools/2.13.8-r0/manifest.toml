@@ -1,0 +1,15 @@
+checksum = "bc6d11fb698cc56d14e2ea625dd7448060fd0fbc3545dd56859537ef414e4ca4"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "lttng-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lttng-tools-2.13.8-r0.apk"
+version = "2.13.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["babeltrace", "2.0.4-r1"], ["musl", "1.2.3-r4"], ["kmod-libs", "30.0.0-r1"], ["lttng-ust", "2.13.3-r0"], ["popt", "1.19.0-r0"], ["userspace-rcu", "0.13.2-r0"], ["libxml2", "2.10.3-r1"]]

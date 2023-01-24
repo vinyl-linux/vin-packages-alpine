@@ -1,0 +1,15 @@
+checksum = "819ed288c930a8deab2e5edffa24e991fc5036a0182c9eba4f38f5dfc1110745"
+licence = "MIT"
+provides = "py3-jaraco.envs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jaraco.envs-2.4.0-r1.apk"
+version = "2.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-path", "16.5.0-r0"], ["python3", "3.10.9-r1"]]

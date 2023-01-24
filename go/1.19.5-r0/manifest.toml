@@ -1,0 +1,15 @@
+checksum = "bd6cbcaa98d4a8565c617ed20a39e2db4eb04b9e0de947948fd74dbf122607cb"
+licence = "BSD-3-Clause"
+provides = "go"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/go-1.19.5-r0.apk"
+version = "1.19.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils", "2.39.0-r2"], ["gcc", "12.2.1"], ["musl-dev", "1.2.3-r4"], ["musl", "1.2.3-r4"]]

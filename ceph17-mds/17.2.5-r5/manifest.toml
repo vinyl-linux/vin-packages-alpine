@@ -1,0 +1,15 @@
+checksum = "83639d29bd556aa030fb52c99a7083e5d2281e767f440c88220e630c665cb6b4"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-mds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-mds-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph17-base", "17.2.5-r5"], ["librados17", "17.2.5-r5"], ["musl", "1.2.3-r4"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["lua5.4-libs", "5.4.4-r6"], ["libstdc++", "12.2.1"]]

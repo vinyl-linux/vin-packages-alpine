@@ -1,0 +1,15 @@
+checksum = "4d854cf70a19cd34b34470816e24c9fbd3037a6bca497c310ffbfaf29d026bac"
+licence = "GPL-2.0-or-later"
+provides = "kdiagram"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdiagram-2.8.0-r1.apk"
+version = "2.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

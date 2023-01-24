@@ -1,0 +1,15 @@
+checksum = "70309d29b43c408df53a6b993217ed252d0cd277db2719dcfb84ee2f5c00099d"
+licence = "Apache-2.0"
+provides = "containerd-stress"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/containerd-stress-1.6.12-r1.apk"
+version = "1.6.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["runc", "1.1.4-r4"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "2c548a89cb779adaae8174ae2451cf5679af40f42f632f6d925e51deb455b08b"
+licence = "Apache-2.0"
+provides = "spamassassin-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spamassassin-client-3.4.6-r4.apk"
+version = "3.4.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

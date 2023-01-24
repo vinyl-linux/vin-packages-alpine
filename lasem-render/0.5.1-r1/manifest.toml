@@ -1,0 +1,15 @@
+checksum = "ab567edc3ffb27929111c96014031a7aa035dc83f067130d46dd44a2b1636d67"
+licence = "LGPL-2.0 GPL-2.0"
+provides = "lasem-render"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lasem-render-0.5.1-r1.apk"
+version = "0.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["lasem", "0.5.1-r1"]]

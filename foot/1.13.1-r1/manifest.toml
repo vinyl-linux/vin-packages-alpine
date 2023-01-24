@@ -1,0 +1,15 @@
+checksum = "7ca402f08fa850e764fffb96fa9fd8c0343aab89134ca2245dc17bf9415573e8"
+licence = "MIT"
+provides = "foot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/foot-1.13.1-r1.apk"
+version = "1.13.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"], ["musl", "1.2.3-r4"], ["fcft", "3.1.5-r0"], ["fontconfig", "2.14.1-r0"], ["pixman", "0.42.2-r0"], ["utf8proc", "2.8.0-r0"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

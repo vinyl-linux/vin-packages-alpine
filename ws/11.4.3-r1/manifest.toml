@@ -1,0 +1,15 @@
+checksum = "143de48672139cfb43cef13ffd58d5d4fcb5b708634f36df64360ab7885b6c55"
+licence = "BSD-3-Clause"
+provides = "ws"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ws-11.4.3-r1.apk"
+version = "11.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["ixwebsocket-libs", "11.4.3-r1"], ["libstdc++", "12.2.1"]]

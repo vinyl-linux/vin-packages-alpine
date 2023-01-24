@@ -1,0 +1,15 @@
+checksum = "d9de2ecf60c7161e056f4a89080a691da61fab94ad2d98661c18ab96249a091e"
+licence = "Apache-2.0"
+provides = "compiler-rt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/compiler-rt-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

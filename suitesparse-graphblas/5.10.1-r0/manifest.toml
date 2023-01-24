@@ -1,0 +1,15 @@
+checksum = "fa0bf72863d94d8b2385a23389fe142e7b95f3fb1a2d79265b06a67fc998fabe"
+licence = "Apache-2.0"
+provides = "suitesparse-graphblas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/suitesparse-graphblas-5.10.1-r0.apk"
+version = "5.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgomp", "12.2.1"]]

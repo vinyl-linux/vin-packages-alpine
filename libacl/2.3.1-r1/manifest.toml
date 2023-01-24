@@ -1,0 +1,15 @@
+checksum = "5d05204bdbee6d1c7c58989fc1cb035fd27de85d302f93756b041cd3bbe9f4fe"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "libacl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libacl-2.3.1-r1.apk"
+version = "2.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

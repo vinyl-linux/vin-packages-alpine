@@ -1,0 +1,15 @@
+checksum = "66af6f6e96490eafa5b4e65f65401d088f65d04017f2126fb0aaf658d5bf1d51"
+licence = "Apache-2.0"
+provides = "apache-arrow-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/apache-arrow-dev-10.0.1-r2.apk"
+version = "10.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache-arrow", "10.0.1-r2"], ["grpc-dev", "1.50.1-r0"], ["brotli-dev", "1.0.9-r9"], ["glog-dev", "0.6.0-r1"], ["lz4-dev", "1.9.4-r1"], ["utf8proc-dev", "2.8.0-r0"], ["zstd-dev", "1.5.2-r9"], ["protobuf-dev", "3.21.9-r0"], ["thrift-dev", "0.17.0-r0"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

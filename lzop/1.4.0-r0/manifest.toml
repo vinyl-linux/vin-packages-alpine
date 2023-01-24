@@ -1,0 +1,15 @@
+checksum = "d1d2e8fa639f0341cc48747b1050bc1acfcfb65f7e98dcb88a4643b028faa851"
+licence = "GPL-2.0-only"
+provides = "lzop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lzop-1.04-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lzo", "2.10.0-r3"]]

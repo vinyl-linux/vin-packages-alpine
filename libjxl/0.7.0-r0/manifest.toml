@@ -1,0 +1,15 @@
+checksum = "4d50d4132eab8ceb016b5103045d0507f4eb99126503428426cdc8ac00cb37c6"
+licence = "Apache-2.0"
+provides = "libjxl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libjxl-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lcms2", "2.14.0-r0"], ["libstdc++", "12.2.1"]]

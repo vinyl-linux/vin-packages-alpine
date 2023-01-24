@@ -1,0 +1,15 @@
+checksum = "231664b9234f79826943bf9096f26581e67d6bad01fd561474f63aa3d858a0b7"
+licence = "LGPL-2.1-only"
+provides = "libspecbleach-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspecbleach-dev-0.1.6-r0.apk"
+version = "0.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fftw-dev", "3.3.10-r1"], ["pkgconf", "1.9.4-r0"]]

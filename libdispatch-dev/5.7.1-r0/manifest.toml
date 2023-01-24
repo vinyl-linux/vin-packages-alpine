@@ -1,0 +1,15 @@
+checksum = "1f459a26667a28a4d0bf322543f8d0c6d70d78364f1c15b2890146f51ee1a709"
+licence = "Apache-2.0"
+provides = "libdispatch-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdispatch-dev-5.7.1-r0.apk"
+version = "5.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdispatch", "5.7.1-r0"], ["bsd-compat-headers", "0.7.2-r3"]]

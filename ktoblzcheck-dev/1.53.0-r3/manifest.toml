@@ -1,0 +1,15 @@
+checksum = "7f2c7ca408e46c2c9aa391dee503f102b76025b20f920a28230daeaecafab1f1"
+licence = "LGPL-2.1-or-later"
+provides = "ktoblzcheck-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ktoblzcheck-dev-1.53-r3.apk"
+version = "1.53.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ktoblzcheck", "1.53.0-r3"], ["pkgconf", "1.9.4-r0"]]

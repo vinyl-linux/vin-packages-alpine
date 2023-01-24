@@ -1,0 +1,15 @@
+checksum = "2dc4784e7a4f73993fa51bc5187fd59b6c41f706abff96eacddd85bde04e685b"
+licence = "GPL-3.0-only"
+provides = "sioyek"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sioyek-1.5.0-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["mupdf-libs", "1.21.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

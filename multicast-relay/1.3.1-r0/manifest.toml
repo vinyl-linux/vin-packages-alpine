@@ -1,0 +1,15 @@
+checksum = "f3454ef107bd47415da659351fb31ae909a502404d070fecd89cfbfd64e0a3b3"
+licence = "GPL-3.0-or-later"
+provides = "multicast-relay"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/multicast-relay-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-netifaces", "0.11.0-r1"]]

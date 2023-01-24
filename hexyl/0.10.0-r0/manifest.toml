@@ -1,0 +1,15 @@
+checksum = "017e31add50c36d50d9f28e383f2e3f70ca11ed54b6720ff94c14e8d97f13214"
+licence = "Apache-2.0 OR MIT"
+provides = "hexyl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hexyl-0.10.0-r0.apk"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

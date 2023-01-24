@@ -1,0 +1,15 @@
+checksum = "7da0f2d977d65407003abb460a8f1f46bd0314bd16beb4fe26b86053cb459161"
+licence = "MIT"
+provides = "bandwhich"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bandwhich-0.20.0-r1.apk"
+version = "0.20.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "b813de9e2306f650e5ef2ce7b92adcfba07dbf907522469827944745e10501c8"
+licence = "AGPL-3.0-only"
+provides = "mycorrhiza"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mycorrhiza-1.13.0-r1.apk"
+version = "1.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["yash-binsh", "2.53.0-r2"]]

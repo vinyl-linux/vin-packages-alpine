@@ -1,0 +1,15 @@
+checksum = "976852db6053f3f45437e693fdfa169c714dfae55cb1f4273bd06a3689273006"
+licence = "GPL-2.0-or-later"
+provides = "git-scalar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-scalar-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["musl", "1.2.3-r4"], ["pcre2", "10.42.0-r0"], ["zlib", "1.2.13-r0"]]

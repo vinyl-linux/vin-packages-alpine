@@ -1,0 +1,15 @@
+checksum = "cab6adfecf425da74b1cfcc35aaa11fc1d901fbdf02aab64b1382172387552f1"
+licence = "BSD-2-Clause"
+provides = "pgexportdoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pgexportdoc-0.1.4-r2.apk"
+version = "0.1.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

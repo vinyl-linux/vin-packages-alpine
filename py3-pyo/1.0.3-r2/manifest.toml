@@ -1,0 +1,15 @@
+checksum = "953ead6713a637bda602eb60575ab2d835f5755772151444eff3c0baf249c7d4"
+licence = "LGPL-3.0-or-later"
+provides = "py3-pyo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyo-1.0.3-r2.apk"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["python3-tkinter", "3.10.8-r1"], ["musl", "1.2.3-r4"], ["portaudio", "19.7.0-r0"], ["libsndfile", "1.1.0-r2"]]

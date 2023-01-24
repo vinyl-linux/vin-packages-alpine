@@ -1,0 +1,15 @@
+checksum = "ea8bf63013e01568add248c62030f92c9e47370c8a8353ed1a79e59e76ce9a1a"
+licence = "GPL-3.0-or-later"
+provides = "diffoscope"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/diffoscope-227-r0.apk"
+version = "227.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-libarchive-c", "4.0.0-r0"], ["py3-magic", "0.4.24-r1"], ["python3", "3.10.9-r1"]]

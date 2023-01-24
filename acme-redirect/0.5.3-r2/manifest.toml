@@ -1,0 +1,15 @@
+checksum = "e0702d9b9a5e213989178e1f9f661bda063300ef294013f0ccc08172c7ef2dcd"
+licence = "GPL-3.0-or-later"
+provides = "acme-redirect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/acme-redirect-0.5.3-r2.apk"
+version = "0.5.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

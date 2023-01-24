@@ -1,0 +1,15 @@
+checksum = "39700e4434950345cb5ede143173af41541cc0e5ff2dd300731a65b6c0afc2ec"
+licence = "GPL-2.0-or-later"
+provides = "alsa-tools-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alsa-tools-gui-1.2.5-r2.apk"
+version = "1.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["fltk", "1.3.8-r0"], ["gtk+3.0", "3.24.36-r0"], ["gtk+2.0", "2.24.33-r7"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

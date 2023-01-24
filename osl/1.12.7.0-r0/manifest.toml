@@ -1,0 +1,15 @@
+checksum = "7354d2d3d0a11878fbf36551f89c6c721fbe5c75ad318d4ba4ba17fbfd847b0f"
+licence = "BSD-3-Clause"
+provides = "osl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/osl-1.12.7.0-r0.apk"
+version = "1.12.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openimageio", "2.4.5.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["osl-libs", "1.12.7.0-r0"], ["pugixml", "1.13.0-r0"], ["libstdc++", "12.2.1"]]

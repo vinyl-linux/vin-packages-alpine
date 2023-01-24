@@ -1,0 +1,15 @@
+checksum = "c10d70306534774da3bbc47d076e5c9ee7b225fa494dcc9dfa4c09cdc6f11241"
+licence = "MIT"
+provides = "lua5.2-cqueues"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.2-cqueues-20200726-r4.apk"
+version = "20200726.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

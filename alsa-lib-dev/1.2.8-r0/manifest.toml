@@ -1,0 +1,15 @@
+checksum = "1da078ed4f41d07ed73bf40f3bfc770bf596dc9cf272fae5c82f3e9ed395a714"
+licence = "LGPL-2.1-or-later"
+provides = "alsa-lib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alsa-lib-dev-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["pkgconf", "1.9.4-r0"]]

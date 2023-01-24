@@ -1,0 +1,15 @@
+checksum = "eac4c9cb42466a8e9b033879ab44307bd1b0d1a3b3bc592270354f3a77bcc193"
+licence = "MIT"
+provides = "ruby-rugged"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-rugged-1.5.0.1-r0.apk"
+version = "1.5.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgit2", "1.5.1-r0"], ["ruby-libs", "3.1.3-r0"], ["libucontext", "1.2.0-r0"]]

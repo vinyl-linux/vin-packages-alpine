@@ -1,0 +1,15 @@
+checksum = "9b858dd9309dcbeef9acd54f62e0dfd49979b93acc54b5663a9d586b0c4f8947"
+licence = "Apache-2.0"
+provides = "apache2-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-ldap-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["apr-util-ldap", "1.6.1-r14"], ["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

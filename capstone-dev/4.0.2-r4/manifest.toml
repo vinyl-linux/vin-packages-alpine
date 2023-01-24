@@ -1,0 +1,15 @@
+checksum = "30967755d3f92fc0910b420d3037d5b65b6c078c8fd39436e3f7fd65ff32d1b5"
+licence = "BSD-3-Clause-Clear"
+provides = "capstone-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/capstone-dev-4.0.2-r4.apk"
+version = "4.0.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["capstone", "4.0.2-r4"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2ffb5a44138b2884a2b78fece0dc35bbc5d1eff388bec5d69176ad903b6ee70f"
+licence = "GPL-3.0-or-later AND BSD-2-Clause"
+provides = "kalendar-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kalendar-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "22.8.3-r0"], ["kirigami2", "5.100.0-r1"], ["qt5-qtlocation", "5.15.6"]]

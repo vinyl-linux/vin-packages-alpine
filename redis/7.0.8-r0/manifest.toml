@@ -1,0 +1,15 @@
+checksum = "f1f9bf7f119cb16e23bfec134e17f853f2756bab6b27b38a8f70c9eceb9df45e"
+licence = "BSD-3-Clause"
+provides = "redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/redis-7.0.8-r0.apk"
+version = "7.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

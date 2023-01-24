@@ -1,0 +1,15 @@
+checksum = "8f98cd82422558af7b7ceb81b553364cb272f58de75f83ff836059dcab217d39"
+licence = "GPL-2.0-or-later"
+provides = "xapian-core-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xapian-core-dev-1.4.21-r0.apk"
+version = "1.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxapian", "1.4.21-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "80889be43e403d2e91269b0f6d52906df9523180e750183e1c5db352f055006e"
+licence = "GPL-3.0-or-later"
+provides = "libcsys-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcsys-dev-4.4.1-r0.apk"
+version = "4.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcsys", "4.4.1-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "004aaa2c5c779f62007a82aa214c05a3f1c94dc998ce94ab9534d8f150568073"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "networkmanager-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-qt-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

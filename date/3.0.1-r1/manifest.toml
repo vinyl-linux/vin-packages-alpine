@@ -1,0 +1,15 @@
+checksum = "c420820c726e29d1ec73de11940bb59dbceb083712e1d15c89d7ce8a7cf4b3e1"
+licence = "MIT"
+provides = "date"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/date-3.0.1-r1.apk"
+version = "3.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

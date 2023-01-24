@@ -1,0 +1,15 @@
+checksum = "59830ccaa13af87abbd9f623ed8820526ddc895c2d127ba66cd90b1746c6dfed"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-runner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-runner-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwindowsystem", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libqtxdg", "3.10.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lxqt-globalkeys", "1.2.0-r0"], ["liblxqt", "1.2.0-r0"], ["muparser", "2.3.3-r1"], ["libstdc++", "12.2.1"]]

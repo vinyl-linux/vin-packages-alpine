@@ -1,0 +1,15 @@
+checksum = "3b090d8e8ae472eff9ec845c8c898808ec59aea4ebc7415af79127a98ff94d7f"
+licence = "BSD-3-Clause"
+provides = "ripmime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ripmime-1.4.0.10-r3.apk"
+version = "1.4.0.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

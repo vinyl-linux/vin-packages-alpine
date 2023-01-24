@@ -1,0 +1,15 @@
+checksum = "3fc6e5dee83352b2aae3874750e2d3a20bf30eb066ab78c56ab15dd90744edf3"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "gcc-go"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gcc-go-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["libgo", "12.2.1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.13-r0"]]

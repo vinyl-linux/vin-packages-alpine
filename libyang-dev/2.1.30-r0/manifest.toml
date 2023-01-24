@@ -1,0 +1,15 @@
+checksum = "9499d8fb453e7e21ca1c03f44861d003228c9d719f57eb51f7e740e60a0f26ff"
+licence = "BSD-3-Clause-Clear"
+provides = "libyang-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libyang-dev-2.1.30-r0.apk"
+version = "2.1.30-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libyang", "2.1.30-r0"], ["pcre2-dev", "10.42.0-r0"], ["pkgconf", "1.9.4-r0"]]

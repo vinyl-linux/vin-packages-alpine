@@ -1,0 +1,15 @@
+checksum = "713f0f0cab8a0afed574e7ca3e38e00bc045bb12b02618032daf523042adf977"
+licence = "BSD-2-Clause"
+provides = "muparser-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/muparser-dev-2.3.3-r1.apk"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["muparser", "2.3.3-r1"], ["pkgconf", "1.9.4-r0"]]

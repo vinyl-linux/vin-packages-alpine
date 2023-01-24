@@ -1,0 +1,15 @@
+checksum = "801283fd5b20ce09e8e7c8b29ccc6f923f1ad6fb4349b3f291cdda278ae1fc6c"
+licence = "Apache-2.0"
+provides = "erlang-megaco"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/erlang-megaco-25.1.2-r0.apk"
+version = "25.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang-debugger", "25.1.2-r0"], ["erlang-et", "25.1.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "19cdc6cadea5f82e28d68fecc4bfae1646d5b1a0d694b0794babcd139da87ed8"
+licence = "LGPL-2.1-or-later AND BSD-3-Clause AND MIT"
+provides = "kjs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kjs-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["perl-dev", "5.36.0-r0"], ["pcre-dev", "8.45.0-r2"], ["kjs", "5.100.0-r0"]]

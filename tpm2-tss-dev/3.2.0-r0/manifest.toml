@@ -1,0 +1,15 @@
+checksum = "e66376c1b686fc4d954000e190d78c7246003d08e9420da2ff86d6489725b35e"
+licence = "BSD-2-Clause"
+provides = "tpm2-tss-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-tss-dev-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["json-c-dev", "0.16.0-r2"], ["openssl-dev", "3.0.7-r2"], ["curl-dev", "7.87.0-r1"], ["pkgconf", "1.9.4-r0"], ["tpm2-tss-esys", "3.2.0-r0"], ["tpm2-tss-fapi", "3.2.0-r0"], ["tpm2-tss-mu", "3.2.0-r0"], ["tpm2-tss-rc", "3.2.0-r0"], ["tpm2-tss-sys", "3.2.0-r0"], ["tpm2-tss-tcti-cmd", "3.2.0-r0"], ["tpm2-tss-tcti-device", "3.2.0-r0"], ["tpm2-tss-tcti-mssim", "3.2.0-r0"], ["tpm2-tss-tcti-pcap", "3.2.0-r0"], ["tpm2-tss-tcti-swtpm", "3.2.0-r0"], ["tpm2-tss-tctildr", "3.2.0-r0"]]

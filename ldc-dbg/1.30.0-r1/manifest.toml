@@ -1,0 +1,15 @@
+checksum = "6e51ce2be8f38284cf1bd0173dcd92d16f157381f6e01e4673935a7c5bd26b5a"
+licence = "BSD-3-Clause AND BSL-1.0 AND ( Artistic-1.0 OR GPL-2.0-or-later ) AND NCSA AND MIT"
+provides = "ldc-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ldc-dbg-1.30.0-r1.apk"
+version = "1.30.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm-libunwind-dev", "15.0.7-r0"], ["tzdata", "2022.0.0-f-r1"], ["ldc-static", "1.30.0-r1"]]

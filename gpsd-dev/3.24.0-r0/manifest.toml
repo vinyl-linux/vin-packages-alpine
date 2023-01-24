@@ -1,0 +1,15 @@
+checksum = "4aaeae33a8d99abe9bfe5e6e7c6e0853b218564917f3a6e6d3cc30ccd3f62114"
+licence = "BSD-2-Clause"
+provides = "gpsd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpsd-dev-3.24-r0.apk"
+version = "3.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpsd", "3.24.0-r0"], ["pkgconf", "1.9.4-r0"]]

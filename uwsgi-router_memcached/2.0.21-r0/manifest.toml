@@ -1,0 +1,15 @@
+checksum = "4a9ce7fee1b93ffb29d61a3b060955683f0fe4be0955f2679a84c72ba9f7bfb3"
+licence = "custom"
+provides = "uwsgi-router_memcached"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-router_memcached-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

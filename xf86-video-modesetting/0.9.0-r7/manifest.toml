@@ -1,0 +1,15 @@
+checksum = "96040a6cabe5cc9a83a199174282836edaca360b4154b1e9377f88dfecc81e85"
+licence = "MIT"
+provides = "xf86-video-modesetting"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-video-modesetting-0.9.0-r7.apk"
+version = "0.9.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xorg-server", "21.1.6-r0"]]

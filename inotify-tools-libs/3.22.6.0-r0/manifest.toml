@@ -1,0 +1,15 @@
+checksum = "3ad46a6b9c0bb0065f213355bfa64f1a88205109071801f58e001af4403fe6da"
+licence = "GPL-2.0-only"
+provides = "inotify-tools-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/inotify-tools-libs-3.22.6.0-r0.apk"
+version = "3.22.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

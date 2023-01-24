@@ -1,0 +1,15 @@
+checksum = "de93f9b346f711842774ec7b70cf1a5ccca11b1bf39dc092a33addced3963c24"
+licence = "MIT"
+provides = "libverto-libev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libverto-libev-0.3.2-r1.apk"
+version = "0.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"], ["libverto", "0.3.2-r1"]]

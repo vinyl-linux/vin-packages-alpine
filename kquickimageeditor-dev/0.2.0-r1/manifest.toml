@@ -1,0 +1,15 @@
+checksum = "94e107c5325933df049fcd0f8f0ae39698f993c73b045a3953a8b5d549e159cf"
+licence = "BSD-2-Clause AND LGPL-2.1-or-later"
+provides = "kquickimageeditor-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kquickimageeditor-dev-0.2.0-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"]]

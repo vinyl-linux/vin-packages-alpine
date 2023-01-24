@@ -1,0 +1,15 @@
+checksum = "2cb0b4d5a086317262ad4fb9a074b6b266e85332f89d1bc513514c9b74b69df6"
+licence = "AGPL-3.0-only"
+provides = "dssim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dssim-3.2.3-r0.apk"
+version = "3.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

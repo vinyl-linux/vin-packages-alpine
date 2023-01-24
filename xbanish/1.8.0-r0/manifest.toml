@@ -1,0 +1,15 @@
+checksum = "fd29622c67b5e1e2f24dc4c2c7d8b25f28b0f76c98be5e3cfa38c327b28557ea"
+licence = "ISC"
+provides = "xbanish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xbanish-1.8-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxfixes", "6.0.0-r0"], ["libxi", "1.8.0-r0"], ["musl", "1.2.3-r4"]]

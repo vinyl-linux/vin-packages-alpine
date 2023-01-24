@@ -1,0 +1,15 @@
+checksum = "52377e0550f3132f8b7b3cb5a2329aec135238ab04ce65d52319beede8812ec0"
+licence = "LGPL-2.1-only"
+provides = "py3-fann2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-fann2-1.2.0-r3.apk"
+version = "1.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["fann-double", "2.2.0-r3"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

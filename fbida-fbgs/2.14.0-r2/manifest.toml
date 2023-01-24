@@ -1,0 +1,15 @@
+checksum = "c9713c88e8a2d8af6a66bc46d5c42ed727fcd7a2363796d7db0d17c465b0d463"
+licence = "GPL-2.0-only"
+provides = "fbida-fbgs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fbida-fbgs-2.14-r2.apk"
+version = "2.14.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fbida-fbi", "2.14.0-r2"], ["ghostscript", "10.0.0-r0"]]

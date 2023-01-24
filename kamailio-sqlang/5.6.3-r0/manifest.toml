@@ -1,0 +1,15 @@
+checksum = "ff5097994dea2f0b37a08638e0ef5ebb3efa37ec37bdb0e0492b07570047657a"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-sqlang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-sqlang-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

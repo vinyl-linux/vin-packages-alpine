@@ -1,0 +1,15 @@
+checksum = "cf0f339eeecf8d61dc8a85d8c4f25ce3c4856fcf65e7c0ea255966a3e5d493cf"
+licence = "GPL-2.0"
+provides = "ircservices"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ircservices-5.1.24-r6.apk"
+version = "5.1.24-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

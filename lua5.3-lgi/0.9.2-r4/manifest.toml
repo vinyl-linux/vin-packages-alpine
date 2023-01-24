@@ -1,0 +1,15 @@
+checksum = "b07691847a171755ffa02623354cc342f87a0e0c1fc7ee8ac579f39284589ebc"
+licence = "MIT"
+provides = "lua5.3-lgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.3-lgi-0.9.2-r4.apk"
+version = "0.9.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gobject-introspection", "1.74.0-r1"], ["glib", "2.74.5-r0"]]

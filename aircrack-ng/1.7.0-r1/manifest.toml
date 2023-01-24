@@ -1,0 +1,15 @@
+checksum = "740ed207555347f0aa3882d1968a92f08323790a5f42bc27023fdd4530d0d654"
+licence = "GPL-2.0-or-later"
+provides = "aircrack-ng"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aircrack-ng-1.7-r1.apk"
+version = "1.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ethtool", "6.0.0-r0"], ["wireless-tools", "30.0.0"], ["iw", "5.19.0-r0"], ["sqlite", "3.40.1-r0"], ["grep", "3.8.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libnl3", "3.7.0-r0"], ["libpcap", "1.10.1-r1"], ["pcre", "8.45.0-r2"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

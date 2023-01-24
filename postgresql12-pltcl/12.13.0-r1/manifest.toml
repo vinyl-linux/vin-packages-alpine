@@ -1,0 +1,15 @@
+checksum = "3d72090afeef795833122ecacba35c5e2540dd0b653618a666e859ea78404079"
+licence = "PostgreSQL"
+provides = "postgresql12-pltcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql12-pltcl-12.13-r1.apk"
+version = "12.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql12", "12.13.0-r1"], ["pgtcl", "3.0.0-r0"], ["musl", "1.2.3-r4"], ["tcl", "8.6.12-r1"]]

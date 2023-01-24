@@ -1,0 +1,15 @@
+checksum = "fffd9e14740f28694d94206fba3c312c4b19683116284750141d5c30a0808713"
+licence = "MIT"
+provides = "py3-tabulate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tabulate-0.9.0-r0.apk"
+version = "0.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-wcwidth", "0.2.5-r2"]]

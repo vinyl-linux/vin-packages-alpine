@@ -1,0 +1,15 @@
+checksum = "9564297f04d83b8f23454ee41312f70a3f0102d101dd3892ef6a554bbb2d695b"
+licence = "GPL-2.0-only"
+provides = "amsynth-lv2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/amsynth-lv2-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libintl", "0.21.1-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libgcc", "12.2.1"], ["gtk+2.0", "2.24.33-r7"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

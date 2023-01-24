@@ -1,0 +1,15 @@
+checksum = "68c6eab08584dc4e2f35c5a0aca631c484dbbef21ca9f1680af93219f840f3b1"
+licence = "MIT"
+provides = "onefetch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/onefetch-2.12.0-r1.apk"
+version = "2.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgit2", "1.5.1-r0"]]

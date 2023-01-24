@@ -1,0 +1,15 @@
+checksum = "74246a7fc47a424ebfc15c038b39503f57d47e5060d4d6c68910b4253caf67a3"
+licence = "MIT"
+provides = "luufs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/luufs-0.1-r1.apk"
+version = "0.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "75f36f9afdf5e8f0e4e8b4a692b1086b7c5785e1f813b69b38058d282327aa23"
+licence = "GPL-2.0-only"
+provides = "lua5.3-apk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.3-apk-2.12.10-r1.apk"
+version = "2.12.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ca-certificates-bundle", "20220614.0.0-r4"], ["apk-tools", "2.12.10-r1"]]

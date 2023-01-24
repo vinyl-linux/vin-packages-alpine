@@ -1,0 +1,15 @@
+checksum = "9100901a144ee5fc5f666ab35f07ace7c83c3a2aed3ad25aa00acc2025ed6fea"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "libcephfs17"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcephfs17-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librados17", "17.2.5-r5"], ["musl", "1.2.3-r4"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

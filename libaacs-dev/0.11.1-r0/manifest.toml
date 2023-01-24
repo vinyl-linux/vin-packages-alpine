@@ -1,0 +1,15 @@
+checksum = "6d1e3c3d4a1b97c1dca9fdbe983160ee19bcf9bca23ba6731a4730dfb9cfce0a"
+licence = "LGPL-2.1-only"
+provides = "libaacs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libaacs-dev-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaacs", "0.11.1-r0"], ["pkgconf", "1.9.4-r0"]]

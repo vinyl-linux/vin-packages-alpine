@@ -1,0 +1,15 @@
+checksum = "ccb546234c589e9f9141d75925271dff41f8b59ba92b7db0e7bce43224a32430"
+licence = "BSD-3-Clause"
+provides = "nmh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nmh-1.7.1-r7.apk"
+version = "1.7.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["gdbm", "1.23.0-r0"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"], ["libssl3", "3.0.7-r2"]]

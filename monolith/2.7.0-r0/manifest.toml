@@ -1,0 +1,15 @@
+checksum = "408a0b9da07f56fdb78f2892e16513ff2aa7475ea464c140f9f0fd73c43804a4"
+licence = "CC0-1.0"
+provides = "monolith"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/monolith-2.7.0-r0.apk"
+version = "2.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

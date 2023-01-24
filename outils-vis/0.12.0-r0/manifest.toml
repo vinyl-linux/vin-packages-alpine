@@ -1,0 +1,15 @@
+checksum = "e384ae9542807b0a22d61226034063aa88fe1aab4f94a7bb0fef29a45ff8705f"
+licence = "BSD-3-Clause ISC"
+provides = "outils-vis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/outils-vis-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

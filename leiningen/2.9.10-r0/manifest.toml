@@ -1,0 +1,15 @@
+checksum = "5240ce91605ad52ace988dcde9408596ae6fc444660bc61aec726617ea9caa0b"
+licence = "EPL-1.0"
+provides = "leiningen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/leiningen-2.9.10-r0.apk"
+version = "2.9.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["openjdk9-jdk", "9.0.4"]]

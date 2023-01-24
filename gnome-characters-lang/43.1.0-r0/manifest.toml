@@ -1,0 +1,15 @@
+checksum = "aaa5aaa4fb1d4c665b6d35496c42a67a77d48fb426a3bc875f8cff02dcd434e7"
+licence = "BSD-3-Clause AND GPL-2.0-or-later"
+provides = "gnome-characters-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-characters-lang-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gjs", "1.74.1-r0"], ["gnome-desktop", "43.1.0-r0"], ["gtk4.0", "4.8.3-r0"], ["libadwaita", "1.2.1-r0"]]

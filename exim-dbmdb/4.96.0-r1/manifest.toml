@@ -1,0 +1,15 @@
+checksum = "8069785294aba76e468bf35abd553379d527e3ff415fb131d26cae9f84297525"
+licence = "GPL-2.0-or-later"
+provides = "exim-dbmdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-dbmdb-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.96.0-r1"], ["musl", "1.2.3-r4"]]

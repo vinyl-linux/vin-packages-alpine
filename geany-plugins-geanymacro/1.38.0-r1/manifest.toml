@@ -1,0 +1,15 @@
+checksum = "8ea0bbfea58f5ef945520d742c761f454e81a3b6ff1abe1c9fdece0475a22c26"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geanymacro"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-geanymacro-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"]]

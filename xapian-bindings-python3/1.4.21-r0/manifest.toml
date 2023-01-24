@@ -1,0 +1,15 @@
+checksum = "6d1f45f4382910027e07202e500a74456b6132d945e8d32ec2f620f12fe7f80f"
+licence = "GPL-2.0-or-later"
+provides = "xapian-bindings-python3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xapian-bindings-python3-1.4.21-r0.apk"
+version = "1.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxapian", "1.4.21-r0"]]

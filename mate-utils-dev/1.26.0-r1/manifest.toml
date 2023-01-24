@@ -1,0 +1,15 @@
+checksum = "65640c35d9107eabac2012305b4d6cad05352a3b0e07e125960221a151a0110d"
+licence = "GPL-2.0-or-later"
+provides = "mate-utils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-utils-dev-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-utils", "1.26.0-r1"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

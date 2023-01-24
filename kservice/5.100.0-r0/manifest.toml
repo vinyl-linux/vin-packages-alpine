@@ -1,0 +1,15 @@
+checksum = "a1e4eff8830e93e626582971250004c4af145a8ac097f4be863ff464d86e3e67"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "kservice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kservice-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["kdbusaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

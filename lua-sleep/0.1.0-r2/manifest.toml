@@ -1,0 +1,15 @@
+checksum = "250790f89f301dbfd3dd857c57afb4a7e10b7030402b38496eddaa61b68d2dd9"
+licence = "Public-Domain"
+provides = "lua-sleep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua-sleep-0.1-r2.apk"
+version = "0.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

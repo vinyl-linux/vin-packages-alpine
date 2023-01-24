@@ -1,0 +1,15 @@
+checksum = "fa50541cfa024d8f2733e847c7000e0334abc2acd92ccd50244338ab0dda7394"
+licence = "MIT"
+provides = "fontconfig-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fontconfig-dev-2.14.1-r0.apk"
+version = "2.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["expat-dev", "2.5.0-r0"], ["freetype-dev", "2.12.1-r0"], ["pkgconf", "1.9.4-r0"]]

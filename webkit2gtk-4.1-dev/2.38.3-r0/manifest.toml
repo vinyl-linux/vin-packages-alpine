@@ -1,0 +1,15 @@
+checksum = "f9457189d47371f7ef61b0fa7c6a22a007e16a19f39ad1731d1b5d2af5c167a6"
+licence = "LGPL-2.0-or-later AND BSD-2-Clause"
+provides = "webkit2gtk-4.1-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webkit2gtk-4.1-dev-2.38.3-r0.apk"
+version = "2.38.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libsoup3-dev", "3.2.2-r0"], ["pkgconf", "1.9.4-r0"], ["webkit2gtk-4.1", "2.38.3-r0"]]

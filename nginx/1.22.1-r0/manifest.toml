@@ -1,0 +1,15 @@
+checksum = "e059fb227686369a66080c649cfc566624ef7d96f8112c70ee7d64c0932bf561"
+licence = "BSD-2-Clause"
+provides = "nginx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["pcre", "8.45.0-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

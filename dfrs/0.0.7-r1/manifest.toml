@@ -1,0 +1,15 @@
+checksum = "8d1bb21e868edbbaffbb1b890ae191e7fd1fc56c11b110eee052379f997d6fdd"
+licence = "MIT"
+provides = "dfrs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dfrs-0.0.7-r1.apk"
+version = "0.0.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

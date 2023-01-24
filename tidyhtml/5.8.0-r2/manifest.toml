@@ -1,0 +1,15 @@
+checksum = "514f9ff3ee5a9cf76ca34ac466fdf2a3e04026be71a258865d74ededadf0f5bd"
+licence = "W3C"
+provides = "tidyhtml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tidyhtml-5.8.0-r2.apk"
+version = "5.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["tidyhtml-libs", "5.8.0-r2"]]

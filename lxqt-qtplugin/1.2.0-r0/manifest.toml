@@ -1,0 +1,15 @@
+checksum = "0d77adccdcce1605f59a499b6b26cc420142650da15bb778173fc8be77f6439d"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-qtplugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-qtplugin-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libqtxdg", "3.10.0-r0"], ["musl", "1.2.3-r4"], ["libdbusmenu-qt", "0.9.3"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "26ec95cdfef3253c1db7fe17c1d703f88f92b34e253096097073595d0da43617"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtwayland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtwayland-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-egl", "22.2.5-r1"], ["mesa-gl", "22.2.5-r1"], ["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["qt6-qtdeclarative", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["wayland-libs-egl", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

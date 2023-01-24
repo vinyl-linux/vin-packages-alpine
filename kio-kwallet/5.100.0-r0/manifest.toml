@@ -1,0 +1,15 @@
+checksum = "c50338fe99a605457b3c19481ca42ba7f3d1b92f81539f2fda3ce793d9c70817"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later AND (LGPL-2.1-only OR LGPL-3.0-only)"
+provides = "kio-kwallet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kio-kwallet-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["kdbusaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["kwallet", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kwindowsystem", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

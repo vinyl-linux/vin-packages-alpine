@@ -1,0 +1,15 @@
+checksum = "1ee6d75169a816150a13004a97c7b4a738d49a3316a325fffb67542458afc132"
+licence = "GPL-3.0-or-later"
+provides = "presage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/presage-0.9.1-r2.apk"
+version = "0.9.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["tinyxml", "2.6.2-r1"]]

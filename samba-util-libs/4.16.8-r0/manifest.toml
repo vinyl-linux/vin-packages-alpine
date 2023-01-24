@@ -1,0 +1,15 @@
+checksum = "9d00376fbe5d7f1e8e1e25929a617a437c5620349982c8d9968780d97f4d78c3"
+licence = "GPL-3.0-or-later LGPL-3.0-or-later"
+provides = "samba-util-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/samba-util-libs-4.16.8-r0.apk"
+version = "4.16.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gnutls", "3.7.8-r2"], ["talloc", "2.3.4-r0"], ["tevent", "0.13.0-r0"]]

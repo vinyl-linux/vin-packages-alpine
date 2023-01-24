@@ -1,0 +1,15 @@
+checksum = "04cdecf81d1e5228fbb968b7a9d5136aab41a61d1ff391c849ed581127a1efb1"
+licence = "MIT"
+provides = "ldoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ldoc-1.4.6-r4.apk"
+version = "1.4.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua-penlight", "1.13.1-r0"], ["lua5.4", "5.4.4-r6"]]

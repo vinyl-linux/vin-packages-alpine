@@ -1,0 +1,15 @@
+checksum = "28f0a53686d056eea276f1f869443275b945de1ee7e1f4e22acb8411b1d0434b"
+licence = "GPL-2.0-or-later"
+provides = "safekeep-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/safekeep-client-1.5.1-r2.apk"
+version = "1.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["safekeep", "1.5.1-r2"]]

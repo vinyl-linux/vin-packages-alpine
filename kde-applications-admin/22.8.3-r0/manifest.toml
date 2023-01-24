@@ -1,0 +1,15 @@
+checksum = "88a0f93368a7ac1a8771a1e04ab3bead3f9b006bc4b584fd525b638b3edabbfe"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-admin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kde-applications-admin-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcron", "22.8.3-r0"]]

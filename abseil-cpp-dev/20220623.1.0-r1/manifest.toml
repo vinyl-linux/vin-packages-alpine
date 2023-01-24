@@ -1,0 +1,15 @@
+checksum = "91bc8a4d2f5f95dab78cfa5dd735bc5894043e352cf95add414de4c0c1c00367"
+licence = "Apache-2.0"
+provides = "abseil-cpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abseil-cpp-dev-20220623.1-r1.apk"
+version = "20220623.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abseil-cpp", "20220623.1.0-r1"], ["pkgconf", "1.9.4-r0"]]

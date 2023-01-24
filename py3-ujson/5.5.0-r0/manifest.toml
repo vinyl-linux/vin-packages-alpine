@@ -1,0 +1,15 @@
+checksum = "d03272461fb581c641917970024a22ef9ad495d60978ee733adc40f6ee226569"
+licence = "BSD-3-Clause"
+provides = "py3-ujson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ujson-5.5.0-r0.apk"
+version = "5.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

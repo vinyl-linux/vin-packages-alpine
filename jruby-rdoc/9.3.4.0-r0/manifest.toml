@@ -1,0 +1,15 @@
+checksum = "580cbb2c52d9bbce7a326829c4fd12774960f987001226d50ce2bbe9d994aa32"
+licence = "EPL-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later AND Ruby"
+provides = "jruby-rdoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jruby-rdoc-9.3.4.0-r0.apk"
+version = "9.3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jruby", "9.3.4.0-r0"], ["jruby-irb", "9.3.4.0-r0"]]

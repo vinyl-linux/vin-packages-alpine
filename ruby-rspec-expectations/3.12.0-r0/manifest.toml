@@ -1,0 +1,15 @@
+checksum = "513fd98427b9278e9b7e2920d2b7db5c59c27860704074afcd503c4b537bd504"
+licence = "MIT"
+provides = "ruby-rspec-expectations"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-rspec-expectations-3.12.0-r0.apk"
+version = "3.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-diff-lcs", "1.5.0-r1"], ["ruby-rspec-support", "3.12.0-r0"]]

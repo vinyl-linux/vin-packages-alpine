@@ -1,0 +1,15 @@
+checksum = "7384d2333986cf4db68e3a736bfa93114a7f783b7f16969ba885ffb8a2966fd7"
+licence = "MIT"
+provides = "xprop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xprop-1.2.5-r1.apk"
+version = "1.2.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "309bd9b0782027ea769c31cb0b96258abf7cae8cd807ee4cf4cbffc0f4065f8c"
+licence = "GPL-2.0-or-later BSD-3-Clause"
+provides = "nfs-utils-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nfs-utils-dbg-2.6.2-r0.apk"
+version = "2.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rpcbind", "1.2.6-r1"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "6fab4ae71b189372a573fd0012fd421b11a833159646990472cb8006c9b46afe"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-freetranslation"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-freetranslation-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

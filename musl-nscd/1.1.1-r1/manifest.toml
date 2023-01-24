@@ -1,0 +1,15 @@
+checksum = "e8f89e1477423cf07c30c4bdaa101476f3d90e82833f8890ed8ca0db2137c592"
+licence = "MIT"
+provides = "musl-nscd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/musl-nscd-1.1.1-r1.apk"
+version = "1.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

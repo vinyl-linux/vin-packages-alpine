@@ -1,0 +1,15 @@
+checksum = "b73bfecae8d61f3d7707d22ff874ad9b8baa03ee8ee7c0ace56a8975f5bc65da"
+licence = "LGPL-2.0-or-later"
+provides = "aspell-compat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aspell-compat-0.60.8-r2.apk"
+version = "0.60.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspell", "0.60.8-r2"]]

@@ -1,0 +1,15 @@
+checksum = "06f68d0e3f79eb1fc0afcc538c0b96a2f832660144e4d93d366e7acb3e0d69b3"
+licence = "GPL-2.0-or-later"
+provides = "bluez-cups"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bluez-cups-5.66-r1.apk"
+version = "5.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"]]

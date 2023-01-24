@@ -1,0 +1,15 @@
+checksum = "54465bed108cb0dee0d7cd71afd870ecf1a163cfd836c2e4646ec0ab20e4bf71"
+licence = "GPL-2.0-or-later"
+provides = "collectd-vserver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-vserver-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"]]

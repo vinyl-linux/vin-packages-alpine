@@ -1,0 +1,15 @@
+checksum = "df257640fa699c602edc56a8cea650652f982b60c2d4a6473384e8613c48dd61"
+licence = "CC0-1.0"
+provides = "meek-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/meek-server-0.37.0-r11.apk"
+version = "0.37.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

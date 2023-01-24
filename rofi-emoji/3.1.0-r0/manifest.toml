@@ -1,0 +1,15 @@
+checksum = "e44944cc1b8909d906c9b4cb6ec2f342f6f94cab393a78dd426ae32fe28dc611"
+licence = "MIT"
+provides = "rofi-emoji"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-emoji-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rofi-wayland", "1.7.5"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "41d1e3040970a7eafead88201a36ce083542b09a5910524227136497338287e5"
+licence = "Apache-2.0"
+provides = "bloaty-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bloaty-dev-1.1-r10.apk"
+version = "1.1.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bloaty", "1.1.0-r10"]]

@@ -1,0 +1,15 @@
+checksum = "ce07371efeb7bd3795cd3f32be2978f0c63b676d09b722247f615d0451a35cb4"
+licence = "GPL-2.0-only"
+provides = "nextcloud-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-client-3.6.2-r0.apk"
+version = "3.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtwebengine", "5.15.12-r0"], ["qt5-qtwebsockets", "5.15.6"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["qt5-qtkeychain", "0.13.2-r0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

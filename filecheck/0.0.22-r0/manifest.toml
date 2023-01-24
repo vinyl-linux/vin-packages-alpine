@@ -1,0 +1,15 @@
+checksum = "3a743585a4e005c94d2d3331241f7d7843fdfb544e37ae10531e084a33cc8501"
+licence = "Apache-2.0"
+provides = "filecheck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/filecheck-0.0.22-r0.apk"
+version = "0.0.22-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

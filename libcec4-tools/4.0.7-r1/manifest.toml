@@ -1,0 +1,15 @@
+checksum = "8b43d6e1dc549fbe71183621be1e556417b52d4d66913a83a7f53bb6a0ef7ef9"
+licence = "GPL-2.0-or-later"
+provides = "libcec4-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcec4-tools-4.0.7-r1.apk"
+version = "4.0.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["p8-platform", "2.1.0.1-r2"], ["libstdc++", "12.2.1"]]

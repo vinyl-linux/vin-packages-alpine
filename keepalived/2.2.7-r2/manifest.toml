@@ -1,0 +1,15 @@
+checksum = "ab5f7a7aed071b18a3cb874178c3813a59fa7cfb114e03167175a435501beddd"
+licence = "GPL-2.0-only"
+provides = "keepalived"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/keepalived-2.2.7-r2.apk"
+version = "2.2.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["keepalived-common", "2.2.7-r2"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libnl3", "3.7.0-r0"], ["libssl3", "3.0.7-r2"]]

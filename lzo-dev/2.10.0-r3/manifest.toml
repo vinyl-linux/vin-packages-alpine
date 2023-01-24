@@ -1,0 +1,15 @@
+checksum = "971f725ba3749d1e90ab4b08739d8fe183b3d37a2ce2e73e00ef7cfbc4c7ea42"
+licence = "GPL-2.0-or-later"
+provides = "lzo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lzo-dev-2.10-r3.apk"
+version = "2.10.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lzo", "2.10.0-r3"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9b3e1b1b525dd9cb25c168aec3b1a5ae28f8757d0a68e6ad2871e34f52e6aed1"
+licence = "GPL-2.0-or-later"
+provides = "py3-llfuse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-llfuse-1.4.1-r1.apk"
+version = "1.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["fuse", "2.9.9-r2"]]

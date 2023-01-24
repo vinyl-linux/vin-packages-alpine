@@ -1,0 +1,15 @@
+checksum = "63b63f8cb9555fa1ca666676d612757b223b0225db5067e932a221fe95d9cc9d"
+licence = "MIT"
+provides = "py3-alembic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-alembic-1.7.7-r0.apk"
+version = "1.7.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-sqlalchemy", "1.4.39-r0"], ["py3-mako", "1.2.3-r0"], ["py3-python-editor", "1.0.4-r3"], ["py3-dateutil", "2.8.2-r1"]]

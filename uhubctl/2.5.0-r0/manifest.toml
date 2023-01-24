@@ -1,0 +1,15 @@
+checksum = "7f2c648ed95e10d5eaa39b9b1b5670e8e4f4bb11bda5e949019aa3c595266e9f"
+licence = "GPL-2.0-only"
+provides = "uhubctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/uhubctl-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"]]

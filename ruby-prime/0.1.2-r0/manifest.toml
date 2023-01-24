@@ -1,0 +1,15 @@
+checksum = "3c78069750efad9435de9a79dd909c8443a87958071b5adbc0c33507a515ddbc"
+licence = "BSD-2-Clause AND Ruby"
+provides = "ruby-prime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-prime-0.1.2-r0.apk"
+version = "0.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"]]

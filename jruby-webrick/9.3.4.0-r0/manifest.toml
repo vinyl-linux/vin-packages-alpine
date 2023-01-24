@@ -1,0 +1,15 @@
+checksum = "6df51d967115f9c2bac76bd8ae0f3b70369ac596a57537b2480bce6abf0fab5f"
+licence = "EPL-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later AND Ruby"
+provides = "jruby-webrick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jruby-webrick-9.3.4.0-r0.apk"
+version = "9.3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jruby", "9.3.4.0-r0"]]

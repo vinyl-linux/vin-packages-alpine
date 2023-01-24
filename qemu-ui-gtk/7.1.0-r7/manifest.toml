@@ -1,0 +1,15 @@
+checksum = "b11e2695c56e8c23e7e32f8139bb81c96ebd061f72d568a8a14f8b8168426256"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-ui-gtk-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ui-opengl", "7.1.0-r7"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libepoxy", "1.5.10-r0"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pixman", "0.42.2-r0"], ["vte3", "0.70.2-r0"]]

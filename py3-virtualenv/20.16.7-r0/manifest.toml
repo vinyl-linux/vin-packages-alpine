@@ -1,0 +1,15 @@
+checksum = "d8213b847ac64a3c4a1f7b498ece51086ab38810bedb41b858c53d3018be4797"
+licence = "MIT"
+provides = "py3-virtualenv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-virtualenv-20.16.7-r0.apk"
+version = "20.16.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-platformdirs", "2.5.4-r0"], ["py3-distlib", "0.3.6-r0"], ["py3-filelock", "3.8.0-r0"]]

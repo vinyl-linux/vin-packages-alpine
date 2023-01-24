@@ -1,0 +1,15 @@
+checksum = "b1db87e24d34d3c13a6f237299a214f776764c1b93254ce7fdfca72707ef1235"
+licence = "GPL-2.0-or-later"
+provides = "vdr-epgsearch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vdr-epgsearch-2.6.1-r4.apk"
+version = "2.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.6.1-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

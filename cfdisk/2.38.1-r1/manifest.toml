@@ -1,0 +1,15 @@
+checksum = "f14b83c8ccb862b9802863598ccba19c95a0bbbdb2979e7fab5fccddf69c1edd"
+licence = "GPL-2.0-or-later"
+provides = "cfdisk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cfdisk-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libfdisk", "2.38.1-r1"], ["libmount", "2.38.1-r1"], ["ncurses-libs", "6.3.0"], ["libsmartcols", "2.38.1-r1"]]

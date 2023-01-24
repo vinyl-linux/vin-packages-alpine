@@ -1,0 +1,15 @@
+checksum = "767a051eebce076171f812d9f184aa178394730e84cbeb8ed61a60da2eb8607b"
+licence = "LGPL-2.0-or-later"
+provides = "akonadi-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/akonadi-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb", "10.6.11-r0"], ["qt5-qtbase-mysql", "5.15.6"], ["qt5-qtbase-sqlite", "5.15.6"]]

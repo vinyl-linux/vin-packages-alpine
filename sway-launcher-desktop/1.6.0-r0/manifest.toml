@@ -1,0 +1,15 @@
+checksum = "97cac9bd8ac1d4016cbf2632017ebb238eca84f5d4395dcfb3c8dbd6bf78aa34"
+licence = "GPL-3.0-only"
+provides = "sway-launcher-desktop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sway-launcher-desktop-1.6.0-r0.apk"
+version = "1.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["gawk", "5.1.1-r1"], ["fzf", "0.35.1-r1"]]

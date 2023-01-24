@@ -1,0 +1,15 @@
+checksum = "d68f903a329f579bb01087354ab07d9b057e65b6f8f8a85889bee74b48c07b11"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-algorithm-diff-xs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-algorithm-diff-xs-0.04-r7.apk"
+version = "0.4.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-algorithm-diff", "1.201.0-r0"], ["musl", "1.2.3-r4"]]

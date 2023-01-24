@@ -1,0 +1,15 @@
+checksum = "439aaf07e516f87cc5d6b5fd59fbcb229dc084d2ceffdbf0a4d6ffcce07a7152"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later AND BSD-3-Clause"
+provides = "haruna-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/haruna-lang-0.9.3-r1.apk"
+version = "0.9.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["yt-dlp", "2022.11.11-r0"]]

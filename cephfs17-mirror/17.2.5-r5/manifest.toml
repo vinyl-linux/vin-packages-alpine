@@ -1,0 +1,15 @@
+checksum = "47593601dc5b6e4c22617efc238c7b29ba5e58c153a47089bb78a81e10e6989c"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "cephfs17-mirror"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cephfs17-mirror-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librados17", "17.2.5-r5"], ["libcephfs17", "17.2.5-r5"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

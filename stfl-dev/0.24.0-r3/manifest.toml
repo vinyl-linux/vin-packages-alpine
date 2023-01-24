@@ -1,0 +1,15 @@
+checksum = "f4196a5de87eb34613808db97f175177356a12c0422f913141191ca594a91ede"
+licence = "LGPL-3.0-or-later"
+provides = "stfl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/stfl-dev-0.24-r3.apk"
+version = "0.24.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["stfl", "0.24.0-r3"]]

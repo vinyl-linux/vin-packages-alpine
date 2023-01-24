@@ -1,0 +1,15 @@
+checksum = "46b78db2263569af46d3c1d9ebb0d4550c753fbbcf8a9000c2c572d81a492a02"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-vod"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-vod-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

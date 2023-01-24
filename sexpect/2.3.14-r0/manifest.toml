@@ -1,0 +1,15 @@
+checksum = "e23b3cef45bf26428795d2247aa638a44cdd3dd10a5dc069d50ac697e5217b78"
+licence = "GPL-3.0-only"
+provides = "sexpect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sexpect-2.3.14-r0.apk"
+version = "2.3.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

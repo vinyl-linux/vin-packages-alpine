@@ -1,0 +1,15 @@
+checksum = "f2dc1e1c7d80c4770f7dc561700deb37639e0e06ad41db539824f0eb00bd919d"
+licence = "MPL-2.0"
+provides = "librevenge-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librevenge-dev-0.0.4-r10.apk"
+version = "0.0.4-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.80.0-r3"], ["zlib-dev", "1.2.13-r0"], ["cppunit-dev", "1.15.1-r1"], ["librevenge", "0.0.4-r10"], ["pkgconf", "1.9.4-r0"]]

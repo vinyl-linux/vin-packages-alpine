@@ -1,0 +1,15 @@
+checksum = "aec45c611eebf2bedc8d314894601611047e0ffb4300d14e7a53e7c3b915f156"
+licence = "GPL-2.0-only"
+provides = "ibus-hangul-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ibus-hangul-lang-1.5.4-r1.apk"
+version = "1.5.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.2-r0"], ["gtk-update-icon-cache", "3.24.36-r0"]]

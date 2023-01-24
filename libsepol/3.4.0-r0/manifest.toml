@@ -1,0 +1,15 @@
+checksum = "61710c628d5bedd20503b3426e9aff0bdc809e26ad0a3245c4888251d4592f2b"
+licence = "LGPL-2.0-or-later"
+provides = "libsepol"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsepol-3.4-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

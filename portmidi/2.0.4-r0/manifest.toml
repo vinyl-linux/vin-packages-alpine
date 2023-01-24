@@ -1,0 +1,15 @@
+checksum = "f1f2b1e1f2cc1873849f33099827704aa29434f42aea928b8076ca833104764d"
+licence = "MIT"
+provides = "portmidi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/portmidi-2.0.4-r0.apk"
+version = "2.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a7ab463d7773f81be0ba19ac8c9fa93081acda0d7080b2eec41c792e6c71da33"
+licence = "ISC"
+provides = "iw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iw-5.19-r0.apk"
+version = "5.19.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libnl3", "3.7.0-r0"]]

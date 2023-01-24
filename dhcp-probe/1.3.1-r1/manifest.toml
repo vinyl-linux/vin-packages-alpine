@@ -1,0 +1,15 @@
+checksum = "eb5e98e4416b3f44c20372f755b42ff26c822842bd95f9ca8f4d310c5ec3b76b"
+licence = "GPL"
+provides = "dhcp-probe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dhcp-probe-1.3.1-r1.apk"
+version = "1.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libnet", "1.2.0-r1"], ["libpcap", "1.10.1-r1"]]

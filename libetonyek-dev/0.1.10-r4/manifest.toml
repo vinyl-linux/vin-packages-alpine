@@ -1,0 +1,15 @@
+checksum = "1b23b150d964f8d0cc1594df93f8580e837e1acb9a2a012960cfb362cc75ddf9"
+licence = "MPL-2.0"
+provides = "libetonyek-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libetonyek-dev-0.1.10-r4.apk"
+version = "0.1.10-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glm-dev", "0.9.9.8-r2"], ["boost-dev", "1.80.0-r3"], ["librevenge-dev", "0.0.4-r10"], ["libxml2-dev", "2.10.3-r1"], ["zlib-dev", "1.2.13-r0"], ["liblangtag-dev", "0.6.4-r0"], ["libetonyek", "0.1.10-r4"], ["pkgconf", "1.9.4-r0"]]

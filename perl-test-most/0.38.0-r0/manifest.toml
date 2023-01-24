@@ -1,0 +1,15 @@
+checksum = "b424842f9b0caae1100819fb6890b6d26593c1470bd092fdd66a012b6f62a1f6"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-most"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-test-most-0.38-r0.apk"
+version = "0.38.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-exception-class", "1.45.0-r0"], ["perl-test-differences", "0.69.0-r0"], ["perl-test-warn", "0.37.0-r0"], ["perl-test-exception", "0.43.0-r2"], ["perl-test-deep", "1.130.0-r3"]]

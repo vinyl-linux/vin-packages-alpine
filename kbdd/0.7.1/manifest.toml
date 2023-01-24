@@ -1,0 +1,15 @@
+checksum = "6c0c4187d0da3453a4fa2fc1e5c5d686c57e6a82bb965b9fc06ed0d3b82ff870"
+licence = "GPL-2.0-or-later"
+provides = "kbdd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kbdd-0.7.1_git20210426-r0.apk"
+version = "0.7.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["dbus-glib", "0.112.0-r1"], ["glib", "2.74.5-r0"]]

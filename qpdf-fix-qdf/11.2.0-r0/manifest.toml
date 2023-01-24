@@ -1,0 +1,15 @@
+checksum = "77ad3847f3c75b214a9bc306545d01c3e33007e211acf78fb0478e0b5718f1b3"
+licence = "Apache-2.0"
+provides = "qpdf-fix-qdf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qpdf-fix-qdf-11.2.0-r0.apk"
+version = "11.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["qpdf-libs", "11.2.0-r0"], ["libstdc++", "12.2.1"]]

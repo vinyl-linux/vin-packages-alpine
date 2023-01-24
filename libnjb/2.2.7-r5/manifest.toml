@@ -1,0 +1,15 @@
+checksum = "71859e4c3d697123c822c1aeca800774ba68e22588cc03c9036e186fd1a44517"
+licence = "BSD-3-Clause"
+provides = "libnjb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnjb-2.2.7-r5.apk"
+version = "2.2.7-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libusb-compat", "0.1.7-r1"]]

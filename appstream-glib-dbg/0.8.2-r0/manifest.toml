@@ -1,0 +1,15 @@
+checksum = "309c249be812f4b0ad8ca9664eb5fec5095d1d9f3861af3dc70c1e35715acee5"
+licence = "LGPL-2.0-or-later"
+provides = "appstream-glib-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/appstream-glib-dbg-0.8.2-r0.apk"
+version = "0.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

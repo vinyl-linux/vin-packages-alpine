@@ -1,0 +1,15 @@
+checksum = "daba79d6582812e840010c47117fbda2e4c4b4648df5da7dcaa08145db7cd181"
+licence = "ISC AND ( BSD-3-Clause OR MIT )"
+provides = "libretls-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libretls-dev-3.5.2-r1.apk"
+version = "3.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["libretls", "3.5.2-r1"], ["pkgconf", "1.9.4-r0"]]

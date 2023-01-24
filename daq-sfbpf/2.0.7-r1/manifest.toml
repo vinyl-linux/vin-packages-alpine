@@ -1,0 +1,15 @@
+checksum = "63f395133c609a35901b3d749738b5ba1675d92e9b44751efbb96e78486c305c"
+licence = "GPL-2.0-only"
+provides = "daq-sfbpf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/daq-sfbpf-2.0.7-r1.apk"
+version = "2.0.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

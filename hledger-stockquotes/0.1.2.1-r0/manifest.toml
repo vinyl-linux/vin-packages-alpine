@@ -1,0 +1,15 @@
+checksum = "744e245cbafd7fac3687b34965f88886a4c37d9e9c93d36eaf47edf8afdc8198"
+licence = "BSD-3-Clause"
+provides = "hledger-stockquotes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hledger-stockquotes-0.1.2.1-r0.apk"
+version = "0.1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"], ["ncurses-libs", "6.3.0"], ["zlib", "1.2.13-r0"]]

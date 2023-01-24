@@ -1,0 +1,15 @@
+checksum = "f9188143709fbedfef315c78accbc911dc838359c8c8fe2f04d68355eb39d081"
+licence = "GPL-2.0-or-later"
+provides = "collectd-ted"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-ted-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"]]

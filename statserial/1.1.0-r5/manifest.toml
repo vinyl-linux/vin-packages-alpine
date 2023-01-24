@@ -1,0 +1,15 @@
+checksum = "47f9603ffca285571cddf04c86fd9e9b9725226a1191b60e3f1c222c1dea6460"
+licence = "GPL"
+provides = "statserial"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/statserial-1.1-r5.apk"
+version = "1.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

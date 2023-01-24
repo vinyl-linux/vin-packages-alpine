@@ -1,0 +1,15 @@
+checksum = "96faee55c89f8e81be37a6f34e0ccc1ca785ef48866187b78ba4f53c83157062"
+licence = "LGPL-2.1-or-later"
+provides = "fluidsynth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fluidsynth-2.3.0-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["soundfont-timgm", "3412.0.0-r1"], ["musl", "1.2.3-r4"], ["fluidsynth-libs", "2.3.0-r0"], ["glib", "2.74.5-r0"]]

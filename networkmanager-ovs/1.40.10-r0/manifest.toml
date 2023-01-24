@@ -1,0 +1,15 @@
+checksum = "0526e3ea66b321fbe2e5533113f08950548195d588e67e79ab2bc3f68e13488d"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-ovs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-ovs-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["openvswitch", "2.17.3-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["jansson", "2.14.0-r0"]]

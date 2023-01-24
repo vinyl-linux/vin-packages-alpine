@@ -1,0 +1,15 @@
+checksum = "f61bb751427e3b84bd46baa253b4b0c6481ecfad5be1b7e1b0e5e3cb2edc5ea8"
+licence = "GPL-3.0-or-later"
+provides = "gcompris-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcompris-qt-2.4-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtquickcontrols", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtsensors", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

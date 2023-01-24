@@ -1,0 +1,15 @@
+checksum = "329ce43a30c2526b8e87ecfc989c0bf8161e5f0a0e4b1969bcccccdde1278d54"
+licence = "MIT"
+provides = "curlie"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/curlie-1.6.9-r6.apk"
+version = "1.6.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"]]

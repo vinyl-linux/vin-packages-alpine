@@ -1,0 +1,15 @@
+checksum = "add2e5caeb6b2ccc01f02c334e4f80e057cea9d1cc6038fcad3d811c8d5b11f9"
+licence = "custom"
+provides = "cvs-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cvs-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0974c4cad4c42587b009e7987a72e0e8ffa2e9a66ec6c5a80fc5646c9ddaab66"
+licence = "MIT"
+provides = "pugixml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pugixml-1.13-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

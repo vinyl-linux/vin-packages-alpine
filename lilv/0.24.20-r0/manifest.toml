@@ -1,0 +1,15 @@
+checksum = "c2f6e98f755c280aaec6576fd0c79a8d2586f123bd1b08cc33af2d70b42ac2f8"
+licence = "ISC"
+provides = "lilv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lilv-0.24.20-r0.apk"
+version = "0.24.20-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["serd", "0.30.16-r0"], ["libsndfile", "1.1.0-r2"], ["sord", "0.16.14-r0"], ["sratom", "0.6.14-r0"]]

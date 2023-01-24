@@ -1,0 +1,15 @@
+checksum = "801c4e40b91b8069fa07b35612a6aa4c3d43b095a9645509b3795052a02234e0"
+licence = "OLDAP-2.8"
+provides = "openldap-back-sock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-back-sock-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

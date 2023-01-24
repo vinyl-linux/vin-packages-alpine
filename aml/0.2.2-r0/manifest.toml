@@ -1,0 +1,15 @@
+checksum = "c87644213e5c185865ebf8d98b54e8dc642562a07afb511d03a3e1598b8f5d6d"
+licence = "ISC"
+provides = "aml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aml-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "e859dddbd7916b576b8fa0f39935209d3a46ed3fd6e5aeb6088d53d693d3de41"
+licence = "Apache-2.0"
+provides = "py3-opytimark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-opytimark-1.0.8-r0.apk"
+version = "1.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"]]

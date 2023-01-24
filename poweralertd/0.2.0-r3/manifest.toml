@@ -1,0 +1,15 @@
+checksum = "ab45e233091d0338c1f224b86f235c66f602912ce3510704ac00dc95720237a3"
+licence = "GPL-3.0"
+provides = "poweralertd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/poweralertd-0.2.0-r3.apk"
+version = "0.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["upower", "1.90.0-r2"], ["basu", "0.2.0-r3"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "01b5dd81671f75f9b549ae5d772dbd5ad892aa47c3b335e2e2d91270759187cd"
+licence = "GPL-2.0"
+provides = "eom-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eom-dev-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

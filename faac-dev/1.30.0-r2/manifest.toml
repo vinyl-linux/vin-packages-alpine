@@ -1,0 +1,15 @@
+checksum = "4fe80296343b2a5270e95d8e00ab992c0ca0157c341fc504a66828c5aac6f3ae"
+licence = "GPL-3.0-or-later"
+provides = "faac-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/faac-dev-1.30-r2.apk"
+version = "1.30.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["faac", "1.30.0-r2"]]

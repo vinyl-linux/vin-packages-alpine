@@ -1,0 +1,15 @@
+checksum = "f3ae546b0efb2418506009c36a53b8ab5b9846cfbb20cfb9f8c72bd5624abb40"
+licence = "MIT"
+provides = "udiskie-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/udiskie-lang-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-docopt", "0.6.2-r7"], ["py3-keyutils", "0.6.0-r2"], ["py3-gobject3", "3.42.2-r0"], ["py3-yaml", "6.0.0-r0"], ["python3", "3.10.9-r1"], ["udisks2", "2.9.4-r1"]]

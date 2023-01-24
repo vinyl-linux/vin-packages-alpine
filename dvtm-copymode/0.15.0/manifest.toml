@@ -1,0 +1,15 @@
+checksum = "6af7e04be2c7722ea868e8591c28bd73c9f0b0cbe5354df5a40b9ce3df118ef2"
+licence = "MIT"
+provides = "dvtm-copymode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dvtm-copymode-0.15_git20210309-r0.apk"
+version = "0.15.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

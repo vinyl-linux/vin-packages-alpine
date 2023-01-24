@@ -1,0 +1,15 @@
+checksum = "34992522c8673ab72b8f127b9361e0defe02389a30bc1a6465dde34f0969d485"
+licence = "GPL-2.0-or-later"
+provides = "duply"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/duply-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["duplicity", "1.0.1-r0"], ["bash", "5.2.15-r0"]]

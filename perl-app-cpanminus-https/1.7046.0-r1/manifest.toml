@@ -1,0 +1,15 @@
+checksum = "07af7170eb7fc65fefe994241c0666bed720fd2c1fb5df83545832c0e0685e3e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-app-cpanminus-https"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-app-cpanminus-https-1.7046-r1.apk"
+version = "1.7046.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["ssl_client", "1.35.0-r29"], ["ca-certificates-bundle", "20220614.0.0-r4"]]

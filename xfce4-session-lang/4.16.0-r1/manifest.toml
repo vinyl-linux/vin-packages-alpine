@@ -1,0 +1,15 @@
+checksum = "70d163696e9b2a963462d987494ec6519d5388172071b74feb14dc93efb41951"
+licence = "GPL-2.0-or-later"
+provides = "xfce4-session-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-session-lang-4.16.0-r1.apk"
+version = "4.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r2"], ["iceauth", "1.0.9-r0"], ["dbus-x11", "1.14.4-r0"], ["procps", "3.3.17-r2"]]

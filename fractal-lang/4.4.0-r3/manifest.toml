@@ -1,0 +1,15 @@
+checksum = "a183ba6a94114d55fc4da8b9dbe7f9eebf87e3f8a5c1110d73b98da73566efa4"
+licence = "GPL-3.0-or-later"
+provides = "fractal-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fractal-lang-4.4.0-r3.apk"
+version = "4.4.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["xdg-utils", "1.1.3-r4"]]

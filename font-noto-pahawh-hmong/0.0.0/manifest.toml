@@ -1,0 +1,15 @@
+checksum = "fd8a7d3a87a3feaf014d262a9de68f848e586c187643e6ab84e0e279089c3422"
+licence = "OFL-1.1"
+provides = "font-noto-pahawh-hmong"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-pahawh-hmong-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

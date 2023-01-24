@@ -1,0 +1,15 @@
+checksum = "f75052cc0cfddf20c84cf317eccea24cb40ebda31ed5fb1cb062b74fc99ed44e"
+licence = "GPL-2.0-or-later"
+provides = "vicious"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vicious-2.5.1-r0.apk"
+version = "2.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"]]

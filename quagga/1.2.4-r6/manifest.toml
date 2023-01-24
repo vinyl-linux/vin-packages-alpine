@@ -1,0 +1,15 @@
+checksum = "596f3d859d4a556f45a205ecf1766d9b5fef197b19f634a0ff3ec8727ea0d8f8"
+licence = "GPL-2.0-or-later"
+provides = "quagga"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/quagga-1.2.4-r6.apk"
+version = "1.2.4-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iproute2", "6.0.0-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"], ["readline", "8.2.0-r0"]]

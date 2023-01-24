@@ -1,0 +1,15 @@
+checksum = "43abebd8795b737140fd0762a7dc8caeeba0abbdffb8551e73e35f3d2486646f"
+licence = "Apache-2.0"
+provides = "mbedtls-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mbedtls-utils-2.28.2-r0.apk"
+version = "2.28.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mbedtls", "2.28.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ad7063a7527ff8d4d47b22370fd8dd25c0ae802f70e9008ea182c276355d1391"
+licence = "GPL-2.0-or-later"
+provides = "gthumb-full"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gthumb-full-3.12.2-r0.apk"
+version = "3.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gthumb", "3.12.2-r0"], ["gthumb-extra-formats", "3.12.2-r0"], ["gthumb-23hq", "3.12.2-r0"], ["gthumb-flickr", "3.12.2-r0"], ["gthumb-gstreamer", "3.12.2-r0"], ["gthumb-map-view", "3.12.2-r0"], ["gthumb-oauth", "3.12.2-r0"], ["gthumb-raw-files", "3.12.2-r0"], ["gthumb-webalbums", "3.12.2-r0"]]

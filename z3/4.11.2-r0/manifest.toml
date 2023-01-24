@@ -1,0 +1,15 @@
+checksum = "a0e4873fd7db00f82fe85f9b1cd67fe0b118ca70b32cbd4ca5e9b390cde7d495"
+licence = "MIT"
+provides = "z3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/z3-4.11.2-r0.apk"
+version = "4.11.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

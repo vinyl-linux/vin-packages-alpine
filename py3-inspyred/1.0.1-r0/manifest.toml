@@ -1,0 +1,15 @@
+checksum = "9ad0e7c698565a9e049786b3e21506593793882a84f38fad049fce4d5847e618"
+licence = "MIT"
+provides = "py3-inspyred"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-inspyred-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-matplotlib", "3.6.2-r1"], ["py3-click", "8.1.3-r0"]]

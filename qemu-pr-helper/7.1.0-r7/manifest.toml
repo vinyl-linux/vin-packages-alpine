@@ -1,0 +1,15 @@
+checksum = "c527b49edeb74bb9de6ecbbd2528b5ba963e817fbfea5f826117c9e898a4c62f"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-pr-helper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-pr-helper-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["liburing", "2.3.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3e0bfbf4df3c29b74296afabb46ad133cda0432372b318b483d0cb2970b54b23"
+licence = "GPL-3.0"
+provides = "makepasswd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/makepasswd-0.5.4-r2.apk"
+version = "0.5.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

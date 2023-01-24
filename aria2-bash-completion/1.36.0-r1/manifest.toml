@@ -1,0 +1,15 @@
+checksum = "e3b193260f48774c63823d3e24b523d75b63a2748d586837d73a5504ad86c186"
+licence = "GPL-2.0-or-later"
+provides = "aria2-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aria2-bash-completion-1.36.0-r1.apk"
+version = "1.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

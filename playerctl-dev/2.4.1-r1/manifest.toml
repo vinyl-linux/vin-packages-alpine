@@ -1,0 +1,15 @@
+checksum = "ee69e52c6e705266ee98fae1db1c7cc7f655a9c378a381c0d4c277ebda35943e"
+licence = "LGPL-3.0-or-later"
+provides = "playerctl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/playerctl-dev-2.4.1-r1.apk"
+version = "2.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["playerctl", "2.4.1-r1"]]

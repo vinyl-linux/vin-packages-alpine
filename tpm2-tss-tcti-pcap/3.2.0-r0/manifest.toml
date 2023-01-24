@@ -1,0 +1,15 @@
+checksum = "8aa5c419d0f1d8648d5a3fad75dd736384cd4049c55f664b4b67956e993ec153"
+licence = "BSD-2-Clause"
+provides = "tpm2-tss-tcti-pcap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-tss-tcti-pcap-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["tpm2-tss-mu", "3.2.0-r0"], ["tpm2-tss-tctildr", "3.2.0-r0"]]

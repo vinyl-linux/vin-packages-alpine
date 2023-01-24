@@ -1,0 +1,15 @@
+checksum = "e4f61830e8cfcf37f921e3541125872ec796defd3ed4b0590ee28d18c002f0b5"
+licence = "CDDL-1.0"
+provides = "zfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-2.1.7-r0.apk"
+version = "2.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["zfs-libs", "2.1.7-r0"], ["libuuid", "2.38.1-r1"]]

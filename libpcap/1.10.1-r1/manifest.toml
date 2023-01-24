@@ -1,0 +1,15 @@
+checksum = "17f94e932af2625b4e22686733c831403d1725e5f0bc9a26b68d6d10472dc228"
+licence = "BSD-3-Clause"
+provides = "libpcap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpcap-1.10.1-r1.apk"
+version = "1.10.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

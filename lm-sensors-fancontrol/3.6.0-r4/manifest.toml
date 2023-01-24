@@ -1,0 +1,15 @@
+checksum = "9feb6aa7b0ba7a839ef7fc8e6c8877dbe4628c8223c8c4c9bc41816e5bc6603d"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "lm-sensors-fancontrol"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lm-sensors-fancontrol-3.6.0-r4.apk"
+version = "3.6.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3ebccfe74a66766325b4fb4ba26aa0067973e114d2eb820fd9cd1366e0f6c316"
+licence = "GPL-2.0-or-later"
+provides = "libpurple-xmpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpurple-xmpp-2.14.10-r0.apk"
+version = "2.14.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libidn", "1.41.0-r0"], ["libintl", "0.21.1-r1"], ["libsasl", "2.1.28-r3"], ["libxml2", "2.10.3-r1"]]

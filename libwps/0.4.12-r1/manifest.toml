@@ -1,0 +1,15 @@
+checksum = "7f0dd10e8fdc60af620056eb08c2827c6e6fa12820252559305da75bef24ff93"
+licence = "MPL-2.0"
+provides = "libwps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwps-0.4.12-r1.apk"
+version = "0.4.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"]]

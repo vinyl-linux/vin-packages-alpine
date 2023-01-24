@@ -1,0 +1,15 @@
+checksum = "32204ce9285691e3b1d8eb18130579f2ff2f15bbc51f984537d5de8bfec96015"
+licence = "LGPL-2.0-or-later"
+provides = "libdv-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdv-tools-1.0.0-r7.apk"
+version = "1.0.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdv", "1.0.0-r7"]]

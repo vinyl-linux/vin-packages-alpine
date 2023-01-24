@@ -1,0 +1,15 @@
+checksum = "2d5f424a9d60c15182344ea3d6000e8cb9f84181b1ae6f9635eaf530329a6f5a"
+licence = "LGPL-2.0-or-later"
+provides = "ktnef-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ktnef-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcalendarcore-dev", "5.100.0-r0"], ["kcalutils-dev", "22.8.3-r0"], ["kcontacts-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["ktnef", "22.8.3-r0"]]

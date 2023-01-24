@@ -1,0 +1,15 @@
+checksum = "475b1a4402872682e558e74e9a6166a0092b71d436f7c9fefd27f953b86be0bc"
+licence = "MIT"
+provides = "py3-pastedeploy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pastedeploy-3.0.1-r0.apk"
+version = "3.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gpep517", "11.0.0-r0"], ["py3-installer", "0.5.1-r1"], ["py3-setuptools", "65.6.0-r0"], ["py3-wheel", "0.38.4-r0"]]

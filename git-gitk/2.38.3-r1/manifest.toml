@@ -1,0 +1,15 @@
+checksum = "68f204768f4c1106bc5f9a526e1d7b41bffc90723391513a53b5354af0f329af"
+licence = "GPL-2.0-or-later"
+provides = "git-gitk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-gitk-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["tcl", "8.6.12-r1"], ["tk", "8.6.12-r1"]]

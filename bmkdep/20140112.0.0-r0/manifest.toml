@@ -1,0 +1,15 @@
+checksum = "136a51a2657c024d873d9e53f2854dcb728c13e95aa2b6ed940d35f13b667e50"
+licence = "BSD-2-Clause"
+provides = "bmkdep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bmkdep-20140112-r0.apk"
+version = "20140112.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

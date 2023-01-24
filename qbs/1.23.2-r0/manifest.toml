@@ -1,0 +1,15 @@
+checksum = "216a2f240adf279067357b4653b3ae2c0e63eb5dd2e83eac25f5f956e24dab47"
+licence = "LGPL-3.0-or-later AND GPL-2.0-or-later"
+provides = "qbs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qbs-1.23.2-r0.apk"
+version = "1.23.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtscript", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

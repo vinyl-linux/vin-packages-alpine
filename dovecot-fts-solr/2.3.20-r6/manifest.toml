@@ -1,0 +1,15 @@
+checksum = "fbf42059772a35b42b87dc7331ab051cc7f0c1ce2dc8c40ab76a16f1811d9a7c"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-fts-solr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-fts-solr-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"]]

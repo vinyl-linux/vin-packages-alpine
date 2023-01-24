@@ -1,0 +1,15 @@
+checksum = "bf07fd11148fd08c864d87b19a81f7fdb8bb84b26553a2c3c110f20643cb9e82"
+licence = "GPL-2.0-or-later"
+provides = "pinentry-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pinentry-gtk-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["gtk+2.0", "2.24.33-r7"], ["glib", "2.74.5-r0"], ["libgpg-error", "1.46.0-r1"], ["libsecret", "0.20.5-r0"]]

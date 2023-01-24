@@ -1,0 +1,15 @@
+checksum = "c89cc400d4e231c78e73adf78b139dbc46810cd7dcc73e23a72a3d2459c8fc22"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-vmbackup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/open-vm-tools-vmbackup-12.1.0-r0.apk"
+version = "12.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools", "12.1.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libtirpc-nokrb", "1.3.3-r0"]]

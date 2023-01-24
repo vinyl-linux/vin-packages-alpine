@@ -1,0 +1,15 @@
+checksum = "e2490a5c63866b76f474097ff338606f772c9d22b23270ff3306c3022154a5ca"
+licence = "MIT"
+provides = "graphene"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/graphene-1.10.8-r1.apk"
+version = "1.10.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

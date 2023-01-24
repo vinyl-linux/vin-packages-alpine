@@ -1,0 +1,15 @@
+checksum = "872cc0747ee429da33e516e0cf0e59fe55b16f99cb7256f7bbc9cd0fde49356a"
+licence = "BSD-2-Clause"
+provides = "libfido2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libfido2-dev-1.12.0-r0.apk"
+version = "1.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfido2", "1.12.0-r0"], ["openssl-dev", "3.0.7-r2"], ["pkgconf", "1.9.4-r0"]]

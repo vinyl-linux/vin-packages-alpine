@@ -1,0 +1,15 @@
+checksum = "92639ef7a1e5e4fe6077fb5c53feee21dc06e1c0f54522c69985f625c9233f08"
+licence = "MIT"
+provides = "libbs2b-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbs2b-tools-3.1.0-r0.apk"
+version = "3.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbs2b", "3.1.0-r0"], ["musl", "1.2.3-r4"], ["libsndfile", "1.1.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "4a9d2b873e5914ac9073032db319b02d80aaa14499c928533d01fad664ed73f1"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-lang-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-common", "1.40.10-r0"], ["libnm", "1.40.10-r0"], ["dbus", "1.14.4-r0"], ["iptables", "1.8.8-r2"]]

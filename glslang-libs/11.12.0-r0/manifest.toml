@@ -1,0 +1,15 @@
+checksum = "2876288db0e52673347c3f05d3d039767e23146f3c46b4decc96977f94d725fa"
+licence = "BSD-3-Clause"
+provides = "glslang-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glslang-libs-11.12.0-r0.apk"
+version = "11.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

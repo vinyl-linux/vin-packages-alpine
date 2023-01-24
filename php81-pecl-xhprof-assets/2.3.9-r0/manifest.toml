@@ -1,0 +1,15 @@
+checksum = "0f3bac258520d06ed62067bbc459a0087491c1edbe01e38c29c13e801e66516f"
+licence = "Apache-2.0"
+provides = "php81-pecl-xhprof-assets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-xhprof-assets-2.3.9-r0.apk"
+version = "2.3.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-ctype", "8.1.14-r0"], ["graphviz", "7.0.5-r0"], ["ghostscript-fonts", "8.11.0-r3"]]

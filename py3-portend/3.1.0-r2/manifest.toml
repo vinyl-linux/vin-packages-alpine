@@ -1,0 +1,15 @@
+checksum = "c91ab43a3a750d49023735e39f4f0645e2c1fe858e4c5f7054ff8cc66756e1a4"
+licence = "MIT"
+provides = "py3-portend"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-portend-3.1.0-r2.apk"
+version = "3.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-tempora", "5.0.2-r0"], ["python3", "3.10.9-r1"]]

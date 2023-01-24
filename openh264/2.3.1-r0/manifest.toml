@@ -1,0 +1,15 @@
+checksum = "e9b8b2c251e33d2eec8644a53a9126956cb598a30f92eefa24b3daaa6d3fcdad"
+licence = "BSD-2-Clause"
+provides = "openh264"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openh264-2.3.1-r0.apk"
+version = "2.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

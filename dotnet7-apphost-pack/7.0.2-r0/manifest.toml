@@ -1,0 +1,15 @@
+checksum = "07ffec42c8fbb1276ce769a508c501f28a1f0fe0f7e034c7cf666a636e588050"
+licence = "MIT"
+provides = "dotnet7-apphost-pack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet7-apphost-pack-7.0.2-r0.apk"
+version = "7.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet7-hostfxr", "7.0.2-r0"], ["icu-data-full", "72.1.0-r1"], ["icu-libs", "72.1.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["libunwind", "1.6.2-r0"], ["zlib", "1.2.13-r0"]]

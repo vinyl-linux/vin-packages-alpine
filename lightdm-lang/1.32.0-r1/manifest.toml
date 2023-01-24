@@ -1,0 +1,15 @@
+checksum = "fd55b6cb331e52bb9da59334b83198c519bd0a15b043289520f88e34d60f1000"
+licence = "GPL-3.0-or-later"
+provides = "lightdm-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lightdm-lang-1.32.0-r1.apk"
+version = "1.32.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["accountsservice", "22.8.8-r0"], ["adwaita-icon-theme", "43.0.0-r0"], ["dbus", "1.14.4-r0"], ["xinit", "1.4.1-r1"]]

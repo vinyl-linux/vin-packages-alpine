@@ -1,0 +1,15 @@
+checksum = "b1b281978369aea64cabd4c6c78a840ca01006a1333ab68edaaf18e0828da0fa"
+licence = "custom"
+provides = "webrtc-audio-processing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webrtc-audio-processing-0.3.1-r6.apk"
+version = "0.3.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

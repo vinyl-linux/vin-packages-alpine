@@ -1,0 +1,15 @@
+checksum = "53c1378b62007140c5606edcd984976407c8273f151d75cc52e340187cbd8d8d"
+licence = "MIT"
+provides = "yofi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yofi-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"]]

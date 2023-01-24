@@ -1,0 +1,15 @@
+checksum = "3e217e1776ba96b353e3074758a1e67d72d91c22cc428ae86656bfa83f28c701"
+licence = "Apache-2.0 AND GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "rsyslog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-8.2212.0-r0.apk"
+version = "8.2212.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libestr", "0.1.11-r2"], ["libfastjson", "0.99.9-r0"], ["libuuid", "2.38.1-r1"], ["zlib", "1.2.13-r0"]]

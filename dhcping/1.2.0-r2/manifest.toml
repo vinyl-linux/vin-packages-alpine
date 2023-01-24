@@ -1,0 +1,15 @@
+checksum = "79715fdc188303ddb8ce59d0137a122163109ee8f206a5771d3c1626f9f3bca0"
+licence = "BSD-2-Clause"
+provides = "dhcping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dhcping-1.2-r2.apk"
+version = "1.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

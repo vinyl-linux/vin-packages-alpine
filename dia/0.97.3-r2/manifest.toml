@@ -1,0 +1,15 @@
+checksum = "15bf66a46338572b1eca8d0681faaa260cbeb278a86aac2a4d874e0e41ddcf9a"
+licence = "GPL-2.0-or-later"
+provides = "dia"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dia-0.97.3-r2.apk"
+version = "0.97.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["freetype", "2.12.1-r0"], ["gtk+2.0", "2.24.33-r7"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["libpng", "1.6.38-r0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

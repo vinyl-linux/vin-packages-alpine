@@ -1,0 +1,15 @@
+checksum = "c2ab4feabd8f88ee8b10d61a69caf4eababc5303edfd52068e273af109f59eb3"
+licence = "GPL-3.0-or-later"
+provides = "btrbk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/btrbk-0.32.5-r0.apk"
+version = "0.32.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["btrfs-progs", "6.0.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "fe1bb855703aa2f8555d0276c14f692af994a27e7615e0c79540e609c611bd09"
+licence = "GPL-3.0-only"
+provides = "paris-traceroute-ping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/paris-traceroute-ping-0.93-r1.apk"
+version = "0.93.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["paris-traceroute", "0.93.0-r1"]]

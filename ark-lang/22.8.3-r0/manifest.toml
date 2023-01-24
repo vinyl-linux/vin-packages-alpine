@@ -1,0 +1,15 @@
+checksum = "b30b5e394c6251ff70807cff85b4c7708a7d52833b82eafd1e896589075d62b1"
+licence = "GPL-2.0-only"
+provides = "ark-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ark-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["7zip", "22.1.0-r0"], ["lrzip", "0.651.0-r1"], ["unzip", "6.0.0-r13"], ["zip", "3.0.0-r10"], ["zstd", "1.5.2-r9"]]

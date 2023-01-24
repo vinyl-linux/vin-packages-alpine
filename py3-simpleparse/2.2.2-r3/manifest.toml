@@ -1,0 +1,15 @@
+checksum = "b752c88014c9ed12914fa577dbfaa24dbe2d0aa395db0d07c016e45f4c52ad61"
+licence = "eGenix ISC"
+provides = "py3-simpleparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-simpleparse-2.2.2-r3.apk"
+version = "2.2.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

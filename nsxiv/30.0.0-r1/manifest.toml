@@ -1,0 +1,15 @@
+checksum = "e853ffea492516150d0202b84bf6f697882f8c6ef47d460900a33793a769f119"
+licence = "GPL-2.0-or-later"
+provides = "nsxiv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nsxiv-30-r1.apk"
+version = "30.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imlib2", "1.9.1-r2"], ["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["musl", "1.2.3-r4"], ["libexif", "0.6.24-r0"], ["fontconfig", "2.14.1-r0"], ["giflib", "5.2.1-r2"], ["libwebp", "1.2.4-r1"]]

@@ -1,0 +1,15 @@
+checksum = "bd4e28f982199983c08c9d57962656fdb538082ca25879f1503bfebe9303c2f4"
+licence = "MIT"
+provides = "dmvpn-ca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dmvpn-ca-1.4.0-r1.apk"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.2", "5.2.4-r10"], ["lua5.2-lyaml", "6.2.8-r0"], ["lua5.2-ossl", "20220711.0.0-r0"], ["lua5.2-posix", "35.1.0-r0"], ["lua5.2-sql-sqlite3", "2.6.0-r2"], ["lua5.2-stringy", "0.5.1-r2"], ["lua-asn1", "2.2.0-r1"], ["lua-dmvpn", "1.4.0-r1"]]

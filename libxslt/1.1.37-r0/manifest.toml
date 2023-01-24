@@ -1,0 +1,15 @@
+checksum = "e24f67b20acda1ac424a78644cce96f321eaf423d12a438fa87d30bcf49b10f1"
+licence = "custom"
+provides = "libxslt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxslt-1.1.37-r0.apk"
+version = "1.1.37-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libxml2", "2.10.3-r1"]]

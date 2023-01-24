@@ -1,0 +1,15 @@
+checksum = "d6f0a9a5869afba6ed8831ab08e74e8df3e3b92d1048aadb59e498b2d4fe2647"
+licence = "MIT"
+provides = "niaaml-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/niaaml-gui-0.1.13-r2.apk"
+version = "0.1.13-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-niapy", "2.0.4-r0"], ["py3-niaaml", "1.1.11-r2"], ["py3-qtawesome", "1.2.1-r1"], ["py3-qt5", "5.15.7-r0"]]

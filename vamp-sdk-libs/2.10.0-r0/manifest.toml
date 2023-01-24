@@ -1,0 +1,15 @@
+checksum = "80a5c131e335398ec6806ba5405905d6fcaf89bdb255df60dbb8d3dee00018fc"
+licence = "BSD-3-Clause"
+provides = "vamp-sdk-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vamp-sdk-libs-2.10.0-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "1f07a810910e63406a3c58c014fc17164ec749b53f98539d259bf1632e9089dc"
+licence = "MIT"
+provides = "py3-greenlet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-greenlet-2.0.1-r0.apk"
+version = "2.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

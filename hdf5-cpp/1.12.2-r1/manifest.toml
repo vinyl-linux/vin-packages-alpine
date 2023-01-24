@@ -1,0 +1,15 @@
+checksum = "0f80d5888d5841cedd10ff30914840a551dae46ceefdbc89fdd5537f0ca90589"
+licence = "custom"
+provides = "hdf5-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hdf5-cpp-1.12.2-r1.apk"
+version = "1.12.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["hdf5", "1.12.2-r1"], ["libstdc++", "12.2.1"]]

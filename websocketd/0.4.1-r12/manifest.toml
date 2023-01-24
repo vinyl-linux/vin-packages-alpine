@@ -1,0 +1,15 @@
+checksum = "03ae4368888f94256ef90e98a1d7af603d41134e5391559119b0719894f09e64"
+licence = "BSD-2-Clause"
+provides = "websocketd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/websocketd-0.4.1-r12.apk"
+version = "0.4.1-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

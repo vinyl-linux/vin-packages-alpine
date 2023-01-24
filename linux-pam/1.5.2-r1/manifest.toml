@@ -1,0 +1,15 @@
+checksum = "33767efcf7a1849273d7e46343bab9e86837caad6e8ffac33f01481fc19d0854"
+licence = "BSD-3-Clause"
+provides = "linux-pam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-pam-1.5.2-r1.apk"
+version = "1.5.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b7106eb1610427a70f0dbde44c1eff7f51bc3f5e7ab7412d5a5538c0a7b3c6a5"
+licence = "GPL-2.0-or-later"
+provides = "marco-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/marco-lang-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-utils", "2.10.3-r1"], ["mate-common", "1.26.0-r1"], ["mate-desktop", "1.26.0-r2"], ["yelp-tools", "42.1.0-r0"]]

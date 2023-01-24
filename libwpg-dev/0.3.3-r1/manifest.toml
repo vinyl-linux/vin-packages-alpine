@@ -1,0 +1,15 @@
+checksum = "9fbe84a3fd2cea1e83f81c9bf8c0010c00b3766a3773b3d3ddc938d6440461dd"
+licence = "MPL-2.0 LGPL-2.1-or-later"
+provides = "libwpg-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwpg-dev-0.3.3-r1.apk"
+version = "0.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwpg", "0.3.3-r1"], ["librevenge-dev", "0.0.4-r10"], ["libwpd-dev", "0.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

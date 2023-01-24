@@ -1,0 +1,15 @@
+checksum = "d75e62b6af03f8b4995f1270188573d06459a29166bd08a43b62e19146b132ff"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-lang-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4577d8ccf923c300d225bd1f6628a529d69d94d12500126fdcff7ebcb3db7166"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk17-jre-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk17-jre-headless-17.0.6_p10-r0.apk"
+version = "17.0.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["java-common", "0.5.0-r0"], ["java-cacerts", "1.0.0-r1"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

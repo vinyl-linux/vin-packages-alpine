@@ -1,0 +1,15 @@
+checksum = "b4f5f22180f177f7c3d48538e189f4bc55b0b04c56ef6497ddd6e9e95207c1c2"
+licence = "GPL-3.0-or-later"
+provides = "gitstatus-zsh-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gitstatus-zsh-plugin-1.5.4-r1.apk"
+version = "1.5.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gitstatus", "1.5.4-r1"], ["zsh", "5.9.0-r0"]]

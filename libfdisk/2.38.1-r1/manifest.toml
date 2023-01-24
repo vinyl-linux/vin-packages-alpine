@@ -1,0 +1,15 @@
+checksum = "b9f4ff5416fd4744bde76446feffbb302b7826ba1b5e42307ae693e070154922"
+licence = "LGPL-2.1-or-later"
+provides = "libfdisk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libfdisk-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

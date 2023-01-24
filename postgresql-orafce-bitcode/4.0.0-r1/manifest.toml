@@ -1,0 +1,15 @@
+checksum = "1defeceff6fd8eb2679e1ae8ee2a1b1b36a05acf85dee3baaac4d4d9e6b9e95b"
+licence = "0BSD"
+provides = "postgresql-orafce-bitcode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-orafce-bitcode-4.0.0-r1.apk"
+version = "4.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-orafce", "4.0.0-r1"]]

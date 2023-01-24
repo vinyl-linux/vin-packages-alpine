@@ -1,0 +1,15 @@
+checksum = "a4af05fd618d8c347f1646b64b5cfcba42d166ac9ba9e348aec5178e29e724e4"
+licence = "MIT"
+provides = "perl-yaml-syck"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-yaml-syck-1.34-r2.apk"
+version = "1.34.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

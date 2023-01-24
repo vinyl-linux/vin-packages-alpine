@@ -1,0 +1,15 @@
+checksum = "cf42f2301774fcfd57da04de470794294540335c14ba3b48d8e6d963a8650cd8"
+licence = "GPL-2.0-only"
+provides = "bento4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bento4-1.6.0.639-r0.apk"
+version = "1.6.0.639-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

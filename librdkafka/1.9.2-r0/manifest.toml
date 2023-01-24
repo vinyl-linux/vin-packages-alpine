@@ -1,0 +1,15 @@
+checksum = "ced51c50152cf383d2460ba249a144de04c8f1e9e32d7cc90edb8faa3b0a5de8"
+licence = "BSD-2-Clause"
+provides = "librdkafka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librdkafka-1.9.2-r0.apk"
+version = "1.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["lz4-libs", "1.9.4-r1"], ["libsasl", "2.1.28-r3"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

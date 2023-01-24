@@ -1,0 +1,15 @@
+checksum = "9aad036231014724e3c7a973941cf2d729db823352f8965578796d38d8b3e855"
+licence = "GPL-2.0-only"
+provides = "e2guardian"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/e2guardian-5.4.5r-r0.apk"
+version = "5.4.5-r-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["logrotate", "3.20.1-r3"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["pcre", "8.45.0-r2"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

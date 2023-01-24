@@ -1,0 +1,15 @@
+checksum = "5fa3f892d1fd6879a6241e66838a7c91148d7c14743430a6563310f441c838f2"
+licence = "MIT"
+provides = "namecoin-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/namecoin-qt-23.0-r1.apk"
+version = "23.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["libstdc++", "12.2.1"]]

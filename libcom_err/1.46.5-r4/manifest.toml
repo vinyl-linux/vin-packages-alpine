@@ -1,0 +1,15 @@
+checksum = "dbccc1b9ed852bdf431b81c07350fd4fa3e84e9ff70ab6be97c399dca853bbdf"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT"
+provides = "libcom_err"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcom_err-1.46.5-r4.apk"
+version = "1.46.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

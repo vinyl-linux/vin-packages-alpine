@@ -1,0 +1,15 @@
+checksum = "ff6a1c1cb726b3fb456627e7dbba61485a29c5d25f5b211d570d66b7b140d056"
+licence = "GPL-3.0-or-later"
+provides = "alkimia-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alkimia-dev-8.1.1-r0.apk"
+version = "8.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alkimia", "8.1.1-r0"], ["pkgconf", "1.9.4-r0"]]

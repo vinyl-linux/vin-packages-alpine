@@ -1,0 +1,15 @@
+checksum = "927c7601cde3ebc978fc0e126fb98e11837f33638427da7edc1ca1e9792bb9e7"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-fuse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-fuse-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["musl", "1.2.3-r4"], ["fuse3-libs", "3.12.0-r0"], ["glib", "2.74.5-r0"], ["gvfs", "1.50.3-r0"]]

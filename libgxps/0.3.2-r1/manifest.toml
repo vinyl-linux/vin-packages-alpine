@@ -1,0 +1,15 @@
+checksum = "bb14061dc0eb8c2aa27fc4f2c12bb841631310467d4c62ac0739610a7ffe07fb"
+licence = "LGPL-2.1-or-later"
+provides = "libgxps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgxps-0.3.2-r1.apk"
+version = "0.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["freetype", "2.12.1-r0"], ["glib", "2.74.5-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["lcms2", "2.14.0-r0"], ["libpng", "1.6.38-r0"], ["tiff", "4.4.0-r1"]]

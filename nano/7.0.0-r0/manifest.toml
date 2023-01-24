@@ -1,0 +1,15 @@
+checksum = "c537f79ca7deef4141b3ced78a151ce8367efb8a7171fb62caa45702a680a4fa"
+licence = "GPL-3.0-or-later"
+provides = "nano"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nano-7.0-r0.apk"
+version = "7.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

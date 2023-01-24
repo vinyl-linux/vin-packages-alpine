@@ -1,0 +1,15 @@
+checksum = "c306e92abed31b17deda9da09df1a8cae1559017fe8ca2db728e3ad937a0994b"
+licence = "GPL-2.0-or-later"
+provides = "gvm-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvm-libs-22.4.0-r0.apk"
+version = "22.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["freeradius-client", "1.1.7-r5"], ["libgcrypt", "1.10.1-r0"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["libgpg-error", "1.46.0-r1"], ["gpgme", "1.18.0-r0"], ["hiredis", "1.0.2-r1"], ["libldap", "2.6.3-r6"], ["libnet", "1.2.0-r1"], ["paho-mqtt-c", "1.3.9-r2"], ["libssh", "0.10.4-r0"], ["libuuid", "2.38.1-r1"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

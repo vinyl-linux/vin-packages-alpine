@@ -1,0 +1,15 @@
+checksum = "77715582158a8209aca727151797d09b94ff0ca18bbb9d1bd6fca02bf107035a"
+licence = "BSD-3-Clause"
+provides = "py3-jupyter_core"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jupyter_core-5.0.0-r1.apk"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-traitlets", "5.5.0-r0"], ["py3-platformdirs", "2.5.4-r0"]]

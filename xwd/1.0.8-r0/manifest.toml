@@ -1,0 +1,15 @@
+checksum = "e5a6e0dc75a49911d3c41bb4d05b352d849e220c463a2df8ff769e48ff8e08a7"
+licence = "custom"
+provides = "xwd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xwd-1.0.8-r0.apk"
+version = "1.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libxkbfile", "1.1.1-r0"]]

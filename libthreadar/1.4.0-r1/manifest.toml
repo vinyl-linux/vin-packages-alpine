@@ -1,0 +1,15 @@
+checksum = "355cb080b75ac90ad6657645dbc33c0ac3d188ffd34ab4598d30cbea478e346b"
+licence = "LGPL-3.0-or-later"
+provides = "libthreadar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libthreadar-1.4.0-r1.apk"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

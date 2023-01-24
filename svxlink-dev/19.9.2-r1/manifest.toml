@@ -1,0 +1,15 @@
+checksum = "b9fbf60228bcaf4dc83fd5e73ff5f22f93aec7244f183fe4fde1989bb621e167"
+licence = "GPL-2.0-or-later"
+provides = "svxlink-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/svxlink-dev-19.09.2-r1.apk"
+version = "19.9.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["svxlink", "19.9.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "e41cd9b43ce140203ef7e1dd4a6d37487b91be121666f7cce324dcee97e5b25c"
+licence = "MIT"
+provides = "py3-rpyc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rpyc-5.2.3-r0.apk"
+version = "5.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-plumbum", "1.8.0-r0"]]

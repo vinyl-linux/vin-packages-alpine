@@ -1,0 +1,15 @@
+checksum = "939b34c90f26a4fe4d849cb9162871688243aa3b77003c89ad209fa548cef4a8"
+licence = "LGPL-2.1-or-later AND BSD-3-Clause"
+provides = "ssu-sysinfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ssu-sysinfo-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

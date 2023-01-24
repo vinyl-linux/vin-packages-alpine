@@ -1,0 +1,15 @@
+checksum = "b3ff3f52853e705bd2d612c13bc680e74d5a1414d1134262c8360def98e83905"
+licence = "GPL-2.0-only"
+provides = "ssl_client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ssl_client-1.35.0-r29.apk"
+version = "1.35.0-r29"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

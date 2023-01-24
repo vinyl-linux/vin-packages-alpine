@@ -1,0 +1,15 @@
+checksum = "fefa72b701b9b8eca4bad67528b910bfef0255c9bc764228fcc3ce8df7443244"
+licence = "LGPL-2.0-or-later"
+provides = "kdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdb-3.2.0-r7.apk"
+version = "3.2.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"]]

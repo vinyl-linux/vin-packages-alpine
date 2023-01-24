@@ -1,0 +1,15 @@
+checksum = "6bed0b8087ece45bf983538e1210cd0eb81c757e114f24c179c8f8f68c182eb1"
+licence = "GPL-2.0-or-later"
+provides = "bitlbee-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitlbee-dev-3.6-r3.apk"
+version = "3.6.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

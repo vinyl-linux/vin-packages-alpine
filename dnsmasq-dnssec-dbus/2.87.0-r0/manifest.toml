@@ -1,0 +1,15 @@
+checksum = "33eea3abdc4672cdb711cb670b4a783cb22a1c7520856f60fe7f1f96cad9c27e"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "dnsmasq-dnssec-dbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dnsmasq-dnssec-dbus-2.87-r0.apk"
+version = "2.87.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnsmasq-common", "2.87.0-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["gmp", "6.2.1-r2"], ["nettle", "3.8.1-r0"]]

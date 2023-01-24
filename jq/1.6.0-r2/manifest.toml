@@ -1,0 +1,15 @@
+checksum = "ec839080dac2bbe3898cf227c2b74aaaee9781c23f53d25b1ad7cabeeea4af50"
+licence = "MIT"
+provides = "jq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jq-1.6-r2.apk"
+version = "1.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["oniguruma", "6.9.8-r0"]]

@@ -1,0 +1,15 @@
+checksum = "805e7639ec02844d711861958e1f87fffc115afe94fcdd6100647c34a424e0f3"
+licence = "GPL-3.0-or-later"
+provides = "grub-xenhost"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/grub-xenhost-2.06-r6.apk"
+version = "2.6.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.7.0-r0"]]

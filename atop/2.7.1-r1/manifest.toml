@@ -1,0 +1,15 @@
+checksum = "ba86411b6992710824463efb4a8f9e1c5d93bbe174aa5d7cfe6f0222c1a3f9cb"
+licence = "GPL-2.0-or-later"
+provides = "atop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/atop-2.7.1-r1.apk"
+version = "2.7.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["zlib", "1.2.13-r0"]]

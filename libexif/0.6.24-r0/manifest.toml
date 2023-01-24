@@ -1,0 +1,15 @@
+checksum = "27a9d9ae83cd73fad7e25bcc400e252cd9ddc869ffacbf89b85e2d2c86333629"
+licence = "LGPL-2.0-or-later"
+provides = "libexif"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libexif-0.6.24-r0.apk"
+version = "0.6.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

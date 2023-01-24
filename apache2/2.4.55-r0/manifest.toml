@@ -1,0 +1,15 @@
+checksum = "4379097711643e20aec45137922e59f257ab7f210de11ce35bb983dc9c43076e"
+licence = "Apache-2.0"
+provides = "apache2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["apr", "1.7.0-r2"], ["apr-util", "1.6.1-r14"], ["musl", "1.2.3-r4"], ["pcre", "8.45.0-r2"], ["zlib", "1.2.13-r0"]]

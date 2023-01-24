@@ -1,0 +1,15 @@
+checksum = "be18e0a19e46772b110a7c4a07ebe13e8ffff18c20e4512b9291f074772bb5d6"
+licence = "GPL-2.0-or-later"
+provides = "zabbix-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zabbix-sqlite-6.2.6-r1.apk"
+version = "6.2.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zabbix", "6.2.6-r1"], ["openipmi-libs", "2.0.33-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libevent", "2.1.12-r5"], ["net-snmp-libs", "5.9.3-r2"], ["unixodbc", "2.3.11-r0"], ["pcre2", "10.42.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libssh2", "1.10.0-r3"], ["libssl3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

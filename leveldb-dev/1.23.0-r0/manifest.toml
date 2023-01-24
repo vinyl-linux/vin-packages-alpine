@@ -1,0 +1,15 @@
+checksum = "fdd334ce3eb74ac570187e6a08efb6ed654eac45c72fb3eb3b112e2a51a64806"
+licence = "BSD-3-Clause"
+provides = "leveldb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/leveldb-dev-1.23-r0.apk"
+version = "1.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["leveldb", "1.23.0-r0"]]

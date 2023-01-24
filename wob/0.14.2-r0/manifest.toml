@@ -1,0 +1,15 @@
+checksum = "71baf55cbe718166c0ef8317b3ebca9dc1ea82b7cdfb9cdc1f9566b5b9dc7e30"
+licence = "ISC"
+provides = "wob"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wob-0.14.2-r0.apk"
+version = "0.14.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["inih", "56.0.0-r0"], ["libseccomp", "2.5.4-r0"], ["wayland-libs-client", "1.21.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d533a7cbb64d3d2e85f62a0635c1e5f4d19e988bfec0548a771c421548717e33"
+licence = "GPL-2.0-or-later"
+provides = "ragel"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ragel-6.10-r1.apk"
+version = "6.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "bfa57aa5b7590d23ca24fe1b84402adfd01b04488e775188831abe600b3d690e"
+licence = "MIT"
+provides = "namecoin-bench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/namecoin-bench-23.0-r1.apk"
+version = "23.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["libstdc++", "12.2.1"]]

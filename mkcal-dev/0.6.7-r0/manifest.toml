@@ -1,0 +1,15 @@
+checksum = "d07615fad3aa2ef2eed1557af595723866723662051b34dfc6e216882d53c141"
+licence = "LGPL-2.0-or-later"
+provides = "mkcal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mkcal-dev-0.6.7-r0.apk"
+version = "0.6.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcalendarcore-dev", "5.100.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["timed-dev", "3.6.14-r0"], ["mkcal", "0.6.7-r0"], ["pkgconf", "1.9.4-r0"]]

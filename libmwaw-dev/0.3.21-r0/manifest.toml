@@ -1,0 +1,15 @@
+checksum = "6ebd09be6bcfb006f61ce277cca1326c1c5ce78f3cc72b7d8e5538bf4293f4f5"
+licence = "MPL-2.0"
+provides = "libmwaw-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmwaw-dev-0.3.21-r0.apk"
+version = "0.3.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmwaw", "0.3.21-r0"], ["librevenge-dev", "0.0.4-r10"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bd5be04bf7ed2ecf307fdfe967ba7a0123b65d40d6260fc84299031a71c1340c"
+licence = "MIT"
+provides = "chezmoi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chezmoi-2.27.1-r1.apk"
+version = "2.27.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

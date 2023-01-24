@@ -1,0 +1,15 @@
+checksum = "8d08e41c3eccee3b3dc3ed5ed34c0781be11d8ae7c85157b8f6758efb0b7aa0f"
+licence = "custom"
+provides = "pgpool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pgpool-4.3.3-r0.apk"
+version = "4.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libpq", "15.1.0-r0"], ["libssl3", "3.0.7-r2"]]

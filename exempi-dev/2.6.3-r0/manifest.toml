@@ -1,0 +1,15 @@
+checksum = "3842516905523775040ff3635aa98d02a9ea3f5f68bd809ba3d1d8ab5962c59b"
+licence = "BSD-3-Clause"
+provides = "exempi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exempi-dev-2.6.3-r0.apk"
+version = "2.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exempi-libs", "2.6.3-r0"], ["pkgconf", "1.9.4-r0"]]

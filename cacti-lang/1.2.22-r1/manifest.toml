@@ -1,0 +1,15 @@
+checksum = "711f74b12d37b7df3da2202b8c7fd2ed57080eec80a51d94173f8795a48b4940"
+licence = "GPL-2.0-or-later"
+provides = "cacti-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cacti-lang-1.2.22-r1.apk"
+version = "1.2.22-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["perl", "5.36.0-r0"], ["coreutils", "9.1.0-r0"], ["net-snmp-tools", "5.9.3-r2"], ["rrdtool", "1.7.2-r6"], ["font-dejavu", "2.37.0-r3"]]

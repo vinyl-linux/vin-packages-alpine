@@ -1,0 +1,15 @@
+checksum = "f6caea5618b3508752b56d4b1d3999357168946bcc2ade82b84174f78f08c010"
+licence = "MIT"
+provides = "xorg-server-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xorg-server-dev-21.1.6-r0.apk"
+version = "21.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libepoxy-dev", "1.5.10-r0"], ["libxfont2-dev", "2.0.6-r0"], ["mesa-dev", "22.2.5-r1"], ["libpciaccess-dev", "0.17.0-r0"], ["pixman-dev", "0.42.2-r0"], ["pkgconf", "1.9.4-r0"]]

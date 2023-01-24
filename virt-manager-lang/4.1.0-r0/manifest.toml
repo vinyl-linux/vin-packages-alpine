@@ -1,0 +1,15 @@
+checksum = "6408d58fd2b3aa7953a36cbc70f37599e929e66c6b59d445ef2603c183f0bb04"
+licence = "GPL-2.0-or-later"
+provides = "virt-manager-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/virt-manager-lang-4.1.0-r0.apk"
+version = "4.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["virt-manager-common", "4.1.0-r0"], ["spice-gtk", "0.41.0-r1"], ["vte3", "0.70.2-r0"], ["py3-cairo", "1.21.0-r1"], ["gtk-vnc", "1.3.1-r0"], ["gtksourceview4", "4.8.4-r0"], ["qemu-img", "7.1.0-r7"]]

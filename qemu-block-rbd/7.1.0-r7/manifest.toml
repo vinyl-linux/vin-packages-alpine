@@ -1,0 +1,15 @@
+checksum = "8aced06fa00f37bc3dbe0feed662ebe41236bd1b930156f77d4f2dd45c1847a3"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-block-rbd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-block-rbd-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librados17", "17.2.5-r5"], ["librbd17", "17.2.5-r5"], ["musl", "1.2.3-r4"]]

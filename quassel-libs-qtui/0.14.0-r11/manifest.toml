@@ -1,0 +1,15 @@
+checksum = "2cc0e7198c9d475f7ba16fc0e5207a7b9924b01ce1eabaedd7f2747af48f25e4"
+licence = "GPL-2.0-or-later"
+provides = "quassel-libs-qtui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/quassel-libs-qtui-0.14.0-r11.apk"
+version = "0.14.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["quassel-libs-client", "0.14.0-r11"], ["quassel-libs-common", "0.14.0-r11"], ["quassel-libs-uisupport", "0.14.0-r11"], ["libstdc++", "12.2.1"]]

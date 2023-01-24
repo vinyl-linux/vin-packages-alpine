@@ -1,0 +1,15 @@
+checksum = "44ef43b6e820679b46a6fb5531ee8c7d2e9c4d5f3256b9cf245e6169961d0644"
+licence = "custom"
+provides = "zsh-calendar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zsh-calendar-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

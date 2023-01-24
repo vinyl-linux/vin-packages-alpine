@@ -1,0 +1,15 @@
+checksum = "59360e7982f064b7456a344448c0f2959905c1983d02833f83db062c30407383"
+licence = "GPL-2.0-or-later"
+provides = "mauikit-imagetools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mauikit-imagetools-dev-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exiv2-dev", "0.27.5-r1"], ["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kquickimageeditor-dev", "0.2.0-r1"], ["mauikit-dev", "2.2.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["qt5-qtlocation-dev", "5.15.6"], ["mauikit-imagetools", "2.2.0-r0"]]

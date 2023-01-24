@@ -1,0 +1,15 @@
+checksum = "a747ea902b5031ef05ec32ea3c72787c70d2347cbab691f9242be93f01565120"
+licence = "LGPL-2.1-only"
+provides = "kdesignerplugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdesignerplugin-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "362f5df06b40264a8d16424ab0d82c5207ddda15011aea06a68d685c0b01384f"
+licence = "MIT"
+provides = "py3-meson-python"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-meson-python-0.11.0-r0.apk"
+version = "0.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["meson", "0.64.0-r0"], ["py3-pyproject-metadata", "0.6.1-r0"], ["py3-tomli", "2.0.1-r1"], ["python3", "3.10.9-r1"]]

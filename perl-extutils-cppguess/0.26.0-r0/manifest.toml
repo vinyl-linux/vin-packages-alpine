@@ -1,0 +1,15 @@
+checksum = "7b18d29ee9526b78dca8882bb14cb9eb4fba6d69a2df5b86aae04dd094eace19"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-extutils-cppguess"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-extutils-cppguess-0.26-r0.apk"
+version = "0.26.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-capture-tiny", "0.48.0-r2"]]

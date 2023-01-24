@@ -1,0 +1,15 @@
+checksum = "7ba017ead9d6e10f8df0c6b3a695d5fa0c6540ef212a9768b0a5698e1aa51b16"
+licence = "GPL-3.0-or-later"
+provides = "mbuffer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mbuffer-20220418-r1.apk"
+version = "20220418.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

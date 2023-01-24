@@ -1,0 +1,15 @@
+checksum = "cc65ceddc75993f6e6920d117b6246dffe2ea179d8ec63b11a553f7bfae336df"
+licence = "GPL-2.0-or-later"
+provides = "s-tui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/s-tui-1.1.4-r0.apk"
+version = "1.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-urwid", "2.1.2-r2"], ["py3-psutil", "5.9.4-r0"], ["stress-ng", "0.14.0-r0"]]

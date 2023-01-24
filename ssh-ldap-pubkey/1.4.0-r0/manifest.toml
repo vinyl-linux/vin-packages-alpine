@@ -1,0 +1,15 @@
+checksum = "9fa88fa90a638b1b050ac04a82c30d240915beb1915eb12abb0e8cce973e7ca5"
+licence = "MIT"
+provides = "ssh-ldap-pubkey"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ssh-ldap-pubkey-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pyldap", "3.4.3-r0"], ["py3-docopt", "0.6.2-r7"], ["yash-binsh", "2.53.0-r2"]]

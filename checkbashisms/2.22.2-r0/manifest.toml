@@ -1,0 +1,15 @@
+checksum = "95642a17c9649012349e2e7ec6beaefee09c3f307e5c324a4d6dc1e68ce14676"
+licence = "GPL-2.0-or-later"
+provides = "checkbashisms"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/checkbashisms-2.22.2-r0.apk"
+version = "2.22.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

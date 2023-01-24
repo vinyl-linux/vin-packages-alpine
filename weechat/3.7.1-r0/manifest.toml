@@ -1,0 +1,15 @@
+checksum = "6218b81f46ba4d11829ac1960b152e48352303751e487d64a713a5477e25beb6"
+licence = "GPL-3.0-or-later"
+provides = "weechat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weechat-3.7.1-r0.apk"
+version = "3.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcrypt", "1.10.1-r0"], ["gnutls", "3.7.8-r2"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

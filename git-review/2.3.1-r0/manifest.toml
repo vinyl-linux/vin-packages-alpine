@@ -1,0 +1,15 @@
+checksum = "32523dc06f761f7b9219a5187f76e7935f1738d73806c5c25dd93e1ccfe7954e"
+licence = "Apache-2.0"
+provides = "git-review"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-review-2.3.1-r0.apk"
+version = "2.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["python3", "3.10.9-r1"], ["py3-requests", "2.28.1-r1"], ["py3-idna", "3.4.0-r2"], ["py3-urllib3", "1.26.12-r0"], ["py3-chardet", "5.0.0-r0"], ["py3-certifi", "2022.12.7-r0"], ["py3-setuptools", "65.6.0-r0"]]

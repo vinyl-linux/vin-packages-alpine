@@ -1,0 +1,15 @@
+checksum = "a025dbcca8d05b6adb9fa8bdcf20c23dcb5b896defd1985f0a93f2ab77a848dd"
+licence = "GPL-3.0-or-later LGPL-3.0-or-later"
+provides = "samba"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/samba-4.16.8-r0.apk"
+version = "4.16.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samba-server", "4.16.8-r0"], ["samba-client", "4.16.8-r0"], ["samba-common-tools", "4.16.8-r0"]]

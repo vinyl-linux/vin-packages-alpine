@@ -1,0 +1,15 @@
+checksum = "fb83ef80573f44d1e1132b59c33a03f478fbf9910ec0b6922d13dfa76ee074d6"
+licence = "BSD-2-Clause PostgreSQL"
+provides = "ruby-pg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-pg-1.4.5-r0.apk"
+version = "1.4.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"], ["ruby-libs", "3.1.3-r0"], ["libucontext", "1.2.0-r0"]]

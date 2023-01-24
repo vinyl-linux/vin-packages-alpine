@@ -1,0 +1,15 @@
+checksum = "d7b10e93422560fd061167a9deae0300e1d3342944104ab25ea6c5384d80daac"
+licence = "MIT"
+provides = "tty-solitaire"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tty-solitaire-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses", "6.3.0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

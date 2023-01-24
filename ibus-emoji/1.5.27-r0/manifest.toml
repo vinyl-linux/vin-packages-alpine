@@ -1,0 +1,15 @@
+checksum = "980acee4ce2e9d7b33017c4a05576c81749d850dc1114828aa4998371960aa59"
+licence = "LGPL-2.1-or-later"
+provides = "ibus-emoji"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ibus-emoji-1.5.27-r0.apk"
+version = "1.5.27-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ibus", "1.5.27-r0"], ["unicode-character-database", "15.0.0-r0"], ["cldr-emoji-annotation", "42.0.0-r0"]]

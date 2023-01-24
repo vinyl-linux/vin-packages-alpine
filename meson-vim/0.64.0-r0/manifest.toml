@@ -1,0 +1,15 @@
+checksum = "0d7b1a4214a9e6604e9641fd47c6e5b737927883077e1baa9903ef0c10b115ba"
+licence = "Apache-2.0"
+provides = "meson-vim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/meson-vim-0.64.0-r0.apk"
+version = "0.64.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samurai", "1.2.0-r2"], ["python3", "3.10.9-r1"]]

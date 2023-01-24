@@ -1,0 +1,15 @@
+checksum = "5021521d143d6595c8a3fcdc957976249dae8f0f1f99a60afc708ed042dc9ffb"
+licence = "(GPL-2.0-only AND LGPL-2.1-or-later) WITH OpenSSL-Exception"
+provides = "efitools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/efitools-1.9.2-r5.apk"
+version = "1.9.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

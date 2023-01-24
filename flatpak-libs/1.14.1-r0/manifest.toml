@@ -1,0 +1,15 @@
+checksum = "9f3d782e6b60ec8b43ece447958b283de841eb180784439f491c6fa101f3f6ee"
+licence = "LGPL-2.1-or-later"
+provides = "flatpak-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flatpak-libs-1.14.1-r0.apk"
+version = "1.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxau", "1.0.10-r0"], ["libarchive", "3.6.1-r2"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["dconf", "0.40.0-r2"], ["glib", "2.74.5-r0"], ["gpgme", "1.18.0-r0"], ["json-glib", "1.6.6-r1"], ["ostree", "2022.6.0-r0"], ["libseccomp", "2.5.4-r0"], ["libxml2", "2.10.3-r1"], ["zstd-libs", "1.5.2-r9"]]

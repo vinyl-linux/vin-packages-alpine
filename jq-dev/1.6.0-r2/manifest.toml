@@ -1,0 +1,15 @@
+checksum = "7e5733d56db3ce4e8b21756fb8e23d4303ab419b2d298b39cebd399898570eb7"
+licence = "MIT"
+provides = "jq-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jq-dev-1.6-r2.apk"
+version = "1.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jq", "1.6.0-r2"]]

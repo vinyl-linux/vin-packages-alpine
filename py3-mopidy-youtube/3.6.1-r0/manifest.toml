@@ -1,0 +1,15 @@
+checksum = "05279074b78af3f5fcf548b16bcbfe2a6fb4f74b0bd3dccfb89e0b4c5d484d6e"
+licence = "Apache-2.0"
+provides = "py3-mopidy-youtube"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mopidy-youtube-3.6.1-r0.apk"
+version = "3.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mopidy", "3.3.0-r1"], ["py3-beautifulsoup4", "4.11.1-r0"], ["py3-cachetools", "4.1.1-r2"], ["py3-pykka", "3.1.1-r0"], ["py3-requests", "2.28.1-r1"], ["py3-ytmusicapi", "0.24.0-r0"], ["python3", "3.10.9-r1"], ["youtube-dl", "2021.12.17-r0"]]

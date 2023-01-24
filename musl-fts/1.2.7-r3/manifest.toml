@@ -1,0 +1,15 @@
+checksum = "b608b94d930f800223d13033e2c5b797d52caeafc7bd45c5853153c997c38186"
+licence = "BSD-3-Clause"
+provides = "musl-fts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/musl-fts-1.2.7-r3.apk"
+version = "1.2.7-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

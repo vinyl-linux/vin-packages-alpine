@@ -1,0 +1,15 @@
+checksum = "c0911b914e59a85604807bfd6a54af1424d2e06e5d0499168dfc1baa052aa3ab"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-tags-parser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-tags-parser-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["syslog-ng", "3.38.1-r0"]]

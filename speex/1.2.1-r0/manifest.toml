@@ -1,0 +1,15 @@
+checksum = "4185a120aced5770a74e8b170f0ce9a686bd5aecb73b031ccac90d0be47222cc"
+licence = "BSD-3-Clause"
+provides = "speex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/speex-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

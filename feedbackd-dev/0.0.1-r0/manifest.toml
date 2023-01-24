@@ -1,0 +1,15 @@
+checksum = "c93c81204c9e729731c3cb323774997e4478b9f3b6ec8651fcd6dde56f3357af"
+licence = "GPL-3.0-or-later"
+provides = "feedbackd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/feedbackd-dev-0.0.1-r0.apk"
+version = "0.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["feedbackd", "0.0.1-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

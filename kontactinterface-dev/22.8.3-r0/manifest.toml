@@ -1,0 +1,15 @@
+checksum = "7444840c85a548f06cfac1d39d8a2903e36fc3b96766c7d542ddd031ea70c601"
+licence = "LGPL-2.0-only OR LGPL-3.0-only"
+provides = "kontactinterface-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kontactinterface-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kiconthemes-dev", "5.100.0-r0"], ["kparts-dev", "5.100.0-r0"], ["kwindowsystem-dev", "5.100.0-r0"], ["kxmlgui-dev", "5.100.0-r0"], ["samurai", "1.2.0-r2"], ["kontactinterface", "22.8.3-r0"]]

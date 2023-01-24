@@ -1,0 +1,15 @@
+checksum = "f454985e27afac835d0ccb0b8f0a8ac18f27b5cc0995ee90995b67da335efba8"
+licence = "GPL-2.0-or-later"
+provides = "dahdi-linux-lts-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dahdi-linux-lts-dev-5.15.89-r1.apk"
+version = "5.15.89-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dahdi-linux-dev", "3.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b281a977b4f73d50c03b488ec787409e363a9e3673db2611403d49ab76598028"
+licence = "GPL-2.0-only"
+provides = "xen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xen-4.16.3-r0.apk"
+version = "4.16.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["iproute2", "6.0.0-r1"], ["logrotate", "3.20.1-r3"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["libcurl", "7.87.0-r1"], ["glib", "2.74.5-r0"], ["ncurses-libs", "6.3.0"], ["xen-libs", "4.16.3-r0"], ["yajl", "2.1.0-r5"]]

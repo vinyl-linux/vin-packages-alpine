@@ -1,0 +1,15 @@
+checksum = "86cc02e25ad1d3d92174ee6a2c10e0b7b13ba7662988b76e6d71e9a1007b7266"
+licence = "LGPL-2.1-or-later"
+provides = "py3-dasbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-dasbus-1.7-r0.apk"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"], ["dbus", "1.14.4-r0"]]

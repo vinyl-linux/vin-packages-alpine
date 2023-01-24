@@ -1,0 +1,15 @@
+checksum = "9b87d2ecc9088b78c3138b3e6aac7a71ca2e0dced98591165c0b79b2c358ee58"
+licence = "MIT"
+provides = "lua5.1-optparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.1-optparse-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"]]

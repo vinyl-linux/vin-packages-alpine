@@ -1,0 +1,15 @@
+checksum = "d30ad67fb54ca97e81caff5bae5c8dab11ab67e596fe339eb24cdf0ef99bb749"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-mailq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-mailq-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["perl", "5.36.0-r0"]]

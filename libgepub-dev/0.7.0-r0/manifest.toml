@@ -1,0 +1,15 @@
+checksum = "fa1060d1d39992ad33fd78b2433a51a137f508874e303e8b6c227075cf3107c9"
+licence = "LGPL-2.1-or-later"
+provides = "libgepub-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgepub-dev-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgepub", "0.7.0-r0"], ["glib-dev", "2.74.5-r0"], ["libarchive-dev", "3.6.1-r2"], ["libsoup3-dev", "3.2.2-r0"], ["libxml2-dev", "2.10.3-r1"], ["webkit2gtk-4.1-dev", "2.38.3-r0"], ["pkgconf", "1.9.4-r0"]]

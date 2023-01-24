@@ -1,0 +1,15 @@
+checksum = "019da82bad0843ef0d1078a9106852b9667f1cdde7912b63132b4e44c4bd207f"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "minuet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minuet-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["kcrash", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["fluidsynth-libs", "2.3.0-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

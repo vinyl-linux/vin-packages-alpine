@@ -1,0 +1,15 @@
+checksum = "ae15e1f052e32f1d4bc08c7685b906a7223c639de3972927c35c3f82f5f8cc6d"
+licence = "MIT"
+provides = "dora"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dora-0_git20220621-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

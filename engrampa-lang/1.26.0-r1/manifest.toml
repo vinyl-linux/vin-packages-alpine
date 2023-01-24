@@ -1,0 +1,15 @@
+checksum = "e5f372463deab75d6fd8a926b92539067b55e159cdb029c805d28e51ad39b9e1"
+licence = "GPL-2.0-or-later"
+provides = "engrampa-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/engrampa-lang-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-utils", "2.10.3-r1"]]

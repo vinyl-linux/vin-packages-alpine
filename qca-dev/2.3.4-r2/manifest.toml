@@ -1,0 +1,15 @@
+checksum = "f2173a5f8795704318a3fa6db15640633dc68abff87c42a53a02bfbda4a781f3"
+licence = "LGPL-2.1-or-later"
+provides = "qca-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qca-dev-2.3.4-r2.apk"
+version = "2.3.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cyrus-sasl-dev", "2.1.28-r3"], ["libqca", "2.3.4-r2"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "80129e4a6a01a27d5c8ebe3c2c28590b6ecdaf332fa93f18d31b50f9723e12c0"
+licence = "MIT"
+provides = "libffi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libffi-dev-3.4.4-r0.apk"
+version = "3.4.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libffi", "3.4.4-r0"], ["pkgconf", "1.9.4-r0"]]

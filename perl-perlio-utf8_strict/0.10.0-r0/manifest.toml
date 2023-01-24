@@ -1,0 +1,15 @@
+checksum = "0750ecec4c154be02604d53d73776a3b94ed517b151e3b195aa4f26245125864"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-perlio-utf8_strict"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-perlio-utf8_strict-0.010-r0.apk"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

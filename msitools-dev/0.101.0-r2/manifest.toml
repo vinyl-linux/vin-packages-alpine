@@ -1,0 +1,15 @@
+checksum = "a6fa160124e4d115f19bdd761e1017ff415e7bf775c7dba0b50e6ad7032d6da8"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "msitools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/msitools-dev-0.101-r2.apk"
+version = "0.101.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["msitools", "0.101.0-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

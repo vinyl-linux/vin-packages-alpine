@@ -1,0 +1,15 @@
+checksum = "c1347913a8b8162973348791ad0fb1f1ed1f2beffdb05e63e7d57c66ae7b827a"
+licence = "CDDL-1.0"
+provides = "zfs-udev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-udev-2.1.7-r0.apk"
+version = "2.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

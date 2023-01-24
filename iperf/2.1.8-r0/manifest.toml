@@ -1,0 +1,15 @@
+checksum = "e0c35ebbef8977675c0e7141edacbe0bcb579541847e22d8a184f7f31525c892"
+licence = "NCSA"
+provides = "iperf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iperf-2.1.8-r0.apk"
+version = "2.1.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

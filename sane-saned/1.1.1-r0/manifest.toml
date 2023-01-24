@@ -1,0 +1,15 @@
+checksum = "76412594260b415d5a362ee582ecda1cfb7b220fa1fe6a1a5d23ac3a24a74946"
+licence = "GPL-2.0-or-later GPL-2.0-or-later-with-sane-exception Public-Domain"
+provides = "sane-saned"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sane-saned-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["sane", "1.1.1-r0"]]

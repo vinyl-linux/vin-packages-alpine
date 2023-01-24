@@ -1,0 +1,15 @@
+checksum = "db57b2087c5eb16c8ff2201d4f96de3829cae45f1bc81e463412fa877a389437"
+licence = "MIT"
+provides = "ocaml-findlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ocaml-findlib-1.9.6-r0.apk"
+version = "1.9.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ocaml", "4.14.0-r0"], ["ocaml-runtime", "4.14.0-r0"], ["musl", "1.2.3-r4"]]

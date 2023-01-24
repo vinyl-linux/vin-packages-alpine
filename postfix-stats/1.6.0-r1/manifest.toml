@@ -1,0 +1,15 @@
+checksum = "3f0124700ad6fc18d4325881286d140cd19f1927b91dcf70244d022edb695377"
+licence = "MIT GPL-2.0"
+provides = "postfix-stats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postfix-stats-1.6-r1.apk"
+version = "1.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["db", "5.3.28-r2"]]

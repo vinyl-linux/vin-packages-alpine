@@ -1,0 +1,15 @@
+checksum = "8e04417599aea1a9fba82f6603c8f49bbc13f05ca1f139c1d17f3677341ae0bf"
+licence = "LGPL-2.1-or-later AND LicenseRef-KDE-Accepted-LGPL"
+provides = "peruse-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/peruse-lang-1.80-r1.apk"
+version = "1.80.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["okular-common-qml", "22.8.3-r0"], ["qt5-qtbase-sqlite", "5.15.6"], ["qt5-qtimageformats", "5.15.6"], ["qt5-qtquickcontrols", "5.15.6"]]

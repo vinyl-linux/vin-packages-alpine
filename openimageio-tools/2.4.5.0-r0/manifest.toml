@@ -1,0 +1,15 @@
+checksum = "313aec90aa2e07182364c21c2a938531563c19b76d060bb8a2e50f8bb964da6c"
+licence = "BSD-3-Clause"
+provides = "openimageio-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openimageio-tools-2.4.5.0-r0.apk"
+version = "2.4.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["openexr", "3.1.5-r3"], ["openimageio", "2.4.5.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

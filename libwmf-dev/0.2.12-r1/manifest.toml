@@ -1,0 +1,15 @@
+checksum = "eaa29acf911048bc2c2a900d598d3de23b06da6deef585519cb43a0974907388"
+licence = "LGPL-2.0-or-later"
+provides = "libwmf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwmf-dev-0.2.12-r1.apk"
+version = "0.2.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwmf", "0.2.12-r1"], ["pkgconf", "1.9.4-r0"]]

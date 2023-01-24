@@ -1,0 +1,15 @@
+checksum = "0627528c08ab8c1fefe0c41712414b5b5ab5aa25b60f9de05a5fb7b8f53643f5"
+licence = "GPL-2.0-or-later"
+provides = "mdbtools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mdbtools-dev-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mdbtools", "1.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

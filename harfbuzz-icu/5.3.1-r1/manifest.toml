@@ -1,0 +1,15 @@
+checksum = "1f423b7e05063fca2443f8ad89b104ed3b354c4154a5a364c53ed3858f7cfd70"
+licence = "MIT"
+provides = "harfbuzz-icu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/harfbuzz-icu-5.3.1-r1.apk"
+version = "5.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["harfbuzz", "5.3.1-r1"], ["icu-libs", "72.1.0-r1"]]

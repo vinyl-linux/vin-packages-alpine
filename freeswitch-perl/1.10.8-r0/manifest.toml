@@ -1,0 +1,15 @@
+checksum = "7dd1da31e903d9ca77269ad98f2f56f25741152552b4820f2b55f58d3dfd9eb0"
+licence = "MPL-1.1"
+provides = "freeswitch-perl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeswitch-perl-1.10.8-r0.apk"
+version = "1.10.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["freeswitch", "1.10.8-r0"], ["libgcc", "12.2.1"], ["perl", "5.36.0-r0"], ["libstdc++", "12.2.1"]]

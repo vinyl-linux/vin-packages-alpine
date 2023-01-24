@@ -1,0 +1,15 @@
+checksum = "cbb104992c491097b0ee855819d04d4552e44f30a31f26589a7187585f752ecb"
+licence = "GPL-2.0-or-later"
+provides = "libcec-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcec-dev-6.0.2-r7.apk"
+version = "6.0.2-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev-dev", "3.2.11-r4"], ["libxrandr-dev", "1.5.3-r0"], ["python3-dev", "3.10.9-r1"], ["swig", "4.0.2-r7"], ["libcec", "6.0.2-r7"], ["p8-platform-dev", "2.1.0.1-r2"], ["pkgconf", "1.9.4-r0"]]

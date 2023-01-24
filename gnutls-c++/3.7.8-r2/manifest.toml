@@ -1,0 +1,15 @@
+checksum = "7bf5e4dff43dd5a3b72faf0235685b69027297883c74e6b99213012f12a54aa4"
+licence = "LGPL-2.1-or-later"
+provides = "gnutls-c++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnutls-c++-3.7.8-r2.apk"
+version = "3.7.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gnutls", "3.7.8-r2"], ["libstdc++", "12.2.1"]]

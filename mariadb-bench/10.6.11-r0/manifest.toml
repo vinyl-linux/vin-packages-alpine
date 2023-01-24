@@ -1,0 +1,15 @@
+checksum = "83faf0b620a92ecd982bc0cd31de7576f9ace8bbc022ce22a044c603c7e2e242"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-bench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-bench-10.6.11-r0.apk"
+version = "10.6.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb-common", "10.6.11-r0"]]

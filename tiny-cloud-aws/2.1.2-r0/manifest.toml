@@ -1,0 +1,15 @@
+checksum = "dd9e3d1618109484748eff2c1fe35c52d2c57aeeec5160eaf92481c99a7426ac"
+licence = "MIT"
+provides = "tiny-cloud-aws"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-aws-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nvme-cli", "2.2.1-r0"], ["tiny-cloud-network", "2.1.2-r0"], ["yash-binsh", "2.53.0-r2"]]

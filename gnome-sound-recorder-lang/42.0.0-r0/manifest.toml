@@ -1,0 +1,15 @@
+checksum = "41597c357ff15f9f742b5876e75e207546d2a864510ecd7961305f8d3fabf755"
+licence = "GPL-2.0-or-later"
+provides = "gnome-sound-recorder-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-sound-recorder-lang-42.0-r0.apk"
+version = "42.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gjs", "1.74.1-r0"], ["gtk4.0", "4.8.3-r0"], ["glib", "2.74.5-r0"], ["gst-plugins-good", "1.20.5-r0"], ["libadwaita", "1.2.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "edaf32bd16084311b7c7fbc84d044f0c97a74a68297916b3ea437ad4a4d5a539"
+licence = "BSD-3-Clause"
+provides = "libusrsctp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libusrsctp-0.9.5.0-r0.apk"
+version = "0.9.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

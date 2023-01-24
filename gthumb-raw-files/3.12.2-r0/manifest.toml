@@ -1,0 +1,15 @@
+checksum = "9329160b104f964dcde8bae1682f9ae8ae23a8d33cdf41f28af11c021e0b1b70"
+licence = "GPL-2.0-or-later"
+provides = "gthumb-raw-files"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gthumb-raw-files-3.12.2-r0.apk"
+version = "3.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gthumb", "3.12.2-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libraw", "0.20.2-r2"]]

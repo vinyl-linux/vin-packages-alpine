@@ -1,0 +1,15 @@
+checksum = "cd9ec0357d630a9e91ba0dcfde5f0925b2366aaf4892903e22d9abb86db776da"
+licence = "LGPL-2.1-or-later"
+provides = "libatasmart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libatasmart-0.19-r2.apk"
+version = "0.19.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

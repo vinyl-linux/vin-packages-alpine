@@ -1,0 +1,15 @@
+checksum = "7eeeaa450bb99f2f606bdcda3eaa72cb0c3b1c5ecfc1d97c4e4043d0dbf57ed6"
+licence = "GPL-3.0-or-later"
+provides = "jfsutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jfsutils-1.1.15-r4.apk"
+version = "1.1.15-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

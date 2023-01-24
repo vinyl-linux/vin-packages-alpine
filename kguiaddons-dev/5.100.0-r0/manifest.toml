@@ -1,0 +1,15 @@
+checksum = "f24510f25bda9fb3df707c1b4599c9b98ee7d6f1ef2339ae7771827d4c59b43f"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kguiaddons-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kguiaddons-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["plasma-wayland-protocols", "1.9.0-r0"], ["qt5-qttools-dev", "5.15.6"], ["qt5-qtwayland-dev", "5.15.6"], ["qt5-qtx11extras-dev", "5.15.6"], ["wayland-dev", "1.21.0-r1"], ["kguiaddons", "5.100.0-r0"]]

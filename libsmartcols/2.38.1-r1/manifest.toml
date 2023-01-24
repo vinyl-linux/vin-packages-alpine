@@ -1,0 +1,15 @@
+checksum = "2bb3ee4da883ae2ca98ea61a6482209a7bfcdd5bc6ebcd5b2c68f925b4c78e4a"
+licence = "LGPL-2.1-or-later"
+provides = "libsmartcols"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libsmartcols-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

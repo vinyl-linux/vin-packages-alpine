@@ -1,0 +1,15 @@
+checksum = "d88472c84f85e59e0c2232d1cd6e6224ecd4a99f5b6dc287aac6755bb561ecfe"
+licence = "MIT"
+provides = "shellcat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shellcat-1.2-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

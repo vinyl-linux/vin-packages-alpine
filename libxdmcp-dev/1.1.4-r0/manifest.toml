@@ -1,0 +1,15 @@
+checksum = "638e8a8a7d866afc375bbb2bf8095cd7785060f8f0c386ead3873bef6f16954b"
+licence = "MIT"
+provides = "libxdmcp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxdmcp-dev-1.1.4-r0.apk"
+version = "1.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxdmcp", "1.1.4-r0"], ["xorgproto", "2022.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

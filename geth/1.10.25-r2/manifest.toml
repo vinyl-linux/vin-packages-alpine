@@ -1,0 +1,15 @@
+checksum = "bdd5c0df60324584a09c732351302d760bb8baeb2e0d1c3e4696ef91ea1e9b3a"
+licence = "LGPL-3.0-or-later"
+provides = "geth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geth-1.10.25-r2.apk"
+version = "1.10.25-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

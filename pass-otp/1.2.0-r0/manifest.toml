@@ -1,0 +1,15 @@
+checksum = "ff40766b32955bf3223d1db214ddae24eb1e06899babcccd8011cfda4522788c"
+licence = "GPL-3.0-only"
+provides = "pass-otp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pass-otp-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pass", "1.7.4-r1"], ["libqrencode", "4.1.1-r1"], ["oath-toolkit-oathtool", "2.6.7-r2"]]

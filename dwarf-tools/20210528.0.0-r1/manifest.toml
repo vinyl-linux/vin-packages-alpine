@@ -1,0 +1,15 @@
+checksum = "f449b78f773f2ca82ad82231c9f8db7a624f8db936e650d65a6e9914856ce4bc"
+licence = "GPL-2.0-only AND BSD-3-Clause"
+provides = "dwarf-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dwarf-tools-20210528-r1.apk"
+version = "20210528.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdwarf", "20210528.0.0-r1"], ["libelf", "0.187.0-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

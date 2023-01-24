@@ -1,0 +1,15 @@
+checksum = "5c240ce44288105725fc16aa5cd4d64e03613127f409658f2e55a799dc16eb34"
+licence = "LGPL-2.1-or-later"
+provides = "flatpak-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flatpak-dev-1.14.1-r0.apk"
+version = "1.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flatpak-libs", "1.14.1-r0"], ["glib-dev", "2.74.5-r0"], ["ostree-dev", "2022.6.0-r0"], ["pkgconf", "1.9.4-r0"]]

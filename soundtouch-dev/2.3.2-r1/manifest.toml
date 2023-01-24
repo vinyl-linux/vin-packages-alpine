@@ -1,0 +1,15 @@
+checksum = "71f6dda31c1b8ef8020daf9ab3396dbc6a12a7048d297bb98cc6d09827a4fae7"
+licence = "LGPL-2.0-or-later"
+provides = "soundtouch-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/soundtouch-dev-2.3.2-r1.apk"
+version = "2.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["soundtouch", "2.3.2-r1"]]

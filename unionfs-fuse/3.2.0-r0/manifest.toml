@@ -1,0 +1,15 @@
+checksum = "cc42f17f6cab2c3d199ed9ef455c327d0247976b5bed277bcf530a523c3a8ba1"
+licence = "BSD-3-Clause"
+provides = "unionfs-fuse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/unionfs-fuse-3.2-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fuse3", "3.12.0-r0"], ["musl", "1.2.3-r4"], ["fuse3-libs", "3.12.0-r0"]]

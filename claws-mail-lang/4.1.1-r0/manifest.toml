@@ -1,0 +1,15 @@
+checksum = "47a71dbd597dd1825b42d7189774c08b7bdc9e7f0cc401d2644da7172d2e3155"
+licence = "GPL-3.0-or-later"
+provides = "claws-mail-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/claws-mail-lang-4.1.1-r0.apk"
+version = "4.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspell-en", "2020.12.7-r0"]]

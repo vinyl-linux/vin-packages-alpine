@@ -1,0 +1,15 @@
+checksum = "d377471d40bf4351ae249626be33fd4b40d91dbfad8c519d1e0004f847b6b11c"
+licence = "Apache-2.0"
+provides = "erlang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/erlang-25.1.2-r0.apk"
+version = "25.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b7c89f90ab292cec2071ed2eadd086a138874e87dd88812587ace7629059e17e"
+licence = "BSD-3-Clause AND Apache-2.0 AND MIT"
+provides = "zsh-completions"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zsh-completions-0.34.0-r0.apk"
+version = "0.34.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

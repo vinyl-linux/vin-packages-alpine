@@ -1,0 +1,15 @@
+checksum = "7b4f019a1e9a291ee353f734122c2eee6dcc823a7a0ba6ff73ae1e25b2143850"
+licence = "GPL-3.0-or-later"
+provides = "calls-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calls-lang-43.3-r0.apk"
+version = "43.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["callaudiod", "0.1.4-r0"], ["modemmanager", "1.20.2-r1"]]

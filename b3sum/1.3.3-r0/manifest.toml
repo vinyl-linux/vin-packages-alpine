@@ -1,0 +1,15 @@
+checksum = "79b06d7d1961fe672e86705fa091f7c727d81245997719f00401a886b7213ff8"
+licence = "CC0-1.0 OR Apache-2.0"
+provides = "b3sum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/b3sum-1.3.3-r0.apk"
+version = "1.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

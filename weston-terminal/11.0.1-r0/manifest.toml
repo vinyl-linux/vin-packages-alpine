@@ -1,0 +1,15 @@
+checksum = "3536607fff539108b461b8022e2b746919d8b4e788974a42ba9351e1803ff592"
+licence = "MIT"
+provides = "weston-terminal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weston-terminal-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fontconfig", "2.14.1-r0"], ["glib", "2.74.5-r0"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["libwebp", "1.2.4-r1"], ["libxkbcommon", "1.4.1-r0"]]

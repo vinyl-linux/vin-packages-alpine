@@ -1,0 +1,15 @@
+checksum = "1c5ec1a65c4062eafc6042a5dfcf89e7d838f7650e03444f2fca56f97b8a2254"
+licence = "GPL-3.0-or-later"
+provides = "lshw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lshw-02.19.2-r2.apk"
+version = "2.19.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

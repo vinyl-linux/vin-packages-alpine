@@ -1,0 +1,15 @@
+checksum = "52fee5d0320be9888ad40f0dea0fdf13e3fb359427f6f824c01533b6f70f1b9d"
+licence = "MIT"
+provides = "hylafaxplus-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hylafaxplus-dbg-7.0.6-r1.apk"
+version = "7.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghostscript", "10.0.0-r0"], ["bash", "5.2.15-r0"], ["tiff-tools", "4.4.0-r1"], ["findutils", "4.9.0-r3"]]

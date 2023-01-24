@@ -1,0 +1,15 @@
+checksum = "8b56a55dd4d0f7533eb163317c2dacf2b859a4083bc1cb34306f1db497a06a91"
+licence = "GPL-2.0"
+provides = "tkremind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tkremind-04.02.00-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["remind", "4.2.0-r0"], ["tk", "8.6.12-r1"], ["tcl-lib", "1.21.0-r1"]]

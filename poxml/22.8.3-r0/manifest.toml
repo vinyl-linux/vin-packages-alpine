@@ -1,0 +1,15 @@
+checksum = "ede8c6274831a2600bfb399f6023af4586856bcc037f7b829cc967da7267647a"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "poxml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/poxml-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["gettext-libs", "0.21.1-r1"], ["libstdc++", "12.2.1"]]

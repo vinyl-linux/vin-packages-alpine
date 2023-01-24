@@ -1,0 +1,15 @@
+checksum = "6686b7fe872f4a4134b905f165f459f6f43e7c89f51a7aaa785618fc3ff75325"
+licence = "ISC"
+provides = "s6-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/s6-dev-2.11.1.2-r0.apk"
+version = "2.11.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["s6", "2.11.1.2-r0"]]

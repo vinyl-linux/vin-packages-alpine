@@ -1,0 +1,15 @@
+checksum = "f1c23a9862f3e30746b16d8c6a28a6f0732e7ab129dce9fd8fd2d52688e41478"
+licence = "MIT"
+provides = "py3-django-djblets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-django-djblets-0.6.31-r3.apk"
+version = "0.6.31-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-django-pipeline", "1.7.0-r3"]]

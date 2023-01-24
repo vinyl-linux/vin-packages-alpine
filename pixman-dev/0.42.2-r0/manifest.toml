@@ -1,0 +1,15 @@
+checksum = "fe4c2eee594f8507676e48f15cd3a3e9b74dea637aef6c743bdeccc5d7f91f12"
+licence = "MIT"
+provides = "pixman-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pixman-dev-0.42.2-r0.apk"
+version = "0.42.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pixman", "0.42.2-r0"], ["pkgconf", "1.9.4-r0"]]

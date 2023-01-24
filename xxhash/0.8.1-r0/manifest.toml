@@ -1,0 +1,15 @@
+checksum = "1932bb15dc85beeb2c0d3d870fc8924d78213407d3c61a1dfa53cac02770f8b2"
+licence = "BSD-2-Clause GPL-2.0-or-later"
+provides = "xxhash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xxhash-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

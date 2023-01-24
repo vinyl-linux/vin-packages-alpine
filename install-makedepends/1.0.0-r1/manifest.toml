@@ -1,0 +1,15 @@
+checksum = "ec5891ed1ff5f9daf723d45602f72587eb60178216834f016d3b146ffb742a6f"
+licence = "GPL-3.0-or-later"
+provides = "install-makedepends"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/install-makedepends-1.0.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"]]

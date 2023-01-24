@@ -1,0 +1,15 @@
+checksum = "1c2ff53e453adde3b401f8c47ec949c4cf3aca69ce7c9f8b5af8f85bdfe1e4bc"
+licence = "MIT"
+provides = "yajl-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/yajl-tools-2.1.0-r5.apk"
+version = "2.1.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

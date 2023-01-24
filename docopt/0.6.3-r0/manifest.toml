@@ -1,0 +1,15 @@
+checksum = "19befd9563fea87eea3a551365ea4e31c3c0661af770434cb17ff2311a8892f8"
+licence = "MIT"
+provides = "docopt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docopt-0.6.3-r0.apk"
+version = "0.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

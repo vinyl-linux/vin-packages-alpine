@@ -1,0 +1,15 @@
+checksum = "03f4ddc9e8eb0f4e3c74ec73edc31f7495bfec21bfb0b66ac32851118cbad1c5"
+licence = "Apache-2.0"
+provides = "qpdf-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qpdf-libs-11.2.0-r0.apk"
+version = "11.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["gnutls", "3.7.8-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

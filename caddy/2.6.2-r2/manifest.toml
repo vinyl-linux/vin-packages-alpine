@@ -1,0 +1,15 @@
+checksum = "46453979faeda23d2d847ed793f65c57587bf7c142320b2566eb0547d7334af8"
+licence = "Apache-2.0"
+provides = "caddy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/caddy-2.6.2-r2.apk"
+version = "2.6.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["yash-binsh", "2.53.0-r2"]]

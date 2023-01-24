@@ -1,0 +1,15 @@
+checksum = "b7c35bd87ea59c7df3f19b0932a3e938091d789080fa80fb3dbcdb04c5bf67f5"
+licence = "custom"
+provides = "uwsgi-router_redirect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-router_redirect-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "09a02dc1278b7e6f3fc7f63ce5e598c15394f8fc8511cbdc59865c7e20a23504"
+licence = "GPL-2.0-or-later"
+provides = "epson-inkjet-printer-escpr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/epson-inkjet-printer-escpr-1.7.21-r0.apk"
+version = "1.7.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cups-filters", "1.28.16-r2"], ["musl", "1.2.3-r4"], ["cups-libs", "2.4.2-r1"]]

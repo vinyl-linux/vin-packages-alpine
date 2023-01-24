@@ -1,0 +1,15 @@
+checksum = "fab74c55b4338256f5179e400431841269fae27e1d75671e9ffa8399c4717385"
+licence = "Public-Domain"
+provides = "libgeotiff-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgeotiff-dev-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tiff-dev", "4.4.0-r1"], ["libgeotiff", "1.7.1-r0"]]

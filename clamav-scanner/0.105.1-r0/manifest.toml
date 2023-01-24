@@ -1,0 +1,15 @@
+checksum = "7934a60a7e64780db8b61a42509e2b0dfc2d0f366ad5d8026100435933b3d3da"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-scanner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamav-scanner-0.105.1-r0.apk"
+version = "0.105.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freshclam", "0.105.1-r0"], ["musl", "1.2.3-r4"], ["clamav-libs", "0.105.1-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4c217da3bd820df6a52f466e5f41871623918bd5c202a3f07190494fbd0a60fb"
+licence = "GPL-3.0-or-later"
+provides = "atinout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/atinout-0.9.1-r1.apk"
+version = "0.9.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

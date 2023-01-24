@@ -1,0 +1,15 @@
+checksum = "001cc3afebad576f9337aa26366c203344cd336a51933fba5d38df32b61d0c68"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-anyevent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-anyevent-7.17-r4.apk"
+version = "7.17.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["openssl-dev", "3.0.7-r2"]]

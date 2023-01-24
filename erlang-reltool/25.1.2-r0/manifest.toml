@@ -1,0 +1,15 @@
+checksum = "71d14d015783816016cdc6ce00f5ff5ad5725a9f6fd5f903141dc29669aa2f71"
+licence = "Apache-2.0"
+provides = "erlang-reltool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/erlang-reltool-25.1.2-r0.apk"
+version = "25.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["erlang-wx", "25.1.2-r0"]]

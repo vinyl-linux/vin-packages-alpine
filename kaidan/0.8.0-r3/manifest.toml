@@ -1,0 +1,15 @@
+checksum = "a1b176856e7386c26b4905a6cff0b8cf8d4f7436dd0ef6f8ef3504b8e8db9ec0"
+licence = "GPL-3.0-or-later-with-openssl-exception AND GPL-3.0-or-later AND MIT AND AND Apache-2.0 AND CC-BY-SA-4.0 AND CC-BY-SA-3.0"
+provides = "kaidan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kaidan-0.8.0-r3.apk"
+version = "0.8.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["qt5-qtbase-sqlite", "5.15.6"], ["qt5-qtquickcontrols", "5.15.6"], ["knotifications", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["qt5-qtlocation", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["zxing-cpp", "1.4.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["qxmpp", "1.4.0-r0"], ["libstdc++", "12.2.1"]]

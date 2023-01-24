@@ -1,0 +1,15 @@
+checksum = "7c554fa6b92840dfc8a29e44dae41c5a8ee305a9aa841bd4cdf8e0e8bb41375b"
+licence = "MIT"
+provides = "cage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cage-0.1.4-r2.apk"
+version = "0.1.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xwayland", "22.1.7-r0"], ["musl", "1.2.3-r4"], ["pixman", "0.42.2-r0"], ["wayland-libs-server", "1.21.0-r1"], ["wlroots", "0.15.1-r4"], ["libxkbcommon", "1.4.1-r0"]]

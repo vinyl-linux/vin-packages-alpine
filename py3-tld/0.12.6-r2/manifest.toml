@@ -1,0 +1,15 @@
+checksum = "893a4775e6298317394da4d9f5ba33d6e4a99a16b94a1ed9409436d1be4f0864"
+licence = "MPL-1.1 OR GPL-2.0-only OR LGPL-2.1-or-later"
+provides = "py3-tld"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tld-0.12.6-r2.apk"
+version = "0.12.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "9239cef402ecafd4f5e051acaed54d1442c7736c3efbde16bf95243c344ee460"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "mate-desktop-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-desktop-lang-1.26.0-r2.apk"
+version = "1.26.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r1"], ["yelp-tools", "42.1.0-r0"]]

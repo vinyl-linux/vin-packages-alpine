@@ -1,0 +1,15 @@
+checksum = "662b237771089359c1e9366fb7afb3b3caee1fd8b0a2d6c4361e08baa5fd03c3"
+licence = "PostgreSQL AND Apache-2.0"
+provides = "agensgraph-plperl-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/agensgraph-plperl-contrib-2.13.0-r1.apk"
+version = "2.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["agensgraph-plperl", "2.13.0-r1"], ["musl", "1.2.3-r4"], ["perl", "5.36.0-r0"]]

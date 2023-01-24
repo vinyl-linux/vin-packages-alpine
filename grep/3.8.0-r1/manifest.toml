@@ -1,0 +1,15 @@
+checksum = "3aa6689f7edbaafbe16ce7221867a3566eb2d038eea2dad76fea2d901feff648"
+licence = "GPL-3.0-or-later"
+provides = "grep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/grep-3.8-r1.apk"
+version = "3.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pcre2", "10.42.0-r0"]]

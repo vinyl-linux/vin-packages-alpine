@@ -1,0 +1,15 @@
+checksum = "ae1e3f3a5258e07536b5fe22ece2aa1de0d29616bb2e5bf13ab904a86ef083ad"
+licence = "BSD-3-Clause"
+provides = "gflags-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gflags-dev-2.2.2-r2.apk"
+version = "2.2.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gflags", "2.2.2-r2"], ["pkgconf", "1.9.4-r0"]]

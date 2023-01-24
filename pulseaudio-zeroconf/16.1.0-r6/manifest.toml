@@ -1,0 +1,15 @@
+checksum = "e94ecd5da01192e13f18c667edab473f91ba09a8d30a27ac81c83b85856f9092"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-zeroconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulseaudio-zeroconf-16.1-r6.apk"
+version = "16.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r6"], ["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["dbus-libs", "1.14.4-r0"], ["libintl", "0.21.1-r1"], ["pulseaudio", "16.1.0-r6"], ["libpulse", "16.1.0-r6"]]

@@ -1,0 +1,15 @@
+checksum = "9af2856c8cce5e22f26ad2c23117b1e75d78708452675a3a0de13fd22aae756e"
+licence = "LGPL-2.0-or-later"
+provides = "laz-perf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/laz-perf-dev-3.0.0-r1.apk"
+version = "3.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["laz-perf", "3.0.0-r1"]]

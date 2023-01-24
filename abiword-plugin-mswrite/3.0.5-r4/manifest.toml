@@ -1,0 +1,15 @@
+checksum = "02f2142ba8b76cf1444bc5f6ce4f0c65524e0255359d5e71ec701bfc9c89c2f8"
+licence = "GPL-2.0-or-later"
+provides = "abiword-plugin-mswrite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abiword-plugin-mswrite-3.0.5-r4.apk"
+version = "3.0.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abiword", "3.0.5-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgsf", "1.14.50-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "782f2eebc50347e0ca5d57b6834d7c4b2c8db1ac5f8d0605af021a1bc30a5290"
+licence = "BSD-3-Clause"
+provides = "apg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apg-2.2.3-r6.apk"
+version = "2.2.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

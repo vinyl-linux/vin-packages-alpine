@@ -1,0 +1,15 @@
+checksum = "10dda67c506327bdf3ba4e6b90f670e28b40334e5eed79b87a22602061b5146c"
+licence = "BSD-3-Clause"
+provides = "coturn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coturn-4.5.2-r3.apk"
+version = "4.5.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libevent", "2.1.12-r5"], ["hiredis", "1.0.2-r1"], ["mariadb-connector-c", "3.3.3-r0"], ["libpq", "15.1.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"]]

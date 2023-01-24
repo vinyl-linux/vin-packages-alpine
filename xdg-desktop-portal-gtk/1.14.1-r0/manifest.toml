@@ -1,0 +1,15 @@
+checksum = "e31ddbec10c6003c781df7bce571d0d3ececc8ada3ef99c24ecf048b2a39fc4d"
+licence = "LGPL-2.1-or-later"
+provides = "xdg-desktop-portal-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdg-desktop-portal-gtk-1.14.1-r0.apk"
+version = "1.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-desktop-portal", "1.16.0-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

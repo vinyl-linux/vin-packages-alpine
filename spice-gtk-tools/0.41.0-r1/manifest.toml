@@ -1,0 +1,15 @@
+checksum = "925a42f739959655656f70ef25863fcb0fb87899687615d35d508f0a1afa9c11"
+licence = "LGPL-2.1-or-later"
+provides = "spice-gtk-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/spice-gtk-tools-0.41-r1.apk"
+version = "0.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcap-ng", "0.8.3-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gstreamer", "1.20.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["spice-glib", "0.41.0-r1"], ["spice-gtk", "0.41.0-r1"]]

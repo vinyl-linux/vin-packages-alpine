@@ -1,0 +1,15 @@
+checksum = "8969663e6b1bd2aa4e29bb8f0452290369aa2548eb298edc5131646d710001b3"
+licence = "GPL-3.0-or-later"
+provides = "monitoring-plugins-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/monitoring-plugins-lang-2.3.2-r0.apk"
+version = "2.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iputils", "20211215.0.0-r0"], ["procps", "3.3.17-r2"], ["bind-tools", "9.18.10-r0"]]

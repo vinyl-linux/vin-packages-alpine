@@ -1,0 +1,15 @@
+checksum = "7b4abe1e8771aa653e44a4c64f013702da1b5091120c08814f55c4109db810d0"
+licence = "Zlib GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "deadbeef-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/deadbeef-lang-1.9.3-r0.apk"
+version = "1.9.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["desktop-file-utils", "0.26.0-r1"], ["hicolor-icon-theme", "0.17.0-r2"]]

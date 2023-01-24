@@ -1,0 +1,15 @@
+checksum = "c45fb9e5a824e15dba8202bc713d999be058cda8f7e29df484a5ef299d690ff4"
+licence = "MIT"
+provides = "wlogout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wlogout-1.1.1-r2.apk"
+version = "1.1.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["gtk-layer-shell", "0.8.0-r0"]]

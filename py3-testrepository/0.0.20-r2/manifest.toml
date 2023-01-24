@@ -1,0 +1,15 @@
+checksum = "369cd04fa7f88e584b16aaf89630226de479ba49a18aded23c6f4ae54d7e9722"
+licence = "Apache-2.0 OR BSD-3-Clause"
+provides = "py3-testrepository"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-testrepository-0.0.20-r2.apk"
+version = "0.0.20-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-fixtures", "4.0.1-r0"], ["py3-subunit", "1.4.0-r2"], ["py3-testtools", "2.5.0-r1"]]

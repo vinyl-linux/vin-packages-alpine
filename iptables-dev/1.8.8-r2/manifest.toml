@@ -1,0 +1,15 @@
+checksum = "21925334c12d6bfbd4dec85b28ec107d06cc793165365aa85abf38f6ff0f829b"
+licence = "GPL-2.0-or-later"
+provides = "iptables-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iptables-dev-1.8.8-r2.apk"
+version = "1.8.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["iptables", "1.8.8-r2"], ["pkgconf", "1.9.4-r0"]]

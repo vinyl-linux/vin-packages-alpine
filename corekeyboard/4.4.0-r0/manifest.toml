@@ -1,0 +1,15 @@
+checksum = "fc31624ca35df67047c5254fc4ee9b1f9836c245311922477e13d47ca7334fc5"
+licence = "GPL-3.0-or-later"
+provides = "corekeyboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corekeyboard-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libxtst", "1.2.4-r0"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

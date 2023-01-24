@@ -1,0 +1,15 @@
+checksum = "3689a3567d3429748a1905096d65d6497506600ccec875cf3115ab79cc7f7374"
+licence = "custom:TU-Berlin-2.0"
+provides = "gsm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gsm-dev-1.0.22-r1.apk"
+version = "1.0.22-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsm", "1.0.22-r1"]]

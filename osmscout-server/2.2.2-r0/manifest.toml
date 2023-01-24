@@ -1,0 +1,15 @@
+checksum = "6e22550fd1f31aa1e1da083b2fdb85e61235c95b135f7ed23787d83146a66f1d"
+licence = "GPL-3.0-or-later"
+provides = "osmscout-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/osmscout-server-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["procps", "3.3.17-r2"], ["qt5-qtbase-sqlite", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtlocation", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["kyotocabinet", "1.2.79-r3"], ["libmarisa", "0.2.6-r1"], ["libmicrohttpd", "0.9.75-r0"], ["libpostal", "1.1.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["valhalla", "3.1.4-r6"]]

@@ -1,0 +1,15 @@
+checksum = "c1704013b604bea2420b6c9fb6d05a27730fab06336308adbc0f0ca738b8f7b4"
+licence = "Apache-2.0"
+provides = "salt-master"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-master-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["salt", "3005.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2cb449579d3538052313b12f5d1f29df30c945f48c6fa3ac8b4afb4629c25dd6"
+licence = "BSD-2-Clause"
+provides = "py3-mpi4py"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mpi4py-3.1.4-r0.apk"
+version = "3.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["openmpi", "4.1.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0bb04bacef5660befa6f49a10b868a72176c8e4efbc84cac0ccf528f134ff63b"
+licence = "BSD-2-Clause OR LGPL-2.1-or-later"
+provides = "libmarisa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmarisa-0.2.6-r1.apk"
+version = "0.2.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "cdc1c5e76ea1617ac31abd3861db591e31ebde372887faf3e527e6a5659e634c"
+licence = "BSD-3-Clause"
+provides = "swtpm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/swtpm-0.8.0-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["json-glib", "1.6.6-r1"], ["libseccomp", "2.5.4-r0"], ["libtasn1", "4.19.0-r0"], ["libtpms", "0.9.5-r0"]]

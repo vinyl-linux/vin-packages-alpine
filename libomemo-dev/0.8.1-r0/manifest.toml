@@ -1,0 +1,15 @@
+checksum = "4e657552a8505cec74728407ee767fd6798018685cfc2e09479d29acb08fb21b"
+licence = "MIT"
+provides = "libomemo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libomemo-dev-0.8.1-r0.apk"
+version = "0.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libomemo", "0.8.1-r0"], ["glib-dev", "2.74.5-r0"], ["libgcrypt-dev", "1.10.1-r0"], ["mxml-dev", "3.3.1-r0"], ["sqlite-dev", "3.40.1-r0"], ["pkgconf", "1.9.4-r0"]]

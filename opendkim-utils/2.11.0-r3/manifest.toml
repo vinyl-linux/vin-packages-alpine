@@ -1,0 +1,15 @@
+checksum = "6ba4eddf846eca2bcd3f8734dedd7400d80a3aca3b6c6805db8cf3bc1972ea67"
+licence = "custom"
+provides = "opendkim-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opendkim-utils-2.11.0-r3.apk"
+version = "2.11.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opendkim", "2.11.0-r3"], ["openssl", "3.0.7-r2"], ["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["opendkim-libs", "2.11.0-r3"], ["libssl3", "3.0.7-r2"]]

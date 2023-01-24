@@ -1,0 +1,15 @@
+checksum = "67d7ac8febf8a93011432d91733145d17dff151f6866d764a545f1d2d345d604"
+licence = "GPL-2.0-only"
+provides = "lua5.3-sircbot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.3-sircbot-0.4-r4.apk"
+version = "0.4.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "80c2fcdc4e87b95f4320544e0ced8bfde992e982e92ca29723db004c1350c4e8"
+licence = "GPL-2.0-or-later"
+provides = "collectd-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-utils-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["collectd-libs", "5.12.0-r11"]]

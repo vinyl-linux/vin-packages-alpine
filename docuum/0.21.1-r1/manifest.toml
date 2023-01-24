@@ -1,0 +1,15 @@
+checksum = "e4a732a5d7a396a957250f70ec20b4d7a474e094281648324f9c54f6f956d931"
+licence = "MIT"
+provides = "docuum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docuum-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

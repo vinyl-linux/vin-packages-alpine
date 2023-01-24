@@ -1,0 +1,15 @@
+checksum = "bfd26cecf325dd480ce8e282d328f3e46e836554e012881bdaec57c557ee2bc6"
+licence = "LGPL-2.1-or-later"
+provides = "kcompletion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kcompletion-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

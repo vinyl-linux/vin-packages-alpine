@@ -1,0 +1,15 @@
+checksum = "3a1d49198ed65b63071b45fd374dd7468b0a74af5ae465cc7d5734ac5c931ad6"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "plasma-desktop-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-desktop-lang-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["accountsservice", "22.8.8-r0"], ["font-noto-emoji", "2.38.0-r0"], ["ibus-emoji", "1.5.27-r0"], ["kirigami2", "5.100.0-r1"], ["plasma-workspace", "5.26.3-r0"], ["qqc2-desktop-style", "5.100.0-r0"], ["setxkbmap", "1.3.3-r0"], ["xdg-user-dirs", "0.18.0-r0"]]

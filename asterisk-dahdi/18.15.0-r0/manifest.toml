@@ -1,0 +1,15 @@
+checksum = "6f445d0982b5e2f41430ecb44efe42e0c2ef2b10123a5d066d6890dff705e90e"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "asterisk-dahdi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/asterisk-dahdi-18.15.0-r0.apk"
+version = "18.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpri", "1.6.0-r2"], ["dahdi-tools", "3.2.0-r0"]]

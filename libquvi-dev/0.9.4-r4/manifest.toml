@@ -1,0 +1,15 @@
+checksum = "1a5637089f4ebcb1f3123acac05a036cd245366a2655790ed2c533de3087254d"
+licence = "LGPL-2.0-or-later"
+provides = "libquvi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libquvi-dev-0.9.4-r4.apk"
+version = "0.9.4-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libquvi-scripts-dev", "0.9.20131130-r1"], ["curl-dev", "7.87.0-r1"], ["lua5.1-dev", "5.1.5-r11"], ["libquvi", "0.9.4-r4"], ["pkgconf", "1.9.4-r0"]]

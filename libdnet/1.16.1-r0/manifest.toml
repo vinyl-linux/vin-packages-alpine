@@ -1,0 +1,15 @@
+checksum = "e4c3ea8efd3206c87de87b8e44554a3173ca6a01e6627c50b6e90326e2d5e7e5"
+licence = "BSD-3-Clause"
+provides = "libdnet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libdnet-1.16.1-r0.apk"
+version = "1.16.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

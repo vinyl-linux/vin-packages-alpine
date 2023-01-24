@@ -1,0 +1,15 @@
+checksum = "946d174dea9a071bd5fe747bc08cb44b2a8981bffba13a7f3ccfa5f1b14aba38"
+licence = "GPL-3.0-only"
+provides = "buffyboard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/buffyboard-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libinput-libs", "1.22.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "57f72c8dbf4fc142b845c183376e644852da6cbeedf1c74efa95d354083c3a56"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-files_pdfviewer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-files_pdfviewer-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

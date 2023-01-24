@@ -1,0 +1,15 @@
+checksum = "7dde0c1da8a08af2a373a8f418fdf874dfd4aa366d0806203d23f9905e868f06"
+licence = "GPL-3.0-only"
+provides = "libayatana-indicator-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libayatana-indicator-dev-0.9.3-r0.apk"
+version = "0.9.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libayatana-indicator", "0.9.3-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["ayatana-ido-dev", "0.9.2-r1"], ["pkgconf", "1.9.4-r0"]]

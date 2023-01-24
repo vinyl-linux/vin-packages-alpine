@@ -1,0 +1,15 @@
+checksum = "88ff0315a7b1e70a3de60fdd551ab96609d8e479053a5c70ffb6fd8fc61b98fd"
+licence = "MIT"
+provides = "lua5.4-lzmq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.4-lzmq-0.4.4-r4.apk"
+version = "0.4.4-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lua5.1-libs", "5.1.5-r11"], ["libzmq", "4.3.4-r1"]]

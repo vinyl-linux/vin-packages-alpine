@@ -1,0 +1,15 @@
+checksum = "ffa264b1d77ff0ccf875c2228db417e9ae83b34aeb2d0706d4fc0004f5b7abf1"
+licence = "custom"
+provides = "font-util"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-util-1.3.3-r0.apk"
+version = "1.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f0159c000802c2ada19ef01365db74c2df3c6b656b35a92a943aa38cb4a37c2a"
+licence = "MIT"
+provides = "libxkbcommon-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxkbcommon-dev-1.4.1-r0.apk"
+version = "1.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxkbcommon-x11", "1.4.1-r0"], ["libxkbcommon", "1.4.1-r0"], ["libxml2-dev", "2.10.3-r1"], ["libxcb-dev", "1.15.0-r0"], ["pkgconf", "1.9.4-r0"]]

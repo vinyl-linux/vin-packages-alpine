@@ -1,0 +1,15 @@
+checksum = "3875d3ed3c049c2379a81a039e17cc1725d359cd0fe081b504b93b1c5ecf4edb"
+licence = "ISC"
+provides = "libsodium"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libsodium-1.0.18-r2.apk"
+version = "1.0.18-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

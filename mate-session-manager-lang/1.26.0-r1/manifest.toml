@@ -1,0 +1,15 @@
+checksum = "c974b0def5ba3f97112bd9d989e955647b727bb73fa303d1291c64db6339ba61"
+licence = "GPL-2.0-or-later"
+provides = "mate-session-manager-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-session-manager-lang-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r1"], ["mate-desktop", "1.26.0-r2"]]

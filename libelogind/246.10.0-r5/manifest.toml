@@ -1,0 +1,15 @@
+checksum = "7b0794945999ef775851ddcafbc2888153e861aa0318ce4c2a858b3985610001"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libelogind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libelogind-246.10-r5.apk"
+version = "246.10.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"]]

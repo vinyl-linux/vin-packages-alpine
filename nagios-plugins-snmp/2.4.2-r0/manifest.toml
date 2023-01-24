@@ -1,0 +1,15 @@
+checksum = "f9bbc57833ff2a57ebbf7efd5f8f4af9e3c7f245002b02dae792b98ca7c62f05"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-snmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-snmp-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["net-snmp-tools", "5.9.3-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

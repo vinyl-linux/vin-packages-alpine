@@ -1,0 +1,15 @@
+checksum = "e730da430d43ab52a83fa2b2e6993cb961d841c41e0ddfdb62ae2dc8b991c613"
+licence = "BSD-3-Clause ISC"
+provides = "outils-ts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/outils-ts-0.12-r0.apk"
+version = "0.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "e260408f859d91371856e5ad8b0c6d267bb82e2880a753b05e8748b4f8f31048"
+licence = "MIT"
+provides = "py3-purl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-purl-1.6-r1.apk"
+version = "1.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

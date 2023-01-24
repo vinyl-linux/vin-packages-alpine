@@ -1,0 +1,15 @@
+checksum = "352663204e7fe4c27865f5e895f1bcd39c50d60cb4eeeac7997bf65131bd9b55"
+licence = "GPL-2.0"
+provides = "haserl-lua5.1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/haserl-lua5.1-0.9.36-r2.apk"
+version = "0.9.36-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lua5.1-libs", "5.1.5-r11"]]

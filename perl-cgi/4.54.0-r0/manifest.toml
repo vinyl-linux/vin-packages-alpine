@@ -1,0 +1,15 @@
+checksum = "5ec3724483d88354c031c44102a7541cfdfdddac11d1a632b695031522372e1d"
+licence = "Artistic-2.0"
+provides = "perl-cgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-cgi-4.54-r0.apk"
+version = "4.54.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-html-parser", "3.80.0-r0"]]

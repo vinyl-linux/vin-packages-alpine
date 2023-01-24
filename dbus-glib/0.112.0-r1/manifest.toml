@@ -1,0 +1,15 @@
+checksum = "fbf224874665d75545d9e73d7596800b47cec826bf7bf71c5f4facfe9194af76"
+licence = "GPL-2.0-or-later"
+provides = "dbus-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dbus-glib-0.112-r1.apk"
+version = "0.112.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libexpat", "2.5.0-r0"], ["glib", "2.74.5-r0"]]

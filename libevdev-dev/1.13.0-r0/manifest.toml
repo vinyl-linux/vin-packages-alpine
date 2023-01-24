@@ -1,0 +1,15 @@
+checksum = "8e572081c160d6c21b2227f2058126ff469dd1fcefb0043c8fd92784597efe9f"
+licence = "MIT"
+provides = "libevdev-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libevdev-dev-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libevdev", "1.13.0-r0"], ["pkgconf", "1.9.4-r0"]]

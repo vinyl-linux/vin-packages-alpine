@@ -1,0 +1,15 @@
+checksum = "0f23eb1d679c30ea89d44277c70f13748f1c2ebfc1817d76066448dd607c0abd"
+licence = "GPL-2.0-or-later"
+provides = "memtester"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/memtester-4.5.1-r1.apk"
+version = "4.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

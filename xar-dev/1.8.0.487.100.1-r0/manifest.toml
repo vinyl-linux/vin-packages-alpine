@@ -1,0 +1,15 @@
+checksum = "aeb8b46e8bec2962c79e249bc0a39a4c61f82a4b06ba43b9c52f8b5cb77e57ee"
+licence = "BSD-3-Clause"
+provides = "xar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xar-dev-1.8.0.487.100.1-r0.apk"
+version = "1.8.0.487.100.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xar", "1.8.0.487.100.1-r0"], ["libxar", "1.8.0.487.100.1-r0"]]

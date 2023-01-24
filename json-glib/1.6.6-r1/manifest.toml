@@ -1,0 +1,15 @@
+checksum = "598ffe0d9a8180a279b434d6cdc820b324ebc3c490ad386d4ff1be095f08bcb2"
+licence = "LGPL-2.1-or-later"
+provides = "json-glib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/json-glib-1.6.6-r1.apk"
+version = "1.6.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

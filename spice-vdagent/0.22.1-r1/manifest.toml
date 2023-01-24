@@ -1,0 +1,15 @@
+checksum = "d174e88f3aba123f0490b7dfbe13769dbd95257f0c10e7c7c0a019bf2517d124"
+licence = "GPL-3.0-or-later"
+provides = "spice-vdagent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/spice-vdagent-0.22.1-r1.apk"
+version = "0.22.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-x11", "1.14.4-r0"], ["libx11", "1.8.3-r1"], ["libxfixes", "6.0.0-r0"], ["libxinerama", "1.1.5-r0"], ["libxrandr", "1.5.3-r0"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["glib", "2.74.5-r0"], ["libpciaccess", "0.17.0-r0"]]

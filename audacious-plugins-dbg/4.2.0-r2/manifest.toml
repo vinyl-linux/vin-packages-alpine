@@ -1,0 +1,15 @@
+checksum = "9aa23b42f31763173343bb6e7401ef26ae2dda032da0800b5ace7ab7347b315a"
+licence = "BSD-2-Clause AND BSD-3-Clause AND ISC AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND GPL-3.0-or-later"
+provides = "audacious-plugins-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/audacious-plugins-dbg-4.2-r2.apk"
+version = "4.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["audacious", "4.2.0-r0"]]

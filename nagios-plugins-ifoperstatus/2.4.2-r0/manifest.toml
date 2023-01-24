@@ -1,0 +1,15 @@
+checksum = "74092ceb860eb11f274d13f3b7cde668a7841351a12006f1f900a7fa5db7db8c"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-ifoperstatus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-ifoperstatus-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["perl", "5.36.0-r0"]]

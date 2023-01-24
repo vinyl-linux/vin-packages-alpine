@@ -1,0 +1,15 @@
+checksum = "2a768353cd91c6234d5ba6ee9f74f9de6c5e26f07276df19a7abbf4e0837d29a"
+licence = "GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later"
+provides = "xz-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xz-libs-5.2.9-r0.apk"
+version = "5.2.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c7449068848890fb80de2033a0eea684c9246db00dedfabfee1e73f497d48b78"
+licence = "LGPL-2.0-or-later"
+provides = "fgt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fgt-dev-0.4.9-r1.apk"
+version = "0.4.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fgt", "0.4.9-r1"]]

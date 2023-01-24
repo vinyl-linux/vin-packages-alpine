@@ -1,0 +1,15 @@
+checksum = "aef2e22ee8426dae99fb505d4153273adabfe7a5066365d9fd6923bc244d4502"
+licence = "Apache-2.0"
+provides = "mongo-php-library"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mongo-php-library-1.13.0-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-openssl", "8.1.14-r0"], ["php81-pecl-mongodb", "1.15.0-r0"]]

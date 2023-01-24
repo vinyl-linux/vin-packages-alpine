@@ -1,0 +1,15 @@
+checksum = "77055c0d33b044e28ffa02bb1b144a2be2361c8df121a482beeeae93c5384e6c"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-dns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-dns-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["bind-tools", "9.18.10-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

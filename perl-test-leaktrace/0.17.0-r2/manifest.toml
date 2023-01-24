@@ -1,0 +1,15 @@
+checksum = "1b775c79aee964f287c53b853ba100df52278c6ccf50144d86ba1d795c0c294f"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-leaktrace"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-leaktrace-0.17-r2.apk"
+version = "0.17.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

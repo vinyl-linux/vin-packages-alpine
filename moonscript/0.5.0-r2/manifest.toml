@@ -1,0 +1,15 @@
+checksum = "77729cf5be3aaecfea4430cd914a2eca7684f085809f577225ee091093495100"
+licence = "MIT"
+provides = "moonscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/moonscript-0.5.0-r2.apk"
+version = "0.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua-alt-getopt", "0.8.0-r0"], ["lua-filesystem", "1.8.0-r2"], ["lua-lpeg", "1.0.2-r2"]]

@@ -1,0 +1,15 @@
+checksum = "bf0da0def636f9158e1502be0783174dd56ab73760f6cd3b3535f20324630b51"
+licence = "MIT"
+provides = "py3-markdown-it-py"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-markdown-it-py-2.1.0-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-attrs", "22.1.0-r0"], ["py3-mdurl", "0.1.2-r0"]]

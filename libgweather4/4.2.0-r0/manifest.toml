@@ -1,0 +1,15 @@
+checksum = "5f5c442790078ad4d8d3f55db65b3fae4a5878a42ea33909e66f8e5c5cc2e11d"
+licence = "LGPL-2.1-or-later"
+provides = "libgweather4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgweather4-4.2.0-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tzdata", "2022.0.0-f-r1"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["musl", "1.2.3-r4"], ["geocode-glib", "3.26.4-r1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["json-glib", "1.6.6-r1"], ["libsoup3", "3.2.2-r0"], ["libxml2", "2.10.3-r1"]]

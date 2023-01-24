@@ -1,0 +1,15 @@
+checksum = "a21c13029fb6601ea29b8f83cd7a1bc7b055a51b4714fb1dd17ec56aff679cc9"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "libkdepim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkdepim-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

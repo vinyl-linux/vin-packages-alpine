@@ -1,0 +1,15 @@
+checksum = "6de815a1601e0f7d3e2881942c1d82121259b165747df955b8762cfd5bd62091"
+licence = "LGPL-3.0-or-later"
+provides = "libde265-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libde265-dev-1.0.9-r0.apk"
+version = "1.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libde265", "1.0.9-r0"], ["pkgconf", "1.9.4-r0"]]

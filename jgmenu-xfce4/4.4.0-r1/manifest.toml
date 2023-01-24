@@ -1,0 +1,15 @@
+checksum = "24b19dd6b25377d5125854ff42551df487e761339b6628cb061a24848240f91c"
+licence = "GPL-2.0-only"
+provides = "jgmenu-xfce4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jgmenu-xfce4-4.4.0-r1.apk"
+version = "4.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["desktop-file-utils", "0.26.0-r1"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "e5d7cbae98d6be685d215aafbc57a00ce10f4405d777d7c98a8760e2fe60919e"
+licence = "custom"
+provides = "imagemagick-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/imagemagick-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "dfa3ea9229d4dcd815963ebc4ec75ab2cc3aeb00e567ea36464bf924c58ae73c"
+licence = "GPL-3.0-only"
+provides = "wlcs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wlcs-dev-1.4.0-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wayland-dev", "1.21.0-r1"], ["pkgconf", "1.9.4-r0"]]

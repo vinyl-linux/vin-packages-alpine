@@ -1,0 +1,15 @@
+checksum = "323a475c93084cf7c6be22ae3f2f38ad5b5752f89d5937392a42cbbe36bf5964"
+licence = "Public-Domain"
+provides = "mcookie"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mcookie-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

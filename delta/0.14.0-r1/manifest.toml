@@ -1,0 +1,15 @@
+checksum = "04c372a8f3e6e7ea1f9182092a35bae2274cf2b60a2df0950a00dba9229a6217"
+licence = "MIT"
+provides = "delta"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/delta-0.14.0-r1.apk"
+version = "0.14.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgit2", "1.5.1-r0"], ["oniguruma", "6.9.8-r0"]]

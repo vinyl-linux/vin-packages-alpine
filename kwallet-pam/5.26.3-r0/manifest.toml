@@ -1,0 +1,15 @@
+checksum = "63da3831125145f18ac86481cefac487a0785e7392e0307c8df2c9cb35dad219"
+licence = "LGPL-2.1-or-later"
+provides = "kwallet-pam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kwallet-pam-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["socat", "1.7.4.4-r0"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["linux-pam", "1.5.2-r1"]]

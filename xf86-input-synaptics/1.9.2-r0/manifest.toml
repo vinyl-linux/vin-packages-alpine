@@ -1,0 +1,15 @@
+checksum = "e75cd4a7978a9831acf48c7f0d88d1d75ea5f0e95dfc49af91d35d0fc561f2e9"
+licence = "MIT"
+provides = "xf86-input-synaptics"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-input-synaptics-1.9.2-r0.apk"
+version = "1.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxi", "1.8.0-r0"], ["libxtst", "1.2.4-r0"], ["musl", "1.2.3-r4"], ["libevdev", "1.13.0-r0"]]

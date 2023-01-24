@@ -1,0 +1,15 @@
+checksum = "f9cda095d45a0c507f44dd4106053b9d556830aceecc1c8fd84fa3ef5957a2ed"
+licence = "MIT"
+provides = "py3-batalgorithm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-batalgorithm-0.3.1-r2.apk"
+version = "0.3.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"]]

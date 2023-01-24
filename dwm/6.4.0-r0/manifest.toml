@@ -1,0 +1,15 @@
+checksum = "b4af84d0d85f5e74a18a6735de7c2750c6148f720e51311817fbe9fbb8b3c7a5"
+licence = "MIT"
+provides = "dwm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dwm-6.4-r0.apk"
+version = "6.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dmenu", "5.2.0-r0"], ["st", "0.9.0-r0"], ["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["libxinerama", "1.1.5-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"]]

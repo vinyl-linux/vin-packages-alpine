@@ -1,0 +1,15 @@
+checksum = "b68c5b2c44f8ba349766a10f7be2a861ce2b272818dc4d2465ecfc538c13407a"
+licence = "MIT"
+provides = "libmfx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmfx-22.6.3-r0.apk"
+version = "22.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

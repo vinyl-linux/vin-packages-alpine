@@ -1,0 +1,15 @@
+checksum = "e6ad8cb9e9766e7fc858001622cdd0bd5ca081e029dc80d732d759d0dc2995ea"
+licence = "GPL-3.0-only"
+provides = "glpk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glpk-5.0-r2.apk"
+version = "5.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"]]

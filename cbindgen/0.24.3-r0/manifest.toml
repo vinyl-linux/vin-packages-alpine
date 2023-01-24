@@ -1,0 +1,15 @@
+checksum = "ccd4f224bc655e77337a43f86479b1e10bc199a39ea40e85fd452f8c79304320"
+licence = "MPL-2.0"
+provides = "cbindgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cbindgen-0.24.3-r0.apk"
+version = "0.24.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

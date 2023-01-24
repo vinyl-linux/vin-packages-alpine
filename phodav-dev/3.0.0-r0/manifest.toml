@@ -1,0 +1,15 @@
+checksum = "3c211f3f3f34cf80cc5c37eee365b22d5d8d9140d1bd8a2ac3bf45fa5e3c8703"
+licence = "LGPL-2.0-or-later"
+provides = "phodav-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/phodav-dev-3.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["libsoup3-dev", "3.2.2-r0"], ["libxml2-dev", "2.10.3-r1"], ["phodav", "3.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "416b610d5e3d1b0c07ed3adda84aa54ca793e203945c68f8d482e706c80f8ad1"
+licence = "OFL-1.1"
+provides = "font-noto-hanifi-rohingya"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-hanifi-rohingya-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

@@ -1,0 +1,15 @@
+checksum = "a0dd93a12983c88583401b7f3d107a4493d9263244b7f07e9009c6e8aeca8071"
+licence = "LGPL-2.1-or-later"
+provides = "nemo-qml-plugin-calendar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nemo-qml-plugin-calendar-0.6.46-r0.apk"
+version = "0.6.46-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcalendarcore", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["libaccounts-qt", "1.16.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["mkcal", "0.6.7-r0"], ["libstdc++", "12.2.1"]]

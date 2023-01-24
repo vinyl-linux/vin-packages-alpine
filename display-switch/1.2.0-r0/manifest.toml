@@ -1,0 +1,15 @@
+checksum = "64a7bf66bcfedd7d685141bd8a89e0a4d3b2c0c830d3a90a412b0381734b658d"
+licence = "MIT"
+provides = "display-switch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/display-switch-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["eudev-libs", "3.2.11-r4"], ["libusb", "1.0.26-r0"]]

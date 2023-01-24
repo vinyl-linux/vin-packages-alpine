@@ -1,0 +1,15 @@
+checksum = "b2a49978c02595c2078d1e751d376cf128fcb38427ea497217f39998c587571b"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "libproc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libproc-3.3.17-r2.apk"
+version = "3.3.17-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

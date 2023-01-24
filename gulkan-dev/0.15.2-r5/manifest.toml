@@ -1,0 +1,15 @@
+checksum = "f452d8dc09986a52caeebe8f13fb5cb5390a319d1d87828cf19b7fc0a21708c3"
+licence = "MIT AND CC-BY-SA-4.0"
+provides = "gulkan-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gulkan-dev-0.15.2-r5.apk"
+version = "0.15.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gobject-introspection-dev", "1.74.0-r1"], ["gulkan", "0.15.2-r5"], ["cairo-dev", "1.17.6-r3"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["graphene-dev", "1.10.8-r1"], ["vulkan-loader-dev", "1.3.231.2-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c3fd4c5991c46d973aee45aee8dc196fd16ec277a477c75b580f0d6f6d1c9b88"
+licence = "Apache-2.0"
+provides = "py3-pyvmomi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyvmomi-7.0.3-r0.apk"
+version = "7.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-requests", "2.28.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "0a58a82450d4f755953a7ae82489761387c63bf367477fa58e55ecf52e5d0147"
+licence = "BSD-3-Clause"
+provides = "py3-miniupnpc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-miniupnpc-2.2.3-r1.apk"
+version = "2.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

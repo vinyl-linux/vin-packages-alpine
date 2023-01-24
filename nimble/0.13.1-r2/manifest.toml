@@ -1,0 +1,15 @@
+checksum = "6ce5ebd8a992392c0564660fe7bcd1d1dfa2c48318d173659001ace8b7feaf0b"
+licence = "BSD-3-Clause"
+provides = "nimble"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nimble-0.13.1-r2.apk"
+version = "0.13.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nim", "1.6.8-r0"], ["libssl1.1", "1.1.1-s-r0"], ["musl", "1.2.3-r4"]]

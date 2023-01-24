@@ -1,0 +1,15 @@
+checksum = "3c6f6188173059d74ad7d4d26c8e7e6a09bfd32044b4a7e6ea94d83e0f743109"
+licence = "GPL-2.0-or-later"
+provides = "py3-volume_key"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-volume_key-0.3.12-r3.apk"
+version = "0.3.12-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["nss", "3.85.0-r0"], ["volume_key", "0.3.12-r3"]]

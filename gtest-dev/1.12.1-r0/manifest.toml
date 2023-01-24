@@ -1,0 +1,15 @@
+checksum = "d3e2ff7c63d73da25137ce7478d918f5995f3b658349fc29bb931292348995d7"
+licence = "BSD-3-Clause"
+provides = "gtest-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gtest-dev-1.12.1-r0.apk"
+version = "1.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtest", "1.12.1-r0"], ["gmock", "1.12.1-r0"], ["pkgconf", "1.9.4-r0"]]

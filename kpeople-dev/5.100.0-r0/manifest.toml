@@ -1,0 +1,15 @@
+checksum = "bec83aeca0f9c683e9fbc69e11528851cdfae06ee31e1b18bb62e8e42bd3ce19"
+licence = "LGPL-2.1-or-later"
+provides = "kpeople-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpeople-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtdeclarative-dev", "5.15.6"], ["kcoreaddons-dev", "5.100.0-r0"], ["kwidgetsaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kitemviews-dev", "5.100.0-r0"], ["kservice-dev", "5.100.0-r0"], ["kpeople", "5.100.0-r0"]]

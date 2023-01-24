@@ -1,0 +1,15 @@
+checksum = "f08edb1e11793ce74ca46cf5e65b9618fe266d077fc57efe3654ab1375edd65a"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-hw-display-qxl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-hw-display-qxl-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ui-spice-core", "7.1.0-r7"], ["musl", "1.2.3-r4"], ["pixman", "0.42.2-r0"], ["spice-server", "0.15.1-r0"]]

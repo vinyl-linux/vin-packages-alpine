@@ -1,0 +1,15 @@
+checksum = "08f1041e8cbea4b0d3076014de4b32a954c87fb1d3c9d4e56fe3eb2ca33daddb"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-mysql-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius-sql", "3.0.26-r0"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "157c21d40215e64ae20ad6551f4b8ecf49483685e3ba9619b8bf1b02a989d915"
+licence = "MIT"
+provides = "prometheus-wireguard-exporter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prometheus-wireguard-exporter-3.6.6-r0.apk"
+version = "3.6.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

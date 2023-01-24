@@ -1,0 +1,15 @@
+checksum = "08ba7c36468afa462a868e7036b5cc726c4904c4f98f74b2717819903a891026"
+licence = "BSD-3-Clause"
+provides = "tcsh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tcsh-6.24.01-r0.apk"
+version = "6.24.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

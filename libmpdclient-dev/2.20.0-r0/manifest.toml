@@ -1,0 +1,15 @@
+checksum = "c27ee06a9fe8a7f45cf6d75eba141b59a6232e094f549f89f9bbd0e388dbd591"
+licence = "BSD-3-Clause"
+provides = "libmpdclient-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmpdclient-dev-2.20-r0.apk"
+version = "2.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmpdclient", "2.20.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "0409edede483754ac345f8b58e5c9aef82fa097c67fe8ce72cde8e760e21de82"
+licence = "AGPL-3.0"
+provides = "mold"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mold-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["mimalloc2", "2.0.6-r2"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

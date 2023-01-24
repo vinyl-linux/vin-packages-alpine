@@ -1,0 +1,15 @@
+checksum = "d82453f16e88062925aec1c4d4a99ba443e5fffe5a09fe65f367bf611c7fc90c"
+licence = "BSD-3-Clause"
+provides = "lighttpd-mod_auth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lighttpd-mod_auth-1.4.67-r0.apk"
+version = "1.4.67-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

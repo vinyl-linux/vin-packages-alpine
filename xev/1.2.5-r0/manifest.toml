@@ -1,0 +1,15 @@
+checksum = "dd25217f251887926dcb0b59eeac71b7ab166bf0878bb9f4195641574352a562"
+licence = "MIT"
+provides = "xev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xev-1.2.5-r0.apk"
+version = "1.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxrandr", "1.5.3-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b2502ee8074f956e0bafd8f65a21938d6977f340b659e51da16c34d4190d5cb2"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geanynumberedbookmarks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-geanynumberedbookmarks-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"]]

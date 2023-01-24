@@ -1,0 +1,15 @@
+checksum = "9384b0097deaba807ddcb915a472310a36a7a76678faafe22aef6c877de79972"
+licence = "MIT"
+provides = "libxml2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxml2-2.10.3-r1.apk"
+version = "2.10.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"]]

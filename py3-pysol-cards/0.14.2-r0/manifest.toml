@@ -1,0 +1,15 @@
+checksum = "f79da0c4cf716403f58e2c86cafbac13bd97c658828719775d38dda724364d39"
+licence = "MIT"
+provides = "py3-pysol-cards"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pysol-cards-0.14.2-r0.apk"
+version = "0.14.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pbr", "5.11.0-r0"], ["py3-random2", "1.0.1-r2"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ecc6e1541ac4e7cd5f404d9027d6e0e445dde06a48588879cf8435031e2df65e"
+licence = "GPL-2.0"
+provides = "datefudge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/datefudge-1.24-r1.apk"
+version = "1.24.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["coreutils", "9.1.0-r0"], ["musl", "1.2.3-r4"]]

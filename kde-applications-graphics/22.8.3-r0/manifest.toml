@@ -1,0 +1,15 @@
+checksum = "8985fdbb481648cec2d31e700d23f4e4bbf83c1d63bc6ce32dbdcf0873b746a4"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-graphics"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kde-applications-graphics-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gwenview", "22.8.3-r0"], ["kcolorchooser", "22.8.3-r0"], ["kolourpaint", "22.8.3-r0"], ["kruler", "22.8.3-r0"], ["okular", "22.8.3-r0"], ["spectacle", "22.8.3-r0"]]

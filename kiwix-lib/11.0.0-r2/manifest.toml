@@ -1,0 +1,15 @@
+checksum = "53e998f2e50c176cb00247827dde17c974afcfa727c831208aae1112c3825383"
+licence = "GPL-3.0-or-later"
+provides = "kiwix-lib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kiwix-lib-11.0.0-r2.apk"
+version = "11.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aria2", "1.36.0-r1"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["libmicrohttpd", "0.9.75-r0"], ["pugixml", "1.13.0-r0"], ["libstdc++", "12.2.1"], ["libxapian", "1.4.21-r0"], ["zlib", "1.2.13-r0"], ["libzim", "8.0.0-r1"]]

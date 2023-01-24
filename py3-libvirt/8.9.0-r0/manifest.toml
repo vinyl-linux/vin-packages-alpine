@@ -1,0 +1,15 @@
+checksum = "99095b25b93b5c6497ec10334860b403d5178ba984a9c43d04d7c15a70438fbc"
+licence = "LGPL-2.0-or-later"
+provides = "py3-libvirt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-libvirt-8.9.0-r0.apk"
+version = "8.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libvirt-libs", "8.9.0-r4"]]

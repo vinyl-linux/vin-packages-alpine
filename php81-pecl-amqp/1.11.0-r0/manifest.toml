@@ -1,0 +1,15 @@
+checksum = "a7f83c0d6f1bfeed3b713b6f6ccb04e953cf07c683453f00cf92d3d732e92be4"
+licence = "PHP-3.01"
+provides = "php81-pecl-amqp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-amqp-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["rabbitmq-c", "0.11.0-r5"]]

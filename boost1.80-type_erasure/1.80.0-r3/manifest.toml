@@ -1,0 +1,15 @@
+checksum = "9eb76fb996e19e63fcb064141e2914d92208f9757f95f2410e94d74bf01e348d"
+licence = "BSL-1.0"
+provides = "boost1.80-type_erasure"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost1.80-type_erasure-1.80.0-r3.apk"
+version = "1.80.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "7087738986f8534c988f10e8810b2292dd9cd0008747246a704cc8b031af9054"
+licence = "BSD-2-Clause AND BSD-3-Clause AND Public-Domain"
+provides = "libarchive-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libarchive-dev-3.6.1-r2.apk"
+version = "3.6.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive", "3.6.1-r2"], ["pkgconf", "1.9.4-r0"]]

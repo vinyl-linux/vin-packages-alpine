@@ -1,0 +1,15 @@
+checksum = "e6d1ac3f04e87a46734c1c69d89d19ab454889c2c81760c13f31600555a238a7"
+licence = "Apache-2.0 AND MIT"
+provides = "rust-clippy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rust-clippy-1.64.0-r2.apk"
+version = "1.64.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rust-stdlib", "1.64.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["rust", "1.64.0-r2"]]

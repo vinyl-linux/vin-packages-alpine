@@ -1,0 +1,15 @@
+checksum = "73af243c34b54f5fe332a93440c900577743ad373e715029da25dcb4d79dc820"
+licence = "GPL-2.0-only"
+provides = "gnome-wise-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-wise-icon-theme-5.5.1-r4.apk"
+version = "5.5.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-colors-common", "5.5.1-r4"]]

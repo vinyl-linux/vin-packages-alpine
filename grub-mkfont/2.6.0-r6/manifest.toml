@@ -1,0 +1,15 @@
+checksum = "fa9b7413eb66ec920761efcd2720bee8a04f2cb95e509d1324d426ff591d6d82"
+licence = "GPL-3.0-or-later"
+provides = "grub-mkfont"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/grub-mkfont-2.06-r6.apk"
+version = "2.6.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grub", "2.6.0-r6"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["freetype", "2.12.1-r0"]]

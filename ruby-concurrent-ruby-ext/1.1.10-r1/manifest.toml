@@ -1,0 +1,15 @@
+checksum = "1071ee20fc5fc28e1a1368fb6906064c651d1a550ce5cf643b1092179649a9db"
+licence = "MIT"
+provides = "ruby-concurrent-ruby-ext"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-concurrent-ruby-ext-1.1.10-r1.apk"
+version = "1.1.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby-concurrent-ruby", "1.1.10-r1"], ["musl", "1.2.3-r4"], ["ruby-libs", "3.1.3-r0"], ["libucontext", "1.2.0-r0"]]

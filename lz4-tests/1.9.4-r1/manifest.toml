@@ -1,0 +1,15 @@
+checksum = "f2385559cd14add2621f58c50e465385b39e0c53d7ad69d5f60a1c0d7f901935"
+licence = "BSD-2-Clause GPL-2.0-only"
+provides = "lz4-tests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lz4-tests-1.9.4-r1.apk"
+version = "1.9.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

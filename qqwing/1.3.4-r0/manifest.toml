@@ -1,0 +1,15 @@
+checksum = "411c9bd99e7e019e8975c1f5a610d17a31ecbe36ea252c44d28d4c77c1ebd9d4"
+licence = "GPL-2.0-or-later"
+provides = "qqwing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qqwing-1.3.4-r0.apk"
+version = "1.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

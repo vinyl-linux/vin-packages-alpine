@@ -1,0 +1,15 @@
+checksum = "c02ff39291f5b49161fe1fe0834b41a85d2be341cca13256dec90e990ad066e1"
+licence = "EPL-1.0"
+provides = "py3-gv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-gv-7.0.5-r0.apk"
+version = "7.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["graphviz-libs", "7.0.5-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "997006b7126c889c40624f3a28d50c361356ccf980a0e97655aff9d254e2661c"
+licence = "GPL-2.0-or-later OR LGPL-3.0-or-later"
+provides = "libunistring"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libunistring-1.1-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

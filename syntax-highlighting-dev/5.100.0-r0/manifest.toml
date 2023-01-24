@@ -1,0 +1,15 @@
+checksum = "cd046817dc2e27c406d0ad8d0f7a67ac524885ddf4b10d23e6319c5cb4044bb2"
+licence = "MIT"
+provides = "syntax-highlighting-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/syntax-highlighting-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["syntax-highlighting", "5.100.0-r0"]]

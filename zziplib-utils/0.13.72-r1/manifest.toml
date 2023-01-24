@@ -1,0 +1,15 @@
+checksum = "2bc4442497fce5ade071aa1af08a0b62a8a7ca284c624404a59b85fd5e6e50b0"
+licence = "LGPL-2.0-or-later MPL-1.1"
+provides = "zziplib-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zziplib-utils-0.13.72-r1.apk"
+version = "0.13.72-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"], ["zziplib", "0.13.72-r1"]]

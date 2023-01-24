@@ -1,0 +1,15 @@
+checksum = "67ec54fdfe7f0acf7c7e1540dbe5732b145c21ea53f71406c907bf83855c2422"
+licence = "BSD-3-Clause"
+provides = "py3-numpy-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-numpy-dev-1.23.4-r0.apk"
+version = "1.23.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-numpy", "1.23.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2ef944756ead5db7dd7353ff3ed220ee16019ffb0797d44b1e305e8a9f036f54"
+licence = "GPL-2.0"
+provides = "rdfind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rdfind-1.5.0-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["nettle", "3.8.1-r0"], ["libstdc++", "12.2.1"]]

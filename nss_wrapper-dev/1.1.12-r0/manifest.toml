@@ -1,0 +1,15 @@
+checksum = "83e5396bbe66bad5c6a90fd09ac54ac95dcfea5c1946a2e27d03e230ba137653"
+licence = "BSD-3-Clause"
+provides = "nss_wrapper-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nss_wrapper-dev-1.1.12-r0.apk"
+version = "1.1.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nss_wrapper", "1.1.12-r0"], ["pkgconf", "1.9.4-r0"]]

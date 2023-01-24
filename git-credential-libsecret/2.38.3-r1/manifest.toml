@@ -1,0 +1,15 @@
+checksum = "b4d0978d6e6ae8450c14e39f0bc8f77a8ce28cadc00bb34b1623727913bb66cf"
+licence = "GPL-2.0-or-later"
+provides = "git-credential-libsecret"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-credential-libsecret-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libsecret", "0.20.5-r0"]]

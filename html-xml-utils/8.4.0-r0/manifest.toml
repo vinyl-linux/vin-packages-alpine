@@ -1,0 +1,15 @@
+checksum = "10283f010911ee454f6a8f8cb365a3140082a48fa2be6c73cc5fc47a0713bf36"
+licence = "Custom"
+provides = "html-xml-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/html-xml-utils-8.4-r0.apk"
+version = "8.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f0fa1687397e4bd0a3eba3853862bc35e46420715531bf67c14586e8c06f2153"
+licence = "MIT"
+provides = "electrs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/electrs-0.9.10-r0.apk"
+version = "0.9.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["rocksdb", "7.7.3-r0"]]

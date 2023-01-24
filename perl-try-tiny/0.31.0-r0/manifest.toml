@@ -1,0 +1,15 @@
+checksum = "63319421f46a008a716c491eb8ec90d6a06ee5be61dda04023d47098dcf235a7"
+licence = "MIT"
+provides = "perl-try-tiny"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-try-tiny-0.31-r0.apk"
+version = "0.31.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-capture-tiny", "0.48.0-r2"], ["perl-pod-coverage", "0.23.0-r3"]]

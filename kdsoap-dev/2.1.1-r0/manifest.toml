@@ -1,0 +1,15 @@
+checksum = "44a0ef0a3d1f3f6e5c5e01da14a816cf0bef36d355d588a5a33d551e2132f115"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND (GPL-2.0-only OR GPL-3.0-only) AND AGPL-3.0-only"
+provides = "kdsoap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdsoap-dev-2.1.1-r0.apk"
+version = "2.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["kdsoap", "2.1.1-r0"]]

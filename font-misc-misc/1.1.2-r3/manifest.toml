@@ -1,0 +1,15 @@
+checksum = "775d85f95dc9aa1d039d72fd16c00eeb67ea1d568fa3e13c6a731662c8591f5e"
+licence = "custom"
+provides = "font-misc-misc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-misc-misc-1.1.2-r3.apk"
+version = "1.1.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"], ["util-macros", "1.19.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d0fd7f3437184eb29931382e29c31e4c0e29389122a70b4e4fe2e92b8a60dc07"
+licence = "LGPL-3.0-only AND GPL-2.0-only"
+provides = "pyside6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pyside6-6.4.0.1-r0.apk"
+version = "6.4.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

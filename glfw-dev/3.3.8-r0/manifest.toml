@@ -1,0 +1,15 @@
+checksum = "3e3647a9743bfe639e8555089f943f3bd9c433be7b610a3d592512b69a176da4"
+licence = "Zlib"
+provides = "glfw-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glfw-dev-3.3.8-r0.apk"
+version = "3.3.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxinerama-dev", "1.1.5-r0"], ["linux-headers", "5.19.5-r0"], ["mesa-dev", "22.2.5-r1"], ["glfw", "3.3.8-r0"], ["libx11-dev", "1.8.3-r1"], ["pkgconf", "1.9.4-r0"]]

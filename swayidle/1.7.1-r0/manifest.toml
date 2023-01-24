@@ -1,0 +1,15 @@
+checksum = "2fb7150ea2d054559b9256abd6239951983b6275a804f3f777818f3217db2b8d"
+licence = "MIT"
+provides = "swayidle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/swayidle-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"]]

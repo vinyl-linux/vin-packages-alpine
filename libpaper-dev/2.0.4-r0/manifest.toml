@@ -1,0 +1,15 @@
+checksum = "da90bb7752ffb674e6442bf22522a366847fc0012e0ed2994733c048d04bfabd"
+licence = "GPL-2.0-only"
+provides = "libpaper-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpaper-dev-2.0.4-r0.apk"
+version = "2.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpaper", "2.0.4-r0"]]

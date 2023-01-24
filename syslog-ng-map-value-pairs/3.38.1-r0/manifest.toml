@@ -1,0 +1,15 @@
+checksum = "a54953761ed2fb47021ed2a9a4579f6ac76dcf6a250658c3d157037a2b76b477"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-map-value-pairs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-map-value-pairs-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["syslog-ng", "3.38.1-r0"]]

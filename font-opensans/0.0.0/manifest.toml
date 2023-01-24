@@ -1,0 +1,15 @@
+checksum = "cbe3901176c44a4b1d737f24c9c484b190580e73d4988a8a00f55e3055d39af9"
+licence = "Apache-2.0"
+provides = "font-opensans"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-opensans-0_git20210927-r1.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["mkfontscale", "1.2.2-r1"]]

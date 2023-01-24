@@ -1,0 +1,15 @@
+checksum = "397c6ff97a47458c8158f49e0f1efbd9f681e942c6e588d04da557dfe6de0f31"
+licence = "GPL-2.0-or-later"
+provides = "ctags"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ctags-5.9.20221002.0-r1.apk"
+version = "5.9.20221002.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

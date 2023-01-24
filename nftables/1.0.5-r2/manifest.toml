@@ -1,0 +1,15 @@
+checksum = "bd7e0be3c66e2b061ea94d4bf68f9d590dbda0a52f913dac2b00627fb73563e5"
+licence = "GPL-2.0-or-later"
+provides = "nftables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nftables-1.0.5-r2.apk"
+version = "1.0.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["jansson", "2.14.0-r0"], ["libmnl", "1.0.5-r0"], ["libnftnl", "1.2.4-r0"], ["readline", "8.2.0-r0"]]

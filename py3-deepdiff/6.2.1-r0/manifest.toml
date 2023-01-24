@@ -1,0 +1,15 @@
+checksum = "af2ead03cf0e6c02e9e8a9999de89b626e577de57dc701c483796576d30c5cb1"
+licence = "MIT"
+provides = "py3-deepdiff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-deepdiff-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-ordered-set", "4.1.0-r1"]]

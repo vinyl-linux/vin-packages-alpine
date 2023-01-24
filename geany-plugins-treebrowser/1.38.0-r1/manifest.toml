@@ -1,0 +1,15 @@
+checksum = "a3c089b64cb7d79b238b59430d9b71c25ebd249b35cff8dc75b420ff9a4ad4b9"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-treebrowser"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-treebrowser-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"]]

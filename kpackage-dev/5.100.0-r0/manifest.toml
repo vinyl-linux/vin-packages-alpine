@@ -1,0 +1,15 @@
+checksum = "155c765883773a3af712be9b405ea8f2f938aced595af008b4dbcf21a33864b9"
+licence = "LGPL-2.1-or-later"
+provides = "kpackage-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpackage-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["karchive-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["kpackage", "5.100.0-r0"]]

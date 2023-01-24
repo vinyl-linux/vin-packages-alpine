@@ -1,0 +1,15 @@
+checksum = "cac0d06b6bf61247c6f3499cb1a675b0229111cc17234ba3f8a63a72c41d2d06"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "gcc-gdc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gcc-gdc-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["libgphobos", "12.2.1"], ["musl-dev", "1.2.3-r4"], ["libucontext-dev", "1.2.0-r0"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["libucontext", "1.2.0-r0"], ["zlib", "1.2.13-r0"]]

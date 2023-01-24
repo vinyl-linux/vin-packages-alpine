@@ -1,0 +1,15 @@
+checksum = "123348d545666bdcec44410a9df7816bb61e1705eee6cb691fbf80d41db7db66"
+licence = "AGPL-3.0-only"
+provides = "postgresql-citus-bitcode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-citus-bitcode-11.1.4-r1.apk"
+version = "11.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-citus", "11.1.4-r1"]]

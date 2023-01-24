@@ -1,0 +1,15 @@
+checksum = "776f6382287ac0ad06262baf346b92edcc596ba6ffeab494d0ddf16da28358be"
+licence = "GPL-3.0-or-later"
+provides = "kde-applications-webdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kde-applications-webdev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kimagemapeditor", "22.8.3-r0"]]

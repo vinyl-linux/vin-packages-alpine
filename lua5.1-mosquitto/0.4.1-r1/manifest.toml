@@ -1,0 +1,15 @@
+checksum = "ed13f63d13adf78ae6511607e35dde6b3f67861b1771a14ed0f0f640d5f5bff8"
+licence = "MIT"
+provides = "lua5.1-mosquitto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-mosquitto-0.4.1-r1.apk"
+version = "0.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["musl", "1.2.3-r4"], ["mosquitto-libs", "2.0.15-r1"]]

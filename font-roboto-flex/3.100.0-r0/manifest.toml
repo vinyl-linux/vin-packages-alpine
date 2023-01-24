@@ -1,0 +1,15 @@
+checksum = "fbce178dab3dda7cf5c9c1682f5ed53174596303b1241bfc7491ec4eaf870d6c"
+licence = "OFL-1.1"
+provides = "font-roboto-flex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-roboto-flex-3.100-r0.apk"
+version = "3.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["mkfontscale", "1.2.2-r1"]]

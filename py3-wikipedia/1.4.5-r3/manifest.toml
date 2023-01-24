@@ -1,0 +1,15 @@
+checksum = "6d8f5f95b20e23e7308eb2e52d9eedb4610071b547b975b4638840af8c35f665"
+licence = "MIT"
+provides = "py3-wikipedia"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-wikipedia-1.4.5-r3.apk"
+version = "1.4.5-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-beautifulsoup4", "4.11.1-r0"], ["py3-requests", "2.28.1-r1"]]

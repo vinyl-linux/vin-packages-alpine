@@ -1,0 +1,15 @@
+checksum = "ca79e97125be70905e700330937fce8df63cd99075126fccd92e035a330b031b"
+licence = "MIT"
+provides = "tree-sitter-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tree-sitter-dev-0.20.7-r0.apk"
+version = "0.20.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jq", "1.6.0-r2"], ["pkgconf", "1.9.4-r0"], ["tree-sitter", "0.20.7-r0"]]

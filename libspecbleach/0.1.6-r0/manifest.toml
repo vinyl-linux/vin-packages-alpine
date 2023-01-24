@@ -1,0 +1,15 @@
+checksum = "eb7961746ee071ab11d31d25412ee7434b9e2ae7546696993ec35ff958805ddd"
+licence = "LGPL-2.1-only"
+provides = "libspecbleach"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspecbleach-0.1.6-r0.apk"
+version = "0.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fftw-single-libs", "3.3.10-r1"]]

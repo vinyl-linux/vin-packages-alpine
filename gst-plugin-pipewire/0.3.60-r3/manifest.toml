@@ -1,0 +1,15 @@
+checksum = "73ef345fb1e9d8d71aecade18e2c3663e377bfb87dafaa7cbf3cda690651c832"
+licence = "LGPL-2.1-or-later"
+provides = "gst-plugin-pipewire"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gst-plugin-pipewire-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wireplumber", "0.4.12-r0"], ["gst-plugins-base", "1.20.5-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gstreamer", "1.20.5-r0"], ["pipewire-libs", "0.3.60-r3"]]

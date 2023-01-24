@@ -1,0 +1,15 @@
+checksum = "a1c419beb278e564db2f1622fee435eec289730d2da3b502a3b31322260ac587"
+licence = "GPL-3.0-or-later"
+provides = "librelp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/librelp-dev-1.10.0-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librelp", "1.10.0-r1"], ["pkgconf", "1.9.4-r0"]]

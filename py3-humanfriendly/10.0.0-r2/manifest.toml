@@ -1,0 +1,15 @@
+checksum = "952c57ff0a5b9688c6ea90f5530051cac050d3605117e58645f8108abd5ea8be"
+licence = "MIT"
+provides = "py3-humanfriendly"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-humanfriendly-10.0-r2.apk"
+version = "10.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

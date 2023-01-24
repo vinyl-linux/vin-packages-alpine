@@ -1,0 +1,15 @@
+checksum = "82ebd06542bcdd3d3256d4ec2d385bcf0438ded2bb5255246329e993d1aeb146"
+licence = "MIT"
+provides = "py3-netifaces"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-netifaces-0.11.0-r1.apk"
+version = "0.11.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

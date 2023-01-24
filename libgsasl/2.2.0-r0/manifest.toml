@@ -1,0 +1,15 @@
+checksum = "ccbd26fd1ee8310dc1aa8154fca74cac4ecdb77bfca9e2c57eb300de0f143e69"
+licence = "LGPL-2.0-or-later"
+provides = "libgsasl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgsasl-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["krb5-libs", "1.20.1-r0"], ["libidn", "1.41.0-r0"]]

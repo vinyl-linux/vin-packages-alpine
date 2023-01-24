@@ -1,0 +1,15 @@
+checksum = "d617abacb95e5917c79788f0cf765691088926eb963225b33f9686c550561ddd"
+licence = "ISC"
+provides = "neatvnc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/neatvnc-0.5.4-r0.apk"
+version = "0.5.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aml", "0.2.2-r0"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["mesa-gbm", "22.2.5-r1"], ["gnutls", "3.7.8-r2"], ["pixman", "0.42.2-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["zlib", "1.2.13-r0"]]

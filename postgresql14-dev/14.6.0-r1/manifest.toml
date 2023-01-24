@@ -1,0 +1,15 @@
+checksum = "e2f41c8e92ede2a5e315271741f5a9517e6e68b1104b4cf5b31583e9cb41cbf7"
+licence = "PostgreSQL"
+provides = "postgresql14-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql14-dev-14.6-r1.apk"
+version = "14.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpq-dev", "15.1.0-r0"], ["libecpg-dev", "15.1.0-r0"], ["clang14", "14.0.6-r1"], ["icu-dev", "72.1.0-r1"], ["llvm14", "14.0.6-r7"], ["openssl-dev", "3.0.7-r2"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

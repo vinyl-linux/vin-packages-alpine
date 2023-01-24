@@ -1,0 +1,15 @@
+checksum = "d94d97f66a878777cd398bfaf5729306cec322e3486ee12014cd546cd63e061b"
+licence = "LGPL-2.0-or-later"
+provides = "kdb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdb-dev-3.2.0-r7.apk"
+version = "3.2.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdb", "3.2.0-r7"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

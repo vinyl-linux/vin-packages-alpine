@@ -1,0 +1,15 @@
+checksum = "dd433e02b6daac544141e1cae6a64eb1bdb07260c237f11c16bc15b85b42af3e"
+licence = "GPL-2.0-only"
+provides = "fish-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fish-dev-3.5.1-r1.apk"
+version = "3.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fish-tools", "3.5.1-r1"], ["pkgconf", "1.9.4-r0"]]

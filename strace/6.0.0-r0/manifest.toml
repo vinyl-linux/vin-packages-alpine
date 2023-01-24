@@ -1,0 +1,15 @@
+checksum = "e16fce110c969efc37cf3abf388661c61da9073b0fb96a7241d92563ecac4b90"
+licence = "BSD-3-Clause"
+provides = "strace"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/strace-6.0-r0.apk"
+version = "6.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelf", "0.187.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "543e8f542945ed7a01128506cb27434ccdc23582569c9ddfd53bc2cb0bdc6bb5"
+licence = "GPL-2.0-or-later"
+provides = "java-gcj-compat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/java-gcj-compat-6.4.0-r19.apk"
+version = "6.4.0-r19"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fastjar", "0.98.0-r4"], ["gcc6-java", "6.4.0-r14"], ["java-common", "0.5.0-r0"], ["libgcj6", "6.4.0-r14"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

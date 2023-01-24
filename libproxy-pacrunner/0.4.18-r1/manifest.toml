@@ -1,0 +1,15 @@
+checksum = "0f0e53b6bb2fd923cf53eda58f8fb74fa407b20389d2e79b43ca7488d394a720"
+licence = "LGPL-2.0-or-later"
+provides = "libproxy-pacrunner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libproxy-pacrunner-0.4.18-r1.apk"
+version = "0.4.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libgcc", "12.2.1"], ["libproxy", "0.4.18-r1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "f9406c877d552e6ee4d3004380d4c82f0ad8a6c8e8766542ac546588df02eb14"
+licence = "MIT"
+provides = "php81-pecl-rdkafka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-rdkafka-6.0.3-r0.apk"
+version = "6.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["librdkafka", "1.9.2-r0"]]

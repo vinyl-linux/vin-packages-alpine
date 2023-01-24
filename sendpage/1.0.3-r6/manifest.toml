@@ -1,0 +1,15 @@
+checksum = "91b91817ec9409fdbeb20f89178f73c18e95c58bb656102474c333e94cb8a743"
+licence = "GPL"
+provides = "sendpage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sendpage-1.0.3-r6.apk"
+version = "1.0.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-mailtools", "2.21.0-r2"], ["perl-net-snpp", "1.17.0-r4"], ["perl-device-serialport", "1.4.0-r16"], ["perl-dbi", "1.643.0-r4"], ["perl-sys-hostname-long", "1.5.0-r4"], ["perl-test-mockobject", "1.20200122.0-r1"]]

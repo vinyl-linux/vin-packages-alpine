@@ -1,0 +1,15 @@
+checksum = "cd74d79be4c999b408dfede6c999f936342a4a3376b9dfbfc7fa7feda400934d"
+licence = "BSD-3-Clause"
+provides = "vim-go"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vim-go-1.26-r4.apk"
+version = "1.26.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gvim", "9.0.999-r0"], ["go", "1.19.5-r0"], ["gopls", "0.10.1-r1"], ["git", "2.38.3-r1"]]

@@ -1,0 +1,15 @@
+checksum = "98a8af22220955ec67a299108c03aec1ed75954fba2cd5a9eac0d216cae2a843"
+licence = "GPL-2.0-or-later"
+provides = "libcolord"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcolord-1.4.6-r1.apk"
+version = "1.4.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["lcms2", "2.14.0-r0"], ["eudev-libs", "3.2.11-r4"]]

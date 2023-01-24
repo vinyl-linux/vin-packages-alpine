@@ -1,0 +1,15 @@
+checksum = "5674f03b9c83ff86bc6687b1e03734ff85a4831071e90f0de842bf2e54f9ee9a"
+licence = "MIT AND ISC"
+provides = "libuv-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libuv-dev-1.44.2-r0.apk"
+version = "1.44.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libuv", "1.44.2-r0"], ["pkgconf", "1.9.4-r0"]]

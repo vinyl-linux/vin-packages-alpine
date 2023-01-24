@@ -1,0 +1,15 @@
+checksum = "a20dd9309f8b649a848e4287fd2a20208faeb00f8757ea36313787237b8b49b9"
+licence = "LGPL-2.1-or-later"
+provides = "libgpod-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgpod-dev-0.8.3-r8.apk"
+version = "0.8.3-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgpod", "0.8.3-r8"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["libimobiledevice-dev", "1.3.0-r4"], ["pkgconf", "1.9.4-r0"]]

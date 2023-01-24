@@ -1,0 +1,15 @@
+checksum = "26dc92087c252a7c22dc39c8208a550aee1dd5ac7c06f5862a90706a9ab10e94"
+licence = "GPL-3.0-or-later"
+provides = "gpgsm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpgsm-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg-gpgconf", "2.2.40-r0"], ["libassuan", "2.5.5-r1"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"], ["libksba", "1.6.3-r0"]]

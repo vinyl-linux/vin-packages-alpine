@@ -1,0 +1,15 @@
+checksum = "9cb92c03b59afcd3ccc939b8456906ad2f95505e88f07cc61963df2b8b48ab34"
+licence = "GPL-3.0-or-later"
+provides = "deja-dup-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/deja-dup-lang-43.4-r0.apk"
+version = "43.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["duplicity", "1.0.1-r0"], ["py3-requests-oauthlib", "1.3.1-r0"]]

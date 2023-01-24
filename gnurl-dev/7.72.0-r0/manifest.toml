@@ -1,0 +1,15 @@
+checksum = "eae3a98eca8be0ab4ae30f8c2d369ba082f512ed72017adfa2aea6a74215509f"
+licence = "MIT"
+provides = "gnurl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnurl-dev-7.72.0-r0.apk"
+version = "7.72.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnutls-dev", "3.7.8-r2"], ["libidn2-dev", "2.3.4-r0"], ["zlib-dev", "1.2.13-r0"], ["gnurl", "7.72.0-r0"], ["pkgconf", "1.9.4-r0"]]

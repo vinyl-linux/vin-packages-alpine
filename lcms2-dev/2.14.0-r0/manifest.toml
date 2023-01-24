@@ -1,0 +1,15 @@
+checksum = "b25d7083cd64dcfb5ff1a67aac8aa2156ff1537eeb89bf3f060a19b4b0aeab8b"
+licence = "MIT GPL-3.0-only"
+provides = "lcms2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lcms2-dev-2.14-r0.apk"
+version = "2.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libjpeg-turbo-dev", "2.1.4-r0"], ["tiff-dev", "4.4.0-r1"], ["zlib-dev", "1.2.13-r0"], ["lcms2", "2.14.0-r0"], ["pkgconf", "1.9.4-r0"]]

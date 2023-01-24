@@ -1,0 +1,15 @@
+checksum = "a797546c016700034d9853767782807ccde8b3e85cc2323d40a93f7161474676"
+licence = "GPL-2.0-or-later"
+provides = "snmptt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/snmptt-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-config-inifiles", "3.3.0-r1"], ["perl-list-moreutils", "0.430.0-r0"], ["yash-binsh", "2.53.0-r2"]]

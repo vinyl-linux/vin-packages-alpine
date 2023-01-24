@@ -1,0 +1,15 @@
+checksum = "97f3858831bc4e656691759738f480d9bc530ca34610b282689b8315c730e20c"
+licence = "LGPL-2.1-or-later"
+provides = "audiofile-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/audiofile-libs-0.3.6-r1.apk"
+version = "0.3.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

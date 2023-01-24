@@ -1,0 +1,15 @@
+checksum = "7e78498dcfce01d530c8de41f489ae7016de0425b1656660105115b19a5aab7a"
+licence = "GPL-2.0-or-later"
+provides = "evince"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/evince-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["evince-libs", "43.1.0-r0"], ["adwaita-icon-theme", "43.0.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["libatk-1.0", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["cairo-gobject", "1.17.6-r3"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gnome-desktop", "43.1.0-r0"], ["libhandy1", "1.8.0-r1"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["libsecret", "0.20.5-r0"]]

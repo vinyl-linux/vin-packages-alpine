@@ -1,0 +1,15 @@
+checksum = "e3d61dfdd7ad0a43d503ad0e6196eec823e595e5f01d8d9d34241ab525d372e8"
+licence = "GPL-3.0-or-later"
+provides = "amberol-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/amberol-lang-0.9.1-r0.apk"
+version = "0.9.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-libav", "1.20.5-r0"], ["gst-plugins-bad", "1.20.5-r0"], ["gst-plugins-good", "1.20.5-r0"]]

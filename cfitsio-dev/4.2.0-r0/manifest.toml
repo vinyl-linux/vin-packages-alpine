@@ -1,0 +1,15 @@
+checksum = "fd4f8c8bd4431a3fba17e5bc43586b56e667c21abe416af9dbbf0d11934d7b30"
+licence = "custom"
+provides = "cfitsio-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cfitsio-dev-4.2.0-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cfitsio", "4.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

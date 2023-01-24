@@ -1,0 +1,15 @@
+checksum = "92cb946f2449a3889583ab4d215dc1a92334604be25e41c5f961fa510f1a04f2"
+licence = "ISC"
+provides = "ucode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ucode-0.0.20220812-r0.apk"
+version = "0.0.20220812-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["json-c", "0.16.0-r2"]]

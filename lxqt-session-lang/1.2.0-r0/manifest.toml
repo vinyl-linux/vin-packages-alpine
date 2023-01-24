@@ -1,0 +1,15 @@
+checksum = "33d81714f2dc298403264b2c235d9969a4797a7b797cd3a826120265af829ca2"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-session-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-session-lang-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-user-dirs", "0.18.0-r0"]]

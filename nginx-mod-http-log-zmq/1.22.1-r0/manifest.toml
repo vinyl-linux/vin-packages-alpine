@@ -1,0 +1,15 @@
+checksum = "ae8e41844c009e5e1ec5ce7dad399749d760a2facc260899e403fc64bb696ed9"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-log-zmq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-log-zmq-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

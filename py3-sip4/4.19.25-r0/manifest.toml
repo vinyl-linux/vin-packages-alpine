@@ -1,0 +1,15 @@
+checksum = "cdaea9ff35ba9cd7072974d1408c028b4d08454233f5d12fe4a9699c2cc24cad"
+licence = "custom:sip"
+provides = "py3-sip4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-sip4-4.19.25-r0.apk"
+version = "4.19.25-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

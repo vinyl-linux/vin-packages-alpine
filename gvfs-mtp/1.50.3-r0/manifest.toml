@@ -1,0 +1,15 @@
+checksum = "b202869a20100748bcda2c32394930ec2c6406b84e702e2ab3cc026a94328769"
+licence = "LGPL-2.0-or-later"
+provides = "gvfs-mtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvfs-mtp-1.50.3-r0.apk"
+version = "1.50.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["kwallet", "5.100.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["gvfs", "1.50.3-r0"], ["libintl", "0.21.1-r1"], ["libmtp", "1.1.20-r2"], ["libusb", "1.0.26-r0"]]

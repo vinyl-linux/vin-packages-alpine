@@ -1,0 +1,15 @@
+checksum = "494ac00fe7fe1abed62a030b4cb433a9a4309950d01b4b26617b5880c28838d7"
+licence = "BSD-3-Clause"
+provides = "py3-pygraphviz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pygraphviz-1.9-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["graphviz-libs", "7.0.5-r0"]]

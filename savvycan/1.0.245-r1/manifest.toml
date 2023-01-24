@@ -1,0 +1,15 @@
+checksum = "3218944adf5100dce26a943e867801ba2486c6235d7ec5b8ff44d53f0438ae6d"
+licence = "MIT"
+provides = "savvycan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/savvycan-1.0.245-r1.apk"
+version = "1.0.245-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtserialbus", "5.15.6"], ["qt5-qtserialport", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

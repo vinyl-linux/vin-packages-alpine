@@ -1,0 +1,15 @@
+checksum = "13eb38a5e4d737d3c078c76f745163975545d3fe6b807117174ee1912039e0f7"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-x11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-x11-22.02.122-r0.apk"
+version = "22.2.122-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["plymouth", "22.2.122-r0"]]

@@ -1,0 +1,15 @@
+checksum = "56b90d7fdca4e9d6bfbfe7269c01b25115a677c2fa9015a28a725d47a8d87788"
+licence = "GPL-3.0-only"
+provides = "enscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/enscript-1.6.6-r4.apk"
+version = "1.6.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

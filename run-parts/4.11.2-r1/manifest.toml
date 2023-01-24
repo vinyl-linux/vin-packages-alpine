@@ -1,0 +1,15 @@
+checksum = "f6f1aacc88e019295a9f01e8758d1f4847fe01943ee26bc0b40eb470b805e425"
+licence = "GPL-2.0-or-later"
+provides = "run-parts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/run-parts-4.11.2-r1.apk"
+version = "4.11.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "43840a7f1a97d86cc5a21a92b30fd0404797459e217be97378b5c11c90c1b530"
+licence = "GPL-2.0-or-later"
+provides = "fprintd-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fprintd-lang-1.94.2-r0.apk"
+version = "1.94.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "adae51d7edfa48185cd7d0be723fead40f37e34a8be3dbf2a986dd82b2896c90"
+licence = "LGPL-2.0-or-later"
+provides = "liboping-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liboping-dev-1.10.0-r1.apk"
+version = "1.10.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["liboping", "1.10.0-r1"], ["pkgconf", "1.9.4-r0"]]

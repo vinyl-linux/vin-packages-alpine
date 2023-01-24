@@ -1,0 +1,15 @@
+checksum = "aeaea02c9d5a46ef0be96722234c0bf9230c82246c801cb3f5edc0b7dcaf1c32"
+licence = "GPL-3.0-only"
+provides = "hkdm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hkdm-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevdev", "1.13.0-r0"], ["libgcc", "12.2.1"]]

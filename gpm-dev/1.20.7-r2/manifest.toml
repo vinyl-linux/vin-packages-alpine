@@ -1,0 +1,15 @@
+checksum = "05dfa15db4eed3e9d66ab9f79e86666cf219b187bd611c9f4435120f1809ad3f"
+licence = "GPL-2.0-or-later"
+provides = "gpm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpm-dev-1.20.7-r2.apk"
+version = "1.20.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpm-libs", "1.20.7-r2"]]

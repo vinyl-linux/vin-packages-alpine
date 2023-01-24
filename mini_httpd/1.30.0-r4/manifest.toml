@@ -1,0 +1,15 @@
+checksum = "e7b663500ed53dbf58a25a5c6d0c5c57d73eb5c34b3e59f0554519c7787f0d6c"
+licence = "BSD-2-Clause"
+provides = "mini_httpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mini_httpd-1.30-r4.apk"
+version = "1.30.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

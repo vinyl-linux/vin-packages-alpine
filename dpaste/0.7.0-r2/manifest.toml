@@ -1,0 +1,15 @@
+checksum = "80508a7c3ea7a431bd3f2056ac098230eaea59d623b8b0747508a16634ad9382"
+licence = "GPL-2.0-only"
+provides = "dpaste"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dpaste-0.7-r2.apk"
+version = "0.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"]]

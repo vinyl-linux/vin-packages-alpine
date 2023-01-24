@@ -1,0 +1,15 @@
+checksum = "e9599c9a645b1f0e807955db0978da961ce2979d996898ee3d617d7087481633"
+licence = "BSD-3-Clause"
+provides = "py3-scipy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-scipy-1.9.3-r0.apk"
+version = "1.9.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-numpy-f2py", "1.23.4-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgfortran", "12.2.1"], ["openblas", "0.3.21-r0"], ["libstdc++", "12.2.1"]]

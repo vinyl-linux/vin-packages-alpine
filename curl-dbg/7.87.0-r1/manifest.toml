@@ -1,0 +1,15 @@
+checksum = "0e2c0a8550f1d61ca28f7adfb3e7a341840f8718a318aee08e8b6155a583f823"
+licence = "curl"
+provides = "curl-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/curl-dbg-7.87.0-r1.apk"
+version = "7.87.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

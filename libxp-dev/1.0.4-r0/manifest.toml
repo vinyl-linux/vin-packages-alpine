@@ -1,0 +1,15 @@
+checksum = "94bbd7365582be3a987409469a9f1fa65b3102119cdbb550a7e6b40ab41ee934"
+licence = "MIT"
+provides = "libxp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxp-dev-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxp", "1.0.4-r0"], ["xorgproto", "2022.2.0-r0"], ["libx11-dev", "1.8.3-r1"], ["libxau-dev", "1.0.10-r0"], ["libxext-dev", "1.3.5-r0"], ["pkgconf", "1.9.4-r0"]]

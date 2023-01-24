@@ -1,0 +1,15 @@
+checksum = "13c7a1fa6465830c194e235eaa0a398ce587e84bdf435f7223c45881cccbbbaa"
+licence = "LGPL-2.0-or-later"
+provides = "libspectre"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libspectre-0.2.11-r0.apk"
+version = "0.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ghostscript", "10.0.0-r0"]]

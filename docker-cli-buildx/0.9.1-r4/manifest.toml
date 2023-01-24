@@ -1,0 +1,15 @@
+checksum = "d4113997bbf82ad00fb69dc1350a9df79af55bcfc82ccbfd52894678a2d2b0a0"
+licence = "Apache-2.0"
+provides = "docker-cli-buildx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-cli-buildx-0.9.1-r4.apk"
+version = "0.9.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docker-cli", "20.10.21-r2"], ["musl", "1.2.3-r4"]]

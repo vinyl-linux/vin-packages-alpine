@@ -1,0 +1,15 @@
+checksum = "34259b50f06e6b1ed40484202a822700a575e7581029eef40573f809b1fe1ee5"
+licence = "MIT"
+provides = "kookbook"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kookbook-0.2.1-r3.apk"
+version = "0.2.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kookbook-common", "0.2.1-r3"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["discount-libs", "2.2.7-b-r0"], ["libstdc++", "12.2.1"]]

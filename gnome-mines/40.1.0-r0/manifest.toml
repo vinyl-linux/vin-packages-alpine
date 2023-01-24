@@ -1,0 +1,15 @@
+checksum = "419d384ed29e45450ab13144442fd65b2dd7ab7cb3a641d9ffbed5b6249137d5"
+licence = "GPL-3.0-or-later"
+provides = "gnome-mines"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-mines-40.1-r0.apk"
+version = "40.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librsvg", "2.55.1-r0"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libgnome-games-support", "1.8.1-r1"], ["libintl", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "bddc54b2aa6d90097c4310f317384aeda266b471faa63d13191a677fc7ce90a4"
+licence = "MIT"
+provides = "proj"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proj-9.1.0-r0.apk"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"]]

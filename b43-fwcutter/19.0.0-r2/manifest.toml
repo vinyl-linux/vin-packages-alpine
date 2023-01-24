@@ -1,0 +1,15 @@
+checksum = "728900727fba09f2eec12e923e495937ef5beb5b7e67a5ad212a73c502046918"
+licence = "BSD-2-Clause"
+provides = "b43-fwcutter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/b43-fwcutter-019-r2.apk"
+version = "19.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

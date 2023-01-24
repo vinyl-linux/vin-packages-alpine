@@ -1,0 +1,15 @@
+checksum = "a81e743ff3dea9df8dfcd941bcba3874b45acffd244f29a8a13d36ed2f55082e"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-term-table"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-term-table-0.016-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-importer", "0.26.0-r1"]]

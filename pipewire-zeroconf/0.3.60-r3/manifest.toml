@@ -1,0 +1,15 @@
+checksum = "d5aaed661233c45d99959cf469c7377e707db21449dd992a9c6a3408f1ee4b7c"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-zeroconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipewire-zeroconf-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"], ["pipewire-libs", "0.3.60-r3"]]

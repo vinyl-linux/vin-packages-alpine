@@ -1,0 +1,15 @@
+checksum = "8f3a9edac7fb837bacae02322a93989cb538142552ab9fd97df84ed3884af93f"
+licence = "BSD-3-Clause"
+provides = "libdnet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libdnet-dev-1.16.1-r0.apk"
+version = "1.16.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdnet", "1.16.1-r0"]]

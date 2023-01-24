@@ -1,0 +1,15 @@
+checksum = "ffac5fd920594eaede4a809c5200d5e16eaf361527731058724bcddd6038c4d0"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "py3-rpm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rpm-4.18.0-r1.apk"
+version = "4.18.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["rpm", "4.18.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d8a0e8c3f2e3ff3e330ecee3dfef0d07a21d068339afcfa3c20f08705f7d2c72"
+licence = "GPL-3.0-or-later"
+provides = "mtools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtools-4.0.42-r0.apk"
+version = "4.0.42-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

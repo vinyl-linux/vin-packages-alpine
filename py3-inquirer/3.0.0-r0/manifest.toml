@@ -1,0 +1,15 @@
+checksum = "b8d2183982fff84accb82f5b86f3655a92dccc449615ba7707b0b65ab93d80b3"
+licence = "MIT"
+provides = "py3-inquirer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-inquirer-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-blessed", "1.19.1-r0"], ["py3-readchar", "4.0.3-r1"], ["py3-python-editor", "1.0.4-r3"]]

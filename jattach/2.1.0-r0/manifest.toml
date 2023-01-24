@@ -1,0 +1,15 @@
+checksum = "b5c96d0eee6812c6de2f18f137ae42c4cb8ee94b68c54dcdabea60cc0e30b250"
+licence = "Apache-2.0"
+provides = "jattach"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jattach-2.1-r0.apk"
+version = "2.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

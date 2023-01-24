@@ -1,0 +1,15 @@
+checksum = "319bc3cc18d18242966cc5740c19e3d89d3403392ce63bebe98873557947d961"
+licence = "BSL-1.0"
+provides = "msgpack-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/msgpack-c-dev-4.0.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["msgpack-c", "4.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

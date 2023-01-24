@@ -1,0 +1,15 @@
+checksum = "e774d594039a68d3f08f131ce493c47af0a6036ccb4fa8e0324bd3d82c57364a"
+licence = "MIT"
+provides = "py3-sybil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-sybil-3.0.1-r1.apk"
+version = "3.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

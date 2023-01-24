@@ -1,0 +1,15 @@
+checksum = "96ce524fd4e8f0d4d13c613bfa9e90bd6c88b87a8b620e61a9e9b5776f099bf9"
+licence = "GPL-3.0-or-later"
+provides = "amfora"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/amfora-1.9.2-r10.apk"
+version = "1.9.2-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

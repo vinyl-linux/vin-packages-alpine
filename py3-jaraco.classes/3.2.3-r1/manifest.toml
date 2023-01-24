@@ -1,0 +1,15 @@
+checksum = "7137d9bff623cd82b883f3f9cc4576bf9e0054074b54ccd2317c8f4f637e240e"
+licence = "MIT"
+provides = "py3-jaraco.classes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jaraco.classes-3.2.3-r1.apk"
+version = "3.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-more-itertools", "9.0.0-r0"]]

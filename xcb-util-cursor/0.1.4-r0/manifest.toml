@@ -1,0 +1,15 @@
+checksum = "7e43cf8eceb9785517a5a8d2225b1a806029757ea9119190fc9e2d9a7a6efd38"
+licence = "MIT"
+provides = "xcb-util-cursor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcb-util-cursor-0.1.4-r0.apk"
+version = "0.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["xcb-util-image", "0.4.1-r0"], ["xcb-util-renderutil", "0.3.10-r0"], ["libxcb", "1.15.0-r0"]]

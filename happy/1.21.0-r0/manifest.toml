@@ -1,0 +1,15 @@
+checksum = "a986db9276bf32ab843a926ee9df408ec06f6fbd4491bec312b6ee56a34c2426"
+licence = "BSD-2-Clause"
+provides = "happy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/happy-1.21.0-r0.apk"
+version = "1.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"]]

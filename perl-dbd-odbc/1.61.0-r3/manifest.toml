@@ -1,0 +1,15 @@
+checksum = "83b67edbdb214a2e4304bfc6e94b98098b20858f661e47d3667ea7b6ef173a50"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-dbd-odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-dbd-odbc-1.61-r3.apk"
+version = "1.61.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-dbi", "1.643.0-r4"], ["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"]]

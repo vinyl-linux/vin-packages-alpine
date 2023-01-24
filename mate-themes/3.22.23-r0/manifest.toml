@@ -1,0 +1,15 @@
+checksum = "977f1ab3c90a26f28a8cc1b9556527d25f607567b912218cef11c26896d4f174"
+licence = "LGPL-2.1-or-later"
+provides = "mate-themes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-themes-3.22.23-r0.apk"
+version = "3.22.23-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r1"]]

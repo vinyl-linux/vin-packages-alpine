@@ -1,0 +1,15 @@
+checksum = "ccb48a3b5947a95418f096188a9ce6c3d208156267f038ee4795afdfe4ebc6e3"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later AND GPL-3.0-or-later"
+provides = "mlt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mlt-dev-7.12.0-r0.apk"
+version = "7.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mlt", "7.12.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "10f62b83d7b60338d4292f50b294350ff96600d62514e3afcdb4efb6402d0716"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-themes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-themes-22.02.122-r0.apk"
+version = "22.2.122-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["plymouth", "22.2.122-r0"]]

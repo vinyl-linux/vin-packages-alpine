@@ -1,0 +1,15 @@
+checksum = "680ed6ad919b1a14416eec18f2b8d21b00c9eeb00356c22380f500c304c72b7e"
+licence = "GPL-2.0-or-later"
+provides = "lrzip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lrzip-0.651-r1.apk"
+version = "0.651.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lz4-libs", "1.9.4-r1"], ["lzo", "2.10.0-r3"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "a6e49e28d4e4296aa643ac1f50cba17f233f3db1447263a17b2bd91677aafbc1"
+licence = "Apache-2.0"
+provides = "apache2-brotli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-brotli-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "6ea60ab3adb875109139f76d5444b0a742b38e4183d09b336a7d700a7a14bd55"
+licence = "BSD-3-Clause"
+provides = "py3-ijson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ijson-3.1.4-r2.apk"
+version = "3.1.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["yajl", "2.1.0-r5"]]

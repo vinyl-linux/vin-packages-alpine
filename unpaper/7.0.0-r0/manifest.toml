@@ -1,0 +1,15 @@
+checksum = "b5e899f010f72e94451817189779635f190a7adefc546d55cc89e496c1c916bd"
+licence = "GPL-2.0-only"
+provides = "unpaper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unpaper-7.0.0-r0.apk"
+version = "7.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"]]

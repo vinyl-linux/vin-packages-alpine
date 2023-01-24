@@ -1,0 +1,15 @@
+checksum = "4038b65f60e488ca57d9160841c150c161ae9f9a8f8ce5e67123ce5511f407c8"
+licence = "LGPL-2.0-or-later"
+provides = "kholidays-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kholidays-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["kholidays", "5.100.0-r0"]]

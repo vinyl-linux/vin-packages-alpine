@@ -1,0 +1,15 @@
+checksum = "4a94b1aec4aa0651d92c2e709d0aac085f3a57ca6a143267118506302b3ad7e1"
+licence = "LGPL-2.1-or-later"
+provides = "libmicrodns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmicrodns-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

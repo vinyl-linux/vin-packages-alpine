@@ -1,0 +1,15 @@
+checksum = "c2d9c12063dfaad83a3f2bff2d99360ccff7182cc0e716a95126186b711052b0"
+licence = "MIT"
+provides = "py3-pytest-runner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-runner-6.0.0-r0.apk"
+version = "6.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pytest", "7.2.0-r1"], ["py3-setuptools", "65.6.0-r0"]]

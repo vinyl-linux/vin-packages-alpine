@@ -1,0 +1,15 @@
+checksum = "a0649ecc6bc98dd66b45349ccf6c165d5f05d7252d7de87193f828c46de5eaba"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-params-util"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-params-util-1.102-r2.apk"
+version = "1.102.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

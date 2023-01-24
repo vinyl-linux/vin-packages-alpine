@@ -1,0 +1,15 @@
+checksum = "f26f2f15634e253b3eda627cd3f28db7845f3efa5c2fc540f601f5125c6821c9"
+licence = "OFL-1.1"
+provides = "font-noto-music"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-music-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

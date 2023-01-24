@@ -1,0 +1,15 @@
+checksum = "6b69d27784dbe6912615217fa548f102ac666ca50ad5b1ce7c2c7c4d86521b3f"
+licence = "ISC"
+provides = "s6-networking-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/s6-networking-dev-2.5.1.1-r0.apk"
+version = "2.5.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["s6-networking", "2.5.1.1-r0"]]

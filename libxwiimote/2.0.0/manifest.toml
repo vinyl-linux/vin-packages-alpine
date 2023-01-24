@@ -1,0 +1,15 @@
+checksum = "b520c4844c2e5b2110bd98b7e665ae529a9e97dee98b9b622e49270ee6a36ce8"
+licence = "MIT"
+provides = "libxwiimote"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxwiimote-2_git20131227-r0.apk"
+version = "2.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

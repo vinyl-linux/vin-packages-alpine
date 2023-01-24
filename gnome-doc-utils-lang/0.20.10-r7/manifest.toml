@@ -1,0 +1,15 @@
+checksum = "5eebde96d89d14a75401e17cc8bad8dd10bf102f3448d6b04427af8ff4838e4f"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "gnome-doc-utils-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-doc-utils-lang-0.20.10-r7.apk"
+version = "0.20.10-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["docbook-xml", "4.5.0-r8"], ["rarian", "0.8.1-r8"], ["py3-libxml2", "2.10.3-r1"], ["libxslt", "1.1.37-r0"]]

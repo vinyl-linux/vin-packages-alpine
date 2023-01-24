@@ -1,0 +1,15 @@
+checksum = "8fea5feae940c0ccff932c6e9869eca1fd06129c083a78dedf0b684e59eb9390"
+licence = "AGPL-3.0-or-later WITH OpenSSL-Exception"
+provides = "bacula-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bacula-sqlite-13.0.1-r0.apk"
+version = "13.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bacula", "13.0.1-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

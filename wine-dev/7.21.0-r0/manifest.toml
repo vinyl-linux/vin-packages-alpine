@@ -1,0 +1,15 @@
+checksum = "3cd509403712be22a1c2404c0e3daa185362116d8d38b69a6701727b4f2f5317"
+licence = "LGPL-2.0-or-later"
+provides = "wine-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wine-dev-7.21-r0.apk"
+version = "7.21.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["wine", "7.21.0-r0"], ["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

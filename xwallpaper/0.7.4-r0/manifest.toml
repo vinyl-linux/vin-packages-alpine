@@ -1,0 +1,15 @@
+checksum = "98a2c030fa7c3acfd6721e1f5af464fcf0ab85788e9ef3ec92c3eb380affe224"
+licence = "ISC"
+provides = "xwallpaper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xwallpaper-0.7.4-r0.apk"
+version = "0.7.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxpm", "3.5.15-r0"], ["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["libseccomp", "2.5.4-r0"], ["xcb-util-image", "0.4.1-r0"], ["libxcb", "1.15.0-r0"], ["xcb-util", "0.4.0-r3"]]

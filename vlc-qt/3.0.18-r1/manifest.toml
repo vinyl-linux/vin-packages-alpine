@@ -1,0 +1,15 @@
+checksum = "570a21471f5e86f19acb227721d85436c09151faf089c1dd053364c37cf3d4c1"
+licence = "GPL-2.0-or-later"
+provides = "vlc-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vlc-qt-3.0.18-r1.apk"
+version = "3.0.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vlc", "3.0.18-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["vlc-libs", "3.0.18-r1"]]

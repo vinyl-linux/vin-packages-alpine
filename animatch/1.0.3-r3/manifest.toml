@@ -1,0 +1,15 @@
+checksum = "bb6ed11722f0feed53573a4a03a0f31b4c2074a2969b21cf9e259915e8b46252"
+licence = "GPL-3.0-or-later"
+provides = "animatch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/animatch-1.0.3-r3.apk"
+version = "1.0.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["allegro", "5.2.8.0-r2"], ["musl", "1.2.3-r4"]]

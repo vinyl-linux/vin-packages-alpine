@@ -1,0 +1,15 @@
+checksum = "0ba482a2a90bcf79b8da221bc7572b249b950f90d7766d002d20e8779e5c5336"
+licence = "GPL-3.0-only"
+provides = "rtpengine-recording"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rtpengine-recording-9.3.1.2-r5.apk"
+version = "9.3.1.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rtpengine", "9.3.1.2-r5"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["glib", "2.74.5-r0"], ["mariadb-connector-c", "3.3.3-r0"], ["libssl3", "3.0.7-r2"]]

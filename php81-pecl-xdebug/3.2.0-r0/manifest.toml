@@ -1,0 +1,15 @@
+checksum = "e19fb034a5c285ff9b98567e78e38918220f34796d3191ed9fd488ba90f483b9"
+licence = "PHP-3.0"
+provides = "php81-pecl-xdebug"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-xdebug-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

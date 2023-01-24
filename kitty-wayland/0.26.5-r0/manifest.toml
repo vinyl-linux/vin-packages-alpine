@@ -1,0 +1,15 @@
+checksum = "b66a3d100e8c32fa298f6dfd18827d162345703f3d7cdbfe5355e615a22b5009"
+licence = "GPL-3.0-only"
+provides = "kitty-wayland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kitty-wayland-0.26.5-r0.apk"
+version = "0.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kitty", "0.26.5-r0"], ["wayland-libs-egl", "1.21.0-r1"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["wayland-libs-client", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

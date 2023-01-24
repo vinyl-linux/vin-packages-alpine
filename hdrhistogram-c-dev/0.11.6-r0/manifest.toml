@@ -1,0 +1,15 @@
+checksum = "539f6523076f3665e3d400d2376b171438bb03d1b320c244acb37688958bf0ef"
+licence = "BSD-2-Clause"
+provides = "hdrhistogram-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hdrhistogram-c-dev-0.11.6-r0.apk"
+version = "0.11.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hdrhistogram-c", "0.11.6-r0"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

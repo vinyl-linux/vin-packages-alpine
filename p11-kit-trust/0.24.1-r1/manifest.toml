@@ -1,0 +1,15 @@
+checksum = "1886adbecaf9fbb7077a5943da2858d82b2a98b296ed56419c26e528aa90b965"
+licence = "BSD-3-Clause"
+provides = "p11-kit-trust"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/p11-kit-trust-0.24.1-r1.apk"
+version = "0.24.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["p11-kit", "0.24.1-r1"], ["libtasn1", "4.19.0-r0"]]

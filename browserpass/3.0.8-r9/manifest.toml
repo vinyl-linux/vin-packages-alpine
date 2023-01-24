@@ -1,0 +1,15 @@
+checksum = "97b52841ff7a375ce6f5ce9f81049814b30526bb86d1aeea3c41f61dd6c2618f"
+licence = "MIT"
+provides = "browserpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/browserpass-3.0.8-r9.apk"
+version = "3.0.8-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pass", "1.7.4-r1"], ["musl", "1.2.3-r4"]]

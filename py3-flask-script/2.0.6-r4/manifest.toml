@@ -1,0 +1,15 @@
+checksum = "c58101a264040b5e85882011db9c6484fb2679e30b094b5fadb24200bf974b88"
+licence = "BSD-3-Clause"
+provides = "py3-flask-script"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flask-script-2.0.6-r4.apk"
+version = "2.0.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-flask", "2.2.2-r0"]]

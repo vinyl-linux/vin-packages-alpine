@@ -1,0 +1,15 @@
+checksum = "7c4edc04d14df3e9e8a1d15b14c11701c30c059fc281cda5fd5f176d47e7cd91"
+licence = "GPL-2.0-only"
+provides = "apparmor-pam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apparmor-pam-3.1.2-r0.apk"
+version = "3.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libapparmor", "3.1.2-r0"], ["linux-pam", "1.5.2-r1"], ["musl", "1.2.3-r4"]]

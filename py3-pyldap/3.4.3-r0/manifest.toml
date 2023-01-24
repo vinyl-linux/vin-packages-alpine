@@ -1,0 +1,15 @@
+checksum = "ba2d7956f590157b31d0f5c5d19fad577cd161e5bd71a7a93f034936f77b2fdd"
+licence = "Python-2.0 AND MIT"
+provides = "py3-pyldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyldap-3.4.3-r0.apk"
+version = "3.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-asn1", "0.4.8-r2"], ["py3-asn1-modules", "0.2.8-r2"], ["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

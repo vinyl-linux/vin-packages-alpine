@@ -1,0 +1,15 @@
+checksum = "6f792af0c3294a58b158fa9e7a408da968aecb351ce675798f797da83db41729"
+licence = "BSD-2-Clause"
+provides = "rpm2cpio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rpm2cpio-1.4-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libarchive-tools", "3.6.1-r2"]]

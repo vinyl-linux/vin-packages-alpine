@@ -1,0 +1,15 @@
+checksum = "e57cc5faf587287210a7b6cbc19551ba852621e243fd264ab069a7cec17d3ed3"
+licence = "BSL-1.0"
+provides = "boost-build"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/boost-build-1.79.0-r0.apk"
+version = "1.79.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80", "1.80.0-r3"], ["python3", "3.10.9-r1"]]

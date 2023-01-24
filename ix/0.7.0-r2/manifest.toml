@@ -1,0 +1,15 @@
+checksum = "521ec1b1dc4a4d931500b56a71f1866cd3edd526cccd966fb4e1684304e65a6c"
+licence = "GPL-2.0-only"
+provides = "ix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ix-0.7-r2.apk"
+version = "0.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "942f13482704f0735c4da9bc157ad3f2a3cfb182da65f8e0ea8f750d3f50b43e"
+licence = "MIT"
+provides = "libdroplet-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdroplet-dev-2.0-r11.apk"
+version = "2.0.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["json-c-dev", "0.16.0-r2"], ["libdroplet", "2.0.0-r11"], ["openssl-dev", "3.0.7-r2"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

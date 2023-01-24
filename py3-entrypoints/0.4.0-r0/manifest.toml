@@ -1,0 +1,15 @@
+checksum = "3b5f485a9f184f8e36f55d83bb4da7ae4eef561e9b12afebc7a369e1435d6494"
+licence = "MIT"
+provides = "py3-entrypoints"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-entrypoints-0.4-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

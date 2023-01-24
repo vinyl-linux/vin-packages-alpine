@@ -1,0 +1,15 @@
+checksum = "af6dfe65bc1b6259846713804b44f7ed1f97815f89de8106a923fa98bd3526b4"
+licence = "AGPL-3.0-or-later"
+provides = "ghostscript-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ghostscript-gtk-10.0.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["ghostscript", "10.0.0-r0"]]

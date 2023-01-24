@@ -1,0 +1,15 @@
+checksum = "8ef3575887354420822e8418ab7f58ba1e204e5477e45c16f63def46b62683f2"
+licence = "BSD-3-Clause"
+provides = "cpputest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cpputest-4.0-r1.apk"
+version = "4.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

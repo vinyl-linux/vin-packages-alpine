@@ -1,0 +1,15 @@
+checksum = "e746c3e5ed8e55d9b34e58d1b35c710c197622265318cd4fc0d1e91ae31fc08e"
+licence = "GPL-2.0-or-later"
+provides = "gtksourceview5-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gtksourceview5-dev-5.6.2-r0.apk"
+version = "5.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk4.0-dev", "4.8.3-r0"], ["libxml2-dev", "2.10.3-r1"], ["gtksourceview5", "5.6.2-r0"], ["fontconfig-dev", "2.14.1-r0"], ["fribidi-dev", "1.0.12-r0"], ["glib-dev", "2.74.5-r0"], ["pcre2-dev", "10.42.0-r0"], ["pango-dev", "1.50.12-r0"], ["pkgconf", "1.9.4-r0"]]

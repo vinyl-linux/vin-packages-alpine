@@ -1,0 +1,15 @@
+checksum = "8e5189a44df2248f326ecaab083d4ff9099ef8b620b1ff18b5d956b38a2b6b94"
+licence = "LGPL-2.1-or-later"
+provides = "libmanette-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmanette-dev-0.2.6-r2.apk"
+version = "0.2.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmanette", "0.2.6-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

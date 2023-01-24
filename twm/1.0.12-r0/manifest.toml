@@ -1,0 +1,15 @@
+checksum = "ee1457d6568fcab6ad6ffc7b4a8b985a2ad2e4a94ff7ceadda702ed5f05ef993"
+licence = "MIT"
+provides = "twm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/twm-1.0.12-r0.apk"
+version = "1.0.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libice", "1.0.10-r1"], ["libsm", "1.2.3-r1"], ["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxmu", "1.1.4-r0"], ["libxt", "1.2.1-r0"], ["musl", "1.2.3-r4"]]

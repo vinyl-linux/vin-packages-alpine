@@ -1,0 +1,15 @@
+checksum = "609f73473cdb659d28e6c946f6b7bc184c9ff8ea46e0cf70ea4e52c0521883e2"
+licence = "LGPL-2.0-or-later"
+provides = "libsoup-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsoup-dev-2.74.3-r0.apk"
+version = "2.74.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsoup", "2.74.3-r0"], ["glib-dev", "2.74.5-r0"], ["brotli-dev", "1.0.9-r9"], ["libpsl-dev", "0.21.1-r1"], ["libxml2-dev", "2.10.3-r1"], ["sqlite-dev", "3.40.1-r0"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

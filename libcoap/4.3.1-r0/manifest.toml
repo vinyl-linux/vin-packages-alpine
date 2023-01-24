@@ -1,0 +1,15 @@
+checksum = "2f8ade336a14d06bcd0637a2734e7ca7b84418ed342ed7d63ac590aa009f7908"
+licence = "BSD-2-Clause"
+provides = "libcoap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcoap-4.3.1-r0.apk"
+version = "4.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

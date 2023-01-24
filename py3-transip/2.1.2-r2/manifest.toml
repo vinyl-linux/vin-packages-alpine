@@ -1,0 +1,15 @@
+checksum = "c79af5a4886a5bafc5bd9c1c062774b6221f471b7142d6e824615f529d67935e"
+licence = "MIT"
+provides = "py3-transip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-transip-2.1.2-r2.apk"
+version = "2.1.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cryptography", "38.0.3-r0"], ["py3-requests", "2.28.1-r1"], ["py3-suds-jurko", "0.6.0-r2"]]

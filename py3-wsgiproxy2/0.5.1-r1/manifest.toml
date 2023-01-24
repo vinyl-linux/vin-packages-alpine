@@ -1,0 +1,15 @@
+checksum = "fc2aab5a1ca8cf237bcb27ecef2a083dff795825bae67b8a6ec29470b89742c7"
+licence = "MIT"
+provides = "py3-wsgiproxy2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-wsgiproxy2-0.5.1-r1.apk"
+version = "0.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-webob", "1.8.7-r1"]]

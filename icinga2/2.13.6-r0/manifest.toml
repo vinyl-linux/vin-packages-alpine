@@ -1,0 +1,15 @@
+checksum = "e517b707dda13478e2b6ea8cca566276eb48bf1b9c592360991c3a34901d0820"
+licence = "GPL-2.0-only"
+provides = "icinga2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/icinga2-2.13.6-r0.apk"
+version = "2.13.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["monitoring-plugins", "2.3.2-r0"], ["yash-binsh", "2.53.0-r2"], ["boost1.80-coroutine", "1.80.0-r3"], ["boost1.80-filesystem", "1.80.0-r3"], ["boost1.80-iostreams", "1.80.0-r3"], ["boost1.80-program_options", "1.80.0-r3"], ["boost1.80-thread", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libedit", "20221030.3.1-r0"], ["libgcc", "12.2.1"], ["mariadb-connector-c", "3.3.3-r0"], ["libpq", "15.1.0-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "84528c0ba928449a532d307b86375c4ae3d0d025819c428bb25f562113b8a0ca"
+licence = "MIT"
+provides = "krb5-pkinit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/krb5-pkinit-1.20.1-r0.apk"
+version = "1.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["krb5-conf", "1.0.0-r2"], ["musl", "1.2.3-r4"], ["libcom_err", "1.46.5-r4"], ["libcrypto3", "3.0.7-r2"], ["krb5-libs", "1.20.1-r0"]]

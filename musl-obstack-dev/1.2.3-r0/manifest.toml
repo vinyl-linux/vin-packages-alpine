@@ -1,0 +1,15 @@
+checksum = "5fcb2cb9b0f4a26cd08f360c4d8aa2cb9c6e34e0b7e41a8bb04bdc1635d0c9a7"
+licence = "LGPL-2.1-or-later"
+provides = "musl-obstack-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/musl-obstack-dev-1.2.3-r0.apk"
+version = "1.2.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl-obstack", "1.2.3-r0"], ["pkgconf", "1.9.4-r0"]]

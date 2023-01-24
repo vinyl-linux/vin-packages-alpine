@@ -1,0 +1,15 @@
+checksum = "327011adbbb18ad871338991127fd51c3f48b1c7aa06a70c93468a7cad24a521"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgomp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgomp-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

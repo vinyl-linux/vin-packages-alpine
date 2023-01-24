@@ -1,0 +1,15 @@
+checksum = "7ff127985408d1795c79db49903b13de9c4518ba241c1c4f1840462870944f4a"
+licence = "LGPL-2.1-or-later"
+provides = "openconnect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openconnect-9.01-r3.apk"
+version = "9.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vpnc", "0.5.3-r10"], ["iproute2", "6.0.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["krb5-libs", "1.20.1-r0"], ["lz4-libs", "1.9.4-r1"], ["pcsc-lite-libs", "1.9.9-r0"], ["libproxy", "0.4.18-r1"], ["oath-toolkit-libpskc", "2.6.7-r2"], ["libssl3", "3.0.7-r2"], ["stoken", "0.92.0-r4"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

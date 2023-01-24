@@ -1,0 +1,15 @@
+checksum = "822929ba77d1b2bb4ebb8be4908ed1009783adca9166a0738c27c77234238dc8"
+licence = "GPL-2.0-only"
+provides = "git-branchless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-branchless-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libgit2", "1.5.1-r0"], ["sqlite-libs", "3.40.1-r0"]]

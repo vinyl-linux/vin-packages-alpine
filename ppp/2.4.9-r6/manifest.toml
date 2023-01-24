@@ -1,0 +1,15 @@
+checksum = "5aa770fa345ca1d56e9f8a5482e8e8834e78cad909c9ef5343f75d945ca36f73"
+licence = "BSD-3-Clause AND BSD-4-Clause AND BSD-4-Clause-Shortened AND GPL-2.0-or-later AND HPND AND LGPL-2.0-or-later AND Public-Domain AND RSA-MD"
+provides = "ppp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-2.4.9-r6.apk"
+version = "2.4.9-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ppp-chat", "2.4.9-r6"], ["ppp-radius", "2.4.9-r6"], ["ppp-atm", "2.4.9-r6"], ["ppp-pppoe", "2.4.9-r6"], ["ppp-l2tp", "2.4.9-r6"], ["ppp-winbind", "2.4.9-r6"], ["ppp-passprompt", "2.4.9-r6"], ["ppp-passwordfd", "2.4.9-r6"], ["ppp-minconn", "2.4.9-r6"], ["ppp-daemon", "2.4.9-r6"]]

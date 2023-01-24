@@ -1,0 +1,15 @@
+checksum = "9ecf0ec2221a1c1d3f10e853bdcb233d59aaf271e168dd7be3e9ef1b28e00199"
+licence = "MIT"
+provides = "lua5.1-penlight"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-penlight-1.13.1-r0.apk"
+version = "1.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1-filesystem", "1.8.0-r2"], ["lua-penlight", "1.13.1-r0"]]

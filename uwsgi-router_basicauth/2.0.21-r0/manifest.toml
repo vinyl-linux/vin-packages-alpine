@@ -1,0 +1,15 @@
+checksum = "694925113dbe1487fba4bd2dc2031d6d773e764585986cf80c1ddd3fed796e86"
+licence = "custom"
+provides = "uwsgi-router_basicauth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-router_basicauth-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

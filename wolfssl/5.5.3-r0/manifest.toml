@@ -1,0 +1,15 @@
+checksum = "0201ef7db9272c00981fbc5cb036bf08a26ab37f84da94fe0e7e6492befbad98"
+licence = "GPL-2.0-only"
+provides = "wolfssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wolfssl-5.5.3-r0.apk"
+version = "5.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

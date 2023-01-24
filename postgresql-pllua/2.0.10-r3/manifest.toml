@@ -1,0 +1,15 @@
+checksum = "3c065b76f22d11e78524a9421f904a8a9da0172dd85417ab26020a07be2344a9"
+licence = "MIT"
+provides = "postgresql-pllua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-pllua-2.0.10-r3.apk"
+version = "2.0.10-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["musl", "1.2.3-r4"], ["luajit", "2.1.0"]]

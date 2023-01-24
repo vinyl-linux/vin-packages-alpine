@@ -1,0 +1,15 @@
+checksum = "749f192202a070fb7acdc7a35c3d7f95976270d1115186016ecdaa4e0df58412"
+licence = "LGPL-2.0-or-later"
+provides = "vala-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vala-dbg-0.56.3-r0.apk"
+version = "0.56.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"]]

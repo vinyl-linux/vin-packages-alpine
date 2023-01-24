@@ -1,0 +1,15 @@
+checksum = "ba78ce2e036dc1121d7caacbb54990e2d91d317b10a268e0573f774a7eeb4d32"
+licence = "GPL-3.0-or-later"
+provides = "oath-toolkit-pam_oath"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oath-toolkit-pam_oath-2.6.7-r2.apk"
+version = "2.6.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["oath-toolkit-liboath", "2.6.7-r2"], ["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

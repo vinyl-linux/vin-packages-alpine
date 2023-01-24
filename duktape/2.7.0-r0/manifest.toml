@@ -1,0 +1,15 @@
+checksum = "07a81501866a118c4baf5541599ecfe6719d9917a83cc41efcc02481cc9dbe64"
+licence = "MIT"
+provides = "duktape"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/duktape-2.7.0-r0.apk"
+version = "2.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

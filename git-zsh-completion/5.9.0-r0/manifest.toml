@@ -1,0 +1,15 @@
+checksum = "96b7494992c607f321480222b21f194920499062c4e2b4de99f83c0b62acee5d"
+licence = "custom"
+provides = "git-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

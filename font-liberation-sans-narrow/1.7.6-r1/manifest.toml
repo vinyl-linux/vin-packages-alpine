@@ -1,0 +1,15 @@
+checksum = "e3e4bf077bd4f30fa251a6c7fbd43befb0660902d44c8226c273cfe0ce15cbdc"
+licence = "custom:Liberation"
+provides = "font-liberation-sans-narrow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-liberation-sans-narrow-1.07.6-r1.apk"
+version = "1.7.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

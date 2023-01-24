@@ -1,0 +1,15 @@
+checksum = "cd7d15c0eacba8a03047c609241d47b597e0684546465930748f090ae5ac29c6"
+licence = "custom"
+provides = "subversion-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/subversion-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "025ba26c98d4e3741a3c38136e35697ce480f5b50fa50efabc98a43fb10a6110"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-bluez"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulseaudio-bluez-16.1-r6.apk"
+version = "16.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gstreamer", "1.20.5-r0"], ["libintl", "0.21.1-r1"], ["libpulse", "16.1.0-r6"], ["sbc", "2.0.0-r0"]]

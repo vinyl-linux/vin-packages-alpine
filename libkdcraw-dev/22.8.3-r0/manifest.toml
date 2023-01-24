@@ -1,0 +1,15 @@
+checksum = "d78b56476d4fecfe4b295afe360d5af56141da3610e44bc872b5b0c67283606d"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "libkdcraw-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkdcraw-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libraw-dev", "0.20.2-r2"], ["qt5-qtbase-dev", "5.15.6"], ["samurai", "1.2.0-r2"], ["libkdcraw", "22.8.3-r0"]]

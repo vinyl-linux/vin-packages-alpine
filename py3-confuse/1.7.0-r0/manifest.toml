@@ -1,0 +1,15 @@
+checksum = "47ad9b2256445bba17ca581994684420f87f0a8669c1a2f320b1f34b5cf3030e"
+licence = "MIT"
+provides = "py3-confuse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-confuse-1.7.0-r0.apk"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-yaml", "6.0.0-r0"]]

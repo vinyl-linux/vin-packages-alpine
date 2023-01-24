@@ -1,0 +1,15 @@
+checksum = "2f249e0ffe62b29f828bd0dacd5e215d010f681ed7787d3893a8deb07736e1f0"
+licence = "Apache-2.0"
+provides = "containerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/containerd-1.6.12-r1.apk"
+version = "1.6.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["runc", "1.1.4-r4"], ["musl", "1.2.3-r4"]]

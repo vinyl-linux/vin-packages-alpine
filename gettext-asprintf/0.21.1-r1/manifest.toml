@@ -1,0 +1,15 @@
+checksum = "dde5649610fc0ce32d5a3e61a39631342125ae41e6e83e19805a01aa06d92974"
+licence = "LGPL-2.1-or-later"
+provides = "gettext-asprintf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gettext-asprintf-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

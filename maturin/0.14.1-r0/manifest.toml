@@ -1,0 +1,15 @@
+checksum = "9ee1ccf3e9ebccd158908f6c0b990de0d76de14797d6561147f4ca841c503331"
+licence = "Apache-2.0 OR MIT"
+provides = "maturin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/maturin-0.14.1-r0.apk"
+version = "0.14.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

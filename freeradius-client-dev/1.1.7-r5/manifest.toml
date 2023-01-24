@@ -1,0 +1,15 @@
+checksum = "2823d4d03215aa21be1b1d482489034b448e9850fd669da316324cc1b40fba89"
+licence = "BSD"
+provides = "freeradius-client-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-client-dev-1.1.7-r5.apk"
+version = "1.1.7-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius-client", "1.1.7-r5"]]

@@ -1,0 +1,15 @@
+checksum = "5333f0808a3ae90182e0cd2d84ed55f74b0ce4be5cb7633ca3184ad470cebdcc"
+licence = "LGPL-2.0-or-later"
+provides = "lximage-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lximage-qt-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxfixes", "6.0.0-r0"], ["musl", "1.2.3-r4"], ["libexif", "0.6.24-r0"], ["libfm-qt", "1.2.0-r0"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

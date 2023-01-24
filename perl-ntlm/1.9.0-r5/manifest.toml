@@ -1,0 +1,15 @@
+checksum = "85d10a0f90d5d72ffda000717e89ed2a3c9ad3756a66129ae78bd719ef9f251d"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-ntlm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-ntlm-1.09-r5.apk"
+version = "1.9.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-digest-hmac", "1.4.0-r1"]]

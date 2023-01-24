@@ -1,0 +1,15 @@
+checksum = "6d9bbd03a34eb69d2079967528414f45cc7582a14db04e65ebfdd706eb43a878"
+licence = "LGPL-2.0-or-later"
+provides = "atkmm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/atkmm-2.28.3-r0.apk"
+version = "2.28.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libatk-1.0", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["glibmm", "2.66.5-r0"], ["libsigc++", "2.10.8-r0"], ["libstdc++", "12.2.1"]]

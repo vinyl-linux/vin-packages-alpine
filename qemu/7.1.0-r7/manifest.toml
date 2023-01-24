@@ -1,0 +1,15 @@
+checksum = "851325978a290f306b44e974f8188364a822782d8d728ad4070d3d17ea25592a"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ab8aad05bc10141e39e9814bb3db3f3d869123881df48a92daa2bc4b87662700"
+licence = "MIT"
+provides = "fmt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fmt-9.1.0-r0.apk"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

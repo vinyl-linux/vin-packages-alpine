@@ -1,0 +1,15 @@
+checksum = "b897ab53e006919d2fcfd754bddd72fa03524f7e7a91a22b6f3074ccbb8292eb"
+licence = "GPL-2.0-or-later"
+provides = "frei0r-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frei0r-plugins-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gavl", "1.4.0-r3"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

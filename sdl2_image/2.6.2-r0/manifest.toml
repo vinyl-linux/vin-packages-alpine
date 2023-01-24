@@ -1,0 +1,15 @@
+checksum = "8d91bcd16098e0bc89d8ca7dc8f4491c002b89738ffc9e3f495bbf808cc03889"
+licence = "Zlib"
+provides = "sdl2_image"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdl2_image-2.6.2-r0.apk"
+version = "2.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"]]

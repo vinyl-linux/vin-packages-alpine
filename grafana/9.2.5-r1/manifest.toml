@@ -1,0 +1,15 @@
+checksum = "aa258be33da3552e1726bcb7ef8e65061dd3aa47a6bd4d51f103332386b4a823"
+licence = "AGPL-3.0-only"
+provides = "grafana"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grafana-9.2.5-r1.apk"
+version = "9.2.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grafana-frontend", "9.2.5-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

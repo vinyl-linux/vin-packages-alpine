@@ -1,0 +1,15 @@
+checksum = "fb0abb3154659d0826c579d47f57f816e037a082578784424d5f68fb4211b73e"
+licence = "Apache-2.0"
+provides = "duckscript"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/duckscript-0.8.16-r0.apk"
+version = "0.8.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

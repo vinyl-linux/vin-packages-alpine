@@ -1,0 +1,15 @@
+checksum = "e941cefcb1f718830c498c9a41f35939e779747282ac12128270d1f8ee3bca3f"
+licence = "MIT"
+provides = "rttr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rttr-0.9.6-r3.apk"
+version = "0.9.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

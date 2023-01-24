@@ -1,0 +1,15 @@
+checksum = "69c1d95483fa9f1398620a7d01e81159464bd3e9890143dea7860d93f443f939"
+licence = "GPL-2.0-or-later"
+provides = "abook"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/abook-0.6.1-r6.apk"
+version = "0.6.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"]]

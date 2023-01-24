@@ -1,0 +1,15 @@
+checksum = "55a63644331eb31c880666ed3e6b61eaca89b274501acd2f27b019cd92eafa82"
+licence = "GPL-3.0-or-later"
+provides = "weechat-spell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weechat-spell-3.7.1-r0.apk"
+version = "3.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["weechat", "3.7.1-r0"], ["aspell-libs", "0.60.8-r2"], ["musl", "1.2.3-r4"]]

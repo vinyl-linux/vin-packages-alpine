@@ -1,0 +1,15 @@
+checksum = "9378824953a1b93d29f3261d99064dd4830d9f2a57b905e37ef5383929d47bef"
+licence = "GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later"
+provides = "xz-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xz-dev-5.2.9-r0.apk"
+version = "5.2.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["xz-libs", "5.2.9-r0"]]

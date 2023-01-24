@@ -1,0 +1,15 @@
+checksum = "89e3fd7aa85b090cc2f7f79f21d4bac49f86356e24d61fe70ac057e30c6887eb"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-mime-construct"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-mime-construct-1.11-r7.apk"
+version = "1.11.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-proc-waitstat", "1.0.0-r4"], ["perl-mime-types", "2.22.0-r0"], ["perl-mime-base64", "3.16.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "0c8adb087cdd2f57e3813f9a435530ddeb84a200641aef821896bc6109ca0c7f"
+licence = "MIT"
+provides = "toml-adapt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/toml-adapt-0.2.10-r0.apk"
+version = "0.2.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-toml", "0.10.2-r4"], ["py3-click", "8.1.3-r0"]]

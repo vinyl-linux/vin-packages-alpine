@@ -1,0 +1,15 @@
+checksum = "6d50820800211b6323caa03117f7ed9b02129dc14c5cd8a9e01240754449eaba"
+licence = "GPL-2.0-or-later"
+provides = "yash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/yash-2.53-r2.apk"
+version = "2.53.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

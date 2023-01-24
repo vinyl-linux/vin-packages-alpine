@@ -1,0 +1,15 @@
+checksum = "5b500c1825a46aefad098f73073cab8d25bdaaf48735b55e5ba380a3068802af"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-python3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-python3-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.26-r0"], ["musl", "1.2.3-r4"]]

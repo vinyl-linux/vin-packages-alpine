@@ -1,0 +1,15 @@
+checksum = "fdb83c82963a40b7f01f909ce11a954891fb23a01c2e2c91b32abdfebe52c840"
+licence = "GPL-3.0-or-later"
+provides = "gnuchess"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnuchess-6.2.9-r1.apk"
+version = "6.2.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"]]

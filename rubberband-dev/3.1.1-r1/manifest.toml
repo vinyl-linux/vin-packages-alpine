@@ -1,0 +1,15 @@
+checksum = "950ea7870dc4d949d018ad64be48a5f834648de4186ef195872e872f9a010f73"
+licence = "GPL-2.0-only"
+provides = "rubberband-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rubberband-dev-3.1.1-r1.apk"
+version = "3.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["rubberband-libs", "3.1.1-r1"]]

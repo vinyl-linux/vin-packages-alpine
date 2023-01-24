@@ -1,0 +1,15 @@
+checksum = "71f808d3f6230611730040f96e61bf512471353375323c0124e26eede08b1e48"
+licence = "MIT"
+provides = "rtrlib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rtrlib-dev-0.8.0-r3.apk"
+version = "0.8.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["rtrlib", "0.8.0-r3"]]

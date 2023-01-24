@@ -1,0 +1,15 @@
+checksum = "6d299ec0a17a8f9bd81bf04f80476d8d9f7c2f3b67e792fcebbf6030e6926786"
+licence = "MIT"
+provides = "py3-inflect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-inflect-6.0.0-r1.apk"
+version = "6.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pydantic", "1.10.2-r0"], ["python3", "3.10.9-r1"]]

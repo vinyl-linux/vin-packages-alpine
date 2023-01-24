@@ -1,0 +1,15 @@
+checksum = "fd84418b2056ddb1186cc12490a5e077e63054fd334bed2c9c0fb414d4010592"
+licence = "BSD"
+provides = "openssh-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-server-9.1_p1-r1.apk"
+version = "9.1.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-keygen", "9.1.0"], ["openssh-server-common", "9.1.0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

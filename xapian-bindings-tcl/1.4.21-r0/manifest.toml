@@ -1,0 +1,15 @@
+checksum = "4a34f16996628a759ceca07fb5443ecb49f8e64fabd21a04e31b27c49a0b9cf2"
+licence = "GPL-2.0-or-later"
+provides = "xapian-bindings-tcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xapian-bindings-tcl-1.4.21-r0.apk"
+version = "1.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxapian", "1.4.21-r0"]]

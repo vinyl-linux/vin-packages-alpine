@@ -1,0 +1,15 @@
+checksum = "b976702a41060ce66c7d5289f0fd03da6caa096dc1d69369a02f6023c31a4e2d"
+licence = "GPL-2.0-or-later"
+provides = "xvfb-run"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xvfb-run-1.20.10.3-r0.apk"
+version = "1.20.10.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xauth", "1.1.2-r0"], ["xvfb", "21.1.6-r0"], ["coreutils", "9.1.0-r0"]]

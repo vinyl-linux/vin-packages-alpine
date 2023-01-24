@@ -1,0 +1,15 @@
+checksum = "3e770fef9f327394de3cc49b21a7cedb2d8bb095355ab2c6f61da8c0bcf212bc"
+licence = "LGPL-2.1-or-later"
+provides = "xdg-desktop-portal-gnome-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdg-desktop-portal-gnome-lang-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-desktop-portal", "1.16.0-r0"], ["xdg-desktop-portal-gtk", "1.14.1-r0"]]

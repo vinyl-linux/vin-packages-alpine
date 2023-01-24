@@ -1,0 +1,15 @@
+checksum = "ea8ad4c31a8d4acaeaa9efa2175ef92b2a35008a8ad5c8514a2cc0f2612bf675"
+licence = "(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception"
+provides = "haproxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/haproxy-2.6.7-r0.apk"
+version = "2.6.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["lua5.4-libs", "5.4.4-r6"], ["pcre", "8.45.0-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

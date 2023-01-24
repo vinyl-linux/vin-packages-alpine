@@ -1,0 +1,15 @@
+checksum = "f0d24196f27e6e7cddd03d4d94aa9af40416aaa5696475ee58a467a5bde0175e"
+licence = "GPL-2.0-or-later"
+provides = "inadyn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inadyn-2.10.0-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["confuse", "3.3.0-r1"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

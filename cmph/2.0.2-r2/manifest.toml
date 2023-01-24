@@ -1,0 +1,15 @@
+checksum = "31ec994c13e8e3a47bcb0be78337c63c7351b9e6e7da2d8be06eb8879263979f"
+licence = "LGPL-2.0-or-later MPL-1.1"
+provides = "cmph"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cmph-2.0.2-r2.apk"
+version = "2.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcmph", "2.0.2-r2"]]

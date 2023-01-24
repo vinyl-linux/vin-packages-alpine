@@ -1,0 +1,15 @@
+checksum = "7011cc41760f7495706ab5fc838826902f7667bb2a62cc9c7df7533304d97d91"
+licence = "custom"
+provides = "leptonica"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/leptonica-1.82.0-r1.apk"
+version = "1.82.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["giflib", "5.2.1-r2"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"], ["zlib", "1.2.13-r0"]]

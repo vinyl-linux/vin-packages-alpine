@@ -1,0 +1,15 @@
+checksum = "4bf6cc909b4457d76cf45efe7b9ac081c0fcd382f80b3ecd1b0d825ad06bd382"
+licence = "GPL-2.0-or-later"
+provides = "libzim-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libzim-dev-8.0.0-r1.apk"
+version = "8.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libzim", "8.0.0-r1"], ["icu-dev", "72.1.0-r1"], ["xz-dev", "5.2.9-r0"], ["zstd-dev", "1.5.2-r9"], ["xapian-core-dev", "1.4.21-r0"], ["pkgconf", "1.9.4-r0"]]

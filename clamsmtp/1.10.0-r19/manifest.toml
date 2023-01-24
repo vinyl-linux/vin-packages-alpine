@@ -1,0 +1,15 @@
+checksum = "29f7e0a4bf5168c44ee8d7a403e50527aa52e763e98610f1d91be369b789ddea"
+licence = "BSD-3-Clause"
+provides = "clamsmtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamsmtp-1.10-r19.apk"
+version = "1.10.0-r19"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

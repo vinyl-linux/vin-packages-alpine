@@ -1,0 +1,15 @@
+checksum = "125500348683794ea757db9b915fd54bb553c8e2d91f8393572ba54129ed29f8"
+licence = "BSD-2-Clause"
+provides = "gpsd-clients"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpsd-clients-3.24-r0.apk"
+version = "3.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

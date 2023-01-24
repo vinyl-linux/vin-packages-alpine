@@ -1,0 +1,15 @@
+checksum = "2558033c92f75530c4c5e87c33c0e94ab61b3b1f962bf4ac5b4a5558b07537e7"
+licence = "BSD-3-Clause"
+provides = "dsfmt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dsfmt-2.2.5-r0.apk"
+version = "2.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

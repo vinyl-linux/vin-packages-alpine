@@ -1,0 +1,15 @@
+checksum = "4ffe6c7ebdbf266b3918e7805c32a61ef84fa578760ffc4969a01395bf9f7aa9"
+licence = "BSD-3-Clause"
+provides = "shadow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shadow-4.13-r0.apk"
+version = "4.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

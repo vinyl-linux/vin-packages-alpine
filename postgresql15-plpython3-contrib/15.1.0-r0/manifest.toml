@@ -1,0 +1,15 @@
+checksum = "d4a939d429dc62ea8c5b9be8ed1caaf69458fed10c4aeb3bb28876d3277ebdd7"
+licence = "PostgreSQL"
+provides = "postgresql15-plpython3-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql15-plpython3-contrib-15.1-r0.apk"
+version = "15.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15-plpython3", "15.1.0-r0"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

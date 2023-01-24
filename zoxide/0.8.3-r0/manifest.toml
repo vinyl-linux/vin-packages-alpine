@@ -1,0 +1,15 @@
+checksum = "93eee93751f4131ab1cd02e4d9a473704cfb810a81278c5df9b4aeeaf6e8e89d"
+licence = "MIT"
+provides = "zoxide"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zoxide-0.8.3-r0.apk"
+version = "0.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

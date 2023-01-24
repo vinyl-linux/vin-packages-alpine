@@ -1,0 +1,15 @@
+checksum = "398e7c2555c031525e8e08ca5c56af984c34e1fea344a45e6c804ae85ddc46ea"
+licence = "BSD-3-Clause OR GPL-2.0-or-later"
+provides = "libkcapi-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libkcapi-tools-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libkcapi", "1.4.0-r0"]]

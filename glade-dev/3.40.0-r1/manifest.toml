@@ -1,0 +1,15 @@
+checksum = "1ca25f15108c6c86ad61935a7cca8934ba8f52d621cf5672b719822a75c6293a"
+licence = "GPL-2.0-or-later"
+provides = "glade-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glade-dev-3.40.0-r1.apk"
+version = "3.40.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glade", "3.40.0-r1"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

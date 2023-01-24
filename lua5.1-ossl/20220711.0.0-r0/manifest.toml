@@ -1,0 +1,15 @@
+checksum = "17f4d4266e436667b2fe3952eb5fc4e9d01f9398e8d3d79a6e0e1d843888eac5"
+licence = "MIT"
+provides = "lua5.1-ossl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-ossl-20220711-r0.apk"
+version = "20220711.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

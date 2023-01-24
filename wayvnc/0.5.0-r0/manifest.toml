@@ -1,0 +1,15 @@
+checksum = "833cda14c3b7a21bea26ce4e6b72a2774e4c689b310c7e3037fe1a79c1c074c5"
+licence = "ISC"
+provides = "wayvnc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wayvnc-0.5.0-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aml", "0.2.2-r0"], ["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["mesa-gbm", "22.2.5-r1"], ["neatvnc", "0.5.4-r0"], ["pixman", "0.42.2-r0"], ["wayland-libs-client", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

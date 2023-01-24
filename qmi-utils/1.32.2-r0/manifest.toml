@@ -1,0 +1,15 @@
+checksum = "3217cb1d7609a44c8492c08435fb3c3cda2110fed336b39f2fd4e78c15aea133"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "qmi-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qmi-utils-1.32.2-r0.apk"
+version = "1.32.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["libmbim", "1.28.2-r0"], ["libqmi", "1.32.2-r0"], ["libqrtr-glib", "1.2.2-r0"]]

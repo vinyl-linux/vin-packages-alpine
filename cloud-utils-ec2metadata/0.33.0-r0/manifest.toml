@@ -1,0 +1,15 @@
+checksum = "99d220c9f77c3ee9936bf1013a9bf6d36c901702920c040ef10a1755323cf8bc"
+licence = "GPL-3.0-or-later"
+provides = "cloud-utils-ec2metadata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cloud-utils-ec2metadata-0.33-r0.apk"
+version = "0.33.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-urllib3", "1.26.12-r0"]]

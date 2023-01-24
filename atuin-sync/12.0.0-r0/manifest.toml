@@ -1,0 +1,15 @@
+checksum = "7c2fbd5082b879f8807cd5d94cf83ee20bd307561fd086c6fb7f6f6d0046330b"
+licence = "MIT"
+provides = "atuin-sync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/atuin-sync-12.0.0-r0.apk"
+version = "12.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libsodium", "1.0.18-r2"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"]]

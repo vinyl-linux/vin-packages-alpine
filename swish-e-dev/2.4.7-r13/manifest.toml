@@ -1,0 +1,15 @@
+checksum = "a97ba919770a7fc7b9b9f690857118763925f72ca1b84bdc7145041c913dce7d"
+licence = "GPL"
+provides = "swish-e-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/swish-e-dev-2.4.7-r13.apk"
+version = "2.4.7-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["swish-e", "2.4.7-r13"]]

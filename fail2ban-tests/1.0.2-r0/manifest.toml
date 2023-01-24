@@ -1,0 +1,15 @@
+checksum = "7b1f6e895dc1ac4f4bc1a4ddfe75259a21face8cc7a1dfbc815d80de2b87cb95"
+licence = "GPL-2.0-or-later"
+provides = "fail2ban-tests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fail2ban-tests-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fail2ban", "1.0.2-r0"]]

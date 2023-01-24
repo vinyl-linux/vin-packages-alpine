@@ -1,0 +1,15 @@
+checksum = "bf61750491a1d59ed6dd82b5f8801d2ee45baca8945fdbbfbfe60ab533f9ea69"
+licence = "MIT"
+provides = "xrdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xrdb-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxmu", "1.1.4-r0"], ["musl", "1.2.3-r4"]]

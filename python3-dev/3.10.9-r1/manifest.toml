@@ -1,0 +1,15 @@
+checksum = "5c53f3503a1b4090d8bc4f69276ce1f020d3777d5b6e23aedbcba4cb053111aa"
+licence = "PSF-2.0"
+provides = "python3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/python3-dev-3.10.9-r1.apk"
+version = "3.10.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["python3", "3.10.9-r1"]]

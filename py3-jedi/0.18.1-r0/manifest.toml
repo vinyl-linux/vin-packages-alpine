@@ -1,0 +1,15 @@
+checksum = "75342cf4f530bdf4aec18bfa684203bba2b7565f257ae0d5c72fab2776e11195"
+licence = "MIT"
+provides = "py3-jedi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jedi-0.18.1-r0.apk"
+version = "0.18.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-parso", "0.8.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "117b5976b156e50b05afd65e89be63f0e4b627dc5beace79c13e36feffc9fec9"
+licence = "MIT"
+provides = "py3-tomso"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tomso-0.2.1-r0.apk"
+version = "0.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4a09fe706c387fec6ccb4f074716da524b589d6ddbe4d616d956f0ecd865f6a4"
+licence = "GPL-2.0-or-later"
+provides = "mcabber"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mcabber-1.1.2-r1.apk"
+version = "1.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["beep", "1.4.12-r0"], ["aspell-libs", "0.60.8-r2"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gpgme", "1.18.0-r0"], ["libidn", "1.41.0-r0"], ["loudmouth", "1.5.4-r1"], ["ncurses-libs", "6.3.0"], ["libotr", "4.1.1-r3"]]

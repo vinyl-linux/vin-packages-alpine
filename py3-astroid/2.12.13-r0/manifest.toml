@@ -1,0 +1,15 @@
+checksum = "8d53ce0804dbe43cbc5c0255f83d00debf3d04bb40b0bf18331a745a461de05a"
+licence = "LGPL-2.1-or-later"
+provides = "py3-astroid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-astroid-2.12.13-r0.apk"
+version = "2.12.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-lazy-object-proxy", "1.8.0-r0"], ["py3-wrapt", "1.14.1-r0"]]

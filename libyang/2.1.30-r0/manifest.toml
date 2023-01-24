@@ -1,0 +1,15 @@
+checksum = "da0723507456182a2500705081abad4ca8c0a404430616c2343a767c6d624055"
+licence = "BSD-3-Clause-Clear"
+provides = "libyang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libyang-2.1.30-r0.apk"
+version = "2.1.30-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["pcre2", "10.42.0-r0"]]

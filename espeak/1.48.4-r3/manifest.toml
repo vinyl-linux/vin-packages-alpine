@@ -1,0 +1,15 @@
+checksum = "379d32348532ce36e36953b4f56774ad5dee6c651239306bf24ddaea14586396"
+licence = "GPL-3.0"
+provides = "espeak"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/espeak-1.48.04-r3.apk"
+version = "1.48.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["portaudio", "19.7.0-r0"]]

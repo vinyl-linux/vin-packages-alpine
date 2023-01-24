@@ -1,0 +1,15 @@
+checksum = "ac975439153db01734dd611f84d5968c9193870779754ae470a3a1228afe7e6f"
+licence = "LGPL-2.0-or-later"
+provides = "nettle-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nettle-utils-3.8.1-r0.apk"
+version = "3.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["nettle", "3.8.1-r0"]]

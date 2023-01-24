@@ -1,0 +1,15 @@
+checksum = "165ff9992c11c32e526094bf35d891cac465d46ed6d493d761ac21d5167d0380"
+licence = "PSF"
+provides = "py3-cx_freeze"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cx_freeze-6.13.1-r0.apk"
+version = "6.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["patchelf", "0.17.0-r0"], ["musl", "1.2.3-r4"]]

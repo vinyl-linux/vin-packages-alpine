@@ -1,0 +1,15 @@
+checksum = "d11c3ba2e943184c89b9c45266df83a08182d6bac5096ba908ecd19b5dc91bc9"
+licence = "EPL-1.0"
+provides = "paho-mqtt-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/paho-mqtt-c-1.3.9-r2.apk"
+version = "1.3.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "8afaad378f6127dbd3540837b482975f5462fc7761f1c15023a7d660a8ac3bf4"
+licence = "MIT"
+provides = "pgsanity"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pgsanity-0.2.9-r3.apk"
+version = "0.2.9-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["postgresql-bdr-dev", "9.4.14"]]

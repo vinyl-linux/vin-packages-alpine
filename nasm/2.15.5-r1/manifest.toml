@@ -1,0 +1,15 @@
+checksum = "9253095edfd49b5c43cbe4e7112bcb82075ebaf0cb6e5d9ab131cf956d1610a0"
+licence = "BSD-2-Clause"
+provides = "nasm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nasm-2.15.05-r1.apk"
+version = "2.15.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

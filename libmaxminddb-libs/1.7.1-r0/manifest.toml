@@ -1,0 +1,15 @@
+checksum = "9f8b405f601ab6807d714754ba90a5c0e6c5fcde02ff4bbf24046cc57af63291"
+licence = "Apache-2.0"
+provides = "libmaxminddb-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmaxminddb-libs-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

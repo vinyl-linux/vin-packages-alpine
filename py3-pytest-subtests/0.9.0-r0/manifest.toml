@@ -1,0 +1,15 @@
+checksum = "5fcd460a0dba29c8273b806a14d56bcb4a795148ebac46dbe42f8dd313169e3c"
+licence = "MIT"
+provides = "py3-pytest-subtests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-subtests-0.9.0-r0.apk"
+version = "0.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pytest", "7.2.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "1c1e887db013bb49c84394d617bde4bd13be3146d9b92aafe2cb6caf9a136836"
+licence = "GPL-2.0-or-later"
+provides = "nrpe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nrpe-4.1.0-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "badc015e86c852f56f04b0554f431da31bbef239fa60fa216c6b8817b0a93f86"
+licence = "LGPL-2.1-or-later"
+provides = "libbytesize-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbytesize-tools-2.7-r1.apk"
+version = "2.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py-libbytesize", "2.7.0-r1"]]

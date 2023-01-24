@@ -1,0 +1,15 @@
+checksum = "e53e4fd69e73d04ed7ced730463dcefa2b8a4c8dda0a730329dcc97da5c30b34"
+licence = "Artistic-2.0"
+provides = "pv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pv-1.6.20-r1.apk"
+version = "1.6.20-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

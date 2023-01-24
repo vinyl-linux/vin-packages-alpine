@@ -1,0 +1,15 @@
+checksum = "82c76e86859475b897e00079a8e508c63989a8b7971eb2626d73f2b69781f8bb"
+licence = "GPL-2.0"
+provides = "scstadmin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/scstadmin-2.2.0-r4.apk"
+version = "2.2.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

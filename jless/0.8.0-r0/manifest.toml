@@ -1,0 +1,15 @@
+checksum = "40f9931d0eca5df6a2f22b4279ea83abb3af88f931cae42114c42cb45c640079"
+licence = "MIT"
+provides = "jless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jless-0.8.0-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libxcb", "1.15.0-r0"]]

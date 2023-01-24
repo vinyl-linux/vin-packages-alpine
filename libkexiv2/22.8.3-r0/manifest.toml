@@ -1,0 +1,15 @@
+checksum = "e30ee5bd298593a85a33454da1ee5d450133b6fb1c44e7862787d5f25a48b015"
+licence = "GPL-2.0-or-later"
+provides = "libkexiv2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkexiv2-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["exiv2", "0.27.5-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

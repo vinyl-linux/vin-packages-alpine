@@ -1,0 +1,15 @@
+checksum = "5d33bbb2453834bfdcbcfc760ddb13bd0d3c662b85dc1f9720dcb7d136e16224"
+licence = "Apache-2.0"
+provides = "s2geometry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/s2geometry-0.10.0-r2.apk"
+version = "0.10.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["abseil-cpp", "20220623.1.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

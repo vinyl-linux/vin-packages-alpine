@@ -1,0 +1,15 @@
+checksum = "1df9bf9374f514eee22b1205f3467d67ac7a5c3c81d8d4c712c2dc0bfe902a4f"
+licence = "custom"
+provides = "qhull-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qhull-dev-2020.2-r2.apk"
+version = "2020.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["qhull-nonreentrant", "2020.2.0-r2"], ["qhull", "2020.2.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "3fc361779b6b6bef25f18300f1c4c7e74fe406ec6d20e08d5345b8a41054af40"
+licence = "OLDAP-2.8"
+provides = "py3-lmdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-lmdb-1.2.1-r2.apk"
+version = "1.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["lmdb", "0.9.29-r2"]]

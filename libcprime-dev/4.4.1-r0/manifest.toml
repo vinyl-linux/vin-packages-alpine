@@ -1,0 +1,15 @@
+checksum = "0d7b3d8c9b8c5ce22cfc38eb4ebcd0f7eb89b9a5f2989ba21a9a4a58e4ab0add"
+licence = "GPL-3.0-or-later"
+provides = "libcprime-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcprime-dev-4.4.1-r0.apk"
+version = "4.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcprime", "4.4.1-r0"], ["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"]]

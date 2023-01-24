@@ -1,0 +1,15 @@
+checksum = "e937b70a9d37c4b9cf02a38242d5514b14139772271c9c450d2078d1fa2b55e9"
+licence = "BSD-2-Clause"
+provides = "py3-scrypt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-scrypt-0.8.20-r1.apk"
+version = "0.8.20-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

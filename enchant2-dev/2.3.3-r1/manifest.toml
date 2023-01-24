@@ -1,0 +1,15 @@
+checksum = "b97650d1d56ff80252b70082833b1c5e04a0d2c22378b6a82783e538cfdcceb7"
+licence = "LGPL-2.1-or-later"
+provides = "enchant2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/enchant2-dev-2.3.3-r1.apk"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["enchant2", "2.3.3-r1"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

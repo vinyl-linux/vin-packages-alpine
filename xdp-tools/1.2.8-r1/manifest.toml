@@ -1,0 +1,15 @@
+checksum = "37468b984b0e548a598b4b8c4d7600387f13ecb8eebb5ab47c9b51a503ed9c08"
+licence = "BSD-2-Clause AND GPL-2.0-only AND GPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "xdp-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xdp-tools-1.2.8-r1.apk"
+version = "1.2.8-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbpf", "1.0.1-r0"], ["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"], ["libxdp", "1.2.8-r1"]]

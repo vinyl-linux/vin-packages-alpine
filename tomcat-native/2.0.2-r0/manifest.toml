@@ -1,0 +1,15 @@
+checksum = "c38ff110532d31dad5450df9ae4034aec04e6c4687b522c287eae59fd927efe1"
+licence = "Apache-2.0"
+provides = "tomcat-native"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tomcat-native-2.0.2-r0.apk"
+version = "2.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apr", "1.7.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

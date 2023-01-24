@@ -1,0 +1,15 @@
+checksum = "4763d799676487f73466e7a9deb8e2c1fde3eff7263772192935c9277ba6c810"
+licence = "GPL-2.0-or-later"
+provides = "mauikit-accounts-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mauikit-accounts-dev-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig-dev", "5.100.1-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["mauikit-dev", "2.2.0-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["mauikit-accounts", "2.2.0-r0"]]

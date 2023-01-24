@@ -1,0 +1,15 @@
+checksum = "891c14acc694f4257d283c6e7e439a52375ba86ab9052dd8a84f910f82d1e5f7"
+licence = "MIT"
+provides = "libweston"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libweston-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libdrm", "2.4.114-r0"], ["pixman", "0.42.2-r0"], ["wayland-libs-server", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

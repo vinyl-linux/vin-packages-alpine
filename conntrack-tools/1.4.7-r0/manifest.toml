@@ -1,0 +1,15 @@
+checksum = "1f1ffa828acc6f1eefbb19346fd664cd682cbbf6971a4bc8d678dd3755e29b52"
+licence = "GPL-2.0-or-later"
+provides = "conntrack-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/conntrack-tools-1.4.7-r0.apk"
+version = "1.4.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"], ["libnetfilter_conntrack", "1.0.9-r0"], ["libnetfilter_cthelper", "1.0.1-r0"], ["libnetfilter_cttimeout", "1.0.1-r0"], ["libnetfilter_queue", "1.0.5-r1"], ["libnfnetlink", "1.0.2-r0"]]

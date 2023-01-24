@@ -1,0 +1,15 @@
+checksum = "7b16159a41c53ddbb5e0930a86de246636eeba6183e9cf2438dc77d84a6aa625"
+licence = "MIT"
+provides = "py3-awesomeversion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-awesomeversion-22.9.0-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

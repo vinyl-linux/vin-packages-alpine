@@ -1,0 +1,15 @@
+checksum = "df67a074c788fe96ea63ba6c994da8bced8927b3d052b55cfc07f16bd8c4c23f"
+licence = "BSD-2-Clause"
+provides = "lua-cmsgpack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-cmsgpack-0.4.0-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

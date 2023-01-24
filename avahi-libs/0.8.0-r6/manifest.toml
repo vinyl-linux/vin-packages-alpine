@@ -1,0 +1,15 @@
+checksum = "7ebb6870cddb9687fea3974d9b0859182ba40a38b6a7644f2ab6c11abdf931b5"
+licence = "LGPL-2.1-or-later"
+provides = "avahi-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/avahi-libs-0.8-r6.apk"
+version = "0.8.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libintl", "0.21.1-r1"]]

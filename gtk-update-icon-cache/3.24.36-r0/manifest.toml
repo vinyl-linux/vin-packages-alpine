@@ -1,0 +1,16 @@
+checksum = "6d3d07c12a6f66963a607dcb9769c52660d23089e25889b1bb42305d11605aa5"
+licence = "LGPL-2.1-or-later"
+provides = "gtk-update-icon-cache"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gtk-update-icon-cache-3.24.36-r0.apk"
+version = "3.24.36-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r2"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

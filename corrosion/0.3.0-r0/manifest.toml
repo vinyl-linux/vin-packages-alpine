@@ -1,0 +1,15 @@
+checksum = "4a72a0839fb9bcdffd0e53ffc973cc9abd357f7a1ec66ff0043234445bd6268b"
+licence = "MIT"
+provides = "corrosion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corrosion-0.3.0-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cargo", "1.64.0-r2"], ["cmake", "3.24.3-r0"], ["rust", "1.64.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "27c5dd5e2163553204b520c92e738af422839f48704d663a87d2f4830ef71b84"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-socket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-socket-2.036-r0.apk"
+version = "2.36.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

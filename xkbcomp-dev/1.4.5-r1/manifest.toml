@@ -1,0 +1,15 @@
+checksum = "427dc4b55d07498355e79f29d76359c5b408479af6d43cc9de820a7b4971aedc"
+licence = "MIT"
+provides = "xkbcomp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xkbcomp-dev-1.4.5-r1.apk"
+version = "1.4.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "8d6d3a72b210ebc8a239dd7987a12062294563e04e63a7b3a3ef48e09d7eef52"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-vhost-user-gpu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-vhost-user-gpu-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"], ["mesa-gbm", "22.2.5-r1"], ["glib", "2.74.5-r0"], ["pixman", "0.42.2-r0"], ["virglrenderer", "0.10.3-r0"]]

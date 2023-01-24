@@ -1,0 +1,15 @@
+checksum = "8912a4081dda34a0c96ec1234a65c4ecf688a277bf3ad9b3b4189baf5b3c53a6"
+licence = "GPL-2.0-only"
+provides = "lddtreepax"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lddtreepax-1.3.5-r1.apk"
+version = "1.3.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-elftools", "0.29.0-r0"]]

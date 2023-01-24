@@ -1,0 +1,15 @@
+checksum = "28c8a8d3851a457b89eaf746cf9b509fccf65c0fef5f16f3173eb21ed4b2db3d"
+licence = "LGPL-2.0-or-later"
+provides = "qterminal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qterminal-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["qtermwidget", "1.2.0-r0"], ["libstdc++", "12.2.1"]]

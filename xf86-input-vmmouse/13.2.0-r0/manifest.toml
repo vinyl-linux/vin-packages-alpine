@@ -1,0 +1,15 @@
+checksum = "4b17378a44929238611e76b092e7995083e17dc7ab21eca360b671f0c06af98b"
+licence = "MIT"
+provides = "xf86-input-vmmouse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xf86-input-vmmouse-13.2.0-r0.apk"
+version = "13.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

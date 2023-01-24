@@ -1,0 +1,15 @@
+checksum = "d9aa070d116a443b99c08bb9ccf9c06c0caf8b6b803406a91551e7fe5cc0503c"
+licence = "LGPL-2.1-or-later AND BSD-3-Clause"
+provides = "ssu-sysinfo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ssu-sysinfo-dev-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["ssu-sysinfo", "1.4.0-r0"]]

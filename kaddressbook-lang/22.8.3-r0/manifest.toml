@@ -1,0 +1,15 @@
+checksum = "9ddaf80f0aea308adb4a0bfd376d0f52de5ca224e65e737f2f0ce57309eba6d6"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "kaddressbook-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kaddressbook-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdepim-runtime", "22.8.3-r0"]]

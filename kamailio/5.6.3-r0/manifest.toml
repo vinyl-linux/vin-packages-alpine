@@ -1,0 +1,15 @@
+checksum = "43aed0ae05bba364dc18e968f632cd4b20557e4e2d88e4af284143314b0f89f5"
+licence = "GPL-2.0-or-later"
+provides = "kamailio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gawk", "5.1.1-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["pcre", "8.45.0-r2"], ["zlib", "1.2.13-r0"]]

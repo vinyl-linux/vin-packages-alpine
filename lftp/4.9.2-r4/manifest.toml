@@ -1,0 +1,15 @@
+checksum = "a066d4035c88d54e9fb1e79b7392627b27f4e93bc9114a64b5a8324e701c1ea5"
+licence = "GPL-3.0-or-later"
+provides = "lftp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lftp-4.9.2-r4.apk"
+version = "4.9.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

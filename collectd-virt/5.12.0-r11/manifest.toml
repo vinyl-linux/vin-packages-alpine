@@ -1,0 +1,15 @@
+checksum = "ed41f55a1997ab37d5d8a3566d72ffdc2959f921916e271e3771d97d22c087b2"
+licence = "GPL-2.0-or-later"
+provides = "collectd-virt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-virt-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["libvirt-libs", "8.9.0-r4"], ["libxml2", "2.10.3-r1"]]

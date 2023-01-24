@@ -1,0 +1,15 @@
+checksum = "03d6b16cb78e95d8eded7ae8487e65d0cc85460952d403b61f3ffa0b8d676473"
+licence = "MIT"
+provides = "py3-faker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-faker-15.3.2-r0.apk"
+version = "15.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dateutil", "2.8.2-r1"]]

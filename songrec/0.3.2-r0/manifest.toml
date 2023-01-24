@@ -1,0 +1,15 @@
+checksum = "82218963615b93315e87c8dd2221b2ae56f7805aff8ba0a8b15867bda710da27"
+licence = "GPL-3.0-only"
+provides = "songrec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/songrec-0.3.2-r0.apk"
+version = "0.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["dbus-libs", "1.14.4-r0"], ["libgcc", "12.2.1"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libintl", "0.21.1-r1"], ["libssl3", "3.0.7-r2"]]

@@ -1,0 +1,15 @@
+checksum = "820938ce45fb1e8974f1215a14ea6945d189a3263e381c8666a246ab75528e47"
+licence = "BSD-2-Clause"
+provides = "xfce4-wavelan-plugin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-wavelan-plugin-0.6.3-r0.apk"
+version = "0.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["xfce4-panel", "4.16.5-r0"], ["libxfce4ui", "4.16.1-r1"], ["libxfce4util", "4.16.0-r2"]]

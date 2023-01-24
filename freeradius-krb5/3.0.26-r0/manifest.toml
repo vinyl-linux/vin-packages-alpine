@@ -1,0 +1,15 @@
+checksum = "77a16629da665ad6641362cbe3ba00b5471ee7d347dbbc21ffa9019ea3a7273e"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-krb5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-krb5-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.26-r0"], ["musl", "1.2.3-r4"], ["libcom_err", "1.46.5-r4"], ["krb5-libs", "1.20.1-r0"]]

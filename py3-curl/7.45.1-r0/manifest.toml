@@ -1,0 +1,15 @@
+checksum = "c262cc443b1fb45b02f058a412198ec4d3ded85f6b7b971e08faac1f52f33e33"
+licence = "LGPL-2.0-or-later MIT"
+provides = "py3-curl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-curl-7.45.1-r0.apk"
+version = "7.45.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libssl3", "3.0.7-r2"]]

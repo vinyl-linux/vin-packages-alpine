@@ -1,0 +1,15 @@
+checksum = "c1f59e601a99bc21090097cd2de5d33fed25687d6feaf7372cfea8e9227ff68a"
+licence = "GPL-3.0-or-later"
+provides = "chatty-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chatty-lang-0.7.0_rc4-r0.apk"
+version = "0.7.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cyrus-sasl", "2.1.28-r3"], ["libpurple-xmpp", "2.14.10-r0"], ["mmsd-tng", "2.1.0-r0"], ["purple-carbons", "0.2.2-r0"], ["purple-lurch", "0.7.0-r0"], ["purple-xmpp-http-upload", "0.2.4-r0"]]

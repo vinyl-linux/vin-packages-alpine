@@ -1,0 +1,15 @@
+checksum = "c1dc89a030b7fcdada815e777f29bfcf9d9502abc3893124a92366939407b136"
+licence = "custom"
+provides = "uwsgi-python3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-python3-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

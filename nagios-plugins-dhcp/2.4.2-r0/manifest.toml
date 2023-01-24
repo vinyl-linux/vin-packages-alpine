@@ -1,0 +1,15 @@
+checksum = "9e7011831c2428e796400f57278f4ccad5cb790d92c48960aa9dd5116589088c"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-dhcp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-dhcp-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

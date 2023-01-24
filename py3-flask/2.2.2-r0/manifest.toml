@@ -1,0 +1,15 @@
+checksum = "ab640578ee5347e4c317d3744e4ce15b062c6be7829746b1ae76daffd32c2780"
+licence = "MIT"
+provides = "py3-flask"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flask-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-click", "8.1.3-r0"], ["py3-itsdangerous", "2.1.2-r0"], ["py3-jinja2", "3.1.2-r0"], ["py3-werkzeug", "2.2.2-r1"]]

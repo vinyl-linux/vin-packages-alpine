@@ -1,0 +1,15 @@
+checksum = "7351fe5f06b05dd3d1ee9a5a2dc70e9a69df38a628c57fe175eb60c3a6e2d79c"
+licence = "GPL-2.0-or-later"
+provides = "collectd-ascent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-ascent-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libxml2", "2.10.3-r1"]]

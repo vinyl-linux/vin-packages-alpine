@@ -1,0 +1,15 @@
+checksum = "349f67a8a0ba45b63d4f91ef2aa7ea31b8fa1b5cbc4de7fc8edc5eda510407fd"
+licence = "MIT"
+provides = "libseat-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libseat-dev-0.7.0-r1.apk"
+version = "0.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libseat", "0.7.0-r1"], ["elogind-dev", "246.10.0-r5"], ["pkgconf", "1.9.4-r0"]]

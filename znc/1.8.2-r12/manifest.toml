@@ -1,0 +1,15 @@
+checksum = "5c1f08fb8accbba7aeb1dd2f444dc00ef14254fcd0b1933d542915639f353109"
+licence = "Apache-2.0"
+provides = "znc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/znc-1.8.2-r12.apk"
+version = "1.8.2-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

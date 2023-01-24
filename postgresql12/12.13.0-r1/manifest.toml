@@ -1,0 +1,15 @@
+checksum = "e2963a3d3a7a5f74026f375c1bb26d292484a9b1d3a18835172ea5616e7f3a27"
+licence = "PostgreSQL"
+provides = "postgresql12"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql12-12.13-r1.apk"
+version = "12.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql12-client", "12.13.0-r1"], ["postgresql-common", "1.1.0-r2"], ["tzdata", "2022.0.0-f-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["icu-libs", "72.1.0-r1"], ["libldap", "2.6.3-r6"], ["libpq", "15.1.0-r0"], ["libssl3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"]]

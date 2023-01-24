@@ -1,0 +1,15 @@
+checksum = "2a3a3ec9836a31e21e6a0b1061ed351e5fe53b0c07898cbd096c2773ebf582e2"
+licence = "GPL-2.0-or-later"
+provides = "totem-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/totem-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grilo-plugins", "0.3.15-r1"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["gst-plugins-good", "1.20.5-r0"], ["gst-plugins-good-gtk", "1.20.5-r0"]]

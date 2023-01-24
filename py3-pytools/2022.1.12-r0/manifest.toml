@@ -1,0 +1,15 @@
+checksum = "5eb7f65cedb3d27a94a012832b2b72eb4b578263561a2c7461d9d86514036ea3"
+licence = "MIT"
+provides = "py3-pytools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytools-2022.1.12-r0.apk"
+version = "2022.1.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-decorator", "5.1.1-r1"], ["py3-appdirs", "1.4.4-r4"], ["py3-numpy", "1.23.4-r0"], ["py3-typing-extensions", "4.4.0-r0"]]

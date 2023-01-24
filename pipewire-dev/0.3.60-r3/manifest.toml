@@ -1,0 +1,15 @@
+checksum = "6fad6b8d8d3e9c1a9385b887b5bdb52619800ea1aa6aa62159b493dd43282716"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipewire-dev-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pipewire-libs", "0.3.60-r3"], ["pkgconf", "1.9.4-r0"]]

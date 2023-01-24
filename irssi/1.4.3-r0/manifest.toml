@@ -1,0 +1,15 @@
+checksum = "a5382cc259f052e0bd743579967cb9299f1872464b120278698c0c7d1b1ef7bc"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception"
+provides = "irssi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/irssi-1.4.3-r0.apk"
+version = "1.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["glib", "2.74.5-r0"], ["ncurses-libs", "6.3.0"], ["libssl3", "3.0.7-r2"]]

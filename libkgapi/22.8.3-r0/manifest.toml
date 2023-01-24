@@ -1,0 +1,15 @@
+checksum = "ccbbcb8b7455154e52ee323d4cb1747991834004459a027195552669c4ea9f22"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "libkgapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkgapi-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcalendarcore", "5.100.0-r0"], ["kcontacts", "5.100.0-r0"], ["kwallet", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

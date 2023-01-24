@@ -1,0 +1,15 @@
+checksum = "1e28d8fe382565568733213d6cd899b18928023ba8fe39c450c35d28454a919d"
+licence = "GPL-3.0-only"
+provides = "perl-xml-tidy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-xml-tidy-1.20-r3.apk"
+version = "1.20.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-xml-xpath", "1.48.0-r0"], ["perl-math-basecnv", "1.14.0-r3"]]

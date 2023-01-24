@@ -1,0 +1,15 @@
+checksum = "5989cedfd16bef49bfc01cd6db8f543a05d429f8c8d8c63b039f74a75bdc1502"
+licence = "GPL-2.0-or-later"
+provides = "collectd-python"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-python-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

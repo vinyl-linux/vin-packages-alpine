@@ -1,0 +1,15 @@
+checksum = "235dd8bd734b74942961a75686218734afc3e351b97ae5d9dcd8e5047c8ea555"
+licence = "GPL-2.0-or-later"
+provides = "potrace-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/potrace-dev-1.16-r2.apk"
+version = "1.16.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zlib-dev", "1.2.13-r0"], ["potrace", "1.16.0-r2"]]

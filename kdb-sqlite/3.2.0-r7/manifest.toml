@@ -1,0 +1,15 @@
+checksum = "11f39962b35599e7bfe01edc161453caee4985fdf0e675a4cc3d5075c2745f9e"
+licence = "LGPL-2.0-or-later"
+provides = "kdb-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdb-sqlite-3.2.0-r7.apk"
+version = "3.2.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdb", "3.2.0-r7"], ["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["icu-libs", "72.1.0-r1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"]]

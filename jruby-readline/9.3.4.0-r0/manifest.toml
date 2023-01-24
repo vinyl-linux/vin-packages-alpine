@@ -1,0 +1,15 @@
+checksum = "c339f2dc97c324c87676712f6250813129d38f4f7d97309363a974cd78401f69"
+licence = "EPL-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later AND Ruby"
+provides = "jruby-readline"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jruby-readline-9.3.4.0-r0.apk"
+version = "9.3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jruby", "9.3.4.0-r0"], ["java-jansi-native", "1.5.0-r0"]]

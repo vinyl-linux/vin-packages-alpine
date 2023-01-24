@@ -1,0 +1,15 @@
+checksum = "1a78970973818f6cdd1a90474889d8935daadf7740ae03906e7ddcbb20f9edaf"
+licence = "PostgreSQL"
+provides = "postgresql13-plpython3-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql13-plpython3-contrib-13.9-r1.apk"
+version = "13.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql13-plpython3", "13.9.0-r1"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "0e454e76830de4f20deb03cdec4b23f5a682302a556f67ca10200603da9f3320"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "gnome-bluetooth-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-bluetooth-lang-42.5-r0.apk"
+version = "42.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez-obexd", "5.66.0-r1"], ["bluez", "5.66.0-r1"]]

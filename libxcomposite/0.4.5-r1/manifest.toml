@@ -1,0 +1,15 @@
+checksum = "7ee6c9f1574c700681b0b8ae9c071041deaed83afe7ba83552963ac4b41e649e"
+licence = "custom"
+provides = "libxcomposite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxcomposite-0.4.5-r1.apk"
+version = "0.4.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

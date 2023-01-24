@@ -1,0 +1,15 @@
+checksum = "6f74dda1244990706b274c71dfaf7fcafe871cd5df06211844752cb8c4753a81"
+licence = "MIT"
+provides = "libvdpau"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libvdpau-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["musl", "1.2.3-r4"]]

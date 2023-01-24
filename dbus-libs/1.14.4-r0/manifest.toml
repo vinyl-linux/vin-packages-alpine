@@ -1,0 +1,15 @@
+checksum = "742fa35abb9f5cfa0d2fd7ca742489a7e3cd95079ecabe76824009714066e8dd"
+licence = "AFL-2.1 OR GPL-2.0-or-later"
+provides = "dbus-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dbus-libs-1.14.4-r0.apk"
+version = "1.14.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "e68ccb581abffe9748b74a1c40529875148abea26e599a4450981d04da02e0bb"
+licence = "GPL-2.0-or-later"
+provides = "kpkpass-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpkpass-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["karchive-dev", "5.100.0-r0"], ["kpkpass", "22.8.3-r0"]]

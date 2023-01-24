@@ -1,0 +1,15 @@
+checksum = "e1ff61b975b6383245433bbb866d8d9453b4f6a68fe72157e461b1c31e1c15ca"
+licence = "custom"
+provides = "cyrus-sasl-sql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cyrus-sasl-sql-2.1.28-r3.apk"
+version = "2.1.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "efec165dcf46c6f774dae12ecd016bef2e6ab51d7215dd046792f0d67cabf2e3"
+licence = "Apache-2.0"
+provides = "clang15-extra-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang15-extra-tools-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["clang15-libs", "15.0.7-r0"], ["clang15-libclang", "15.0.7-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

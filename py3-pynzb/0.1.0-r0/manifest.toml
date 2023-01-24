@@ -1,0 +1,15 @@
+checksum = "bc76eaaa720100697c90ed728dfdf1536434eef083c013e2eebd9ffc4737d52b"
+licence = "BSD-3-Clause"
+provides = "py3-pynzb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pynzb-0.1.0-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["expat", "2.5.0-r0"]]

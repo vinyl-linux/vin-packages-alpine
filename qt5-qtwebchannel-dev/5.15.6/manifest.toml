@@ -1,0 +1,15 @@
+checksum = "75330a2cb3c1e4e7050ff58f4fffe0eb6022b3920d4b4739d21d0aa7f74101a9"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtwebchannel-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtwebchannel-dev-5.15.6_git20220907-r0.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qt5-qtwebchannel", "5.15.6"]]

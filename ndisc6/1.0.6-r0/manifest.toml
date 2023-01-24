@@ -1,0 +1,15 @@
+checksum = "19de9af6125aa8d022ac8ec73bc9e3acbaffb9ee06c269d433e975c3b8cb9d3e"
+licence = "GPL-2.0-or-later"
+provides = "ndisc6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ndisc6-1.0.6-r0.apk"
+version = "1.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

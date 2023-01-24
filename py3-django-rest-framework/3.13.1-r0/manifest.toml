@@ -1,0 +1,15 @@
+checksum = "43a312d21c09afed1484012b47fe8c9843704e2549a466e85ef49205c7e5960c"
+licence = "Custom"
+provides = "py3-django-rest-framework"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-django-rest-framework-3.13.1-r0.apk"
+version = "3.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-django", "3.2.16-r0"]]

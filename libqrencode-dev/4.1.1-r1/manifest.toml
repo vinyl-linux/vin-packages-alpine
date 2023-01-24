@@ -1,0 +1,15 @@
+checksum = "0a83982363c47152893d3d503108bd09034d9625a7adcdeb98ff4ae2baca923a"
+licence = "LGPL-2.1-or-later"
+provides = "libqrencode-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libqrencode-dev-4.1.1-r1.apk"
+version = "4.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libqrencode", "4.1.1-r1"], ["pkgconf", "1.9.4-r0"]]

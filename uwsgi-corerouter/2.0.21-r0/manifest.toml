@@ -1,0 +1,15 @@
+checksum = "15932a5ee77aa7fcff4fa70909eeda8965074100e88a22ba83df5c446ee492fb"
+licence = "custom"
+provides = "uwsgi-corerouter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-corerouter-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

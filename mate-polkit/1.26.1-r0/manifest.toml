@@ -1,0 +1,15 @@
+checksum = "e889f37ba8d9fee439cf39a71f2eab77dafd82b7784da86a12c88fd9bb8999be"
+licence = "GPL-2.0-or-later"
+provides = "mate-polkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-polkit-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r1"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["polkit-libs", "122.0.0-r0"]]

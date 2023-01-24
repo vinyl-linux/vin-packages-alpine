@@ -1,0 +1,15 @@
+checksum = "9e2ee49df666b232c431a6c5536895a2e992bbb05b2fbc31ef2708b96f38302a"
+licence = "custom"
+provides = "uwsgi-zergpool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-zergpool-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

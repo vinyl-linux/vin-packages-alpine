@@ -1,0 +1,15 @@
+checksum = "76556399e84e47bd0d49cff26143f5a994babf63c973f7ef889d35e09186cec0"
+licence = "GPL-2.0-or-later"
+provides = "gtksourceview4-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gtksourceview4-dev-4.8.4-r0.apk"
+version = "4.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0-dev", "3.24.36-r0"], ["libxml2-dev", "2.10.3-r1"], ["gtksourceview4", "4.8.4-r0"], ["fribidi-dev", "1.0.12-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

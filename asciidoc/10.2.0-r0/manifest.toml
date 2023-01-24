@@ -1,0 +1,15 @@
+checksum = "f9b73a0a9893a5a6169520afbd5252ddf49a9dd8b9edddaaeb124a1cb18168c1"
+licence = "GPL-2.0-or-later AND GPL-1.0-or-later"
+provides = "asciidoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/asciidoc-10.2.0-r0.apk"
+version = "10.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["libxml2-utils", "2.10.3-r1"], ["docbook-xsl", "1.79.2-r8"]]

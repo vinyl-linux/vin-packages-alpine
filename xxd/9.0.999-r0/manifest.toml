@@ -1,0 +1,15 @@
+checksum = "513d8d8ccb9d79662645dcdb19c820da2ddf886db4dbaa6f40655f27eeb2a1ad"
+licence = "Vim"
+provides = "xxd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xxd-9.0.0999-r0.apk"
+version = "9.0.999-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

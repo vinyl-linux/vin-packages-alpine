@@ -1,0 +1,15 @@
+checksum = "427e0a27e818cc9088bcb4e1ae60024ee05e06d04849abdc8958b8cd011aa303"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libquadmath"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libquadmath-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

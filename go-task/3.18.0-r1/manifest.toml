@@ -1,0 +1,15 @@
+checksum = "87fe687acbba84743bc0bbb3d30368237b9267113e9f2b2f376ef1400267fb38"
+licence = "MIT"
+provides = "go-task"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/go-task-3.18.0-r1.apk"
+version = "3.18.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

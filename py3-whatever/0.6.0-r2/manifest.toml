@@ -1,0 +1,15 @@
+checksum = "6563c67e7b5610e33d0f8e1872337dfe7d5227ef07534c9968e270a8313bd6f3"
+licence = "BSD-3-Clause"
+provides = "py3-whatever"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-whatever-0.6-r2.apk"
+version = "0.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "de049c55ad603e1bd7d68cd2742b647661524158130b180f194866cef7dec3d1"
+licence = "GPL-3.0-or-later"
+provides = "mrhlpr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mrhlpr-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["git", "2.38.3-r1"], ["mrhlpr-common", "1.1.1-r0"]]

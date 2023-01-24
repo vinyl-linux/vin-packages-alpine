@@ -1,0 +1,15 @@
+checksum = "3ae590999651bdc83249600392888f38d2d6ce563e4cf912c2501f6a3d9d94f6"
+licence = "MPL-2.0"
+provides = "libmwaw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmwaw-0.3.21-r0.apk"
+version = "0.3.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

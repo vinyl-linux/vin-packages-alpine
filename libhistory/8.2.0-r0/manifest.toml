@@ -1,0 +1,15 @@
+checksum = "97bd6dfc2d1fc783eba95650c941e1cd2ac76c1dcfd76b21fb01f66a3591dffe"
+licence = "GPL-2.0-or-later"
+provides = "libhistory"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libhistory-8.2.0-r0.apk"
+version = "8.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

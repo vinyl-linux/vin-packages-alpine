@@ -1,0 +1,15 @@
+checksum = "e52f210678df2daf71f439d830e03ba35312e74e48ef7f8e145808dd4412098f"
+licence = "ISC"
+provides = "s6-portable-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/s6-portable-utils-2.2.5.0-r0.apk"
+version = "2.2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["skalibs", "2.12.0.1-r0"]]

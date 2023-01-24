@@ -1,0 +1,15 @@
+checksum = "91448ac715e84fbe5f48b9533d53d4de6ab169dfb62ee0be2c4524374fc13b23"
+licence = "Apache-2.0 BSD"
+provides = "subversion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/subversion-1.14.2-r4.apk"
+version = "1.14.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["apr", "1.7.0-r2"], ["apr-util", "1.6.1-r14"], ["musl", "1.2.3-r4"], ["subversion-libs", "1.14.2-r4"]]

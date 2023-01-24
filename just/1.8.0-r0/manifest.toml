@@ -1,0 +1,15 @@
+checksum = "ffb530ce3fa88d2167e16f8fec28f12958b103c128754a8c517ea7d7e1de0d6b"
+licence = "CC0-1.0"
+provides = "just"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/just-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "0d7c13afb6a58e04020b23555729a381f9a1e1dec9c71fcb59aeced0d764722e"
+licence = "Public Domain"
+provides = "libmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmd-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

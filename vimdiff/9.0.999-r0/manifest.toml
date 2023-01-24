@@ -1,0 +1,15 @@
+checksum = "b2018cb7cc6204fdb04da712d144b290a9a4ed38dbae15063daafc43d4de80cf"
+licence = "Vim"
+provides = "vimdiff"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vimdiff-9.0.0999-r0.apk"
+version = "9.0.999-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["diffutils", "3.8.0-r1"], ["gvim", "9.0.999-r0"]]

@@ -1,0 +1,15 @@
+checksum = "94e2ae6e44f869b82d5155e77ab0dc4bdac2a76c5b4674453db259d104af9d86"
+licence = "GPL-2.0-or-later"
+provides = "xfwm4-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfwm4-lang-4.16.1-r1.apk"
+version = "4.16.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "073e57a480bf7d0ae60e050c5b4a55f12bdad8e78839e802f5e32c53a2dd70b7"
+licence = "NCSA"
+provides = "libtar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtar-dev-1.2.20-r0.apk"
+version = "1.2.20-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libtar", "1.2.20-r0"]]

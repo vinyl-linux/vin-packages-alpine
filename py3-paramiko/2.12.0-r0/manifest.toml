@@ -1,0 +1,15 @@
+checksum = "be5c9f6d3e719163830af392e21e9a0888f4decbb97ad6a8477b2e17735e5e1c"
+licence = "LGPL-2.0-or-later"
+provides = "py3-paramiko"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-paramiko-2.12.0-r0.apk"
+version = "2.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-asn1", "0.4.8-r2"], ["py3-cryptography", "38.0.3-r0"], ["py3-bcrypt", "4.0.1-r0"], ["py3-pynacl", "1.5.0-r1"], ["py3-six", "1.16.0-r3"]]

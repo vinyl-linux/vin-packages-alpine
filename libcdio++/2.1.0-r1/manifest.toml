@@ -1,0 +1,15 @@
+checksum = "d9ca4ad20fbbac78158a7fcff95c16465873a232e4792468b1767e96a86807e6"
+licence = "GPL-3.0-or-later"
+provides = "libcdio++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcdio++-2.1.0-r1.apk"
+version = "2.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcdio", "2.1.0-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "3c1b647fc25e527a514d1aeab3a49c87ae30572df88258213a731d7a5d1140d7"
+licence = "GPL-2.0-or-later"
+provides = "lastpass-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lastpass-cli-1.3.3-r4.apk"
+version = "1.3.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libssl3", "3.0.7-r2"], ["libxml2", "2.10.3-r1"]]

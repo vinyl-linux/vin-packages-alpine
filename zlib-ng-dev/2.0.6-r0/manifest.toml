@@ -1,0 +1,15 @@
+checksum = "8fe0d205214afae2ba2ba5be024e2361391f8b7b8eca851ac431c46a61e1120d"
+licence = "Zlib"
+provides = "zlib-ng-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zlib-ng-dev-2.0.6-r0.apk"
+version = "2.0.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["zlib-ng", "2.0.6-r0"]]

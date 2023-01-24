@@ -1,0 +1,15 @@
+checksum = "7352fc2908fc986bf376eafa7265f9383c57dd486e8ba4fdab749ecb2f361a99"
+licence = "GPL-2.0-only"
+provides = "kup-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kup-lang-0.9.1-r4.apk"
+version = "0.9.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsync", "3.2.7-r0"]]

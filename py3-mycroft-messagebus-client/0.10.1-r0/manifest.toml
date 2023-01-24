@@ -1,0 +1,15 @@
+checksum = "50944c599c6b1e1439140c532406fe362c6f3393d2a3e7bbe7633e89938c4f6f"
+licence = "Apache-2.0"
+provides = "py3-mycroft-messagebus-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mycroft-messagebus-client-0.10.1-r0.apk"
+version = "0.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyee", "8.2.2-r1"], ["py3-websocket-client", "1.4.2-r0"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "39847b28d5711c3d4ccccbeacc444d6d8e4ef0996ae399f29aea6708a6836ade"
+licence = "GPL-2.0"
+provides = "dynamips"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dynamips-0.2.22-r1.apk"
+version = "0.2.22-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelf", "0.187.0-r2"], ["libpcap", "1.10.1-r1"]]

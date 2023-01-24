@@ -1,0 +1,15 @@
+checksum = "b8a6dfe1e3a92dc14c0bf05fead1c72a8c75066e5f9b656985a63bdc4b29cc25"
+licence = "GPL-2.0-or-later"
+provides = "vdr-vnsiserver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vdr-vnsiserver-2.6.1-r4.apk"
+version = "2.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.6.1-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "73b16c8e1df616f1e29786fe357362ab6f2c406d197296189d82b6755d61e2c5"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-ffi-checklib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-ffi-checklib-0.31-r0.apk"
+version = "0.31.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-file-which", "1.27.0-r0"]]

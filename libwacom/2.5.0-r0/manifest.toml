@@ -1,0 +1,15 @@
+checksum = "0de789040138f2aebe5b0631ab60c33b43a1ce56acbfa5f7d7d03b379d4b5ba6"
+licence = "MIT"
+provides = "libwacom"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwacom-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "dd598930a05776b2518c99392fdab246e9065229edad8bca4be00e6b2b038adb"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdns-backend-pgsql-4.7.2-r1.apk"
+version = "4.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.7.2-r1"], ["postgresql-bdr-client", "9.4.14"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libpq", "15.1.0-r0"], ["libstdc++", "12.2.1"]]

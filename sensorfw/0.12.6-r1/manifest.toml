@@ -1,0 +1,15 @@
+checksum = "f436d46d8e98d16aba85aba8c46ce1a0e8d765d3c99762ad55dbfe7f477ebc40"
+licence = "LGPL-2.1-only"
+provides = "sensorfw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sensorfw-0.12.6-r1.apk"
+version = "0.12.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iio-sensor-proxy", "3.4.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

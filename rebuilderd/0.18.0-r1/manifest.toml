@@ -1,0 +1,15 @@
+checksum = "48b9f12e36685f340239d7862025144ccec99e3eb96173655fad16d4c99974be"
+licence = "GPL-3.0-or-later"
+provides = "rebuilderd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rebuilderd-0.18.0-r1.apk"
+version = "0.18.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rebuilderd-tools", "0.18.0-r1"], ["shared-mime-info", "2.2.0-r2"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"]]

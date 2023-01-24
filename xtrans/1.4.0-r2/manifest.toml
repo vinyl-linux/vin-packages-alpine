@@ -1,0 +1,15 @@
+checksum = "2f8651af5e4b2ccfa58dbda4aa907b808645dbcf4ca43057c293aa1d8b3ffee3"
+licence = "MIT"
+provides = "xtrans"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xtrans-1.4.0-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

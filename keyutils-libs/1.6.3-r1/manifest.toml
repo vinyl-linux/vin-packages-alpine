@@ -1,0 +1,15 @@
+checksum = "deb4024aaafd5127b9d53a284c45d57ee29899eab174e4800df29872beae3b02"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "keyutils-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/keyutils-libs-1.6.3-r1.apk"
+version = "1.6.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

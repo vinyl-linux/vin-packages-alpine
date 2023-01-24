@@ -1,0 +1,15 @@
+checksum = "e416941ef2bd2f0b151e17695b8a3954a157624d4210ddd1c9220c2f06498bba"
+licence = "GPL-3.0-or-later"
+provides = "d-spy-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/d-spy-dev-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["d-spy", "1.4.0-r0"], ["glib-dev", "2.74.5-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["libadwaita-dev", "1.2.1-r0"], ["pkgconf", "1.9.4-r0"]]

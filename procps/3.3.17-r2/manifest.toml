@@ -1,0 +1,15 @@
+checksum = "c84df8215a58fb4fffb215160122b7e532b7238a9cafdb825c70741644f4935e"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "procps"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/procps-3.3.17-r2.apk"
+version = "3.3.17-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["libproc", "3.3.17-r2"]]

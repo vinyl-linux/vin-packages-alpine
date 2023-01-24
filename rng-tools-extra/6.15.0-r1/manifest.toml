@@ -1,0 +1,15 @@
+checksum = "53ff87873b72dc708a87c07c600c6b6f7864713939269e9a9305b830eb50701d"
+licence = "GPL-2.0-or-later"
+provides = "rng-tools-extra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rng-tools-extra-6.15-r1.apk"
+version = "6.15.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["jansson", "2.14.0-r0"], ["jitterentropy-library", "3.3.1-r0"], ["librtlsdr", "0.6.0-r3"]]

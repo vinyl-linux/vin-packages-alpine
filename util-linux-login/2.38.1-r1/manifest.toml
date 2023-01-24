@@ -1,0 +1,15 @@
+checksum = "8eb1925b8085da3bfa38d348e8d451260eeebbceeebfeb4103a6f1c87f685726"
+licence = "GPL-2.0-or-later AND BSD-1-Clause"
+provides = "util-linux-login"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/util-linux-login-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["runuser", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libeconf", "0.4.7-r0"], ["linux-pam", "1.5.2-r1"], ["libsmartcols", "2.38.1-r1"]]

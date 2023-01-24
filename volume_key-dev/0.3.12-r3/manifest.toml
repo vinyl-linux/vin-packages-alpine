@@ -1,0 +1,15 @@
+checksum = "e476176da563a4aee6437c34255ea30a18eaa7a59bbc2c939dbc73aa26ab75ce"
+licence = "GPL-2.0-or-later"
+provides = "volume_key-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/volume_key-dev-0.3.12-r3.apk"
+version = "0.3.12-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["volume_key", "0.3.12-r3"]]

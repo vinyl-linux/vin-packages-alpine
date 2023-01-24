@@ -1,0 +1,15 @@
+checksum = "c85bdf107eb6b98bc09815a615255a4e2242f56819a383871edbae808b56a46d"
+licence = "(Apache-2.0 OR MIT) AND BSD-2-Clause"
+provides = "kibi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kibi-0.2.2-r1.apk"
+version = "0.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "45523259c2980fd863b70715da52224b577a9086645714d7dc75a96619cd17d7"
+licence = "BSD-3-Clause"
+provides = "zsh-syntax-highlighting"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zsh-syntax-highlighting-0.7.1_git20220514-r0.apk"
+version = "0.7.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

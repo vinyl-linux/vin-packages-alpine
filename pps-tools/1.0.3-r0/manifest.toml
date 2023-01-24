@@ -1,0 +1,15 @@
+checksum = "35e1fc40b577057635c83cc7a5ee812166f685404d7e2cbfe35e5f9eec01a011"
+licence = "GPL-2.0-or-later"
+provides = "pps-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pps-tools-1.0.3-r0.apk"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "291042443f2118d870a4cf477215aa2f3b60f4f39bf6dfc8e198f2f4a4628ccf"
+licence = "GPL-3.0-or-later"
+provides = "oath-toolkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/oath-toolkit-2.6.7-r2.apk"
+version = "2.6.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["cvs", "1.12.13-r2"], ["diffutils", "3.8.0-r1"], ["musl", "1.2.3-r4"], ["oath-toolkit-libpskc", "2.6.7-r2"]]

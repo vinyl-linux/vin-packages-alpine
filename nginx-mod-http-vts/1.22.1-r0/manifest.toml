@@ -1,0 +1,15 @@
+checksum = "d9bec7109e9d809e176e992b5734eafd5ce3bd8e8f5546b864ad8106d82b721d"
+licence = "BSD-2-Clause"
+provides = "nginx-mod-http-vts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-vts-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nginx", "1.22.1-r0"], ["musl", "1.2.3-r4"]]

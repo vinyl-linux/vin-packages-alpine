@@ -1,0 +1,15 @@
+checksum = "924be1a83f65dc43cff0ba413d481e5d7ce22396f698683742c6aeb0ad9b5193"
+licence = "Apache-2.0"
+provides = "openmp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openmp-dev-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openmp", "15.0.7-r0"]]

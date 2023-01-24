@@ -1,0 +1,15 @@
+checksum = "edbfa5310447db42c6c991ccb716061b876f809c5dc71e9f50fa4d818030d44b"
+licence = "BSD-2-Clause"
+provides = "libmediainfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmediainfo-22.09-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["tinyxml2", "9.0.0-r0"], ["zlib", "1.2.13-r0"], ["libzen", "0.4.39-r0"]]

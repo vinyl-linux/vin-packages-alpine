@@ -1,0 +1,15 @@
+checksum = "431b080dd1caf7866d06614502529093cac62f3e85c1f097dad2325e7bf329b7"
+licence = "GPL-2.0-or-later"
+provides = "ckbcomp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ckbcomp-1.210-r0.apk"
+version = "1.210.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

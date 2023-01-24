@@ -1,0 +1,15 @@
+checksum = "dacc921b96a4565094c3d6f3beae42c40ed6ad19a249d7e29b90dac4597fde92"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-sereal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-sereal-4.023-r0.apk"
+version = "4.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-sereal-decoder", "4.23.0-r0"], ["perl-sereal-encoder", "4.23.0-r0"]]

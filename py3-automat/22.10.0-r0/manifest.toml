@@ -1,0 +1,15 @@
+checksum = "bdb2b624d0ecfb9d5af1f39052aa45eecea632949708b402c3fb32448f20e84a"
+licence = "MIT"
+provides = "py3-automat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-automat-22.10.0-r0.apk"
+version = "22.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-attrs", "22.1.0-r0"], ["py3-six", "1.16.0-r3"]]

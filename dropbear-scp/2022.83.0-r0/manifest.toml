@@ -1,0 +1,15 @@
+checksum = "69e0e1dd4a1469b015f01457fdf178918e8f026caeed3fe71684edd964af72d0"
+licence = "MIT"
+provides = "dropbear-scp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dropbear-scp-2022.83-r0.apk"
+version = "2022.83.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "8c03405831e39494d06a5d7299ff220b4240e85eb6e625c887a2b3e47af14d4d"
+licence = "GPL-2.0-only"
+provides = "stalonetray"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stalonetray-0.8.4-r1.apk"
+version = "0.8.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxpm", "3.5.15-r0"], ["musl", "1.2.3-r4"]]

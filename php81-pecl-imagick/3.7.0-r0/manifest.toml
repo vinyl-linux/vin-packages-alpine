@@ -1,0 +1,15 @@
+checksum = "cb4fa787a96208ce85520b71ed6199f68f461d1a8e622edb94d9c5fdf657d298"
+licence = "PHP-3.01"
+provides = "php81-pecl-imagick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-imagick-3.7.0-r0.apk"
+version = "3.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["imagemagick", "7.1.0.52-r0"], ["imagemagick-libs", "7.1.0.52-r0"], ["musl", "1.2.3-r4"], ["libgomp", "12.2.1"]]

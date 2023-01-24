@@ -1,0 +1,15 @@
+checksum = "59fa3c5fa4102a3cf75c28280a58c481954460897865fd3c58819ff92cd9e9c5"
+licence = "LGPL-2.1-or-later"
+provides = "libnl3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnl3-3.7.0-r0.apk"
+version = "3.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

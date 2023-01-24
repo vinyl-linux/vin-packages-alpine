@@ -1,0 +1,15 @@
+checksum = "6b80e466ca25dd501db38bdad2924308cc775a6ada04bda50c4c576c40cf89c5"
+licence = "BSD-3-Clause"
+provides = "shadow-conv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shadow-conv-4.13-r0.apk"
+version = "4.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a55c8ca54b102990c2a1f0fffa678f03c7efe71f4f2c45871392a60a2eb00714"
+licence = "LGPL-2.0-only AND GFDL-1.2-only"
+provides = "libkdegames-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libkdegames-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libkdegames", "22.8.3-r0"]]

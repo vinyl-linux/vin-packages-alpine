@@ -1,0 +1,15 @@
+checksum = "cfa64d6795e4f78ce8289d77fadc71117e424ffd63b8b79adbdfb30c0c295b7e"
+licence = "Apache-2.0"
+provides = "py3-dockerpty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-dockerpty-0.4.1-r4.apk"
+version = "0.4.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["docker-py", "5.0.3-r1"]]

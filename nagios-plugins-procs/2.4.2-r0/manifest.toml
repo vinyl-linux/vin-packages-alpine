@@ -1,0 +1,15 @@
+checksum = "fa48e1c6d5a29e8388e2ef98d79d1b7cfd16746ab64991b0141f3e5156313bc5"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-procs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-procs-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

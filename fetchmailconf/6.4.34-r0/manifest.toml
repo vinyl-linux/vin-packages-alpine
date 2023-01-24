@@ -1,0 +1,15 @@
+checksum = "8046d75592ef07aabfdd89fde6c59bb9b437981ff1601cbabdc7dc46ffdfebf9"
+licence = "GPL-2.0-or-later WITH OpenSSL-Exception AND Public-Domain"
+provides = "fetchmailconf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fetchmailconf-6.4.34-r0.apk"
+version = "6.4.34-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-future", "0.18.2-r5"], ["python3-tkinter", "3.10.8-r1"]]

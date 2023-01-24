@@ -1,0 +1,15 @@
+checksum = "7282d6ab0e2f2050d4043a41252799b62bfc36e849d4458a74bd9fe3bda7c3b7"
+licence = "MIT"
+provides = "py3-pydantic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pydantic-1.10.2-r0.apk"
+version = "1.10.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-typing-extensions", "4.4.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "43f147b6c6a7e02e8dcf34a4aeaa9668d9bcccc5eb5bb7f3183e1d0bf7003111"
+licence = "GPL-3.0-or-later"
+provides = "zerotier-one"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zerotier-one-1.10.2-r0.apk"
+version = "1.10.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

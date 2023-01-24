@@ -1,0 +1,15 @@
+checksum = "8fffc5feed277bba98b34699ac5bfeca6b7510863ed323c8d83dc8ec1be793fc"
+licence = "Apache-2.0"
+provides = "mandown"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mandown-0.1.3-r0.apk"
+version = "0.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

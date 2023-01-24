@@ -1,0 +1,15 @@
+checksum = "431cd3576c97032750a011e5393e9338a344c963d54f8ebe839946b94d6ab790"
+licence = "GPL-3.0-only"
+provides = "timblserver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/timblserver-dev-1.15-r3.apk"
+version = "1.15.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-dev", "2.10.3-r1"], ["timbl-dev", "6.7.0-r1"], ["pkgconf", "1.9.4-r0"], ["timblserver", "1.15.0-r3"]]

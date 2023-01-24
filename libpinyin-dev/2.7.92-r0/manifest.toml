@@ -1,0 +1,15 @@
+checksum = "d3236f6ed15a462a2991d65d32dc0682dd41d0fec8eb99d186ea5b77abeb3716"
+licence = "GPL-3.0-or-later"
+provides = "libpinyin-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpinyin-dev-2.7.92-r0.apk"
+version = "2.7.92-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kyotocabinet-dev", "1.2.79-r3"], ["libpinyin", "2.7.92-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

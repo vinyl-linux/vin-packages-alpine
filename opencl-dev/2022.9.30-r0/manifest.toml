@@ -1,0 +1,15 @@
+checksum = "e19418be3753c90678600fc59aefdd443b12903df4fb90deee13d1d218bf5890"
+licence = "Apache-2.0"
+provides = "opencl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opencl-dev-2022.09.30-r0.apk"
+version = "2022.9.30-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opencl-headers", "2022.9.30-r0"], ["opencl", "2022.9.30-r0"]]

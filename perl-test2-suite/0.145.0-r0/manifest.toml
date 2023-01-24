@@ -1,0 +1,15 @@
+checksum = "38ddd25592268bf1f5721a7fc30e1f91f471921f9d2525a101e8730b1407ba2b"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test2-suite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test2-suite-0.000145-r0.apk"
+version = "0.145.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-term-table", "0.16.0-r0"], ["perl-scope-guard", "0.21.0-r2"], ["perl-sub-info", "0.2.0-r2"], ["perl-importer", "0.26.0-r1"], ["perl-module-pluggable", "5.2.0-r2"]]

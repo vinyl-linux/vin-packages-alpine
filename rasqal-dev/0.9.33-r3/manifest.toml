@@ -1,0 +1,15 @@
+checksum = "8d5f6423715f3d5fac33c6b303095b3fb9108a8efe524b0515b12d34cbadd2c8"
+licence = "LGPL-2.1-or-later"
+provides = "rasqal-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rasqal-dev-0.9.33-r3.apk"
+version = "0.9.33-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["raptor2-dev", "2.0.15-r5"], ["pkgconf", "1.9.4-r0"], ["rasqal", "0.9.33-r3"]]

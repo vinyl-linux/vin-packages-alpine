@@ -1,0 +1,15 @@
+checksum = "2500dbaa069f802c98c35dd576d4e1200b6b5751343e188987afe8530e302691"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-grubcfg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-mod-grubcfg-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"]]

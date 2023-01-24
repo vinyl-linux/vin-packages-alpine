@@ -1,0 +1,15 @@
+checksum = "cf42013ac4281d4e14687e48bd0d4e936ec1ab1720c15660283dd0aff94d5b79"
+licence = "WTFPL-2.0"
+provides = "zimg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zimg-3.0.4-r1.apk"
+version = "3.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

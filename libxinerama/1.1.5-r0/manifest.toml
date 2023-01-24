@@ -1,0 +1,15 @@
+checksum = "1b70169da26c05c714e9631582f017cc7b57be36086cc25feb26ebb31d0983a0"
+licence = "MIT"
+provides = "libxinerama"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxinerama-1.1.5-r0.apk"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "8cead87aa0a19f95ee7f9c0fdb5ac4b3b08680693b7641a7dd0979ab82f8a15f"
+licence = "BSD-4-Clause AND MIT AND Zlib"
+provides = "fdkaac"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fdkaac-1.0.3-r0.apk"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fdk-aac", "2.0.2-r1"]]

@@ -1,0 +1,15 @@
+checksum = "fc8e339e601bee1ee27a6c4080c3d7cfd6f80e4f003ba9c8ca6b73e1bb9fe60c"
+licence = "GPL"
+provides = "mtu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtu-1.5-r3.apk"
+version = "1.5.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

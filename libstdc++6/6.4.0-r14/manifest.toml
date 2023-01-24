@@ -1,0 +1,15 @@
+checksum = "1cbd97b77d3972485501495fd9a875f883398f46469906c9ea7fd8cf6265c1ba"
+licence = "GPL LGPL"
+provides = "libstdc++6"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libstdc++6-6.4.0-r14.apk"
+version = "6.4.0-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

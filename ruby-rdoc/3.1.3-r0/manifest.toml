@@ -1,0 +1,15 @@
+checksum = "2bbe569e706df6e49402a85d40c50eebd0d30b3911066586d3455cccda1ace91"
+licence = "Ruby"
+provides = "ruby-rdoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-rdoc-3.1.3-r0.apk"
+version = "3.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"]]

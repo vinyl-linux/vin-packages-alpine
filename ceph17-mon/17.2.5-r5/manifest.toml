@@ -1,0 +1,15 @@
+checksum = "e20ace89dacec3aa650a69800401ab6e11ad4f7009ce937c0f81aa60a74b16d1"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-mon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-mon-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph17-base", "17.2.5-r5"], ["ceph17-mon-daemon", "17.2.5-r5"], ["ceph17-mon-tools", "17.2.5-r5"]]

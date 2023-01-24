@@ -1,0 +1,15 @@
+checksum = "c28a10be90d03b1ceb5ebc5ada3a4d47e4622293fdcb605b14ac0effd940c85d"
+licence = "LGPL-2.1-or-later"
+provides = "alsa-lib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alsa-lib-1.2.8-r0.apk"
+version = "1.2.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

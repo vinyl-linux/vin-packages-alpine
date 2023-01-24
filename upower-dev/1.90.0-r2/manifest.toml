@@ -1,0 +1,15 @@
+checksum = "02c3f714ad1d09a703ddc7855784dd6025a9d283c29d7ac929c5145b2f17543c"
+licence = "GPL-2.0-or-later"
+provides = "upower-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/upower-dev-1.90.0-r2.apk"
+version = "1.90.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["upower", "1.90.0-r2"]]

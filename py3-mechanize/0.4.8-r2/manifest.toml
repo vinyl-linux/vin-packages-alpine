@@ -1,0 +1,15 @@
+checksum = "35aeeeea5d5ff1c5c0a22601c174172d058c303295d187ac1182bef8a64bf32a"
+licence = "BSD-3-Clause"
+provides = "py3-mechanize"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mechanize-0.4.8-r2.apk"
+version = "0.4.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-html5lib", "1.1.0-r2"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "7329b188c2b80bf1968165ab805da3111ae367c939d5cb6b824af6289294d8bd"
+licence = "LGPL-2.1-or-later"
+provides = "xfsprogs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xfsprogs-6.0.0-r0.apk"
+version = "6.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["inih", "56.0.0-r0"], ["userspace-rcu", "0.13.2-r0"], ["libuuid", "2.38.1-r1"]]

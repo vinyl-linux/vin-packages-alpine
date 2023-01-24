@@ -1,0 +1,15 @@
+checksum = "74378239017d629e32e46438e48826b8b9a45c021d001a6030dd21723873e491"
+licence = "MIT"
+provides = "ruby-em-websocket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-em-websocket-0.5.3-r1.apk"
+version = "0.5.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-eventmachine", "1.2.7-r5"], ["ruby-http_parser.rb", "0.8.0-r1"]]

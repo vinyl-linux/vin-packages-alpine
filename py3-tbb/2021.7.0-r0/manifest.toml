@@ -1,0 +1,15 @@
+checksum = "6c550c8401bed879a7e86d864a2e41ba0dff977cd254b562a2078089036e9fe2"
+licence = "GPL-2.0-only"
+provides = "py3-tbb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tbb-2021.7.0-r0.apk"
+version = "2021.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"]]

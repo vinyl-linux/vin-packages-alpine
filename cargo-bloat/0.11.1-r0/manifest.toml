@@ -1,0 +1,15 @@
+checksum = "9056348a266f251cfa5838e3f62431544a314fe306219efbb4d0ec2824ad6f56"
+licence = "MIT"
+provides = "cargo-bloat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-bloat-0.11.1-r0.apk"
+version = "0.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cargo", "1.64.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

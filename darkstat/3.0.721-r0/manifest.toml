@@ -1,0 +1,15 @@
+checksum = "0e3a5fd5cfa01cd1c4a9ef951fa8e7ec8d46350650f92aa72d95170f72fbc1d8"
+licence = "GPL-2.0-only"
+provides = "darkstat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/darkstat-3.0.721-r0.apk"
+version = "3.0.721-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "06bcb89af01319d07c346df49cc7a75854c0c168651f1b02135f6dec1bec5d5d"
+licence = "GPL-3.0-or-later"
+provides = "netdata-python"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netdata-python-1.36.1-r0.apk"
+version = "1.36.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netdata", "1.36.1-r0"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "51a1bce6ed25be916da4ceb3439f5883e3c913f9ac35843e21128846d5b2dcdd"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kdecoration"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdecoration-5.26.3-r0.apk"
+version = "5.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

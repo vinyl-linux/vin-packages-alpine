@@ -1,0 +1,15 @@
+checksum = "bcc81caaa9472b5769bb820c45731247f7dd6ffb7ba221ff5ef63196ca21109c"
+licence = "Apache-2.0 BSD-1-Clause BSD-2-Clause BSD-3-Clause CC0-1.0 LGPL-2.1-or-later LGPL-3.0-only MIT Zlib"
+provides = "rspamd-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rspamd-dbg-3.4-r1.apk"
+version = "3.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["icu-data-full", "72.1.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "ad0d68ee4f40711cad9fcf9c39714cc1aa916ba3e7fe5c1d7f39fda2533db498"
+licence = "MIT"
+provides = "dropbear-ssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dropbear-ssh-2022.83-r0.apk"
+version = "2022.83.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dropbear-dbclient", "2022.83.0-r0"]]

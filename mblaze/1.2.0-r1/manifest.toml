@@ -1,0 +1,15 @@
+checksum = "9d4175164b97871bb26e2ef3e04712c3463f0006fc16fca5d3163bec31ef7876"
+licence = "CC0-1.0"
+provides = "mblaze"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mblaze-1.2-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["file", "5.43.0-r0"], ["musl", "1.2.3-r4"]]

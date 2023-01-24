@@ -1,0 +1,15 @@
+checksum = "fe47d3acd5c8cca69797926dd315676494e978d47dab43b2a69fceb087b03743"
+licence = "MIT"
+provides = "lua5.3-term"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.3-term-0.07-r2.apk"
+version = "0.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"], ["musl", "1.2.3-r4"]]

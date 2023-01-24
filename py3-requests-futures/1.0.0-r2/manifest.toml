@@ -1,0 +1,15 @@
+checksum = "0e102117988a0b181779702ef02c2beb27793c4a185f0f8048d47ef3aacc95e6"
+licence = "Apache-2.0"
+provides = "py3-requests-futures"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-requests-futures-1.0.0-r2.apk"
+version = "1.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-requests", "2.28.1-r1"]]

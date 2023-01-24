@@ -1,0 +1,15 @@
+checksum = "eb09f4220b618da0fbeea4e3a460fee1c739363dd71fbd1713ce66c57504e369"
+licence = "GPL-2.0-only"
+provides = "labwc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/labwc-0.5.3-r0.apk"
+version = "0.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xwayland", "22.1.7-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["libinput-libs", "1.22.1-r0"], ["pango", "1.50.12-r0"], ["pixman", "0.42.2-r0"], ["wayland-libs-server", "1.21.0-r1"], ["wlroots", "0.15.1-r4"], ["libxkbcommon", "1.4.1-r0"], ["libxml2", "2.10.3-r1"]]

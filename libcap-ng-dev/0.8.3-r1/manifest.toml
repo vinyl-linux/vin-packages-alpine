@@ -1,0 +1,15 @@
+checksum = "0a40444db8605fb227b6b3c58cbf36c69678f10f53d1b3ed6be2aa01ddd24fee"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libcap-ng-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcap-ng-dev-0.8.3-r1.apk"
+version = "0.8.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-headers", "5.19.5-r0"], ["libcap-ng", "0.8.3-r1"], ["pkgconf", "1.9.4-r0"]]

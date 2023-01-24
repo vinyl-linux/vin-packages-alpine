@@ -1,0 +1,15 @@
+checksum = "8e93396a2b27c0f16c6ba9a11ace9b61d60a8a9305d12fe1635a0d36343586fb"
+licence = "GPL-2.0"
+provides = "sysbench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sysbench-1.0.20-r1.apk"
+version = "1.0.20-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libaio", "0.3.113-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["mariadb-connector-c", "3.3.3-r0"]]

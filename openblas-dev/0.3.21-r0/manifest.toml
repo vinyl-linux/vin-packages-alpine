@@ -1,0 +1,15 @@
+checksum = "6cc75b8df2d0cfd3d35ddf5e0396af9d852113f2c7dfa71b37251d2d039ffc40"
+licence = "BSD-3-Clause"
+provides = "openblas-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openblas-dev-0.3.21-r0.apk"
+version = "0.3.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gfortran", "12.2.1"], ["openblas-ilp64", "0.3.21-r0"], ["openblas", "0.3.21-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3c9e808e4162616ffdd769a5b692f1b2e0b43d6d5bb1a1c1d659835e82952d8b"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-mysql-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["kamailio-db", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

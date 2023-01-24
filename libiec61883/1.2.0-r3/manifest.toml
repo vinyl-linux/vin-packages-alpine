@@ -1,0 +1,15 @@
+checksum = "686eaaddccf24a1da1c2f266ad415c1c652684cf2ea9d1caa17a8f4b18e90ba6"
+licence = "LGPL-2.1-or-later"
+provides = "libiec61883"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libiec61883-1.2.0-r3.apk"
+version = "1.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libraw1394", "2.1.2-r3"]]

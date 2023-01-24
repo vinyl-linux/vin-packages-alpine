@@ -1,0 +1,15 @@
+checksum = "f3d75ed13b2fd8525ea096a4e4abd74940da40fa0c79ddd7ecd7578d6edd12a7"
+licence = "GPL-3.0-or-later"
+provides = "calamares-extensions-mod-mobile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-extensions-mod-mobile-1.2.1-r2.apk"
+version = "1.2.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["calamares", "3.2.47-r9"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

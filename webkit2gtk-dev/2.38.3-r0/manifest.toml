@@ -1,0 +1,15 @@
+checksum = "e61dd60fe652d9980f983d9dc97b506ed1e2000f7009fd9b7e8b3d4f8c040603"
+licence = "LGPL-2.0-or-later AND BSD-2-Clause"
+provides = "webkit2gtk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webkit2gtk-dev-2.38.3-r0.apk"
+version = "2.38.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libsoup-dev", "2.74.3-r0"], ["pkgconf", "1.9.4-r0"], ["webkit2gtk", "2.38.3-r0"]]

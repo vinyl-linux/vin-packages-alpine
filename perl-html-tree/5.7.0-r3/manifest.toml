@@ -1,0 +1,15 @@
+checksum = "ecd75ee33408c94a09d15824a4e05b3b1d52890cd9db8800e30eb66c755460f8"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-html-tree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-html-tree-5.07-r3.apk"
+version = "5.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-html-tagset", "3.20.0-r3"], ["perl-html-parser", "3.80.0-r0"]]

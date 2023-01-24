@@ -1,0 +1,15 @@
+checksum = "20da305858f83f33a983260c4b122e36394a7200ef817321ebbc8d1b205155ad"
+licence = "GPL-2.0-or-later"
+provides = "metacity-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/metacity-dev-3.40.0-r1.apk"
+version = "3.40.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["metacity", "3.40.0-r1"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

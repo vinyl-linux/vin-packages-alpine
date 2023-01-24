@@ -1,0 +1,15 @@
+checksum = "5312293493a6ed5a3971fec6fdf5b9e3fa1d40b85fa44111d2e7a47f0efdf245"
+licence = "GPL-3.0"
+provides = "greetd-tuigreet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/greetd-tuigreet-0.8.0-r2.apk"
+version = "0.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["greetd", "0.8.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

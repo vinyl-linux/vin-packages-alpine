@@ -1,0 +1,15 @@
+checksum = "48f7fc4fc7a6a714dde996166c0e941a31d81430ac8dfe9da0cbe9a058d498ae"
+licence = "GPL-2.0-or-later"
+provides = "gdm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gdm-dev-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdm", "43.0.0-r0"], ["glib-dev", "2.74.5-r0"], ["elogind-dev", "246.10.0-r5"], ["pkgconf", "1.9.4-r0"]]

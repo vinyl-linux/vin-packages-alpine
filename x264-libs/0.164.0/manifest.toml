@@ -1,0 +1,15 @@
+checksum = "05eedacc11338d1c8d876b87cce475debe0ec4831a8e88df8921628ab449aecb"
+licence = "GPL-2.0-or-later"
+provides = "x264-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/x264-libs-0.164_git20220602-r0.apk"
+version = "0.164.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

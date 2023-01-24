@@ -1,0 +1,15 @@
+checksum = "e95617c81a8e4c0e04abd66b1afb9150238519b5416d72c9ace3fcbcf1e8f4dd"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-ev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-ev-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"]]

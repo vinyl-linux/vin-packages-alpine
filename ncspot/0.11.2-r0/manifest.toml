@@ -1,0 +1,15 @@
+checksum = "35acffc4d263895e669ea8abedfffcd309fd8b13f9f9c41d8495f389281e2b70"
+licence = "BSD-2-Clause"
+provides = "ncspot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ncspot-0.11.2-r0.apk"
+version = "0.11.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["dbus-libs", "1.14.4-r0"], ["libgcc", "12.2.1"], ["libpulse", "16.1.0-r6"], ["libssl3", "3.0.7-r2"], ["libxcb", "1.15.0-r0"]]

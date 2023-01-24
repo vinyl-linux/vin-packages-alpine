@@ -1,0 +1,15 @@
+checksum = "34c4f6687e3af1d10d3dbe22822618d87bbb81d757c2cd5059ec2676f735b3e5"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "sox-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sox-dev-14.4.2-r9.apk"
+version = "14.4.2-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["sox", "14.4.2-r9"]]

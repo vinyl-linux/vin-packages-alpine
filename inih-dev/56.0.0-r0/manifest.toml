@@ -1,0 +1,15 @@
+checksum = "1c7827aaca8bacb74b611af7199390635b57b41fef24d2a8a34b8f0cc7e3331b"
+licence = "BSD-3-Clause"
+provides = "inih-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/inih-dev-56-r0.apk"
+version = "56.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["inih", "56.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

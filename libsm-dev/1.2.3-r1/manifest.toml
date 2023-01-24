@@ -1,0 +1,15 @@
+checksum = "2dbabfc7ae22ec45d7504755707bfb8ebb8554eb0aa4e3528a08e0699df2c90b"
+licence = "MIT"
+provides = "libsm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libsm-dev-1.2.3-r1.apk"
+version = "1.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsm", "1.2.3-r1"], ["libice-dev", "1.0.10-r1"], ["xorgproto", "2022.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

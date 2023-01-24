@@ -1,0 +1,15 @@
+checksum = "e8c408184264f980f6ac353137604ecf2721c1003a869fc5a42dd2bd1d5e2592"
+licence = "MIT"
+provides = "berry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/berry-0.1.12-r0.apk"
+version = "0.1.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxft", "2.3.7-r0"], ["libxinerama", "1.1.5-r0"], ["musl", "1.2.3-r4"]]

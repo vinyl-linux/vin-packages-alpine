@@ -1,0 +1,15 @@
+checksum = "b996f01773fe03053945aedbd87ea98a86090710b04042970153b328fe5d4029"
+licence = "GPL-2.0-only"
+provides = "podofo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/podofo-dev-0.9.8-r2.apk"
+version = "0.9.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["podofo", "0.9.8-r2"]]

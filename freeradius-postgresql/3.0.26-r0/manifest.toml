@@ -1,0 +1,15 @@
+checksum = "b1fef0b1c1c90d3da688609fca4024437a865943a9103bf7a2e0c1b8de8f84b1"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-postgresql-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius-sql", "3.0.26-r0"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b47fe88869a62dbd71f6d54647bbdc71c05e8d193a537b1d3c9fbc892e9fb207"
+licence = "MIT"
+provides = "kealib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kealib-dev-1.4.15-r1.apk"
+version = "1.4.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kealib", "1.4.15-r1"]]

@@ -1,0 +1,15 @@
+checksum = "7f4884c4eda6b071a58b4784479024fa2db73f4154fec6b58165c66b84dbf2dd"
+licence = "NIST-PD"
+provides = "expect"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/expect-5.45.4-r3.apk"
+version = "5.45.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["tcl", "8.6.12-r1"]]

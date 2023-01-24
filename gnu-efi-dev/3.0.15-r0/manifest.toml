@@ -1,0 +1,15 @@
+checksum = "6eeec7742b07a95db5db4482b27b0b1346f733eee1aa5ddf646ea2c62755f34c"
+licence = "BSD-3-Clause"
+provides = "gnu-efi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnu-efi-dev-3.0.15-r0.apk"
+version = "3.0.15-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnu-efi", "3.0.15-r0"]]

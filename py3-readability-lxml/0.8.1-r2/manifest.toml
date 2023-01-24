@@ -1,0 +1,15 @@
+checksum = "ed9fe35222e2a034345eca8b73429e4e572c65975953d1f17d10e4bb1b5ddae8"
+licence = "Apache-2.0"
+provides = "py3-readability-lxml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-readability-lxml-0.8.1-r2.apk"
+version = "0.8.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-chardet", "5.0.0-r0"], ["py3-lxml", "4.9.2-r0"], ["py3-cssselect", "1.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ee088927e2cbaec6551ef73632ccf6329e2b4df069213236dd9d9e0282bb0222"
+licence = "MIT"
+provides = "zfs-prune-snapshots"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zfs-prune-snapshots-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["zfs", "2.1.7-r0"]]

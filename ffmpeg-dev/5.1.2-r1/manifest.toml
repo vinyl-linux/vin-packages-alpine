@@ -1,0 +1,15 @@
+checksum = "5ecbc8741a3caf1130158ae409bb21ad7e280572160d553b347ac33c65ec68da"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "ffmpeg-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ffmpeg-dev-5.1.2-r1.apk"
+version = "5.1.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "828faa77dd050316bdea2573783d639e11d2565676259e281f86c3ca6b0036af"
+licence = "BSD-2-Clause AND ISC"
+provides = "audacious-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/audacious-dbg-4.2-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"]]

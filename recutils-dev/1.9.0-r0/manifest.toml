@@ -1,0 +1,15 @@
+checksum = "ccdb515e1e6271f796944afcd2233e83dd491753f67df21b9afd5a58b47872a3"
+licence = "GPL-3.0-or-later"
+provides = "recutils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/recutils-dev-1.9-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["recutils", "1.9.0-r0"]]

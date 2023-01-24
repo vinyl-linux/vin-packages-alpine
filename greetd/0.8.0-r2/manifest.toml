@@ -1,0 +1,15 @@
+checksum = "75dbbf70d748d59ab6ad487633356f4dc8c1d57ae3c79d7fb33118e6c6e419cd"
+licence = "GPL-3.0-only"
+provides = "greetd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/greetd-0.8.0-r2.apk"
+version = "0.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["linux-pam", "1.5.2-r1"]]

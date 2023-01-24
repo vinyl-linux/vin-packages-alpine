@@ -1,0 +1,15 @@
+checksum = "88c5aa6632db66966cff4179102dbdd84e982a87c5a91512c442a8421ede890c"
+licence = "MIT"
+provides = "qcoro-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qcoro-dev-0.6.0-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qcoro-qt6", "0.6.0-r1"], ["qcoro", "0.6.0-r1"]]

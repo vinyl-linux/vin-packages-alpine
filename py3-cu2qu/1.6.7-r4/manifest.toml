@@ -1,0 +1,15 @@
+checksum = "b0f91f1768ee36ccdc92c10f894516a6a39644ba0f99075b907b38425d07e6fe"
+licence = "Apache-2.0"
+provides = "py3-cu2qu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cu2qu-1.6.7-r4.apk"
+version = "1.6.7-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-fonttools", "4.38.0-r0"], ["py3-fs", "2.4.16-r0"], ["musl", "1.2.3-r4"]]

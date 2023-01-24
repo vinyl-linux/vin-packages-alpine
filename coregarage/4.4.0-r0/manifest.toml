@@ -1,0 +1,15 @@
+checksum = "e44781b60984052227e6094801d3dab8b5a4811f938e0380a3640f4e1824f0af"
+licence = "GPL-3.0-or-later"
+provides = "coregarage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coregarage-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["libarchive-qt", "2.0.7-r0"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

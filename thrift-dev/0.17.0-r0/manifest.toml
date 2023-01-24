@@ -1,0 +1,15 @@
+checksum = "f249651369f1d41b4284c436897cbfbc9b60fc88f7b9a441d52f809f7ffa0b9c"
+licence = "Apache-2.0"
+provides = "thrift-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/thrift-dev-0.17.0-r0.apk"
+version = "0.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["thrift-libs-cpp", "0.17.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9740e82118c1958d5b3b9a7d1ff0c87d2ffefb5d9b8a0f721e679e4f4140405f"
+licence = "Apache-2.0"
+provides = "apache2-http2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apache2-http2-2.4.55-r0.apk"
+version = "2.4.55-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apache2", "2.4.55-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["nghttp2-libs", "1.51.0-r0"]]

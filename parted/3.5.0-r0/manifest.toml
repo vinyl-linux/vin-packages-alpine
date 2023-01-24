@@ -1,0 +1,15 @@
+checksum = "2f343ec57303111ac19df2ee59068738f89e35f6a85602d369203a2238717447"
+licence = "GPL-3.0-or-later"
+provides = "parted"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/parted-3.5-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"], ["libuuid", "2.38.1-r1"]]

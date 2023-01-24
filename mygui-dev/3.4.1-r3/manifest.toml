@@ -1,0 +1,15 @@
+checksum = "76c79487013b7bc7e0e20c56ff57dd47ea3b561fabda524dd03dfbfc3b80d102"
+licence = "MIT"
+provides = "mygui-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mygui-dev-3.4.1-r3.apk"
+version = "3.4.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mygui", "3.4.1-r3"], ["pkgconf", "1.9.4-r0"]]

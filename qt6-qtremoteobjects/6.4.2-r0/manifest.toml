@@ -1,0 +1,15 @@
+checksum = "2f5ad0a6c3b4d9318386756f4c619e031854c1b2da756ce131742b81f3230170"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtremoteobjects"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtremoteobjects-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["qt6-qtdeclarative", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

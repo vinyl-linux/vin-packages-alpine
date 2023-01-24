@@ -1,0 +1,15 @@
+checksum = "7edb778cad5caf1c4ed8dc69b6b8e071a14e9214322ce46cbc081282e72f63df"
+licence = "MIT"
+provides = "fcgiwrap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fcgiwrap-1.1.0-r6.apk"
+version = "1.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["fcgi", "2.4.2-r2"]]

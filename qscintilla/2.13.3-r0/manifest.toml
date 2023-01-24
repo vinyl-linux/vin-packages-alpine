@@ -1,0 +1,15 @@
+checksum = "28b64c8fc295f5841772576d8c8c65f9b375bd2f64ab9f5c028a8d46bc1fe7c0"
+licence = "GPL-3.0-only"
+provides = "qscintilla"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qscintilla-2.13.3-r0.apk"
+version = "2.13.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "e3c456f041b52c3e13a6b8b91d94541a4bd89687209163ab66ee52977bc9443a"
+licence = "Apache-2.0"
+provides = "binaryen-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/binaryen-dev-110-r0.apk"
+version = "110.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binaryen", "110.0.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gtest", "1.12.1-r0"], ["libstdc++", "12.2.1"]]

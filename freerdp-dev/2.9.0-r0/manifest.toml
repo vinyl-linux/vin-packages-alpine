@@ -1,0 +1,15 @@
+checksum = "a527f9b0e9b72669349edb3f3af25a4d9bfade487a4898499712f555d5e97205"
+licence = "Apache-2.0"
+provides = "freerdp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freerdp-dev-2.9.0-r0.apk"
+version = "2.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freerdp-libs", "2.9.0-r0"], ["openssl-dev", "3.0.7-r2"], ["wayland-dev", "1.21.0-r1"], ["libxkbcommon-dev", "1.4.1-r0"], ["pkgconf", "1.9.4-r0"]]

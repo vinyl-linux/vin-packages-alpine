@@ -1,0 +1,15 @@
+checksum = "b5b46132eae69b42a66bc4ee3c80147394f27e4e2aaae473df35a1825065efc1"
+licence = "LGPL-2.1-or-later AND CC-BY-SA-3.0"
+provides = "minetest-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minetest-server-5.6.1-r0.apk"
+version = "5.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["minetest-common", "5.6.1-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["hiredis", "1.0.2-r1"], ["luajit", "2.1.0"], ["ncurses-libs", "6.3.0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

@@ -1,0 +1,15 @@
+checksum = "1757b906bc04b0cc270c890a6aae8a5e25cb899e95ec9c26289d78c92effdd3a"
+licence = "BSD-2-Clause"
+provides = "libu2f-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libu2f-server-1.1.0-r6.apk"
+version = "1.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["json-c", "0.16.0-r2"], ["libssl3", "3.0.7-r2"]]

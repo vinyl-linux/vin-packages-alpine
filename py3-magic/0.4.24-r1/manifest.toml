@@ -1,0 +1,15 @@
+checksum = "97933ba35b99249b065e4d42d9097b3636350b92b0d685e6d09bbde6d156970c"
+licence = "MIT"
+provides = "py3-magic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-magic-0.4.24-r1.apk"
+version = "0.4.24-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["libmagic", "5.43.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "2e0cffa984c824ae4a02fbf5014d8aed7efd95f24f996c4694afcd8ae6e2e91f"
+licence = "GPL-2.0-or-later"
+provides = "pidgin-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pidgin-dev-2.14.10-r0.apk"
+version = "2.14.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpurple", "2.14.10-r0"], ["glib-dev", "2.74.5-r0"], ["libgnt-dev", "2.14.3-r2"], ["gtk+2.0-dev", "2.24.33-r7"], ["pkgconf", "1.9.4-r0"]]

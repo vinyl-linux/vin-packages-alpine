@@ -1,0 +1,15 @@
+checksum = "398eb28dc5fb2e07bd4af5395805f84d11f1aff4e6ef03971567f3b7abe8e20c"
+licence = "MIT"
+provides = "dotnet6-build"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet6-build-6.0.113-r0.apk"
+version = "6.0.113-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["lttng-ust", "2.13.3-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["libunwind", "1.6.2-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "926e55f88192a5fc398ae36d47a0747c3e8e3846a4b99bb6d58cf2860c2e5f5c"
+licence = "Apache-2.0"
+provides = "py3-gpxpy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-gpxpy-1.5.0-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

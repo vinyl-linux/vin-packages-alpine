@@ -1,0 +1,15 @@
+checksum = "e4c3217dabf5b816aec547d41f06be8c410be6a252eb78ae383ab5fbf723930b"
+licence = "LGPL-2.1-or-later"
+provides = "kpty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpty-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

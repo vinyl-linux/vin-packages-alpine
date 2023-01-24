@@ -1,0 +1,15 @@
+checksum = "6709dffe7ebcc7990777d540d154d25c2a1db936fd6f91fb85cbc3502360eab6"
+licence = "GPL-2.0-or-later"
+provides = "vdr-streamdev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vdr-streamdev-2.6.1-r4.apk"
+version = "2.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vdr", "2.6.1-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

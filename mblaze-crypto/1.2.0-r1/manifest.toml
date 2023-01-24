@@ -1,0 +1,15 @@
+checksum = "55bfc85be107c12af0453179d0239304d1a5b9f544273021b740940c7fd2f0c9"
+licence = "CC0-1.0"
+provides = "mblaze-crypto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mblaze-crypto-1.2-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl", "3.0.7-r2"], ["gpg", "2.2.40-r0"]]

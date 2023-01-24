@@ -1,0 +1,15 @@
+checksum = "f9db2be4ffb63a90dd8c5706aa8513643800cde0c6b54142d0845aa82d1c4431"
+licence = "MIT"
+provides = "lua5.1-sec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-sec-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1-socket", "3.1.0-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

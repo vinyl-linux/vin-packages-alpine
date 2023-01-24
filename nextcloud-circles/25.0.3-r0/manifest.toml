@@ -1,0 +1,15 @@
+checksum = "cf24005ce341fe45ef83463e60941015c647654bdbfa664b9dff85da27fa072a"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-circles"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-circles-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

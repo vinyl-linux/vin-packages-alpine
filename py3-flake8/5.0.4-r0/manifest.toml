@@ -1,0 +1,15 @@
+checksum = "44b4d5f02391775d0d323d400d1b22cec3f4688af0f04501782458756e79845f"
+licence = "MIT"
+provides = "py3-flake8"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flake8-5.0.4-r0.apk"
+version = "5.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-pyflakes", "2.5.0-r0"], ["py3-pycodestyle", "2.9.0-r0"], ["py3-mccabe", "0.7.0-r0"]]

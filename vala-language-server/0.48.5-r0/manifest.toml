@@ -1,0 +1,15 @@
+checksum = "92b3a124f507196f406c36873b43d6778c60d29abff43b128c548641be1de64f"
+licence = "LGPL-2.1-or-later"
+provides = "vala-language-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vala-language-server-0.48.5-r0.apk"
+version = "0.48.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgee", "0.20.6-r0"], ["glib", "2.74.5-r0"], ["json-glib", "1.6.6-r1"], ["jsonrpc-glib", "3.42.0-r0"], ["vala", "0.56.3-r0"]]

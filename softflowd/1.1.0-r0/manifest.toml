@@ -1,0 +1,15 @@
+checksum = "70be4285296baf6d7e06c34cf64e0953c786e25396771f218704b1a8c05bc0c0"
+licence = "BSD-2-Clause"
+provides = "softflowd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/softflowd-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

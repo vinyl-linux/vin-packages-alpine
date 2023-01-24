@@ -1,0 +1,15 @@
+checksum = "18ff5a6a8a8774072cfc7cb135a40cba64df8e6659b4b737e8a61104053a3fcf"
+licence = "LGPL-2.0-or-later"
+provides = "clutter-gst"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clutter-gst-3.0.27-r1.apk"
+version = "3.0.27-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["clutter", "1.26.4-r1"], ["cogl", "1.22.8-r1"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gstreamer", "1.20.5-r0"], ["libgudev", "237.0.0-r1"]]

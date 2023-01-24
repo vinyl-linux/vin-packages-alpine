@@ -1,0 +1,15 @@
+checksum = "7b969782382ed83e4e1e6615e36b21419be527d69f998b05a39176c2a1d10e02"
+licence = "Apache-2.0"
+provides = "grpc-java"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/grpc-java-1.50.1-r0.apk"
+version = "1.50.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jre-headless", "9.0.4"], ["musl", "1.2.3-r4"]]

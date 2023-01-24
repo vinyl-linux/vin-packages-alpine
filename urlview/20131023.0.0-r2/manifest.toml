@@ -1,0 +1,15 @@
+checksum = "59c597f748fb002d4f42d706c8ae0edbb143a5ff8d25eb54e68ddd93d40f0636"
+licence = "GPL-2.0-or-later"
+provides = "urlview"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/urlview-20131023-r2.apk"
+version = "20131023.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

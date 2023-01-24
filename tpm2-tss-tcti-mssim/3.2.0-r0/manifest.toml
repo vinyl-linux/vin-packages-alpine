@@ -1,0 +1,15 @@
+checksum = "2e8f69fc8674f0e030c627bfc2652d8da1a51485896daff6de56cf67b4468356"
+licence = "BSD-2-Clause"
+provides = "tpm2-tss-tcti-mssim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm2-tss-tcti-mssim-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["tpm2-tss-mu", "3.2.0-r0"]]

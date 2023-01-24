@@ -1,0 +1,15 @@
+checksum = "232caedd4117d889fa11fc77a4581eef3f779b2eb4131e67c1f485418bff07f6"
+licence = "Apache-2.0"
+provides = "openmp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openmp-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["llvm15-libs", "15.0.7-r0"], ["musl", "1.2.3-r4"], ["libelf", "0.187.0-r2"], ["libffi", "3.4.4-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

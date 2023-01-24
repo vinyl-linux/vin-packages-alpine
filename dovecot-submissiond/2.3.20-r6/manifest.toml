@@ -1,0 +1,15 @@
+checksum = "1dd745a22820b33599bd0ea2e433d3c1bd73f684162687f6242aff3610c759a9"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-submissiond"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-submissiond-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot", "2.3.20-r6"], ["musl", "1.2.3-r4"]]

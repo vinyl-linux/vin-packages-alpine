@@ -1,0 +1,15 @@
+checksum = "1170191f3ab3d1b4c7b0625c5b810e6f59b8b52139de43bdcd11714cdfa2fa7e"
+licence = "LGPL-3.0-or-later"
+provides = "libportal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libportal-0.6-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

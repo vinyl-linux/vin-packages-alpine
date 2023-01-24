@@ -1,0 +1,15 @@
+checksum = "d4e6d10b1fffdd818044e047e0ec64d0467bd2a3d1401d0d0bb3f8c0a00fd012"
+licence = "GPL-2.0-or-later"
+provides = "ffmpegthumbnailer-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ffmpegthumbnailer-dev-2.2.2-r5.apk"
+version = "2.2.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpegthumbnailer", "2.2.2-r5"], ["pkgconf", "1.9.4-r0"]]

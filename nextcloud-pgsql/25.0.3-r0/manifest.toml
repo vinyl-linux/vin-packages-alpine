@@ -1,0 +1,15 @@
+checksum = "89fb359c64c6e206581ed307e1e837a4b4d405673d48949f807dd554643d1e24"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-pgsql-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"], ["php81-pgsql", "8.1.14-r0"], ["php81-pdo_pgsql", "8.1.14-r0"]]

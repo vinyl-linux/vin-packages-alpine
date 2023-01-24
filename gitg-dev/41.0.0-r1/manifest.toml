@@ -1,0 +1,15 @@
+checksum = "612934642afe28cdb5de039cfc14d6332ce038c43ef9011a5cb2abeadbae5d26"
+licence = "GPL-2.0-or-later"
+provides = "gitg-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gitg-dev-41-r1.apk"
+version = "41.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gitg", "41.0.0-r1"], ["libgee-dev", "0.20.6-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libdazzle-dev", "3.44.0-r0"], ["libgit2-glib-dev", "1.1.0-r0"], ["pkgconf", "1.9.4-r0"]]

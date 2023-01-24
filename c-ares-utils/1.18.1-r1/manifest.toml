@@ -1,0 +1,15 @@
+checksum = "0e7246eb48264fb612caea3555e82f4117a697989cc45e65fcc4ffb2908b204e"
+licence = "MIT"
+provides = "c-ares-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/c-ares-utils-1.18.1-r1.apk"
+version = "1.18.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["c-ares", "1.18.1-r1"]]

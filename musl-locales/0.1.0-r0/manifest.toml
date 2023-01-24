@@ -1,0 +1,15 @@
+checksum = "760f3282d2729cbe921c3651869b7a6e5de123a884f800dd2716ada42ee12a55"
+licence = "LGPL-3.0-only"
+provides = "musl-locales"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/musl-locales-0.1.0-r0.apk"
+version = "0.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

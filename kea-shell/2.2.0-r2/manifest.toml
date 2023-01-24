@@ -1,0 +1,15 @@
+checksum = "162182bd4b475f5d2c1af431e26ae1e0cb8ecede0fd86d1d7e28fa868b2c8d19"
+licence = "MPL2"
+provides = "kea-shell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-shell-2.2.0-r2.apk"
+version = "2.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

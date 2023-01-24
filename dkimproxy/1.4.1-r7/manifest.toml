@@ -1,0 +1,15 @@
+checksum = "edacb84bb0317979080b08b2455c36a61807a5203559b1695b8e8a6ca7dccee0"
+licence = "GPL"
+provides = "dkimproxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dkimproxy-1.4.1-r7.apk"
+version = "1.4.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-mail-dkim", "1.20220520.0-r0"], ["perl-net-server", "2.10.0-r1"], ["perl-error", "0.17029.0-r1"], ["yash-binsh", "2.53.0-r2"]]

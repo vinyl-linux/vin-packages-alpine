@@ -1,0 +1,15 @@
+checksum = "89a7e8f81099647df784a790625a7777b68b1b183425f22103e5433c99084fc1"
+licence = "GPL-3.0-or-later"
+provides = "corepaint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/corepaint-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

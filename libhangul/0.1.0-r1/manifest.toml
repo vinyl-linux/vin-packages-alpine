@@ -1,0 +1,15 @@
+checksum = "5298b8710c809f12f9997fc5fe6da46c1e77febdc46e15154157d9e97bea69c0"
+licence = "LGPL-2.1-or-later"
+provides = "libhangul"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libhangul-0.1.0-r1.apk"
+version = "0.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"]]

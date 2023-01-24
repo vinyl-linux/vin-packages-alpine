@@ -1,0 +1,15 @@
+checksum = "2a8c5a20c2b20ca6d0051dfb354d0086c021cd801329dc78c6b5f975feca8689"
+licence = "GPL-2.0-or-later"
+provides = "cadaver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cadaver-0.23.3-r6.apk"
+version = "0.23.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["neon", "0.32.4-r0"], ["readline", "8.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "08bfb0320ff4c0ac626ad86e87259c1eb10d646574304820d8633f4ade4bbc55"
+licence = "GPL-3.0-only"
+provides = "libsignal-protocol-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsignal-protocol-c-dev-2.3.3-r3.apk"
+version = "2.3.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libsignal-protocol-c", "2.3.3-r3"], ["pkgconf", "1.9.4-r0"]]

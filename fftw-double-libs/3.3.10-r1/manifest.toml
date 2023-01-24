@@ -1,0 +1,15 @@
+checksum = "d5ba82c10c6d69e7aa4bf31805328f9f54f557bb6c30dfa134204adfca657c4d"
+licence = "GPL-2.0-or-later"
+provides = "fftw-double-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fftw-double-libs-3.3.10-r1.apk"
+version = "3.3.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

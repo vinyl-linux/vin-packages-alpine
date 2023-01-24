@@ -1,0 +1,15 @@
+checksum = "68fb89a8f56877d54ee48f56d0a938b3d5d5bf12b91916ede1aac2b97a5b4cc4"
+licence = "GPL-3.0-or-later"
+provides = "libimagequant"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libimagequant-4.0.4-r0.apk"
+version = "4.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

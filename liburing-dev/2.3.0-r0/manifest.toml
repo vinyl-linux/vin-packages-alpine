@@ -1,0 +1,15 @@
+checksum = "46c3f4e98e992bbfbe741d815e3639d648642281a6df6a06f1041d4d78beb13e"
+licence = "LGPL-2.1-or-later"
+provides = "liburing-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/liburing-dev-2.3-r0.apk"
+version = "2.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["liburing", "2.3.0-r0"], ["pkgconf", "1.9.4-r0"]]

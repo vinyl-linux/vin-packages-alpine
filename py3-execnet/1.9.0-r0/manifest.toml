@@ -1,0 +1,15 @@
+checksum = "1da382d428777d2419bea25852f7bb6f234721e1bf1c00a2080fd8b36dfbc17e"
+licence = "MIT"
+provides = "py3-execnet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-execnet-1.9.0-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-apipkg", "2.1.0-r0"]]

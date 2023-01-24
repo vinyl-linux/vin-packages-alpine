@@ -1,0 +1,15 @@
+checksum = "9ebe1774d48433f5ed8dac3d394ed0c828e56d3e39e7226e0a3c1bb79dcaf77b"
+licence = "BSD-3-Clause"
+provides = "gcovr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcovr-5.2-r0.apk"
+version = "5.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-setuptools", "65.6.0-r0"], ["py3-lxml", "4.9.2-r0"], ["py3-jinja2", "3.1.2-r0"]]

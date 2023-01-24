@@ -1,0 +1,15 @@
+checksum = "c8b6cfe185df72380160ba19b74fe367355998e05bf89b68863d75db66813fd3"
+licence = "GPL-1.0-or-later Artistic-1.0-Perl"
+provides = "perl-email-mime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-email-mime-1.952-r0.apk"
+version = "1.952.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-email-mime-contenttype", "1.27.0-r0"], ["perl-email-mime-encodings", "1.316.0-r0"], ["perl-email-simple", "2.216.0-r2"], ["perl-email-address", "1.912.0-r2"], ["perl-email-messageid", "1.407.0-r0"], ["perl-mime-types", "2.22.0-r0"], ["perl-email-address-xs", "1.5.0-r0"], ["perl-module-runtime", "0.16.0-r4"]]

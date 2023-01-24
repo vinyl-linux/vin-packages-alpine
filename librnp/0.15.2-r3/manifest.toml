@@ -1,0 +1,15 @@
+checksum = "d8bf93198879556f8b37a9c3430da3dd1ac95ca26a50b1fbe033b46a26431de5"
+licence = "BSD-2-Clause"
+provides = "librnp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librnp-0.15.2-r3.apk"
+version = "0.15.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["botan-libs", "2.19.3-r0"], ["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["json-c", "0.16.0-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

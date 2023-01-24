@@ -1,0 +1,15 @@
+checksum = "97d481e07bfea50d66d460c2c92c95bfa765d2541eb777bef4d03d7d7e0abf1d"
+licence = "BSD-2-CLause"
+provides = "rtpproxy-debug"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rtpproxy-debug-2.1.1-r1.apk"
+version = "2.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

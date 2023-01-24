@@ -1,0 +1,15 @@
+checksum = "ec5a21dc148d22c1ecdc536d1006a5643c72142f76b0be841cfeef3c05b44298"
+licence = "LGPL-3.0-only"
+provides = "pass-git-helper"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pass-git-helper-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["pass", "1.7.4-r1"], ["py3-xdg", "0.28.0-r0"]]

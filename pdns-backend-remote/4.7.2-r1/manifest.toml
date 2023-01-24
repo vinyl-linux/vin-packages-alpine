@@ -1,0 +1,15 @@
+checksum = "55ba2a388896c2453e54a4f7d04495fda392969441b09b99a0a66399369f0373"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "pdns-backend-remote"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pdns-backend-remote-4.7.2-r1.apk"
+version = "4.7.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pdns", "4.7.2-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libzmq", "4.3.4-r1"]]

@@ -1,0 +1,15 @@
+checksum = "f77d48a792a69913ba88610a0118c9850c599d807e07756d0e20c4cf0cca31f2"
+licence = "GPL-3.0-only"
+provides = "cfengine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cfengine-3.20.0-r0.apk"
+version = "3.20.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["procps", "3.3.17-r2"], ["yash-binsh", "2.53.0-r2"], ["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["lmdb", "0.9.29-r2"], ["pcre", "8.45.0-r2"], ["libssl3", "3.0.7-r2"]]

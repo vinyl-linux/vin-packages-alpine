@@ -1,0 +1,15 @@
+checksum = "f48a6913977a3f4f8015639058ae14fbecee5d94b8066086b5b50d4015f3b29b"
+licence = "Apache-2.0"
+provides = "py3-nltk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-nltk-3.7-r1.apk"
+version = "3.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-yaml", "6.0.0-r0"], ["py3-click", "8.1.3-r0"], ["py3-regex", "2022.10.31-r0"]]

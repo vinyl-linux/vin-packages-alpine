@@ -1,0 +1,15 @@
+checksum = "04eaa11d9a543115035231550f3f801d7658b3a74a9d9b89a9ca46723a4a6833"
+licence = "MIT"
+provides = "git-machete"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-machete-3.13.2-r0.apk"
+version = "3.13.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

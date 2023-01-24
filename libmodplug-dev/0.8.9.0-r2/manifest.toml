@@ -1,0 +1,15 @@
+checksum = "2bda001146f980405eadc580bbb82d50a9561502bb456664b8fd22dce55e0448"
+licence = "custom"
+provides = "libmodplug-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmodplug-dev-0.8.9.0-r2.apk"
+version = "0.8.9.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmodplug", "0.8.9.0-r2"], ["pkgconf", "1.9.4-r0"]]

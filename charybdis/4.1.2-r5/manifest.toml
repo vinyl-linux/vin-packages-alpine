@@ -1,0 +1,15 @@
+checksum = "bfdd84beb92557fa141fb2b8036052513698444bbb296bc6bff9e914c74f440d"
+licence = "GPL-2.0-or-later"
+provides = "charybdis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/charybdis-4.1.2-r5.apk"
+version = "4.1.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libltdl", "2.4.7-r0"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

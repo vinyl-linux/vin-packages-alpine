@@ -1,0 +1,15 @@
+checksum = "bdccb88f09b65f6c8eda8630ceff2b94b5c5e6a9d667c9d6f2c9e23446b5f46d"
+licence = "GPL-3.0-or-later AND LGPL-3.0-or-later"
+provides = "bemenu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bemenu-0.6.13-r0.apk"
+version = "0.6.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxinerama", "1.1.5-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["ncurses-libs", "6.3.0"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

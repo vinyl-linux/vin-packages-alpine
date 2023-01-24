@@ -1,0 +1,15 @@
+checksum = "5ee076e49750407514f8aea083dc6a9c93f09a20eef436fc705e61615db2e74b"
+licence = "Apache-2.0 OR MIT"
+provides = "racket-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/racket-dbg-8.7-r1.apk"
+version = "8.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

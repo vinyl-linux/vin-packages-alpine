@@ -1,0 +1,15 @@
+checksum = "a32c905ac3f47d9f7a2fe20713df787d26a10c8e4b95cf7ec5b864ca5d032125"
+licence = "LPPL-1.0 LPPL-1.1 LPPL-1.2 LPPL-1.3a LPPL-1.3c GPL-2.0-only"
+provides = "texmf-dist-full"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/texmf-dist-full-2022.63035-r0.apk"
+version = "2022.63035.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["texmf-dist-most", "2022.63035.0-r0"], ["texmf-dist-lang", "2022.63035.0-r0"]]

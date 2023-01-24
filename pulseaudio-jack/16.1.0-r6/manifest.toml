@@ -1,0 +1,15 @@
+checksum = "ce0871c9e516f5571c36c9c2777cf944f64675a94ceeb454a207bbfe49d8e5d3"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-jack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulseaudio-jack-16.1-r6.apk"
+version = "16.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["jack", "1.9.21-r0"], ["libpulse", "16.1.0-r6"]]

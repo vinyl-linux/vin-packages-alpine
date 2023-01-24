@@ -1,0 +1,15 @@
+checksum = "3facc8f2fa3c748ae0162c456eb696d2e2d917d5a41fc8f1cf708017fa88e9f9"
+licence = "GPL-2.0-or-later"
+provides = "sound-juicer-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sound-juicer-lang-3.38.0-r2.apk"
+version = "3.38.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iso-codes", "4.12.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["gst-plugins-good", "1.20.5-r0"]]

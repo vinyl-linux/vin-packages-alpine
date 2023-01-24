@@ -1,0 +1,15 @@
+checksum = "39c0236afe391363d6dfdaba8e9ac31e7d1f472a91129a9d3bb923019c139c72"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-html-form"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-html-form-6.10-r0.apk"
+version = "6.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-uri", "5.17.0-r0"], ["perl-html-parser", "3.80.0-r0"], ["perl-http-message", "6.44.0-r0"]]

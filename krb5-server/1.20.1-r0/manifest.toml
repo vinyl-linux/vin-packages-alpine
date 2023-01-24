@@ -1,0 +1,15 @@
+checksum = "4bfaaef8dcb3370b0cc4d8f3b7c03e148a4b005720c0d2e9b2f93ed98ce2341b"
+licence = "MIT"
+provides = "krb5-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/krb5-server-1.20.1-r0.apk"
+version = "1.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libverto-libev", "0.3.2-r1"], ["musl", "1.2.3-r4"], ["libcom_err", "1.46.5-r4"], ["krb5-libs", "1.20.1-r0"], ["krb5-server-ldap", "1.20.1-r0"], ["e2fsprogs-libs", "1.46.5-r4"], ["libverto", "0.3.2-r1"]]

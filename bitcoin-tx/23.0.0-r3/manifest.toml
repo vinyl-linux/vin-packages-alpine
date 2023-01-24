@@ -1,0 +1,15 @@
+checksum = "a98c2f246f6d855e6b897f2c4c65a0bdf0704387e09722fe509a0a92bcae3723"
+licence = "MIT"
+provides = "bitcoin-tx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bitcoin-tx-23.0-r3.apk"
+version = "23.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

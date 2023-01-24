@@ -1,0 +1,15 @@
+checksum = "abe1f0a68a7d57ba07f7497eefd4f39311b8f5281f11313b7c9c04b51fa195a1"
+licence = "MIT"
+provides = "lua5.3-mediator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lua5.3-mediator-1.1.2-r2.apk"
+version = "1.1.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"]]

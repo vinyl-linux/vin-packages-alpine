@@ -1,0 +1,15 @@
+checksum = "af23bbbc30ffafd5fefd77909467c9709ab9284d71a2fe0404e5f4c9a7f0d8a0"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph17-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph17-common-17.2.5-r5.apk"
+version = "17.2.5-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"], ["py3-cephfs17", "17.2.5-r5"], ["py3-prettytable", "0.7.2-r8"], ["py3-rados17", "17.2.5-r5"], ["py3-rbd17", "17.2.5-r5"], ["librados17", "17.2.5-r5"], ["libradosstriper17", "17.2.5-r5"], ["librbd17", "17.2.5-r5"], ["libblkid", "2.38.1-r1"], ["boost1.80-program_options", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["keyutils-libs", "1.6.3-r1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

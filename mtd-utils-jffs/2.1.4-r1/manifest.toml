@@ -1,0 +1,15 @@
+checksum = "e4419c99aa0d70c5d0497090bd81971f66f5a2481efc61aa45018b640221581b"
+licence = "GPL-2.0-only"
+provides = "mtd-utils-jffs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtd-utils-jffs-2.1.4-r1.apk"
+version = "2.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lzo", "2.10.0-r3"], ["zlib", "1.2.13-r0"]]

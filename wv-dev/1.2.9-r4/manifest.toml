@@ -1,0 +1,15 @@
+checksum = "b1a839665bf2ae0aa6d7a3f9da43db24489d26641146585c1447c6c81b1d5c81"
+licence = "GPL-2.0-or-later"
+provides = "wv-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wv-dev-1.2.9-r4.apk"
+version = "1.2.9-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgsf-dev", "1.14.50-r0"], ["pkgconf", "1.9.4-r0"], ["wv", "1.2.9-r4"]]

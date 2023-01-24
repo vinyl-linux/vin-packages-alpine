@@ -1,0 +1,15 @@
+checksum = "72e76893095287ab98f1bc20683f95ce84f110fdfb11ca9d3c9018de9c68694e"
+licence = "PostgreSQL"
+provides = "libpq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpq-15.1-r0.apk"
+version = "15.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

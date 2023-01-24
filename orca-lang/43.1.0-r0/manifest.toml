@@ -1,0 +1,15 @@
+checksum = "17c61f5303d5b35c00a7df8ef51cb19449f701bfa8c702717d7319421c761398"
+licence = "LGPL-2.1-or-later"
+provides = "orca-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/orca-lang-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["at-spi2-core", "2.46.0-r0"], ["gst-plugins-good", "1.20.5-r0"], ["gtk+3.0", "3.24.36-r0"], ["libatk-1.0", "2.46.0-r0"], ["py3-atspi", "2.46.0-r0"], ["py3-gobject3", "3.42.2-r0"], ["py3-xdg", "0.28.0-r0"], ["python3", "3.10.9-r1"]]

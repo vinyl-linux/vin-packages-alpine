@@ -1,0 +1,15 @@
+checksum = "d8ecd549908c17945cf10dfab1d5dc367441f3d7a62a9570ba0578976d785e40"
+licence = "GPL-3.0-or-later"
+provides = "dbus-test-runner-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dbus-test-runner-dev-19.04.0-r2.apk"
+version = "19.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus-test-runner-libs", "19.4.0-r2"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

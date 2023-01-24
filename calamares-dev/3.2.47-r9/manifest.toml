@@ -1,0 +1,15 @@
+checksum = "b996e77dd644e7c987bbf38a51ce4796d4892019a2293efe19d7a9b22919774f"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-dev-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["extra-cmake-modules", "5.100.0-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["qt5-qttools-dev", "5.15.6"], ["yaml-cpp-dev", "0.7.0-r0"], ["calamares", "3.2.47-r9"]]

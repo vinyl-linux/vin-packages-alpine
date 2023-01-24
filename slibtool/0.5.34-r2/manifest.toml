@@ -1,0 +1,15 @@
+checksum = "1c78690aa5e4eefcc2f5a72c4149abf1adb55479768138337d90fdf37fd65cc4"
+licence = "MIT"
+provides = "slibtool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slibtool-0.5.34-r2.apk"
+version = "0.5.34-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

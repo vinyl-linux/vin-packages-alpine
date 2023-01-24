@@ -1,0 +1,15 @@
+checksum = "c37eaecd2c7db5964f1a1fc26b39e94bb120c3723b329467c2ac82a50f597c3a"
+licence = "MPL-2.0"
+provides = "consul"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/consul-1.14.1-r1.apk"
+version = "1.14.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

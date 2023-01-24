@@ -1,0 +1,15 @@
+checksum = "a77aa75e3c0886b8558c6c6f2f94154596c92fa7a0be20c284b336519bfda478"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-networkcfg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-mod-networkcfg-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"]]

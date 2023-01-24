@@ -1,0 +1,15 @@
+checksum = "f985dc4f9d83cb118280fbf71f606b857e684343449fbb10951de6226402693b"
+licence = "GPL-2.0-or-later"
+provides = "collectd-email"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-email-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "6df0fd80813b8ffeba7e7246a22e2ec30c12c31c94bd01a7652d0af41567c4bd"
+licence = "GPL-2.0-or-later"
+provides = "libva-vdpau-driver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libva-vdpau-driver-0.7.4-r2.apk"
+version = "0.7.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libvdpau", "1.5.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b88e558152ae9960dc75321c30c381c1f6b886d4299c23930ff4856687e13449"
+licence = "MIT"
+provides = "libinput-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libinput-libs-1.22.1-r0.apk"
+version = "1.22.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevdev", "1.13.0-r0"], ["mtdev", "1.1.6-r1"], ["eudev-libs", "3.2.11-r4"]]

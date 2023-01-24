@@ -1,0 +1,15 @@
+checksum = "820b939fc014985a9d683b2fe371075d0db0e8ae016cfcda268b3a67606c8b10"
+licence = "MIT"
+provides = "ssh-audit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ssh-audit-2.5.0-r1.apk"
+version = "2.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "da4c093c01337f79cab79511c59ecb56607a05e1c1d3046259e6f82a83fa6dab"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libstdc++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libstdc++-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

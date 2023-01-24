@@ -1,0 +1,15 @@
+checksum = "5973a32280324dea3c960f437872fc637deb55d4a594687296accb15f667beed"
+licence = "LGPL-2.1-or-later"
+provides = "libusbgx-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libusbgx-tools-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libusbgx", "0.2.0-r0"]]

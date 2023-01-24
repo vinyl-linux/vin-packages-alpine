@@ -1,0 +1,15 @@
+checksum = "2788844c3781fadf15ac3e2d1f0c6665096a3e830a8eb74b04715b004f0bb7dd"
+licence = "GPL-2.0-or-later"
+provides = "uvncrepeater"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uvncrepeater-014-r9.apk"
+version = "14.0.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

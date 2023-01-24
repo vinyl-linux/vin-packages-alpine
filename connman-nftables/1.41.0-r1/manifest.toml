@@ -1,0 +1,15 @@
+checksum = "f36061bf01912a1ebd8086c014738d056a9beba260590bb04fa1a2d550ad8a8c"
+licence = "GPL-2.0-only"
+provides = "connman-nftables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/connman-nftables-1.41-r1.apk"
+version = "1.41.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"], ["libmnl", "1.0.5-r0"], ["libnftnl", "1.2.4-r0"]]

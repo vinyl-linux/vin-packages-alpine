@@ -1,0 +1,15 @@
+checksum = "d9942485b29b9ffa9670b98d68ba032383035edcb6bb2f488a22bce68ed4cf91"
+licence = "BSD-3-Clause"
+provides = "mmh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mmh-0.4-r2.apk"
+version = "0.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

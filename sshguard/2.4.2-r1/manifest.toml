@@ -1,0 +1,15 @@
+checksum = "d9707fe39782b563f7ebd8c29cb5d3375fe19748af6a29ed018c4181605849df"
+licence = "ISC"
+provides = "sshguard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sshguard-2.4.2-r1.apk"
+version = "2.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iptables", "1.8.8-r2"], ["musl", "1.2.3-r4"]]

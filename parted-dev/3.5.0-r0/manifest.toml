@@ -1,0 +1,15 @@
+checksum = "a032d53ef64c0aea2aa25eaef4da2bb9ff7517a75e1ab7dd6cc1c47003a3f376"
+licence = "GPL-3.0-or-later"
+provides = "parted-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/parted-dev-3.5-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["parted", "3.5.0-r0"], ["pkgconf", "1.9.4-r0"]]

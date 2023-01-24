@@ -1,0 +1,15 @@
+checksum = "e9fa1fba79b56a600d378af229c3360e24040001fef23708bc15ad62ad7999eb"
+licence = "Apache-2.0"
+provides = "rspamd-fuzzy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rspamd-fuzzy-3.4-r1.apk"
+version = "3.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rspamd", "3.4.0-r1"]]

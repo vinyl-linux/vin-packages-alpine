@@ -1,0 +1,15 @@
+checksum = "612c76a58a34146698784012af0de73a942fb3ee3ff6927328121bdbab271f6a"
+licence = "GPL-2.0-only"
+provides = "xtables-addons"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xtables-addons-3.22-r0.apk"
+version = "3.22.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["iptables", "1.8.8-r2"]]

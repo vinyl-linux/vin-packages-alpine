@@ -1,0 +1,15 @@
+checksum = "5970c2b1b2cc640daa3dcbf6047967181efe98498fc4682e7ad006a0e70d32fe"
+licence = "LGPL-2.0-only"
+provides = "kirigami2-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kirigami2-libs-5.100.0-r1.apk"
+version = "5.100.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

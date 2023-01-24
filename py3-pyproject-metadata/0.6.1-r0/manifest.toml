@@ -1,0 +1,15 @@
+checksum = "be2c59b660820034100e6c13a21fc747e654c309790a2ab5642286866cfb9b64"
+licence = "MIT"
+provides = "py3-pyproject-metadata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyproject-metadata-0.6.1-r0.apk"
+version = "0.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-packaging", "21.3.0-r2"]]

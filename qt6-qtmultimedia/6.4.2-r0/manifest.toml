@@ -1,0 +1,15 @@
+checksum = "5a360a1e2a33753526cc7980a34ec23edf7d000d142c538e6b60218860ecb405"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtmultimedia"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtmultimedia-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-egl", "22.2.5-r1"], ["mesa-gl", "22.2.5-r1"], ["qt6-qtbase", "6.4.2-r0"], ["qt6-qtbase-x11", "6.4.2-r0"], ["qt6-qtdeclarative", "6.4.2-r0"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gstreamer", "1.20.5-r0"], ["libpulse", "16.1.0-r6"], ["libstdc++", "12.2.1"], ["libva", "2.16.0-r0"]]

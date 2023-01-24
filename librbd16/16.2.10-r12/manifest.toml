@@ -1,0 +1,15 @@
+checksum = "b378548505b1fa4f7f06813f8f3b56e8514a8d23066424d8ac7eff5af429b944"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "librbd16"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librbd16-16.2.10-r12.apk"
+version = "16.2.10-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librados16", "16.2.10-r12"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["cryptsetup-libs", "2.5.0-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

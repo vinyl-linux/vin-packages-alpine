@@ -1,0 +1,15 @@
+checksum = "317658d61c2e90c6e476c062f62c7b10a35eb895de5bb7f8533b2e04454227db"
+licence = "MIT"
+provides = "libfontenc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libfontenc-dev-1.1.6-r0.apk"
+version = "1.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libfontenc", "1.1.6-r0"], ["pkgconf", "1.9.4-r0"]]

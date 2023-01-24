@@ -1,0 +1,15 @@
+checksum = "bb0dd4c084cb66851bee5067443f3f5c3fabbad93fa956218d63fc4d307dc87f"
+licence = "LGPL-2.1-or-later"
+provides = "avahi-compat-libdns_sd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/avahi-compat-libdns_sd-0.8-r6.apk"
+version = "0.8.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"]]

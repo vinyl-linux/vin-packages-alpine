@@ -1,0 +1,15 @@
+checksum = "490e9bf837d67922ba313c539cdaaef8228be0eed84ce887c460edd850087a9c"
+licence = "GPL-2.0-only LGPL-2.1-only"
+provides = "fuse3-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fuse3-dev-3.12.0-r0.apk"
+version = "3.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fuse3-libs", "3.12.0-r0"], ["pkgconf", "1.9.4-r0"]]

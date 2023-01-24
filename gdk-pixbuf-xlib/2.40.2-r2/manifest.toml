@@ -1,0 +1,15 @@
+checksum = "84bb786c9397e81dd0afdcc87a03f61c87b56da9ffe3a753d329d296d1adbf47"
+licence = "LGPL-2.1-or-later"
+provides = "gdk-pixbuf-xlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gdk-pixbuf-xlib-2.40.2-r2.apk"
+version = "2.40.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"]]

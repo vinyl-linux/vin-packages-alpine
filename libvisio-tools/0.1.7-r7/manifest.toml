@@ -1,0 +1,15 @@
+checksum = "904c6949ecc97d7f326419a11d1731a1d0cb75ed8596e702a3ac28f57b8397a7"
+licence = "MPL-2.0"
+provides = "libvisio-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libvisio-tools-0.1.7-r7.apk"
+version = "0.1.7-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["libvisio", "0.1.7-r7"]]

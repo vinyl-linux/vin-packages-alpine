@@ -1,0 +1,15 @@
+checksum = "d248c5fd746d4494f11261cf8995cc87776d0b5981718ebdb2b2c9ffe1079305"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-file-listing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-file-listing-6.15-r0.apk"
+version = "6.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-http-date", "6.5.0-r1"]]

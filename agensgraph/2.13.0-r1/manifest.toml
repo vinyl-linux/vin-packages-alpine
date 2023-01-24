@@ -1,0 +1,15 @@
+checksum = "ceca27ab3949814e9e38941c4c14fe12cad24e9cb30b1cc77261f1d4cf0c2c1a"
+licence = "PostgreSQL AND Apache-2.0"
+provides = "agensgraph"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/agensgraph-2.13.0-r1.apk"
+version = "2.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tzdata", "2022.0.0-f-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["icu-libs", "72.1.0-r1"], ["readline", "8.2.0-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

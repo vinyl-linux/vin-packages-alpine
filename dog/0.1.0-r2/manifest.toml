@@ -1,0 +1,15 @@
+checksum = "0df57cc74664a863534a800f48039b833306725efdfdf457e335ce1d71b4ffb8"
+licence = "EUPL-1.2"
+provides = "dog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dog-0.1.0-r2.apk"
+version = "0.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"]]

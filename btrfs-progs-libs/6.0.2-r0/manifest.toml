@@ -1,0 +1,15 @@
+checksum = "29b207706008815f7249e9452721a21726f2da24d66ae6d3acd5258cc4c9e8b1"
+licence = "GPL-2.0-or-later LGPL-3.0-or-later"
+provides = "btrfs-progs-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/btrfs-progs-libs-6.0.2-r0.apk"
+version = "6.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

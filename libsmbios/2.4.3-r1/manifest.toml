@@ -1,0 +1,15 @@
+checksum = "c6aeb6e58c00af4dfff8a81745cee1d5b1ccbb58950b175fa9b9b80381ad3ae7"
+licence = "GPL-2.0-or-later AND OSL-2.1"
+provides = "libsmbios"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsmbios-2.4.3-r1.apk"
+version = "2.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "1d8424a985cd9a5099ba922b5cd1f82492d21e0d8f6a4bd99c06efc33a145471"
+licence = "MIT"
+provides = "py3-executing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-executing-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

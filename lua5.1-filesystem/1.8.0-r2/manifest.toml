@@ -1,0 +1,15 @@
+checksum = "1814f3dca50b9ef651319b09dbc737d7b5888152e3d888739437c2b02b71dcdb"
+licence = "MIT"
+provides = "lua5.1-filesystem"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-filesystem-1.8.0-r2.apk"
+version = "1.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.1", "5.1.5-r11"], ["musl", "1.2.3-r4"]]

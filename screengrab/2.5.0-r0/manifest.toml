@@ -1,0 +1,15 @@
+checksum = "965bc29a6935a8a1642e802b9f3b0f4a8aa3faa3188960799e697406c72cc6e1"
+licence = "GPL-2.0-or-later"
+provides = "screengrab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/screengrab-2.5.0-r0.apk"
+version = "2.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwindowsystem", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["libqtxdg", "3.10.0-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libxcb", "1.15.0-r0"]]

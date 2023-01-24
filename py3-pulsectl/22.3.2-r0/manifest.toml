@@ -1,0 +1,15 @@
+checksum = "c666d2e2768b870ce105d58a685966ca792b96d4ec87f3423f9d18749bc9c994"
+licence = "MIT"
+provides = "py3-pulsectl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pulsectl-22.3.2-r0.apk"
+version = "22.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "0b9d63d84ba651d9661d868c5345012bbc6ecd0dd9be8b642da2d82b9d5d8b53"
+licence = "LGPL-2.0-or-later VSL"
+provides = "ortp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ortp-5.1.64-r0.apk"
+version = "5.1.64-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bctoolbox", "5.1.64-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

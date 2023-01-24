@@ -1,0 +1,15 @@
+checksum = "70be5a0790ee85cc6486167db0914b58a8eec255160ea15ffcca90c6c309c30b"
+licence = "GPL-2.0-or-later"
+provides = "libptytty-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libptytty-dev-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libptytty", "2.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

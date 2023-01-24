@@ -1,0 +1,15 @@
+checksum = "f2481d55d33dc7eaec0d2e3942941b364b3c16c6efbdb15e96d89aa5c43a9450"
+licence = "GPL-2.0-or-later"
+provides = "glew-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glew-tools-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["glew", "2.2.0-r3"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

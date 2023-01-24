@@ -1,0 +1,15 @@
+checksum = "56cce7dbe95fdeaccea7b17cdd26d6bcb3b99222a3849b676643df0e50e76963"
+licence = "GPL-2.0-or-later"
+provides = "xonotic-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xonotic-server-0.8.5-r1.apk"
+version = "0.8.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xonotic", "0.8.5-r1"], ["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["zlib", "1.2.13-r0"]]

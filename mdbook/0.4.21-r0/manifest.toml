@@ -1,0 +1,15 @@
+checksum = "7b25dc6492273693c75b4b08595f86b022a307ce88b9bac776c0b14e6f671aff"
+licence = "MPL-2.0"
+provides = "mdbook"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mdbook-0.4.21-r0.apk"
+version = "0.4.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

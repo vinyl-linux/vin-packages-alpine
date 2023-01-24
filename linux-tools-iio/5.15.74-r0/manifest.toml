@@ -1,0 +1,15 @@
+checksum = "74c4fbbdf440274e326b97dcaaffe509509f82022c155dc6175c26af3398a963"
+licence = "GPL-2.0-only"
+provides = "linux-tools-iio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-tools-iio-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "6b56b333b4c7f5b0609a4cd0b1e02ed00056db93ca10ee5e11f2001fea9b8ddd"
+licence = "Apache-2.0"
+provides = "victoria-metrics"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/victoria-metrics-1.83.1-r1.apk"
+version = "1.83.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

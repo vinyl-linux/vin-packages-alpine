@@ -1,0 +1,15 @@
+checksum = "16eb8928bcbffc4c084e063802ac92e76dcb91546062c050900db2ac92944a09"
+licence = "BSD-3-Clause"
+provides = "py3-prettytable3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-prettytable3-3.5.0-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-wcwidth", "0.2.5-r2"]]

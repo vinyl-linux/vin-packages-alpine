@@ -1,0 +1,15 @@
+checksum = "57a2bbabfc80925bb709dd09dd0f43aadb265d5f80d8b4df52cffd7abdaa1791"
+licence = "GPL-2.0-or-later"
+provides = "eggdrop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/eggdrop-1.9.3-r0.apk"
+version = "1.9.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["tcl", "8.6.12-r1"], ["zlib", "1.2.13-r0"]]

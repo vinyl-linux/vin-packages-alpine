@@ -1,0 +1,15 @@
+checksum = "7094e988be50c93e1f2e5159b4b19eb10cbb92834227b1cfc5741eaf4a6c87b2"
+licence = "GPL"
+provides = "pingu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pingu-1.5-r3.apk"
+version = "1.5.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"]]

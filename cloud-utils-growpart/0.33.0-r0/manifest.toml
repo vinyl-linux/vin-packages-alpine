@@ -1,0 +1,15 @@
+checksum = "d1119fe12efa1427f44a44ff75d2e6d9ddc9b897efd2a04a4719c8bc26320349"
+licence = "GPL-3.0-or-later"
+provides = "cloud-utils-growpart"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cloud-utils-growpart-0.33-r0.apk"
+version = "0.33.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["partx", "2.38.1-r1"], ["sfdisk", "2.38.1-r1"]]

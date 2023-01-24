@@ -1,0 +1,15 @@
+checksum = "953aa4301e5bbfa6b7c6e6fea713ea9ce1bc3a498d2a8c8bd1753de871c6a10c"
+licence = "LGPL-2.1-or-later"
+provides = "libmatroska-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmatroska-dev-1.7.1-r0.apk"
+version = "1.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmatroska", "1.7.1-r0"], ["libebml-dev", "1.4.4-r0"], ["pkgconf", "1.9.4-r0"]]

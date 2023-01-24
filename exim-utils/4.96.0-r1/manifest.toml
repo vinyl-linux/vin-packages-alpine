@@ -1,0 +1,15 @@
+checksum = "95ac1f41fba0def8ed90b1f5fc9474a35581848a598d14c739c83a5f366545b4"
+licence = "GPL-2.0-or-later"
+provides = "exim-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-utils-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.96.0-r1"], ["musl", "1.2.3-r4"], ["tdb-libs", "1.4.7-r0"]]

@@ -1,0 +1,15 @@
+checksum = "23289ff1795dfa96866f88c442d66e499bbb0d238579a3cd4049877802c16629"
+licence = "GPL-2.0-only"
+provides = "linux-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-tools-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perf", "5.15.74-r0"], ["cpupower", "5.15.74-r0"], ["linux-tools-gpio", "5.15.74-r0"], ["linux-tools-iio", "5.15.74-r0"]]

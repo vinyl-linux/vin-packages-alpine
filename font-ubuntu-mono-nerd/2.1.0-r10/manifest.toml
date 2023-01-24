@@ -1,0 +1,15 @@
+checksum = "c6efc694dfff5a3c5f5c316f227fa78b6882b29a9bcdd58f6fa7f9ba6a5c10b4"
+licence = "MIT AND OFL-1.1 AND Apache-2.0"
+provides = "font-ubuntu-mono-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-ubuntu-mono-nerd-2.1.0-r10.apk"
+version = "2.1.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

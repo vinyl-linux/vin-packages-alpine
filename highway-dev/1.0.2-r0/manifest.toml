@@ -1,0 +1,15 @@
+checksum = "d702cce2f8721e200347a275d88f35fbe87fc7c3caf82a84afc5ae7cd67eac42"
+licence = "Apache-2.0"
+provides = "highway-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/highway-dev-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtest-dev", "1.12.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ed0f7ff97c7f92c1efece07d1887ad1e2a9dc56c4500dcfac5c80db31363baa1"
+licence = "GPL-2.0"
+provides = "ssmtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ssmtp-2.64-r18.apk"
+version = "2.64.0-r18"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

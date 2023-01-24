@@ -1,0 +1,15 @@
+checksum = "b6805eae4ffe1808efce159ab425d343d3837d482e71d2bd4b059fb47a0c37f4"
+licence = "MIT"
+provides = "wezterm-extra-terminfo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wezterm-extra-terminfo-20220624.141144-r2.apk"
+version = "20220624.141144.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo-base", "6.3.0"]]

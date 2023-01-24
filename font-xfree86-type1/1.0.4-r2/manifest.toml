@@ -1,0 +1,15 @@
+checksum = "6d75a419f585599605868e98f0d2ac2ef1053c20e20cfee4a73f18e2f29a9102"
+licence = "custom"
+provides = "font-xfree86-type1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-xfree86-type1-1.0.4-r2.apk"
+version = "1.0.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

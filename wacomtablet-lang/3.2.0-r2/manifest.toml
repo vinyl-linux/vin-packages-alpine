@@ -1,0 +1,15 @@
+checksum = "f6b8551d83a152fb32b360875c6d761840b7e54c1bd2eb8b25512a46b937437c"
+licence = "GPL-2.0-or-later"
+provides = "wacomtablet-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wacomtablet-lang-3.2.0-r2.apk"
+version = "3.2.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xinput", "1.6.3-r1"]]

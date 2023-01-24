@@ -1,0 +1,15 @@
+checksum = "ce4668b4157c0e4ab76441fed7662ca2558ab3f1ae99f2bf1a5f51ddac8f1ec7"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-unicode-collate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-unicode-collate-1.31-r1.apk"
+version = "1.31.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

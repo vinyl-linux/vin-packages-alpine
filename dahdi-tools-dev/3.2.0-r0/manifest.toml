@@ -1,0 +1,15 @@
+checksum = "b2ca3605e4f8174dcf863b085f24cfd7096cd655e251fcc34d2c74dc068cfcce"
+licence = "GPL-2.0-or-later"
+provides = "dahdi-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dahdi-tools-dev-3.2.0-r0.apk"
+version = "3.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bsd-compat-headers", "0.7.2-r3"], ["linux-headers", "5.19.5-r0"], ["dahdi-linux-dev", "3.2.0-r0"], ["newt-dev", "0.52.23-r0"], ["dahdi-tools", "3.2.0-r0"]]

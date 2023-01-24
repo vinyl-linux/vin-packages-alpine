@@ -1,0 +1,15 @@
+checksum = "f8ef15c330a844252ffb6a71b1fd6317b4b68e1cf490a965f4a9884040500a2c"
+licence = "GPL-3.0-or-later"
+provides = "git-crypt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-crypt-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

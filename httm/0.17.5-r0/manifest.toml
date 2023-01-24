@@ -1,0 +1,15 @@
+checksum = "3afa757364ce6e8dc2c87d485de73eb9209d1e5c43a343e67ff48c1f5b6eba96"
+licence = "MPL-2.0"
+provides = "httm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/httm-0.17.5-r0.apk"
+version = "0.17.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

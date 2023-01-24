@@ -1,0 +1,15 @@
+checksum = "7730a0a4f8f14578f869ba92dafc06f5e87a03ac7e6810d6f7591c368c09e763"
+licence = "GPL-2.0-or-later"
+provides = "mutter-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mutter-dbg-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-settings-daemon", "43.0.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["mutter-schemas", "43.2.0-r0"], ["xkeyboard-config", "2.37.0-r0"], ["xwayland", "22.1.7-r0"]]

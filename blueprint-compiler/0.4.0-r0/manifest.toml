@@ -1,0 +1,15 @@
+checksum = "e1c0a9df355d2d914ac3f611bfe01fa6597d01bcb264660cb1dd7830ea1010f6"
+licence = "LGPL-3.0-or-later"
+provides = "blueprint-compiler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blueprint-compiler-0.4.0-r0.apk"
+version = "0.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gobject-introspection-dev", "1.74.0-r1"], ["gtk4.0", "4.8.3-r0"], ["python3", "3.10.9-r1"], ["py3-gobject3", "3.42.2-r0"]]

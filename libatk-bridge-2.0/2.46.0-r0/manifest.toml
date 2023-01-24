@@ -1,0 +1,15 @@
+checksum = "d3038c2f3c23117fae04c1291bb8945d338e391655cc6a9af3f3d7f19ce16126"
+licence = "LGPL-2.0-or-later"
+provides = "libatk-bridge-2.0"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libatk-bridge-2.0-2.46.0-r0.apk"
+version = "2.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libatk-1.0", "2.46.0-r0"], ["at-spi2-core", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"]]

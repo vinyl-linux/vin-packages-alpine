@@ -1,0 +1,15 @@
+checksum = "bce349518376cce5baed7af3245870c3aa5235c0534838cc1798bfee5f655240"
+licence = "Apache-2.0"
+provides = "netcdf-cxx4-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netcdf-cxx4-dev-4.3.1-r1.apk"
+version = "4.3.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netcdf-dev", "4.8.1-r4"], ["netcdf-cxx4", "4.3.1-r1"], ["pkgconf", "1.9.4-r0"]]

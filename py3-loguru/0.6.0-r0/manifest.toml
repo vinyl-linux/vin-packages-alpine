@@ -1,0 +1,15 @@
+checksum = "3104d50cab61157a5d0f76bb59219e8fe16363a6a59b9188bc92a4a6fd12e837"
+licence = "MIT"
+provides = "py3-loguru"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-loguru-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-colorama", "0.4.6-r0"]]

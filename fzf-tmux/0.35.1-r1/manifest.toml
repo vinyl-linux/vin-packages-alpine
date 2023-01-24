@@ -1,0 +1,15 @@
+checksum = "7f6b8855d7e3ce723af49a62dbd60d1d057813e5bb54af17a257cd119c38352c"
+licence = "MIT"
+provides = "fzf-tmux"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fzf-tmux-0.35.1-r1.apk"
+version = "0.35.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tmux", "3.3.0-a-r0"], ["bash", "5.2.15-r0"]]

@@ -1,0 +1,15 @@
+checksum = "5143fd681b0137c52480537dd2132b558c10e6387eddf4aa4ecedc6e664c6d02"
+licence = "MIT"
+provides = "kuserfeedback"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kuserfeedback-1.2.0-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

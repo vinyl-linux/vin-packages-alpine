@@ -1,0 +1,15 @@
+checksum = "95ce52a9b7439468df2ed772783b1af3afac11898b1a0e42942ff925d5f949d5"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-snmpstats"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-snmpstats-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["net-snmp-libs", "5.9.3-r2"], ["net-snmp-agent-libs", "5.9.3-r2"]]

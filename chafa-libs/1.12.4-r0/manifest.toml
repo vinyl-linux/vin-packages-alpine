@@ -1,0 +1,15 @@
+checksum = "6eb24419032f070806e326262ca8a56ab6e16a3d22e0ff4ec577b4ef4c0bda5d"
+licence = "LGPL-3.0-or-later"
+provides = "chafa-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chafa-libs-1.12.4-r0.apk"
+version = "1.12.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

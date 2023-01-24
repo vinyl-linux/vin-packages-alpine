@@ -1,0 +1,15 @@
+checksum = "3bade00a4de9d3b1dafe51fd4d1f4779ccded31b3b6626363297f3a6e26bc5bf"
+licence = "MIT"
+provides = "py3-rebulk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rebulk-3.1.0-r1.apk"
+version = "3.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-regex", "2022.10.31-r0"]]

@@ -1,0 +1,15 @@
+checksum = "838a85eacbd36f3dbde1148b5ed001ff47eafd39d534ca88c6b5edd6b86749ba"
+licence = "Apache-2.0"
+provides = "opensubdiv-tutorials"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opensubdiv-tutorials-3.5.0-r0.apk"
+version = "3.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opensubdiv", "3.5.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

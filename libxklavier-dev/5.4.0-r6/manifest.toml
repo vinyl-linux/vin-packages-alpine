@@ -1,0 +1,15 @@
+checksum = "d91afbed22b53d7b706d9cbbb095af3f47a3167b3da3d7d9fcd4447d26b464d3"
+licence = "LGPL-2.0-or-later"
+provides = "libxklavier-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxklavier-dev-5.4-r6.apk"
+version = "5.4.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext-dev", "0.21.1-r1"], ["libxkbfile-dev", "1.1.1-r0"], ["libxklavier", "5.4.0-r6"], ["glib-dev", "2.74.5-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

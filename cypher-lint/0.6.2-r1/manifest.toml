@@ -1,0 +1,15 @@
+checksum = "a0a06eedf45467b13bd6b606006ed3848ac45bed03b95295ecc7867044bbe42c"
+licence = "Apache-2.0"
+provides = "cypher-lint"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cypher-lint-0.6.2-r1.apk"
+version = "0.6.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcypher-parser", "0.6.2-r1"]]

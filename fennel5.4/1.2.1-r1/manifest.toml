@@ -1,0 +1,15 @@
+checksum = "543b31f9088a6def6e8472b6183c8fff2b7d32dfadf8c4d8c1a8d368454fb9d2"
+licence = "MIT"
+provides = "fennel5.4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fennel5.4-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.4", "5.4.4-r6"], ["musl", "1.2.3-r4"], ["lua5.4-libs", "5.4.4-r6"]]

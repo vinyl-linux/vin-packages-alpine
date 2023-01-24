@@ -1,0 +1,15 @@
+checksum = "3ccf03d6f79e0ad302ec1c3df1004c03a675caf16cc721be6108637e0a292e05"
+licence = "LGPL-2.0-or-later"
+provides = "gst-editing-services-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gst-editing-services-dev-1.20.5-r0.apk"
+version = "1.20.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-editing-services", "1.20.5-r0"], ["glib-dev", "2.74.5-r0"], ["gstreamer-dev", "1.20.5-r0"], ["gst-plugins-base-dev", "1.20.5-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

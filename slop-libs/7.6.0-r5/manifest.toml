@@ -1,0 +1,15 @@
+checksum = "88ca7de0235cd6b77bc43a46d2bb00380ed57b09286c45354fe59e716071a650"
+licence = "MIT"
+provides = "slop-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/slop-libs-7.6-r5.apk"
+version = "7.6.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["glew", "2.2.0-r3"], ["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxrender", "0.9.11-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

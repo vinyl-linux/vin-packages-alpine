@@ -1,0 +1,15 @@
+checksum = "9270a813e52197dd9f1a42d9841413eb14fbcbb4f114495843bd3c6e2ccd07b1"
+licence = "MIT"
+provides = "tiny-cloud-azure"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-azure-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tiny-cloud", "2.1.2-r0"], ["yash-binsh", "2.53.0-r2"]]

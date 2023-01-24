@@ -1,0 +1,15 @@
+checksum = "f414a7c5cba63699cffe11aff557a73a75f61d61a5d66a7daa95139675d30e6c"
+licence = "MIT"
+provides = "dotnet7-build"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet7-build-7.0.102-r0.apk"
+version = "7.0.102-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["lttng-ust", "2.13.3-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["libunwind", "1.6.2-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6553ba724c4155e394fc773506ef84e182429fc17fe1ace90c0b47be6a5d0306"
+licence = "GPL-2.0-or-later"
+provides = "hexchat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hexchat-2.16.1-r2.apk"
+version = "2.16.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["dbus-glib", "0.112.0-r1"], ["gtk+2.0", "2.24.33-r7"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["lua5.4-libs", "5.4.4-r6"], ["pango", "1.50.12-r0"], ["libssl3", "3.0.7-r2"]]

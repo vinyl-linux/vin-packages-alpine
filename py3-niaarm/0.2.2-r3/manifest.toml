@@ -1,0 +1,15 @@
+checksum = "baffbc7f8884a25002de4b016847e585fa20410c3669cce4c84b0bef1d7c2b47"
+licence = "MIT"
+provides = "py3-niaarm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-niaarm-0.2.2-r3.apk"
+version = "0.2.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-pandas", "1.5.1-r0"], ["py3-niapy", "2.0.4-r0"], ["py3-nltk", "3.7.0-r1"]]

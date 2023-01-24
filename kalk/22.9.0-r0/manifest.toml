@@ -1,0 +1,15 @@
+checksum = "1259984f95d4c0bf07353d34aeb491c969036cfb7c8580f2d5ab07c095f5148a"
+licence = "GPL-3.0-or-later"
+provides = "kalk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kalk-22.09-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kunitconversion", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["mpfr4", "4.1.0-r0"], ["libstdc++", "12.2.1"]]

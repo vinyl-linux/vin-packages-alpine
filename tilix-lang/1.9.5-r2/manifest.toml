@@ -1,0 +1,15 @@
+checksum = "ac85cdbd75921b38f1fbe1df3d34191a0c0cf2ce0e17618e6905e5542f98bc1d"
+licence = "MPL-2.0"
+provides = "tilix-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tilix-lang-1.9.5-r2.apk"
+version = "1.9.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["libsecret", "0.20.5-r0"], ["kwallet", "5.100.0-r0"], ["vte3", "0.70.2-r0"]]

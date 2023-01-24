@@ -1,0 +1,15 @@
+checksum = "877c3082a7d4ca780f882f54b3325c00dd4fa19f59c6beaeb80f1a125c770d20"
+licence = "LGPL-2.1-only"
+provides = "signond"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/signond-8.61-r0.apk"
+version = "8.61.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

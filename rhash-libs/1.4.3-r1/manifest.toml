@@ -1,0 +1,15 @@
+checksum = "8582047df5cacc7828bcb7e4c3c43810ceb8299b702742480811f9ecd41621ef"
+licence = "0BSD"
+provides = "rhash-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rhash-libs-1.4.3-r1.apk"
+version = "1.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

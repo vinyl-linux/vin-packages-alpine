@@ -1,0 +1,15 @@
+checksum = "1699eb7f7fbce253f4ebd959dba9ae3ecd198371b18b4ce13e5769cb202f5535"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-package-anon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-package-anon-0.05-r11.apk"
+version = "0.5.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "82375d82021e7ae24bf258c9bdcc6ef794d778472c24623e66d300f548a1bf89"
+licence = "MIT"
+provides = "py3-jaraco.itertools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-jaraco.itertools-6.2.1-r0.apk"
+version = "6.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-inflect", "6.0.0-r1"], ["py3-more-itertools", "9.0.0-r0"], ["python3", "3.10.9-r1"]]

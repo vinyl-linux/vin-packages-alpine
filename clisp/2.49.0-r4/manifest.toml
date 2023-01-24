@@ -1,0 +1,15 @@
+checksum = "9864b4e215230ed2995a37cf4a6f6dce456a2125f724821f28804e3f1a7fd38f"
+licence = "GPL-2.0-only"
+provides = "clisp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clisp-2.49-r4.apk"
+version = "2.49.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffcall", "2.4.0-r0"], ["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["libsigsegv", "2.14.0-r0"]]

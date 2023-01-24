@@ -1,0 +1,15 @@
+checksum = "3748226ffa2960eba27dbe049e8b9143d0c9ae5535405ed5515931fff78f2717"
+licence = "IJG AND BSD-3-Clause AND GPL-2.0-only"
+provides = "netpbm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netpbm-dev-10.73.41-r1.apk"
+version = "10.73.41-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netpbm", "10.73.41-r1"], ["pkgconf", "1.9.4-r0"]]

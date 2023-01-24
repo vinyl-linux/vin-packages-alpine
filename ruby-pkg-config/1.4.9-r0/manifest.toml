@@ -1,0 +1,15 @@
+checksum = "250dff6f598538f6e84584b435ea4b90a297a3b3f5c16e26adbd2fc10e58a4e7"
+licence = "LGPL-2.0-or-later"
+provides = "ruby-pkg-config"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-pkg-config-1.4.9-r0.apk"
+version = "1.4.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"]]

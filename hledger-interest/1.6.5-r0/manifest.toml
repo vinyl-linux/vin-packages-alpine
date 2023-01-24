@@ -1,0 +1,15 @@
+checksum = "8ce3629fdf454629e94464f1d8c9f60e39c342ff8e52ab7bcf22cfb35a4200b5"
+licence = "BSD-3-Clause"
+provides = "hledger-interest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hledger-interest-1.6.5-r0.apk"
+version = "1.6.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"]]

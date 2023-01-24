@@ -1,0 +1,15 @@
+checksum = "d23cdb7c456e01fef6afc0e080f1f9a63f339f4ac38c1e787c96ce770c640a8d"
+licence = "MIT"
+provides = "dotnet6-apphost-pack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet6-apphost-pack-6.0.13-r0.apk"
+version = "6.0.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet6-hostfxr", "6.0.13-r0"], ["icu-data-full", "72.1.0-r1"], ["icu-libs", "72.1.0-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["libunwind", "1.6.2-r0"], ["zlib", "1.2.13-r0"]]

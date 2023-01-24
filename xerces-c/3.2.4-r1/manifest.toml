@@ -1,0 +1,15 @@
+checksum = "f8fcab70b6f62ec80a121fa3d37902eb2aba2ca3c2d651105600e7433fbac41c"
+licence = "Apache-2.0"
+provides = "xerces-c"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xerces-c-3.2.4-r1.apk"
+version = "3.2.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["libstdc++", "12.2.1"]]

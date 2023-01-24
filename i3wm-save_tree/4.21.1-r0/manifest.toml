@@ -1,0 +1,15 @@
+checksum = "34e8a699d257d0e63ca00ca5bf626c88a79ddf5cf4b41692253ddbb04c3cf6d9"
+licence = "BSD-3-Clause"
+provides = "i3wm-save_tree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/i3wm-save_tree-4.21.1-r0.apk"
+version = "4.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["i3wm", "4.21.1-r0"], ["perl-anyevent-i3", "0.17.0-r3"]]

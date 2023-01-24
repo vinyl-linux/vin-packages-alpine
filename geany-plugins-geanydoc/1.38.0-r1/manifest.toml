@@ -1,0 +1,15 @@
+checksum = "a90ae740242b973a95ccc67a6e8569fd7f31f64ed84b38a8ebd9d55002587520"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-geanydoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-geanydoc-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"], ["gtk+3.0", "3.24.36-r0"]]

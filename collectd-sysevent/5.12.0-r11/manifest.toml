@@ -1,0 +1,15 @@
+checksum = "0cbea3e235904c737bec0bdfe0fdc529e6d3bf48d11ac825d63421c2732cc645"
+licence = "GPL-2.0-or-later"
+provides = "collectd-sysevent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-sysevent-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["yajl", "2.1.0-r5"]]

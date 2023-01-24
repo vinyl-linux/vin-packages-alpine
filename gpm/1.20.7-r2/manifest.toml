@@ -1,0 +1,15 @@
+checksum = "1026f3053cebdeca06e34acae18b44f58b7003ea899c0a11299ad308b1c889ef"
+licence = "GPL-2.0-or-later"
+provides = "gpm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpm-1.20.7-r2.apk"
+version = "1.20.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

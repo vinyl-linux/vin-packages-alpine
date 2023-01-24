@@ -1,0 +1,15 @@
+checksum = "3fceac9ddb44c28061bbb4eb49e5fc454cd8d07d8aa70ea67f73e44f7fde657f"
+licence = "LGPL-2.1-or-later"
+provides = "libxmlb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxmlb-0.3.10-r0.apk"
+version = "0.3.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["xz-libs", "5.2.9-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c2659d8b075ba4a536eee53dbc5e664b3009f745a48d715b9da388a65786b379"
+licence = "GPL-2.0-or-later"
+provides = "gammaray-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gammaray-dev-2.11.3-r1.apk"
+version = "2.11.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gammaray", "2.11.3-r1"]]

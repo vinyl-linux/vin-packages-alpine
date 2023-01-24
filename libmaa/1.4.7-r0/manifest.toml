@@ -1,0 +1,15 @@
+checksum = "444898cd5705ea1ba1cf07ad22ee0e3fb43a6e27b714ea6ee4775fb5bed249fa"
+licence = "MIT"
+provides = "libmaa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmaa-1.4.7-r0.apk"
+version = "1.4.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

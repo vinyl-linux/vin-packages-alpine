@@ -1,0 +1,15 @@
+checksum = "f9e46479503642ad81eb0658eaebfd2a7cfd83590cd59e672269f6cad016079a"
+licence = "LGPL-2.1-or-later"
+provides = "openscenegraph-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openscenegraph-dev-3.6.5-r8.apk"
+version = "3.6.5-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openscenegraph", "3.6.5-r8"], ["pkgconf", "1.9.4-r0"]]

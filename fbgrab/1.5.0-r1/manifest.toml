@@ -1,0 +1,15 @@
+checksum = "71f67fef27cf9776f5935091210b8852c0bc22c86a3d433e1f80ec48cc3f3d2a"
+licence = "GPL-2.0-only"
+provides = "fbgrab"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fbgrab-1.5-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpng", "1.6.38-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ef908ca6f493fecacb49fc33da218cc0326a6e6f3876a68303b08ad2d63dcb92"
+licence = "PostgreSQL"
+provides = "pg_activity"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pg_activity-3.0.1-r0.apk"
+version = "3.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-attrs", "22.1.0-r0"], ["py3-blessed", "1.19.1-r0"], ["py3-humanize", "4.4.0-r0"], ["py3-psutil", "5.9.4-r0"], ["py3-psycopg2", "2.9.5-r0"], ["python3", "3.10.9-r1"]]

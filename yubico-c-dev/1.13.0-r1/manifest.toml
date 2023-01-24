@@ -1,0 +1,15 @@
+checksum = "aaf663cfbc40c5b52d8d0cd403537da42e62e943b110df423b56d2d8317058af"
+licence = "BSD-2-Clause"
+provides = "yubico-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yubico-c-dev-1.13-r1.apk"
+version = "1.13.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yubico-c", "1.13.0-r1"]]

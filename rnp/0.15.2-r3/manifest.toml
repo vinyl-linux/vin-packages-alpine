@@ -1,0 +1,15 @@
+checksum = "d5747e9849b3065881050f9744886527981bed58b7835d7b61cd09c69040b937"
+licence = "BSD-2-Clause"
+provides = "rnp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rnp-0.15.2-r3.apk"
+version = "0.15.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["json-c", "0.16.0-r2"], ["librnp", "0.15.2-r3"], ["libstdc++", "12.2.1"]]

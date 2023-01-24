@@ -1,0 +1,15 @@
+checksum = "69e6bdb0916bf7febac6ed3a813abf1f97d10670f0dadd84f185cdef69a460c4"
+licence = "GPL-2.0-or-later"
+provides = "libsigsegv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsigsegv-2.14-r0.apk"
+version = "2.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

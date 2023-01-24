@@ -1,0 +1,15 @@
+checksum = "1a3e359f12a205e10504d6d5c31a00a76f9469eac417b292da2ded15d191255e"
+licence = "BSD-2-Clause"
+provides = "py3-tblib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-tblib-1.7.0-r3.apk"
+version = "1.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

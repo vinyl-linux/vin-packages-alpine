@@ -1,0 +1,15 @@
+checksum = "780b070772b947c04ea6217abcf5595656ac5e557ceeb5e4b5b954b8e1c2101c"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later AND GPL-3.0-or-later"
+provides = "py3-mlt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-mlt-7.12.0-r0.apk"
+version = "7.12.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["mlt", "7.12.0-r0"], ["libstdc++", "12.2.1"]]

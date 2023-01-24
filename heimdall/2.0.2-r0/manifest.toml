@@ -1,0 +1,15 @@
+checksum = "91f6bc0e12772f62545db139fc7ef0117781ccfd29792bf3fe81fe5ebaa59055"
+licence = "MIT"
+provides = "heimdall"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/heimdall-2.0.2-r0.apk"
+version = "2.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libusb", "1.0.26-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bef5b1a0eaf0d5b0da18a8aefa45880a563f1df5f8d4dfaea2951b7a43f60d04"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-unpackfs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-mod-unpackfs-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"], ["rsync", "3.2.7-r0"], ["yash-binsh", "2.53.0-r2"]]

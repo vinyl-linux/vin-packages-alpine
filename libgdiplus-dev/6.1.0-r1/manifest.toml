@@ -1,0 +1,15 @@
+checksum = "bc1209110adda1ceb4f63699f4f90f517a17d33fa3d79c1dbe8f117888019c09"
+licence = "MIT"
+provides = "libgdiplus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgdiplus-dev-6.1-r1.apk"
+version = "6.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tiff-dev", "4.4.0-r1"], ["cairo-dev", "1.17.6-r3"], ["libexif-dev", "0.6.24-r0"], ["giflib-dev", "5.2.1-r2"], ["glib-dev", "2.74.5-r0"], ["pango-dev", "1.50.12-r0"], ["libgdiplus", "6.1.0-r1"], ["pkgconf", "1.9.4-r0"]]

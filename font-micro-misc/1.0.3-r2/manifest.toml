@@ -1,0 +1,15 @@
+checksum = "65ec421648ec041b0fd6ae046c39d578ada032a67472cf693748adfb7c212afb"
+licence = "custom"
+provides = "font-micro-misc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-micro-misc-1.0.3-r2.apk"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

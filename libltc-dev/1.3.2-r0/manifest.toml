@@ -1,0 +1,15 @@
+checksum = "a0bc2684cf58453e6e596a0a58996e2030a6b6d27d8b7c21a654278c2cad88ff"
+licence = "LGPL-3.0-only"
+provides = "libltc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libltc-dev-1.3.2-r0.apk"
+version = "1.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libltc", "1.3.2-r0"], ["pkgconf", "1.9.4-r0"]]

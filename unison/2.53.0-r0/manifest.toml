@@ -1,0 +1,15 @@
+checksum = "6e5d6acedff0363ced7c2571cd7a507154b30c76595ca71aa6cbd42390bd678f"
+licence = "GPL-3.0-or-later"
+provides = "unison"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unison-2.53.0-r0.apk"
+version = "2.53.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "275ef8d59a022035d7b19a8a89b0511f4a559087e26cb121b1ab72ae821a5488"
+licence = "GPL-2.0-or-later"
+provides = "gnome-control-center-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-control-center-dev-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

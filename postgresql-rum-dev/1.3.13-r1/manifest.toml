@@ -1,0 +1,15 @@
+checksum = "a22df48b7c0dfd641ca8fda0962ed981ab0635831cde7b4c20c794207f4587c1"
+licence = "PostgreSQL"
+provides = "postgresql-rum-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-rum-dev-1.3.13-r1.apk"
+version = "1.3.13-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-rum", "1.3.13-r1"]]

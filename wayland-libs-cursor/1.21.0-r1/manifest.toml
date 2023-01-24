@@ -1,0 +1,15 @@
+checksum = "cf48cbea2c07b2e00dfa15fd9fb18adc539dc29e05b8a31be0072d124974cc46"
+licence = "MIT"
+provides = "wayland-libs-cursor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wayland-libs-cursor-1.21.0-r1.apk"
+version = "1.21.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["wayland-libs-client", "1.21.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "b2aa45762c45d3759dbb31ac47157e513258c60abd7bafc233e751962e86bdce"
+licence = "GPL-3.0-or-later"
+provides = "pcsc-lite-spy-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pcsc-lite-spy-libs-1.9.9-r0.apk"
+version = "1.9.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

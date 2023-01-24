@@ -1,0 +1,15 @@
+checksum = "d01f949748c717e81beb3649ce115d2a7affb0ba8cc858b1bde3067887ce5f66"
+licence = "BSD-2-Clause"
+provides = "prime_server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prime_server-0.7.0-r2.apk"
+version = "0.7.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["czmq", "4.2.1-r2"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libzmq", "4.3.4-r1"]]

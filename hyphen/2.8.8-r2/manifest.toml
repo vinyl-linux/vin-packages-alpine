@@ -1,0 +1,15 @@
+checksum = "f929f20ec7168da170ee4610c8e12ef77926c854287cbbb25e9fe0dd880a18a1"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
+provides = "hyphen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hyphen-2.8.8-r2.apk"
+version = "2.8.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "92cae9f153b49065284972a26425c6582c00098e0d6138891b3e24d413657155"
+licence = "custom"
+provides = "lynx-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lynx-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

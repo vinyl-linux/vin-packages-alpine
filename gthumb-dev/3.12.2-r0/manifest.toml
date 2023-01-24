@@ -1,0 +1,15 @@
+checksum = "32f1865fb6883325b3baba94a84f4b10b9ad38d18bc4ea51b6f9489498b20c83"
+licence = "GPL-2.0-or-later"
+provides = "gthumb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gthumb-dev-3.12.2-r0.apk"
+version = "3.12.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4b4df571f8fffa90e6f738f30b720cd6233935926e3835e4676b1ae8671aaead"
+licence = "PostgreSQL"
+provides = "postgresql13-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql13-client-13.9-r1.apk"
+version = "13.9.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-common", "1.1.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libpq", "15.1.0-r0"], ["readline", "8.2.0-r0"], ["zlib", "1.2.13-r0"]]

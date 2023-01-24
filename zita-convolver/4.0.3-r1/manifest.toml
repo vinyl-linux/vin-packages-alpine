@@ -1,0 +1,15 @@
+checksum = "e7a09124d99815b0274365b0dfdc1366c701ae91db81d1b88dce91ed3318dd54"
+licence = "GPL-3.0-only"
+provides = "zita-convolver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zita-convolver-4.0.3-r1.apk"
+version = "4.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["fftw-single-libs", "3.3.10-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

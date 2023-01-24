@@ -1,0 +1,15 @@
+checksum = "db4c074ef6430ec0fb9edb9e13276035abbf53ac83c04519152ba521805bb858"
+licence = "GPL-2.0-or-later"
+provides = "consolekit2-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/consolekit2-lang-1.2.4-r2.apk"
+version = "1.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["eudev", "3.2.11-r4"], ["polkit-elogind", "122.0.0-r0"]]

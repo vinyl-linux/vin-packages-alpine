@@ -1,0 +1,15 @@
+checksum = "15b14efd04ecb1b9e599a95e09b3dc5a6d167fbb50489869e4263ab35f7e220c"
+licence = "Apache-2.0"
+provides = "buildkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/buildkit-0.10.6-r1.apk"
+version = "0.10.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["containerd", "1.6.12-r1"]]

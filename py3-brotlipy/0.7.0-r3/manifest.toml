@@ -1,0 +1,15 @@
+checksum = "2e5f007c9f2a87be35694da275fedabf836d5992e846ad996e4144907ca4f3de"
+licence = "MIT"
+provides = "py3-brotlipy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-brotlipy-0.7.0-r3.apk"
+version = "0.7.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

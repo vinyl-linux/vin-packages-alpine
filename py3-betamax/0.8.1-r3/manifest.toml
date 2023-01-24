@@ -1,0 +1,15 @@
+checksum = "ec8d366b678c8fd4b7f43839fffc0945da0937b8782371d864a7f7d7f84e2130"
+licence = "Apache-2.0"
+provides = "py3-betamax"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-betamax-0.8.1-r3.apk"
+version = "0.8.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-requests", "2.28.1-r1"]]

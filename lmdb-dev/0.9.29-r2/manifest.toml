@@ -1,0 +1,15 @@
+checksum = "d17beb6b12650b6fc720cea378ec060ef53c49b676fa90057f3e663a43c22f44"
+licence = "OLDAP-2.8"
+provides = "lmdb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lmdb-dev-0.9.29-r2.apk"
+version = "0.9.29-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lmdb", "0.9.29-r2"], ["pkgconf", "1.9.4-r0"]]

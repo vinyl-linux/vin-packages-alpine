@@ -1,0 +1,15 @@
+checksum = "b0078870c58ac5f37dc30253f377e28a692293a1e64ede53202dd3bd00be59c3"
+licence = "GPL-2.0-or-later"
+provides = "nautilus-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nautilus-lang-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["tracker-miners", "3.4.3-r0"]]

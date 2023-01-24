@@ -1,0 +1,15 @@
+checksum = "e17857156d550fc945651317fa0617377cac28bafc45afd98be63904224f0f53"
+licence = "Apache-2.0"
+provides = "sget"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sget-1.12.1-r3.apk"
+version = "1.12.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite-libs", "1.9.9-r0"], ["musl", "1.2.3-r4"]]

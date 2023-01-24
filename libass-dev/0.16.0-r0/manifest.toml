@@ -1,0 +1,15 @@
+checksum = "561699a9ea63980f29986fd5be2269fbf507ba80e101e464a5f55797221270d0"
+licence = "ISC"
+provides = "libass-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libass-dev-0.16.0-r0.apk"
+version = "0.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["enca-dev", "1.19.0-r3"], ["fontconfig-dev", "2.14.1-r0"], ["fribidi-dev", "1.0.12-r0"], ["freetype-dev", "2.12.1-r0"], ["harfbuzz-dev", "5.3.1-r1"], ["libass", "0.16.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "efa90fc22f14e380c4e5ed1c6a7bb938e7e9921b117102c2b4f6ceeebcffc3d2"
+licence = "Public-Domain"
+provides = "ddate"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ddate-0.2.2-r3.apk"
+version = "0.2.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

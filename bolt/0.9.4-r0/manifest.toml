@@ -1,0 +1,15 @@
+checksum = "7ce3a666dec0e5cfaac68bb625e23204e6350198d869a19db9996682f14f2a85"
+licence = "LGPL-2.1-or-later"
+provides = "bolt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bolt-0.9.4-r0.apk"
+version = "0.9.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["polkit-libs", "122.0.0-r0"], ["eudev-libs", "3.2.11-r4"]]

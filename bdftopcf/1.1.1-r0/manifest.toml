@@ -1,0 +1,15 @@
+checksum = "5cc351b144b485ed945502e7dd338ac38d16dabbdf24e4d6def0735aeb0adb8f"
+licence = "MIT"
+provides = "bdftopcf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bdftopcf-1.1.1-r0.apk"
+version = "1.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

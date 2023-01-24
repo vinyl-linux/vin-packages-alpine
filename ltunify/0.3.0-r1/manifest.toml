@@ -1,0 +1,15 @@
+checksum = "0e11a77a8af3f1187ca089c626eef079450c21f67b89a15fd861cc61adff8992"
+licence = "GPL-3.0-or-later"
+provides = "ltunify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ltunify-0.3-r1.apk"
+version = "0.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b08aab0df3ac1a4d5d2a0234484cbe71266d58d81f4068e0b426118bc4296094"
+licence = "LGPL-3.0-only"
+provides = "hfd-service"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hfd-service-0.1.0-r1.apk"
+version = "0.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtfeedback", "0.0.0"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

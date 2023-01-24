@@ -1,0 +1,15 @@
+checksum = "23b18de099b0c95bcc9825edb4f4222a84c5d7c608b3419a96a8606f83d232c9"
+licence = "LGPL-2.1-or-later"
+provides = "vips-cpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vips-cpp-8.13.3-r1.apk"
+version = "8.13.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"], ["vips", "8.13.3-r1"]]

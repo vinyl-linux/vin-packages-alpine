@@ -1,0 +1,15 @@
+checksum = "24e43538a5f2d4f7f3861aa5cd931aa52713eb0919cf2bfbdf80debc69a2ce2c"
+licence = "MIT"
+provides = "nghttp2-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nghttp2-libs-1.51.0-r0.apk"
+version = "1.51.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

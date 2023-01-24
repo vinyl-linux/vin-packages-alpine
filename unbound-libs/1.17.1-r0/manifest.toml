@@ -1,0 +1,15 @@
+checksum = "e3b5fad2da4bc5d15a0b0dc1aba81b26f8abb544dd00087efbc9721a9997e55b"
+licence = "BSD-3-Clause"
+provides = "unbound-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/unbound-libs-1.17.1-r0.apk"
+version = "1.17.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libevent", "2.1.12-r5"], ["libssl3", "3.0.7-r2"]]

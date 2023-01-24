@@ -1,0 +1,15 @@
+checksum = "374f03947bf6b11af7731ac5ab917f067ae949be27d254d68a109ad074b7c64e"
+licence = "GPL-2.0-or-later OR GPL-3.0-or-later"
+provides = "libksba"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libksba-1.6.3-r0.apk"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgpg-error", "1.46.0-r1"]]

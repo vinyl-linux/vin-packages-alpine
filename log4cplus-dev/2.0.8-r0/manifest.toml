@@ -1,0 +1,15 @@
+checksum = "3a9fb266fea79faea64782c919ca84e7211bd322a0e5d1eb8fd85b370da2fad3"
+licence = "Apache-2.0"
+provides = "log4cplus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/log4cplus-dev-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["log4cplus-unicode", "2.0.8-r0"], ["log4cplus", "2.0.8-r0"], ["pkgconf", "1.9.4-r0"]]

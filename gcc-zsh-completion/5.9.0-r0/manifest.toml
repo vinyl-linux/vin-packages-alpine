@@ -1,0 +1,15 @@
+checksum = "fa35c5cdef61e2f7638cbfb7194e86e7b3ef491b03bd7c1dc3f4a6082e44a495"
+licence = "custom"
+provides = "gcc-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gcc-zsh-completion-5.9-r0.apk"
+version = "5.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["zsh", "5.9.0-r0"]]

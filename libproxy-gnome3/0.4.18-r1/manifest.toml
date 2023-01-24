@@ -1,0 +1,15 @@
+checksum = "b32e56424ac065137d19a67d345d4e33eaaff880d39b6327d95ec24ca6a8b07e"
+licence = "LGPL-2.0-or-later"
+provides = "libproxy-gnome3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libproxy-gnome3-0.4.18-r1.apk"
+version = "0.4.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libproxy", "0.4.18-r1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "5d35fde0bd7c462b1a22efe207b70867d2a84cd90a284d62c3da8ad7964e2f04"
+licence = "GPL"
+provides = "pstree"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pstree-2.40-r0.apk"
+version = "2.40.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

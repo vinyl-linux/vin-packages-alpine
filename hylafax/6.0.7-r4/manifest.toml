@@ -1,0 +1,15 @@
+checksum = "8d38aa94ea41d4a874df724da0d6b73d7a2c717518cbb4130aaeb1c3215ace8f"
+licence = "MIT"
+provides = "hylafax"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hylafax-6.0.7-r4.apk"
+version = "6.0.7-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ghostscript", "10.0.0-r0"], ["bash", "5.2.15-r0"], ["tiff-tools", "4.4.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"], ["zlib", "1.2.13-r0"]]

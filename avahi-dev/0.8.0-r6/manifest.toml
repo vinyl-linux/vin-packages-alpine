@@ -1,0 +1,15 @@
+checksum = "320f762e8d993413f9c60564d2dfc6ee31a7ceacf903ca089d8353e6c665c7ac"
+licence = "LGPL-2.1-or-later"
+provides = "avahi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/avahi-dev-0.8-r6.apk"
+version = "0.8.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdbm-dev", "1.23.0-r0"], ["avahi-compat-howl", "0.8.0-r6"], ["avahi-compat-libdns_sd", "0.8.0-r6"], ["avahi-glib", "0.8.0-r6"], ["avahi-libs", "0.8.0-r6"], ["avahi", "0.8.0-r6"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

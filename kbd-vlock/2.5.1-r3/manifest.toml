@@ -1,0 +1,15 @@
+checksum = "5ec89111e696d378ff2fd0a63591cf10d726322e96193baf39628501e0f3dc7f"
+licence = "GPL-2.0-or-later"
+provides = "kbd-vlock"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kbd-vlock-2.5.1-r3.apk"
+version = "2.5.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["linux-pam", "1.5.2-r1"]]

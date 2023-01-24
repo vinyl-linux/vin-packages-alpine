@@ -1,0 +1,15 @@
+checksum = "351fd56e7a4d917dcb09c76ac60268a8f766719bed534e7efb535f5f78e95bc9"
+licence = "LGPL-2.0-or-later"
+provides = "py3-psycopg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-psycopg-3.1.4-r0.apk"
+version = "3.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-typing-extensions", "4.4.0-r0"], ["libpq", "15.1.0-r0"]]

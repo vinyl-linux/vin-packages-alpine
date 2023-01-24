@@ -1,0 +1,15 @@
+checksum = "481600a3b313b9c94e69461e976383ef4594d046462602d5fcb839c6a9d37c60"
+licence = "AFL-2.1 OR GPL-2.0-or-later"
+provides = "dbus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dbus-dev-1.14.4-r0.apk"
+version = "1.14.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["util-linux-dev", "2.38.1-r1"], ["dbus-libs", "1.14.4-r0"], ["pkgconf", "1.9.4-r0"]]

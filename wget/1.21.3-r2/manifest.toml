@@ -1,0 +1,15 @@
+checksum = "4b2a81bb10dd2f56970b8ec9b1ea57fffbb5b4f95839f6f793fd38eabd4dccef"
+licence = "GPL-3.0-or-later WITH OpenSSL-Exception"
+provides = "wget"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wget-1.21.3-r2.apk"
+version = "1.21.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libidn2", "2.3.4-r0"], ["pcre2", "10.42.0-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

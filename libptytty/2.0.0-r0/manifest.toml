@@ -1,0 +1,15 @@
+checksum = "ff01bdb435af75c0c4bdc1ace3d10ae91b524372887032fd7cc54a45b5f57610"
+licence = "GPL-2.0-or-later"
+provides = "libptytty"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libptytty-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

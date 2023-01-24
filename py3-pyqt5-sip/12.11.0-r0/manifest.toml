@@ -1,0 +1,15 @@
+checksum = "8a458d2c77f2946f2df609c40103575ce6b02a9e75e6679a6beba7fc7166c907"
+licence = "custom:sip"
+provides = "py3-pyqt5-sip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyqt5-sip-12.11.0-r0.apk"
+version = "12.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

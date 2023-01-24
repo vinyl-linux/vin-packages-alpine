@@ -1,0 +1,15 @@
+checksum = "8141ef7ac1420309b51d1ab6d57c90aebfee467625619ee2273aa827a463fd36"
+licence = "custom"
+provides = "libxxf86vm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxxf86vm-1.1.5-r0.apk"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["musl", "1.2.3-r4"]]

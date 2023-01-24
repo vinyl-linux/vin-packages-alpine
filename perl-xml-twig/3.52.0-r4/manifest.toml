@@ -1,0 +1,15 @@
+checksum = "7dfbbb67bf39f01bcf62ec73510349f3d6470b6681ec9292bd807c0f05a36c76"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-xml-twig"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-xml-twig-3.52-r4.apk"
+version = "3.52.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-xml-parser", "2.46.0-r3"]]

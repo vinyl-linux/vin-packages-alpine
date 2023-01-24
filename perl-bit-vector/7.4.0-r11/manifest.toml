@@ -1,0 +1,15 @@
+checksum = "ef83ea2cdc75261fb95404e025d61910d397cfb91d40cfa352b0304ece74b5bb"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-bit-vector"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-bit-vector-7.4-r11.apk"
+version = "7.4.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-carp-clan", "6.8.0-r1"], ["musl", "1.2.3-r4"]]

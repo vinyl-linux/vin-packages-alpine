@@ -1,0 +1,15 @@
+checksum = "549e2b32b919561b0a0b55d40eaf67f6e1d4b964e3f3262130f6fa5611543b4f"
+licence = "MIT"
+provides = "namecoin-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/namecoin-cli-23.0-r1.apk"
+version = "23.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

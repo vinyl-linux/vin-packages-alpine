@@ -1,0 +1,15 @@
+checksum = "f1f8f083d9937204f6da351c3a740d34fc0f530170bfd1468f5ef05121c0e683"
+licence = "LGPL-2.0-or-later"
+provides = "rest-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rest-dev-0.8.1-r3.apk"
+version = "0.8.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["libsoup-dev", "2.74.3-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"], ["rest", "0.8.1-r3"]]

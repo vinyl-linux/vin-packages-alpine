@@ -1,0 +1,15 @@
+checksum = "eb74b052c5c3c3da5c98b7af2f56a2ec76271a1e5b3c452a819c4b57375c6460"
+licence = "Artistic-2.0"
+provides = "razor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/razor-2.85-r13.apk"
+version = "2.85.0-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-digest-sha1", "2.13.0-r15"], ["perl-getopt-long", "2.54.0-r0"], ["perl-uri", "5.17.0-r0"], ["musl", "1.2.3-r4"]]

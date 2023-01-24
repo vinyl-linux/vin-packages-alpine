@@ -1,0 +1,15 @@
+checksum = "ecc1bc9f157b4ab3522b655125d5185425973cbef0f4eb1495cc624738dd0b20"
+licence = "LGPL-2.0-or-later"
+provides = "aspell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aspell-0.60.8-r2.apk"
+version = "0.60.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspell-libs", "0.60.8-r2"], ["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "12.2.1"]]

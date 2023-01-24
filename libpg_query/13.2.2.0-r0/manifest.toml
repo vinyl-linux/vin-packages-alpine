@@ -1,0 +1,15 @@
+checksum = "5b21f075b44d2c924d02ec57be0ef0bfa3c12286d938595f7ad2b7b317c055e0"
+licence = "BSD-3-Clause"
+provides = "libpg_query"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpg_query-13.2.2.0-r0.apk"
+version = "13.2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["protobuf-c", "1.4.1-r1"], ["libxxhash", "0.8.1-r0"]]

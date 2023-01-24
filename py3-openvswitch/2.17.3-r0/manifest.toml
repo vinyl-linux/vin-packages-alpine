@@ -1,0 +1,15 @@
+checksum = "45581f37f7548049a3994350d35ac3b23d080b71cdec487acdd17164561b5ee0"
+licence = "Apache-2.0"
+provides = "py3-openvswitch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-openvswitch-2.17.3-r0.apk"
+version = "2.17.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

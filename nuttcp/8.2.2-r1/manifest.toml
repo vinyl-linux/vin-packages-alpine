@@ -1,0 +1,15 @@
+checksum = "d1eae5de8cbd648637b58fa0dd9df18f300bc4305c9751cea3a4cdf3dfaa9167"
+licence = "GPL-2.0-only"
+provides = "nuttcp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nuttcp-8.2.2-r1.apk"
+version = "8.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

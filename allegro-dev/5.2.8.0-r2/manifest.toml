@@ -1,0 +1,15 @@
+checksum = "6c1af24ee073ad09cec9a998cefce8dd14567a27eb94026c17a82c095ece2c97"
+licence = "BSD-3-Clause"
+provides = "allegro-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/allegro-dev-5.2.8.0-r2.apk"
+version = "5.2.8.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["allegro", "5.2.8.0-r2"], ["pkgconf", "1.9.4-r0"]]

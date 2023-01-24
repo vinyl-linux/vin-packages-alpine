@@ -1,0 +1,15 @@
+checksum = "14da66b0c820e0a2dbd3c5a19d69cc5a69a4149d222fa713b6118cb23f7c3e32"
+licence = "custom"
+provides = "lua5.2-discount"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.2-discount-1.2.10.1-r7.apk"
+version = "1.2.10.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c6dcdb5ba2aa0ed2555012a2a7ab90b9ac3d527229ae8b7b1be470a6b27f86e3"
+licence = "ISC"
+provides = "micro-tetris"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/micro-tetris-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "00a8a89cbf0d471eb97c06e159e35ddf9bcd265974e6ec3e3ce38d69c5e6f3a6"
+licence = "MIT"
+provides = "lua5.3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.3-5.3.6-r4.apk"
+version = "5.3.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["linenoise", "1.0.0-r2"], ["lua5.3-libs", "5.3.6-r4"]]

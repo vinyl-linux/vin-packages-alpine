@@ -1,0 +1,15 @@
+checksum = "3649cadd5e1e0126f70e74b4414adbd466415c94c4fbc4358217a9dca625f7f7"
+licence = "MIT"
+provides = "py3-pyzbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyzbar-0.1.8-r3.apk"
+version = "0.1.8-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["zbar", "0.23.92-r1"]]

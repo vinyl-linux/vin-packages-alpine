@@ -1,0 +1,15 @@
+checksum = "bb5ec78d9d7aec1aef1db95a09330b306764db9accb10766cd741020ad239110"
+licence = "BSD-3-Clause"
+provides = "makekit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/makekit-0.2-r1.apk"
+version = "0.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

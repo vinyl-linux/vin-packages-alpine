@@ -1,0 +1,15 @@
+checksum = "0de6587d44913fce87220e42d6c1bc26be75db9bd7523e4f03ba98a621740f59"
+licence = "GPL-3.0-or-later"
+provides = "qimgv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qimgv-1.0.2-r2.apk"
+version = "1.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hicolor-icon-theme", "0.17.0-r2"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["musl", "1.2.3-r4"], ["exiv2", "0.27.5-r1"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

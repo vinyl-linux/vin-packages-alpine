@@ -1,0 +1,15 @@
+checksum = "4702e29bc320f8e5a89387502ca54e85cec0fc86d973ce59773d4277ba1d1ee3"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt5-qtwayland-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtwayland-dev-5.15.6_git20220927-r1.apk"
+version = "5.15.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxcomposite-dev", "0.4.5-r1"], ["libxkbcommon-dev", "1.4.1-r0"], ["qt5-qtquickcontrols2-dev", "5.15.6"], ["wayland-dev", "1.21.0-r1"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qt5-qtwayland", "5.15.6"]]

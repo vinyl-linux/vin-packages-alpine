@@ -1,0 +1,15 @@
+checksum = "eaf4adfb2c3bd35bab7ea18e919c38f907029d5f426b669458a1d817701b25c5"
+licence = "GPL-3.0-only AND GPL-3.0-or-later"
+provides = "py3-uinput"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-uinput-0.11.2-r1.apk"
+version = "0.11.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

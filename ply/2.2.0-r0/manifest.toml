@@ -1,0 +1,15 @@
+checksum = "a0c1ba975f2d37ecbf959c47adb80a5c2c3966de4cb7ad217c171bf7ea1156ba"
+licence = "GPL-2.0-only"
+provides = "ply"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ply-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f2ba9b9a227a7a28202ea6e67c5d91a30e2bbbb2d14f5a4b193e3f0096af01e2"
+licence = "GPL-2.0-or-later"
+provides = "x265-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/x265-dev-3.5-r3.apk"
+version = "3.5.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["x265-libs", "3.5.0-r3"]]

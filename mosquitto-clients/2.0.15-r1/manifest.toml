@@ -1,0 +1,15 @@
+checksum = "d5aa365309dbd02d08976d18490e6ee8237639945eded27f3944b693db0a3413"
+licence = "EPL-1.0"
+provides = "mosquitto-clients"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mosquitto-clients-2.0.15-r1.apk"
+version = "2.0.15-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cjson", "1.7.15-r3"], ["mosquitto-libs", "2.0.15-r1"]]

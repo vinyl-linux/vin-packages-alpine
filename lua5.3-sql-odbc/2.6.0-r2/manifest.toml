@@ -1,0 +1,15 @@
+checksum = "79f2785e71e7d24336f67851e8d882b2c68292ffff7d37c285f00030b9fe59ba"
+licence = "MIT"
+provides = "lua5.3-sql-odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.3-sql-odbc-2.6.0-r2.apk"
+version = "2.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lua5.3", "5.3.6-r4"], ["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"]]

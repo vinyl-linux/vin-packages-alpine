@@ -1,0 +1,15 @@
+checksum = "3434a0b9240f1759f6a0b1660ab3aa4fd82fc262118ec68e1f7bdbb7cde0a169"
+licence = "LGPL-2.1-only AND LGPL-2.1-or-later"
+provides = "kconfigwidgets-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kconfigwidgets-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kauth-dev", "5.100.0-r0"], ["kcodecs-dev", "5.100.0-r0"], ["kconfig-dev", "5.100.1-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["kguiaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kwidgetsaddons-dev", "5.100.0-r0"], ["kconfigwidgets", "5.100.0-r0"]]

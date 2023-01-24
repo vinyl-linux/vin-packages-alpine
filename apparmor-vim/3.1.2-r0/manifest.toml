@@ -1,0 +1,15 @@
+checksum = "3d0b16f705a00337d4d02bf9003faf2853eef7c5b3de5274617e5da2546650f4"
+licence = "GPL-2.0-only"
+provides = "apparmor-vim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apparmor-vim-3.1.2-r0.apk"
+version = "3.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"]]

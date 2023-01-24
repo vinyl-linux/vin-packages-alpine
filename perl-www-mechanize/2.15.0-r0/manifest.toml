@@ -1,0 +1,15 @@
+checksum = "6d9c08cb04bca7f36648a9fb79de60aa68e8b91bdfdbc6e7db3ee387bf59f5a9"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-www-mechanize"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-www-mechanize-2.15-r0.apk"
+version = "2.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-libwww", "6.67.0-r0"], ["perl-html-tree", "5.7.0-r3"], ["perl-uri", "5.17.0-r0"], ["perl-html-parser", "3.80.0-r0"], ["perl-http-cookies", "6.10.0-r0"], ["perl-http-message", "6.44.0-r0"], ["perl-html-form", "6.10.0-r0"]]

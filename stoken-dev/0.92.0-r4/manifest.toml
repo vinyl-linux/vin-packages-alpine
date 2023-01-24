@@ -1,0 +1,15 @@
+checksum = "a548f204dd1cf1ddf2d089712746360981700a3dec88989c5c9741e7e003f71d"
+licence = "LGPL-2.1-or-later"
+provides = "stoken-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stoken-dev-0.92-r4.apk"
+version = "0.92.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nettle-dev", "3.8.1-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"], ["stoken", "0.92.0-r4"]]

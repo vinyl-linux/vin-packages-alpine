@@ -1,0 +1,15 @@
+checksum = "44f64734c9de6f6ec9e066323dc70a12f7f9db9daa714509d484c79ddc5a087f"
+licence = "BSD-3-Clause Sendmail"
+provides = "opendmarc-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opendmarc-libs-1.4.2-r0.apk"
+version = "1.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libspf2", "1.2.11-r0"]]

@@ -1,0 +1,15 @@
+checksum = "e6b461f67e04ed558c4273729f7ba4175f5215248380c0c59a7ccae101fa2e74"
+licence = "Apache-2.0"
+provides = "py3-multidict"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-multidict-6.0.2-r1.apk"
+version = "6.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

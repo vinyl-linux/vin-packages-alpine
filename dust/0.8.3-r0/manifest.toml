@@ -1,0 +1,15 @@
+checksum = "5d83676634c5fb9cb3f2c7cd1624c486c68a5303db7a20b0890b9907dd3311d1"
+licence = "Apache-2.0"
+provides = "dust"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dust-0.8.3-r0.apk"
+version = "0.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

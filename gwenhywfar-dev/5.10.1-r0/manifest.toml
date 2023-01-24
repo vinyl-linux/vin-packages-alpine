@@ -1,0 +1,15 @@
+checksum = "730a65aba7cda43260ed9344892b7b5c88e7ae07572297a5fcde280d700c627d"
+licence = "LGPL-2.1-or-later"
+provides = "gwenhywfar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gwenhywfar-dev-5.10.1-r0.apk"
+version = "5.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gwenhywfar", "5.10.1-r0"], ["pkgconf", "1.9.4-r0"]]

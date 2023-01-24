@@ -1,0 +1,15 @@
+checksum = "219f87e913e1634fe0e75c039d07f325565f4a3fe39263c87ff3a9470d83adc4"
+licence = "LGPL-2.0-or-later"
+provides = "gstreamer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gstreamer-1.20.5-r0.apk"
+version = "1.20.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "849d95a09dab80485d774d493e5d44271c273a19c7d21ec3b4c136fe07cdd5a6"
+licence = "MIT"
+provides = "mcfly"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mcfly-0.6.1-r0.apk"
+version = "0.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"]]

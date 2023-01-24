@@ -1,0 +1,15 @@
+checksum = "48604ba6185a21b9a97efcf59836d8c4bb57f1ee9e18b0eb69724cc3435df351"
+licence = "Apache-2.0"
+provides = "vulkan-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vulkan-tools-1.3.231.1-r0.apk"
+version = "1.3.231.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vulkan-loader", "1.3.231.2-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["libxcb", "1.15.0-r0"]]

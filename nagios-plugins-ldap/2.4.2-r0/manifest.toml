@@ -1,0 +1,15 @@
+checksum = "c35615a6cb52383cb9e21d9835ec4ba68efc961f6c0baa04b6ecbd9a54d66a24"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-ldap-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libldap", "2.6.3-r6"], ["libssl3", "3.0.7-r2"]]

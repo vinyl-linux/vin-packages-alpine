@@ -1,0 +1,15 @@
+checksum = "c99a92a0f2201519cd422939c9b26ee41268f57ece85ffdc53ff50708dc92e17"
+licence = "GPL-2.0-only WITH openssl-exception"
+provides = "ossec-hids-local"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ossec-hids-local-3.7.0-r0.apk"
+version = "3.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["inotify-tools", "3.22.6.0-r0"], ["procps", "3.3.17-r2"], ["ossec-hids-openrc", "3.7.0-r0"], ["geoip", "1.6.12-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["czmq", "4.2.1-r2"], ["pcre2", "10.42.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

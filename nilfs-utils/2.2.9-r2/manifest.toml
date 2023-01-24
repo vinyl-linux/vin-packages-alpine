@@ -1,0 +1,15 @@
+checksum = "919d182c7731da72c5213e8220f1bb4296b15742bdd46f030d16cdf770efbc5f"
+licence = "GPL-2.0-or-later"
+provides = "nilfs-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nilfs-utils-2.2.9-r2.apk"
+version = "2.2.9-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblkid", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libmount", "2.38.1-r1"], ["nilfs-utils-libs", "2.2.9-r2"], ["libuuid", "2.38.1-r1"]]

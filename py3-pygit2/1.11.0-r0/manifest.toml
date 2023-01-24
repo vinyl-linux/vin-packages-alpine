@@ -1,0 +1,15 @@
+checksum = "3fc214847564b0683c95bc9ddeab143cd4a8f228d5f4ca04e687cbafa3a5f2ed"
+licence = "GPL-2.0 WITH GCC-exception-2.0"
+provides = "py3-pygit2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pygit2-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cffi", "1.15.1-r0"], ["py3-cached-property", "1.5.2-r2"], ["musl", "1.2.3-r4"], ["libgit2", "1.5.1-r0"]]

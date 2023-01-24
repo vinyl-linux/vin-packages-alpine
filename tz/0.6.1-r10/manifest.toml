@@ -1,0 +1,15 @@
+checksum = "9435008c7482529f170a19cf5bde8fd19f693d445e0c37d4e680b91e67ce7767"
+licence = "GPL-3.0-or-later"
+provides = "tz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tz-0.6.1-r10.apk"
+version = "0.6.1-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tzdata", "2022.0.0-f-r1"]]

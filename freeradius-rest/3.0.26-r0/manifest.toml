@@ -1,0 +1,15 @@
+checksum = "627b223a1259682695b214804f6574fd6df86b76b30a554d1c4376806ea66775"
+licence = "GPL-2.0-or-later"
+provides = "freeradius-rest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freeradius-rest-3.0.26-r0.apk"
+version = "3.0.26-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freeradius", "3.0.26-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["json-c", "0.16.0-r2"]]

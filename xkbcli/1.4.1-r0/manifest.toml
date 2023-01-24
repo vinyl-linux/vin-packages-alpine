@@ -1,0 +1,15 @@
+checksum = "1e65d36cbb90d7670c61c67231e5a1498dccb458f595c1ede2a10771f29be339"
+licence = "MIT"
+provides = "xkbcli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xkbcli-1.4.1-r0.apk"
+version = "1.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xkeyboard-config", "2.37.0-r0"], ["musl", "1.2.3-r4"], ["wayland-libs-client", "1.21.0-r1"], ["libxcb", "1.15.0-r0"], ["libxkbcommon-x11", "1.4.1-r0"], ["libxkbcommon", "1.4.1-r0"]]

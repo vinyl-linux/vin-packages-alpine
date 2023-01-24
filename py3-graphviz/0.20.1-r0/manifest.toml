@@ -1,0 +1,15 @@
+checksum = "5c9bcbcda6c5471cc110c38fcba87ec34ecd5cb6b0a7dfe16b70bb57b96fbda8"
+licence = "MIT"
+provides = "py3-graphviz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-graphviz-0.20.1-r0.apk"
+version = "0.20.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["graphviz", "7.0.5-r0"], ["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "d00c1403261d718af63af66309d57036a0a1ad8c27697f1f0372a53368b5bf81"
+licence = "MIT"
+provides = "mtxclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mtxclient-0.8.2-r1.apk"
+version = "0.8.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["coeurl", "0.2.1-r4"], ["libcrypto3", "3.0.7-r2"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["olm", "3.2.13-r0"], ["spdlog", "1.11.0-r0"], ["libstdc++", "12.2.1"]]

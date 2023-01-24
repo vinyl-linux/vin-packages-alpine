@@ -1,0 +1,15 @@
+checksum = "ceed0a210cf8a3ee99fddca3c3045e58b982044ccfeec646a3704bd70a514895"
+licence = "BSD-3-Clause"
+provides = "borgbackup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/borgbackup-1.2.2-r1.apk"
+version = "1.2.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-msgpack", "1.0.4-r0"], ["py3-packaging", "21.3.0-r2"], ["python3", "3.10.9-r1"], ["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

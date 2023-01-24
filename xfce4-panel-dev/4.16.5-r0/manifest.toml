@@ -1,0 +1,15 @@
+checksum = "0652ff6c2a4af9633fc2381b5f01ab7fc6af030c05ed6b7167114a34ffdf1976"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "xfce4-panel-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-panel-dev-4.16.5-r0.apk"
+version = "4.16.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xfconf-dev", "4.16.0-r1"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libxfce4util-dev", "4.16.0-r2"], ["pkgconf", "1.9.4-r0"], ["xfce4-panel", "4.16.5-r0"]]

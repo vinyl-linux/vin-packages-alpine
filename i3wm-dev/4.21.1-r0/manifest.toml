@@ -1,0 +1,15 @@
+checksum = "40cc1adc9291d7582bdc37891c8c28e2d7a0fe6e373f2f75f6897703486f383b"
+licence = "BSD-3-Clause"
+provides = "i3wm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/i3wm-dev-4.21.1-r0.apk"
+version = "4.21.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["i3wm", "4.21.1-r0"]]

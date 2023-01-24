@@ -1,0 +1,15 @@
+checksum = "a07a5b1ad03e41805df009e24c03efd40da1e3d626a4de02e7105a6ffd0bef1d"
+licence = "MIT"
+provides = "xh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xh-0.17.0-r0.apk"
+version = "0.17.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["oniguruma", "6.9.8-r0"], ["libssl3", "3.0.7-r2"]]

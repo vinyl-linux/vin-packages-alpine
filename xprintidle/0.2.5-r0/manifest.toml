@@ -1,0 +1,15 @@
+checksum = "6efc9cd3dfb29d8111f54d0964cab8a47d14aba0f2b31a00d779a00ee085b3aa"
+licence = "GPL-2.0-only"
+provides = "xprintidle"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xprintidle-0.2.5-r0.apk"
+version = "0.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxscrnsaver", "1.2.3-r0"], ["musl", "1.2.3-r4"]]

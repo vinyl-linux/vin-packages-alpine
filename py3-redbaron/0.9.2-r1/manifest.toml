@@ -1,0 +1,15 @@
+checksum = "63f3199effe43fb11951285c1eed6a42c1ce682af1e257b3d764021712184901"
+licence = "LGPL-3.0-or-later"
+provides = "py3-redbaron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-redbaron-0.9.2-r1.apk"
+version = "0.9.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-baron", "0.9.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "1c379283e9032e20e8fd71fbb22bb79d7f19bbc67b0512bcdbbca35d45674585"
+licence = "BSD-4-Clause-Shortened"
+provides = "arpwatch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/arpwatch-3.3-r0.apk"
+version = "3.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "4fe8def27497ef1688f657578e1f6d6634ee38ca3ca76e8c683fe88f85b5389a"
+licence = "BSD-3-Clause"
+provides = "py3-rdflib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rdflib-6.1.1-r0.apk"
+version = "6.1.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-isodate", "0.6.1-r1"], ["py3-parsing", "3.0.9-r0"]]

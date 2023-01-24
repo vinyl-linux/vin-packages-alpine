@@ -1,0 +1,15 @@
+checksum = "0fa938d6d0b4ef79423affba3d41125c0a2da1cac092f5ffaedd14c53d9de56c"
+licence = "BSL-1.0"
+provides = "boost1.80-coroutine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost1.80-coroutine-1.80.0-r3.apk"
+version = "1.80.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-context", "1.80.0-r3"], ["musl", "1.2.3-r4"]]

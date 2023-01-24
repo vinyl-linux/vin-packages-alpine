@@ -1,0 +1,15 @@
+checksum = "b7bab5c30ba8e24769e48e2744dfbc57e9ff7cfd57a75e97eea89455ea1049ee"
+licence = "GPL-2.0-only"
+provides = "linux-tools-usbip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-tools-usbip-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

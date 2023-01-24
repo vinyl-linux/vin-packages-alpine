@@ -1,0 +1,15 @@
+checksum = "c4dc06978636d9d6d5d3cf37c61b2db0c4936306e0c8eada93fd242c3483cf9a"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kdoctools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdoctools-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docbook-xml", "4.5.0-r8"], ["docbook-xsl", "1.79.2-r8"], ["karchive", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libxslt", "1.1.37-r0"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

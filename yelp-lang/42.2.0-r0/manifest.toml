@@ -1,0 +1,15 @@
+checksum = "f7be75c20d66a32d248edae3cbd93bb94a7ec8f6acfe2af3fd23de3346557e65"
+licence = "GPL-2.0-or-later"
+provides = "yelp-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yelp-lang-42.2-r0.apk"
+version = "42.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dconf", "0.40.0-r2"], ["desktop-file-utils", "0.26.0-r1"], ["hicolor-icon-theme", "0.17.0-r2"], ["yelp-xsl", "42.1.0-r0"]]

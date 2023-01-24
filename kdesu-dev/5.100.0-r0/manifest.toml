@@ -1,0 +1,15 @@
+checksum = "e61c1ebec25510d13b948aeaa726dc68d4f4c4c985e22f407bafc00ab7bf3b1b"
+licence = "LGPL-2.1-only"
+provides = "kdesu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdesu-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kpty-dev", "5.100.0-r0"], ["kservice-dev", "5.100.0-r0"], ["kdesu", "5.100.0-r0"]]

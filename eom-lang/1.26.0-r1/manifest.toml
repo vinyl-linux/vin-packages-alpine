@@ -1,0 +1,15 @@
+checksum = "c872fb03580d46c2c920cc9dd22ac7c2fa166a45874e6440917c5fa2f8fdab13"
+licence = "GPL-2.0"
+provides = "eom-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eom-lang-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-icon-theme", "1.26.0-r0"], ["libxml2-utils", "2.10.3-r1"]]

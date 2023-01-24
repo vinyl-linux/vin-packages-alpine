@@ -1,0 +1,15 @@
+checksum = "8e11c0fac4b7e5319c97f3adf8309756694ca6c73a2e8f5051301d7adaca1435"
+licence = "GPL-2.0-only"
+provides = "libbpf-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbpf-dev-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbpf", "1.0.1-r0"], ["elfutils-dev", "0.187.0-r2"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

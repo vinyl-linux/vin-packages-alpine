@@ -1,0 +1,15 @@
+checksum = "50105effcbc09e4772d58a0e0487c7bd5d92b63018578c6d0fd12c6bd337b9b3"
+licence = "MIT"
+provides = "py3-braceexpand"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-braceexpand-0.1.7-r1.apk"
+version = "0.1.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pytest", "7.2.0-r1"]]

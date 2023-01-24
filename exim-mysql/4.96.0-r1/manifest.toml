@@ -1,0 +1,15 @@
+checksum = "5c2be3f343e1c096de0484cc2e92baf8628e0f7382ea99129fdb0d8b30d02e0c"
+licence = "GPL-2.0-or-later"
+provides = "exim-mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exim-mysql-4.96-r1.apk"
+version = "4.96.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exim", "4.96.0-r1"], ["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

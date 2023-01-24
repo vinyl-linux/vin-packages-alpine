@@ -1,0 +1,15 @@
+checksum = "2d86e3b7fe6ada643b15c4a205039eced760ef06c1f21f2f69d72ce2d4d046fc"
+licence = "LGPL-2.0-or-later"
+provides = "libsoup3-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsoup3-lang-3.2.2-r0.apk"
+version = "3.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-networking", "2.74.0-r2"], ["gsettings-desktop-schemas", "43.0.0-r0"]]

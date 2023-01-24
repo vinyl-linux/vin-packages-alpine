@@ -1,0 +1,15 @@
+checksum = "c32ed80640df06d6bdea8c5910847d4aa55b30965425984eece7030be7c54255"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only"
+provides = "krdc-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/krdc-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freerdp", "2.9.0-r0"]]

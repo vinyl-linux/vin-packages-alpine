@@ -1,0 +1,15 @@
+checksum = "5056401453914b2ded7590d6bf7a23f7dc3953187f297e03238e078340f303b4"
+licence = "Apache-2.0"
+provides = "below"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/below-0.6.3-r0.apk"
+version = "0.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbpf", "1.0.1-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["zstd-libs", "1.5.2-r9"]]

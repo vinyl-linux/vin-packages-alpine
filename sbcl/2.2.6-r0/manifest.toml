@@ -1,0 +1,15 @@
+checksum = "aa18522bff325061b31382d321f19097582dc7112d11308eee5d606f62eff624"
+licence = "custom"
+provides = "sbcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sbcl-2.2.6-r0.apk"
+version = "2.2.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zstd-libs", "1.5.2-r9"]]

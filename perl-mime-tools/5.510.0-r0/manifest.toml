@@ -1,0 +1,15 @@
+checksum = "7da58ca5103cf1f1dda286aab59102e2d6d589fd6aae576465187f5329f964dc"
+licence = "PerlArtistic GPL"
+provides = "perl-mime-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-mime-tools-5.510-r0.apk"
+version = "5.510.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-io-stringy", "2.113.0-r1"], ["perl-mailtools", "2.21.0-r2"], ["perl-convert-binhex", "1.125.0-r4"]]

@@ -1,0 +1,15 @@
+checksum = "e58e86ca54ef0a9223c7aa19a7d57539d3c9f33089b30dddeb5dba8312fcfffd"
+licence = "MIT AND OFL-1.1 AND Apache-2.0"
+provides = "font-dejavu-sans-mono-nerd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-dejavu-sans-mono-nerd-2.1.0-r10.apk"
+version = "2.1.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

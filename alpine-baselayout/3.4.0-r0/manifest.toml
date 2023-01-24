@@ -1,0 +1,15 @@
+checksum = "40408583daff76d49828a71b70649609861d1e528686fa0c329bf7f29bd7d2c9"
+licence = "GPL-2.0-only"
+provides = "alpine-baselayout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-baselayout-3.4.0-r0.apk"
+version = "3.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alpine-baselayout-data", "3.4.0-r0"], ["yash-binsh", "2.53.0-r2"]]

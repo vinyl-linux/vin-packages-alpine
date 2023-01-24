@@ -1,0 +1,15 @@
+checksum = "c06fdeadf7f564f51904a73ef8379b925e93c8db8d3e1c75c6e886086cebde6f"
+licence = "OFL"
+provides = "font-inconsolata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-inconsolata-3.000-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

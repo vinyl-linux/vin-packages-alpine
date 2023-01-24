@@ -1,0 +1,15 @@
+checksum = "a129a870dd259a09e7da86b6254fed940559ebbd1de2055a9f97c75c122411e4"
+licence = "GPL-2.0-only"
+provides = "perf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perf-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils", "2.39.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libelf", "0.187.0-r2"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"]]

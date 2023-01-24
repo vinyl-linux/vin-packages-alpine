@@ -1,0 +1,15 @@
+checksum = "6f7e8d56346e303b67c8d2c3017b3479575d72427d471211430d722e4555edaa"
+licence = "BSD"
+provides = "py3-typogrify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-typogrify-2.0.7-r0.apk"
+version = "2.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["smartypants", "2.0.1-r0"]]

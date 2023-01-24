@@ -1,0 +1,15 @@
+checksum = "d293cb0d852e9658a2e653b1a3e28ee0e89ef909c25e36e136c503526a33fd03"
+licence = "MIT GPL-3.0-only"
+provides = "lcms2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lcms2-2.14-r0.apk"
+version = "2.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "cfc72eed71a61d9487532127de80709c88e362e46ea5328710ed15e3a0379566"
+licence = "BSD-3-Clause"
+provides = "libevhtp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libevhtp-dev-1.2.18-r6.apk"
+version = "1.2.18-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libevhtp", "1.2.18-r6"], ["pkgconf", "1.9.4-r0"]]

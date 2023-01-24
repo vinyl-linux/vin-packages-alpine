@@ -1,0 +1,15 @@
+checksum = "fdceab8e749834fa97ae02a81bc27c6d1405e440cd4770702d7155772cb6be43"
+licence = "MIT"
+provides = "detenc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/detenc-2.0.0-r4.apk"
+version = "2.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

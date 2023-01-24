@@ -1,0 +1,15 @@
+checksum = "a6d8245d81fc294135d04e9f25f03bb698e6964dc072be54c61042ebc198adf1"
+licence = "BSD-3-Clause-Clear"
+provides = "py3-breathe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-breathe-4.34.0-r0.apk"
+version = "4.34.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-sphinx", "5.3.0-r0"], ["doxygen", "1.9.5-r0"]]

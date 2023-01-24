@@ -1,0 +1,15 @@
+checksum = "ee1a03f9859c775c815f9896ea549baf5aff45f66a0daa1a831da7808df7cf71"
+licence = "MIT"
+provides = "json-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/json-c-dev-0.16-r2.apk"
+version = "0.16.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["json-c", "0.16.0-r2"], ["pkgconf", "1.9.4-r0"]]

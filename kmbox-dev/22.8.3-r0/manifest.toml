@@ -1,0 +1,15 @@
+checksum = "12a5e1f79f4023a0ef7ca1ca0a309fe8cd8acd9422890a65cb9a84531f6b91da"
+licence = "LGPL-2.0-or-later"
+provides = "kmbox-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kmbox-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kmime-dev", "22.8.3-r0"], ["kmbox", "22.8.3-r0"]]

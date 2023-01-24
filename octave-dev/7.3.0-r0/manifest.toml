@@ -1,0 +1,15 @@
+checksum = "f8949dde5c78920bedf7e38b963daf45abf88a4c06faf7d5040c644dffac7eae"
+licence = "GPL-3.0-or-later"
+provides = "octave-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/octave-dev-7.3.0-r0.apk"
+version = "7.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["octave", "7.3.0-r0"], ["pkgconf", "1.9.4-r0"]]

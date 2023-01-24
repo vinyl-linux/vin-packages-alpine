@@ -1,0 +1,15 @@
+checksum = "9349f19a9c98c3672af7a4d57b6d87a11271ba2c70a4b135a7733e17a0abfe22"
+licence = "BSD-2-Clause AND GPL-3.0-or-later AND Python-2.0"
+provides = "py3-docutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-docutils-0.19-r1.apk"
+version = "0.19.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

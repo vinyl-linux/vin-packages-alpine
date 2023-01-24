@@ -1,0 +1,15 @@
+checksum = "35c92a8c65719d601e0768da79d4da664fda9162a362d3d29852b27e4f1f193f"
+licence = "MIT"
+provides = "libks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libks-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["libuuid", "2.38.1-r1"]]

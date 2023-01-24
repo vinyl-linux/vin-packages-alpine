@@ -1,0 +1,15 @@
+checksum = "17bb2972652228cce914954d635cce323bc3314602796bc56b593a74a8e6020c"
+licence = "GPL-2.0-or-later"
+provides = "nbd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nbd-3.24-r0.apk"
+version = "3.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["libnl3", "3.7.0-r0"], ["zlib", "1.2.13-r0"]]

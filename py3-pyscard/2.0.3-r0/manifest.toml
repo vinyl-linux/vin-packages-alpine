@@ -1,0 +1,15 @@
+checksum = "4623bbc88848581fd8659065a993951de64cb56014beb240ac8ff2e38a536f70"
+licence = "LGPL-2.1-only"
+provides = "py3-pyscard"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pyscard-2.0.3-r0.apk"
+version = "2.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite", "1.9.9-r0"], ["musl", "1.2.3-r4"]]

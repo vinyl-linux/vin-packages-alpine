@@ -1,0 +1,15 @@
+checksum = "c2c8e3ca8afa5519a525f1250ec595adc999bb131672920c7d62918729817b27"
+licence = "BSD-2-Clause"
+provides = "jemalloc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jemalloc-dev-5.3.0-r1.apk"
+version = "5.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["jemalloc", "5.3.0-r1"], ["pkgconf", "1.9.4-r0"]]

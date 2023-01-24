@@ -1,0 +1,15 @@
+checksum = "85daf0043b10bb9eb504317fffc63b163a8f2af2a0bb5a47d7ef1427032c2d0c"
+licence = "custom"
+provides = "dcc-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dcc-extras-2.3.168-r1.apk"
+version = "2.3.168-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dcc", "2.3.168-r1"], ["musl", "1.2.3-r4"]]

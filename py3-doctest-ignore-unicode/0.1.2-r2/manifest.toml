@@ -1,0 +1,15 @@
+checksum = "f60c5027d0190968d9551a588afd59541a8d22149ae2726fd602147b513a6990"
+licence = "Apache-2.0"
+provides = "py3-doctest-ignore-unicode"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-doctest-ignore-unicode-0.1.2-r2.apk"
+version = "0.1.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-nose", "1.3.7-r9"]]

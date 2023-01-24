@@ -1,0 +1,15 @@
+checksum = "d95d6dee2022b77059c0dfd887542551e721a8208433bc0aedf8233ea000d045"
+licence = "GPL-2.0-or-later"
+provides = "gnokii-smsd-sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnokii-smsd-sqlite-0.6.31-r13.apk"
+version = "0.6.31-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnokii-smsd", "0.6.31-r13"], ["musl", "1.2.3-r4"]]

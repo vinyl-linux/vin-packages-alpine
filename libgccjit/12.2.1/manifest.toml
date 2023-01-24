@@ -1,0 +1,15 @@
+checksum = "6c7e381568a4b2dff523d2ec5211bbc7fbfb83e60d17dae3016457a47d5b2884"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgccjit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgccjit-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["zlib", "1.2.13-r0"]]

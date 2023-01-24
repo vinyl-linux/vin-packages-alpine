@@ -1,0 +1,15 @@
+checksum = "ec3fe25ee1edd1273be5e908bd19fa8d6f5d0cfcbb536f3b46e6380321a02e70"
+licence = "MIT"
+provides = "libsm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libsm-1.2.3-r1.apk"
+version = "1.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libice", "1.0.10-r1"], ["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "25988bc544c29bcb01b588a37ed2a39882c56eeec74d2928ff9db2b3e0e262f0"
+licence = "LGPL-2.1-or-later"
+provides = "qjson-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qjson-dev-0.9.0-r4.apk"
+version = "0.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qjson", "0.9.0-r4"]]

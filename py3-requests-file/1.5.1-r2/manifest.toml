@@ -1,0 +1,15 @@
+checksum = "171d216bbf8c1b97473ae6b77ee7fadaef8ecd99a1af30c71b1db4dcda82d700"
+licence = "Apache-2.0"
+provides = "py3-requests-file"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-requests-file-1.5.1-r2.apk"
+version = "1.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

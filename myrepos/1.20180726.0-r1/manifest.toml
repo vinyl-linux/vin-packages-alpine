@@ -1,0 +1,15 @@
+checksum = "af149c1e4821a9c17092a327f131e439d27e9a2fc0c0afab18c420705662f4a2"
+licence = "GPL-2.0-or-later"
+provides = "myrepos"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/myrepos-1.20180726-r1.apk"
+version = "1.20180726.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["git", "2.38.3-r1"]]

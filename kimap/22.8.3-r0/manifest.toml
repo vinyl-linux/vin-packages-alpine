@@ -1,0 +1,15 @@
+checksum = "11ff7f33273b0869855522511e9d5e95c96896ce33f9833513d65272ae0ba4f2"
+licence = "LGPL-2.0-or-later"
+provides = "kimap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kimap-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcodecs", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["kmime", "22.8.3-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libsasl", "2.1.28-r3"], ["libstdc++", "12.2.1"]]

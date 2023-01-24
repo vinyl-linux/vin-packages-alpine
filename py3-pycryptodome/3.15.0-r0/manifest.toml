@@ -1,0 +1,15 @@
+checksum = "053a592cd5b3c273cf020fd36e1fd3b7ba856aec7181b3e50e2bb2ec2978db53"
+licence = "BSD-2-Clause Unlicense"
+provides = "py3-pycryptodome"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pycryptodome-3.15.0-r0.apk"
+version = "3.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gmp", "6.2.1-r2"], ["musl", "1.2.3-r4"]]

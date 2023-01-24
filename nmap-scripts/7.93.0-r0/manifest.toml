@@ -1,0 +1,15 @@
+checksum = "bb4287a50e6af0bf99426a50e0f6a1c28112feb73f2d038431378949c91aa2d2"
+licence = "custom"
+provides = "nmap-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nmap-scripts-7.93-r0.apk"
+version = "7.93.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nmap-nselibs", "7.93.0-r0"]]

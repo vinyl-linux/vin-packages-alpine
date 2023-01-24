@@ -1,0 +1,15 @@
+checksum = "321b57dfb57fe9b90ba2b5530ce583241decfd3f1707ef8bb576fbeddea8368f"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "modemmanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/modemmanager-1.20.2-r1.apk"
+version = "1.20.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["polkit-elogind", "122.0.0-r0"], ["libmm-glib", "1.20.2-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libgudev", "237.0.0-r1"], ["libintl", "0.21.1-r1"], ["libmbim", "1.28.2-r0"], ["polkit-libs", "122.0.0-r0"], ["libqmi", "1.32.2-r0"], ["libqrtr-glib", "1.2.2-r0"]]

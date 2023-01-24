@@ -1,0 +1,15 @@
+checksum = "9516fd777055b3c84a6023c89858ca20f92352901ba5cc22d3eb47976685535e"
+licence = "LGPL-2.1-or-later"
+provides = "libtasn1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libtasn1-4.19.0-r0.apk"
+version = "4.19.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

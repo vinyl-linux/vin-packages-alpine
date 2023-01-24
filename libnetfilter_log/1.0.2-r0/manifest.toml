@@ -1,0 +1,15 @@
+checksum = "c583ea08c5fae93593ac14f945e804ef3ad4a92cb5b31094f5f422e63d749193"
+licence = "GPL-2.0"
+provides = "libnetfilter_log"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnetfilter_log-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"], ["libnfnetlink", "1.0.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "37798a052ea134a0f22037adf5a18ad62f3e336d639e87da02264e56a6b38312"
+licence = "MIT"
+provides = "py3-peewee"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-peewee-3.15.4-r0.apk"
+version = "3.15.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3cf821d1156f4a63537c0fd1379a490bf43a16059d0349ad9c7a9bdf9fdf3f0d"
+licence = "PHP-3.01"
+provides = "php81-pecl-apcu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-apcu-5.1.22-r0.apk"
+version = "5.1.22-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

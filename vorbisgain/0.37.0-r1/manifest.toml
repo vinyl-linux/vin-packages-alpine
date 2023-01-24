@@ -1,0 +1,15 @@
+checksum = "b3d734c3f4ea193fddbfdc7d3538372096d1e65044a437730d2404e81e6466e6"
+licence = "GPL-2.0-only"
+provides = "vorbisgain"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vorbisgain-0.37-r1.apk"
+version = "0.37.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libogg", "1.3.5-r2"], ["libvorbis", "1.3.7-r0"]]

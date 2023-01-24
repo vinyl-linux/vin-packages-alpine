@@ -1,0 +1,15 @@
+checksum = "bf9f17549555ea5196cd443d32dd2b296cbef12ddb8e9208028730c5ac7dd0af"
+licence = "MIT"
+provides = "lua5.4-expat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.4-expat-1.5.1-r0.apk"
+version = "1.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "150a584a774b793f7deb69de35de807ce1c5cc5aa0c2a028b8ff3300fd7249ec"
+licence = "BSD-2-Clause"
+provides = "dhcpcd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dhcpcd-9.4.1-r1.apk"
+version = "9.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c45dff08eac921851005f68122081e4adfeaf311c0364a4a275ef334c2fa0215"
+licence = "custom"
+provides = "uwsgi-emperor_amqp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-emperor_amqp-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

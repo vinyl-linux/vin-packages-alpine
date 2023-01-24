@@ -1,0 +1,15 @@
+checksum = "e9931fab6f7351d8c7e714eb48a1ac61765ea89e1fdd7396b947956b05b0ac17"
+licence = "MIT"
+provides = "supercronic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/supercronic-0.2.1-r6.apk"
+version = "0.2.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

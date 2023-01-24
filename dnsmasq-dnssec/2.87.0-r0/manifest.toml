@@ -1,0 +1,15 @@
+checksum = "ebc2a3eaacfbaa2685cce9b2f438400f09688fe0ab22477e085c42220b6449b1"
+licence = "GPL-2.0-only OR GPL-3.0-only"
+provides = "dnsmasq-dnssec"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dnsmasq-dnssec-2.87-r0.apk"
+version = "2.87.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnsmasq-common", "2.87.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["nettle", "3.8.1-r0"]]

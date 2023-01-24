@@ -1,0 +1,15 @@
+checksum = "3180ef175730dbb1dae73712bde5ee1961536b34771bf9e5031aab1d216f37ce"
+licence = "OML"
+provides = "perl-fcgi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-fcgi-0.82-r1.apk"
+version = "0.82.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

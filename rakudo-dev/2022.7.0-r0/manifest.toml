@@ -1,0 +1,15 @@
+checksum = "bca2c0cffec2a0ab2705d7271cbcf679278c88596646084afd0ee8eb9be959f2"
+licence = "Artistic-2.0"
+provides = "rakudo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rakudo-dev-2022.07-r0.apk"
+version = "2022.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["moarvm", "2022.7.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "d603a6d6d0135de76af935f6351d41b729a48126faa6e0195b71e0249d076496"
+licence = "GPL-2.0-or-later"
+provides = "enigma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/enigma-1.30-r1.apk"
+version = "1.30.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["sdl2_image", "2.6.2-r0"], ["sdl2_mixer", "2.6.2-r1"], ["sdl2_ttf", "2.20.1-r0"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["enet", "1.3.17-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["xerces-c", "3.2.4-r1"], ["zlib", "1.2.13-r0"]]

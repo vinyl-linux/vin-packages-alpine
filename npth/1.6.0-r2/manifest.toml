@@ -1,0 +1,15 @@
+checksum = "d80145afc3849b9ab1defb0da05445d6365635c280e6f6b3a0037ecfc2a76d44"
+licence = "LGPL-3.0-or-later or GPL-2.0-or-later or (LGPL-3.0-or-later and GPL-2.0-or-later)"
+provides = "npth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/npth-1.6-r2.apk"
+version = "1.6.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

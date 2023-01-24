@@ -1,0 +1,15 @@
+checksum = "294c94c386565cc60f0be38731ca64e0efe4c2eb83e08a00a4317df53bbe77b2"
+licence = "GPL-3.0-or-later"
+provides = "partitionmanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/partitionmanager-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kcrash", "5.100.0-r0"], ["kdbusaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kjobwidgets", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kwindowsystem", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["kpmcore", "22.8.3-r0"], ["polkit-qt-1", "0.114.0-r1"], ["libstdc++", "12.2.1"]]

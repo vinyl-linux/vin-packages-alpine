@@ -1,0 +1,15 @@
+checksum = "128bec79c050f15c6f2f2753ed9b1096f7b6b2b5e3cb352f0c00412583456d11"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-ppp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-ppp-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

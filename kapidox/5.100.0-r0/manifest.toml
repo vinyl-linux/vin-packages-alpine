@@ -1,0 +1,15 @@
+checksum = "f8b9eee3ce449346b56641f260b4939fe0768416f92b3e05d5e803bb7e41e3f4"
+licence = "BSD-3-Clause"
+provides = "kapidox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kapidox-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["doxygen", "1.9.5-r0"], ["py3-jinja2", "3.1.2-r0"], ["py3-yaml", "6.0.0-r0"], ["python3", "3.10.9-r1"]]

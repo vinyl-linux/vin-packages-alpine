@@ -1,0 +1,15 @@
+checksum = "8af8c14ab67063375f7fc602349e2c21be7a56a1ea50984e78aaf534ce0fa492"
+licence = "GPL-2.0-or-later"
+provides = "postfixadmin-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postfixadmin-contrib-3.3.11-r1.apk"
+version = "3.3.11-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.14-r0"]]

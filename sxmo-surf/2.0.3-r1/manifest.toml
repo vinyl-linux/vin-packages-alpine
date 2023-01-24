@@ -1,0 +1,15 @@
+checksum = "0372c6bec0696d94415eb4eb659d4200797a98f7364dc60b5c15ea86d92f87a5"
+licence = "MIT"
+provides = "sxmo-surf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sxmo-surf-2.0.3-r1.apk"
+version = "2.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xprop", "1.2.5-r1"], ["libxml2-utils", "2.10.3-r1"], ["sxmo-dmenu", "5.0.14-r1"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["webkit2gtk", "2.38.3-r0"]]

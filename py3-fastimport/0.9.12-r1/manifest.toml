@@ -1,0 +1,15 @@
+checksum = "9a485ad56daddb3003740646c6cedc00a49e27781da99101dcc7460baac94864"
+licence = "GPL-2.0-only"
+provides = "py3-fastimport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-fastimport-0.9.12-r1.apk"
+version = "0.9.12-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

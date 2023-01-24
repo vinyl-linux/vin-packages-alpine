@@ -1,0 +1,15 @@
+checksum = "a79c8a8bf5730bf32607a06c1f5485d31ba1b028bd9e829dde40199a30f7786e"
+licence = "MIT"
+provides = "ovos-skill-installer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ovos-skill-installer-0.0.2-r2.apk"
+version = "0.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

@@ -1,0 +1,15 @@
+checksum = "3ed430979e3216e04a92e82bbd337f732601cc356733b1a6fadbb2009b2f1ee8"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-dbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-ui-dbus-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"], ["glib", "2.74.5-r0"], ["pixman", "0.42.2-r0"]]

@@ -1,0 +1,15 @@
+checksum = "ed9d444b442beda4083729db77e0e46d1ae113b272de3740100eb78849c26844"
+licence = "BSD-2-Clause"
+provides = "jimtcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jimtcl-0.81-r2.apk"
+version = "0.81.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

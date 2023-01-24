@@ -1,0 +1,15 @@
+checksum = "e66db7f428258a9236841ad5ed117b844934993445060cf00beae52841904752"
+licence = "MIT"
+provides = "viu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/viu-1.4.0-r0.apk"
+version = "1.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

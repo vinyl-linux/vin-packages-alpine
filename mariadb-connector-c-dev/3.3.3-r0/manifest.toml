@@ -1,0 +1,15 @@
+checksum = "a4cb716eb67b1d3074d7b60e6b6bf3f1680c7b4222699f4b82e6c28d61924435"
+licence = "LGPL-2.1-or-later"
+provides = "mariadb-connector-c-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-connector-c-dev-3.3.3-r0.apk"
+version = "3.3.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["zlib-dev", "1.2.13-r0"], ["mariadb-connector-c", "3.3.3-r0"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"]]

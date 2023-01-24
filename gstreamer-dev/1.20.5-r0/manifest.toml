@@ -1,0 +1,15 @@
+checksum = "3686b7128cb22924c47c2d7066a8b6d9addeb9b498fed8fab17afb86eac15072"
+licence = "LGPL-2.0-or-later"
+provides = "gstreamer-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gstreamer-dev-1.20.5-r0.apk"
+version = "1.20.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-dev", "2.10.3-r1"], ["gstreamer", "1.20.5-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

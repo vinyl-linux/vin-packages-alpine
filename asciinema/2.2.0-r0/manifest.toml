@@ -1,0 +1,15 @@
+checksum = "6f9f60113f0b2289d1a84d4c08210b5a1371a6a9f4950b1f917248eb2ae24147"
+licence = "GPL-3.0-or-later"
+provides = "asciinema"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/asciinema-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["ncurses", "6.3.0"]]

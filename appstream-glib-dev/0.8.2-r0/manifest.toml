@@ -1,0 +1,15 @@
+checksum = "c2ad68b836e515bc32d3307a195f13a636a1298b8cf5f316782aaa01f5d9d75d"
+licence = "LGPL-2.0-or-later"
+provides = "appstream-glib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/appstream-glib-dev-0.8.2-r0.apk"
+version = "0.8.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["appstream-glib", "0.8.2-r0"], ["gdk-pixbuf-dev", "2.42.10-r0"], ["glib-dev", "2.74.5-r0"], ["libarchive-dev", "3.6.1-r2"], ["util-linux-dev", "2.38.1-r1"], ["pkgconf", "1.9.4-r0"]]

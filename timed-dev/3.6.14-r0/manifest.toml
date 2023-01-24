@@ -1,0 +1,15 @@
+checksum = "a19e29f77227de3f8f83a0ccf6c86a24dd6fc5ff994b0eeda6cde68d0aa66db8"
+licence = "LGPL-2.1-only"
+provides = "timed-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/timed-dev-3.6.14-r0.apk"
+version = "3.6.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["elogind-dev", "246.10.0-r5"], ["libdsme-dev", "0.66.8-r0"], ["libiodata-dev", "0.19.11"], ["pcre-dev", "8.45.0-r2"], ["qt5-qtbase-dev", "5.15.6"], ["sailfish-access-control", "0.0.5-r1"], ["pkgconf", "1.9.4-r0"]]

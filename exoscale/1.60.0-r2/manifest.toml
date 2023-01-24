@@ -1,0 +1,15 @@
+checksum = "b36d84b727e5a8fe318dbf31d31df7b19468fd89ba144952f11099e676fa059b"
+licence = "Apache-2.0"
+provides = "exoscale"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exoscale-1.60.0-r2.apk"
+version = "1.60.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

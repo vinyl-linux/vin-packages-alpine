@@ -1,0 +1,15 @@
+checksum = "8338a523f2f28c9be9b7eb72049f19b2e6cbcd8447b8c53f20d7463692b6d966"
+licence = "GPL-3.0-or-later"
+provides = "ubridge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ubridge-0.9.18-r1.apk"
+version = "0.9.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libpcap", "1.10.1-r1"]]

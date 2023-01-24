@@ -1,0 +1,15 @@
+checksum = "f5b8a6f177bbf7e83a51e7c135b1980d43b99980259d195262a8362fe45395b3"
+licence = "LGPL-2.1-or-later"
+provides = "libbytesize-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libbytesize-dev-2.7-r1.apk"
+version = "2.7.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbytesize", "2.7.0-r1"], ["pkgconf", "1.9.4-r0"]]

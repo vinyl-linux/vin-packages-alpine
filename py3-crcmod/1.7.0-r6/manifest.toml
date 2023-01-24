@@ -1,0 +1,15 @@
+checksum = "c05491c1314c6423938cc1f3399bd221215410d243c66bb9ed410124622e6a0a"
+licence = "MIT"
+provides = "py3-crcmod"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-crcmod-1.7-r6.apk"
+version = "1.7.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

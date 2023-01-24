@@ -1,0 +1,15 @@
+checksum = "48d00a2b32b7b3d93f2d141376f25b5cc6b2c35c158926893c03293db0d1b949"
+licence = "MPL"
+provides = "npapi-sdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/npapi-sdk-0.27.2-r1.apk"
+version = "0.27.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

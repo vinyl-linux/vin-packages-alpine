@@ -1,0 +1,15 @@
+checksum = "ae28d5c9bb7372e9663f135817fcc9deb24b9ae522e0c38a9aaeb55626b1ab5c"
+licence = "GPL-2.0-or-later"
+provides = "proftpd-mod_quotatab_sql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proftpd-mod_quotatab_sql-1.3.7f-r1.apk"
+version = "1.3.7-f-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["proftpd", "1.3.7-f-r1"], ["proftpd-mod_quotatab", "1.3.7-f-r1"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "36c00315f3e073541cc11246a5f9ec28ea7cf0ae40525819c3c06f4b52f84e7c"
+licence = "GPL-2.0-or-later"
+provides = "gnome-flashback-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-flashback-lang-3.46.0-r0.apk"
+version = "3.46.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"], ["xkeyboard-config", "2.37.0-r0"]]

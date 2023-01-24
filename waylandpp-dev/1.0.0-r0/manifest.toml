@@ -1,0 +1,15 @@
+checksum = "599f6659a450b1805d19a67f7e37d368bccd195eda7fafbbef38cb897c18c3f0"
+licence = "MIT AND GPL-3.0-or-later"
+provides = "waylandpp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waylandpp-dev-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-dev", "22.2.5-r1"], ["pugixml-dev", "1.13.0-r0"], ["wayland-dev", "1.21.0-r1"], ["pkgconf", "1.9.4-r0"], ["waylandpp", "1.0.0-r0"]]

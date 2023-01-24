@@ -1,0 +1,15 @@
+checksum = "77ac6a53ae372a02694ac9bcc1c4fc2cd62e265ac688ed80a12ac6f34af141ca"
+licence = "GPL-2.0-or-later"
+provides = "brasero-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/brasero-dev-3.12.3-r1.apk"
+version = "3.12.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["brasero", "3.12.3-r1"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b47de3142e334b414eda57e9e70d273a56d29af5b58b8550fc170645694967f7"
+licence = "LGPL-2.0-or-later"
+provides = "py3-cairo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-cairo-1.21.0-r1.apk"
+version = "1.21.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"]]

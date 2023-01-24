@@ -1,0 +1,15 @@
+checksum = "d936261049ca0dc90a1187613ad46e7869c4eb8d6e4c1b9cc6d9781b4d3c0e96"
+licence = "GPL-2.0-or-later"
+provides = "collectd-write_kafka"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-write_kafka-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["librdkafka", "1.9.2-r0"], ["yajl", "2.1.0-r5"]]

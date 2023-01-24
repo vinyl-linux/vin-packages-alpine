@@ -1,0 +1,15 @@
+checksum = "c92a5028a72abb703a73c7bed600ae9f9eb3aeb41c9a11dcd86b6635df88f380"
+licence = "GPL-3.0-only MIT"
+provides = "libmesode-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libmesode-dev-0.10.1-r1.apk"
+version = "0.10.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libmesode", "0.10.1-r1"], ["expat-dev", "2.5.0-r0"], ["openssl-dev", "3.0.7-r2"], ["pkgconf", "1.9.4-r0"]]

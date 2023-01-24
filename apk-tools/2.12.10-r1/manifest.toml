@@ -1,0 +1,15 @@
+checksum = "ecdbfa9e479afd251840adcc7dbcb48e9d1a069f94b066fae2cf96a9b74959d9"
+licence = "GPL-2.0-only"
+provides = "apk-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apk-tools-2.12.10-r1.apk"
+version = "2.12.10-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ca-certificates-bundle", "20220614.0.0-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

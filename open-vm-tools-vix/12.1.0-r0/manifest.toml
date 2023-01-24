@@ -1,0 +1,15 @@
+checksum = "12771125dadd6ef8a92fbc3db29a7ac72490c94dd48bbbac91b87fb6c0939fc4"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-vix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/open-vm-tools-vix-12.1.0-r0.apk"
+version = "12.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools", "12.1.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["open-vm-tools-hgfs", "12.1.0-r0"], ["libtirpc-nokrb", "1.3.3-r0"]]

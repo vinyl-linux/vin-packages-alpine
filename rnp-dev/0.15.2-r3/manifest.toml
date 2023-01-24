@@ -1,0 +1,15 @@
+checksum = "26aac9ee86de6be1b0372c3afdda5617dc9c69e580bc9627fd28a613b4851e88"
+licence = "BSD-2-Clause"
+provides = "rnp-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rnp-dev-0.15.2-r3.apk"
+version = "0.15.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librnp", "0.15.2-r3"], ["pkgconf", "1.9.4-r0"]]

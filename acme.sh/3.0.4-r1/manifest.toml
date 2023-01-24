@@ -1,0 +1,15 @@
+checksum = "6df77b8bdf953ec21313a60753ee5577af865e28ca37710bb1eba2dcf198902a"
+licence = "GPL-3.0-only"
+provides = "acme.sh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/acme.sh-3.0.4-r1.apk"
+version = "3.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"], ["socat", "1.7.4.4-r0"], ["openssl", "3.0.7-r2"]]

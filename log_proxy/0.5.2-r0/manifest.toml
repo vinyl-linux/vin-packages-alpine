@@ -1,0 +1,15 @@
+checksum = "28261a785a0b0ecb5cc2a736a3fec255831ddd3772b6143ea9b6e0f8ce42250e"
+licence = "BSD-3-Clause"
+provides = "log_proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/log_proxy-0.5.2-r0.apk"
+version = "0.5.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

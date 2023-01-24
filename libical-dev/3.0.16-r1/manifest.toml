@@ -1,0 +1,15 @@
+checksum = "a6f9b30d614b15641049ff35d0e7f63497fc082d17f84d2a304a04cdb3ebe02c"
+licence = "LGPL-2.1-only OR MPL-2.0"
+provides = "libical-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libical-dev-3.0.16-r1.apk"
+version = "3.0.16-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-dev", "2.10.3-r1"], ["gobject-introspection-dev", "1.74.0-r1"], ["libical", "3.0.16-r1"], ["glib-dev", "2.74.5-r0"], ["icu-dev", "72.1.0-r1"], ["pkgconf", "1.9.4-r0"]]

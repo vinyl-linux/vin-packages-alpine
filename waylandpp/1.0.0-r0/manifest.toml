@@ -1,0 +1,15 @@
+checksum = "180feb8bd8e2d20d335c71d6e90b776cea0b1f14393e2f37a4c7121dfe5ee505"
+licence = "MIT AND GPL-3.0-or-later"
+provides = "waylandpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waylandpp-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["pugixml", "1.13.0-r0"], ["libstdc++", "12.2.1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["wayland-libs-egl", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"]]

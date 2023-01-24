@@ -1,0 +1,15 @@
+checksum = "d3520506e5832bdd5f930bf3668122cc3c459a61b624a4a543b6fb0baae9dc16"
+licence = "Apache-2.0"
+provides = "znc-modperl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/znc-modperl-1.8.2-r12.apk"
+version = "1.8.2-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["znc", "1.8.2-r12"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["perl", "5.36.0-r0"], ["libstdc++", "12.2.1"]]

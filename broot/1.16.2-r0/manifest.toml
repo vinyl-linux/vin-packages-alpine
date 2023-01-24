@@ -1,0 +1,15 @@
+checksum = "48b7c439fd45737ec03876f3ee5bfb6425ec5dc6842e6169f7528a6f3bfc3a1b"
+licence = "MIT"
+provides = "broot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/broot-1.16.2-r0.apk"
+version = "1.16.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["zlib", "1.2.13-r0"]]

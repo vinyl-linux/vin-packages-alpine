@@ -1,0 +1,15 @@
+checksum = "d81043ade8c9054202d5cfb92a0b6a2cf4d23017aa49a0d6baa406d02d624805"
+licence = "MIT"
+provides = "py3-simpleaudio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-simpleaudio-1.0.4-r1.apk"
+version = "1.0.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

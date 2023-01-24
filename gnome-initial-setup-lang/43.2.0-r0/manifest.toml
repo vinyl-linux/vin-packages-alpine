@@ -1,0 +1,15 @@
+checksum = "90fc716bc5a6604fe59f00bacec7a3f6ea330ad2b8bc2133a6a5b1edd82f27ec"
+licence = "GPL-2.0-or-later"
+provides = "gnome-initial-setup-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-initial-setup-lang-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"], ["iso-codes", "4.12.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "5c6a2418c22579b048ac10a7e489b1c2ef303c2e986e01868144bf9cacde2d2c"
+licence = "CC0-1.0"
+provides = "libb2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libb2-0.98.1-r2.apk"
+version = "0.98.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgomp", "12.2.1"]]

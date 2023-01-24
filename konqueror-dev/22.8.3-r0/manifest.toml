@@ -1,0 +1,15 @@
+checksum = "4cecead6ec4fd2edf0be650496aebfcdd844f6e16a9714ab6c1c080d554a395f"
+licence = "GPL-2.0-or-later AND GFDL-1.2-only AND LicenseRef-KDE-Accepted-LGPL"
+provides = "konqueror-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/konqueror-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["konqueror", "22.8.3-r0"]]

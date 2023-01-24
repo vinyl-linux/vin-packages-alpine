@@ -1,0 +1,15 @@
+checksum = "3f69ff4672b18dd4c813786a392588b98a1c607f31b9041ef22c70acafdf5730"
+licence = "GPL-2.0-or-later FIPL"
+provides = "freeimage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freeimage-3.18.0-r3.apk"
+version = "3.18.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

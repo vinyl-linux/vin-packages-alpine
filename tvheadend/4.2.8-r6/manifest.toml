@@ -1,0 +1,15 @@
+checksum = "f1c6646f1d7262c91ab8464e78f17ba6e5ed2cfba823f0665c67c1a6e0d6ae74"
+licence = "GPL-3.0-only"
+provides = "tvheadend"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tvheadend-4.2.8-r6.apk"
+version = "4.2.8-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["ffmpeg4-libs", "4.4.3-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["liburiparser", "0.9.7-r0"], ["zlib", "1.2.13-r0"]]

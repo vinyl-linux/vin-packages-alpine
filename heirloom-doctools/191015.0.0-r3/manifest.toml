@@ -1,0 +1,15 @@
+checksum = "d1e1682b1efd1f30aa594c2ca3e22b696b5152514b69932f9efb901b8bea0864"
+licence = "CDDL"
+provides = "heirloom-doctools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/heirloom-doctools-191015-r3.apk"
+version = "191015.0.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

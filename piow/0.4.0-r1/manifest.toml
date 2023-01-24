@@ -1,0 +1,15 @@
+checksum = "efc21942e1a7b2d3db35905b4cbb4e0319b5d311ae59218db30497b4adf7f203"
+licence = "MIT OR Apache-2.0"
+provides = "piow"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/piow-0.4.0-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sxmo-sway", "1.7.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

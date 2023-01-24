@@ -1,0 +1,15 @@
+checksum = "fbfaf58fb4e009437797b5e8944c41582604e3246618634815897ad819489033"
+licence = "BSD-3-Clause"
+provides = "alex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alex-3.2.6-r3.apk"
+version = "3.2.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["gmp", "6.2.1-r2"]]

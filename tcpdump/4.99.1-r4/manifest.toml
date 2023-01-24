@@ -1,0 +1,15 @@
+checksum = "a3ddf8f818f030f4dc3052178e8d03b7f6d8531158377aebac0ed7a9ec650789"
+licence = "BSD-3-Clause"
+provides = "tcpdump"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tcpdump-4.99.1-r4.apk"
+version = "4.99.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libpcap", "1.10.1-r1"]]

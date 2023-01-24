@@ -1,0 +1,15 @@
+checksum = "9691b1235b667de187a3d60da17d82f3f603ee40a67c1d631c2d6a10864b85b7"
+licence = "BSD-2-Clause"
+provides = "orc-compiler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/orc-compiler-0.4.33-r0.apk"
+version = "0.4.33-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["orc", "0.4.33-r0"]]

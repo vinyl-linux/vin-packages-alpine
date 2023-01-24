@@ -1,0 +1,15 @@
+checksum = "47e8c3231eb64d0f953e9ceed2935beb1e58f110ef3ccf364286e0d94fb245c3"
+licence = "custom"
+provides = "cyrus-sasl-digestmd5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cyrus-sasl-digestmd5-2.1.28-r3.apk"
+version = "2.1.28-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

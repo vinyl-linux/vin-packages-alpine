@@ -1,0 +1,15 @@
+checksum = "e8b85b0795c4f0bbdd5d182213223b24cad56b6d2eb10e7b3fa70c7d9d550083"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-kazoo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-kazoo-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["json-c", "0.16.0-r2"], ["rabbitmq-c", "0.11.0-r5"], ["libuuid", "2.38.1-r1"]]

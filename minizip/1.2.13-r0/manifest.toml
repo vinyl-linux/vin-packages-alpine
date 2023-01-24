@@ -1,0 +1,15 @@
+checksum = "75e6280f34a01bd310c5c03bf144abe1647e02fc8433c7e0c722fd0a0016ab21"
+licence = "Zlib"
+provides = "minizip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minizip-1.2.13-r0.apk"
+version = "1.2.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

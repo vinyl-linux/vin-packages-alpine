@@ -1,0 +1,15 @@
+checksum = "285b9a6ad4119b119d86cd72f8ee3c61827a2ebbf765460ec17ba6f294b130a4"
+licence = "MIT"
+provides = "luarocks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/luarocks-2.4.4-r2.apk"
+version = "2.4.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl", "7.87.0-r1"]]

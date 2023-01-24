@@ -1,0 +1,15 @@
+checksum = "c2565852c5ae2bd9f38665d60b01ec188620d82fa81b1608a3768b466e467a8f"
+licence = "Apache-2.0"
+provides = "py3-lingua-franca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-lingua-franca-0.4.2-r1.apk"
+version = "0.4.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-dateutil", "2.8.2-r1"], ["python3", "3.10.9-r1"]]

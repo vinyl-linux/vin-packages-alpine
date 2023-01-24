@@ -1,0 +1,15 @@
+checksum = "09d2f5097bd712febbb7d34842c025e9838df2fb90b5edabe8cc22b738f5193c"
+licence = "MIT"
+provides = "task"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/task-2.6.2-r1.apk"
+version = "2.6.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gnutls", "3.7.8-r2"], ["libstdc++", "12.2.1"], ["libuuid", "2.38.1-r1"]]

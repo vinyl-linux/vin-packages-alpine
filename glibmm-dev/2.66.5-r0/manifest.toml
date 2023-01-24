@@ -1,0 +1,15 @@
+checksum = "e27c082917e15617533f8ffbad719d75f32b23c37f19b109e030fae5f44f4503"
+licence = "LGPL-2.1-or-later"
+provides = "glibmm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/glibmm-dev-2.66.5-r0.apk"
+version = "2.66.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glibmm", "2.66.5-r0"], ["glib-dev", "2.74.5-r0"], ["libsigc++-dev", "2.10.8-r0"], ["pkgconf", "1.9.4-r0"]]

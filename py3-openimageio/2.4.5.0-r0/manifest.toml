@@ -1,0 +1,15 @@
+checksum = "5b407832565c55e236261de042d82521c0dae3ddb0ea54dc223239363a808d63"
+licence = "BSD-3-Clause"
+provides = "py3-openimageio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-openimageio-2.4.5.0-r0.apk"
+version = "2.4.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["openexr", "3.1.5-r3"], ["openimageio", "2.4.5.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

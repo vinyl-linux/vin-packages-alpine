@@ -1,0 +1,15 @@
+checksum = "9758daedd2b5903d0bc7b0cfae590f2b9344a4066ad74e251f488ea70be36ce3"
+licence = "LGPL-2.1-only"
+provides = "polkit-qt-1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/polkit-qt-1-0.114.0-r1.apk"
+version = "0.114.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["polkit-libs", "122.0.0-r0"], ["libstdc++", "12.2.1"]]

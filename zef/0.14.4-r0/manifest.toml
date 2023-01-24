@@ -1,0 +1,15 @@
+checksum = "e1a3b0f03e372612fa5bfc4bcac65ee3bb20e8d426f26ac9357eadae641f0c43"
+licence = "Artistic-2.0"
+provides = "zef"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zef-0.14.4-r0.apk"
+version = "0.14.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rakudo", "2022.7.0-r0"], ["git", "2.38.3-r1"], ["wget", "1.21.3-r2"], ["curl", "7.87.0-r1"], ["tar", "1.34.0-r1"], ["unzip", "6.0.0-r13"], ["perl-utils", "5.36.0-r0"]]

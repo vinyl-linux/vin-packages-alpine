@@ -1,0 +1,15 @@
+checksum = "39f71d69edd3328e91f5699df7e7eebed28d7e20373db9a1fba8347aa66647d4"
+licence = "ISC"
+provides = "starship"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/starship-1.11.0-r0.apk"
+version = "1.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["libgcc", "12.2.1"]]

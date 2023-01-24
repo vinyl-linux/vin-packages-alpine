@@ -1,0 +1,15 @@
+checksum = "0818b95d4a435ba92a425e0ab1f33dc0a1e6bff517f397dd0852f02285c32a01"
+licence = "GPL-2.0-or-later"
+provides = "rsnapshot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsnapshot-1.4.4-r1.apk"
+version = "1.4.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["rsync", "3.2.7-r0"], ["openssh-client-default", "9.1.0"]]

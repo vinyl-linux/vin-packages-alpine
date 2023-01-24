@@ -1,0 +1,15 @@
+checksum = "ad4214f3257a3a60c53585b0aab263cc5c601c5702b46c2470fc8acc9d0b82b5"
+licence = "LGPL-2.0-or-later"
+provides = "lxqt-openssh-askpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxqt-openssh-askpass-1.2.0-r0.apk"
+version = "1.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["liblxqt", "1.2.0-r0"], ["libstdc++", "12.2.1"]]

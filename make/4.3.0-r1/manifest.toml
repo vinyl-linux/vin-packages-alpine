@@ -1,0 +1,15 @@
+checksum = "34d8b0699c519803de587778b114be0cb91d121e7225ac30ee5f0562c2e0ca32"
+licence = "GPL-3.0-or-later"
+provides = "make"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/make-4.3-r1.apk"
+version = "4.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

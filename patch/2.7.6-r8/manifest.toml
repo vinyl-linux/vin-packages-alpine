@@ -1,0 +1,15 @@
+checksum = "de9e3db85f3cffdfbe6d83334061e902ee07f94736ccf7b6583a63df5642da27"
+licence = "GPL-3.0-or-later"
+provides = "patch"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/patch-2.7.6-r8.apk"
+version = "2.7.6-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

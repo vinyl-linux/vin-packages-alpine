@@ -1,0 +1,15 @@
+checksum = "d33b34151d4a710a5a921bd59a474382136635b4de99ade5c09831b12bb7810f"
+licence = "MIT"
+provides = "xbacklight"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xbacklight-1.2.3-r1.apk"
+version = "1.2.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxcb", "1.15.0-r0"], ["xcb-util", "0.4.0-r3"]]

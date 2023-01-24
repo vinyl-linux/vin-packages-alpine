@@ -1,0 +1,15 @@
+checksum = "3d0166f64b4e2d8b14ee1fa6ddbc167a71a0779aa34fb53f4caf485984b7faa6"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-xmpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-xmpp-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"]]

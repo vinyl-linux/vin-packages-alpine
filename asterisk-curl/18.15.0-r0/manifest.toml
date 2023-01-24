@@ -1,0 +1,15 @@
+checksum = "472d99b4476bfcb0b963994d1510ba9d2a58769105b4b493225068e47a15ca45"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "asterisk-curl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/asterisk-curl-18.15.0-r0.apk"
+version = "18.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"]]

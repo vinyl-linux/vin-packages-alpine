@@ -1,0 +1,15 @@
+checksum = "90ee63a2a4f58470961ecaede188cdac318efa015e8163d51d0670f48bd175c2"
+licence = "MIT"
+provides = "py3-pep517"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pep517-0.13.0-r0.apk"
+version = "0.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-tomli", "2.0.1-r1"]]

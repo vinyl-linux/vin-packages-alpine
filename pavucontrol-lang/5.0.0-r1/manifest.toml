@@ -1,0 +1,15 @@
+checksum = "148bff46566b7cfb9b4bad888205e8fd7162d437a530ff1083d9c91f6f3a87b0"
+licence = "GPL-2.0-or-later"
+provides = "pavucontrol-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pavucontrol-lang-5.0-r1.apk"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pulseaudio", "16.1.0-r6"]]

@@ -1,0 +1,15 @@
+checksum = "380f31e890c7bab1c1cf9233faeaea31ea30d2adc77649066f4eec167c733417"
+licence = "MIT"
+provides = "xmlsec-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmlsec-dev-1.2.37-r0.apk"
+version = "1.2.37-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml2-dev", "2.10.3-r1"], ["libxslt-dev", "1.1.37-r0"], ["nss-dev", "3.85.0-r0"], ["nspr-dev", "4.35.0-r0"], ["pkgconf", "1.9.4-r0"], ["xmlsec", "1.2.37-r0"]]

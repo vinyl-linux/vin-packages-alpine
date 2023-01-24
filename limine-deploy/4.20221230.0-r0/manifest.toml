@@ -1,0 +1,15 @@
+checksum = "b7ce67105e7282ab2de5468edf13fc1e38f85bbe13a17569cf4d62e06321c2f5"
+licence = "BSD-2-Clause"
+provides = "limine-deploy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/limine-deploy-4.20221230.0-r0.apk"
+version = "4.20221230.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["limine", "4.20221230.0-r0"], ["limine-sys", "4.20221230.0-r0"], ["musl", "1.2.3-r4"]]

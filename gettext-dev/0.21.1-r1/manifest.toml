@@ -1,0 +1,15 @@
+checksum = "8dd9130f53c3d19676af8f9d9a3aac7107f4a37263f690af625922978cca2941"
+licence = "GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT"
+provides = "gettext-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gettext-dev-0.21.1-r1.apk"
+version = "0.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext-asprintf", "0.21.1-r1"], ["gettext-libs", "0.21.1-r1"], ["gettext", "0.21.1-r1"], ["libintl", "0.21.1-r1"]]

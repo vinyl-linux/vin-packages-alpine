@@ -1,0 +1,15 @@
+checksum = "4fa58977104c29a1b115e62007693dd8359efa494f142d1e888dee1aaffaf9fe"
+licence = "Artistic-2.0"
+provides = "moarvm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/moarvm-2022.07-r0.apk"
+version = "2022.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["libuv", "1.44.2-r0"], ["zstd-libs", "1.5.2-r9"]]

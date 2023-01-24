@@ -1,0 +1,15 @@
+checksum = "cd4d6a7211b2d93d19f153bf29d7f0597f03b81bda7fcf379d2905c98811dd97"
+licence = "BSD-3-Clause"
+provides = "extra-cmake-modules"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/extra-cmake-modules-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cmake", "3.24.3-r0"]]

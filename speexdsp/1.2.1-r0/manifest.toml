@@ -1,0 +1,15 @@
+checksum = "764c4efb655bea2b1c3d038e1c906c5e95361593f81a5b3c4b55d5aa08fb1cdb"
+licence = "BSD-3-Clause"
+provides = "speexdsp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/speexdsp-1.2.1-r0.apk"
+version = "1.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

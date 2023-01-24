@@ -1,0 +1,15 @@
+checksum = "b469ab58469d6b9c3e50bf3c8e7d5152664c80c111a4fc05df363284be17fa1f"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND GFDL-1.2-only"
+provides = "kdevelop-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdevelop-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["indent", "2.2.12-r2"]]

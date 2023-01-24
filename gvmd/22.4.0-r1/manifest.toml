@@ -1,0 +1,15 @@
+checksum = "c58e5eb80a3c93c747dd5f307e2d09373b1c1d939c0af15c1558a8da371a6ec6"
+licence = "AGPL-3.0"
+provides = "gvmd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gvmd-22.4.0-r1.apk"
+version = "22.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rsync", "3.2.7-r0"], ["postgresql14", "14.6.0-r1"], ["postgresql14-contrib", "14.6.0-r1"], ["libxslt", "1.1.37-r0"], ["sed", "4.9.0-r0"], ["gnutls-utils", "3.7.8-r2"], ["gvm-libs", "22.4.0-r0"], ["perl-xml-twig", "3.52.0-r4"], ["libbsd", "0.11.7-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["gpgme", "1.18.0-r0"], ["libical", "3.0.16-r1"], ["libpq", "15.1.0-r0"]]

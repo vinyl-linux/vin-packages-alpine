@@ -1,0 +1,15 @@
+checksum = "73c5294875f65a20bada2edc159b182f9a50c728a18a6fbae5e8d8617a0bef8c"
+licence = "MIT"
+provides = "rofi-wayland"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rofi-wayland-1.7.5_p1-r0.apk"
+version = "1.7.5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rofi-themes", "1.7.5-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["libxkbcommon", "1.4.1-r0"]]

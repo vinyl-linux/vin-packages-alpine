@@ -1,0 +1,15 @@
+checksum = "ffcba756567293fd0578d87bbe7814f961b623ee235920a37653c744d3abde12"
+licence = "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain"
+provides = "mount"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mount-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmount", "2.38.1-r1"]]

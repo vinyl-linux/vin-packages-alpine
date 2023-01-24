@@ -1,0 +1,15 @@
+checksum = "4a0d657e46f82cd3118bf0b76985900f739d8c0a48f5243c99db755f9a2384e6"
+licence = "GPL-2.0-only"
+provides = "lirc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lirc-dev-0.10.1-r4.apk"
+version = "0.10.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lirc", "0.10.1-r4"], ["pkgconf", "1.9.4-r0"]]

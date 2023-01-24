@@ -1,0 +1,15 @@
+checksum = "b97166cc5f5ae2c1d824368369caa06b1f880264a51a9eef5951ed4d3aefabc0"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipewire-tools-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pipewire", "0.3.60-r3"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["ncurses-libs", "6.3.0"], ["pipewire-libs", "0.3.60-r3"], ["readline", "8.2.0-r0"], ["libsndfile", "1.1.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "a87f74c69b582022d273c3e3784f6c2ca28db6dd54b0763ca00c1a812111ded2"
+licence = "LGPL-2.1-or-later"
+provides = "libnotify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnotify-0.8.1-r1.apk"
+version = "0.8.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"]]

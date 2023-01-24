@@ -1,0 +1,15 @@
+checksum = "10a493f0368f56286ad4377bb3e0092ccff79008d30f081abe6d232b74d11583"
+licence = "BSD-3-Clause"
+provides = "shadow-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/shadow-dev-4.13-r0.apk"
+version = "4.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shadow-libs", "4.13.0-r0"]]

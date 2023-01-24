@@ -1,0 +1,15 @@
+checksum = "ea25852369ac0b21e0c8fe7d65e7c06925b4166e0961834cd86a119853fdda1c"
+licence = "ISC"
+provides = "s6-linux-init-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/s6-linux-init-dev-1.0.8.0-r0.apk"
+version = "1.0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["s6-linux-init", "1.0.8.0-r0"]]

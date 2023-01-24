@@ -1,0 +1,15 @@
+checksum = "7d5ff1150e9efe4131506c2eefa93d69c337ea2dd6b0daa6f09e72748fd19f39"
+licence = "GPL-2.0-or-later"
+provides = "iptables"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iptables-1.8.8-r2.apk"
+version = "1.8.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libmnl", "1.0.5-r0"], ["libnftnl", "1.2.4-r0"]]

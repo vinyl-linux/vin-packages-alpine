@@ -1,0 +1,15 @@
+checksum = "80294534e423252bcf70fbe0ab25c3e818ee862b87b496863faf6364b652967d"
+licence = "AS-IS"
+provides = "openssh-askpass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openssh-askpass-9.0_p1-r0.apk"
+version = "9.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh-client-default", "9.1.0"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"]]

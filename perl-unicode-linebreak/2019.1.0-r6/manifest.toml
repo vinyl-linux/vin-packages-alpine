@@ -1,0 +1,15 @@
+checksum = "60a3dbcba3e8384befa281ee403f257d79bcf6c5f8f6bbccb46d1b6aa4096269"
+licence = "GPL PerlArtistic"
+provides = "perl-unicode-linebreak"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-unicode-linebreak-2019.001-r6.apk"
+version = "2019.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-mime-charset", "1.13.1-r0"], ["musl", "1.2.3-r4"]]

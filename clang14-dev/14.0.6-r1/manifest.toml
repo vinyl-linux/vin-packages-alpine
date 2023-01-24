@@ -1,0 +1,15 @@
+checksum = "0774a1d5595692d2fc0058e900d5297e9787bf9c70a583b64185e2dcc9310134"
+licence = "Apache-2.0"
+provides = "clang14-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang14-dev-14.0.6-r1.apk"
+version = "14.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clang14", "14.0.6-r1"], ["clang14-libclang", "14.0.6-r1"], ["clang14-libs", "14.0.6-r1"]]

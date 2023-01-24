@@ -1,0 +1,15 @@
+checksum = "349ba78de25e2ff4c11dd6c4bf2f66ea7ba8e9870d97088922a6b14b9d544ac4"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-harness-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-harness-utils-3.44-r0.apk"
+version = "3.44.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-test-harness", "3.44.0-r0"], ["perl", "5.36.0-r0"]]

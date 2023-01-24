@@ -1,0 +1,15 @@
+checksum = "73dcd0efbdec3e0e71c0ac635f846654b689a6bf1aa805040f019ec74dad3e59"
+licence = "GPL-2.0-or-later AND LGPL-3.0-or-later"
+provides = "libidn2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libidn2-2.3.4-r0.apk"
+version = "2.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libunistring", "1.1.0-r0"]]

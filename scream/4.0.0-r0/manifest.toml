@@ -1,0 +1,15 @@
+checksum = "11cc5dd98556b011ad4c15d07c2f79a20a9bf105952d90d410b1c1b7d3675981"
+licence = "MS-PL"
+provides = "scream"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/scream-4.0-r0.apk"
+version = "4.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libpulse", "16.1.0-r6"]]

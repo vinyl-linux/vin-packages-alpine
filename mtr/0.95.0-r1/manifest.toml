@@ -1,0 +1,15 @@
+checksum = "61579e4633a9afd69fd6c1cb8a5c83fb989882bd96a5b0b355efe5b4dfbb3407"
+licence = "GPL-2.0-only"
+provides = "mtr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mtr-0.95-r1.apk"
+version = "0.95.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["jansson", "2.14.0-r0"], ["ncurses-libs", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "accd748af3380bc0f32d48390d379fa8ddc75eac7c7649e6a12a67f135f800a8"
+licence = "MIT"
+provides = "ruby-activesupport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-activesupport-7.0.4-r0.apk"
+version = "7.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["ruby-concurrent-ruby", "1.1.10-r1"], ["ruby-i18n", "1.12.0-r0"], ["ruby-minitest", "5.15.0-r1"], ["ruby-tzinfo", "2.0.5-r0"]]

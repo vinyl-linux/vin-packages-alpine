@@ -1,0 +1,15 @@
+checksum = "5a52e8f390098e929a0af0fd6b7da23619935f491b125671f76c6d46c89a0f8e"
+licence = "custom"
+provides = "openjdk8-demos"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk8-demos-8.345.01-r3.apk"
+version = "8.345.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk8", "8.345.1-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

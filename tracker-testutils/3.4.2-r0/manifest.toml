@@ -1,0 +1,15 @@
+checksum = "7b8ea25ffc0d0a1b361da581195cb34f80e103985203c813e3ea66692496aaf8"
+licence = "GPL-2.0-or-later"
+provides = "tracker-testutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tracker-testutils-3.4.2-r0.apk"
+version = "3.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tracker", "3.4.2-r0"], ["py3-gobject3", "3.42.2-r0"], ["bash", "5.2.15-r0"]]

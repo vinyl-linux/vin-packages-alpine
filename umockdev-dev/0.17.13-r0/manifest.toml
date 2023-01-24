@@ -1,0 +1,15 @@
+checksum = "515a33c998b9472ec9447066148de59a287911ac30bdcc10fba4f250564c1dad"
+licence = "LGPL-2.1-or-later"
+provides = "umockdev-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/umockdev-dev-0.17.13-r0.apk"
+version = "0.17.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"], ["umockdev", "0.17.13-r0"]]

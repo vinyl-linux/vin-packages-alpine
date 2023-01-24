@@ -1,0 +1,15 @@
+checksum = "2ca24f5d6b64bcce926f25ce153c0e65c478d0a92b2eefd1149ddf028e7a2b39"
+licence = "GPL-2.0-or-later"
+provides = "devhelp-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/devhelp-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsettings-desktop-schemas", "43.0.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "e75fcde3cb2bc7753825919967e651aa46eceea21b3d4d5993f7295ae08b5ffd"
+licence = "GPL-3.0-or-later"
+provides = "cargo-gra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-gra-0.4.1-r0.apk"
+version = "0.4.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "0fd771392775b22c80bc1946bbfff4be79303cbc42b002ddb4b34755f73b5e2a"
+licence = "MPL-2.0"
+provides = "liborcus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liborcus-dev-0.17.2-r2.apk"
+version = "0.17.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["liborcus", "0.17.2-r2"], ["pkgconf", "1.9.4-r0"]]

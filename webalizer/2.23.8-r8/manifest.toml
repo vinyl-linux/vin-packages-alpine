@@ -1,0 +1,15 @@
+checksum = "5ff1629e1b1e09a271ebeeb61a6d3993785d3554138aeca228737bc3a96616a3"
+licence = "GPL-2.0-or-later"
+provides = "webalizer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webalizer-2.23.08-r8.apk"
+version = "2.23.8-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgd", "2.3.3-r3"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "90f3b67a2f5dac9ea2343094a609354328a324592bf2324cefaae1210f7d0b78"
+licence = "GPL-2.0-or-later"
+provides = "libgnt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgnt-2.14.3-r2.apk"
+version = "2.14.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["ncurses-libs", "6.3.0"], ["libxml2", "2.10.3-r1"]]

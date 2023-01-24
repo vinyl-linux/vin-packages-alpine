@@ -1,0 +1,15 @@
+checksum = "866cdef073109d788fab57cba26057900c0fb47ea75cc9c906d56a40efe26adb"
+licence = "Apache-2.0"
+provides = "k9s"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/k9s-0.26.7-r2.apk"
+version = "0.26.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

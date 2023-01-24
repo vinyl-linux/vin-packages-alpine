@@ -1,0 +1,15 @@
+checksum = "caf1736df81b7f4e3160a904a1d5a3cef3d7329f2f765126c3f0b6e270f95efe"
+licence = "LGPL-2.0-or-later"
+provides = "libotr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libotr-dev-4.1.1-r3.apk"
+version = "4.1.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgcrypt-dev", "1.10.1-r0"], ["libotr", "4.1.1-r3"], ["pkgconf", "1.9.4-r0"]]

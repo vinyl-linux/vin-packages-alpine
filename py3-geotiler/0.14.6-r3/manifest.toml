@@ -1,0 +1,15 @@
+checksum = "3b890bad76d01219a42d95de79665413761333a697d7beca3f4616c7eb30b82f"
+licence = "GPL-3.0-or-later"
+provides = "py3-geotiler"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-geotiler-0.14.6-r3.apk"
+version = "0.14.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-aiohttp", "3.8.3-r0"], ["py3-cytoolz", "0.12.0-r0"], ["py3-pillow", "9.3.0-r0"], ["py3-setuptools", "65.6.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "fbdae4f76f244c458fcb377f705ed7214e79093764bb76ff8caa45e6b80432ab"
+licence = "LGPL-2.1-or-later"
+provides = "libjcat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libjcat-0.1.12-r0.apk"
+version = "0.1.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["gnutls", "3.7.8-r2"], ["libgpg-error", "1.46.0-r1"], ["gpgme", "1.18.0-r0"], ["nettle", "3.8.1-r0"], ["json-glib", "1.6.6-r1"]]

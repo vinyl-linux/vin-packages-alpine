@@ -1,0 +1,15 @@
+checksum = "027528dc74660325afe8e9f4a878ca2f7257192068bc60aa908a0d8fd97da846"
+licence = "GPL-3.0-or-later"
+provides = "kpmcore-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kpmcore-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kpmcore", "22.8.3-r0"]]

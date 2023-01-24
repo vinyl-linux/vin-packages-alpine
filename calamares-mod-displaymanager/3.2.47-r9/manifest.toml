@@ -1,0 +1,15 @@
+checksum = "49f470b0c95048177f00d8d9f4b84b1bbfe3a3803134f3c61a33e0fdfe04d00c"
+licence = "GPL-3.0-or-later AND LGPL-2.1-only"
+provides = "calamares-mod-displaymanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/calamares-mod-displaymanager-3.2.47-r9.apk"
+version = "3.2.47-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ckbcomp", "1.210.0-r0"], ["musl-locales", "0.1.0-r0"], ["os-prober", "1.81.0-r0"], ["py3-toml", "0.10.2-r4"]]

@@ -1,0 +1,15 @@
+checksum = "f41c774733d5b47158897054df069547af7e8de4abf2ccd1f81b16079fcbec01"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-http-parser-xs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-http-parser-xs-0.17-r6.apk"
+version = "0.17.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

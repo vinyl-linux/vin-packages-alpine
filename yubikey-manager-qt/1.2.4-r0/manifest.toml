@@ -1,0 +1,15 @@
+checksum = "7364787408bd66f070bd289a97e6084c59b30cb9e3742cdb61029269be46ec99"
+licence = "BSD-2-Clause"
+provides = "yubikey-manager-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yubikey-manager-qt-1.2.4-r0.apk"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-ykman", "4.0.9-r1"], ["python3", "3.10.9-r1"], ["py3-pyotherside", "1.6.0-r0"], ["qt5-qtquickcontrols", "5.15.6"], ["qt5-qtgraphicaleffects", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "e98899a3f2f5b1f1bfdf84e4c155dbbbe513377e2f86b00407cb3b2f230d733a"
+licence = "GPL-2.0-or-later AND MIT"
+provides = "transmission"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/transmission-3.00-r8.apk"
+version = "3.0.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libcurl", "7.87.0-r1"], ["libevent", "2.1.12-r5"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

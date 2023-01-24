@@ -1,0 +1,15 @@
+checksum = "7783b5bfb664870062a6418139e8b98e9e1831c67f58654dcdbd56d5be94fadb"
+licence = "BSD-4-Clause-UC"
+provides = "hexdump"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hexdump-2.38.1-r1.apk"
+version = "2.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

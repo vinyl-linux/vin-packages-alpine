@@ -1,0 +1,15 @@
+checksum = "5e0503c9093b8174222200f1eb592e419c2b159d2980696d315914a7da3b5d26"
+licence = "LGPL-3.0-or-later"
+provides = "ldb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ldb-2.5.2-r0.apk"
+version = "2.5.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["lmdb", "0.9.29-r2"], ["talloc", "2.3.4-r0"], ["tdb-libs", "1.4.7-r0"], ["tevent", "0.13.0-r0"]]

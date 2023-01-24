@@ -1,0 +1,15 @@
+checksum = "cd65cc0cc3a894efa31449992931f0b3596b48e2e6291f32cd0bbae404cd2601"
+licence = "BSD-3-Clause"
+provides = "libtpms-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtpms-dev-0.9.5-r0.apk"
+version = "0.9.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libtpms", "0.9.5-r0"], ["pkgconf", "1.9.4-r0"]]

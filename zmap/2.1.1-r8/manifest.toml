@@ -1,0 +1,15 @@
+checksum = "29c1959816c1da4d37b18697e1b95884ad50a1d42e5e357279f75910c64a9df7"
+licence = "Apache-2.0"
+provides = "zmap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zmap-2.1.1-r8.apk"
+version = "2.1.1-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["hiredis", "1.0.2-r1"], ["json-c", "0.16.0-r2"], ["libpcap", "1.10.1-r1"]]

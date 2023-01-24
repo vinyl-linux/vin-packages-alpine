@@ -1,0 +1,15 @@
+checksum = "84e2abcfc96d8356ca3908d0547daf9d6a286d4a9dc3b1823ba3932cc40f3371"
+licence = "GPL-3.0-or-later"
+provides = "sn0int"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sn0int-0.24.2-r0.apk"
+version = "0.24.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lua5.2-libs", "5.2.4-r10"], ["libseccomp", "2.5.4-r0"], ["libsodium", "1.0.18-r2"], ["sqlite-libs", "3.40.1-r0"]]

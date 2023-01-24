@@ -1,0 +1,15 @@
+checksum = "dd178daa6e625bf1bd0f843a8c7f195d48b9b674ceff66e0c75c5837a185311f"
+licence = "GPL PerlArtistic"
+provides = "perl-net-appliance-session"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-net-appliance-session-4.300005-r3.apk"
+version = "4.300005.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-moose", "2.2201.0-r1"], ["perl-net-cli-interact", "2.300003.0-r2"], ["perl-file-sharedir", "1.118.0-r0"], ["perl-text-glob", "0.11.0-r3"], ["perl-io", "1.50.0-r0"], ["perl-term-readpassword", "0.11.0-r2"], ["perl-io-prompt-tiny", "0.3.0-r2"]]

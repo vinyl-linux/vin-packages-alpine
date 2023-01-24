@@ -1,0 +1,15 @@
+checksum = "f2cb43639685bb9c463d368f9ae1d2404b3f1fb1ca0da60916e0c0e20bacc274"
+licence = "BSD-2-Clause"
+provides = "varnish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/varnish-7.2.1-r0.apk"
+version = "7.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["libc-dev", "0.7.2-r3"], ["libgcc", "12.2.1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libedit", "20221030.3.1-r0"], ["ncurses-libs", "6.3.0"], ["pcre2", "10.42.0-r0"], ["libunwind", "1.6.2-r0"], ["varnish-libs", "7.2.1-r0"]]

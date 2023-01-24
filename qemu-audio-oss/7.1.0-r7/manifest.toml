@@ -1,0 +1,15 @@
+checksum = "64a9dd6db5e8ffc008847651b06ff5501ca86d614fe8942a706a4607b624d450"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-audio-oss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-audio-oss-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

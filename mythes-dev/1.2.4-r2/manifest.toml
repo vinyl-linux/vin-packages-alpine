@@ -1,0 +1,15 @@
+checksum = "30c1a9d7db9c74176da864dc6c2b4a43028a7ba6c4e94b30ddb3cdb63167031c"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1"
+provides = "mythes-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mythes-dev-1.2.4-r2.apk"
+version = "1.2.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["hunspell-dev", "1.7.1-r0"], ["mythes", "1.2.4-r2"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "818866d29fc78d13ef78b567dd1aed6f56b2f8689f98960cf21dd3617a66c30b"
+licence = "FTL GPL-2.0-or-later"
+provides = "freetype-demos"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freetype-demos-2.12.1-r0.apk"
+version = "2.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freetype", "2.12.1-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libpng", "1.6.38-r0"]]

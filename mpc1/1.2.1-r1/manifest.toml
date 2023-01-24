@@ -1,0 +1,15 @@
+checksum = "ed0614c489c1078074913317c985a984cb9f3e307f7a34737d1d7b4cb057cab3"
+licence = "LGPL-3.0-or-later"
+provides = "mpc1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mpc1-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"], ["mpfr4", "4.1.0-r0"]]

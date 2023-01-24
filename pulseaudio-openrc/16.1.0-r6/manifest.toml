@@ -1,0 +1,15 @@
+checksum = "472d3d139db9fa31b0a0a47b8af3280abcfdd0d92b4e6a57f1f1800f507bc596"
+licence = "LGPL-2.1-or-later"
+provides = "pulseaudio-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pulseaudio-openrc-16.1-r6.apk"
+version = "16.1.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-utils", "1.2.8-r0"], ["alsa-utils-openrc", "1.2.8-r0"]]

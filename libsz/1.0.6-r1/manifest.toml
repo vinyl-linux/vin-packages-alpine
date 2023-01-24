@@ -1,0 +1,15 @@
+checksum = "785bbb5cea9b059677ebd1eaee0155d30825d34e77133285d8f34cb70330ce1e"
+licence = "BSD-2-Clause"
+provides = "libsz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsz-1.0.6-r1.apk"
+version = "1.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c0c93d3ab32d4adae449fd447ed2305ced082fc3c355edfc807679a2ae322c2e"
+licence = "custom"
+provides = "uwsgi-geoip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-geoip-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["geoip", "1.6.12-r3"], ["musl", "1.2.3-r4"]]

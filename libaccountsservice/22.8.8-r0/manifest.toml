@@ -1,0 +1,15 @@
+checksum = "d017e6927ad3609ca8b89c9741e4d0b8610ef08c95d39c595240827e02469e8b"
+licence = "GPL-3.0-or-later"
+provides = "libaccountsservice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libaccountsservice-22.08.8-r0.apk"
+version = "22.8.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "89bea8c1645e2fc2162f4a0b948415732c05ea4491d7705393cdb06da1314f2e"
+licence = "MIT"
+provides = "weston-desktop-x11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/weston-desktop-x11-11.0.1-r0.apk"
+version = "11.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["weston", "11.0.1-r0"], ["weston-shell-desktop", "11.0.1-r0"], ["weston-xwayland", "11.0.1-r0"], ["weston-backend-x11", "11.0.1-r0"], ["weston-terminal", "11.0.1-r0"]]

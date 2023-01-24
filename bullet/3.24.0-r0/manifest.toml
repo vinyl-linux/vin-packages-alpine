@@ -1,0 +1,15 @@
+checksum = "3115285a5edfda47e8b4c7303971a7fb28d00b70251bef79d2eaa504ba377eba"
+licence = "Zlib"
+provides = "bullet"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bullet-3.24-r0.apk"
+version = "3.24.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

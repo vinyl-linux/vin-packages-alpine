@@ -1,0 +1,15 @@
+checksum = "2e6ac589a04328ec042427d078cd7aecd1cb3be88a864fa2087149a16795580f"
+licence = "GPL-3.0-or-later"
+provides = "help2man"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/help2man-1.49.3-r0.apk"
+version = "1.49.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"]]

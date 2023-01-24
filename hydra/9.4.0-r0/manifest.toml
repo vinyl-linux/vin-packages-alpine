@@ -1,0 +1,15 @@
+checksum = "8d509fa0ddf985e84d4366078862341fd5228e5fcf1e155d5d68c85c3b402c10"
+licence = "AGPL-3.0-or-later"
+provides = "hydra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hydra-9.4-r0.apk"
+version = "9.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["afpfs-ng", "0.8.1-r10"], ["apr", "1.7.0-r2"], ["libbson", "1.16.2-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["freerdp-libs", "2.9.0-r0"], ["libgcrypt", "1.10.1-r0"], ["libidn", "1.41.0-r0"], ["mariadb-connector-c", "3.3.3-r0"], ["libmemcached-libs", "1.0.18-r5"], ["mongo-c-driver", "1.16.2-r2"], ["ncurses-libs", "6.3.0"], ["libpq", "15.1.0-r0"], ["libsmbclient", "4.16.8-r0"], ["libssh", "0.10.4-r0"], ["libssl3", "3.0.7-r2"], ["subversion-libs", "1.14.2-r4"], ["zlib", "1.2.13-r0"]]

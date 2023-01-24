@@ -1,0 +1,15 @@
+checksum = "a30da66ead9e97467a0d1a4be1c8756ce2df317d0ee7f72968341202d9eaec10"
+licence = "MIT"
+provides = "py3-geopy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-geopy-2.2.0-r1.apk"
+version = "2.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-geographiclib", "2.0.0-r0"]]

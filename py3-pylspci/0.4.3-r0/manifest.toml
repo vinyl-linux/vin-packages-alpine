@@ -1,0 +1,15 @@
+checksum = "4c10ae020f7428de46fb6ec66e9a0f7e79b7b22c27e9223b90dd6163a7731d45"
+licence = "GPL-3.0-only"
+provides = "py3-pylspci"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pylspci-0.4.3-r0.apk"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cached-property", "1.5.2-r2"], ["pciutils", "3.9.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "cdabe86c7b23967c95d84deec20b0c2472e4407cc7d64ebf4eb5e89b8acbd76d"
+licence = "MPL-2.0"
+provides = "pebble"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pebble-2.4.0-r7.apk"
+version = "2.4.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

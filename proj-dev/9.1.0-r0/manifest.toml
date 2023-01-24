@@ -1,0 +1,15 @@
+checksum = "b4e9c73016963945c976b44f8b5a9c0121b2429546c44952d07795413255a5e7"
+licence = "MIT"
+provides = "proj-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/proj-dev-9.1.0-r0.apk"
+version = "9.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["curl-dev", "7.87.0-r1"], ["tiff-dev", "4.4.0-r1"], ["sqlite-dev", "3.40.1-r0"], ["pkgconf", "1.9.4-r0"], ["proj", "9.1.0-r0"]]

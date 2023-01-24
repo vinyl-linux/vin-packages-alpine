@@ -1,0 +1,15 @@
+checksum = "d3ff6bced817424d4ed822d204ba5ddc4201429b0400f90692574788a1f77883"
+licence = "custom"
+provides = "font-bh-lucidatypewriter-75dpi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-bh-lucidatypewriter-75dpi-1.0.3-r2.apk"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

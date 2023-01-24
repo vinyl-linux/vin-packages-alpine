@@ -1,0 +1,15 @@
+checksum = "c1350a974a72cbca72c16d3d718738a159df332f7ad120b2e341b79a44baf60b"
+licence = "GPL-2.0-only"
+provides = "ell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ell-0.54-r0.apk"
+version = "0.54.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "5b09d1dd7bbc576e16903023d7be21aaf8fade571d2c66b09de1b20b248f45d2"
+licence = "Apache-2.0 OR BSD-3-Clause"
+provides = "py3-subunit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-subunit-1.4.0-r2.apk"
+version = "1.4.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-extras", "1.0.0-r5"], ["py3-testtools", "2.5.0-r1"]]

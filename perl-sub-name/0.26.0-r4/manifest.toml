@@ -1,0 +1,15 @@
+checksum = "2f241dc7e2f4764f67b670e94b69116823445b587f7d3553e150c02325fa9619"
+licence = "GPL PerlArtistic"
+provides = "perl-sub-name"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-sub-name-0.26-r4.apk"
+version = "0.26.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

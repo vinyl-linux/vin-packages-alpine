@@ -1,0 +1,15 @@
+checksum = "9bb91f73ae1a9d98653d3a948229c2ec9b440faced9727a30b2db82e45359bfb"
+licence = "MIT"
+provides = "alpine-make-vm-image"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alpine-make-vm-image-0.10.0-r0.apk"
+version = "0.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-img", "7.1.0-r7"]]

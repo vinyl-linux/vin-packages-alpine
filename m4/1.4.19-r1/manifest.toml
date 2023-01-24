@@ -1,0 +1,15 @@
+checksum = "ec41768da2994e6ecf969b0c03b179391b7178698cec8222e1569b42f61d7fdb"
+licence = "GPL-3.0+"
+provides = "m4"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/m4-1.4.19-r1.apk"
+version = "1.4.19-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "147bcf82a8faa78269264f749135019e8150f40cc4a26cc2babc76cb535c574d"
+licence = "Artistic-2.0"
+provides = "perl-set-object"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-set-object-1.42-r1.apk"
+version = "1.42.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

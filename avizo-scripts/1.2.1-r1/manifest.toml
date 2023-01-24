@@ -1,0 +1,15 @@
+checksum = "491e44328eaa2f18e1e47be917f365daf47820d6dbe017722a1e2ac8e48cc0b1"
+licence = "GPL-3.0"
+provides = "avizo-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/avizo-scripts-1.2.1-r1.apk"
+version = "1.2.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avizo", "1.2.1-r1"], ["brightnessctl", "0.5.1-r2"], ["pamixer", "1.6.0-r0"]]

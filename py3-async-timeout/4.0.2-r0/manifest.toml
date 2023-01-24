@@ -1,0 +1,15 @@
+checksum = "7cd215689f9a024ffd7d128cdce7afe6dbb155d07faed64c6c8addcd6c69f77d"
+licence = "Apache-2.0"
+provides = "py3-async-timeout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-async-timeout-4.0.2-r0.apk"
+version = "4.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-typing-extensions", "4.4.0-r0"]]

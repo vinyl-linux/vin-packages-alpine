@@ -1,0 +1,15 @@
+checksum = "5b62bce1d890db7db35802fdfe8d86237e079733418beedc7cb1ddf4a20661b6"
+licence = "MIT"
+provides = "py3-msoffcrypto-tool"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-msoffcrypto-tool-5.0.0-r1.apk"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cryptography", "38.0.3-r0"], ["py3-olefile", "0.46.0-r6"], ["py3-setuptools", "65.6.0-r0"]]

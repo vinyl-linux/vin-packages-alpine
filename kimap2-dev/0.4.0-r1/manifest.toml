@@ -1,0 +1,15 @@
+checksum = "82d9ddcd84d690bcf9d30a403a573b4f6aadd979b57e1fa1a3f8b255cda9fb9b"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+provides = "kimap2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kimap2-dev-0.4.0-r1.apk"
+version = "0.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cyrus-sasl-dev", "2.1.28-r3"], ["kcodecs-dev", "5.100.0-r0"], ["kcoreaddons-dev", "5.100.0-r0"], ["kmime-dev", "22.8.3-r0"], ["qt5-qtbase-dev", "5.15.6"], ["kimap2", "0.4.0-r1"]]

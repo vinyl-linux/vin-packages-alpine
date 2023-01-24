@@ -1,0 +1,15 @@
+checksum = "2bc1302c66ee49e8d879d1e2ae6ead54c4398f310c60ca3573e9f37d5b4ffd8e"
+licence = "ISC"
+provides = "doas"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/doas-6.8.2-r3.apk"
+version = "6.8.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

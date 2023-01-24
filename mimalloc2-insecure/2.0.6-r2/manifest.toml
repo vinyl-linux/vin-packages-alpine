@@ -1,0 +1,15 @@
+checksum = "831e4c0e48fe911a60ff665f773aff212e5ab5ef5877f5c85444c9fac68831b7"
+licence = "MIT"
+provides = "mimalloc2-insecure"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mimalloc2-insecure-2.0.6-r2.apk"
+version = "2.0.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

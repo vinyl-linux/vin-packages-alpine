@@ -1,0 +1,15 @@
+checksum = "a49b03a907792754e92d124b39a1f7720ec21a64fc1675ccd849d748d35bdfb7"
+licence = "LGPL-2.1-or-later AND GPL-2.0-or-later"
+provides = "lm-sensors"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lm-sensors-3.6.0-r4.apk"
+version = "3.6.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sysfsutils", "2.1.1-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["lm-sensors-libs", "3.6.0-r4"]]

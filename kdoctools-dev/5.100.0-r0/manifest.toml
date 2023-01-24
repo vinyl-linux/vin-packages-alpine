@@ -1,0 +1,15 @@
+checksum = "628f6a7c925736be1324b248e03a81ac197ad955ef332cbcd479670af46ae35c"
+licence = "LGPL-2.1-only OR LGPL-3.0-only"
+provides = "kdoctools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdoctools-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["karchive-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["libxml2-dev", "2.10.3-r1"], ["libxml2-utils", "2.10.3-r1"], ["libxslt-dev", "1.1.37-r0"], ["qt5-qtbase-dev", "5.15.6"], ["kdoctools", "5.100.0-r0"]]

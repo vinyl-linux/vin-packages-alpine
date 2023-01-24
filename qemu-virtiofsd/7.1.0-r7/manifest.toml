@@ -1,0 +1,15 @@
+checksum = "a040a576d2893543da566b943eb5616780b011030ee1534e6762bc671e5369ed"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-virtiofsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-virtiofsd-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["glib", "2.74.5-r0"], ["libseccomp", "2.5.4-r0"]]

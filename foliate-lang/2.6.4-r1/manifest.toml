@@ -1,0 +1,15 @@
+checksum = "8c1e25f3eb7ccf7cb0d9ee6f9c7aba23271f884552b7987addd38f195bf74cb2"
+licence = "GPL-3.0-or-later"
+provides = "foliate-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/foliate-lang-2.6.4-r1.apk"
+version = "2.6.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gjs", "1.74.1-r0"], ["webkit2gtk", "2.38.3-r0"]]

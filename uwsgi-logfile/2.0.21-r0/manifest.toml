@@ -1,0 +1,15 @@
+checksum = "ea11499c8dbc3bce54967c6f7461c01e7c2bca362e11c6a7b203238bdccf54a1"
+licence = "custom"
+provides = "uwsgi-logfile"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-logfile-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

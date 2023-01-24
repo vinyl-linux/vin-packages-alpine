@@ -1,0 +1,15 @@
+checksum = "14abdd73e091797a40c7b473adcabf80157c9344c335a59ffe638db84aadd81f"
+licence = "GPL-2.0-or-later"
+provides = "git-diff-highlight"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-diff-highlight-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["perl", "5.36.0-r0"]]

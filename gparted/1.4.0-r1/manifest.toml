@@ -1,0 +1,15 @@
+checksum = "6fa62574c1bd42460ba4ca168c77892e84d60439997ca37c1ce0e6bfb1e9560b"
+licence = "GPL-2.0-or-later"
+provides = "gparted"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gparted-1.4.0-r1.apk"
+version = "1.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["e2fsprogs", "1.46.5-r4"], ["ntfs-3g-progs", "2022.10.3-r0"], ["exfatprogs", "1.2.0-r0"], ["atkmm", "2.28.3-r0"], ["musl", "1.2.3-r4"], ["cairomm", "1.14.4-r0"], ["libgcc", "12.2.1"], ["gtk+3.0", "3.24.36-r0"], ["gtkmm3", "3.24.7-r0"], ["glib", "2.74.5-r0"], ["glibmm", "2.66.5-r0"], ["libintl", "0.21.1-r1"], ["pangomm", "2.46.3-r0"], ["parted", "3.5.0-r0"], ["libsigc++", "2.10.8-r0"], ["libstdc++", "12.2.1"], ["libuuid", "2.38.1-r1"]]

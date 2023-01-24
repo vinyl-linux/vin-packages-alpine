@@ -1,0 +1,15 @@
+checksum = "4bd265373ab4f94c88b6c062ebfbc736265d01a3974de21d670b46d5f706d1ae"
+licence = "GPL-3.0-or-later"
+provides = "rebuilderd-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rebuilderd-tools-0.18.0-r1.apk"
+version = "0.18.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shared-mime-info", "2.2.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["xz-libs", "5.2.9-r0"], ["libssl3", "3.0.7-r2"], ["zstd-libs", "1.5.2-r9"]]

@@ -1,0 +1,15 @@
+checksum = "498d32c7c630526f02075a0eeb16d85ceb7a2d78b6c39dd457a89b1b62e8f933"
+licence = "Apache-2.0"
+provides = "wait4x"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wait4x-2.5.0-r5.apk"
+version = "2.5.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

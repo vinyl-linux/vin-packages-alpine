@@ -1,0 +1,15 @@
+checksum = "22273e2d068e514221661c8f343bd4ccceea1f76c7f2216fd1dfaf4ad428639c"
+licence = "custom"
+provides = "uwsgi-transformation_chunked"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-transformation_chunked-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"]]

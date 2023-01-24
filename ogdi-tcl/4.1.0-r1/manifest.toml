@@ -1,0 +1,15 @@
+checksum = "cce6e3aa02d724f52bf8320d9279be92deeadece0610eda151696d18ce1d4e5d"
+licence = "MIT"
+provides = "ogdi-tcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ogdi-tcl-4.1.0-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ogdi", "4.1.0-r1"], ["tcl", "8.6.12-r1"]]

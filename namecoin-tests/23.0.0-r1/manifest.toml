@@ -1,0 +1,15 @@
+checksum = "a7e00e0fbf1a300e5d3e50c9569d69c9bfc5bfe70c69cf981f4b1eeb63717675"
+licence = "MIT"
+provides = "namecoin-tests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/namecoin-tests-23.0-r1.apk"
+version = "23.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["miniupnpc", "2.2.3-r1"], ["libstdc++", "12.2.1"]]

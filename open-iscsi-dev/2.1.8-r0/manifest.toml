@@ -1,0 +1,15 @@
+checksum = "e8ca9cef5e0ac3c548c9a95aec3102f3db4751f186a1b467933bdb1776d8a72c"
+licence = "GPL-2.0-only"
+provides = "open-iscsi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/open-iscsi-dev-2.1.8-r0.apk"
+version = "2.1.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-iscsi-libs", "2.1.8-r0"], ["pkgconf", "1.9.4-r0"]]

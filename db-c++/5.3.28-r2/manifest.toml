@@ -1,0 +1,15 @@
+checksum = "674b60d9c121e0c57c3cca1d75a53f46b6c390cc156e342e54ddb37a2b19ebf2"
+licence = "custom"
+provides = "db-c++"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/db-c++-5.3.28-r2.apk"
+version = "5.3.28-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "9c8e42b130e03c472e1ca73e7350b653ad04bb5ae91f2cd9c631aed87c4c4ea4"
+licence = "Apache-2.0"
+provides = "salt-minion-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-minion-openrc-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openrc", "0.45.2-r7"]]

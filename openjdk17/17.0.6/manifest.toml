@@ -1,0 +1,15 @@
+checksum = "fd9eff2e2b687c7d17cb092c62a8a53c9f55d3a406aea3da1c7de4b2f68f7cf0"
+licence = "GPL-2.0-with-classpath-exception"
+provides = "openjdk17"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openjdk17-17.0.6_p10-r0.apk"
+version = "17.0.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk17-jdk", "17.0.6"], ["openjdk17-demos", "17.0.6"], ["openjdk17-doc", "17.0.6"]]

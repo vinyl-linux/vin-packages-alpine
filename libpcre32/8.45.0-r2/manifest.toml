@@ -1,0 +1,15 @@
+checksum = "56e2e88922bb0849576c8ab69114edf4eb23356f83a8243c2cba4680efb9d052"
+licence = "BSD-3-Clause"
+provides = "libpcre32"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpcre32-8.45-r2.apk"
+version = "8.45.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

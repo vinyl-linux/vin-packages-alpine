@@ -1,0 +1,15 @@
+checksum = "3776ea23d834841d8d0fda383af6bc634569c109222c06c845d178cd948affa5"
+licence = "GPL-2.0-or-later"
+provides = "xonotic"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xonotic-0.8.5-r1.apk"
+version = "0.8.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xonotic-data", "0.8.5-r0"], ["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"]]

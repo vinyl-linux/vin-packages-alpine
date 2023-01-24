@@ -1,0 +1,15 @@
+checksum = "4d4efb410cbd7e4bbdc34e1be6a6e52865f988c52daff22f15dbe960f09531a4"
+licence = "LicenseRef-KDE-Accepted-GPL"
+provides = "plasma-phonebook-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-phonebook-lang-22.09-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami-addons", "0.5.0-r0"], ["kirigami2", "5.100.0-r1"], ["kpeoplevcard", "0.1.0-r2"], ["qt5-qtbase-sqlite", "5.15.6"], ["qt5-qtquickcontrols", "5.15.6"]]

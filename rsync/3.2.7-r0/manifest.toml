@@ -1,0 +1,15 @@
+checksum = "c1baf325ad19994023a0de15d1916acd604bd34416244216ac972b4f9a36de6d"
+licence = "GPL-3.0-or-later"
+provides = "rsync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsync-3.2.7-r0.apk"
+version = "3.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["lz4-libs", "1.9.4-r1"], ["popt", "1.19.0-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

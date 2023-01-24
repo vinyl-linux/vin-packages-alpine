@@ -1,0 +1,15 @@
+checksum = "9a90139ef9c75b55e1f9acd8e9ceb75959d35b1d3e6e0263e4a044a014a4ae56"
+licence = "GPL-3.0-or-later"
+provides = "gnome-usage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-usage-3.38.1-r1.apk"
+version = "3.38.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libdazzle", "3.44.0-r0"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libgtop", "2.40.0-r1"], ["libhandy1", "1.8.0-r1"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["libtracker", "3.4.2-r0"]]

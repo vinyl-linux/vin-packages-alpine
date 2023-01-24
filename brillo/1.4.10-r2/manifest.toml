@@ -1,0 +1,15 @@
+checksum = "3f45a1c2d7167477d21e68ab33f7b77dd5bf0427b6a46a3b806aad032e4db19e"
+licence = "0BSD"
+provides = "brillo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/brillo-1.4.10-r2.apk"
+version = "1.4.10-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

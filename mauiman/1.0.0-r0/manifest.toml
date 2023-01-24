@@ -1,0 +1,15 @@
+checksum = "34b9a20b878edf140aea03bdce13b8ce7f8dbc954f708248cdbb9e1d5ae76b59"
+licence = "GPL-2.0-or-later"
+provides = "mauiman"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mauiman-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

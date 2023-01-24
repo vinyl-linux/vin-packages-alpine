@@ -1,0 +1,15 @@
+checksum = "78505dfe077e667a76b48344c6cc5ac57280cedfde945e0b97a57afe4d9a220d"
+licence = "LGPL-2.1-or-later"
+provides = "open-vm-tools-plugins-all"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/open-vm-tools-plugins-all-12.1.0-r0.apk"
+version = "12.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["open-vm-tools-deploypkg", "12.1.0-r0"], ["open-vm-tools-guestinfo", "12.1.0-r0"], ["open-vm-tools-hgfs", "12.1.0-r0"], ["open-vm-tools-timesync", "12.1.0-r0"], ["open-vm-tools-vix", "12.1.0-r0"], ["open-vm-tools-vmbackup", "12.1.0-r0"]]

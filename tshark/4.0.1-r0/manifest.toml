@@ -1,0 +1,15 @@
+checksum = "3a9650b553af639ffe1fad0894cdb6abfe8799f94fbd09cb6b866e93813ecb1d"
+licence = "GPL-2.0-or-later"
+provides = "tshark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tshark-4.0.1-r0.apk"
+version = "4.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libpcap", "1.10.1-r1"], ["pcre2", "10.42.0-r0"], ["wireshark-common", "4.0.1-r0"], ["zlib", "1.2.13-r0"]]

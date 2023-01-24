@@ -1,0 +1,15 @@
+checksum = "8ea35ababbf9c4afec7ecf6f18976f7895035b1d05d84113ff8e6089dd3832d4"
+licence = "BSD-3-Clause"
+provides = "blosc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blosc-dev-1.21.1-r1.apk"
+version = "1.21.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["blosc", "1.21.1-r1"], ["pkgconf", "1.9.4-r0"]]

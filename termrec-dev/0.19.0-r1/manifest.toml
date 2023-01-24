@@ -1,0 +1,15 @@
+checksum = "8a2d94d8f934484b36d540cd2c562a1bbf16fe634248b05255e1eca019762127"
+licence = "LGPL-3.0-only"
+provides = "termrec-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/termrec-dev-0.19-r1.apk"
+version = "0.19.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["termrec", "0.19.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "14c939631bcaa1468df67d413d66b016c283d54c07d4563c1872291f3255319f"
+licence = "MIT"
+provides = "py3-cleo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-cleo-1.0.0a5-r0.apk"
+version = "1.0.0-a5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-crashtest", "0.4.1-r0"], ["py3-pylev", "1.4.0-r1"]]

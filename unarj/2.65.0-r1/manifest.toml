@@ -1,0 +1,15 @@
+checksum = "bf056c7843083ce08bd58bdd0880ed33934c9a3ec9a305b6c8415e628bff00bb"
+licence = "custom"
+provides = "unarj"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/unarj-2.65-r1.apk"
+version = "2.65.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

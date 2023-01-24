@@ -1,0 +1,15 @@
+checksum = "6f5b654c248743a75818c87e46553fa78cbacd59cea7be69dba90691c67e23aa"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-crypt-jwt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-crypt-jwt-0.034-r0.apk"
+version = "0.34.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-json", "4.10.0-r0"], ["perl-cryptx", "0.77.0-r0"]]

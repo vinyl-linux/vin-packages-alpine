@@ -1,0 +1,15 @@
+checksum = "fef8edcc111233bdb2357ffcc8a0105bb86369ca8baae40c4d07c9bf471b9568"
+licence = "LGP-2.1-only"
+provides = "gnome-autoar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-autoar-dev-0.4.3-r0.apk"
+version = "0.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-autoar", "0.4.3-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libarchive-dev", "3.6.1-r2"], ["pkgconf", "1.9.4-r0"]]

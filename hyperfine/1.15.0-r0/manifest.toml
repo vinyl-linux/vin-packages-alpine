@@ -1,0 +1,15 @@
+checksum = "84002841d1fc57b2134c95a785e83e11023556eaf2aa7433672e1a98602cdc1b"
+licence = "Apache-2.0 AND MIT"
+provides = "hyperfine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hyperfine-1.15.0-r0.apk"
+version = "1.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "b07bb1e4e516d83e87d8aa3a09c82a2dcd05191786d63eb8e0b112c4763821ed"
+licence = "LGPL-2.1-or-later"
+provides = "vips-heif"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vips-heif-8.13.3-r1.apk"
+version = "8.13.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libheif", "1.13.0-r0"], ["vips", "8.13.3-r1"]]

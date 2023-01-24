@@ -1,0 +1,15 @@
+checksum = "d1abee7525e0f8f9f0166b14581ba85155fbc8b4f442bbe49548bd737305fa94"
+licence = "Apache-2.0"
+provides = "mycroft-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mycroft-gui-1.0.1-r2.apk"
+version = "1.0.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["kdbusaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtwebsockets", "5.15.6"], ["qt5-qtwebview", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

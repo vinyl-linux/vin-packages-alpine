@@ -1,0 +1,15 @@
+checksum = "c5dafe2ab96eeccb752321538dcfde25b35a57f2f9c4ad38f175b6b1953e8ea8"
+licence = "GPL-2.0"
+provides = "flickcurl-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flickcurl-libs-1.26-r3.apk"
+version = "1.26.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r1"], ["libxml2", "2.10.3-r1"]]

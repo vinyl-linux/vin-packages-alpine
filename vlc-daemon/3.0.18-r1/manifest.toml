@@ -1,0 +1,15 @@
+checksum = "2a3f4138be47ed707c7decb8c039568329cba9e946d9e24a3b826ee36aafcea7"
+licence = "GPL-2.0-or-later"
+provides = "vlc-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vlc-daemon-3.0.18-r1.apk"
+version = "3.0.18-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["vlc", "3.0.18-r1"], ["yash-binsh", "2.53.0-r2"]]

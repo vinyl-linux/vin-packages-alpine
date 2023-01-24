@@ -1,0 +1,15 @@
+checksum = "940bc70236c2b2d8e3f19e44435c775202e9689eb1570be387098701c3e48ab0"
+licence = "GPL-2.0-only"
+provides = "icinga2-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/icinga2-bash-completion-2.13.6-r0.apk"
+version = "2.13.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"]]

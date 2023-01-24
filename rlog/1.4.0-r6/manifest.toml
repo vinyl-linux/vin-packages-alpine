@@ -1,0 +1,15 @@
+checksum = "dbcc5b261971f64b04dbf4c5d892ba4c7175d44785df77b18010821679e6f043"
+licence = "LGPL-2.1-or-later"
+provides = "rlog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rlog-1.4-r6.apk"
+version = "1.4.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

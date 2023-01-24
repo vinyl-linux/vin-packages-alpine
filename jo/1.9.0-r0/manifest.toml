@@ -1,0 +1,15 @@
+checksum = "6fe36d47d3c952288c5c7c6659ec3c911ea4331d2daf1a504d5eb502ff49af07"
+licence = "GPL-2.0-or-later"
+provides = "jo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jo-1.9-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

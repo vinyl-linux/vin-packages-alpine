@@ -1,0 +1,15 @@
+checksum = "2b24fb1d3967dcadcd7ef3b391365612fac0d051770df7bce498c01c76a95cc3"
+licence = "MIT"
+provides = "aspcud"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aspcud-1.9.6-r4.apk"
+version = "1.9.6-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clingo", "5.6.2-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

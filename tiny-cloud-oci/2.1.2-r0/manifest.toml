@@ -1,0 +1,15 @@
+checksum = "70377326d52b639c02a217a5366a5ef21afb989d98a773ffef642047865bf09f"
+licence = "MIT"
+provides = "tiny-cloud-oci"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-oci-2.1.2-r0.apk"
+version = "2.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tiny-cloud", "2.1.2-r0"], ["yash-binsh", "2.53.0-r2"]]

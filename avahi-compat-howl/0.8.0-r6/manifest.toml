@@ -1,0 +1,15 @@
+checksum = "ae4dde21f286d058f3c1077dcfc453e0a7f4aecd5cb700bcad1f6c223c1f3cde"
+licence = "LGPL-2.1-or-later"
+provides = "avahi-compat-howl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/avahi-compat-howl-0.8-r6.apk"
+version = "0.8.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi-libs", "0.8.0-r6"], ["musl", "1.2.3-r4"]]

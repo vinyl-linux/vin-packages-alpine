@@ -1,0 +1,15 @@
+checksum = "851236eb23f1a7557a2e78a2a1e1a4bf10c82467cf491b9762f78d45a25ce945"
+licence = "GPL-2.0-or-later"
+provides = "xpra-tests"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xpra-tests-4.4.3-r0.apk"
+version = "4.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.2-r0"], ["py3-numpy", "1.23.4-r0"], ["py3-opengl", "3.1.6-r1"], ["py3-rencode", "1.0.6-r7"], ["py3-lz4", "3.1.10-r0"], ["py3-cryptography", "38.0.3-r0"], ["py3-dbus", "1.3.2-r0"], ["py3-openssl", "22.1.0-r1"], ["py3-brotli", "1.0.9-r9"], ["py3-uinput", "0.11.2-r1"], ["py3-inotify", "0.9.6-r9"], ["py3-pillow", "9.3.0-r0"], ["xf86-video-dummy", "0.4.0-r0"], ["xorg-server", "21.1.6-r0"], ["xvfb", "21.1.6-r0"]]

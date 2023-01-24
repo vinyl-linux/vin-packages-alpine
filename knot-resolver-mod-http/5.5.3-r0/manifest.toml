@@ -1,0 +1,15 @@
+checksum = "d47f5256ad78c3fe84c77d0e817abf3a859f5972f823ef0c2c8426ad2553ee70"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-mod-http"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/knot-resolver-mod-http-5.5.3-r0.apk"
+version = "5.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["knot-resolver", "5.5.3-r0"], ["lua5.1-mmdb", "0.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "eee408b71ce2f1f02a713426cacbc7c6b3a25d88370d0adb88a5c71a0af5977f"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libcap-ng-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcap-ng-utils-0.8.3-r1.apk"
+version = "0.8.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"]]

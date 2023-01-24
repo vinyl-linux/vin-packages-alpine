@@ -1,0 +1,15 @@
+checksum = "9504b0c164056d18a48881450e493640ed3595a4fbb008a78ad1d987cfe951e5"
+licence = "GPL-3.0-or-later"
+provides = "cloud-utils-localds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cloud-utils-localds-0.33-r0.apk"
+version = "0.33.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["cdrkit", "1.1.11-r4"], ["dosfstools", "4.2.0-r1"], ["mtools", "4.0.42-r0"], ["qemu-img", "7.1.0-r7"], ["tar", "1.34.0-r1"]]

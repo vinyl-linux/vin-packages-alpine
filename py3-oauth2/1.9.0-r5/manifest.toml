@@ -1,0 +1,15 @@
+checksum = "beb0aea911ecdf269d726026902815783cadf179cc0edfa45e1d5c0254f486b7"
+licence = "MIT"
+provides = "py3-oauth2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-oauth2-1.9.0-r5.apk"
+version = "1.9.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-httplib2", "0.21.0-r0"]]

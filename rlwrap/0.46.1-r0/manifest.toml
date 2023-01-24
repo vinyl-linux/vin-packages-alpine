@@ -1,0 +1,15 @@
+checksum = "9c91283b64c161371007d0312ad6cf9ae60430348e38217c4b4b2524f64e6e32"
+licence = "GPL-2.0-or-later"
+provides = "rlwrap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rlwrap-0.46.1-r0.apk"
+version = "0.46.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c0a8a2bede1471207a62e293bc6d496bf5a2a9cd58abd596de161b897e739528"
+licence = "GPL-2.0-or-later"
+provides = "krita-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/krita-lang-5.1.3-r0.apk"
+version = "5.1.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"]]

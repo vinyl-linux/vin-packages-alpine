@@ -1,0 +1,15 @@
+checksum = "916282900d5808982e2951c0ea52c91be48cd2d1f41408fa0b5b816f316eb90f"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-file-rsync"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-file-rsync-0.76-r2.apk"
+version = "0.76.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

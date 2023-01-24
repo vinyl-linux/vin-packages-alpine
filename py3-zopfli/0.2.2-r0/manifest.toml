@@ -1,0 +1,15 @@
+checksum = "40ffcfd2e6827bba2d98656769577f19eed118f9331200434fa5e17ee255dfc4"
+licence = "Apache-2.0"
+provides = "py3-zopfli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zopfli-0.2.2-r0.apk"
+version = "0.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["zopfli", "1.0.3-r1"]]

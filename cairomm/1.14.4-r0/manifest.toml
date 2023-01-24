@@ -1,0 +1,15 @@
+checksum = "4bd03b940ff38f7b10b6db462d3cf1c2ce3195572dec0b8b6da5346cf710d903"
+licence = "LGPL-2.0-or-later AND MPL-1.1"
+provides = "cairomm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cairomm-1.14.4-r0.apk"
+version = "1.14.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["libgcc", "12.2.1"], ["libsigc++", "2.10.8-r0"], ["libstdc++", "12.2.1"]]

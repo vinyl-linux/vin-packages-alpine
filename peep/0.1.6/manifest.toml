@@ -1,0 +1,15 @@
+checksum = "87eac957488139859bdfad3ef10d0db4bb6e9281e3b55cf3e43776e8973451bc"
+licence = "MIT"
+provides = "peep"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/peep-0.1.6_git20220920-r0.apk"
+version = "0.1.6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

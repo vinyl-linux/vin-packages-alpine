@@ -1,0 +1,15 @@
+checksum = "4133890bfbd30f4df2ec7aee37502809831c2c496987add8fc701df88d0df30b"
+licence = "GPL"
+provides = "policyd-spf-fs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/policyd-spf-fs-23-r4.apk"
+version = "23.0.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libspf2", "1.2.11-r0"]]

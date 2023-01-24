@@ -1,0 +1,15 @@
+checksum = "b6b68dda99d690a45719b4f75d658b253113e2cce60aa2f49933ec01813d2b80"
+licence = "GPL-2.0-or-later"
+provides = "mate-calc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mate-calc-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mate-common", "1.26.0-r1"], ["libatk-1.0", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["pango", "1.50.12-r0"], ["libxml2", "2.10.3-r1"]]

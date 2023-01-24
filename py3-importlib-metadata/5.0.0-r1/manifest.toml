@@ -1,0 +1,15 @@
+checksum = "0619f570f2f8e79448d76572dcd5f5b82768db72d4181c0395afb6f89547c30c"
+licence = "Apache-2.0"
+provides = "py3-importlib-metadata"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-importlib-metadata-5.0.0-r1.apk"
+version = "5.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-zipp", "3.10.0-r0"]]

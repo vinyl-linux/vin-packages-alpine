@@ -1,0 +1,15 @@
+checksum = "63fedd4b0975d93f62ab2de930780c9d17e9a03125b57bbbc0c3a699e4f6d052"
+licence = "MIT"
+provides = "py3-autograd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-autograd-1.5-r0.apk"
+version = "1.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-numpy", "1.23.4-r0"], ["py3-scipy", "1.9.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4017a4b5a8784b986d7a876c29e98bce55250d29643352e3ad99748e909ad534"
+licence = "GPL-2.0-or-later AND GPL-3.0-or-later"
+provides = "libsynctex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libsynctex-20220403.62885-r5.apk"
+version = "20220403.62885.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

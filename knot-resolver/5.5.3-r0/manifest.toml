@@ -1,0 +1,15 @@
+checksum = "2859050603f2a2b6596e970804ecdb2472c695e739dfc345e966c904fe253e9e"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/knot-resolver-5.5.3-r0.apk"
+version = "5.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dnssec-root", "20190225.0.0-r2"], ["lua5.1-cqueues", "20200726.0.0-r4"], ["lua5.1-http", "0.4.0-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["knot-libs", "3.2.4-r0"], ["libedit", "20221030.3.1-r0"], ["libgcc", "12.2.1"], ["gnutls", "3.7.8-r2"], ["lmdb", "0.9.29-r2"], ["luajit", "2.1.0"], ["libstdc++", "12.2.1"], ["libuv", "1.44.2-r0"]]

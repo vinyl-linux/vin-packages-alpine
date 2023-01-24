@@ -1,0 +1,15 @@
+checksum = "aae90e3a5d96b715a9641636c45e242e0d2f9eda479382988794037e47ca7a67"
+licence = "GPL-2.0-or-later"
+provides = "chrpath"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/chrpath-0.16-r3.apk"
+version = "0.16.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

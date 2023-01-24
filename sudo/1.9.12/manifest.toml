@@ -1,0 +1,15 @@
+checksum = "bb452178b90d169d76233dc1a3845a3d79b88cc6ce76474401e0fe1276c55df4"
+licence = "custom ISC"
+provides = "sudo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sudo-1.9.12_p2-r0.apk"
+version = "1.9.12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

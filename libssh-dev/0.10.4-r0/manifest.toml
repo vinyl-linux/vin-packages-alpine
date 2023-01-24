@@ -1,0 +1,15 @@
+checksum = "563259c0a10693755e151eda4822dd5c67c2c0ec11d6fe166730dd5871e2ae18"
+licence = "LGPL-2.1-or-later BSD-2-Clause"
+provides = "libssh-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libssh-dev-0.10.4-r0.apk"
+version = "0.10.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["zlib-dev", "1.2.13-r0"], ["libssh", "0.10.4-r0"], ["pkgconf", "1.9.4-r0"]]

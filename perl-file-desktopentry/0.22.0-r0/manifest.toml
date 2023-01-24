@@ -1,0 +1,15 @@
+checksum = "0a0c2384e7ff2bca0dda22db0b17841361ce05b21f27c7ff9abb72d1a60effcb"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-file-desktopentry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-file-desktopentry-0.22-r0.apk"
+version = "0.22.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-file-basedir", "0.9.0-r0"], ["perl-uri", "5.17.0-r0"]]

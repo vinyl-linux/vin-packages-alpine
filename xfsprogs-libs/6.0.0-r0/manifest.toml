@@ -1,0 +1,15 @@
+checksum = "cc923b0fc1a76a550ec2c37898257c8352dc04cfd43f2d117b3ffda3ff2915ec"
+licence = "LGPL-2.1-or-later"
+provides = "xfsprogs-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xfsprogs-libs-6.0.0-r0.apk"
+version = "6.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

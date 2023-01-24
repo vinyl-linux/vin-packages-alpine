@@ -1,0 +1,15 @@
+checksum = "5a301a083ac357af67d09b9b863b27d9808ac0d6d0124aa79ab6cd0862cc2a14"
+licence = "BSD-2-Clause"
+provides = "check_postgres"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/check_postgres-2.25.0-r2.apk"
+version = "2.25.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-bdr", "9.4.14"], ["perl", "5.36.0-r0"]]

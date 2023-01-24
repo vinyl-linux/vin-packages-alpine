@@ -1,0 +1,15 @@
+checksum = "0f14f9ec688b509c849af80a7b6d692c583e54793f2cbaba9068c466359701d6"
+licence = "MIT"
+provides = "git-lfs2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/git-lfs2-2.13.3-r11.apk"
+version = "2.13.3-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

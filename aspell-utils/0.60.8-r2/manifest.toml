@@ -1,0 +1,15 @@
+checksum = "4bd1bf607dbef050a597a04cb1fe8ac7b9683885c5ed52428238fcb486d41bb2"
+licence = "LGPL-2.0-or-later"
+provides = "aspell-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aspell-utils-0.60.8-r2.apk"
+version = "0.60.8-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspell", "0.60.8-r2"], ["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

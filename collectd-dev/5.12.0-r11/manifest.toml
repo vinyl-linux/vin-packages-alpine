@@ -1,0 +1,15 @@
+checksum = "16f2404ae0e260bf646cb2a877f2ee46d7fa5dc9e11ef7b9f763cd7d92a1670e"
+licence = "GPL-2.0-or-later"
+provides = "collectd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-dev-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd-libs", "5.12.0-r11"], ["pkgconf", "1.9.4-r0"]]

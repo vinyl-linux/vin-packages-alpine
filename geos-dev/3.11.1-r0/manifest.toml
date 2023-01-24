@@ -1,0 +1,15 @@
+checksum = "4e772e12a84d2b2e2d806dd48d3ebe319873acededb963fc0c6a9943842fd06e"
+licence = "LGPL-2.1-or-later"
+provides = "geos-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geos-dev-3.11.1-r0.apk"
+version = "3.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["geos", "3.11.1-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "572f809ea4166b4d0985502701f0c477328042c7d44ced97dd3e0b9e802522f7"
+licence = "LGPL-2.1-or-later"
+provides = "libnma"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnma-1.10.4-r1.apk"
+version = "1.10.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mobile-broadband-provider-info", "20221107.0.0-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gcr-base", "3.41.1-r1"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["libnm", "1.40.10-r0"]]

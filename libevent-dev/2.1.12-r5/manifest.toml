@@ -1,0 +1,15 @@
+checksum = "e034b1708ae48535608d5c41a566bc2d501eb800b6259c94140a128839c492df"
+licence = "BSD-3-Clause"
+provides = "libevent-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libevent-dev-2.1.12-r5.apk"
+version = "2.1.12-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["libevent", "2.1.12-r5"], ["pkgconf", "1.9.4-r0"]]

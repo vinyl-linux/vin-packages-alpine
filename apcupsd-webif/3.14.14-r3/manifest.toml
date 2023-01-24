@@ -1,0 +1,15 @@
+checksum = "bb43cf0ea3ab1ec9919785f50a694b1fd0f7ac45c321e20076b9c08ee8bfb139"
+licence = "GPL-2.0-only"
+provides = "apcupsd-webif"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apcupsd-webif-3.14.14-r3.apk"
+version = "3.14.14-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["util-linux", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libgd", "2.3.3-r3"]]

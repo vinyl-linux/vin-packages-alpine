@@ -1,0 +1,15 @@
+checksum = "869aca221fe4158244eb6e965129b1fb73e5f9e83d6b0d841db1bc4514b6bd55"
+licence = "Apache-2.0"
+provides = "salt-ssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/salt-ssh-3005.1-r0.apk"
+version = "3005.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["salt", "3005.1.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9ded9e4d84a4bc3f2752f1e8864d137e7cd3f59f15f61e7094c8c8472583a70d"
+licence = "MIT"
+provides = "brotli-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/brotli-dev-1.0.9-r9.apk"
+version = "1.0.9-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["brotli", "1.0.9-r9"], ["brotli-libs", "1.0.9-r9"], ["pkgconf", "1.9.4-r0"]]

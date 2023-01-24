@@ -1,0 +1,15 @@
+checksum = "b8c6de4394206db5f4700d36f6355a0c9aae2d667f224762709fdfb504da70d8"
+licence = "BSD-2-Clause"
+provides = "mk-configure"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mk-configure-0.37.0-r0.apk"
+version = "0.37.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bmake", "20220928.0.0-r0"], ["bmkdep", "20140112.0.0-r0"]]

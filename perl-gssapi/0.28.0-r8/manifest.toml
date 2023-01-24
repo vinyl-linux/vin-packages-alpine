@@ -1,0 +1,15 @@
+checksum = "85517878f74922c5bb702da5ff7cc7ec48ccf3b06da763f19392bed3cf71a0dc"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-gssapi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-gssapi-0.28-r8.apk"
+version = "0.28.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["krb5-libs", "1.20.1-r0"]]

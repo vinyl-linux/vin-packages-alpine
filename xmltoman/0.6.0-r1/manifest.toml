@@ -1,0 +1,15 @@
+checksum = "2242cafb1060d101ba10998bc9ce2930996d61ccc8228765d2d83f010f658d31"
+licence = "GPL-2.0-or-later"
+provides = "xmltoman"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xmltoman-0.6-r1.apk"
+version = "0.6.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl-xml-parser", "2.46.0-r3"]]

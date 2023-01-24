@@ -1,0 +1,15 @@
+checksum = "e690fcca5fae1b67ec9847d2a058226a503cc354d6a6e02d3754da96d9f33b05"
+licence = "MIT"
+provides = "libshairport"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libshairport-1.2.1.20121215-r3.apk"
+version = "1.2.1.20121215-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

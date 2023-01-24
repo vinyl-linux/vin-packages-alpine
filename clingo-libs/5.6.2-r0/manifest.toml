@@ -1,0 +1,15 @@
+checksum = "235ade58b2898aab8bb2941c503a726228327189a2a312a8867cd30bc744ef15"
+licence = "MIT"
+provides = "clingo-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clingo-libs-5.6.2-r0.apk"
+version = "5.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

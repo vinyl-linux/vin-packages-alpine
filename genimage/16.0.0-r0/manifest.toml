@@ -1,0 +1,15 @@
+checksum = "8d1b581f4be3264cf14c48a4af44d47f416f1e2be8ec48d5a254cc2cfd949523"
+licence = "GPL-2.0-only"
+provides = "genimage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/genimage-16-r0.apk"
+version = "16.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["confuse", "3.3.0-r1"]]

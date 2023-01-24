@@ -1,0 +1,15 @@
+checksum = "8b51f90e40e5c22627f3eaf898c9bccff1abe54b531814687b518c2f8d6a228e"
+licence = "MIT"
+provides = "py3-pytest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pytest-7.2.0-r1.apk"
+version = "7.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-attrs", "22.1.0-r0"], ["py3-exceptiongroup", "1.0.4-r0"], ["py3-iniconfig", "1.1.1-r3"], ["py3-packaging", "21.3.0-r2"], ["py3-pluggy", "1.0.0-r1"], ["py3-py", "1.11.0-r0"], ["py3-tomli", "2.0.1-r1"], ["python3", "3.10.9-r1"]]

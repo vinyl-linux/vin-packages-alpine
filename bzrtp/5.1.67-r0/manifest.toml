@@ -1,0 +1,15 @@
+checksum = "3df6ba63664d194e783f433d5a548a2a315ad00d7020c92cc1835873b8b98d2a"
+licence = "GPL-3.0-only"
+provides = "bzrtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bzrtp-5.1.67-r0.apk"
+version = "5.1.67-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bctoolbox", "5.1.64-r0"], ["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"], ["libxml2", "2.10.3-r1"]]

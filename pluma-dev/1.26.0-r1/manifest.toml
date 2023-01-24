@@ -1,0 +1,15 @@
+checksum = "ee40db81e865d329cbacc69d5a715d527f90549f26d8ccea0ce76b8b3bf972b8"
+licence = "GPL-2.0-or-later"
+provides = "pluma-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pluma-dev-1.26.0-r1.apk"
+version = "1.26.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gtksourceview4-dev", "4.8.4-r0"], ["libpeas-dev", "1.34.0-r0"], ["pkgconf", "1.9.4-r0"]]

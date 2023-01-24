@@ -1,0 +1,15 @@
+checksum = "bb4e12da41cf00a2cc8989d2ed6b50ce2e225b8c82de70f81fb64668cbb36628"
+licence = "LGPL-2.1-or-later"
+provides = "libdaemon-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libdaemon-dev-0.14-r3.apk"
+version = "0.14.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdaemon", "0.14.0-r3"], ["pkgconf", "1.9.4-r0"]]

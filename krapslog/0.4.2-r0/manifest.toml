@@ -1,0 +1,15 @@
+checksum = "36cbec589fa15a9eca80972b44d0647ddf2f6e4e3646c9b6c1a50d5ca7cfb1cc"
+licence = "MIT"
+provides = "krapslog"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/krapslog-0.4.2-r0.apk"
+version = "0.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

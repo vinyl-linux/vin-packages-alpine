@@ -1,0 +1,15 @@
+checksum = "0783b01bf30ad9f90fbaeddb7df77dfaae9e5250c05d477bd836b7b5d638edb7"
+licence = "BSD-2-Clause"
+provides = "librist-progs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librist-progs-0.2.7-r0.apk"
+version = "0.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mbedtls", "2.28.2-r0"], ["librist", "0.2.7-r0"]]

@@ -1,0 +1,15 @@
+checksum = "b80bc9c7e3564fb9c7184e648b63ce1942103871033eb7ae6d604a3fe1966a36"
+licence = "MPL-2.0"
+provides = "dhclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dhclient-4.4.3_p1-r1.apk"
+version = "4.4.3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["coreutils", "9.1.0-r0"], ["iproute2", "6.0.0-r1"], ["run-parts", "4.11.2-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

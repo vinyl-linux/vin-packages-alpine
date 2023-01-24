@@ -1,0 +1,15 @@
+checksum = "99877a37691b7a59dbe99b5b77635ac2e41c90f74091da2b50bc883c80dbd5fc"
+licence = "LGPL-2.1-or-later"
+provides = "libgphoto2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgphoto2-2.5.30-r0.apk"
+version = "2.5.30-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libexif", "0.6.24-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["libltdl", "2.4.7-r0"], ["libusb", "1.0.26-r0"]]

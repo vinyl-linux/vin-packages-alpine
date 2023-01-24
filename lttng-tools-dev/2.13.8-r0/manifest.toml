@@ -1,0 +1,15 @@
+checksum = "5e48452c5a47375ef8a574f22aa767b574ee1468abde2344c617a39707526bac"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "lttng-tools-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lttng-tools-dev-2.13.8-r0.apk"
+version = "2.13.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kmod-dev", "30.0.0-r1"], ["libxml2-dev", "2.10.3-r1"], ["lttng-ust-dev", "2.13.3-r0"], ["popt-dev", "1.19.0-r0"], ["userspace-rcu-dev", "0.13.2-r0"], ["util-linux-dev", "2.38.1-r1"], ["lttng-tools", "2.13.8-r0"], ["pkgconf", "1.9.4-r0"]]

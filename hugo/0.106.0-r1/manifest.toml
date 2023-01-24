@@ -1,0 +1,15 @@
+checksum = "81eaa50aa08e27b8166b6350610e54546b594f83daa829e5dc4a8211c5169c20"
+licence = "Apache-2.0"
+provides = "hugo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hugo-0.106.0-r1.apk"
+version = "0.106.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "ed6b8256cf5447e8262c8e0c93b776e6f7590e59ca0395160a76c4503392fb2e"
+licence = "MIT"
+provides = "intel-media-sdk-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/intel-media-sdk-dev-22.6.3-r0.apk"
+version = "22.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libva-dev", "2.16.0-r0"], ["intel-media-sdk-tracer", "22.6.3-r0"], ["intel-media-sdk", "22.6.3-r0"], ["libmfx", "22.6.3-r0"], ["pkgconf", "1.9.4-r0"]]

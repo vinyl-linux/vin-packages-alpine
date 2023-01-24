@@ -1,0 +1,15 @@
+checksum = "413e575fbcc2cb6b46c657da2bb7a47c6c2850fd213d3b2daf0e10a2f94d8d86"
+licence = "GPL-2.0-only"
+provides = "nvme-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nvme-cli-2.2.1-r0.apk"
+version = "2.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["json-c", "0.16.0-r2"], ["libnvme", "1.2.0-r0"], ["zlib", "1.2.13-r0"]]

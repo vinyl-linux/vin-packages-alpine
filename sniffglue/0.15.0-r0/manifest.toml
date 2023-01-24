@@ -1,0 +1,15 @@
+checksum = "8c14dbf8041afb4d0227303ec7fd3cefcb4c35b5b43100f4b4aebd641f459623"
+licence = "GPL-3.0-or-later"
+provides = "sniffglue"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sniffglue-0.15.0-r0.apk"
+version = "0.15.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libpcap", "1.10.1-r1"], ["libseccomp", "2.5.4-r0"]]

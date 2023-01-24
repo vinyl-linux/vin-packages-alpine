@@ -1,0 +1,15 @@
+checksum = "2b546533cbc1163b78b344616a5a125fdc7541267eefe1cd692333fc53bb4ad4"
+licence = "GPL"
+provides = "dansguardian"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dansguardian-2.12.0.3-r6.apk"
+version = "2.12.0.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["logrotate", "3.20.1-r3"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["pcre", "8.45.0-r2"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

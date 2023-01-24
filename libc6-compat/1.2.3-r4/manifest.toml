@@ -1,0 +1,15 @@
+checksum = "778b841bc50ab66651b6b77dcc240bbfb5dc571f159b0163c7c79a924536c0a4"
+licence = "MIT"
+provides = "libc6-compat"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libc6-compat-1.2.3-r4.apk"
+version = "1.2.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

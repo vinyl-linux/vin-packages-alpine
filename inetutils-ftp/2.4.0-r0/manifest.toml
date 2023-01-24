@@ -1,0 +1,15 @@
+checksum = "0ca96e3afd67f29d9cec320a16b8fc35362f2b4b2006e44d7a49595d02c660fb"
+licence = "GPL-3.0-or-later"
+provides = "inetutils-ftp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/inetutils-ftp-2.4-r0.apk"
+version = "2.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "efb067ca0c3c51effe92e308ca81007d51f06aab476a74d7e802ab5cbc644645"
+licence = "X11 AND LGPL-2.1-or-later"
+provides = "kmediaplayer-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kmediaplayer-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["kparts-dev", "5.100.0-r0"], ["kxmlgui-dev", "5.100.0-r0"], ["kmediaplayer", "5.100.0-r0"]]

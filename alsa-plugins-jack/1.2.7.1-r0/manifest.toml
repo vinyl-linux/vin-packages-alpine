@@ -1,0 +1,15 @@
+checksum = "082da0de17c55da33007a965becfe7a957559c8de0bb7978ff9ab262007f8dfe"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "alsa-plugins-jack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alsa-plugins-jack-1.2.7.1-r0.apk"
+version = "1.2.7.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["jack", "1.9.21-r0"]]

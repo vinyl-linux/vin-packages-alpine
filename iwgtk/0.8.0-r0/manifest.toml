@@ -1,0 +1,15 @@
+checksum = "9ee919b33fc05c9898f580abcf0c33cb15b2dd1a985107b79916442e32cdbc57"
+licence = "GPL-3-or-later"
+provides = "iwgtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/iwgtk-0.8-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.12-r0"], ["libqrencode", "4.1.1-r1"]]

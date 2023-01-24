@@ -1,0 +1,15 @@
+checksum = "5e0004bce3362391f11b05048ed1cfbc948388699dd02bcc96614a8b2e75780b"
+licence = "GPL-2.0-or-later"
+provides = "gnome-control-center-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-control-center-dbg-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["accountsservice", "22.8.8-r0"], ["kwallet", "5.100.0-r0"], ["colord", "1.4.6-r1"], ["cups-pk-helper", "0.2.7-r0"], ["openrc-settingsd", "1.1.0-r0"]]

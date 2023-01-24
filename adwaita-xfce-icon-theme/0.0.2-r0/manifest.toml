@@ -1,0 +1,15 @@
+checksum = "0a665c49e9a4540bdee262350ea85f4b42424f2e0507cf7a95f8c0398b13429e"
+licence = "GPL-2.0-only"
+provides = "adwaita-xfce-icon-theme"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/adwaita-xfce-icon-theme-0.0.2-r0.apk"
+version = "0.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["adwaita-icon-theme", "43.0.0-r0"]]

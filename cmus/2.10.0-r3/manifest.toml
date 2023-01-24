@@ -1,0 +1,15 @@
+checksum = "7d333846718d83285682eae6cf8ad4e484fbd6cba32b2a64042084c87c13c0ad"
+licence = "GPL-2.0-or-later"
+provides = "cmus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cmus-2.10.0-r3.apk"
+version = "2.10.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flac-libs", "1.4.2-r0"], ["alsa-lib", "1.2.8-r0"], ["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["libelogind", "246.10.0-r5"], ["faad2-libs", "2.10.1-r0"], ["libmad", "0.15.1-b-r9"], ["ncurses-libs", "6.3.0"], ["opusfile", "0.12.0-r3"], ["libvorbis", "1.3.7-r0"], ["wavpack", "5.5.0-r0"]]

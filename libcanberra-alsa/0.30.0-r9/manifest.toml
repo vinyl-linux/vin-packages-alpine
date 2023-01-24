@@ -1,0 +1,15 @@
+checksum = "a4e78d1fb27641b9e165e56186fb6910f1497922382b3ca9d51e072d3b1af9f5"
+licence = "LGPL-2.1-or-later"
+provides = "libcanberra-alsa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libcanberra-alsa-0.30-r9.apk"
+version = "0.30.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcanberra", "0.30.0-r9"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

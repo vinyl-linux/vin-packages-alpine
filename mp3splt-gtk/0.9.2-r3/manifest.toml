@@ -1,0 +1,15 @@
+checksum = "534dfeaf9a39bbf81ad199158f043e78abc45a842272031393d12018b59fa951"
+licence = "GPL-2.0-or-later"
+provides = "mp3splt-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mp3splt-gtk-0.9.2-r3.apk"
+version = "0.9.2-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gstreamer", "1.20.5-r0"], ["libintl", "0.21.1-r1"], ["libmp3splt", "0.9.2-r3"]]

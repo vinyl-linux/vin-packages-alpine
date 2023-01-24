@@ -1,0 +1,15 @@
+checksum = "d7b37ae15c8537dc2a123f1852258b664e8b50c02e7d7756d64d20f40a4fe566"
+licence = "custom"
+provides = "uwsgi-lua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-lua-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["lua5.3-libs", "5.3.6-r4"]]

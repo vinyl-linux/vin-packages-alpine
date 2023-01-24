@@ -1,0 +1,15 @@
+checksum = "b39c5a4ffd4f6843ca31717bd64c3ae34b139fba7b2edefd2ecde517023f4ce9"
+licence = "GPL-2.0-only"
+provides = "tcptraceroute"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tcptraceroute-1.5b7-r4.apk"
+version = "1.5.0-b7-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libnet", "1.2.0-r1"], ["libpcap", "1.10.1-r1"]]

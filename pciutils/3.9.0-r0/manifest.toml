@@ -1,0 +1,15 @@
+checksum = "60d8f2b0c001ffe931ba67ad7a76a32c2d807e4955ac9756eeaf71c38bd5f8d2"
+licence = "GPL-2.0-only"
+provides = "pciutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pciutils-3.9.0-r0.apk"
+version = "3.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwdata-pci", "0.364.0-r0"], ["musl", "1.2.3-r4"], ["pciutils-libs", "3.9.0-r0"]]

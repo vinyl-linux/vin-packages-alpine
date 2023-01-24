@@ -1,0 +1,15 @@
+checksum = "0dc5ffa9a7bb457217417b1d04f75d226aafd1d2824bdd6356f07ccaf4065ed3"
+licence = "MPL-2.0"
+provides = "libodfgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libodfgen-0.1.8-r4.apk"
+version = "0.1.8-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["librevenge", "0.0.4-r10"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"]]

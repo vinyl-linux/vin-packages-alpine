@@ -1,0 +1,15 @@
+checksum = "c9249f0a089ddeccb82629345166930df8877ec3640f0336f683eb8298fd1c85"
+licence = "GPL-2.0-or-later"
+provides = "git-gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-gui-2.38.3-r1.apk"
+version = "2.38.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.3-r1"], ["tcl", "8.6.12-r1"], ["tk", "8.6.12-r1"]]

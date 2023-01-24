@@ -1,0 +1,15 @@
+checksum = "92c03a736b6eda5465e0f8ea6d39824d7408b6512cfa9fa1e223f81b7ed44a2d"
+licence = "GPL-3.0-only"
+provides = "suitesparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/suitesparse-5.10.1-r0.apk"
+version = "5.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["libgomp", "12.2.1"], ["mpfr4", "4.1.0-r0"], ["openblas", "0.3.21-r0"], ["libstdc++", "12.2.1"]]

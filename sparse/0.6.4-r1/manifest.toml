@@ -1,0 +1,15 @@
+checksum = "195a57c65e1c85ccc55b3d8032d63b01a658d7861c952fe13498e5658e15e421"
+licence = "MIT"
+provides = "sparse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sparse-0.6.4-r1.apk"
+version = "0.6.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

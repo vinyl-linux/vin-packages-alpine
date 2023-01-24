@@ -1,0 +1,15 @@
+checksum = "d364f01548c8311cf03947b64b121ca955b928e305314f72c9d908aa4fe6cd79"
+licence = "GPL-2.0-or-later"
+provides = "udisks2-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/udisks2-libs-2.9.4-r1.apk"
+version = "2.9.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

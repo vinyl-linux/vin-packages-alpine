@@ -1,0 +1,15 @@
+checksum = "01fa30861e271257edebae9747ce587f56b9641d76dc0974fbb16267e15e5384"
+licence = "0BSD"
+provides = "rhash-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rhash-dev-1.4.3-r1.apk"
+version = "1.4.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rhash-libs", "1.4.3-r1"]]

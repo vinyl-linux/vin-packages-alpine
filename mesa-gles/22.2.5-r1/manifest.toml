@@ -1,0 +1,15 @@
+checksum = "05ce999e292b05a68936d4704bc01d46323c076b81a93a630067cbce8581dfa7"
+licence = "MIT SGI-B-2.0 BSL-1.0"
+provides = "mesa-gles"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mesa-gles-22.2.5-r1.apk"
+version = "22.2.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa", "22.2.5-r1"], ["mesa-glapi", "22.2.5-r1"]]

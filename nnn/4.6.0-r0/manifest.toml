@@ -1,0 +1,15 @@
+checksum = "a6688aaf3e323720900463c789af8e44db972bdd5181919520f0973133f0b030"
+licence = "BSD-2-Clause"
+provides = "nnn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nnn-4.6-r0.apk"
+version = "4.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-fts", "1.2.7-r3"], ["ncurses-libs", "6.3.0"], ["readline", "8.2.0-r0"]]

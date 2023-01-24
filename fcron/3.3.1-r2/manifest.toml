@@ -1,0 +1,15 @@
+checksum = "18aae52eaa92be901bd8b109af2554fa79ca8c142148ef0f260c19bcc3b29b50"
+licence = "GPL"
+provides = "fcron"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fcron-3.3.1-r2.apk"
+version = "3.3.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

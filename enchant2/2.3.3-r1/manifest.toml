@@ -1,0 +1,15 @@
+checksum = "d1c677cc7909c4e676a6dc3fa537bb5489a0b0272a4968891b0e3c9997f0ca80"
+licence = "LGPL-2.1-or-later"
+provides = "enchant2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/enchant2-2.3.3-r1.apk"
+version = "2.3.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspell-libs", "0.60.8-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["icu-libs", "72.1.0-r1"], ["nuspell-libs", "5.1.2-r1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "3ad77deb9b62e772622a65c302abc51f16d997f39f1a01f857ff9295fc789772"
+licence = "custom:chromiumos"
+provides = "cgpt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cgpt-6310032-r6.apk"
+version = "6310032.0.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

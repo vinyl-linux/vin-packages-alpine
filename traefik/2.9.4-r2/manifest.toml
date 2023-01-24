@@ -1,0 +1,15 @@
+checksum = "6200b4d01115869f47e5e31474c1347747d101e77405ab6f70ad2e50757e59d2"
+licence = "MIT"
+provides = "traefik"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/traefik-2.9.4-r2.apk"
+version = "2.9.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

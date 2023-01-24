@@ -1,0 +1,15 @@
+checksum = "0fc13682278bdd4f6f8ed959a9bc345f21666252c8d2bba4c89849a598aaafa1"
+licence = "LGPL-2.0-or-later"
+provides = "zbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zbar-0.23.92-r1.apk"
+version = "0.23.92-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.2-r0"], ["imagemagick-libs", "7.1.0.52-r0"], ["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["libzbar", "0.23.92-r1"]]

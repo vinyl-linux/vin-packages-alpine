@@ -1,0 +1,15 @@
+checksum = "8bcaefcd7eec313054faa9b0ce3e1a4472a0e63712ea8ba1023fe31d844a7236"
+licence = "GPL-3.0-or-later"
+provides = "gcc-arm-none-eabi-stage1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gcc-arm-none-eabi-stage1-12.2.0-r3.apk"
+version = "12.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gcc", "12.2.1"], ["binutils-arm-none-eabi", "2.39.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["isl25", "0.25.0-r0"], ["mpc1", "1.2.1-r1"], ["mpfr4", "4.1.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

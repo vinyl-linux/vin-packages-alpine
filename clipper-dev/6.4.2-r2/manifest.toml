@@ -1,0 +1,15 @@
+checksum = "30c3295b22e595b18d13c34bef59a2f520a4dfb240f0f13dcd67cca14a1c4f56"
+licence = "BSL-1.0"
+provides = "clipper-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clipper-dev-6.4.2-r2.apk"
+version = "6.4.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["clipper", "6.4.2-r2"], ["pkgconf", "1.9.4-r0"]]

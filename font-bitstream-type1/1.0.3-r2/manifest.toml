@@ -1,0 +1,15 @@
+checksum = "9bdca25a387b0103c1fb8bb6424e6206cf03dfafe6b9f7974d0b0b33164e5eac"
+licence = "custom"
+provides = "font-bitstream-type1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-bitstream-type1-1.0.3-r2.apk"
+version = "1.0.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["encodings", "1.0.6-r0"], ["font-alias", "1.0.4-r0"], ["mkfontscale", "1.2.2-r1"], ["fontconfig", "2.14.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "8efcd7ab4df4c3dcc5027d18daaa76e630a25e6c5e6c2c81768bb08b953a863e"
+licence = "AGPL-3.0-only"
+provides = "nextcloud-weather_status"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nextcloud-weather_status-25.0.3-r0.apk"
+version = "25.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nextcloud", "25.0.3-r0"]]

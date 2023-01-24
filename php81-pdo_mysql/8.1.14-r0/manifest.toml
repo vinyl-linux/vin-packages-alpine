@@ -1,0 +1,15 @@
+checksum = "72b3aaa2451c06a1722677d51d0efdcfce079c742bcad725d60a39f1d57afbba"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-pdo_mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pdo_mysql-8.1.14-r0.apk"
+version = "8.1.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["php81-pdo", "8.1.14-r0"], ["php81-mysqlnd", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a81f7193fc31cdfa620414bd9a37f82f2751baeaac036809f4fa9340ee885bd1"
+licence = "BSD-3-Clause"
+provides = "py3-orcid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-orcid-1.0.3-r0.apk"
+version = "1.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-beautifulsoup4", "4.11.1-r0"], ["py3-html5lib", "1.1.0-r2"], ["py3-lxml", "4.9.2-r0"], ["py3-requests", "2.28.1-r1"], ["py3-simplejson", "3.17.6-r0"]]

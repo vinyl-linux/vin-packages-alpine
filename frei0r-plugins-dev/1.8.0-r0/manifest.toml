@@ -1,0 +1,15 @@
+checksum = "38fd5656b7ef98571833360fc960ccb0a671fac0826395e3c1109a7ab73b1f02"
+licence = "GPL-2.0-or-later"
+provides = "frei0r-plugins-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/frei0r-plugins-dev-1.8.0-r0.apk"
+version = "1.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["frei0r-plugins", "1.8.0-r0"], ["pkgconf", "1.9.4-r0"]]

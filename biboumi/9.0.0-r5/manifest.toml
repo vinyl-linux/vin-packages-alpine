@@ -1,0 +1,15 @@
+checksum = "a8710783c42de9b466d07aa2f24a7f107c9216d5535b61494df4c547b9fc617a"
+licence = "Zlib"
+provides = "biboumi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/biboumi-9.0-r5.apk"
+version = "9.0.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["botan-libs", "2.19.3-r0"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["libgcc", "12.2.1"], ["libidn", "1.41.0-r0"], ["libpq", "15.1.0-r0"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"], ["udns", "0.4.0-r2"], ["libuuid", "2.38.1-r1"]]

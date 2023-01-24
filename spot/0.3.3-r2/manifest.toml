@@ -1,0 +1,15 @@
+checksum = "3e13639daab6f8ff9518b18e419c12daf2d6dbda9dbd1ce071694c1d3f85b259"
+licence = "MIT"
+provides = "spot"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/spot-0.3.3-r2.apk"
+version = "0.3.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.5-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["libpulse", "16.1.0-r6"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

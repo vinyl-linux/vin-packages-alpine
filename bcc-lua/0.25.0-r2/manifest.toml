@@ -1,0 +1,15 @@
+checksum = "ae7cad7263b1f495be67c9e286c65e0119b21e9ad034f1e0c3a83f21457beece"
+licence = "Apache-2.0"
+provides = "bcc-lua"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bcc-lua-0.25.0-r2.apk"
+version = "0.25.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bcc", "0.25.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

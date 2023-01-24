@@ -1,0 +1,15 @@
+checksum = "1dfd664b314f6952d9750b019d790084156f9eda62c56d91a3c14278cc143c26"
+licence = "BSD-3-Clause"
+provides = "dfc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dfc-3.1.1-r4.apk"
+version = "3.1.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "2ab90252bea19e6b30c65186648776fa9ddff19934659dc173e27d877fe37fa6"
+licence = "BSD-3-Clause"
+provides = "php81-pecl-igbinary"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-igbinary-3.2.12-r0.apk"
+version = "3.2.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.14-r0"], ["musl", "1.2.3-r4"]]

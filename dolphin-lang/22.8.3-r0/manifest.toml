@@ -1,0 +1,15 @@
+checksum = "9a90c7ee2c82ec23cebce8cc09897fa4ea91ce70edc16e55f89c76321d038e61"
+licence = "GPL-2.0-only"
+provides = "dolphin-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dolphin-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["udisks2", "2.9.4-r1"], ["kio-extras", "22.8.3-r0"]]

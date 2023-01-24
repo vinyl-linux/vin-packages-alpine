@@ -1,0 +1,15 @@
+checksum = "5d70c6dab1338caa53cdd3600d6a680e16cd749e4c6cbe13b3ce51f45e487038"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-time"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-time-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"]]

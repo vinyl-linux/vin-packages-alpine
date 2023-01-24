@@ -1,0 +1,15 @@
+checksum = "96f1d7cda78e7d6a3dc284ae3822735c5e6b3a42b1c5b602de2c1d3df190765b"
+licence = "BSD"
+provides = "py3-ipdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-ipdb-0.13.9-r1.apk"
+version = "0.13.9-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ipython", "8.6.0-r1"]]

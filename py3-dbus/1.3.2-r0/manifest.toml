@@ -1,0 +1,15 @@
+checksum = "df537e2b3d2b2042c69988557ea09eb9d0b034e3fad36599c944fd4f5010797f"
+licence = "MIT"
+provides = "py3-dbus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-dbus-1.3.2-r0.apk"
+version = "1.3.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"]]

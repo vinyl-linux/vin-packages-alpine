@@ -1,0 +1,15 @@
+checksum = "e20d2962a1a791cc48c6f9b6c2d97ba9c74a62fc34209391a382a84151795671"
+licence = "MIT"
+provides = "xspice"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xspice-0.1.5-r8.apk"
+version = "0.1.5-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["libxfont2", "2.0.6-r0"], ["musl", "1.2.3-r4"], ["spice-server", "0.15.1-r0"]]

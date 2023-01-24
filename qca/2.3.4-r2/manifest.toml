@@ -1,0 +1,15 @@
+checksum = "dfd31141f5f6486d0cad75b39555057402bb4a2a2d83e1b5953d18e6fccbacf6"
+licence = "LGPL-2.1-or-later"
+provides = "qca"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qca-2.3.4-r2.apk"
+version = "2.3.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libqca", "2.3.4-r2"], ["libstdc++", "12.2.1"]]

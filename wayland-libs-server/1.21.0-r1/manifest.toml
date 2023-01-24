@@ -1,0 +1,15 @@
+checksum = "5caa9f633d710443d064364f2347a6352aaf0d0c877de699366128e76697278e"
+licence = "MIT"
+provides = "wayland-libs-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wayland-libs-server-1.21.0-r1.apk"
+version = "1.21.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "568666c80667a30003a1210b7a8b9bdc468f84057efbb2ef95b48154038df173"
+licence = "BSD-3-Clause"
+provides = "py3-nodeenv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-nodeenv-1.7.0-r0.apk"
+version = "1.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["python3", "3.10.9-r1"]]

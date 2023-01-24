@@ -1,0 +1,15 @@
+checksum = "7355a7254b3628a56fdc4d2fcc508255d0519647f1059ebb3ad402309842bc60"
+licence = "MIT"
+provides = "dotnet-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet-zsh-completion-6.0.113-r0.apk"
+version = "6.0.113-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.2-r0"]]

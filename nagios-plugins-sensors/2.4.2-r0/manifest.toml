@@ -1,0 +1,15 @@
+checksum = "15b0ac4014efe1a893c44232a3c7a38a44e9aefdf4006f37c584ca4617f16f9b"
+licence = "GPL-3.0-only"
+provides = "nagios-plugins-sensors"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-sensors-2.4.2-r0.apk"
+version = "2.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nagios-plugins", "2.4.2-r0"], ["grep", "3.8.0-r1"], ["lm-sensors", "3.6.0-r4"]]

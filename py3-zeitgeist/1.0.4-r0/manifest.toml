@@ -1,0 +1,15 @@
+checksum = "089b514beef508f9de69a037c12e92063cb1632301776221c80a92a7558b321f"
+licence = "LGPL-2.1-or-later"
+provides = "py3-zeitgeist"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-zeitgeist-1.0.4-r0.apk"
+version = "1.0.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["libzeitgeist", "1.0.4-r0"]]

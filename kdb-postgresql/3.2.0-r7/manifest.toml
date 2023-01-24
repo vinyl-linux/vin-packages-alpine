@@ -1,0 +1,15 @@
+checksum = "ec9bea5840cf3d95c491c83b9718f905dacc364c71172c35fbd30134fa5d2b11"
+licence = "LGPL-2.0-or-later"
+provides = "kdb-postgresql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdb-postgresql-3.2.0-r7.apk"
+version = "3.2.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kdb", "3.2.0-r7"], ["kcoreaddons", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"], ["libstdc++", "12.2.1"]]

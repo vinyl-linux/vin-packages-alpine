@@ -1,0 +1,15 @@
+checksum = "75aa45972a23abfabd5da19488a9b0914a97fd5b11bb82805149d6dcbcb5a073"
+licence = "BSD-3-Clause"
+provides = "py3-authlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-authlib-1.1.0-r0.apk"
+version = "1.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cryptography", "38.0.3-r0"]]

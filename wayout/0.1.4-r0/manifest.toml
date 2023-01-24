@@ -1,0 +1,15 @@
+checksum = "e74c93fb8190794309e29fb6b774ee0b5ba38534c2f7b1a7d4ee1a15e9158f36"
+licence = "GPL-3.0-or-later"
+provides = "wayout"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wayout-0.1.4-r0.apk"
+version = "0.1.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["pango", "1.50.12-r0"], ["wayland-libs-client", "1.21.0-r1"]]

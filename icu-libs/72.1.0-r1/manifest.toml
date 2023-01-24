@@ -1,0 +1,15 @@
+checksum = "9a5d10199349ab7b1cde76736ec17121df3d419bb62781ceeb8b76035adebffe"
+licence = "MIT ICU Unicode-TOU"
+provides = "icu-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/icu-libs-72.1-r1.apk"
+version = "72.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["icu-data-en", "72.1.0-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

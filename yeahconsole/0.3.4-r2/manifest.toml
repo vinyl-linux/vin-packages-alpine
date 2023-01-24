@@ -1,0 +1,15 @@
+checksum = "30db0000b3c2e0c92690141e73d2fae57b57b0ec684ad8d1219272bb31328abe"
+licence = "GPL-2.0-or-later"
+provides = "yeahconsole"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yeahconsole-0.3.4-r2.apk"
+version = "0.3.4-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

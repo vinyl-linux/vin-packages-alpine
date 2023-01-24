@@ -1,0 +1,15 @@
+checksum = "e274b6093d63e0dd6c00e450d4dd72d77ea01472cdddbc92f0cd3b1f94218226"
+licence = "BSD-3-Clause"
+provides = "waf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/waf-2.0.24-r0.apk"
+version = "2.0.24-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

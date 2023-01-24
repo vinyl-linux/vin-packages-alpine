@@ -1,0 +1,15 @@
+checksum = "4e18dad8baca931a244c57da5c28d59a289ced2ff8641962d5ec348fd06faa29"
+licence = "MIT"
+provides = "wezterm-fonts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wezterm-fonts-20220624.141144-r2.apk"
+version = "20220624.141144.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-jetbrains-mono-vf", "2.242.0-r0"], ["font-noto-emoji", "2.38.0-r0"], ["font-roboto", "3.4.0-r0"]]

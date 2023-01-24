@@ -1,0 +1,15 @@
+checksum = "46064a1cbf5b25b6b897b5cc375769d588b4f9960d27884bb76223cf184393bb"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-dbd-pg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-dbd-pg-3.16.0-r0.apk"
+version = "3.16.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-dbi", "1.643.0-r4"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

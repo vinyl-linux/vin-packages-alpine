@@ -1,0 +1,15 @@
+checksum = "0e54782179fc5228a360616f359e6f0ceef5321f300d2a6c5fcbd7fc87d75769"
+licence = "GPL-2.0-or-later"
+provides = "libjaylink"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libjaylink-0.3.1-r0.apk"
+version = "0.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libusb", "1.0.26-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4505e7db07fd93f746e5f76faa128a6a62fc8e3d83288f65e4c5556886ec394a"
+licence = "GPL-2.0-or-later"
+provides = "libktorrent-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libktorrent-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost-dev", "1.80.0-r3"], ["gmp-dev", "6.2.1-r2"], ["karchive-dev", "5.100.0-r0"], ["kcrash-dev", "5.100.0-r0"], ["ki18n-dev", "5.100.0-r0"], ["kio-dev", "5.100.0-r0"], ["qca-dev", "2.3.4-r2"], ["qt5-qtbase-dev", "5.15.6"], ["solid-dev", "5.100.0-r0"], ["libktorrent", "22.8.3-r0"]]

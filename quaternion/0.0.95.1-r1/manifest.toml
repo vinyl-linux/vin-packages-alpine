@@ -1,0 +1,15 @@
+checksum = "cbaf2275eef657400be2e91050efbbe7ab8f7eed8ae3d14e4f7ef036e418e769"
+licence = "GPL-3.0-or-later"
+provides = "quaternion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/quaternion-0.0.95.1-r1.apk"
+version = "0.0.95.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtquickcontrols", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtquickcontrols2", "5.15.6"], ["libquotient", "0.6.11-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["qt5-qtkeychain", "0.13.2-r0"], ["libstdc++", "12.2.1"]]

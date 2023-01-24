@@ -1,0 +1,15 @@
+checksum = "4c194b4bf734cb6e53f60e60a963faffe8e094bed1d39b73b900e8f610562074"
+licence = "GPL-3.0-or-later"
+provides = "gdnsd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gdnsd-3.8.0-r0.apk"
+version = "3.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libev", "4.33.0-r0"], ["libmaxminddb-libs", "1.7.1-r0"], ["libsodium", "1.0.18-r2"], ["userspace-rcu", "0.13.2-r0"]]

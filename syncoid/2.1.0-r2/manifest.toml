@@ -1,0 +1,15 @@
+checksum = "bba87a233d0ba85b2d9fdceae01e4c5d6f78727e2ad6d7b4fec0dc971db7c7c7"
+licence = "GPL-3.0-only"
+provides = "syncoid"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/syncoid-2.1.0-r2.apk"
+version = "2.1.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["procps", "3.3.17-r2"], ["perl-capture-tiny", "0.48.0-r2"], ["pv", "1.6.20-r1"], ["gzip", "1.12.0-r0"], ["lzop", "1.4.0-r0"], ["mbuffer", "20220418.0.0-r1"]]

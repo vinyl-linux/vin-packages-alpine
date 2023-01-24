@@ -1,0 +1,15 @@
+checksum = "7da76b36a32f7f9170798e8079aebca21e308d92f058cdc0521851b976e2487d"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-egl-headless"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-ui-egl-headless-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ui-opengl", "7.1.0-r7"], ["musl", "1.2.3-r4"], ["libepoxy", "1.5.10-r0"]]

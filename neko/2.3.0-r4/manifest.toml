@@ -1,0 +1,15 @@
+checksum = "83eab86d9ac151bf9be00a425e23b91ff1f2cb432914625c62258e86fdcd3a7f"
+licence = "MIT"
+provides = "neko"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/neko-2.3.0-r4.apk"
+version = "2.3.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mbedtls", "2.28.2-r0"], ["neko-libs", "2.3.0-r4"], ["pcre", "8.45.0-r2"], ["sqlite-libs", "3.40.1-r0"], ["zlib", "1.2.13-r0"]]

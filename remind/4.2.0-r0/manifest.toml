@@ -1,0 +1,15 @@
+checksum = "65151bbeb87feb7f2d66d27bc5b19f7f0456994befd7330ca497f75e9ba925eb"
+licence = "GPL-2.0"
+provides = "remind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/remind-04.02.00-r0.apk"
+version = "4.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

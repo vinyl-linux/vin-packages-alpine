@@ -1,0 +1,15 @@
+checksum = "338e19cfdc9f689fa79278961e89efec421fa2ca7e6ab9b66e471d5b1ad5e0c2"
+licence = "LGPL-2.1-or-later"
+provides = "geoclue-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geoclue-dev-2.6.0-r0.apk"
+version = "2.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["geoclue", "2.6.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

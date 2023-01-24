@@ -1,0 +1,15 @@
+checksum = "5aad0a088aa622e7794de865b5f9d13af6be9e39459e30f1636457ef5e0776b6"
+licence = "MIT"
+provides = "py3-pathlib2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pathlib2-2.3.7-r0.apk"
+version = "2.3.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

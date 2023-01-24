@@ -1,0 +1,15 @@
+checksum = "07b51b7b5c35464ade7f402e1b05e8c2bfdf50f2f97488bdbca0f9ffefd12de7"
+licence = "custom"
+provides = "libharu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libharu-2.4.3-r0.apk"
+version = "2.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpng", "1.6.38-r0"], ["zlib", "1.2.13-r0"]]

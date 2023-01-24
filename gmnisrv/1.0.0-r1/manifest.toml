@@ -1,0 +1,15 @@
+checksum = "2658ea11f2df9325be48f7dc03eb63f06f5129a912ff0939298c431b8cbd4779"
+licence = "GPL-3.0-only"
+provides = "gmnisrv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gmnisrv-1.0-r1.apk"
+version = "1.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mailcap", "2.1.53-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"]]

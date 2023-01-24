@@ -1,0 +1,15 @@
+checksum = "e582bdd2a50250d70b46f0f45e310dbfdbc3e1ff6b21bfc22691fff5e7956844"
+licence = "GPL-2.0"
+provides = "cpufrequtils-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cpufrequtils-dev-008-r5.apk"
+version = "8.0.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cpufrequtils", "8.0.0-r5"]]

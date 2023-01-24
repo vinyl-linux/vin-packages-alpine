@@ -1,0 +1,15 @@
+checksum = "ca317567a683fe2e2f10e8855b97bce78ac458cf2605e3dc50757c8ccc393619"
+licence = "GPL-3.0-or-later"
+provides = "libdazzle-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libdazzle-dev-3.44.0-r0.apk"
+version = "3.44.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdazzle", "3.44.0-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"]]

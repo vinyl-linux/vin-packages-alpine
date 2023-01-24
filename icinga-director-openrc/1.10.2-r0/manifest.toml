@@ -1,0 +1,15 @@
+checksum = "630f5b27b76ac01a0780907543ca3d98fb676d63b90fcdb9a16a6f2b64eefe02"
+licence = "GPL-2.0-or-later"
+provides = "icinga-director-openrc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/icinga-director-openrc-1.10.2-r0.apk"
+version = "1.10.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.14-r0"], ["php81-posix", "8.1.14-r0"], ["php81-iconv", "8.1.14-r0"], ["php81-sockets", "8.1.14-r0"], ["php81-curl", "8.1.14-r0"], ["php81-gettext", "8.1.14-r0"]]

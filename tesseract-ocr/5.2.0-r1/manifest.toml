@@ -1,0 +1,15 @@
+checksum = "d6049460c412363d56922104c3ae9103549f8adca66355484fa5ab2ced14e8f7"
+licence = "Apache-2.0"
+provides = "tesseract-ocr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tesseract-ocr-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fontconfig", "2.14.1-r0"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libgomp", "12.2.1"], ["harfbuzz", "5.3.1-r1"], ["icu-libs", "72.1.0-r1"], ["leptonica", "1.82.0-r1"], ["pango", "1.50.12-r0"], ["libstdc++", "12.2.1"]]

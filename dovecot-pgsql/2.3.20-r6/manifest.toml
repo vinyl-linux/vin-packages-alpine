@@ -1,0 +1,15 @@
+checksum = "85147f5ee3e399b75ec96cbc9796fa9d01cbb1bac4e09f449aff62424492c154"
+licence = "LGPL-2.0-or-later"
+provides = "dovecot-pgsql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-pgsql-2.3.20-r6.apk"
+version = "2.3.20-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dovecot-sql", "2.3.20-r6"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

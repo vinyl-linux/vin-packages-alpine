@@ -1,0 +1,15 @@
+checksum = "d869fc30cdda8edcd409e3bd216fe6e67f74ef1366b7225d7de71a99697267a8"
+licence = "GPL-3.0-or-later"
+provides = "gpg-wks-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpg-wks-server-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.40-r0"], ["gpg-agent", "2.2.40-r0"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"]]

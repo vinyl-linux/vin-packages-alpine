@@ -1,0 +1,15 @@
+checksum = "c2bff42c37be27659341129c1a5253c4538df722acbcb6c4f4ca77aecc9124c7"
+licence = "GPL-2.0-or-later"
+provides = "libid3tag"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libid3tag-0.16.2-r0.apk"
+version = "0.16.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "24ebae093e4cbf8910496ac5608074fd5c21fd3148f0b95aa9781e7e3ad7b07f"
+licence = "GPL-2.0-or-later LGPL-2.1-or-later"
+provides = "libgo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgo-12.2.1_git20220924-r4.apk"
+version = "12.2.1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

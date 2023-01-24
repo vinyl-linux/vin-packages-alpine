@@ -1,0 +1,15 @@
+checksum = "01f686409053f327c99e3f01be1b558fa7f2f22df245e9a7d6ef1f31797357c5"
+licence = "IPA"
+provides = "font-ipa"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-ipa-00303-r0.apk"
+version = "303.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c0afb71ac0931ab7f4d6d6f83574ac153df9537a9a481fca023632d828c728e1"
+licence = "BSD-3-Clause"
+provides = "jupyter-nbclient"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jupyter-nbclient-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jupyter_client", "7.4.2-r1"], ["jupyter-nbformat", "5.7.0-r0"], ["py3-nest_asyncio", "1.5.6-r0"], ["py3-traitlets", "5.5.0-r0"]]

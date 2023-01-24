@@ -1,0 +1,15 @@
+checksum = "6aea8aa5596d731f497850e1c55c1c1e9137cb13cd54d4359ef311535e408bc2"
+licence = "GPL-2.0-or-later"
+provides = "neomutt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/neomutt-20220429-r2.apk"
+version = "20220429.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg", "2.2.40-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["gdbm", "1.23.0-r0"], ["libgpg-error", "1.46.0-r1"], ["gpgme", "1.18.0-r0"], ["libidn", "1.41.0-r0"], ["libintl", "0.21.1-r1"], ["ncurses-libs", "6.3.0"], ["notmuch-libs", "0.37.0-r1"], ["libsasl", "2.1.28-r3"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

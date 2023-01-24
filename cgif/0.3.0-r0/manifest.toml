@@ -1,0 +1,15 @@
+checksum = "bec63608c1d9992c387d40f49eeb9c075476abd5e04f8c448cc9663e51a8b620"
+licence = "MIT"
+provides = "cgif"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cgif-0.3.0-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

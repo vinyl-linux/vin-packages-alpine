@@ -1,0 +1,15 @@
+checksum = "80526e1e82fd13af494d0137a30cd6bdb40e9ea98e1a9426801d5f4d250b69b1"
+licence = "LGPL-2.1-only"
+provides = "libxml++-2.6-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxml++-2.6-dev-2.42.2-r1.apk"
+version = "2.42.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxml++-2.6", "2.42.2-r1"], ["glibmm-dev", "2.66.5-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

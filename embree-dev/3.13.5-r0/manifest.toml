@@ -1,0 +1,15 @@
+checksum = "87c780a8a66265d041908e87468643a1863a99b8d5c29acc4750624e74235bb6"
+licence = "Apache-2.0"
+provides = "embree-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/embree-dev-3.13.5-r0.apk"
+version = "3.13.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["embree", "3.13.5-r0"]]

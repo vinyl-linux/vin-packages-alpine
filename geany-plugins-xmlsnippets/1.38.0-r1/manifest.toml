@@ -1,0 +1,15 @@
+checksum = "e3b76e948d3338ad1d04090d0e9dc65bd081fdbf0cda2eaf0d0e45afe45dd7fe"
+licence = "GPL-3.0-or-later"
+provides = "geany-plugins-xmlsnippets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/geany-plugins-xmlsnippets-1.38-r1.apk"
+version = "1.38.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["geany", "1.38.0-r0"], ["glib", "2.74.5-r0"]]

@@ -1,0 +1,15 @@
+checksum = "e4ccabf1081c8aba8a7ea1d24de134e25983664af1a0023e9e47e6261d7b2f3a"
+licence = "GPL-3.0-or-later"
+provides = "swayrbar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/swayrbar-0.3.0-r0.apk"
+version = "0.3.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

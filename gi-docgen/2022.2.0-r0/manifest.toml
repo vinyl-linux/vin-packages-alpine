@@ -1,0 +1,15 @@
+checksum = "6479fb92b07654edbbfc4309dde109a5ca7979b2c4855f644bb5acf5c147872f"
+licence = "Apache-2.0 OR GPL-3.0-or-later"
+provides = "gi-docgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gi-docgen-2022.2-r0.apk"
+version = "2022.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-jinja2", "3.1.2-r0"], ["py3-markdown", "3.4.1-r0"], ["py3-markupsafe", "2.1.1-r1"], ["py3-pygments", "2.13.0-r0"], ["py3-toml", "0.10.2-r4"], ["py3-typogrify", "2.0.7-r0"], ["python3", "3.10.9-r1"], ["pkgconf", "1.9.4-r0"]]

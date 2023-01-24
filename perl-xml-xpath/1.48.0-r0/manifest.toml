@@ -1,0 +1,15 @@
+checksum = "49755d0851ba41c3b1cc39cc4d5843911133240c90e7d3bd6df73a2c40c9617b"
+licence = "Artistic-1.0-Perl OR GPL-1.0-or-later"
+provides = "perl-xml-xpath"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-xml-xpath-1.48-r0.apk"
+version = "1.48.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-xml-parser", "2.46.0-r3"]]

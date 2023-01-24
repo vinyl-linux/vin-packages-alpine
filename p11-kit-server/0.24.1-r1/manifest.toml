@@ -1,0 +1,15 @@
+checksum = "dd308d3fe9ad775c05434a799d2e0328cce0b6b3b118f9036c6edfb0a3744bcc"
+licence = "BSD-3-Clause"
+provides = "p11-kit-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/p11-kit-server-0.24.1-r1.apk"
+version = "0.24.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"], ["p11-kit", "0.24.1-r1"]]

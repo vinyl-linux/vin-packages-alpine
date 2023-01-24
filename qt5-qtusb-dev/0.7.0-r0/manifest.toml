@@ -1,0 +1,15 @@
+checksum = "148f17113a17fa36abbc0b0c203654d963d23ce600b3f51b55fcf8d0ee1dfbc5"
+licence = "LGPL-3.0-only"
+provides = "qt5-qtusb-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt5-qtusb-dev-0.7.0-r0.apk"
+version = "0.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["pkgconf", "1.9.4-r0"], ["qt5-qtusb", "0.7.0-r0"]]

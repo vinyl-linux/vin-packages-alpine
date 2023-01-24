@@ -1,0 +1,15 @@
+checksum = "aef419bcf50b4b153b6332ca0c2445e0657616c9ac67a20f29808bd4d60aec03"
+licence = "GPL-3.0-or-later"
+provides = "coretime"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coretime-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtmultimedia", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

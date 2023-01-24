@@ -1,0 +1,15 @@
+checksum = "54aaf7d820520e24d9ee1c91e24a19ae2b1cc9e18dde1adcdb8f5f913a14169f"
+licence = "PostgreSQL"
+provides = "postgresql-mysql_fdw"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-mysql_fdw-2.8.0-r1.apk"
+version = "2.8.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "cfa7cd067284a67ce2981f00e18b129b4e92d6a87c515b71563a2f4fa466ed4b"
+licence = "LGPL-2.1-or-later"
+provides = "vips-magick"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vips-magick-8.13.3-r1.apk"
+version = "8.13.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["imagemagick-libs", "7.1.0.52-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["vips", "8.13.3-r1"]]

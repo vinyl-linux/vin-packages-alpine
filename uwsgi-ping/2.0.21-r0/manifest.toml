@@ -1,0 +1,15 @@
+checksum = "b155e6a278f4563959bd72af5c9b26f414609ccd8722fed2658fa293715e6b4b"
+licence = "custom"
+provides = "uwsgi-ping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-ping-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

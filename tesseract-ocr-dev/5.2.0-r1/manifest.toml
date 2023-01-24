@@ -1,0 +1,15 @@
+checksum = "c1f399ee705738ac12a12357b16ded5e32bb0e37824a95d0d951d747a6b6fe2a"
+licence = "Apache-2.0"
+provides = "tesseract-ocr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tesseract-ocr-dev-5.2.0-r1.apk"
+version = "5.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["leptonica-dev", "1.82.0-r1"], ["pkgconf", "1.9.4-r0"], ["tesseract-ocr", "5.2.0-r1"]]

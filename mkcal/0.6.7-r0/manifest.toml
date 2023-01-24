@@ -1,0 +1,15 @@
+checksum = "0146c35629a2c48d8f05eafbab72d56a1946e1620d53aa1b3c6ba517f44de443"
+licence = "LGPL-2.0-or-later"
+provides = "mkcal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mkcal-0.6.7-r0.apk"
+version = "0.6.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcalendarcore", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["sqlite-libs", "3.40.1-r0"], ["libstdc++", "12.2.1"]]

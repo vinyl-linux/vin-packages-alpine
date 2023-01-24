@@ -1,0 +1,15 @@
+checksum = "fb67e45995100a34ef45249d7e035d4582eff192110c30abc7747034d689cfb5"
+licence = "BSD-3-Clause"
+provides = "wpa_gui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wpa_gui-2.10-r0.apk"
+version = "2.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

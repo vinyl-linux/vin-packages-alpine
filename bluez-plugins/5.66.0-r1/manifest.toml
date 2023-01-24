@@ -1,0 +1,15 @@
+checksum = "e67a8d0a3a3df27b57fe3d6ca2c737b2f3a5b02feb614e5feb5efc2947789379"
+licence = "GPL-2.0-or-later"
+provides = "bluez-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bluez-plugins-5.66-r1.apk"
+version = "5.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"]]

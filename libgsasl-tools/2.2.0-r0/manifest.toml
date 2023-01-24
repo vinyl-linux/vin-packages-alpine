@@ -1,0 +1,15 @@
+checksum = "760bf3448a72e5756732641180363d1dd67980234f845cab9b6bd901a04560eb"
+licence = "LGPL-2.0-or-later"
+provides = "libgsasl-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libgsasl-tools-2.2.0-r0.apk"
+version = "2.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgsasl", "2.2.0-r0"]]

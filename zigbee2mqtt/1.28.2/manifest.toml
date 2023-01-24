@@ -1,0 +1,15 @@
+checksum = "e55a1b4732111fd8a2960f630b4d389cdafbcc268b954ee01a39ba4b4c6177f3"
+licence = "GPL-3.0-only AND MIT AND ISC AND BSD-3-Clause AND Python-2.0"
+provides = "zigbee2mqtt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zigbee2mqtt-1.28.2_git20221105-r2.apk"
+version = "1.28.2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nodejs-current", "19.3.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

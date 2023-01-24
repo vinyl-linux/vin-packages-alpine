@@ -1,0 +1,15 @@
+checksum = "acfea9bc5fe806373cf25b58dcad676346fa35c216f34ccc728d6b9b841a0972"
+licence = "ISC and BSD-2-Clause and BSD-3-Clause"
+provides = "mandoc-soelim"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mandoc-soelim-1.14.6-r6.apk"
+version = "1.14.6-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

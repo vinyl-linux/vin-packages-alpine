@@ -1,0 +1,15 @@
+checksum = "6f314e9a5a7161d7d3b22d3be6c5aa815912031d83a2b76f87881934c49e1b46"
+licence = "GPL-2.0-or-later"
+provides = "collectd-ping"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/collectd-ping-5.12.0-r11.apk"
+version = "5.12.0-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["collectd", "5.12.0-r11"], ["musl", "1.2.3-r4"], ["liboping", "1.10.0-r1"]]

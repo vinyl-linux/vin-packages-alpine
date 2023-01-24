@@ -1,0 +1,15 @@
+checksum = "d4e6b771d65af4712718702e708a2d8c2be3163b32c4556c293de48d56d94518"
+licence = "GPL-2.0-or-later"
+provides = "vdr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vdr-2.6.1-r4.apk"
+version = "2.6.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libjpeg-turbo", "2.1.4-r0"], ["libstdc++", "12.2.1"]]

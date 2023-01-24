@@ -1,0 +1,15 @@
+checksum = "e63c418e614ebb5d45b8e39333ab5d4bd95a569d09eebd3d2cb448aff2d2b2ee"
+licence = "BSD-3-Clause"
+provides = "alembic-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alembic-libs-1.8.4-r0.apk"
+version = "1.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openexr", "3.1.5-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["hdf5", "1.12.2-r1"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "3e40d9e87fb26c28b74d0acbd988e64c3e945cba3133f6c505a82f7472130110"
+licence = "GPL-2.0"
+provides = "aoetools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aoetools-37-r1.apk"
+version = "37.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

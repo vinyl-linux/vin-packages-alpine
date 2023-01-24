@@ -1,0 +1,15 @@
+checksum = "0bf67603baa98f999a989a921504d755ef2a549ae9653bb32731b2ed91731656"
+licence = "GPL-2.0-or-later"
+provides = "goaccess"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/goaccess-1.6.5-r0.apk"
+version = "1.6.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"], ["libmaxminddb-libs", "1.7.1-r0"], ["ncurses-libs", "6.3.0"]]

@@ -1,0 +1,15 @@
+checksum = "53eff02c72807e5739605b4e4776757877be857e4d70b42d6ddba9d655995b04"
+licence = "GPL-2.0-only"
+provides = "libtbb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libtbb-2021.7.0-r0.apk"
+version = "2021.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["hwloc", "2.8.0-r0"], ["libstdc++", "12.2.1"]]

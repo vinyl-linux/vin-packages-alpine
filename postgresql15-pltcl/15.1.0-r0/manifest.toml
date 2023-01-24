@@ -1,0 +1,15 @@
+checksum = "71fff65ec8224ca6fede45eb47e2295f65666b0cd8b589027fec8af79ac2a318"
+licence = "PostgreSQL"
+provides = "postgresql15-pltcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql15-pltcl-15.1-r0.apk"
+version = "15.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.1.0-r0"], ["pgtcl", "3.0.0-r0"], ["musl", "1.2.3-r4"], ["tcl", "8.6.12-r1"]]

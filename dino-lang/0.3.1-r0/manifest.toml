@@ -1,0 +1,15 @@
+checksum = "8e0bc8bca42d7a68e6fbdf8d2d5abda50966099d12027e572597e6d38b308f9b"
+licence = "GPL-3.0-only"
+provides = "dino-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dino-lang-0.3.1-r0.apk"
+version = "0.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-good", "1.20.5-r0"], ["gst-plugins-good-gtk", "1.20.5-r0"]]

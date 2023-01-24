@@ -1,0 +1,15 @@
+checksum = "2af2e95093493ae88ddd2857435e0a9b7cbe0bd4ab3b96602464f21dd5e836c8"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-io-socket-ssl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-io-socket-ssl-2.077-r0.apk"
+version = "2.77.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["ca-certificates", "20220614.0.0-r4"], ["perl-net-ssleay", "1.92.0-r2"], ["perl-mozilla-ca", "20221114.0.0-r0"]]

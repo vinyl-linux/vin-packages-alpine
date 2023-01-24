@@ -1,0 +1,15 @@
+checksum = "05568231bd25689c4de61b957a506d7ab9007320166416272450409f0f79d5b4"
+licence = "BSD-3-Clause"
+provides = "mumble"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mumble-1.4.287-r0.apk"
+version = "1.4.287-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-sqlite", "5.15.6"], ["poco", "1.12.2-r1"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtsvg", "5.15.6"], ["libx11", "1.8.3-r1"], ["libxi", "1.8.0-r0"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["avahi-compat-libdns_sd", "0.8.0-r6"], ["libgcc", "12.2.1"], ["libprotobuf", "3.21.9-r0"], ["libsndfile", "1.1.0-r2"], ["speex", "1.2.1-r0"], ["speexdsp", "1.2.1-r0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

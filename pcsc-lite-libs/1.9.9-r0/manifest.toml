@@ -1,0 +1,15 @@
+checksum = "37488158deedcd1b9a9d362bf8a8c8efcf28342591b53adc3e980d98b3d6fc9d"
+licence = "BSD-3-Clause AND BSD-2-Clause AND ISC"
+provides = "pcsc-lite-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pcsc-lite-libs-1.9.9-r0.apk"
+version = "1.9.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1f98e2c05d359d5f8f6668c4a466e21732f65f98b63b82a760a49512da0fba64"
+licence = "LGPL-2.1-or-later"
+provides = "gspell-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gspell-dev-1.12.0-r1.apk"
+version = "1.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gspell", "1.12.0-r1"], ["enchant2-dev", "2.3.3-r1"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["icu-dev", "72.1.0-r1"], ["pkgconf", "1.9.4-r0"]]

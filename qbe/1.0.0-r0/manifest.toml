@@ -1,0 +1,15 @@
+checksum = "ffd65b3e924702ff144bfa9e6dff919c1502c3583bb00c63770e546fbfff140f"
+licence = "MIT"
+provides = "qbe"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qbe-1.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

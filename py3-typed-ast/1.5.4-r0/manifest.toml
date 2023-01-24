@@ -1,0 +1,15 @@
+checksum = "c1a7ba27692256803a5b4b2ea89bc57472ee3c0d1a667d5190c6ed319deb1f56"
+licence = "Apache-2.0"
+provides = "py3-typed-ast"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-typed-ast-1.5.4-r0.apk"
+version = "1.5.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["musl", "1.2.3-r4"]]

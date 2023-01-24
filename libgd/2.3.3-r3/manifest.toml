@@ -1,0 +1,15 @@
+checksum = "8fa9cc7eb5460db6a04014d1bf910b8cb8a228ad3b0a6be89012cc65346b195b"
+licence = "custom"
+provides = "libgd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgd-2.3.3-r3.apk"
+version = "2.3.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxpm", "3.5.15-r0"], ["libavif", "0.11.1-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["tiff", "4.4.0-r1"], ["libwebp", "1.2.4-r1"]]

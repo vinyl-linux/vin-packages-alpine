@@ -1,0 +1,15 @@
+checksum = "52e4e4015cbb6100638836c1c5489b4c7846e9267e27aa0e68b5c7cdf8a81ee9"
+licence = "BSD-3-Clause"
+provides = "pgtcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pgtcl-3.0.0-r0.apk"
+version = "3.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tcl", "8.6.12-r1"], ["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

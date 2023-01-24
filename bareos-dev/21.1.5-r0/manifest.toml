@@ -1,0 +1,15 @@
+checksum = "c48156e7f4b7399643df3ae80798392170ad44c1f0ae69a5fb402b728fedc3d4"
+licence = "AGPL-3.0"
+provides = "bareos-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-dev-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos-libs", "21.1.5-r0"]]

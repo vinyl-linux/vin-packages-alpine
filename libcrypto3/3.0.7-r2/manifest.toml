@@ -1,0 +1,15 @@
+checksum = "a2314825a84d90cb538e4aaf5ce56664cb24a5c8364606502a0b9f572857e029"
+licence = "Apache-2.0"
+provides = "libcrypto3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcrypto3-3.0.7-r2.apk"
+version = "3.0.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

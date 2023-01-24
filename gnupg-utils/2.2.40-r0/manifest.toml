@@ -1,0 +1,15 @@
+checksum = "fdb9aa02a073950e1da79b496296b5bde20f0f24ea94b31ce14370e110b9b75e"
+licence = "GPL-3.0-or-later"
+provides = "gnupg-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-utils-2.2.40-r0.apk"
+version = "2.2.40-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libbz2", "1.0.8-r4"], ["musl", "1.2.3-r4"], ["libgcrypt", "1.10.1-r0"], ["libgpg-error", "1.46.0-r1"], ["libksba", "1.6.3-r0"], ["zlib", "1.2.13-r0"]]

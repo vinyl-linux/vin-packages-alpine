@@ -1,0 +1,15 @@
+checksum = "3d05550190ce4e75d1f4fea26f444d8d6cd976136e7dd217a2bfb9db120bd1b1"
+licence = "LGPL-2.1-only AND LGPL-3.0-only AND GPL-3.0-only AND Qt-GPL-exception-1.0"
+provides = "qt6-qtbase-odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qt6-qtbase-odbc-6.4.2-r0.apk"
+version = "6.4.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt6-qtbase", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"], ["libstdc++", "12.2.1"]]

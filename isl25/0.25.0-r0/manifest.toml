@@ -1,0 +1,15 @@
+checksum = "488d7f15fd3ce75769f7d4a88c42942128dbce1a3159a8de988a561b7986af80"
+licence = "MIT"
+provides = "isl25"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/isl25-0.25-r0.apk"
+version = "0.25.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gmp", "6.2.1-r2"]]

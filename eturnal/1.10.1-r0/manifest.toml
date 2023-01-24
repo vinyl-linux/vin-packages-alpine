@@ -1,0 +1,15 @@
+checksum = "94bccfde521a32d3cc4bf344f3c4ac63089bf9669105ab24de227cb23a923655"
+licence = "Apache-2.0 license"
+provides = "eturnal"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/eturnal-1.10.1-r0.apk"
+version = "1.10.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["busybox", "1.35.0-r29"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["ncurses-libs", "6.3.0"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"], ["yaml", "0.2.5-r0"], ["zlib", "1.2.13-r0"]]

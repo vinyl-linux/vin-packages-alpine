@@ -1,0 +1,15 @@
+checksum = "bfdc7dfbfb1f8cb78268018ce170eee3b8bca1cb7b20d6bd4fedc66739563f93"
+licence = "GPL-2.0-or-later AND LGPL-2.1-only"
+provides = "kamoso-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kamoso-lang-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-bad", "1.20.5-r0"], ["gst-plugins-good", "1.20.5-r0"], ["kirigami2", "5.100.0-r1"], ["qt5-qtquickcontrols2", "5.15.6"]]

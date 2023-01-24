@@ -1,0 +1,15 @@
+checksum = "0bcbdaaf606f94134c2fc4cd04d75294de868f5147ffcd6ce42641ea5549ffc5"
+licence = "BSD-2-Clause"
+provides = "librist-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librist-dev-0.2.7-r0.apk"
+version = "0.2.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librist", "0.2.7-r0"], ["pkgconf", "1.9.4-r0"]]

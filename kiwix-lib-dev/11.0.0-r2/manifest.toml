@@ -1,0 +1,15 @@
+checksum = "2b0d61fa1eea3e4db7060c62adffe9a6404f111d5b83c193e5a8b4935b32681c"
+licence = "GPL-3.0-or-later"
+provides = "kiwix-lib-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kiwix-lib-dev-11.0.0-r2.apk"
+version = "11.0.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kiwix-lib", "11.0.0-r2"], ["icu-dev", "72.1.0-r1"], ["curl-dev", "7.87.0-r1"], ["libmicrohttpd-dev", "0.9.75-r0"], ["libzim-dev", "8.0.0-r1"], ["pugixml-dev", "1.13.0-r0"], ["xapian-core-dev", "1.4.21-r0"], ["pkgconf", "1.9.4-r0"]]

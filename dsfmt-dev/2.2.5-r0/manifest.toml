@@ -1,0 +1,15 @@
+checksum = "ca13e31500d551498db675208d4a84682fe6f61a9a7088dab532c1c873891d01"
+licence = "BSD-3-Clause"
+provides = "dsfmt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dsfmt-dev-2.2.5-r0.apk"
+version = "2.2.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dsfmt", "2.2.5-r0"], ["pkgconf", "1.9.4-r0"]]

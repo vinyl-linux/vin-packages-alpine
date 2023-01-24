@@ -1,0 +1,15 @@
+checksum = "8e27ec3ef53881d08614030ba27f7153300307ecf759410db9f74dc491bb990a"
+licence = "MPL-2.0 LGPL-2.1-or-later"
+provides = "libwpd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libwpd-dev-0.10.3-r1.apk"
+version = "0.10.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libwpd", "0.10.3-r1"], ["librevenge-dev", "0.0.4-r10"], ["pkgconf", "1.9.4-r0"]]

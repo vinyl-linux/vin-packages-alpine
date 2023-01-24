@@ -1,0 +1,16 @@
+checksum = "0c4a49f3c8f3447886ed80b5bf343c181272b9127bbe481fce742ece2e71f928"
+licence = "MIT"
+provides = "booster"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/booster-0.9-r6.apk"
+version = "0.9.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kbd", "2.5.1-r3"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

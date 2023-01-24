@@ -1,0 +1,15 @@
+checksum = "e3303958db920b95fb3e7f74b6f8b2a8edbb936a123352ed33262c1f8a4e9194"
+licence = "MIT"
+provides = "poedit-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/poedit-lang-3.1.1-r1.apk"
+version = "3.1.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gettext", "0.21.1-r1"]]

@@ -1,0 +1,15 @@
+checksum = "6638c2222373f7b5ea44b13053835f4a08d9c83203807a287e858e0b8d8d77ac"
+licence = "GPL-2.0-only"
+provides = "arch-install-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/arch-install-scripts-27-r0.apk"
+version = "27.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["coreutils", "9.1.0-r0"], ["pacman", "6.0.2-r0"], ["util-linux-misc", "2.38.1-r1"]]

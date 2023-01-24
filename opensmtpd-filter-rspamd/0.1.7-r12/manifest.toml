@@ -1,0 +1,15 @@
+checksum = "b401a023d6d094baab52209e80a3839f52ad210cb98b906e67907dfb4d9ceeae"
+licence = "ISC"
+provides = "opensmtpd-filter-rspamd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/opensmtpd-filter-rspamd-0.1.7-r12.apk"
+version = "0.1.7-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["opensmtpd", "6.8.0-p2-r6"], ["musl", "1.2.3-r4"]]

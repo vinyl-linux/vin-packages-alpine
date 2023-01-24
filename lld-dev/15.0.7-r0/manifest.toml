@@ -1,0 +1,15 @@
+checksum = "e9a081fcb7e541709a6641ed33b4aa7921b74a5e8f53e877c682242aaf28c480"
+licence = "Apache-2.0"
+provides = "lld-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lld-dev-15.0.7-r0.apk"
+version = "15.0.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lld", "15.0.7-r0"], ["lld-libs", "15.0.7-r0"]]

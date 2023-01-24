@@ -1,0 +1,15 @@
+checksum = "a43673c33ab4d80a31a577404ea9e5925739ee9738c36af42472ed454144d389"
+licence = "GPL-3.0-or-later"
+provides = "tpm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tpm-1.3.3-r4.apk"
+version = "1.3.3-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gpg", "2.2.40-r0"]]

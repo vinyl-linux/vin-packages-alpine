@@ -1,0 +1,15 @@
+checksum = "839a3b486a202f6fab865402f5c37de0edc8407ceadfc46ad765acd6c17ae130"
+licence = "Custom"
+provides = "ldns-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ldns-dev-1.8.3-r0.apk"
+version = "1.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.7-r2"], ["ldns", "1.8.3-r0"], ["pkgconf", "1.9.4-r0"]]

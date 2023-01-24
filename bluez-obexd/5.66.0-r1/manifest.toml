@@ -1,0 +1,15 @@
+checksum = "91545b547a5ef2fc009563456f53590a1953fa6051e18b486d99f6705e732bb4"
+licence = "GPL-2.0-or-later"
+provides = "bluez-obexd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bluez-obexd-5.66-r1.apk"
+version = "5.66.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dbus", "1.14.4-r0"], ["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["glib", "2.74.5-r0"], ["libical", "3.0.16-r1"]]

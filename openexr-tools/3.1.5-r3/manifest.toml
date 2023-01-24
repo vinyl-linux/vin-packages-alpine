@@ -1,0 +1,15 @@
+checksum = "d2126e32312d1851e2e8534b1fddc0375930350741f5e86c36619a428214c613"
+licence = "BSD-3-Clause"
+provides = "openexr-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openexr-tools-3.1.5-r3.apk"
+version = "3.1.5-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openexr", "3.1.5-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

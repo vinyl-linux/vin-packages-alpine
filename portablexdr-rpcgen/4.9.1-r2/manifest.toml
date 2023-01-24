@@ -1,0 +1,15 @@
+checksum = "6125a633c2adde044700610bc27f900d83839a8c2211679b184501dabba4c574"
+licence = "GPL-2.0-or-later"
+provides = "portablexdr-rpcgen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/portablexdr-rpcgen-4.9.1-r2.apk"
+version = "4.9.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

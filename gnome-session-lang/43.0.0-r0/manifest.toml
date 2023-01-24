@@ -1,0 +1,15 @@
+checksum = "071c70906b0a71804368a7341902fc36d42b41f36241dab812995a50320f3875"
+licence = "GPL-2.0-or-later"
+provides = "gnome-session-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-session-lang-43.0-r0.apk"
+version = "43.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-plugins-pulse", "1.2.7.1-r0"], ["bash", "5.2.15-r0"], ["dconf", "0.40.0-r2"], ["polkit-elogind", "122.0.0-r0"], ["pulseaudio-alsa", "16.1.0-r6"]]

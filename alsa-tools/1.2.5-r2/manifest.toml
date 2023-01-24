@@ -1,0 +1,15 @@
+checksum = "980d3fd4778bc502a13e292359c83c3523a63f7b940764ec0ad3edbc62f69884"
+licence = "GPL-2.0-or-later"
+provides = "alsa-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alsa-tools-1.2.5-r2.apk"
+version = "1.2.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libstdc++", "12.2.1"]]

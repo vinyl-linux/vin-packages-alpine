@@ -1,0 +1,15 @@
+checksum = "ac5351907655191dcf2c123c5ecd0daa3baee649b6e5611bb752163a87e7d6e2"
+licence = "MIT"
+provides = "py3-treq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-treq-22.2.0-r1.apk"
+version = "22.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-incremental", "22.10.0-r0"], ["py3-requests", "2.28.1-r1"], ["py3-twisted", "22.10.0-r0"], ["py3-attrs", "22.1.0-r0"]]

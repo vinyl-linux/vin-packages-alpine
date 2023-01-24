@@ -1,0 +1,15 @@
+checksum = "27a463a8ac2e890ee0ee08b0d4c43a14dbd34aba2ccad4ff89a4a3def7bdb7f7"
+licence = "MPL-2.0"
+provides = "libabw-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libabw-dev-0.1.3-r1.apk"
+version = "0.1.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libabw", "0.1.3-r1"], ["librevenge-dev", "0.0.4-r10"], ["libxml2-dev", "2.10.3-r1"], ["zlib-dev", "1.2.13-r0"], ["pkgconf", "1.9.4-r0"]]

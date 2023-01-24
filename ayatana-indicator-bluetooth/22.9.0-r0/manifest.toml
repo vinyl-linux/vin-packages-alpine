@@ -1,0 +1,15 @@
+checksum = "0ebf568d674be481c7cf193658f4c98e6f197886077be5c5cc6c08fd08b68d1a"
+licence = "GPL-3.0-only"
+provides = "ayatana-indicator-bluetooth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ayatana-indicator-bluetooth-22.9.0-r0.apk"
+version = "22.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libayatana-common", "0.9.8-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

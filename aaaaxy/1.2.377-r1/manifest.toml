@@ -1,0 +1,15 @@
+checksum = "1a6f56c65f238664a2ff12118fb1b17b19bb9881d9d5dfbcdf2cd7a7f1755ace"
+licence = "Apache-2.0"
+provides = "aaaaxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aaaaxy-1.2.377-r1.apk"
+version = "1.2.377-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mesa-gl", "22.2.5-r1"], ["libx11", "1.8.3-r1"], ["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"]]

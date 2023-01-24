@@ -1,0 +1,15 @@
+checksum = "2aa5b39191eaedcd5c936688ffb9465fb3ed3c266fd07b976c1b85296eb51726"
+licence = "GPL-2.0-or-later"
+provides = "usbutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/usbutils-015-r0.apk"
+version = "15.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hwdata-usb", "0.364.0-r0"], ["musl", "1.2.3-r4"], ["eudev-libs", "3.2.11-r4"], ["libusb", "1.0.26-r0"]]

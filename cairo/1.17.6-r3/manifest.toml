@@ -1,0 +1,15 @@
+checksum = "1da9ba3dc7e7285041d64dfdc7c63ff0d35bd2ad12201a787bccd2b478ef55c2"
+licence = "LGPL-2.0-or-later MPL-1.1"
+provides = "cairo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cairo-1.17.6-r3.apk"
+version = "1.17.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["libxrender", "0.9.11-r0"], ["musl", "1.2.3-r4"], ["fontconfig", "2.14.1-r0"], ["freetype", "2.12.1-r0"], ["pixman", "0.42.2-r0"], ["libpng", "1.6.38-r0"], ["libxcb", "1.15.0-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "5abc2f942d6a0034961f8ad7dbaaf2d645caf8a2873a204d2d1eb2b020493f75"
+licence = "LGPL-2.0-only"
+provides = "kidletime-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kidletime-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtx11extras-dev", "5.15.6"], ["kidletime", "5.100.0-r0"]]

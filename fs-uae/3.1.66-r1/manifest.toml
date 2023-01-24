@@ -1,0 +1,15 @@
+checksum = "77b85e8207950a02709da101481f64a20ea24416d7170ed69d6511256cc9538b"
+licence = "GPL-2.0-only"
+provides = "fs-uae"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fs-uae-3.1.66-r1.apk"
+version = "3.1.66-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["libmpeg2", "0.5.1-r9"], ["openal-soft", "1.22.2-r2"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

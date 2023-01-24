@@ -1,0 +1,15 @@
+checksum = "36127b2d66b6b13a846c7f589b68b9071db68112a243e3ccd5fc668fe5dc584d"
+licence = "Zlib"
+provides = "faudio"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/faudio-22.11-r0.apk"
+version = "22.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"]]

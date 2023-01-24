@@ -1,0 +1,15 @@
+checksum = "562ca37b9c58f1d285060bf247821333eab14a6a9338a890ed937d618fc2e545"
+licence = "MIT"
+provides = "libunwind-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libunwind-dev-1.6.2-r0.apk"
+version = "1.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libucontext-dev", "1.2.0-r0"], ["libunwind", "1.6.2-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "42912bed3d9713cf7fd95c618108e90d1e927468168ee5d40d53d16684d7ea79"
+licence = "MIT"
+provides = "swuniq"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/swuniq-0.5-r1.apk"
+version = "0.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

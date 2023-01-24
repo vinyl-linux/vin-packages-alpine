@@ -1,0 +1,15 @@
+checksum = "143880ea20b6040d005cab53f167ccf1b751684f2cd2631345ae7e44ce8dee02"
+licence = "GPL-3.0-or-later"
+provides = "kmon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kmon-1.6.2-r0.apk"
+version = "1.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kmod", "30.0.0-r1"], ["util-linux-misc", "2.38.1-r1"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libxcb", "1.15.0-r0"]]

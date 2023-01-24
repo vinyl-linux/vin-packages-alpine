@@ -1,0 +1,15 @@
+checksum = "3742d5c85bb99d9bb1d45a2ee055c232ff99ee97c289f7ecb49a6d49e973ab0e"
+licence = "GPL-3.0-or-later"
+provides = "blanket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/blanket-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-bad", "1.20.5-r0"], ["gst-plugins-base", "1.20.5-r0"], ["gst-plugins-good", "1.20.5-r0"], ["libadwaita", "1.2.1-r0"], ["python3", "3.10.9-r1"], ["py3-gst", "1.20.5-r0"], ["py3-gobject3", "3.42.2-r0"]]

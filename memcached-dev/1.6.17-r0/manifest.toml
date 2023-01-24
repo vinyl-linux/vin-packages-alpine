@@ -1,0 +1,15 @@
+checksum = "38f03036b13b00eb174998a05128db11d04547f84e5e534ae4da94c28992e7c5"
+licence = "BSD-3-Clause"
+provides = "memcached-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/memcached-dev-1.6.17-r0.apk"
+version = "1.6.17-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["memcached", "1.6.17-r0"]]

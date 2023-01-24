@@ -1,0 +1,15 @@
+checksum = "359f694b67ec991f5b790ce719a639728de57e270f7e0562248479a660802892"
+licence = "MIT"
+provides = "ruby-charlock_holmes"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-charlock_holmes-0.7.7-r11.apk"
+version = "0.7.7-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"], ["ruby-libs", "3.1.3-r0"], ["libstdc++", "12.2.1"], ["libucontext", "1.2.0-r0"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "7edfc2670dc6ba033e1baee63a4af89d5660df80f6080b22ecb4c9f51cecad08"
+licence = "LGPL-2.1-or-later"
+provides = "libblockdev-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libblockdev-dev-2.28-r0.apk"
+version = "2.28.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libblockdev", "2.28.0-r0"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "403748bc6ca3f4427d1fed98bb8bfb8619ded409cb178cff344ba6893caa4ca3"
+licence = "MPL-2.0"
+provides = "py3-openvdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-openvdb-10.0.0-r0.apk"
+version = "10.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boost1.80-python3", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["openvdb", "10.0.0-r0"], ["libstdc++", "12.2.1"], ["libtbb", "2021.7.0-r0"]]

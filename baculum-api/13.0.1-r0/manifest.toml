@@ -1,0 +1,15 @@
+checksum = "08fc94a0bbba73373ece7db7ce463c7270299da810e17f79c4513ae92c8197ad"
+licence = "AGPL-3.0-or-later"
+provides = "baculum-api"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/baculum-api-13.0.1-r0.apk"
+version = "13.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["baculum-common", "13.0.1-r0"], ["php81-bcmath", "8.1.14-r0"], ["php81-mysqlnd", "8.1.14-r0"], ["php81-pdo", "8.1.14-r0"], ["php81-pgsql", "8.1.14-r0"]]

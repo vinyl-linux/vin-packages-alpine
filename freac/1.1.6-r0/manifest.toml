@@ -1,0 +1,15 @@
+checksum = "3b9f1b3ee8eb43a66eaada8f303483abcf73e47726faeabc97b414439767f229"
+licence = "GPL-2.0-or-later"
+provides = "freac"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freac-1.1.6-r0.apk"
+version = "1.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["boca", "1.0.6-a-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["smooth", "0.9.9-r0"], ["libstdc++", "12.2.1"]]

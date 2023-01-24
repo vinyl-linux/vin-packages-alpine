@@ -1,0 +1,15 @@
+checksum = "498ce5201490b4499237267ef8079c44401bc18930620440fef16eaaa4498c7f"
+licence = "MIT"
+provides = "gtk-layer-shell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gtk-layer-shell-0.8.0-r0.apk"
+version = "0.8.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.5-r0"], ["wayland-libs-client", "1.21.0-r1"]]

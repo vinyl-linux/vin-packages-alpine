@@ -1,0 +1,15 @@
+checksum = "7350d6bb593d92a71aeafc53b6e7bc30262bfc83413ce3464547e35ddce86c52"
+licence = "custom"
+provides = "libxtst"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxtst-1.2.4-r0.apk"
+version = "1.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["libxext", "1.3.5-r0"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "c18a2010015f5d3a0b4e8b74e148ad44ce4b5ac70676b46f5525b7232cd28bc2"
+licence = "MIT"
+provides = "ameba"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ameba-1.3.1-r0.apk"
+version = "1.3.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["gc", "8.2.2-r0"], ["libgcc", "12.2.1"], ["pcre", "8.45.0-r2"], ["yaml", "0.2.5-r0"]]

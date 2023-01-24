@@ -1,0 +1,15 @@
+checksum = "7995479783f757e8ffcf4dd1fdf1972a557c64933efaccbc4846b281b2f8257c"
+licence = "GPL-2.0-or-later"
+provides = "hexchat-python"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hexchat-python-2.16.1-r2.apk"
+version = "2.16.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["hexchat", "2.16.1-r2"], ["py3-cffi", "1.15.1-r0"], ["musl", "1.2.3-r4"], ["python3", "3.10.9-r1"]]

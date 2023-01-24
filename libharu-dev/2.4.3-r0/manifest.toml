@@ -1,0 +1,15 @@
+checksum = "ebe1f18ac21b10f629a366bab952d7e692a3f36db5ae4e50c973704f4262f79d"
+licence = "custom"
+provides = "libharu-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libharu-dev-2.4.3-r0.apk"
+version = "2.4.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpng-dev", "1.6.38-r0"], ["libharu", "2.4.3-r0"]]

@@ -1,0 +1,15 @@
+checksum = "71d55e0b30236e83404d65e256fa1fd284a91e86283cec1c55d749d6cf1c2040"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later"
+provides = "gnome-menus-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-menus-dev-3.36.0-r1.apk"
+version = "3.36.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnome-menus", "3.36.0-r1"], ["glib-dev", "2.74.5-r0"], ["pkgconf", "1.9.4-r0"]]

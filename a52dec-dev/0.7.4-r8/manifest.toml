@@ -1,0 +1,15 @@
+checksum = "04b37429e67b105fa8064115b870fc5265b8f7fcc4c4df36398500f629b7a618"
+licence = "GPL-2.0-or-later"
+provides = "a52dec-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/a52dec-dev-0.7.4-r8.apk"
+version = "0.7.4-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["a52dec", "0.7.4-r8"]]

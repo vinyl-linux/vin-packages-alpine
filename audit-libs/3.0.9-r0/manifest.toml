@@ -1,0 +1,15 @@
+checksum = "ebaa64f0f60d2e4916ff9952b042473a09e038c47b5d3447da4f52abfdb7c5fe"
+licence = "GPL-2.0-or-later"
+provides = "audit-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/audit-libs-3.0.9-r0.apk"
+version = "3.0.9-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"]]

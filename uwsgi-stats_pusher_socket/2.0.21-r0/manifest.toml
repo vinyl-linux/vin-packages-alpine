@@ -1,0 +1,15 @@
+checksum = "09bf34df64202874a5474957b5a610201051010a04ecdfa9627c54d8aeda102a"
+licence = "custom"
+provides = "uwsgi-stats_pusher_socket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-stats_pusher_socket-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"]]

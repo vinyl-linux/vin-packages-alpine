@@ -1,0 +1,15 @@
+checksum = "19151bd42deb2bce4412e17ba8eb5dbc98072cbc48913909aed88c92ba72b65c"
+licence = "LGPL-3.0-or-later OR MPL-2.0"
+provides = "liblangtag-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/liblangtag-dev-0.6.4-r0.apk"
+version = "0.6.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.5-r0"], ["liblangtag", "0.6.4-r0"], ["libxml2-dev", "2.10.3-r1"], ["pkgconf", "1.9.4-r0"]]

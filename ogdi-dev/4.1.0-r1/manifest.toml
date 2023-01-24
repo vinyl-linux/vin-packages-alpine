@@ -1,0 +1,15 @@
+checksum = "da3d26b120380cf012e30d6366187e664aa3745aec65ffc3f646b579b1095777"
+licence = "MIT"
+provides = "ogdi-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ogdi-dev-4.1.0-r1.apk"
+version = "4.1.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ogdi", "4.1.0-r1"], ["pkgconf", "1.9.4-r0"]]

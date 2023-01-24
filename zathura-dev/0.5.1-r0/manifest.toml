@@ -1,0 +1,15 @@
+checksum = "730ceaf8fd05a81013e7e045e250d26ac8d85257f7d3e9b2a1163ab847e6cbd3"
+licence = "Zlib"
+provides = "zathura-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zathura-dev-0.5.1-r0.apk"
+version = "0.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cairo-dev", "1.17.6-r3"], ["girara-dev", "0.3.7-r0"], ["pkgconf", "1.9.4-r0"]]

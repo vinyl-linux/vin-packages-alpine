@@ -1,0 +1,15 @@
+checksum = "ea9e5ee4405adab21d3b08070518b587db519ba3e6ef9cb99b42c62f43f28a30"
+licence = "GPL-2.0-or-later"
+provides = "xfce4-dev-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xfce4-dev-tools-4.16.0-r1.apk"
+version = "4.16.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["automake", "1.16.5-r1"], ["autoconf", "2.71.0-r1"], ["make", "4.3.0-r1"], ["intltool", "0.51.0-r5"], ["pkgconf", "1.9.4-r0"], ["libtool", "2.4.7-r0"], ["gtk-doc", "1.33.2-r3"], ["glib-dev", "2.74.5-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

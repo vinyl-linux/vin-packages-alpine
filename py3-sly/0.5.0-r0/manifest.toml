@@ -1,0 +1,15 @@
+checksum = "fc3907a6ea121108fb7a02fc3597a352b40f7238a6cf4b495abc817a9e33b61d"
+licence = "BSD-3-Clause"
+provides = "py3-sly"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-sly-0.5-r0.apk"
+version = "0.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

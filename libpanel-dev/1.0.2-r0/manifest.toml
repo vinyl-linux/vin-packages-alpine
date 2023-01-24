@@ -1,0 +1,15 @@
+checksum = "28c1b5c5022deb24fc7b00f0791035129d8f08e963f5dcf4cec58a35c3c60b51"
+licence = "LGPL-2.1-or-later"
+provides = "libpanel-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libpanel-dev-1.0.2-r0.apk"
+version = "1.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libpanel", "1.0.2-r0"], ["glib-dev", "2.74.5-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["pkgconf", "1.9.4-r0"]]

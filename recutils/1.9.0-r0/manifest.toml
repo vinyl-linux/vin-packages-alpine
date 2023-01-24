@@ -1,0 +1,15 @@
+checksum = "1bc2317a7a728b82ffe7b6f52ecaa7b0d09f1770addc104de9d5b794745c9406"
+licence = "GPL-3.0-or-later"
+provides = "recutils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/recutils-1.9-r0.apk"
+version = "1.9.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libgcrypt", "1.10.1-r0"], ["musl", "1.2.3-r4"]]

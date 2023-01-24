@@ -1,0 +1,15 @@
+checksum = "9c872122de530dfce557e564b3f1bfcc7b76b6f0c5c128de47e1126b2b20e678"
+licence = "MIT"
+provides = "xkeyboard-config-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xkeyboard-config-dev-2.37-r0.apk"
+version = "2.37.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xkeyboard-config", "2.37.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "176d85b46a2a70f65c9289725008d60b3729649c066e1065973e1bd7985adca5"
+licence = "BSD-3-Clause"
+provides = "libpcrecpp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libpcrecpp-8.45-r2.apk"
+version = "8.45.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["pcre", "8.45.0-r2"], ["libstdc++", "12.2.1"]]

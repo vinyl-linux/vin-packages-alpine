@@ -1,0 +1,15 @@
+checksum = "2d793e14a2fee5243db2f5c4bd3fa5b531bca209711ab47c9afce80b94eaccdb"
+licence = "MIT"
+provides = "py3-cffi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-cffi-1.15.1-r0.apk"
+version = "1.15.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-cparser", "2.21.0-r0"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"]]

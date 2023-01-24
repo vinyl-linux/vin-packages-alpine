@@ -1,0 +1,15 @@
+checksum = "eefb9fa6fbb11b36684c879de17433064683fc96dbeabc103782618ba499e946"
+licence = "MIT"
+provides = "py3-setuptools_scm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-setuptools_scm-7.0.5-r0.apk"
+version = "7.0.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-setuptools", "65.6.0-r0"], ["py3-tomli", "2.0.1-r1"], ["py3-packaging", "21.3.0-r2"], ["py3-typing-extensions", "4.4.0-r0"]]

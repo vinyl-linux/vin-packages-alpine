@@ -1,0 +1,15 @@
+checksum = "06fc6be62a2fba88f6909dac8b4735065520fd813f7e928d7f76d3f7fc062428"
+licence = "GPL-2.0-or-later"
+provides = "nx-libs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nx-libs-dev-3.5.99.26-r1.apk"
+version = "3.5.99.26-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["nx-libs", "3.5.99.26-r1"], ["libpng-dev", "1.6.38-r0"], ["libx11-dev", "1.8.3-r1"], ["pkgconf", "1.9.4-r0"]]

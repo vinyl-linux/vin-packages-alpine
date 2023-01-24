@@ -1,0 +1,15 @@
+checksum = "7ae28557dbbfc3327fef71fb98e43f6410931e15f1c8db4b03cf141ca62805d1"
+licence = "ISC"
+provides = "cronie"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cronie-1.6.1-r0.apk"
+version = "1.6.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["musl-obstack", "1.2.3-r0"]]

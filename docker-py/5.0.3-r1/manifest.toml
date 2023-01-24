@@ -1,0 +1,15 @@
+checksum = "e5974b0a665377f3291ed058d3fdda7d65b0cc7d915373ca749969c12c69dd65"
+licence = "Apache-2.0"
+provides = "docker-py"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-py-5.0.3-r1.apk"
+version = "5.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dockerpy-creds", "0.4.0-r3"], ["py3-cparser", "2.21.0-r0"], ["py3-cryptography", "38.0.3-r0"], ["py3-ipaddress", "1.0.23-r3"], ["py3-packaging", "21.3.0-r2"], ["py3-parsing", "3.0.9-r0"], ["py3-requests", "2.28.1-r1"], ["py3-websocket-client", "1.4.2-r0"]]

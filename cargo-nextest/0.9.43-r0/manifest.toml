@@ -1,0 +1,15 @@
+checksum = "f7aea45e8c016f61897467425e8577447e218b9df2582417cba41467aa40cf8d"
+licence = "Apache-2.0 OR MIT"
+provides = "cargo-nextest"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cargo-nextest-0.9.43-r0.apk"
+version = "0.9.43-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cargo", "1.64.0-r2"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["zstd-libs", "1.5.2-r9"]]

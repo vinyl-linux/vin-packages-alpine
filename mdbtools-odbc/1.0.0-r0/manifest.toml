@@ -1,0 +1,15 @@
+checksum = "37ebf5c900714ae321b29c51425dc8bf6c0d75c7d78a8e1024d0afabf81f2aaa"
+licence = "GPL-2.0-or-later"
+provides = "mdbtools-odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mdbtools-odbc-1.0.0-r0.apk"
+version = "1.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mdbtools", "1.0.0-r0"], ["unixodbc", "2.3.11-r0"]]

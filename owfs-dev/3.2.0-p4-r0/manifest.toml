@@ -1,0 +1,15 @@
+checksum = "e6728d452f1beb9e03e4c855991906d8aa3f243e8831909a11bc6f400f808cad"
+licence = "GPL-2.0-only"
+provides = "owfs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/owfs-dev-3.2p4-r0.apk"
+version = "3.2.0-p4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["owfs", "3.2.0-p4-r0"], ["pkgconf", "1.9.4-r0"]]

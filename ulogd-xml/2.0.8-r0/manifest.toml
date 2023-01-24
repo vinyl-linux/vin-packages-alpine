@@ -1,0 +1,15 @@
+checksum = "d6511a2c768c1e1d76a3a091d53648ee610ba8d2e2dfe06373a2cf4b712e1ce1"
+licence = "GPL-2.0-only"
+provides = "ulogd-xml"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ulogd-xml-2.0.8-r0.apk"
+version = "2.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ulogd", "2.0.8-r0"], ["musl", "1.2.3-r4"], ["libnetfilter_acct", "1.0.3-r1"], ["libnetfilter_conntrack", "1.0.9-r0"], ["libnetfilter_log", "1.0.2-r0"]]

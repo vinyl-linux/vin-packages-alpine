@@ -1,0 +1,15 @@
+checksum = "2a85a8bfed6b14ff79ad9350a7e71727b64c0b304430b7ee4d41da34c14e19a5"
+licence = "custom"
+provides = "uwsgi-dummy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-dummy-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"]]

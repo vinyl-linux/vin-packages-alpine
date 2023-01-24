@@ -1,0 +1,15 @@
+checksum = "e7dfb72eb11024fa787ab71fe71baaa38c6a25daa847bff935ccfa6b2900a79f"
+licence = "MIT"
+provides = "zenith"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zenith-0.13.1-r0.apk"
+version = "0.13.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

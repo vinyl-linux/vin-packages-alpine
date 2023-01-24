@@ -1,0 +1,15 @@
+checksum = "b8536d2473d72965be0faa83f9b45cea4cdc124a903e251e3006aae50ec96b35"
+licence = "MIT"
+provides = "zellij"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zellij-0.31.4-r0.apk"
+version = "0.31.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"]]

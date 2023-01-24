@@ -1,0 +1,15 @@
+checksum = "f6f3ddb1d2b0259acee342f6dc399a4a9e3afc9aadd8fca2ec87eba86c1f3d18"
+licence = "custom"
+provides = "uwsgi-graylog2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-graylog2-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"], ["musl", "1.2.3-r4"], ["zlib", "1.2.13-r0"]]

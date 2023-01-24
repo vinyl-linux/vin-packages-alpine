@@ -1,0 +1,15 @@
+checksum = "6e67c2c3f6556650eb41eb02b98f49b74be6ea8722c04bfe2cb7c488d2be731f"
+licence = "MIT"
+provides = "giblib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/giblib-1.2.4-r13.apk"
+version = "1.2.4-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

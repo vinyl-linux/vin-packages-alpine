@@ -1,0 +1,15 @@
+checksum = "e944bb7d1bc375cd22b3cfc06a7abdc05053f0cdaa4a4613eb58fb0bd2da618a"
+licence = "Unlicense"
+provides = "kakoune"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kakoune-2022.10.31-r0.apk"
+version = "2022.10.31-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

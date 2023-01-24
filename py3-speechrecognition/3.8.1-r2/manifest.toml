@@ -1,0 +1,15 @@
+checksum = "6b2e81efbe314653ad4cf76442dc54a8966fb8fb0989c1425e246d4edf27eaf1"
+licence = "BSD-3-Clause AND GPL-2.0-only"
+provides = "py3-speechrecognition"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-speechrecognition-3.8.1-r2.apk"
+version = "3.8.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-pyaudio", "0.2.12-r0"], ["flac", "1.4.2-r0"]]

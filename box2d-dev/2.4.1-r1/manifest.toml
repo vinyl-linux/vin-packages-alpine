@@ -1,0 +1,15 @@
+checksum = "94e2146839ead023159882b96289fca027f8b36f30ea16c13eca0b73d130fa35"
+licence = "MIT"
+provides = "box2d-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/box2d-dev-2.4.1-r1.apk"
+version = "2.4.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["box2d", "2.4.1-r1"]]

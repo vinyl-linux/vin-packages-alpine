@@ -1,0 +1,15 @@
+checksum = "a76cb4210416cc4ba8984d1ce19c070b3c358e68a4d6c5c828148225cbe48da4"
+licence = "BSD"
+provides = "ilbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ilbc-0.0.1-r1.apk"
+version = "0.0.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

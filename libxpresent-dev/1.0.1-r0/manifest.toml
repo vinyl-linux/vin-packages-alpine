@@ -1,0 +1,15 @@
+checksum = "af36d6f9c893a2bd4ca1f9fa1963d906e27df7dd6f80bf79e37abfd4cc7609ec"
+licence = "MIT"
+provides = "libxpresent-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libxpresent-dev-1.0.1-r0.apk"
+version = "1.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxpresent", "1.0.1-r0"], ["xorgproto", "2022.2.0-r0"], ["libx11-dev", "1.8.3-r1"], ["libxext-dev", "1.3.5-r0"], ["libxfixes-dev", "6.0.0-r0"], ["libxrandr-dev", "1.5.3-r0"], ["pkgconf", "1.9.4-r0"]]

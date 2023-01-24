@@ -1,0 +1,15 @@
+checksum = "17b4a2ee82a7ceb098b9e055bf11018cc19f1c04fb8d08b3f9faf91b044999eb"
+licence = "ISC"
+provides = "macifrename"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/macifrename-0.1.2-r0.apk"
+version = "0.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

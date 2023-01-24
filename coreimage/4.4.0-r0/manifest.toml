@@ -1,0 +1,15 @@
+checksum = "0765ba29a8d3ea9bc0f0601f0068c97316d3eb56a0480ca53688996d4b8f0cb6"
+licence = "GPL-3.0-or-later"
+provides = "coreimage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coreimage-4.4.0-r0.apk"
+version = "4.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtsvg", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libcprime", "4.4.1-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

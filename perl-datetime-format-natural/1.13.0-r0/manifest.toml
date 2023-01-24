@@ -1,0 +1,15 @@
+checksum = "dda5f93960eb5354864c6190c20a41ebb07caa488ae1a054f3909094052ae416"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-datetime-format-natural"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-datetime-format-natural-1.13-r0.apk"
+version = "1.13.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-datetime-timezone", "2.56.0-r0"], ["perl-clone", "0.46.0-r0"], ["perl-params-validate", "1.31.0-r0"], ["perl-list-moreutils", "0.430.0-r0"], ["perl-datetime", "1.59.0-r0"], ["perl-boolean", "0.46.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "cce54e785b03ecd1871350ea164d37aaf491df1471fc3c6a21e50114e32f78f9"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-text-csv_xs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-text-csv_xs-1.48-r1.apk"
+version = "1.48.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["musl", "1.2.3-r4"]]

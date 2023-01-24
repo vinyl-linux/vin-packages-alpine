@@ -1,0 +1,15 @@
+checksum = "0327565fe655907e961777d2aaa3b24bfc463963e1762afb8310553df22554d2"
+licence = "MIT"
+provides = "stb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stb-0_git20220908-r0.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"]]

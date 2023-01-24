@@ -1,0 +1,15 @@
+checksum = "c6dbb56c6151a35584766ca87d061e50c5890a1eae68f2dae8db4d3d74196b7a"
+licence = "GPL-3.0-or-later"
+provides = "notmuch-emacs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/notmuch-emacs-0.37-r1.apk"
+version = "0.37.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["emacs", "28.2.0-r0"], ["notmuch", "0.37.0-r1"]]

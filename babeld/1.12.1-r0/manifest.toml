@@ -1,0 +1,15 @@
+checksum = "f31cfb0788e95b44735d2faf8512f5735848751ea979fa8504962e35a3caa73d"
+licence = "MIT"
+provides = "babeld"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/babeld-1.12.1-r0.apk"
+version = "1.12.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

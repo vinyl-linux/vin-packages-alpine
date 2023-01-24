@@ -1,0 +1,15 @@
+checksum = "89af9e25c76288e97daba204f41f87a875b6007a2820a387260714700129b2f2"
+licence = "BSD-3-Clause"
+provides = "py3-flask-caching"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-flask-caching-2.0.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-cachelib", "0.9.0-r0"], ["py3-flask", "2.2.2-r0"]]

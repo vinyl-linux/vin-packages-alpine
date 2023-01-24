@@ -1,0 +1,15 @@
+checksum = "1fd5f3aa0048f946a02afa6fa94e259ee4dd23360b927f0c4268897cc3d6eb04"
+licence = "GPL-2.0-or-later"
+provides = "lrzip-extra-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lrzip-extra-scripts-0.651-r1.apk"
+version = "0.651.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["lrzip", "0.651.0-r1"]]

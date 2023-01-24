@@ -1,0 +1,15 @@
+checksum = "56a2d755897531cdd11059b7e59be38ead2fe3fd82323ab7a6d51fa8e820fa64"
+licence = "GPL-3.0-or-later"
+provides = "knot-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/knot-libs-3.2.4-r0.apk"
+version = "3.2.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gnutls", "3.7.8-r2"], ["lmdb", "0.9.29-r2"]]

@@ -1,0 +1,15 @@
+checksum = "cebaeafb22f63a6daf3f69569fe8a7820783b028fb08308666264c54a389ee50"
+licence = "custom"
+provides = "webrtc-audio-processing-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webrtc-audio-processing-dev-0.3.1-r6.apk"
+version = "0.3.1-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pkgconf", "1.9.4-r0"], ["webrtc-audio-processing", "0.3.1-r6"]]

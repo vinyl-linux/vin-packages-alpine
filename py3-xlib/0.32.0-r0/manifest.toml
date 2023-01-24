@@ -1,0 +1,15 @@
+checksum = "751424f43366959d0f62ccee38e71f78061eb48de32a2be5813696a5af2c0c3f"
+licence = "LGPL-2.1-or-later"
+provides = "py3-xlib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-xlib-0.32-r0.apk"
+version = "0.32.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-six", "1.16.0-r3"]]

@@ -1,0 +1,15 @@
+checksum = "1c70d8aab7e40658fecb40177486554665f0f80afbfc4776d0d0cc8d833789ff"
+licence = "OFL-1.1"
+provides = "font-noto-gunjala-gondi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/font-noto-gunjala-gondi-0_git20211101-r6.apk"
+version = "0.0.0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fontconfig", "2.14.1-r0"], ["font-noto-common", "0.0.0"]]

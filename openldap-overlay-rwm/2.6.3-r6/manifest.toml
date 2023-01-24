@@ -1,0 +1,15 @@
+checksum = "70f1070b050fcd4d52dda00b4af1f16f97b11aef2aded675b41136ed7a9cd8ef"
+licence = "OLDAP-2.8"
+provides = "openldap-overlay-rwm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-overlay-rwm-2.6.3-r6.apk"
+version = "2.6.3-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

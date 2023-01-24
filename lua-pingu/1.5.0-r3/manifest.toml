@@ -1,0 +1,15 @@
+checksum = "349595e4e97c774c0eda0383db3d471314d566f704729a909711ade15797dd05"
+licence = "GPL"
+provides = "lua-pingu"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-pingu-1.5-r3.apk"
+version = "1.5.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

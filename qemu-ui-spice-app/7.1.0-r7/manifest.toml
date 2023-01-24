@@ -1,0 +1,15 @@
+checksum = "a53d71ff0012735a9bbad8a43b0b6856564ae606d29e6c4d863a1930edac30b5"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-spice-app"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-ui-spice-app-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"]]

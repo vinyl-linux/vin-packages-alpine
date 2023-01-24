@@ -1,0 +1,15 @@
+checksum = "b1160e2ee6769b9883f2dcc23bfe327d010cec184de1ff34a32843e57c485b0b"
+licence = "LGPL-2.1-or-later"
+provides = "ksmtp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ksmtp-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["musl", "1.2.3-r4"], ["libsasl", "2.1.28-r3"], ["libstdc++", "12.2.1"]]

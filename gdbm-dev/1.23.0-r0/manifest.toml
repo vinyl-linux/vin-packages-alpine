@@ -1,0 +1,15 @@
+checksum = "616e63effcfb4b93841d559190a8ad1ba4b7c8e19cc6157a8ebb4cfd9db32ba1"
+licence = "GPL-3.0-or-later"
+provides = "gdbm-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdbm-dev-1.23-r0.apk"
+version = "1.23.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gdbm-tools", "1.23.0-r0"], ["gdbm", "1.23.0-r0"]]

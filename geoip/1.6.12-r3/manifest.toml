@@ -1,0 +1,15 @@
+checksum = "a41ee03723b2509715c38263ded5b964cda901529a433906631e9a54a8746b20"
+licence = "GPL"
+provides = "geoip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/geoip-1.6.12-r3.apk"
+version = "1.6.12-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

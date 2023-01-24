@@ -1,0 +1,15 @@
+checksum = "694a17e6ab9bcc0c5158d3b239c0a34410655613da016368e9e000ac1491f8a8"
+licence = "GPL-3.0-or-later"
+provides = "gperf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gperf-3.1-r3.apk"
+version = "3.1.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

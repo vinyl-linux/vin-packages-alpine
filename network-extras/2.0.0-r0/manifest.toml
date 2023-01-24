@@ -1,0 +1,15 @@
+checksum = "ad16777ec611f0b47c8ca5d205413003a45245ebb6c3c6b4205b19a0e25aa571"
+licence = "GPL-2.0-only"
+provides = "network-extras"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/network-extras-2.0-r0.apk"
+version = "2.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bridge", "1.5.0-r5"], ["bonding", "2.6.0-r5"], ["vlan", "2.3.0-r0"], ["wpa_supplicant", "2.10.0-r4"], ["iw", "5.19.0-r0"], ["ppp-atm", "2.4.9-r6"], ["ppp-chat", "2.4.9-r6"], ["ppp-daemon", "2.4.9-r6"], ["ppp-l2tp", "2.4.9-r6"], ["ppp-minconn", "2.4.9-r6"], ["ppp-passprompt", "2.4.9-r6"], ["ppp-passwordfd", "2.4.9-r6"], ["ppp-pppoe", "2.4.9-r6"], ["ppp-radius", "2.4.9-r6"], ["ppp-winbind", "2.4.9-r6"], ["usb-modeswitch", "2.6.1-r1"]]

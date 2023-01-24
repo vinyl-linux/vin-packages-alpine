@@ -1,0 +1,15 @@
+checksum = "5545fb96ece1189016455763fe356dc7282af429e49c2f147c67bf05931a4ffa"
+licence = "Apache-2.0"
+provides = "meson"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/meson-0.64.0-r0.apk"
+version = "0.64.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["samurai", "1.2.0-r2"], ["python3", "3.10.9-r1"]]

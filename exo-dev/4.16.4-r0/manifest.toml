@@ -1,0 +1,15 @@
+checksum = "51dcc6e474e7c6296691f44bef99f04a0bec818fdc3656813d7b7cee338171f6"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "exo-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/exo-dev-4.16.4-r0.apk"
+version = "4.16.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exo-libs", "4.16.4-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["libxfce4util-dev", "4.16.0-r2"], ["pkgconf", "1.9.4-r0"]]

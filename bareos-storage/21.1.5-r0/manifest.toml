@@ -1,0 +1,15 @@
+checksum = "04d50005be97333a3c3e1f67a1ca6d48dc462387d80c77eb486a4cec1e2dc590"
+licence = "AGPL-3.0"
+provides = "bareos-storage"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bareos-storage-21.1.5-r0.apk"
+version = "21.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bareos-libs", "21.1.5-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["libstdc++", "12.2.1"]]

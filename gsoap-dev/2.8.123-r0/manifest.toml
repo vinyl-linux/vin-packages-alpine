@@ -1,0 +1,15 @@
+checksum = "8998fc9487ebf93f8bb0b3149eeb255a9a92132ca5205dcdc6aab6e9ae553340"
+licence = "GPL-2.0-or-later gSOAP-1.3b"
+provides = "gsoap-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gsoap-dev-2.8.123-r0.apk"
+version = "2.8.123-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gsoap-tools", "2.8.123-r0"], ["gsoap", "2.8.123-r0"], ["pkgconf", "1.9.4-r0"]]

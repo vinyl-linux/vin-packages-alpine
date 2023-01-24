@@ -1,0 +1,15 @@
+checksum = "ca3934dd9e00ee93e219f8a11184fa9657869dc1d1ad1affb076f8bafaaec7a5"
+licence = "BSD-3-Clause"
+provides = "py3-pytest-sugar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-pytest-sugar-0.9.6-r0.apk"
+version = "0.9.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-packaging", "21.3.0-r2"], ["py3-pytest", "7.2.0-r1"], ["py3-termcolor", "1.1.0-r7"], ["python3", "3.10.9-r1"]]

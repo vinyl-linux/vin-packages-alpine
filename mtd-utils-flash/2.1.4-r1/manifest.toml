@@ -1,0 +1,15 @@
+checksum = "4af683012c6505c1aa88e75a5c6dfb491a92dba94908c4fe5c488e76f96c77b7"
+licence = "GPL-2.0-only"
+provides = "mtd-utils-flash"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtd-utils-flash-2.1.4-r1.apk"
+version = "2.1.4-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

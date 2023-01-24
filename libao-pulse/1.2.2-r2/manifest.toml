@@ -1,0 +1,15 @@
+checksum = "a66412843500e0d2245e3f28f891861a4fe926171acf67f7bf25c37630316807"
+licence = "GPL-2.0-or-later"
+provides = "libao-pulse"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libao-pulse-1.2.2-r2.apk"
+version = "1.2.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpulse", "16.1.0-r6"]]

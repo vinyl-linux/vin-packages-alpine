@@ -1,0 +1,15 @@
+checksum = "11c1d0d40294dac74671342c55f043cb40ed816eb01e05cb95771df492b97354"
+licence = "EPL-1.0"
+provides = "clojure"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clojure-1.11.1-r0.apk"
+version = "1.11.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openjdk9-jdk", "9.0.4"]]

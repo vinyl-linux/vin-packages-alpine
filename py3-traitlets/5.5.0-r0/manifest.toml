@@ -1,0 +1,15 @@
+checksum = "184c10a78a43aeab887322d4a1e9fd711f8dfd91bf38ca92a1014f49d0689f64"
+licence = "BSD-3-Clause"
+provides = "py3-traitlets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-traitlets-5.5.0-r0.apk"
+version = "5.5.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-hatchling", "1.11.1-r0"]]

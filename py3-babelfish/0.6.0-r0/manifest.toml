@@ -1,0 +1,15 @@
+checksum = "fa08c6d995f433f40c3ad016eed2c9aea5e53560b9eb7f3e89c6e56c35400f6b"
+licence = "BSD-3-Clause"
+provides = "py3-babelfish"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-babelfish-0.6.0-r0.apk"
+version = "0.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"], ["py3-sphinx", "5.3.0-r0"]]

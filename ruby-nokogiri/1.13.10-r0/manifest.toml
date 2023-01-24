@@ -1,0 +1,15 @@
+checksum = "31cacd16134361d5c90eb195eaa52cbad268ad4c7d1a62b27f34c9da404a2192"
+licence = "MIT"
+provides = "ruby-nokogiri"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ruby-nokogiri-1.13.10-r0.apk"
+version = "1.13.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ruby", "3.1.3-r0"], ["musl", "1.2.3-r4"], ["libxslt", "1.1.37-r0"], ["ruby-libs", "3.1.3-r0"], ["libxml2", "2.10.3-r1"]]

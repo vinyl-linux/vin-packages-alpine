@@ -1,0 +1,15 @@
+checksum = "5e383ac7353785ff88c688f6759985e859a2398b8aec91dac5a8b2770fb6159e"
+licence = "BSD-3-Clause-Clear"
+provides = "capstone"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/capstone-4.0.2-r4.apk"
+version = "4.0.2-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

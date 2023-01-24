@@ -1,0 +1,15 @@
+checksum = "68fa3cc821b8ff90ec10a4a525c8186b1bce8ca9d23a4c6e35178960a9b21c20"
+licence = "AGPL-3.0-or-later"
+provides = "baculum-api-lighttpd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/baculum-api-lighttpd-13.0.1-r0.apk"
+version = "13.0.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["baculum-api", "13.0.1-r0"], ["lighttpd", "1.4.67-r0"], ["lighttpd-mod_auth", "1.4.67-r0"], ["php81-cgi", "8.1.14-r0"]]

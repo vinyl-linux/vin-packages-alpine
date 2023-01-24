@@ -1,0 +1,15 @@
+checksum = "31d3242b1605a64a4d3c0c27e75770f75f772c18a86572142516f2f4b0993371"
+licence = "Apache-2.0"
+provides = "jsonnet-libs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/jsonnet-libs-0.19.1-r0.apk"
+version = "0.19.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["rapidyaml", "0.4.1-r1"], ["libstdc++", "12.2.1"]]

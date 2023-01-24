@@ -1,0 +1,15 @@
+checksum = "726d46bbea281e09b1f974958ed8fba784a3757cf616120721dadfc7c513138c"
+licence = "LGPL-2.1-or-later"
+provides = "libusbmuxd-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libusbmuxd-dev-2.0.2-r2.apk"
+version = "2.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libusbmuxd", "2.0.2-r2"], ["libplist-dev", "2.2.0-r2"], ["pkgconf", "1.9.4-r0"]]

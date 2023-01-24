@@ -1,0 +1,15 @@
+checksum = "6acb601a4a8bc5ea76f0ba60cce24b13c5cd49bf2dd41f9bc2b7feee633ec4e2"
+licence = "MIT"
+provides = "dzen-gadgets"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dzen-gadgets-0.9.5-r4.apk"
+version = "0.9.5-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"]]

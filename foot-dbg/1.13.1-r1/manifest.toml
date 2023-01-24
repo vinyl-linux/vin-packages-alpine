@@ -1,0 +1,15 @@
+checksum = "2e34027ec331c1c3dcc40eb50a49504531a760ab2a6561ad2ef980b20ab072b6"
+licence = "MIT"
+provides = "foot-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/foot-dbg-1.13.1-r1.apk"
+version = "1.13.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ncurses-terminfo", "6.3.0"]]

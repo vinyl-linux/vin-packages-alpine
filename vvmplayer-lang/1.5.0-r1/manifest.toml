@@ -1,0 +1,15 @@
+checksum = "a692b331d5a0b89fbfa328ec801aacbebb2e78d19a46367444f3469dfd899468"
+licence = "GPL-3.0-only"
+provides = "vvmplayer-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vvmplayer-lang-1.5-r1.apk"
+version = "1.5.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugins-ugly", "1.20.5-r0"], ["gst-plugins-good", "1.20.5-r0"], ["gst-libav", "1.20.5-r0"], ["vvmd", "0.13.0-r0"]]

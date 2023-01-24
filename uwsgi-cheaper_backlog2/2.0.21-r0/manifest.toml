@@ -1,0 +1,15 @@
+checksum = "3765d4455aa23ed4a722676f1980db0bb860ddb7b36b8544dbd79a99bba859a6"
+licence = "custom"
+provides = "uwsgi-cheaper_backlog2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/uwsgi-cheaper_backlog2-2.0.21-r0.apk"
+version = "2.0.21-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["uwsgi", "2.0.21-r0"]]

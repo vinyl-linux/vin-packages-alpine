@@ -1,0 +1,15 @@
+checksum = "d164f06889fbc4cc7d0c24289b0c601659b267333b825d6db2e0340e149383bd"
+licence = "GPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-only) AND GFDL-1.2-only"
+provides = "rocs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rocs-dev-22.08.3-r0.apk"
+version = "22.8.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["rocs", "22.8.3-r0"]]

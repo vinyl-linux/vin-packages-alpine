@@ -1,0 +1,15 @@
+checksum = "a76ef42c247d96a008cee0a39a89f2324517b6b5172a4b062bcec7cae2f946df"
+licence = "LGPL-2.1-or-later"
+provides = "pipewire-spa-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipewire-spa-tools-0.3.60-r3.apk"
+version = "0.3.60-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["alsa-lib", "1.2.8-r0"], ["musl", "1.2.3-r4"], ["libsndfile", "1.1.0-r2"]]

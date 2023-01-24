@@ -1,0 +1,15 @@
+checksum = "cac92bc4549bbea6841278f47db946293bc3095fe1f2e3567388964abe299bd2"
+licence = "custom"
+provides = "fdk-aac-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fdk-aac-dev-2.0.2-r1.apk"
+version = "2.0.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fdk-aac", "2.0.2-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "3225d2eb063736988f5ee29c687d705757c436c1ca339add5ddc3ea11ed93e2c"
+licence = "Artistic-2.0"
+provides = "nqp"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nqp-2022.07-r0.apk"
+version = "2022.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["moarvm", "2022.7.0-r0"], ["musl", "1.2.3-r4"]]

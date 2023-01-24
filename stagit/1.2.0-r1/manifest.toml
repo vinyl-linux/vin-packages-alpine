@@ -1,0 +1,15 @@
+checksum = "bcbc5ac00b7a4537ee475fca979519926d9d3a9f4bbef5f3e76776a586358340"
+licence = "MIT"
+provides = "stagit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/stagit-1.2-r1.apk"
+version = "1.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgit2", "1.5.1-r0"]]

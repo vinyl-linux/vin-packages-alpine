@@ -1,0 +1,15 @@
+checksum = "24900ea90726d0cdd8faccae4ef3c93cd2007ac686f3805a5fd2cfeff7ede423"
+licence = "LGPL-2.1-or-later"
+provides = "libusbgx-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libusbgx-dev-0.2.0-r0.apk"
+version = "0.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bsd-compat-headers", "0.7.2-r3"], ["libusbgx", "0.2.0-r0"], ["libconfig-dev", "1.7.3-r0"], ["pkgconf", "1.9.4-r0"]]

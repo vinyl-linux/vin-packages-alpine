@@ -1,0 +1,15 @@
+checksum = "2f70ecce6d12e57940a5446df70c44865b0ec4cd01458f98c6d7202e54961ac6"
+licence = "GPL-2.0-only"
+provides = "lxc-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lxc-dev-5.0.2-r0.apk"
+version = "5.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lxc-libs", "5.0.2-r0"], ["libcap-dev", "2.66.0-r0"], ["libseccomp-dev", "2.5.4-r0"], ["pkgconf", "1.9.4-r0"]]

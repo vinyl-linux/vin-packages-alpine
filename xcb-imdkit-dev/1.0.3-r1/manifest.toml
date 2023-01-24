@@ -1,0 +1,15 @@
+checksum = "0a977936a4b275968faff642b0788c16555bcb5fedbe39650be8ad83200f9aa2"
+licence = "LGPL-2.1-only"
+provides = "xcb-imdkit-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xcb-imdkit-dev-1.0.3-r1.apk"
+version = "1.0.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xcb-util-dev", "0.4.0-r3"], ["pkgconf", "1.9.4-r0"], ["xcb-imdkit", "1.0.3-r1"]]

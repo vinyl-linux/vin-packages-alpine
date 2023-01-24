@@ -1,0 +1,15 @@
+checksum = "9fc0fafff25ff0c18305da76457736c69ec93026ce96ce7b4ebb6a458764cad4"
+licence = "MIT"
+provides = "gwsocket"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gwsocket-0.3-r1.apk"
+version = "0.3.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1f145fb7eca2cf44e96d2b72378ae5ec5b05097768cd5525031bc498aa4db677"
+licence = "GPL-3.0-or-later"
+provides = "knot-resolver-mod-dnstap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/knot-resolver-mod-dnstap-5.5.3-r0.apk"
+version = "5.5.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["knot-resolver", "5.5.3-r0"], ["musl", "1.2.3-r4"], ["fstrm", "0.6.1-r1"], ["protobuf-c", "1.4.1-r1"]]

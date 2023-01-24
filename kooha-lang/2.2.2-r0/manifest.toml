@@ -1,0 +1,15 @@
+checksum = "158387d22936bd917cffe22a25856681f4c3ed5ac4098301a2851e9898ded27b"
+licence = "GPL-3.0-or-later"
+provides = "kooha-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kooha-lang-2.2.2-r0.apk"
+version = "2.2.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gst-plugin-pipewire", "0.3.60-r3"], ["gst-plugins-good", "1.20.5-r0"], ["pipewire", "0.3.60-r3"], ["xdg-desktop-portal", "1.16.0-r0"]]

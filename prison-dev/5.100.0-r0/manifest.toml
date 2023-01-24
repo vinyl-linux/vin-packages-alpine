@@ -1,0 +1,15 @@
+checksum = "39c60fe93a95870856630d323aeb73b7d5de3a225befe25a54eec85ba6707e1d"
+licence = "MIT"
+provides = "prison-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prison-dev-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libdmtx-dev", "0.7.7-r0"], ["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["qt5-qtmultimedia-dev", "5.15.6"], ["zxing-cpp-dev", "1.4.0-r0"], ["prison", "5.100.0-r0"]]

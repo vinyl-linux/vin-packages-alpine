@@ -1,0 +1,15 @@
+checksum = "8cf9890a111a5a251bdebb8b21c82ba0f11cebfd58b009abd334ec57b3b011e1"
+licence = "LGPL-2.1-or-later"
+provides = "kbookmarks"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kbookmarks-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kcodecs", "5.100.0-r0"], ["kconfig", "5.100.1-r0"], ["kconfigwidgets", "5.100.0-r0"], ["kcoreaddons", "5.100.0-r0"], ["kwidgetsaddons", "5.100.0-r0"], ["kxmlgui", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

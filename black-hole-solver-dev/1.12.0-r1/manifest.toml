@@ -1,0 +1,15 @@
+checksum = "d1ebfa6f2541e597710be999066fe3073b9f1ec09be01c08f7d0644444811003"
+licence = "MIT"
+provides = "black-hole-solver-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/black-hole-solver-dev-1.12.0-r1.apk"
+version = "1.12.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["black-hole-solver", "1.12.0-r1"], ["pkgconf", "1.9.4-r0"]]

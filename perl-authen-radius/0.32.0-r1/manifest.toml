@@ -1,0 +1,15 @@
+checksum = "af9813f5d9415d986786f1c4c479d0c411e56168fb47409c0da1485f245559e2"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-authen-radius"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-authen-radius-0.32-r1.apk"
+version = "0.32.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-net-ip", "1.26.0-r4"], ["perl-data-hexdump", "0.4.0-r0"]]

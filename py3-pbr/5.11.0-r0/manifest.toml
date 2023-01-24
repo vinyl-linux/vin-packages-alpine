@@ -1,0 +1,15 @@
+checksum = "469666ec026ebd601e8b1fa9f7103c3ed413415e5a76e66cbfeb06181e37f4fb"
+licence = "Apache-2.0"
+provides = "py3-pbr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pbr-5.11.0-r0.apk"
+version = "5.11.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

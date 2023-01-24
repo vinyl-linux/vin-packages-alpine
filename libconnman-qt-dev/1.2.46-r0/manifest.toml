@@ -1,0 +1,15 @@
+checksum = "9b44335b55caa1bc1cd7cb93153332a2a5bf68e71cf76fe4a916785c99d294a0"
+licence = "Apache-2.0"
+provides = "libconnman-qt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libconnman-qt-dev-1.2.46-r0.apk"
+version = "1.2.46-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase-dev", "5.15.6"], ["qt5-qtdeclarative-dev", "5.15.6"], ["libconnman-qt", "1.2.46-r0"], ["pkgconf", "1.9.4-r0"]]

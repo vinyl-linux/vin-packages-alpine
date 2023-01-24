@@ -1,0 +1,15 @@
+checksum = "934a12c6bc256caba9dbc51aa560a8a92a519e9abc0357a12f8d29a0ac9635ba"
+licence = "MIT"
+provides = "vigra"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vigra-1.11.1-r8.apk"
+version = "1.11.1-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libjpeg-turbo", "2.1.4-r0"], ["libpng", "1.6.38-r0"], ["libstdc++", "12.2.1"], ["tiff", "4.4.0-r1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "c67e62811df788be0bb8638c9908fcbcd59f4f70f0e3203b85d31346c760e8eb"
+licence = "MIT"
+provides = "libebur128-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libebur128-dev-1.2.6-r1.apk"
+version = "1.2.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libebur128", "1.2.6-r1"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "a72cd033692c189b488abf6d1027314a6b7c748a0ce6eda0b385244473e0bc8b"
+licence = "BSD-2-Clause"
+provides = "rssh"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rssh-2.3.4-r3.apk"
+version = "2.3.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssh", "9.1.0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

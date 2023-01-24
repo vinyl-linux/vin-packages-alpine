@@ -1,0 +1,15 @@
+checksum = "83a8b26b857ba809f14df47b3bd855bf5a78eaed3133291c09684c561fad96ac"
+licence = "MIT"
+provides = "wayland-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wayland-dev-1.21.0-r1.apk"
+version = "1.21.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libffi-dev", "3.4.4-r0"], ["expat-dev", "2.5.0-r0"], ["pkgconf", "1.9.4-r0"], ["musl", "1.2.3-r4"], ["libexpat", "2.5.0-r0"], ["libxml2", "2.10.3-r1"], ["wayland-libs-client", "1.21.0-r1"], ["wayland-libs-cursor", "1.21.0-r1"], ["wayland-libs-egl", "1.21.0-r1"], ["wayland-libs-server", "1.21.0-r1"]]

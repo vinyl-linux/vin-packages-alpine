@@ -1,0 +1,15 @@
+checksum = "9e02a41ede27d66fd34910a05ea492755e760b2bafc536f162a183bc88b35f33"
+licence = "custom"
+provides = "hdf5"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hdf5-1.12.2-r1.apk"
+version = "1.12.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libsz", "1.0.6-r1"], ["zlib", "1.2.13-r0"]]

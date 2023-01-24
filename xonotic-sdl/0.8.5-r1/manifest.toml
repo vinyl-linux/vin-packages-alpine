@@ -1,0 +1,15 @@
+checksum = "3ba769260a0f64b6606fa450072699e9be246f66d04a335d69f44af3487a8c45"
+licence = "GPL-2.0-or-later"
+provides = "xonotic-sdl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xonotic-sdl-0.8.5-r1.apk"
+version = "0.8.5-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xonotic", "0.8.5-r1"], ["sdl2", "2.26.2-r0"], ["musl", "1.2.3-r4"], ["libjpeg-turbo", "2.1.4-r0"], ["zlib", "1.2.13-r0"]]

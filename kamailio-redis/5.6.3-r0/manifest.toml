@@ -1,0 +1,15 @@
+checksum = "027e93bcc9d8d34bd70a552dd16c40da900161bddc170d005c7aa2f3842cdfdb"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-redis"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-redis-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["hiredis", "1.0.2-r1"]]

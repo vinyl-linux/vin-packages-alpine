@@ -1,0 +1,15 @@
+checksum = "5e68def3c7abd668ebf2d278ec56f144c91ef18ba81625562485e901ba79fd90"
+licence = "MPL-1.1"
+provides = "librasterlite2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/librasterlite2-dev-1.1.0b1-r3.apk"
+version = "1.1.0-b1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["librasterlite2", "1.1.0-b1-r3"], ["pkgconf", "1.9.4-r0"]]

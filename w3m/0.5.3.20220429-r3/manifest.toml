@@ -1,0 +1,15 @@
+checksum = "81eba39e9154032ff6eda571cb5cc9fb98e7fa3d795bcb9e8e305c27944735ad"
+licence = "MIT"
+provides = "w3m"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/w3m-0.5.3.20220429-r3.apk"
+version = "0.5.3.20220429-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["gc", "8.2.2-r0"], ["ncurses-libs", "6.3.0"], ["libssl3", "3.0.7-r2"], ["zlib", "1.2.13-r0"]]

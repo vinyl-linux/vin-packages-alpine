@@ -1,0 +1,15 @@
+checksum = "8757bdc32fe8b60d261d964142bb35bdd87ab8c866d4bd31a966536a563320b9"
+licence = "GPL-3.0-only"
+provides = "ebusd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ebusd-22.4-r1.apk"
+version = "22.4.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libgcc", "12.2.1"], ["mosquitto-libs", "2.0.15-r1"], ["libssl3", "3.0.7-r2"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "aa838396570ef89e2d48aa226dd2d1ad852ef50bb45c444b085dd45c5f68ee28"
+licence = "GPL-2.0-or-later"
+provides = "sdcv"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdcv-0.5.3-r1.apk"
+version = "0.5.3-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"], ["readline", "8.2.0-r0"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "27871026b6660d8acfcfe56e5142eb1fc23a5af85a5dae4a6fa310129dc4c519"
+licence = "PDDL-1.0"
+provides = "tzdata-timed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tzdata-timed-2021a-r1.apk"
+version = "2021.0.0-a-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tzdata", "2022.0.0-f-r1"]]

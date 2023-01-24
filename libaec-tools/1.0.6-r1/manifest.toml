@@ -1,0 +1,15 @@
+checksum = "c253cc33905ffacd2345a41089f2ae81fbe7218145a420b0c6d4bbf4b675d012"
+licence = "BSD-2-Clause"
+provides = "libaec-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libaec-tools-1.0.6-r1.apk"
+version = "1.0.6-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

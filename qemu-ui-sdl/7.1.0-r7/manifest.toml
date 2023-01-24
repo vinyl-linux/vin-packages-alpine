@@ -1,0 +1,15 @@
+checksum = "4d42db6fe3e1c2e22f00dc1f492f6fb88249c9524301abebd3a212a607a6c14c"
+licence = "GPL-2.0 LGPL-2"
+provides = "qemu-ui-sdl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qemu-ui-sdl-7.1.0-r7.apk"
+version = "7.1.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qemu-ui-opengl", "7.1.0-r7"], ["sdl2", "2.26.2-r0"], ["libx11", "1.8.3-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["pixman", "0.42.2-r0"]]

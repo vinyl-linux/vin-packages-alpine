@@ -1,0 +1,15 @@
+checksum = "18c55752486407891bb3e5d2399638efd4dadc8ecc2119ab3aef31d50a5fc964"
+licence = "GPL-2.0-or-later"
+provides = "syslog-ng-graphite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-graphite-3.38.1-r0.apk"
+version = "3.38.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["syslog-ng", "3.38.1-r0"]]

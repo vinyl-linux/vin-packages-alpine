@@ -1,0 +1,15 @@
+checksum = "72045d09ab88d04b8f19500ac17316fd59a41234176a6ace0513839c36f69efd"
+licence = "GPL-3.0-or-later BSD"
+provides = "indent"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/indent-2.2.12-r2.apk"
+version = "2.2.12-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"]]

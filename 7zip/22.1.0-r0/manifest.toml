@@ -1,0 +1,15 @@
+checksum = "dbd31af42d324d05f667db57fa663d33cc23bd118ee16412e6b250154a20ced6"
+licence = "LGPL-2.0-only"
+provides = "7zip"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/7zip-22.01-r0.apk"
+version = "22.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

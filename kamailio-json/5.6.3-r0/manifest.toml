@@ -1,0 +1,15 @@
+checksum = "3220f7d33a71fc9fb6bde55e87c7caf00d44c7134c173bafae2400eb161d0978"
+licence = "GPL-2.0-or-later"
+provides = "kamailio-json"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-json-5.6.3-r0.apk"
+version = "5.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kamailio", "5.6.3-r0"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["json-c", "0.16.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "663ddc99b56588fb4d0dfbc5cd9847c9c48002a8d26151fc48b15175219f7525"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-wifi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-wifi-1.40.10-r0.apk"
+version = "1.40.10-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager-elogind", "1.40.10-r0"], ["wireless-regdb", "2022.8.12-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["glib", "2.74.5-r0"], ["libintl", "0.21.1-r1"]]

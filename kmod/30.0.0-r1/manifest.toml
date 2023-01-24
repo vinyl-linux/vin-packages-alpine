@@ -1,0 +1,16 @@
+checksum = "6abe7bc9e2a061da277b9a42874c76e9c6f639c028bd34e7dded2d422d2651e3"
+licence = "GPL-2.0-or-later"
+provides = "kmod"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kmod-30-r1.apk"
+version = "30.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  finaliser = "./.trigger"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["xz-libs", "5.2.9-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

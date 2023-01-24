@@ -1,0 +1,15 @@
+checksum = "4a0fc4bef34f9e9a0928bfbbbde326c0c1e08c2658e838037579f0190b54743d"
+licence = "blessing"
+provides = "sqlite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sqlite-3.40.1-r0.apk"
+version = "3.40.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["readline", "8.2.0-r0"]]

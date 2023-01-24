@@ -1,0 +1,15 @@
+checksum = "e29aa35285d9c2b41566eca597ac6428283b31b5ff244828dc96fdd5acddc2e2"
+licence = "MIT"
+provides = "pipr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pipr-0.0.16-r0.apk"
+version = "0.0.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["oniguruma", "6.9.8-r0"]]

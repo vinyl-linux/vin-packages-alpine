@@ -1,0 +1,15 @@
+checksum = "4031cbb9bcfa52dcea35672b6c39a49391ba53afdf338c73aba4c857120f3e0a"
+licence = "LGPL-2.0-or-later"
+provides = "kdnssd-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kdnssd-lang-5.100.0-r0.apk"
+version = "5.100.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avahi", "0.8.0-r6"]]

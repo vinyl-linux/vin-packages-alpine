@@ -1,0 +1,15 @@
+checksum = "532132bc71d9b1239d25270a3d5a2cc668d617b41374c06c02d7d1c86dda811d"
+licence = "MIT"
+provides = "libwebsockets-test"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libwebsockets-test-4.3.2-r1.apk"
+version = "4.3.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.7-r2"], ["libssl3", "3.0.7-r2"], ["libwebsockets", "4.3.2-r1"]]

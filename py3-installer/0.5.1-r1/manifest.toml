@@ -1,0 +1,15 @@
+checksum = "574fa62ffae24e5048bb3d2849b762694521e05e22da9d85b16ae3fd67902e9b"
+licence = "MIT"
+provides = "py3-installer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-installer-0.5.1-r1.apk"
+version = "0.5.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

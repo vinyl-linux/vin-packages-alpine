@@ -1,0 +1,15 @@
+checksum = "8ba75ac4e836d8d59a88104d9f4ee5a5af33a3dcb855f9e5134a1ae148cf3d24"
+licence = "ISC"
+provides = "sfeed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sfeed-1.6-r0.apk"
+version = "1.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

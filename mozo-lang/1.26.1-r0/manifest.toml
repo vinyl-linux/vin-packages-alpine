@@ -1,0 +1,15 @@
+checksum = "03967c80f455ba8e1050fa9b0521790326911e9fb64500e5c6d82cb4cbf7fa0e"
+licence = "LGPL-2.1-or-later"
+provides = "mozo-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mozo-lang-1.26.1-r0.apk"
+version = "1.26.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-gobject3", "3.42.2-r0"], ["mate-menus", "1.26.0-r0"]]

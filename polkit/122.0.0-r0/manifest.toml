@@ -1,0 +1,15 @@
+checksum = "f580ac5628f764f99bbf468aa8d06912297976b0a97e53bbfe195a1f972cefc4"
+licence = "GPL-2.0-or-later"
+provides = "polkit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/polkit-122-r0.apk"
+version = "122.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["polkit-common", "122.0.0-r0"], ["polkit-libs", "122.0.0-r0"], ["musl", "1.2.3-r4"], ["duktape", "2.7.0-r0"], ["libexpat", "2.5.0-r0"], ["glib", "2.74.5-r0"]]

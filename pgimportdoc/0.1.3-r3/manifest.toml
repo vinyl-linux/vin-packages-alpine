@@ -1,0 +1,15 @@
+checksum = "6b603acb8daea6f623e116213f6fb56b908f7edb7b56d688e469cb63eccf32fb"
+licence = "BSD-2-Clause"
+provides = "pgimportdoc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pgimportdoc-0.1.3-r3.apk"
+version = "0.1.3-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libpq", "15.1.0-r0"]]

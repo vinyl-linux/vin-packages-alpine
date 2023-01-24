@@ -1,0 +1,15 @@
+checksum = "c8d4e8e7ece711f0ec874acf577930d563e8d157c7a59e14588bb983959fc656"
+licence = "GPL-2.0-only"
+provides = "cpupower-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cpupower-bash-completion-5.15.74-r0.apk"
+version = "5.15.74-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perf", "5.15.74-r0"], ["cpupower", "5.15.74-r0"], ["linux-tools-gpio", "5.15.74-r0"], ["linux-tools-iio", "5.15.74-r0"]]

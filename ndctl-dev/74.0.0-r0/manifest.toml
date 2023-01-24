@@ -1,0 +1,15 @@
+checksum = "4e1237135a63f6e0d0e84a4ef224e63b1fceceaf5cd7c6d5bd1fe293a456ddd4"
+licence = "GPL-2.0-only AND LGPL-2.1-only"
+provides = "ndctl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ndctl-dev-74-r0.apk"
+version = "74.0.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ndctl-libs", "74.0.0-r0"], ["pkgconf", "1.9.4-r0"]]

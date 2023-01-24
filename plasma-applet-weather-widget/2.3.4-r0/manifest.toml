@@ -1,0 +1,15 @@
+checksum = "81426a467efcd12dbdf28a250a31a8d031b48285d9dd2b764edef6bba5e0df4b"
+licence = "GPL-2.0-only"
+provides = "plasma-applet-weather-widget"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-applet-weather-widget-2.3.4-r0.apk"
+version = "2.3.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtxmlpatterns", "5.15.6"], ["qt5-qtbase", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

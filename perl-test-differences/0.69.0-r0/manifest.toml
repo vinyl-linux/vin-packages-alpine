@@ -1,0 +1,15 @@
+checksum = "aaf15b4bc3aaaca300c5eed1b00caf3ef9fd0986b3d58d839b602d5ffd7ce9be"
+licence = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+provides = "perl-test-differences"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/perl-test-differences-0.69-r0.apk"
+version = "0.69.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-text-diff", "1.45.0-r3"]]

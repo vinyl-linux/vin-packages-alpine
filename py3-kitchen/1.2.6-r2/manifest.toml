@@ -1,0 +1,15 @@
+checksum = "aece99fd81f0a7ae94362657278806e85ad17e178200b98b8cb13d0c0135d701"
+licence = "LGPL-2.1-only"
+provides = "py3-kitchen"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-kitchen-1.2.6-r2.apk"
+version = "1.2.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.9-r1"]]

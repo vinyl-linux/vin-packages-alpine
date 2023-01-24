@@ -1,0 +1,15 @@
+checksum = "28f9842e585a3f40501459eb392063541facae0bc8e745de4e17e8798e272ffc"
+licence = "GPL-2.0-only"
+provides = "apparmor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apparmor-3.1.2-r0.apk"
+version = "3.1.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bash", "5.2.15-r0"], ["musl", "1.2.3-r4"], ["libintl", "0.21.1-r1"]]

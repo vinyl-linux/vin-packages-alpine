@@ -1,0 +1,15 @@
+checksum = "c431ebbb0061370b0ae885f4525da83c2870491627bc77d4a6ea56369d8ab874"
+licence = "BSD-2-Clause"
+provides = "sxhkd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sxhkd-0.6.2-r1.apk"
+version = "0.6.2-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["xcb-util-keysyms", "0.4.1-r0"], ["libxcb", "1.15.0-r0"]]

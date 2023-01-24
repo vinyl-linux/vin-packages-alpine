@@ -1,0 +1,15 @@
+checksum = "5e66d11dee5c3e5f6ccfee52e0be7ee03e055db770d08bf9b91a12c324f57d5a"
+licence = "PostgreSQL"
+provides = "postgresql15-contrib-jit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql15-contrib-jit-15.1-r0.apk"
+version = "15.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15-contrib", "15.1.0-r0"]]

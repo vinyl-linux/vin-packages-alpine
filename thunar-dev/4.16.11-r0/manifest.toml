@@ -1,0 +1,15 @@
+checksum = "baad5304c42c9a9b16f450d716c5018b1b82d3764070c83c94f2086012107d20"
+licence = "GPL-2.0-or-later LGPL-2.0-only"
+provides = "thunar-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/thunar-dev-4.16.11-r0.apk"
+version = "4.16.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["exo-dev", "4.16.4-r0"], ["glib-dev", "2.74.5-r0"], ["gtk+3.0-dev", "3.24.36-r0"], ["pkgconf", "1.9.4-r0"], ["thunar", "4.16.11-r0"]]
