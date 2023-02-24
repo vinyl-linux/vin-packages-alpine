@@ -1,0 +1,15 @@
+checksum = "b87630611348a1ecee5361599be9a974896d9e5a7640f50ddcb8b2d28f5eba3f"
+licence = "OpenSSL"
+provides = "libssl1.1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libssl1.1-1.1.1t-r0.apk"
+version = "1.1.1-t-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto1.1", "1.1.1-t-r0"]]

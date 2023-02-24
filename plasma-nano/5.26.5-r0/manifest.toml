@@ -1,0 +1,15 @@
+checksum = "6ebd2fb67610a26e572433e28fbd571a9ab910e39d105caf0da37ddfb88ed68f"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "plasma-nano"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-nano-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtvirtualkeyboard", "5.15.6"], ["kservice", "5.100.0-r0"], ["kwayland", "5.100.0-r0"], ["kwindowsystem", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

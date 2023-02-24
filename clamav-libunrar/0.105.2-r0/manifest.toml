@@ -1,0 +1,15 @@
+checksum = "e307821326ce31edaa3100b172063719392fb25998b5e4371d8c866c34b030df"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-libunrar"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamav-libunrar-0.105.2-r0.apk"
+version = "0.105.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

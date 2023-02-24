@@ -1,0 +1,15 @@
+checksum = "257bf53aa01f6c5c78f82f6a021f08aa6b8799038aeaf187eefa465a3fe4ba4b"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-plugin-rocksdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-plugin-rocksdb-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb", "10.6.12-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

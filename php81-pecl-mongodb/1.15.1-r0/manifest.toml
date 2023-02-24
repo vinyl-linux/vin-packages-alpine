@@ -1,0 +1,15 @@
+checksum = "2fe919dbccbf000b01238c157b0f6aa6ba9efe280ddb0772422d2ead03aacd61"
+licence = "Apache-2.0"
+provides = "php81-pecl-mongodb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pecl-mongodb-1.15.1-r0.apk"
+version = "1.15.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["icu-libs", "72.1.0-r1"], ["libsasl", "2.1.28-r3"], ["snappy", "1.1.9-r4"], ["libssl3", "3.0.8-r0"], ["zlib", "1.2.13-r0"]]

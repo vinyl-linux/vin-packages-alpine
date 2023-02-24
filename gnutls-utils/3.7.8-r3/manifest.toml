@@ -1,0 +1,15 @@
+checksum = "28c31dd83e793449ac8f5b0d9377aecdc45538fa5ca8909f90aeeccf15962a31"
+licence = "GPL-3.0-or-later"
+provides = "gnutls-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnutls-utils-3.7.8-r3.apk"
+version = "3.7.8-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["gnutls", "3.7.8-r3"], ["libtasn1", "4.19.0-r0"]]

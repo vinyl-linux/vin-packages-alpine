@@ -1,0 +1,15 @@
+checksum = "13915031f15f42b3a3fad81ddab84e690072d9e9fe5bdf74258902ed0c567708"
+licence = "PostgreSQL"
+provides = "postgresql14-pltcl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql14-pltcl-14.7-r0.apk"
+version = "14.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql14", "14.7.0-r0"], ["pgtcl", "3.0.0-r0"], ["musl", "1.2.3-r4"], ["tcl", "8.6.12-r1"]]

@@ -1,0 +1,15 @@
+checksum = "506d71a45161993c189cff24cf200bf29c49634b82c1fee569a424349aeefc22"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "gst-plugins-good-qt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gst-plugins-good-qt-1.20.6-r0.apk"
+version = "1.20.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["qt5-qtx11extras", "5.15.6"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["glib", "2.74.6-r0"], ["gstreamer", "1.20.6-r0"], ["gst-plugins-base", "1.20.6-r0"], ["libstdc++", "12.2.1"]]

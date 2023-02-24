@@ -1,0 +1,15 @@
+checksum = "ac959e112b8c25e135a81f8c1662a5687bd06754648aa84e27c7b9181b1bab09"
+licence = "Apache-2.0"
+provides = "apr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-1.7.2-r0.apk"
+version = "1.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

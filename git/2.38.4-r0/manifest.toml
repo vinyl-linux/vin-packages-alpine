@@ -1,0 +1,15 @@
+checksum = "cb9a8047298b7a1566df804d9ffff35a1c202f9d5a882146c57830607fb30916"
+licence = "GPL-2.0-or-later"
+provides = "git"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-2.38.4-r0.apk"
+version = "2.38.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r2"], ["libexpat", "2.5.0-r0"], ["pcre2", "10.42.0-r0"], ["zlib", "1.2.13-r0"]]

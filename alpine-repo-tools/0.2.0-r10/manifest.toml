@@ -1,0 +1,15 @@
+checksum = "f8e3c4382070c281bff3b6896a9301f8c2b753b03411271b10a053c9dd1ef9ae"
+licence = "MIT"
+provides = "alpine-repo-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alpine-repo-tools-0.2-r10.apk"
+version = "0.2.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

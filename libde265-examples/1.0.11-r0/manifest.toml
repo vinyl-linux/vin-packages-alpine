@@ -1,0 +1,15 @@
+checksum = "62f44eb1d0d0272c7a236ee2f68f4bc7be6d27dad0c1853780e8c3c17a2cd48b"
+licence = "LGPL-3.0-or-later"
+provides = "libde265-examples"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libde265-examples-1.0.11-r0.apk"
+version = "1.0.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libde265", "1.0.11-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

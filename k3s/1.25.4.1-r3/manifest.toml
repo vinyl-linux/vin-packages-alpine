@@ -1,0 +1,15 @@
+checksum = "142cbd34d44b150693660e0614d59d838ccfe6c7abd743891af4da37d348772b"
+licence = "Apache-2.0"
+provides = "k3s"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/k3s-1.25.4.1-r3.apk"
+version = "1.25.4.1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["cni-plugins", "1.1.1-r10"], ["cni-plugin-flannel", "1.2.0-r2"], ["conntrack-tools", "1.4.7-r0"], ["containerd", "1.6.18-r0"], ["coreutils", "9.1.0-r0"], ["dbus", "1.14.4-r0"], ["findutils", "4.9.0-r3"], ["ipset", "7.15.0-r1"], ["iptables", "1.8.8-r2"], ["yash-binsh", "2.53.0-r2"]]

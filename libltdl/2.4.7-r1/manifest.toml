@@ -1,0 +1,15 @@
+checksum = "7901264f274ad5abd807c2a7fae51f81d79b6f9175c1b91396146813f33f6403"
+licence = "LGPL-2.0-or-later AND GPL-2.0-or-later"
+provides = "libltdl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libltdl-2.4.7-r1.apk"
+version = "2.4.7-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

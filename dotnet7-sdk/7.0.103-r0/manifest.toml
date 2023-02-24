@@ -1,0 +1,15 @@
+checksum = "7bd0c5375cc0bee5b008e4b416f7f3e12fd39c8ab307a51b123ece27c8eb4c41"
+licence = "MIT"
+provides = "dotnet7-sdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet7-sdk-7.0.103-r0.apk"
+version = "7.0.103-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspnetcore7-runtime", "7.0.3-r0"], ["aspnetcore7-targeting-pack", "7.0.3-r0"], ["dotnet7-apphost-pack", "7.0.3-r0"], ["dotnet7-targeting-pack", "7.0.3-r0"], ["dotnet7-templates", "7.0.103-r0"], ["netstandard21-targeting-pack", "7.0.103-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

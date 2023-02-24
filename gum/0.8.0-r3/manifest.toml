@@ -1,0 +1,15 @@
+checksum = "aa3574322cbe2e190db129550c4a0063d0a40d1de37cf9d73d79bf2a5ea14916"
+licence = "MIT"
+provides = "gum"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gum-0.8.0-r3.apk"
+version = "0.8.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

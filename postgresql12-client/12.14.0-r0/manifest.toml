@@ -1,0 +1,15 @@
+checksum = "c70f99cc11995858ba80a494cb98343be245467b6abc293bad93a7ed5046349a"
+licence = "PostgreSQL"
+provides = "postgresql12-client"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql12-client-12.14-r0.apk"
+version = "12.14.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql-common", "1.1.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["libpq", "15.2.0-r0"], ["readline", "8.2.0-r0"], ["zlib", "1.2.13-r0"]]

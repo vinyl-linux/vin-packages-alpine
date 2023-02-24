@@ -1,0 +1,15 @@
+checksum = "c0c38f51141c0c78ff753699c2edc3ca8f1572cf560145b05751198cea7f232b"
+licence = "GPL-2.0-only AND MIT AND BSD-2-Clause"
+provides = "phpmyadmin"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/phpmyadmin-5.2.1-r0.apk"
+version = "5.2.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.16-r0"], ["php81-mysqli", "8.1.16-r0"], ["php81-bz2", "8.1.16-r0"], ["php81-ctype", "8.1.16-r0"], ["php81-curl", "8.1.16-r0"], ["php81-gd", "8.1.16-r0"], ["php81-mbstring", "8.1.16-r0"], ["php81-openssl", "8.1.16-r0"], ["php81-session", "8.1.16-r0"], ["php81-zip", "8.1.16-r0"], ["php81-xmlwriter", "8.1.16-r0"], ["php81-iconv", "8.1.16-r0"], ["yash-binsh", "2.53.0-r2"]]

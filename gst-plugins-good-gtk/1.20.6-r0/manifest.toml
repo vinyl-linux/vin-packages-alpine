@@ -1,0 +1,15 @@
+checksum = "6c83a8ff173954c0e05cd242bcc3072648a331fefc235c16b53ae4afcaa1c8e2"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "gst-plugins-good-gtk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gst-plugins-good-gtk-1.20.6-r0.apk"
+version = "1.20.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["gtk+3.0", "3.24.36-r0"], ["glib", "2.74.6-r0"], ["gst-plugins-base", "1.20.6-r0"], ["gstreamer", "1.20.6-r0"]]

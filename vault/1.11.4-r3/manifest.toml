@@ -1,0 +1,15 @@
+checksum = "3140021f5e1585a00e6a216ae0d358965a31b08120354a0e699ea54c74622815"
+licence = "MPL-2.0"
+provides = "vault"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vault-1.11.4-r3.apk"
+version = "1.11.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

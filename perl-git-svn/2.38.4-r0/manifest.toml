@@ -1,0 +1,15 @@
+checksum = "44ca8c7194d442bd32bc1656fc12a39b8433921738f6e5192d5651fa284c3960"
+licence = "GPL-2.0-or-later"
+provides = "perl-git-svn"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-git-svn-2.38.4-r0.apk"
+version = "2.38.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.4-r0"], ["perl-git", "2.38.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "472c539552025df7571d2b183fc973f3ddc5a5277f575c6a7ee73a587c2e2884"
+licence = "Apache-2.0"
+provides = "conmon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/conmon-2.1.6-r0.apk"
+version = "2.1.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"]]

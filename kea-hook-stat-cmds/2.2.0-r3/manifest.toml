@@ -1,0 +1,15 @@
+checksum = "db490ebbc0a5103f8ab26393a53f9a44ec698f2c25a4d33d3b134f6389261775"
+licence = "MPL2"
+provides = "kea-hook-stat-cmds"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-hook-stat-cmds-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["kea-common", "2.2.0-r3"]]

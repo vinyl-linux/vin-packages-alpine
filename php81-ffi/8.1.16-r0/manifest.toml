@@ -1,0 +1,15 @@
+checksum = "53de2720ff6889e74a6d9ff1ff4b46c499e33742453105b7f12030a3373de419"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-ffi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-ffi-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["musl", "1.2.3-r4"], ["libffi", "3.4.4-r0"]]

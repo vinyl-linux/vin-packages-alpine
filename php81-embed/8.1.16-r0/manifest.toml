@@ -1,0 +1,15 @@
+checksum = "a4b4707bf098db6ce4c536180eb9ce222a884e1c28d6519f86b6656e90cc764b"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-embed"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-embed-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["argon2-libs", "20190702.0.0-r2"], ["musl", "1.2.3-r4"], ["libedit", "20221030.3.1-r0"], ["pcre2", "10.42.0-r0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

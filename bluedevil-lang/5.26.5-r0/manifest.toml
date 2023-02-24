@@ -1,0 +1,15 @@
+checksum = "f4e6f55a11f47d830c26baab1c3604e2d621dc9183c13a42d474ccf8d9a6ea6f"
+licence = "GPL-2.0-or-later AND LGPL-2.0-or-later AND ( LGPL-2.1-only OR LGPL-3.0-only )"
+provides = "bluedevil-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bluedevil-lang-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bluez", "5.66.0-r1"], ["bluez-obexd", "5.66.0-r1"], ["kded", "5.100.0-r0"]]

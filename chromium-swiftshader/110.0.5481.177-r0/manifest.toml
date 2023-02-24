@@ -1,0 +1,15 @@
+checksum = "e2f13e675e89d8b0830b4f48798bf6d2c705a3c498f5ce16a8737756c8f2a08e"
+licence = "BSD-3-Clause"
+provides = "chromium-swiftshader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chromium-swiftshader-110.0.5481.177-r0.apk"
+version = "110.0.5481.177-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chromium", "110.0.5481.177-r0"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "b67e93ee341c162ab94c1d40b78b23edd86ae9fd14567e49dc0ba96229293ce8"
+licence = "GPL-2.0-or-later"
+provides = "plasma-disks-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-disks-lang-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["smartmontools", "7.3.0-r0"]]

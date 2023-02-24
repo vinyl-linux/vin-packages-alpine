@@ -1,0 +1,15 @@
+checksum = "656bc5659db66e0b6eea11ff2a7f858804ba78df20261e469aabad4963dab932"
+licence = "GPL-3.0-or-later OR BSD-2-Clause"
+provides = "less"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/less-608-r1.apk"
+version = "608.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["ncurses-libs", "6.3.0"]]

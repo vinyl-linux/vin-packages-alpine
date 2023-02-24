@@ -1,0 +1,15 @@
+checksum = "51ffb34a62c8f4e48094e2afc074f1639a737c5000eb47e0bbb4be70edaee0c3"
+licence = "(GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-or-later AND GPL-2.0-or-later AND MIT AND LGPL-2.1-only AND LGPL-2.0-or-later AND (LGPL-2.1-only OR LGPL-3.0-only) AND LGPL-2.0-only"
+provides = "plasma-workspace-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-workspace-dbg-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kactivitymanagerd", "5.26.5-r0"], ["kded", "5.100.0-r0"], ["kinit", "5.100.0-r0"], ["kio-extras", "22.8.3-r0"], ["kirigami2", "5.100.0-r1"], ["kquickcharts", "5.100.0-r0"], ["kwin", "5.26.5-r0"], ["milou", "5.26.5-r0"], ["wireplumber", "0.4.12-r0"], ["plasma-integration", "5.26.5-r0"], ["qt5-qtquickcontrols", "5.15.6"], ["qt5-qttools", "5.15.6"], ["qtchooser", "66.0.0-r2"], ["tzdata", "2022.0.0-f-r1"]]

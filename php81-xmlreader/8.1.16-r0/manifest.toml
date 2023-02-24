@@ -1,0 +1,15 @@
+checksum = "2a0a99de6ad457f322d5a3406a52386bfcbca16864a22f4a03b5bcbf539f3a9f"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-xmlreader"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-xmlreader-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["php81-dom", "8.1.16-r0"], ["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

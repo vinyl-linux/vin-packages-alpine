@@ -1,0 +1,15 @@
+checksum = "6c5a68d63e90d81c2c1301c4272e9d52e8511d4c9f73ed71fb7627a86b348265"
+licence = "BSD-3-Clause"
+provides = "chromium-chromedriver"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chromium-chromedriver-110.0.5481.177-r0.apk"
+version = "110.0.5481.177-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["chromium", "110.0.5481.177-r0"], ["libatomic", "12.2.1"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["libevent", "2.1.12-r5"], ["libgcc", "12.2.1"], ["glib", "2.74.6-r0"], ["icu-libs", "72.1.0-r1"], ["minizip", "1.2.13-r0"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r1"], ["re2", "2022.6.1-r1"], ["libstdc++", "12.2.1"], ["libxcb", "1.15.0-r0"], ["zlib", "1.2.13-r0"]]

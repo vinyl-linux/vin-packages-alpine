@@ -1,0 +1,15 @@
+checksum = "20a416f01c2ec5d3fd62f91207bf64ba1682776bb23122ba3458386d9c9eb42d"
+licence = "PostgreSQL"
+provides = "postgresql14"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql14-14.7-r0.apk"
+version = "14.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql14-client", "14.7.0-r0"], ["postgresql-common", "1.1.0-r3"], ["tzdata", "2022.0.0-f-r1"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["icu-libs", "72.1.0-r1"], ["libldap", "2.6.3-r6"], ["libpq", "15.2.0-r0"], ["libssl3", "3.0.8-r0"], ["libxml2", "2.10.3-r1"]]

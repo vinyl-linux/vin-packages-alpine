@@ -1,0 +1,15 @@
+checksum = "0991fc6dd54697f0160e9a5d576fdc8f9433ba2de913f1c944e66aac12937951"
+licence = "Apache-2.0"
+provides = "apr-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-dev-1.7.2-r0.apk"
+version = "1.7.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["apr", "1.7.2-r0"], ["util-linux-dev", "2.38.1-r1"], ["pkgconf", "1.9.4-r0"]]

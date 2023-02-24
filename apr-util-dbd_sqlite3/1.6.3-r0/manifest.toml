@@ -1,0 +1,15 @@
+checksum = "b75873001baaff3f4435f84a46c7a879159db292ddba4f77c1e9520198beb821"
+licence = "Apache-2.0"
+provides = "apr-util-dbd_sqlite3"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-util-dbd_sqlite3-1.6.3-r0.apk"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["sqlite-libs", "3.40.1-r0"]]

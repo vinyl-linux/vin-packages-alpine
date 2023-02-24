@@ -1,0 +1,15 @@
+checksum = "0cf4dd34db82a44b7cb61f4ae8cef34e2f82abfba8c37a18ed22332fa2869ff7"
+licence = "GPL-2.0-or-later"
+provides = "irtt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/irtt-0.9.1-r14.apk"
+version = "0.9.1-r14"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

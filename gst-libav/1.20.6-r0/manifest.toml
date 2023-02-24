@@ -1,0 +1,15 @@
+checksum = "22a1478699599d54bb7b8a73ab5113f9383278d8d4fbda28735873a9867be20c"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "gst-libav"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gst-libav-1.20.6-r0.apk"
+version = "1.20.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ffmpeg-libs", "5.1.2-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["gst-plugins-base", "1.20.6-r0"], ["gstreamer", "1.20.6-r0"]]

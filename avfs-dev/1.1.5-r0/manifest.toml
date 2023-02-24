@@ -1,0 +1,15 @@
+checksum = "ee5097d58448ac417253067a10226cad3c69d0a48b07f51a802f5be7a0aa3cd5"
+licence = "GPL-2.0-or-later"
+provides = "avfs-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/avfs-dev-1.1.5-r0.apk"
+version = "1.1.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["avfs", "1.1.5-r0"], ["pkgconf", "1.9.4-r0"]]

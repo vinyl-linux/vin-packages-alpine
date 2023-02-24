@@ -1,0 +1,15 @@
+checksum = "b7634d021c91fd7c0952d398a35e20e5c19cb7cdc32b20b254245c70d9fe2808"
+licence = "Apache-2.0"
+provides = "rootlesskit-docker-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rootlesskit-docker-proxy-1.0.1-r7.apk"
+version = "1.0.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["shadow-subids", "4.13.0-r0"], ["musl", "1.2.3-r4"]]

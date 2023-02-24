@@ -1,0 +1,15 @@
+checksum = "357caa7db95c6ea73ceaaf2d3cad39a10e62d0e9d5394252d5fbca37f891526a"
+licence = "Apache-2.0"
+provides = "docker-engine"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-engine-20.10.21-r3.apk"
+version = "20.10.21-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["containerd", "1.6.18-r0"], ["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["tini-static", "0.19.0-r1"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"]]

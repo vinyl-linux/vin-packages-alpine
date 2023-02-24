@@ -1,0 +1,15 @@
+checksum = "a90e970a31913e2122a9a7e0d1126a1dfa5e08f229c3f267550715850c9f6471"
+licence = "MIT"
+provides = "lego"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lego-4.9.0-r4.apk"
+version = "4.9.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

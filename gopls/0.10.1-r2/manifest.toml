@@ -1,0 +1,15 @@
+checksum = "60e0b6e677b9a9cef84cbcc2c9312fe7330c7dc7cadcc74543629b43adb481f9"
+licence = "BSD-3-Clause"
+provides = "gopls"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gopls-0.10.1-r2.apk"
+version = "0.10.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

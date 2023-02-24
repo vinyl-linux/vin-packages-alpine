@@ -1,0 +1,15 @@
+checksum = "340908c4042bb56a8d261a08b9c16c016b3c5fdd13126a13d0ea8d7a145d95cc"
+licence = "LGPL-2.0-or-later"
+provides = "libhandy1"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libhandy1-1.8.1-r0.apk"
+version = "1.8.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libatk-1.0", "2.46.0-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fribidi", "1.0.12-r0"], ["gtk+3.0", "3.24.36-r0"], ["gdk-pixbuf", "2.42.10-r0"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.13-r0"]]

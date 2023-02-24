@@ -1,0 +1,15 @@
+checksum = "f6d06ccb04b7e2ff363f7efc93b6a15c882e6a21af561e041c5f0b253c093108"
+licence = "Apache-2.0"
+provides = "alertmanager"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/alertmanager-0.24.0-r9.apk"
+version = "0.24.0-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

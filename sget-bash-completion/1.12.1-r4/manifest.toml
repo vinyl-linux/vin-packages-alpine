@@ -1,0 +1,15 @@
+checksum = "023370027afc9dba7736c8dcb8cc1fa1ab435f49696fee697fb85bc0df1b7ff2"
+licence = "Apache-2.0"
+provides = "sget-bash-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sget-bash-completion-1.12.1-r4.apk"
+version = "1.12.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite-libs", "1.9.9-r0"]]

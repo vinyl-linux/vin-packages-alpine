@@ -1,0 +1,15 @@
+checksum = "9b6bd280a43fd13f438fc77aae885b67cc432e8bacd1320f3eaeb6710322b572"
+licence = "Zlib"
+provides = "sdl2-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sdl2-dev-2.26.3-r0.apk"
+version = "2.26.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sdl2", "2.26.3-r0"], ["directfb-dev", "1.7.7-r5"], ["mesa-dev", "22.2.5-r1"], ["pkgconf", "1.9.4-r0"]]

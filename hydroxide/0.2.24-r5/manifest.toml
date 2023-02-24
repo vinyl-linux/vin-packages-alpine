@@ -1,0 +1,15 @@
+checksum = "f32d2e4cbd3aba07e1d1b01ec6f19138fe6079f22ee4249f00e8663cda5fe033"
+licence = "MIT"
+provides = "hydroxide"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hydroxide-0.2.24-r5.apk"
+version = "0.2.24-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

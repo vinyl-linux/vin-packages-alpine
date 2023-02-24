@@ -1,0 +1,15 @@
+checksum = "fd9196385803e2f35dceab3c42b8f52ac96a7bf1d7546a9913c1d0e0c473db5c"
+licence = "LGPL-2.1-or-later"
+provides = "pango-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pango-tools-1.50.13-r0.apk"
+version = "1.50.13-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libx11", "1.8.4-r0"], ["libxft", "2.3.7-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["fontconfig", "2.14.1-r0"], ["glib", "2.74.6-r0"], ["harfbuzz", "5.3.1-r1"], ["pango", "1.50.13-r0"]]

@@ -1,0 +1,15 @@
+checksum = "4a14ab40923c269be6dc8b42a1fede9a248cf103cde60704f0914029c4706b91"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-daemon"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamav-daemon-0.105.2-r0.apk"
+version = "0.105.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freshclam", "0.105.2-r0"], ["clamav-clamdscan", "0.105.2-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["clamav-libs", "0.105.2-r0"], ["ncurses-libs", "6.3.0"], ["zlib", "1.2.13-r0"]]

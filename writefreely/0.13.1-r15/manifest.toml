@@ -1,0 +1,15 @@
+checksum = "94c437038bb46eee418eabc0de2cea410980b1aa9a396a3b51d48424675edc16"
+licence = "AGPL-3.0-or-later"
+provides = "writefreely"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/writefreely-0.13.1-r15.apk"
+version = "0.13.1-r15"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

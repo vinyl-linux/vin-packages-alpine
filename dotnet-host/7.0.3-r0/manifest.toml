@@ -1,0 +1,15 @@
+checksum = "9a02169e24892879a6a6b7cbca8a1231bad44b59a98a689b29d48681b963071e"
+licence = "MIT"
+provides = "dotnet-host"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet-host-7.0.3-r0.apk"
+version = "7.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

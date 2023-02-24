@@ -1,0 +1,15 @@
+checksum = "1420ea60e3a2b1ef1171af87aa6112c5edce7eed516328b8b6ed5cb2688ad6e5"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-tui"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-tui-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager", "1.40.16-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"], ["newt", "0.52.23-r0"], ["libnm", "1.40.16-r0"]]

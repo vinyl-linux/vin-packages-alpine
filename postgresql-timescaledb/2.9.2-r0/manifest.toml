@@ -1,0 +1,15 @@
+checksum = "ecd2b79170dc5fede11506b63ed5ffe842a8b23ab69739db562ef2c1c4a882fe"
+licence = "Apache-2.0"
+provides = "postgresql-timescaledb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql-timescaledb-2.9.2-r0.apk"
+version = "2.9.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15", "15.2.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["libssl3", "3.0.8-r0"]]

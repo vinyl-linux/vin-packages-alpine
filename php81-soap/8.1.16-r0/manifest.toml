@@ -1,0 +1,15 @@
+checksum = "a3665856f02c4679f24c9e91c93ef70a1021870315a1f4f72bc66b54f5e8f748"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-soap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-soap-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["musl", "1.2.3-r4"], ["libxml2", "2.10.3-r1"]]

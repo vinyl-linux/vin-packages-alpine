@@ -1,0 +1,15 @@
+checksum = "3577cde10cc41a5ffa2359e6c3d732ff334c27937fe775ba330e79ad39f0b26a"
+licence = "AGPL-3.0-only"
+provides = "wuzz"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/wuzz-0.5.0-r13.apk"
+version = "0.5.0-r13"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

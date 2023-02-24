@@ -1,0 +1,15 @@
+checksum = "2f161d05bed5bdc60f62c222b1831fea3a875c09edd29e5b71a0fb41b68a03a4"
+licence = "MPL-2.0"
+provides = "bind-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bind-dbg-9.18.11-r0.apk"
+version = "9.18.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dns-root-hints", "2022062901.0.0-r0"], ["bind-tools", "9.18.11-r0"]]

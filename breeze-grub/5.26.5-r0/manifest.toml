@@ -1,0 +1,15 @@
+checksum = "f7843744b6bc06dfdc6367fbbdc3303da6dcb1c709de53a754776c7b0f7d22c1"
+licence = "GPL-3.0-or-later"
+provides = "breeze-grub"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/breeze-grub-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["grub", "2.6.0-r6"]]

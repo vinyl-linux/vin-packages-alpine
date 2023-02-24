@@ -1,0 +1,15 @@
+checksum = "3f55df5979ebbee94b5d5e689ae2ba9b34d80d29cda2fb52282ea9d374134bf6"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-intl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-intl-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["icu-libs", "72.1.0-r1"]]

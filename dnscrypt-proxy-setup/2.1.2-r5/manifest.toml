@@ -1,0 +1,15 @@
+checksum = "493f62bb61de7156a8c9353524126e07392479bd355e0c1eb078a1b316006874"
+licence = "ISC"
+provides = "dnscrypt-proxy-setup"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dnscrypt-proxy-setup-2.1.2-r5.apk"
+version = "2.1.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["sed", "4.9.0-r0"], ["wget", "1.21.3-r2"], ["dnscrypt-proxy", "2.1.2-r5"]]

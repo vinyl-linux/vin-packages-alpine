@@ -1,0 +1,15 @@
+checksum = "a35421cc975fbe95875e7ef22ae5051cc21865c3db4e3550ce1b969f0be28de2"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph16-volume"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph16-volume-16.2.11-r0.apk"
+version = "16.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph16-common", "16.2.11-r0"], ["lvm2", "2.3.17-r1"], ["py3-ceph16-common", "16.2.11-r0"]]

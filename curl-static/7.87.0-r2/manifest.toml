@@ -1,0 +1,15 @@
+checksum = "4afedb3be2dba43b3e9a6c42560d9180eef104d2982685eac36428e8398e6490"
+licence = "curl"
+provides = "curl-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/curl-static-7.87.0-r2.apk"
+version = "7.87.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"]]

@@ -1,0 +1,15 @@
+checksum = "ecd6fcfceb980ed71e9e39e268b1341c02beb1817eed1e8946571668b95804d7"
+licence = "curl"
+provides = "curl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/curl-7.87.0-r2.apk"
+version = "7.87.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["musl", "1.2.3-r4"], ["libcurl", "7.87.0-r2"], ["zlib", "1.2.13-r0"]]

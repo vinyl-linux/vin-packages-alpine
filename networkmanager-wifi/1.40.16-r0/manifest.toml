@@ -1,0 +1,15 @@
+checksum = "d21e5ec0d7ff2804e54a39f81afdd6a4d4c2551da0ff911456a191f79cad2c5b"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-wifi"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-wifi-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager", "1.40.16-r0"], ["wireless-regdb", "2022.8.12-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"]]

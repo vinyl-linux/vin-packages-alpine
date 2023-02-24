@@ -1,0 +1,15 @@
+checksum = "02608e920d5a3d8a49578cced6d38c185a79adae1f8f7768118288cb60e6d716"
+licence = "MIT"
+provides = "minify"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/minify-2.12.4-r3.apk"
+version = "2.12.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

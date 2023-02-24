@@ -1,0 +1,15 @@
+checksum = "179a4ecae65fc4efe4c85c3a0d88c77eba0a937af54813645a48073f253ea6ce"
+licence = "Apache-2.0 MIT"
+provides = "android-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/android-tools-33.0.3p1-r3.apk"
+version = "33.0.3-p1-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.10-r0"], ["brotli-libs", "1.0.9-r9"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["lz4-libs", "1.9.4-r1"], ["pcre2", "10.42.0-r0"], ["libprotobuf", "3.21.9-r0"], ["libstdc++", "12.2.1"], ["libusb", "1.0.26-r0"], ["zlib", "1.2.13-r0"], ["zstd-libs", "1.5.2-r9"]]

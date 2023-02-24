@@ -1,0 +1,15 @@
+checksum = "278fc83dafe31ab8dfeacdd61f8ef15ba0ce97e54efd25474778df4493c99cca"
+licence = "Apache-2.0"
+provides = "miniflux"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/miniflux-2.0.40-r2.apk"
+version = "2.0.40-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

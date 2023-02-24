@@ -1,0 +1,15 @@
+checksum = "9772135c4a4714d86570e4f62dd50ef8899179b40faf15da588b34d0bb08ecd8"
+licence = "MPL-2.0"
+provides = "bind"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bind-9.18.11-r0.apk"
+version = "9.18.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dns-root-hints", "2022062901.0.0-r0"], ["bind-tools", "9.18.11-r0"], ["yash-binsh", "2.53.0-r2"], ["bind-dnssec-root", "9.18.11-r0"], ["bind-libs", "9.18.11-r0"], ["musl", "1.2.3-r4"], ["libcap2", "2.66.0-r0"], ["libcrypto3", "3.0.8-r0"], ["fstrm", "0.6.1-r1"], ["nghttp2-libs", "1.51.0-r0"], ["protobuf-c", "1.4.1-r1"], ["libuv", "1.44.2-r0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

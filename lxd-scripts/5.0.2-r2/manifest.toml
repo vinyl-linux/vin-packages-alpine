@@ -1,0 +1,15 @@
+checksum = "243d5b9503845e1062ab953661a0c3c21c873209bde06a4275f085f9d3bb2699"
+licence = "Apache-2.0"
+provides = "lxd-scripts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lxd-scripts-5.0.2-r2.apk"
+version = "5.0.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["lxd", "5.0.2-r2"], ["py3-lxc", "3.0.4-r4"], ["libacl", "2.3.1-r1"], ["musl", "1.2.3-r4"], ["dqlite", "1.13.0-r0"], ["libgcc", "12.2.1"], ["libintl", "0.21.1-r1"], ["lxc-libs", "5.0.2-r0"]]

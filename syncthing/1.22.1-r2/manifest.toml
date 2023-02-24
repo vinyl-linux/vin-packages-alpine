@@ -1,0 +1,15 @@
+checksum = "53f82a02dcbdaa4c3dc386d80f388fefa3a3cc308f6713e30742139fcadc9a1c"
+licence = "MPL-2.0"
+provides = "syncthing"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/syncthing-1.22.1-r2.apk"
+version = "1.22.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

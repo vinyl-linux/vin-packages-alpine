@@ -1,0 +1,15 @@
+checksum = "60d6e20e3b5dbe747e4cc8843e4ce6013fa31a80e961d3007cc62be8395114a0"
+licence = "GPL-2.0-or-later"
+provides = "zabbix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zabbix-6.2.6-r2.apk"
+version = "6.2.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["fping", "5.1.0-r1"], ["yash-binsh", "2.53.0-r2"]]

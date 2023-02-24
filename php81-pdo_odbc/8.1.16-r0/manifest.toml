@@ -1,0 +1,15 @@
+checksum = "126ace8f5e4bb2679f967d090d38157d0d857bf99af2cf11080c6e205c52768d"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-pdo_odbc"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pdo_odbc-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["php81-pdo", "8.1.16-r0"], ["musl", "1.2.3-r4"], ["unixodbc", "2.3.11-r0"]]

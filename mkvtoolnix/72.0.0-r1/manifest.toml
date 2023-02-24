@@ -1,0 +1,15 @@
+checksum = "7e3a80c9ce1432d3c369d4812af7162a20c10ace70e7cd3d310e5baf7f7df10e"
+licence = "GPL-2.0-only"
+provides = "mkvtoolnix"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mkvtoolnix-72.0.0-r1.apk"
+version = "72.0.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["flac-libs", "1.4.2-r0"], ["qt6-qtbase", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libebml", "1.4.4-r0"], ["libgcc", "12.2.1"], ["gmp", "6.2.1-r2"], ["libmatroska", "1.7.1-r0"], ["libogg", "1.3.5-r2"], ["libstdc++", "12.2.1"], ["libvorbis", "1.3.7-r0"], ["zlib", "1.2.13-r0"]]

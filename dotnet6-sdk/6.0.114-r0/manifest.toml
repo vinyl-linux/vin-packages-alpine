@@ -1,0 +1,15 @@
+checksum = "7fc369208582bcf51bb9ba1d11ba7b199cc002c8686b151da88d2508c1788d7f"
+licence = "MIT"
+provides = "dotnet6-sdk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet6-sdk-6.0.114-r0.apk"
+version = "6.0.114-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["aspnetcore6-runtime", "6.0.14-r0"], ["aspnetcore6-targeting-pack", "6.0.14-r0"], ["dotnet6-apphost-pack", "6.0.14-r0"], ["dotnet6-targeting-pack", "6.0.14-r0"], ["dotnet6-templates", "6.0.114-r0"], ["netstandard21-targeting-pack", "7.0.103-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

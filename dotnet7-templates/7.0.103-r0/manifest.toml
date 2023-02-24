@@ -1,0 +1,15 @@
+checksum = "7da5b5ea31505a5f48fdaf8ef18ec212596a452e1653f996fbb517d76def662f"
+licence = "MIT"
+provides = "dotnet7-templates"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet7-templates-7.0.103-r0.apk"
+version = "7.0.103-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.3-r0"]]

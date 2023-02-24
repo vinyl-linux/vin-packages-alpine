@@ -1,0 +1,15 @@
+checksum = "e41e85b39f22af7b5c55bc41afc013a2fc00c8599910e8ec66188f0ce7f578e6"
+licence = "GPL-3.0-or-later"
+provides = "epiphany-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/epiphany-lang-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"], ["gsettings-desktop-schemas", "43.0.0-r0"]]

@@ -1,0 +1,15 @@
+checksum = "7862a21cd154494a7a24556728ebb98b6dea52fcc963b971c7dfd1ee2cac89bf"
+licence = "MPL-2.0"
+provides = "nss"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nss-3.85-r1.apk"
+version = "3.85.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["nspr", "4.35.0-r0"], ["sqlite-libs", "3.40.1-r0"]]

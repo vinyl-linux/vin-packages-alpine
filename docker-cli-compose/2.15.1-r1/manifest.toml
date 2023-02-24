@@ -1,0 +1,15 @@
+checksum = "bb649e184534a696357abc951f21075a7457f4cefc08c2ac7d9ae5f7ffe9b0a8"
+licence = "Apache-2.0"
+provides = "docker-cli-compose"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-cli-compose-2.15.1-r1.apk"
+version = "2.15.1-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docker-cli", "20.10.21-r3"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "1c149f4c9b83c1d6a637893e932f1e221e438c631a78165bbfa69ba1d59236f6"
+licence = "LGPL-2.0-or-later AND BSD-2-Clause"
+provides = "webkit2gtk-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/webkit2gtk-lang-2.38.5-r0.apk"
+version = "2.38.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["xdg-dbus-proxy", "0.1.4-r0"], ["kwallet", "5.100.0-r0"]]

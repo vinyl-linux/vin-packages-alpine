@@ -1,0 +1,15 @@
+checksum = "f1f2286855d4ba37c09bb2deb98f5b8c65945c96442f055e641eb403b1151b8a"
+licence = "MIT"
+provides = "sbctl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sbctl-0.9-r8.apk"
+version = "0.9.0-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["binutils", "2.39.0-r2"], ["lsblk", "2.38.1-r1"], ["musl", "1.2.3-r4"]]

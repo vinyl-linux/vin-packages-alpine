@@ -1,0 +1,15 @@
+checksum = "86c1fc86b9d2baecf8170cf3b603604275557b618578258c5c67db856383110a"
+licence = "GPL-3.0-or-later"
+provides = "sddm-breeze"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sddm-breeze-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["breeze", "5.26.5-r0"], ["sddm", "0.19.0-r5"]]

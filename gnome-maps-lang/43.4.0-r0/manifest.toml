@@ -1,0 +1,15 @@
+checksum = "f830f6b8ef7191d0c6d9f36becad974c17e02d2f362e491e26e20ad9ad517fd0"
+licence = "GPL-2.0-or-later"
+provides = "gnome-maps-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-maps-lang-43.4-r0.apk"
+version = "43.4.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["geoclue", "2.6.0-r0"], ["gfbgraph", "0.2.5-r1"], ["gjs", "1.74.1-r0"], ["libadwaita", "1.2.1-r0"], ["libgweather4", "4.2.0-r0"]]

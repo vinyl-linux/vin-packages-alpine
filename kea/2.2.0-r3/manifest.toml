@@ -1,0 +1,15 @@
+checksum = "5bf8259838314a9a914ba48d772f7186b3fa4d16faa65051b6336efee4c2da06"
+licence = "MPL2"
+provides = "kea"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kea-dhcp4", "2.2.0-r3"], ["kea-dhcp6", "2.2.0-r3"]]

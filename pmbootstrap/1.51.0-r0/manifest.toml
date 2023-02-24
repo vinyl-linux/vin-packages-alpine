@@ -1,0 +1,15 @@
+checksum = "0b5d9a6468b7cf81bd2fb721884c3597380b7377e43016e6726ef439f0c41be6"
+licence = "GPL-3.0-or-later"
+provides = "pmbootstrap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/pmbootstrap-1.51.0-r0.apk"
+version = "1.51.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.4-r0"], ["openssl", "3.0.8-r0"], ["python3", "3.10.10-r0"], ["yash-binsh", "2.53.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "5890c0a41aa158a77e538598b88fbfc0c55062e26d642d8d573a6b2a38385c65"
+licence = "MIT"
+provides = "micro"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/micro-2.0.11-r8.apk"
+version = "2.0.11-r8"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

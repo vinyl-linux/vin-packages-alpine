@@ -1,0 +1,15 @@
+checksum = "79a64aeb0d06526a8127c2690d9f86dee146c6d23eb4e38390d09243c27a7c49"
+licence = "MIT"
+provides = "aspnetcore6-targeting-pack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aspnetcore6-targeting-pack-6.0.14-r0.apk"
+version = "6.0.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet6-hostfxr", "6.0.14-r0"], ["icu-data-full", "72.1.0-r1"], ["icu-libs", "72.1.0-r1"]]

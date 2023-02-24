@@ -1,0 +1,15 @@
+checksum = "22481574132475c38a580efc76923de44423f42c368b88c462778358228d9490"
+licence = "MIT"
+provides = "xorg-server-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/xorg-server-dbg-21.1.7-r0.apk"
+version = "21.1.7-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["font-misc-misc", "1.1.2-r3"], ["font-cursor-misc", "1.0.3-r3"], ["xkeyboard-config", "2.37.0-r0"], ["xkbcomp", "1.4.5-r1"], ["xinit", "1.4.1-r1"], ["xorg-server-common", "21.1.7-r0"]]

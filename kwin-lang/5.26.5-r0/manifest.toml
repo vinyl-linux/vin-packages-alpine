@@ -1,0 +1,15 @@
+checksum = "da59a9b0557f0daee1fd647ef7299f560379fce4693e6e2bf542673013dfc081"
+licence = "GPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND LGPL-2.1-only"
+provides = "kwin-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kwin-lang-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"], ["qt5-qtmultimedia", "5.15.6"], ["qt5-qtwayland", "5.15.6"], ["xwayland", "22.1.8-r0"]]

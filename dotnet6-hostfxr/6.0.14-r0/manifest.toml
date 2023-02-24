@@ -1,0 +1,15 @@
+checksum = "f3a4b3b6d9535ff6cc6c44a3900a9c33b15c94f7cda842df910c5ec10ac0c593"
+licence = "MIT"
+provides = "dotnet6-hostfxr"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet6-hostfxr-6.0.14-r0.apk"
+version = "6.0.14-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.3-r0"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

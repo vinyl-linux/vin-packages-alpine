@@ -1,0 +1,15 @@
+checksum = "26c51c302a4e342e6ae4cd2eb33427b45d39551ddb49effd86aea8bd2bd13011"
+licence = "GPL-2.0"
+provides = "linux-virt-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-virt-dev-5.15.95-r0.apk"
+version = "5.15.95-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["gmp-dev", "6.2.1-r2"], ["mpc1-dev", "1.2.1-r1"], ["mpfr-dev", "4.1.0-r0"], ["elfutils-dev", "0.187.0-r2"], ["bash", "5.2.15-r0"], ["flex", "2.6.4-r3"], ["bison", "3.8.2-r0"], ["zstd", "1.5.2-r9"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["libelf", "0.187.0-r2"], ["libstdc++", "12.2.1"]]

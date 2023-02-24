@@ -1,0 +1,15 @@
+checksum = "9c16dc8bf40239f93fa2a9aa92cac06b6a7d16a3703eee629c8eefdf19cd31f5"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "py3-rados16"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-rados16-16.2.11-r0.apk"
+version = "16.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-ceph16-common", "16.2.11-r0"], ["librados16", "16.2.11-r0"], ["musl", "1.2.3-r4"]]

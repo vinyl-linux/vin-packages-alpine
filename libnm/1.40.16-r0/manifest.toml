@@ -1,0 +1,15 @@
+checksum = "977398fcfbb528355b9906bb8da26c938c657985f49224e524b0ad59d5f2065e"
+licence = "GPL-2.0-or-later"
+provides = "libnm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libnm-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r1"], ["eudev-libs", "3.2.11-r4"]]

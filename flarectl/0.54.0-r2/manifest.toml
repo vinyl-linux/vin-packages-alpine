@@ -1,0 +1,15 @@
+checksum = "a8f83331eeb7472b33511c7fe582bf5991ffd3c80ebbd743d96a2b954982eb73"
+licence = "BSD-3-Clause"
+provides = "flarectl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/flarectl-0.54.0-r2.apk"
+version = "0.54.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

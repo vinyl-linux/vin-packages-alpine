@@ -1,0 +1,15 @@
+checksum = "a1838b69b90e882fb7efcef6503bf5f24d8900ddbce7319496ec6df34ad8977f"
+licence = "MIT"
+provides = "tut"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tut-1.0.18-r4.apk"
+version = "1.0.18-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

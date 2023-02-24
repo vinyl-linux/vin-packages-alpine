@@ -1,0 +1,15 @@
+checksum = "a84299b6893bd2e8a1cdd821772db77601e1eb487083fe46d5a87391eb0d11db"
+licence = "Apache-2.0"
+provides = "docker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-20.10.21-r3.apk"
+version = "20.10.21-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["docker-engine", "20.10.21-r3"], ["docker-cli", "20.10.21-r3"], ["yash-binsh", "2.53.0-r2"]]

@@ -1,0 +1,15 @@
+checksum = "87fa41efa4c9d13bb2078091dbb3143a6d50bc609114ac643575e3399500f9e7"
+licence = "MIT"
+provides = "vouch-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/vouch-proxy-0.36.0-r10.apk"
+version = "0.36.0-r10"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

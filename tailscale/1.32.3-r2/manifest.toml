@@ -1,0 +1,15 @@
+checksum = "e1101f6a7baaa296abfa66a96bf7479a3a5a4a16043387f2c97813558cf48b74"
+licence = "BSD-3-Clause"
+provides = "tailscale"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/tailscale-1.32.3-r2.apk"
+version = "1.32.3-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["iptables", "1.8.8-r2"], ["ip6tables", "1.8.8-r2"], ["musl", "1.2.3-r4"]]

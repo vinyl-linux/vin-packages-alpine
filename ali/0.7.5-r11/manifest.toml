@@ -1,0 +1,15 @@
+checksum = "be2d6531e67ac0ce6ca512e665201135f667f8c3c45da8fcf8abbdcd8b5f72c6"
+licence = "MIT"
+provides = "ali"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ali-0.7.5-r11.apk"
+version = "0.7.5-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

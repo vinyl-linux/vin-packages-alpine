@@ -1,0 +1,15 @@
+checksum = "9b1a3c234a887b9a70bb141553c942bf180602a16c82c7cdd603dd1d0f9462a4"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "rbd-mirror16"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rbd-mirror16-16.2.11-r0.apk"
+version = "16.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph16-common", "16.2.11-r0"], ["librados16", "16.2.11-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["cryptsetup-libs", "2.5.0-r2"], ["libgcc", "12.2.1"], ["libssl3", "3.0.8-r0"], ["libstdc++", "12.2.1"]]

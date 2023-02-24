@@ -1,0 +1,15 @@
+checksum = "efacea162a51a7ecb557ba06f0b6394975f7fff165ec0078f0b4beaeb96e9aa3"
+licence = "OpenSSL"
+provides = "openssl1.1-compat-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/openssl1.1-compat-dev-1.1.1t-r0.apk"
+version = "1.1.1-t-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcrypto1.1", "1.1.1-t-r0"], ["libssl1.1", "1.1.1-t-r0"], ["pkgconf", "1.9.4-r0"]]

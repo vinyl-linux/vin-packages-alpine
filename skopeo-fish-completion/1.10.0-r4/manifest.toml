@@ -1,0 +1,15 @@
+checksum = "896289234ccc75026f7e512d5f9fb5ec25b591b93ec7154b84b372f77d4d6aaf"
+licence = "Apache-2.0"
+provides = "skopeo-fish-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/skopeo-fish-completion-1.10.0-r4.apk"
+version = "1.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["containers-common", "0.50.1-r0"]]

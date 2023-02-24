@@ -1,0 +1,15 @@
+checksum = "2e7bcd8f425852e65c102d1129fd62c156e4b544173fbe03f4220e06802d2c76"
+licence = "GPL-2.0-or-later"
+provides = "mariadb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb-common", "10.6.12-r0"], ["yash-binsh", "2.53.0-r2"], ["libaio", "0.3.113-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["libcurl", "7.87.0-r2"], ["libgcc", "12.2.1"], ["xz-libs", "5.2.9-r0"], ["ncurses-libs", "6.3.0"], ["linux-pam", "1.5.2-r1"], ["pcre2", "10.42.0-r0"], ["libssl3", "3.0.8-r0"], ["libstdc++", "12.2.1"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

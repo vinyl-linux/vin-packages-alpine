@@ -1,0 +1,15 @@
+checksum = "7f67f36bf20f4386705b489325834b1634bd7e958989ac03cba6c4c018691042"
+licence = "Apache-2.0"
+provides = "rekor"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/rekor-0.12.0-r5.apk"
+version = "0.12.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

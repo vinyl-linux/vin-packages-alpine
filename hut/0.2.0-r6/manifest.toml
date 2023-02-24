@@ -1,0 +1,15 @@
+checksum = "2220223fdb7c82d966ccb19f0d04af01d4827e495658142c45536ee9e3aa6658"
+licence = "AGPL-3.0-only"
+provides = "hut"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/hut-0.2.0-r6.apk"
+version = "0.2.0-r6"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

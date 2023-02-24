@@ -1,0 +1,15 @@
+checksum = "b7d8649165f0b50a4a9ef3946f98c93c57f0321ae34dac7947ee68d97508a527"
+licence = "LGPL-2.1-only"
+provides = "numactl"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/numactl-2.0.16-r1.apk"
+version = "2.0.16-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

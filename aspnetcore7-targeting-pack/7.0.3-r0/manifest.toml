@@ -1,0 +1,15 @@
+checksum = "5f6b5041e5c711b9128d24af0b46fe3b30a88292284687632199d119d07228a0"
+licence = "MIT"
+provides = "aspnetcore7-targeting-pack"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/aspnetcore7-targeting-pack-7.0.3-r0.apk"
+version = "7.0.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet7-hostfxr", "7.0.3-r0"], ["icu-data-full", "72.1.0-r1"], ["icu-libs", "72.1.0-r1"]]

@@ -1,0 +1,15 @@
+checksum = "df1ee5910267d5013950327aadccb292628d37decbc98fb62867a74f6662a2a1"
+licence = "Apache-2.0"
+provides = "skopeo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/skopeo-1.10.0-r4.apk"
+version = "1.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["containers-common", "0.50.1-r0"], ["musl", "1.2.3-r4"], ["device-mapper-libs", "2.3.17-r1"], ["gpgme", "1.18.0-r0"]]

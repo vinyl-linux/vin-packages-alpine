@@ -1,0 +1,15 @@
+checksum = "7c0d8d66aad2d4eebc489d19cb695b95793ee7f1d09fc8122975227d0e60f318"
+licence = "MIT"
+provides = "fzf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/fzf-0.35.1-r2.apk"
+version = "0.35.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

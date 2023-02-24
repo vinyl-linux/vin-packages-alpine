@@ -1,0 +1,15 @@
+checksum = "6fb2ef4da8256d42f80e6a9b3bde5c2a9300244819fb55387430387a7689822a"
+licence = "GPL-2.0-or-later"
+provides = "qbittorrent-nox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/qbittorrent-nox-4.5.1-r0.apk"
+version = "4.5.1-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["qt6-qtbase", "6.4.2-r0"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"], ["libtorrent-rasterbar", "2.0.8-r0"], ["zlib", "1.2.13-r0"]]

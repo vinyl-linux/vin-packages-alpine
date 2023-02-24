@@ -1,0 +1,15 @@
+checksum = "4d27d28f5072df44609043b99aec5b2174953a26d3c568f0f52b0b628ada0932"
+licence = "BSD-3-Clause"
+provides = "py3-django"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/py3-django-3.2.18-r0.apk"
+version = "3.2.18-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["python3", "3.10.10-r0"], ["py3-asgiref", "3.5.2-r0"], ["py3-sqlparse", "0.4.3-r0"], ["py3-tz", "2022.6.0-r0"]]

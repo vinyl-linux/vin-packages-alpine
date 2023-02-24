@@ -1,0 +1,15 @@
+checksum = "b5114f4987cf0ec497644693385787ba9be07030b09f725ef484108bf29724c9"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-initrd-generator"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-initrd-generator-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r1"]]

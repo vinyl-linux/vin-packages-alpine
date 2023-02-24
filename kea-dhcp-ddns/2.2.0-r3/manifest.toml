@@ -1,0 +1,15 @@
+checksum = "e26aaed80e6d25e48fae4e7949a642c6f7ee271a1a9e9f2a776d881fb714eaf4"
+licence = "MPL2"
+provides = "kea-dhcp-ddns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-dhcp-ddns-2.2.0-r3.apk"
+version = "2.2.0-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kea-common", "2.2.0-r3"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

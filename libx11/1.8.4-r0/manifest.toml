@@ -1,0 +1,15 @@
+checksum = "1baea37abadaa2a91e4332c0d0ef7e47fc744335edc836b1ed92c7a4638fc773"
+licence = "custom:XFREE86"
+provides = "libx11"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libx11-1.8.4-r0.apk"
+version = "1.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libxcb", "1.15.0-r0"]]

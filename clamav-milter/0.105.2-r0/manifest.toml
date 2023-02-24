@@ -1,0 +1,15 @@
+checksum = "9af72e2c7c09c7d0b8086cae6ad1ccec838b5b62fe7b56705e4ac8cc659eb3df"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-milter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamav-milter-0.105.2-r0.apk"
+version = "0.105.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["clamav-libs", "0.105.2-r0"], ["libmilter", "1.0.2-r8"]]

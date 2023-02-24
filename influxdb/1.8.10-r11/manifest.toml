@@ -1,0 +1,15 @@
+checksum = "948624bd008ae51a72398590f68411b7d1d9d16382d530d3bd4c8eb14d9a2c7f"
+licence = "MIT"
+provides = "influxdb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/influxdb-1.8.10-r11.apk"
+version = "1.8.10-r11"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

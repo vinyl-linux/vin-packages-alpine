@@ -1,0 +1,15 @@
+checksum = "95a163cbed03d08e080861c1b916a723fee55bc0bca7ba497d86dcab6882ac37"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-bluetooth"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-bluetooth-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager", "1.40.16-r0"], ["bluez", "5.66.0-r1"], ["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"], ["networkmanager-wwan", "1.40.16-r0"]]

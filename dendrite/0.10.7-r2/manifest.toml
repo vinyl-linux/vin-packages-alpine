@@ -1,0 +1,15 @@
+checksum = "f5bb5cf09b45a7e5c4702a4f7d174bd903b156a67e1d3c1431f87a0b9250e2a5"
+licence = "Apache-2.0"
+provides = "dendrite"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dendrite-0.10.7-r2.apk"
+version = "0.10.7-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

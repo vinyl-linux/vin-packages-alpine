@@ -1,0 +1,15 @@
+checksum = "c91a1dafbe7d5c5a53d34659335b94adedf85681d2b3632b59ca6ed40e9920ce"
+licence = "GPL-2.0-or-later AND LGPL-2.1-or-later"
+provides = "gnome-desktop-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-desktop-lang-43.2-r0.apk"
+version = "43.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bubblewrap", "0.7.0-r0"], ["musl-locales", "0.1.0-r0"]]

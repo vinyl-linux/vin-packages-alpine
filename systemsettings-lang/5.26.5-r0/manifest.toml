@@ -1,0 +1,15 @@
+checksum = "4a64f4fe1616ee96c9d43cb7a848fff8f7e73827cf102fceddeeac0fde711e43"
+licence = "GPL-2.0-or-later"
+provides = "systemsettings-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/systemsettings-lang-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kirigami2", "5.100.0-r1"]]

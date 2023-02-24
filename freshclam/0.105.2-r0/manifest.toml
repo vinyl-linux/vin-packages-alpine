@@ -1,0 +1,15 @@
+checksum = "39ba4d6ab8c5de74d1ffd32352c6e0026b157879d2f19a73fcbc785bbf5eeafc"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "freshclam"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/freshclam-0.105.2-r0.apk"
+version = "0.105.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["clamav-libs", "0.105.2-r0"]]

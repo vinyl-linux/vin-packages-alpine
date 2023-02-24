@@ -1,0 +1,15 @@
+checksum = "7db8c203e1affd0e90ba17e5fb16ed88c6aa719fc8ff7c8018a54b48d3ccb203"
+licence = "GPL-3.0-or-later"
+provides = "gnote-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnote-dbg-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["kwallet", "5.100.0-r0"]]

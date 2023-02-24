@@ -1,0 +1,15 @@
+checksum = "f3e4273633e1ca59969a726144da82d2f4c536552b797b2bae31ada7f89de4b5"
+licence = "GPL-2.0"
+provides = "linux-edge"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/linux-edge-6.2.0-r0.apk"
+version = "6.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.7.0-r0"], ["linux-firmware-meson", "20221214.0.0-r1"]]

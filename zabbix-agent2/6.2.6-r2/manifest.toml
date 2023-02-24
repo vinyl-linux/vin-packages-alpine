@@ -1,0 +1,15 @@
+checksum = "f6d7de4e6fb8acd5a73b3b7fa773f9d592d71cbc3632904890f0f54c414eedc0"
+licence = "GPL-2.0-or-later"
+provides = "zabbix-agent2"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/zabbix-agent2-6.2.6-r2.apk"
+version = "6.2.6-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["pcre2", "10.42.0-r0"], ["libssl3", "3.0.8-r0"], ["zlib", "1.2.13-r0"]]

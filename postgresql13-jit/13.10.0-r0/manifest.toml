@@ -1,0 +1,15 @@
+checksum = "3dced90e9ca3ace128d100f44858a6e2954600203c0f335d94b6794ec406aad9"
+licence = "PostgreSQL"
+provides = "postgresql13-jit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/postgresql13-jit-13.10-r0.apk"
+version = "13.10.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql13", "13.10.0-r0"], ["llvm14-libs", "14.0.6-r7"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

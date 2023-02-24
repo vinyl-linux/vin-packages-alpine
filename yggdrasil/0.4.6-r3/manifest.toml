@@ -1,0 +1,15 @@
+checksum = "ad29f2764a445c768decc22d522f6d5babc37a3be5e51c765e08ef2e29b1edbc"
+licence = "LGPL-3.0-only"
+provides = "yggdrasil"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/yggdrasil-0.4.6-r3.apk"
+version = "0.4.6-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

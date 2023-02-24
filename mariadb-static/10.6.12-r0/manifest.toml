@@ -1,0 +1,15 @@
+checksum = "a19c74c06d4a015e62aa4e431e0c35d3b96692170ce90d6426ed695aa1d9116c"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-static"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-static-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb-common", "10.6.12-r0"]]

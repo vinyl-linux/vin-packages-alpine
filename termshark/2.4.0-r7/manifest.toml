@@ -1,0 +1,15 @@
+checksum = "a5778992b06f0bb44dfba7d50c706dc739ce70c322c907d8e4ef3bcbc61b04da"
+licence = "MIT"
+provides = "termshark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/termshark-2.4.0-r7.apk"
+version = "2.4.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["tshark", "4.0.1-r0"], ["musl", "1.2.3-r4"]]

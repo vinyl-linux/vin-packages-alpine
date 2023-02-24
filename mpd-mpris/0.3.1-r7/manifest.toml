@@ -1,0 +1,15 @@
+checksum = "c2d98f52896117753bf81c24687170a5bd97c82bea5f1c53107671c910d09f74"
+licence = "MIT"
+provides = "mpd-mpris"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mpd-mpris-0.3.1-r7.apk"
+version = "0.3.1-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

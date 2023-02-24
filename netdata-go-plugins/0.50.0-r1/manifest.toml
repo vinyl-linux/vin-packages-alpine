@@ -1,0 +1,15 @@
+checksum = "d9351ccd2a5f474685ce65800c1eaf4a3311189ae978e565119d7ad20c43fc19"
+licence = "GPL-3.0-or-later"
+provides = "netdata-go-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/netdata-go-plugins-0.50.0-r1.apk"
+version = "0.50.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["netdata", "1.36.1-r0"], ["musl", "1.2.3-r4"]]

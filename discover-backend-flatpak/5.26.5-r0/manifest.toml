@@ -1,0 +1,15 @@
+checksum = "d6eb6b7d84c2a4a2ea82f3715ec22d71b164b9dd57a6241c4cc0a6292df07b34"
+licence = "LGPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND GFDL-1.2-only"
+provides = "discover-backend-flatpak"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/discover-backend-flatpak-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["appstream-qt", "0.15.5-r2"], ["discover", "5.26.5-r0"], ["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["flatpak-libs", "1.14.1-r0"], ["glib", "2.74.6-r0"], ["libstdc++", "12.2.1"]]

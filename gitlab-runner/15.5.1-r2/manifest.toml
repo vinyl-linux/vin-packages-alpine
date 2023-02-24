@@ -1,0 +1,15 @@
+checksum = "2ba55af662273c9e289936e3bbc488bd3b0b3b9dfdc9d972286a34967b4b2aa3"
+licence = "MIT"
+provides = "gitlab-runner"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gitlab-runner-15.5.1-r2.apk"
+version = "15.5.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"]]

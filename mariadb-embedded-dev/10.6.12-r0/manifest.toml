@@ -1,0 +1,15 @@
+checksum = "9dd243582884226d2167301fe2e730021a693254e43601a7ef2e304c93978388"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-embedded-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-embedded-dev-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb-common", "10.6.12-r0"], ["mariadb-embedded", "10.6.12-r0"]]

@@ -1,0 +1,15 @@
+checksum = "dac44a3b98537c024a84123b870ec21491a012eac80e2f6967039ef3fcea89b7"
+licence = "GPL-2.0"
+provides = "linux-lts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-lts-5.15.95-r0.apk"
+version = "5.15.95-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mkinitfs", "3.7.0-r0"], ["linux-firmware-meson", "20221214.0.0-r1"]]

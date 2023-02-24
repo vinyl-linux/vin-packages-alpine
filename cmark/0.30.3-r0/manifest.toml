@@ -1,0 +1,15 @@
+checksum = "04a921dd6a7fca284cbd076ae8dcb593b39aaf6b9f7dfa57a77d871d3eb46450"
+licence = "BSD-2-Clause"
+provides = "cmark"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/cmark-0.30.3-r0.apk"
+version = "0.30.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "443b7fa3dee2d46e3a5ba4ab1622e680790d178da876c74058c0ac7e48cd3f26"
+licence = "Apache-2.0"
+provides = "prometheus-node-exporter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prometheus-node-exporter-1.5.0-r2.apk"
+version = "1.5.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

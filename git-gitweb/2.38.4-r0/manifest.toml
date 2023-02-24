@@ -1,0 +1,15 @@
+checksum = "26995a70b9a1e0cccc6ddd6ba57b711fc69e9e8979ac6ad7dddd197debf6dc3c"
+licence = "GPL-2.0-or-later"
+provides = "git-gitweb"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-gitweb-2.38.4-r0.apk"
+version = "2.38.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.4-r0"], ["perl", "5.36.0-r0"]]

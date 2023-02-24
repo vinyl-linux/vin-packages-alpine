@@ -1,0 +1,15 @@
+checksum = "738dd73e32f39611305bc5447b584e9f504884e09d195402130d835c15ce7286"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-wwan"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-wwan-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager", "1.40.16-r0"], ["mobile-broadband-provider-info", "20221107.0.0-r0"], ["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["libintl", "0.21.1-r1"], ["libmm-glib", "1.20.4-r0"]]

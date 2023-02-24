@@ -1,0 +1,15 @@
+checksum = "602e9e14844b15b0740e37d513f920e0873e9a048e3267041713efeb12b34e52"
+licence = "BSD-2-Clause"
+provides = "miller"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/miller-6.4.0-r5.apk"
+version = "6.4.0-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

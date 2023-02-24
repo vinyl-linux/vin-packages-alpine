@@ -1,0 +1,15 @@
+checksum = "00e35302f6844f5fa66bd1d6013e5dbf13b0c5ebe8cdb49f024de978a315eb6e"
+licence = "MIT"
+provides = "dotnet6-templates"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dotnet6-templates-6.0.114-r0.apk"
+version = "6.0.114-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dotnet-host", "7.0.3-r0"]]

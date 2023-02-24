@@ -1,0 +1,15 @@
+checksum = "356d3d31ef959cab446975a9ddbd4bec5f2afb354c4d094fba072e20f7f0bdec"
+licence = "Apache-2.0"
+provides = "coredns"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/coredns-1.10.0-r4.apk"
+version = "1.10.0-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["unbound-libs", "1.17.1-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

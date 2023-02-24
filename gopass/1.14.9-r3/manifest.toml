@@ -1,0 +1,15 @@
+checksum = "2056d1ad72049877097a01700c6b8453abe5c7e6fce18463d275430c3dbf362f"
+licence = "MIT"
+provides = "gopass"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gopass-1.14.9-r3.apk"
+version = "1.14.9-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["gnupg", "2.2.40-r0"], ["git", "2.38.4-r0"]]

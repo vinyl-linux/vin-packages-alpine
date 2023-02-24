@@ -1,0 +1,15 @@
+checksum = "f8427cefc523b9639ec5f5af4e6ba88cc0e52903e1293c2c6639fce99020f1cb"
+licence = "LGPL-2.0-or-later AND (GPL-2.0-only OR GPL-3.0-only) AND GFDL-1.2-only"
+provides = "discover-backend-fwupd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/discover-backend-fwupd-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["discover", "5.26.5-r0"], ["ki18n", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["musl", "1.2.3-r4"], ["fwupd", "1.8.8-r0"], ["glib", "2.74.6-r0"], ["libstdc++", "12.2.1"]]

@@ -1,0 +1,15 @@
+checksum = "09afc0a2f2c34541159d4cef0e0fdeb69884c9ed461b67f518dfddeef7ca8213"
+licence = "MIT"
+provides = "lazydocker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lazydocker-0.20.0-r2.apk"
+version = "0.20.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "6272ea1169a583c190c0c7fd105dd67ad0d4b2aa527a39e5cb11c6641286d0fa"
+licence = "MIT"
+provides = "nodejs-current-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nodejs-current-dev-19.7.0-r0.apk"
+version = "19.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libuv", "1.44.2-r0"]]

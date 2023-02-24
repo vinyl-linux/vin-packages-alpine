@@ -1,0 +1,15 @@
+checksum = "d6a00f783714ffcb815239c4a11e3e4b26dcd95d042477f5c2eb30b9ea2fe31d"
+licence = "Apache-2.0"
+provides = "sget-fish-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sget-fish-completion-1.12.1-r4.apk"
+version = "1.12.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite-libs", "1.9.9-r0"]]

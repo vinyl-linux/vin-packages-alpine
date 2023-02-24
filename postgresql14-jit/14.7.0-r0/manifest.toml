@@ -1,0 +1,15 @@
+checksum = "60d0bce53f43106842d9c12db1b574ac078d95edf794c495f01bc6cb9dd1ad7c"
+licence = "PostgreSQL"
+provides = "postgresql14-jit"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql14-jit-14.7-r0.apk"
+version = "14.7.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql14", "14.7.0-r0"], ["llvm14-libs", "14.0.6-r7"], ["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

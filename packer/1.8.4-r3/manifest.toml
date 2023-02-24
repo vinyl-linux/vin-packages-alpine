@@ -1,0 +1,15 @@
+checksum = "4b5f105c27737747e627b728c06c63742dd18ece43a95d404a4e799618660409"
+licence = "MPL-2.0"
+provides = "packer"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/packer-1.8.4-r3.apk"
+version = "1.8.4-r3"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

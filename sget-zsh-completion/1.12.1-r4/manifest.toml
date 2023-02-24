@@ -1,0 +1,15 @@
+checksum = "ceeba2bf3a965642f4f3c454e0d9d6e5e701b4dc361ffb4bb42e991ad505ff67"
+licence = "Apache-2.0"
+provides = "sget-zsh-completion"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/sget-zsh-completion-1.12.1-r4.apk"
+version = "1.12.1-r4"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["pcsc-lite-libs", "1.9.9-r0"]]

@@ -1,0 +1,15 @@
+checksum = "bdf2ec635cb266fc917c033063c3a1bf6be718139dc9bc09d2cb7ebdbae70bfa"
+licence = "GPL-2.0-or-later"
+provides = "ghex"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ghex-43.1-r0.apk"
+version = "43.1.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["dconf", "0.40.0-r2"], ["libadwaita", "1.2.1-r0"], ["musl", "1.2.3-r4"], ["cairo", "1.17.6-r3"], ["glib", "2.74.6-r0"], ["gtk4.0", "4.8.3-r0"], ["libintl", "0.21.1-r1"], ["pango", "1.50.13-r0"]]

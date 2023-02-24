@@ -1,0 +1,15 @@
+checksum = "9963ce4d92a1e02de77faac8379b2c344403881100ad71d6ae7d39113ed0c551"
+licence = "ISC"
+provides = "dnscrypt-proxy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/dnscrypt-proxy-2.1.2-r5.apk"
+version = "2.1.2-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ca-certificates", "20220614.0.0-r4"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

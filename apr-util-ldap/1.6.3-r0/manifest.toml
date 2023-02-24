@@ -1,0 +1,15 @@
+checksum = "3a3ae98200d25beee4dd02071bcd365baed3d4d1b444c7b1c5b28bdfe34bce40"
+licence = "Apache-2.0"
+provides = "apr-util-ldap"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-util-ldap-1.6.3-r0.apk"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libldap", "2.6.3-r6"]]

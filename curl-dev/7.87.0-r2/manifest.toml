@@ -1,0 +1,15 @@
+checksum = "5eb21ec1fe8e893649587d7568de0a650d9ce70310003e95caa1105259e7ffa5"
+licence = "curl"
+provides = "curl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/curl-dev-7.87.0-r2.apk"
+version = "7.87.0-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["openssl-dev", "3.0.8-r0"], ["nghttp2-dev", "1.51.0-r0"], ["zlib-dev", "1.2.13-r0"], ["brotli-dev", "1.0.9-r9"], ["libcurl", "7.87.0-r2"], ["pkgconf", "1.9.4-r0"]]

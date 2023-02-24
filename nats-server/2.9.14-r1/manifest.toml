@@ -1,0 +1,15 @@
+checksum = "7d007cdedea793fd8116b28df00220f9a7f9eed6aead7cb5a56711da84adc6dd"
+licence = "Apache-2.0"
+provides = "nats-server"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nats-server-2.9.14-r1.apk"
+version = "2.9.14-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "b69d8e9f05fc880a132b64f34d149b245f33bbfcb46dfd018f9f7856350f51d3"
+licence = "GPL-2.0-or-later"
+provides = "plymouth-kcm"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plymouth-kcm-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["plymouth", "22.2.122-r0"], ["karchive", "5.100.0-r0"], ["kauth", "5.100.0-r0"], ["kconfig", "5.100.1-r0"], ["kcoreaddons", "5.100.0-r0"], ["ki18n", "5.100.0-r0"], ["kio", "5.100.0-r0"], ["knewstuff", "5.100.0-r0"], ["kdeclarative", "5.100.0-r0"], ["qt5-qtbase", "5.15.6"], ["qt5-qtbase-x11", "5.15.6"], ["qt5-qtdeclarative", "5.15.6"], ["musl", "1.2.3-r4"], ["libstdc++", "12.2.1"]]

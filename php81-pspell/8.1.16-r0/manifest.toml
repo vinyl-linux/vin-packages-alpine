@@ -1,0 +1,15 @@
+checksum = "5e8bdb65a8a674a4dfbdc40760ff507033e544ba9b72b205aa8480788cd57434"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-pspell"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pspell-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81-common", "8.1.16-r0"], ["aspell-libs", "0.60.8-r2"], ["musl", "1.2.3-r4"]]

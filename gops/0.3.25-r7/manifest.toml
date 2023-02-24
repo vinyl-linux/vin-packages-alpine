@@ -1,0 +1,15 @@
+checksum = "a26352b126da414a715c0b844e0c0e7dcd73cadb6c296b7b0891b1beafd0170f"
+licence = "BSD-3-Clause"
+provides = "gops"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gops-0.3.25-r7.apk"
+version = "0.3.25-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "a8503821d7135462dae237fc9c6491ae1cf5fb5c4e5c171ed6d5d876fbbe6863"
+licence = "MIT"
+provides = "github-cli"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/github-cli-2.20.2-r2.apk"
+version = "2.20.2-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["git", "2.38.4-r0"]]

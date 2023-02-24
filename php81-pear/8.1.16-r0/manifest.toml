@@ -1,0 +1,15 @@
+checksum = "d3f362abe90f082830a69cb57f363fa31c774c786fe285e4b431fd30ddf38ad9"
+licence = "PHP-3.01 BSD-3-Clause LGPL-2.0-or-later MIT Zend-2.0"
+provides = "php81-pear"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/php81-pear-8.1.16-r0.apk"
+version = "8.1.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["php81", "8.1.16-r0"], ["php81-xml", "8.1.16-r0"]]

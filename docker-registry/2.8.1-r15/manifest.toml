@@ -1,0 +1,15 @@
+checksum = "c02401aa9ab4f447850e57639b6011b16ddce64fc42c2ea9400794ef54a06f4f"
+licence = "Apache-2.0"
+provides = "docker-registry"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-registry-2.8.1-r15.apk"
+version = "2.8.1-r15"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

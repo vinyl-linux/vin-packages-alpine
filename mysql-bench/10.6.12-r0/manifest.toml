@@ -1,0 +1,15 @@
+checksum = "1b5d83cec145135b28b8fa65a3772f7df5ee23c3aaeb1df1aef7c827917c2106"
+licence = "GPL-2.0-or-later"
+provides = "mysql-bench"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mysql-bench-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb-client", "10.6.12-r0"]]

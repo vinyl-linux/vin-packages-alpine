@@ -1,0 +1,15 @@
+checksum = "ac11b36aeb335fe4c3b554e486cab735fd7360ba1e48821fc4fe86e755b69c52"
+licence = "MIT"
+provides = "lf"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/lf-27-r7.apk"
+version = "27.0.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

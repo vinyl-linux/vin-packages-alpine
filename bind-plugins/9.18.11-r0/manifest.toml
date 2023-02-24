@@ -1,0 +1,15 @@
+checksum = "427a679eb20c6eb33f26036bd4faf976a38cdeb354f3bae73789cd76682de421"
+licence = "MPL-2.0"
+provides = "bind-plugins"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bind-plugins-9.18.11-r0.apk"
+version = "9.18.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bind", "9.18.11-r0"], ["musl", "1.2.3-r4"]]

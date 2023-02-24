@@ -1,0 +1,15 @@
+checksum = "b6a88b44e3ff6514c12b9f064984762a0d65723fe41f8bbcd59cb8b1c57cfe70"
+licence = "GPL-2.0-or-later LGPL-2.0-or-later"
+provides = "gst-plugins-ugly"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gst-plugins-ugly-1.20.6-r0.apk"
+version = "1.20.6-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["a52dec", "0.7.4-r8"], ["musl", "1.2.3-r4"], ["glib", "2.74.6-r0"], ["gst-plugins-base", "1.20.6-r0"], ["gstreamer", "1.20.6-r0"], ["libintl", "0.21.1-r1"], ["opencore-amr", "0.1.6-r0"], ["orc", "0.4.33-r0"], ["x264-libs", "0.164.0"]]

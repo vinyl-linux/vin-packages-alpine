@@ -1,0 +1,15 @@
+checksum = "799db6b5bf76e392daeab6becd2921fb92fa0535a8ad71fa5e9820a6cbced7e8"
+licence = "custom:XFREE86"
+provides = "libx11-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libx11-dev-1.8.4-r0.apk"
+version = "1.8.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libxcb-dev", "1.15.0-r0"], ["xtrans", "1.4.0-r2"], ["libx11", "1.8.4-r0"], ["xorgproto", "2022.2.0-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "78ffcda4edd009af64fb8d5d15f2e030b47a3f01cf5a62a8a8d5f162d704baf5"
+licence = "custom"
+provides = "libressl3.6-libcrypto"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/libressl3.6-libcrypto-3.6.2-r0.apk"
+version = "3.6.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "72c248cacfcc8c5f7f00b86d6d7fa87069597ed490a6306c8e2174e80dabbb09"
+licence = "MIT"
+provides = "viddy"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/viddy-0.3.6-r7.apk"
+version = "0.3.6-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

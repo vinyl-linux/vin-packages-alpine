@@ -1,0 +1,15 @@
+checksum = "fb2cb25907aa1764b38ad8f0c7b4f3dab36ff68ca625331e2cd2e178346a9e5b"
+licence = "Apache-2.0"
+provides = "docker-credential-ecr-login"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/docker-credential-ecr-login-0.6.0-r7.apk"
+version = "0.6.0-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

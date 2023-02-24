@@ -1,0 +1,15 @@
+checksum = "560bd302bdb11bba1cf0672b2f120eed0dc925cd966bc7fe23bb61e110de774a"
+licence = "GPL-2.0-or-later"
+provides = "networkmanager-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/networkmanager-dev-1.40.16-r0.apk"
+version = "1.40.16-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["networkmanager", "1.40.16-r0"], ["libnm", "1.40.16-r0"], ["glib-dev", "2.74.6-r0"], ["pkgconf", "1.9.4-r0"]]

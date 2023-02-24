@@ -1,0 +1,15 @@
+checksum = "26f184c191af6188aa78133659f88993dbff59214d788fddbe6f6c438fefbb1e"
+licence = "GPL-2.0-or-later"
+provides = "mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mysql-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["mariadb", "10.6.12-r0"]]

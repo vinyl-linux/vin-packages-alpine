@@ -1,0 +1,15 @@
+checksum = "bd6b37bb73e19cbc58225f73d6503b247ff06b909b20e6c5fc830fc920a5350f"
+licence = "MPL-2.0"
+provides = "bind-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bind-tools-9.18.11-r0.apk"
+version = "9.18.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bind-libs", "9.18.11-r0"], ["musl", "1.2.3-r4"], ["krb5-libs", "1.20.1-r0"], ["protobuf-c", "1.4.1-r1"]]

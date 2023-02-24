@@ -1,0 +1,15 @@
+checksum = "aa9daf87b26237655b91badcaa112d35db3b9fe23340f8eed89bf708d345f059"
+licence = "GPL-2.0-only WITH OpenSSL-Exception"
+provides = "clamav-db"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/clamav-db-0.105.2-r0.apk"
+version = "0.105.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["freshclam", "0.105.2-r0"]]

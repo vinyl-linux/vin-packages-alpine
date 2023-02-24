@@ -1,0 +1,15 @@
+checksum = "49ab49b1060677c36c1dd19b645dafd5c53087608378545132b0a7e8ea64e3bd"
+licence = "BSD-2-Clause AND (GPL-2.0-only OR GPL-3.0-only) AND CC0-1.0"
+provides = "plasma-remotecontrollers-lang"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/plasma-remotecontrollers-lang-5.26.5-r0.apk"
+version = "5.26.5-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcec", "6.0.2-r7"]]

@@ -1,0 +1,15 @@
+checksum = "81c5201cf49238671e74802d90bedbf45cf27cb83b2452693f8e5214e694be7a"
+licence = "Apache-2.0"
+provides = "podman-docker"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/podman-docker-4.3.1-r2.apk"
+version = "4.3.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["podman", "4.3.1-r2"]]

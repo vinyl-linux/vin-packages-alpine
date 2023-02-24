@@ -1,0 +1,15 @@
+checksum = "a35d3e28003ed377b6325f18fa03fa82876d56597078505302b029ba79bc7d44"
+licence = "Apache-2.0"
+provides = "mongodb-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/mongodb-tools-4.2.14-r15.apk"
+version = "4.2.14-r15"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["libpcap", "1.10.1-r1"], ["libsasl", "2.1.28-r3"], ["libssl3", "3.0.8-r0"]]

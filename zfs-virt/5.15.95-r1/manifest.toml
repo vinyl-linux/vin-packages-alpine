@@ -1,0 +1,15 @@
+checksum = "e4c6a64577e70c61bdd999792c56a34ab1ddc0fe56739fa628d4a7d35ca6d204"
+licence = "CDDL-1.0"
+provides = "zfs-virt"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-virt-5.15.95-r1.apk"
+version = "5.15.95-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-virt", "5.15.95-r0"]]

@@ -1,0 +1,15 @@
+checksum = "6b166bd9814ccfc3fdd88efa38d18b764f8b5733e98a6dd8e47d462b36d081e3"
+licence = "MPL-2.0"
+provides = "nss-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/nss-tools-3.85-r1.apk"
+version = "3.85.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["nspr", "4.35.0-r0"], ["nss", "3.85.0-r1"], ["zlib", "1.2.13-r0"]]

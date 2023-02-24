@@ -1,0 +1,15 @@
+checksum = "e1fc3a2b4bc2a1de59ede114fed125dd9779593a0f4525b17fc6b15f4e6d113b"
+licence = "CDDL-1.0"
+provides = "zfs-lts"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-lts-5.15.95-r1.apk"
+version = "5.15.95-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["linux-lts", "5.15.95-r0"]]

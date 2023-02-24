@@ -1,0 +1,15 @@
+checksum = "5b8cdac86f1ab9304a85380c986a479ebeb1be059d9af4d6aedc171d66da9067"
+licence = "Apache-2.0"
+provides = "easypki"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/easypki-1.1.0-r19.apk"
+version = "1.1.0-r19"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

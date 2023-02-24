@@ -1,0 +1,15 @@
+checksum = "87aae2033e114b905b0f88168f6f43386d1e019791922499290e2a591f74b576"
+licence = "GPL-2.0-or-later"
+provides = "git-cvs"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-cvs-2.38.4-r0.apk"
+version = "2.38.4-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["perl-git", "2.38.4-r0"], ["cvs", "1.12.13-r2"], ["perl-dbd-sqlite", "1.72.0-r0"]]

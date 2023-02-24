@@ -1,0 +1,15 @@
+checksum = "8fb9c1096bc6c2faf7786a27dd35a6cc324e7cdca670815407e76b36017f4305"
+licence = "Apache-2.0"
+provides = "prometheus"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/prometheus-2.40.5-r2.apk"
+version = "2.40.5-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

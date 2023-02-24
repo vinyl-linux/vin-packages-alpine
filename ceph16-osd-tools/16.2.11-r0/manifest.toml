@@ -1,0 +1,15 @@
+checksum = "dcff31d338d1e873b4fa107aaef7055465380c5842043bdcb9230d4fb51017a1"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph16-osd-tools"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph16-osd-tools-16.2.11-r0.apk"
+version = "16.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["ceph16-base", "16.2.11-r0"], ["lz4-libs", "1.9.4-r1"], ["librados16", "16.2.11-r0"], ["libaio", "0.3.113-r0"], ["boost1.80-program_options", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcrypto3", "3.0.8-r0"], ["fmt", "9.1.0-r0"], ["fuse", "2.9.9-r2"], ["libgcc", "12.2.1"], ["snappy", "1.1.9-r4"], ["libstdc++", "12.2.1"], ["zlib", "1.2.13-r0"]]

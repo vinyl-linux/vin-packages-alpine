@@ -1,0 +1,15 @@
+checksum = "5a47537bf29a2b3b4e466634a69a4491339ed9a1f795d4ce248ac01d46c8609b"
+licence = "GPL-2.0-or-later"
+provides = "mariadb-server-utils"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-server-utils-10.6.12-r0.apk"
+version = "10.6.12-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["perl", "5.36.0-r0"], ["mariadb-common", "10.6.12-r0"], ["musl", "1.2.3-r4"]]

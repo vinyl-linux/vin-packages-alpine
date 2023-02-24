@@ -1,0 +1,15 @@
+checksum = "b80482c92daad06fdd25e8e4be477d1e6320f63da9fcd7be5561f3c88d1d3a91"
+licence = "MIT"
+provides = "bird_exporter"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/bird_exporter-1.4.1-r9.apk"
+version = "1.4.1-r9"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["bird", "2.0.10-r2"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"]]

@@ -1,0 +1,15 @@
+checksum = "ddfe650ea78fd64d397109aa0f469590f6e6ba27e3fc6df1800a42441e957000"
+licence = "GPL-3.0-or-later"
+provides = "gnome-builder-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/gnome-builder-dev-43.6-r0.apk"
+version = "43.6.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["glib-dev", "2.74.6-r0"], ["gtk4.0-dev", "4.8.3-r0"], ["gtksourceview5-dev", "5.6.2-r0"], ["libpeas-dev", "1.34.0-r0"], ["template-glib-dev", "3.36.0-r0"], ["vte3-dev", "0.70.2-r0"], ["webkit2gtk-5.0-dev", "2.38.5-r0"], ["pkgconf", "1.9.4-r0"]]

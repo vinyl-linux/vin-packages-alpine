@@ -1,0 +1,15 @@
+checksum = "1296d07cfae7ed812cb73bc663ce1b03109c5c23f86bc351d32e15ec877309a6"
+licence = "MIT"
+provides = "ctop"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ctop-0.7.7-r7.apk"
+version = "0.7.7-r7"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["podman-docker", "4.3.1-r2"]]

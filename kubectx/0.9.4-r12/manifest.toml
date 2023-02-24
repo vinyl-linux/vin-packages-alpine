@@ -1,0 +1,15 @@
+checksum = "db435bca387338b3b8f9997ee9f164e271d1550cbab9587d7ebb3923564d0a4a"
+licence = "Apache-2.0"
+provides = "kubectx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/kubectx-0.9.4-r12.apk"
+version = "0.9.4-r12"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

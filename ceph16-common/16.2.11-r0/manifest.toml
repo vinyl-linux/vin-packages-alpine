@@ -1,0 +1,15 @@
+checksum = "74edfb1ea68053e1fc8d7e6265d2884bce13f766712e93dea93ab48783065d1d"
+licence = "LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom"
+provides = "ceph16-common"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ceph16-common-16.2.11-r0.apk"
+version = "16.2.11-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["py3-rados16", "16.2.11-r0"], ["py3-rbd16", "16.2.11-r0"], ["py3-cephfs16", "16.2.11-r0"], ["py3-prettytable", "0.7.2-r8"], ["librados16", "16.2.11-r0"], ["libradosstriper16", "16.2.11-r0"], ["librbd16", "16.2.11-r0"], ["libblkid", "2.38.1-r1"], ["boost1.80-program_options", "1.80.0-r3"], ["musl", "1.2.3-r4"], ["libcap-ng", "0.8.3-r1"], ["fmt", "9.1.0-r0"], ["libgcc", "12.2.1"], ["keyutils-libs", "1.6.3-r1"], ["ncurses-libs", "6.3.0"], ["libstdc++", "12.2.1"], ["eudev-libs", "3.2.11-r4"]]

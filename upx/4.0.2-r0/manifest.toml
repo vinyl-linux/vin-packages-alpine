@@ -1,0 +1,15 @@
+checksum = "68cf8ceac5f7d15b2a2c545b7ab1aafd36fd9af5cb7010c55fc30c153a7429c0"
+licence = "GPL-2.0 Public-Domain"
+provides = "upx"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/upx-4.0.2-r0.apk"
+version = "4.0.2-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["libgcc", "12.2.1"], ["libstdc++", "12.2.1"]]

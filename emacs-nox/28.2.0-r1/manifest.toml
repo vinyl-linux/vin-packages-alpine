@@ -1,0 +1,15 @@
+checksum = "095e1b0672d14ec395923b1160b857f1a3f3ac2d2f69c5aced13558aa33d64d1"
+licence = "GPL-3.0-or-later"
+provides = "emacs-nox"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/emacs-nox-28.2-r1.apk"
+version = "28.2.0-r1"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["dbus-libs", "1.14.4-r0"], ["gmp", "6.2.1-r2"], ["gnutls", "3.7.8-r3"], ["jansson", "2.14.0-r0"], ["ncurses-libs", "6.3.0"], ["libxml2", "2.10.3-r1"], ["zlib", "1.2.13-r0"]]

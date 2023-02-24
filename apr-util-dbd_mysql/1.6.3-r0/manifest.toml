@@ -1,0 +1,15 @@
+checksum = "c07261b376b69395a3464d51b2ff4cea0c94677bf6ccd71f8fbc1ef7781a3848"
+licence = "Apache-2.0"
+provides = "apr-util-dbd_mysql"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apr-util-dbd_mysql-1.6.3-r0.apk"
+version = "1.6.3-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"], ["mariadb-connector-c", "3.3.3-r0"]]

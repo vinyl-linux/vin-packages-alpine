@@ -1,0 +1,15 @@
+checksum = "f20fa29c2e853b1101aa0d1a1eafcd4b1c90075c6a37274383e18278404f43df"
+licence = "BSD-3-Clause"
+provides = "chromium-dbg"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/chromium-dbg-110.0.5481.177-r0.apk"
+version = "110.0.5481.177-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["xdg-utils", "1.1.3-r4"], ["eudev-libs", "3.2.11-r4"], ["gtk+3.0", "3.24.36-r0"], ["font-opensans", "0.0.0"]]

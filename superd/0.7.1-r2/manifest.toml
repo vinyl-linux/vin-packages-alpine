@@ -1,0 +1,15 @@
+checksum = "b068147e73bf93621f035dea276c9bef1bb9d5d158815c52727adcbc198a667c"
+licence = "GPL-3.0-or-later"
+provides = "superd"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/superd-0.7.1-r2.apk"
+version = "0.7.1-r2"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]

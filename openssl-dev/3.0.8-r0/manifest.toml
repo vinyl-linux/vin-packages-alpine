@@ -1,0 +1,15 @@
+checksum = "2889d2a47ddf50a48c3aa8ea32f590e63307d81b1d29c0b2a7252f8eeef61255"
+licence = "Apache-2.0"
+provides = "openssl-dev"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssl-dev-3.0.8-r0.apk"
+version = "3.0.8-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["libcrypto3", "3.0.8-r0"], ["libssl3", "3.0.8-r0"], ["pkgconf", "1.9.4-r0"]]

@@ -1,0 +1,15 @@
+checksum = "9c818656eaa4ce70be9cb0f36cf9ec23b095d257aab81d61e0eea7bcaaa7c308"
+licence = "PostgreSQL"
+provides = "postgresql15-plperl-contrib"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postgresql15-plperl-contrib-15.2-r0.apk"
+version = "15.2.0-r0"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["postgresql15-plperl", "15.2.0-r0"], ["musl", "1.2.3-r4"], ["perl", "5.36.0-r0"]]

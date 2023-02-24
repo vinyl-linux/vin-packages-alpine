@@ -1,0 +1,15 @@
+checksum = "9a180fa5dc1e9771f63ed2f1c60247d5046d88cac04b90a2c448f63a4a50d161"
+licence = "MIT"
+provides = "ginkgo"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/community/x86_64/ginkgo-2.1.6-r5.apk"
+version = "2.1.6-r5"
+
+[commands]
+  compile = "true"
+  configure = "true"
+  install = "{{ .ManifestDir }}/install.sh"
+
+[profiles]
+
+  [profiles.default]
+    deps = [["musl", "1.2.3-r4"]]
