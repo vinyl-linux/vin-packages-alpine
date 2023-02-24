@@ -187,7 +187,7 @@ func depSplit(s string) (c Constraint, err error) {
 
 	if match[3] != "" {
 		if match[3][0] == '~' {
-			match[3] = "=" + match[3][1:]
+			match[3] = ">=" + match[3][1:]
 		}
 
 		c.Constraint, err = version.NewConstraint(cleanVersion(string(match[3])))

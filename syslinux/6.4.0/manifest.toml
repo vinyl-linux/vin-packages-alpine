@@ -1,15 +1,16 @@
-checksum = "ce6bcf140138de50d63cce80200a1fb3d31cd81625acf95091ce29758efa55ca"
+checksum = "821da429695aede1fde2f76a8640f9e16a8aa8b7cc428c844c541723f01d2e31"
 licence = "GPL-2.0-or-later"
 provides = "syslinux"
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/syslinux-6.04_pre1-r9.apk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslinux-6.04_pre1-r11.apk"
 version = "6.4.0"
 
 [commands]
   compile = "true"
   configure = "true"
+  finaliser = "./.trigger"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
 
   [profiles.default]
-    deps = [["mtools", "4.0.36-r0"], ["blkid", "2.37.4-r0"], ["mkinitfs", "3.6.0-r0"], ["busybox", "1.34.1-r4"], ["musl", "1.2.2-r7"], ["libuuid", "2.37.4-r0"]]
+    deps = [["mtools", "4.0.42-r0"], ["blkid", "2.38.1-r1"], ["mkinitfs", "3.7.0-r0"], ["yash-binsh", "2.53.0-r2"], ["musl", "1.2.3-r4"], ["libuuid", "2.38.1-r1"]]

@@ -58,10 +58,10 @@ func NewManifest(vp VersionedPackage, deps []VersionedPackage) (m Manifest, err 
 	m.filename = filepath.Join(m.dir, "manifest.toml")
 
 	// if file exists, skip
-	_, err = os.Stat(m.filename)
-	if err == nil || !os.IsNotExist(err) {
-		return
-	}
+	// _, err = os.Stat(m.filename)
+	// if err == nil || !os.IsNotExist(err) {
+	//	return
+	// }
 
 	m.Profiles = make(map[string]Profile)
 	m.Profiles["default"] = Profile{
@@ -164,9 +164,9 @@ type Profile struct {
 
 // Commands provides a set of 'commands' which are used in our three stages:
 //
-//   1. Configuring packages/ apps/ whosits
-//   2. Compiling packages/ binaries
-//   3. Installing the resulting compiled stuff into the filesystem
+//  1. Configuring packages/ apps/ whosits
+//  2. Compiling packages/ binaries
+//  3. Installing the resulting compiled stuff into the filesystem
 //
 // Empty commands receive the default for each item, so use something like `true`
 // where a stage command is not necessary

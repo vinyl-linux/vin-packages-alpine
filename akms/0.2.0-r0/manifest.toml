@@ -1,15 +1,16 @@
-checksum = "ce6b13c4bbbef6161bbea41da208c6927546185454d61a0d237f8c8e29f750c7"
+checksum = "818f4d1040427fb15eb25f2c637932096d069c3101f12f7de96a9ffe5cb2e2ec"
 licence = "MIT"
 provides = "akms"
-tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/akms-0.2.0-r0.apk"
+tarball = "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/akms-0.2.0-r0.apk"
 version = "0.2.0-r0"
 
 [commands]
   compile = "true"
   configure = "true"
+  finaliser = "./.trigger"
   install = "{{ .ManifestDir }}/install.sh"
 
 [profiles]
 
   [profiles.default]
-    deps = [["bubblewrap", "0.5.0-r0"], ["kmod", "29.0.0-r2"], ["kernel-hooks", "0.2.0-r0"], ["busybox", "1.34.1-r4"]]
+    deps = [["bubblewrap", "0.7.0-r0"], ["kmod", "30.0.0-r1"], ["kernel-hooks", "0.2.0-r0"], ["yash-binsh", "2.53.0-r2"]]
